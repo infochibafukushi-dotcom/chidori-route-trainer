@@ -5,7 +5,13 @@
     window.matchMedia('(display-mode: standalone)').matches ||
     window.navigator.standalone === true;
 
+  function setAppName() {
+    const heading = document.querySelector('.header h1');
+    if (heading && heading.textContent !== '千鳥路線図') heading.textContent = '千鳥路線図';
+  }
+
   function installButton() {
+    setAppName();
     const home = document.querySelector('.home');
     if (!home || home.querySelector('[data-pwa-install]') || isInstalled()) return;
 
