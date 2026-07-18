@@ -12,7 +12,6 @@
   let auth = null;
   let documentRef = null;
   let applyingRemote = false;
-  let cloudDocumentExists = false;
   let saveTimer = null;
   let currentUser = null;
   let lastCloudLoadAt = 0;
@@ -82,11 +81,18 @@
 
   function applySettingsLock() {
     const body = document.getElementById('settingsBody');
-    document.getElementById('cloudReadonlyNotice')?.remove();
-    if (!body) return;
+    const existingNotice = document.getElementById('cloudReadonlyNotice');
+    if (!body) {
+      existingNotice?.remove();
+      return;
+    }
     const locked = configured && !isEditor();
     body.classList.toggle('cloud-readonly', locked);
-    if (locked) {
+    if (!locked) {
+      existingNotice?.remove();
+      return;
+    }
+    if (!existingNotice) {
       const notice = document.createElement('div');
       notice.id = 'cloudReadonlyNotice';
       notice.className = 'cloud-readonly-notice';
@@ -112,7 +118,6 @@
         updatedAt: firebase.firestore.FieldValue.serverTimestamp(),
         updatedBy: currentUser.email,
       }, { merge: true });
-      cloudDocumentExists = true;
       setStatus(`クラウド同期済み｜${currentUser.email}`, 'ok');
     } catch (error) {
       console.error('Firestore save failed', error);
@@ -141,7 +146,6 @@
     setStatus('クラウドデータを読込中…', 'working');
     try {
       const snapshot = await documentRef.get();
-      cloudDocumentExists = snapshot.exists;
       const remote = snapshot.data()?.appData;
       if (remote && typeof remote === 'object') {
         applyingRemote = true;
