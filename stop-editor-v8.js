@@ -1,8 +1,10 @@
 (() => {
   const MANUAL_POSITION_PREFIX = 'google-places-selected-direction-v5';
   let editorMapCleanup = null;
+  let selectedSettingsRouteId = null;
+  let selectedSettingsDirection = 'outbound';
 
-  const directionLabel = (direction) => direction === 'outbound' ? '行き' : '戻り';
+  const directionLabel = (direction) => direction === 'outbound' ? '新浦安→浦安' : '浦安→新浦安';
 
   function parseCoordinate(value) {
     const number = Number(String(value).trim());
@@ -214,11 +216,14 @@
   }
 
   stopEditor = function stopEditorWithCoordinates() {
+    const selectedRoute = data.routes.find((route) => route.id === selectedSettingsRouteId) || data.routes[0];
+    selectedSettingsRouteId = selectedRoute?.id || '';
+
     document.getElementById('settingsBody').innerHTML = `
       <div class="grid">
         <div class="card">
-          <label>路線<select id="sRoute">${data.routes.map((route) => `<option value="${route.id}">${label(route)}</option>`).join('')}</select></label>
-          <label>方向<select id="sDir"><option value="outbound">行き</option><option value="inbound">戻り</option></select></label>
+          <label>路線<select id="sRoute">${data.routes.map((route) => `<option value="${route.id}" ${route.id === selectedSettingsRouteId ? 'selected' : ''}>${label(route)}</option>`).join('')}</select></label>
+          <label>方向<select id="sDir"><option value="outbound" ${selectedSettingsDirection === 'outbound' ? 'selected' : ''}>新浦安→浦安</option><option value="inbound" ${selectedSettingsDirection === 'inbound' ? 'selected' : ''}>浦安→新浦安</option></select></label>
           <label>停留所名<input id="sName"></label>
           <label>住所・施設名<input id="sAddress"></label>
           <div class="coordinate-inputs">
@@ -231,11 +236,22 @@
           <button class="primary" id="sAdd">停留所を追加</button>
         </div>
         <div class="card">
-          <strong>登録済み停留所</strong>
-          <p class="stop-list-help">緯度・経度を確認し、「編集」から位置を修正できます。</p>
+          <strong id="stopListTitle">登録済み停留所</strong>
+          <p class="stop-list-help">選択中の方向だけを表示します。緯度・経度は「編集」から修正できます。</p>
           <div id="stopList"></div>
         </div>
       </div>`;
+
+    const routeSelect = document.getElementById('sRoute');
+    const directionSelect = document.getElementById('sDir');
+    routeSelect.onchange = () => {
+      selectedSettingsRouteId = routeSelect.value;
+      renderStopList();
+    };
+    directionSelect.onchange = () => {
+      selectedSettingsDirection = directionSelect.value;
+      renderStopList();
+    };
 
     mountCoordinateMap('picker', 'sLat', 'sLng', 'sStatus', null);
 
@@ -270,6 +286,8 @@
         lng: position.lng,
         manualPosition: true,
       });
+      selectedSettingsRouteId = route.id;
+      selectedSettingsDirection = direction;
       save();
       settings();
     };
@@ -280,27 +298,32 @@
   renderStopList = function renderEditableStopList() {
     const box = document.getElementById('stopList');
     if (!box) return;
-    const rows = [];
-    data.routes.forEach((route) => {
-      ['outbound', 'inbound'].forEach((direction) => {
-        (route[direction] || []).forEach((stop, index) => {
-          rows.push(`
-            <div class="item stop-coordinate-item">
-              <div class="stop-coordinate-main">
-                <strong>${esc(label(route))}・${directionLabel(direction)}・${index + 1}. ${esc(stop.name)}</strong>
-                <span>${esc(stop.address || '住所未設定')}</span>
-                <code>緯度 ${coordinateText(stop.lat)} ／ 経度 ${coordinateText(stop.lng)}</code>
-              </div>
-              <button type="button" class="stop-edit-button" data-editstop="${route.id}|${direction}|${stop.id}">編集</button>
-            </div>`);
-        });
-      });
-    });
-    box.innerHTML = rows.join('') || '<p>未登録</p>';
-    document.querySelectorAll('[data-editstop]').forEach((button) => {
+
+    const routeId = document.getElementById('sRoute')?.value || selectedSettingsRouteId;
+    const direction = document.getElementById('sDir')?.value || selectedSettingsDirection;
+    selectedSettingsRouteId = routeId;
+    selectedSettingsDirection = direction;
+
+    const route = data.routes.find((item) => item.id === routeId);
+    const stops = route?.[direction] || [];
+    const title = document.getElementById('stopListTitle');
+    if (title) title.textContent = `登録済み停留所｜${directionLabel(direction)}`;
+
+    const rows = stops.map((stop, index) => `
+      <div class="item stop-coordinate-item">
+        <div class="stop-coordinate-main">
+          <strong>${esc(label(route))}・${directionLabel(direction)}・${index + 1}. ${esc(stop.name)}</strong>
+          <span>${esc(stop.address || '住所未設定')}</span>
+          <code>緯度 ${coordinateText(stop.lat)} ／ 経度 ${coordinateText(stop.lng)}</code>
+        </div>
+        <button type="button" class="stop-edit-button" data-editstop="${route.id}|${direction}|${stop.id}">編集</button>
+      </div>`);
+
+    box.innerHTML = rows.join('') || `<p>${directionLabel(direction)}の停留所は未登録です。</p>`;
+    box.querySelectorAll('[data-editstop]').forEach((button) => {
       button.onclick = () => {
-        const [routeId, direction, stopId] = button.dataset.editstop.split('|');
-        openEditor(routeId, direction, stopId);
+        const [targetRouteId, targetDirection, stopId] = button.dataset.editstop.split('|');
+        openEditor(targetRouteId, targetDirection, stopId);
       };
     });
   };
