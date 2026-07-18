@@ -4,6 +4,7 @@
   const originalSave = save;
   let syncing = false;
   let attempts = 0;
+  let helpUpdateScheduled = false;
 
   const normalize = (value = '') => String(value)
     .normalize('NFKC')
@@ -168,20 +169,27 @@
   };
 
   function updateEditorHelp() {
+    const helpText = '同じ停留所・同じ方向の位置は、系統1・1-1・1-3へ自動で一括反映されます。';
+    const statusText = '保存すると、同じ停留所・同じ方向を使用する全系統へ緯度・経度を一括反映します。';
     const help = document.querySelector('.stop-list-help');
-    if (help) help.textContent = '同じ停留所・同じ方向の位置は、系統1・1-1・1-3へ自動で一括反映されます。';
+    if (help && help.textContent !== helpText) help.textContent = helpText;
     const status = document.getElementById('editStopStatus');
-    if (status && !status.dataset.sharedCoordinateHelp) {
+    if (status && status.textContent !== statusText && !status.dataset.sharedCoordinateHelp) {
       status.dataset.sharedCoordinateHelp = '1';
-      status.textContent = '保存すると、同じ停留所・同じ方向を使用する全系統へ緯度・経度を一括反映します。';
+      status.textContent = statusText;
     }
   }
 
-  new MutationObserver(updateEditorHelp).observe(document.getElementById('app'), {
-    childList: true,
-    subtree: true,
-  });
-  new MutationObserver(updateEditorHelp).observe(document.body, {
+  function scheduleEditorHelpUpdate() {
+    if (helpUpdateScheduled) return;
+    helpUpdateScheduled = true;
+    requestAnimationFrame(() => {
+      helpUpdateScheduled = false;
+      updateEditorHelp();
+    });
+  }
+
+  new MutationObserver(scheduleEditorHelpUpdate).observe(document.body, {
     childList: true,
     subtree: true,
   });
@@ -192,7 +200,7 @@
     if (result.changed) {
       console.info('D1読込後の共通停留所位置を全系統へ統一しました。', result);
     }
-    updateEditorHelp();
+    scheduleEditorHelpUpdate();
     if (attempts < 40) setTimeout(retrySync, 1000);
   }
 
