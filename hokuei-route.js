@@ -1,5 +1,7 @@
 const HOKUEI_ROUTE_ID = 'route-1';
-const HOKUEI_DATA_VERSION = '2026-07-18-system-1';
+const HOKUEI_DATA_VERSION = '2026-07-18-places-v2';
+const HOKUEI_POSITION_SOURCE = 'google-places-bus-stop-v2';
+const HOKUEI_CENTER = { lat: 35.6545, lng: 139.9025 };
 const HOKUEI_STOPS = [
   '新浦安駅',
   '入船東団地',
@@ -40,12 +42,21 @@ function ensureHokueiRouteData() {
   ) {
     route.outbound = HOKUEI_STOPS.map((name, index) => {
       const existing = existingByName.get(name) || {};
+      const hasPlacesPosition =
+        existing.positionSource === HOKUEI_POSITION_SOURCE &&
+        Number.isFinite(existing.lat) &&
+        Number.isFinite(existing.lng);
       return {
         id: existing.id || `hokuei-1-${String(index + 1).padStart(2, '0')}`,
         name,
-        address: existing.address || `${name} バス停, 浦安市, 千葉県`,
-        lat: Number.isFinite(existing.lat) ? existing.lat : null,
-        lng: Number.isFinite(existing.lng) ? existing.lng : null,
+        address: hasPlacesPosition ? existing.address : `${name} バス停, 浦安市, 千葉県`,
+        lat: hasPlacesPosition ? existing.lat : null,
+        lng: hasPlacesPosition ? existing.lng : null,
+        placeId: hasPlacesPosition ? existing.placeId : null,
+        googleMapsURI: hasPlacesPosition ? existing.googleMapsURI : null,
+        iconMaskURI: hasPlacesPosition ? existing.iconMaskURI : null,
+        iconBackgroundColor: hasPlacesPosition ? existing.iconBackgroundColor : null,
+        positionSource: hasPlacesPosition ? existing.positionSource : null,
       };
     });
     route.inbound = [];
@@ -61,38 +72,126 @@ function sleep(milliseconds) {
   return new Promise((resolve) => setTimeout(resolve, milliseconds));
 }
 
+function normalizePlaceName(value = '') {
+  return value
+    .normalize('NFKC')
+    .replace(/[\s　・･()（）「」『』]/g, '')
+    .replace(/バス停留所|バス停|停留所/g, '')
+    .toLowerCase();
+}
+
+function scoreBusStopPlace(place, stopName) {
+  if (!place?.location) return -Infinity;
+  const wanted = normalizePlaceName(stopName);
+  const found = normalizePlaceName(place.displayName || '');
+  const types = place.types || [];
+  let score = 0;
+  if (found === wanted) score += 200;
+  else if (found.includes(wanted) || wanted.includes(found)) score += 120;
+  if (types.includes('bus_station')) score += 100;
+  if (types.includes('transit_station')) score += 70;
+  if ((place.formattedAddress || '').includes('浦安市')) score += 50;
+  const distance = distanceMeters(HOKUEI_CENTER, {
+    lat: place.location.lat(),
+    lng: place.location.lng(),
+  });
+  score -= distance / 250;
+  return score;
+}
+
+async function searchGoogleBusStop(googleApi, stopName) {
+  const { Place } = await googleApi.maps.importLibrary('places');
+  const request = {
+    textQuery: `${stopName} バス停 浦安市 千葉県`,
+    fields: [
+      'id',
+      'displayName',
+      'formattedAddress',
+      'location',
+      'types',
+      'primaryType',
+      'googleMapsURI',
+      'svgIconMaskURI',
+      'iconBackgroundColor',
+    ],
+    locationBias: { center: HOKUEI_CENTER, radius: 9000 },
+    language: 'ja',
+    region: 'jp',
+    maxResultCount: 8,
+  };
+  const response = await Place.searchByText(request);
+  const candidates = (response.places || [])
+    .filter((place) => place.location)
+    .sort((a, b) => scoreBusStopPlace(b, stopName) - scoreBusStopPlace(a, stopName));
+  return candidates[0] || null;
+}
+
+async function fallbackGeocodeBusStop(googleApi, stopName) {
+  const geocoder = new googleApi.maps.Geocoder();
+  const response = await geocoder.geocode({
+    address: `${stopName} バス停 浦安市 千葉県`,
+    region: 'JP',
+    componentRestrictions: { country: 'JP' },
+  });
+  const result =
+    response.results.find((item) => item.formatted_address.includes('浦安市')) ||
+    response.results[0];
+  if (!result?.geometry?.location) return null;
+  return {
+    id: null,
+    displayName: stopName,
+    formattedAddress: result.formatted_address,
+    location: result.geometry.location,
+    googleMapsURI: null,
+    svgIconMaskURI: null,
+    iconBackgroundColor: null,
+    fallback: true,
+  };
+}
+
 async function resolveHokueiStopLocations(stops, status) {
   const googleApi = await loadMaps();
-  const geocoder = new googleApi.maps.Geocoder();
   let changed = false;
+  let fallbackCount = 0;
 
   for (let index = 0; index < stops.length; index += 1) {
     const stop = stops[index];
-    if (Number.isFinite(stop.lat) && Number.isFinite(stop.lng)) continue;
+    if (
+      stop.positionSource === HOKUEI_POSITION_SOURCE &&
+      Number.isFinite(stop.lat) &&
+      Number.isFinite(stop.lng)
+    ) continue;
 
-    status.textContent = `Googleマップからバス停位置を確認中… ${index + 1}/${stops.length} ${stop.name}`;
-    const query = `${stop.name} バス停 浦安市 千葉県`;
-    const response = await geocoder.geocode({
-      address: query,
-      region: 'JP',
-      componentRestrictions: { country: 'JP' },
-    });
-
-    const result =
-      response.results.find((item) => item.formatted_address.includes('浦安市')) ||
-      response.results[0];
-    const location = result?.geometry?.location;
+    status.textContent = `Google Mapsのバス停地点を取得中… ${index + 1}/${stops.length} ${stop.name}`;
+    let place = null;
+    try {
+      place = await searchGoogleBusStop(googleApi, stop.name);
+    } catch (error) {
+      console.warn(`${stop.name}のPlaces検索に失敗しました。`, error);
+    }
+    if (!place) {
+      place = await fallbackGeocodeBusStop(googleApi, stop.name);
+      fallbackCount += 1;
+    }
+    const location = place?.location;
     if (!location) throw new Error(`${stop.name}の位置を取得できませんでした。`);
 
     stop.lat = location.lat();
     stop.lng = location.lng();
-    stop.address = result.formatted_address || stop.address;
+    stop.address = place.formattedAddress || stop.address;
+    stop.placeId = place.id || null;
+    stop.googleMapsURI = place.googleMapsURI || null;
+    stop.iconMaskURI = place.svgIconMaskURI || null;
+    stop.iconBackgroundColor = place.iconBackgroundColor || '#1a73e8';
+    stop.positionSource = place.fallback ? 'geocoder-fallback' : HOKUEI_POSITION_SOURCE;
     changed = true;
-    await sleep(180);
+    await sleep(120);
   }
 
   if (changed) save();
-  return stops.filter((stop) => Number.isFinite(stop.lat) && Number.isFinite(stop.lng));
+  const validStops = stops.filter((stop) => Number.isFinite(stop.lat) && Number.isFinite(stop.lng));
+  validStops.fallbackCount = fallbackCount;
+  return validStops;
 }
 
 function distanceMeters(a, b) {
@@ -113,6 +212,42 @@ function interpolatePosition(a, b, ratio) {
     lat: a.lat + (b.lat - a.lat) * ratio,
     lng: a.lng + (b.lng - a.lng) * ratio,
   };
+}
+
+function headingDegrees(a, b) {
+  const toRadians = (degrees) => (degrees * Math.PI) / 180;
+  const toDegrees = (radians) => (radians * 180) / Math.PI;
+  const lat1 = toRadians(a.lat);
+  const lat2 = toRadians(b.lat);
+  const longitudeDelta = toRadians(b.lng - a.lng);
+  const y = Math.sin(longitudeDelta) * Math.cos(lat2);
+  const x =
+    Math.cos(lat1) * Math.sin(lat2) -
+    Math.sin(lat1) * Math.cos(lat2) * Math.cos(longitudeDelta);
+  return (toDegrees(Math.atan2(y, x)) + 360) % 360;
+}
+
+function createMovingArrowLine(googleApi, map, path) {
+  return new googleApi.maps.Polyline({
+    map,
+    path,
+    strokeOpacity: 0,
+    clickable: false,
+    zIndex: 900,
+    icons: [
+      {
+        icon: {
+          path: googleApi.maps.SymbolPath.FORWARD_CLOSED_ARROW,
+          fillColor: '#e53935',
+          fillOpacity: 1,
+          strokeColor: '#ffffff',
+          strokeWeight: 1.5,
+          scale: 5,
+        },
+        offset: '0%',
+      },
+    ],
+  });
 }
 
 async function getDrivingRoutePath(googleApi, map, stops) {
@@ -147,7 +282,13 @@ async function getDrivingRoutePath(googleApi, map, stops) {
       lat: point.lat(),
       lng: point.lng(),
     }));
-    if (path?.length > 1) return { path, isRoadRoute: true };
+    if (path?.length > 1) {
+      return {
+        path,
+        isRoadRoute: true,
+        arrowLine: createMovingArrowLine(googleApi, map, path),
+      };
+    }
   } catch (error) {
     console.warn('道路ルートの取得に失敗したため停留所間を直線表示します。', error);
   }
@@ -160,23 +301,126 @@ async function getDrivingRoutePath(googleApi, map, stops) {
     strokeOpacity: 0.9,
     strokeWeight: 6,
   });
-  return { path, isRoadRoute: false };
+  return {
+    path,
+    isRoadRoute: false,
+    arrowLine: createMovingArrowLine(googleApi, map, path),
+  };
 }
 
 function createBusIcon(googleApi) {
   const svg = `
-    <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46">
-      <circle cx="23" cy="23" r="21" fill="white" stroke="#0f5ea8" stroke-width="3"/>
-      <text x="23" y="30" text-anchor="middle" font-size="24">🚌</text>
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+      <circle cx="24" cy="24" r="22" fill="white" stroke="#0f5ea8" stroke-width="3"/>
+      <text x="24" y="32" text-anchor="middle" font-size="25">🚌</text>
     </svg>`;
   return {
     url: `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`,
-    scaledSize: new googleApi.maps.Size(46, 46),
-    anchor: new googleApi.maps.Point(23, 23),
+    scaledSize: new googleApi.maps.Size(48, 48),
+    anchor: new googleApi.maps.Point(24, 24),
   };
 }
 
-function setupBusAnimation(googleApi, map, path, routeStatus) {
+function createFallbackBusStopIcon(googleApi) {
+  const svg = `
+    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+      <circle cx="17" cy="17" r="15" fill="#1a73e8" stroke="white" stroke-width="2"/>
+      <text x="17" y="23" text-anchor="middle" font-size="17">🚏</text>
+    </svg>`;
+  return {
+    url: `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`,
+    scaledSize: new googleApi.maps.Size(34, 34),
+    anchor: new googleApi.maps.Point(17, 17),
+  };
+}
+
+function createStopMarkerIcon(googleApi, stop) {
+  if (!stop.iconMaskURI) return createFallbackBusStopIcon(googleApi);
+  return {
+    url: String(stop.iconMaskURI),
+    scaledSize: new googleApi.maps.Size(30, 30),
+    anchor: new googleApi.maps.Point(15, 15),
+  };
+}
+
+function buildPathMetrics(path) {
+  const segmentDistances = [];
+  const cumulative = [0];
+  for (let index = 0; index < path.length - 1; index += 1) {
+    const distance = distanceMeters(path[index], path[index + 1]);
+    segmentDistances.push(distance);
+    cumulative.push(cumulative.at(-1) + distance);
+  }
+  return { segmentDistances, cumulative, totalDistance: cumulative.at(-1) || 0 };
+}
+
+function projectStopToRoute(stop, path, metrics, startSegmentIndex = 0) {
+  const referenceLatitude = (stop.lat * Math.PI) / 180;
+  const metersPerLatitude = 111320;
+  const metersPerLongitude = Math.max(1, Math.cos(referenceLatitude) * 111320);
+  let best = { distance: Infinity, routeDistance: 0, segmentIndex: startSegmentIndex };
+
+  for (let index = startSegmentIndex; index < path.length - 1; index += 1) {
+    const a = path[index];
+    const b = path[index + 1];
+    const ax = (a.lng - stop.lng) * metersPerLongitude;
+    const ay = (a.lat - stop.lat) * metersPerLatitude;
+    const bx = (b.lng - stop.lng) * metersPerLongitude;
+    const by = (b.lat - stop.lat) * metersPerLatitude;
+    const dx = bx - ax;
+    const dy = by - ay;
+    const lengthSquared = dx * dx + dy * dy || 1;
+    const ratio = Math.min(1, Math.max(0, -(ax * dx + ay * dy) / lengthSquared));
+    const px = ax + dx * ratio;
+    const py = ay + dy * ratio;
+    const distance = Math.hypot(px, py);
+    if (distance < best.distance) {
+      best = {
+        distance,
+        routeDistance: metrics.cumulative[index] + metrics.segmentDistances[index] * ratio,
+        segmentIndex: index,
+      };
+    }
+  }
+  return best;
+}
+
+function mapStopsToRouteDistances(stops, path, metrics) {
+  let startSegmentIndex = 0;
+  return stops.map((stop, index) => {
+    if (index === 0) return 0;
+    if (index === stops.length - 1) return metrics.totalDistance;
+    const projection = projectStopToRoute(stop, path, metrics, startSegmentIndex);
+    startSegmentIndex = projection.segmentIndex;
+    return projection.routeDistance;
+  });
+}
+
+function getPositionAtDistance(path, metrics, traveled) {
+  let segmentIndex = metrics.cumulative.findIndex((value) => value > traveled) - 1;
+  if (segmentIndex < 0) segmentIndex = 0;
+  if (segmentIndex >= metrics.segmentDistances.length) {
+    segmentIndex = metrics.segmentDistances.length - 1;
+  }
+  const segmentStart = metrics.cumulative[segmentIndex];
+  const segmentLength = metrics.segmentDistances[segmentIndex] || 1;
+  const ratio = Math.min(1, Math.max(0, (traveled - segmentStart) / segmentLength));
+  return {
+    position: interpolatePosition(path[segmentIndex], path[segmentIndex + 1], ratio),
+    nextPosition: path[segmentIndex + 1],
+    segmentIndex,
+  };
+}
+
+function setupBusAnimation({
+  googleApi,
+  map,
+  path,
+  stops,
+  panorama,
+  routeStatus,
+  arrowLine,
+}) {
   hokueiAnimationCleanup?.();
 
   const oldControls = document.getElementById('hokueiBusControls');
@@ -194,7 +438,7 @@ function setupBusAnimation(googleApi, map, path, routeStatus) {
   const split = document.querySelector('.split');
   split?.insertAdjacentElement('afterend', controls);
 
-  const marker = new googleApi.maps.Marker({
+  const vehicleMarker = new googleApi.maps.Marker({
     map,
     position: path[0],
     title: '北栄線 バス（時速6km）',
@@ -202,55 +446,125 @@ function setupBusAnimation(googleApi, map, path, routeStatus) {
     zIndex: 1000,
   });
 
-  const segmentDistances = [];
-  const cumulative = [0];
-  for (let index = 0; index < path.length - 1; index += 1) {
-    const distance = distanceMeters(path[index], path[index + 1]);
-    segmentDistances.push(distance);
-    cumulative.push(cumulative.at(-1) + distance);
-  }
-  const totalDistance = cumulative.at(-1) || 0;
+  const metrics = buildPathMetrics(path);
+  const stopDistances = mapStopsToRouteDistances(stops, path, metrics);
   const speedMetersPerSecond = 6000 / 3600;
   let traveled = 0;
   let running = false;
   let frameId = null;
   let previousTime = null;
+  let nextStopIndex = 1;
+  let dwellUntil = 0;
+  let lastStreetViewUpdate = 0;
+  let lastStreetViewDistance = -Infinity;
+  let streetViewBusy = false;
 
   const progress = document.getElementById('busProgress');
 
-  function updateMarker() {
-    if (!totalDistance) return;
-    let segmentIndex = cumulative.findIndex((value) => value > traveled) - 1;
-    if (segmentIndex < 0) segmentIndex = 0;
-    if (segmentIndex >= segmentDistances.length) segmentIndex = segmentDistances.length - 1;
-    const segmentStart = cumulative[segmentIndex];
-    const segmentLength = segmentDistances[segmentIndex] || 1;
-    const ratio = Math.min(1, Math.max(0, (traveled - segmentStart) / segmentLength));
-    marker.setPosition(interpolatePosition(path[segmentIndex], path[segmentIndex + 1], ratio));
-    progress.textContent = `${(traveled / 1000).toFixed(2)} / ${(totalDistance / 1000).toFixed(2)}km｜時速6km`;
+  function updateArrow() {
+    if (!arrowLine || !metrics.totalDistance) return;
+    const icons = arrowLine.get('icons');
+    if (!icons?.length) return;
+    icons[0].offset = `${Math.min(100, (traveled / metrics.totalDistance) * 100).toFixed(2)}%`;
+    arrowLine.set('icons', icons);
+  }
+
+  async function updateStreetView(now, force = false) {
+    if (streetViewBusy || !panorama || !metrics.totalDistance) return;
+    if (!force && now - lastStreetViewUpdate < 1200 && traveled - lastStreetViewDistance < 3) return;
+    const current = getPositionAtDistance(path, metrics, traveled);
+    streetViewBusy = true;
+    try {
+      panorama.setPosition(current.position);
+      panorama.setPov({
+        heading: headingDegrees(current.position, current.nextPosition),
+        pitch: 0,
+      });
+      lastStreetViewUpdate = now;
+      lastStreetViewDistance = traveled;
+    } finally {
+      streetViewBusy = false;
+    }
+  }
+
+  function updateVehicle(now, forceStreetView = false) {
+    if (!metrics.totalDistance) return;
+    const current = getPositionAtDistance(path, metrics, traveled);
+    vehicleMarker.setPosition(current.position);
+    updateArrow();
+    updateStreetView(now, forceStreetView);
+    const nextStop = stops[nextStopIndex];
+    progress.textContent = `${(traveled / 1000).toFixed(2)} / ${(metrics.totalDistance / 1000).toFixed(2)}km｜時速6km${nextStop ? `｜次：${nextStop.name}` : ''}`;
+  }
+
+  function completeRoute() {
+    running = false;
+    traveled = metrics.totalDistance;
+    updateVehicle(performance.now(), true);
+    progress.textContent = `浦安駅入口に到着｜総距離 ${(metrics.totalDistance / 1000).toFixed(2)}km`;
+    routeStatus.textContent = '北栄線 系統1の走行を完了しました。';
   }
 
   function tick(now) {
     if (!running) return;
+
+    if (dwellUntil) {
+      if (now < dwellUntil) {
+        const remainingSeconds = Math.max(1, Math.ceil((dwellUntil - now) / 1000));
+        const stop = stops[Math.max(0, nextStopIndex - 1)];
+        progress.textContent = `${stop?.name || 'バス停'}で停車中｜あと${remainingSeconds}秒`;
+        frameId = requestAnimationFrame(tick);
+        return;
+      }
+      dwellUntil = 0;
+      previousTime = now;
+      if (traveled >= metrics.totalDistance) {
+        completeRoute();
+        return;
+      }
+      routeStatus.textContent = 'バス停を出発しました。時速6kmで走行中です。';
+    }
+
     if (previousTime === null) previousTime = now;
     const elapsedSeconds = Math.min((now - previousTime) / 1000, 1);
     previousTime = now;
-    traveled = Math.min(totalDistance, traveled + speedMetersPerSecond * elapsedSeconds);
-    updateMarker();
-    if (traveled >= totalDistance) {
-      running = false;
-      progress.textContent = `浦安駅入口に到着｜総距離 ${(totalDistance / 1000).toFixed(2)}km`;
-      routeStatus.textContent = '北栄線 系統1の走行を完了しました。';
+    const previousDistance = traveled;
+    traveled = Math.min(metrics.totalDistance, traveled + speedMetersPerSecond * elapsedSeconds);
+
+    const targetStopDistance = stopDistances[nextStopIndex];
+    if (
+      Number.isFinite(targetStopDistance) &&
+      previousDistance < targetStopDistance &&
+      traveled >= targetStopDistance
+    ) {
+      traveled = targetStopDistance;
+      const arrivedStop = stops[nextStopIndex];
+      nextStopIndex += 1;
+      updateVehicle(now, true);
+      panorama.setPosition({ lat: arrivedStop.lat, lng: arrivedStop.lng });
+      dwellUntil = now + 5000;
+      routeStatus.textContent = `${arrivedStop.name}に到着。5秒間停車します。`;
+      frameId = requestAnimationFrame(tick);
+      return;
+    }
+
+    updateVehicle(now);
+    if (traveled >= metrics.totalDistance) {
+      completeRoute();
       return;
     }
     frameId = requestAnimationFrame(tick);
   }
 
   document.getElementById('busStart').onclick = () => {
-    if (traveled >= totalDistance) traveled = 0;
+    if (traveled >= metrics.totalDistance) {
+      traveled = 0;
+      nextStopIndex = 1;
+    }
     running = true;
+    dwellUntil = 0;
     previousTime = null;
-    routeStatus.textContent = 'バスを実速度の時速6kmで走行中です。';
+    routeStatus.textContent = 'バス・矢印・Street Viewを時速6kmで連動中です。';
     cancelAnimationFrame(frameId);
     frameId = requestAnimationFrame(tick);
   };
@@ -258,6 +572,7 @@ function setupBusAnimation(googleApi, map, path, routeStatus) {
   document.getElementById('busPause').onclick = () => {
     running = false;
     previousTime = null;
+    dwellUntil = 0;
     cancelAnimationFrame(frameId);
     routeStatus.textContent = '走行を一時停止しました。';
   };
@@ -265,9 +580,13 @@ function setupBusAnimation(googleApi, map, path, routeStatus) {
   document.getElementById('busReset').onclick = () => {
     running = false;
     previousTime = null;
+    dwellUntil = 0;
     traveled = 0;
+    nextStopIndex = 1;
     cancelAnimationFrame(frameId);
-    marker.setPosition(path[0]);
+    vehicleMarker.setPosition(path[0]);
+    updateArrow();
+    panorama.setPosition(path[0]);
     progress.textContent = '新浦安駅で待機中';
     routeStatus.textContent = '停留所ピンを押すと下半分にStreet Viewを表示します。';
   };
@@ -275,7 +594,8 @@ function setupBusAnimation(googleApi, map, path, routeStatus) {
   hokueiAnimationCleanup = () => {
     running = false;
     cancelAnimationFrame(frameId);
-    marker.setMap(null);
+    vehicleMarker.setMap(null);
+    arrowLine?.setMap(null);
     controls.remove();
   };
 }
@@ -298,30 +618,56 @@ async function drawHokueiRoute(route, stops) {
       position: { lat: validStops[0].lat, lng: validStops[0].lng },
       pov: { heading: 0, pitch: 0 },
       zoom: 1,
+      motionTracking: false,
+      addressControl: true,
     });
 
     const bounds = new googleApi.maps.LatLngBounds();
+    const infoWindow = new googleApi.maps.InfoWindow();
     validStops.forEach((stop, index) => {
       const position = { lat: stop.lat, lng: stop.lng };
       bounds.extend(position);
       const marker = new googleApi.maps.Marker({
         map,
         position,
-        label: String(index + 1),
-        title: stop.name,
+        title: `${index + 1}. ${stop.name}`,
+        icon: createStopMarkerIcon(googleApi, stop),
+        zIndex: 500,
       });
       marker.addListener('click', () => {
         panorama.setPosition(position);
+        const sourceLabel =
+          stop.positionSource === HOKUEI_POSITION_SOURCE
+            ? 'Google Mapsのバス停地点'
+            : '住所検索による暫定地点';
+        const mapLink = stop.googleMapsURI
+          ? `<br><a href="${esc(stop.googleMapsURI)}" target="_blank" rel="noopener noreferrer">Google Mapsで確認</a>`
+          : '';
+        infoWindow.setContent(
+          `<strong>${index + 1}. ${esc(stop.name)}</strong><br>${esc(sourceLabel)}${mapLink}`,
+        );
+        infoWindow.open({ map, anchor: marker });
         status.textContent = `${index + 1}. ${stop.name}${stop.address ? `｜${stop.address}` : ''}`;
       });
     });
     map.fitBounds(bounds, 50);
 
     const routeResult = await getDrivingRoutePath(googleApi, map, validStops);
-    setupBusAnimation(googleApi, map, routeResult.path, status);
+    setupBusAnimation({
+      googleApi,
+      map,
+      path: routeResult.path,
+      stops: validStops,
+      panorama,
+      routeStatus: status,
+      arrowLine: routeResult.arrowLine,
+    });
+    const fallbackNotice = validStops.fallbackCount
+      ? ` ${validStops.fallbackCount}地点はPlacesで見つからず暫定位置です。`
+      : '';
     status.textContent = routeResult.isRoadRoute
-      ? '北栄線 系統1を道路に沿って表示しました。停留所ピンでStreet Viewを確認できます。'
-      : '停留所位置は取得済みです。道路ルート取得にはGoogle Directions APIの有効化が必要です。';
+      ? `北栄線 系統1を道路に沿って表示しました。赤い矢印・車両・Street Viewが連動します。${fallbackNotice}`
+      : `停留所位置は取得済みです。道路ルート取得にはDirections APIが必要です。${fallbackNotice}`;
   } catch (error) {
     status.textContent = error instanceof Error ? error.message : '北栄線を表示できませんでした。';
   }
