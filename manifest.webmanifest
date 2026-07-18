@@ -1,0 +1,21 @@
+{
+  "name": "千鳥路線図",
+  "short_name": "千鳥路線図",
+  "description": "千鳥営業所の路線・停留所・走行ルートを学習するアプリ",
+  "lang": "ja",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#ffffff",
+  "theme_color": "#0f5ea8",
+  "categories": ["education", "navigation"],
+  "icons": [
+    {
+      "src": "./app-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
