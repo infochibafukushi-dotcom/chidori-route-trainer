@@ -1,4 +1,6 @@
 (() => {
+  const SW_VERSION = '20';
+  const RELOAD_KEY = `chidori-sw-reloaded-${SW_VERSION}`;
   let installPrompt = null;
 
   const isInstalled = () =>
@@ -50,10 +52,25 @@
   });
 
   if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-      navigator.serviceWorker.register('./service-worker.js').catch((error) => {
+    let controllerChanged = false;
+    navigator.serviceWorker.addEventListener('controllerchange', () => {
+      if (controllerChanged) return;
+      controllerChanged = true;
+      if (sessionStorage.getItem(RELOAD_KEY)) return;
+      sessionStorage.setItem(RELOAD_KEY, '1');
+      location.reload();
+    });
+
+    window.addEventListener('load', async () => {
+      try {
+        const registration = await navigator.serviceWorker.register(`./service-worker.js?v=${SW_VERSION}`, {
+          updateViaCache: 'none',
+        });
+        await registration.update();
+        if (registration.waiting) registration.waiting.postMessage({ type: 'SKIP_WAITING' });
+      } catch (error) {
         console.error('Service Worker登録失敗', error);
-      });
+      }
     });
   }
 
