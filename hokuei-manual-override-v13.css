@@ -5,5 +5,5 @@
 .manual-turn-main{display:grid;gap:4px;text-align:center}.manual-turn-main strong{font-size:23px}.manual-turn-main span{font-size:13px;line-height:1.35}
 .manual-turn-buttons{display:grid;grid-template-columns:1fr auto 1fr;gap:8px;align-items:center}.manual-turn-buttons button{padding:8px;border:1px solid rgba(255,255,255,.6);border-radius:8px;background:rgba(255,255,255,.12);color:#fff}.manual-turn-buttons button:disabled{opacity:.45}.manual-turn-buttons span{font-size:12px;text-align:center}
 #mapStatus[data-state="ok"]{color:#176b3a;font-weight:700}#mapStatus[data-state="error"]{color:#a93226;font-weight:700}#mapStatus[data-state="warning"]{color:#8a5d00;font-weight:700}
-#settingsBody [hidden]{display:none!important}.stop-edit-grid input[readonly]{background:#f3f6f8;color:#42515b}
+#settingsBody [hidden],#settingsBody label:has(#sName),#settingsBody label:has(#sNote),#settingsBody label:has(#sAddress),#settingsBody .coordinate-inputs:has(#sLat){display:none!important}.stop-edit-grid input[readonly]{background:#f3f6f8;color:#42515b}
 @media(max-width:700px){.manual-route-controls,.manual-mode-card{grid-template-columns:1fr}.manual-mode-card .secondary{width:100%;min-width:0}.manual-turn-panel{top:9px;padding:10px}.manual-turn-main strong{font-size:20px}.manual-turn-buttons{grid-template-columns:1fr 1fr}.manual-turn-buttons span{grid-column:1/-1;grid-row:1}}
