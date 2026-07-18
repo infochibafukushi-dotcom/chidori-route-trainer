@@ -1,27 +1,27 @@
-const CACHE_NAME = 'chidori-route-map-v22';
+const CACHE_NAME = 'chidori-route-map-v23';
 const APP_SHELL = [
   './',
   './index.html',
-  './manifest.webmanifest?v=22',
+  './manifest.webmanifest?v=23',
   './app-icon.svg',
-  './styles.css?v=22',
-  './hokuei-route.css?v=22',
-  './stop-editor-v8.css?v=22',
-  './d1-sync.css?v=22',
-  './hokuei-authoritative-v12.css?v=22',
-  './hokuei-manual-override-v13.css?v=22',
-  './hokuei-driving-v14.css?v=22',
-  './hokuei-guidance-v22.css?v=22',
-  './data.js?v=22',
-  './app.js?v=22',
-  './route-map-link.js?v=22',
-  './d1-sync.js?v=22',
-  './hokuei-authoritative-v12.js?v=22',
-  './hokuei-manual-override-v13.js?v=22',
-  './hokuei-shared-coordinates-v15.js?v=22',
-  './hokuei-no-uturn-v17.js?v=22',
-  './hokuei-guidance-v22.js?v=22',
-  './pwa-install.js?v=22'
+  './styles.css?v=23',
+  './hokuei-route.css?v=23',
+  './stop-editor-v8.css?v=23',
+  './d1-sync.css?v=23',
+  './hokuei-authoritative-v12.css?v=23',
+  './hokuei-manual-override-v13.css?v=23',
+  './hokuei-driving-v14.css?v=23',
+  './hokuei-guidance-v22.css?v=23',
+  './data.js?v=23',
+  './app.js?v=23',
+  './route-map-link.js?v=23',
+  './d1-sync.js?v=23',
+  './hokuei-authoritative-v12.js?v=23',
+  './hokuei-manual-override-v13.js?v=23',
+  './hokuei-shared-coordinates-v15.js?v=23',
+  './hokuei-no-uturn-v17.js?v=23',
+  './hokuei-guidance-v22.js?v=23',
+  './pwa-install.js?v=23'
 ];
 
 self.addEventListener('install', (event) => {
