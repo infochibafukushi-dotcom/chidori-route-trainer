@@ -99,9 +99,11 @@
 
   function openEditor(routeId, direction, stopId) {
     closeEditor();
-    const { route, index, stop } = findStop(routeId, direction, stopId);
+    const { route, stops, index, stop } = findStop(routeId, direction, stopId);
     if (!route || !stop || index < 0) return;
 
+    const previousStop = stops[index - 1] || null;
+    const nextStop = stops[index + 1] || null;
     const dialog = document.createElement('div');
     dialog.id = 'stopEditDialog';
     dialog.className = 'stop-edit-backdrop';
@@ -110,7 +112,7 @@
         <div class="stop-edit-header">
           <div>
             <h2 id="stopEditTitle">停留所を編集</h2>
-            <p>${esc(label(route))}・${directionLabel(direction)}・${index + 1}番目</p>
+            <p>${esc(label(route))}・${directionLabel(direction)}・${index + 1} / ${stops.length}</p>
           </div>
           <button type="button" id="closeStopEditor" class="stop-edit-close" aria-label="閉じる">×</button>
         </div>
@@ -127,6 +129,8 @@
         <div id="editStopMap" class="stop-edit-map"></div>
         <div class="stop-edit-footer">
           <button type="button" id="cancelStopEdit" class="secondary">キャンセル</button>
+          <button type="button" id="previousStopEdit" class="secondary" ${previousStop ? '' : 'disabled'}>← 前の停留所</button>
+          <button type="button" id="nextStopEdit" class="secondary" ${nextStop ? '' : 'disabled'}>次の停留所 →</button>
           <button type="button" id="saveStopEdit" class="primary">変更を保存</button>
         </div>
       </section>`;
@@ -152,7 +156,7 @@
       }
     };
 
-    document.getElementById('saveStopEdit').onclick = () => {
+    const saveCurrentStop = () => {
       const name = document.getElementById('editStopName').value.trim();
       const address = document.getElementById('editStopAddress').value.trim();
       const lat = parseCoordinate(document.getElementById('editStopLat').value);
@@ -161,11 +165,11 @@
 
       if (!name) {
         status.textContent = '停留所名を入力してください。';
-        return;
+        return false;
       }
       if (lat === null || lng === null || Math.abs(lat) > 90 || Math.abs(lng) > 180) {
         status.textContent = '正しい緯度・経度を入力してください。';
-        return;
+        return false;
       }
 
       stop.name = name;
@@ -180,6 +184,21 @@
       stop.manualPosition = true;
       stop.updatedAt = new Date().toISOString();
       save();
+      return true;
+    };
+
+    document.getElementById('previousStopEdit').onclick = () => {
+      if (!previousStop || !saveCurrentStop()) return;
+      openEditor(routeId, direction, previousStop.id);
+    };
+
+    document.getElementById('nextStopEdit').onclick = () => {
+      if (!nextStop || !saveCurrentStop()) return;
+      openEditor(routeId, direction, nextStop.id);
+    };
+
+    document.getElementById('saveStopEdit').onclick = () => {
+      if (!saveCurrentStop()) return;
       closeEditor();
       settings();
     };
