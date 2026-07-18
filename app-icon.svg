@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="千鳥路線図 バスアイコン">
+  <rect width="512" height="512" rx="112" fill="#0f5ea8"/>
+  <rect x="104" y="92" width="304" height="300" rx="56" fill="#ffffff"/>
+  <rect x="136" y="128" width="240" height="118" rx="20" fill="#bfe1ff"/>
+  <path d="M168 128v118M256 128v118M344 128v118" stroke="#0f5ea8" stroke-width="14"/>
+  <rect x="136" y="274" width="240" height="62" rx="20" fill="#0f5ea8"/>
+  <circle cx="176" cy="372" r="34" fill="#17202a"/>
+  <circle cx="336" cy="372" r="34" fill="#17202a"/>
+  <circle cx="176" cy="372" r="14" fill="#ffffff"/>
+  <circle cx="336" cy="372" r="14" fill="#ffffff"/>
+  <circle cx="166" cy="306" r="13" fill="#ffca28"/>
+  <circle cx="346" cy="306" r="13" fill="#ffca28"/>
+  <path d="M104 212H74M438 212h-30" stroke="#ffffff" stroke-width="24" stroke-linecap="round"/>
+</svg>
