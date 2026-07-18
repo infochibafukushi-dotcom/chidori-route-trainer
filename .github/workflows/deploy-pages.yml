@@ -22,15 +22,33 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Inject Google Maps API key
+      - name: Inject public app settings
         env:
           GOOGLE_MAPS_API_KEY: ${{ vars.GOOGLE_MAPS_API_KEY }}
+          FIREBASE_API_KEY: ${{ vars.VITE_FIREBASE_API_KEY }}
+          FIREBASE_AUTH_DOMAIN: ${{ vars.VITE_FIREBASE_AUTH_DOMAIN }}
+          FIREBASE_PROJECT_ID: ${{ vars.VITE_FIREBASE_PROJECT_ID }}
+          FIREBASE_APP_ID: ${{ vars.VITE_FIREBASE_APP_ID }}
+          FIREBASE_EDITOR_EMAIL: ${{ vars.FIREBASE_EDITOR_EMAIL }}
         run: |
           python - <<'PY'
           import os
           from pathlib import Path
-          p = Path('index.html')
-          p.write_text(p.read_text().replace('__GOOGLE_MAPS_API_KEY__', os.environ.get('GOOGLE_MAPS_API_KEY', '')), encoding='utf-8')
+
+          replacements = {
+              '__GOOGLE_MAPS_API_KEY__': os.environ.get('GOOGLE_MAPS_API_KEY', ''),
+              '__FIREBASE_API_KEY__': os.environ.get('FIREBASE_API_KEY', ''),
+              '__FIREBASE_AUTH_DOMAIN__': os.environ.get('FIREBASE_AUTH_DOMAIN') or 'care-taxi-meter.firebaseapp.com',
+              '__FIREBASE_PROJECT_ID__': os.environ.get('FIREBASE_PROJECT_ID') or 'care-taxi-meter',
+              '__FIREBASE_APP_ID__': os.environ.get('FIREBASE_APP_ID', ''),
+              '__FIREBASE_EDITOR_EMAIL__': os.environ.get('FIREBASE_EDITOR_EMAIL') or 'info.chibafukushi@gmail.com',
+          }
+
+          path = Path('index.html')
+          content = path.read_text(encoding='utf-8')
+          for source, value in replacements.items():
+              content = content.replace(source, value)
+          path.write_text(content, encoding='utf-8')
           PY
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
