@@ -15,6 +15,7 @@ const APP_SHELL = [
   './hokuei-stop-images-v25.css?v=25',
   './data.js?v=25',
   './app.js?v=25',
+  './home-navigation-v25.js?v=25',
   './route-map-link.js?v=25',
   './d1-sync.js?v=25',
   './hokuei-authoritative-v12.js?v=25',
