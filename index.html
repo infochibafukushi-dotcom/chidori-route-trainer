@@ -9,10 +9,23 @@
   <link rel="stylesheet" href="./hokuei-route.css" />
   <link rel="stylesheet" href="./hokuei-station-controls-v7.css" />
   <link rel="stylesheet" href="./stop-editor-v8.css" />
+  <link rel="stylesheet" href="./cloud-sync.css" />
 </head>
 <body>
   <div id="app"></div>
-  <script>window.GOOGLE_MAPS_API_KEY='__GOOGLE_MAPS_API_KEY__';</script>
+  <script>
+    window.GOOGLE_MAPS_API_KEY='__GOOGLE_MAPS_API_KEY__';
+    window.FIREBASE_CONFIG={
+      apiKey:'__FIREBASE_API_KEY__',
+      authDomain:'__FIREBASE_AUTH_DOMAIN__',
+      projectId:'__FIREBASE_PROJECT_ID__',
+      appId:'__FIREBASE_APP_ID__'
+    };
+    window.FIREBASE_EDITOR_EMAIL='__FIREBASE_EDITOR_EMAIL__';
+  </script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
   <script src="./data.js"></script>
   <script src="./app.js"></script>
   <script src="./hokuei-map-filter-v5.js"></script>
@@ -25,5 +38,6 @@
   <script src="./stop-editor-v8.js"></script>
   <script src="./hokuei-button-labels-v6.js"></script>
   <script src="./route-map-link.js"></script>
+  <script src="./cloud-sync.js"></script>
 </body>
 </html>
