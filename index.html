@@ -38,7 +38,22 @@
   <script src="./hokuei-streetview-stops-v26.js?v=32"></script>
   <script src="./hokuei-guidance-v22.js?v=34"></script>
   <script src="./hokuei-stop-images-v25.js?v=32"></script>
+  <script>window.STOP_EDITOR_BEFORE_IMAGAWA=stopEditor;</script>
   <script src="./imagawa-route-v1.js?v=35"></script>
+  <script>
+    (() => {
+      const imagawaStopEditor = stopEditor;
+      const baseStopEditor = window.STOP_EDITOR_BEFORE_IMAGAWA;
+      stopEditor = function stopEditorRouteBridge() {
+        return routeState?.routeId === 'route-2' ? imagawaStopEditor() : baseStopEditor();
+      };
+      document.addEventListener('change', (event) => {
+        if (event.target?.id !== 'sRoute') return;
+        routeState.routeId = event.target.value;
+        setTimeout(() => stopEditor(), 0);
+      }, true);
+    })();
+  </script>
   <script src="./pwa-install.js?v=35"></script>
 </body>
 </html>
