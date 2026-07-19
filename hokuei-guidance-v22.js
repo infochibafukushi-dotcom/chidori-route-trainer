@@ -1124,6 +1124,8 @@
     turnNoticeMeters: TURN_NOTICE_METERS,
     mapZoom: MAP_ZOOM,
     streetViewStops: () => window.HOKUEI_STREETVIEW_STOPS || null,
+    /** 他路線へ切替時に北栄線の animation loop を確実に止める */
+    cleanup: () => { cleanup?.(); },
   };
 
   setTimeout(() => {

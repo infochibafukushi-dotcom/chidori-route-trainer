@@ -1,5 +1,7 @@
 (() => {
-  const POLICY_VERSION = '2026-07-19-imagawa-path-v3o';
+  // imagawa-route-v1.js の PATH_POLICY_VERSION と一致させること。
+  // 不一致だと毎ロードで 2-urayasu-maihama の確定 path が消える。
+  const POLICY_VERSION = '2026-07-19-imagawa-path-v3r';
   const ROUTE_ID = 'route-2';
   const OSM_RELATION_PATHS = ['/route/18323695', '/route/9964872'];
   const nativeFetch = window.fetch.bind(window);
@@ -45,17 +47,22 @@
     system.coordinateStats = null;
   }
 
+  function usesOsmRelationPath(system) {
+    return String(system?.pathSource || '').includes('OpenStreetMap relation');
+  }
+
   function invalidateOldPaths() {
     if (typeof data === 'undefined' || !Array.isArray(data?.routes)) return;
     const route = data.routes.find((item) => item.id === ROUTE_ID);
     if (!route?.systems) return;
     let changed = route.imagawaPathPolicyVersion !== POLICY_VERSION;
 
-    // 2-urayasu-maihama の保存済み誤 path / shared-direction 座標を無効化
-    // （2-maihama・北栄線・画像・他系統は触らない）
+    // 旧OSM LineString由来の誤 path だけ無効化。
+    // Google Directions で確定済みの path（2-maihama / 2-urayasu-maihama）は消さない。
+    // バージョン文字列の同期だけのために clearSystemPath しない。
     if (route.imagawaPathPolicyVersion !== POLICY_VERSION) {
       const urayasu = route.systems['2-urayasu-maihama'];
-      if (urayasu) {
+      if (urayasu && usesOsmRelationPath(urayasu)) {
         clearSystemPath(urayasu);
         (urayasu.stops || []).forEach((stop) => {
           if (
@@ -79,8 +86,7 @@
     Object.values(route.systems).forEach((system) => {
       if (system?.key === '2-maihama' || system?.code === '2-maihama') return;
       if (system?.key === '2-urayasu-maihama' || system?.code === '2-urayasu-maihama') return;
-      const usesOsmPath = String(system?.pathSource || '').includes('OpenStreetMap relation');
-      if (!usesOsmPath) return;
+      if (!usesOsmRelationPath(system)) return;
       clearSystemPath(system);
       changed = true;
     });

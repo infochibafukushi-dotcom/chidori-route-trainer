@@ -1,6 +1,6 @@
 (() => {
   const ROUTE_ID = 'route-2';
-  const VERSION = '2026-07-19-imagawa-v1r';
+  const VERSION = '2026-07-19-imagawa-v1s';
   const PATH_POLICY_VERSION = '2026-07-19-imagawa-path-v3r';
   const SYSTEM_KEY = 'chidori-imagawa-system-v1';
   const OSM_API_BASE = 'https://openstreetmap.tools/public_transport_geojson/api/route/';
@@ -10,6 +10,9 @@
   const SPEED_KMH = 20;
   const DWELL_MS = 3000;
   const MAP_ZOOM = 18;
+  /** Street View / map pan 更新間隔。毎フレーム setPosition すると SV が固まるため北栄線と同様に間引く */
+  const DRIVE_VISUAL_MS = 900;
+  const HEADING_MIN_METERS = 5;
   const MAX_STOPS_PER_REQUEST = 8;
   const MAX_DATA_URL_CHARS = 70000;
 
@@ -209,6 +212,8 @@
 
   /** Per-system resolvedVersion (do not wipe finalized systems via global VERSION alone). */
   const SYSTEM_RESOLVED_VERSIONS = {
+    '2-maihama': '2026-07-19-imagawa-v1f',
+    '2-urayasu-maihama': '2026-07-19-imagawa-v1o',
     '2-kitaguchi': '2026-07-19-imagawa-kitaguchi-v1',
     '2-chidori': '2026-07-19-imagawa-chidori-v1',
     '2-urayasu-chidori': '2026-07-19-imagawa-urayasu-chidori-v1',
@@ -1250,7 +1255,7 @@
     system.pathInvalid = false;
     system.pathIssues = null;
     system.resolvedVersion = FINALIZED_SYSTEMS.has(key)
-      ? (system.resolvedVersion || VERSION)
+      ? (system.resolvedVersion || expectedResolvedVersion(key))
       : expectedResolvedVersion(key);
     system.verifiedAt = new Date().toISOString();
     route.outbound = system.stops;
@@ -1282,8 +1287,10 @@
   }
 
   function positionAtDistance(path, metrics, distance) {
-    if (distance <= 0) return { position: path[0], next: path[1] || path[0] };
-    if (distance >= metrics.total) return { position: path.at(-1), next: path.at(-1) };
+    if (distance <= 0) return { position: path[0], next: path[1] || path[0], pathIndex: 0 };
+    if (distance >= metrics.total) {
+      return { position: path.at(-1), next: path.at(-1), pathIndex: Math.max(0, path.length - 1) };
+    }
     let index = 1;
     while (index < metrics.cumulative.length && metrics.cumulative[index] < distance) index += 1;
     const startDistance = metrics.cumulative[index - 1];
@@ -1294,7 +1301,35 @@
     return {
       position: { lat: start.lat + (end.lat - start.lat) * ratio, lng: start.lng + (end.lng - start.lng) * ratio },
       next: end,
+      pathIndex: index - 1,
     };
+  }
+
+  function drivingHeading(path, point) {
+    const origin = point?.position;
+    if (!origin || !Number.isFinite(origin.lat) || !Number.isFinite(origin.lng)) return 0;
+    const startIndex = Math.max(0, Number(point.pathIndex) || 0);
+    for (let index = startIndex + 1; index < path.length; index += 1) {
+      const candidate = path[index];
+      if (!candidate) continue;
+      if (distanceMeters(origin, candidate) >= HEADING_MIN_METERS) {
+        return heading(origin, candidate);
+      }
+    }
+    if (point.next && Number.isFinite(point.next.lat) && Number.isFinite(point.next.lng)) {
+      return heading(origin, point.next);
+    }
+    return 0;
+  }
+
+  function normalizeDrivePath(rawPath) {
+    return (rawPath || [])
+      .map((point) => {
+        const lat = Number(point?.lat ?? point?.latitude);
+        const lng = Number(point?.lng ?? point?.longitude);
+        return { lat, lng };
+      })
+      .filter((point) => Number.isFinite(point.lat) && Number.isFinite(point.lng));
   }
 
   function pointSegmentDistance(point, a, b) {
@@ -1391,21 +1426,34 @@
       throw new Error('systemKey=' + definition.key + ' | path/coords incomplete | missing coords: ' + (missing.join(', ') || '(none)') + ' | path points=' + (active.path && active.path.length || 0));
     }
     const googleApi = await loadMaps();
+    if (token !== renderToken || page !== 'routes' || routeState.routeId !== ROUTE_ID) return;
     const stops = active.stops;
-    const path = active.path;
+    const path = normalizeDrivePath(active.path);
+    if (path.length < 2) {
+      throw new Error('systemKey=' + definition.key + ' | path coordinates invalid after normalize | raw points=' + (active.path && active.path.length || 0));
+    }
     system = active;
     const metrics = buildMetrics(path);
+    if (!(metrics.total > 0) || !Number.isFinite(metrics.total)) {
+      throw new Error('systemKey=' + definition.key + ' | path metrics invalid | total=' + metrics.total + ' | points=' + path.length);
+    }
     const stopDistances = mapStopsToRoute(stops, path, metrics);
     const center = { lat: stops[0].lat, lng: stops[0].lng };
-    const map = new googleApi.maps.Map(document.getElementById('routeMap'), {
+    const mapEl = document.getElementById('routeMap');
+    const streetEl = document.getElementById('street');
+    if (!mapEl || !streetEl) {
+      throw new Error('systemKey=' + definition.key + ' | map/street DOM missing');
+    }
+    const map = new googleApi.maps.Map(mapEl, {
       center, zoom: MAP_ZOOM, mapTypeControl: false, scaleControl: true,
       streetViewControl: false, fullscreenControl: true, gestureHandling: 'greedy',
     });
-    const panorama = new googleApi.maps.StreetViewPanorama(document.getElementById('street'), {
+    const panorama = new googleApi.maps.StreetViewPanorama(streetEl, {
       position: center, pov: { heading: heading(stops[0], stops[1] || stops[0]), pitch: 0 }, zoom: 1,
       motionTracking: false, addressControl: false,
     });
-    const street = document.getElementById('street');
+    map.setStreetView(panorama);
+    const street = streetEl;
     street.style.position = 'relative';
     const telop = document.createElement('div');
     telop.className = 'station-name-telop guidance-station-v22';
@@ -1436,37 +1484,147 @@
     const startPause = document.getElementById('driveStartPause');
     const previousButton = document.getElementById('drivePrevious');
     const nextButton = document.getElementById('driveNext');
-    let traveled = 0;
-    let currentStopIndex = 0;
-    let nextStopIndex = 1;
-    let running = false;
-    let frame = 0;
-    let lastTime = null;
-    let dwellUntil = 0;
-    let requestToken = 0;
+    if (!progress || !startPause || !previousButton || !nextButton) {
+      throw new Error('systemKey=' + definition.key + ' | drive controls missing after render');
+    }
+
+    const simulation = {
+      routeId: ROUTE_ID,
+      systemKey: definition.key,
+      running: false,
+      paused: false,
+      path,
+      pathIndex: 0,
+      segmentProgress: 0,
+      lastTimestamp: null,
+      animationFrameId: 0,
+      selectedStopIndex: 0,
+      lastPassedStopIndex: 0,
+      traveled: 0,
+      nextStopIndex: 1,
+      dwellUntil: 0,
+      pausedDwellRemaining: 0,
+      manualHold: true,
+      lastDrivingVisualUpdate: 0,
+      currentPosition: center,
+      currentHeading: heading(stops[0], stops[1] || stops[0]),
+      finalStopPending: false,
+      requestToken: 0,
+    };
 
     const highlight = (index) => {
       sequence.querySelectorAll('[data-imagawa-stop]').forEach((button) => button.classList.toggle('active', Number(button.dataset.imagawaStop) === index));
       sequence.querySelector(`[data-imagawa-stop="${index}"]`)?.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
     };
 
-    const updateButtons = () => {
-      previousButton.disabled = currentStopIndex <= 0;
-      nextButton.disabled = currentStopIndex >= stops.length - 1;
-      const labelNode = startPause.querySelector('.bus-label-full');
-      const shortNode = startPause.querySelector('.bus-label-short');
-      const text = running ? '一時停止' : 'スタート';
-      if (labelNode) labelNode.textContent = text;
-      if (shortNode) shortNode.textContent = text;
+    const isAtStopDistance = (index) => Math.abs(simulation.traveled - (stopDistances[index] || 0)) <= 2.5;
+
+    const isAtRegisteredStop = () => {
+      if (simulation.selectedStopIndex !== simulation.lastPassedStopIndex) return false;
+      if (isAtStopDistance(simulation.selectedStopIndex)) return true;
+      return simulation.manualHold
+        && simulation.nextStopIndex >= stops.length
+        && simulation.selectedStopIndex === stops.length - 1;
     };
 
-    const setStreetAtStop = async (index) => {
+    const getNavTargets = () => {
+      if (!stops.length) return { previousTargetIndex: -1, nextTargetIndex: -1 };
+      if (isAtRegisteredStop()) {
+        return {
+          previousTargetIndex: simulation.selectedStopIndex - 1,
+          nextTargetIndex: simulation.selectedStopIndex + 1,
+        };
+      }
+      return {
+        previousTargetIndex: simulation.lastPassedStopIndex,
+        nextTargetIndex: simulation.lastPassedStopIndex + 1,
+      };
+    };
+
+    const publishDebugState = () => {
+      window.IMAGAWA_DRIVE_STATE = {
+        ...simulation,
+        pathLength: path.length,
+        metricsTotal: metrics.total,
+        stopCount: stops.length,
+        panoramaReady: Boolean(panorama),
+        markerReady: Boolean(vehicle),
+      };
+    };
+
+    const updateButtons = () => {
+      const { previousTargetIndex, nextTargetIndex } = getNavTargets();
+      previousButton.disabled = previousTargetIndex < 0;
+      nextButton.disabled = nextTargetIndex < 0 || nextTargetIndex >= stops.length;
+      const labelNode = startPause.querySelector('.bus-label-full');
+      const shortNode = startPause.querySelector('.bus-label-short');
+      const text = simulation.running ? '一時停止' : 'スタート';
+      if (labelNode) labelNode.textContent = text;
+      if (shortNode) shortNode.textContent = text;
+      startPause.classList.toggle('primary', !simulation.running);
+      startPause.classList.toggle('secondary', simulation.running);
+      publishDebugState();
+    };
+
+    const updateProgressText = (now = performance.now()) => {
+      const lastPassedName = stops[simulation.lastPassedStopIndex]?.name || 'なし';
+      const nextTarget = stops[simulation.lastPassedStopIndex + 1];
+      const nextStopName = nextTarget?.name || '終点';
+      const betweenStops = !isAtRegisteredStop() && simulation.traveled > (stopDistances[simulation.lastPassedStopIndex] || 0);
+      const currentLabel = betweenStops
+        ? `${lastPassedName}〜${nextStopName}`
+        : (stops[simulation.selectedStopIndex]?.name || '走行中');
+      const dwellLabel = simulation.dwellUntil && now < simulation.dwellUntil ? '｜停車中' : '';
+      progress.textContent = `${simulation.running ? '走行中' : '停止中'}${dwellLabel}｜通過：${lastPassedName}｜現在：${currentLabel}｜次：${nextStopName}`;
+      updateButtons();
+    };
+
+    const applyStreetView = (position, headingDeg, force = false) => {
+      if (!position || !Number.isFinite(position.lat) || !Number.isFinite(position.lng)) return false;
+      const headingValue = Number.isFinite(headingDeg) ? headingDeg : simulation.currentHeading;
+      try {
+        panorama.setPosition(position);
+        panorama.setPov({ heading: headingValue, pitch: 0 });
+        simulation.currentPosition = position;
+        simulation.currentHeading = headingValue;
+        if (force) simulation.lastDrivingVisualUpdate = performance.now();
+        return true;
+      } catch (error) {
+        console.warn('[imagawa] panorama update failed', error);
+        return false;
+      }
+    };
+
+    const updateDrivingVisual = (now, force = false) => {
+      if (simulation.manualHold || simulation.dwellUntil) return;
+      const point = positionAtDistance(path, metrics, simulation.traveled);
+      if (!point?.position || !Number.isFinite(point.position.lat) || !Number.isFinite(point.position.lng)) {
+        status.dataset.state = 'error';
+        status.textContent = `走行位置が不正です（systemKey=${definition.key}）。`;
+        console.error('[imagawa] invalid drive position', point, simulation);
+        return;
+      }
+      simulation.pathIndex = point.pathIndex;
+      simulation.currentPosition = point.position;
+      simulation.currentHeading = drivingHeading(path, point);
+      vehicle.setPosition(point.position);
+      if (force || now - simulation.lastDrivingVisualUpdate >= DRIVE_VISUAL_MS) {
+        map.setCenter(point.position);
+        map.setZoom(MAP_ZOOM);
+        applyStreetView(point.position, simulation.currentHeading, true);
+      }
+    };
+
+    const setStreetAtStop = (index) => {
       const stop = stops[index];
-      const tokenNow = ++requestToken;
-      panorama.setPosition({ lat: stop.lat, lng: stop.lng });
-      panorama.setPov({ heading: heading(stop, stops[index + 1] || stops[index - 1] || stop), pitch: 0 });
-      await new Promise((resolve) => setTimeout(resolve, 200));
-      if (tokenNow !== requestToken) return;
+      if (!stop) return;
+      const tokenNow = ++simulation.requestToken;
+      const next = stops[index + 1] || stops[index - 1] || stop;
+      applyStreetView({ lat: stop.lat, lng: stop.lng }, heading(stop, next), true);
+      // 非同期待ちはトークンで無効化（旧クロージャの setPosition を防ぐ）
+      setTimeout(() => {
+        if (tokenNow !== simulation.requestToken) return;
+      }, 200);
     };
 
     const showTelop = (index, text = '停車中') => {
@@ -1476,100 +1634,243 @@
 
     const selectStop = (index, autoContinue = false) => {
       if (index < 0 || index >= stops.length) return;
-      currentStopIndex = index;
-      nextStopIndex = index + 1;
-      traveled = stopDistances[index];
-      vehicle.setPosition({ lat: stops[index].lat, lng: stops[index].lng });
-      map.setCenter({ lat: stops[index].lat, lng: stops[index].lng });
+      simulation.selectedStopIndex = index;
+      simulation.lastPassedStopIndex = index;
+      simulation.nextStopIndex = index + 1;
+      simulation.traveled = stopDistances[index];
+      simulation.lastTimestamp = null;
+      simulation.dwellUntil = 0;
+      simulation.pausedDwellRemaining = 0;
+      simulation.manualHold = true;
+      simulation.finalStopPending = autoContinue && index === stops.length - 1;
+      const exact = { lat: stops[index].lat, lng: stops[index].lng };
+      simulation.currentPosition = exact;
+      simulation.currentHeading = heading(stops[index], stops[index + 1] || stops[index - 1] || stops[index]);
+      vehicle.setPosition(exact);
+      map.setCenter(exact);
       map.setZoom(MAP_ZOOM);
       highlight(index);
       showTelop(index, autoContinue ? '停車中 あと3秒' : '選択中');
       setStreetAtStop(index);
       const usedImage = showStopImage(route, definition, stops[index], street);
-      if (autoContinue && running) {
-        dwellUntil = performance.now() + DWELL_MS;
+      if (autoContinue && simulation.running) {
+        simulation.dwellUntil = performance.now() + DWELL_MS;
         status.textContent = `${displayStopName(stops[index])}に到着｜${usedImage ? '停留所画像を表示' : 'Street Viewを表示'}｜3秒停車`;
       } else {
-        dwellUntil = 0;
+        simulation.dwellUntil = 0;
         status.textContent = `${index + 1}. ${displayStopName(stops[index])}｜登録座標 ${stops[index].lat.toFixed(6)}, ${stops[index].lng.toFixed(6)}`;
       }
-      progress.textContent = `${running ? '走行中' : '停止中'}｜現在：${stops[index].name}｜次：${stops[index + 1]?.name || '終点'}`;
-      updateButtons();
+      updateProgressText();
+    };
+
+    const completeRun = () => {
+      simulation.running = false;
+      simulation.paused = false;
+      simulation.dwellUntil = 0;
+      simulation.pausedDwellRemaining = 0;
+      simulation.finalStopPending = false;
+      simulation.lastTimestamp = null;
+      simulation.manualHold = true;
+      simulation.lastPassedStopIndex = stops.length - 1;
+      simulation.selectedStopIndex = stops.length - 1;
+      simulation.nextStopIndex = stops.length;
+      simulation.traveled = metrics.total;
+      hideStopImage(street);
+      telop.classList.remove('show');
+      updateProgressText();
+      status.textContent = `終点 ${stops.at(-1).name} に到着しました。`;
+      publishDebugState();
     };
 
     const tick = (now) => {
-      if (!running) return;
-      if (dwellUntil) {
-        if (now < dwellUntil) {
-          const seconds = Math.max(1, Math.ceil((dwellUntil - now) / 1000));
-          showTelop(currentStopIndex, `停車中 あと${seconds}秒`);
-          frame = requestAnimationFrame(tick);
+      if (!simulation.running) return;
+      if (simulation.dwellUntil) {
+        if (now < simulation.dwellUntil) {
+          const seconds = Math.max(1, Math.ceil((simulation.dwellUntil - now) / 1000));
+          showTelop(simulation.selectedStopIndex, `停車中 あと${seconds}秒`);
+          updateProgressText(now);
+          simulation.animationFrameId = requestAnimationFrame(tick);
           return;
         }
-        dwellUntil = 0;
+        simulation.dwellUntil = 0;
         hideStopImage(street);
         telop.classList.remove('show');
-        if (currentStopIndex >= stops.length - 1) {
-          running = false;
-          progress.textContent = `停止中｜終点：${stops.at(-1).name}`;
-          status.textContent = `終点 ${stops.at(-1).name} に到着しました。`;
-          updateButtons();
+        simulation.manualHold = false;
+        simulation.lastTimestamp = now;
+        if (simulation.finalStopPending || simulation.selectedStopIndex >= stops.length - 1) {
+          completeRun();
           return;
         }
       }
-      if (lastTime === null) lastTime = now;
-      const delta = Math.min(0.1, Math.max(0, (now - lastTime) / 1000));
-      lastTime = now;
-      traveled = Math.min(metrics.total, traveled + (SPEED_KMH * 1000 / 3600) * delta);
-      if (nextStopIndex < stops.length && traveled >= stopDistances[nextStopIndex]) {
-        selectStop(nextStopIndex, true);
-        lastTime = null;
-        frame = requestAnimationFrame(tick);
+      if (simulation.lastTimestamp === null) simulation.lastTimestamp = now;
+      const delta = Math.min(0.1, Math.max(0, (now - simulation.lastTimestamp) / 1000));
+      simulation.lastTimestamp = now;
+      const speedMps = (SPEED_KMH * 1000) / 3600;
+      if (!Number.isFinite(speedMps) || speedMps <= 0) {
+        status.dataset.state = 'error';
+        status.textContent = '走行速度が不正です。';
+        simulation.running = false;
+        updateButtons();
         return;
       }
-      const point = positionAtDistance(path, metrics, traveled);
-      vehicle.setPosition(point.position);
-      map.setCenter(point.position);
-      panorama.setPosition(point.position);
-      panorama.setPov({ heading: heading(point.position, point.next), pitch: 0 });
-      progress.textContent = `走行中｜通過：${stops[currentStopIndex].name}｜次：${stops[nextStopIndex]?.name || '終点'}`;
-      frame = requestAnimationFrame(tick);
+      simulation.traveled = Math.min(metrics.total, simulation.traveled + speedMps * delta);
+      simulation.nextStopIndex = simulation.lastPassedStopIndex + 1;
+      const target = stopDistances[simulation.nextStopIndex];
+      if (Number.isFinite(target) && simulation.traveled >= target - 0.5) {
+        selectStop(simulation.nextStopIndex, true);
+        simulation.animationFrameId = requestAnimationFrame(tick);
+        return;
+      }
+      updateDrivingVisual(now);
+      updateProgressText(now);
+      if (simulation.traveled >= metrics.total && simulation.nextStopIndex >= stops.length) {
+        completeRun();
+        return;
+      }
+      simulation.animationFrameId = requestAnimationFrame(tick);
     };
 
-    const pause = () => {
-      running = false;
-      cancelAnimationFrame(frame);
-      lastTime = null;
-      status.textContent = '走行を一時停止しました。';
+    const pauseDriving = () => {
+      if (!simulation.running && simulation.pausedDwellRemaining <= 0 && !simulation.dwellUntil) {
+        updateProgressText();
+        return;
+      }
+      simulation.running = false;
+      simulation.paused = true;
+      cancelAnimationFrame(simulation.animationFrameId);
+      simulation.animationFrameId = 0;
+      simulation.lastTimestamp = null;
+      if (simulation.dwellUntil) {
+        simulation.pausedDwellRemaining = Math.max(0, simulation.dwellUntil - performance.now());
+        simulation.dwellUntil = 0;
+      } else {
+        simulation.pausedDwellRemaining = 0;
+      }
+      simulation.finalStopPending = false;
+      simulation.manualHold = true;
+      updateProgressText();
+      status.textContent = simulation.pausedDwellRemaining > 0
+        ? `一時停止｜停車残り約${Math.ceil(simulation.pausedDwellRemaining / 1000)}秒`
+        : '走行を一時停止しました。';
+      publishDebugState();
+    };
+
+    const failStart = (reason) => {
+      simulation.running = false;
+      status.dataset.state = 'error';
+      status.textContent = `走行を開始できません：${reason}`;
+      console.error('[imagawa] drive start failed', reason, {
+        systemKey: definition.key,
+        pathLength: path.length,
+        metricsTotal: metrics.total,
+        panorama: Boolean(panorama),
+      });
       updateButtons();
     };
 
-    const start = () => {
-      if (running) return;
-      if (currentStopIndex >= stops.length - 1) selectStop(0, false);
+    const startDriving = () => {
+      if (simulation.running) return;
+      if (!path.length) return failStart('pathが空です');
+      if (!(metrics.total > 0)) return failStart('path距離が不正です');
+      if (!panorama) return failStart('panorama未初期化');
+
+      if (simulation.pausedDwellRemaining > 0) {
+        simulation.running = true;
+        simulation.paused = false;
+        simulation.dwellUntil = performance.now() + simulation.pausedDwellRemaining;
+        simulation.pausedDwellRemaining = 0;
+        simulation.lastTimestamp = null;
+        cancelAnimationFrame(simulation.animationFrameId);
+        simulation.animationFrameId = requestAnimationFrame(tick);
+        status.textContent = '停車カウントを再開しました。';
+        updateProgressText();
+        return;
+      }
+
+      if (simulation.lastPassedStopIndex >= stops.length - 1 && isAtRegisteredStop()) {
+        selectStop(0, false);
+      }
+
+      const lastDist = stopDistances[simulation.lastPassedStopIndex] || 0;
+      if (simulation.traveled > lastDist + 1) {
+        hideStopImage(street);
+        telop.classList.remove('show');
+        simulation.running = true;
+        simulation.paused = false;
+        simulation.manualHold = false;
+        simulation.lastTimestamp = null;
+        simulation.nextStopIndex = simulation.lastPassedStopIndex + 1;
+        cancelAnimationFrame(simulation.animationFrameId);
+        updateDrivingVisual(performance.now(), true);
+        simulation.animationFrameId = requestAnimationFrame(tick);
+        status.textContent = '走行を再開しました。';
+        updateProgressText();
+        return;
+      }
+
       hideStopImage(street);
       telop.classList.remove('show');
-      running = true;
-      dwellUntil = 0;
-      lastTime = null;
-      status.textContent = `${stops[currentStopIndex].name}から走行を開始しました。`;
-      updateButtons();
-      frame = requestAnimationFrame(tick);
+      simulation.running = true;
+      simulation.paused = false;
+      simulation.manualHold = false;
+      simulation.dwellUntil = 0;
+      simulation.lastTimestamp = null;
+      cancelAnimationFrame(simulation.animationFrameId);
+      updateDrivingVisual(performance.now(), true);
+      simulation.animationFrameId = requestAnimationFrame(tick);
+      if (!simulation.animationFrameId) return failStart('animation loop開始失敗');
+      status.textContent = `${stops[simulation.selectedStopIndex].name}から走行を開始しました。`;
+      updateProgressText();
+      publishDebugState();
     };
 
-    startPause.onclick = () => { if (running) pause(); else start(); };
-    previousButton.onclick = () => { pause(); selectStop(currentStopIndex - 1, false); };
-    nextButton.onclick = () => { pause(); selectStop(currentStopIndex + 1, false); };
-    document.getElementById('driveReset').onclick = () => { pause(); selectStop(0, false); status.textContent = `S地点（${stops[0].name}）へ戻しました。`; };
-    sequence.querySelectorAll('[data-imagawa-stop]').forEach((button) => { button.onclick = () => { pause(); selectStop(Number(button.dataset.imagawaStop), false); }; });
-    markers.forEach((marker, index) => marker.addListener('click', () => { pause(); selectStop(index, false); }));
+    startPause.onclick = () => { if (simulation.running) pauseDriving(); else startDriving(); };
+    previousButton.onclick = () => {
+      if (simulation.running) pauseDriving();
+      const { previousTargetIndex: target } = getNavTargets();
+      if (target < 0 || target >= stops.length) return;
+      simulation.running = false;
+      cancelAnimationFrame(simulation.animationFrameId);
+      simulation.pausedDwellRemaining = 0;
+      simulation.dwellUntil = 0;
+      selectStop(target, false);
+    };
+    nextButton.onclick = () => {
+      if (simulation.running) pauseDriving();
+      const { nextTargetIndex: target } = getNavTargets();
+      if (target < 0 || target >= stops.length) return;
+      simulation.running = false;
+      cancelAnimationFrame(simulation.animationFrameId);
+      simulation.pausedDwellRemaining = 0;
+      simulation.dwellUntil = 0;
+      selectStop(target, false);
+    };
+    document.getElementById('driveReset').onclick = () => {
+      pauseDriving();
+      selectStop(0, false);
+      status.textContent = `S地点（${stops[0].name}）へ戻しました。`;
+    };
+    sequence.querySelectorAll('[data-imagawa-stop]').forEach((button) => {
+      button.onclick = () => {
+        pauseDriving();
+        selectStop(Number(button.dataset.imagawaStop), false);
+      };
+    });
+    markers.forEach((marker, index) => marker.addListener('click', () => {
+      pauseDriving();
+      selectStop(index, false);
+    }));
 
     selectStop(0, false);
-    status.textContent = `今川線｜系統2｜${definition.title}｜${stops.length}停留所｜${system.pathSource}`;
+    status.dataset.state = '';
+    status.textContent = `今川線｜系統2｜${definition.title}｜${stops.length}停留所｜path ${path.length}点｜${system.pathSource}`;
+    publishDebugState();
     cleanupGuidance = () => {
-      running = false;
-      cancelAnimationFrame(frame);
-      requestToken += 1;
+      simulation.running = false;
+      simulation.paused = false;
+      cancelAnimationFrame(simulation.animationFrameId);
+      simulation.animationFrameId = 0;
+      simulation.requestToken += 1;
       markers.forEach((marker) => marker.setMap(null));
       line.setMap(null);
       vehicle.setMap(null);
@@ -1577,6 +1878,9 @@
       sequence.remove();
       telop.remove();
       hideStopImage(street);
+      if (window.IMAGAWA_DRIVE_STATE?.systemKey === definition.key) {
+        window.IMAGAWA_DRIVE_STATE = null;
+      }
     };
   }
 
@@ -1592,6 +1896,10 @@
       cleanupGuidance?.();
       previousRoutes();
       return;
+    }
+    // 北栄線から切替時に旧 animation loop が残らないよう明示停止
+    try { window.HOKUEI_GUIDANCE_V22?.cleanup?.(); } catch (error) {
+      console.warn('[imagawa] hokuei cleanup failed', error);
     }
     editorRouteId = ROUTE_ID;
     routeState.direction = 'outbound';
