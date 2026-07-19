@@ -124,9 +124,9 @@
     '入船東団地#2': { lat: 35.65000, lng: 139.91725, heading: 220, pitch: 0, zoom: 1 },
 
     // 系統1 / 1-3 追加停留所（本番に無い場合も設定を保持）
-    '東京ベイ医療センター入口#1': { lat: 35.67064, lng: 139.89190, heading: 40, pitch: 0, zoom: 1 },
-    '東京ベイ医療センター#1': { lat: 35.67135, lng: 139.89255, heading: 120, pitch: 0, zoom: 1 },
-    '浦安駅入口#1': { lat: 35.66522, lng: 139.89072, heading: 220, pitch: 0, zoom: 1 },
+    '東京ベイ医療センター入口#1': { lat: 35.67104, lng: 139.89465, heading: 300, pitch: 0, zoom: 1 },
+    '東京ベイ医療センター#1': { lat: 35.67174, lng: 139.89323, heading: 200, pitch: 0, zoom: 1 },
+    '浦安駅入口#1': { lat: 35.66483, lng: 139.89412, heading: 200, pitch: 0, zoom: 1 },
   };
 
   function occurrenceKey(stops, index) {
