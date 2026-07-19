@@ -58,7 +58,7 @@
     let changed = route.imagawaPathPolicyVersion !== POLICY_VERSION;
 
     // 旧OSM LineString由来の誤 path だけ無効化。
-    // Google Directions で確定済みの path（2-maihama / 2-urayasu-maihama）は消さない。
+    // Google Directions / authoritative-approved で確定済みの path は消さない。
     // バージョン文字列の同期だけのために clearSystemPath しない。
     if (route.imagawaPathPolicyVersion !== POLICY_VERSION) {
       const urayasu = route.systems['2-urayasu-maihama'];

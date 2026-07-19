@@ -1,8 +1,8 @@
-const CACHE_NAME = 'chidori-route-map-v53';
+const CACHE_NAME = 'chidori-route-map-v54';
 const APP_SHELL = [
   './',
   './index.html',
-  './manifest.webmanifest?v=53',
+  './manifest.webmanifest?v=54',
   './app-icon.svg',
   './styles.css?v=32',
   './hokuei-route.css?v=33',
@@ -21,14 +21,15 @@ const APP_SHELL = [
   './hokuei-authoritative-v12.js?v=33',
   './hokuei-manual-override-v13.js?v=33',
   './hokuei-shared-coordinates-v15.js?v=32',
-  './hokuei-no-uturn-v17.js?v=53',
-  './imagawa-directions-compat-v2.js?v=53',
+  './hokuei-no-uturn-v17.js?v=54',
+  './imagawa-directions-compat-v2.js?v=54',
   './hokuei-streetview-stops-v26.js?v=32',
-  './hokuei-guidance-v22.js?v=53',
+  './hokuei-guidance-v22.js?v=54',
   './hokuei-stop-images-v25.js?v=32',
-  './imagawa-route-v1.js?v=53',
-  './imagawa-path-policy-v3.js?v=53',
-  './pwa-install.js?v=53'
+  './imagawa-urayasu-maihama-path-v1o.js?v=54',
+  './imagawa-route-v1.js?v=54',
+  './imagawa-path-policy-v3.js?v=54',
+  './pwa-install.js?v=54'
 ];
 
 self.addEventListener('install', (event) => {

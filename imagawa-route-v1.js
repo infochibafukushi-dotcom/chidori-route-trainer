@@ -1,6 +1,6 @@
 (() => {
   const ROUTE_ID = 'route-2';
-  const VERSION = '2026-07-19-imagawa-v1s';
+  const VERSION = '2026-07-19-imagawa-v1t';
   const PATH_POLICY_VERSION = '2026-07-19-imagawa-path-v3r';
   const SYSTEM_KEY = 'chidori-imagawa-system-v1';
   const OSM_API_BASE = 'https://openstreetmap.tools/public_transport_geojson/api/route/';
@@ -219,6 +219,10 @@
     '2-urayasu-chidori': '2026-07-19-imagawa-urayasu-chidori-v1',
   };
   const FINALIZED_SYSTEMS = new Set(['2-maihama', '2-urayasu-maihama']);
+  const URAYASU_MAIHAMA_APPROVED = window.IMAGAWA_URAYASU_MAIHAMA_PATH_V1O || null;
+  const URAYASU_MAIHAMA_PATH_SOURCE = 'authoritative-approved:2-urayasu-maihama:v1o';
+  const URAYASU_MAIHAMA_PATH_HASH = '30c4b61405b13d70a000de8995bb7274bb8b43d4215ebb8cd6aaf7be87d924f4';
+  const URAYASU_MAIHAMA_PATH_POINTS = 79;
 
   const previousRoutes = routes;
   const previousStopEditor = stopEditor;
@@ -483,6 +487,21 @@
     route.officialBusNavi = OFFICIAL_BUS_NAVI;
     route.chibaBusAssociation = CHIBA_BUS_ASSOCIATION;
     if (!route.imagawaStopImages || typeof route.imagawaStopImages !== 'object') route.imagawaStopImages = {};
+
+    // 2-urayasu-maihama: 承認済み79点pathを通常起動で復元（Directionsしない）
+    const urayasu = systems['2-urayasu-maihama'];
+    if (urayasu && URAYASU_MAIHAMA_APPROVED?.path && Array.isArray(urayasu.stops) && urayasu.stops.every(validPosition)) {
+      if (!isValidApprovedUrayasuMaihamaPath(urayasu)) {
+        applyApprovedUrayasuMaihamaPath(route, urayasu);
+        changed = true;
+      } else if (urayasu.pathSource !== URAYASU_MAIHAMA_PATH_SOURCE || urayasu.pathHash !== URAYASU_MAIHAMA_PATH_HASH) {
+        urayasu.pathSource = URAYASU_MAIHAMA_PATH_SOURCE;
+        urayasu.pathHash = URAYASU_MAIHAMA_PATH_HASH;
+        urayasu.resolvedVersion = expectedResolvedVersion('2-urayasu-maihama');
+        changed = true;
+      }
+    }
+
     const selected = systems[getSelectedSystemKey()] || systems['2-maihama'];
     route.outbound = selected.stops;
     route.inbound = [];
@@ -1110,6 +1129,127 @@
     return system;
   }
 
+  function cloneApprovedUrayasuMaihamaPath() {
+    const approved = URAYASU_MAIHAMA_APPROVED;
+    if (!approved?.path || approved.path.length !== URAYASU_MAIHAMA_PATH_POINTS) {
+      throw new Error('2-urayasu-maihama: authoritative approved path v1o is missing or incomplete');
+    }
+    if (approved.pathHash && approved.pathHash !== URAYASU_MAIHAMA_PATH_HASH) {
+      throw new Error('2-urayasu-maihama: authoritative pathHash mismatch');
+    }
+    return approved.path.map((point) => ({ lat: Number(point.lat), lng: Number(point.lng) }));
+  }
+
+  function isValidApprovedUrayasuMaihamaPath(system) {
+    if (!system || system.pathInvalid) return false;
+    if (!Array.isArray(system.path) || system.path.length !== URAYASU_MAIHAMA_PATH_POINTS) return false;
+    if (system.resolvedVersion !== expectedResolvedVersion('2-urayasu-maihama')) return false;
+    if (system.pathHash && system.pathHash !== URAYASU_MAIHAMA_PATH_HASH) return false;
+    if (system.pathSource === URAYASU_MAIHAMA_PATH_SOURCE && system.pathHash === URAYASU_MAIHAMA_PATH_HASH) {
+      return true;
+    }
+    // D1に旧Directions由来の同一79点がある場合も、点一致なら承認済みとして扱う
+    try {
+      const approved = cloneApprovedUrayasuMaihamaPath();
+      for (let index = 0; index < approved.length; index += 1) {
+        if (Number(system.path[index]?.lat) !== approved[index].lat
+          || Number(system.path[index]?.lng) !== approved[index].lng) {
+          return false;
+        }
+      }
+      return true;
+    } catch (error) {
+      return false;
+    }
+  }
+
+  function applyApprovedUrayasuMaihamaPath(route, system, statusCallback = null) {
+    const definition = SYSTEM_DEFINITIONS['2-urayasu-maihama'];
+    const platforms = AUTHORITATIVE_PLATFORMS['2-urayasu-maihama'];
+    const path = cloneApprovedUrayasuMaihamaPath();
+    // 停留所座標は確定platformを維持（変更しない）
+    (system.stops || []).forEach((stop, index) => {
+      const name = definition.names[index];
+      const platform = platforms[name];
+      if (!platform || !stop) return;
+      if (stop.manualOverride && validPosition(stop)) return;
+      stop.lat = platform.lat;
+      stop.lng = platform.lng;
+      stop.source = 'authoritative-platform';
+      stop.sourceName = name;
+      stop.systemCode = '2-urayasu-maihama';
+      stop.directionKey = coordinateKey('2-urayasu-maihama', name);
+      stop.directionGroup = definition.directionGroup;
+      stop.platformId = platform.platformId || stop.platformId || null;
+    });
+    system.path = path;
+    system.pathSource = URAYASU_MAIHAMA_PATH_SOURCE;
+    system.pathHash = URAYASU_MAIHAMA_PATH_HASH;
+    system.positionSource = '系統キー単位の確定platform座標（往復共有なし）';
+    system.resolvedVersion = expectedResolvedVersion('2-urayasu-maihama');
+    system.verifiedAt = new Date().toISOString();
+    system.pathInvalid = false;
+    system.pathIssues = null;
+    system.validation = {
+      valid: true,
+      issues: [],
+      metrics: null,
+      pathHash: URAYASU_MAIHAMA_PATH_HASH,
+      pathPoints: path.length,
+      approved: true,
+      googleDirectionsRequests: 0,
+    };
+    system.coordinateStats = {
+      osmCount: 0,
+      sharedCount: 0,
+      googleCount: 0,
+      fallbackCount: 0,
+      authoritativeCount: (system.stops || []).length,
+    };
+    route.outbound = system.stops;
+    route.inbound = [];
+    route.imagawaPathPolicyVersion = PATH_POLICY_VERSION;
+    save();
+    statusCallback?.(`確定ルート適用｜${system.pathSource}｜path ${path.length} pts`);
+    return system;
+  }
+
+  function resolveUrayasuMaihamaAuthoritative(route, system, definition, options) {
+    const force = Boolean(options && options.force);
+    const statusCallback = options && options.statusCallback;
+    if (!URAYASU_MAIHAMA_APPROVED?.path) {
+      throw new Error('2-urayasu-maihama: IMAGAWA_URAYASU_MAIHAMA_PATH_V1O is not loaded');
+    }
+
+    // 停留所が揃い、承認済み79点pathが既にあれば Directions しない
+    if (
+      !force
+      && system.stops.every(validPosition)
+      && isValidApprovedUrayasuMaihamaPath(system)
+    ) {
+      // メタデータだけ揃える（座標・pathは触らない）
+      if (system.pathSource !== URAYASU_MAIHAMA_PATH_SOURCE || system.pathHash !== URAYASU_MAIHAMA_PATH_HASH) {
+        system.pathSource = URAYASU_MAIHAMA_PATH_SOURCE;
+        system.pathHash = URAYASU_MAIHAMA_PATH_HASH;
+        system.resolvedVersion = expectedResolvedVersion('2-urayasu-maihama');
+        if (!system.validation || typeof system.validation !== 'object') {
+          system.validation = { valid: true, issues: [], pathHash: URAYASU_MAIHAMA_PATH_HASH, approved: true, googleDirectionsRequests: 0 };
+        } else {
+          system.validation.pathHash = URAYASU_MAIHAMA_PATH_HASH;
+          system.validation.approved = true;
+          system.validation.googleDirectionsRequests = 0;
+        }
+        save();
+      }
+      statusCallback?.(`cached|${system.pathSource}|path ${system.path.length} pts`);
+      return system;
+    }
+
+    // path空・破損・hash不一致・明示force → 承認済み79点を再適用（Directions再生成しない）
+    statusCallback?.('2-urayasu-maihama: applying authoritative-approved v1o path…');
+    return applyApprovedUrayasuMaihamaPath(route, system, statusCallback);
+  }
+
   async function resolveSystem(key, { force = false, statusCallback = null } = {}) {
     const route = ensureRoute();
     const definition = SYSTEM_DEFINITIONS[key];
@@ -1117,6 +1257,9 @@
     if (!route || !definition || !system) throw new Error('今川線の系統データがありません。');
     if (key === '2-kitaguchi') {
       return resolveKitaguchiFromMaihama(route, system, definition, { force, statusCallback });
+    }
+    if (key === '2-urayasu-maihama') {
+      return resolveUrayasuMaihamaAuthoritative(route, system, definition, { force, statusCallback });
     }
     const expectedVersion = expectedResolvedVersion(key);
     if (
@@ -2235,12 +2378,16 @@
     SYSTEM_RESOLVED_VERSIONS,
     AUTHORITATIVE_PLATFORMS,
     IMAGAWA_PATH_SHAPING_POINTS,
+    URAYASU_MAIHAMA_PATH_SOURCE,
+    URAYASU_MAIHAMA_PATH_HASH,
     ensureRoute,
     resolveSystem,
     resolveAllSystems,
     validateRoadPath,
     getSelectedSystemKey,
     setSelectedSystemKey,
+    isValidApprovedUrayasuMaihamaPath,
+    applyApprovedUrayasuMaihamaPath,
   };
 
   ensureRoute();
