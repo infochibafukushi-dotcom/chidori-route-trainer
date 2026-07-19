@@ -282,12 +282,14 @@
   }
 
   let hideTimer = 0;
+  let dismissedKey = '';
   const OVERLAY_VISIBLE_MS = 1600;
 
   function refreshRouteImage() {
     const telop = document.querySelector('.station-name-telop.show');
     if (!telop) {
       shownKey = '';
+      dismissedKey = '';
       clearTimeout(hideTimer);
       if (routeOverlay?.isConnected && !routeOverlay.hidden) routeOverlay.hidden = true;
       return;
@@ -295,20 +297,28 @@
     const info = activeStopImage();
     if (!info) {
       shownKey = '';
+      dismissedKey = '';
       clearTimeout(hideTimer);
       if (routeOverlay?.isConnected && !routeOverlay.hidden) routeOverlay.hidden = true;
       return;
     }
     const overlay = ensureOverlay();
     if (!overlay) return;
-    if (shownKey !== info.key || overlay.hidden) {
+
+    // 同じ停留所で一度自動非表示にしたら、テロップ中は再表示しない
+    if (dismissedKey === info.key) {
+      if (!overlay.hidden) overlay.hidden = true;
+      return;
+    }
+
+    if (shownKey !== info.key) {
       overlay.querySelector('img').src = info.dataUrl;
       overlay.hidden = false;
       shownKey = info.key;
       clearTimeout(hideTimer);
-      // Street View優先：短時間サムネ表示のあと自動で隠す
       hideTimer = setTimeout(() => {
         if (overlay.isConnected) overlay.hidden = true;
+        dismissedKey = info.key;
       }, OVERLAY_VISIBLE_MS);
     }
   }
