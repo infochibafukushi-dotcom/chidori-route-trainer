@@ -1,7 +1,7 @@
 (() => {
   const ROUTE_ID = 'route-2';
-  const VERSION = '2026-07-19-imagawa-v1e';
-  const PATH_POLICY_VERSION = '2026-07-19-imagawa-path-v3e';
+  const VERSION = '2026-07-19-imagawa-v1f';
+  const PATH_POLICY_VERSION = '2026-07-19-imagawa-path-v3f';
   const SYSTEM_KEY = 'chidori-imagawa-system-v1';
   const OSM_API_BASE = 'https://openstreetmap.tools/public_transport_geojson/api/route/';
   const OFFICIAL_ROUTE_MAP = 'https://www.keiseibus.co.jp/wp-content/uploads/2026/02/routemap-chidori.pdf';
@@ -493,11 +493,6 @@
       : path.length;
     for (let index = 1; index < reverseLimitIndex; index += 1) {
       const step = distanceMeters(path[index - 1], path[index]);
-      // overview_path は数百m飛びが普通なので、極端な飛躍のみ検出
-      if (step >= 520) {
-        issues.push({ type: 'diagonal-cut', message: `斜め接続疑い（連続点間 ${Math.round(step)}m）` });
-        break;
-      }
       if (step < 8) continue;
       const currentHeading = heading(path[index - 1], path[index]);
       if (previousHeading !== null && angleDiff(previousHeading, currentHeading) >= 150) {
@@ -510,6 +505,39 @@
         reverseRun = 0;
       }
       previousHeading = currentHeading;
+    }
+
+    // 停留所同士を道路無視で直線結んだ疑い（overview_path の点間隔は検出しない）
+    for (let index = 0; index < stops.length - 1 && issues.length === 0; index += 1) {
+      const start = stops[index];
+      const end = stops[index + 1];
+      const direct = distanceMeters(start, end);
+      if (direct < 350) continue;
+      let bestStart = 0;
+      let bestEnd = path.length - 1;
+      let bestStartDistance = Infinity;
+      let bestEndDistance = Infinity;
+      path.forEach((point, pathIndex) => {
+        const toStart = distanceMeters(point, start);
+        const toEnd = distanceMeters(point, end);
+        if (toStart < bestStartDistance) {
+          bestStartDistance = toStart;
+          bestStart = pathIndex;
+        }
+        if (toEnd < bestEndDistance) {
+          bestEndDistance = toEnd;
+          bestEnd = pathIndex;
+        }
+      });
+      if (bestEnd <= bestStart) continue;
+      const segment = path.slice(bestStart, bestEnd + 1);
+      const along = pathLength(segment);
+      if (along > 0 && direct / along > 0.93 && segment.length <= 4) {
+        issues.push({
+          type: 'diagonal-cut',
+          message: `${start.name}→${end.name} が道路を無視した斜め接続に見える`,
+        });
+      }
     }
 
     // 舞浜駅前の正規ターミナル進入を誤検知しないよう、末尾区間は周回検出から除外
@@ -556,7 +584,6 @@
         if (along > Math.max(1600, direct * 4.5)) {
           issues.push({ type: 'detour', message: `17→18 が極端に長い（約${Math.round(along)}m）` });
         }
-        // 16→17 で 16 方向へ戻っていないか
         const mid1716 = path.slice(i16, i17 + 1);
         let backToward16 = 0;
         for (let index = 1; index < mid1716.length; index += 1) {
