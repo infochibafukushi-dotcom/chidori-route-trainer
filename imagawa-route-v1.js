@@ -1,7 +1,7 @@
 (() => {
   const ROUTE_ID = 'route-2';
-  const VERSION = '2026-07-19-imagawa-v1p';
-  const PATH_POLICY_VERSION = '2026-07-19-imagawa-path-v3p';
+  const VERSION = '2026-07-19-imagawa-v1q';
+  const PATH_POLICY_VERSION = '2026-07-19-imagawa-path-v3q';
   const SYSTEM_KEY = 'chidori-imagawa-system-v1';
   const OSM_API_BASE = 'https://openstreetmap.tools/public_transport_geojson/api/route/';
   const OFFICIAL_ROUTE_MAP = 'https://www.keiseibus.co.jp/wp-content/uploads/2026/02/routemap-chidori.pdf';
@@ -382,6 +382,7 @@
         if (FINALIZED_SYSTEMS.has(definition.key) || definition.key === '2-kitaguchi') {
           const platforms = AUTHORITATIVE_PLATFORMS[definition.key];
           let stopChanged = false;
+          let coordsChanged = false;
           (systems[definition.key].stops || []).forEach((stop, index) => {
             const name = definition.names[index];
             const platform = platforms[name];
@@ -394,7 +395,9 @@
               || Math.abs(stop.lat - platform.lat) > 0.0000005
               || Math.abs(stop.lng - platform.lng) > 0.0000005;
             if (stop.manualOverride && validPosition(stop) && !sharedBad) return;
-            if (!drifted && !sharedBad && stop.source === 'authoritative-platform') return;
+            if (!drifted && !sharedBad && stop.source === 'authoritative-platform'
+              && stop.directionKey === coordinateKey(definition.key, name)) return;
+            if (drifted || sharedBad) coordsChanged = true;
             stop.lat = platform.lat;
             stop.lng = platform.lng;
             stop.source = 'authoritative-platform';
@@ -405,13 +408,14 @@
             stop.verifiedAt = new Date().toISOString();
             stopChanged = true;
           });
-          // Finalized systems: invalidate path only on coordinate drift.
+          // Finalized systems: invalidate path only on coordinate drift / shared-key cleanup.
+          // Metadata-only updates must not wipe validated paths.
           // kitaguchi: also invalidate when per-system resolvedVersion mismatches.
           const expectedVersion = expectedResolvedVersion(definition.key);
           const versionMismatch = definition.key === '2-kitaguchi'
             && systems[definition.key].resolvedVersion
             && systems[definition.key].resolvedVersion !== expectedVersion;
-          const shouldInvalidatePath = stopChanged || versionMismatch;
+          const shouldInvalidatePath = coordsChanged || versionMismatch;
           if (shouldInvalidatePath) {
             invalidateSystemPath(systems[definition.key]);
             changed = true;
@@ -1244,7 +1248,9 @@
     };
     system.pathInvalid = false;
     system.pathIssues = null;
-    system.resolvedVersion = VERSION;
+    system.resolvedVersion = FINALIZED_SYSTEMS.has(key)
+      ? (system.resolvedVersion || VERSION)
+      : expectedResolvedVersion(key);
     system.verifiedAt = new Date().toISOString();
     route.outbound = system.stops;
     route.inbound = [];
