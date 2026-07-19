@@ -1,5 +1,5 @@
 (() => {
-  const POLICY_VERSION = '2026-07-19-imagawa-path-v3b';
+  const POLICY_VERSION = '2026-07-19-imagawa-path-v3c';
   const ROUTE_ID = 'route-2';
   const OSM_RELATION_PATHS = ['/route/18323695', '/route/9964872'];
   const nativeFetch = window.fetch.bind(window);
@@ -39,9 +39,22 @@
     if (!route?.systems) return;
     let changed = route.imagawaPathPolicyVersion !== POLICY_VERSION;
 
+    // 2-maihama の保存済み誤 path のみ無効化（画像・他系統・北栄線は触らない）
+    const maihama = route.systems['2-maihama'];
+    if (maihama && route.imagawaPathPolicyVersion !== POLICY_VERSION) {
+      maihama.path = [];
+      maihama.pathSource = null;
+      maihama.resolvedVersion = null;
+      maihama.verifiedAt = null;
+      maihama.pathInvalid = false;
+      maihama.pathIssues = null;
+      changed = true;
+    }
+
     Object.values(route.systems).forEach((system) => {
+      if (system?.key === '2-maihama' || system?.code === '2-maihama') return;
       const usesOsmPath = String(system?.pathSource || '').includes('OpenStreetMap relation');
-      if (!usesOsmPath && route.imagawaPathPolicyVersion === POLICY_VERSION) return;
+      if (!usesOsmPath) return;
       system.path = [];
       system.pathSource = null;
       system.resolvedVersion = null;

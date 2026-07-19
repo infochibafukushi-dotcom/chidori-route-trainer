@@ -1,6 +1,7 @@
 (() => {
   const ROUTE_ID = 'route-2';
-  const VERSION = '2026-07-19-imagawa-v1';
+  const VERSION = '2026-07-19-imagawa-v1c';
+  const PATH_POLICY_VERSION = '2026-07-19-imagawa-path-v3c';
   const SYSTEM_KEY = 'chidori-imagawa-system-v1';
   const OSM_API_BASE = 'https://openstreetmap.tools/public_transport_geojson/api/route/';
   const OFFICIAL_ROUTE_MAP = 'https://www.keiseibus.co.jp/wp-content/uploads/2026/02/routemap-chidori.pdf';
@@ -11,6 +12,58 @@
   const MAP_ZOOM = 18;
   const MAX_STOPS_PER_REQUEST = 8;
   const MAX_DATA_URL_CHARS = 70000;
+
+  /**
+   * 系統キー単位の確定停留所座標（OSM platform + Google Maps/Street View照合）。
+   * directionGroup 共有は使わない。2-maihama のみ今回確定。
+   * 美浜東団地: 美浜5丁目2側（NW→SE道路の南西側＝舞浜駅行き進行方向）。
+   * 旧誤座標（反対方向・美浜1丁目7側）: 35.6522648, 139.9122584
+   */
+  const AUTHORITATIVE_PLATFORMS = {
+    '2-maihama': {
+      浦安駅入口: { lat: 35.6647047, lng: 139.8949743 },
+      神明裏: { lat: 35.6623799, lng: 139.8989516 },
+      猫実: { lat: 35.6608375, lng: 139.9012946 },
+      消防本部前: { lat: 35.6594904, lng: 139.9034126 },
+      海楽: { lat: 35.6576449, lng: 139.9059641 },
+      美浜東団地: { lat: 35.6522225, lng: 139.9128348 },
+      新浦安駅北口: { lat: 35.6499903, lng: 139.9126359 },
+      若潮公園: { lat: 35.6473943, lng: 139.9095296 },
+      順天堂病院前: { lat: 35.6453182, lng: 139.9070393 },
+      サンコーポ東口: { lat: 35.6439144, lng: 139.905342 },
+      サンコーポ西口: { lat: 35.6420634, lng: 139.9031259 },
+      弁天第二: { lat: 35.6398165, lng: 139.9004629 },
+      見明川中学校前: { lat: 35.6384265, lng: 139.8987768 },
+      見明川住宅: { lat: 35.6364748, lng: 139.8964564 },
+      舞浜三丁目: { lat: 35.6337929, lng: 139.8932505 },
+      運動公園: { lat: 35.6310025, lng: 139.8899547 },
+      オリエンタルランド本社前: { lat: 35.6320206, lng: 139.887359 },
+      舞浜駅: { lat: 35.6360225, lng: 139.8833113 },
+    },
+  };
+
+  /** 道路形状用経由点（停留所としては表示しない）。OSM route relation の one-way 道路上。 */
+  const IMAGAWA_PATH_SHAPING_POINTS = {
+    '2-maihama': {
+      '運動公園->オリエンタルランド本社前': [
+        { lat: 35.6306759, lng: 139.8891321 },
+        { lat: 35.6312119, lng: 139.888456 },
+      ],
+      'オリエンタルランド本社前->舞浜駅': [
+        { lat: 35.6347206, lng: 139.884061 },
+        { lat: 35.6351208, lng: 139.883533 },
+      ],
+    },
+  };
+
+  /** 2-maihama の Directions 区間分割（0-based stop index）。 */
+  const MAIHAMA_SEGMENT_BOUNDS = [
+    [0, 6],
+    [6, 12],
+    [12, 15],
+    [15, 16],
+    [16, 17],
+  ];
 
   const URAYASU_TO_NORTH = [
     '浦安駅入口', '神明裏', '猫実', '消防本部前', '海楽', '美浜東団地', '新浦安駅北口',
@@ -95,22 +148,40 @@
     return `${definition.directionGroup}|${normalize(stop?.name)}`;
   }
 
+  function coordinateKey(systemKey, stopName) {
+    return `${systemKey}|${normalize(stopName)}`;
+  }
+
   function makeStop(definition, name, index) {
+    const platform = AUTHORITATIVE_PLATFORMS[definition.key]?.[name] || null;
     return {
       id: `imagawa-v1-${definition.key.replace(/[^a-z0-9]/gi, '')}-${String(index + 1).padStart(2, '0')}`,
       name,
       note: index === 0 ? '始発' : (index === definition.names.length - 1 ? '終点' : ''),
       address: `${name} バス停, 浦安市, 千葉県`,
-      lat: null,
-      lng: null,
+      lat: platform ? platform.lat : null,
+      lng: platform ? platform.lng : null,
       placeId: null,
       googleMapsURI: null,
-      source: null,
-      sourceName: null,
+      source: platform ? 'authoritative-platform' : null,
+      sourceName: platform ? name : null,
       order: index + 1,
       manualOverride: false,
       directionGroup: definition.directionGroup,
+      systemCode: definition.key,
+      directionKey: coordinateKey(definition.key, name),
     };
+  }
+
+  function invalidateSystemPath(system) {
+    if (!system) return;
+    system.path = [];
+    system.pathSource = null;
+    system.resolvedVersion = null;
+    system.verifiedAt = null;
+    system.pathInvalid = false;
+    system.pathIssues = null;
+    system.validation = null;
   }
 
   function validCachedSystem(system, definition) {
@@ -128,7 +199,7 @@
     if (!route) return null;
     const previousSystems = route.systems || {};
     const systems = {};
-    let changed = route.imagawaVersion !== VERSION;
+    let changed = route.imagawaVersion !== VERSION || route.imagawaPathPolicyVersion !== PATH_POLICY_VERSION;
 
     Object.values(SYSTEM_DEFINITIONS).forEach((definition) => {
       const previous = previousSystems[definition.key];
@@ -139,6 +210,37 @@
         systems[definition.key].title = definition.title;
         systems[definition.key].summary = definition.summary;
         systems[definition.key].relationId = definition.relationId;
+        // 2-maihama のみ確定座標を強制適用（他系統は触らない）
+        if (definition.key === '2-maihama') {
+          const platforms = AUTHORITATIVE_PLATFORMS['2-maihama'];
+          let stopChanged = false;
+          (systems[definition.key].stops || []).forEach((stop, index) => {
+            const name = definition.names[index];
+            const platform = platforms[name];
+            if (!platform) return;
+            const sharedBad = String(stop.source || '').startsWith('shared-direction')
+              || String(stop.source || '').startsWith('shared-manual')
+              || stop.directionKey === `outbound|${normalize(name)}`
+              || stop.directionKey === `inbound|${normalize(name)}`;
+            const drifted = !validPosition(stop)
+              || Math.abs(stop.lat - platform.lat) > 0.0000005
+              || Math.abs(stop.lng - platform.lng) > 0.0000005;
+            if (stop.manualOverride && validPosition(stop) && !sharedBad) return;
+            if (!drifted && !sharedBad && stop.source === 'authoritative-platform') return;
+            stop.lat = platform.lat;
+            stop.lng = platform.lng;
+            stop.source = 'authoritative-platform';
+            stop.sourceName = name;
+            stop.systemCode = definition.key;
+            stop.directionKey = coordinateKey(definition.key, name);
+            stop.verifiedAt = new Date().toISOString();
+            stopChanged = true;
+          });
+          if (stopChanged || route.imagawaVersion !== VERSION || route.imagawaPathPolicyVersion !== PATH_POLICY_VERSION) {
+            invalidateSystemPath(systems[definition.key]);
+            changed = true;
+          }
+        }
         return;
       }
       systems[definition.key] = {
@@ -149,7 +251,32 @@
         title: definition.title,
         summary: definition.summary,
         relationId: definition.relationId,
-        stops: definition.names.map((name, index) => makeStop(definition, name, index)),
+        stops: definition.names.map((name, index) => {
+          const created = makeStop(definition, name, index);
+          const prior = previous?.stops?.[index];
+          if (
+            prior
+            && normalize(prior.name) === normalize(name)
+            && prior.manualOverride
+            && validPosition(prior)
+            && !String(prior.source || '').startsWith('shared')
+          ) {
+            return {
+              ...created,
+              lat: prior.lat,
+              lng: prior.lng,
+              address: prior.address || created.address,
+              placeId: prior.placeId || null,
+              googleMapsURI: prior.googleMapsURI || null,
+              source: 'manual-confirmed',
+              manualOverride: true,
+              verifiedAt: prior.verifiedAt || new Date().toISOString(),
+              stopImageDataUrl: prior.stopImageDataUrl,
+              stopImageUpdatedAt: prior.stopImageUpdatedAt,
+            };
+          }
+          return created;
+        }),
         path: [],
         pathSource: null,
         positionSource: null,
@@ -161,8 +288,9 @@
 
     route.systems = systems;
     route.imagawaVersion = VERSION;
+    route.imagawaPathPolicyVersion = PATH_POLICY_VERSION;
     route.description = '今川線：片道5運行パターン（公式系統番号はいずれも2）';
-    route.sourcePolicy = '停留所名・順序・行先は京成バスナビ、京成バス千葉ウエスト路線図、千葉県バス協会で照合。位置はOSM route relationとGoogle Mapsで検証。';
+    route.sourcePolicy = '停留所座標は系統キー（systemKey+停留所名）単位。道路はGoogle Directionsのみ（OSM LineString不使用）。';
     route.officialRouteMap = OFFICIAL_ROUTE_MAP;
     route.officialBusNavi = OFFICIAL_BUS_NAVI;
     route.chibaBusAssociation = CHIBA_BUS_ASSOCIATION;
@@ -251,9 +379,11 @@
   function coordinateBank(route) {
     const bank = new Map();
     Object.values(route.systems || {}).forEach((system) => {
+      const systemKey = system.key || system.code;
       (system.stops || []).forEach((stop) => {
         if (!validPosition(stop)) return;
-        const key = `${system.directionGroup}|${normalize(stop.name)}`;
+        // 今川線は systemKey|停留所名 のみ。directionGroup 共有は使わない。
+        const key = coordinateKey(systemKey, stop.name);
         if (!bank.has(key) || stop.manualOverride) bank.set(key, stop);
       });
     });
@@ -338,21 +468,141 @@
     };
   }
 
-  async function directionsPath(googleApi, stops, statusCallback) {
+  function angleDiff(a, b) {
+    const diff = Math.abs(a - b) % 360;
+    return diff > 180 ? 360 - diff : diff;
+  }
+
+  function pathLength(path) {
+    let total = 0;
+    for (let index = 1; index < path.length; index += 1) total += distanceMeters(path[index - 1], path[index]);
+    return total;
+  }
+
+  function validateRoadPath(path, stops, systemKey) {
+    const issues = [];
+    if (!Array.isArray(path) || path.length < 4) {
+      return { valid: false, issues: [{ type: 'empty', message: '道路ルートが空です' }] };
+    }
+
+    let previousHeading = null;
+    let reverseRun = 0;
+    for (let index = 1; index < path.length; index += 1) {
+      const step = distanceMeters(path[index - 1], path[index]);
+      if (step >= 220) {
+        issues.push({ type: 'diagonal-cut', message: `斜め接続疑い（連続点間 ${Math.round(step)}m）` });
+        break;
+      }
+      if (step < 8) continue;
+      const currentHeading = heading(path[index - 1], path[index]);
+      if (previousHeading !== null && angleDiff(previousHeading, currentHeading) >= 150) {
+        reverseRun += step;
+        if (reverseRun >= 120) {
+          issues.push({ type: 'out-and-back', message: `同一区間の往復・急反転疑い（約${Math.round(reverseRun)}m）` });
+          break;
+        }
+      } else {
+        reverseRun = 0;
+      }
+      previousHeading = currentHeading;
+    }
+
+    for (let index = 12; index < path.length && issues.length === 0; index += 1) {
+      for (let back = 8; back <= 28 && index - back >= 0; back += 1) {
+        const gap = distanceMeters(path[index], path[index - back]);
+        if (gap > 28) continue;
+        const loop = path.slice(index - back, index + 1);
+        const length = pathLength(loop);
+        if (length < 180 || length > 700) continue;
+        issues.push({ type: 'block-enclosure', message: `円形・矩形周回疑い（周長約${Math.round(length)}m）` });
+        break;
+      }
+    }
+
+    if (systemKey === '2-maihama' && stops.length >= 18) {
+      const stop16 = stops[15];
+      const stop17 = stops[16];
+      const stop18 = stops[17];
+      let i16 = 0;
+      let i17 = 0;
+      let i18 = path.length - 1;
+      let d16 = Infinity;
+      let d17 = Infinity;
+      let d18 = Infinity;
+      path.forEach((point, index) => {
+        const a = distanceMeters(point, stop16);
+        const b = distanceMeters(point, stop17);
+        const c = distanceMeters(point, stop18);
+        if (a < d16) { d16 = a; i16 = index; }
+        if (b < d17) { d17 = b; i17 = index; }
+        if (c < d18) { d18 = c; i18 = index; }
+      });
+      if (!(i16 < i17 && i17 < i18)) {
+        issues.push({ type: 'order', message: '16→17→18 の通過順が崩れています' });
+      } else {
+        const segment1718 = path.slice(i17, i18 + 1);
+        const along = pathLength(segment1718);
+        const direct = distanceMeters(stop17, stop18);
+        if (along > Math.max(1200, direct * 3.5)) {
+          issues.push({ type: 'detour', message: `17→18 が極端に長い（約${Math.round(along)}m）` });
+        }
+      }
+    }
+
+    return { valid: issues.length === 0, issues };
+  }
+
+  function buildSegmentWaypoints(systemKey, fromStop, toStop) {
+    const key = `${fromStop.name}->${toStop.name}`;
+    return (IMAGAWA_PATH_SHAPING_POINTS[systemKey]?.[key] || []).map((point) => ({
+      location: { lat: point.lat, lng: point.lng },
+      stopover: false,
+    }));
+  }
+
+  function segmentBoundsForSystem(systemKey, stopCount) {
+    if (systemKey === '2-maihama') {
+      return MAIHAMA_SEGMENT_BOUNDS.filter(([start, end]) => start < stopCount && end < stopCount);
+    }
+    const bounds = [];
+    for (let start = 0; start < stopCount - 1; start += MAX_STOPS_PER_REQUEST - 1) {
+      const end = Math.min(start + MAX_STOPS_PER_REQUEST - 1, stopCount - 1);
+      bounds.push([start, end]);
+    }
+    return bounds;
+  }
+
+  async function directionsPath(googleApi, stops, statusCallback, systemKey = '') {
     const service = new googleApi.maps.DirectionsService();
     const fullPath = [];
     let requestCount = 0;
-    for (let start = 0; start < stops.length - 1; start += MAX_STOPS_PER_REQUEST - 1) {
-      const end = Math.min(start + MAX_STOPS_PER_REQUEST - 1, stops.length - 1);
-      const segment = stops.slice(start, end + 1);
+    const bounds = segmentBoundsForSystem(systemKey, stops.length);
+    for (const [start, end] of bounds) {
+      const origin = stops[start];
+      const destination = stops[end];
       statusCallback?.(`道路ルートを生成中… ${start + 1}〜${end + 1}/${stops.length}`);
+      const middleStops = stops.slice(start + 1, end);
+      const waypoints = [];
+      if (end === start + 1) {
+        waypoints.push(...buildSegmentWaypoints(systemKey, origin, destination));
+      } else {
+        for (let index = 0; index < middleStops.length; index += 1) {
+          const prev = index === 0 ? origin : middleStops[index - 1];
+          const current = middleStops[index];
+          waypoints.push(...buildSegmentWaypoints(systemKey, prev, current));
+          waypoints.push({ location: { lat: current.lat, lng: current.lng }, stopover: false });
+        }
+        const lastMiddle = middleStops.at(-1) || origin;
+        waypoints.push(...buildSegmentWaypoints(systemKey, lastMiddle, destination));
+      }
       const result = await service.route({
-        origin: { lat: segment[0].lat, lng: segment[0].lng },
-        destination: { lat: segment.at(-1).lat, lng: segment.at(-1).lng },
-        waypoints: segment.slice(1, -1).map((item) => ({ location: { lat: item.lat, lng: item.lng }, stopover: false })),
+        origin: { lat: origin.lat, lng: origin.lng },
+        destination: { lat: destination.lat, lng: destination.lng },
+        waypoints,
         optimizeWaypoints: false,
         travelMode: googleApi.maps.TravelMode.DRIVING,
         avoidFerries: true,
+        provideRouteAlternatives: false,
       });
       requestCount += 1;
       const path = result.routes?.[0]?.overview_path?.map((point) => ({ lat: point.lat(), lng: point.lng() })) || [];
@@ -368,12 +618,22 @@
     const definition = SYSTEM_DEFINITIONS[key];
     const system = route?.systems?.[key];
     if (!route || !definition || !system) throw new Error('今川線の系統データがありません。');
-    if (!force && system.resolvedVersion === VERSION && system.stops.every(validPosition) && system.path?.length > 2) return system;
+    if (
+      !force
+      && system.resolvedVersion === VERSION
+      && route.imagawaPathPolicyVersion === PATH_POLICY_VERSION
+      && system.stops.every(validPosition)
+      && system.path?.length > 2
+      && !system.pathInvalid
+      && !system.stops.some((stop) => String(stop.source || '').startsWith('shared-direction'))
+    ) {
+      return system;
+    }
 
     const googleApi = await loadMaps();
     let osmPayload = null;
     let osmError = null;
-    if (definition.relationId) {
+    if (definition.relationId && key !== '2-maihama') {
       statusCallback?.(`OSM route relation ${definition.relationId}を取得中…`);
       try {
         osmPayload = await fetchJson(`${OSM_API_BASE}${definition.relationId}`);
@@ -385,60 +645,112 @@
     const bank = coordinateBank(route);
     const usedPlaceIds = new Set();
     let previous = null;
-    const stats = { osmCount: 0, sharedCount: 0, googleCount: 0, fallbackCount: 0 };
+    const stats = { osmCount: 0, sharedCount: 0, googleCount: 0, fallbackCount: 0, authoritativeCount: 0 };
+    const platforms = AUTHORITATIVE_PLATFORMS[key] || null;
 
     for (let index = 0; index < system.stops.length; index += 1) {
       const stop = system.stops[index];
+      const name = definition.names[index];
       statusCallback?.(`停留所位置を照合中… ${index + 1}/${system.stops.length} ${stop.name}`);
-      if (!force && stop.manualOverride && validPosition(stop)) {
+      stop.systemCode = key;
+      stop.directionKey = coordinateKey(key, name);
+      stop.directionGroup = definition.directionGroup;
+
+      if (!force && stop.manualOverride && validPosition(stop) && !String(stop.source || '').startsWith('shared')) {
         previous = { lat: stop.lat, lng: stop.lng };
-        bank.set(`${definition.directionGroup}|${normalize(stop.name)}`, stop);
+        bank.set(coordinateKey(key, stop.name), stop);
         continue;
       }
-      let resolved = osmMapped[index];
-      if (!resolved) {
-        const shared = bank.get(`${definition.directionGroup}|${normalize(stop.name)}`);
+
+      let resolved = null;
+      if (platforms?.[name]) {
+        resolved = {
+          lat: platforms[name].lat,
+          lng: platforms[name].lng,
+          placeId: null,
+          address: stop.address,
+          googleMapsURI: null,
+          source: 'authoritative-platform',
+          name,
+        };
+      }
+      if (!resolved) resolved = osmMapped[index];
+      // 今川線では directionGroup 共有座標は使わない（系統ごとに乗り場が異なるため）
+      if (!resolved && key !== '2-maihama') {
+        const shared = bank.get(coordinateKey(key, stop.name));
         if (shared && validPosition(shared)) {
           resolved = {
             lat: shared.lat, lng: shared.lng, placeId: shared.placeId || null,
             address: shared.address || stop.address, googleMapsURI: shared.googleMapsURI || null,
-            source: shared.manualOverride ? 'shared-manual' : 'shared-direction',
+            source: shared.manualOverride ? 'shared-manual' : 'system-local',
           };
         }
       }
       if (!resolved) resolved = await searchGoogleStop(googleApi, definition, stop, previous, usedPlaceIds);
+
       stop.lat = Number(resolved.lat);
       stop.lng = Number(resolved.lng);
       stop.placeId = resolved.placeId || null;
       stop.address = resolved.address || stop.address;
       stop.googleMapsURI = resolved.googleMapsURI || null;
       stop.source = resolved.source;
-      stop.sourceName = resolved.name || null;
+      stop.sourceName = resolved.name || name;
       stop.manualOverride = false;
       stop.verifiedAt = new Date().toISOString();
       if (stop.placeId) usedPlaceIds.add(stop.placeId);
-      if (resolved.source === 'osm-stop') stats.osmCount += 1;
-      else if (String(resolved.source).startsWith('shared')) stats.sharedCount += 1;
+      if (resolved.source === 'authoritative-platform') stats.authoritativeCount += 1;
+      else if (resolved.source === 'osm-stop') stats.osmCount += 1;
+      else if (String(resolved.source).startsWith('shared') || resolved.source === 'system-local') stats.sharedCount += 1;
       else if (resolved.source === 'google-places') stats.googleCount += 1;
       else stats.fallbackCount += 1;
-      bank.set(`${definition.directionGroup}|${normalize(stop.name)}`, stop);
+      bank.set(coordinateKey(key, stop.name), stop);
       previous = { lat: stop.lat, lng: stop.lng };
       await new Promise((resolve) => setTimeout(resolve, 60));
     }
 
-    const googleResult = await directionsPath(googleApi, system.stops, statusCallback);
-    const osmPath = parseOsmPath(osmPayload);
-    system.path = osmPath.length > 10 ? osmPath : googleResult.path;
-    system.pathSource = osmPath.length > 10
-      ? `OpenStreetMap relation ${definition.relationId}`
-      : 'Google Maps（公式停留所順）';
-    system.positionSource = 'OSM停留所・同方向共有座標・Google Maps';
+    let googleResult = await directionsPath(googleApi, system.stops, statusCallback, key);
+    let validation = validateRoadPath(googleResult.path, system.stops, key);
+    if (!validation.valid) {
+      statusCallback?.(`検証失敗のため再生成します… ${validation.issues[0]?.message || ''}`);
+      invalidateSystemPath(system);
+      googleResult = await directionsPath(googleApi, system.stops, statusCallback, key);
+      validation = validateRoadPath(googleResult.path, system.stops, key);
+    }
+
+    if (!validation.valid) {
+      invalidateSystemPath(system);
+      system.pathInvalid = true;
+      system.pathIssues = validation.issues;
+      system.validation = {
+        valid: false,
+        issues: validation.issues,
+        osmError,
+        googleDirectionsRequests: googleResult.requestCount,
+      };
+      save();
+      throw new Error('停留所座標または経由点を確認してください');
+    }
+
+    // OSM LineString は道路ルートに使わない（Google Directions のみ）
+    system.path = googleResult.path;
+    system.pathSource = 'Google Directions overview_path（停留所順固定・stopover:false）';
+    system.positionSource = key === '2-maihama'
+      ? '系統キー単位の確定platform座標（往復共有なし）'
+      : 'OSM停留所・系統ローカル座標・Google Maps';
     system.coordinateStats = stats;
-    system.validation = { osmError, googleDirectionsRequests: googleResult.requestCount };
+    system.validation = {
+      valid: true,
+      issues: [],
+      osmError,
+      googleDirectionsRequests: googleResult.requestCount,
+    };
+    system.pathInvalid = false;
+    system.pathIssues = null;
     system.resolvedVersion = VERSION;
     system.verifiedAt = new Date().toISOString();
     route.outbound = system.stops;
     route.inbound = [];
+    route.imagawaPathPolicyVersion = PATH_POLICY_VERSION;
     save();
     statusCallback?.(`検証完了｜${system.pathSource}`);
     return system;
@@ -751,7 +1063,7 @@
         <button type="button" id="refreshImagawaCurrent" class="secondary">現在の系統を再検証</button>
         <button type="button" id="refreshImagawaAll" class="secondary">5パターンを一括検証</button>
       </div>
-      <small>位置内訳：OSM ${stats.osmCount || 0}・同方向共有 ${stats.sharedCount || 0}・Google ${stats.googleCount || 0}・要確認 ${stats.fallbackCount || 0}</small>
+      <small>位置内訳：確定 ${stats.authoritativeCount || 0}・OSM ${stats.osmCount || 0}・系統内 ${stats.sharedCount || 0}・Google ${stats.googleCount || 0}・要確認 ${stats.fallbackCount || 0}</small>
     </section>`;
   }
 
@@ -912,20 +1224,25 @@
   }
 
   function propagateManualCoordinate(route, definition, stop) {
-    Object.values(route.systems || {}).forEach((system) => {
-      if (system.directionGroup !== definition.directionGroup) return;
-      (system.stops || []).forEach((target) => {
-        if (normalize(target.name) !== normalize(stop.name)) return;
-        target.lat = stop.lat;
-        target.lng = stop.lng;
-        target.address = stop.address;
-        target.manualOverride = true;
-        target.source = 'shared-manual';
-        target.verifiedAt = stop.verifiedAt;
-        system.resolvedVersion = null;
-        system.path = [];
-      });
+    // 今川線は系統ごとに乗り場が異なるため、他系統への座標伝播はしない。
+    // 画像キー（directionGroup|name）とは分離して管理する。
+    const system = route.systems?.[definition.key];
+    if (!system) return;
+    (system.stops || []).forEach((target) => {
+      if (normalize(target.name) !== normalize(stop.name)) return;
+      if (target === stop) return;
+      // 同一系統内の同名（通常は無い）のみ同期
+      target.lat = stop.lat;
+      target.lng = stop.lng;
+      target.address = stop.address;
+      target.manualOverride = true;
+      target.source = 'manual-confirmed';
+      target.systemCode = definition.key;
+      target.directionKey = coordinateKey(definition.key, stop.name);
+      target.verifiedAt = stop.verifiedAt;
     });
+    system.resolvedVersion = null;
+    system.path = [];
   }
 
   function openRoute2StopEditor(systemKey, stopIndex) {
@@ -1105,10 +1422,14 @@
 
   window.IMAGAWA_ROUTE_V1 = {
     VERSION,
+    PATH_POLICY_VERSION,
     SYSTEM_DEFINITIONS: clone(SYSTEM_DEFINITIONS),
+    AUTHORITATIVE_PLATFORMS,
+    IMAGAWA_PATH_SHAPING_POINTS,
     ensureRoute,
     resolveSystem,
     resolveAllSystems,
+    validateRoadPath,
     getSelectedSystemKey,
     setSelectedSystemKey,
   };
