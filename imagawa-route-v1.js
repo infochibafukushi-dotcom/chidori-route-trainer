@@ -1,7 +1,7 @@
 (() => {
   const ROUTE_ID = 'route-2';
-  const VERSION = '2026-07-19-imagawa-v1o';
-  const PATH_POLICY_VERSION = '2026-07-19-imagawa-path-v3o';
+  const VERSION = '2026-07-19-imagawa-v1p';
+  const PATH_POLICY_VERSION = '2026-07-19-imagawa-path-v3p';
   const SYSTEM_KEY = 'chidori-imagawa-system-v1';
   const OSM_API_BASE = 'https://openstreetmap.tools/public_transport_geojson/api/route/';
   const OFFICIAL_ROUTE_MAP = 'https://www.keiseibus.co.jp/wp-content/uploads/2026/02/routemap-chidori.pdf';
@@ -60,6 +60,16 @@
       猫実: { lat: 35.6611395, lng: 139.9005341, platformId: 2900279301 },
       神明裏: { lat: 35.6628205, lng: 139.8979314, platformId: 6764110350 },
       浦安駅入口: { lat: 35.6644872, lng: 139.8950364, platformId: 6764110353 },
+    },
+    /** 2-maihama stops 1-7 clone for 2-kitaguchi */
+    '2-kitaguchi': {
+      浦安駅入口: { lat: 35.6647047, lng: 139.8949743 },
+      神明裏: { lat: 35.6623799, lng: 139.8989516 },
+      猫実: { lat: 35.6608375, lng: 139.9012946 },
+      消防本部前: { lat: 35.6594904, lng: 139.9034126 },
+      海楽: { lat: 35.6576449, lng: 139.9059641 },
+      美浜東団地: { lat: 35.6522225, lng: 139.9128348 },
+      新浦安駅北口: { lat: 35.6499903, lng: 139.9126359 },
     },
   };
 
@@ -197,6 +207,14 @@
     },
   };
 
+  /** Per-system resolvedVersion (do not wipe finalized systems via global VERSION alone). */
+  const SYSTEM_RESOLVED_VERSIONS = {
+    '2-kitaguchi': '2026-07-19-imagawa-kitaguchi-v1',
+    '2-chidori': '2026-07-19-imagawa-chidori-v1',
+    '2-urayasu-chidori': '2026-07-19-imagawa-urayasu-chidori-v1',
+  };
+  const FINALIZED_SYSTEMS = new Set(['2-maihama', '2-urayasu-maihama']);
+
   const previousRoutes = routes;
   const previousStopEditor = stopEditor;
   let cleanupGuidance = null;
@@ -257,6 +275,72 @@
     };
   }
 
+
+  function expectedResolvedVersion(key) {
+    return SYSTEM_RESOLVED_VERSIONS[key] || VERSION;
+  }
+
+  function deepCloneStops(stops, definition) {
+    return (stops || []).map((stop, index) => {
+      const name = definition.names[index];
+      const cloned = JSON.parse(JSON.stringify(stop));
+      cloned.id = 'imagawa-v1-' + definition.key.replace(/[^a-z0-9]/gi, '') + '-' + String(index + 1).padStart(2, '0');
+      cloned.name = name;
+      cloned.note = index === 0 ? '始発' : (index === definition.names.length - 1 ? '終点' : '');
+      cloned.order = index + 1;
+      cloned.directionGroup = definition.directionGroup;
+      cloned.systemCode = definition.key;
+      cloned.directionKey = coordinateKey(definition.key, name);
+      cloned.source = 'authoritative-platform';
+      cloned.sourceName = name;
+      cloned.manualOverride = false;
+      return cloned;
+    });
+  }
+
+  function deepClonePath(path) {
+    return (path || []).map((point) => ({ lat: Number(point.lat), lng: Number(point.lng) }));
+  }
+
+  function slicePathThroughStops(sourcePath, stops, endMaxMeters) {
+    const maxEnd = endMaxMeters == null ? 25 : endMaxMeters;
+    if (!Array.isArray(sourcePath) || sourcePath.length < 2) {
+      throw new Error('path slice failed: source path empty');
+    }
+    if (!Array.isArray(stops) || stops.length < 2) {
+      throw new Error('path slice failed: stops insufficient');
+    }
+    const startHit = nearestPathIndex(sourcePath, stops[0], 0);
+    if (startHit.distance > 80) {
+      throw new Error('path slice failed: start "' + stops[0].name + '" is ' + Math.round(startHit.distance) + 'm from path');
+    }
+    let cursor = startHit.index;
+    for (let i = 1; i < stops.length - 1; i += 1) {
+      const hit = firstApproachIndex(sourcePath, stops[i], cursor, 55);
+      // overview_path is coarse; finalized 2-maihama already accepts ~130m offsets (e.g. Mihama-higashi).
+      if (hit.distance > 160) {
+        throw new Error('path slice failed: "' + stops[i].name + '" is ' + Math.round(hit.distance) + 'm from path');
+      }
+      cursor = hit.index;
+    }
+    const endStop = stops[stops.length - 1];
+    const endHit = nearestPathIndex(sourcePath, endStop, cursor);
+    if (endHit.distance > maxEnd) {
+      throw new Error('path slice failed: end "' + endStop.name + '" is ' + Math.round(endHit.distance) + 'm from path (max ' + maxEnd + 'm)');
+    }
+    const sliced = deepClonePath(sourcePath.slice(startHit.index, endHit.index + 1));
+    if (sliced.length < 2) {
+      throw new Error('path slice failed: sliced path has fewer than 2 points');
+    }
+    return {
+      path: sliced,
+      startDistance: startHit.distance,
+      endDistance: endHit.distance,
+      startIndex: startHit.index,
+      endIndex: endHit.index,
+    };
+  }
+
   function invalidateSystemPath(system) {
     if (!system) return;
     system.path = [];
@@ -295,7 +379,7 @@
         systems[definition.key].summary = definition.summary;
         systems[definition.key].relationId = definition.relationId;
         // 確定座標を強制適用（2-maihama / 2-urayasu-maihama のみ。他系統は触らない）
-        if (definition.key === '2-maihama' || definition.key === '2-urayasu-maihama') {
+        if (FINALIZED_SYSTEMS.has(definition.key) || definition.key === '2-kitaguchi') {
           const platforms = AUTHORITATIVE_PLATFORMS[definition.key];
           let stopChanged = false;
           (systems[definition.key].stops || []).forEach((stop, index) => {
@@ -321,11 +405,13 @@
             stop.verifiedAt = new Date().toISOString();
             stopChanged = true;
           });
-          // 2-maihama は座標ドリフト時のみ path 無効化（VERSION 更新だけでは触らない）
-          // 2-urayasu-maihama は今回の再生成対象のため VERSION 更新で無効化
-          const shouldInvalidatePath = definition.key === '2-urayasu-maihama'
-            ? (stopChanged || route.imagawaVersion !== VERSION || route.imagawaPathPolicyVersion !== PATH_POLICY_VERSION)
-            : stopChanged;
+          // Finalized systems: invalidate path only on coordinate drift.
+          // kitaguchi: also invalidate when per-system resolvedVersion mismatches.
+          const expectedVersion = expectedResolvedVersion(definition.key);
+          const versionMismatch = definition.key === '2-kitaguchi'
+            && systems[definition.key].resolvedVersion
+            && systems[definition.key].resolvedVersion !== expectedVersion;
+          const shouldInvalidatePath = stopChanged || versionMismatch;
           if (shouldInvalidatePath) {
             invalidateSystemPath(systems[definition.key]);
             changed = true;
@@ -909,11 +995,120 @@
     return { path: fullPath, requestCount };
   }
 
+
+  async function resolveKitaguchiFromMaihama(route, system, definition, options) {
+    const force = Boolean(options && options.force);
+    const statusCallback = options && options.statusCallback;
+    const expected = expectedResolvedVersion('2-kitaguchi');
+    if (
+      !force
+      && system.stops.every(validPosition)
+      && system.path && system.path.length > 2
+      && !system.pathInvalid
+      && system.resolvedVersion === expected
+    ) {
+      return system;
+    }
+
+    let source = route.systems['2-maihama'];
+    const sourceReady = source
+      && Array.isArray(source.stops)
+      && source.stops.every(validPosition)
+      && Array.isArray(source.path)
+      && source.path.length > 2
+      && !source.pathInvalid;
+    if (!sourceReady) {
+      statusCallback && statusCallback('2-kitaguchi: preparing 2-maihama authoritative data...');
+      await resolveSystem('2-maihama', { force: false, statusCallback: statusCallback });
+      source = route.systems['2-maihama'];
+    }
+    if (!source || !source.stops || !source.stops.every(validPosition)) {
+      throw new Error('2-kitaguchi: source 2-maihama stops are not ready. Open 2-maihama once first.');
+    }
+    if (!Array.isArray(source.path) || source.path.length < 2) {
+      throw new Error('2-kitaguchi: source 2-maihama path is empty. Open 2-maihama once first.');
+    }
+
+    const prefixStops = source.stops.slice(0, definition.names.length);
+    if (prefixStops.length !== definition.names.length) {
+      throw new Error('2-kitaguchi: could not take first ' + definition.names.length + ' stops from 2-maihama');
+    }
+    for (let i = 0; i < definition.names.length; i += 1) {
+      if (normalize(prefixStops[i].name) !== normalize(definition.names[i])) {
+        throw new Error('2-kitaguchi: stop order mismatch at ' + (i + 1) + ' expected=' + definition.names[i] + ' actual=' + prefixStops[i].name);
+      }
+    }
+
+    const platforms = AUTHORITATIVE_PLATFORMS['2-kitaguchi'];
+    system.stops = deepCloneStops(prefixStops, definition);
+    system.stops.forEach(function (stop) {
+      const platform = platforms[stop.name];
+      if (!platform) return;
+      stop.lat = platform.lat;
+      stop.lng = platform.lng;
+      stop.platformId = platform.platformId || null;
+      stop.source = 'authoritative-platform';
+      stop.verifiedAt = new Date().toISOString();
+    });
+
+    statusCallback && statusCallback('2-kitaguchi: slicing 2-maihama path to 新浦安駅北口...');
+    const sliced = slicePathThroughStops(source.path, system.stops, 25);
+    const validation = validateRoadPath(sliced.path, system.stops, '2-kitaguchi');
+    if (!validation.valid) {
+      invalidateSystemPath(system);
+      system.pathInvalid = true;
+      system.pathIssues = validation.issues;
+      system.validation = { valid: false, issues: validation.issues, metrics: validation.metrics || null };
+      save();
+      const detail = validation.issues.map(function (item) { return item.message; }).join(' / ');
+      throw new Error('2-kitaguchi: reused path validation failed (' + detail + ')');
+    }
+
+    system.path = sliced.path;
+    system.pathSource = 'authoritative-copy:2-maihama:浦安駅入口->新浦安駅北口';
+    system.positionSource = 'authoritative-copy:2-maihama:stops-1-7';
+    system.coordinateStats = {
+      authoritativeCount: system.stops.length,
+      osmCount: 0,
+      sharedCount: 0,
+      googleCount: 0,
+      fallbackCount: 0,
+      sourcePathPoints: source.path.length,
+      slicedPathPoints: sliced.path.length,
+      endDistanceMeters: sliced.endDistance,
+    };
+    system.validation = {
+      valid: true,
+      issues: [],
+      metrics: validation.metrics || null,
+      googleDirectionsRequests: 0,
+      pathSlice: {
+        startIndex: sliced.startIndex,
+        endIndex: sliced.endIndex,
+        startDistance: sliced.startDistance,
+        endDistance: sliced.endDistance,
+      },
+    };
+    system.pathInvalid = false;
+    system.pathIssues = null;
+    system.resolvedVersion = expected;
+    system.verifiedAt = new Date().toISOString();
+    route.outbound = system.stops;
+    route.inbound = [];
+    save();
+    statusCallback && statusCallback('validated|' + system.pathSource + '|path ' + system.path.length + ' pts');
+    return system;
+  }
+
   async function resolveSystem(key, { force = false, statusCallback = null } = {}) {
     const route = ensureRoute();
     const definition = SYSTEM_DEFINITIONS[key];
     const system = route?.systems?.[key];
     if (!route || !definition || !system) throw new Error('今川線の系統データがありません。');
+    if (key === '2-kitaguchi') {
+      return resolveKitaguchiFromMaihama(route, system, definition, { force, statusCallback });
+    }
+    const expectedVersion = expectedResolvedVersion(key);
     if (
       !force
       && system.stops.every(validPosition)
@@ -921,9 +1116,8 @@
       && !system.pathInvalid
       && !system.stops.some((stop) => String(stop.source || '').startsWith('shared-direction'))
       && (
-        system.resolvedVersion === VERSION
-        // 2-maihama は確定済みルートを VERSION 更新だけでは再生成しない
-        || (key === '2-maihama' && system.resolvedVersion && route.imagawaPathPolicyVersion)
+        system.resolvedVersion === expectedVersion
+        || (FINALIZED_SYSTEMS.has(key) && system.resolvedVersion && route.imagawaPathPolicyVersion)
       )
     ) {
       return system;
@@ -1165,13 +1359,34 @@
   async function drawGuidance(route, definition, system, token) {
     cleanupGuidance?.();
     const status = document.getElementById('mapStatus');
-    if (!system.stops.every(validPosition) || !Array.isArray(system.path) || system.path.length < 2) {
-      await resolveSystem(definition.key, { statusCallback: (text) => { if (status) status.textContent = text; } });
+    let active = system;
+    if (!active.stops.every(validPosition) || !Array.isArray(active.path) || active.path.length < 2 || active.pathInvalid) {
+      try {
+        active = await resolveSystem(definition.key, { statusCallback: (text) => { if (status) status.textContent = text; } });
+      } catch (error) {
+        const missing = (system.stops || []).filter((stop) => !validPosition(stop)).map((stop) => stop.name);
+        const issues = system.pathIssues || (system.validation && system.validation.issues) || [];
+        const issueText = issues.map((item) => item.message || item.type || String(item)).join(' / ');
+        const base = error instanceof Error ? error.message : String(error);
+        throw new Error([
+          'systemKey=' + definition.key,
+          base,
+          missing.length ? ('missing coords: ' + missing.join(', ')) : null,
+          issueText ? ('validation: ' + issueText) : null,
+          system.pathSource ? ('pathSource=' + system.pathSource) : 'pathSource=(unset)',
+        ].filter(Boolean).join(' | '));
+      }
     }
     if (token !== renderToken || page !== 'routes' || routeState.routeId !== ROUTE_ID) return;
+    active = route.systems[definition.key] || active;
+    if (!active.stops.every(validPosition) || !Array.isArray(active.path) || active.path.length < 2) {
+      const missing = (active.stops || []).filter((stop) => !validPosition(stop)).map((stop) => stop.name);
+      throw new Error('systemKey=' + definition.key + ' | path/coords incomplete | missing coords: ' + (missing.join(', ') || '(none)') + ' | path points=' + (active.path && active.path.length || 0));
+    }
     const googleApi = await loadMaps();
-    const stops = system.stops;
-    const path = system.path;
+    const stops = active.stops;
+    const path = active.path;
+    system = active;
     const metrics = buildMetrics(path);
     const stopDistances = mapStopsToRoute(stops, path, metrics);
     const center = { lat: stops[0].lat, lng: stops[0].lng };
@@ -1402,7 +1617,12 @@
 
     drawGuidance(route, definition, system, token).catch((error) => {
       const node = document.getElementById('mapStatus');
-      if (node) { node.dataset.state = 'error'; node.textContent = error instanceof Error ? error.message : '今川線を表示できませんでした。'; }
+      if (node) {
+        node.dataset.state = 'error';
+        const message = error instanceof Error ? error.message : String(error);
+        node.textContent = message.includes('systemKey=') ? message : ('systemKey=' + key + ' | ' + message);
+      }
+      console.error('[imagawa] drawGuidance failed', definition.key, error);
     });
   };
 
@@ -1697,6 +1917,7 @@
     VERSION,
     PATH_POLICY_VERSION,
     SYSTEM_DEFINITIONS: clone(SYSTEM_DEFINITIONS),
+    SYSTEM_RESOLVED_VERSIONS,
     AUTHORITATIVE_PLATFORMS,
     IMAGAWA_PATH_SHAPING_POINTS,
     ensureRoute,
