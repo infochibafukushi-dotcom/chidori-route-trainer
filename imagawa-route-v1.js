@@ -1,7 +1,7 @@
 (() => {
   const ROUTE_ID = 'route-2';
-  const VERSION = '2026-07-19-imagawa-v1h';
-  const PATH_POLICY_VERSION = '2026-07-19-imagawa-path-v3h';
+  const VERSION = '2026-07-19-imagawa-v1i';
+  const PATH_POLICY_VERSION = '2026-07-19-imagawa-path-v3i';
   const SYSTEM_KEY = 'chidori-imagawa-system-v1';
   const OSM_API_BASE = 'https://openstreetmap.tools/public_transport_geojson/api/route/';
   const OFFICIAL_ROUTE_MAP = 'https://www.keiseibus.co.jp/wp-content/uploads/2026/02/routemap-chidori.pdf';
@@ -642,17 +642,21 @@
     }
 
     // 停留所同士を道路無視で直線結んだ疑い（overview_path の点間隔は検出しない）
+    // 2-maihama は確定済み dd1102d の閾値を維持。2-urayasu-maihama のみ近距離直線道路の誤検知を緩和。
     for (let index = 0; index < stops.length - 1 && issues.length === 0; index += 1) {
       const start = stops[index];
       const end = stops[index + 1];
       const direct = distanceMeters(start, end);
-      if (direct < 350) continue;
+      const minDirect = systemKey === '2-urayasu-maihama' ? 450 : 350;
+      const maxPoints = systemKey === '2-urayasu-maihama' ? 3 : 4;
+      const ratioLimit = systemKey === '2-urayasu-maihama' ? 0.95 : 0.93;
+      if (direct < minDirect) continue;
       const bestStart = nearestPathIndex(path, start).index;
-      const bestEnd = nearestPathIndex(path, end).index;
+      const bestEnd = nearestPathIndex(path, end, systemKey === '2-urayasu-maihama' ? bestStart : 0).index;
       if (bestEnd <= bestStart) continue;
       const segment = path.slice(bestStart, bestEnd + 1);
       const along = pathLength(segment);
-      if (along > 0 && direct / along > 0.93 && segment.length <= 4) {
+      if (along > 0 && direct / along > ratioLimit && segment.length <= maxPoints) {
         issues.push({
           type: 'diagonal-cut',
           message: `${start.name}→${end.name} が道路を無視した斜め接続に見える`,
