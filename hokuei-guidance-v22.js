@@ -391,9 +391,42 @@
       return Number.isFinite(distance) && Math.abs(traveled - distance) < 1;
     };
 
+    // selectedStopIndex を現在表示中の停留所（登録座標上）として扱う
     const isParkedAtLastPassed = () => (
       selectedStopIndex === lastPassedStopIndex && isAtStopDistance(lastPassedStopIndex)
     );
+
+    // 登録座標上か停留所間か（GPS一致だけでなく明示インデックスで判定）
+    const isAtRegisteredStop = () => {
+      if (selectedStopIndex !== lastPassedStopIndex) return false;
+      if (isAtStopDistance(selectedStopIndex)) return true;
+      // 終点完了後：次がなく manualHold で止まっている場合も停留所上
+      return manualHold
+        && nextStopIndex >= activeStops.length
+        && selectedStopIndex === activeStops.length - 1;
+    };
+
+    // 停留所上と停留所間で前・次の移動先を分ける
+    const getNavTargets = () => {
+      if (!activeStops.length) {
+        return { previousTargetIndex: -1, nextTargetIndex: -1, atRegisteredStop: false };
+      }
+      // 登録座標上：前 = 現在-1、次 = 現在+1
+      if (isAtRegisteredStop()) {
+        const currentStopIndex = selectedStopIndex;
+        return {
+          previousTargetIndex: currentStopIndex - 1,
+          nextTargetIndex: currentStopIndex + 1,
+          atRegisteredStop: true,
+        };
+      }
+      // 停留所間：前 = 最後通過、次 = 最後通過+1
+      return {
+        previousTargetIndex: lastPassedStopIndex,
+        nextTargetIndex: lastPassedStopIndex + 1,
+        atRegisteredStop: false,
+      };
+    };
 
     const highlightStop = (index) => {
       sequence.querySelectorAll('[data-guidance-stop]').forEach((button) => {
@@ -643,10 +676,11 @@
 
     const updateButtons = () => {
       updateStartPauseButton();
-      // 前：最後に通過した停留所へ（既にその停留所に停車中なら無効）
-      previousButton.disabled = isParkedAtLastPassed();
-      // 次：最後に通過した停留所の次（終点通過後は無効）
-      nextButton.disabled = lastPassedStopIndex >= activeStops.length - 1;
+      const { previousTargetIndex, nextTargetIndex } = getNavTargets();
+      // 前：始発／配列先頭／移動先なしのときだけ無効（停留所上・一時停止中では無効にしない）
+      previousButton.disabled = previousTargetIndex < 0;
+      // 次：終点通過後／配列外のとき無効
+      nextButton.disabled = nextTargetIndex < 0 || nextTargetIndex >= activeStops.length;
     };
 
     const updateTurnGuide = () => {
@@ -933,23 +967,25 @@
     };
 
     previousButton.onclick = () => {
-      // 最後に通過した停留所へ移動（停留所間にいる場合の「前」）
-      const target = lastPassedStopIndex;
+      // 走行中は誤操作防止のため自動で一時停止してから移動
+      if (running) pauseDriving();
+      const { previousTargetIndex: target } = getNavTargets();
       if (target < 0 || target >= activeStops.length) return;
-      if (isParkedAtLastPassed()) return;
       running = false;
       cancelAnimationFrame(frame);
       pausedDwellRemaining = 0;
+      dwellUntil = 0;
       selectStop(target, false);
     };
 
     nextButton.onclick = () => {
-      // 最後に通過した停留所の次（未通過）へ、登録座標へ直接移動
-      const target = lastPassedStopIndex + 1;
+      if (running) pauseDriving();
+      const { nextTargetIndex: target } = getNavTargets();
       if (target < 0 || target >= activeStops.length) return;
       running = false;
       cancelAnimationFrame(frame);
       pausedDwellRemaining = 0;
+      dwellUntil = 0;
       selectStop(target, false);
     };
 
