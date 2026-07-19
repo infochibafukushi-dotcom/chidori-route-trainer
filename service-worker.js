@@ -1,4 +1,4 @@
-const CACHE_NAME = 'chidori-route-map-v26';
+const CACHE_NAME = 'chidori-route-map-v27';
 const APP_SHELL = [
   './',
   './index.html',
@@ -24,7 +24,8 @@ const APP_SHELL = [
   './hokuei-no-uturn-v17.js?v=26',
   './hokuei-guidance-v22.js?v=26',
   './hokuei-stop-images-v25.js?v=26',
-  './pwa-install.js?v=26'
+  './imagawa-route-v1.js?v=35',
+  './pwa-install.js?v=35'
 ];
 
 self.addEventListener('install', (event) => {
