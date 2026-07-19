@@ -19,6 +19,15 @@
   const validPosition = (stop) => Number.isFinite(stop?.lat) && Number.isFinite(stop?.lng);
   const displayName = (stop) => `${stop.name}${stop.note ? `（${stop.note}）` : ''}`;
 
+  const stopLabelParts = (stop) => {
+    const rawName = String(stop?.name || '');
+    const matched = rawName.match(/^(.*?)[（(]\s*(.+?)\s*[）)]\s*$/);
+    if (matched) {
+      return { title: matched[1].trim(), direction: matched[2].trim() };
+    }
+    return { title: rawName, direction: String(stop?.note || '').trim() };
+  };
+
   function distanceMeters(a, b) {
     const rad = (value) => value * Math.PI / 180;
     const dLat = rad(b.lat - a.lat);
@@ -359,6 +368,8 @@
     let frame = null;
     let previousTime = null;
     let dwellUntil = 0;
+    let pausedDwellRemaining = 0;
+    let activeImageKey = '';
     let finalStopPending = false;
     let telopHideAt = 0;
     let lastDrivingVisualUpdate = 0;
@@ -379,9 +390,33 @@
       if (!stop) return;
       const seconds = Math.max(1, Math.ceil(duration / 1000));
       const countdown = preparing ? '停車中 表示準備中' : `停車中 あと${seconds}秒`;
-      stationTelop.innerHTML = `<span>停留所</span><strong>${esc(displayName(stop))}</strong><em>${countdown}</em>`;
+      const parts = stopLabelParts(stop);
+      const directionHtml = parts.direction
+        ? `<small class="station-telop-dir">${esc(parts.direction)}</small>`
+        : '';
+      stationTelop.innerHTML = `<span>停留所</span><strong>${esc(parts.title)}</strong>${directionHtml}<em>${countdown}</em>`;
       stationTelop.classList.add('show');
       telopHideAt = performance.now() + duration + (preparing ? PANO_READY_TIMEOUT_MS : 0);
+    };
+
+    const stopImagesApi = () => window.HOKUEI_STOP_IMAGES_V25 || null;
+
+    const prefetchStopImage = (index) => {
+      const api = stopImagesApi();
+      const stop = activeStops[index];
+      if (!api?.prefetchImage || !stop) return;
+      try {
+        api.prefetchImage(stop, system, stop.originalIndex ?? index);
+      } catch (error) {
+        console.warn('停留所画像の事前読込に失敗', error);
+      }
+    };
+
+    const clearStopImageOverlay = () => {
+      const api = stopImagesApi();
+      if (activeImageKey) api?.markDismissed?.(activeImageKey);
+      else api?.hideOverlay?.();
+      activeImageKey = '';
     };
 
     const requestPanorama = (position, radius) => new Promise((resolve) => {
@@ -549,6 +584,7 @@
       streetCover.hidden = false;
       streetCover.textContent = `${displayName(stop)}付近のStreet Viewを準備中…`;
       prefetchStop(index + 1);
+      prefetchStopImage(index + 1);
       try {
         const resolved = await resolvePanoramaForStop(index);
         if (requestToken !== streetRequestToken) {
@@ -644,45 +680,81 @@
       traveled = stopDistances[index];
       previousTime = null;
       dwellUntil = 0;
+      pausedDwellRemaining = 0;
       waitingForStreetView = true;
       manualHold = true;
+      clearStopImageOverlay();
       highlightStop(index);
       showStationTelop(index, DWELL_MS, true);
       if (autoContinue) {
         finalStopPending = index === activeStops.length - 1;
-        statusNode.textContent = `${displayName(activeStops[index])}に到着｜Street View表示後に3秒停車`;
+        statusNode.textContent = `${displayName(activeStops[index])}に到着｜表示準備後に3秒停車`;
       } else {
         finalStopPending = false;
         statusNode.textContent = `${index + 1}. ${displayName(activeStops[index])}｜登録座標 ${activeStops[index].lat.toFixed(6)}, ${activeStops[index].lng.toFixed(6)}`;
       }
       updateText(performance.now());
-      focusExactStop(index).then((result) => {
+
+      const stop = activeStops[index];
+      const imagesApi = stopImagesApi();
+      const hasRegisteredImage = Boolean(imagesApi?.resolveImage?.(stop, system, stop.originalIndex ?? index));
+
+      const beginDwell = (duration, usedImage, imageKey = '') => {
         if (selectedStopIndex !== index) return;
         waitingForStreetView = false;
-        const duration = result?.stopDurationMs || DWELL_MS;
+        activeImageKey = usedImage ? imageKey : '';
+        if (!usedImage) clearStopImageOverlay();
         showStationTelop(index, duration, false);
         if (autoContinue && running) {
           dwellUntil = performance.now() + duration;
-          statusNode.textContent = `${displayName(activeStops[index])}に到着｜${Math.round(duration / 1000)}秒停車`;
+          statusNode.textContent = usedImage
+            ? `${displayName(activeStops[index])}に到着｜停車画像を${Math.round(duration / 1000)}秒表示`
+            : `${displayName(activeStops[index])}に到着｜${Math.round(duration / 1000)}秒停車`;
         } else {
           dwellUntil = 0;
         }
         updateText(performance.now());
-      }).catch((error) => {
-        console.warn('停留所表示失敗', error);
-        if (selectedStopIndex !== index) return;
-        waitingForStreetView = false;
-        showStationTelop(index, DWELL_MS, false);
-        if (autoContinue && running) {
-          dwellUntil = performance.now() + DWELL_MS;
-        }
-        updateText(performance.now());
+        prefetchStopImage(index + 1);
+      };
+
+      // Street View は常に裏側で準備（画像失敗時のフォールバック）
+      const svPromise = focusExactStop(index).catch((error) => {
+        console.warn('停留所Street View取得失敗', error);
+        return { ok: false, stopDurationMs: DWELL_MS };
+      });
+
+      if (hasRegisteredImage && imagesApi?.presentAtStop) {
+        imagesApi.presentAtStop(stop, system, stop.originalIndex ?? index)
+          .then((imageResult) => {
+            if (selectedStopIndex !== index) return;
+            if (imageResult?.usedImage) {
+              beginDwell(imageResult.durationMs || DWELL_MS, true, imageResult.key || '');
+              return;
+            }
+            // 画像失敗 → Street View 準備完了を待ってフォールバック
+            svPromise.then((svResult) => {
+              beginDwell(svResult?.stopDurationMs || DWELL_MS, false);
+            });
+          })
+          .catch((error) => {
+            console.warn('停留所画像表示失敗', error);
+            if (selectedStopIndex !== index) return;
+            svPromise.then((svResult) => {
+              beginDwell(svResult?.stopDurationMs || DWELL_MS, false);
+            });
+          });
+        return;
+      }
+
+      svPromise.then((svResult) => {
+        beginDwell(svResult?.stopDurationMs || DWELL_MS, false);
       });
     };
 
     const completeRun = () => {
       running = false;
       dwellUntil = 0;
+      pausedDwellRemaining = 0;
       waitingForStreetView = false;
       finalStopPending = false;
       previousTime = null;
@@ -690,6 +762,7 @@
       nextStopIndex = activeStops.length;
       traveled = metrics.total;
       manualHold = true;
+      clearStopImageOverlay();
       updateText(performance.now());
       statusNode.textContent = `系統${system.code}の走行を完了しました。`;
     };
@@ -711,6 +784,7 @@
         streetRequestToken += 1;
         manualHold = false;
         previousTime = now;
+        clearStopImageOverlay();
         if (finalStopPending) {
           completeRun();
           return;
@@ -728,6 +802,7 @@
       // 次停留所の事前取得（約120m手前）
       if (Number.isFinite(target) && target - traveled < 120 && target - traveled > 40) {
         prefetchStop(nextStopIndex);
+        prefetchStopImage(nextStopIndex);
       }
       updateDrivingVisual(now);
       updateText(now);
@@ -740,6 +815,19 @@
 
     document.getElementById('driveStart').onclick = () => {
       if (running) return;
+      // 一時停止中の停車カウントを再開
+      if (pausedDwellRemaining > 0) {
+        running = true;
+        dwellUntil = performance.now() + pausedDwellRemaining;
+        pausedDwellRemaining = 0;
+        stopImagesApi()?.resumeDwell?.();
+        previousTime = null;
+        cancelAnimationFrame(frame);
+        frame = requestAnimationFrame(tick);
+        statusNode.textContent = '停車カウントを再開しました。';
+        updateText(performance.now());
+        return;
+      }
       if (selectedStopIndex >= activeStops.length - 1) {
         selectedStopIndex = 0;
         nextStopIndex = 1;
@@ -755,13 +843,21 @@
       running = false;
       cancelAnimationFrame(frame);
       previousTime = null;
-      dwellUntil = 0;
+      if (dwellUntil) {
+        pausedDwellRemaining = Math.max(0, dwellUntil - performance.now());
+        dwellUntil = 0;
+        stopImagesApi()?.pauseDwell?.();
+      } else {
+        pausedDwellRemaining = 0;
+      }
+      // 表示準備中なら待機を解除し、現在停留所を保持
       waitingForStreetView = false;
       finalStopPending = false;
       manualHold = true;
-      focusExactStop(selectedStopIndex);
       updateText(performance.now());
-      statusNode.textContent = '走行を一時停止しました。';
+      statusNode.textContent = pausedDwellRemaining > 0
+        ? `一時停止｜停車残り約${Math.ceil(pausedDwellRemaining / 1000)}秒`
+        : '走行を一時停止しました。';
     };
 
     previousButton.onclick = () => {
@@ -780,6 +876,9 @@
     document.getElementById('driveReset').onclick = () => {
       running = false;
       cancelAnimationFrame(frame);
+      pausedDwellRemaining = 0;
+      stopImagesApi()?.resetSession?.();
+      activeImageKey = '';
       selectStop(0, false);
       statusNode.textContent = `始発の${activeStops[0].name}へ戻しました。`;
     };
