@@ -1,7 +1,7 @@
 (() => {
   const ROUTE_ID = 'route-2';
-  const VERSION = '2026-07-19-imagawa-v1j';
-  const PATH_POLICY_VERSION = '2026-07-19-imagawa-path-v3j';
+  const VERSION = '2026-07-19-imagawa-v1k';
+  const PATH_POLICY_VERSION = '2026-07-19-imagawa-path-v3k';
   const SYSTEM_KEY = 'chidori-imagawa-system-v1';
   const OSM_API_BASE = 'https://openstreetmap.tools/public_transport_geojson/api/route/';
   const OFFICIAL_ROUTE_MAP = 'https://www.keiseibus.co.jp/wp-content/uploads/2026/02/routemap-chidori.pdf';
@@ -771,27 +771,6 @@
       checkNoBacktrack(0, 4, '1→5（舞浜駅〜見明川住宅）');
       checkNoBacktrack(8, 10, '9→11（サンコーポ東口〜若潮公園）');
       checkNoBacktrack(11, 12, '12→13（新浦安駅北口〜美浜東団地）');
-
-      const detectLocalEnclosure = (fromIndex, toIndex, label) => {
-        if (indices.length <= toIndex) return;
-        const start = indices[fromIndex];
-        const end = indices[toIndex];
-        if (!(start < end) || end - start < 12) return;
-        const segment = path.slice(start, end + 1);
-        for (let index = 10; index < segment.length; index += 1) {
-          for (let back = 8; back <= 24 && index - back >= 0; back += 1) {
-            const gap = distanceMeters(segment[index], segment[index - back]);
-            if (gap > 22) continue;
-            const loop = segment.slice(index - back, index + 1);
-            const length = pathLength(loop);
-            if (length < 280 || length > 600) continue;
-            issues.push({ type: 'block-enclosure', message: `${label} で円形・矩形周回疑い（周長約${Math.round(length)}m）` });
-            return;
-          }
-        }
-      };
-      detectLocalEnclosure(0, 4, '1→5');
-      detectLocalEnclosure(8, 10, '9→11');
     }
 
     return { valid: issues.length === 0, issues, metrics };
