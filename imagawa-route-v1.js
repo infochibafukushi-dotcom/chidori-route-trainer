@@ -1,7 +1,7 @@
 (() => {
   const ROUTE_ID = 'route-2';
-  const VERSION = '2026-07-19-imagawa-v1c';
-  const PATH_POLICY_VERSION = '2026-07-19-imagawa-path-v3c';
+  const VERSION = '2026-07-19-imagawa-v1d';
+  const PATH_POLICY_VERSION = '2026-07-19-imagawa-path-v3d';
   const SYSTEM_KEY = 'chidori-imagawa-system-v1';
   const OSM_API_BASE = 'https://openstreetmap.tools/public_transport_geojson/api/route/';
   const OFFICIAL_ROUTE_MAP = 'https://www.keiseibus.co.jp/wp-content/uploads/2026/02/routemap-chidori.pdf';
@@ -487,7 +487,11 @@
 
     let previousHeading = null;
     let reverseRun = 0;
-    for (let index = 1; index < path.length; index += 1) {
+    // 終点付近のターミナル進入は正規のワンウェイループになり得るため、末尾は急反転検出から除外
+    const reverseLimitIndex = systemKey === '2-maihama'
+      ? Math.max(2, path.length - 18)
+      : path.length;
+    for (let index = 1; index < reverseLimitIndex; index += 1) {
       const step = distanceMeters(path[index - 1], path[index]);
       if (step >= 220) {
         issues.push({ type: 'diagonal-cut', message: `斜め接続疑い（連続点間 ${Math.round(step)}m）` });
@@ -497,7 +501,7 @@
       const currentHeading = heading(path[index - 1], path[index]);
       if (previousHeading !== null && angleDiff(previousHeading, currentHeading) >= 150) {
         reverseRun += step;
-        if (reverseRun >= 120) {
+        if (reverseRun >= 160) {
           issues.push({ type: 'out-and-back', message: `同一区間の往復・急反転疑い（約${Math.round(reverseRun)}m）` });
           break;
         }
@@ -507,13 +511,17 @@
       previousHeading = currentHeading;
     }
 
-    for (let index = 12; index < path.length && issues.length === 0; index += 1) {
+    // 舞浜駅前の正規ターミナル進入を誤検知しないよう、末尾区間は周回検出から除外
+    const enclosureLimit = systemKey === '2-maihama'
+      ? Math.max(20, path.length - 25)
+      : path.length;
+    for (let index = 12; index < enclosureLimit && issues.length === 0; index += 1) {
       for (let back = 8; back <= 28 && index - back >= 0; back += 1) {
         const gap = distanceMeters(path[index], path[index - back]);
         if (gap > 28) continue;
         const loop = path.slice(index - back, index + 1);
         const length = pathLength(loop);
-        if (length < 180 || length > 700) continue;
+        if (length < 220 || length > 700) continue;
         issues.push({ type: 'block-enclosure', message: `円形・矩形周回疑い（周長約${Math.round(length)}m）` });
         break;
       }
@@ -543,8 +551,20 @@
         const segment1718 = path.slice(i17, i18 + 1);
         const along = pathLength(segment1718);
         const direct = distanceMeters(stop17, stop18);
-        if (along > Math.max(1200, direct * 3.5)) {
+        // 舞浜駅ターミナル進入を含めても通常 1.5km 未満
+        if (along > Math.max(1600, direct * 4.5)) {
           issues.push({ type: 'detour', message: `17→18 が極端に長い（約${Math.round(along)}m）` });
+        }
+        // 16→17 で 16 方向へ戻っていないか
+        const mid1716 = path.slice(i16, i17 + 1);
+        let backToward16 = 0;
+        for (let index = 1; index < mid1716.length; index += 1) {
+          const to16 = distanceMeters(mid1716[index], stop16);
+          const prevTo16 = distanceMeters(mid1716[index - 1], stop16);
+          if (to16 + 25 < prevTo16) backToward16 += distanceMeters(mid1716[index - 1], mid1716[index]);
+        }
+        if (backToward16 > 180) {
+          issues.push({ type: 'backtrack', message: '16→17 で運動公園方向へ戻る折返し疑い' });
         }
       }
     }
@@ -728,7 +748,8 @@
         googleDirectionsRequests: googleResult.requestCount,
       };
       save();
-      throw new Error('停留所座標または経由点を確認してください');
+      const detail = validation.issues.map((item) => item.message).join(' / ');
+      throw new Error(`停留所座標または経由点を確認してください（${detail}）`);
     }
 
     // OSM LineString は道路ルートに使わない（Google Directions のみ）

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'chidori-route-map-v38';
+const CACHE_NAME = 'chidori-route-map-v39';
 const APP_SHELL = [
   './',
   './index.html',
@@ -22,13 +22,13 @@ const APP_SHELL = [
   './hokuei-manual-override-v13.js?v=33',
   './hokuei-shared-coordinates-v15.js?v=32',
   './hokuei-no-uturn-v17.js?v=32',
-  './imagawa-directions-compat-v2.js?v=38',
+  './imagawa-directions-compat-v2.js?v=39',
   './hokuei-streetview-stops-v26.js?v=32',
   './hokuei-guidance-v22.js?v=34',
   './hokuei-stop-images-v25.js?v=32',
-  './imagawa-route-v1.js?v=38',
-  './imagawa-path-policy-v3.js?v=38',
-  './pwa-install.js?v=38'
+  './imagawa-route-v1.js?v=39',
+  './imagawa-path-policy-v3.js?v=39',
+  './pwa-install.js?v=39'
 ];
 
 self.addEventListener('install', (event) => {
