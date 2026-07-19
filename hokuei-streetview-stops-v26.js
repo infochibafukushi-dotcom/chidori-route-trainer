@@ -47,15 +47,15 @@
       note: '終点・駅舎方面',
     },
 
-    // 海楽東児童公園：公園側ではなく車道・停留所側へ
+    // 海楽東児童公園：停留所標識＋東屋／公園側が見える向き
     '海楽東児童公園#1': {
       lat: 35.65880,
       lng: 139.91250,
-      heading: 140,
+      heading: 250,
       pitch: 0,
       zoom: 1,
       stopDurationMs: DEFAULT_STOP_MS,
-      note: '往路・車道側停留所',
+      note: '往路・停留所標識／東屋方面',
     },
     '海楽東児童公園#2': {
       lat: 35.65901,
@@ -88,7 +88,7 @@
     },
 
     // --- 往路 ---
-    '入船東団地#1': { lat: 35.65041, lng: 139.91765, heading: 200, pitch: 0, zoom: 1 },
+    '入船東団地#1': { lat: 35.65048, lng: 139.91780, heading: 115, pitch: 0, zoom: 1, note: '団地入口・沿道建物方面' },
     '入船五丁目#1': { lat: 35.65141, lng: 139.91829, heading: 340, pitch: 0, zoom: 1 },
     '入船六丁目#1': { lat: 35.65227, lng: 139.91721, heading: 310, pitch: 0, zoom: 1 },
     '浦安警察署#1': { lat: 35.65400, lng: 139.91503, heading: 310, pitch: 0, zoom: 1 },
@@ -101,7 +101,7 @@
     '北栄大三角線#1': { lat: 35.66363, lng: 139.90055, heading: 310, pitch: 0, zoom: 1 },
     '北栄中央#1': { lat: 35.66443, lng: 139.89931, heading: 310, pitch: 0, zoom: 1 },
     '北栄三丁目#1': { lat: 35.66526, lng: 139.89809, heading: 300, pitch: 0, zoom: 1 },
-    '北栄一丁目#1': { lat: 35.66604, lng: 139.89648, heading: 200, pitch: 0, zoom: 1 },
+    '北栄一丁目#1': { lat: 35.66604, lng: 139.89648, heading: 110, pitch: 0, zoom: 1, note: '停留所・沿道施設方面' },
     '浦安駅東口#1': { lat: 35.66659, lng: 139.89432, heading: 250, pitch: 1, zoom: 1 },
     '当代島#1': { lat: 35.66946, lng: 139.89402, heading: 20, pitch: 0, zoom: 1 },
 
@@ -125,8 +125,8 @@
 
     // 系統1 / 1-3 追加停留所（本番に無い場合も設定を保持）
     '東京ベイ医療センター入口#1': { lat: 35.67104, lng: 139.89465, heading: 300, pitch: 0, zoom: 1 },
-    '東京ベイ医療センター#1': { lat: 35.67174, lng: 139.89323, heading: 200, pitch: 0, zoom: 1 },
-    '浦安駅入口#1': { lat: 35.66483, lng: 139.89412, heading: 200, pitch: 0, zoom: 1 },
+    '東京ベイ医療センター#1': { lat: 35.67100, lng: 139.89350, heading: 50, pitch: 0, zoom: 1, note: '病院建物・名称看板方面' },
+    '浦安駅入口#1': { lat: 35.66550, lng: 139.89320, heading: 310, pitch: 0, zoom: 1, note: '浦安駅入口・駅名表示方面' },
   };
 
   function occurrenceKey(stops, index) {
