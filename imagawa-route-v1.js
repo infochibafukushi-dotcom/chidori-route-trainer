@@ -1,7 +1,7 @@
 (() => {
   const ROUTE_ID = 'route-2';
-  const VERSION = '2026-07-19-imagawa-v1q';
-  const PATH_POLICY_VERSION = '2026-07-19-imagawa-path-v3q';
+  const VERSION = '2026-07-19-imagawa-v1r';
+  const PATH_POLICY_VERSION = '2026-07-19-imagawa-path-v3r';
   const SYSTEM_KEY = 'chidori-imagawa-system-v1';
   const OSM_API_BASE = 'https://openstreetmap.tools/public_transport_geojson/api/route/';
   const OFFICIAL_ROUTE_MAP = 'https://www.keiseibus.co.jp/wp-content/uploads/2026/02/routemap-chidori.pdf';
@@ -397,7 +397,8 @@
             if (stop.manualOverride && validPosition(stop) && !sharedBad) return;
             if (!drifted && !sharedBad && stop.source === 'authoritative-platform'
               && stop.directionKey === coordinateKey(definition.key, name)) return;
-            if (drifted || sharedBad) coordsChanged = true;
+            // sharedBad alone is metadata cleanup; only coordinate drift wipes path.
+            if (drifted) coordsChanged = true;
             stop.lat = platform.lat;
             stop.lng = platform.lng;
             stop.source = 'authoritative-platform';
