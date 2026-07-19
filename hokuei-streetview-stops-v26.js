@@ -49,9 +49,9 @@
 
     // 海楽東児童公園：公園側ではなく車道・停留所側へ
     '海楽東児童公園#1': {
-      lat: 35.65884,
-      lng: 139.91242,
-      heading: 250,
+      lat: 35.65880,
+      lng: 139.91250,
+      heading: 140,
       pitch: 0,
       zoom: 1,
       stopDurationMs: DEFAULT_STOP_MS,
@@ -88,7 +88,7 @@
     },
 
     // --- 往路 ---
-    '入船東団地#1': { lat: 35.65041, lng: 139.91765, heading: 70, pitch: 0, zoom: 1 },
+    '入船東団地#1': { lat: 35.65041, lng: 139.91765, heading: 200, pitch: 0, zoom: 1 },
     '入船五丁目#1': { lat: 35.65141, lng: 139.91829, heading: 340, pitch: 0, zoom: 1 },
     '入船六丁目#1': { lat: 35.65227, lng: 139.91721, heading: 310, pitch: 0, zoom: 1 },
     '浦安警察署#1': { lat: 35.65400, lng: 139.91503, heading: 310, pitch: 0, zoom: 1 },
@@ -101,8 +101,8 @@
     '北栄大三角線#1': { lat: 35.66363, lng: 139.90055, heading: 310, pitch: 0, zoom: 1 },
     '北栄中央#1': { lat: 35.66443, lng: 139.89931, heading: 310, pitch: 0, zoom: 1 },
     '北栄三丁目#1': { lat: 35.66526, lng: 139.89809, heading: 300, pitch: 0, zoom: 1 },
-    '北栄一丁目#1': { lat: 35.66604, lng: 139.89648, heading: 280, pitch: 0, zoom: 1 },
-    '浦安駅東口#1': { lat: 35.66659, lng: 139.89432, heading: 220, pitch: 1, zoom: 1 },
+    '北栄一丁目#1': { lat: 35.66604, lng: 139.89648, heading: 200, pitch: 0, zoom: 1 },
+    '浦安駅東口#1': { lat: 35.66659, lng: 139.89432, heading: 250, pitch: 1, zoom: 1 },
     '当代島#1': { lat: 35.66946, lng: 139.89402, heading: 20, pitch: 0, zoom: 1 },
 
     // --- 復路・循環後半 ---
