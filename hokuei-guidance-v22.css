@@ -159,6 +159,7 @@
 
 .guidance-summary-v22 {
   padding: 10px 12px;
+  grid-template-columns: 1fr;
 }
 
 .guidance-summary-v22 span {
@@ -279,7 +280,13 @@
     font-size: 13px;
   }
 
-  .guidance-summary-v22 .secondary {
-    min-height: 42px;
+  .bus-controls-v22 {
+    gap: 4px;
+  }
+
+  .bus-controls-v22 .bus-control-button {
+    min-height: 44px;
+    padding: 6px 2px;
+    font-size: 12px;
   }
 }

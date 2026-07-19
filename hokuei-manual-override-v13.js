@@ -247,7 +247,7 @@
     const hide = (id) => { const node = document.getElementById(id); if (node) node.hidden = true; };
     ['settingsRefreshRoute', 'sName', 'sNote', 'sAddress', 'sLat', 'sLng', 'sSearch', 'picker', 'sStatus', 'sAdd'].forEach(hide);
     const help = document.querySelector('.stop-list-help');
-    if (help) help.textContent = '系統を選び、各停留所の「編集」から地図をクリックして位置を手動設定してください。';
+    if (help) help.textContent = '系統を選び、各停留所の「位置を修正」から地図ピンまたは緯度・経度で登録位置を修正してください。保存後はルート案内に反映されます。';
   };
 
   new MutationObserver(() => {
@@ -263,7 +263,7 @@
     const geocode = document.getElementById('editStopGeocode');
     if (geocode) geocode.hidden = true;
     const message = document.getElementById('editStopStatus');
-    if (message) message.textContent = '地図上の正しいバス停位置をクリックするか、緯度・経度を入力してください。';
+    if (message) message.textContent = '地図上の正しいバス停位置をクリックするか、緯度・経度を入力して位置を修正してください。';
   }).observe(document.body, { childList: true, subtree: true });
 
   prepareManualData();

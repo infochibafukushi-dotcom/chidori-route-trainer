@@ -342,13 +342,20 @@
     street.appendChild(turnGuide);
 
     const controls = document.createElement('div');
-    controls.className = 'bus-controls';
+    controls.className = 'bus-controls bus-controls-v22';
     controls.innerHTML = `
-      <button id="driveStart" class="primary bus-control-button">▶ 20km/hで走行</button>
-      <button id="drivePause" class="secondary bus-control-button">一時停止</button>
-      <button id="drivePrevious" class="secondary bus-control-button">前の停留所</button>
-      <button id="driveNext" class="secondary bus-control-button">次の停留所へ</button>
-      <button id="driveReset" class="secondary bus-control-button">始発に戻す</button>
+      <button id="driveStartPause" class="primary bus-control-button" type="button">
+        <span class="bus-label-full">スタート</span><span class="bus-label-short">スタート</span>
+      </button>
+      <button id="drivePrevious" class="secondary bus-control-button" type="button">
+        <span class="bus-label-full">前の停留所</span><span class="bus-label-short">前</span>
+      </button>
+      <button id="driveNext" class="secondary bus-control-button" type="button">
+        <span class="bus-label-full">次の停留所</span><span class="bus-label-short">次</span>
+      </button>
+      <button id="driveReset" class="secondary bus-control-button" type="button">
+        <span class="bus-label-full">S地点</span><span class="bus-label-short">S地点</span>
+      </button>
       <span id="driveProgress" class="bus-progress">始発：${esc(activeStops[0].name)}</span>`;
     document.querySelector('.guidance-v22-split')?.insertAdjacentElement('afterend', controls);
 
@@ -358,10 +365,13 @@
     controls.insertAdjacentElement('afterend', sequence);
 
     const progress = document.getElementById('driveProgress');
+    const startPauseButton = document.getElementById('driveStartPause');
     const previousButton = document.getElementById('drivePrevious');
     const nextButton = document.getElementById('driveNext');
     const speedMetersPerSecond = SPEED_KMH * 1000 / 3600;
     let traveled = 0;
+    // lastPassedStopIndex: 最後に通過（到着）した停留所。停留所間走行中も維持する。
+    let lastPassedStopIndex = 0;
     let selectedStopIndex = 0;
     let nextStopIndex = 1;
     let running = false;
@@ -375,6 +385,15 @@
     let lastDrivingVisualUpdate = 0;
     let streetRequestToken = 0;
     let manualHold = true;
+
+    const isAtStopDistance = (index) => {
+      const distance = stopDistances[index];
+      return Number.isFinite(distance) && Math.abs(traveled - distance) < 1;
+    };
+
+    const isParkedAtLastPassed = () => (
+      selectedStopIndex === lastPassedStopIndex && isAtStopDistance(lastPassedStopIndex)
+    );
 
     const highlightStop = (index) => {
       sequence.querySelectorAll('[data-guidance-stop]').forEach((button) => {
@@ -611,11 +630,23 @@
       }
     };
 
+    const updateStartPauseButton = () => {
+      const full = startPauseButton.querySelector('.bus-label-full');
+      const short = startPauseButton.querySelector('.bus-label-short');
+      const label = running ? '一時停止' : 'スタート';
+      if (full) full.textContent = label;
+      if (short) short.textContent = label;
+      startPauseButton.classList.toggle('primary', !running);
+      startPauseButton.classList.toggle('secondary', running);
+      startPauseButton.setAttribute('aria-pressed', running ? 'true' : 'false');
+    };
+
     const updateButtons = () => {
-      previousButton.disabled = selectedStopIndex <= 0;
-      previousButton.textContent = selectedStopIndex > 0 ? `前：${activeStops[selectedStopIndex - 1].name}` : '前の停留所なし';
-      nextButton.disabled = selectedStopIndex >= activeStops.length - 1;
-      nextButton.textContent = selectedStopIndex < activeStops.length - 1 ? `次：${activeStops[selectedStopIndex + 1].name}` : '終点に到着';
+      updateStartPauseButton();
+      // 前：最後に通過した停留所へ（既にその停留所に停車中なら無効）
+      previousButton.disabled = isParkedAtLastPassed();
+      // 次：最後に通過した停留所の次（終点通過後は無効）
+      nextButton.disabled = lastPassedStopIndex >= activeStops.length - 1;
     };
 
     const updateTurnGuide = () => {
@@ -650,10 +681,14 @@
       } else if (now >= telopHideAt) {
         stationTelop.classList.remove('show');
       }
-      const previousStop = activeStops[selectedStopIndex - 1]?.name || 'なし';
-      const currentStop = activeStops[selectedStopIndex]?.name || '走行中';
-      const nextStop = activeStops[selectedStopIndex + 1]?.name || '終点';
-      progress.textContent = `${running ? '時速20km' : '停止中'}${waitingForStreetView ? '｜表示準備中' : ''}${dwellUntil ? '｜3秒停車中' : ''}｜前：${previousStop}｜現在：${currentStop}｜次：${nextStop}`;
+      const lastPassedName = activeStops[lastPassedStopIndex]?.name || 'なし';
+      const nextTarget = activeStops[lastPassedStopIndex + 1];
+      const nextStop = nextTarget?.name || '終点';
+      const betweenStops = !isParkedAtLastPassed() && traveled > (stopDistances[lastPassedStopIndex] || 0);
+      const currentLabel = betweenStops
+        ? `${lastPassedName}〜${nextStop}`
+        : (activeStops[selectedStopIndex]?.name || '走行中');
+      progress.textContent = `${running ? '走行中' : '停止中'}${waitingForStreetView ? '｜表示準備中' : ''}${dwellUntil ? '｜停車中' : ''}｜通過：${lastPassedName}｜現在：${currentLabel}｜次：${nextStop}`;
       updateButtons();
       updateTurnGuide();
     };
@@ -675,6 +710,8 @@
     const selectStop = (index, autoContinue) => {
       if (index < 0 || index >= activeStops.length) return;
       running = autoContinue;
+      // 停留所へ直接移動・到着時は「最後に通過した停留所」を明示更新
+      lastPassedStopIndex = index;
       selectedStopIndex = index;
       nextStopIndex = index + 1;
       traveled = stopDistances[index];
@@ -758,6 +795,7 @@
       waitingForStreetView = false;
       finalStopPending = false;
       previousTime = null;
+      lastPassedStopIndex = activeStops.length - 1;
       selectedStopIndex = activeStops.length - 1;
       nextStopIndex = activeStops.length;
       traveled = metrics.total;
@@ -793,6 +831,8 @@
       if (previousTime === null) previousTime = now;
       traveled = Math.min(metrics.total, traveled + speedMetersPerSecond * Math.min((now - previousTime) / 1000, 1));
       previousTime = now;
+      // 次停留所は「最後に通過した停留所の次」に固定（二重進行防止）
+      nextStopIndex = lastPassedStopIndex + 1;
       const target = stopDistances[nextStopIndex];
       if (Number.isFinite(target) && traveled >= target - 0.5) {
         selectStop(nextStopIndex, true);
@@ -813,8 +853,34 @@
       frame = requestAnimationFrame(tick);
     };
 
-    document.getElementById('driveStart').onclick = () => {
+    const pauseDriving = () => {
+      if (!running && pausedDwellRemaining <= 0 && !dwellUntil) {
+        updateText(performance.now());
+        return;
+      }
+      running = false;
+      cancelAnimationFrame(frame);
+      previousTime = null;
+      if (dwellUntil) {
+        pausedDwellRemaining = Math.max(0, dwellUntil - performance.now());
+        dwellUntil = 0;
+        stopImagesApi()?.pauseDwell?.();
+      } else {
+        pausedDwellRemaining = 0;
+      }
+      // 表示準備中なら待機を解除し、通過済みインデックスは維持
+      waitingForStreetView = false;
+      finalStopPending = false;
+      manualHold = true;
+      updateText(performance.now());
+      statusNode.textContent = pausedDwellRemaining > 0
+        ? `一時停止｜停車残り約${Math.ceil(pausedDwellRemaining / 1000)}秒`
+        : '走行を一時停止しました。';
+    };
+
+    const startDriving = () => {
       if (running) return;
+
       // 一時停止中の停車カウントを再開
       if (pausedDwellRemaining > 0) {
         running = true;
@@ -828,59 +894,75 @@
         updateText(performance.now());
         return;
       }
-      if (selectedStopIndex >= activeStops.length - 1) {
-        selectedStopIndex = 0;
-        nextStopIndex = 1;
-        traveled = 0;
+
+      // 終点完了後はS地点（始発）から再開
+      if (lastPassedStopIndex >= activeStops.length - 1 && isParkedAtLastPassed()) {
+        stopImagesApi()?.resetSession?.();
+        activeImageKey = '';
+        selectStop(0, true);
+        cancelAnimationFrame(frame);
+        frame = requestAnimationFrame(tick);
+        return;
       }
+
+      // 停留所間で一時停止していた場合：通過状態を維持したまま現在位置から再開
+      const lastDist = stopDistances[lastPassedStopIndex] || 0;
+      if (traveled > lastDist + 1) {
+        running = true;
+        waitingForStreetView = false;
+        manualHold = false;
+        previousTime = null;
+        nextStopIndex = lastPassedStopIndex + 1;
+        cancelAnimationFrame(frame);
+        frame = requestAnimationFrame(tick);
+        statusNode.textContent = '走行を再開しました。';
+        updateText(performance.now());
+        return;
+      }
+
+      // 停留所に停車中：既存の20km/h走行処理で発車
       running = true;
       cancelAnimationFrame(frame);
-      selectStop(selectedStopIndex, true);
+      selectStop(lastPassedStopIndex, true);
       frame = requestAnimationFrame(tick);
     };
 
-    document.getElementById('drivePause').onclick = () => {
-      running = false;
-      cancelAnimationFrame(frame);
-      previousTime = null;
-      if (dwellUntil) {
-        pausedDwellRemaining = Math.max(0, dwellUntil - performance.now());
-        dwellUntil = 0;
-        stopImagesApi()?.pauseDwell?.();
-      } else {
-        pausedDwellRemaining = 0;
-      }
-      // 表示準備中なら待機を解除し、現在停留所を保持
-      waitingForStreetView = false;
-      finalStopPending = false;
-      manualHold = true;
-      updateText(performance.now());
-      statusNode.textContent = pausedDwellRemaining > 0
-        ? `一時停止｜停車残り約${Math.ceil(pausedDwellRemaining / 1000)}秒`
-        : '走行を一時停止しました。';
+    startPauseButton.onclick = () => {
+      if (running) pauseDriving();
+      else startDriving();
     };
 
     previousButton.onclick = () => {
+      // 最後に通過した停留所へ移動（停留所間にいる場合の「前」）
+      const target = lastPassedStopIndex;
+      if (target < 0 || target >= activeStops.length) return;
+      if (isParkedAtLastPassed()) return;
       running = false;
       cancelAnimationFrame(frame);
-      selectStop(selectedStopIndex - 1, false);
+      pausedDwellRemaining = 0;
+      selectStop(target, false);
     };
 
     nextButton.onclick = () => {
-      if (selectedStopIndex >= activeStops.length - 1) return;
+      // 最後に通過した停留所の次（未通過）へ、登録座標へ直接移動
+      const target = lastPassedStopIndex + 1;
+      if (target < 0 || target >= activeStops.length) return;
       running = false;
       cancelAnimationFrame(frame);
-      selectStop(selectedStopIndex + 1, false);
+      pausedDwellRemaining = 0;
+      selectStop(target, false);
     };
 
     document.getElementById('driveReset').onclick = () => {
       running = false;
       cancelAnimationFrame(frame);
       pausedDwellRemaining = 0;
+      waitingForStreetView = false;
+      finalStopPending = false;
       stopImagesApi()?.resetSession?.();
       activeImageKey = '';
       selectStop(0, false);
-      statusNode.textContent = `始発の${activeStops[0].name}へ戻しました。`;
+      statusNode.textContent = `S地点（${activeStops[0].name}）へ戻しました。`;
     };
 
     sequence.querySelectorAll('[data-guidance-stop]').forEach((button) => {
@@ -973,8 +1055,7 @@
         <label>系統<select id="systemSelect">${Object.values(route.systems).map((item) => `<option value="${item.code}" ${item.code === code ? 'selected' : ''}>${esc(item.code)}｜${esc(item.title)}</option>`).join('')}</select></label>
       </div>
       <section class="manual-mode-card guidance-summary-v22">
-        <div><strong>ルート案内 V22</strong><span>「次の停留所へ」は登録済み緯度・経度へ直接移動｜位置設定 ${positioned}/${system.stops.length}件</span></div>
-        <button id="manualSettings" class="secondary" type="button">設定画面で位置を修正</button>
+        <div><strong>ルート案内 V22</strong><span>「次の停留所」は登録済み緯度・経度へ直接移動｜位置設定 ${positioned}/${system.stops.length}件</span></div>
       </section>
       <div class="split guidance-v22-split">
         <div class="guidance-map-wrap-v22"><div id="routeMap" class="map guidance-map-v22"></div><div class="guidance-version-v22">案内V22・約20m</div></div>
@@ -990,10 +1071,6 @@
     document.getElementById('systemSelect').onchange = (event) => {
       setSelectedCode(event.target.value);
       routes();
-    };
-    document.getElementById('manualSettings').onclick = () => {
-      settingsTab = 'stops';
-      go('settings');
     };
 
     drawGuidance(route, system, token).catch((error) => {

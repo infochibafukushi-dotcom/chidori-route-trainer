@@ -996,7 +996,7 @@
           <span>${esc(stop.address || '住所未設定')}</span>
           <code>緯度 ${Number.isFinite(stop.lat) ? stop.lat.toFixed(6) : '未設定'} ／ 経度 ${Number.isFinite(stop.lng) ? stop.lng.toFixed(6) : '未設定'}${stop.source ? ` ／ ${esc(stop.source)}` : ''}</code>
         </div>
-        <button type="button" class="stop-edit-button" data-edit-stop="${route.id}|${mode}|${stop.id}">編集</button>
+        <button type="button" class="stop-edit-button" data-edit-stop="${route.id}|${mode}|${stop.id}">位置を修正</button>
       </div>`).join('') || '<p>この方向の停留所は未登録です。</p>';
     box.querySelectorAll('[data-edit-stop]').forEach((button) => {
       button.onclick = () => {
@@ -1020,7 +1020,7 @@
     dialog.className = 'stop-edit-backdrop';
     dialog.innerHTML = `
       <section class="stop-edit-dialog" role="dialog" aria-modal="true" aria-labelledby="stopEditTitle">
-        <div class="stop-edit-header"><div><h2 id="stopEditTitle">停留所を編集</h2><p>${esc(label(route))}・${esc(settingsModeLabel(route, mode))}・${index + 1} / ${stops.length}</p></div><button type="button" id="closeStopEditor" class="stop-edit-close" aria-label="閉じる">×</button></div>
+        <div class="stop-edit-header"><div><h2 id="stopEditTitle">位置を修正</h2><p>${esc(label(route))}・${esc(settingsModeLabel(route, mode))}・${index + 1} / ${stops.length}</p></div><button type="button" id="closeStopEditor" class="stop-edit-close" aria-label="閉じる">×</button></div>
         <div class="stop-edit-grid">
           <label>停留所名<input id="editStopName" value="${esc(stop.name)}"></label>
           <label>補足<input id="editStopNote" value="${esc(stop.note || '')}"></label>
@@ -1028,7 +1028,7 @@
           <label>緯度<input id="editStopLat" inputmode="decimal" value="${Number.isFinite(stop.lat) ? stop.lat.toFixed(7) : ''}"></label>
           <label>経度<input id="editStopLng" inputmode="decimal" value="${Number.isFinite(stop.lng) ? stop.lng.toFixed(7) : ''}"></label>
         </div>
-        <div class="stop-edit-actions-inline"><button type="button" id="editStopGeocode" class="secondary">住所から位置を取得</button><span id="editStopStatus" class="status">手動修正すると「手動確認済み」として保存されます。</span></div>
+        <div class="stop-edit-actions-inline"><button type="button" id="editStopGeocode" class="secondary">住所から位置を取得</button><span id="editStopStatus" class="status">地図のピン移動、または緯度・経度の直接入力で位置を修正できます。</span></div>
         <div id="editStopMap" class="stop-edit-map"></div>
         <div class="stop-edit-footer">
           <button type="button" id="cancelStopEdit" class="secondary">キャンセル</button>
@@ -1102,7 +1102,7 @@
           <p id="sStatus" class="status">地図をクリック、または緯度・経度を直接入力できます。</p>
           <button class="primary" id="sAdd">停留所を追加</button>
         </div>
-        <div class="card"><strong id="stopListTitle">登録済み停留所</strong><p class="stop-list-help">選択中の系統・方向だけを表示します。</p><div id="stopList"></div></div>
+        <div class="card"><strong id="stopListTitle">登録済み停留所</strong><p class="stop-list-help">各停留所の「位置を修正」から、地図ピンまたは緯度・経度で登録位置を修正できます。保存後はルート案内に反映されます。</p><div id="stopList"></div></div>
       </div>`;
     renderSettingsModeOptions();
     renderSettingsStopList();
