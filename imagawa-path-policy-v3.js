@@ -1,5 +1,5 @@
 (() => {
-  const POLICY_VERSION = '2026-07-19-imagawa-path-v3f';
+  const POLICY_VERSION = '2026-07-19-imagawa-path-v3g';
   const ROUTE_ID = 'route-2';
   const OSM_RELATION_PATHS = ['/route/18323695', '/route/9964872'];
   const nativeFetch = window.fetch.bind(window);
@@ -33,32 +33,55 @@
     }
   };
 
+  function clearSystemPath(system) {
+    if (!system) return;
+    system.path = [];
+    system.pathSource = null;
+    system.resolvedVersion = null;
+    system.verifiedAt = null;
+    system.pathInvalid = false;
+    system.pathIssues = null;
+    system.validation = null;
+    system.coordinateStats = null;
+  }
+
   function invalidateOldPaths() {
     if (typeof data === 'undefined' || !Array.isArray(data?.routes)) return;
     const route = data.routes.find((item) => item.id === ROUTE_ID);
     if (!route?.systems) return;
     let changed = route.imagawaPathPolicyVersion !== POLICY_VERSION;
 
-    // 2-maihama の保存済み誤 path のみ無効化（画像・他系統・北栄線は触らない）
-    const maihama = route.systems['2-maihama'];
-    if (maihama && route.imagawaPathPolicyVersion !== POLICY_VERSION) {
-      maihama.path = [];
-      maihama.pathSource = null;
-      maihama.resolvedVersion = null;
-      maihama.verifiedAt = null;
-      maihama.pathInvalid = false;
-      maihama.pathIssues = null;
-      changed = true;
+    // 2-urayasu-maihama の保存済み誤 path / shared-direction 座標を無効化
+    // （2-maihama・北栄線・画像・他系統は触らない）
+    if (route.imagawaPathPolicyVersion !== POLICY_VERSION) {
+      const urayasu = route.systems['2-urayasu-maihama'];
+      if (urayasu) {
+        clearSystemPath(urayasu);
+        (urayasu.stops || []).forEach((stop) => {
+          if (
+            String(stop.source || '').startsWith('shared-direction')
+            || String(stop.source || '').startsWith('shared-manual')
+            || String(stop.directionKey || '').startsWith('outbound|')
+            || String(stop.directionKey || '').startsWith('inbound|')
+          ) {
+            if (!stop.manualOverride) {
+              stop.lat = null;
+              stop.lng = null;
+              stop.source = null;
+              stop.directionKey = null;
+            }
+          }
+        });
+        changed = true;
+      }
     }
 
     Object.values(route.systems).forEach((system) => {
       if (system?.key === '2-maihama' || system?.code === '2-maihama') return;
+      if (system?.key === '2-urayasu-maihama' || system?.code === '2-urayasu-maihama') return;
       const usesOsmPath = String(system?.pathSource || '').includes('OpenStreetMap relation');
       if (!usesOsmPath) return;
-      system.path = [];
-      system.pathSource = null;
-      system.resolvedVersion = null;
-      system.verifiedAt = null;
+      clearSystemPath(system);
       changed = true;
     });
 

@@ -1,7 +1,7 @@
 (() => {
   const ROUTE_ID = 'route-2';
-  const VERSION = '2026-07-19-imagawa-v1f';
-  const PATH_POLICY_VERSION = '2026-07-19-imagawa-path-v3f';
+  const VERSION = '2026-07-19-imagawa-v1g';
+  const PATH_POLICY_VERSION = '2026-07-19-imagawa-path-v3g';
   const SYSTEM_KEY = 'chidori-imagawa-system-v1';
   const OSM_API_BASE = 'https://openstreetmap.tools/public_transport_geojson/api/route/';
   const OFFICIAL_ROUTE_MAP = 'https://www.keiseibus.co.jp/wp-content/uploads/2026/02/routemap-chidori.pdf';
@@ -15,9 +15,9 @@
 
   /**
    * 系統キー単位の確定停留所座標（OSM platform + Google Maps/Street View照合）。
-   * directionGroup 共有は使わない。2-maihama のみ今回確定。
-   * 美浜東団地: 美浜5丁目2側（NW→SE道路の南西側＝舞浜駅行き進行方向）。
-   * 旧誤座標（反対方向・美浜1丁目7側）: 35.6522648, 139.9122584
+   * directionGroup 共有は使わない。systemKey|停留所名 で管理。
+   * 2-maihama 美浜東団地: 美浜5丁目2側（NW→SE道路の南西側＝舞浜駅行き）。
+   * 2-urayasu-maihama 美浜東団地: 美浜1丁目7側（反対方向・OSM 1330409783）。
    */
   const AUTHORITATIVE_PLATFORMS = {
     '2-maihama': {
@@ -40,9 +40,30 @@
       オリエンタルランド本社前: { lat: 35.6320206, lng: 139.887359 },
       舞浜駅: { lat: 35.6360225, lng: 139.8833113 },
     },
+    /** OSM relation 9964872（舞浜駅⇒浦安駅入口）platform。2-maihama とは別乗り場。 */
+    '2-urayasu-maihama': {
+      舞浜駅: { lat: 35.6358527, lng: 139.8837581, platformId: 2661127170 },
+      オリエンタルランド本社前: { lat: 35.6312873, lng: 139.8885643, platformId: 2301981524 },
+      運動公園: { lat: 35.6325209, lng: 139.8914704, platformId: 6720667166 },
+      舞浜三丁目: { lat: 35.6339331, lng: 139.8931509, platformId: 1652826334 },
+      見明川住宅: { lat: 35.6366143, lng: 139.8963732, platformId: 1652792629 },
+      見明川中学校前: { lat: 35.6385937, lng: 139.8987376, platformId: 11581103370 },
+      弁天第二: { lat: 35.6400525, lng: 139.900479, platformId: 11581103369 },
+      サンコーポ西口: { lat: 35.6423093, lng: 139.9031895, platformId: 11581097368 },
+      サンコーポ東口: { lat: 35.6440928, lng: 139.9053323, platformId: 6720667163 },
+      順天堂病院前: { lat: 35.645692, lng: 139.907214, platformId: 11581097365 },
+      若潮公園: { lat: 35.6475041, lng: 139.9093912, platformId: 6720667161 },
+      新浦安駅北口: { lat: 35.650172, lng: 139.9125398, platformId: 6720642144 },
+      美浜東団地: { lat: 35.6522648, lng: 139.9122584, platformId: 1330409783 },
+      海楽: { lat: 35.6573684, lng: 139.9059647, platformId: 6720667167 },
+      消防本部前: { lat: 35.6589613, lng: 139.9038774, platformId: 12368996379 },
+      猫実: { lat: 35.6611395, lng: 139.9005341, platformId: 2900279301 },
+      神明裏: { lat: 35.6628205, lng: 139.8979314, platformId: 6764110350 },
+      浦安駅入口: { lat: 35.6644872, lng: 139.8950364, platformId: 6764110353 },
+    },
   };
 
-  /** 道路形状用経由点（停留所としては表示しない）。OSM route relation の one-way 道路上。 */
+  /** 道路形状用経由点（停留所としては表示しない）。OSM route relation の道路上。 */
   const IMAGAWA_PATH_SHAPING_POINTS = {
     '2-maihama': {
       '運動公園->オリエンタルランド本社前': [
@@ -54,6 +75,30 @@
         { lat: 35.6351208, lng: 139.883533 },
       ],
     },
+    '2-urayasu-maihama': {
+      '舞浜駅->オリエンタルランド本社前': [
+        { lat: 35.6355647, lng: 139.8838339 },
+        { lat: 35.6350695, lng: 139.8836973 },
+        { lat: 35.6335251, lng: 139.885658 },
+      ],
+      'オリエンタルランド本社前->運動公園': [
+        { lat: 35.6305993, lng: 139.8892788 },
+        { lat: 35.631266, lng: 139.8900762 },
+      ],
+      '運動公園->舞浜三丁目': [
+        { lat: 35.6330661, lng: 139.8922557 },
+      ],
+      'サンコーポ東口->順天堂病院前': [
+        { lat: 35.6446906, lng: 139.9061601 },
+      ],
+      '順天堂病院前->若潮公園': [
+        { lat: 35.6462457, lng: 139.908028 },
+      ],
+      '新浦安駅北口->美浜東団地': [
+        { lat: 35.650726, lng: 139.9132923 },
+        { lat: 35.6512245, lng: 139.9136655 },
+      ],
+    },
   };
 
   /** 2-maihama の Directions 区間分割（0-based stop index）。 */
@@ -63,6 +108,21 @@
     [12, 15],
     [15, 16],
     [16, 17],
+  ];
+
+  /** 2-urayasu-maihama の Directions 区間分割（問題区間を独立生成）。 */
+  const URAYASU_MAIHAMA_SEGMENT_BOUNDS = [
+    [0, 1],
+    [1, 2],
+    [2, 4],
+    [4, 7],
+    [7, 8],
+    [8, 9],
+    [9, 10],
+    [10, 11],
+    [11, 12],
+    [12, 13],
+    [13, 17],
   ];
 
   const URAYASU_TO_NORTH = [
@@ -210,9 +270,9 @@
         systems[definition.key].title = definition.title;
         systems[definition.key].summary = definition.summary;
         systems[definition.key].relationId = definition.relationId;
-        // 2-maihama のみ確定座標を強制適用（他系統は触らない）
-        if (definition.key === '2-maihama') {
-          const platforms = AUTHORITATIVE_PLATFORMS['2-maihama'];
+        // 確定座標を強制適用（2-maihama / 2-urayasu-maihama のみ。他系統は触らない）
+        if (definition.key === '2-maihama' || definition.key === '2-urayasu-maihama') {
+          const platforms = AUTHORITATIVE_PLATFORMS[definition.key];
           let stopChanged = false;
           (systems[definition.key].stops || []).forEach((stop, index) => {
             const name = definition.names[index];
@@ -233,11 +293,19 @@
             stop.sourceName = name;
             stop.systemCode = definition.key;
             stop.directionKey = coordinateKey(definition.key, name);
+            stop.platformId = platform.platformId || null;
             stop.verifiedAt = new Date().toISOString();
             stopChanged = true;
           });
-          if (stopChanged || route.imagawaVersion !== VERSION || route.imagawaPathPolicyVersion !== PATH_POLICY_VERSION) {
+          // 2-maihama は座標ドリフト時のみ path 無効化（VERSION 更新だけでは触らない）
+          // 2-urayasu-maihama は今回の再生成対象のため VERSION 更新で無効化
+          const shouldInvalidatePath = definition.key === '2-urayasu-maihama'
+            ? (stopChanged || route.imagawaVersion !== VERSION || route.imagawaPathPolicyVersion !== PATH_POLICY_VERSION)
+            : stopChanged;
+          if (shouldInvalidatePath) {
             invalidateSystemPath(systems[definition.key]);
+            changed = true;
+          } else if (stopChanged) {
             changed = true;
           }
         }
@@ -479,24 +547,78 @@
     return total;
   }
 
+  function nearestPathIndex(path, stop) {
+    let bestIndex = 0;
+    let bestDistance = Infinity;
+    path.forEach((point, index) => {
+      const distance = distanceMeters(point, stop);
+      if (distance < bestDistance) {
+        bestDistance = distance;
+        bestIndex = index;
+      }
+    });
+    return { index: bestIndex, distance: bestDistance };
+  }
+
+  function countSelfIntersections(path) {
+    const segments = [];
+    for (let index = 1; index < path.length; index += 1) {
+      if (distanceMeters(path[index - 1], path[index]) < 4) continue;
+      segments.push([path[index - 1], path[index]]);
+    }
+    let count = 0;
+    const orient = (a, b, c) => {
+      const value = (b.lng - a.lng) * (c.lat - a.lat) - (b.lat - a.lat) * (c.lng - a.lng);
+      if (Math.abs(value) < 1e-14) return 0;
+      return value > 0 ? 1 : 2;
+    };
+    const onSegment = (a, b, c) =>
+      Math.min(a.lat, b.lat) <= c.lat && c.lat <= Math.max(a.lat, b.lat)
+      && Math.min(a.lng, b.lng) <= c.lng && c.lng <= Math.max(a.lng, b.lng);
+    for (let i = 0; i < segments.length; i += 1) {
+      for (let j = i + 2; j < segments.length; j += 1) {
+        if (j === i + 1) continue;
+        const [p1, q1] = segments[i];
+        const [p2, q2] = segments[j];
+        const o1 = orient(p1, q1, p2);
+        const o2 = orient(p1, q1, q2);
+        const o3 = orient(p2, q2, p1);
+        const o4 = orient(p2, q2, q1);
+        if (o1 !== o2 && o3 !== o4) {
+          count += 1;
+          continue;
+        }
+        if (o1 === 0 && onSegment(p1, q1, p2)) count += 1;
+        else if (o2 === 0 && onSegment(p1, q1, q2)) count += 1;
+        else if (o3 === 0 && onSegment(p2, q2, p1)) count += 1;
+        else if (o4 === 0 && onSegment(p2, q2, q1)) count += 1;
+      }
+    }
+    return count;
+  }
+
   function validateRoadPath(path, stops, systemKey) {
     const issues = [];
+    const metrics = { sharpReversals: 0, selfIntersections: 0, revisitPairs: [] };
     if (!Array.isArray(path) || path.length < 4) {
-      return { valid: false, issues: [{ type: 'empty', message: '道路ルートが空です' }] };
+      return { valid: false, issues: [{ type: 'empty', message: '道路ルートが空です' }], metrics };
     }
 
     let previousHeading = null;
     let reverseRun = 0;
-    // 終点付近のターミナル進入は正規のワンウェイループになり得るため、末尾は急反転検出から除外
+    // 舞浜駅行き: 終点ターミナル進入は急反転検出から除外
+    // 浦安駅入口行き: 始発ターミナル出発は急反転検出から除外
+    const reverseStartIndex = systemKey === '2-urayasu-maihama' ? 18 : 1;
     const reverseLimitIndex = systemKey === '2-maihama'
       ? Math.max(2, path.length - 18)
       : path.length;
-    for (let index = 1; index < reverseLimitIndex; index += 1) {
+    for (let index = reverseStartIndex; index < reverseLimitIndex; index += 1) {
       const step = distanceMeters(path[index - 1], path[index]);
       if (step < 8) continue;
       const currentHeading = heading(path[index - 1], path[index]);
       if (previousHeading !== null && angleDiff(previousHeading, currentHeading) >= 150) {
         reverseRun += step;
+        metrics.sharpReversals += 1;
         if (reverseRun >= 160) {
           issues.push({ type: 'out-and-back', message: `同一区間の往復・急反転疑い（約${Math.round(reverseRun)}m）` });
           break;
@@ -513,22 +635,8 @@
       const end = stops[index + 1];
       const direct = distanceMeters(start, end);
       if (direct < 350) continue;
-      let bestStart = 0;
-      let bestEnd = path.length - 1;
-      let bestStartDistance = Infinity;
-      let bestEndDistance = Infinity;
-      path.forEach((point, pathIndex) => {
-        const toStart = distanceMeters(point, start);
-        const toEnd = distanceMeters(point, end);
-        if (toStart < bestStartDistance) {
-          bestStartDistance = toStart;
-          bestStart = pathIndex;
-        }
-        if (toEnd < bestEndDistance) {
-          bestEndDistance = toEnd;
-          bestEnd = pathIndex;
-        }
-      });
+      const bestStart = nearestPathIndex(path, start).index;
+      const bestEnd = nearestPathIndex(path, end).index;
       if (bestEnd <= bestStart) continue;
       const segment = path.slice(bestStart, bestEnd + 1);
       const along = pathLength(segment);
@@ -540,11 +648,12 @@
       }
     }
 
-    // 舞浜駅前の正規ターミナル進入を誤検知しないよう、末尾区間は周回検出から除外
+    // 舞浜駅前の正規ターミナル進入／出発を誤検知しないよう周回検出範囲を調整
+    const enclosureStart = systemKey === '2-urayasu-maihama' ? 28 : 12;
     const enclosureLimit = systemKey === '2-maihama'
       ? Math.max(20, path.length - 25)
       : path.length;
-    for (let index = 12; index < enclosureLimit && issues.length === 0; index += 1) {
+    for (let index = enclosureStart; index < enclosureLimit && issues.length === 0; index += 1) {
       for (let back = 8; back <= 28 && index - back >= 0; back += 1) {
         const gap = distanceMeters(path[index], path[index - back]);
         if (gap > 28) continue;
@@ -556,24 +665,18 @@
       }
     }
 
+    metrics.selfIntersections = countSelfIntersections(path);
+    if (systemKey === '2-urayasu-maihama' && metrics.selfIntersections > 0) {
+      issues.push({ type: 'self-intersection', message: `経路の自己交差 ${metrics.selfIntersections} 件` });
+    }
+
     if (systemKey === '2-maihama' && stops.length >= 18) {
       const stop16 = stops[15];
       const stop17 = stops[16];
       const stop18 = stops[17];
-      let i16 = 0;
-      let i17 = 0;
-      let i18 = path.length - 1;
-      let d16 = Infinity;
-      let d17 = Infinity;
-      let d18 = Infinity;
-      path.forEach((point, index) => {
-        const a = distanceMeters(point, stop16);
-        const b = distanceMeters(point, stop17);
-        const c = distanceMeters(point, stop18);
-        if (a < d16) { d16 = a; i16 = index; }
-        if (b < d17) { d17 = b; i17 = index; }
-        if (c < d18) { d18 = c; i18 = index; }
-      });
+      const i16 = nearestPathIndex(path, stop16).index;
+      const i17 = nearestPathIndex(path, stop17).index;
+      const i18 = nearestPathIndex(path, stop18).index;
       if (!(i16 < i17 && i17 < i18)) {
         issues.push({ type: 'order', message: '16→17→18 の通過順が崩れています' });
       } else {
@@ -597,7 +700,48 @@
       }
     }
 
-    return { valid: issues.length === 0, issues };
+    if (systemKey === '2-urayasu-maihama' && stops.length >= 18) {
+      const indices = stops.map((stop) => nearestPathIndex(path, stop).index);
+      for (let index = 1; index < indices.length; index += 1) {
+        if (indices[index] <= indices[index - 1]) {
+          issues.push({
+            type: 'order',
+            message: `${index}→${index + 1}（${stops[index - 1].name}→${stops[index].name}）の通過順が崩れています`,
+          });
+          metrics.revisitPairs.push([stops[index - 1].name, stops[index].name]);
+          break;
+        }
+      }
+
+      const checkNoBacktrack = (fromIndex, toIndex, label) => {
+        const start = indices[fromIndex];
+        const end = indices[toIndex];
+        if (!(start < end)) return;
+        const segment = path.slice(start, end + 1);
+        const origin = stops[fromIndex];
+        let back = 0;
+        for (let index = 1; index < segment.length; index += 1) {
+          const toOrigin = distanceMeters(segment[index], origin);
+          const prev = distanceMeters(segment[index - 1], origin);
+          if (toOrigin + 30 < prev) back += distanceMeters(segment[index - 1], segment[index]);
+        }
+        if (back > 160) {
+          issues.push({ type: 'backtrack', message: `${label} で前停留所方向へ戻る折返し疑い（約${Math.round(back)}m）` });
+          metrics.revisitPairs.push([stops[fromIndex].name, stops[toIndex].name]);
+        }
+        const along = pathLength(segment);
+        const direct = distanceMeters(stops[fromIndex], stops[toIndex]);
+        if (along > Math.max(1200, direct * 4.2)) {
+          issues.push({ type: 'detour', message: `${label} が極端に長い（約${Math.round(along)}m）` });
+        }
+      };
+
+      checkNoBacktrack(0, 4, '1→5（舞浜駅〜見明川住宅）');
+      checkNoBacktrack(8, 10, '9→11（サンコーポ東口〜若潮公園）');
+      checkNoBacktrack(11, 12, '12→13（新浦安駅北口〜美浜東団地）');
+    }
+
+    return { valid: issues.length === 0, issues, metrics };
   }
 
   function buildSegmentWaypoints(systemKey, fromStop, toStop) {
@@ -611,6 +755,9 @@
   function segmentBoundsForSystem(systemKey, stopCount) {
     if (systemKey === '2-maihama') {
       return MAIHAMA_SEGMENT_BOUNDS.filter(([start, end]) => start < stopCount && end < stopCount);
+    }
+    if (systemKey === '2-urayasu-maihama') {
+      return URAYASU_MAIHAMA_SEGMENT_BOUNDS.filter(([start, end]) => start < stopCount && end < stopCount);
     }
     const bounds = [];
     for (let start = 0; start < stopCount - 1; start += MAX_STOPS_PER_REQUEST - 1) {
@@ -668,12 +815,15 @@
     if (!route || !definition || !system) throw new Error('今川線の系統データがありません。');
     if (
       !force
-      && system.resolvedVersion === VERSION
-      && route.imagawaPathPolicyVersion === PATH_POLICY_VERSION
       && system.stops.every(validPosition)
       && system.path?.length > 2
       && !system.pathInvalid
       && !system.stops.some((stop) => String(stop.source || '').startsWith('shared-direction'))
+      && (
+        system.resolvedVersion === VERSION
+        // 2-maihama は確定済みルートを VERSION 更新だけでは再生成しない
+        || (key === '2-maihama' && system.resolvedVersion && route.imagawaPathPolicyVersion)
+      )
     ) {
       return system;
     }
@@ -681,7 +831,7 @@
     const googleApi = await loadMaps();
     let osmPayload = null;
     let osmError = null;
-    if (definition.relationId && key !== '2-maihama') {
+    if (definition.relationId && key !== '2-maihama' && key !== '2-urayasu-maihama') {
       statusCallback?.(`OSM route relation ${definition.relationId}を取得中…`);
       try {
         osmPayload = await fetchJson(`${OSM_API_BASE}${definition.relationId}`);
@@ -720,11 +870,12 @@
           googleMapsURI: null,
           source: 'authoritative-platform',
           name,
+          platformId: platforms[name].platformId || null,
         };
       }
       if (!resolved) resolved = osmMapped[index];
       // 今川線では directionGroup 共有座標は使わない（系統ごとに乗り場が異なるため）
-      if (!resolved && key !== '2-maihama') {
+      if (!resolved && key !== '2-maihama' && key !== '2-urayasu-maihama') {
         const shared = bank.get(coordinateKey(key, stop.name));
         if (shared && validPosition(shared)) {
           resolved = {
@@ -743,6 +894,7 @@
       stop.googleMapsURI = resolved.googleMapsURI || null;
       stop.source = resolved.source;
       stop.sourceName = resolved.name || name;
+      stop.platformId = resolved.platformId || stop.platformId || null;
       stop.manualOverride = false;
       stop.verifiedAt = new Date().toISOString();
       if (stop.placeId) usedPlaceIds.add(stop.placeId);
@@ -772,6 +924,7 @@
       system.validation = {
         valid: false,
         issues: validation.issues,
+        metrics: validation.metrics || null,
         osmError,
         googleDirectionsRequests: googleResult.requestCount,
       };
@@ -783,13 +936,14 @@
     // OSM LineString は道路ルートに使わない（Google Directions のみ）
     system.path = googleResult.path;
     system.pathSource = 'Google Directions overview_path（停留所順固定・stopover:false）';
-    system.positionSource = key === '2-maihama'
+    system.positionSource = (key === '2-maihama' || key === '2-urayasu-maihama')
       ? '系統キー単位の確定platform座標（往復共有なし）'
       : 'OSM停留所・系統ローカル座標・Google Maps';
     system.coordinateStats = stats;
     system.validation = {
       valid: true,
       issues: [],
+      metrics: validation.metrics || null,
       osmError,
       googleDirectionsRequests: googleResult.requestCount,
     };
@@ -1103,17 +1257,9 @@
     };
   }
 
-  function sourcePanel(system) {
-    const stats = system.coordinateStats || {};
-    const verified = system.verifiedAt ? new Date(system.verifiedAt).toLocaleString('ja-JP') : '未検証';
-    return `<section class="manual-mode-card guidance-summary-v22">
-      <div><strong>今川線・公式照合済み停留所順</strong><span>片道5運行パターン｜現在：${escHtml(system.title)}｜検証：${escHtml(verified)}</span></div>
-      <div class="manual-route-actions">
-        <button type="button" id="refreshImagawaCurrent" class="secondary">現在の系統を再検証</button>
-        <button type="button" id="refreshImagawaAll" class="secondary">5パターンを一括検証</button>
-      </div>
-      <small>位置内訳：確定 ${stats.authoritativeCount || 0}・OSM ${stats.osmCount || 0}・系統内 ${stats.sharedCount || 0}・Google ${stats.googleCount || 0}・要確認 ${stats.fallbackCount || 0}</small>
-    </section>`;
+  function sourcePanel() {
+    // 一般利用画面には検証パネルを出さない（再検証は resolveSystem 内部で実行）
+    return '';
   }
 
   routes = function routesImagawaV1() {
@@ -1139,7 +1285,6 @@
         <label>路線<select id="routeSelect">${data.routes.map((item) => `<option value="${item.id}" ${item.id === ROUTE_ID ? 'selected' : ''}>${escHtml(label(item))}</option>`).join('')}</select></label>
         <label>系統<select id="systemSelect">${Object.values(SYSTEM_DEFINITIONS).map((item) => `<option value="${item.key}" ${item.key === key ? 'selected' : ''}>2｜${escHtml(item.title)}</option>`).join('')}</select></label>
       </div>
-      ${sourcePanel(system)}
       <div class="split guidance-v22-split">
         <div class="guidance-map-wrap-v22"><div id="routeMap" class="map guidance-map-v22"></div><div class="guidance-version-v22">今川線・系統2</div></div>
         <div id="street" class="street guidance-street-v22"></div>
@@ -1152,28 +1297,6 @@
       setSelectedSystemKey(event.target.value);
       editorSystemKey = event.target.value;
       routes();
-    };
-    document.getElementById('refreshImagawaCurrent').onclick = async () => {
-      const button = document.getElementById('refreshImagawaCurrent');
-      button.disabled = true;
-      try {
-        await resolveSystem(key, { force: true, statusCallback: (text) => { const node = document.getElementById('mapStatus'); if (node) node.textContent = text; } });
-        routes();
-      } catch (error) {
-        const node = document.getElementById('mapStatus');
-        if (node) node.textContent = error instanceof Error ? error.message : '再検証に失敗しました。';
-      } finally { button.disabled = false; }
-    };
-    document.getElementById('refreshImagawaAll').onclick = async () => {
-      const button = document.getElementById('refreshImagawaAll');
-      button.disabled = true;
-      try {
-        await resolveAllSystems(true, (text) => { const node = document.getElementById('mapStatus'); if (node) node.textContent = text; });
-        routes();
-      } catch (error) {
-        const node = document.getElementById('mapStatus');
-        if (node) node.textContent = error instanceof Error ? error.message : '一括検証に失敗しました。';
-      } finally { button.disabled = false; }
     };
 
     drawGuidance(route, definition, system, token).catch((error) => {

@@ -22,6 +22,8 @@
   ].map(latLngLiteral).filter(Boolean);
 
   const isHokueiRequest = (request) => {
+    // 今川線には北栄線用Uターン禁止補正を適用しない
+    if (typeof routeState !== 'undefined' && routeState?.routeId === 'route-2') return false;
     const points = requestPoints(request);
     return points.length >= 2 && points.every((point) =>
       point.lat >= 35.63 && point.lat <= 35.69 && point.lng >= 139.87 && point.lng <= 139.93
@@ -315,6 +317,8 @@
   };
 
   const updateModeLabel = () => {
+    // 北栄線の案内文言は route-1 のときだけ追記する（今川線DOMへ漏れない）
+    if (typeof routeState !== 'undefined' && routeState?.routeId !== 'route-1') return;
     const label = document.querySelector('.manual-mode-card span');
     if (label && !label.textContent.includes('停留所で折返し禁止')) {
       label.textContent += '・停留所で折返し禁止・連続進行・左折ループ優先';
