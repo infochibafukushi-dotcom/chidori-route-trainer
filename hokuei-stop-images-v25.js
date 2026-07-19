@@ -281,16 +281,21 @@
     return routeOverlay;
   }
 
+  let hideTimer = 0;
+  const OVERLAY_VISIBLE_MS = 1600;
+
   function refreshRouteImage() {
     const telop = document.querySelector('.station-name-telop.show');
     if (!telop) {
       shownKey = '';
+      clearTimeout(hideTimer);
       if (routeOverlay?.isConnected && !routeOverlay.hidden) routeOverlay.hidden = true;
       return;
     }
     const info = activeStopImage();
     if (!info) {
       shownKey = '';
+      clearTimeout(hideTimer);
       if (routeOverlay?.isConnected && !routeOverlay.hidden) routeOverlay.hidden = true;
       return;
     }
@@ -300,6 +305,11 @@
       overlay.querySelector('img').src = info.dataUrl;
       overlay.hidden = false;
       shownKey = info.key;
+      clearTimeout(hideTimer);
+      // Street View優先：短時間サムネ表示のあと自動で隠す
+      hideTimer = setTimeout(() => {
+        if (overlay.isConnected) overlay.hidden = true;
+      }, OVERLAY_VISIBLE_MS);
     }
   }
 

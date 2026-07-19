@@ -3,6 +3,7 @@
   const SYSTEM_KEY = 'chidori-hokuei-system-v12';
   const SPEED_KMH = 20;
   const DWELL_MS = 3000;
+  const PANO_READY_TIMEOUT_MS = 2500;
   const TURN_NOTICE_METERS = 250;
   const MAP_ZOOM = 19;
   const MAX_STOPS_PER_REQUEST = 8;
@@ -255,6 +256,25 @@
       addressControl: false,
     });
     const streetViewService = new googleApi.maps.StreetViewService();
+    const panoCache = new Map();
+    let waitingForStreetView = false;
+    let resizeObserver = null;
+
+    const triggerMapsResize = () => {
+      try {
+        googleApi.maps.event.trigger(map, 'resize');
+        googleApi.maps.event.trigger(panorama, 'resize');
+      } catch (error) {
+        console.warn('Maps resize failed', error);
+      }
+    };
+
+    const scheduleMapsResize = () => {
+      requestAnimationFrame(() => {
+        triggerMapsResize();
+        setTimeout(triggerMapsResize, 120);
+      });
+    };
 
     const markers = activeStops.map((stop) => {
       const position = { lat: stop.lat, lng: stop.lng };
@@ -354,12 +374,14 @@
       });
     };
 
-    const showStationTelop = (index, duration = DWELL_MS) => {
+    const showStationTelop = (index, duration = DWELL_MS, preparing = false) => {
       const stop = activeStops[index];
       if (!stop) return;
-      stationTelop.innerHTML = `<span>停留所</span><strong>${esc(displayName(stop))}</strong><em>停車中 あと3秒</em>`;
+      const seconds = Math.max(1, Math.ceil(duration / 1000));
+      const countdown = preparing ? '停車中 表示準備中' : `停車中 あと${seconds}秒`;
+      stationTelop.innerHTML = `<span>停留所</span><strong>${esc(displayName(stop))}</strong><em>${countdown}</em>`;
       stationTelop.classList.add('show');
-      telopHideAt = performance.now() + duration;
+      telopHideAt = performance.now() + duration + (preparing ? PANO_READY_TIMEOUT_MS : 0);
     };
 
     const requestPanorama = (position, radius) => new Promise((resolve) => {
@@ -370,15 +392,154 @@
       });
     });
 
+    const requestPanoramaById = (panoId) => new Promise((resolve) => {
+      if (!panoId) {
+        resolve(null);
+        return;
+      }
+      streetViewService.getPanorama({ pano: panoId }, (data, status) => {
+        resolve(status === googleApi.maps.StreetViewStatus.OK && data?.location?.pano ? data : null);
+      });
+    });
+
     const stopHeading = (index) => {
       const current = activeStops[index];
       const next = activeStops[index + 1] || activeStops[index - 1] || current;
       return heading(current, next);
     };
 
+    const resolveStreetViewConfig = (index) => {
+      const stop = activeStops[index];
+      if (!stop) return null;
+      const resolver = window.HOKUEI_STREETVIEW_STOPS?.resolve;
+      if (typeof resolver === 'function') {
+        return resolver(stop, stop.originalIndex ?? index, system.stops);
+      }
+      return stop.streetView || {
+        lat: stop.lat,
+        lng: stop.lng,
+        stopDurationMs: stop.stopDurationMs || DWELL_MS,
+      };
+    };
+
+    const cacheKeyForStop = (index) => {
+      const stop = activeStops[index];
+      if (!stop) return '';
+      return stop.sharedStopKey || `${stop.id || stop.name}:${index}`;
+    };
+
+    const findPanoramaNear = async (location) => {
+      let data = await requestPanorama(location, 50);
+      if (!data) data = await requestPanorama(location, 100);
+      if (!data) data = await requestPanorama(location, 180);
+      return data;
+    };
+
+    const resolvePanoramaForStop = async (index) => {
+      const stop = activeStops[index];
+      if (!stop) return null;
+      const key = cacheKeyForStop(index);
+      if (key && panoCache.has(key)) return panoCache.get(key);
+
+      const config = resolveStreetViewConfig(index) || {};
+      const fallbackHeading = stopHeading(index);
+      const pov = {
+        heading: Number.isFinite(config.heading) ? config.heading : fallbackHeading,
+        pitch: Number.isFinite(config.pitch) ? config.pitch : 0,
+      };
+      const zoom = Number.isFinite(config.zoom) ? config.zoom : 1;
+      const stopDurationMs = Number.isFinite(config.stopDurationMs) ? config.stopDurationMs : DWELL_MS;
+
+      try {
+        if (config.panoId) {
+          const byId = await requestPanoramaById(config.panoId);
+          if (byId?.location?.pano) {
+            const resolved = {
+              panoId: byId.location.pano,
+              pov,
+              zoom,
+              stopDurationMs,
+              source: 'panoId',
+            };
+            if (key) panoCache.set(key, resolved);
+            return resolved;
+          }
+        }
+
+        const preferred = Number.isFinite(config.lat) && Number.isFinite(config.lng)
+          ? { lat: config.lat, lng: config.lng }
+          : null;
+        if (preferred) {
+          const data = await findPanoramaNear(preferred);
+          if (data?.location?.pano) {
+            const resolved = {
+              panoId: data.location.pano,
+              pov,
+              zoom,
+              stopDurationMs,
+              source: 'streetView-latlng',
+            };
+            if (key) panoCache.set(key, resolved);
+            return resolved;
+          }
+        }
+
+        const exact = { lat: stop.lat, lng: stop.lng };
+        const data = await findPanoramaNear(exact);
+        if (data?.location?.pano) {
+          const resolved = {
+            panoId: data.location.pano,
+            pov,
+            zoom,
+            stopDurationMs,
+            source: 'stop-latlng',
+          };
+          if (key) panoCache.set(key, resolved);
+          return resolved;
+        }
+      } catch (error) {
+        console.warn('停留所パノラマ解決失敗', displayName(stop), error);
+      }
+      return { panoId: null, pov, zoom, stopDurationMs, source: 'missing' };
+    };
+
+    const waitForPanoramaReady = (timeoutMs = PANO_READY_TIMEOUT_MS) => new Promise((resolve) => {
+      let settled = false;
+      const finish = () => {
+        if (settled) return;
+        settled = true;
+        listeners.forEach((listener) => googleApi.maps.event.removeListener(listener));
+        resolve();
+      };
+      const listeners = [
+        panorama.addListener('status_changed', () => {
+          const status = panorama.getStatus?.();
+          if (!status || status === 'OK' || status === googleApi.maps.StreetViewStatus?.OK) finish();
+        }),
+        panorama.addListener('pano_changed', finish),
+      ];
+      setTimeout(finish, timeoutMs);
+    });
+
+    const applyPanoramaView = async (resolved) => {
+      if (!resolved?.panoId) return false;
+      panorama.setPano(resolved.panoId);
+      panorama.setPov(resolved.pov);
+      if (Number.isFinite(resolved.zoom)) panorama.setZoom(resolved.zoom);
+      await waitForPanoramaReady();
+      return true;
+    };
+
+    const prefetchStop = (index) => {
+      if (index < 0 || index >= activeStops.length) return;
+      resolvePanoramaForStop(index).catch((error) => {
+        console.warn('停留所パノラマ事前取得失敗', error);
+      });
+    };
+
     const focusExactStop = async (index) => {
       const stop = activeStops[index];
-      if (!stop) return;
+      if (!stop) return { ok: false, stopDurationMs: DWELL_MS };
       const requestToken = ++streetRequestToken;
       const exact = { lat: stop.lat, lng: stop.lng };
       manualHold = true;
@@ -386,25 +547,31 @@
       map.setCenter(exact);
       map.setZoom(MAP_ZOOM);
       streetCover.hidden = false;
-      streetCover.textContent = `${displayName(stop)}付近のStreet Viewを検索中…`;
+      streetCover.textContent = `${displayName(stop)}付近のStreet Viewを準備中…`;
+      prefetchStop(index + 1);
       try {
-        let data = await requestPanorama(exact, 50);
-        if (!data) data = await requestPanorama(exact, 100);
-        if (!data) data = await requestPanorama(exact, 180);
-        if (requestToken !== streetRequestToken) return;
-        if (data?.location?.pano) {
-          panorama.setPano(data.location.pano);
-          panorama.setPov({ heading: stopHeading(index), pitch: 0 });
-          streetCover.hidden = true;
-        } else {
-          streetCover.hidden = false;
-          streetCover.textContent = `${displayName(stop)}付近にはStreet Viewがありません`;
+        const resolved = await resolvePanoramaForStop(index);
+        if (requestToken !== streetRequestToken) {
+          return { ok: false, stopDurationMs: resolved?.stopDurationMs || DWELL_MS };
         }
+        const applied = await applyPanoramaView(resolved);
+        if (requestToken !== streetRequestToken) {
+          return { ok: false, stopDurationMs: resolved?.stopDurationMs || DWELL_MS };
+        }
+        if (applied) {
+          streetCover.hidden = true;
+          return { ok: true, stopDurationMs: resolved.stopDurationMs || DWELL_MS };
+        }
+        // パノラマなし：カバーで止めず直前表示を維持
+        streetCover.hidden = true;
+        return { ok: false, stopDurationMs: resolved?.stopDurationMs || DWELL_MS };
       } catch (error) {
-        if (requestToken !== streetRequestToken) return;
-        streetCover.hidden = false;
-        streetCover.textContent = `${displayName(stop)}のStreet Viewを取得できませんでした`;
+        if (requestToken !== streetRequestToken) {
+          return { ok: false, stopDurationMs: DWELL_MS };
+        }
+        streetCover.hidden = true;
         console.warn('停留所Street View取得失敗', error);
+        return { ok: false, stopDurationMs: DWELL_MS };
       }
     };
 
@@ -416,7 +583,7 @@
     };
 
     const updateTurnGuide = () => {
-      if (dwellUntil || manualHold) {
+      if (dwellUntil || manualHold || waitingForStreetView) {
         turnGuide.hidden = true;
         return;
       }
@@ -437,7 +604,10 @@
     };
 
     const updateText = (now) => {
-      if (dwellUntil) {
+      if (waitingForStreetView) {
+        const countdown = stationTelop.querySelector('em');
+        if (countdown) countdown.textContent = '停車中 表示準備中';
+      } else if (dwellUntil) {
         const remainingSeconds = Math.max(1, Math.ceil((dwellUntil - now) / 1000));
         const countdown = stationTelop.querySelector('em');
         if (countdown) countdown.textContent = `停車中 あと${remainingSeconds}秒`;
@@ -447,7 +617,7 @@
       const previousStop = activeStops[selectedStopIndex - 1]?.name || 'なし';
       const currentStop = activeStops[selectedStopIndex]?.name || '走行中';
       const nextStop = activeStops[selectedStopIndex + 1]?.name || '終点';
-      progress.textContent = `${running ? '時速20km' : '停止中'}${dwellUntil ? '｜3秒停車中' : ''}｜前：${previousStop}｜現在：${currentStop}｜次：${nextStop}`;
+      progress.textContent = `${running ? '時速20km' : '停止中'}${waitingForStreetView ? '｜表示準備中' : ''}${dwellUntil ? '｜3秒停車中' : ''}｜前：${previousStop}｜現在：${currentStop}｜次：${nextStop}`;
       updateButtons();
       updateTurnGuide();
     };
@@ -473,24 +643,47 @@
       nextStopIndex = index + 1;
       traveled = stopDistances[index];
       previousTime = null;
+      dwellUntil = 0;
+      waitingForStreetView = true;
+      manualHold = true;
       highlightStop(index);
-      showStationTelop(index, DWELL_MS);
-      focusExactStop(index);
+      showStationTelop(index, DWELL_MS, true);
       if (autoContinue) {
-        dwellUntil = performance.now() + DWELL_MS;
         finalStopPending = index === activeStops.length - 1;
-        statusNode.textContent = `${displayName(activeStops[index])}に到着｜3秒停車`;
+        statusNode.textContent = `${displayName(activeStops[index])}に到着｜Street View表示後に3秒停車`;
       } else {
-        dwellUntil = 0;
         finalStopPending = false;
         statusNode.textContent = `${index + 1}. ${displayName(activeStops[index])}｜登録座標 ${activeStops[index].lat.toFixed(6)}, ${activeStops[index].lng.toFixed(6)}`;
       }
       updateText(performance.now());
+      focusExactStop(index).then((result) => {
+        if (selectedStopIndex !== index) return;
+        waitingForStreetView = false;
+        const duration = result?.stopDurationMs || DWELL_MS;
+        showStationTelop(index, duration, false);
+        if (autoContinue && running) {
+          dwellUntil = performance.now() + duration;
+          statusNode.textContent = `${displayName(activeStops[index])}に到着｜${Math.round(duration / 1000)}秒停車`;
+        } else {
+          dwellUntil = 0;
+        }
+        updateText(performance.now());
+      }).catch((error) => {
+        console.warn('停留所表示失敗', error);
+        if (selectedStopIndex !== index) return;
+        waitingForStreetView = false;
+        showStationTelop(index, DWELL_MS, false);
+        if (autoContinue && running) {
+          dwellUntil = performance.now() + DWELL_MS;
+        }
+        updateText(performance.now());
+      });
     };
 
     const completeRun = () => {
       running = false;
       dwellUntil = 0;
+      waitingForStreetView = false;
       finalStopPending = false;
       previousTime = null;
       selectedStopIndex = activeStops.length - 1;
@@ -503,6 +696,11 @@
 
     const tick = (now) => {
       if (!running) return;
+      if (waitingForStreetView) {
+        updateText(now);
+        frame = requestAnimationFrame(tick);
+        return;
+      }
       if (dwellUntil && now < dwellUntil) {
         updateText(now);
         frame = requestAnimationFrame(tick);
@@ -526,6 +724,10 @@
         selectStop(nextStopIndex, true);
         frame = requestAnimationFrame(tick);
         return;
+      }
+      // 次停留所の事前取得（約120m手前）
+      if (Number.isFinite(target) && target - traveled < 120 && target - traveled > 40) {
+        prefetchStop(nextStopIndex);
       }
       updateDrivingVisual(now);
       updateText(now);
@@ -554,6 +756,7 @@
       cancelAnimationFrame(frame);
       previousTime = null;
       dwellUntil = 0;
+      waitingForStreetView = false;
       finalStopPending = false;
       manualHold = true;
       focusExactStop(selectedStopIndex);
@@ -611,15 +814,32 @@
     save();
 
     highlightStop(0);
-    showStationTelop(0, DWELL_MS);
-    focusExactStop(0);
+    showStationTelop(0, DWELL_MS, true);
+    waitingForStreetView = true;
+    focusExactStop(0).then(() => {
+      waitingForStreetView = false;
+      showStationTelop(0, DWELL_MS, false);
+      updateText(performance.now());
+    });
+    prefetchStop(1);
+    scheduleMapsResize();
+    const splitEl = document.querySelector('.guidance-v22-split');
+    if (typeof ResizeObserver !== 'undefined' && splitEl) {
+      resizeObserver = new ResizeObserver(() => scheduleMapsResize());
+      resizeObserver.observe(splitEl);
+    }
+    window.addEventListener('resize', scheduleMapsResize);
     updateText(performance.now());
     statusNode.textContent = `案内V22｜「次」は登録座標へ直接移動｜停留所${activeStops.length}件｜右左折案内${turns.length}件`;
 
     cleanup = () => {
       running = false;
+      waitingForStreetView = false;
       cancelAnimationFrame(frame);
       streetRequestToken += 1;
+      resizeObserver?.disconnect();
+      resizeObserver = null;
+      window.removeEventListener('resize', scheduleMapsResize);
       markers.forEach((marker) => marker.setMap(null));
       line.setMap(null);
       vehicle.setMap(null);
@@ -648,7 +868,7 @@
     renderToken += 1;
     const token = renderToken;
 
-    shell(`<section>
+    shell(`<section class="guidance-page-v26">
       <div class="controls manual-route-controls">
         <label>路線<select id="routeSelect">${data.routes.map((item) => `<option value="${item.id}" ${item.id === ROUTE_ID ? 'selected' : ''}>${esc(label(item))}</option>`).join('')}</select></label>
         <label>系統<select id="systemSelect">${Object.values(route.systems).map((item) => `<option value="${item.code}" ${item.code === code ? 'selected' : ''}>${esc(item.code)}｜${esc(item.title)}</option>`).join('')}</select></label>
@@ -691,6 +911,7 @@
     dwellSeconds: 3,
     turnNoticeMeters: TURN_NOTICE_METERS,
     mapZoom: MAP_ZOOM,
+    streetViewStops: () => window.HOKUEI_STREETVIEW_STOPS || null,
   };
 
   setTimeout(() => {
