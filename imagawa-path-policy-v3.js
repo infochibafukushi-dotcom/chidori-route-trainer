@@ -1,5 +1,5 @@
 (() => {
-  const POLICY_VERSION = '2026-07-19-imagawa-path-v3';
+  const POLICY_VERSION = '2026-07-19-imagawa-path-v3b';
   const ROUTE_ID = 'route-2';
   const OSM_RELATION_PATHS = ['/route/18323695', '/route/9964872'];
   const nativeFetch = window.fetch.bind(window);
@@ -34,7 +34,8 @@
   };
 
   function invalidateOldPaths() {
-    const route = window.data?.routes?.find((item) => item.id === ROUTE_ID);
+    if (typeof data === 'undefined' || !Array.isArray(data?.routes)) return;
+    const route = data.routes.find((item) => item.id === ROUTE_ID);
     if (!route?.systems) return;
     let changed = route.imagawaPathPolicyVersion !== POLICY_VERSION;
 
@@ -49,7 +50,7 @@
     });
 
     route.imagawaPathPolicyVersion = POLICY_VERSION;
-    if (changed && typeof window.save === 'function') window.save();
+    if (changed && typeof save === 'function') save();
   }
 
   invalidateOldPaths();
