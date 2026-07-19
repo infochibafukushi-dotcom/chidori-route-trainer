@@ -1,7 +1,7 @@
 (() => {
   const ROUTE_ID = 'route-2';
-  const VERSION = '2026-07-19-imagawa-v1d';
-  const PATH_POLICY_VERSION = '2026-07-19-imagawa-path-v3d';
+  const VERSION = '2026-07-19-imagawa-v1e';
+  const PATH_POLICY_VERSION = '2026-07-19-imagawa-path-v3e';
   const SYSTEM_KEY = 'chidori-imagawa-system-v1';
   const OSM_API_BASE = 'https://openstreetmap.tools/public_transport_geojson/api/route/';
   const OFFICIAL_ROUTE_MAP = 'https://www.keiseibus.co.jp/wp-content/uploads/2026/02/routemap-chidori.pdf';
@@ -493,7 +493,8 @@
       : path.length;
     for (let index = 1; index < reverseLimitIndex; index += 1) {
       const step = distanceMeters(path[index - 1], path[index]);
-      if (step >= 220) {
+      // overview_path は数百m飛びが普通なので、極端な飛躍のみ検出
+      if (step >= 520) {
         issues.push({ type: 'diagonal-cut', message: `斜め接続疑い（連続点間 ${Math.round(step)}m）` });
         break;
       }
