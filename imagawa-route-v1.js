@@ -1,7 +1,7 @@
 (() => {
   const ROUTE_ID = 'route-2';
-  const VERSION = '2026-07-19-imagawa-v1n';
-  const PATH_POLICY_VERSION = '2026-07-19-imagawa-path-v3n';
+  const VERSION = '2026-07-19-imagawa-v1o';
+  const PATH_POLICY_VERSION = '2026-07-19-imagawa-path-v3o';
   const SYSTEM_KEY = 'chidori-imagawa-system-v1';
   const OSM_API_BASE = 'https://openstreetmap.tools/public_transport_geojson/api/route/';
   const OFFICIAL_ROUTE_MAP = 'https://www.keiseibus.co.jp/wp-content/uploads/2026/02/routemap-chidori.pdf';
@@ -104,8 +104,10 @@
       'サンコーポ東口->順天堂病院前': [
         { lat: 35.6446906, lng: 139.9061601 },
         { lat: 35.6451286, lng: 139.9066833 },
+        { lat: 35.6453162, lng: 139.9069072 },
       ],
       '順天堂病院前->若潮公園': [
+        { lat: 35.64580, lng: 139.90750 },
         { lat: 35.6462457, lng: 139.908028 },
         { lat: 35.6464379, lng: 139.9082504 },
         { lat: 35.6465908, lng: 139.9084301 },
@@ -582,6 +584,23 @@
     return { index: bestIndex, distance: bestDistance };
   }
 
+  /** 進行方向に沿って最初に十分近づいた地点を採用（後段の再接近で上書きしない） */
+  function firstApproachIndex(path, stop, minIndex = 0, thresholdMeters = 55) {
+    let bestIndex = Math.max(0, minIndex);
+    let bestDistance = Infinity;
+    let approached = false;
+    for (let index = Math.max(0, minIndex); index < path.length; index += 1) {
+      const distance = distanceMeters(path[index], stop);
+      if (distance < bestDistance) {
+        bestDistance = distance;
+        bestIndex = index;
+      }
+      if (bestDistance <= thresholdMeters) approached = true;
+      if (approached && distance > bestDistance + 28) break;
+    }
+    return { index: bestIndex, distance: bestDistance };
+  }
+
   function countSelfIntersections(path) {
     const segments = [];
     for (let index = 1; index < path.length; index += 1) {
@@ -733,7 +752,7 @@
       const indices = [];
       let cursor = 0;
       for (let stopIndex = 0; stopIndex < stops.length; stopIndex += 1) {
-        const found = nearestPathIndex(path, stops[stopIndex], cursor);
+        const found = firstApproachIndex(path, stops[stopIndex], cursor);
         if (found.distance > 140) {
           issues.push({
             type: 'order',
@@ -826,6 +845,14 @@
     }));
   }
 
+  /** Directions 用。停留所マーカー座標は変えず、病院前など縁石寄り座標だけ道路上へ寄せる */
+  function routingLatLng(systemKey, stop) {
+    if (systemKey === '2-urayasu-maihama' && stop?.name === '順天堂病院前') {
+      return { lat: 35.64545, lng: 139.90705 };
+    }
+    return { lat: stop.lat, lng: stop.lng };
+  }
+
   function segmentBoundsForSystem(systemKey, stopCount) {
     if (systemKey === '2-maihama') {
       return MAIHAMA_SEGMENT_BOUNDS.filter(([start, end]) => start < stopCount && end < stopCount);
@@ -859,14 +886,14 @@
           const prev = index === 0 ? origin : middleStops[index - 1];
           const current = middleStops[index];
           waypoints.push(...buildSegmentWaypoints(systemKey, prev, current));
-          waypoints.push({ location: { lat: current.lat, lng: current.lng }, stopover: false });
+          waypoints.push({ location: routingLatLng(systemKey, current), stopover: false });
         }
         const lastMiddle = middleStops.at(-1) || origin;
         waypoints.push(...buildSegmentWaypoints(systemKey, lastMiddle, destination));
       }
       const result = await service.route({
-        origin: { lat: origin.lat, lng: origin.lng },
-        destination: { lat: destination.lat, lng: destination.lng },
+        origin: routingLatLng(systemKey, origin),
+        destination: routingLatLng(systemKey, destination),
         waypoints,
         optimizeWaypoints: false,
         travelMode: googleApi.maps.TravelMode.DRIVING,

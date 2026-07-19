@@ -1,5 +1,5 @@
 (() => {
-  const POLICY_VERSION = '2026-07-19-imagawa-path-v3n';
+  const POLICY_VERSION = '2026-07-19-imagawa-path-v3o';
   const ROUTE_ID = 'route-2';
   const OSM_RELATION_PATHS = ['/route/18323695', '/route/9964872'];
   const nativeFetch = window.fetch.bind(window);
