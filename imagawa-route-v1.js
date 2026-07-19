@@ -1,7 +1,7 @@
 (() => {
   const ROUTE_ID = 'route-2';
-  const VERSION = '2026-07-19-imagawa-v1k';
-  const PATH_POLICY_VERSION = '2026-07-19-imagawa-path-v3k';
+  const VERSION = '2026-07-19-imagawa-v1m';
+  const PATH_POLICY_VERSION = '2026-07-19-imagawa-path-v3m';
   const SYSTEM_KEY = 'chidori-imagawa-system-v1';
   const OSM_API_BASE = 'https://openstreetmap.tools/public_transport_geojson/api/route/';
   const OFFICIAL_ROUTE_MAP = 'https://www.keiseibus.co.jp/wp-content/uploads/2026/02/routemap-chidori.pdf';
@@ -79,11 +79,14 @@
       '舞浜駅->オリエンタルランド本社前': [
         { lat: 35.6355647, lng: 139.8838339 },
         { lat: 35.6350695, lng: 139.8836973 },
+        { lat: 35.63423, lng: 139.88477 },
         { lat: 35.6335251, lng: 139.885658 },
       ],
       'オリエンタルランド本社前->運動公園': [
-        { lat: 35.6305993, lng: 139.8892788 },
+        { lat: 35.6307186, lng: 139.8891831 },
         { lat: 35.631266, lng: 139.8900762 },
+        { lat: 35.6319311, lng: 139.8908489 },
+        { lat: 35.6321039, lng: 139.8910742 },
       ],
       '運動公園->舞浜三丁目': [
         { lat: 35.6330661, lng: 139.8922557 },
@@ -100,9 +103,17 @@
       ],
       'サンコーポ東口->順天堂病院前': [
         { lat: 35.6446906, lng: 139.9061601 },
+        { lat: 35.6451286, lng: 139.9066833 },
       ],
       '順天堂病院前->若潮公園': [
         { lat: 35.6462457, lng: 139.908028 },
+        { lat: 35.6464379, lng: 139.9082504 },
+        { lat: 35.6465908, lng: 139.9084301 },
+      ],
+      '若潮公園->新浦安駅北口': [
+        { lat: 35.6483456, lng: 139.9105353 },
+        { lat: 35.6488577, lng: 139.9111228 },
+        { lat: 35.6493194, lng: 139.9116005 },
       ],
       '新浦安駅北口->美浜東団地': [
         { lat: 35.650726, lng: 139.9132923 },
@@ -771,6 +782,37 @@
       checkNoBacktrack(0, 4, '1→5（舞浜駅〜見明川住宅）');
       checkNoBacktrack(8, 10, '9→11（サンコーポ東口〜若潮公園）');
       checkNoBacktrack(11, 12, '12→13（新浦安駅北口〜美浜東団地）');
+
+      // リゾート施設側・病院外周への南下回り込みを拒否
+      if (indices.length > 2) {
+        const olIndex = indices[1];
+        const parkIndex = indices[2];
+        if (olIndex < parkIndex) {
+          let southIntrusion = 0;
+          for (let index = olIndex; index <= parkIndex; index += 1) {
+            if (path[index].lat < 35.6300) southIntrusion += 1;
+          }
+          if (southIntrusion >= 3) {
+            issues.push({ type: 'detour', message: '2→3 でリゾート施設側へ不自然に入り込んでいます' });
+          }
+        }
+      }
+      if (indices.length > 10) {
+        const hospital = indices[9];
+        const wakashio = indices[10];
+        if (hospital < wakashio) {
+          let backSouth = 0;
+          for (let index = hospital + 1; index <= wakashio; index += 1) {
+            if (path[index].lat + 0.00035 < stops[9].lat) {
+              backSouth += distanceMeters(path[index - 1], path[index]);
+            }
+          }
+          if (backSouth > 120) {
+            issues.push({ type: 'backtrack', message: '10→11 で順天堂病院外周を南へ戻る周回疑い' });
+            metrics.revisitPairs.push(['順天堂病院前', '若潮公園']);
+          }
+        }
+      }
     }
 
     return { valid: issues.length === 0, issues, metrics };
