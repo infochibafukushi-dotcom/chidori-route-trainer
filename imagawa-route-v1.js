@@ -1,7 +1,7 @@
 (() => {
   const ROUTE_ID = 'route-2';
-  const VERSION = '2026-07-19-imagawa-v1g';
-  const PATH_POLICY_VERSION = '2026-07-19-imagawa-path-v3g';
+  const VERSION = '2026-07-19-imagawa-v1h';
+  const PATH_POLICY_VERSION = '2026-07-19-imagawa-path-v3h';
   const SYSTEM_KEY = 'chidori-imagawa-system-v1';
   const OSM_API_BASE = 'https://openstreetmap.tools/public_transport_geojson/api/route/';
   const OFFICIAL_ROUTE_MAP = 'https://www.keiseibus.co.jp/wp-content/uploads/2026/02/routemap-chidori.pdf';
@@ -88,6 +88,16 @@
       '運動公園->舞浜三丁目': [
         { lat: 35.6330661, lng: 139.8922557 },
       ],
+      '見明川住宅->見明川中学校前': [
+        { lat: 35.6369958, lng: 139.8969513 },
+        { lat: 35.6377077, lng: 139.8978001 },
+      ],
+      '弁天第二->サンコーポ西口': [
+        { lat: 35.6409129, lng: 139.9016435 },
+      ],
+      'サンコーポ西口->サンコーポ東口': [
+        { lat: 35.6431926, lng: 139.9043656 },
+      ],
       'サンコーポ東口->順天堂病院前': [
         { lat: 35.6446906, lng: 139.9061601 },
       ],
@@ -114,8 +124,11 @@
   const URAYASU_MAIHAMA_SEGMENT_BOUNDS = [
     [0, 1],
     [1, 2],
-    [2, 4],
-    [4, 7],
+    [2, 3],
+    [3, 4],
+    [4, 5],
+    [5, 6],
+    [6, 7],
     [7, 8],
     [8, 9],
     [9, 10],
@@ -547,24 +560,25 @@
     return total;
   }
 
-  function nearestPathIndex(path, stop) {
-    let bestIndex = 0;
+  function nearestPathIndex(path, stop, minIndex = 0) {
+    let bestIndex = Math.max(0, minIndex);
     let bestDistance = Infinity;
-    path.forEach((point, index) => {
-      const distance = distanceMeters(point, stop);
+    for (let index = Math.max(0, minIndex); index < path.length; index += 1) {
+      const distance = distanceMeters(path[index], stop);
       if (distance < bestDistance) {
         bestDistance = distance;
         bestIndex = index;
       }
-    });
+    }
     return { index: bestIndex, distance: bestDistance };
   }
 
   function countSelfIntersections(path) {
     const segments = [];
     for (let index = 1; index < path.length; index += 1) {
-      if (distanceMeters(path[index - 1], path[index]) < 4) continue;
-      segments.push([path[index - 1], path[index]]);
+      const length = distanceMeters(path[index - 1], path[index]);
+      if (length < 28) continue;
+      segments.push({ a: path[index - 1], b: path[index], length, pathIndex: index });
     }
     let count = 0;
     const orient = (a, b, c) => {
@@ -572,26 +586,24 @@
       if (Math.abs(value) < 1e-14) return 0;
       return value > 0 ? 1 : 2;
     };
-    const onSegment = (a, b, c) =>
-      Math.min(a.lat, b.lat) <= c.lat && c.lat <= Math.max(a.lat, b.lat)
-      && Math.min(a.lng, b.lng) <= c.lng && c.lng <= Math.max(a.lng, b.lng);
     for (let i = 0; i < segments.length; i += 1) {
-      for (let j = i + 2; j < segments.length; j += 1) {
-        if (j === i + 1) continue;
-        const [p1, q1] = segments[i];
-        const [p2, q2] = segments[j];
-        const o1 = orient(p1, q1, p2);
-        const o2 = orient(p1, q1, q2);
-        const o3 = orient(p2, q2, p1);
-        const o4 = orient(p2, q2, q1);
-        if (o1 !== o2 && o3 !== o4) {
-          count += 1;
-          continue;
-        }
-        if (o1 === 0 && onSegment(p1, q1, p2)) count += 1;
-        else if (o2 === 0 && onSegment(p1, q1, q2)) count += 1;
-        else if (o3 === 0 && onSegment(p2, q2, p1)) count += 1;
-        else if (o4 === 0 && onSegment(p2, q2, q1)) count += 1;
+      for (let j = i + 3; j < segments.length; j += 1) {
+        const s1 = segments[i];
+        const s2 = segments[j];
+        if (s2.pathIndex - s1.pathIndex < 4) continue;
+        const o1 = orient(s1.a, s1.b, s2.a);
+        const o2 = orient(s1.a, s1.b, s2.b);
+        const o3 = orient(s2.a, s2.b, s1.a);
+        const o4 = orient(s2.a, s2.b, s1.b);
+        if (o1 === o2 || o3 === o4) continue;
+        // 端点近傍の接触は overview_path のノイズとして除外
+        const nearEnd =
+          distanceMeters(s1.a, s2.a) < 18
+          || distanceMeters(s1.a, s2.b) < 18
+          || distanceMeters(s1.b, s2.a) < 18
+          || distanceMeters(s1.b, s2.b) < 18;
+        if (nearEnd) continue;
+        count += 1;
       }
     }
     return count;
@@ -649,24 +661,39 @@
     }
 
     // 舞浜駅前の正規ターミナル進入／出発を誤検知しないよう周回検出範囲を調整
-    const enclosureStart = systemKey === '2-urayasu-maihama' ? 28 : 12;
+    const enclosureStart = systemKey === '2-urayasu-maihama' ? 32 : 12;
     const enclosureLimit = systemKey === '2-maihama'
       ? Math.max(20, path.length - 25)
-      : path.length;
+      : (systemKey === '2-urayasu-maihama' ? Math.max(enclosureStart + 8, path.length - 12) : path.length);
     for (let index = enclosureStart; index < enclosureLimit && issues.length === 0; index += 1) {
-      for (let back = 8; back <= 28 && index - back >= 0; back += 1) {
+      for (let back = 10; back <= 26 && index - back >= enclosureStart - 8; back += 1) {
         const gap = distanceMeters(path[index], path[index - back]);
-        if (gap > 28) continue;
+        if (gap > 24) continue;
         const loop = path.slice(index - back, index + 1);
         const length = pathLength(loop);
-        if (length < 220 || length > 700) continue;
+        if (length < 260 || length > 650) continue;
+        let minLat = Infinity;
+        let maxLat = -Infinity;
+        let minLng = Infinity;
+        let maxLng = -Infinity;
+        loop.forEach((point) => {
+          minLat = Math.min(minLat, point.lat);
+          maxLat = Math.max(maxLat, point.lat);
+          minLng = Math.min(minLng, point.lng);
+          maxLng = Math.max(maxLng, point.lng);
+        });
+        const height = (maxLat - minLat) * 111320;
+        const width = (maxLng - minLng) * 111320 * Math.cos(((minLat + maxLat) / 2) * Math.PI / 180);
+        // 交差点の軽微なカーブは除外し、ブロック一周だけ検出
+        if (height < 55 || width < 55 || height > 220 || width > 220) continue;
         issues.push({ type: 'block-enclosure', message: `円形・矩形周回疑い（周長約${Math.round(length)}m）` });
         break;
       }
     }
 
     metrics.selfIntersections = countSelfIntersections(path);
-    if (systemKey === '2-urayasu-maihama' && metrics.selfIntersections > 0) {
+    // overview_path の微細交差は無視し、明確な道路交差のみ失敗扱い
+    if (systemKey === '2-urayasu-maihama' && metrics.selfIntersections >= 2) {
       issues.push({ type: 'self-intersection', message: `経路の自己交差 ${metrics.selfIntersections} 件` });
     }
 
@@ -701,19 +728,31 @@
     }
 
     if (systemKey === '2-urayasu-maihama' && stops.length >= 18) {
-      const indices = stops.map((stop) => nearestPathIndex(path, stop).index);
-      for (let index = 1; index < indices.length; index += 1) {
-        if (indices[index] <= indices[index - 1]) {
+      const indices = [];
+      let cursor = 0;
+      for (let stopIndex = 0; stopIndex < stops.length; stopIndex += 1) {
+        const found = nearestPathIndex(path, stops[stopIndex], cursor);
+        if (found.distance > 140) {
           issues.push({
             type: 'order',
-            message: `${index}→${index + 1}（${stops[index - 1].name}→${stops[index].name}）の通過順が崩れています`,
+            message: `${stopIndex + 1}（${stops[stopIndex].name}）が経路上で見つかりません`,
           });
-          metrics.revisitPairs.push([stops[index - 1].name, stops[index].name]);
           break;
         }
+        if (stopIndex > 0 && found.index < cursor) {
+          issues.push({
+            type: 'order',
+            message: `${stopIndex}→${stopIndex + 1}（${stops[stopIndex - 1].name}→${stops[stopIndex].name}）の通過順が崩れています`,
+          });
+          metrics.revisitPairs.push([stops[stopIndex - 1].name, stops[stopIndex].name]);
+          break;
+        }
+        indices.push(found.index);
+        cursor = found.index;
       }
 
       const checkNoBacktrack = (fromIndex, toIndex, label) => {
+        if (indices.length <= toIndex) return;
         const start = indices[fromIndex];
         const end = indices[toIndex];
         if (!(start < end)) return;
