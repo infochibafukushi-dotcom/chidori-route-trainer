@@ -1,7 +1,7 @@
 (() => {
   const ROUTE_ID = 'route-2';
-  const VERSION = '2026-07-19-imagawa-v1m';
-  const PATH_POLICY_VERSION = '2026-07-19-imagawa-path-v3m';
+  const VERSION = '2026-07-19-imagawa-v1n';
+  const PATH_POLICY_VERSION = '2026-07-19-imagawa-path-v3n';
   const SYSTEM_KEY = 'chidori-imagawa-system-v1';
   const OSM_API_BASE = 'https://openstreetmap.tools/public_transport_geojson/api/route/';
   const OFFICIAL_ROUTE_MAP = 'https://www.keiseibus.co.jp/wp-content/uploads/2026/02/routemap-chidori.pdf';
@@ -141,9 +141,7 @@
     [5, 6],
     [6, 7],
     [7, 8],
-    [8, 9],
-    [9, 10],
-    [10, 11],
+    [8, 11],
     [11, 12],
     [12, 13],
     [13, 17],
@@ -801,13 +799,15 @@
         const hospital = indices[9];
         const wakashio = indices[10];
         if (hospital < wakashio) {
+          let maxLat = stops[9].lat;
           let backSouth = 0;
           for (let index = hospital + 1; index <= wakashio; index += 1) {
-            if (path[index].lat + 0.00035 < stops[9].lat) {
+            maxLat = Math.max(maxLat, path[index].lat);
+            if (maxLat > stops[9].lat + 0.0004 && path[index].lat < maxLat - 0.00035) {
               backSouth += distanceMeters(path[index - 1], path[index]);
             }
           }
-          if (backSouth > 120) {
+          if (backSouth > 80) {
             issues.push({ type: 'backtrack', message: '10→11 で順天堂病院外周を南へ戻る周回疑い' });
             metrics.revisitPairs.push(['順天堂病院前', '若潮公園']);
           }
