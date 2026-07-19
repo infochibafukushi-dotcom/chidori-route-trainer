@@ -1,7 +1,7 @@
 (() => {
   const ROUTE_ID = 'route-2';
-  const VERSION = '2026-07-19-imagawa-v1i';
-  const PATH_POLICY_VERSION = '2026-07-19-imagawa-path-v3i';
+  const VERSION = '2026-07-19-imagawa-v1j';
+  const PATH_POLICY_VERSION = '2026-07-19-imagawa-path-v3j';
   const SYSTEM_KEY = 'chidori-imagawa-system-v1';
   const OSM_API_BASE = 'https://openstreetmap.tools/public_transport_geojson/api/route/';
   const OFFICIAL_ROUTE_MAP = 'https://www.keiseibus.co.jp/wp-content/uploads/2026/02/routemap-chidori.pdf';
@@ -665,33 +665,22 @@
     }
 
     // 舞浜駅前の正規ターミナル進入／出発を誤検知しないよう周回検出範囲を調整
-    const enclosureStart = systemKey === '2-urayasu-maihama' ? 32 : 12;
-    const enclosureLimit = systemKey === '2-maihama'
-      ? Math.max(20, path.length - 25)
-      : (systemKey === '2-urayasu-maihama' ? Math.max(enclosureStart + 8, path.length - 12) : path.length);
-    for (let index = enclosureStart; index < enclosureLimit && issues.length === 0; index += 1) {
-      for (let back = 10; back <= 26 && index - back >= enclosureStart - 8; back += 1) {
-        const gap = distanceMeters(path[index], path[index - back]);
-        if (gap > 24) continue;
-        const loop = path.slice(index - back, index + 1);
-        const length = pathLength(loop);
-        if (length < 260 || length > 650) continue;
-        let minLat = Infinity;
-        let maxLat = -Infinity;
-        let minLng = Infinity;
-        let maxLng = -Infinity;
-        loop.forEach((point) => {
-          minLat = Math.min(minLat, point.lat);
-          maxLat = Math.max(maxLat, point.lat);
-          minLng = Math.min(minLng, point.lng);
-          maxLng = Math.max(maxLng, point.lng);
-        });
-        const height = (maxLat - minLat) * 111320;
-        const width = (maxLng - minLng) * 111320 * Math.cos(((minLat + maxLat) / 2) * Math.PI / 180);
-        // 交差点の軽微なカーブは除外し、ブロック一周だけ検出
-        if (height < 55 || width < 55 || height > 220 || width > 220) continue;
-        issues.push({ type: 'block-enclosure', message: `円形・矩形周回疑い（周長約${Math.round(length)}m）` });
-        break;
+    // 2-urayasu-maihama の新浦安駅北口→美浜東団地は東側迂回が正規のため、全体スキャンせず問題区間のみ検査
+    if (systemKey !== '2-urayasu-maihama') {
+      const enclosureStart = 12;
+      const enclosureLimit = systemKey === '2-maihama'
+        ? Math.max(20, path.length - 25)
+        : path.length;
+      for (let index = enclosureStart; index < enclosureLimit && issues.length === 0; index += 1) {
+        for (let back = 8; back <= 28 && index - back >= 0; back += 1) {
+          const gap = distanceMeters(path[index], path[index - back]);
+          if (gap > 28) continue;
+          const loop = path.slice(index - back, index + 1);
+          const length = pathLength(loop);
+          if (length < 220 || length > 700) continue;
+          issues.push({ type: 'block-enclosure', message: `円形・矩形周回疑い（周長約${Math.round(length)}m）` });
+          break;
+        }
       }
     }
 
@@ -782,6 +771,27 @@
       checkNoBacktrack(0, 4, '1→5（舞浜駅〜見明川住宅）');
       checkNoBacktrack(8, 10, '9→11（サンコーポ東口〜若潮公園）');
       checkNoBacktrack(11, 12, '12→13（新浦安駅北口〜美浜東団地）');
+
+      const detectLocalEnclosure = (fromIndex, toIndex, label) => {
+        if (indices.length <= toIndex) return;
+        const start = indices[fromIndex];
+        const end = indices[toIndex];
+        if (!(start < end) || end - start < 12) return;
+        const segment = path.slice(start, end + 1);
+        for (let index = 10; index < segment.length; index += 1) {
+          for (let back = 8; back <= 24 && index - back >= 0; back += 1) {
+            const gap = distanceMeters(segment[index], segment[index - back]);
+            if (gap > 22) continue;
+            const loop = segment.slice(index - back, index + 1);
+            const length = pathLength(loop);
+            if (length < 280 || length > 600) continue;
+            issues.push({ type: 'block-enclosure', message: `${label} で円形・矩形周回疑い（周長約${Math.round(length)}m）` });
+            return;
+          }
+        }
+      };
+      detectLocalEnclosure(0, 4, '1→5');
+      detectLocalEnclosure(8, 10, '9→11');
     }
 
     return { valid: issues.length === 0, issues, metrics };
