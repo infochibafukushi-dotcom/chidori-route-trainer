@@ -1200,17 +1200,19 @@
     }
 
     // 停留所同士を道路無視で直線結んだ疑い（overview_path の点間隔は検出しない）
-    // 2-maihama は確定済み dd1102d の閾値を維持。2-urayasu-maihama のみ近距離直線道路の誤検知を緩和。
+    // 2-maihama は確定済み dd1102d の閾値を維持。
+    // 2-urayasu-maihama / 2-urayasu-chidori（同一inbound trunk再利用）は近距離直線道路の誤検知を緩和。
+    const urayasuInboundTrunk = systemKey === '2-urayasu-maihama' || systemKey === '2-urayasu-chidori';
     for (let index = 0; index < stops.length - 1 && issues.length === 0; index += 1) {
       const start = stops[index];
       const end = stops[index + 1];
       const direct = distanceMeters(start, end);
-      const minDirect = systemKey === '2-urayasu-maihama' ? 450 : 350;
-      const maxPoints = systemKey === '2-urayasu-maihama' ? 3 : 4;
-      const ratioLimit = systemKey === '2-urayasu-maihama' ? 0.95 : 0.93;
+      const minDirect = urayasuInboundTrunk ? 450 : 350;
+      const maxPoints = urayasuInboundTrunk ? 3 : 4;
+      const ratioLimit = urayasuInboundTrunk ? 0.95 : 0.93;
       if (direct < minDirect) continue;
       const bestStart = nearestPathIndex(path, start).index;
-      const bestEnd = nearestPathIndex(path, end, systemKey === '2-urayasu-maihama' ? bestStart : 0).index;
+      const bestEnd = nearestPathIndex(path, end, urayasuInboundTrunk ? bestStart : 0).index;
       if (bestEnd <= bestStart) continue;
       const segment = path.slice(bestStart, bestEnd + 1);
       const along = pathLength(segment);
@@ -1223,12 +1225,13 @@
     }
 
     // 舞浜駅前の正規ターミナル進入／出発を誤検知しないよう周回検出範囲を調整
-    // 2-urayasu-maihama の新浦安駅北口→美浜東団地は東側迂回が正規のため、全体スキャンせず問題区間のみ検査
-    if (systemKey !== '2-urayasu-maihama') {
+    // urayasu inbound trunk（2-urayasu-maihama / 2-urayasu-chidori）は東側迂回が正規のため全体スキャンしない
+    if (!urayasuInboundTrunk) {
+      // 2-chidori: exclude garage approach loops after 運動公園
       const enclosureStart = 12;
       const enclosureLimit = systemKey === '2-maihama'
         ? Math.max(20, path.length - 25)
-        : (systemKey === '2-chidori' ? Math.max(20, path.length - 10) : path.length);
+        : (systemKey === '2-chidori' ? Math.max(20, path.length - 30) : path.length);
       for (let index = enclosureStart; index < enclosureLimit && issues.length === 0; index += 1) {
         for (let back = 8; back <= 28 && index - back >= 0; back += 1) {
           const gap = distanceMeters(path[index], path[index - back]);
@@ -1244,7 +1247,7 @@
 
     metrics.selfIntersections = countSelfIntersections(path);
     // overview_path の微細交差は無視し、明確な道路交差のみ失敗扱い
-    if (systemKey === '2-urayasu-maihama' && metrics.selfIntersections >= 2) {
+    if (urayasuInboundTrunk && metrics.selfIntersections >= 2) {
       issues.push({ type: 'self-intersection', message: `経路の自己交差 ${metrics.selfIntersections} 件` });
     }
 
