@@ -74,6 +74,46 @@
       美浜東団地: { lat: 35.6522225, lng: 139.9128348 },
       新浦安駅北口: { lat: 35.6499903, lng: 139.9126359 },
     },
+    /** 2-maihama 浦安駅入口..運動公園 + 千鳥車庫（終点 platform_exit_only） */
+    '2-chidori': {
+      浦安駅入口: { lat: 35.6647047, lng: 139.8949743 },
+      神明裏: { lat: 35.6623799, lng: 139.8989516 },
+      猫実: { lat: 35.6608375, lng: 139.9012946 },
+      消防本部前: { lat: 35.6594904, lng: 139.9034126 },
+      海楽: { lat: 35.6576449, lng: 139.9059641 },
+      美浜東団地: { lat: 35.6522225, lng: 139.9128348 },
+      新浦安駅北口: { lat: 35.6499903, lng: 139.9126359 },
+      若潮公園: { lat: 35.6473943, lng: 139.9095296 },
+      順天堂病院前: { lat: 35.6453182, lng: 139.9070393 },
+      サンコーポ東口: { lat: 35.6439144, lng: 139.905342 },
+      サンコーポ西口: { lat: 35.6420634, lng: 139.9031259 },
+      弁天第二: { lat: 35.6398165, lng: 139.9004629 },
+      見明川中学校前: { lat: 35.6384265, lng: 139.8987768 },
+      見明川住宅: { lat: 35.6364748, lng: 139.8964564 },
+      舞浜三丁目: { lat: 35.6337929, lng: 139.8932505 },
+      運動公園: { lat: 35.6310025, lng: 139.8899547 },
+      千鳥車庫: { lat: 35.6270761, lng: 139.8979121, platformId: 12385535203 },
+    },
+    /** 千鳥車庫（始発 platform_entry_only）+ 2-urayasu-maihama 運動公園..浦安駅入口 */
+    '2-urayasu-chidori': {
+      千鳥車庫: { lat: 35.6273243, lng: 139.8976789, platformId: 6796350266 },
+      運動公園: { lat: 35.6325209, lng: 139.8914704, platformId: 6720667166 },
+      舞浜三丁目: { lat: 35.6339331, lng: 139.8931509, platformId: 1652826334 },
+      見明川住宅: { lat: 35.6366143, lng: 139.8963732, platformId: 1652792629 },
+      見明川中学校前: { lat: 35.6385937, lng: 139.8987376, platformId: 11581103370 },
+      弁天第二: { lat: 35.6400525, lng: 139.900479, platformId: 11581103369 },
+      サンコーポ西口: { lat: 35.6423093, lng: 139.9031895, platformId: 11581097368 },
+      サンコーポ東口: { lat: 35.6440928, lng: 139.9053323, platformId: 6720667163 },
+      順天堂病院前: { lat: 35.645692, lng: 139.907214, platformId: 11581097365 },
+      若潮公園: { lat: 35.6475041, lng: 139.9093912, platformId: 6720667161 },
+      新浦安駅北口: { lat: 35.650172, lng: 139.9125398, platformId: 6720642144 },
+      美浜東団地: { lat: 35.6522648, lng: 139.9122584, platformId: 1330409783 },
+      海楽: { lat: 35.6573684, lng: 139.9059647, platformId: 6720667167 },
+      消防本部前: { lat: 35.6589613, lng: 139.9038774, platformId: 12368996379 },
+      猫実: { lat: 35.6611395, lng: 139.9005341, platformId: 2900279301 },
+      神明裏: { lat: 35.6628205, lng: 139.8979314, platformId: 6764110350 },
+      浦安駅入口: { lat: 35.6644872, lng: 139.8950364, platformId: 6764110353 },
+    },
   };
 
   /** 道路形状用経由点（停留所としては表示しない）。OSM route relation の道路上。 */
@@ -191,14 +231,14 @@
       key: '2-chidori', displayCode: '2', directionGroup: 'outbound',
       title: '千鳥車庫行き（舞浜駅非経由）',
       summary: '浦安駅入口 → 新浦安駅北口 → 順天堂病院前 → 運動公園 → 千鳥車庫',
-      relationId: null,
+      relationId: 18351946,
       names: TO_CHIDORI,
     },
     '2-urayasu-chidori': {
       key: '2-urayasu-chidori', displayCode: '2', directionGroup: 'inbound',
       title: '浦安駅入口行き（千鳥車庫発）',
       summary: '千鳥車庫 → 運動公園 → 順天堂病院前 → 新浦安駅北口 → 浦安駅入口',
-      relationId: null,
+      relationId: 18351945,
       names: [...TO_CHIDORI].reverse(),
     },
     '2-kitaguchi': {
@@ -215,14 +255,25 @@
     '2-maihama': '2026-07-19-imagawa-v1f',
     '2-urayasu-maihama': '2026-07-19-imagawa-v1o',
     '2-kitaguchi': '2026-07-19-imagawa-kitaguchi-v1',
-    '2-chidori': '2026-07-19-imagawa-chidori-v1',
-    '2-urayasu-chidori': '2026-07-19-imagawa-urayasu-chidori-v1',
+    '2-chidori': '2026-07-20-imagawa-chidori-v1',
+    '2-urayasu-chidori': '2026-07-20-imagawa-urayasu-chidori-v1',
   };
   const FINALIZED_SYSTEMS = new Set(['2-maihama', '2-urayasu-maihama']);
+  const FORCE_PLATFORM_SYSTEMS = new Set(['2-kitaguchi', '2-chidori', '2-urayasu-chidori']);
   const URAYASU_MAIHAMA_APPROVED = window.IMAGAWA_URAYASU_MAIHAMA_PATH_V1O || null;
   const URAYASU_MAIHAMA_PATH_SOURCE = 'authoritative-approved:2-urayasu-maihama:v1o';
   const URAYASU_MAIHAMA_PATH_HASH = '30c4b61405b13d70a000de8995bb7274bb8b43d4215ebb8cd6aaf7be87d924f4';
   const URAYASU_MAIHAMA_PATH_POINTS = 79;
+  const CHIDORI_GARAGE = window.IMAGAWA_CHIDORI_GARAGE_PATH_V1 || null;
+  const CHIDORI_PATH_SOURCE = 'authoritative-copy:2-maihama:浦安駅入口->運動公園+osm-relation-verified:18351946+way:796894963:運動公園->千鳥車庫';
+  const URAYASU_CHIDORI_PATH_SOURCE = 'osm-relation-verified:18351945:千鳥車庫->運動公園+authoritative-approved:2-urayasu-maihama:運動公園->浦安駅入口';
+  const CHIDORI_JOIN_FAIL_M = 50;
+  const CHIDORI_JOIN_DEDUPE_M = 15;
+  const CHIDORI_HEADING_SMOOTH_DEG = 120;
+  const CHIDORI_FORBIDDEN_AFTER_PARK_M = 80;
+  const CHIDORI_GARAGE_END_MAX_M = 25;
+  const MAIHAMA_STATION_REF = { lat: 35.6360225, lng: 139.8833113, name: '舞浜駅' };
+  const OL_HQ_REF = { lat: 35.6320206, lng: 139.887359, name: 'オリエンタルランド本社前' };
 
   const previousRoutes = routes;
   const previousStopEditor = stopEditor;
@@ -350,6 +401,367 @@
     };
   }
 
+  /** Slice BETWEEN startStop and endStop only (no intermediate stop requirement). */
+  function slicePathBetweenStops(sourcePath, startStop, endStop, opts = {}) {
+    const startMax = opts.startMax == null ? 80 : opts.startMax;
+    const endMax = opts.endMax == null ? 40 : opts.endMax;
+    if (!Array.isArray(sourcePath) || sourcePath.length < 2) {
+      throw new Error('path slice failed: source path empty');
+    }
+    const startHit = nearestPathIndex(sourcePath, startStop, 0);
+    if (startHit.distance > startMax) {
+      throw new Error(
+        'path slice failed: start "' + (startStop.name || '?') + '" is '
+        + Math.round(startHit.distance) + 'm from path (max ' + startMax + 'm)'
+      );
+    }
+    const endHit = nearestPathIndex(sourcePath, endStop, startHit.index);
+    if (endHit.distance > endMax) {
+      throw new Error(
+        'path slice failed: end "' + (endStop.name || '?') + '" is '
+        + Math.round(endHit.distance) + 'm from path (max ' + endMax + 'm)'
+      );
+    }
+    if (endHit.index <= startHit.index) {
+      throw new Error('path slice failed: end index <= start index');
+    }
+    const sliced = deepClonePath(sourcePath.slice(startHit.index, endHit.index + 1));
+    return {
+      path: sliced,
+      startIndex: startHit.index,
+      endIndex: endHit.index,
+      startDistance: startHit.distance,
+      endDistance: endHit.distance,
+    };
+  }
+
+  function joinHeadingChange(left, right) {
+    if (left.length < 2 || right.length < 2) return 180;
+    const inH = heading(left[left.length - 2], left[left.length - 1]);
+    const outH = heading(right[0], right[1]);
+    const gap = distanceMeters(left[left.length - 1], right[0]);
+    if (gap >= 3) {
+      const bridge = heading(left[left.length - 1], right[0]);
+      return Math.max(angleDiff(inH, bridge), angleDiff(bridge, outH));
+    }
+    return angleDiff(inH, outH);
+  }
+
+  function joinPathSegments(left, right, opts = {}) {
+    const maxGapM = opts.maxGapM == null ? CHIDORI_JOIN_FAIL_M : opts.maxGapM;
+    const dedupeM = opts.dedupeM == null ? CHIDORI_JOIN_DEDUPE_M : opts.dedupeM;
+    if (!left?.length || !right?.length) {
+      throw new Error('joinPathSegments: empty segment');
+    }
+    const gap = distanceMeters(left[left.length - 1], right[0]);
+    if (gap > maxGapM) {
+      throw new Error('joinPathSegments: gap ' + gap.toFixed(1) + 'm > ' + maxGapM + 'm');
+    }
+    let path;
+    let deduped = false;
+    if (gap < dedupeM) {
+      path = deepClonePath(left.concat(right.slice(1)));
+      deduped = true;
+    } else {
+      path = deepClonePath(left.concat(right));
+    }
+    return {
+      path,
+      gapM: gap,
+      deduped,
+      headingChangeDeg: joinHeadingChange(left, right),
+    };
+  }
+
+  function assembleJoin(left, right) {
+    const gap = distanceMeters(left[left.length - 1], right[0]);
+    let path;
+    let deduped = false;
+    if (gap < CHIDORI_JOIN_DEDUPE_M) {
+      path = deepClonePath(left.concat(right.slice(1)));
+      deduped = true;
+    } else {
+      path = deepClonePath(left.concat(right));
+    }
+    return { path, gapM: gap, deduped, headingChangeDeg: joinHeadingChange(left, right) };
+  }
+
+  /** SMART JOIN A (trunk) then B (garage outbound). */
+  function smartJoinTrunkThenGarage(A, B) {
+    if (!A?.length || !B?.length) throw new Error('smartJoin trunk->garage: empty');
+    const iBnearAend = nearestPathIndex(B, A[A.length - 1], 0);
+    const iAnearB0 = nearestPathIndex(A, B[0], 0);
+    const candidates = [];
+
+    if (iBnearAend.index < B.length) {
+      const left = deepClonePath(A);
+      const right = deepClonePath(B.slice(iBnearAend.index));
+      if (right.length >= 2) {
+        const j = assembleJoin(left, right);
+        candidates.push({
+          mode: 'trim_B_head',
+          trimA: 0,
+          trimBHead: iBnearAend.index,
+          ...j,
+          scoreDetail: { nearDistB: iBnearAend.distance },
+        });
+      }
+    }
+
+    if (iAnearB0.index >= 1) {
+      const left = deepClonePath(A.slice(0, iAnearB0.index + 1));
+      const right = deepClonePath(B);
+      if (left.length >= 2 && right.length >= 2) {
+        const j = assembleJoin(left, right);
+        candidates.push({
+          mode: 'trim_A_tail',
+          trimA: A.length - 1 - iAnearB0.index,
+          trimBHead: 0,
+          ...j,
+          scoreDetail: { nearDistA: iAnearB0.distance },
+        });
+      }
+    }
+
+    {
+      const left = deepClonePath(A.slice(0, iAnearB0.index + 1));
+      if (left.length >= 2) {
+        const iB2 = nearestPathIndex(B, left[left.length - 1], 0);
+        const right = deepClonePath(B.slice(iB2.index));
+        if (right.length >= 2) {
+          const j = assembleJoin(left, right);
+          candidates.push({
+            mode: 'trim_both',
+            trimA: A.length - 1 - iAnearB0.index,
+            trimBHead: iB2.index,
+            ...j,
+            scoreDetail: { nearDistA: iAnearB0.distance, nearDistB: iB2.distance },
+          });
+        }
+      }
+    }
+
+    for (let dropA = 0; dropA <= Math.min(12, A.length - 2); dropA += 1) {
+      for (let dropB = 0; dropB <= Math.min(12, B.length - 2); dropB += 1) {
+        if (dropA === 0 && dropB === 0) continue;
+        const left = deepClonePath(A.slice(0, A.length - dropA));
+        const right = deepClonePath(B.slice(dropB));
+        if (left.length < 2 || right.length < 2) continue;
+        const j = assembleJoin(left, right);
+        candidates.push({
+          mode: 'local_search',
+          trimA: dropA,
+          trimBHead: dropB,
+          ...j,
+          scoreDetail: {},
+        });
+      }
+    }
+
+    const viable = candidates.filter((c) => c.gapM <= CHIDORI_JOIN_FAIL_M && c.path.length >= 4);
+    if (!viable.length) {
+      const bestGap = candidates.slice().sort((a, b) => a.gapM - b.gapM)[0];
+      return {
+        ok: false,
+        error:
+          '2-chidori: join gap '
+          + (bestGap ? bestGap.gapM.toFixed(1) : 'inf')
+          + 'm > ' + CHIDORI_JOIN_FAIL_M + 'm (no viable smart join)',
+        candidatesTried: candidates.length,
+        bestGapM: bestGap?.gapM,
+      };
+    }
+
+    const smooth = viable.filter((c) => c.headingChangeDeg < CHIDORI_HEADING_SMOOTH_DEG);
+    const pool = smooth.length ? smooth : viable;
+    pool.sort((a, b) => {
+      const hs = (a.headingChangeDeg < CHIDORI_HEADING_SMOOTH_DEG ? 0 : 1)
+        - (b.headingChangeDeg < CHIDORI_HEADING_SMOOTH_DEG ? 0 : 1);
+      if (hs !== 0) return hs;
+      if (a.trimBHead !== b.trimBHead) return a.trimBHead - b.trimBHead;
+      const parkRef = { lat: 35.6310025, lng: 139.8899547 };
+      const pa = nearestPathIndex(a.path, parkRef, Math.max(0, a.path.length - 40)).distance;
+      const pb = nearestPathIndex(b.path, parkRef, Math.max(0, b.path.length - 40)).distance;
+      if (Math.abs(pa - pb) > 5) return pa - pb;
+      if (a.gapM !== b.gapM) return a.gapM - b.gapM;
+      if (a.headingChangeDeg !== b.headingChangeDeg) return a.headingChangeDeg - b.headingChangeDeg;
+      return a.trimA - b.trimA;
+    });
+    const best = pool[0];
+    return {
+      ok: true,
+      path: best.path,
+      gapM: best.gapM,
+      deduped: best.deduped,
+      headingChangeDeg: best.headingChangeDeg,
+      mode: best.mode,
+      trimA: best.trimA,
+      trimBHead: best.trimBHead,
+      usedSmoothPreference: smooth.length > 0,
+      candidatesTried: candidates.length,
+    };
+  }
+
+  /** SMART JOIN garage inbound (G) then trunk (T). */
+  function smartJoinGarageThenTrunk(G, T) {
+    if (!G?.length || !T?.length) throw new Error('smartJoin garage->trunk: empty');
+    const gNearT0 = nearestPathIndex(G, T[0], 0);
+    const candidates = [];
+
+    function tryPair(gEndIdx, tStartIdx) {
+      if (gEndIdx < 1 || tStartIdx >= T.length - 1) return;
+      const left = deepClonePath(G.slice(0, gEndIdx + 1));
+      const right = deepClonePath(T.slice(tStartIdx));
+      if (left.length < 2 || right.length < 2) return;
+      const j = assembleJoin(left, right);
+      const h1 = heading(left[left.length - 2], left[left.length - 1]);
+      const h2 = distanceMeters(left[left.length - 1], right[0]) >= 3
+        ? heading(left[left.length - 1], right[0])
+        : heading(right[0], right[1]);
+      const h3 = right.length >= 2 ? heading(right[0], right[1]) : h2;
+      const turn1 = angleDiff(h1, h2);
+      const turn2 = angleDiff(h2, h3);
+      const maxTurn = Math.max(turn1, turn2);
+      const departH = h3;
+      const nePenalty = angleDiff(departH, 45);
+      candidates.push({
+        gEndIdx,
+        tStartIdx,
+        ...j,
+        maxTurn,
+        turn1,
+        turn2,
+        departH,
+        nePenalty,
+      });
+    }
+
+    const gBase = gNearT0.index;
+    for (let gDrop = 0; gDrop <= Math.min(15, gBase); gDrop += 1) {
+      const gEnd = gBase - gDrop;
+      for (let tStart = 0; tStart <= Math.min(40, T.length - 2); tStart += 1) {
+        tryPair(gEnd, tStart);
+      }
+    }
+
+    for (let tStart = 0; tStart <= Math.min(25, T.length - 2); tStart += 1) {
+      const near = nearestPathIndex(G, T[tStart], 0);
+      for (let gDrop = 0; gDrop <= Math.min(8, near.index); gDrop += 1) {
+        tryPair(near.index - gDrop, tStart);
+      }
+    }
+
+    const viable = candidates.filter((c) => c.gapM <= CHIDORI_JOIN_FAIL_M && c.path.length >= 4);
+    if (!viable.length) {
+      const bestGap = candidates.slice().sort((a, b) => a.gapM - b.gapM)[0];
+      return {
+        ok: false,
+        error:
+          '2-urayasu-chidori: join gap '
+          + (bestGap ? bestGap.gapM.toFixed(1) : 'inf')
+          + 'm > ' + CHIDORI_JOIN_FAIL_M + 'm',
+        candidatesTried: candidates.length,
+        bestGapM: bestGap?.gapM,
+      };
+    }
+
+    const smooth = viable.filter((c) => c.maxTurn < CHIDORI_HEADING_SMOOTH_DEG);
+    const pool = smooth.length ? smooth : viable;
+    pool.sort((a, b) => {
+      const hs = (a.maxTurn < CHIDORI_HEADING_SMOOTH_DEG ? 0 : 1)
+        - (b.maxTurn < CHIDORI_HEADING_SMOOTH_DEG ? 0 : 1);
+      if (hs !== 0) return hs;
+      if (a.maxTurn !== b.maxTurn) return a.maxTurn - b.maxTurn;
+      if (a.gapM !== b.gapM) return a.gapM - b.gapM;
+      if (a.nePenalty !== b.nePenalty) return a.nePenalty - b.nePenalty;
+      return a.tStartIdx + (gBase - a.gEndIdx) - (b.tStartIdx + (gBase - b.gEndIdx));
+    });
+
+    const best = pool[0];
+    return {
+      ok: true,
+      path: best.path,
+      gapM: best.gapM,
+      deduped: best.deduped,
+      headingChangeDeg: best.maxTurn,
+      departHeadingDeg: best.departH,
+      mode: 'garage_trim_then_trunk_drop',
+      garageEndIndex: best.gEndIdx,
+      trunkStartIndex: best.tStartIdx,
+      garageTrimTail: G.length - 1 - best.gEndIdx,
+      trunkDropHead: best.tStartIdx,
+      usedSmoothPreference: smooth.length > 0,
+      candidatesTried: candidates.length,
+    };
+  }
+
+  async function hashPathSha256(path) {
+    const json = JSON.stringify(path);
+    if (typeof crypto !== 'undefined' && crypto.subtle) {
+      const data = new TextEncoder().encode(json);
+      const digest = await crypto.subtle.digest('SHA-256', data);
+      return Array.from(new Uint8Array(digest))
+        .map((byte) => byte.toString(16).padStart(2, '0'))
+        .join('');
+    }
+    // Node fallback for offline checks
+    if (typeof require === 'function') {
+      try {
+        const nodeCrypto = require('crypto');
+        return nodeCrypto.createHash('sha256').update(json).digest('hex');
+      } catch (error) {
+        /* ignore */
+      }
+    }
+    throw new Error('hashPathSha256: crypto.subtle unavailable');
+  }
+
+  function cloneGarageSegment(direction) {
+    if (!CHIDORI_GARAGE) {
+      throw new Error('IMAGAWA_CHIDORI_GARAGE_PATH_V1 is not loaded');
+    }
+    const segment = direction === 'inbound' ? CHIDORI_GARAGE.inbound : CHIDORI_GARAGE.outbound;
+    if (!segment?.path?.length) {
+      throw new Error('garage segment missing for ' + direction);
+    }
+    return deepClonePath(segment.path);
+  }
+
+  function applyAuthoritativePlatformsToStops(systemKey, stops) {
+    const platforms = AUTHORITATIVE_PLATFORMS[systemKey];
+    if (!platforms || !Array.isArray(stops)) return;
+    stops.forEach((stop) => {
+      const platform = platforms[stop.name];
+      if (!platform) return;
+      stop.lat = platform.lat;
+      stop.lng = platform.lng;
+      stop.platformId = platform.platformId || null;
+      stop.source = 'authoritative-platform';
+      stop.sourceName = stop.name;
+      stop.verifiedAt = new Date().toISOString();
+    });
+  }
+
+  function checkForbiddenNearPoints(path, afterIndex, points, radiusM) {
+    const hits = [];
+    for (let i = Math.max(0, afterIndex); i < path.length; i += 1) {
+      for (const point of points) {
+        const d = distanceMeters(path[i], point);
+        if (d <= radiusM) {
+          hits.push({ pathIndex: i, name: point.name, distanceM: Math.round(d * 10) / 10 });
+        }
+      }
+    }
+    return {
+      ok: hits.length === 0,
+      hits,
+      error: hits.length
+        ? ('path within ' + radiusM + 'm of forbidden after index ' + afterIndex + ': '
+          + hits.slice(0, 5).map((h) => h.name + '@' + h.pathIndex + '=' + h.distanceM + 'm').join(', '))
+        : null,
+    };
+  }
+
   function invalidateSystemPath(system) {
     if (!system) return;
     system.path = [];
@@ -387,8 +799,8 @@
         systems[definition.key].title = definition.title;
         systems[definition.key].summary = definition.summary;
         systems[definition.key].relationId = definition.relationId;
-        // 確定座標を強制適用（2-maihama / 2-urayasu-maihama のみ。他系統は触らない）
-        if (FINALIZED_SYSTEMS.has(definition.key) || definition.key === '2-kitaguchi') {
+        // 確定座標を強制適用（finalized + kitaguchi/chidori）
+        if (FINALIZED_SYSTEMS.has(definition.key) || FORCE_PLATFORM_SYSTEMS.has(definition.key)) {
           const platforms = AUTHORITATIVE_PLATFORMS[definition.key];
           let stopChanged = false;
           let coordsChanged = false;
@@ -420,9 +832,9 @@
           });
           // Finalized systems: invalidate path only on coordinate drift / shared-key cleanup.
           // Metadata-only updates must not wipe validated paths.
-          // kitaguchi: also invalidate when per-system resolvedVersion mismatches.
+          // kitaguchi/chidori: also invalidate when per-system resolvedVersion mismatches.
           const expectedVersion = expectedResolvedVersion(definition.key);
-          const versionMismatch = definition.key === '2-kitaguchi'
+          const versionMismatch = FORCE_PLATFORM_SYSTEMS.has(definition.key)
             && systems[definition.key].resolvedVersion
             && systems[definition.key].resolvedVersion !== expectedVersion;
           const shouldInvalidatePath = coordsChanged || versionMismatch;
@@ -763,10 +1175,13 @@
     let reverseRun = 0;
     // 舞浜駅行き: 終点ターミナル進入は急反転検出から除外
     // 浦安駅入口行き: 始発ターミナル出発は急反転検出から除外
-    const reverseStartIndex = systemKey === '2-urayasu-maihama' ? 18 : 1;
+    // 千鳥車庫系: 車庫付近の進入/出発を除外
+    const reverseStartIndex = systemKey === '2-urayasu-maihama'
+      ? 18
+      : (systemKey === '2-urayasu-chidori' ? 8 : 1);
     const reverseLimitIndex = systemKey === '2-maihama'
       ? Math.max(2, path.length - 18)
-      : path.length;
+      : (systemKey === '2-chidori' ? Math.max(2, path.length - 8) : path.length);
     for (let index = reverseStartIndex; index < reverseLimitIndex; index += 1) {
       const step = distanceMeters(path[index - 1], path[index]);
       if (step < 8) continue;
@@ -813,7 +1228,7 @@
       const enclosureStart = 12;
       const enclosureLimit = systemKey === '2-maihama'
         ? Math.max(20, path.length - 25)
-        : path.length;
+        : (systemKey === '2-chidori' ? Math.max(20, path.length - 10) : path.length);
       for (let index = enclosureStart; index < enclosureLimit && issues.length === 0; index += 1) {
         for (let back = 8; back <= 28 && index - back >= 0; back += 1) {
           const gap = distanceMeters(path[index], path[index - back]);
@@ -1024,6 +1439,365 @@
     return { path: fullPath, requestCount };
   }
 
+
+  async function resolveChidoriFromMaihama(route, system, definition, options) {
+    const force = Boolean(options && options.force);
+    const statusCallback = options && options.statusCallback;
+    const expected = expectedResolvedVersion('2-chidori');
+    if (
+      !force
+      && system.stops.every(validPosition)
+      && system.path && system.path.length > 2
+      && !system.pathInvalid
+      && system.resolvedVersion === expected
+    ) {
+      return system;
+    }
+
+    if (!CHIDORI_GARAGE?.outbound?.path?.length) {
+      throw new Error('2-chidori: IMAGAWA_CHIDORI_GARAGE_PATH_V1 outbound is not loaded');
+    }
+
+    let source = route.systems['2-maihama'];
+    const sourceReady = source
+      && Array.isArray(source.stops)
+      && source.stops.every(validPosition)
+      && Array.isArray(source.path)
+      && source.path.length > 2
+      && !source.pathInvalid;
+    if (!sourceReady) {
+      statusCallback && statusCallback('2-chidori: preparing 2-maihama authoritative data...');
+      await resolveSystem('2-maihama', { force: false, statusCallback: statusCallback });
+      source = route.systems['2-maihama'];
+    }
+    if (!source || !source.stops || !source.stops.every(validPosition)) {
+      throw new Error('2-chidori: source 2-maihama stops are not ready. Open 2-maihama once first.');
+    }
+    if (!Array.isArray(source.path) || source.path.length < 2) {
+      throw new Error('2-chidori: source 2-maihama path is empty. Open 2-maihama once first.');
+    }
+
+    const trunkCount = 16; // 浦安駅入口..運動公園
+    if (source.stops.length < trunkCount) {
+      throw new Error('2-chidori: 2-maihama has fewer than ' + trunkCount + ' stops');
+    }
+    const prefixStops = source.stops.slice(0, trunkCount);
+    for (let i = 0; i < trunkCount; i += 1) {
+      if (normalize(prefixStops[i].name) !== normalize(definition.names[i])) {
+        throw new Error(
+          '2-chidori: stop order mismatch at ' + (i + 1)
+          + ' expected=' + definition.names[i] + ' actual=' + prefixStops[i].name
+        );
+      }
+    }
+
+    const trunkDef = {
+      key: definition.key,
+      names: definition.names.slice(0, trunkCount),
+      directionGroup: definition.directionGroup,
+    };
+    system.stops = deepCloneStops(prefixStops, trunkDef);
+    system.stops[trunkCount - 1].note = '';
+    system.stops.push(makeStop(definition, definition.names[trunkCount], trunkCount));
+    applyAuthoritativePlatformsToStops('2-chidori', system.stops);
+    system.stops.forEach((stop, index) => {
+      stop.order = index + 1;
+      stop.note = index === 0 ? '始発' : (index === definition.names.length - 1 ? '終点' : '');
+      stop.systemCode = definition.key;
+      stop.directionGroup = definition.directionGroup;
+      stop.directionKey = coordinateKey(definition.key, stop.name);
+    });
+
+    const startStop = system.stops[0];
+    const parkStop = system.stops[15];
+    const garageStop = system.stops[16];
+    statusCallback && statusCallback('2-chidori: slicing 2-maihama path 浦安駅入口→運動公園...');
+    const sliced = slicePathBetweenStops(source.path, startStop, parkStop, { startMax: 80, endMax: 40 });
+    statusCallback && statusCallback('2-chidori: joining garage outbound segment...');
+    const garage = cloneGarageSegment('outbound');
+    const joined = smartJoinTrunkThenGarage(sliced.path, garage);
+    if (!joined.ok) {
+      invalidateSystemPath(system);
+      system.pathInvalid = true;
+      system.pathIssues = [{ type: 'join', message: joined.error }];
+      system.validation = { valid: false, issues: system.pathIssues, join: joined };
+      save();
+      throw new Error(joined.error);
+    }
+    if (joined.gapM > CHIDORI_JOIN_FAIL_M) {
+      invalidateSystemPath(system);
+      throw new Error('2-chidori: join gap ' + joined.gapM.toFixed(1) + 'm > ' + CHIDORI_JOIN_FAIL_M + 'm');
+    }
+
+    const endDist = distanceMeters(joined.path[joined.path.length - 1], garageStop);
+    if (endDist > CHIDORI_GARAGE_END_MAX_M) {
+      invalidateSystemPath(system);
+      throw new Error('2-chidori: path end is ' + endDist.toFixed(1) + 'm from 千鳥車庫 (max ' + CHIDORI_GARAGE_END_MAX_M + 'm)');
+    }
+
+    const parkIdxOnJoined = nearestPathIndex(joined.path, parkStop, 0).index;
+    const forbidden = checkForbiddenNearPoints(
+      joined.path,
+      parkIdxOnJoined,
+      [MAIHAMA_STATION_REF, OL_HQ_REF],
+      CHIDORI_FORBIDDEN_AFTER_PARK_M
+    );
+    if (!forbidden.ok) {
+      invalidateSystemPath(system);
+      throw new Error('2-chidori: ' + forbidden.error);
+    }
+
+    const validation = validateRoadPath(joined.path, system.stops, '2-chidori');
+    if (!validation.valid) {
+      invalidateSystemPath(system);
+      system.pathInvalid = true;
+      system.pathIssues = validation.issues;
+      system.validation = { valid: false, issues: validation.issues, metrics: validation.metrics || null };
+      save();
+      const detail = validation.issues.map((item) => item.message).join(' / ');
+      throw new Error('2-chidori: joined path validation failed (' + detail + ')');
+    }
+
+    const pathHash = await hashPathSha256(joined.path);
+    system.path = joined.path;
+    system.pathSource = CHIDORI_PATH_SOURCE;
+    system.pathHash = pathHash;
+    system.positionSource = 'authoritative-copy:2-maihama:stops-1-16+authoritative-platform:千鳥車庫';
+    system.coordinateStats = {
+      authoritativeCount: system.stops.length,
+      osmCount: 0,
+      sharedCount: 0,
+      googleCount: 0,
+      fallbackCount: 0,
+      sourcePathPoints: source.path.length,
+      slicedPathPoints: sliced.path.length,
+      joinedPathPoints: joined.path.length,
+      joinGapM: joined.gapM,
+      endDistanceMeters: endDist,
+    };
+    system.validation = {
+      valid: true,
+      issues: [],
+      metrics: validation.metrics || null,
+      googleDirectionsRequests: 0,
+      pathHash,
+      pathSlice: {
+        startIndex: sliced.startIndex,
+        endIndex: sliced.endIndex,
+        startDistance: sliced.startDistance,
+        endDistance: sliced.endDistance,
+      },
+      join: {
+        gapM: joined.gapM,
+        deduped: joined.deduped,
+        headingChangeDeg: joined.headingChangeDeg,
+        mode: joined.mode,
+        trimA: joined.trimA,
+        trimBHead: joined.trimBHead,
+      },
+    };
+    system.pathInvalid = false;
+    system.pathIssues = null;
+    system.resolvedVersion = expected;
+    system.verifiedAt = new Date().toISOString();
+    route.outbound = system.stops;
+    route.inbound = [];
+    save();
+    statusCallback && statusCallback('validated|' + system.pathSource + '|path ' + system.path.length + ' pts');
+    return system;
+  }
+
+  async function resolveUrayasuChidoriFromUrayasuMaihama(route, system, definition, options) {
+    const force = Boolean(options && options.force);
+    const statusCallback = options && options.statusCallback;
+    const expected = expectedResolvedVersion('2-urayasu-chidori');
+    if (
+      !force
+      && system.stops.every(validPosition)
+      && system.path && system.path.length > 2
+      && !system.pathInvalid
+      && system.resolvedVersion === expected
+    ) {
+      return system;
+    }
+
+    if (!CHIDORI_GARAGE?.inbound?.path?.length) {
+      throw new Error('2-urayasu-chidori: IMAGAWA_CHIDORI_GARAGE_PATH_V1 inbound is not loaded');
+    }
+
+    let source = route.systems['2-urayasu-maihama'];
+    const sourceReady = source
+      && Array.isArray(source.stops)
+      && source.stops.every(validPosition)
+      && Array.isArray(source.path)
+      && source.path.length > 2
+      && !source.pathInvalid
+      && isValidApprovedUrayasuMaihamaPath(source);
+    if (!sourceReady) {
+      statusCallback && statusCallback('2-urayasu-chidori: preparing 2-urayasu-maihama approved path...');
+      await resolveSystem('2-urayasu-maihama', { force: false, statusCallback: statusCallback });
+      source = route.systems['2-urayasu-maihama'];
+    }
+    if (!source || !source.stops || !source.stops.every(validPosition)) {
+      throw new Error('2-urayasu-chidori: source 2-urayasu-maihama stops are not ready.');
+    }
+    if (!Array.isArray(source.path) || source.path.length < 2) {
+      throw new Error('2-urayasu-chidori: source 2-urayasu-maihama path is empty.');
+    }
+    if (!isValidApprovedUrayasuMaihamaPath(source)) {
+      throw new Error('2-urayasu-chidori: 2-urayasu-maihama approved path is not ready.');
+    }
+
+    const parkIdx = source.stops.findIndex((stop) => normalize(stop.name) === normalize('運動公園'));
+    if (parkIdx < 0) {
+      throw new Error('2-urayasu-chidori: 運動公園 not found in 2-urayasu-maihama stops');
+    }
+    const trunkSource = source.stops.slice(parkIdx);
+    const trunkNames = definition.names.slice(1);
+    if (trunkSource.length !== trunkNames.length) {
+      throw new Error(
+        '2-urayasu-chidori: trunk stop count mismatch source='
+        + trunkSource.length + ' expected=' + trunkNames.length
+      );
+    }
+    for (let i = 0; i < trunkNames.length; i += 1) {
+      if (normalize(trunkSource[i].name) !== normalize(trunkNames[i])) {
+        throw new Error(
+          '2-urayasu-chidori: stop order mismatch at ' + (i + 2)
+          + ' expected=' + trunkNames[i] + ' actual=' + trunkSource[i].name
+        );
+      }
+    }
+
+    const trunkDef = {
+      key: definition.key,
+      names: trunkNames,
+      directionGroup: definition.directionGroup,
+    };
+    const clonedTrunk = deepCloneStops(trunkSource, trunkDef);
+    system.stops = [makeStop(definition, definition.names[0], 0)].concat(clonedTrunk);
+    system.stops.forEach((stop, index) => {
+      const name = definition.names[index];
+      stop.id = 'imagawa-v1-' + definition.key.replace(/[^a-z0-9]/gi, '') + '-' + String(index + 1).padStart(2, '0');
+      stop.name = name;
+      stop.order = index + 1;
+      stop.note = index === 0 ? '始発' : (index === definition.names.length - 1 ? '終点' : '');
+      stop.systemCode = definition.key;
+      stop.directionGroup = definition.directionGroup;
+      stop.directionKey = coordinateKey(definition.key, name);
+      stop.source = 'authoritative-platform';
+      stop.sourceName = name;
+      stop.manualOverride = false;
+    });
+    applyAuthoritativePlatformsToStops('2-urayasu-chidori', system.stops);
+
+    const garageStop = system.stops[0];
+    const parkStop = system.stops[1];
+    const endStop = system.stops[system.stops.length - 1];
+    statusCallback && statusCallback('2-urayasu-chidori: slicing 2-urayasu-maihama path 運動公園→浦安駅入口...');
+    const sliced = slicePathBetweenStops(source.path, parkStop, endStop, { startMax: 80, endMax: 40 });
+    statusCallback && statusCallback('2-urayasu-chidori: joining garage inbound segment...');
+    const garage = cloneGarageSegment('inbound');
+    const joined = smartJoinGarageThenTrunk(garage, sliced.path);
+    if (!joined.ok) {
+      invalidateSystemPath(system);
+      system.pathInvalid = true;
+      system.pathIssues = [{ type: 'join', message: joined.error }];
+      system.validation = { valid: false, issues: system.pathIssues, join: joined };
+      save();
+      throw new Error(joined.error);
+    }
+    if (joined.gapM > CHIDORI_JOIN_FAIL_M) {
+      invalidateSystemPath(system);
+      throw new Error('2-urayasu-chidori: join gap ' + joined.gapM.toFixed(1) + 'm > ' + CHIDORI_JOIN_FAIL_M + 'm');
+    }
+
+    const startDist = distanceMeters(joined.path[0], garageStop);
+    if (startDist > CHIDORI_GARAGE_END_MAX_M) {
+      invalidateSystemPath(system);
+      throw new Error(
+        '2-urayasu-chidori: path start is ' + startDist.toFixed(1)
+        + 'm from 千鳥車庫 (max ' + CHIDORI_GARAGE_END_MAX_M + 'm)'
+      );
+    }
+
+    const parkIdxOnJoined = nearestPathIndex(joined.path, parkStop, 0).index;
+    const afterGarage = Math.min(
+      parkIdxOnJoined,
+      joined.garageEndIndex != null ? joined.garageEndIndex + 1 : parkIdxOnJoined
+    );
+    const forbidden = checkForbiddenNearPoints(
+      joined.path,
+      afterGarage,
+      [MAIHAMA_STATION_REF, OL_HQ_REF],
+      CHIDORI_FORBIDDEN_AFTER_PARK_M
+    );
+    if (!forbidden.ok) {
+      invalidateSystemPath(system);
+      throw new Error('2-urayasu-chidori: ' + forbidden.error);
+    }
+
+    const validation = validateRoadPath(joined.path, system.stops, '2-urayasu-chidori');
+    if (!validation.valid) {
+      invalidateSystemPath(system);
+      system.pathInvalid = true;
+      system.pathIssues = validation.issues;
+      system.validation = { valid: false, issues: validation.issues, metrics: validation.metrics || null };
+      save();
+      const detail = validation.issues.map((item) => item.message).join(' / ');
+      throw new Error('2-urayasu-chidori: joined path validation failed (' + detail + ')');
+    }
+
+    const pathHash = await hashPathSha256(joined.path);
+    system.path = joined.path;
+    system.pathSource = URAYASU_CHIDORI_PATH_SOURCE;
+    system.pathHash = pathHash;
+    system.positionSource = 'authoritative-platform:千鳥車庫+authoritative-copy:2-urayasu-maihama:運動公園->浦安駅入口';
+    system.coordinateStats = {
+      authoritativeCount: system.stops.length,
+      osmCount: 0,
+      sharedCount: 0,
+      googleCount: 0,
+      fallbackCount: 0,
+      sourcePathPoints: source.path.length,
+      slicedPathPoints: sliced.path.length,
+      joinedPathPoints: joined.path.length,
+      joinGapM: joined.gapM,
+      startDistanceMeters: startDist,
+    };
+    system.validation = {
+      valid: true,
+      issues: [],
+      metrics: validation.metrics || null,
+      googleDirectionsRequests: 0,
+      pathHash,
+      pathSlice: {
+        startIndex: sliced.startIndex,
+        endIndex: sliced.endIndex,
+        startDistance: sliced.startDistance,
+        endDistance: sliced.endDistance,
+      },
+      join: {
+        gapM: joined.gapM,
+        deduped: joined.deduped,
+        headingChangeDeg: joined.headingChangeDeg,
+        mode: joined.mode,
+        garageEndIndex: joined.garageEndIndex,
+        trunkStartIndex: joined.trunkStartIndex,
+        garageTrimTail: joined.garageTrimTail,
+        trunkDropHead: joined.trunkDropHead,
+      },
+    };
+    system.pathInvalid = false;
+    system.pathIssues = null;
+    system.resolvedVersion = expected;
+    system.verifiedAt = new Date().toISOString();
+    route.outbound = system.stops;
+    route.inbound = [];
+    save();
+    statusCallback && statusCallback('validated|' + system.pathSource + '|path ' + system.path.length + ' pts');
+    return system;
+  }
 
   async function resolveKitaguchiFromMaihama(route, system, definition, options) {
     const force = Boolean(options && options.force);
@@ -1257,6 +2031,12 @@
     if (!route || !definition || !system) throw new Error('今川線の系統データがありません。');
     if (key === '2-kitaguchi') {
       return resolveKitaguchiFromMaihama(route, system, definition, { force, statusCallback });
+    }
+    if (key === '2-chidori') {
+      return resolveChidoriFromMaihama(route, system, definition, { force, statusCallback });
+    }
+    if (key === '2-urayasu-chidori') {
+      return resolveUrayasuChidoriFromUrayasuMaihama(route, system, definition, { force, statusCallback });
     }
     if (key === '2-urayasu-maihama') {
       return resolveUrayasuMaihamaAuthoritative(route, system, definition, { force, statusCallback });
@@ -1596,6 +2376,9 @@
       motionTracking: false, addressControl: false,
     });
     map.setStreetView(panorama);
+    const streetViewService = (typeof googleApi.maps.StreetViewService === 'function')
+      ? new googleApi.maps.StreetViewService()
+      : null;
     const street = streetEl;
     street.style.position = 'relative';
     const telop = document.createElement('div');
@@ -1725,12 +2508,51 @@
     const applyStreetView = (position, headingDeg, force = false) => {
       if (!position || !Number.isFinite(position.lat) || !Number.isFinite(position.lng)) return false;
       const headingValue = Number.isFinite(headingDeg) ? headingDeg : simulation.currentHeading;
+      // Always keep simulation heading/position in sync even if panorama lookup fails.
+      simulation.currentPosition = position;
+      simulation.currentHeading = headingValue;
+      if (force) simulation.lastDrivingVisualUpdate = performance.now();
+
+      const applyPovOnly = () => {
+        try {
+          panorama.setPov({ heading: headingValue, pitch: 0 });
+        } catch (error) {
+          /* ignore POV failures */
+        }
+      };
+
+      if (streetViewService) {
+        const request = { location: position, radius: 50 };
+        if (googleApi.maps.StreetViewSource?.OUTDOOR) {
+          request.source = googleApi.maps.StreetViewSource.OUTDOOR;
+        }
+        try {
+          streetViewService.getPanorama(request, (data, status) => {
+            try {
+              if (status === googleApi.maps.StreetViewStatus.OK && data?.location) {
+                const loc = data.location.latLng
+                  ? { lat: data.location.latLng.lat(), lng: data.location.latLng.lng() }
+                  : position;
+                panorama.setPosition(loc);
+                panorama.setPov({ heading: headingValue, pitch: 0 });
+              } else {
+                // Keep last panorama position; only refresh POV. Do not setPosition to unavailable.
+                applyPovOnly();
+              }
+            } catch (error) {
+              console.warn('[imagawa] panorama update failed', error);
+            }
+          });
+        } catch (error) {
+          console.warn('[imagawa] getPanorama failed', error);
+          applyPovOnly();
+        }
+        return true;
+      }
+
       try {
         panorama.setPosition(position);
         panorama.setPov({ heading: headingValue, pitch: 0 });
-        simulation.currentPosition = position;
-        simulation.currentHeading = headingValue;
-        if (force) simulation.lastDrivingVisualUpdate = performance.now();
         return true;
       } catch (error) {
         console.warn('[imagawa] panorama update failed', error);
@@ -2380,10 +3202,18 @@
     IMAGAWA_PATH_SHAPING_POINTS,
     URAYASU_MAIHAMA_PATH_SOURCE,
     URAYASU_MAIHAMA_PATH_HASH,
+    CHIDORI_PATH_SOURCE,
+    URAYASU_CHIDORI_PATH_SOURCE,
     ensureRoute,
     resolveSystem,
     resolveAllSystems,
     validateRoadPath,
+    slicePathBetweenStops,
+    joinPathSegments,
+    smartJoinTrunkThenGarage,
+    smartJoinGarageThenTrunk,
+    hashPathSha256,
+    cloneGarageSegment,
     getSelectedSystemKey,
     setSelectedSystemKey,
     isValidApprovedUrayasuMaihamaPath,
