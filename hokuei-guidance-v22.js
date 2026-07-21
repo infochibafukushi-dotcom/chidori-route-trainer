@@ -1081,7 +1081,6 @@
     if (!system) return previousRoutes();
     route.outbound = system.stops;
     route.inbound = [];
-    const positioned = system.stops.filter(validPosition).length;
     renderToken += 1;
     const token = renderToken;
 
@@ -1090,14 +1089,11 @@
         <label>路線<select id="routeSelect">${data.routes.map((item) => `<option value="${item.id}" ${item.id === ROUTE_ID ? 'selected' : ''}>${esc(label(item))}</option>`).join('')}</select></label>
         <label>系統<select id="systemSelect">${Object.values(route.systems).map((item) => `<option value="${item.code}" ${item.code === code ? 'selected' : ''}>${esc(item.code)}｜${esc(item.title)}</option>`).join('')}</select></label>
       </div>
-      <section class="manual-mode-card guidance-summary-v22">
-        <div><strong>ルート案内 V22</strong><span>「次の停留所」は登録済み緯度・経度へ直接移動｜位置設定 ${positioned}/${system.stops.length}件</span></div>
-      </section>
       <div class="split guidance-v22-split">
         <div class="guidance-map-wrap-v22"><div id="routeMap" class="map guidance-map-v22"></div><div class="guidance-version-v22">案内V22・約20m</div></div>
         <div id="street" class="street guidance-street-v22"></div>
       </div>
-      <p id="mapStatus" class="status">案内V22を準備しています…</p>
+      <p id="mapStatus" class="status" hidden aria-hidden="true">案内V22を準備しています…</p>
     </section>`);
 
     document.getElementById('routeSelect').onchange = (event) => {

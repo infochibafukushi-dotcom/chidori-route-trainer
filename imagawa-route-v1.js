@@ -2888,7 +2888,7 @@
         <div class="guidance-map-wrap-v22"><div id="routeMap" class="map guidance-map-v22"></div><div class="guidance-version-v22">今川線・系統2</div></div>
         <div id="street" class="street guidance-street-v22"></div>
       </div>
-      <p id="mapStatus" class="status">今川線を準備しています…</p>
+      <p id="mapStatus" class="status" hidden aria-hidden="true">今川線を準備しています…</p>
     </section>`);
 
     document.getElementById('routeSelect').onchange = (event) => { routeState.routeId = event.target.value; routes(); };

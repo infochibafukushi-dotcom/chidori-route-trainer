@@ -15,23 +15,9 @@
   }
 
   function ensureSyncBar() {
-    const main = document.querySelector('.main');
-    if (!main) return null;
-    let bar = document.getElementById('d1SyncBar');
-    if (!bar) {
-      bar = document.createElement('div');
-      bar.id = 'd1SyncBar';
-      bar.className = 'd1-sync-bar';
-      bar.innerHTML = `
-        <div class="d1-sync-state">
-          <span class="d1-sync-dot" aria-hidden="true"></span>
-          <span id="d1SyncText" class="d1-sync-text">共通データを確認中…</span>
-        </div>
-        <button type="button" id="d1Reload" class="secondary">再読込</button>`;
-      main.prepend(bar);
-      document.getElementById('d1Reload').onclick = () => loadRemote(true);
-    }
-    return bar;
+    // 利用者向け画面では同期バーを出さない（D1取得・保存処理自体は維持）
+    document.getElementById('d1SyncBar')?.remove();
+    return null;
   }
 
   function setSyncStatus(text, state = '') {
