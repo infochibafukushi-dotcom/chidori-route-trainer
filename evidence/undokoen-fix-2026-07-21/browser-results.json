@@ -1,0 +1,116 @@
+{
+  "consoleErrors": [
+    {
+      "label": "pc-1280",
+      "e": "D1 load failed TypeError: Failed to fetch\n    at apiFetch (http://127.0.0.1:8765/d1-sync.js?v=57:40:20)\n    at loadRemote (http://127.0.0.1:8765/d1-sync.js?v=57:127:30)\n    at http://127.0.0.1:8765/d1-sync.js?v=57:208:3\n    at http://127.0.0.1:8765/d1-sync.js?v=57:209:3"
+    },
+    {
+      "label": "pc-1280",
+      "e": "Access to fetch at 'https://chidori-route-api.info-chibafukushi.workers.dev/data' from origin 'http://127.0.0.1:8765' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource."
+    },
+    {
+      "label": "pc-1280",
+      "e": "Failed to load resource: net::ERR_FAILED"
+    },
+    {
+      "label": "pc-1280",
+      "e": "D1 load failed TypeError: Failed to fetch\n    at apiFetch (http://127.0.0.1:8765/d1-sync.js?v=57:40:20)\n    at loadRemote (http://127.0.0.1:8765/d1-sync.js?v=57:127:30)\n    at http://127.0.0.1:8765/d1-sync.js?v=57:208:3\n    at http://127.0.0.1:8765/d1-sync.js?v=57:209:3"
+    },
+    {
+      "label": "sp-390",
+      "e": "Access to fetch at 'https://chidori-route-api.info-chibafukushi.workers.dev/data' from origin 'http://127.0.0.1:8765' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource."
+    },
+    {
+      "label": "sp-390",
+      "e": "Failed to load resource: net::ERR_FAILED"
+    },
+    {
+      "label": "sp-390",
+      "e": "D1 load failed TypeError: Failed to fetch\n    at apiFetch (http://127.0.0.1:8765/d1-sync.js?v=57:40:20)\n    at loadRemote (http://127.0.0.1:8765/d1-sync.js?v=57:127:30)\n    at http://127.0.0.1:8765/d1-sync.js?v=57:208:3\n    at http://127.0.0.1:8765/d1-sync.js?v=57:209:3"
+    },
+    {
+      "label": "sp-390",
+      "e": "Access to fetch at 'https://chidori-route-api.info-chibafukushi.workers.dev/data' from origin 'http://127.0.0.1:8765' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource."
+    },
+    {
+      "label": "sp-390",
+      "e": "Failed to load resource: net::ERR_FAILED"
+    },
+    {
+      "label": "sp-390",
+      "e": "D1 load failed TypeError: Failed to fetch\n    at apiFetch (http://127.0.0.1:8765/d1-sync.js?v=57:40:20)\n    at loadRemote (http://127.0.0.1:8765/d1-sync.js?v=57:127:30)\n    at http://127.0.0.1:8765/d1-sync.js?v=57:208:3\n    at http://127.0.0.1:8765/d1-sync.js?v=57:209:3"
+    }
+  ],
+  "checks": {
+    "pc-1280": {
+      "meta": {
+        "routeId": null,
+        "systemKey": null,
+        "stops": null,
+        "pathLen": null,
+        "park": null,
+        "garage": null,
+        "errors": [],
+        "garagePath": {
+          "n": 24,
+          "hash": "696eedf25a10d04b1e70fb3bb39dc09ddec3251d2cb3694e020d56271c1e36f5",
+          "start": {
+            "lat": 35.6321039,
+            "lng": 139.8910742
+          },
+          "end": {
+            "lat": 35.6270761,
+            "lng": 139.8979121
+          }
+        }
+      },
+      "geom": {
+        "minDistToPark": 31.225555507757353,
+        "startMode": "starts_at_intersection",
+        "n": 24
+      },
+      "consoleErrors": [
+        "D1 load failed TypeError: Failed to fetch\n    at apiFetch (http://127.0.0.1:8765/d1-sync.js?v=57:40:20)\n    at loadRemote (http://127.0.0.1:8765/d1-sync.js?v=57:127:30)\n    at http://127.0.0.1:8765/d1-sync.js?v=57:208:3\n    at http://127.0.0.1:8765/d1-sync.js?v=57:209:3",
+        "Access to fetch at 'https://chidori-route-api.info-chibafukushi.workers.dev/data' from origin 'http://127.0.0.1:8765' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+        "Failed to load resource: net::ERR_FAILED",
+        "D1 load failed TypeError: Failed to fetch\n    at apiFetch (http://127.0.0.1:8765/d1-sync.js?v=57:40:20)\n    at loadRemote (http://127.0.0.1:8765/d1-sync.js?v=57:127:30)\n    at http://127.0.0.1:8765/d1-sync.js?v=57:208:3\n    at http://127.0.0.1:8765/d1-sync.js?v=57:209:3"
+      ]
+    },
+    "sp-390": {
+      "meta": {
+        "routeId": null,
+        "systemKey": null,
+        "stops": null,
+        "pathLen": null,
+        "park": null,
+        "garage": null,
+        "errors": [],
+        "garagePath": {
+          "n": 24,
+          "hash": "696eedf25a10d04b1e70fb3bb39dc09ddec3251d2cb3694e020d56271c1e36f5",
+          "start": {
+            "lat": 35.6321039,
+            "lng": 139.8910742
+          },
+          "end": {
+            "lat": 35.6270761,
+            "lng": 139.8979121
+          }
+        }
+      },
+      "geom": {
+        "minDistToPark": 31.225555507757353,
+        "startMode": "starts_at_intersection",
+        "n": 24
+      },
+      "consoleErrors": [
+        "Access to fetch at 'https://chidori-route-api.info-chibafukushi.workers.dev/data' from origin 'http://127.0.0.1:8765' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+        "Failed to load resource: net::ERR_FAILED",
+        "D1 load failed TypeError: Failed to fetch\n    at apiFetch (http://127.0.0.1:8765/d1-sync.js?v=57:40:20)\n    at loadRemote (http://127.0.0.1:8765/d1-sync.js?v=57:127:30)\n    at http://127.0.0.1:8765/d1-sync.js?v=57:208:3\n    at http://127.0.0.1:8765/d1-sync.js?v=57:209:3",
+        "Access to fetch at 'https://chidori-route-api.info-chibafukushi.workers.dev/data' from origin 'http://127.0.0.1:8765' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+        "Failed to load resource: net::ERR_FAILED",
+        "D1 load failed TypeError: Failed to fetch\n    at apiFetch (http://127.0.0.1:8765/d1-sync.js?v=57:40:20)\n    at loadRemote (http://127.0.0.1:8765/d1-sync.js?v=57:127:30)\n    at http://127.0.0.1:8765/d1-sync.js?v=57:208:3\n    at http://127.0.0.1:8765/d1-sync.js?v=57:209:3"
+      ]
+    }
+  }
+}

@@ -91,7 +91,8 @@
       見明川中学校前: { lat: 35.6384265, lng: 139.8987768 },
       見明川住宅: { lat: 35.6364748, lng: 139.8964564 },
       舞浜三丁目: { lat: 35.6337929, lng: 139.8932505 },
-      運動公園: { lat: 35.6310025, lng: 139.8899547 },
+      /** OSM node 6935385497 — 千鳥車庫行き（relation 18351946）。2-maihama の 6720667165 とは別乗り場。 */
+      運動公園: { lat: 35.6316986, lng: 139.8916963, platformId: 6935385497 },
       千鳥車庫: { lat: 35.6270761, lng: 139.8979121, platformId: 12385535203 },
     },
     /** 千鳥車庫（始発 platform_entry_only）+ 2-urayasu-maihama 運動公園..浦安駅入口 */
@@ -255,7 +256,7 @@
     '2-maihama': '2026-07-19-imagawa-v1f',
     '2-urayasu-maihama': '2026-07-19-imagawa-v1o',
     '2-kitaguchi': '2026-07-19-imagawa-kitaguchi-v1',
-    '2-chidori': '2026-07-20-imagawa-chidori-v1',
+    '2-chidori': '2026-07-21-imagawa-chidori-v2',
     '2-urayasu-chidori': '2026-07-20-imagawa-urayasu-chidori-v1',
   };
   const FINALIZED_SYSTEMS = new Set(['2-maihama', '2-urayasu-maihama']);
@@ -265,7 +266,7 @@
   const URAYASU_MAIHAMA_PATH_HASH = '30c4b61405b13d70a000de8995bb7274bb8b43d4215ebb8cd6aaf7be87d924f4';
   const URAYASU_MAIHAMA_PATH_POINTS = 79;
   const CHIDORI_GARAGE = window.IMAGAWA_CHIDORI_GARAGE_PATH_V1 || null;
-  const CHIDORI_PATH_SOURCE = 'authoritative-copy:2-maihama:浦安駅入口->運動公園+osm-relation-verified:18351946+way:796894963:運動公園->千鳥車庫';
+  const CHIDORI_PATH_SOURCE = 'authoritative-copy:2-maihama:浦安駅入口->運動公園前+osm-platform-verified:6935385497+osm-relation-verified:18351946+way:286387770:運動公園前->千鳥車庫';
   const URAYASU_CHIDORI_PATH_SOURCE = 'osm-relation-verified:18351945:千鳥車庫->運動公園+authoritative-approved:2-urayasu-maihama:運動公園->浦安駅入口';
   const CHIDORI_JOIN_FAIL_M = 50;
   const CHIDORI_JOIN_DEDUPE_M = 15;
@@ -579,7 +580,8 @@
         - (b.headingChangeDeg < CHIDORI_HEADING_SMOOTH_DEG ? 0 : 1);
       if (hs !== 0) return hs;
       if (a.trimBHead !== b.trimBHead) return a.trimBHead - b.trimBHead;
-      const parkRef = { lat: 35.6310025, lng: 139.8899547 };
+      // 2-chidori 運動公園（千鳥車庫行き platform 6935385497）。2-maihama 座標と共用しない。
+      const parkRef = { lat: 35.6316986, lng: 139.8916963 };
       const pa = nearestPathIndex(a.path, parkRef, Math.max(0, a.path.length - 40)).distance;
       const pb = nearestPathIndex(b.path, parkRef, Math.max(0, b.path.length - 40)).distance;
       if (Math.abs(pa - pb) > 5) return pa - pb;
@@ -1515,7 +1517,8 @@
     const parkStop = system.stops[15];
     const garageStop = system.stops[16];
     statusCallback && statusCallback('2-chidori: slicing 2-maihama path 浦安駅入口→運動公園...');
-    const sliced = slicePathBetweenStops(source.path, startStop, parkStop, { startMax: 80, endMax: 40 });
+    // 千鳥車庫行き運動公園は幹線6号上。2-maihama path（若潮通り）との最短は運動公園前交差点付近〜約70m。
+    const sliced = slicePathBetweenStops(source.path, startStop, parkStop, { startMax: 80, endMax: 90 });
     statusCallback && statusCallback('2-chidori: joining garage outbound segment...');
     const garage = cloneGarageSegment('outbound');
     const joined = smartJoinTrunkThenGarage(sliced.path, garage);

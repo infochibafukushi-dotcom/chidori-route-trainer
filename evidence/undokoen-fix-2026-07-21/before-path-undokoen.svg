@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+  <rect width="100%" height="100%" fill="#f7fafc"/>
+  <text x="20" y="28" font-size="18" font-family="sans-serif" font-weight="700">BEFORE: U-turn via 2-maihama park then NE then SE</text>
+  <polyline fill="none" stroke="#0f5ea8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" points="116.52076319006743,563.6252497932992 155.61167228263912,461.4094275311194 188.1391694749577,427.6607499712588 404.2169846638998,203.40660632291602 445.07744107709624,164.11073233791515 476.70407781162083,136.3747502067008 518.4975682775745,177.3774538620358 581.4934530509285,237.62078288352618 748.5708941207092,397.3257317493101 783.4792368099326,429.1736217223169"/>
+  <circle cx="116.52076319006743" cy="563.6252497932992" r="7" fill="#e74c3c" stroke="#111" stroke-width="1.5"/><text x="126.52076319006743" y="567.6252497932992" font-size="14" font-family="sans-serif">舞浜駅行き運動公園(誤用)</text>
+<circle cx="476.70407781162083" cy="136.3747502067008" r="7" fill="#f39c12" stroke="#111" stroke-width="1.5"/><text x="486.70407781162083" y="140.3747502067008" font-size="14" font-family="sans-serif">運動公園前交差点</text>
+<circle cx="676.8559670783624" cy="293.5970377333159" r="7" fill="#27ae60" stroke="#111" stroke-width="1.5"/><text x="686.8559670783624" y="297.5970377333159" font-size="14" font-family="sans-serif">千鳥車庫行き運動公園(正)</text>
+</svg>

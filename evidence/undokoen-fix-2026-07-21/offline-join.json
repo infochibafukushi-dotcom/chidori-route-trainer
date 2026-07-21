@@ -1,0 +1,14 @@
+{
+  "endHit": {
+    "index": 5,
+    "distance": 71.00719964308986
+  },
+  "gap": 13.694271601649668,
+  "joinHeading": 89.6402860950364,
+  "parkPathPointDist": 31.225555507757353,
+  "parkPathSegDist": 7.218461631377403,
+  "backtrackM": 0,
+  "maxTurnNearPark": 41.6519148605866,
+  "joinedLen": 29,
+  "joinedHash": "3f1dd99e9807e62c6e76bec8250b569948523aae61e7883b271021d434d09349"
+}

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'chidori-route-map-v57';
+const CACHE_NAME = 'chidori-route-map-v58';
 const APP_SHELL = [
   './',
   './index.html',
@@ -27,8 +27,8 @@ const APP_SHELL = [
   './hokuei-guidance-v22.js?v=57',
   './hokuei-stop-images-v25.js?v=32',
   './imagawa-urayasu-maihama-path-v1o.js?v=56',
-  './imagawa-chidori-garage-path-v1.js?v=56',
-  './imagawa-route-v1.js?v=57',
+  './imagawa-chidori-garage-path-v1.js?v=58',
+  './imagawa-route-v1.js?v=58',
   './imagawa-path-policy-v3.js?v=56',
   './pwa-install.js?v=57'
 ];

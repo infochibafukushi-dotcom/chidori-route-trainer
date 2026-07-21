@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+  <rect width="100%" height="100%" fill="#f7fafc"/>
+  <text x="20" y="28" font-size="18" font-family="sans-serif" font-weight="700">AFTER: 運動公園前 → 幹線6号 SE → 千鳥車庫 (no NE backtrack)</text>
+  <polyline fill="none" stroke="#0f5ea8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" points="272.9778680364467,84.54767726222298 296.1281498700141,107.28997555048808 331.02287798673166,140.70415647869055 423.57054044980316,229.28508557420903 442.9069960219121,246.94963325151156 462.3147380619374,266.37848410804145 625.186505303273,424.9075794622388 644.9150364742478,442.7657701705314 664.6257460231784,462.56039119789847 826.535145886861,615.4523227377771"/>
+  <circle cx="272.9778680364467" cy="84.54767726222298" r="7" fill="#f39c12" stroke="#111" stroke-width="1.5"/><text x="282.9778680364467" y="88.54767726222298" font-size="14" font-family="sans-serif">運動公園前交差点(始点)</text>
+<circle cx="383.846153848102" cy="171.7515892420231" r="7" fill="#27ae60" stroke="#111" stroke-width="1.5"/><text x="393.846153848102" y="175.7515892420231" font-size="14" font-family="sans-serif">千鳥車庫行き運動公園</text>
+<circle cx="73.46485411313901" cy="321.52371638115665" r="7" fill="#bbbbbb" stroke="#111" stroke-width="1.5"/><text x="83.46485411313901" y="325.52371638115665" font-size="14" font-family="sans-serif">舞浜駅行き運動公園(不使用)</text>
+</svg>

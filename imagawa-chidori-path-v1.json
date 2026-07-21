@@ -1,0 +1,127 @@
+{
+  "generatedAt": "2026-07-21T11:35:50.185Z",
+  "note": "outbound rebuilt: drop way 796894963 U-turn from 2-maihama park; follow relation 18351946 way 286387770 from 運動公園前",
+  "parkChidoriOutbound": {
+    "lat": 35.6316986,
+    "lng": 139.8916963,
+    "platformId": 6935385497
+  },
+  "parkMaihamaUnchanged": {
+    "lat": 35.6310025,
+    "lng": 139.8899547
+  },
+  "parkInboundUnchanged": {
+    "lat": 35.6325209,
+    "lng": 139.8914704
+  },
+  "outbound": {
+    "pointCount": 24,
+    "pathHash": "696eedf25a10d04b1e70fb3bb39dc09ddec3251d2cb3694e020d56271c1e36f5",
+    "pathSource": "osm-platform-verified:6935385497+osm-relation-verified:18351946+way:286387770:運動公園前->千鳥車庫+osm-aerial-verified",
+    "resolvedVersion": "2026-07-21-imagawa-chidori-v2",
+    "path": [
+      {
+        "lat": 35.6321039,
+        "lng": 139.8910742
+      },
+      {
+        "lat": 35.6319982,
+        "lng": 139.8912041
+      },
+      {
+        "lat": 35.6318429,
+        "lng": 139.8913999
+      },
+      {
+        "lat": 35.6314312,
+        "lng": 139.8919192
+      },
+      {
+        "lat": 35.6313491,
+        "lng": 139.8920277
+      },
+      {
+        "lat": 35.6312588,
+        "lng": 139.8921366
+      },
+      {
+        "lat": 35.630522,
+        "lng": 139.8930505
+      },
+      {
+        "lat": 35.630439,
+        "lng": 139.8931612
+      },
+      {
+        "lat": 35.630347,
+        "lng": 139.8932718
+      },
+      {
+        "lat": 35.6296364,
+        "lng": 139.8941803
+      },
+      {
+        "lat": 35.6295421,
+        "lng": 139.8943054
+      },
+      {
+        "lat": 35.6294376,
+        "lng": 139.8944328
+      },
+      {
+        "lat": 35.6284363,
+        "lng": 139.8956824
+      },
+      {
+        "lat": 35.628363,
+        "lng": 139.8957758
+      },
+      {
+        "lat": 35.6283131,
+        "lng": 139.8958378
+      },
+      {
+        "lat": 35.6280124,
+        "lng": 139.8962115
+      },
+      {
+        "lat": 35.6276811,
+        "lng": 139.8966207
+      },
+      {
+        "lat": 35.627583,
+        "lng": 139.896744
+      },
+      {
+        "lat": 35.627105,
+        "lng": 139.8973355
+      },
+      {
+        "lat": 35.6270416,
+        "lng": 139.8974155
+      },
+      {
+        "lat": 35.6268268,
+        "lng": 139.8976796
+      },
+      {
+        "lat": 35.6268704,
+        "lng": 139.8977337
+      },
+      {
+        "lat": 35.6270478,
+        "lng": 139.8979537
+      },
+      {
+        "lat": 35.6270761,
+        "lng": 139.8979121
+      }
+    ]
+  },
+  "inbound": {
+    "pointCount": 30,
+    "pathHash": "e524fcd6e190361db82a26767e4310aeffceeec78351e3b1770210c72fc38f60",
+    "pathSource": "osm-relation-verified:18351945:千鳥車庫->運動公園",
+    "resolvedVersion": "2026-07-20-imagawa-urayasu-chidori-v1"
+  }
+}
