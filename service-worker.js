@@ -1,10 +1,10 @@
-const CACHE_NAME = 'chidori-route-map-v58';
+const CACHE_NAME = 'chidori-route-map-v59';
 const APP_SHELL = [
   './',
   './index.html',
-  './manifest.webmanifest?v=57',
+  './manifest.webmanifest?v=59',
   './app-icon.svg',
-  './styles.css?v=32',
+  './styles.css?v=59',
   './hokuei-route.css?v=33',
   './stop-editor-v8.css?v=32',
   './d1-sync.css?v=32',
@@ -13,11 +13,14 @@ const APP_SHELL = [
   './hokuei-driving-v14.css?v=32',
   './hokuei-guidance-v22.css?v=34',
   './hokuei-stop-images-v25.css?v=32',
+  './study-materials.css?v=59',
   './data.js?v=32',
-  './app.js?v=32',
+  './app.js?v=59',
+  './study-materials-data.js?v=59',
+  './study-materials.js?v=59',
   './home-navigation-v25.js?v=32',
   './route-map-link.js?v=32',
-  './d1-sync.js?v=57',
+  './d1-sync.js?v=59',
   './hokuei-authoritative-v12.js?v=33',
   './hokuei-manual-override-v13.js?v=33',
   './hokuei-shared-coordinates-v15.js?v=32',
@@ -30,7 +33,7 @@ const APP_SHELL = [
   './imagawa-chidori-garage-path-v1.js?v=58',
   './imagawa-route-v1.js?v=58',
   './imagawa-path-policy-v3.js?v=56',
-  './pwa-install.js?v=57'
+  './pwa-install.js?v=59'
 ];
 
 self.addEventListener('install', (event) => {
@@ -83,4 +86,8 @@ self.addEventListener('fetch', (event) => {
       return response;
     }))
   );
+});
+
+self.addEventListener('message', (event) => {
+  if (event.data?.type === 'SKIP_WAITING') self.skipWaiting();
 });

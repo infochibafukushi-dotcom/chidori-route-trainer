@@ -1,5 +1,5 @@
 (() => {
-  const SW_VERSION = '56';
+  const SW_VERSION = '59';
   const RELOAD_KEY = `chidori-sw-reloaded-${SW_VERSION}`;
   let installPrompt = null;
 

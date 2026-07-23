@@ -194,8 +194,8 @@
     scheduleUpload();
   };
 
-  shell = function shellWithD1(body) {
-    originalShell(body);
+  shell = function shellWithD1(body, backTo) {
+    originalShell(body, backTo);
     ensureSyncBar();
   };
 
