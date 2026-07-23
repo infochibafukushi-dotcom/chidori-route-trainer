@@ -1,11 +1,22 @@
 // 浦安東団地線（系統番号3・route-3）走行シミュレーション／停留所編集モジュール。
-// 停留所座標・道路形状はいずれも OSM route relation の確定データ
+// 停留所順：京成バスナビ通過時刻表で確認（OSM relationと一致）。
+// 停留所座標：OSM platform採用（要Street View走行確認）。
+// 道路形状：OSM relation採用＋ギャップ補正（要走行確認）。
 // （urayasu-higashi-danchi-platforms-v1.js / urayasu-higashi-danchi-path-v1.js）を採用する。
 // Google Directionsは使用しない。UI構造・走行シミュレーションは imagawa-route-v1.js の
 // drawGuidance / routes / stopEditor パターンを移植・簡略化したもの。
 (() => {
   const ROUTE_ID = 'route-3';
-  const VERSION = '2026-07-23-urayasu-higashi-danchi-v1';
+  /** route.urayasuHigashiDanchiVersion（モジュール全体の適用版）専用。系統ごとのpath版はSYSTEM_RESOLVED_VERSIONSを使用し、
+   *  このVERSIONの変更だけで全系統のpathを再構築（ワイプ）しないこと。 */
+  const VERSION = '2026-07-23-urayasu-higashi-danchi-v2';
+  /** 系統キー単位の resolvedVersion（urayasu-higashi-danchi-path-v1.js の resolvedVersion と対応）。 */
+  const SYSTEM_RESOLVED_VERSIONS = {
+    '3-sogo': '2026-07-23-urayasu-higashi-danchi-sogo-v2',
+    '3-urayasu': '2026-07-23-urayasu-higashi-danchi-urayasu-v2',
+    '3-symbol': '2026-07-23-urayasu-higashi-danchi-symbol-v2',
+    '3-akeumi': '2026-07-23-urayasu-higashi-danchi-akeumi-v2',
+  };
   const SYSTEM_KEY = 'chidori-urayasu-higashi-danchi-system-v1';
   const DISPLAY_CODE = '3';
   const SPEED_KMH = 20;
@@ -17,22 +28,22 @@
   const MAX_DATA_URL_CHARS = 70000;
   const AKEUMI_END_STOP_NAME = '明海五丁目';
 
-  /** 3-sogo（総合公園行き）の公式停留所順。urayasu-higashi-danchi-platforms-v1.js の順序と一致させること。 */
+  /** 3-sogo：京成バスナビ通過時刻表で停留所順確認済み（OSM 18417571と一致）。 */
   const NAMES_TO_SOGO = [
     '浦安駅入口', '神明裏', '猫実', '消防本部前', '海楽', '美浜東団地', '新浦安駅',
     '入船中央エステート', '明海大学前', '海風の街', '夢海の街', '望海の街', '明海六丁目',
     '明海南小学校', '三井ガーデンホテル', 'ハイアットリージェンシー', '明海五丁目',
     'ベイサイドホテルエリア', '総合公園',
   ];
-  /** 3-urayasu（浦安駅入口行き・総合公園発）は 3-sogo の逆順。乗り場は系統ごとに別データを使用する。 */
+  /** 3-urayasu：同上の逆順。乗り場座標は系統別にOSM platformを使用。 */
   const NAMES_TO_URAYASU = [...NAMES_TO_SOGO].reverse();
-  /** 3-symbol（シンボルロード・パークシティ行き）の公式停留所順。 */
+  /** 3-symbol：京成バスナビ通過時刻表で停留所順確認済み（OSM 18417579と一致。ナビ表記は「シンボルロードパークシティ」）。 */
   const NAMES_TO_SYMBOL = [
     '新浦安駅', '入船中央エステート', '明海大学前', '海風の街', '夢海の街', '望海の街',
     '明海六丁目', '明海南小学校', '三井ガーデンホテル', 'ハイアットリージェンシー',
     '明海五丁目', 'ベイパーク', 'ベイモール', 'シンボルロード・パークシティ',
   ];
-  /** 3-akeumi（明海五丁目行き・区間便）は 3-sogo の 浦安駅入口〜明海五丁目 のみ。 */
+  /** 3-akeumi：京成バスナビ「明海五丁目止まり」便。3-sogoの明海五丁目まで。 */
   const NAMES_TO_AKEUMI = NAMES_TO_SOGO.slice(0, NAMES_TO_SOGO.indexOf(AKEUMI_END_STOP_NAME) + 1);
 
   const SYSTEM_DEFINITIONS = {
@@ -99,7 +110,16 @@
     localStorage.setItem(SYSTEM_KEY, SYSTEM_DEFINITIONS[key] ? key : DEFAULT_SYSTEM_KEY);
   }
 
+  function expectedResolvedVersion(key) {
+    return SYSTEM_RESOLVED_VERSIONS[key] || null;
+  }
+
   function imageKey(definition, stop) {
+    return `${definition.key}|${normalize(stop?.name)}`;
+  }
+
+  /** 旧仕様（進行方向グループ単位）の画像キー。移行のみに使用する。 */
+  function legacyImageKey(definition, stop) {
     return `${definition.directionGroup}|${normalize(stop?.name)}`;
   }
 
@@ -168,6 +188,19 @@
     throw new Error('hashPathSha256: crypto.subtle unavailable');
   }
 
+  /** hashPathSha256 の同期フォールバック（Node crypto がある環境のみ）。ブラウザで crypto.subtle しかない場合は null。 */
+  function hashPathSha256Sync(path) {
+    if (typeof require === 'function') {
+      try {
+        const nodeCrypto = require('crypto');
+        return nodeCrypto.createHash('sha256').update(JSON.stringify(path)).digest('hex');
+      } catch (error) {
+        /* ignore */
+      }
+    }
+    return null;
+  }
+
   /** 3-akeumi は 3-sogo の乗り場データを使用する（区間便のため専用データを持たない）。 */
   function platformsForSystem(systemKey) {
     const bank = window.URAYASU_HIGASHI_DANCHI_PLATFORMS_V1 || {};
@@ -175,7 +208,7 @@
     return bank[sourceKey] || {};
   }
 
-  /** 3-akeumi の道路形状は 3-sogo の pathPoints を「明海五丁目」最近傍点まで切り出す。 */
+  /** 3-akeumi の道路形状は 3-sogo の pathPoints を「明海五丁目」最近傍点まで切り出す（path fileに事前計算データが無い場合のみ）。 */
   function buildAkeumiPathData(sogoPathData) {
     if (!sogoPathData?.pathPoints?.length) return null;
     const platform = platformsForSystem('3-akeumi')[AKEUMI_END_STOP_NAME];
@@ -187,21 +220,38 @@
       relationId: sogoPathData.relationId,
       pathPoints: sliced,
       pathSource: `osm-relation-sliced:${sogoPathData.relationId}:浦安駅入口->明海五丁目`,
-      pathHash: null,
-      resolvedVersion: VERSION,
+      pathHash: hashPathSha256Sync(sliced),
+      resolvedVersion: expectedResolvedVersion('3-akeumi'),
     };
+  }
+
+  /** 3-akeumi は path file に事前計算エントリがあれば優先し、無い場合のみ 3-sogo から切り出す。 */
+  function sliceAkeumiPath(bank) {
+    if (bank['3-akeumi']?.pathPoints?.length) return bank['3-akeumi'];
+    return buildAkeumiPathData(bank['3-sogo']);
   }
 
   function pathDataForSystem(systemKey) {
     const bank = window.URAYASU_HIGASHI_DANCHI_PATH_V1 || {};
-    if (systemKey === '3-akeumi') return buildAkeumiPathData(bank['3-sogo']);
+    if (systemKey === '3-akeumi') return sliceAkeumiPath(bank);
     return bank[systemKey] || null;
+  }
+
+  /** 旧ID（`urayasu-higashi-danchi-3-NN`）は全系統で重複していたため、系統キーを含む新IDへ移行する。 */
+  function migrateStopId(definition, stop, index) {
+    const newId = `urayasu-higashi-danchi-${definition.key}-${String(index + 1).padStart(2, '0')}`;
+    if (stop.id === newId) return false;
+    if (!stop.id || /^urayasu-higashi-danchi-3-\d{2}$/.test(stop.id)) {
+      stop.id = newId;
+      return true;
+    }
+    return false;
   }
 
   function makeStop(definition, name, index) {
     const platform = platformsForSystem(definition.key)[name] || null;
     return {
-      id: `urayasu-higashi-danchi-3-${String(index + 1).padStart(2, '0')}`,
+      id: `urayasu-higashi-danchi-${definition.key}-${String(index + 1).padStart(2, '0')}`,
       name,
       note: index === 0 ? '始発' : (index === definition.names.length - 1 ? '終点' : ''),
       address: `${name} バス停, 浦安市, 千葉県`,
@@ -230,7 +280,7 @@
     );
   }
 
-  /** 系統キー単位の確定 path（OSM route relation由来）を system に反映する。 */
+  /** 系統キー単位の path（pathファイル採用）を system に反映する。 */
   function applySystemPath(definition, system) {
     const pathData = pathDataForSystem(definition.key);
     if (!pathData?.pathPoints?.length) {
@@ -244,21 +294,22 @@
     }
     system.path = deepClonePath(pathData.pathPoints);
     system.pathSource = pathData.pathSource || `osm-relation-${pathData.relationId}-full`;
-    system.pathHash = pathData.pathHash || null;
+    system.pathHash = pathData.pathHash || hashPathSha256Sync(system.path) || null;
     system.relationId = pathData.relationId || definition.relationId;
-    system.resolvedVersion = VERSION;
-    system.positionSource = 'OSM route relation（確定座標・確定道路形状）';
+    system.resolvedVersion = pathData.resolvedVersion || expectedResolvedVersion(definition.key);
+    system.positionSource = 'OSM platform（要走行確認）';
     system.verifiedAt = new Date().toISOString();
     system.pathInvalid = false;
     system.pathIssues = null;
   }
 
-  /** 確定 platform 座標を強制適用し、必要であれば path も再適用する。変更有無を返す。 */
+  /** OSM platform 座標を強制適用し、必要であれば path も再適用する。変更有無を返す。 */
   function applyAuthoritativePlatformsAndPath(definition, system) {
     const platforms = platformsForSystem(definition.key);
     let coordsChanged = false;
     let stopChanged = false;
     (system.stops || []).forEach((stop, index) => {
+      if (migrateStopId(definition, stop, index)) stopChanged = true;
       const name = definition.names[index];
       const platform = platforms[name];
       if (!platform) return;
@@ -279,7 +330,7 @@
       stopChanged = true;
     });
 
-    const versionMismatch = Boolean(system.resolvedVersion) && system.resolvedVersion !== VERSION;
+    const versionMismatch = Boolean(system.resolvedVersion) && system.resolvedVersion !== expectedResolvedVersion(definition.key);
     const pathMissing = !Array.isArray(system.path) || system.path.length < 2 || system.pathInvalid;
     if (coordsChanged || versionMismatch || pathMissing) {
       applySystemPath(definition, system);
@@ -358,17 +409,31 @@
     route.systems = systems;
     route.urayasuHigashiDanchiVersion = VERSION;
     route.description = '浦安東団地線：4運行パターン（公式系統番号はいずれも3）';
-    route.sourcePolicy = '停留所座標・道路形状はOSM route relationの確定データ（系統キー単位）。Google Directionsは使用しません。';
+    route.sourcePolicy = '停留所順は京成バスナビ通過時刻表で確認。座標・道路はOSM relation採用（系統キー単位・要走行確認）。公式停留所順との照合状況：停留所順は完了／座標・道路のStreet View突合は未完了。';
     if (!route.urayasuHigashiDanchiStopImages) {
       route.urayasuHigashiDanchiStopImages = {};
       changed = true;
     }
+    if (migrateStopImageBank(route)) changed = true;
     if (changed) save();
     return route;
   }
 
   function selectedSystem(route, key = getSelectedSystemKey()) {
     return route?.systems?.[key] || route?.systems?.[DEFAULT_SYSTEM_KEY] || null;
+  }
+
+  /** directionGroup に応じて route.outbound / route.inbound を設定する。
+   *  makeQuestion() は outbound.length>=2 なら往路、そうでなければ inbound を復路として使うため、
+   *  3-urayasu（inbound）は inbound に stops を入れる必要がある。 */
+  function applyDirectionStops(route, definition, system) {
+    if (definition.directionGroup === 'inbound') {
+      route.outbound = [];
+      route.inbound = system.stops;
+    } else {
+      route.outbound = system.stops;
+      route.inbound = [];
+    }
   }
 
   async function resolveSystem(key, { force = false, statusCallback = null } = {}) {
@@ -387,12 +452,15 @@
     applyAuthoritativePlatformsAndPath(definition, system);
     if (!system.stops.every(validPosition)) {
       const missing = system.stops.filter((stop) => !validPosition(stop)).map((stop) => stop.name);
-      throw new Error(`停留所座標が未確定です：${missing.join('、')}`);
+      throw new Error(`停留所座標が不足しています：${missing.join('、')}`);
     }
     if (!Array.isArray(system.path) || system.path.length < 2) {
-      throw new Error('道路形状（走行ルート）が未確定です。');
+      throw new Error('道路形状（走行ルート）が未設定です。');
     }
-    if (definition.directionGroup === 'outbound') route.outbound = system.stops;
+    if (!system.pathHash) {
+      throw new Error(`道路形状のハッシュを計算できませんでした（系統=${definition.key}）。`);
+    }
+    applyDirectionStops(route, definition, system);
     route.urayasuHigashiDanchiVersion = VERSION;
     save();
     statusCallback?.(`${definition.title}の確認が完了しました。`);
@@ -511,8 +579,37 @@
     return { url: `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`, scaledSize: new googleApi.maps.Size(52, 52), anchor: new googleApi.maps.Point(26, 26) };
   }
 
+  /** 旧キー（進行方向グループ単位）から新キー（系統キー単位）へ画像を移行する。バンク自体は消さない。 */
+  function migrateStopImageBank(route) {
+    const bank = route.urayasuHigashiDanchiStopImages;
+    if (!bank || !route.systems) return false;
+    let changed = false;
+    Object.values(SYSTEM_DEFINITIONS).forEach((definition) => {
+      const system = route.systems[definition.key];
+      (system?.stops || []).forEach((stop) => {
+        const newKey = imageKey(definition, stop);
+        if (bank[newKey]) return;
+        const legacyEntry = bank[legacyImageKey(definition, stop)];
+        if (legacyEntry) {
+          bank[newKey] = legacyEntry;
+          changed = true;
+        }
+      });
+    });
+    Object.keys(bank).forEach((key) => {
+      const group = key.split('|')[0];
+      if (group === 'outbound' || group === 'inbound') {
+        delete bank[key];
+        changed = true;
+      }
+    });
+    return changed;
+  }
+
   function getImageEntry(route, definition, stop) {
-    return route.urayasuHigashiDanchiStopImages?.[imageKey(definition, stop)] || null;
+    const bank = route.urayasuHigashiDanchiStopImages;
+    if (!bank) return null;
+    return bank[imageKey(definition, stop)] || bank[legacyImageKey(definition, stop)] || null;
   }
 
   function showStopImage(route, definition, stop, street) {
@@ -544,7 +641,7 @@
         throw new Error([
           `系統=${definition.key}`,
           base,
-          missing.length ? `未確定の停留所：${missing.join('、')}` : null,
+          missing.length ? `不足の停留所：${missing.join('、')}` : null,
         ].filter(Boolean).join(' | '));
       }
     }
@@ -552,7 +649,7 @@
     active = route.systems[definition.key] || active;
     if (!active.stops.every(validPosition) || !Array.isArray(active.path) || active.path.length < 2) {
       const missing = (active.stops || []).filter((stop) => !validPosition(stop)).map((stop) => stop.name);
-      throw new Error(`系統=${definition.key} | 停留所または道路形状が未確定です | 未確定：${missing.join('、') || '(なし)'}`);
+      throw new Error(`系統=${definition.key} | 停留所または道路形状が未設定です | 不足：${missing.join('、') || '(なし)'}`);
     }
     const googleApi = await loadMaps();
     if (token !== renderToken || page !== 'routes' || routeState.routeId !== ROUTE_ID) return;
@@ -1031,7 +1128,7 @@
 
     selectStop(0, false);
     status.dataset.state = '';
-    status.textContent = `浦安東団地線｜系統${DISPLAY_CODE}｜${definition.title}｜${stops.length}停留所｜道路形状：OSM route relation確定データ`;
+    status.textContent = `浦安東団地線｜系統${DISPLAY_CODE}｜${definition.title}｜${stops.length}停留所｜道路形状：OSM relation採用（要走行確認）`;
     publishDebugState();
     cleanupGuidance = () => {
       simulation.running = false;
@@ -1065,12 +1162,11 @@
       console.warn('[urayasu-higashi-danchi] hokuei cleanup failed', error);
     }
     editorRouteId = ROUTE_ID;
-    routeState.direction = 'outbound';
     const key = getSelectedSystemKey();
     const definition = SYSTEM_DEFINITIONS[key];
     const system = selectedSystem(route, key);
-    route.outbound = system.stops;
-    route.inbound = [];
+    routeState.direction = definition.directionGroup;
+    applyDirectionStops(route, definition, system);
     renderToken += 1;
     const token = renderToken;
 
@@ -1347,7 +1443,7 @@
         <label>路線<select id="sRoute">${data.routes.map((item) => `<option value="${item.id}" ${item.id === ROUTE_ID ? 'selected' : ''}>${escHtml(label(item))}</option>`).join('')}</select></label>
         <label>系統<select id="sMode">${Object.values(SYSTEM_DEFINITIONS).map((item) => `<option value="${item.key}" ${item.key === editorSystemKey ? 'selected' : ''}>${DISPLAY_CODE}｜${escHtml(item.title)}</option>`).join('')}</select></label>
         <button type="button" id="settingsRefreshRoute" class="secondary">現在の系統を再確認</button>
-        <p class="status" id="sStatus">停留所名と順序は公式情報から固定しています。画像は各停留所の「位置・画像を設定」から手動登録してください。</p>
+        <p class="status" id="sStatus">停留所名と順序は京成バスナビ通過時刻表で確認済みです。道路形状はOSM relation採用（要走行確認）。画像は各停留所の「位置・画像を設定」から手動登録してください。</p>
       </div>
       <div class="card"><strong id="stopListTitle">登録済み停留所</strong><p class="stop-list-help">系統ごとに乗り場座標と道路形状を個別に管理しています。</p><div id="stopList"></div></div>
     </div>`;
@@ -1390,8 +1486,10 @@
 
   window.URAYASU_HIGASHI_DANCHI_ROUTE_V1 = {
     VERSION,
+    SYSTEM_RESOLVED_VERSIONS: clone(SYSTEM_RESOLVED_VERSIONS),
     SYSTEM_DEFINITIONS: clone(SYSTEM_DEFINITIONS),
     DEFAULT_SYSTEM_KEY,
+    expectedResolvedVersion,
     ensureRoute,
     resolveSystem,
     resolveAllSystems,
