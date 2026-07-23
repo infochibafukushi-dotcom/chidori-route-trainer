@@ -1,0 +1,380 @@
+{
+  "generatedAt": "2026-07-23T21:11:33.934Z",
+  "area": "明海五丁目 end",
+  "focusWayId": 238904764,
+  "way_238904764": {
+    "id": 238904764,
+    "tags": {
+      "highway": "tertiary",
+      "lanes": "2",
+      "maxspeed": "60",
+      "oneway": "yes",
+      "source": "GSImaps/ort",
+      "surface": "asphalt"
+    },
+    "pickedTags": {
+      "highway": "tertiary",
+      "oneway": "yes",
+      "lanes": "2"
+    },
+    "nodeCount": 14,
+    "nodes": [
+      3722883158,
+      4318817898,
+      11513466438,
+      11513466437,
+      11513466421,
+      11978458741,
+      11422663902,
+      12079315161,
+      11311289939,
+      2303738226,
+      11311289955,
+      11513466418,
+      11311289960,
+      3731514448
+    ],
+    "geometry": [
+      {
+        "lat": 35.6363448,
+        "lon": 139.9258058
+      },
+      {
+        "lat": 35.6364013,
+        "lon": 139.9258781
+      },
+      {
+        "lat": 35.6369348,
+        "lon": 139.9265152
+      },
+      {
+        "lat": 35.6372055,
+        "lon": 139.9268347
+      },
+      {
+        "lat": 35.6372776,
+        "lon": 139.9269229
+      },
+      {
+        "lat": 35.6375795,
+        "lon": 139.9272877
+      },
+      {
+        "lat": 35.6379081,
+        "lon": 139.9276847
+      },
+      {
+        "lat": 35.6379637,
+        "lon": 139.9277514
+      },
+      {
+        "lat": 35.6382414,
+        "lon": 139.9280848
+      },
+      {
+        "lat": 35.6383122,
+        "lon": 139.9281657
+      },
+      {
+        "lat": 35.6383818,
+        "lon": 139.9282536
+      },
+      {
+        "lat": 35.6385799,
+        "lon": 139.9284885
+      },
+      {
+        "lat": 35.6389274,
+        "lon": 139.928903
+      },
+      {
+        "lat": 35.639005,
+        "lon": 139.9289958
+      }
+    ],
+    "highway": "tertiary",
+    "access": null,
+    "bus": null,
+    "oneway": "yes",
+    "service": null
+  },
+  "platforms": {
+    "ハイアットリージェンシー": {
+      "lat": 35.6372263,
+      "lng": 139.9267982,
+      "platformId": 6899769121,
+      "pathNearestIdx": 266,
+      "pathDist_m": 4.029
+    },
+    "明海五丁目": {
+      "lat": 35.6385953,
+      "lng": 139.9284438,
+      "platformId": 6899769123,
+      "pathNearestIdx": 276,
+      "pathDist_m": 4.387,
+      "jumpOver20m": false
+    }
+  },
+  "pathEnd": {
+    "point": {
+      "lat": 35.6373323,
+      "lng": 139.9310623
+    },
+    "distTo明海五丁目_m": 275.17,
+    "note": "Full 3-sogo path continues past 明海五丁目 nearest index"
+  },
+  "pathSpanHyattToAkeumi5": {
+    "fromIdx": 266,
+    "toIdx": 276,
+    "orderedWays": [
+      {
+        "wayId": 238904764,
+        "tags": {
+          "highway": "tertiary",
+          "oneway": "yes",
+          "lanes": "2"
+        },
+        "elevated": false,
+        "firstSegIdx": 0,
+        "lastSegIdx": 9,
+        "sampleMidpoint": {
+          "lat": 35.63724155,
+          "lng": 139.9268788
+        },
+        "minDistToWay_m": 0,
+        "maxDistToWay_m": 0.002,
+        "joinDistanceFromPrevWay_m": 0,
+        "midpointCount": 10
+      }
+    ],
+    "usesWay238904764": true,
+    "way238Blocks": [
+      {
+        "wayId": 238904764,
+        "tags": {
+          "highway": "tertiary",
+          "oneway": "yes",
+          "lanes": "2"
+        },
+        "elevated": false,
+        "firstSegIdx": 0,
+        "lastSegIdx": 9,
+        "sampleMidpoint": {
+          "lat": 35.63724155,
+          "lng": 139.9268788
+        },
+        "minDistToWay_m": 0,
+        "maxDistToWay_m": 0.002,
+        "joinDistanceFromPrevWay_m": 0,
+        "midpointCount": 10
+      }
+    ]
+  },
+  "alternativeWaysNearHyatt": [
+    {
+      "wayId": 152328138,
+      "dist_m": 3.547,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "wayId": 238904764,
+      "dist_m": 3.973,
+      "tags": {
+        "highway": "tertiary",
+        "oneway": "yes",
+        "lanes": "2"
+      }
+    },
+    {
+      "wayId": 1304358230,
+      "dist_m": 11.727,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "wayId": 847288114,
+      "dist_m": 14.152,
+      "tags": {
+        "highway": "tertiary",
+        "oneway": "yes",
+        "lanes": "2"
+      }
+    },
+    {
+      "wayId": 120162598,
+      "dist_m": 15.819,
+      "tags": {
+        "highway": "service",
+        "oneway": "yes",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "wayId": 432958224,
+      "dist_m": 21.862,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "wayId": 120162576,
+      "dist_m": 44.903,
+      "tags": {
+        "highway": "service",
+        "oneway": "yes",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "wayId": 1292116943,
+      "dist_m": 58.752,
+      "tags": {
+        "highway": "service"
+      }
+    }
+  ],
+  "alternativeWaysNearAkeumi5": [
+    {
+      "wayId": 238904764,
+      "dist_m": 4.088,
+      "tags": {
+        "highway": "tertiary",
+        "oneway": "yes",
+        "lanes": "2"
+      }
+    },
+    {
+      "wayId": 1220687493,
+      "dist_m": 5.174,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "wayId": 847288114,
+      "dist_m": 14.011,
+      "tags": {
+        "highway": "tertiary",
+        "oneway": "yes",
+        "lanes": "2"
+      }
+    },
+    {
+      "wayId": 1304253814,
+      "dist_m": 19.906,
+      "tags": {
+        "highway": "pedestrian"
+      }
+    },
+    {
+      "wayId": 1220687491,
+      "dist_m": 22.358,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "wayId": 1220687492,
+      "dist_m": 29.131,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "wayId": 1220687490,
+      "dist_m": 33.988,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "wayId": 1301123923,
+      "dist_m": 36.625,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "wayId": 26323312,
+      "dist_m": 40.057,
+      "tags": {
+        "highway": "tertiary"
+      }
+    },
+    {
+      "wayId": 1413802715,
+      "dist_m": 41.163,
+      "tags": {
+        "highway": "service",
+        "access": "private",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "wayId": 680487279,
+      "dist_m": 42.195,
+      "tags": {
+        "highway": "service",
+        "oneway": "yes",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "wayId": 1413802713,
+      "dist_m": 44.786,
+      "tags": {
+        "highway": "service",
+        "access": "private",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "wayId": 152328138,
+      "dist_m": 45.817,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "wayId": 1304358208,
+      "dist_m": 48.697,
+      "tags": {
+        "highway": "pedestrian"
+      }
+    },
+    {
+      "wayId": 432958224,
+      "dist_m": 50.065,
+      "tags": {
+        "highway": "footway"
+      }
+    }
+  ],
+  "buildingFootprintIntersections": {
+    "count": 0,
+    "totalSegmentHits": 0,
+    "buildingWayIds": [],
+    "samples": []
+  },
+  "overpassCaches": [
+    "_v5_overpass_C_akeumi5_hyatt.json",
+    "_v5_overpass_way_238904764.json"
+  ],
+  "verdict": "DIAGONAL_ROAD_OK",
+  "clearAnswers": {
+    "highway": "tertiary",
+    "access": null,
+    "bus": null,
+    "oneway": "yes",
+    "isTertiaryNotFootway": true,
+    "pathNearestDistToPlatform_m": 4.387,
+    "pathEndDistToPlatform_m": 275.17,
+    "buildingIntersectionCount": 0,
+    "pathFollowsWay238904764": true
+  },
+  "verdictRationale": "Hyatt→明海五丁目 span snaps entirely to way 238904764 (highway=tertiary, oneway=yes, lanes=2, no access/bus restrictions). Zero building footprint intersections. Platform within 5m."
+}

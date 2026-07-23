@@ -1,0 +1,223 @@
+{
+  "checks": [
+    {
+      "routeId": "route-1",
+      "outbound": 38,
+      "hasDrive": false
+    },
+    {
+      "routeId": "route-2",
+      "key": "2-maihama",
+      "stops": 18,
+      "path": 0,
+      "pathHash": null,
+      "resolvedVersion": null,
+      "first": "浦安駅入口",
+      "last": "舞浜駅"
+    },
+    {
+      "routeId": "route-2",
+      "key": "2-urayasu-maihama",
+      "stops": 18,
+      "path": 79,
+      "pathHash": "30c4b61405b13d70a000de8995bb7274bb8b43d4215ebb8cd6aaf7be87d924f4",
+      "resolvedVersion": "2026-07-19-imagawa-v1o",
+      "first": "舞浜駅",
+      "last": "浦安駅入口"
+    },
+    {
+      "routeId": "route-2",
+      "key": "2-kitaguchi",
+      "stops": 7,
+      "path": 0,
+      "pathHash": null,
+      "resolvedVersion": null,
+      "first": "浦安駅入口",
+      "last": "新浦安駅北口"
+    },
+    {
+      "routeId": "route-2",
+      "key": "2-chidori",
+      "stops": 17,
+      "path": 0,
+      "pathHash": null,
+      "resolvedVersion": null,
+      "first": "浦安駅入口",
+      "last": "千鳥車庫"
+    },
+    {
+      "routeId": "route-2",
+      "key": "2-urayasu-chidori",
+      "stops": 17,
+      "path": 89,
+      "pathHash": "1598bf2f5fa05241e07aa29378639ae5168e94218241cb9d9cfd5dfd52ef5ae3",
+      "resolvedVersion": "2026-07-20-imagawa-urayasu-chidori-v1",
+      "first": "千鳥車庫",
+      "last": "浦安駅入口"
+    },
+    {
+      "routeId": "route-3",
+      "key": "3-sogo",
+      "stops": 19,
+      "path": 306,
+      "pathHash": "3daf39e59686b2b20d0c5d724cb14003a1e04dee55dd459b58527873ccc4eafa",
+      "resolvedVersion": "2026-07-23-urayasu-higashi-danchi-sogo-v4",
+      "first": "浦安駅入口",
+      "last": "総合公園"
+    },
+    {
+      "routeId": "route-3",
+      "key": "3-urayasu",
+      "stops": 19,
+      "path": 182,
+      "pathHash": "a9ec5527f136b2ac832aac68f4f5be032d1717af8a708f38636b534f99cee2f7",
+      "resolvedVersion": "2026-07-23-urayasu-higashi-danchi-urayasu-v3",
+      "first": "総合公園",
+      "last": "浦安駅入口"
+    },
+    {
+      "routeId": "route-3",
+      "key": "3-symbol",
+      "stops": 14,
+      "path": 161,
+      "pathHash": "1026178ab4987963bddc1c044e91fdaab3f87c63690e74b5f7b5295646c3d70b",
+      "resolvedVersion": "2026-07-23-urayasu-higashi-danchi-symbol-v4",
+      "first": "新浦安駅",
+      "last": "シンボルロード・パークシティ"
+    },
+    {
+      "routeId": "route-3",
+      "key": "3-akeumi",
+      "stops": 17,
+      "path": 277,
+      "pathHash": "75b336c39143045eb52ad48cda9b08751674a11341656e02543b6b683d92bf5d",
+      "resolvedVersion": "2026-07-23-urayasu-higashi-danchi-akeumi-v4",
+      "first": "浦安駅入口",
+      "last": "明海五丁目"
+    },
+    {
+      "routeId": "route-1",
+      "outbound": 38,
+      "hasDrive": false
+    },
+    {
+      "routeId": "route-2",
+      "key": "2-maihama",
+      "stops": 18,
+      "path": 0,
+      "pathHash": null,
+      "resolvedVersion": null,
+      "first": "浦安駅入口",
+      "last": "舞浜駅"
+    },
+    {
+      "routeId": "route-2",
+      "key": "2-urayasu-maihama",
+      "stops": 18,
+      "path": 79,
+      "pathHash": "30c4b61405b13d70a000de8995bb7274bb8b43d4215ebb8cd6aaf7be87d924f4",
+      "resolvedVersion": "2026-07-19-imagawa-v1o",
+      "first": "舞浜駅",
+      "last": "浦安駅入口"
+    },
+    {
+      "routeId": "route-2",
+      "key": "2-kitaguchi",
+      "stops": 7,
+      "path": 0,
+      "pathHash": null,
+      "resolvedVersion": null,
+      "first": "浦安駅入口",
+      "last": "新浦安駅北口"
+    },
+    {
+      "routeId": "route-2",
+      "key": "2-chidori",
+      "stops": 17,
+      "path": 0,
+      "pathHash": null,
+      "resolvedVersion": null,
+      "first": "浦安駅入口",
+      "last": "千鳥車庫"
+    },
+    {
+      "routeId": "route-2",
+      "key": "2-urayasu-chidori",
+      "stops": 17,
+      "path": 89,
+      "pathHash": "1598bf2f5fa05241e07aa29378639ae5168e94218241cb9d9cfd5dfd52ef5ae3",
+      "resolvedVersion": "2026-07-20-imagawa-urayasu-chidori-v1",
+      "first": "千鳥車庫",
+      "last": "浦安駅入口"
+    },
+    {
+      "routeId": "route-3",
+      "key": "3-sogo",
+      "stops": 19,
+      "path": 306,
+      "pathHash": "3daf39e59686b2b20d0c5d724cb14003a1e04dee55dd459b58527873ccc4eafa",
+      "resolvedVersion": "2026-07-23-urayasu-higashi-danchi-sogo-v4",
+      "first": "浦安駅入口",
+      "last": "総合公園"
+    },
+    {
+      "routeId": "route-3",
+      "key": "3-urayasu",
+      "stops": 19,
+      "path": 182,
+      "pathHash": "a9ec5527f136b2ac832aac68f4f5be032d1717af8a708f38636b534f99cee2f7",
+      "resolvedVersion": "2026-07-23-urayasu-higashi-danchi-urayasu-v3",
+      "first": "総合公園",
+      "last": "浦安駅入口"
+    },
+    {
+      "routeId": "route-3",
+      "key": "3-symbol",
+      "stops": 14,
+      "path": 161,
+      "pathHash": "1026178ab4987963bddc1c044e91fdaab3f87c63690e74b5f7b5295646c3d70b",
+      "resolvedVersion": "2026-07-23-urayasu-higashi-danchi-symbol-v4",
+      "first": "新浦安駅",
+      "last": "シンボルロード・パークシティ"
+    },
+    {
+      "routeId": "route-3",
+      "key": "3-akeumi",
+      "stops": 17,
+      "path": 277,
+      "pathHash": "75b336c39143045eb52ad48cda9b08751674a11341656e02543b6b683d92bf5d",
+      "resolvedVersion": "2026-07-23-urayasu-higashi-danchi-akeumi-v4",
+      "first": "浦安駅入口",
+      "last": "明海五丁目"
+    }
+  ],
+  "viewports": {
+    "pc": {
+      "patchesPresent": false,
+      "ok": true
+    },
+    "sp390": {
+      "patchesPresent": false,
+      "ok": true
+    }
+  },
+  "imagawaMeta": {
+    "imagawa-urayasu-maihama-path-v1o.js": {
+      "bytes": 3516,
+      "sha256": "e645bdefe2138fd78494dbb1675df947be6ec1c8c6a546b24b85200c1e4e9096"
+    },
+    "imagawa-chidori-garage-path-v1.js": {
+      "bytes": 2531,
+      "sha256": "56f8e3afb99f675875a998d304203c040c1425b3369e46fc6bcdce383a73e0b9"
+    },
+    "imagawa-route-v1.js": {
+      "bytes": 139114,
+      "sha256": "4fa93e582b275c3ff9ecfa50f12b1c1adb3eda1a64b61983ec1335303d2831a0"
+    },
+    "imagawa-path-policy-v3.js": {
+      "bytes": 3964,
+      "sha256": "c425edf03f7ed1c6e8c71ff15aa12ff65c3dafa988d6688ebc62c33b5f430e0e"
+    }
+  },
+  "pass": true
+}

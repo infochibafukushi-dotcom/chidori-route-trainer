@@ -1,0 +1,1441 @@
+{
+  "generatedAt": "2026-07-23T21:11:33.900Z",
+  "area": "海楽 ↔ 美浜東団地",
+  "route": "3-sogo",
+  "platforms": {
+    "海楽": {
+      "lat": 35.6576449,
+      "lng": 139.9059641,
+      "platformId": 12369418230,
+      "pathNearestIdx": 51,
+      "pathDist_m": 8.678,
+      "jumpOver20m": false
+    },
+    "美浜東団地": {
+      "lat": 35.6522225,
+      "lng": 139.9128348,
+      "platformId": 1330406914,
+      "pathNearestIdx": 79,
+      "pathDist_m": 11.941,
+      "jumpOver20m": false
+    }
+  },
+  "pathSpan": {
+    "fromIdx": 51,
+    "toIdx": 79,
+    "pointCount": 29,
+    "bbox": [
+      35.6496154,
+      139.9034608,
+      35.6600669,
+      139.91532519999998
+    ],
+    "pathSource": "osm-relation-18417571+gapfill-from-reversed-densified-18417570:v2+patches-v3:海楽->美浜東団地,美浜東団地->新浦安駅,新浦安駅->入船中央エステート,ハイアットリージェンシー->明海五丁目+patches-v4-rotary:美浜東団地->新浦安駅,新浦安駅->入船中央エステート",
+    "resolvedVersion": "2026-07-23-urayasu-higashi-danchi-sogo-v4"
+  },
+  "overpassCache": "_v5_overpass_A_kairaku_mihama.json",
+  "highwayWayCount": 347,
+  "greenPolygonCount": 163,
+  "symbolRoad242Candidates": [
+    {
+      "wayId": 26320561,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "2",
+        "name": "シンボルロード",
+        "ref": "242",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "usedByCurrentPath": true
+    },
+    {
+      "wayId": 26320590,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "3",
+        "name": "シンボルロード",
+        "ref": "276",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "usedByCurrentPath": false
+    },
+    {
+      "wayId": 26320596,
+      "tags": {
+        "highway": "tertiary",
+        "oneway": "yes",
+        "name": "シンボルロード",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "usedByCurrentPath": false
+    },
+    {
+      "wayId": 26320819,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "3",
+        "name": "シンボルロード",
+        "ref": "276",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "usedByCurrentPath": true
+    },
+    {
+      "wayId": 26320821,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "bridge": "yes",
+        "layer": "1",
+        "lanes": "3",
+        "name": "シンボルロード",
+        "ref": "242",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "usedByCurrentPath": true
+    },
+    {
+      "wayId": 26349778,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "2",
+        "name": "シンボルロード",
+        "ref": "242",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "usedByCurrentPath": false
+    },
+    {
+      "wayId": 216617622,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "bridge": "yes",
+        "layer": "1",
+        "lanes": "3",
+        "name": "シンボルロード",
+        "ref": "242",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "usedByCurrentPath": false
+    },
+    {
+      "wayId": 720402605,
+      "tags": {
+        "highway": "secondary",
+        "lanes": "4",
+        "name": "やなぎ通り",
+        "ref": "242",
+        "name:en": "Yanagi-dori"
+      },
+      "usedByCurrentPath": false
+    },
+    {
+      "wayId": 720406628,
+      "tags": {
+        "highway": "tertiary",
+        "oneway": "yes",
+        "name": "シンボルロード",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "usedByCurrentPath": false
+    },
+    {
+      "wayId": 720406630,
+      "tags": {
+        "highway": "tertiary",
+        "oneway": "yes",
+        "name": "シンボルロード",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "usedByCurrentPath": false
+    },
+    {
+      "wayId": 720406632,
+      "tags": {
+        "highway": "tertiary",
+        "oneway": "yes",
+        "name": "シンボルロード",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "usedByCurrentPath": false
+    },
+    {
+      "wayId": 1125716442,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "bridge": "yes",
+        "layer": "1",
+        "lanes": "2",
+        "name": "シンボルロード",
+        "ref": "242",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "usedByCurrentPath": true
+    },
+    {
+      "wayId": 1125716443,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "bridge": "yes",
+        "layer": "1",
+        "lanes": "2",
+        "name": "シンボルロード",
+        "ref": "242",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "usedByCurrentPath": true
+    },
+    {
+      "wayId": 1125716444,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "bridge": "yes",
+        "layer": "1",
+        "lanes": "2",
+        "name": "シンボルロード",
+        "ref": "242",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "usedByCurrentPath": false
+    },
+    {
+      "wayId": 1125716445,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "bridge": "yes",
+        "layer": "1",
+        "lanes": "2",
+        "name": "シンボルロード",
+        "ref": "242",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "usedByCurrentPath": false
+    },
+    {
+      "wayId": 1125716446,
+      "tags": {
+        "highway": "secondary",
+        "lanes": "4",
+        "name": "やなぎ通り",
+        "ref": "242",
+        "name:en": "Yanagi-dori",
+        "name:ja": "やなぎ通り"
+      },
+      "usedByCurrentPath": false
+    },
+    {
+      "wayId": 1125716447,
+      "tags": {
+        "highway": "secondary",
+        "lanes": "4",
+        "name": "やなぎ通り",
+        "ref": "242",
+        "name:en": "Yanagi-dori"
+      },
+      "usedByCurrentPath": false
+    },
+    {
+      "wayId": 1125716452,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "2",
+        "name": "シンボルロード",
+        "ref": "242",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "usedByCurrentPath": true
+    },
+    {
+      "wayId": 1125716453,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "2",
+        "name": "シンボルロード",
+        "ref": "242",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "usedByCurrentPath": false
+    },
+    {
+      "wayId": 1125716454,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "4",
+        "name": "シンボルロード",
+        "ref": "242",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロー���"
+      },
+      "usedByCurrentPath": true
+    },
+    {
+      "wayId": 1125716455,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "3",
+        "name": "シンボルロード",
+        "ref": "242",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "usedByCurrentPath": false
+    },
+    {
+      "wayId": 1125716456,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "2",
+        "name": "シンボルロード",
+        "ref": "242",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "usedByCurrentPath": false
+    },
+    {
+      "wayId": 1125716457,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "2",
+        "name": "シンボルロード",
+        "ref": "242",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "usedByCurrentPath": true
+    },
+    {
+      "wayId": 1338996609,
+      "tags": {
+        "highway": "tertiary",
+        "oneway": "yes",
+        "name": "シンボルロード",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "usedByCurrentPath": false
+    },
+    {
+      "wayId": 1338996611,
+      "tags": {
+        "highway": "tertiary",
+        "oneway": "yes",
+        "name": "シンボルロード",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "usedByCurrentPath": false
+    },
+    {
+      "wayId": 1339150559,
+      "tags": {
+        "highway": "secondary",
+        "lanes": "4",
+        "name": "やなぎ通り",
+        "ref": "242",
+        "name:en": "Yanagi-dori"
+      },
+      "usedByCurrentPath": false
+    }
+  ],
+  "waysUsedByCurrentPath": [
+    {
+      "wayId": 26320561,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "2",
+        "name": "シンボルロード",
+        "ref": "242",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "elevated": false
+    },
+    {
+      "wayId": 1125716452,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "2",
+        "name": "シンボルロード",
+        "ref": "242",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "elevated": false
+    },
+    {
+      "wayId": 1125716443,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "bridge": "yes",
+        "layer": "1",
+        "lanes": "2",
+        "name": "シンボルロード",
+        "ref": "242",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "elevated": true
+    },
+    {
+      "wayId": 26320821,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "bridge": "yes",
+        "layer": "1",
+        "lanes": "3",
+        "name": "シンボルロード",
+        "ref": "242",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "elevated": true
+    },
+    {
+      "wayId": 1125716442,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "bridge": "yes",
+        "layer": "1",
+        "lanes": "2",
+        "name": "シンボルロード",
+        "ref": "242",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "elevated": true
+    },
+    {
+      "wayId": 1125716457,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "2",
+        "name": "シンボルロード",
+        "ref": "242",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "elevated": false
+    },
+    {
+      "wayId": 1125716454,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "4",
+        "name": "シンボルロード",
+        "ref": "242",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロー���"
+      },
+      "elevated": false
+    },
+    {
+      "wayId": 26320819,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "3",
+        "name": "シンボルロード",
+        "ref": "276",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "elevated": false
+    }
+  ],
+  "segmentMidpointNearestWays": [
+    {
+      "segIdx": 51,
+      "from": {
+        "lat": 35.6575669,
+        "lng": 139.9059608
+      },
+      "to": {
+        "lat": 35.6573218,
+        "lng": 139.9062663
+      },
+      "midpoint": {
+        "lat": 35.65744435,
+        "lng": 139.90611355
+      },
+      "nearestWayId": 26320561,
+      "distToWay_m": 0,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "2",
+        "name": "シンボルロード",
+        "ref": "242",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "elevated": false,
+      "greenPolygonHits": []
+    },
+    {
+      "segIdx": 52,
+      "from": {
+        "lat": 35.6573218,
+        "lng": 139.9062663
+      },
+      "to": {
+        "lat": 35.6570766,
+        "lng": 139.9065719
+      },
+      "midpoint": {
+        "lat": 35.6571992,
+        "lng": 139.9064191
+      },
+      "nearestWayId": 26320561,
+      "distToWay_m": 0,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "2",
+        "name": "シンボルロード",
+        "ref": "242",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "elevated": false,
+      "greenPolygonHits": []
+    },
+    {
+      "segIdx": 53,
+      "from": {
+        "lat": 35.6570766,
+        "lng": 139.9065719
+      },
+      "to": {
+        "lat": 35.6568315,
+        "lng": 139.9068774
+      },
+      "midpoint": {
+        "lat": 35.65695405,
+        "lng": 139.90672465
+      },
+      "nearestWayId": 26320561,
+      "distToWay_m": 0,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "2",
+        "name": "シンボルロード",
+        "ref": "242",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "elevated": false,
+      "greenPolygonHits": []
+    },
+    {
+      "segIdx": 54,
+      "from": {
+        "lat": 35.6568315,
+        "lng": 139.9068774
+      },
+      "to": {
+        "lat": 35.6565992,
+        "lng": 139.9071597
+      },
+      "midpoint": {
+        "lat": 35.65671535,
+        "lng": 139.90701855
+      },
+      "nearestWayId": 1125716452,
+      "distToWay_m": 0.002,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "2",
+        "name": "シンボルロード",
+        "ref": "242",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "elevated": false,
+      "greenPolygonHits": []
+    },
+    {
+      "segIdx": 55,
+      "from": {
+        "lat": 35.6565992,
+        "lng": 139.9071597
+      },
+      "to": {
+        "lat": 35.6563668,
+        "lng": 139.907442
+      },
+      "midpoint": {
+        "lat": 35.656483,
+        "lng": 139.90730085
+      },
+      "nearestWayId": 1125716452,
+      "distToWay_m": 0.002,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "2",
+        "name": "シンボルロード",
+        "ref": "242",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "elevated": false,
+      "greenPolygonHits": []
+    },
+    {
+      "segIdx": 56,
+      "from": {
+        "lat": 35.6563668,
+        "lng": 139.907442
+      },
+      "to": {
+        "lat": 35.6562117,
+        "lng": 139.9076402
+      },
+      "midpoint": {
+        "lat": 35.65628925,
+        "lng": 139.9075411
+      },
+      "nearestWayId": 1125716452,
+      "distToWay_m": 0.004,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "2",
+        "name": "シンボルロード",
+        "ref": "242",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "elevated": false,
+      "greenPolygonHits": []
+    },
+    {
+      "segIdx": 57,
+      "from": {
+        "lat": 35.6562117,
+        "lng": 139.9076402
+      },
+      "to": {
+        "lat": 35.6560567,
+        "lng": 139.9078385
+      },
+      "midpoint": {
+        "lat": 35.6561342,
+        "lng": 139.90773934999999
+      },
+      "nearestWayId": 1125716452,
+      "distToWay_m": 0.004,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "2",
+        "name": "シンボルロード",
+        "ref": "242",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "elevated": false,
+      "greenPolygonHits": []
+    },
+    {
+      "segIdx": 58,
+      "from": {
+        "lat": 35.6560567,
+        "lng": 139.9078385
+      },
+      "to": {
+        "lat": 35.6559015,
+        "lng": 139.9080308
+      },
+      "midpoint": {
+        "lat": 35.655979099999996,
+        "lng": 139.90793465000002
+      },
+      "nearestWayId": 1125716443,
+      "distToWay_m": 0,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "bridge": "yes",
+        "layer": "1",
+        "lanes": "2",
+        "name": "シンボルロード",
+        "ref": "242",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "elevated": true,
+      "greenPolygonHits": []
+    },
+    {
+      "segIdx": 59,
+      "from": {
+        "lat": 35.6559015,
+        "lng": 139.9080308
+      },
+      "to": {
+        "lat": 35.6557462,
+        "lng": 139.9082232
+      },
+      "midpoint": {
+        "lat": 35.655823850000004,
+        "lng": 139.908127
+      },
+      "nearestWayId": 1125716443,
+      "distToWay_m": 0,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "bridge": "yes",
+        "layer": "1",
+        "lanes": "2",
+        "name": "シンボルロード",
+        "ref": "242",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "elevated": true,
+      "greenPolygonHits": []
+    },
+    {
+      "segIdx": 60,
+      "from": {
+        "lat": 35.6557462,
+        "lng": 139.9082232
+      },
+      "to": {
+        "lat": 35.6555835,
+        "lng": 139.9084274
+      },
+      "midpoint": {
+        "lat": 35.65566485,
+        "lng": 139.9083253
+      },
+      "nearestWayId": 1125716443,
+      "distToWay_m": 0,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "bridge": "yes",
+        "layer": "1",
+        "lanes": "2",
+        "name": "シンボルロード",
+        "ref": "242",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "elevated": true,
+      "greenPolygonHits": []
+    },
+    {
+      "segIdx": 61,
+      "from": {
+        "lat": 35.6555835,
+        "lng": 139.9084274
+      },
+      "to": {
+        "lat": 35.6554208,
+        "lng": 139.9086316
+      },
+      "midpoint": {
+        "lat": 35.655502150000004,
+        "lng": 139.9085295
+      },
+      "nearestWayId": 1125716443,
+      "distToWay_m": 0,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "bridge": "yes",
+        "layer": "1",
+        "lanes": "2",
+        "name": "シンボルロード",
+        "ref": "242",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "elevated": true,
+      "greenPolygonHits": []
+    },
+    {
+      "segIdx": 62,
+      "from": {
+        "lat": 35.6554208,
+        "lng": 139.9086316
+      },
+      "to": {
+        "lat": 35.6551826,
+        "lng": 139.9089312
+      },
+      "midpoint": {
+        "lat": 35.6553017,
+        "lng": 139.9087814
+      },
+      "nearestWayId": 26320821,
+      "distToWay_m": 0.002,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "bridge": "yes",
+        "layer": "1",
+        "lanes": "3",
+        "name": "シンボルロード",
+        "ref": "242",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "elevated": true,
+      "greenPolygonHits": []
+    },
+    {
+      "segIdx": 63,
+      "from": {
+        "lat": 35.6551826,
+        "lng": 139.9089312
+      },
+      "to": {
+        "lat": 35.6549444,
+        "lng": 139.9092307
+      },
+      "midpoint": {
+        "lat": 35.6550635,
+        "lng": 139.90908095
+      },
+      "nearestWayId": 26320821,
+      "distToWay_m": 0.002,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "bridge": "yes",
+        "layer": "1",
+        "lanes": "3",
+        "name": "シンボルロード",
+        "ref": "242",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "elevated": true,
+      "greenPolygonHits": []
+    },
+    {
+      "segIdx": 64,
+      "from": {
+        "lat": 35.6549444,
+        "lng": 139.9092307
+      },
+      "to": {
+        "lat": 35.6547784,
+        "lng": 139.9094354
+      },
+      "midpoint": {
+        "lat": 35.6548614,
+        "lng": 139.90933305
+      },
+      "nearestWayId": 1125716442,
+      "distToWay_m": 0.002,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "bridge": "yes",
+        "layer": "1",
+        "lanes": "2",
+        "name": "シンボルロード",
+        "ref": "242",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "elevated": true,
+      "greenPolygonHits": []
+    },
+    {
+      "segIdx": 65,
+      "from": {
+        "lat": 35.6547784,
+        "lng": 139.9094354
+      },
+      "to": {
+        "lat": 35.6546123,
+        "lng": 139.9096401
+      },
+      "midpoint": {
+        "lat": 35.65469535,
+        "lng": 139.90953775
+      },
+      "nearestWayId": 1125716442,
+      "distToWay_m": 0.002,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "bridge": "yes",
+        "layer": "1",
+        "lanes": "2",
+        "name": "シンボルロード",
+        "ref": "242",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "elevated": true,
+      "greenPolygonHits": []
+    },
+    {
+      "segIdx": 66,
+      "from": {
+        "lat": 35.6546123,
+        "lng": 139.9096401
+      },
+      "to": {
+        "lat": 35.65446,
+        "lng": 139.9098322
+      },
+      "midpoint": {
+        "lat": 35.65453615,
+        "lng": 139.90973615000001
+      },
+      "nearestWayId": 1125716442,
+      "distToWay_m": 0.002,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "bridge": "yes",
+        "layer": "1",
+        "lanes": "2",
+        "name": "シンボルロード",
+        "ref": "242",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "elevated": true,
+      "greenPolygonHits": []
+    },
+    {
+      "segIdx": 67,
+      "from": {
+        "lat": 35.65446,
+        "lng": 139.9098322
+      },
+      "to": {
+        "lat": 35.6543078,
+        "lng": 139.9100243
+      },
+      "midpoint": {
+        "lat": 35.6543839,
+        "lng": 139.90992825
+      },
+      "nearestWayId": 1125716442,
+      "distToWay_m": 0.002,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "bridge": "yes",
+        "layer": "1",
+        "lanes": "2",
+        "name": "シンボルロード",
+        "ref": "242",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "elevated": true,
+      "greenPolygonHits": []
+    },
+    {
+      "segIdx": 68,
+      "from": {
+        "lat": 35.6543078,
+        "lng": 139.9100243
+      },
+      "to": {
+        "lat": 35.6541781,
+        "lng": 139.9101866
+      },
+      "midpoint": {
+        "lat": 35.65424295,
+        "lng": 139.91010545
+      },
+      "nearestWayId": 1125716457,
+      "distToWay_m": 0,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "2",
+        "name": "シンボルロード",
+        "ref": "242",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "elevated": false,
+      "greenPolygonHits": []
+    },
+    {
+      "segIdx": 69,
+      "from": {
+        "lat": 35.6541781,
+        "lng": 139.9101866
+      },
+      "to": {
+        "lat": 35.6540381,
+        "lng": 139.9103757
+      },
+      "midpoint": {
+        "lat": 35.6541081,
+        "lng": 139.91028115
+      },
+      "nearestWayId": 1125716457,
+      "distToWay_m": 0,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "2",
+        "name": "シンボルロード",
+        "ref": "242",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "elevated": false,
+      "greenPolygonHits": []
+    },
+    {
+      "segIdx": 70,
+      "from": {
+        "lat": 35.6540381,
+        "lng": 139.9103757
+      },
+      "to": {
+        "lat": 35.6538664,
+        "lng": 139.9106178
+      },
+      "midpoint": {
+        "lat": 35.65395225,
+        "lng": 139.91049675
+      },
+      "nearestWayId": 1125716457,
+      "distToWay_m": 0,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "2",
+        "name": "シンボルロード",
+        "ref": "242",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "elevated": false,
+      "greenPolygonHits": []
+    },
+    {
+      "segIdx": 71,
+      "from": {
+        "lat": 35.6538664,
+        "lng": 139.9106178
+      },
+      "to": {
+        "lat": 35.6535912,
+        "lng": 139.9109668
+      },
+      "midpoint": {
+        "lat": 35.653728799999996,
+        "lng": 139.91079230000003
+      },
+      "nearestWayId": 1125716457,
+      "distToWay_m": 0,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "2",
+        "name": "シンボルロード",
+        "ref": "242",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "elevated": false,
+      "greenPolygonHits": []
+    },
+    {
+      "segIdx": 72,
+      "from": {
+        "lat": 35.6535912,
+        "lng": 139.9109668
+      },
+      "to": {
+        "lat": 35.6533546,
+        "lng": 139.911255
+      },
+      "midpoint": {
+        "lat": 35.6534729,
+        "lng": 139.9111109
+      },
+      "nearestWayId": 1125716454,
+      "distToWay_m": 0,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "4",
+        "name": "シンボルロード",
+        "ref": "242",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロー���"
+      },
+      "elevated": false,
+      "greenPolygonHits": []
+    },
+    {
+      "segIdx": 73,
+      "from": {
+        "lat": 35.6533546,
+        "lng": 139.911255
+      },
+      "to": {
+        "lat": 35.6532489,
+        "lng": 139.9113838
+      },
+      "midpoint": {
+        "lat": 35.65330175,
+        "lng": 139.91131940000002
+      },
+      "nearestWayId": 1125716454,
+      "distToWay_m": 0,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "4",
+        "name": "シンボルロード",
+        "ref": "242",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロー���"
+      },
+      "elevated": false,
+      "greenPolygonHits": []
+    },
+    {
+      "segIdx": 74,
+      "from": {
+        "lat": 35.6532489,
+        "lng": 139.9113838
+      },
+      "to": {
+        "lat": 35.6531473,
+        "lng": 139.911513
+      },
+      "midpoint": {
+        "lat": 35.6531981,
+        "lng": 139.9114484
+      },
+      "nearestWayId": 26320819,
+      "distToWay_m": 0,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "3",
+        "name": "シンボルロード",
+        "ref": "276",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "elevated": false,
+      "greenPolygonHits": []
+    },
+    {
+      "segIdx": 75,
+      "from": {
+        "lat": 35.6531473,
+        "lng": 139.911513
+      },
+      "to": {
+        "lat": 35.6528893,
+        "lng": 139.9118411
+      },
+      "midpoint": {
+        "lat": 35.6530183,
+        "lng": 139.91167705
+      },
+      "nearestWayId": 26320819,
+      "distToWay_m": 0.001,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "3",
+        "name": "シンボルロード",
+        "ref": "276",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "elevated": false,
+      "greenPolygonHits": []
+    },
+    {
+      "segIdx": 76,
+      "from": {
+        "lat": 35.6528893,
+        "lng": 139.9118411
+      },
+      "to": {
+        "lat": 35.6526313,
+        "lng": 139.9121691
+      },
+      "midpoint": {
+        "lat": 35.6527603,
+        "lng": 139.9120051
+      },
+      "nearestWayId": 26320819,
+      "distToWay_m": 0.001,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "3",
+        "name": "シンボルロード",
+        "ref": "276",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "elevated": false,
+      "greenPolygonHits": []
+    },
+    {
+      "segIdx": 77,
+      "from": {
+        "lat": 35.6526313,
+        "lng": 139.9121691
+      },
+      "to": {
+        "lat": 35.6523733,
+        "lng": 139.9124972
+      },
+      "midpoint": {
+        "lat": 35.6525023,
+        "lng": 139.91233315
+      },
+      "nearestWayId": 26320819,
+      "distToWay_m": 0.002,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "3",
+        "name": "シンボルロード",
+        "ref": "276",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "elevated": false,
+      "greenPolygonHits": []
+    },
+    {
+      "segIdx": 78,
+      "from": {
+        "lat": 35.6523733,
+        "lng": 139.9124972
+      },
+      "to": {
+        "lat": 35.6521154,
+        "lng": 139.9128252
+      },
+      "midpoint": {
+        "lat": 35.652244350000004,
+        "lng": 139.9126612
+      },
+      "nearestWayId": 26320819,
+      "distToWay_m": 0,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "3",
+        "name": "シンボルロード",
+        "ref": "276",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "elevated": false,
+      "greenPolygonHits": []
+    }
+  ],
+  "stats": {
+    "elevatedMidpointCount": 10,
+    "elevatedMidpointPct": 0.357,
+    "groundGreenCutCount": 0,
+    "farFromWayOver8mCount": 0,
+    "maxDistToNearestWay_m": 0.004
+  },
+  "questions": {
+    "isCurrentPathOnElevatedBridgeOverCloverleafGreen": "PARTIAL_ELEVATED",
+    "crossesGroundLevelGrass": false,
+    "platformDist_m": {
+      "海楽": 8.678,
+      "美浜東団地": 11.941
+    },
+    "anyJumpOver20mFromPlatform": false
+  },
+  "inbound_3urayasu": {
+    "platforms": {
+      "海楽": {
+        "lat": 35.6573684,
+        "lng": 139.9059647,
+        "platformId": 6720667167,
+        "pathNearestIdx": 131,
+        "pathDist_m": 16.47
+      },
+      "美浜東団地": {
+        "lat": 35.6522648,
+        "lng": 139.9122584,
+        "platformId": 1330409783,
+        "pathNearestIdx": 111,
+        "pathDist_m": 7.293
+      }
+    },
+    "elevatedMidpointCount": 6,
+    "greenHitSegments": 0,
+    "sample": [
+      {
+        "segIdx": 111,
+        "midpoint": {
+          "lat": 35.6524139,
+          "lng": 139.91217565
+        },
+        "nearestWayId": 26320590,
+        "distToWay_m": 0.003,
+        "tags": {
+          "highway": "secondary",
+          "oneway": "yes",
+          "lanes": "3",
+          "name": "シンボルロード",
+          "ref": "276",
+          "name:en": "Symbol Road",
+          "name:ja": "シンボルロード"
+        },
+        "elevated": false,
+        "greenHits": 0
+      },
+      {
+        "segIdx": 112,
+        "midpoint": {
+          "lat": 35.65266525,
+          "lng": 139.9118593
+        },
+        "nearestWayId": 26320590,
+        "distToWay_m": 0.004,
+        "tags": {
+          "highway": "secondary",
+          "oneway": "yes",
+          "lanes": "3",
+          "name": "シンボルロード",
+          "ref": "276",
+          "name:en": "Symbol Road",
+          "name:ja": "シンボルロード"
+        },
+        "elevated": false,
+        "greenHits": 0
+      },
+      {
+        "segIdx": 113,
+        "midpoint": {
+          "lat": 35.65291655,
+          "lng": 139.91154295
+        },
+        "nearestWayId": 26320590,
+        "distToWay_m": 0,
+        "tags": {
+          "highway": "secondary",
+          "oneway": "yes",
+          "lanes": "3",
+          "name": "シンボルロード",
+          "ref": "276",
+          "name:en": "Symbol Road",
+          "name:ja": "シンボルロード"
+        },
+        "elevated": false,
+        "greenHits": 0
+      },
+      {
+        "segIdx": 114,
+        "midpoint": {
+          "lat": 35.653092799999996,
+          "lng": 139.9113211
+        },
+        "nearestWayId": 26320590,
+        "distToWay_m": 0,
+        "tags": {
+          "highway": "secondary",
+          "oneway": "yes",
+          "lanes": "3",
+          "name": "シンボルロード",
+          "ref": "276",
+          "name:en": "Symbol Road",
+          "name:ja": "シンボルロード"
+        },
+        "elevated": false,
+        "greenHits": 0
+      },
+      {
+        "segIdx": 115,
+        "midpoint": {
+          "lat": 35.65319605,
+          "lng": 139.91119315
+        },
+        "nearestWayId": 1125716455,
+        "distToWay_m": 0,
+        "tags": {
+          "highway": "secondary",
+          "oneway": "yes",
+          "lanes": "3",
+          "name": "シンボルロード",
+          "ref": "242",
+          "name:en": "Symbol Road",
+          "name:ja": "シンボルロード"
+        },
+        "elevated": false,
+        "greenHits": 0
+      }
+    ]
+  },
+  "verdict": "ELEVATED_OK",
+  "clearAnswers": {
+    "isCurrentPathOnElevatedBridgeOverCloverleafGreen": "YES — through the Urayasu IC / cloverleaf the path maps onto Symbol Road 242 ways with bridge=yes and layer=1 (wayIds 1125716443, 26320821, 1125716442). Approach/departure segments are also Symbol Road 242 but without bridge tags (ground carriageway).",
+    "crossesGroundLevelGrass": false,
+    "note": "Zero path midpoints hit landuse/leisure/natural grass polygons. Max dist to nearest OSM way = 0.004 m (effectively snapped).",
+    "currentPathVsSymbolRoad242": "Current path IS on Symbol Road (ref=242 / name=シンボルロード). Unused alternate Symbol/242 ways in bbox are listed under symbolRoad242Candidates with usedByCurrentPath=false (often opposite carriageway or Yanagi-dori).",
+    "platformDistance_m": {
+      "海楽": 8.678,
+      "美浜東団地": 11.941
+    },
+    "anyJumpOver20mFromPlatform": false
+  },
+  "verdictRationale": "Cloverleaf span uses elevated Symbol Road 242 (bridge=yes, layer=1); no ground-green cuts; platforms <12m from path."
+}

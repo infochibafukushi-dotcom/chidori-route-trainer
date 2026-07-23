@@ -1,0 +1,507 @@
+{
+  "generatedAt": "2026-07-23T21:25:51.198Z",
+  "note": "Roles derived from orderedWaySequence roleHint + way 369356245 as full-loop anchor",
+  "parts": {
+    "進入path": {
+      "wayIds": [
+        26320819,
+        26320596,
+        720406630,
+        906161756,
+        720406629,
+        906161757
+      ],
+      "start": {
+        "lat": 35.6532489,
+        "lng": 139.9113838
+      },
+      "end": {
+        "lat": 35.6503089,
+        "lng": 139.9151069
+      },
+      "ways": [
+        {
+          "wayId": 26320819,
+          "highway": "secondary",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "name": "シンボルロード",
+          "start": {
+            "lat": 35.6532489,
+            "lng": 139.9113838
+          },
+          "end": {
+            "lat": 35.6512181,
+            "lng": 139.913965
+          }
+        },
+        {
+          "wayId": 26320596,
+          "highway": "tertiary",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "name": "シンボルロード",
+          "start": {
+            "lat": 35.6512181,
+            "lng": 139.913965
+          },
+          "end": {
+            "lat": 35.6503089,
+            "lng": 139.9151069
+          }
+        },
+        {
+          "wayId": 720406630,
+          "highway": "tertiary",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "name": "シンボルロード",
+          "start": {
+            "lat": 35.6503089,
+            "lng": 139.9151069
+          },
+          "end": {
+            "lat": 35.6502501,
+            "lng": 139.9151787
+          }
+        },
+        {
+          "wayId": 906161756,
+          "highway": "service",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "name": null,
+          "start": {
+            "lat": 35.6502501,
+            "lng": 139.9151787
+          },
+          "end": {
+            "lat": 35.650126,
+            "lng": 139.9150322
+          }
+        },
+        {
+          "wayId": 720406629,
+          "highway": "service",
+          "oneway": "yes",
+          "access": "yes",
+          "bus": null,
+          "name": null,
+          "start": {
+            "lat": 35.650126,
+            "lng": 139.9150322
+          },
+          "end": {
+            "lat": 35.6497221,
+            "lng": 139.914542
+          }
+        },
+        {
+          "wayId": 906161757,
+          "highway": "service",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "name": null,
+          "start": {
+            "lat": 35.6501814,
+            "lng": 139.9149492
+          },
+          "end": {
+            "lat": 35.6503089,
+            "lng": 139.9151069
+          }
+        }
+      ]
+    },
+    "乗り場接続path": {
+      "wayIds": [
+        906161755,
+        1337353918,
+        1339035467,
+        1339150560,
+        1341526745,
+        906161758,
+        1342408590,
+        1342409930,
+        1340739633,
+        906161743,
+        369356249
+      ],
+      "start": {
+        "lat": 35.6497221,
+        "lng": 139.914542
+      },
+      "end": {
+        "lat": 35.6498703,
+        "lng": 139.9143566
+      },
+      "ways": [
+        {
+          "wayId": 906161755,
+          "highway": "service",
+          "oneway": "yes",
+          "access": "permit",
+          "bus": "yes",
+          "name": null,
+          "start": {
+            "lat": 35.6497221,
+            "lng": 139.914542
+          },
+          "end": {
+            "lat": 35.6494508,
+            "lng": 139.9142125
+          }
+        },
+        {
+          "wayId": 1337353918,
+          "highway": "service",
+          "oneway": "yes",
+          "access": "permit",
+          "bus": "yes",
+          "name": null,
+          "start": {
+            "lat": 35.6494508,
+            "lng": 139.9142125
+          },
+          "end": {
+            "lat": 35.6495179,
+            "lng": 139.9140377
+          }
+        },
+        {
+          "wayId": 1339035467,
+          "highway": "service",
+          "oneway": "yes",
+          "access": "permit",
+          "bus": "yes",
+          "name": null,
+          "start": {
+            "lat": 35.6495179,
+            "lng": 139.9140377
+          },
+          "end": {
+            "lat": 35.6496037,
+            "lng": 139.9139327
+          }
+        },
+        {
+          "wayId": 1339150560,
+          "highway": "service",
+          "oneway": "yes",
+          "access": "permit",
+          "bus": "yes",
+          "name": null,
+          "start": {
+            "lat": 35.6496037,
+            "lng": 139.9139327
+          },
+          "end": {
+            "lat": 35.6496791,
+            "lng": 139.9138404
+          }
+        },
+        {
+          "wayId": 1341526745,
+          "highway": "service",
+          "oneway": "yes",
+          "access": "permit",
+          "bus": "yes",
+          "name": null,
+          "start": {
+            "lat": 35.6496791,
+            "lng": 139.9138404
+          },
+          "end": {
+            "lat": 35.6497616,
+            "lng": 139.9137395
+          }
+        },
+        {
+          "wayId": 906161758,
+          "highway": "service",
+          "oneway": "yes",
+          "access": "permit",
+          "bus": "yes",
+          "name": null,
+          "start": {
+            "lat": 35.6497616,
+            "lng": 139.9137395
+          },
+          "end": {
+            "lat": 35.6499509,
+            "lng": 139.9138224
+          }
+        },
+        {
+          "wayId": 1342408590,
+          "highway": "service",
+          "oneway": "yes",
+          "access": "permit",
+          "bus": "yes",
+          "name": null,
+          "start": {
+            "lat": 35.6499509,
+            "lng": 139.9138224
+          },
+          "end": {
+            "lat": 35.649914,
+            "lng": 139.9139752
+          }
+        },
+        {
+          "wayId": 1342409930,
+          "highway": "service",
+          "oneway": "yes",
+          "access": "permit",
+          "bus": "yes",
+          "name": null,
+          "start": {
+            "lat": 35.649914,
+            "lng": 139.9139752
+          },
+          "end": {
+            "lat": 35.6498335,
+            "lng": 139.914068
+          }
+        },
+        {
+          "wayId": 1340739633,
+          "highway": "service",
+          "oneway": "yes",
+          "access": "permit",
+          "bus": "yes",
+          "name": null,
+          "start": {
+            "lat": 35.6498335,
+            "lng": 139.914068
+          },
+          "end": {
+            "lat": 35.6497389,
+            "lng": 139.914177
+          }
+        },
+        {
+          "wayId": 906161743,
+          "highway": "service",
+          "oneway": "yes",
+          "access": "permit",
+          "bus": "yes",
+          "name": null,
+          "start": {
+            "lat": 35.6497389,
+            "lng": 139.914177
+          },
+          "end": {
+            "lat": 35.6497851,
+            "lng": 139.9144675
+          }
+        },
+        {
+          "wayId": 369356249,
+          "highway": "service",
+          "oneway": null,
+          "access": "yes",
+          "bus": null,
+          "name": null,
+          "start": {
+            "lat": 35.6497851,
+            "lng": 139.9144675
+          },
+          "end": {
+            "lat": 35.6498703,
+            "lng": 139.9143566
+          }
+        }
+      ]
+    },
+    "ロータリー周回path": {
+      "wayIds": [
+        369356245,
+        369356249,
+        369356254
+      ],
+      "start": {
+        "lat": 35.6498703,
+        "lng": 139.9143566
+      },
+      "end": {
+        "lat": 35.6501814,
+        "lng": 139.9149492
+      },
+      "ways": [
+        {
+          "wayId": 369356245,
+          "highway": "service",
+          "oneway": "yes",
+          "access": "yes",
+          "bus": null,
+          "name": null,
+          "start": {
+            "lat": 35.6498703,
+            "lng": 139.9143566
+          },
+          "end": {
+            "lat": 35.6498703,
+            "lng": 139.9143566
+          }
+        },
+        {
+          "wayId": 369356249,
+          "highway": "service",
+          "oneway": null,
+          "access": "yes",
+          "bus": null,
+          "name": null,
+          "start": {
+            "lat": 35.6497851,
+            "lng": 139.9144675
+          },
+          "end": {
+            "lat": 35.6498703,
+            "lng": 139.9143566
+          }
+        },
+        {
+          "wayId": 369356254,
+          "highway": "service",
+          "oneway": "yes",
+          "access": "yes",
+          "bus": null,
+          "name": null,
+          "start": {
+            "lat": 35.6497851,
+            "lng": 139.9144675
+          },
+          "end": {
+            "lat": 35.6501814,
+            "lng": 139.9149492
+          }
+        }
+      ]
+    },
+    "退出path": {
+      "wayIds": [
+        720406630,
+        1338996611
+      ],
+      "start": {
+        "lat": 35.6503089,
+        "lng": 139.9151069
+      },
+      "end": {
+        "lat": 35.6492996,
+        "lng": 139.9163577
+      },
+      "ways": [
+        {
+          "wayId": 720406630,
+          "highway": "tertiary",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "name": "シンボルロード",
+          "start": {
+            "lat": 35.6503089,
+            "lng": 139.9151069
+          },
+          "end": {
+            "lat": 35.6502501,
+            "lng": 139.9151787
+          }
+        },
+        {
+          "wayId": 1338996611,
+          "highway": "tertiary",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "name": "シンボルロード",
+          "start": {
+            "lat": 35.6502501,
+            "lng": 139.9151787
+          },
+          "end": {
+            "lat": 35.6492996,
+            "lng": 139.9163577
+          }
+        }
+      ]
+    },
+    "本線復帰path": {
+      "wayIds": [
+        720406630,
+        1338996611,
+        720406627
+      ],
+      "start": {
+        "lat": 35.6503089,
+        "lng": 139.9151069
+      },
+      "end": {
+        "lat": 35.6474452,
+        "lng": 139.9186777
+      },
+      "ways": [
+        {
+          "wayId": 720406630,
+          "highway": "tertiary",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "name": "シンボルロード",
+          "start": {
+            "lat": 35.6503089,
+            "lng": 139.9151069
+          },
+          "end": {
+            "lat": 35.6502501,
+            "lng": 139.9151787
+          }
+        },
+        {
+          "wayId": 1338996611,
+          "highway": "tertiary",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "name": "シンボルロード",
+          "start": {
+            "lat": 35.6502501,
+            "lng": 139.9151787
+          },
+          "end": {
+            "lat": 35.6492996,
+            "lng": 139.9163577
+          }
+        },
+        {
+          "wayId": 720406627,
+          "highway": "tertiary",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "name": "シンボルロード",
+          "start": {
+            "lat": 35.6492996,
+            "lng": 139.9163577
+          },
+          "end": {
+            "lat": 35.6474452,
+            "lng": 139.9186777
+          }
+        }
+      ]
+    }
+  },
+  "platformDists_m": {
+    "美浜東団地": 11.941,
+    "新浦安駅": 7.707,
+    "入船中央エステート": 11.986
+  },
+  "anyMidpointHitsGrass": null
+}

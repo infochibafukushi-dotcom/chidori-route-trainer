@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="./hokuei-driving-v14.css?v=32" />
   <link rel="stylesheet" href="./hokuei-guidance-v22.css?v=34" />
   <link rel="stylesheet" href="./hokuei-stop-images-v25.css?v=32" />
-  <link rel="stylesheet" href="./urayasu-higashi-danchi-stop-images-v1.css?v=62" />
+  <link rel="stylesheet" href="./urayasu-higashi-danchi-stop-images-v1.css?v=63" />
   <link rel="stylesheet" href="./study-materials.css?v=61" />
 </head>
 <body>
@@ -49,13 +49,11 @@
   <script src="./imagawa-route-v1.js?v=58"></script>
   <script src="./imagawa-path-policy-v3.js?v=56"></script>
   <script>window.STOP_EDITOR_IMAGAWA=stopEditor;</script>
-  <script src="./urayasu-higashi-danchi-platforms-v1.js?v=62"></script>
-  <!-- 監査用: v3パッチの出典(OSM way ID)を記録したソースオブトゥルース。焼き込み済みのpath-v1.jsが
-       実行時に読まれるため、このファイル自体はランタイムで未使用（ドキュメント目的のみ）。 -->
-  <script src="./urayasu-higashi-danchi-path-patches-v3.js?v=62"></script>
-  <script src="./urayasu-higashi-danchi-path-v1.js?v=62"></script>
-  <script src="./urayasu-higashi-danchi-path-policy-v1.js?v=62"></script>
-  <script src="./urayasu-higashi-danchi-route-v1.js?v=62"></script>
+  <script src="./urayasu-higashi-danchi-platforms-v1.js?v=63"></script>
+  <!-- urayasu-higashi-danchi-path-patches-v3.js は出典記録用。path-v1へ焼き込み済みのためランタイム非読込。 -->
+  <script src="./urayasu-higashi-danchi-path-v1.js?v=63"></script>
+  <script src="./urayasu-higashi-danchi-path-policy-v1.js?v=63"></script>
+  <script src="./urayasu-higashi-danchi-route-v1.js?v=63"></script>
   <script>
     (() => {
       const route3StopEditor = stopEditor;

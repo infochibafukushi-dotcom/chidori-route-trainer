@@ -1,0 +1,22 @@
+[
+  {
+    "file": "sv-akeumi5-diagonal-road.png",
+    "ok": true,
+    "bytes": 356087
+  },
+  {
+    "file": "sv-akeumi5-near-stop.png",
+    "ok": true,
+    "bytes": 404421
+  },
+  {
+    "file": "sv-rotary-shinurayasu.png",
+    "ok": true,
+    "bytes": 592776
+  },
+  {
+    "file": "sv-kairaku-bridge.png",
+    "ok": true,
+    "bytes": 677703
+  }
+]

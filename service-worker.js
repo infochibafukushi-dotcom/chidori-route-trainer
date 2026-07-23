@@ -1,4 +1,4 @@
-const CACHE_NAME = 'chidori-route-map-v62';
+const CACHE_NAME = 'chidori-route-map-v63';
 const APP_SHELL = [
   './',
   './index.html',
@@ -13,7 +13,7 @@ const APP_SHELL = [
   './hokuei-driving-v14.css?v=32',
   './hokuei-guidance-v22.css?v=34',
   './hokuei-stop-images-v25.css?v=32',
-  './urayasu-higashi-danchi-stop-images-v1.css?v=62',
+  './urayasu-higashi-danchi-stop-images-v1.css?v=63',
   './study-materials.css?v=61',
   './data.js?v=32',
   './app.js?v=61',
@@ -34,11 +34,10 @@ const APP_SHELL = [
   './imagawa-chidori-garage-path-v1.js?v=58',
   './imagawa-route-v1.js?v=58',
   './imagawa-path-policy-v3.js?v=56',
-  './urayasu-higashi-danchi-platforms-v1.js?v=62',
-  './urayasu-higashi-danchi-path-patches-v3.js?v=62',
-  './urayasu-higashi-danchi-path-v1.js?v=62',
-  './urayasu-higashi-danchi-path-policy-v1.js?v=62',
-  './urayasu-higashi-danchi-route-v1.js?v=62',
+  './urayasu-higashi-danchi-platforms-v1.js?v=63',
+  './urayasu-higashi-danchi-path-v1.js?v=63',
+  './urayasu-higashi-danchi-path-policy-v1.js?v=63',
+  './urayasu-higashi-danchi-route-v1.js?v=63',
   './pwa-install.js?v=61'
 ];
 

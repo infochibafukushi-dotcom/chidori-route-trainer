@@ -1,0 +1,858 @@
+{
+  "generatedAt": "2026-07-23T21:11:33.924Z",
+  "area": "新浦安駅 rotary",
+  "centerQuery": {
+    "lat": 35.65,
+    "lng": 139.9138
+  },
+  "route": "3-sogo",
+  "pathSpan": {
+    "from": "美浜東団地",
+    "via": "新浦安駅",
+    "to": "入船中央エステート",
+    "fromIdx": 79,
+    "shinIdx": 128,
+    "toIdx": 192,
+    "platformDists_m": {
+      "美浜東団地": 11.941,
+      "新浦安駅": 7.707,
+      "入船中央エステート": 11.986
+    }
+  },
+  "overpassCache": "_v5_overpass_B_shinurayasu_rotary.json",
+  "orderedWaySequence": [
+    {
+      "wayId": 26320819,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "3",
+        "name": "シンボルロード",
+        "ref": "276",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "elevated": false,
+      "firstSegIdx": 0,
+      "lastSegIdx": 4,
+      "sampleMidpoint": {
+        "lat": 35.6519864,
+        "lng": 139.91298925
+      },
+      "minDistToWay_m": 0.001,
+      "maxDistToWay_m": 0.002,
+      "joinDistanceFromPrevWay_m": 0,
+      "midpointCount": 5,
+      "roleHint": "entry",
+      "startCoord": {
+        "lat": 35.6532489,
+        "lng": 139.9113838
+      },
+      "endCoord": {
+        "lat": 35.6512181,
+        "lng": 139.913965
+      },
+      "oneway": "yes",
+      "midpointsHitGrassIslands": false,
+      "grassIslandHitSamples": []
+    },
+    {
+      "wayId": 26320596,
+      "tags": {
+        "highway": "tertiary",
+        "oneway": "yes",
+        "name": "シンボルロード",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "elevated": false,
+      "firstSegIdx": 5,
+      "lastSegIdx": 18,
+      "sampleMidpoint": {
+        "lat": 35.6511907,
+        "lng": 139.9139994
+      },
+      "minDistToWay_m": 0,
+      "maxDistToWay_m": 0.002,
+      "joinDistanceFromPrevWay_m": 127.117,
+      "midpointCount": 14,
+      "roleHint": "entry",
+      "startCoord": {
+        "lat": 35.6512181,
+        "lng": 139.913965
+      },
+      "endCoord": {
+        "lat": 35.6503089,
+        "lng": 139.9151069
+      },
+      "oneway": "yes",
+      "midpointsHitGrassIslands": false,
+      "grassIslandHitSamples": []
+    },
+    {
+      "wayId": 720406630,
+      "tags": {
+        "highway": "tertiary",
+        "oneway": "yes",
+        "name": "シンボルロード",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "elevated": false,
+      "firstSegIdx": 19,
+      "lastSegIdx": 19,
+      "sampleMidpoint": {
+        "lat": 35.650279499999996,
+        "lng": 139.9151428
+      },
+      "minDistToWay_m": 0,
+      "maxDistToWay_m": 0,
+      "joinDistanceFromPrevWay_m": 144.704,
+      "midpointCount": 1,
+      "roleHint": "entry",
+      "startCoord": {
+        "lat": 35.6503089,
+        "lng": 139.9151069
+      },
+      "endCoord": {
+        "lat": 35.6502501,
+        "lng": 139.9151787
+      },
+      "oneway": "yes",
+      "midpointsHitGrassIslands": false,
+      "grassIslandHitSamples": []
+    },
+    {
+      "wayId": 906161756,
+      "tags": {
+        "highway": "service",
+        "oneway": "yes"
+      },
+      "elevated": false,
+      "firstSegIdx": 20,
+      "lastSegIdx": 21,
+      "sampleMidpoint": {
+        "lat": 35.650219050000004,
+        "lng": 139.91514205
+      },
+      "minDistToWay_m": 0,
+      "maxDistToWay_m": 0,
+      "joinDistanceFromPrevWay_m": 6.722,
+      "midpointCount": 2,
+      "roleHint": "service",
+      "startCoord": {
+        "lat": 35.6502501,
+        "lng": 139.9151787
+      },
+      "endCoord": {
+        "lat": 35.650126,
+        "lng": 139.9150322
+      },
+      "oneway": "yes",
+      "midpointsHitGrassIslands": false,
+      "grassIslandHitSamples": []
+    },
+    {
+      "wayId": 720406629,
+      "tags": {
+        "highway": "service",
+        "oneway": "yes",
+        "access": "yes"
+      },
+      "elevated": false,
+      "firstSegIdx": 22,
+      "lastSegIdx": 29,
+      "sampleMidpoint": {
+        "lat": 35.6501049,
+        "lng": 139.91500565
+      },
+      "minDistToWay_m": 0,
+      "maxDistToWay_m": 0.002,
+      "joinDistanceFromPrevWay_m": 17.692,
+      "midpointCount": 8,
+      "roleHint": "service",
+      "startCoord": {
+        "lat": 35.650126,
+        "lng": 139.9150322
+      },
+      "endCoord": {
+        "lat": 35.6497221,
+        "lng": 139.914542
+      },
+      "oneway": "yes",
+      "midpointsHitGrassIslands": false,
+      "grassIslandHitSamples": []
+    },
+    {
+      "wayId": 906161755,
+      "tags": {
+        "highway": "service",
+        "oneway": "yes",
+        "access": "permit",
+        "bus": "yes"
+      },
+      "elevated": false,
+      "firstSegIdx": 30,
+      "lastSegIdx": 33,
+      "sampleMidpoint": {
+        "lat": 35.6496882,
+        "lng": 139.91450079999998
+      },
+      "minDistToWay_m": 0.001,
+      "maxDistToWay_m": 0.002,
+      "joinDistanceFromPrevWay_m": 65.021,
+      "midpointCount": 4,
+      "roleHint": "loop_or_bay",
+      "startCoord": {
+        "lat": 35.6497221,
+        "lng": 139.914542
+      },
+      "endCoord": {
+        "lat": 35.6494508,
+        "lng": 139.9142125
+      },
+      "oneway": "yes",
+      "midpointsHitGrassIslands": false,
+      "grassIslandHitSamples": []
+    },
+    {
+      "wayId": 1337353918,
+      "tags": {
+        "highway": "service",
+        "oneway": "yes",
+        "access": "permit",
+        "bus": "yes"
+      },
+      "elevated": false,
+      "firstSegIdx": 34,
+      "lastSegIdx": 37,
+      "sampleMidpoint": {
+        "lat": 35.649446299999994,
+        "lng": 139.91419495
+      },
+      "minDistToWay_m": 0,
+      "maxDistToWay_m": 0,
+      "joinDistanceFromPrevWay_m": 38.565,
+      "midpointCount": 4,
+      "roleHint": "loop_or_bay",
+      "startCoord": {
+        "lat": 35.6494508,
+        "lng": 139.9142125
+      },
+      "endCoord": {
+        "lat": 35.6495179,
+        "lng": 139.9140377
+      },
+      "oneway": "yes",
+      "midpointsHitGrassIslands": false,
+      "grassIslandHitSamples": []
+    },
+    {
+      "wayId": 1339035467,
+      "tags": {
+        "highway": "service",
+        "oneway": "yes",
+        "access": "permit",
+        "bus": "yes"
+      },
+      "elevated": false,
+      "firstSegIdx": 38,
+      "lastSegIdx": 39,
+      "sampleMidpoint": {
+        "lat": 35.64953935,
+        "lng": 139.91401145
+      },
+      "minDistToWay_m": 0,
+      "maxDistToWay_m": 0,
+      "joinDistanceFromPrevWay_m": 19.544,
+      "midpointCount": 2,
+      "roleHint": "loop_or_bay",
+      "startCoord": {
+        "lat": 35.6495179,
+        "lng": 139.9140377
+      },
+      "endCoord": {
+        "lat": 35.6496037,
+        "lng": 139.9139327
+      },
+      "oneway": "yes",
+      "midpointsHitGrassIslands": false,
+      "grassIslandHitSamples": []
+    },
+    {
+      "wayId": 1339150560,
+      "tags": {
+        "highway": "service",
+        "oneway": "yes",
+        "access": "permit",
+        "bus": "yes"
+      },
+      "elevated": false,
+      "firstSegIdx": 40,
+      "lastSegIdx": 40,
+      "sampleMidpoint": {
+        "lat": 35.6496414,
+        "lng": 139.91388655
+      },
+      "minDistToWay_m": 0,
+      "maxDistToWay_m": 0,
+      "joinDistanceFromPrevWay_m": 16.004,
+      "midpointCount": 1,
+      "roleHint": "loop_or_bay",
+      "startCoord": {
+        "lat": 35.6496037,
+        "lng": 139.9139327
+      },
+      "endCoord": {
+        "lat": 35.6496791,
+        "lng": 139.9138404
+      },
+      "oneway": "yes",
+      "midpointsHitGrassIslands": false,
+      "grassIslandHitSamples": []
+    },
+    {
+      "wayId": 1341526745,
+      "tags": {
+        "highway": "service",
+        "oneway": "yes",
+        "access": "permit",
+        "bus": "yes"
+      },
+      "elevated": false,
+      "firstSegIdx": 41,
+      "lastSegIdx": 42,
+      "sampleMidpoint": {
+        "lat": 35.6496997,
+        "lng": 139.91381515
+      },
+      "minDistToWay_m": 0.004,
+      "maxDistToWay_m": 0.004,
+      "joinDistanceFromPrevWay_m": 9.146,
+      "midpointCount": 2,
+      "roleHint": "loop_or_bay",
+      "startCoord": {
+        "lat": 35.6496791,
+        "lng": 139.9138404
+      },
+      "endCoord": {
+        "lat": 35.6497616,
+        "lng": 139.9137395
+      },
+      "oneway": "yes",
+      "midpointsHitGrassIslands": false,
+      "grassIslandHitSamples": []
+    },
+    {
+      "wayId": 906161758,
+      "tags": {
+        "highway": "service",
+        "oneway": "yes",
+        "access": "permit",
+        "bus": "yes"
+      },
+      "elevated": false,
+      "firstSegIdx": 43,
+      "lastSegIdx": 48,
+      "sampleMidpoint": {
+        "lat": 35.649772150000004,
+        "lng": 139.91372654999998
+      },
+      "minDistToWay_m": 0,
+      "maxDistToWay_m": 0.004,
+      "joinDistanceFromPrevWay_m": 11.357,
+      "midpointCount": 6,
+      "roleHint": "loop_or_bay",
+      "startCoord": {
+        "lat": 35.6497616,
+        "lng": 139.9137395
+      },
+      "endCoord": {
+        "lat": 35.6499509,
+        "lng": 139.9138224
+      },
+      "oneway": "yes",
+      "midpointsHitGrassIslands": false,
+      "grassIslandHitSamples": []
+    },
+    {
+      "wayId": 1342408590,
+      "tags": {
+        "highway": "service",
+        "oneway": "yes",
+        "access": "permit",
+        "bus": "yes"
+      },
+      "elevated": false,
+      "firstSegIdx": 49,
+      "lastSegIdx": 53,
+      "sampleMidpoint": {
+        "lat": 35.64995945,
+        "lng": 139.9138327
+      },
+      "minDistToWay_m": 0,
+      "maxDistToWay_m": 0,
+      "joinDistanceFromPrevWay_m": 22.929,
+      "midpointCount": 5,
+      "roleHint": "loop_or_bay",
+      "startCoord": {
+        "lat": 35.6499509,
+        "lng": 139.9138224
+      },
+      "endCoord": {
+        "lat": 35.649914,
+        "lng": 139.9139752
+      },
+      "oneway": "yes",
+      "midpointsHitGrassIslands": false,
+      "grassIslandHitSamples": []
+    },
+    {
+      "wayId": 1342409930,
+      "tags": {
+        "highway": "service",
+        "oneway": "yes",
+        "access": "permit",
+        "bus": "yes"
+      },
+      "elevated": false,
+      "firstSegIdx": 54,
+      "lastSegIdx": 55,
+      "sampleMidpoint": {
+        "lat": 35.64989385,
+        "lng": 139.91399840000003
+      },
+      "minDistToWay_m": 0.002,
+      "maxDistToWay_m": 0.002,
+      "joinDistanceFromPrevWay_m": 16.654,
+      "midpointCount": 2,
+      "roleHint": "loop_or_bay",
+      "startCoord": {
+        "lat": 35.649914,
+        "lng": 139.9139752
+      },
+      "endCoord": {
+        "lat": 35.6498335,
+        "lng": 139.914068
+      },
+      "oneway": "yes",
+      "midpointsHitGrassIslands": false,
+      "grassIslandHitSamples": []
+    },
+    {
+      "wayId": 1340739633,
+      "tags": {
+        "highway": "service",
+        "oneway": "yes",
+        "access": "permit",
+        "bus": "yes"
+      },
+      "elevated": false,
+      "firstSegIdx": 56,
+      "lastSegIdx": 57,
+      "sampleMidpoint": {
+        "lat": 35.64980985,
+        "lng": 139.91409525
+      },
+      "minDistToWay_m": 0,
+      "maxDistToWay_m": 0,
+      "joinDistanceFromPrevWay_m": 12.799,
+      "midpointCount": 2,
+      "roleHint": "loop_or_bay",
+      "startCoord": {
+        "lat": 35.6498335,
+        "lng": 139.914068
+      },
+      "endCoord": {
+        "lat": 35.6497389,
+        "lng": 139.914177
+      },
+      "oneway": "yes",
+      "midpointsHitGrassIslands": false,
+      "grassIslandHitSamples": []
+    },
+    {
+      "wayId": 906161743,
+      "tags": {
+        "highway": "service",
+        "oneway": "yes",
+        "access": "permit",
+        "bus": "yes"
+      },
+      "elevated": false,
+      "firstSegIdx": 58,
+      "lastSegIdx": 63,
+      "sampleMidpoint": {
+        "lat": 35.64970355,
+        "lng": 139.91421875
+      },
+      "minDistToWay_m": 0,
+      "maxDistToWay_m": 0,
+      "joinDistanceFromPrevWay_m": 16.255,
+      "midpointCount": 6,
+      "roleHint": "loop_or_bay",
+      "startCoord": {
+        "lat": 35.6497389,
+        "lng": 139.914177
+      },
+      "endCoord": {
+        "lat": 35.6497851,
+        "lng": 139.9144675
+      },
+      "oneway": "yes",
+      "midpointsHitGrassIslands": false,
+      "grassIslandHitSamples": []
+    },
+    {
+      "wayId": 369356249,
+      "tags": {
+        "highway": "service",
+        "access": "yes"
+      },
+      "elevated": false,
+      "firstSegIdx": 64,
+      "lastSegIdx": 65,
+      "sampleMidpoint": {
+        "lat": 35.6498153,
+        "lng": 139.91443075
+      },
+      "minDistToWay_m": 0,
+      "maxDistToWay_m": 0,
+      "joinDistanceFromPrevWay_m": 22.833,
+      "midpointCount": 2,
+      "roleHint": "loop_or_bay",
+      "startCoord": {
+        "lat": 35.6497851,
+        "lng": 139.9144675
+      },
+      "endCoord": {
+        "lat": 35.6498703,
+        "lng": 139.9143566
+      },
+      "oneway": null,
+      "midpointsHitGrassIslands": false,
+      "grassIslandHitSamples": []
+    },
+    {
+      "wayId": 369356245,
+      "tags": {
+        "highway": "service",
+        "oneway": "yes",
+        "access": "yes"
+      },
+      "elevated": false,
+      "firstSegIdx": 66,
+      "lastSegIdx": 83,
+      "sampleMidpoint": {
+        "lat": 35.64988475,
+        "lng": 139.91431790000001
+      },
+      "minDistToWay_m": 0,
+      "maxDistToWay_m": 0.002,
+      "joinDistanceFromPrevWay_m": 12.791,
+      "midpointCount": 18,
+      "roleHint": "loop_or_bay",
+      "startCoord": {
+        "lat": 35.6498703,
+        "lng": 139.9143566
+      },
+      "endCoord": {
+        "lat": 35.6498703,
+        "lng": 139.9143566
+      },
+      "oneway": "yes",
+      "midpointsHitGrassIslands": false,
+      "grassIslandHitSamples": []
+    },
+    {
+      "wayId": 369356249,
+      "tags": {
+        "highway": "service",
+        "access": "yes"
+      },
+      "elevated": false,
+      "firstSegIdx": 84,
+      "lastSegIdx": 85,
+      "sampleMidpoint": {
+        "lat": 35.6498579,
+        "lng": 139.9143753
+      },
+      "minDistToWay_m": 0,
+      "maxDistToWay_m": 0,
+      "joinDistanceFromPrevWay_m": 5.984,
+      "midpointCount": 2,
+      "roleHint": "loop_or_bay",
+      "startCoord": {
+        "lat": 35.6497851,
+        "lng": 139.9144675
+      },
+      "endCoord": {
+        "lat": 35.6498703,
+        "lng": 139.9143566
+      },
+      "oneway": null,
+      "midpointsHitGrassIslands": false,
+      "grassIslandHitSamples": []
+    },
+    {
+      "wayId": 369356254,
+      "tags": {
+        "highway": "service",
+        "oneway": "yes",
+        "access": "yes"
+      },
+      "elevated": false,
+      "firstSegIdx": 86,
+      "lastSegIdx": 92,
+      "sampleMidpoint": {
+        "lat": 35.64980735,
+        "lng": 139.91449369999998
+      },
+      "minDistToWay_m": 0,
+      "maxDistToWay_m": 0.002,
+      "joinDistanceFromPrevWay_m": 12.085,
+      "midpointCount": 7,
+      "roleHint": "loop_or_bay",
+      "startCoord": {
+        "lat": 35.6497851,
+        "lng": 139.9144675
+      },
+      "endCoord": {
+        "lat": 35.6501814,
+        "lng": 139.9149492
+      },
+      "oneway": "yes",
+      "midpointsHitGrassIslands": false,
+      "grassIslandHitSamples": []
+    },
+    {
+      "wayId": 906161757,
+      "tags": {
+        "highway": "service",
+        "oneway": "yes"
+      },
+      "elevated": false,
+      "firstSegIdx": 93,
+      "lastSegIdx": 94,
+      "sampleMidpoint": {
+        "lat": 35.650213300000004,
+        "lng": 139.91498860000002
+      },
+      "minDistToWay_m": 0.004,
+      "maxDistToWay_m": 0.004,
+      "joinDistanceFromPrevWay_m": 63.539,
+      "midpointCount": 2,
+      "roleHint": "service",
+      "startCoord": {
+        "lat": 35.6501814,
+        "lng": 139.9149492
+      },
+      "endCoord": {
+        "lat": 35.6503089,
+        "lng": 139.9151069
+      },
+      "oneway": "yes",
+      "midpointsHitGrassIslands": false,
+      "grassIslandHitSamples": []
+    },
+    {
+      "wayId": 720406630,
+      "tags": {
+        "highway": "tertiary",
+        "oneway": "yes",
+        "name": "シンボルロード",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "elevated": false,
+      "firstSegIdx": 95,
+      "lastSegIdx": 95,
+      "sampleMidpoint": {
+        "lat": 35.650279499999996,
+        "lng": 139.9151428
+      },
+      "minDistToWay_m": 0,
+      "maxDistToWay_m": 0,
+      "joinDistanceFromPrevWay_m": 15.758,
+      "midpointCount": 1,
+      "roleHint": "exit_or_return",
+      "startCoord": {
+        "lat": 35.6503089,
+        "lng": 139.9151069
+      },
+      "endCoord": {
+        "lat": 35.6502501,
+        "lng": 139.9151787
+      },
+      "oneway": "yes",
+      "midpointsHitGrassIslands": false,
+      "grassIslandHitSamples": []
+    },
+    {
+      "wayId": 1338996611,
+      "tags": {
+        "highway": "tertiary",
+        "oneway": "yes",
+        "name": "シンボルロード",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "elevated": false,
+      "firstSegIdx": 96,
+      "lastSegIdx": 110,
+      "sampleMidpoint": {
+        "lat": 35.65022975,
+        "lng": 139.9152038
+      },
+      "minDistToWay_m": 0,
+      "maxDistToWay_m": 0.003,
+      "joinDistanceFromPrevWay_m": 7.809,
+      "midpointCount": 15,
+      "roleHint": "exit_or_return",
+      "startCoord": {
+        "lat": 35.6502501,
+        "lng": 139.9151787
+      },
+      "endCoord": {
+        "lat": 35.6492996,
+        "lng": 139.9163577
+      },
+      "oneway": "yes",
+      "midpointsHitGrassIslands": false,
+      "grassIslandHitSamples": []
+    },
+    {
+      "wayId": 720406627,
+      "tags": {
+        "highway": "tertiary",
+        "oneway": "yes",
+        "name": "シンボルロード",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード"
+      },
+      "elevated": false,
+      "firstSegIdx": 111,
+      "lastSegIdx": 112,
+      "sampleMidpoint": {
+        "lat": 35.6491942,
+        "lng": 139.916492
+      },
+      "minDistToWay_m": 0.033,
+      "maxDistToWay_m": 0.046,
+      "joinDistanceFromPrevWay_m": 163.73,
+      "midpointCount": 2,
+      "roleHint": "exit_or_return",
+      "startCoord": {
+        "lat": 35.6492996,
+        "lng": 139.9163577
+      },
+      "endCoord": {
+        "lat": 35.6474452,
+        "lng": 139.9186777
+      },
+      "oneway": "yes",
+      "midpointsHitGrassIslands": false,
+      "grassIslandHitSamples": []
+    }
+  ],
+  "parts": {
+    "進入path": {
+      "wayIds": [
+        26320819,
+        26320596,
+        720406630,
+        906161756,
+        720406629,
+        906161757
+      ],
+      "start": {
+        "lat": 35.6532489,
+        "lng": 139.9113838
+      },
+      "end": {
+        "lat": 35.6503089,
+        "lng": 139.9151069
+      }
+    },
+    "乗り場接続path": {
+      "wayIds": [
+        906161755,
+        1337353918,
+        1339035467,
+        1339150560,
+        1341526745,
+        906161758,
+        1342408590,
+        1342409930,
+        1340739633,
+        906161743,
+        369356249
+      ],
+      "start": {
+        "lat": 35.6497221,
+        "lng": 139.914542
+      },
+      "end": {
+        "lat": 35.6498703,
+        "lng": 139.9143566
+      }
+    },
+    "ロータリー周回path": {
+      "wayIds": [
+        369356245,
+        369356249,
+        369356254
+      ],
+      "start": {
+        "lat": 35.6498703,
+        "lng": 139.9143566
+      },
+      "end": {
+        "lat": 35.6501814,
+        "lng": 139.9149492
+      }
+    },
+    "退出path": {
+      "wayIds": [
+        720406630,
+        1338996611
+      ],
+      "start": {
+        "lat": 35.6503089,
+        "lng": 139.9151069
+      },
+      "end": {
+        "lat": 35.6492996,
+        "lng": 139.9163577
+      }
+    },
+    "本線復帰path": {
+      "wayIds": [
+        720406627
+      ],
+      "start": {
+        "lat": 35.6492996,
+        "lng": 139.9163577
+      },
+      "end": {
+        "lat": 35.6474452,
+        "lng": 139.9186777
+      }
+    }
+  },
+  "grassIslandSummary": {
+    "anyMidpointHitsGrass": false,
+    "blocksHittingGrass": []
+  },
+  "verdict": "SERVICE_OK",
+  "partsNote": {
+    "relShinIdx": 49,
+    "spanLen": 113,
+    "loopPrimaryWay": 369356245,
+    "grassIslands": {
+      "anyMidpointHitsGrass": false,
+      "blocksHittingGrass": []
+    }
+  },
+  "verdictRationale": "Path follows service/highway ways around 新浦安駅; midpoints do not hit grass/leisure polygons (landscaped islands). Loop includes oneway service way 369356245."
+}

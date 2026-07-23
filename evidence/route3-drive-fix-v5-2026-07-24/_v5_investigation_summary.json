@@ -1,0 +1,96 @@
+{
+  "generatedAt": "2026-07-23T21:19:17.425Z",
+  "purpose": "OSM road-structure investigation for route-3 v5 problem areas (evidence only; no path edits)",
+  "pathFile": "urayasu-higashi-danchi-path-v1.js",
+  "platformsFile": "urayasu-higashi-danchi-platforms-v1.js",
+  "pathVersions": {
+    "3-sogo": "2026-07-23-urayasu-higashi-danchi-sogo-v4",
+    "pathSource": "osm-relation-18417571+gapfill-from-reversed-densified-18417570:v2+patches-v3:海楽->美浜東団地,美浜東団地->新浦安駅,新浦安駅->入船中央エステート,ハイアットリージェンシー->明海五丁目+patches-v4-rotary:美浜東団地->新浦安駅,新浦安駅->入船中央エステート"
+  },
+  "verdicts": {
+    "kairaku": "ELEVATED_OK",
+    "rotary": "SERVICE_OK",
+    "akeumi5": "DIAGONAL_ROAD_OK"
+  },
+  "kairaku": {
+    "verdict": "ELEVATED_OK",
+    "answer": {
+      "isCurrentPathOnElevatedBridgeOverCloverleafGreen": "YES — through the Urayasu IC / cloverleaf the path maps onto Symbol Road 242 ways with bridge=yes and layer=1 (wayIds 1125716443, 26320821, 1125716442). Approach/departure segments are also Symbol Road 242 but without bridge tags (ground carriageway).",
+      "crossesGroundLevelGrass": false,
+      "note": "Zero path midpoints hit landuse/leisure/natural grass polygons. Max dist to nearest OSM way = 0.004 m (effectively snapped).",
+      "currentPathVsSymbolRoad242": "Current path IS on Symbol Road (ref=242 / name=シンボルロード). Unused alternate Symbol/242 ways in bbox are listed under symbolRoad242Candidates with usedByCurrentPath=false (often opposite carriageway or Yanagi-dori).",
+      "platformDistance_m": {
+        "海楽": 8.678,
+        "美浜東団地": 11.941
+      },
+      "anyJumpOver20mFromPlatform": false
+    },
+    "elevatedWayIdsOverCloverleaf": [
+      1125716443,
+      26320821,
+      1125716442
+    ],
+    "groundApproachWayIds": [
+      26320561,
+      1125716452,
+      1125716457,
+      1125716454,
+      26320819
+    ],
+    "platformDist_m": {
+      "海楽": 8.678,
+      "美浜東団地": 11.941
+    },
+    "anyJumpOver20m": false,
+    "groundGreenCutCount": 0,
+    "maxDistToNearestWay_m": 0.004
+  },
+  "rotary": {
+    "verdict": "SERVICE_OK",
+    "anyMidpointHitsGrass": false,
+    "loopPrimaryWayId": 369356245,
+    "platformDists_m": {
+      "美浜東団地": 11.941,
+      "新浦安駅": 7.707,
+      "入船中央エステート": 11.986
+    }
+  },
+  "akeumi5": {
+    "verdict": "DIAGONAL_ROAD_OK",
+    "way238904764": {
+      "highway": "tertiary",
+      "oneway": "yes",
+      "lanes": "2"
+    },
+    "pathDistToPlatform_m": 4.387,
+    "pathEndDistToPlatform_m": 275.17,
+    "buildingIntersectionCount": 0,
+    "usesFocusWay": true
+  },
+  "evidenceFiles": [
+    "kairaku-mihama-osm-layer-tags.json",
+    "kairaku-mihama-way-sequence.json",
+    "shinurayasu-rotary-way-sequence.json",
+    "akeumi5-way-tags.json",
+    "_v5_investigation_summary.json",
+    "_v5_overpass_A_kairaku_mihama.json",
+    "_v5_overpass_B_shinurayasu_rotary.json",
+    "_v5_overpass_C_akeumi5_hyatt.json",
+    "_v5_overpass_way_238904764.json"
+  ],
+  "v5Finalize": {
+    "generatedAt": "2026-07-23T21:34:15.119Z",
+    "pathGeometryChanged": false,
+    "reason": "OSM bridge/layer + service loop + tertiary bus-relation way confirmed; current baked path already correct",
+    "patchesRuntimeUnload": true,
+    "cache": "chidori-route-map-v63",
+    "continuousDrivePass": true,
+    "platformDist_m": {
+      "kairaku": 8.678,
+      "mihama": 11.941,
+      "shinurayasu": 7.707,
+      "akeumi5": 4.387
+    },
+    "obsoleteNote131m": "rejected; was patch-endpoint mismeasure"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "imagawa-urayasu-maihama-path-v1o.js": {
+    "bytes": 3516,
+    "sha256": "e645bdefe2138fd78494dbb1675df947be6ec1c8c6a546b24b85200c1e4e9096"
+  },
+  "imagawa-chidori-garage-path-v1.js": {
+    "bytes": 2531,
+    "sha256": "56f8e3afb99f675875a998d304203c040c1425b3369e46fc6bcdce383a73e0b9"
+  },
+  "imagawa-route-v1.js": {
+    "bytes": 139114,
+    "sha256": "4fa93e582b275c3ff9ecfa50f12b1c1adb3eda1a64b61983ec1335303d2831a0"
+  },
+  "imagawa-path-policy-v3.js": {
+    "bytes": 3964,
+    "sha256": "c425edf03f7ed1c6e8c71ff15aa12ff65c3dafa988d6688ebc62c33b5f430e0e"
+  }
+}
