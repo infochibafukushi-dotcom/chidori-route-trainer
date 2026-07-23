@@ -1,10 +1,10 @@
-const CACHE_NAME = 'chidori-route-map-v59';
+const CACHE_NAME = 'chidori-route-map-v60';
 const APP_SHELL = [
   './',
   './index.html',
-  './manifest.webmanifest?v=59',
+  './manifest.webmanifest?v=60',
   './app-icon.svg',
-  './styles.css?v=59',
+  './styles.css?v=60',
   './hokuei-route.css?v=33',
   './stop-editor-v8.css?v=32',
   './d1-sync.css?v=32',
@@ -13,18 +13,19 @@ const APP_SHELL = [
   './hokuei-driving-v14.css?v=32',
   './hokuei-guidance-v22.css?v=34',
   './hokuei-stop-images-v25.css?v=32',
-  './study-materials.css?v=59',
+  './urayasu-higashi-danchi-stop-images-v1.css?v=60',
+  './study-materials.css?v=60',
   './data.js?v=32',
-  './app.js?v=59',
-  './study-materials-data.js?v=59',
-  './study-materials.js?v=59',
+  './app.js?v=60',
+  './study-materials-data.js?v=60',
+  './study-materials.js?v=60',
   './home-navigation-v25.js?v=32',
   './route-map-link.js?v=32',
-  './d1-sync.js?v=59',
+  './d1-sync.js?v=60',
   './hokuei-authoritative-v12.js?v=33',
   './hokuei-manual-override-v13.js?v=33',
   './hokuei-shared-coordinates-v15.js?v=32',
-  './hokuei-no-uturn-v17.js?v=56',
+  './hokuei-no-uturn-v17.js?v=60',
   './imagawa-directions-compat-v2.js?v=56',
   './hokuei-streetview-stops-v26.js?v=32',
   './hokuei-guidance-v22.js?v=57',
@@ -33,7 +34,11 @@ const APP_SHELL = [
   './imagawa-chidori-garage-path-v1.js?v=58',
   './imagawa-route-v1.js?v=58',
   './imagawa-path-policy-v3.js?v=56',
-  './pwa-install.js?v=59'
+  './urayasu-higashi-danchi-platforms-v1.js?v=60',
+  './urayasu-higashi-danchi-path-v1.js?v=60',
+  './urayasu-higashi-danchi-path-policy-v1.js?v=60',
+  './urayasu-higashi-danchi-route-v1.js?v=60',
+  './pwa-install.js?v=60'
 ];
 
 self.addEventListener('install', (event) => {

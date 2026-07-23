@@ -10,10 +10,10 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="apple-mobile-web-app-title" content="千鳥路線図" />
   <title>千鳥路線図</title>
-  <link rel="manifest" href="./manifest.webmanifest?v=59" />
+  <link rel="manifest" href="./manifest.webmanifest?v=60" />
   <link rel="icon" href="./app-icon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="./app-icon.svg" />
-  <link rel="stylesheet" href="./styles.css?v=59" />
+  <link rel="stylesheet" href="./styles.css?v=60" />
   <link rel="stylesheet" href="./hokuei-route.css?v=33" />
   <link rel="stylesheet" href="./stop-editor-v8.css?v=32" />
   <link rel="stylesheet" href="./d1-sync.css?v=32" />
@@ -22,22 +22,23 @@
   <link rel="stylesheet" href="./hokuei-driving-v14.css?v=32" />
   <link rel="stylesheet" href="./hokuei-guidance-v22.css?v=34" />
   <link rel="stylesheet" href="./hokuei-stop-images-v25.css?v=32" />
-  <link rel="stylesheet" href="./study-materials.css?v=59" />
+  <link rel="stylesheet" href="./urayasu-higashi-danchi-stop-images-v1.css?v=60" />
+  <link rel="stylesheet" href="./study-materials.css?v=60" />
 </head>
 <body>
   <div id="app"></div>
   <script>window.GOOGLE_MAPS_API_KEY='__GOOGLE_MAPS_API_KEY__';</script>
   <script src="./data.js?v=32"></script>
-  <script src="./app.js?v=59"></script>
-  <script src="./study-materials-data.js?v=59"></script>
-  <script src="./study-materials.js?v=59"></script>
+  <script src="./app.js?v=60"></script>
+  <script src="./study-materials-data.js?v=60"></script>
+  <script src="./study-materials.js?v=60"></script>
   <script src="./home-navigation-v25.js?v=32"></script>
   <script src="./route-map-link.js?v=32"></script>
-  <script src="./d1-sync.js?v=59"></script>
+  <script src="./d1-sync.js?v=60"></script>
   <script src="./hokuei-authoritative-v12.js?v=33"></script>
   <script src="./hokuei-manual-override-v13.js?v=33"></script>
   <script src="./hokuei-shared-coordinates-v15.js?v=32"></script>
-  <script src="./hokuei-no-uturn-v17.js?v=56"></script>
+  <script src="./hokuei-no-uturn-v17.js?v=60"></script>
   <script src="./imagawa-directions-compat-v2.js?v=56"></script>
   <script src="./hokuei-streetview-stops-v26.js?v=32"></script>
   <script src="./hokuei-guidance-v22.js?v=57"></script>
@@ -47,12 +48,20 @@
   <script src="./imagawa-chidori-garage-path-v1.js?v=58"></script>
   <script src="./imagawa-route-v1.js?v=58"></script>
   <script src="./imagawa-path-policy-v3.js?v=56"></script>
+  <script>window.STOP_EDITOR_IMAGAWA=stopEditor;</script>
+  <script src="./urayasu-higashi-danchi-platforms-v1.js?v=60"></script>
+  <script src="./urayasu-higashi-danchi-path-v1.js?v=60"></script>
+  <script src="./urayasu-higashi-danchi-path-policy-v1.js?v=60"></script>
+  <script src="./urayasu-higashi-danchi-route-v1.js?v=60"></script>
   <script>
     (() => {
-      const imagawaStopEditor = stopEditor;
+      const route3StopEditor = stopEditor;
+      const imagawaStopEditor = window.STOP_EDITOR_IMAGAWA;
       const baseStopEditor = window.STOP_EDITOR_BEFORE_IMAGAWA;
       stopEditor = function stopEditorRouteBridge() {
-        return routeState?.routeId === 'route-2' ? imagawaStopEditor() : baseStopEditor();
+        if (routeState?.routeId === 'route-3') return route3StopEditor();
+        if (routeState?.routeId === 'route-2') return imagawaStopEditor();
+        return baseStopEditor();
       };
       document.addEventListener('change', (event) => {
         if (event.target?.id !== 'sRoute') return;
@@ -61,6 +70,6 @@
       }, true);
     })();
   </script>
-  <script src="./pwa-install.js?v=59"></script>
+  <script src="./pwa-install.js?v=60"></script>
 </body>
 </html>

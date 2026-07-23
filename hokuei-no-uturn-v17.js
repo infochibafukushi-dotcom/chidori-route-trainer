@@ -22,8 +22,8 @@
   ].map(latLngLiteral).filter(Boolean);
 
   const isHokueiRequest = (request) => {
-    // 今川線には北栄線用Uターン禁止補正を適用しない
-    if (typeof routeState !== 'undefined' && routeState?.routeId === 'route-2') return false;
+    // 今川線・浦安東団地線には北栄線用Uターン禁止補正を適用しない
+    if (typeof routeState !== 'undefined' && (routeState?.routeId === 'route-2' || routeState?.routeId === 'route-3')) return false;
     const points = requestPoints(request);
     return points.length >= 2 && points.every((point) =>
       point.lat >= 35.63 && point.lat <= 35.69 && point.lng >= 139.87 && point.lng <= 139.93
