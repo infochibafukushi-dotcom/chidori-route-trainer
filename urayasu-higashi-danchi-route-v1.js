@@ -1,7 +1,10 @@
 // 浦安東団地線（系統番号3・route-3）走行シミュレーション／停留所編集モジュール。
 // 停留所順：京成バスナビ通過時刻表で確認（OSM relationと一致）。
 // 停留所座標：OSM platform採用（要Street View走行確認）。
-// 道路形状：OSM relation採用＋ギャップ補正（要走行確認）。
+// 道路形状：OSM relation採用＋ギャップ補正（要走行確認）。3-sogo/3-urayasu/3-symbol/3-akeumiは
+// 357クローバー葉付近の緑地カット・明海五丁目ホテル裏カットをOSM way鎖ベースの手動パッチv3で修正済み
+// （urayasu-higashi-danchi-path-patches-v3.js を _fix_route3_apply_patches_v3.js で
+// urayasu-higashi-danchi-path-v1.js に焼き込み。ランタイムはpath-v1.jsのみ読み込む）。
 // （urayasu-higashi-danchi-platforms-v1.js / urayasu-higashi-danchi-path-v1.js）を採用する。
 // Google Directionsは使用しない。UI構造・走行シミュレーションは imagawa-route-v1.js の
 // drawGuidance / routes / stopEditor パターンを移植・簡略化したもの。
@@ -9,13 +12,13 @@
   const ROUTE_ID = 'route-3';
   /** route.urayasuHigashiDanchiVersion（モジュール全体の適用版）専用。系統ごとのpath版はSYSTEM_RESOLVED_VERSIONSを使用し、
    *  このVERSIONの変更だけで全系統のpathを再構築（ワイプ）しないこと。 */
-  const VERSION = '2026-07-23-urayasu-higashi-danchi-v2';
+  const VERSION = '2026-07-23-urayasu-higashi-danchi-v3';
   /** 系統キー単位の resolvedVersion（urayasu-higashi-danchi-path-v1.js の resolvedVersion と対応）。 */
   const SYSTEM_RESOLVED_VERSIONS = {
-    '3-sogo': '2026-07-23-urayasu-higashi-danchi-sogo-v2',
-    '3-urayasu': '2026-07-23-urayasu-higashi-danchi-urayasu-v2',
-    '3-symbol': '2026-07-23-urayasu-higashi-danchi-symbol-v2',
-    '3-akeumi': '2026-07-23-urayasu-higashi-danchi-akeumi-v2',
+    '3-sogo': '2026-07-23-urayasu-higashi-danchi-sogo-v4',
+    '3-urayasu': '2026-07-23-urayasu-higashi-danchi-urayasu-v3',
+    '3-symbol': '2026-07-23-urayasu-higashi-danchi-symbol-v4',
+    '3-akeumi': '2026-07-23-urayasu-higashi-danchi-akeumi-v4',
   };
   const SYSTEM_KEY = 'chidori-urayasu-higashi-danchi-system-v1';
   const DISPLAY_CODE = '3';
