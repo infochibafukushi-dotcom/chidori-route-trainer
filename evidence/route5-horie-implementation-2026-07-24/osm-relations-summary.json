@@ -1,0 +1,94 @@
+{
+  "fetchedAt": "2026-07-24T12:14:12.962Z",
+  "route": "horie-route5",
+  "relations": [
+    {
+      "id": 18417633,
+      "ok": true,
+      "source": "api.openstreetmap.org/0.6 + merged child expansions",
+      "name": "東京ベイシティバス5系統 浦安駅入口-堀江・東海大浦安・東野-新浦安駅",
+      "tags": {
+        "name": "東京ベイシティバス5系統 浦安駅入口-堀江・東海大浦安・東野-新浦安駅",
+        "network": "堀江線",
+        "operator": "東京ベイシティ交通",
+        "ref": "5",
+        "route_master": "bus",
+        "type": "route_master"
+      },
+      "memberCount": 2,
+      "wayMemberCount": 0,
+      "wayElementCount": 49,
+      "stopMemberCount": 0,
+      "stopRoleCount": 0,
+      "platformMemberCount": 0,
+      "nodeElementCount": 254,
+      "memberRoles": {
+        "": 2
+      },
+      "childRelationIds": [
+        18417632,
+        18417631
+      ],
+      "note": "route_master: members are 2 child route relations (empty role). way/node counts are recursive merge of children.",
+      "file": "osm-relation-18417633.json"
+    },
+    {
+      "id": 18417632,
+      "ok": true,
+      "source": "overpass.kumi.systems",
+      "name": "東京ベイシティバス5系統 浦安駅入口⇒堀江・東海大浦安・東野⇒新浦安駅",
+      "tags": {
+        "name": "東京ベイシティバス5系統 浦安駅入口⇒堀江・東海大浦安・東野⇒新浦安駅",
+        "network": "堀江線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "5",
+        "route": "bus",
+        "type": "route"
+      },
+      "memberCount": 49,
+      "wayMemberCount": 32,
+      "wayElementCount": 32,
+      "stopMemberCount": 17,
+      "stopRoleCount": 0,
+      "platformMemberCount": 17,
+      "nodeElementCount": 157,
+      "memberRoles": {
+        "platform_entry_only": 1,
+        "platform": 15,
+        "platform_exit_only": 1,
+        "": 32
+      },
+      "file": "osm-relation-18417632.json"
+    },
+    {
+      "id": 18417631,
+      "ok": true,
+      "source": "overpass-api.de",
+      "name": "東京ベイシティバス5系統 新浦安駅⇒東野・東海大浦安・堀江⇒浦安駅入口",
+      "tags": {
+        "name": "東京ベイシティバス5系統 新浦安駅⇒東野・東海大浦安・堀江⇒浦安駅入口",
+        "network": "堀江線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "5",
+        "route": "bus",
+        "type": "route"
+      },
+      "memberCount": 49,
+      "wayMemberCount": 32,
+      "wayElementCount": 32,
+      "stopMemberCount": 17,
+      "stopRoleCount": 0,
+      "platformMemberCount": 17,
+      "nodeElementCount": 172,
+      "memberRoles": {
+        "platform_entry_only": 1,
+        "platform": 15,
+        "platform_exit_only": 1,
+        "": 32
+      },
+      "file": "osm-relation-18417631.json"
+    }
+  ]
+}

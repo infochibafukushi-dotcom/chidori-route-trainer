@@ -1,0 +1,504 @@
+{
+  "checkedAt": "2026-07-24T12:27:34.303Z",
+  "sourcePriority": [
+    "京成バスナビ個別便通過時刻表（/stops?）",
+    "京成バスナビ系統・行先凡例"
+  ],
+  "lineName": "堀江線",
+  "systemNumber": "5",
+  "systems": {
+    "5-shinurayasu": {
+      "title": "新浦安駅行き",
+      "directionGroup": "outbound",
+      "departure": "浦安駅入口",
+      "destination": "新浦安駅",
+      "timetableSymbol": "無印",
+      "berth": "E",
+      "naviBusstop": "00020739",
+      "courseSequence": "0008200228-1",
+      "course": "0008200228",
+      "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200228-1 / 0008200229)",
+      "sourceUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81220000/stops?departure-busstop=00020739-1&course=0008200228&datetime=2026-07-24T06:18:00%2B09:00",
+      "confirmedDate": "2026-07-24",
+      "stopCount": 17,
+      "stops": [
+        {
+          "officialName": "浦安駅入口",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200228-1 / 0008200229)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "フラワー通り",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200228-1 / 0008200229)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "堀江三丁目",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200228-1 / 0008200229)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "南小入口",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200228-1 / 0008200229)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "堀江六丁目",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200228-1 / 0008200229)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "清滝弁財天",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200228-1 / 0008200229)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "堀江中学校前",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200228-1 / 0008200229)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "東海大浦安高校前",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200228-1 / 0008200229)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "東野中央",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200228-1 / 0008200229)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "第四街区公園入口",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200228-1 / 0008200229)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "東野二丁目",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200228-1 / 0008200229)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "東野保育園",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200228-1 / 0008200229)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "ＮＴＴ浦安前",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200228-1 / 0008200229)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "日生研修センター",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200228-1 / 0008200229)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "若潮公園",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200228-1 / 0008200229)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "新浦安駅北口",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200228-1 / 0008200229)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "新浦安駅",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200228-1 / 0008200229)",
+          "checkedDate": "2026-07-24"
+        }
+      ],
+      "stopNames": [
+        "浦安駅入口",
+        "フラワー通り",
+        "堀江三丁目",
+        "南小入口",
+        "堀江六丁目",
+        "清滝弁財天",
+        "堀江中学校前",
+        "東海大浦安高校前",
+        "東野中央",
+        "第四街区公園入口",
+        "東野二丁目",
+        "東野保育園",
+        "ＮＴＴ浦安前",
+        "日生研修センター",
+        "若潮公園",
+        "新浦安駅北口",
+        "新浦安駅"
+      ]
+    },
+    "5-ntt": {
+      "title": "ＮＴＴ浦安前行き",
+      "directionGroup": "outbound",
+      "departure": "浦安駅入口",
+      "destination": "ＮＴＴ浦安前",
+      "timetableSymbol": "Ｎ",
+      "berth": "E",
+      "naviBusstop": "00020739",
+      "courseSequence": "0008200228-1",
+      "course": "0008200229",
+      "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200228-1 / 0008200229)",
+      "sourceUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81230001/stops?departure-busstop=00020739-1&course=0008200229&datetime=2026-07-24T19:23:00%2B09:00",
+      "confirmedDate": "2026-07-24",
+      "note": "時刻表セル標記「Ｎ」。通過時刻表の course は 0008200229（新浦安駅行の共有時刻表上）。",
+      "stopCount": 13,
+      "stops": [
+        {
+          "officialName": "浦安駅入口",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200228-1 / 0008200229)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "フラワー通り",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200228-1 / 0008200229)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "堀江三丁目",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200228-1 / 0008200229)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "南小入口",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200228-1 / 0008200229)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "堀江六丁目",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200228-1 / 0008200229)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "清滝弁財天",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200228-1 / 0008200229)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "堀江中学校前",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200228-1 / 0008200229)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "東海大浦安高校前",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200228-1 / 0008200229)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "東野中央",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200228-1 / 0008200229)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "第四街区公園入口",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200228-1 / 0008200229)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "東野二丁目",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200228-1 / 0008200229)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "東野保育園",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200228-1 / 0008200229)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "ＮＴＴ浦安前",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200228-1 / 0008200229)",
+          "checkedDate": "2026-07-24"
+        }
+      ],
+      "stopNames": [
+        "浦安駅入口",
+        "フラワー通り",
+        "堀江三丁目",
+        "南小入口",
+        "堀江六丁目",
+        "清滝弁財天",
+        "堀江中学校前",
+        "東海大浦安高校前",
+        "東野中央",
+        "第四街区公園入口",
+        "東野二丁目",
+        "東野保育園",
+        "ＮＴＴ浦安前"
+      ]
+    },
+    "5-urayasu": {
+      "title": "浦安駅入口行き",
+      "directionGroup": "inbound",
+      "departure": "新浦安駅",
+      "destination": "浦安駅入口",
+      "timetableSymbol": "無印",
+      "berth": "A",
+      "naviBusstop": "00020619",
+      "courseSequence": "0008200227-1",
+      "course": "0008200227",
+      "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200227-1)",
+      "sourceUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8121000a/stops?departure-busstop=00020619-1&course=0008200227&datetime=2026-07-24T06:30:00%2B09:00",
+      "confirmedDate": "2026-07-24",
+      "note": "復路は往路の単純逆順ではない。終点手前は 堀江一丁目→豊受神社→神明裏→浦安駅入口（往路の 南小入口・堀江三丁目・フラワー通り 経由ではない）。",
+      "stopCount": 17,
+      "stops": [
+        {
+          "officialName": "新浦安駅",
+          "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200227-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "新浦安駅北口",
+          "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200227-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "若潮公園",
+          "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200227-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "日生研修センター",
+          "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200227-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "ＮＴＴ浦安前",
+          "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200227-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "東野保育園",
+          "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200227-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "東野二丁目",
+          "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200227-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "第四街区公園入口",
+          "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200227-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "東野中央",
+          "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200227-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "東海大浦安高校前",
+          "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200227-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "堀江中学校前",
+          "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200227-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "清滝弁財天",
+          "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200227-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "堀江六丁目",
+          "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200227-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "堀江一丁目",
+          "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200227-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "豊受神社",
+          "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200227-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "神明裏",
+          "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200227-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "浦安駅入口",
+          "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200227-1)",
+          "checkedDate": "2026-07-24"
+        }
+      ],
+      "stopNames": [
+        "新浦安駅",
+        "新浦安駅北口",
+        "若潮公園",
+        "日生研修センター",
+        "ＮＴＴ浦安前",
+        "東野保育園",
+        "東野二丁目",
+        "第四街区公園入口",
+        "東野中央",
+        "東海大浦安高校前",
+        "堀江中学校前",
+        "清滝弁財天",
+        "堀江六丁目",
+        "堀江一丁目",
+        "豊受神社",
+        "神明裏",
+        "浦安駅入口"
+      ]
+    },
+    "5-tokai": {
+      "title": "東海大浦安高校前行き",
+      "directionGroup": "inbound",
+      "departure": "新浦安駅",
+      "destination": "東海大浦安高校前",
+      "timetableSymbol": "と",
+      "berth": "A",
+      "naviBusstop": "00020619",
+      "courseSequence": "0008200227-1",
+      "course": "0008200230",
+      "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200227-1)",
+      "sourceUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81240008/stops?departure-busstop=00020619-1&course=0008200230&datetime=2026-07-25T08:15:00%2B09:00",
+      "confirmedDate": "2026-07-24",
+      "stopCount": 10,
+      "stops": [
+        {
+          "officialName": "新浦安駅",
+          "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200227-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "新浦安駅北口",
+          "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200227-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "若潮公園",
+          "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200227-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "日生研修センター",
+          "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200227-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "ＮＴＴ浦安前",
+          "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200227-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "東野保育園",
+          "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200227-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "東野二丁目",
+          "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200227-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "第四街区公園入口",
+          "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200227-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "東野中央",
+          "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200227-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "東海大浦安高校前",
+          "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200227-1)",
+          "checkedDate": "2026-07-24"
+        }
+      ],
+      "stopNames": [
+        "新浦安駅",
+        "新浦安駅北口",
+        "若潮公園",
+        "日生研修センター",
+        "ＮＴＴ浦安前",
+        "東野保育園",
+        "東野二丁目",
+        "第四街区公園入口",
+        "東野中央",
+        "東海大浦安高校前"
+      ]
+    },
+    "5-higashino-chuo": {
+      "title": "東野中央行き",
+      "directionGroup": "inbound",
+      "departure": "新浦安駅",
+      "destination": "東野中央",
+      "timetableSymbol": "中央",
+      "berth": "A",
+      "naviBusstop": "00020619",
+      "courseSequence": "0008200227-1",
+      "course": "0008200235",
+      "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200227-1)",
+      "sourceUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8129000b/stops?departure-busstop=00020619-1&course=0008200235&datetime=2026-07-24T07:25:00%2B09:00",
+      "confirmedDate": "2026-07-24",
+      "stopCount": 9,
+      "stops": [
+        {
+          "officialName": "新浦安駅",
+          "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200227-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "新浦安駅北口",
+          "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200227-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "若潮公園",
+          "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200227-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "日生研修センター",
+          "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200227-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "ＮＴＴ浦安前",
+          "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200227-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "東野保育園",
+          "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200227-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "東野二丁目",
+          "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200227-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "第四街区公園入口",
+          "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200227-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "東野中央",
+          "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200227-1)",
+          "checkedDate": "2026-07-24"
+        }
+      ],
+      "stopNames": [
+        "新浦安駅",
+        "新浦安駅北口",
+        "若潮公園",
+        "日生研修センター",
+        "ＮＴＴ浦安前",
+        "東野保育園",
+        "東野二丁目",
+        "第四街区公園入口",
+        "東野中央"
+      ]
+    }
+  }
+}

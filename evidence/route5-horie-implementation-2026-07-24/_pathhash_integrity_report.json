@@ -1,0 +1,85 @@
+{
+  "startedAt": "2026-07-24T12:39:26.025Z",
+  "intact": {
+    "5-shinurayasu": {
+      "ok": true,
+      "pathInvalid": false,
+      "pathHash": "08d0f32192fcaf4aacf967d8270ec9c5664aed169a668e2bb47024a293a55400",
+      "bankHash": "08d0f32192fcaf4aacf967d8270ec9c5664aed169a668e2bb47024a293a55400",
+      "recomputed": "08d0f32192fcaf4aacf967d8270ec9c5664aed169a668e2bb47024a293a55400",
+      "hashMatch": true,
+      "resolvedVersion": "2026-07-24-horie-shinurayasu-v1",
+      "expectedVersion": "2026-07-24-horie-shinurayasu-v1",
+      "pathPoints": 284
+    },
+    "5-ntt": {
+      "ok": true,
+      "pathInvalid": false,
+      "pathHash": "60b750d30c6dd5f6bfcca39b8599fb9196836392f49f0b5defb254178ed1ffb3",
+      "bankHash": "60b750d30c6dd5f6bfcca39b8599fb9196836392f49f0b5defb254178ed1ffb3",
+      "recomputed": "60b750d30c6dd5f6bfcca39b8599fb9196836392f49f0b5defb254178ed1ffb3",
+      "hashMatch": true,
+      "resolvedVersion": "2026-07-24-horie-ntt-v1",
+      "expectedVersion": "2026-07-24-horie-ntt-v1",
+      "pathPoints": 203
+    },
+    "5-urayasu": {
+      "ok": true,
+      "pathInvalid": false,
+      "pathHash": "74a8979d60f23b12eb9620ab01ffeb69625561aece2f58dd17d8de327e61391b",
+      "bankHash": "74a8979d60f23b12eb9620ab01ffeb69625561aece2f58dd17d8de327e61391b",
+      "recomputed": "74a8979d60f23b12eb9620ab01ffeb69625561aece2f58dd17d8de327e61391b",
+      "hashMatch": true,
+      "resolvedVersion": "2026-07-24-horie-urayasu-v1",
+      "expectedVersion": "2026-07-24-horie-urayasu-v1",
+      "pathPoints": 309
+    },
+    "5-tokai": {
+      "ok": true,
+      "pathInvalid": false,
+      "pathHash": "cf97e4ab5f0a319f5b0400adf5df9275f1ada97e88e8699bbf87a2e2a8530a9e",
+      "bankHash": "cf97e4ab5f0a319f5b0400adf5df9275f1ada97e88e8699bbf87a2e2a8530a9e",
+      "recomputed": "cf97e4ab5f0a319f5b0400adf5df9275f1ada97e88e8699bbf87a2e2a8530a9e",
+      "hashMatch": true,
+      "resolvedVersion": "2026-07-24-horie-tokai-v1",
+      "expectedVersion": "2026-07-24-horie-tokai-v1",
+      "pathPoints": 174
+    },
+    "5-higashino-chuo": {
+      "ok": true,
+      "pathInvalid": false,
+      "pathHash": "76d50d549b06029ff6ffc0461dfbe7cb44b4b673d4b04dfaf9b3163d5ef34224",
+      "bankHash": "76d50d549b06029ff6ffc0461dfbe7cb44b4b673d4b04dfaf9b3163d5ef34224",
+      "recomputed": "76d50d549b06029ff6ffc0461dfbe7cb44b4b673d4b04dfaf9b3163d5ef34224",
+      "hashMatch": true,
+      "resolvedVersion": "2026-07-24-horie-higashino-chuo-v1",
+      "expectedVersion": "2026-07-24-horie-higashino-chuo-v1",
+      "pathPoints": 161
+    }
+  },
+  "tamper": {
+    "systemKey": "5-shinurayasu",
+    "bankHash": "08d0f32192fcaf4aacf967d8270ec9c5664aed169a668e2bb47024a293a55400",
+    "originalPoint": {
+      "lat": 35.6466879,
+      "lng": 139.8951307
+    },
+    "beforeButton": true,
+    "threw": "堀江線の走行データを確認できません。\n系統：5-shinurayasu\n理由：pathHash不一致",
+    "pathInvalid": true,
+    "issueText": "pathHash不一致 / maxGap超過（44.6m > 30m）",
+    "messageHasPathHash": true,
+    "messageHasTomiokaBanner": true,
+    "statusText": "堀江線の走行データを確認できません。\n系統：5-shinurayasu\n理由：pathHash不一致",
+    "afterButton": false,
+    "driveBlocked": true
+  },
+  "restore": {
+    "ok": true,
+    "pathInvalid": false,
+    "startButton": true
+  },
+  "productionFilesUnchanged": true,
+  "pass": true,
+  "finishedAt": "2026-07-24T12:39:29.247Z"
+}

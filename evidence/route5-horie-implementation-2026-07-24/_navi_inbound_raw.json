@@ -1,0 +1,695 @@
+{
+  "scrapedAt": "2026-07-24T12:27:34.303Z",
+  "source": "https://transfer-cloud.navitime.biz/keiseibus-group",
+  "stopIdMap": {
+    "浦安駅入口": "00020739",
+    "フラワー通り": "00020723",
+    "堀江三丁目": "00020705",
+    "南小入口": "00020651",
+    "堀江六丁目": "00020708",
+    "清滝弁財天": "00020624",
+    "堀江中学校前": "00020706",
+    "東海大浦安高校前": "00020631",
+    "東野中央": "00020646",
+    "第四街区公園入口": "00020632",
+    "東野二丁目": "00020647",
+    "東野保育園": "00020648",
+    "ＮＴＴ浦安前": "00020721",
+    "日生研修センター": "00020660",
+    "若潮公園": "00020873",
+    "新浦安駅北口": "00020668",
+    "新浦安駅": "00020619"
+  },
+  "terminalsTried": {
+    "00020619": {
+      "id": "00020619",
+      "label": "新浦安駅",
+      "heading": "新浦安駅〈京成バス千葉ウエスト〉\nしんうらやすえき\n系統・時刻表・のりば一覧",
+      "title": "新浦安駅〈京成バス千葉ウエスト〉の系統・時刻表・のりば一覧 | 京成バスナビ | 京成電鉄バスグループ",
+      "coursesUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses?busstop=00020619",
+      "route5Courses": [
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200227-1",
+          "text": "5 [5]（東野二丁目経由）浦安駅入口行 時刻表",
+          "berth": "A 地図",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200227-1"
+        }
+      ],
+      "allCourseCount": 15,
+      "allCourses": [
+        {
+          "text": "浦安０３ [浦安０３]本八幡駅南口行 時刻表",
+          "berth": "01 地図",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200498-1"
+        },
+        {
+          "text": "5 [5]（東野二丁目経由）浦安駅入口行 時刻表",
+          "berth": "A 地図",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200227-1"
+        },
+        {
+          "text": "１－５ [１－１]（美浜中学校・北栄中央・浦安駅東口・東京ベイ医療センター方面）北栄循環行 [１－３]（美浜中学校・北栄中央・浦安駅東口・東京ベイ医療センター方面）北栄循環行 [１－５]（美浜中学校・北栄中央・浦安駅東口・東京ベイ医療センタ",
+          "berth": "１－５ [１－１]（美浜中学校・北栄中央",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200202-1"
+        },
+        {
+          "text": "22千鳥東 [22千鳥東]（順天堂病院前・千鳥東経由）千鳥車庫行 時刻表",
+          "berth": "B 地図",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200301-1"
+        },
+        {
+          "text": "14 [14]（順天堂病院前・弁天中央経由）舞浜駅・千鳥車庫行 時刻表",
+          "berth": "14 [14]（順天堂病院前・弁天中央経",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200274-1"
+        },
+        {
+          "text": "24 [24]富士見循環（順天堂病院前・中央公園・東海大浦安高校前・富士見五丁目方面）行 時刻表",
+          "berth": "24 [24]富士見循環（順天堂病院前・",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200304-1"
+        },
+        {
+          "text": "38 [38]＜急行＞明海小学校・クオン新浦安方面行 時刻表",
+          "berth": "38 [38]＜急行＞明海小学校・クオン",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200316-1"
+        },
+        {
+          "text": "16 [16]（プラウド新浦安パークマリーナ経由）日の出七丁目行 時刻表",
+          "berth": "C 地図",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200280-1"
+        },
+        {
+          "text": "17 [17]（日の出東経由）日の出七丁目（日の出東・プラウド新浦安パークマリーナ経由）ベイシティ浦安行 [深夜]（日の出東経由）日の出七丁目（日の出東・プラウド新浦安パークマリーナ経由）ベイシティ浦安行 時刻表",
+          "berth": "17 [17]（日の出東経由）日の出七丁",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200282-1"
+        },
+        {
+          "text": "3 [23]（明海五丁目経由）総合公園（明海五丁目・ベイパーク経由）シンボルロード・パークシティ行 [3]（明海五丁目経由）総合公園（明海五丁目・ベイパーク経由）シンボルロード・パークシティ行 [深夜]（明海五丁目経由）総合公園（明海五丁目",
+          "berth": "D 地図",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200211-7"
+        },
+        {
+          "text": "11 [11]（ベイパーク経由）総合公園・日の出南（墓地公園）行 時刻表",
+          "berth": "11 [11]（ベイパーク経由）総合公園",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200257-7"
+        },
+        {
+          "text": "15 [15]高洲海浜公園(潮音の街・高洲四丁目経由)高洲北小学校行 18 [18]高洲海浜公園(潮音の街・高洲四丁目経由)高洲北小学校行 [深夜]高洲海浜公園(潮音の街・高洲四丁目経由)高洲北小学校行 時刻表",
+          "berth": "E 地図",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200278-1"
+        },
+        {
+          "text": "10 [10]（東京学館前・高洲四丁目経由）高洲海浜公園・みなと南（鉄鋼団地）行 19 [19]（東京学館前・高洲四丁目経由）高洲海浜公園・みなと南（鉄鋼団地）行 時刻表",
+          "berth": "F 地図",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200254-1"
+        },
+        {
+          "text": "11 [11]（消防本部前経由）浦安駅入口（順天堂病院前・見明川住宅経由）舞浜駅行 18 [18]（消防本部前経由）浦安駅入口（順天堂病院前・見明川住宅経由）舞浜駅行 3 [23]（消防本部前経由）浦安駅入口（順天堂病院前・見明川住宅経由）",
+          "berth": "H 地図",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200210-13"
+        },
+        {
+          "text": "瑞75 江戸川スポーツランド行 [南行徳駅経由] 時刻表",
+          "berth": "接近情報",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020224&course-sequence=0008200051-1"
+        }
+      ],
+      "lastTimetable": {
+        "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200227-1",
+        "berth": "A 地図",
+        "courseText": "5 [5]（東野二丁目経由）浦安駅入口行 時刻表",
+        "legend": [
+          "無印…【５系統】東野二丁目、東海大浦安高校前経由　浦安駅入口行き",
+          "と…【５系統】東海大浦安高校前止まり",
+          "中央…【５系統】東野中央止まり"
+        ],
+        "sampleKeys": [
+          "5-higashino-chuo",
+          "5-tokai",
+          "5-urayasu"
+        ]
+      },
+      "sampled": {
+        "5-higashino-chuo": {
+          "class": "5-higashino-chuo",
+          "cellText": "25中央",
+          "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8129000b/stops?departure-busstop=00020619-1&course=0008200235&datetime=2026-07-24T07:25:00%2B09:00",
+          "stopNames": [
+            "新浦安駅",
+            "新浦安駅北口",
+            "若潮公園",
+            "日生研修センター",
+            "ＮＴＴ浦安前",
+            "東野保育園",
+            "東野二丁目",
+            "第四街区公園入口",
+            "東野中央"
+          ],
+          "stopCount": 9,
+          "stops": [
+            {
+              "time": "07:25",
+              "kind": "発",
+              "name": "新浦安駅"
+            },
+            {
+              "time": "07:27",
+              "kind": "着",
+              "name": "新浦安駅北口"
+            },
+            {
+              "time": "07:28",
+              "kind": "着",
+              "name": "若潮公園"
+            },
+            {
+              "time": "07:30",
+              "kind": "着",
+              "name": "日生研修センター"
+            },
+            {
+              "time": "07:31",
+              "kind": "着",
+              "name": "ＮＴＴ浦安前"
+            },
+            {
+              "time": "07:33",
+              "kind": "着",
+              "name": "東野保育園"
+            },
+            {
+              "time": "07:34",
+              "kind": "着",
+              "name": "東野二丁目"
+            },
+            {
+              "time": "07:35",
+              "kind": "着",
+              "name": "第四街区公園入口"
+            },
+            {
+              "time": "07:36",
+              "kind": "着",
+              "name": "東野中央"
+            }
+          ],
+          "heading": "通過時刻表",
+          "title": "5 [5]（東野二丁目経由）浦安駅入口行の通過時刻表 | 京成バスナビ | 京成電鉄バスグループ",
+          "bodySnippet": "京成電鉄バスグループ\n>\nバス停時刻表検索\n>\n新浦安駅 系統・時刻表・のりば一覧\n>\n新浦安駅 時刻表\n>\n5 [5]（東野二丁目経由）浦安駅入口行 通過時刻表\n京成電鉄バスグループ\n検索トップページ\nLanguage\n日本語\nEnglish\n简体中文\n繁體中文\n한국어\nไทย\n通過時刻表\n5 [5]（東野二丁目経由）浦安駅入口行\n2026年7月24日時点\n07:25\n発\n新浦安駅\n系統・時刻表一覧\n07:27\n着\n新浦安駅北口\n170円\n系統・時刻表一覧\n07:28\n着\n若潮公園\n170円\n系統・時刻表一覧\n07:30\n着\n日生研修センター\n170円\n系統・時刻表一覧\n07:31\n着\nＮＴＴ浦安前\n170円\n系統・時刻表一覧\n07:33\n着\n東野保育園\n170円\n系統・時刻表一覧\n07:34\n着\n東野二丁目\n170円\n系統・時刻表一覧\n07:35\n着\n第四街区公園入口\n170円\n系統・時刻表一覧\n07:36\n着\n東野中央\n170円\n系統・時刻表一覧\nページの先頭へ戻る\nご利用にあたって（免責について等）\nCopyright ©Keisei Bus Co., Ltd. All rights reserved.\nPowered by"
+        },
+        "5-tokai": {
+          "class": "5-tokai",
+          "cellText": "15と",
+          "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81240008/stops?departure-busstop=00020619-1&course=0008200230&datetime=2026-07-25T08:15:00%2B09:00",
+          "stopNames": [
+            "新浦安駅",
+            "新浦安駅北口",
+            "若潮公園",
+            "日生研修センター",
+            "ＮＴＴ浦安前",
+            "東野保育園",
+            "東野二丁目",
+            "第四街区公園入口",
+            "東野中央",
+            "東海大浦安高校前"
+          ],
+          "stopCount": 10,
+          "stops": [
+            {
+              "time": "08:15",
+              "kind": "発",
+              "name": "新浦安駅"
+            },
+            {
+              "time": "08:17",
+              "kind": "着",
+              "name": "新浦安駅北口"
+            },
+            {
+              "time": "08:18",
+              "kind": "着",
+              "name": "若潮公園"
+            },
+            {
+              "time": "08:20",
+              "kind": "着",
+              "name": "日生研修センター"
+            },
+            {
+              "time": "08:21",
+              "kind": "着",
+              "name": "ＮＴＴ浦安前"
+            },
+            {
+              "time": "08:23",
+              "kind": "着",
+              "name": "東野保育園"
+            },
+            {
+              "time": "08:24",
+              "kind": "着",
+              "name": "東野二丁目"
+            },
+            {
+              "time": "08:25",
+              "kind": "着",
+              "name": "第四街区公園入口"
+            },
+            {
+              "time": "08:26",
+              "kind": "着",
+              "name": "東野中央"
+            },
+            {
+              "time": "08:28",
+              "kind": "着",
+              "name": "東海大浦安高校前"
+            }
+          ],
+          "heading": "通過時刻表",
+          "title": "5 [5]（東野二丁目経由）浦安駅入口行の通過時刻表 | 京成バスナビ | 京成電鉄バスグループ",
+          "bodySnippet": "京成電鉄バスグループ\n>\nバス停時刻表検索\n>\n新浦安駅 系統・時刻表・のりば一覧\n>\n新浦安駅 時刻表\n>\n5 [5]（東野二丁目経由）浦安駅入口行 通過時刻表\n京成電鉄バスグループ\n検索トップページ\nLanguage\n日本語\nEnglish\n简体中文\n繁體中文\n한국어\nไทย\n通過時刻表\n5 [5]（東野二丁目経由）浦安駅入口行\n2026年7月25日時点\n08:15\n発\n新浦安駅\n系統・時刻表一覧\n08:17\n着\n新浦安駅北口\n170円\n系統・時刻表一覧\n08:18\n着\n若潮公園\n170円\n系統・時刻表一覧\n08:20\n着\n日生研修センター\n170円\n系統・時刻表一覧\n08:21\n着\nＮＴＴ浦安前\n170円\n系統・時刻表一覧\n08:23\n着\n東野保育園\n170円\n系統・時刻表一覧\n08:24\n着\n東野二丁目\n170円\n系統・時刻表一覧\n08:25\n着\n第四街区公園入口\n170円\n系統・時刻表一覧\n08:26\n着\n東野中央\n170円\n系統・時刻表一覧\n08:28\n着\n東海大浦安高校前\n170円\n系統・時刻表一覧\nページの先頭へ戻る\nご利用にあたって（免責について等）\nCopyright ©Keisei Bus Co., Ltd. All rights reserved.\nPowered by"
+        },
+        "5-urayasu": {
+          "class": "5-urayasu",
+          "cellText": "30",
+          "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8121000a/stops?departure-busstop=00020619-1&course=0008200227&datetime=2026-07-24T06:30:00%2B09:00",
+          "stopNames": [
+            "新浦安駅",
+            "新浦安駅北口",
+            "若潮公園",
+            "日生研修センター",
+            "ＮＴＴ浦安前",
+            "東野保育園",
+            "東野二丁目",
+            "第四街区公園入口",
+            "東野中央",
+            "東海大浦安高校前",
+            "堀江中学校前",
+            "清滝弁財天",
+            "堀江六丁目",
+            "堀江一丁目",
+            "豊受神社",
+            "神明裏",
+            "浦安駅入口"
+          ],
+          "stopCount": 17,
+          "stops": [
+            {
+              "time": "06:30",
+              "kind": "発",
+              "name": "新浦安駅"
+            },
+            {
+              "time": "06:32",
+              "kind": "着",
+              "name": "新浦安駅北口"
+            },
+            {
+              "time": "06:33",
+              "kind": "着",
+              "name": "若潮公園"
+            },
+            {
+              "time": "06:35",
+              "kind": "着",
+              "name": "日生研修センター"
+            },
+            {
+              "time": "06:36",
+              "kind": "着",
+              "name": "ＮＴＴ浦安前"
+            },
+            {
+              "time": "06:38",
+              "kind": "着",
+              "name": "東野保育園"
+            },
+            {
+              "time": "06:39",
+              "kind": "着",
+              "name": "東野二丁目"
+            },
+            {
+              "time": "06:40",
+              "kind": "着",
+              "name": "第四街区公園入口"
+            },
+            {
+              "time": "06:41",
+              "kind": "着",
+              "name": "東野中央"
+            },
+            {
+              "time": "06:43",
+              "kind": "着",
+              "name": "東海大浦安高校前"
+            },
+            {
+              "time": "06:44",
+              "kind": "着",
+              "name": "堀江中学校前"
+            },
+            {
+              "time": "06:45",
+              "kind": "着",
+              "name": "清滝弁財天"
+            },
+            {
+              "time": "06:46",
+              "kind": "着",
+              "name": "堀江六丁目"
+            },
+            {
+              "time": "06:47",
+              "kind": "着",
+              "name": "堀江一丁目"
+            },
+            {
+              "time": "06:48",
+              "kind": "着",
+              "name": "豊受神社"
+            },
+            {
+              "time": "06:49",
+              "kind": "着",
+              "name": "神明裏"
+            },
+            {
+              "time": "06:54",
+              "kind": "着",
+              "name": "浦安駅入口"
+            }
+          ],
+          "heading": "通過時刻表",
+          "title": "5 [5]（東野二丁目経由）浦安駅入口行の通過時刻表 | 京成バスナビ | 京成電鉄バスグループ",
+          "bodySnippet": "京成電鉄バスグループ\n>\nバス停時刻表検索\n>\n新浦安駅 系統・時刻表・のりば一覧\n>\n新浦安駅 時刻表\n>\n5 [5]（東野二丁目経由）浦安駅入口行 通過時刻表\n京成電鉄バスグループ\n検索トップページ\nLanguage\n日本語\nEnglish\n简体中文\n繁體中文\n한국어\nไทย\n通過時刻表\n5 [5]（東野二丁目経由）浦安駅入口行\n2026年7月24日時点\n06:30\n発\n新浦安駅\n系統・時刻表一覧\n06:32\n着\n新浦安駅北口\n170円\n系統・時刻表一覧\n06:33\n着\n若潮公園\n170円\n系統・時刻表一覧\n06:35\n着\n日生研修センター\n170円\n系統・時刻表一覧\n06:36\n着\nＮＴＴ浦安前\n170円\n系統・時刻表一覧\n06:38\n着\n東野保育園\n170円\n系統・時刻表一覧\n06:39\n着\n東野二丁目\n170円\n系統・時刻表一覧\n06:40\n着\n第四街区公園入口\n170円\n系統・時刻表一覧\n06:41\n着\n東野中央\n170円\n系統・時刻表一覧\n06:43\n着\n東海大浦安高校前\n170円\n系統・時刻表一覧\n06:44\n着\n堀江中学校前\n170円\n系統・時刻表一覧\n06:45\n着\n清滝弁財天\n170円\n系統・時刻表一覧\n06:46\n着\n堀江六丁目\n170円\n系統・時刻表一覧\n06:47\n着\n堀江一丁目\n170円\n系統・時刻表一覧\n06:48\n着\n豊受神社\n200円\n系統・時刻表一覧\n06:49\n着\n神明裏\n200円\n系統・時刻表一覧\n06:54\n着\n浦安駅入口\n200円\n系統・時刻表一覧\nページの先頭へ戻る\nご利用にあたって（免責について等）\nCopyright ©Keisei Bus Co., Ltd. All rights reserved.\nPowered by"
+        }
+      }
+    }
+  },
+  "confirmed": {
+    "5-higashino-chuo": {
+      "class": "5-higashino-chuo",
+      "cellText": "25中央",
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8129000b/stops?departure-busstop=00020619-1&course=0008200235&datetime=2026-07-24T07:25:00%2B09:00",
+      "stopNames": [
+        "新浦安駅",
+        "新浦安駅北口",
+        "若潮公園",
+        "日生研修センター",
+        "ＮＴＴ浦安前",
+        "東野保育園",
+        "東野二丁目",
+        "第四街区公園入口",
+        "東野中央"
+      ],
+      "stopCount": 9,
+      "stops": [
+        {
+          "time": "07:25",
+          "kind": "発",
+          "name": "新浦安駅"
+        },
+        {
+          "time": "07:27",
+          "kind": "着",
+          "name": "新浦安駅北口"
+        },
+        {
+          "time": "07:28",
+          "kind": "着",
+          "name": "若潮公園"
+        },
+        {
+          "time": "07:30",
+          "kind": "着",
+          "name": "日生研修センター"
+        },
+        {
+          "time": "07:31",
+          "kind": "着",
+          "name": "ＮＴＴ浦安前"
+        },
+        {
+          "time": "07:33",
+          "kind": "着",
+          "name": "東野保育園"
+        },
+        {
+          "time": "07:34",
+          "kind": "着",
+          "name": "東野二丁目"
+        },
+        {
+          "time": "07:35",
+          "kind": "着",
+          "name": "第四街区公園入口"
+        },
+        {
+          "time": "07:36",
+          "kind": "着",
+          "name": "東野中央"
+        }
+      ],
+      "heading": "通過時刻表",
+      "title": "5 [5]（東野二丁目経由）浦安駅入口行の通過時刻表 | 京成バスナビ | 京成電鉄バスグループ",
+      "bodySnippet": "京成電鉄バスグループ\n>\nバス停時刻表検索\n>\n新浦安駅 系統・時刻表・のりば一覧\n>\n新浦安駅 時刻表\n>\n5 [5]（東野二丁目経由）浦安駅入口行 通過時刻表\n京成電鉄バスグループ\n検索トップページ\nLanguage\n日本語\nEnglish\n简体中文\n繁體中文\n한국어\nไทย\n通過時刻表\n5 [5]（東野二丁目経由）浦安駅入口行\n2026年7月24日時点\n07:25\n発\n新浦安駅\n系統・時刻表一覧\n07:27\n着\n新浦安駅北口\n170円\n系統・時刻表一覧\n07:28\n着\n若潮公園\n170円\n系統・時刻表一覧\n07:30\n着\n日生研修センター\n170円\n系統・時刻表一覧\n07:31\n着\nＮＴＴ浦安前\n170円\n系統・時刻表一覧\n07:33\n着\n東野保育園\n170円\n系統・時刻表一覧\n07:34\n着\n東野二丁目\n170円\n系統・時刻表一覧\n07:35\n着\n第四街区公園入口\n170円\n系統・時刻表一覧\n07:36\n着\n東野中央\n170円\n系統・時刻表一覧\nページの先頭へ戻る\nご利用にあたって（免責について等）\nCopyright ©Keisei Bus Co., Ltd. All rights reserved.\nPowered by",
+      "terminalId": "00020619",
+      "terminalLabel": "新浦安駅",
+      "berth": "A 地図",
+      "timetableUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200227-1",
+      "legend": [
+        "無印…【５系統】東野二丁目、東海大浦安高校前経由　浦安駅入口行き",
+        "と…【５系統】東海大浦安高校前止まり",
+        "中央…【５系統】東野中央止まり"
+      ]
+    },
+    "5-tokai": {
+      "class": "5-tokai",
+      "cellText": "15と",
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81240008/stops?departure-busstop=00020619-1&course=0008200230&datetime=2026-07-25T08:15:00%2B09:00",
+      "stopNames": [
+        "新浦安駅",
+        "新浦安駅北口",
+        "若潮公園",
+        "日生研修センター",
+        "ＮＴＴ浦安前",
+        "東野保育園",
+        "東野二丁目",
+        "第四街区公園入口",
+        "東野中央",
+        "東海大浦安高校前"
+      ],
+      "stopCount": 10,
+      "stops": [
+        {
+          "time": "08:15",
+          "kind": "発",
+          "name": "新浦安駅"
+        },
+        {
+          "time": "08:17",
+          "kind": "着",
+          "name": "新浦安駅北口"
+        },
+        {
+          "time": "08:18",
+          "kind": "着",
+          "name": "若潮公園"
+        },
+        {
+          "time": "08:20",
+          "kind": "着",
+          "name": "日生研修センター"
+        },
+        {
+          "time": "08:21",
+          "kind": "着",
+          "name": "ＮＴＴ浦安前"
+        },
+        {
+          "time": "08:23",
+          "kind": "着",
+          "name": "東野保育園"
+        },
+        {
+          "time": "08:24",
+          "kind": "着",
+          "name": "東野二丁目"
+        },
+        {
+          "time": "08:25",
+          "kind": "着",
+          "name": "第四街区公園入口"
+        },
+        {
+          "time": "08:26",
+          "kind": "着",
+          "name": "東野中央"
+        },
+        {
+          "time": "08:28",
+          "kind": "着",
+          "name": "東海大浦安高校前"
+        }
+      ],
+      "heading": "通過時刻表",
+      "title": "5 [5]（東野二丁目経由）浦安駅入口行の通過時刻表 | 京成バスナビ | 京成電鉄バスグループ",
+      "bodySnippet": "京成電鉄バスグループ\n>\nバス停時刻表検索\n>\n新浦安駅 系統・時刻表・のりば一覧\n>\n新浦安駅 時刻表\n>\n5 [5]（東野二丁目経由）浦安駅入口行 通過時刻表\n京成電鉄バスグループ\n検索トップページ\nLanguage\n日本語\nEnglish\n简体中文\n繁體中文\n한국어\nไทย\n通過時刻表\n5 [5]（東野二丁目経由）浦安駅入口行\n2026年7月25日時点\n08:15\n発\n新浦安駅\n系統・時刻表一覧\n08:17\n着\n新浦安駅北口\n170円\n系統・時刻表一覧\n08:18\n着\n若潮公園\n170円\n系統・時刻表一覧\n08:20\n着\n日生研修センター\n170円\n系統・時刻表一覧\n08:21\n着\nＮＴＴ浦安前\n170円\n系統・時刻表一覧\n08:23\n着\n東野保育園\n170円\n系統・時刻表一覧\n08:24\n着\n東野二丁目\n170円\n系統・時刻表一覧\n08:25\n着\n第四街区公園入口\n170円\n系統・時刻表一覧\n08:26\n着\n東野中央\n170円\n系統・時刻表一覧\n08:28\n着\n東海大浦安高校前\n170円\n系統・時刻表一覧\nページの先頭へ戻る\nご利用にあたって（免責について等）\nCopyright ©Keisei Bus Co., Ltd. All rights reserved.\nPowered by",
+      "terminalId": "00020619",
+      "terminalLabel": "新浦安駅",
+      "berth": "A 地図",
+      "timetableUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200227-1",
+      "legend": [
+        "無印…【５系統】東野二丁目、東海大浦安高校前経由　浦安駅入口行き",
+        "と…【５系統】東海大浦安高校前止まり",
+        "中央…【５系統】東野中央止まり"
+      ]
+    },
+    "5-urayasu": {
+      "class": "5-urayasu",
+      "cellText": "30",
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8121000a/stops?departure-busstop=00020619-1&course=0008200227&datetime=2026-07-24T06:30:00%2B09:00",
+      "stopNames": [
+        "新浦安駅",
+        "新浦安駅北口",
+        "若潮公園",
+        "日生研修センター",
+        "ＮＴＴ浦安前",
+        "東野保育園",
+        "東野二丁目",
+        "第四街区公園入口",
+        "東野中央",
+        "東海大浦安高校前",
+        "堀江中学校前",
+        "清滝弁財天",
+        "堀江六丁目",
+        "堀江一丁目",
+        "豊受神社",
+        "神明裏",
+        "浦安駅入口"
+      ],
+      "stopCount": 17,
+      "stops": [
+        {
+          "time": "06:30",
+          "kind": "発",
+          "name": "新浦安駅"
+        },
+        {
+          "time": "06:32",
+          "kind": "着",
+          "name": "新浦安駅北口"
+        },
+        {
+          "time": "06:33",
+          "kind": "着",
+          "name": "若潮公園"
+        },
+        {
+          "time": "06:35",
+          "kind": "着",
+          "name": "日生研修センター"
+        },
+        {
+          "time": "06:36",
+          "kind": "着",
+          "name": "ＮＴＴ浦安前"
+        },
+        {
+          "time": "06:38",
+          "kind": "着",
+          "name": "東野保育園"
+        },
+        {
+          "time": "06:39",
+          "kind": "着",
+          "name": "東野二丁目"
+        },
+        {
+          "time": "06:40",
+          "kind": "着",
+          "name": "第四街区公園入口"
+        },
+        {
+          "time": "06:41",
+          "kind": "着",
+          "name": "東野中央"
+        },
+        {
+          "time": "06:43",
+          "kind": "着",
+          "name": "東海大浦安高校前"
+        },
+        {
+          "time": "06:44",
+          "kind": "着",
+          "name": "堀江中学校前"
+        },
+        {
+          "time": "06:45",
+          "kind": "着",
+          "name": "清滝弁財天"
+        },
+        {
+          "time": "06:46",
+          "kind": "着",
+          "name": "堀江六丁目"
+        },
+        {
+          "time": "06:47",
+          "kind": "着",
+          "name": "堀江一丁目"
+        },
+        {
+          "time": "06:48",
+          "kind": "着",
+          "name": "豊受神社"
+        },
+        {
+          "time": "06:49",
+          "kind": "着",
+          "name": "神明裏"
+        },
+        {
+          "time": "06:54",
+          "kind": "着",
+          "name": "浦安駅入口"
+        }
+      ],
+      "heading": "通過時刻表",
+      "title": "5 [5]（東野二丁目経由）浦安駅入口行の通過時刻表 | 京成バスナビ | 京成電鉄バスグループ",
+      "bodySnippet": "京成電鉄バスグループ\n>\nバス停時刻表検索\n>\n新浦安駅 系統・時刻表・のりば一覧\n>\n新浦安駅 時刻表\n>\n5 [5]（東野二丁目経由）浦安駅入口行 通過時刻表\n京成電鉄バスグループ\n検索トップページ\nLanguage\n日本語\nEnglish\n简体中文\n繁體中文\n한국어\nไทย\n通過時刻表\n5 [5]（東野二丁目経由）浦安駅入口行\n2026年7月24日時点\n06:30\n発\n新浦安駅\n系統・時刻表一覧\n06:32\n着\n新浦安駅北口\n170円\n系統・時刻表一覧\n06:33\n着\n若潮公園\n170円\n系統・時刻表一覧\n06:35\n着\n日生研修センター\n170円\n系統・時刻表一覧\n06:36\n着\nＮＴＴ浦安前\n170円\n系統・時刻表一覧\n06:38\n着\n東野保育園\n170円\n系統・時刻表一覧\n06:39\n着\n東野二丁目\n170円\n系統・時刻表一覧\n06:40\n着\n第四街区公園入口\n170円\n系統・時刻表一覧\n06:41\n着\n東野中央\n170円\n系統・時刻表一覧\n06:43\n着\n東海大浦安高校前\n170円\n系統・時刻表一覧\n06:44\n着\n堀江中学校前\n170円\n系統・時刻表一覧\n06:45\n着\n清滝弁財天\n170円\n系統・時刻表一覧\n06:46\n着\n堀江六丁目\n170円\n系統・時刻表一覧\n06:47\n着\n堀江一丁目\n170円\n系統・時刻表一覧\n06:48\n着\n豊受神社\n200円\n系統・時刻表一覧\n06:49\n着\n神明裏\n200円\n系統・時刻表一覧\n06:54\n着\n浦安駅入口\n200円\n系統・時刻表一覧\nページの先頭へ戻る\nご利用にあたって（免責について等）\nCopyright ©Keisei Bus Co., Ltd. All rights reserved.\nPowered by",
+      "terminalId": "00020619",
+      "terminalLabel": "新浦安駅",
+      "berth": "A 地図",
+      "timetableUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200227-1",
+      "legend": [
+        "無印…【５系統】東野二丁目、東海大浦安高校前経由　浦安駅入口行き",
+        "と…【５系統】東海大浦安高校前止まり",
+        "中央…【５系統】東野中央止まり"
+      ]
+    }
+  },
+  "errors": [],
+  "stopIdListing": [
+    "00020739",
+    "00020723",
+    "00020705",
+    "00020651",
+    "00020708",
+    "00020624",
+    "00020706",
+    "00020631",
+    "00020646",
+    "00020632",
+    "00020647",
+    "00020648",
+    "00020721",
+    "00020660",
+    "00020873",
+    "00020668",
+    "00020619"
+  ],
+  "shinurayasuBusstop": "00020619"
+}

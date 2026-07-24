@@ -1,0 +1,87 @@
+[
+  {
+    "file": "5-shinurayasu-urayasu-start-z19.png",
+    "label": "5-shinurayasu 浦安駅入口→フラワー通り",
+    "headingDeg": 8
+  },
+  {
+    "file": "5-shinurayasu-horie6-z19.png",
+    "label": "5-shinurayasu 南小入口→清滝弁財天",
+    "headingDeg": 35
+  },
+  {
+    "file": "5-shinurayasu-tokai-z19.png",
+    "label": "5-shinurayasu 堀江中学校前→東野中央",
+    "headingDeg": 296
+  },
+  {
+    "file": "5-shinurayasu-higashino-z19.png",
+    "label": "5-shinurayasu 東海大浦安高校前→東野二丁目",
+    "headingDeg": 230
+  },
+  {
+    "file": "5-shinurayasu-shinurayasu-entry-z19.png",
+    "label": "5-shinurayasu 新浦安駅北口→新浦安駅",
+    "headingDeg": 12
+  },
+  {
+    "file": "5-shinurayasu-shinurayasu-end-z19.png",
+    "label": "5-shinurayasu 新浦安駅北口→新浦安駅",
+    "headingDeg": 12
+  },
+  {
+    "file": "5-ntt-urayasu-start-z19.png",
+    "label": "5-ntt 浦安駅入口→フラワー通り",
+    "headingDeg": 8
+  },
+  {
+    "file": "5-ntt-end-z19.png",
+    "label": "5-ntt 東野保育園→ＮＴＴ浦安前",
+    "headingDeg": 309
+  },
+  {
+    "file": "5-urayasu-shinurayasu-start-z19.png",
+    "label": "5-urayasu 新浦安駅→新浦安駅北口",
+    "headingDeg": 101
+  },
+  {
+    "file": "5-urayasu-higashino-z19.png",
+    "label": "5-urayasu 第四街区公園入口→東海大浦安高校前",
+    "headingDeg": 72
+  },
+  {
+    "file": "5-urayasu-tokai-z19.png",
+    "label": "5-urayasu 東野中央→堀江中学校前",
+    "headingDeg": 137
+  },
+  {
+    "file": "5-urayasu-horie6-z19.png",
+    "label": "5-urayasu 清滝弁財天→堀江一丁目",
+    "headingDeg": 219
+  },
+  {
+    "file": "5-urayasu-urayasu-end-z19.png",
+    "label": "5-urayasu 神明裏→浦安駅入口",
+    "headingDeg": 120
+  },
+  {
+    "file": "5-tokai-start-z19.png",
+    "label": "5-tokai 新浦安駅→新浦安駅北口",
+    "headingDeg": 101
+  },
+  {
+    "file": "5-tokai-end-z19.png",
+    "label": "5-tokai 東野中央→東海大浦安高校前",
+    "headingDeg": 116
+  },
+  {
+    "file": "5-higashino-chuo-start-z19.png",
+    "label": "5-higashino-chuo 新浦安駅→新浦安駅北口",
+    "headingDeg": 101
+  },
+  {
+    "file": "5-higashino-chuo-end-z19.png",
+    "label": "5-higashino-chuo 第四街区公園入口→東野中央",
+    "headingDeg": 128
+  }
+]

@@ -1,0 +1,364 @@
+{
+  "generatedAt": "2026-07-24T12:33:08.495Z",
+  "systems": {
+    "5-shinurayasu": {
+      "stops": 17,
+      "pathPoints": 284,
+      "maxGap_m": 24.9,
+      "maxPlatformDist_m": 11.6,
+      "pathHash": "08d0f32192fcaf4aacf967d8270ec9c5664aed169a668e2bb47024a293a55400",
+      "resolvedVersion": "2026-07-24-horie-shinurayasu-v1",
+      "missingPlatforms": [],
+      "platformDists": [
+        {
+          "name": "浦安駅入口",
+          "dist": 7.4
+        },
+        {
+          "name": "フラワー通り",
+          "dist": 7.4
+        },
+        {
+          "name": "堀江三丁目",
+          "dist": 11.6
+        },
+        {
+          "name": "南小入口",
+          "dist": 5.9
+        },
+        {
+          "name": "堀江六丁目",
+          "dist": 11.2
+        },
+        {
+          "name": "清滝弁財天",
+          "dist": 8.8
+        },
+        {
+          "name": "堀江中学校前",
+          "dist": 11.2
+        },
+        {
+          "name": "東海大浦安高校前",
+          "dist": 10.2
+        },
+        {
+          "name": "東野中央",
+          "dist": 6.7
+        },
+        {
+          "name": "第四街区公園入口",
+          "dist": 5.4
+        },
+        {
+          "name": "東野二丁目",
+          "dist": 9.6
+        },
+        {
+          "name": "東野保育園",
+          "dist": 8.5
+        },
+        {
+          "name": "ＮＴＴ浦安前",
+          "dist": 4.7
+        },
+        {
+          "name": "日生研修センター",
+          "dist": 5.7
+        },
+        {
+          "name": "若潮公園",
+          "dist": 8.9
+        },
+        {
+          "name": "新浦安駅北口",
+          "dist": 7
+        },
+        {
+          "name": "新浦安駅",
+          "dist": 5.3
+        }
+      ],
+      "sliceMeta": {
+        "si": 1,
+        "ei": 284,
+        "startDist": 7.4,
+        "endDist": 5.3
+      },
+      "maxJoin_m": 24.8,
+      "note": null
+    },
+    "5-ntt": {
+      "stops": 13,
+      "pathPoints": 203,
+      "maxGap_m": 24.9,
+      "maxPlatformDist_m": 11.6,
+      "pathHash": "60b750d30c6dd5f6bfcca39b8599fb9196836392f49f0b5defb254178ed1ffb3",
+      "resolvedVersion": "2026-07-24-horie-ntt-v1",
+      "missingPlatforms": [],
+      "platformDists": [
+        {
+          "name": "浦安駅入口",
+          "dist": 7.4
+        },
+        {
+          "name": "フラワー通り",
+          "dist": 7.4
+        },
+        {
+          "name": "堀江三丁目",
+          "dist": 11.6
+        },
+        {
+          "name": "南小入口",
+          "dist": 5.9
+        },
+        {
+          "name": "堀江六丁目",
+          "dist": 11.2
+        },
+        {
+          "name": "清滝弁財天",
+          "dist": 8.8
+        },
+        {
+          "name": "堀江中学校前",
+          "dist": 11.2
+        },
+        {
+          "name": "東海大浦安高校前",
+          "dist": 10.2
+        },
+        {
+          "name": "東野中央",
+          "dist": 6.7
+        },
+        {
+          "name": "第四街区公園入口",
+          "dist": 5.4
+        },
+        {
+          "name": "東野二丁目",
+          "dist": 9.6
+        },
+        {
+          "name": "東野保育園",
+          "dist": 8.5
+        },
+        {
+          "name": "ＮＴＴ浦安前",
+          "dist": 4.7
+        }
+      ],
+      "sliceMeta": {
+        "si": 1,
+        "ei": 203,
+        "startDist": 7.4,
+        "endDist": 4.7
+      },
+      "maxJoin_m": 24.8,
+      "note": "Navi Ｎ便は新浦安駅行きとＮＴＴ浦安前まで同一停留所順。営業終点platformでpath終了（回送は含めない）。"
+    },
+    "5-urayasu": {
+      "stops": 17,
+      "pathPoints": 309,
+      "maxGap_m": 24.9,
+      "maxPlatformDist_m": 12.1,
+      "pathHash": "74a8979d60f23b12eb9620ab01ffeb69625561aece2f58dd17d8de327e61391b",
+      "resolvedVersion": "2026-07-24-horie-urayasu-v1",
+      "missingPlatforms": [],
+      "platformDists": [
+        {
+          "name": "新浦安駅",
+          "dist": 7.9
+        },
+        {
+          "name": "新浦安駅北口",
+          "dist": 8.4
+        },
+        {
+          "name": "若潮公園",
+          "dist": 8.6
+        },
+        {
+          "name": "日生研修センター",
+          "dist": 12.1
+        },
+        {
+          "name": "ＮＴＴ浦安前",
+          "dist": 5.4
+        },
+        {
+          "name": "東野保育園",
+          "dist": 8.6
+        },
+        {
+          "name": "東野二丁目",
+          "dist": 7.5
+        },
+        {
+          "name": "第四街区公園入口",
+          "dist": 6.2
+        },
+        {
+          "name": "東野中央",
+          "dist": 6.8
+        },
+        {
+          "name": "東海大浦安高校前",
+          "dist": 9.8
+        },
+        {
+          "name": "堀江中学校前",
+          "dist": 10.1
+        },
+        {
+          "name": "清滝弁財天",
+          "dist": 9.3
+        },
+        {
+          "name": "堀江六丁目",
+          "dist": 11.1
+        },
+        {
+          "name": "堀江一丁目",
+          "dist": 10.1
+        },
+        {
+          "name": "豊受神社",
+          "dist": 10
+        },
+        {
+          "name": "神明裏",
+          "dist": 9.3
+        },
+        {
+          "name": "浦安駅入口",
+          "dist": 11.2
+        }
+      ],
+      "sliceMeta": {
+        "si": 0,
+        "ei": 308,
+        "startDist": 7.9,
+        "endDist": 11.2
+      },
+      "maxJoin_m": 0,
+      "note": null
+    },
+    "5-tokai": {
+      "stops": 10,
+      "pathPoints": 174,
+      "maxGap_m": 24.7,
+      "maxPlatformDist_m": 12.1,
+      "pathHash": "cf97e4ab5f0a319f5b0400adf5df9275f1ada97e88e8699bbf87a2e2a8530a9e",
+      "resolvedVersion": "2026-07-24-horie-tokai-v1",
+      "missingPlatforms": [],
+      "platformDists": [
+        {
+          "name": "新浦安駅",
+          "dist": 7.9
+        },
+        {
+          "name": "新浦安駅北口",
+          "dist": 8.4
+        },
+        {
+          "name": "若潮公園",
+          "dist": 8.6
+        },
+        {
+          "name": "日生研修センター",
+          "dist": 12.1
+        },
+        {
+          "name": "ＮＴＴ浦安前",
+          "dist": 5.4
+        },
+        {
+          "name": "東野保育園",
+          "dist": 8.6
+        },
+        {
+          "name": "東野二丁目",
+          "dist": 7.5
+        },
+        {
+          "name": "第四街区公園入口",
+          "dist": 6.2
+        },
+        {
+          "name": "東野中央",
+          "dist": 6.8
+        },
+        {
+          "name": "東海大浦安高校前",
+          "dist": 9.8
+        }
+      ],
+      "sliceMeta": {
+        "si": 0,
+        "ei": 173,
+        "startDist": 7.9,
+        "endDist": 9.8
+      },
+      "maxJoin_m": 0,
+      "note": "Navi と便は浦安駅入口行きと東海大浦安高校前まで同一停留所順。営業終点で終了。"
+    },
+    "5-higashino-chuo": {
+      "stops": 9,
+      "pathPoints": 161,
+      "maxGap_m": 24.7,
+      "maxPlatformDist_m": 12.1,
+      "pathHash": "76d50d549b06029ff6ffc0461dfbe7cb44b4b673d4b04dfaf9b3163d5ef34224",
+      "resolvedVersion": "2026-07-24-horie-higashino-chuo-v1",
+      "missingPlatforms": [],
+      "platformDists": [
+        {
+          "name": "新浦安駅",
+          "dist": 7.9
+        },
+        {
+          "name": "新浦安駅北口",
+          "dist": 8.4
+        },
+        {
+          "name": "若潮公園",
+          "dist": 8.6
+        },
+        {
+          "name": "日生研修センター",
+          "dist": 12.1
+        },
+        {
+          "name": "ＮＴＴ浦安前",
+          "dist": 5.4
+        },
+        {
+          "name": "東野保育園",
+          "dist": 8.6
+        },
+        {
+          "name": "東野二丁目",
+          "dist": 7.5
+        },
+        {
+          "name": "第四街区公園入口",
+          "dist": 6.2
+        },
+        {
+          "name": "東野中央",
+          "dist": 6.8
+        }
+      ],
+      "sliceMeta": {
+        "si": 0,
+        "ei": 160,
+        "startDist": 7.9,
+        "endDist": 6.8
+      },
+      "maxJoin_m": 0,
+      "note": "Navi 中央便は浦安駅入口行きと東野中央まで同一停留所順。営業終点で終了。"
+    }
+  }
+}

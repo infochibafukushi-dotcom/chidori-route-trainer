@@ -1,0 +1,496 @@
+{
+  "checkedAt": "2026-07-24T12:27:34.303Z",
+  "source": "https://transfer-cloud.navitime.biz/keiseibus-group",
+  "outbound": {
+    "busstop": "00020739",
+    "busstopName": "浦安駅入口",
+    "berth": "E",
+    "courseSequence": "0008200228-1",
+    "timetableUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020739&course-sequence=0008200228-1",
+    "legend": [
+      "無印…【５系統】東海大浦安高校前、東野二丁目経由　新浦安駅行き",
+      "Ｎ…【５系統】東海大浦安高校前、東野二丁目経由　ＮＴＴ浦安前止まり"
+    ],
+    "samples": {
+      "5-shinurayasu": {
+        "cellText": "18",
+        "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81220000/stops?departure-busstop=00020739-1&course=0008200228&datetime=2026-07-24T06:18:00%2B09:00",
+        "course": "0008200228",
+        "stopNames": [
+          "浦安駅入口",
+          "フラワー通り",
+          "堀江三丁目",
+          "南小入口",
+          "堀江六丁目",
+          "清滝弁財天",
+          "堀江中学校前",
+          "東海大浦安高校前",
+          "東野中央",
+          "第四街区公園入口",
+          "東野二丁目",
+          "東野保育園",
+          "ＮＴＴ浦安前",
+          "日生研修センター",
+          "若潮公園",
+          "新浦安駅北口",
+          "新浦安駅"
+        ],
+        "stopCount": 17,
+        "rawStops": [
+          {
+            "time": "06:18",
+            "kind": "発",
+            "name": "浦安駅入口"
+          },
+          {
+            "time": "06:19",
+            "kind": "着",
+            "name": "フラワー通り"
+          },
+          {
+            "time": "06:20",
+            "kind": "着",
+            "name": "堀江三丁目"
+          },
+          {
+            "time": "06:21",
+            "kind": "着",
+            "name": "南小入口"
+          },
+          {
+            "time": "06:23",
+            "kind": "着",
+            "name": "堀江六丁目"
+          },
+          {
+            "time": "06:24",
+            "kind": "着",
+            "name": "清滝弁財天"
+          },
+          {
+            "time": "06:25",
+            "kind": "着",
+            "name": "堀江中学校前"
+          },
+          {
+            "time": "06:27",
+            "kind": "着",
+            "name": "東海大浦安高校前"
+          },
+          {
+            "time": "06:28",
+            "kind": "着",
+            "name": "東野中央"
+          },
+          {
+            "time": "06:29",
+            "kind": "着",
+            "name": "第四街区公園入口"
+          },
+          {
+            "time": "06:30",
+            "kind": "着",
+            "name": "東野二丁目"
+          },
+          {
+            "time": "06:31",
+            "kind": "着",
+            "name": "東野保育園"
+          },
+          {
+            "time": "06:32",
+            "kind": "着",
+            "name": "ＮＴＴ浦安前"
+          },
+          {
+            "time": "06:33",
+            "kind": "着",
+            "name": "日生研修センター"
+          },
+          {
+            "time": "06:35",
+            "kind": "着",
+            "name": "若潮公園"
+          },
+          {
+            "time": "06:37",
+            "kind": "着",
+            "name": "新浦安駅北口"
+          },
+          {
+            "time": "06:42",
+            "kind": "着",
+            "name": "新浦安駅"
+          }
+        ]
+      },
+      "5-ntt": {
+        "cellText": "23Ｎ",
+        "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81230001/stops?departure-busstop=00020739-1&course=0008200229&datetime=2026-07-24T19:23:00%2B09:00",
+        "course": "0008200229",
+        "stopNames": [
+          "浦安駅入口",
+          "フラワー通り",
+          "堀江三丁目",
+          "南小入口",
+          "堀江六丁目",
+          "清滝弁財天",
+          "堀江中学校前",
+          "東海大浦安高校前",
+          "東野中央",
+          "第四街区公園入口",
+          "東野二丁目",
+          "東野保育園",
+          "ＮＴＴ浦安前"
+        ],
+        "stopCount": 13,
+        "rawStops": [
+          {
+            "time": "19:23",
+            "kind": "発",
+            "name": "浦安駅入口"
+          },
+          {
+            "time": "19:24",
+            "kind": "着",
+            "name": "フラワー通り"
+          },
+          {
+            "time": "19:25",
+            "kind": "着",
+            "name": "堀江三丁目"
+          },
+          {
+            "time": "19:26",
+            "kind": "着",
+            "name": "南小入口"
+          },
+          {
+            "time": "19:27",
+            "kind": "着",
+            "name": "堀江六丁目"
+          },
+          {
+            "time": "19:28",
+            "kind": "着",
+            "name": "清滝弁財天"
+          },
+          {
+            "time": "19:29",
+            "kind": "着",
+            "name": "堀江中学校前"
+          },
+          {
+            "time": "19:31",
+            "kind": "着",
+            "name": "東海大浦安高校前"
+          },
+          {
+            "time": "19:32",
+            "kind": "着",
+            "name": "東野中央"
+          },
+          {
+            "time": "19:33",
+            "kind": "着",
+            "name": "第四街区公園入口"
+          },
+          {
+            "time": "19:34",
+            "kind": "着",
+            "name": "東野二丁目"
+          },
+          {
+            "time": "19:35",
+            "kind": "着",
+            "name": "東野保育園"
+          },
+          {
+            "time": "19:39",
+            "kind": "着",
+            "name": "ＮＴＴ浦安前"
+          }
+        ]
+      }
+    }
+  },
+  "inbound": {
+    "busstop": "00020619",
+    "busstopName": "新浦安駅",
+    "berth": "A",
+    "courseSequence": "0008200227-1",
+    "timetableUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200227-1",
+    "legend": [
+      "無印…【５系統】東野二丁目、東海大浦安高校前経由　浦安駅入口行き",
+      "と…【５系統】東海大浦安高校前止まり",
+      "中央…【５系統】東野中央止まり"
+    ],
+    "samples": {
+      "5-urayasu": {
+        "cellText": "30",
+        "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8121000a/stops?departure-busstop=00020619-1&course=0008200227&datetime=2026-07-24T06:30:00%2B09:00",
+        "course": "0008200227",
+        "stopNames": [
+          "新浦安駅",
+          "新浦安駅北口",
+          "若潮公園",
+          "日生研修センター",
+          "ＮＴＴ浦安前",
+          "東野保育園",
+          "東野二丁目",
+          "第四街区公園入口",
+          "東野中央",
+          "東海大浦安高校前",
+          "堀江中学校前",
+          "清滝弁財天",
+          "堀江六丁目",
+          "堀江一丁目",
+          "豊受神社",
+          "神明裏",
+          "浦安駅入口"
+        ],
+        "stopCount": 17,
+        "rawStops": [
+          {
+            "time": "06:30",
+            "kind": "発",
+            "name": "新浦安駅"
+          },
+          {
+            "time": "06:32",
+            "kind": "着",
+            "name": "新浦安駅北口"
+          },
+          {
+            "time": "06:33",
+            "kind": "着",
+            "name": "若潮公園"
+          },
+          {
+            "time": "06:35",
+            "kind": "着",
+            "name": "日生研修センター"
+          },
+          {
+            "time": "06:36",
+            "kind": "着",
+            "name": "ＮＴＴ浦安前"
+          },
+          {
+            "time": "06:38",
+            "kind": "着",
+            "name": "東野保育園"
+          },
+          {
+            "time": "06:39",
+            "kind": "着",
+            "name": "東野二丁目"
+          },
+          {
+            "time": "06:40",
+            "kind": "着",
+            "name": "第四街区公園入口"
+          },
+          {
+            "time": "06:41",
+            "kind": "着",
+            "name": "東野中央"
+          },
+          {
+            "time": "06:43",
+            "kind": "着",
+            "name": "東海大浦安高校前"
+          },
+          {
+            "time": "06:44",
+            "kind": "着",
+            "name": "堀江中学校前"
+          },
+          {
+            "time": "06:45",
+            "kind": "着",
+            "name": "清滝弁財天"
+          },
+          {
+            "time": "06:46",
+            "kind": "着",
+            "name": "堀江六丁目"
+          },
+          {
+            "time": "06:47",
+            "kind": "着",
+            "name": "堀江一丁目"
+          },
+          {
+            "time": "06:48",
+            "kind": "着",
+            "name": "豊受神社"
+          },
+          {
+            "time": "06:49",
+            "kind": "着",
+            "name": "神明裏"
+          },
+          {
+            "time": "06:54",
+            "kind": "着",
+            "name": "浦安駅入口"
+          }
+        ]
+      },
+      "5-tokai": {
+        "cellText": "15と",
+        "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81240008/stops?departure-busstop=00020619-1&course=0008200230&datetime=2026-07-25T08:15:00%2B09:00",
+        "course": "0008200230",
+        "stopNames": [
+          "新浦安駅",
+          "新浦安駅北口",
+          "若潮公園",
+          "日生研修センター",
+          "ＮＴＴ浦安前",
+          "東野保育園",
+          "東野二丁目",
+          "第四街区公園入口",
+          "東野中央",
+          "東海大浦安高校前"
+        ],
+        "stopCount": 10,
+        "rawStops": [
+          {
+            "time": "08:15",
+            "kind": "発",
+            "name": "新浦安駅"
+          },
+          {
+            "time": "08:17",
+            "kind": "着",
+            "name": "新浦安駅北口"
+          },
+          {
+            "time": "08:18",
+            "kind": "着",
+            "name": "若潮公園"
+          },
+          {
+            "time": "08:20",
+            "kind": "着",
+            "name": "日生研修センター"
+          },
+          {
+            "time": "08:21",
+            "kind": "着",
+            "name": "ＮＴＴ浦安前"
+          },
+          {
+            "time": "08:23",
+            "kind": "着",
+            "name": "東野保育園"
+          },
+          {
+            "time": "08:24",
+            "kind": "着",
+            "name": "東野二丁目"
+          },
+          {
+            "time": "08:25",
+            "kind": "着",
+            "name": "第四街区公園入口"
+          },
+          {
+            "time": "08:26",
+            "kind": "着",
+            "name": "東野中央"
+          },
+          {
+            "time": "08:28",
+            "kind": "着",
+            "name": "東海大浦安高校前"
+          }
+        ]
+      },
+      "5-higashino-chuo": {
+        "cellText": "25中央",
+        "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8129000b/stops?departure-busstop=00020619-1&course=0008200235&datetime=2026-07-24T07:25:00%2B09:00",
+        "course": "0008200235",
+        "stopNames": [
+          "新浦安駅",
+          "新浦安駅北口",
+          "若潮公園",
+          "日生研修センター",
+          "ＮＴＴ浦安前",
+          "東野保育園",
+          "東野二丁目",
+          "第四街区公園入口",
+          "東野中央"
+        ],
+        "stopCount": 9,
+        "rawStops": [
+          {
+            "time": "07:25",
+            "kind": "発",
+            "name": "新浦安駅"
+          },
+          {
+            "time": "07:27",
+            "kind": "着",
+            "name": "新浦安駅北口"
+          },
+          {
+            "time": "07:28",
+            "kind": "着",
+            "name": "若潮公園"
+          },
+          {
+            "time": "07:30",
+            "kind": "着",
+            "name": "日生研修センター"
+          },
+          {
+            "time": "07:31",
+            "kind": "着",
+            "name": "ＮＴＴ浦安前"
+          },
+          {
+            "time": "07:33",
+            "kind": "着",
+            "name": "東野保育園"
+          },
+          {
+            "time": "07:34",
+            "kind": "着",
+            "name": "東野二丁目"
+          },
+          {
+            "time": "07:35",
+            "kind": "着",
+            "name": "第四街区公園入口"
+          },
+          {
+            "time": "07:36",
+            "kind": "着",
+            "name": "東野中央"
+          }
+        ]
+      }
+    }
+  },
+  "stopIdMapFromOutboundTrip": {
+    "浦安駅入口": "00020739",
+    "フラワー通り": "00020723",
+    "堀江三丁目": "00020705",
+    "南小入口": "00020651",
+    "堀江六丁目": "00020708",
+    "清滝弁財天": "00020624",
+    "堀江中学校前": "00020706",
+    "東海大浦安高校前": "00020631",
+    "東野中央": "00020646",
+    "第四街区公園入口": "00020632",
+    "東野二丁目": "00020647",
+    "東野保育園": "00020648",
+    "ＮＴＴ浦安前": "00020721",
+    "日生研修センター": "00020660",
+    "若潮公園": "00020873",
+    "新浦安駅北口": "00020668",
+    "新浦安駅": "00020619"
+  }
+}
