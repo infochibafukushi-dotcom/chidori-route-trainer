@@ -280,10 +280,16 @@
     return { index: bestIndex, distance: bestDistance };
   }
 
+  function pathHashPayload(path) {
+    return (path || [])
+      .map((point) => `${Number(point.lat).toFixed(7)},${Number(point.lng).toFixed(7)}`)
+      .join(';');
+  }
+
   async function hashPathSha256(path) {
-    const json = JSON.stringify(path);
+    const payload = pathHashPayload(path);
     if (typeof crypto !== 'undefined' && crypto.subtle) {
-      const data = new TextEncoder().encode(json);
+      const data = new TextEncoder().encode(payload);
       const digest = await crypto.subtle.digest('SHA-256', data);
       return Array.from(new Uint8Array(digest))
         .map((byte) => byte.toString(16).padStart(2, '0'))
@@ -292,7 +298,7 @@
     if (typeof require === 'function') {
       try {
         const nodeCrypto = require('crypto');
-        return nodeCrypto.createHash('sha256').update(json).digest('hex');
+        return nodeCrypto.createHash('sha256').update(payload).digest('hex');
       } catch (error) {
         /* ignore */
       }
@@ -305,7 +311,7 @@
     if (typeof require === 'function') {
       try {
         const nodeCrypto = require('crypto');
-        return nodeCrypto.createHash('sha256').update(JSON.stringify(path)).digest('hex');
+        return nodeCrypto.createHash('sha256').update(pathHashPayload(path)).digest('hex');
       } catch (error) {
         /* ignore */
       }
@@ -396,8 +402,12 @@
       system.pathIssues = [{ message: `resolvedVersion不一致（系統=${definition.key}）` }];
       return;
     }
-    system.pathInvalid = false;
-    system.pathIssues = null;
+    // ブラウザでは sync ハッシュ不能のため、ここでは pathInvalid を落とさない。
+    // 本番検証は resolveSystem → await hashPathSha256 で確定する。
+    if (recomputed && pathData.pathHash && recomputed === pathData.pathHash) {
+      system.pathInvalid = false;
+      system.pathIssues = null;
+    }
   }
 
   /** OSM platform 座標を強制適用し、必要であれば path も再適用する。変更有無を返す。 */
@@ -427,7 +437,7 @@
       stopChanged = true;
     });
 
-    const versionMismatch = Boolean(system.resolvedVersion) && system.resolvedVersion !== expectedResolvedVersion(definition.key);
+    const versionMismatch = system.resolvedVersion !== expectedResolvedVersion(definition.key);
     const pathMissing = !Array.isArray(system.path) || system.path.length < 2 || system.pathInvalid;
     if (coordsChanged || versionMismatch || pathMissing) {
       applySystemPath(definition, system);
@@ -533,6 +543,70 @@
     }
   }
 
+  function pathIntegrityFail(system, definition, reasons) {
+    const policy = window.TOMIOKA_PATH_POLICY_V1;
+    const list = Array.isArray(reasons) && reasons.length ? reasons : ['検証失敗'];
+    system.pathInvalid = true;
+    system.pathIssues = list.map((message) => ({ message }));
+    const message = policy?.formatInvalidMessage
+      ? policy.formatInvalidMessage(definition.key, list)
+      : [
+        '富岡線の走行データを確認できません。',
+        `系統：${definition.key}`,
+        `理由：${list[0]}`,
+      ].join('\n');
+    return message;
+  }
+
+  /** 本番ブラウザで pathHash / resolvedVersion / NaN / 最低点数 / maxGap を検査する。 */
+  async function validateSystemPathIntegrity(definition, system) {
+    const pathData = pathDataForSystem(definition.key);
+    const expectedHash = pathData?.pathHash || null;
+    const expectedVersion = expectedResolvedVersion(definition.key);
+    if (!Array.isArray(system.path) || system.path.length < 2) {
+      return { ok: false, message: pathIntegrityFail(system, definition, ['道路形状未設定']) };
+    }
+    let recomputed;
+    try {
+      recomputed = await hashPathSha256(system.path);
+    } catch (error) {
+      return {
+        ok: false,
+        message: pathIntegrityFail(system, definition, [
+          `pathHash計算失敗（${error instanceof Error ? error.message : String(error)}）`,
+        ]),
+      };
+    }
+    system.pathHash = expectedHash || recomputed;
+    const policy = window.TOMIOKA_PATH_POLICY_V1;
+    const result = policy?.validateRuntimePath
+      ? policy.validateRuntimePath({
+        systemKey: definition.key,
+        path: system.path,
+        pathHash: recomputed,
+        expectedPathHash: expectedHash,
+        resolvedVersion: system.resolvedVersion,
+        expectedResolvedVersion: expectedVersion,
+        directionGroup: system.directionGroup || definition.directionGroup,
+        pathSource: system.pathSource,
+      })
+      : {
+        ok: Boolean(expectedHash && recomputed === expectedHash && system.resolvedVersion === expectedVersion),
+        reasons: [
+          !(expectedHash && recomputed === expectedHash) ? 'pathHash不一致' : null,
+          system.resolvedVersion !== expectedVersion ? 'resolvedVersion不一致' : null,
+        ].filter(Boolean),
+      };
+
+    if (!result.ok) {
+      return { ok: false, message: pathIntegrityFail(system, definition, result.reasons) };
+    }
+    system.pathInvalid = false;
+    system.pathIssues = null;
+    system.pathHash = expectedHash;
+    return { ok: true, message: null, maxGapM: result.maxGapM };
+  }
+
   async function resolveSystem(key, { force = false, statusCallback = null } = {}) {
     const route = ensureRoute();
     const definition = SYSTEM_DEFINITIONS[key];
@@ -547,6 +621,9 @@
       });
     }
     applyAuthoritativePlatformsAndPath(definition, system);
+    if (force || !Array.isArray(system.path) || system.path.length < 2) {
+      applySystemPath(definition, system);
+    }
     if (!system.stops.every(validPosition)) {
       const missing = system.stops.filter((stop) => !validPosition(stop)).map((stop) => stop.name);
       throw new Error(`停留所座標が不足しています：${missing.join('、')}`);
@@ -554,8 +631,12 @@
     if (!Array.isArray(system.path) || system.path.length < 2) {
       throw new Error('道路形状（走行ルート）が未設定です。');
     }
-    if (!system.pathHash) {
-      throw new Error(`道路形状のハッシュを計算できませんでした（系統=${definition.key}）。`);
+    const integrity = await validateSystemPathIntegrity(definition, system);
+    if (!integrity.ok) {
+      applyDirectionStops(route, definition, system);
+      route.tomiokaVersion = VERSION;
+      save();
+      throw new Error(integrity.message);
     }
     applyDirectionStops(route, definition, system);
     route.tomiokaVersion = VERSION;
@@ -728,22 +809,50 @@
   async function drawGuidance(route, definition, system, token) {
     cleanupGuidance?.();
     const status = document.getElementById('mapStatus');
+    const showStatusError = (message) => {
+      if (!status) return;
+      status.hidden = false;
+      status.removeAttribute('aria-hidden');
+      status.dataset.state = 'error';
+      status.textContent = message;
+    };
     let active = system;
-    if (!active.stops.every(validPosition) || !Array.isArray(active.path) || active.path.length < 2 || active.pathInvalid) {
-      try {
-        active = await resolveSystem(definition.key, { statusCallback: (text) => { if (status) status.textContent = text; } });
-      } catch (error) {
-        const missing = (system.stops || []).filter((stop) => !validPosition(stop)).map((stop) => stop.name);
-        const base = error instanceof Error ? error.message : String(error);
-        throw new Error([
-          `系統=${definition.key}`,
-          base,
+    try {
+      active = await resolveSystem(definition.key, {
+        statusCallback: (text) => {
+          if (!status) return;
+          status.hidden = false;
+          status.removeAttribute('aria-hidden');
+          status.textContent = text;
+        },
+      });
+    } catch (error) {
+      const missing = (system.stops || []).filter((stop) => !validPosition(stop)).map((stop) => stop.name);
+      const issues = system.pathIssues || [];
+      const issueText = issues.map((item) => item.message || String(item)).join(' / ');
+      const base = error instanceof Error ? error.message : String(error);
+      const message = base.includes('富岡線の走行データを確認できません')
+        ? base
+        : [
+          '富岡線の走行データを確認できません。',
+          `系統：${definition.key}`,
+          `理由：${issueText || base}`,
           missing.length ? `不足の停留所：${missing.join('、')}` : null,
-        ].filter(Boolean).join(' | '));
-      }
+        ].filter(Boolean).join('\n');
+      showStatusError(message);
+      throw new Error(message);
     }
     if (token !== renderToken || page !== 'routes' || routeState.routeId !== ROUTE_ID) return;
     active = route.systems[definition.key] || active;
+    if (active.pathInvalid) {
+      const message = pathIntegrityFail(
+        active,
+        definition,
+        (active.pathIssues || []).map((item) => item.message).filter(Boolean),
+      );
+      showStatusError(message);
+      throw new Error(message);
+    }
     if (!active.stops.every(validPosition) || !Array.isArray(active.path) || active.path.length < 2) {
       const missing = (active.stops || []).filter((stop) => !validPosition(stop)).map((stop) => stop.name);
       throw new Error(`系統=${definition.key} | 停留所または道路形状が未設定です | 不足：${missing.join('、') || '(なし)'}`);
@@ -1132,6 +1241,15 @@
 
     const startDriving = () => {
       if (simulation.running) return;
+      const live = route.systems?.[definition.key];
+      if (live?.pathInvalid) {
+        const reason = (live.pathIssues || []).map((item) => item.message).filter(Boolean)[0] || 'pathInvalid';
+        return failStart([
+          '富岡線の走行データを確認できません。',
+          `系統：${definition.key}`,
+          `理由：${reason}`,
+        ].join(' '));
+      }
       if (!path.length) return failStart('pathが空です');
       if (!(metrics.total > 0)) return failStart('path距離が不正です');
       if (!panorama) return failStart('panorama未初期化');
@@ -1289,9 +1407,13 @@
     drawGuidance(route, definition, system, token).catch((error) => {
       const node = document.getElementById('mapStatus');
       if (node) {
+        node.hidden = false;
+        node.removeAttribute('aria-hidden');
         node.dataset.state = 'error';
         const message = error instanceof Error ? error.message : String(error);
-        node.textContent = message.includes('系統=') ? message : (`系統=${key} | ${message}`);
+        node.textContent = message.includes('富岡線の走行データを確認できません') || message.includes('系統')
+          ? message
+          : (`系統=${key} | ${message}`);
       }
       console.error('[tomioka] drawGuidance failed', definition.key, error);
     });
@@ -1590,6 +1712,7 @@
     ensureRoute,
     resolveSystem,
     resolveAllSystems,
+    validateSystemPathIntegrity,
     getSelectedSystemKey,
     setSelectedSystemKey,
     nearestPathIndex,

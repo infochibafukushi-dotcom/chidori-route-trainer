@@ -1,4 +1,4 @@
-const CACHE_NAME = 'chidori-route-map-v64';
+const CACHE_NAME = 'chidori-route-map-v65';
 const APP_SHELL = [
   './',
   './index.html',
@@ -14,7 +14,7 @@ const APP_SHELL = [
   './hokuei-guidance-v22.css?v=34',
   './hokuei-stop-images-v25.css?v=32',
   './urayasu-higashi-danchi-stop-images-v1.css?v=63',
-  './tomioka-stop-images-v1.css?v=64',
+  './tomioka-stop-images-v1.css?v=65',
   './study-materials.css?v=61',
   './data.js?v=32',
   './app.js?v=61',
@@ -26,7 +26,7 @@ const APP_SHELL = [
   './hokuei-authoritative-v12.js?v=33',
   './hokuei-manual-override-v13.js?v=33',
   './hokuei-shared-coordinates-v15.js?v=32',
-  './hokuei-no-uturn-v17.js?v=64',
+  './hokuei-no-uturn-v17.js?v=65',
   './imagawa-directions-compat-v2.js?v=56',
   './hokuei-streetview-stops-v26.js?v=32',
   './hokuei-guidance-v22.js?v=57',
@@ -39,11 +39,11 @@ const APP_SHELL = [
   './urayasu-higashi-danchi-path-v1.js?v=63',
   './urayasu-higashi-danchi-path-policy-v1.js?v=63',
   './urayasu-higashi-danchi-route-v1.js?v=63',
-  './tomioka-platforms-v1.js?v=64',
-  './tomioka-path-v1.js?v=64',
-  './tomioka-path-policy-v1.js?v=64',
-  './tomioka-stop-images-v1.js?v=64',
-  './tomioka-route-v1.js?v=64',
+  './tomioka-platforms-v1.js?v=65',
+  './tomioka-path-v1.js?v=65',
+  './tomioka-path-policy-v1.js?v=65',
+  './tomioka-stop-images-v1.js?v=65',
+  './tomioka-route-v1.js?v=65',
   './pwa-install.js?v=61'
 ];
 

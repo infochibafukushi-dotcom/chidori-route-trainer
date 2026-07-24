@@ -1,0 +1,51 @@
+[
+  {
+    "file": "focus-maihama-end-4-maihama-z19.png",
+    "label": "舞浜駅終点 4-maihama",
+    "platformDistM": 4.7,
+    "headingDeg": 110,
+    "pathHashPrefix": "2c0371f0083c28cc"
+  },
+  {
+    "file": "focus-maihama-pass-4-tdl-z19.png",
+    "label": "舞浜駅通過 4-tdl",
+    "platformDistM": 4.7,
+    "headingDeg": 116,
+    "pathHashPrefix": "a237430343107542"
+  },
+  {
+    "file": "focus-maihama-start-4-urayasu-maihama-z19.png",
+    "label": "舞浜駅始発 4-urayasu-maihama",
+    "platformDistM": 7.1,
+    "headingDeg": 140,
+    "pathHashPrefix": "e2206ae2d0436ad2"
+  },
+  {
+    "file": "focus-tdl-end-4-tdl-z19.png",
+    "label": "TDL終点 4-tdl",
+    "platformDistM": 3.3,
+    "headingDeg": 90,
+    "pathHashPrefix": "a237430343107542"
+  },
+  {
+    "file": "focus-tdl-start-4-urayasu-tdl-z19.png",
+    "label": "TDL始発 4-urayasu-tdl",
+    "platformDistM": 3.3,
+    "headingDeg": 131,
+    "pathHashPrefix": "ba624a931dbb38b9"
+  },
+  {
+    "file": "focus-chidori-end-4-chidori-z19.png",
+    "label": "千鳥車庫終点 4-chidori",
+    "platformDistM": 4.9,
+    "headingDeg": 51,
+    "pathHashPrefix": "8e7a618dd2cf38b4"
+  },
+  {
+    "file": "focus-chidori-start-4-urayasu-chidori-z19.png",
+    "label": "千鳥車庫始発 4-urayasu-chidori",
+    "platformDistM": 5.2,
+    "headingDeg": 241,
+    "pathHashPrefix": "1f3906df8f5874f9"
+  }
+]
