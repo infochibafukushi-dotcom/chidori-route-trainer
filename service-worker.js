@@ -1,10 +1,10 @@
-const CACHE_NAME = 'chidori-route-map-v70';
+const CACHE_NAME = 'chidori-route-map-v71';
 const APP_SHELL = [
   './',
   './index.html',
-  './manifest.webmanifest?v=61',
+  './manifest.webmanifest?v=71',
   './app-icon.svg',
-  './styles.css?v=61',
+  './styles.css?v=71',
   './hokuei-route.css?v=33',
   './stop-editor-v8.css?v=32',
   './d1-sync.css?v=32',
@@ -18,13 +18,13 @@ const APP_SHELL = [
   './horie-stop-images-v1.css?v=66',
   './shiyakusho-stop-images-v1.css?v=67',
   './maihama-line-stop-images-v1.css?v=69',
-  './study-materials.css?v=61',
+  './study-materials.css?v=71',
   './data.js?v=32',
-  './app.js?v=61',
-  './study-materials-data.js?v=61',
-  './study-materials.js?v=61',
+  './app.js?v=71',
+  './study-materials-data.js?v=71',
+  './study-materials.js?v=71',
   './home-navigation-v25.js?v=32',
-  './route-map-link.js?v=32',
+  './route-map-link.js?v=71',
   './d1-sync.js?v=61',
   './hokuei-authoritative-v12.js?v=33',
   './hokuei-manual-override-v13.js?v=33',
@@ -62,7 +62,7 @@ const APP_SHELL = [
   './maihama-line-path-policy-v1.js?v=69',
   './maihama-line-stop-images-v1.js?v=69',
   './maihama-line-route-v1.js?v=69',
-  './pwa-install.js?v=61'
+  './pwa-install.js?v=71'
 ];
 
 self.addEventListener('install', (event) => {

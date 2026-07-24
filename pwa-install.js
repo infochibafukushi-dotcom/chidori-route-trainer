@@ -1,5 +1,5 @@
 (() => {
-  const SW_VERSION = '62';
+  const SW_VERSION = '71';
   const RELOAD_KEY = `chidori-sw-reloaded-${SW_VERSION}`;
   let installPrompt = null;
 
@@ -7,46 +7,79 @@
     window.matchMedia('(display-mode: standalone)').matches ||
     window.navigator.standalone === true;
 
+  const isIos = () =>
+    /iphone|ipad|ipod/i.test(window.navigator.userAgent) ||
+    (window.navigator.platform === 'MacIntel' && window.navigator.maxTouchPoints > 1);
+
   function setAppName() {
     const heading = document.querySelector('.header h1');
-    if (heading && heading.textContent !== '千鳥路線図') heading.textContent = '千鳥路線図';
+    if (heading && heading.textContent !== '千鳥路線図' && document.querySelector('.app--home')) {
+      heading.textContent = '千鳥路線図';
+    }
   }
 
-  function installButton() {
-    setAppName();
-    const home = document.querySelector('.home');
-    if (!home || home.querySelector('[data-pwa-install]') || isInstalled()) return;
+  function markInstalled(button) {
+    if (!button) return;
+    button.classList.add('is-installed');
+    button.disabled = true;
+    const label = button.querySelector('.home-shortcut-label');
+    if (label) {
+      label.innerHTML = '<span>ショートカット</span><span>作成済み</span>';
+    } else {
+      button.textContent = '作成済み';
+    }
+  }
 
-    const button = document.createElement('button');
-    button.type = 'button';
-    button.className = 'menu';
-    button.dataset.pwaInstall = '';
-    button.innerHTML = '<strong>千鳥路線図をインストール</strong><span>バスのアイコンでホーム画面に追加</span>';
-    button.onclick = async () => {
-      if (installPrompt) {
-        installPrompt.prompt();
-        await installPrompt.userChoice;
-        installPrompt = null;
-        button.remove();
+  function bindInstallButton() {
+    setAppName();
+    const button = document.querySelector('[data-pwa-install]');
+    if (!button) return;
+
+    if (isInstalled()) {
+      markInstalled(button);
+      return;
+    }
+
+    if (button.dataset.bound === '1') return;
+    button.dataset.bound = '1';
+
+    button.addEventListener('click', async () => {
+      if (isInstalled()) {
+        markInstalled(button);
         return;
       }
-      alert('Chromeのメニューから「アプリをインストール」または「ホーム画面に追加」を押してください。');
-    };
-    home.prepend(button);
+
+      if (installPrompt) {
+        installPrompt.prompt();
+        const choice = await installPrompt.userChoice;
+        installPrompt = null;
+        if (choice?.outcome === 'accepted') {
+          markInstalled(button);
+        }
+        return;
+      }
+
+      if (isIos()) {
+        alert('Safariの共有ボタンから「ホーム画面に追加」を選んでください。');
+        return;
+      }
+
+      alert('ブラウザのメニューから「アプリをインストール」または「ホーム画面に追加」を押してください。');
+    });
   }
 
   window.addEventListener('beforeinstallprompt', (event) => {
     event.preventDefault();
     installPrompt = event;
-    installButton();
+    bindInstallButton();
   });
 
   window.addEventListener('appinstalled', () => {
     installPrompt = null;
-    document.querySelector('[data-pwa-install]')?.remove();
+    markInstalled(document.querySelector('[data-pwa-install]'));
   });
 
-  new MutationObserver(installButton).observe(document.getElementById('app'), {
+  new MutationObserver(bindInstallButton).observe(document.getElementById('app'), {
     childList: true,
     subtree: true,
   });
@@ -74,5 +107,5 @@
     });
   }
 
-  installButton();
+  bindInstallButton();
 })();

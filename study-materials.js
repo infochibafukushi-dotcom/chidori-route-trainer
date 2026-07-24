@@ -38,7 +38,7 @@
 
     shell(
       `<section class="study-materials">` +
-      `<h2 class="study-page-title">勉強資料</h2>` +
+      `<h2 class="study-page-title">基本研修資料</h2>` +
       `<p class="study-page-lead">乗務員向けの作業マニュアル・案内用語</p>` +
       `<div class="study-list">${items || '<div class="empty">資料がありません。</div>'}</div>` +
       `</section>`
