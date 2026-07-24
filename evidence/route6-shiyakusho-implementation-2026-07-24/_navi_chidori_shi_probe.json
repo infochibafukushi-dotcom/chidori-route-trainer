@@ -1,0 +1,228 @@
+{
+  "scrapedAt": "2026-07-24T13:52:57.937Z",
+  "samples": [
+    {
+      "class": "6-urayasu-chidori",
+      "cellText": "12市",
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/812f0000/stops?departure-busstop=00020620-1&course=0008200241&datetime=2026-07-24T06:12:00%2B09:00",
+      "stopNames": [
+        "千鳥車庫",
+        "運動公園",
+        "舞浜三丁目",
+        "見明川",
+        "弁天四丁目",
+        "弁天橋",
+        "東野三丁目",
+        "東海大浦安高校前",
+        "東海大浦安高校入口",
+        "東野プール",
+        "東野一丁目",
+        "市役所前",
+        "商工会議所",
+        "消防本部前",
+        "猫実",
+        "神明裏",
+        "浦安駅入口"
+      ],
+      "stopCount": 17,
+      "stops": [
+        {
+          "time": "06:12",
+          "kind": "発",
+          "name": "千鳥車庫"
+        },
+        {
+          "time": "06:14",
+          "kind": "着",
+          "name": "運動公園"
+        },
+        {
+          "time": "06:14",
+          "kind": "着",
+          "name": "舞浜三丁目"
+        },
+        {
+          "time": "06:16",
+          "kind": "着",
+          "name": "見明川"
+        },
+        {
+          "time": "06:17",
+          "kind": "着",
+          "name": "弁天四丁目"
+        },
+        {
+          "time": "06:18",
+          "kind": "着",
+          "name": "弁天橋"
+        },
+        {
+          "time": "06:19",
+          "kind": "着",
+          "name": "東野三丁目"
+        },
+        {
+          "time": "06:20",
+          "kind": "着",
+          "name": "東海大浦安高校前"
+        },
+        {
+          "time": "06:22",
+          "kind": "着",
+          "name": "東海大浦安高校入口"
+        },
+        {
+          "time": "06:23",
+          "kind": "着",
+          "name": "東野プール"
+        },
+        {
+          "time": "06:24",
+          "kind": "着",
+          "name": "東野一丁目"
+        },
+        {
+          "time": "06:25",
+          "kind": "着",
+          "name": "市役所前"
+        },
+        {
+          "time": "06:26",
+          "kind": "着",
+          "name": "商工会議所"
+        },
+        {
+          "time": "06:27",
+          "kind": "着",
+          "name": "消防本部前"
+        },
+        {
+          "time": "06:28",
+          "kind": "着",
+          "name": "猫実"
+        },
+        {
+          "time": "06:29",
+          "kind": "着",
+          "name": "神明裏"
+        },
+        {
+          "time": "06:34",
+          "kind": "着",
+          "name": "浦安駅入口"
+        }
+      ],
+      "heading": "通過時刻表",
+      "title": "6 [6]（新浦安駅北口経由）浦安駅入口、（南小入口経由）浦安駅入口（市役所前経由）浦安駅入口（弁天中央経由）（新浦安駅経由）行の通過時刻表 | 京成バスナビ | 京成電鉄バスグループ",
+      "bodySnippet": "京成電鉄バスグループ\n>\nバス停時刻表検索\n>\n千鳥車庫 系統・時刻表・のりば一覧\n>\n千鳥車庫 時刻表\n>\n6 [6]（新浦安駅北口経由）浦安駅入口、（南小入口経由）浦安駅入口（市役所前経由）浦安駅入口（弁天中央経由）（新浦安駅経由）行 通過時刻表\n京成電鉄バスグループ\n検索トップページ\nLanguage\n日本語\nEnglish\n简体中文\n繁體中文\n한국어\nไทย\n通過時刻表\n6 [6]（新浦安駅北口経由）浦安駅入口、（南小入口経由）浦安駅入口（市役所前経由）浦安駅入口（弁天中央経由）（新浦安駅経由）行\n2026年7月24日時点\n06:12\n発\n千鳥車庫\n系統・時刻表一覧\n06:14\n着\n運動公園\n170円\n系統・時刻表一覧\n06:14\n着\n舞浜三丁目\n170円\n系統・時刻表一覧\n06:16\n着\n見明川\n170円\n系統・時刻表一覧\n06:17\n着\n弁天四丁目\n170円\n系統・時刻表一覧\n06:18\n着\n弁天橋\n170円\n系統・時刻表一覧\n06:19\n着\n東野三丁目\n170円\n系統・時刻表一覧\n06:20\n着\n東海大浦安高校前\n170円\n系統・時刻表一覧\n06:22\n着\n東海大浦安高校入口\n230円\n系統・時刻表一覧\n06:23\n着\n東野プール\n230円\n系統・時刻表一覧\n06:24\n着\n東野一丁目\n230円\n系統・時刻表一覧\n06:25\n着\n市役所前\n230円\n系統・時刻表一覧\n06:26\n着\n商工会議所\n280円\n系統・時刻表一覧\n06:27\n着\n消防本部前\n280円\n系統・時刻表一覧\n06:28\n着\n猫実\n280円\n系統・時刻表一覧\n06:29\n着\n神明裏\n280円\n系統・時刻表一覧\n06:34\n着\n浦安駅入口\n280円\n系統・時刻表一覧\nページの先頭へ戻る\nご利用にあたって（免責について等）\nCopyright ©Keisei Bus Co., Ltd. All rights reserved.\nPowered by",
+      "busstopLinks": [
+        {
+          "text": "千鳥車庫 系統・時刻表・のりば一覧",
+          "href": "/keiseibus-group/courses?busstop=00020620&date=2026-07-24",
+          "id": "00020620"
+        },
+        {
+          "text": "千鳥車庫 時刻表",
+          "href": "/keiseibus-group/courses/timetables?busstop=00020620&course-sequence=0008200241-1",
+          "id": "00020620"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020620&date=2026-07-24",
+          "id": "00020620"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020746&date=2026-07-24",
+          "id": "00020746"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020679&date=2026-07-24",
+          "id": "00020679"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020850&date=2026-07-24",
+          "id": "00020850"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020682&date=2026-07-24",
+          "id": "00020682"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020680&date=2026-07-24",
+          "id": "00020680"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020645&date=2026-07-24",
+          "id": "00020645"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020631&date=2026-07-24",
+          "id": "00020631"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020637&date=2026-07-24",
+          "id": "00020637"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020643&date=2026-07-24",
+          "id": "00020643"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020644&date=2026-07-24",
+          "id": "00020644"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020869&date=2026-07-24",
+          "id": "00020869"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020876&date=2026-07-24",
+          "id": "00020876"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020877&date=2026-07-24",
+          "id": "00020877"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020666&date=2026-07-24",
+          "id": "00020666"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020623&date=2026-07-24",
+          "id": "00020623"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020739&date=2026-07-24",
+          "id": "00020739"
+        }
+      ],
+      "nameChecks": {
+        "hasShiyakushoMae": true,
+        "hasShiyakushoIriguchi": false,
+        "hasShiyakushoIriguchiYubin": false,
+        "hasYubinMae": false,
+        "hasTokaiIriguchi": true,
+        "hasTokaiMae": true,
+        "hasChidoriKita": false,
+        "hasShinurayasu": false
+      }
+    }
+  ],
+  "errors": []
+}

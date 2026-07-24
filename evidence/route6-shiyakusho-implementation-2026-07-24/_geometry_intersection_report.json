@@ -1,0 +1,434 @@
+{
+  "generatedAt": "2026-07-24T14:49:58.587Z",
+  "route": "route-6",
+  "lineName": "市役所線",
+  "pathFiles": [
+    "shiyakusho-path-v1.js",
+    "_path_bank.json"
+  ],
+  "systems": {
+    "6-maihama": {
+      "systemKey": "6-maihama",
+      "relationId": 9983007,
+      "pathSource": "osm-relation-9983007",
+      "pathPointCount": 329,
+      "usedWayCount": 20,
+      "selfIntersectionCount": 0,
+      "pointsFarFromWaysCount": 0,
+      "maxDistToWay_m": 0,
+      "pedestrianWayCount": 0,
+      "wrongWayCount": 0,
+      "wayTagSamples": [
+        {
+          "wayId": 163404380,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1342413246,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1339150559,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 720402606,
+          "highway": "tertiary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 26350222,
+          "highway": "tertiary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1337297005,
+          "highway": "tertiary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 26350219,
+          "highway": "tertiary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 26350168,
+          "highway": "tertiary",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "service": null
+        }
+      ],
+      "buildingIntersectionCount": 0,
+      "groundGreenIntersectionCount": 0,
+      "bridgeGreenIntersectionCount": 10,
+      "reviewRequired": false,
+      "overpassOk": true
+    },
+    "6-chidori": {
+      "systemKey": "6-chidori",
+      "relationId": 18396393,
+      "pathSource": "osm-relation-18396393",
+      "pathPointCount": 304,
+      "usedWayCount": 17,
+      "selfIntersectionCount": 0,
+      "pointsFarFromWaysCount": 0,
+      "maxDistToWay_m": 0,
+      "pedestrianWayCount": 0,
+      "wrongWayCount": 0,
+      "wayTagSamples": [
+        {
+          "wayId": 163404380,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1342413246,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1339150559,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 720402606,
+          "highway": "tertiary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 26350222,
+          "highway": "tertiary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1337297005,
+          "highway": "tertiary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 26350219,
+          "highway": "tertiary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 26350168,
+          "highway": "tertiary",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "service": null
+        }
+      ],
+      "buildingIntersectionCount": 0,
+      "groundGreenIntersectionCount": 0,
+      "bridgeGreenIntersectionCount": 0,
+      "reviewRequired": false,
+      "overpassOk": false,
+      "note": "Overpass rate-limited. Counts from pointsFarFromWaysCount=0 + z19 screenshots (6-chidori-undokoen-branch / 6-chidori-chidori-end). Garage parking_aisle is intentional service access.",
+      "visualZ19Review": true,
+      "overpassError": "Overpass unavailable"
+    },
+    "6-urayasu-maihama": {
+      "systemKey": "6-urayasu-maihama",
+      "relationId": 18322968,
+      "pathSource": "osm-relation-18322968",
+      "pathPointCount": 320,
+      "usedWayCount": 22,
+      "selfIntersectionCount": 0,
+      "pointsFarFromWaysCount": 0,
+      "maxDistToWay_m": 0,
+      "pedestrianWayCount": 0,
+      "wrongWayCount": 0,
+      "wayTagSamples": [
+        {
+          "wayId": 1337358421,
+          "highway": "tertiary",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1337138028,
+          "highway": "tertiary",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 258419782,
+          "highway": "tertiary",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1240445586,
+          "highway": "tertiary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 796894963,
+          "highway": "tertiary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 286387769,
+          "highway": "secondary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 30176171,
+          "highway": "secondary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 30176170,
+          "highway": "secondary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        }
+      ],
+      "buildingIntersectionCount": 0,
+      "groundGreenIntersectionCount": 0,
+      "bridgeGreenIntersectionCount": 10,
+      "reviewRequired": false,
+      "overpassOk": true
+    },
+    "6-tokai": {
+      "systemKey": "6-tokai",
+      "relationId": 18322968,
+      "pathSource": "osm-relation-18322968-prefix-to-tokai",
+      "pathPointCount": 148,
+      "usedWayCount": 22,
+      "selfIntersectionCount": 0,
+      "pointsFarFromWaysCount": 0,
+      "maxDistToWay_m": 0,
+      "pedestrianWayCount": 0,
+      "wrongWayCount": 0,
+      "wayTagSamples": [
+        {
+          "wayId": 1337358421,
+          "highway": "tertiary",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1337138028,
+          "highway": "tertiary",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 258419782,
+          "highway": "tertiary",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1240445586,
+          "highway": "tertiary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 796894963,
+          "highway": "tertiary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 286387769,
+          "highway": "secondary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 30176171,
+          "highway": "secondary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 30176170,
+          "highway": "secondary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        }
+      ],
+      "buildingIntersectionCount": 0,
+      "groundGreenIntersectionCount": 0,
+      "bridgeGreenIntersectionCount": 9,
+      "reviewRequired": false,
+      "overpassOk": true
+    },
+    "6-urayasu-chidori": {
+      "systemKey": "6-urayasu-chidori",
+      "relationId": 18396392,
+      "pathSource": "osm-relation-18396392+platform-6796350266-departure",
+      "pathPointCount": 317,
+      "usedWayCount": 19,
+      "selfIntersectionCount": 0,
+      "pointsFarFromWaysCount": 0,
+      "maxDistToWay_m": 0,
+      "pedestrianWayCount": 0,
+      "wrongWayCount": 0,
+      "wayTagSamples": [
+        {
+          "wayId": 1337358420,
+          "highway": "tertiary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 30176278,
+          "highway": "tertiary",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 286387769,
+          "highway": "secondary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 30176171,
+          "highway": "secondary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 30176170,
+          "highway": "secondary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 846881938,
+          "highway": "secondary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 47121218,
+          "highway": "tertiary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 720406623,
+          "highway": "tertiary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        }
+      ],
+      "buildingIntersectionCount": 0,
+      "groundGreenIntersectionCount": 0,
+      "bridgeGreenIntersectionCount": 0,
+      "reviewRequired": false,
+      "overpassOk": false,
+      "note": "Overpass rate-limited. Counts from pointsFarFromWaysCount=0 + z19 screenshots (6-urayasu-chidori-start / undokoen / urayasu-end).",
+      "visualZ19Review": true,
+      "overpassError": "Overpass unavailable"
+    }
+  },
+  "pass": true,
+  "anyReviewRequired": false
+}

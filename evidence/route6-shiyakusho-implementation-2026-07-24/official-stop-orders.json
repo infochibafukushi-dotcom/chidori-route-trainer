@@ -1,0 +1,583 @@
+{
+  "checkedAt": "2026-07-24T13:53:01.431Z",
+  "sourcePriority": [
+    "京成バスナビ個別便通過時刻表（/stops?）",
+    "京成バスナビ系統・行先凡例"
+  ],
+  "lineName": "市役所線",
+  "systemNumber": "6",
+  "systems": {
+    "6-maihama": {
+      "title": "舞浜駅行き",
+      "directionGroup": "outbound",
+      "departure": "浦安駅入口",
+      "destination": "舞浜駅",
+      "timetableSymbol": "無印",
+      "berth": "A",
+      "naviBusstop": "00020739",
+      "courseSequence": "0008200238-1",
+      "course": "0008200238",
+      "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200238-1)",
+      "sourceUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/812c0000/stops?departure-busstop=00020739-1&course=0008200238&datetime=2026-07-24T06:14:00%2B09:00",
+      "confirmedDate": "2026-07-24",
+      "stopCount": 18,
+      "stops": [
+        {
+          "officialName": "浦安駅入口",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200238-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "神明裏",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200238-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "猫実",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200238-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "消防本部前",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200238-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "商工会議所",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200238-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "市役所前",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200238-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "東野一丁目",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200238-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "東野プール",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200238-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "東海大浦安高校入口",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200238-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "東海大浦安高校前",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200238-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "東野三丁目",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200238-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "弁天橋",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200238-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "弁天四丁目",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200238-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "見明川",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200238-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "舞浜三丁目",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200238-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "運動公園",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200238-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "オリエンタルランド本社前",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200238-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "舞浜駅",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200238-1)",
+          "checkedDate": "2026-07-24"
+        }
+      ],
+      "stopNames": [
+        "浦安駅入口",
+        "神明裏",
+        "猫実",
+        "消防本部前",
+        "商工会議所",
+        "市役所前",
+        "東野一丁目",
+        "東野プール",
+        "東海大浦安高校入口",
+        "東海大浦安高校前",
+        "東野三丁目",
+        "弁天橋",
+        "弁天四丁目",
+        "見明川",
+        "舞浜三丁目",
+        "運動公園",
+        "オリエンタルランド本社前",
+        "舞浜駅"
+      ]
+    },
+    "6-chidori": {
+      "title": "千鳥車庫行き",
+      "directionGroup": "outbound",
+      "departure": "浦安駅入口",
+      "destination": "千鳥車庫",
+      "timetableSymbol": "ち",
+      "berth": "A",
+      "naviBusstop": "00020739",
+      "courseSequence": "0008200238-1",
+      "course": "0008200242",
+      "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200238-1)",
+      "sourceUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81300003/stops?departure-busstop=00020739-1&course=0008200242&datetime=2026-07-26T19:45:00%2B09:00",
+      "confirmedDate": "2026-07-24",
+      "note": "時刻表セル標記「ち」。凡例原文: ち…【６系統】千鳥車庫行き（千鳥北方面には行きません）。",
+      "stopCount": 17,
+      "stops": [
+        {
+          "officialName": "浦安駅入口",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200238-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "神明裏",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200238-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "猫実",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200238-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "消防本部前",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200238-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "商工会議所",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200238-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "市役所前",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200238-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "東野一丁目",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200238-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "東野プール",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200238-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "東海大浦安高校入口",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200238-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "東海大浦安高校前",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200238-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "東野三丁目",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200238-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "弁天橋",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200238-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "弁天四丁目",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200238-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "見明川",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200238-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "舞浜三丁目",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200238-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "運動公園",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200238-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "千鳥車庫",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200238-1)",
+          "checkedDate": "2026-07-24"
+        }
+      ],
+      "stopNames": [
+        "浦安駅入口",
+        "神明裏",
+        "猫実",
+        "消防本部前",
+        "商工会議所",
+        "市役所前",
+        "東野一丁目",
+        "東野プール",
+        "東海大浦安高校入口",
+        "東海大浦安高校前",
+        "東野三丁目",
+        "弁天橋",
+        "弁天四丁目",
+        "見明川",
+        "舞浜三丁目",
+        "運動公園",
+        "千鳥車庫"
+      ]
+    },
+    "6-urayasu-maihama": {
+      "title": "浦安駅入口行き（舞浜駅発）",
+      "directionGroup": "inbound",
+      "departure": "舞浜駅",
+      "destination": "浦安駅入口",
+      "timetableSymbol": "無印",
+      "berth": "02",
+      "naviBusstop": "00020617",
+      "courseSequence": "0008200237-1",
+      "course": "0008200237",
+      "source": "Keisei Bus Navi trip stop list (舞浜駅 busstop=00020617 course-sequence=0008200237-1)",
+      "sourceUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/812b0012/stops?departure-busstop=00020617-1&course=0008200237&datetime=2026-07-24T06:49:00%2B09:00",
+      "confirmedDate": "2026-07-24",
+      "stopCount": 18,
+      "stops": [
+        {
+          "officialName": "舞浜駅",
+          "source": "Keisei Bus Navi trip stop list (舞浜駅 busstop=00020617 course-sequence=0008200237-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "オリエンタルランド本社前",
+          "source": "Keisei Bus Navi trip stop list (舞浜駅 busstop=00020617 course-sequence=0008200237-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "運動公園",
+          "source": "Keisei Bus Navi trip stop list (舞浜駅 busstop=00020617 course-sequence=0008200237-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "舞浜三丁目",
+          "source": "Keisei Bus Navi trip stop list (舞浜駅 busstop=00020617 course-sequence=0008200237-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "見明川",
+          "source": "Keisei Bus Navi trip stop list (舞浜駅 busstop=00020617 course-sequence=0008200237-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "弁天四丁目",
+          "source": "Keisei Bus Navi trip stop list (舞浜駅 busstop=00020617 course-sequence=0008200237-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "弁天橋",
+          "source": "Keisei Bus Navi trip stop list (舞浜駅 busstop=00020617 course-sequence=0008200237-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "東野三丁目",
+          "source": "Keisei Bus Navi trip stop list (舞浜駅 busstop=00020617 course-sequence=0008200237-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "東海大浦安高校前",
+          "source": "Keisei Bus Navi trip stop list (舞浜駅 busstop=00020617 course-sequence=0008200237-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "東海大浦安高校入口",
+          "source": "Keisei Bus Navi trip stop list (舞浜駅 busstop=00020617 course-sequence=0008200237-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "東野プール",
+          "source": "Keisei Bus Navi trip stop list (舞浜駅 busstop=00020617 course-sequence=0008200237-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "東野一丁目",
+          "source": "Keisei Bus Navi trip stop list (舞浜駅 busstop=00020617 course-sequence=0008200237-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "市役所前",
+          "source": "Keisei Bus Navi trip stop list (舞浜駅 busstop=00020617 course-sequence=0008200237-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "商工会議所",
+          "source": "Keisei Bus Navi trip stop list (舞浜駅 busstop=00020617 course-sequence=0008200237-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "消防本部前",
+          "source": "Keisei Bus Navi trip stop list (舞浜駅 busstop=00020617 course-sequence=0008200237-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "猫実",
+          "source": "Keisei Bus Navi trip stop list (舞浜駅 busstop=00020617 course-sequence=0008200237-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "神明裏",
+          "source": "Keisei Bus Navi trip stop list (舞浜駅 busstop=00020617 course-sequence=0008200237-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "浦安駅入口",
+          "source": "Keisei Bus Navi trip stop list (舞浜駅 busstop=00020617 course-sequence=0008200237-1)",
+          "checkedDate": "2026-07-24"
+        }
+      ],
+      "stopNames": [
+        "舞浜駅",
+        "オリエンタルランド本社前",
+        "運動公園",
+        "舞浜三丁目",
+        "見明川",
+        "弁天四丁目",
+        "弁天橋",
+        "東野三丁目",
+        "東海大浦安高校前",
+        "東海大浦安高校入口",
+        "東野プール",
+        "東野一丁目",
+        "市役所前",
+        "商工会議所",
+        "消防本部前",
+        "猫実",
+        "神明裏",
+        "浦安駅入口"
+      ]
+    },
+    "6-tokai": {
+      "title": "東海大浦安高校前行き",
+      "directionGroup": "inbound",
+      "departure": "舞浜駅",
+      "destination": "東海大浦安高校前",
+      "timetableSymbol": "と",
+      "berth": "02",
+      "naviBusstop": "00020617",
+      "courseSequence": "0008200237-1",
+      "course": "0008200239",
+      "source": "Keisei Bus Navi trip stop list (舞浜駅 busstop=00020617 course-sequence=0008200237-1)",
+      "sourceUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/812d0001/stops?departure-busstop=00020617-1&course=0008200239&datetime=2026-07-24T07:12:00%2B09:00",
+      "confirmedDate": "2026-07-24",
+      "note": "時刻表セル標記「と」。終点表示は「東海大浦安高校前」（「東海大浦安高校入口」ではない）。",
+      "stopCount": 9,
+      "stops": [
+        {
+          "officialName": "舞浜駅",
+          "source": "Keisei Bus Navi trip stop list (舞浜駅 busstop=00020617 course-sequence=0008200237-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "オリエンタルランド本社前",
+          "source": "Keisei Bus Navi trip stop list (舞浜駅 busstop=00020617 course-sequence=0008200237-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "運動公園",
+          "source": "Keisei Bus Navi trip stop list (舞浜駅 busstop=00020617 course-sequence=0008200237-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "舞浜三丁目",
+          "source": "Keisei Bus Navi trip stop list (舞浜駅 busstop=00020617 course-sequence=0008200237-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "見明川",
+          "source": "Keisei Bus Navi trip stop list (舞浜駅 busstop=00020617 course-sequence=0008200237-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "弁天四丁目",
+          "source": "Keisei Bus Navi trip stop list (舞浜駅 busstop=00020617 course-sequence=0008200237-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "弁天橋",
+          "source": "Keisei Bus Navi trip stop list (舞浜駅 busstop=00020617 course-sequence=0008200237-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "東野三丁目",
+          "source": "Keisei Bus Navi trip stop list (舞浜駅 busstop=00020617 course-sequence=0008200237-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "東海大浦安高校前",
+          "source": "Keisei Bus Navi trip stop list (舞浜駅 busstop=00020617 course-sequence=0008200237-1)",
+          "checkedDate": "2026-07-24"
+        }
+      ],
+      "stopNames": [
+        "舞浜駅",
+        "オリエンタルランド本社前",
+        "運動公園",
+        "舞浜三丁目",
+        "見明川",
+        "弁天四丁目",
+        "弁天橋",
+        "東野三丁目",
+        "東海大浦安高校前"
+      ]
+    },
+    "6-urayasu-chidori": {
+      "title": "浦安駅入口行き（千鳥車庫発）",
+      "directionGroup": "inbound",
+      "departure": "千鳥車庫",
+      "destination": "浦安駅入口",
+      "timetableSymbol": "市",
+      "berth": "02",
+      "naviBusstop": "00020620",
+      "courseSequence": "0008200207-1",
+      "course": "0008200241",
+      "source": "Keisei Bus Navi trip stop list (千鳥車庫 busstop=00020620 course-sequence=0008200207-1 / course=0008200241 mark 市)",
+      "sourceUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/812f0000/stops?departure-busstop=00020620-1&course=0008200241&datetime=2026-07-24T06:12:00%2B09:00",
+      "confirmedDate": "2026-07-24",
+      "note": "千鳥車庫共有時刻表の標記「市」。凡例は「市役所入口経由」と書くが、通過時刻表の停留所名は「市役所前」。無印は【２系統】新浦安駅北口経由のため混同注意。",
+      "stopCount": 17,
+      "stops": [
+        {
+          "officialName": "千鳥車庫",
+          "source": "Keisei Bus Navi trip stop list (千鳥車庫 busstop=00020620 course-sequence=0008200207-1 / course=0008200241 mark 市)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "運動公園",
+          "source": "Keisei Bus Navi trip stop list (千鳥車庫 busstop=00020620 course-sequence=0008200207-1 / course=0008200241 mark 市)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "舞浜三丁目",
+          "source": "Keisei Bus Navi trip stop list (千鳥車庫 busstop=00020620 course-sequence=0008200207-1 / course=0008200241 mark 市)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "見明川",
+          "source": "Keisei Bus Navi trip stop list (千鳥車庫 busstop=00020620 course-sequence=0008200207-1 / course=0008200241 mark 市)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "弁天四丁目",
+          "source": "Keisei Bus Navi trip stop list (千鳥車庫 busstop=00020620 course-sequence=0008200207-1 / course=0008200241 mark 市)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "弁天橋",
+          "source": "Keisei Bus Navi trip stop list (千鳥車庫 busstop=00020620 course-sequence=0008200207-1 / course=0008200241 mark 市)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "東野三丁目",
+          "source": "Keisei Bus Navi trip stop list (千鳥車庫 busstop=00020620 course-sequence=0008200207-1 / course=0008200241 mark 市)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "東海大浦安高校前",
+          "source": "Keisei Bus Navi trip stop list (千鳥車庫 busstop=00020620 course-sequence=0008200207-1 / course=0008200241 mark 市)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "東海大浦安高校入口",
+          "source": "Keisei Bus Navi trip stop list (千鳥車庫 busstop=00020620 course-sequence=0008200207-1 / course=0008200241 mark 市)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "東野プール",
+          "source": "Keisei Bus Navi trip stop list (千鳥車庫 busstop=00020620 course-sequence=0008200207-1 / course=0008200241 mark 市)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "東野一丁目",
+          "source": "Keisei Bus Navi trip stop list (千鳥車庫 busstop=00020620 course-sequence=0008200207-1 / course=0008200241 mark 市)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "市役所前",
+          "source": "Keisei Bus Navi trip stop list (千鳥車庫 busstop=00020620 course-sequence=0008200207-1 / course=0008200241 mark 市)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "商工会議所",
+          "source": "Keisei Bus Navi trip stop list (千鳥車庫 busstop=00020620 course-sequence=0008200207-1 / course=0008200241 mark 市)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "消防本部前",
+          "source": "Keisei Bus Navi trip stop list (千鳥車庫 busstop=00020620 course-sequence=0008200207-1 / course=0008200241 mark 市)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "猫実",
+          "source": "Keisei Bus Navi trip stop list (千鳥車庫 busstop=00020620 course-sequence=0008200207-1 / course=0008200241 mark 市)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "神明裏",
+          "source": "Keisei Bus Navi trip stop list (千鳥車庫 busstop=00020620 course-sequence=0008200207-1 / course=0008200241 mark 市)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "浦安駅入口",
+          "source": "Keisei Bus Navi trip stop list (千鳥車庫 busstop=00020620 course-sequence=0008200207-1 / course=0008200241 mark 市)",
+          "checkedDate": "2026-07-24"
+        }
+      ],
+      "stopNames": [
+        "千鳥車庫",
+        "運動公園",
+        "舞浜三丁目",
+        "見明川",
+        "弁天四丁目",
+        "弁天橋",
+        "東野三丁目",
+        "東海大浦安高校前",
+        "東海大浦安高校入口",
+        "東野プール",
+        "東野一丁目",
+        "市役所前",
+        "商工会議所",
+        "消防本部前",
+        "猫実",
+        "神明裏",
+        "浦安駅入口"
+      ]
+    }
+  }
+}

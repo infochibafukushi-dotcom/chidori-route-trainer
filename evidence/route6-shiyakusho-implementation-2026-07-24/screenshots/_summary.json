@@ -1,0 +1,100 @@
+[
+  {
+    "file": "6-maihama-urayasu-start-z19.png",
+    "label": "6-maihama 浦安駅入口→神明裏",
+    "headingDeg": 303
+  },
+  {
+    "file": "6-maihama-shiyakusho-z19.png",
+    "label": "6-maihama 商工会議所→市役所前",
+    "headingDeg": 69
+  },
+  {
+    "file": "6-maihama-tokai-entrance-z19.png",
+    "label": "6-maihama 東野プール→東海大浦安高校入口",
+    "headingDeg": 26
+  },
+  {
+    "file": "6-maihama-tokai-front-z19.png",
+    "label": "6-maihama 東海大浦安高校入口→東海大浦安高校前",
+    "headingDeg": 26
+  },
+  {
+    "file": "6-maihama-undokoen-z19.png",
+    "label": "6-maihama 舞浜三丁目→運動公園",
+    "headingDeg": 51
+  },
+  {
+    "file": "6-maihama-maihama-entry-z19.png",
+    "label": "6-maihama 運動公園→オリエンタルランド本社前",
+    "headingDeg": 128
+  },
+  {
+    "file": "6-maihama-maihama-end-z19.png",
+    "label": "6-maihama オリエンタルランド本社前→舞浜駅",
+    "headingDeg": 132
+  },
+  {
+    "file": "6-chidori-undokoen-branch-z19.png",
+    "label": "6-chidori 舞浜三丁目→運動公園",
+    "headingDeg": 51
+  },
+  {
+    "file": "6-chidori-chidori-entry-z19.png",
+    "label": "6-chidori 運動公園→千鳥車庫",
+    "headingDeg": 309
+  },
+  {
+    "file": "6-chidori-chidori-end-z19.png",
+    "label": "6-chidori 運動公園→千鳥車庫",
+    "headingDeg": 309
+  },
+  {
+    "file": "6-urayasu-maihama-start-z19.png",
+    "label": "6-urayasu-maihama 舞浜駅→オリエンタルランド本社前",
+    "headingDeg": 309
+  },
+  {
+    "file": "6-urayasu-maihama-shiyakusho-z19.png",
+    "label": "6-urayasu-maihama 商工会議所→市役所前",
+    "headingDeg": 201
+  },
+  {
+    "file": "6-urayasu-maihama-urayasu-end-z19.png",
+    "label": "6-urayasu-maihama 神明裏→浦安駅入口",
+    "headingDeg": 120
+  },
+  {
+    "file": "6-tokai-maihama-start-z19.png",
+    "label": "6-tokai 舞浜駅→オリエンタルランド本社前",
+    "headingDeg": 309
+  },
+  {
+    "file": "6-tokai-end-z19.png",
+    "label": "6-tokai 東野三丁目→東海大浦安高校前",
+    "headingDeg": 207
+  },
+  {
+    "file": "6-urayasu-chidori-start-z19.png",
+    "label": "6-urayasu-chidori 千鳥車庫→運動公園",
+    "headingDeg": 131
+  },
+  {
+    "file": "6-urayasu-chidori-undokoen-z19.png",
+    "label": "6-urayasu-chidori 舞浜三丁目→運動公園",
+    "headingDeg": 230
+  },
+  {
+    "file": "6-urayasu-chidori-urayasu-end-z19.png",
+    "label": "6-urayasu-chidori 神明裏→浦安駅入口",
+    "headingDeg": 120
+  },
+  {
+    "file": "ui-pc-route6.png",
+    "label": "route-6 PC UI"
+  },
+  {
+    "file": "ui-sp390-route6.png",
+    "label": "route-6 SP390 UI"
+  }
+]

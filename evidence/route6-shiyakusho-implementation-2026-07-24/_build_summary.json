@@ -1,0 +1,416 @@
+{
+  "generatedAt": "2026-07-24T14:20:30.596Z",
+  "systems": {
+    "6-maihama": {
+      "stops": 18,
+      "pathPoints": 329,
+      "maxGap_m": 25,
+      "maxPlatformDist_m": 14.9,
+      "pathHash": "eddc37a02dcb1f2c56e23d6c082f8083fa6e6ccb4983137df78e31990b183d2e",
+      "resolvedVersion": "2026-07-24-shiyakusho-maihama-v1",
+      "missingPlatforms": [],
+      "platformDists": [
+        {
+          "name": "浦安駅入口",
+          "dist": 11.4
+        },
+        {
+          "name": "神明裏",
+          "dist": 11.1
+        },
+        {
+          "name": "猫実",
+          "dist": 9.8
+        },
+        {
+          "name": "消防本部前",
+          "dist": 14.9
+        },
+        {
+          "name": "商工会議所",
+          "dist": 6.7
+        },
+        {
+          "name": "市役所前",
+          "dist": 7.2
+        },
+        {
+          "name": "東野一丁目",
+          "dist": 6.3
+        },
+        {
+          "name": "東野プール",
+          "dist": 8.8
+        },
+        {
+          "name": "東海大浦安高校入口",
+          "dist": 4.7
+        },
+        {
+          "name": "東海大浦安高校前",
+          "dist": 12.3
+        },
+        {
+          "name": "東野三丁目",
+          "dist": 9.7
+        },
+        {
+          "name": "弁天橋",
+          "dist": 11.9
+        },
+        {
+          "name": "弁天四丁目",
+          "dist": 5.3
+        },
+        {
+          "name": "見明川",
+          "dist": 5.4
+        },
+        {
+          "name": "舞浜三丁目",
+          "dist": 8.8
+        },
+        {
+          "name": "運動公園",
+          "dist": 14.3
+        },
+        {
+          "name": "オリエンタルランド本社前",
+          "dist": 5.5
+        },
+        {
+          "name": "舞浜駅",
+          "dist": 4.7
+        }
+      ],
+      "sliceMeta": {
+        "si": 0,
+        "ei": 328,
+        "startDist": 11.4,
+        "endDist": 4.7
+      },
+      "maxJoin_m": 0,
+      "note": null
+    },
+    "6-chidori": {
+      "stops": 17,
+      "pathPoints": 304,
+      "maxGap_m": 24.8,
+      "maxPlatformDist_m": 14.9,
+      "pathHash": "104afb5c920600b6f35806b2256f2693356c465c83e6e040c21cd81b9e588131",
+      "resolvedVersion": "2026-07-24-shiyakusho-chidori-v1",
+      "missingPlatforms": [],
+      "platformDists": [
+        {
+          "name": "浦安駅入口",
+          "dist": 11.4
+        },
+        {
+          "name": "神明裏",
+          "dist": 11.1
+        },
+        {
+          "name": "猫実",
+          "dist": 9.8
+        },
+        {
+          "name": "消防本部前",
+          "dist": 14.9
+        },
+        {
+          "name": "商工会議所",
+          "dist": 6.7
+        },
+        {
+          "name": "市役所前",
+          "dist": 7.2
+        },
+        {
+          "name": "東野一丁目",
+          "dist": 6.3
+        },
+        {
+          "name": "東野プール",
+          "dist": 8.8
+        },
+        {
+          "name": "東海大浦安高校入口",
+          "dist": 4.7
+        },
+        {
+          "name": "東海大浦安高校前",
+          "dist": 12.3
+        },
+        {
+          "name": "東野三丁目",
+          "dist": 9.7
+        },
+        {
+          "name": "弁天橋",
+          "dist": 11.9
+        },
+        {
+          "name": "弁天四丁目",
+          "dist": 5.3
+        },
+        {
+          "name": "見明川",
+          "dist": 5.4
+        },
+        {
+          "name": "舞浜三丁目",
+          "dist": 8.8
+        },
+        {
+          "name": "運動公園",
+          "dist": 11.2
+        },
+        {
+          "name": "千鳥車庫",
+          "dist": 4.9
+        }
+      ],
+      "sliceMeta": {
+        "si": 0,
+        "ei": 303,
+        "startDist": 11.4,
+        "endDist": 4.9
+      },
+      "maxJoin_m": 0,
+      "note": "千鳥北方面には行かない。運動公園→千鳥車庫。"
+    },
+    "6-urayasu-maihama": {
+      "stops": 18,
+      "pathPoints": 320,
+      "maxGap_m": 24.8,
+      "maxPlatformDist_m": 13.6,
+      "pathHash": "1062591f5ca84218553d43d9cfadb6a2a377a75b817e1360d3b75189c5adfeb2",
+      "resolvedVersion": "2026-07-24-shiyakusho-urayasu-maihama-v1",
+      "missingPlatforms": [],
+      "platformDists": [
+        {
+          "name": "舞浜駅",
+          "dist": 7.7
+        },
+        {
+          "name": "オリエンタルランド本社前",
+          "dist": 12.2
+        },
+        {
+          "name": "運動公園",
+          "dist": 9.2
+        },
+        {
+          "name": "舞浜三丁目",
+          "dist": 9.3
+        },
+        {
+          "name": "見明川",
+          "dist": 5
+        },
+        {
+          "name": "弁天四丁目",
+          "dist": 7.9
+        },
+        {
+          "name": "弁天橋",
+          "dist": 9.1
+        },
+        {
+          "name": "東野三丁目",
+          "dist": 5.5
+        },
+        {
+          "name": "東海大浦安高校前",
+          "dist": 8.4
+        },
+        {
+          "name": "東海大浦安高校入口",
+          "dist": 4.2
+        },
+        {
+          "name": "東野プール",
+          "dist": 5
+        },
+        {
+          "name": "東野一丁目",
+          "dist": 7.5
+        },
+        {
+          "name": "市役所前",
+          "dist": 9
+        },
+        {
+          "name": "商工会議所",
+          "dist": 8.4
+        },
+        {
+          "name": "消防本部前",
+          "dist": 13.6
+        },
+        {
+          "name": "猫実",
+          "dist": 8.5
+        },
+        {
+          "name": "神明裏",
+          "dist": 9.3
+        },
+        {
+          "name": "浦安駅入口",
+          "dist": 11.2
+        }
+      ],
+      "sliceMeta": {
+        "si": 1,
+        "ei": 320,
+        "startDist": 7.7,
+        "endDist": 11.2
+      },
+      "maxJoin_m": 0,
+      "note": null
+    },
+    "6-tokai": {
+      "stops": 9,
+      "pathPoints": 148,
+      "maxGap_m": 24.8,
+      "maxPlatformDist_m": 12.2,
+      "pathHash": "24f94a28ba0c0d6cc8d563856dd098eb1b6e0a2fabfc4038d5650f5ee927ff1b",
+      "resolvedVersion": "2026-07-24-shiyakusho-tokai-v1",
+      "missingPlatforms": [],
+      "platformDists": [
+        {
+          "name": "舞浜駅",
+          "dist": 7.7
+        },
+        {
+          "name": "オリエンタルランド本社前",
+          "dist": 12.2
+        },
+        {
+          "name": "運動公園",
+          "dist": 9.2
+        },
+        {
+          "name": "舞浜三丁目",
+          "dist": 9.3
+        },
+        {
+          "name": "見明川",
+          "dist": 5
+        },
+        {
+          "name": "弁天四丁目",
+          "dist": 7.9
+        },
+        {
+          "name": "弁天橋",
+          "dist": 9.1
+        },
+        {
+          "name": "東野三丁目",
+          "dist": 5.5
+        },
+        {
+          "name": "東海大浦安高校前",
+          "dist": 8.4
+        }
+      ],
+      "sliceMeta": {
+        "si": 1,
+        "ei": 148,
+        "startDist": 7.7,
+        "endDist": 8.4
+      },
+      "maxJoin_m": 0,
+      "note": "Navi と便は浦安駅入口行き（舞浜駅発）と東海大浦安高校前まで同一停留所順。営業終点で終了。"
+    },
+    "6-urayasu-chidori": {
+      "stops": 17,
+      "pathPoints": 317,
+      "maxGap_m": 24.8,
+      "maxPlatformDist_m": 13.6,
+      "pathHash": "f235ac4f0fe3e018d3d8dc00ceef0686a6c71fb0b0ace3abb259da922861c682",
+      "resolvedVersion": "2026-07-24-shiyakusho-urayasu-chidori-v1",
+      "missingPlatforms": [],
+      "platformDists": [
+        {
+          "name": "千鳥車庫",
+          "dist": 5.2
+        },
+        {
+          "name": "運動公園",
+          "dist": 9.2
+        },
+        {
+          "name": "舞浜三丁目",
+          "dist": 9.3
+        },
+        {
+          "name": "見明川",
+          "dist": 5
+        },
+        {
+          "name": "弁天四丁目",
+          "dist": 7.9
+        },
+        {
+          "name": "弁天橋",
+          "dist": 9.1
+        },
+        {
+          "name": "東野三丁目",
+          "dist": 5.5
+        },
+        {
+          "name": "東海大浦安高校前",
+          "dist": 8.4
+        },
+        {
+          "name": "東海大浦安高校入口",
+          "dist": 4.2
+        },
+        {
+          "name": "東野プール",
+          "dist": 5
+        },
+        {
+          "name": "東野一丁目",
+          "dist": 7.5
+        },
+        {
+          "name": "市役所前",
+          "dist": 9
+        },
+        {
+          "name": "商工会議所",
+          "dist": 8.4
+        },
+        {
+          "name": "消防本部前",
+          "dist": 13.6
+        },
+        {
+          "name": "猫実",
+          "dist": 8.5
+        },
+        {
+          "name": "神明裏",
+          "dist": 9.3
+        },
+        {
+          "name": "浦安駅入口",
+          "dist": 11.2
+        }
+      ],
+      "sliceMeta": {
+        "si": 0,
+        "ei": 316,
+        "startDist": 5.2,
+        "endDist": 11.2
+      },
+      "maxJoin_m": 0,
+      "note": "千鳥車庫は発車用platform 6796350266。先頭way 1337358420は発車側から反転連結。"
+    }
+  }
+}

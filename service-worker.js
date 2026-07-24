@@ -1,4 +1,4 @@
-const CACHE_NAME = 'chidori-route-map-v66';
+const CACHE_NAME = 'chidori-route-map-v67';
 const APP_SHELL = [
   './',
   './index.html',
@@ -16,6 +16,7 @@ const APP_SHELL = [
   './urayasu-higashi-danchi-stop-images-v1.css?v=63',
   './tomioka-stop-images-v1.css?v=65',
   './horie-stop-images-v1.css?v=66',
+  './shiyakusho-stop-images-v1.css?v=67',
   './study-materials.css?v=61',
   './data.js?v=32',
   './app.js?v=61',
@@ -27,7 +28,7 @@ const APP_SHELL = [
   './hokuei-authoritative-v12.js?v=33',
   './hokuei-manual-override-v13.js?v=33',
   './hokuei-shared-coordinates-v15.js?v=32',
-  './hokuei-no-uturn-v17.js?v=66',
+  './hokuei-no-uturn-v17.js?v=67',
   './imagawa-directions-compat-v2.js?v=56',
   './hokuei-streetview-stops-v26.js?v=32',
   './hokuei-guidance-v22.js?v=57',
@@ -50,6 +51,11 @@ const APP_SHELL = [
   './horie-path-policy-v1.js?v=66',
   './horie-stop-images-v1.js?v=66',
   './horie-route-v1.js?v=66',
+  './shiyakusho-platforms-v1.js?v=67',
+  './shiyakusho-path-v1.js?v=67',
+  './shiyakusho-path-policy-v1.js?v=67',
+  './shiyakusho-stop-images-v1.js?v=67',
+  './shiyakusho-route-v1.js?v=67',
   './pwa-install.js?v=61'
 ];
 

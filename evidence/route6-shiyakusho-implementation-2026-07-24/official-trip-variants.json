@@ -1,0 +1,677 @@
+{
+  "checkedAt": "2026-07-24T13:53:01.431Z",
+  "source": "https://transfer-cloud.navitime.biz/keiseibus-group",
+  "outbound": {
+    "busstop": "00020739",
+    "busstopName": "浦安駅入口",
+    "berth": "A",
+    "courseSequence": "0008200238-1",
+    "timetableUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020739&course-sequence=0008200238-1",
+    "legend": [
+      "無印…【６系統】市役所前・東海大浦安高校前経由　舞浜駅行き",
+      "ち…【６系統】千鳥車庫行き（千鳥北方面には行きません）"
+    ],
+    "samples": {
+      "6-maihama": {
+        "cellText": "14",
+        "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/812c0000/stops?departure-busstop=00020739-1&course=0008200238&datetime=2026-07-24T06:14:00%2B09:00",
+        "course": "0008200238",
+        "stopNames": [
+          "浦安駅入口",
+          "神明裏",
+          "猫実",
+          "消防本部前",
+          "商工会議所",
+          "市役所前",
+          "東野一丁目",
+          "東野プール",
+          "東海大浦安高校入口",
+          "東海大浦安高校前",
+          "東野三丁目",
+          "弁天橋",
+          "弁天四丁目",
+          "見明川",
+          "舞浜三丁目",
+          "運動公園",
+          "オリエンタルランド本社前",
+          "舞浜駅"
+        ],
+        "stopCount": 18,
+        "rawStops": [
+          {
+            "time": "06:14",
+            "kind": "発",
+            "name": "浦安駅入口"
+          },
+          {
+            "time": "06:15",
+            "kind": "着",
+            "name": "神明裏"
+          },
+          {
+            "time": "06:16",
+            "kind": "着",
+            "name": "猫実"
+          },
+          {
+            "time": "06:17",
+            "kind": "着",
+            "name": "消防本部前"
+          },
+          {
+            "time": "06:18",
+            "kind": "着",
+            "name": "商工会議所"
+          },
+          {
+            "time": "06:20",
+            "kind": "着",
+            "name": "市役所前"
+          },
+          {
+            "time": "06:21",
+            "kind": "着",
+            "name": "東野一丁目"
+          },
+          {
+            "time": "06:22",
+            "kind": "着",
+            "name": "東野プール"
+          },
+          {
+            "time": "06:23",
+            "kind": "着",
+            "name": "東海大浦安高校入口"
+          },
+          {
+            "time": "06:25",
+            "kind": "着",
+            "name": "東海大浦安高校前"
+          },
+          {
+            "time": "06:26",
+            "kind": "着",
+            "name": "東野三丁目"
+          },
+          {
+            "time": "06:27",
+            "kind": "着",
+            "name": "弁天橋"
+          },
+          {
+            "time": "06:28",
+            "kind": "着",
+            "name": "弁天四丁目"
+          },
+          {
+            "time": "06:29",
+            "kind": "着",
+            "name": "見明川"
+          },
+          {
+            "time": "06:30",
+            "kind": "着",
+            "name": "舞浜三丁目"
+          },
+          {
+            "time": "06:31",
+            "kind": "着",
+            "name": "運動公園"
+          },
+          {
+            "time": "06:32",
+            "kind": "着",
+            "name": "オリエンタルランド本社前"
+          },
+          {
+            "time": "06:39",
+            "kind": "着",
+            "name": "舞浜駅"
+          }
+        ],
+        "nameChecks": {
+          "hasShiyakushoMae": true,
+          "hasShiyakushoIriguchiYubin": false,
+          "hasTokaiIriguchi": true,
+          "hasTokaiMae": true,
+          "hasChidoriKita": false
+        }
+      },
+      "6-chidori": {
+        "cellText": "45ち",
+        "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81300003/stops?departure-busstop=00020739-1&course=0008200242&datetime=2026-07-26T19:45:00%2B09:00",
+        "course": "0008200242",
+        "stopNames": [
+          "浦安駅入口",
+          "神明裏",
+          "猫実",
+          "消防本部前",
+          "商工会議所",
+          "市役所前",
+          "東野一丁目",
+          "東野プール",
+          "東海大浦安高校入口",
+          "東海大浦安高校前",
+          "東野三丁目",
+          "弁天橋",
+          "弁天四丁目",
+          "見明川",
+          "舞浜三丁目",
+          "運動公園",
+          "千鳥車庫"
+        ],
+        "stopCount": 17,
+        "rawStops": [
+          {
+            "time": "19:45",
+            "kind": "発",
+            "name": "浦安駅入口"
+          },
+          {
+            "time": "19:46",
+            "kind": "着",
+            "name": "神明裏"
+          },
+          {
+            "time": "19:47",
+            "kind": "着",
+            "name": "猫実"
+          },
+          {
+            "time": "19:48",
+            "kind": "着",
+            "name": "消防本部前"
+          },
+          {
+            "time": "19:49",
+            "kind": "着",
+            "name": "商工会議所"
+          },
+          {
+            "time": "19:51",
+            "kind": "着",
+            "name": "市役所前"
+          },
+          {
+            "time": "19:52",
+            "kind": "着",
+            "name": "東野一丁目"
+          },
+          {
+            "time": "19:53",
+            "kind": "着",
+            "name": "東野プール"
+          },
+          {
+            "time": "19:54",
+            "kind": "着",
+            "name": "東海大浦安高校入口"
+          },
+          {
+            "time": "19:56",
+            "kind": "着",
+            "name": "東海大浦安高校前"
+          },
+          {
+            "time": "19:57",
+            "kind": "着",
+            "name": "東野三丁目"
+          },
+          {
+            "time": "19:58",
+            "kind": "着",
+            "name": "弁天橋"
+          },
+          {
+            "time": "19:59",
+            "kind": "着",
+            "name": "弁天四丁目"
+          },
+          {
+            "time": "20:00",
+            "kind": "着",
+            "name": "見明川"
+          },
+          {
+            "time": "20:01",
+            "kind": "着",
+            "name": "舞浜三丁目"
+          },
+          {
+            "time": "20:02",
+            "kind": "着",
+            "name": "運動公園"
+          },
+          {
+            "time": "20:09",
+            "kind": "着",
+            "name": "千鳥車庫"
+          }
+        ],
+        "nameChecks": {
+          "hasShiyakushoMae": true,
+          "hasShiyakushoIriguchiYubin": false,
+          "hasTokaiIriguchi": true,
+          "hasTokaiMae": true,
+          "hasChidoriKita": false
+        }
+      }
+    }
+  },
+  "inboundMaihama": {
+    "busstop": "00020617",
+    "busstopName": "舞浜駅",
+    "berth": "02",
+    "courseSequence": "0008200237-1",
+    "timetableUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020617&course-sequence=0008200237-1",
+    "legend": [
+      "無印…【６系統】東海大浦安高校前、市役所前経由　浦安駅入口行き",
+      "と…【６系統】東海大浦安高校前止まり"
+    ],
+    "samples": {
+      "6-urayasu-maihama": {
+        "cellText": "49",
+        "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/812b0012/stops?departure-busstop=00020617-1&course=0008200237&datetime=2026-07-24T06:49:00%2B09:00",
+        "course": "0008200237",
+        "stopNames": [
+          "舞浜駅",
+          "オリエンタルランド本社前",
+          "運動公園",
+          "舞浜三丁目",
+          "見明川",
+          "弁天四丁目",
+          "弁天橋",
+          "東野三丁目",
+          "東海大浦安高校前",
+          "東海大浦安高校入口",
+          "東野プール",
+          "東野一丁目",
+          "市役所前",
+          "商工会議所",
+          "消防本部前",
+          "猫実",
+          "神明裏",
+          "浦安駅入口"
+        ],
+        "stopCount": 18,
+        "rawStops": [
+          {
+            "time": "06:49",
+            "kind": "発",
+            "name": "舞浜駅"
+          },
+          {
+            "time": "06:50",
+            "kind": "着",
+            "name": "オリエンタルランド本社前"
+          },
+          {
+            "time": "06:52",
+            "kind": "着",
+            "name": "運動公園"
+          },
+          {
+            "time": "06:52",
+            "kind": "着",
+            "name": "舞浜三丁目"
+          },
+          {
+            "time": "06:54",
+            "kind": "着",
+            "name": "見明川"
+          },
+          {
+            "time": "06:55",
+            "kind": "着",
+            "name": "弁天四丁目"
+          },
+          {
+            "time": "06:56",
+            "kind": "着",
+            "name": "弁天橋"
+          },
+          {
+            "time": "06:57",
+            "kind": "着",
+            "name": "東野三丁目"
+          },
+          {
+            "time": "06:58",
+            "kind": "着",
+            "name": "東海大浦安高校前"
+          },
+          {
+            "time": "07:00",
+            "kind": "着",
+            "name": "東海大浦安高校入口"
+          },
+          {
+            "time": "07:01",
+            "kind": "着",
+            "name": "東野プール"
+          },
+          {
+            "time": "07:02",
+            "kind": "着",
+            "name": "東野一丁目"
+          },
+          {
+            "time": "07:03",
+            "kind": "着",
+            "name": "市役所前"
+          },
+          {
+            "time": "07:04",
+            "kind": "着",
+            "name": "商工会議所"
+          },
+          {
+            "time": "07:05",
+            "kind": "着",
+            "name": "消防本部前"
+          },
+          {
+            "time": "07:06",
+            "kind": "着",
+            "name": "猫実"
+          },
+          {
+            "time": "07:07",
+            "kind": "着",
+            "name": "神明裏"
+          },
+          {
+            "time": "07:13",
+            "kind": "着",
+            "name": "浦安駅入口"
+          }
+        ],
+        "nameChecks": {
+          "hasShiyakushoMae": true,
+          "hasShiyakushoIriguchiYubin": false,
+          "hasTokaiIriguchi": true,
+          "hasTokaiMae": true,
+          "hasChidoriKita": false
+        }
+      },
+      "6-tokai": {
+        "cellText": "12と",
+        "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/812d0001/stops?departure-busstop=00020617-1&course=0008200239&datetime=2026-07-24T07:12:00%2B09:00",
+        "course": "0008200239",
+        "stopNames": [
+          "舞浜駅",
+          "オリエンタルランド本社前",
+          "運動公園",
+          "舞浜三丁目",
+          "見明川",
+          "弁天四丁目",
+          "弁天橋",
+          "東野三丁目",
+          "東海大浦安高校前"
+        ],
+        "stopCount": 9,
+        "rawStops": [
+          {
+            "time": "07:12",
+            "kind": "発",
+            "name": "舞浜駅"
+          },
+          {
+            "time": "07:13",
+            "kind": "着",
+            "name": "オリエンタルランド本社前"
+          },
+          {
+            "time": "07:15",
+            "kind": "着",
+            "name": "運動公園"
+          },
+          {
+            "time": "07:15",
+            "kind": "着",
+            "name": "舞浜三丁目"
+          },
+          {
+            "time": "07:17",
+            "kind": "着",
+            "name": "見明川"
+          },
+          {
+            "time": "07:18",
+            "kind": "着",
+            "name": "弁天四丁目"
+          },
+          {
+            "time": "07:19",
+            "kind": "着",
+            "name": "弁天橋"
+          },
+          {
+            "time": "07:20",
+            "kind": "着",
+            "name": "東野三丁目"
+          },
+          {
+            "time": "07:22",
+            "kind": "着",
+            "name": "東海大浦安高校前"
+          }
+        ],
+        "nameChecks": {
+          "hasShiyakushoMae": false,
+          "hasShiyakushoIriguchiYubin": false,
+          "hasTokaiIriguchi": false,
+          "hasTokaiMae": true,
+          "hasChidoriKita": false
+        }
+      }
+    }
+  },
+  "inboundChidori": {
+    "busstop": "00020620",
+    "busstopName": "千鳥車庫",
+    "berth": "02",
+    "courseSequence": "0008200207-1",
+    "timetableUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020620&course-sequence=0008200207-1",
+    "legend": [
+      "無印…【２系統】新浦安駅北口経由　浦安駅入口行き",
+      "南小…【４系統】南小入口経由　浦安駅入口行き",
+      "市…【６系統】市役所入口経由　浦安駅入口行き",
+      "し…【１４系統】弁天中央経由　新浦安駅行き"
+    ],
+    "samples": {
+      "6-urayasu-chidori": {
+        "cellText": "12市",
+        "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/812f0000/stops?departure-busstop=00020620-1&course=0008200241&datetime=2026-07-24T06:12:00%2B09:00",
+        "course": "0008200241",
+        "stopNames": [
+          "千鳥車庫",
+          "運動公園",
+          "舞浜三丁目",
+          "見明川",
+          "弁天四丁目",
+          "弁天橋",
+          "東野三丁目",
+          "東海大浦安高校前",
+          "東海大浦安高校入口",
+          "東野プール",
+          "東野一丁目",
+          "市役所前",
+          "商工会議所",
+          "消防本部前",
+          "猫実",
+          "神明裏",
+          "浦安駅入口"
+        ],
+        "stopCount": 17,
+        "rawStops": [
+          {
+            "time": "06:12",
+            "kind": "発",
+            "name": "千鳥車庫"
+          },
+          {
+            "time": "06:14",
+            "kind": "着",
+            "name": "運動公園"
+          },
+          {
+            "time": "06:14",
+            "kind": "着",
+            "name": "舞浜三丁目"
+          },
+          {
+            "time": "06:16",
+            "kind": "着",
+            "name": "見明川"
+          },
+          {
+            "time": "06:17",
+            "kind": "着",
+            "name": "弁天四丁目"
+          },
+          {
+            "time": "06:18",
+            "kind": "着",
+            "name": "弁天橋"
+          },
+          {
+            "time": "06:19",
+            "kind": "着",
+            "name": "東野三丁目"
+          },
+          {
+            "time": "06:20",
+            "kind": "着",
+            "name": "東海大浦安高校前"
+          },
+          {
+            "time": "06:22",
+            "kind": "着",
+            "name": "東海大浦安高校入口"
+          },
+          {
+            "time": "06:23",
+            "kind": "着",
+            "name": "東野プール"
+          },
+          {
+            "time": "06:24",
+            "kind": "着",
+            "name": "東野一丁目"
+          },
+          {
+            "time": "06:25",
+            "kind": "着",
+            "name": "市役所前"
+          },
+          {
+            "time": "06:26",
+            "kind": "着",
+            "name": "商工会議所"
+          },
+          {
+            "time": "06:27",
+            "kind": "着",
+            "name": "消防本部前"
+          },
+          {
+            "time": "06:28",
+            "kind": "着",
+            "name": "猫実"
+          },
+          {
+            "time": "06:29",
+            "kind": "着",
+            "name": "神明裏"
+          },
+          {
+            "time": "06:34",
+            "kind": "着",
+            "name": "浦安駅入口"
+          }
+        ],
+        "nameChecks": {
+          "hasShiyakushoMae": true,
+          "hasShiyakushoIriguchi": false,
+          "hasShiyakushoIriguchiYubin": false,
+          "hasYubinMae": false,
+          "hasTokaiIriguchi": true,
+          "hasTokaiMae": true,
+          "hasChidoriKita": false,
+          "hasShinurayasu": false
+        }
+      }
+    }
+  },
+  "nameDistinctionNotes": [
+    {
+      "systemKey": "6-maihama",
+      "hasShiyakushoMae": true,
+      "hasShiyakushoIriguchiYubin": false,
+      "hasTokaiIriguchi": true,
+      "hasTokaiMae": true,
+      "hasChidoriKita": false,
+      "stopNamesSample": [
+        "市役所前",
+        "東海大浦安高校入口",
+        "東海大浦安高校前"
+      ]
+    },
+    {
+      "systemKey": "6-chidori",
+      "hasShiyakushoMae": true,
+      "hasShiyakushoIriguchiYubin": false,
+      "hasTokaiIriguchi": true,
+      "hasTokaiMae": true,
+      "hasChidoriKita": false,
+      "stopNamesSample": [
+        "市役所前",
+        "東海大浦安高校入口",
+        "東海大浦安高校前",
+        "千鳥車庫"
+      ]
+    },
+    {
+      "systemKey": "6-urayasu-maihama",
+      "hasShiyakushoMae": true,
+      "hasShiyakushoIriguchiYubin": false,
+      "hasTokaiIriguchi": true,
+      "hasTokaiMae": true,
+      "hasChidoriKita": false,
+      "stopNamesSample": [
+        "東海大浦安高校前",
+        "東海大浦安高校入口",
+        "市役所前"
+      ]
+    },
+    {
+      "systemKey": "6-tokai",
+      "hasShiyakushoMae": false,
+      "hasShiyakushoIriguchiYubin": false,
+      "hasTokaiIriguchi": false,
+      "hasTokaiMae": true,
+      "hasChidoriKita": false,
+      "stopNamesSample": [
+        "東海大浦安高校前"
+      ]
+    },
+    {
+      "systemKey": "6-urayasu-chidori",
+      "hasShiyakushoMae": true,
+      "hasShiyakushoIriguchi": false,
+      "hasShiyakushoIriguchiYubin": false,
+      "hasYubinMae": false,
+      "hasTokaiIriguchi": true,
+      "hasTokaiMae": true,
+      "hasChidoriKita": false,
+      "hasShinurayasu": false,
+      "stopNamesSample": [
+        "千鳥車庫",
+        "東海大浦安高校前",
+        "東海大浦安高校入口",
+        "市役所前"
+      ]
+    }
+  ]
+}

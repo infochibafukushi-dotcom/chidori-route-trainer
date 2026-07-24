@@ -1,0 +1,85 @@
+{
+  "startedAt": "2026-07-24T14:28:44.112Z",
+  "intact": {
+    "6-maihama": {
+      "ok": true,
+      "pathInvalid": false,
+      "pathHash": "eddc37a02dcb1f2c56e23d6c082f8083fa6e6ccb4983137df78e31990b183d2e",
+      "bankHash": "eddc37a02dcb1f2c56e23d6c082f8083fa6e6ccb4983137df78e31990b183d2e",
+      "recomputed": "eddc37a02dcb1f2c56e23d6c082f8083fa6e6ccb4983137df78e31990b183d2e",
+      "hashMatch": true,
+      "resolvedVersion": "2026-07-24-shiyakusho-maihama-v1",
+      "expectedVersion": "2026-07-24-shiyakusho-maihama-v1",
+      "pathPoints": 329
+    },
+    "6-chidori": {
+      "ok": true,
+      "pathInvalid": false,
+      "pathHash": "104afb5c920600b6f35806b2256f2693356c465c83e6e040c21cd81b9e588131",
+      "bankHash": "104afb5c920600b6f35806b2256f2693356c465c83e6e040c21cd81b9e588131",
+      "recomputed": "104afb5c920600b6f35806b2256f2693356c465c83e6e040c21cd81b9e588131",
+      "hashMatch": true,
+      "resolvedVersion": "2026-07-24-shiyakusho-chidori-v1",
+      "expectedVersion": "2026-07-24-shiyakusho-chidori-v1",
+      "pathPoints": 304
+    },
+    "6-urayasu-maihama": {
+      "ok": true,
+      "pathInvalid": false,
+      "pathHash": "1062591f5ca84218553d43d9cfadb6a2a377a75b817e1360d3b75189c5adfeb2",
+      "bankHash": "1062591f5ca84218553d43d9cfadb6a2a377a75b817e1360d3b75189c5adfeb2",
+      "recomputed": "1062591f5ca84218553d43d9cfadb6a2a377a75b817e1360d3b75189c5adfeb2",
+      "hashMatch": true,
+      "resolvedVersion": "2026-07-24-shiyakusho-urayasu-maihama-v1",
+      "expectedVersion": "2026-07-24-shiyakusho-urayasu-maihama-v1",
+      "pathPoints": 320
+    },
+    "6-tokai": {
+      "ok": true,
+      "pathInvalid": false,
+      "pathHash": "24f94a28ba0c0d6cc8d563856dd098eb1b6e0a2fabfc4038d5650f5ee927ff1b",
+      "bankHash": "24f94a28ba0c0d6cc8d563856dd098eb1b6e0a2fabfc4038d5650f5ee927ff1b",
+      "recomputed": "24f94a28ba0c0d6cc8d563856dd098eb1b6e0a2fabfc4038d5650f5ee927ff1b",
+      "hashMatch": true,
+      "resolvedVersion": "2026-07-24-shiyakusho-tokai-v1",
+      "expectedVersion": "2026-07-24-shiyakusho-tokai-v1",
+      "pathPoints": 148
+    },
+    "6-urayasu-chidori": {
+      "ok": true,
+      "pathInvalid": false,
+      "pathHash": "f235ac4f0fe3e018d3d8dc00ceef0686a6c71fb0b0ace3abb259da922861c682",
+      "bankHash": "f235ac4f0fe3e018d3d8dc00ceef0686a6c71fb0b0ace3abb259da922861c682",
+      "recomputed": "f235ac4f0fe3e018d3d8dc00ceef0686a6c71fb0b0ace3abb259da922861c682",
+      "hashMatch": true,
+      "resolvedVersion": "2026-07-24-shiyakusho-urayasu-chidori-v1",
+      "expectedVersion": "2026-07-24-shiyakusho-urayasu-chidori-v1",
+      "pathPoints": 317
+    }
+  },
+  "tamper": {
+    "systemKey": "6-maihama",
+    "bankHash": "eddc37a02dcb1f2c56e23d6c082f8083fa6e6ccb4983137df78e31990b183d2e",
+    "originalPoint": {
+      "lat": 35.6457368,
+      "lng": 139.8917105
+    },
+    "beforeButton": true,
+    "threw": "市役所線の走行データを確認できません。\n系統：6-maihama\n理由：pathHash不一致",
+    "pathInvalid": true,
+    "issueText": "pathHash不一致 / maxGap超過（33.8m > 30m）",
+    "messageHasPathHash": true,
+    "messageHasShiyakushoBanner": true,
+    "statusText": "市役所線の走行データを確認できません。\n系統：6-maihama\n理由：pathHash不一致",
+    "afterButton": false,
+    "driveBlocked": true
+  },
+  "restore": {
+    "ok": true,
+    "pathInvalid": false,
+    "startButton": true
+  },
+  "productionFilesUnchanged": true,
+  "pass": true,
+  "finishedAt": "2026-07-24T14:28:47.293Z"
+}

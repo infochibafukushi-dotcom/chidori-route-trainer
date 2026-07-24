@@ -1,0 +1,3283 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-07-24T13:48:02Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "relation",
+      "id": 18322969,
+      "members": [
+        {
+          "type": "relation",
+          "ref": 9983007,
+          "role": ""
+        },
+        {
+          "type": "relation",
+          "ref": 18322968,
+          "role": ""
+        }
+      ],
+      "tags": {
+        "name": "東京ベイシティバス6系統 浦安駅入口-東海大浦安高校-舞浜駅",
+        "network": "市役所線",
+        "operator": "東京ベイシティ交通",
+        "ref": "6",
+        "route_master": "bus",
+        "type": "route_master"
+      }
+    },
+    {
+      "type": "node",
+      "id": 288700899,
+      "lat": 35.6520704,
+      "lon": 139.896137
+    },
+    {
+      "type": "node",
+      "id": 288701221,
+      "lat": 35.6536446,
+      "lon": 139.9003336
+    },
+    {
+      "type": "node",
+      "id": 288701223,
+      "lat": 35.6538001,
+      "lon": 139.9007082,
+      "tags": {
+        "crossing": "traffic_signals",
+        "crossing_ref": "zebra",
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 288701224,
+      "lat": 35.6547355,
+      "lon": 139.9031665,
+      "tags": {
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 288706610,
+      "lat": 35.6347538,
+      "lon": 139.8942642
+    },
+    {
+      "type": "node",
+      "id": 288706611,
+      "lat": 35.6345086,
+      "lon": 139.8939705
+    },
+    {
+      "type": "node",
+      "id": 332510856,
+      "lat": 35.6331916,
+      "lon": 139.8924044,
+      "tags": {
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 332517893,
+      "lat": 35.6305993,
+      "lon": 139.8892788,
+      "tags": {
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 332518639,
+      "lat": 35.6354108,
+      "lon": 139.8836751
+    },
+    {
+      "type": "node",
+      "id": 332518640,
+      "lat": 35.635473,
+      "lon": 139.8836873
+    },
+    {
+      "type": "node",
+      "id": 332518641,
+      "lat": 35.6355393,
+      "lon": 139.8836825
+    },
+    {
+      "type": "node",
+      "id": 332518642,
+      "lat": 35.6356642,
+      "lon": 139.883543
+    },
+    {
+      "type": "node",
+      "id": 332518643,
+      "lat": 35.6356841,
+      "lon": 139.883471
+    },
+    {
+      "type": "node",
+      "id": 332518644,
+      "lat": 35.6355982,
+      "lon": 139.8831178
+    },
+    {
+      "type": "node",
+      "id": 332518645,
+      "lat": 35.6355886,
+      "lon": 139.8830556
+    },
+    {
+      "type": "node",
+      "id": 332518646,
+      "lat": 35.6355941,
+      "lon": 139.88297
+    },
+    {
+      "type": "node",
+      "id": 332518647,
+      "lat": 35.6356366,
+      "lon": 139.8828511
+    },
+    {
+      "type": "node",
+      "id": 332518649,
+      "lat": 35.6356676,
+      "lon": 139.8828188
+    },
+    {
+      "type": "node",
+      "id": 332518650,
+      "lat": 35.6357092,
+      "lon": 139.8827879
+    },
+    {
+      "type": "node",
+      "id": 332518651,
+      "lat": 35.635761,
+      "lon": 139.8827815
+    },
+    {
+      "type": "node",
+      "id": 332518653,
+      "lat": 35.6358201,
+      "lon": 139.8827937
+    },
+    {
+      "type": "node",
+      "id": 332518655,
+      "lat": 35.6358785,
+      "lon": 139.8828229
+    },
+    {
+      "type": "node",
+      "id": 332518657,
+      "lat": 35.6360107,
+      "lon": 139.8831813
+    },
+    {
+      "type": "node",
+      "id": 332518668,
+      "lat": 35.6351208,
+      "lon": 139.883533,
+      "tags": {
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 598553561,
+      "lat": 35.6518593,
+      "lon": 139.8957061
+    },
+    {
+      "type": "node",
+      "id": 598553562,
+      "lat": 35.6516682,
+      "lon": 139.8954027
+    },
+    {
+      "type": "node",
+      "id": 598553563,
+      "lat": 35.651471,
+      "lon": 139.8951297
+    },
+    {
+      "type": "node",
+      "id": 598553564,
+      "lat": 35.6511691,
+      "lon": 139.8947429
+    },
+    {
+      "type": "node",
+      "id": 598553565,
+      "lat": 35.6509353,
+      "lon": 139.8944927
+    },
+    {
+      "type": "node",
+      "id": 598553566,
+      "lat": 35.6506827,
+      "lon": 139.8942643
+    },
+    {
+      "type": "node",
+      "id": 598553567,
+      "lat": 35.6501211,
+      "lon": 139.8938704
+    },
+    {
+      "type": "node",
+      "id": 600745301,
+      "lat": 35.6348078,
+      "lon": 139.8943334,
+      "tags": {
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 600745305,
+      "lat": 35.6393705,
+      "lon": 139.8886139,
+      "tags": {
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1321238716,
+      "lat": 35.6569869,
+      "lon": 139.9040728
+    },
+    {
+      "type": "node",
+      "id": 1321238734,
+      "lat": 35.6568176,
+      "lon": 139.9040029
+    },
+    {
+      "type": "node",
+      "id": 1330401194,
+      "lat": 35.6594904,
+      "lon": 139.9034126,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "消防本部前",
+        "name:en": "Shoubou Honbu Mae",
+        "name:ja": "消防本部前",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1330897048,
+      "lat": 35.6608375,
+      "lon": 139.9012946,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "猫実",
+        "name:en": "Nekozane",
+        "name:ja": "猫実",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1455553561,
+      "lat": 35.6368608,
+      "lon": 139.8917654,
+      "tags": {
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1493228244,
+      "lat": 35.6522043,
+      "lon": 139.8964727
+    },
+    {
+      "type": "node",
+      "id": 1493238981,
+      "lat": 35.6527145,
+      "lon": 139.8978901
+    },
+    {
+      "type": "node",
+      "id": 1493249370,
+      "lat": 35.6515298,
+      "lon": 139.8952111
+    },
+    {
+      "type": "node",
+      "id": 1493249392,
+      "lat": 35.6523452,
+      "lon": 139.8968564
+    },
+    {
+      "type": "node",
+      "id": 1493249409,
+      "lat": 35.6505544,
+      "lon": 139.8941549
+    },
+    {
+      "type": "node",
+      "id": 1493265087,
+      "lat": 35.6485332,
+      "lon": 139.8930829
+    },
+    {
+      "type": "node",
+      "id": 1493265101,
+      "lat": 35.6493238,
+      "lon": 139.8934616
+    },
+    {
+      "type": "node",
+      "id": 1664107581,
+      "lat": 35.6344266,
+      "lon": 139.8938732,
+      "tags": {
+        "crossing": "traffic_signals",
+        "crossing_ref": "zebra",
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1664107863,
+      "lat": 35.6398247,
+      "lon": 139.8888241
+    },
+    {
+      "type": "node",
+      "id": 1664108096,
+      "lat": 35.6423032,
+      "lon": 139.890038
+    },
+    {
+      "type": "node",
+      "id": 1664108169,
+      "lat": 35.6448171,
+      "lon": 139.8912613
+    },
+    {
+      "type": "node",
+      "id": 1667341648,
+      "lat": 35.6465587,
+      "lon": 139.8921119
+    },
+    {
+      "type": "node",
+      "id": 1742960273,
+      "lat": 35.6528753,
+      "lon": 139.8984379,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "東野一丁目",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1751045520,
+      "lat": 35.6619876,
+      "lon": 139.8993699,
+      "tags": {
+        "highway": "traffic_signals",
+        "name": "猫実三丁目",
+        "name:en": "Nekozane 3",
+        "name:ja": "猫実三丁目"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1751045522,
+      "lat": 35.6643603,
+      "lon": 139.89564
+    },
+    {
+      "type": "node",
+      "id": 1751045523,
+      "lat": 35.6588079,
+      "lon": 139.9042926
+    },
+    {
+      "type": "node",
+      "id": 1751045527,
+      "lat": 35.664193,
+      "lon": 139.895947
+    },
+    {
+      "type": "node",
+      "id": 1751045529,
+      "lat": 35.6642842,
+      "lon": 139.8957882
+    },
+    {
+      "type": "node",
+      "id": 1751045535,
+      "lat": 35.6645632,
+      "lon": 139.8951176
+    },
+    {
+      "type": "node",
+      "id": 1751045536,
+      "lat": 35.6644984,
+      "lon": 139.8953088
+    },
+    {
+      "type": "node",
+      "id": 1751045537,
+      "lat": 35.6631323,
+      "lon": 139.8976068,
+      "tags": {
+        "highway": "traffic_signals",
+        "traffic_signals": "signal"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1751045540,
+      "lat": 35.6613424,
+      "lon": 139.9003668,
+      "tags": {
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1751045541,
+      "lat": 35.6626533,
+      "lon": 139.8983362,
+      "tags": {
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1751045543,
+      "lat": 35.6644288,
+      "lon": 139.8954883
+    },
+    {
+      "type": "node",
+      "id": 1751045547,
+      "lat": 35.6585175,
+      "lon": 139.9046872,
+      "tags": {
+        "highway": "traffic_signals",
+        "name": "消防本部前"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1751045549,
+      "lat": 35.6628591,
+      "lon": 139.8980224
+    },
+    {
+      "type": "node",
+      "id": 1751045555,
+      "lat": 35.6598222,
+      "lon": 139.9027111,
+      "tags": {
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2285374727,
+      "lat": 35.6631708,
+      "lon": 139.8975436,
+      "tags": {
+        "highway": "crossing",
+        "source": "Bing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2285374733,
+      "lat": 35.663932,
+      "lon": 139.8963611,
+      "tags": {
+        "crossing": "uncontrolled",
+        "crossing_ref": "zebra",
+        "highway": "crossing",
+        "source": "Bing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2301991499,
+      "lat": 35.6320206,
+      "lon": 139.887359,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "オリエンタルランド本社前",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2302352278,
+      "lat": 35.6320324,
+      "lon": 139.8909759,
+      "tags": {
+        "crossing": "traffic_signals",
+        "crossing_ref": "zebra",
+        "highway": "traffic_signals",
+        "name": "運動公園前",
+        "name:en": "Sports Park",
+        "name:ja": "運動公園前",
+        "name:ja-Hira": "うんどうこうえんまえ",
+        "name:ja_rm": "undōkōenmae"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2302352281,
+      "lat": 35.6321039,
+      "lon": 139.8910742,
+      "tags": {
+        "crossing": "traffic_signals",
+        "crossing_ref": "zebra",
+        "highway": "traffic_signals",
+        "name": "運動公園前",
+        "name:en": "Sports Park",
+        "name:ja": "運動公園前",
+        "name:ja-Hira": "うんどうこうえんまえ",
+        "name:ja_rm": "undōkōenmae"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2302433642,
+      "lat": 35.6356106,
+      "lon": 139.8829064
+    },
+    {
+      "type": "node",
+      "id": 2302433643,
+      "lat": 35.6355944,
+      "lon": 139.8836479
+    },
+    {
+      "type": "node",
+      "id": 2302433647,
+      "lat": 35.6356817,
+      "lon": 139.8834153
+    },
+    {
+      "type": "node",
+      "id": 2302433649,
+      "lat": 35.635982,
+      "lon": 139.883296
+    },
+    {
+      "type": "node",
+      "id": 2305143621,
+      "lat": 35.6359997,
+      "lon": 139.8928511
+    },
+    {
+      "type": "node",
+      "id": 2305143677,
+      "lat": 35.6480953,
+      "lon": 139.8928491
+    },
+    {
+      "type": "node",
+      "id": 2305143694,
+      "lat": 35.6498779,
+      "lon": 139.8937276
+    },
+    {
+      "type": "node",
+      "id": 2305143704,
+      "lat": 35.6508303,
+      "lon": 139.8943948
+    },
+    {
+      "type": "node",
+      "id": 2323999351,
+      "lat": 35.635265,
+      "lon": 139.8835953,
+      "tags": {
+        "crossing": "marked",
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2517033905,
+      "lat": 35.6640051,
+      "lon": 139.8962488,
+      "tags": {
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2533090408,
+      "lat": 35.6553444,
+      "lon": 139.9034156
+    },
+    {
+      "type": "node",
+      "id": 2533090450,
+      "lat": 35.6560363,
+      "lon": 139.9036803
+    },
+    {
+      "type": "node",
+      "id": 2535001980,
+      "lat": 35.6582862,
+      "lon": 139.9045929
+    },
+    {
+      "type": "node",
+      "id": 2536258904,
+      "lat": 35.6530533,
+      "lon": 139.8987817,
+      "tags": {
+        "highway": "traffic_signals",
+        "name": "東野"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2536280249,
+      "lat": 35.6479747,
+      "lon": 139.8927912,
+      "tags": {
+        "highway": "traffic_signals",
+        "name": "東海大浦安入口",
+        "name:en": "Tokai Univ. H. S.",
+        "name:ja": "東海大浦安入口",
+        "traffic_signals": "signal"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3757005931,
+      "lat": 35.6640743,
+      "lon": 139.8961435,
+      "tags": {
+        "crossing": "uncontrolled",
+        "crossing_ref": "zebra",
+        "highway": "crossing",
+        "source": "Bing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3832530168,
+      "lat": 35.6347206,
+      "lon": 139.884061
+    },
+    {
+      "type": "node",
+      "id": 3832530171,
+      "lat": 35.6350144,
+      "lon": 139.8836464,
+      "tags": {
+        "crossing": "marked",
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6666492962,
+      "lat": 35.6544555,
+      "lon": 139.9023232
+    },
+    {
+      "type": "node",
+      "id": 6680297080,
+      "lat": 35.6380409,
+      "lon": 139.8902816,
+      "tags": {
+        "crossing": "marked",
+        "crossing:island": "no",
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6720667165,
+      "lat": 35.6310025,
+      "lon": 139.8899547,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "運動公園",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6764110349,
+      "lat": 35.6623799,
+      "lon": 139.8989516,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "神明裏",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6764110351,
+      "lat": 35.6646528,
+      "lon": 139.8951783,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "local_ref": "A",
+        "name": "浦安駅入口",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6778515940,
+      "lat": 35.6573868,
+      "lon": 139.9042866,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "��工会議所",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6778610694,
+      "lat": 35.6509804,
+      "lon": 139.8946041,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "東野プール",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6778610695,
+      "lat": 35.6483757,
+      "lon": 139.8930491,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "東海大浦安高校入口",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6796278426,
+      "lat": 35.636135,
+      "lon": 139.8927421,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "見明川",
+        "operator": "東京ベイシティ交通",
+        "passenger_information_display": "yes",
+        "public_transport": "platform",
+        "shelter": "no",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6796278429,
+      "lat": 35.646037,
+      "lon": 139.8919091,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "東海大浦安高校前",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6796278430,
+      "lat": 35.642908,
+      "lon": 139.890387,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "東野三丁目",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6796278431,
+      "lat": 35.6403122,
+      "lon": 139.8891218,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "弁天橋",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform",
+        "shelter": "no",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6796318506,
+      "lat": 35.6425897,
+      "lon": 139.8901774,
+      "tags": {
+        "highway": "traffic_signals",
+        "traffic_signals": "signal"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6796318510,
+      "lat": 35.6457368,
+      "lon": 139.8917105,
+      "tags": {
+        "highway": "traffic_signals",
+        "traffic_signals": "signal"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6796318514,
+      "lat": 35.6504809,
+      "lon": 139.8941066,
+      "tags": {
+        "crossing": "marked",
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6832289638,
+      "lat": 35.6626266,
+      "lon": 139.8983777,
+      "tags": {
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6959347380,
+      "lat": 35.6318839,
+      "lon": 139.8876117,
+      "tags": {
+        "crossing": "marked",
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6959383415,
+      "lat": 35.6306759,
+      "lon": 139.8891321,
+      "tags": {
+        "crossing": "marked",
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6959383417,
+      "lat": 35.6307011,
+      "lon": 139.8893987,
+      "tags": {
+        "crossing": "marked",
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6959385668,
+      "lat": 35.6359225,
+      "lon": 139.8828543
+    },
+    {
+      "type": "node",
+      "id": 6959385669,
+      "lat": 35.6359888,
+      "lon": 139.8829734
+    },
+    {
+      "type": "node",
+      "id": 6959385670,
+      "lat": 35.6360092,
+      "lon": 139.8830579
+    },
+    {
+      "type": "node",
+      "id": 6962865554,
+      "lat": 35.6392905,
+      "lon": 139.8887144,
+      "tags": {
+        "crossing": "marked",
+        "crossing:island": "no",
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7597408161,
+      "lat": 35.646928,
+      "lon": 139.8922891
+    },
+    {
+      "type": "node",
+      "id": 8432115277,
+      "lat": 35.6533118,
+      "lon": 139.89946
+    },
+    {
+      "type": "node",
+      "id": 8639049685,
+      "lat": 35.6326989,
+      "lon": 139.8918098
+    },
+    {
+      "type": "node",
+      "id": 8639049686,
+      "lat": 35.6325699,
+      "lon": 139.8916555
+    },
+    {
+      "type": "node",
+      "id": 8639105138,
+      "lat": 35.6335274,
+      "lon": 139.8928039
+    },
+    {
+      "type": "node",
+      "id": 9482589456,
+      "lat": 35.6360122,
+      "lon": 139.8831037
+    },
+    {
+      "type": "node",
+      "id": 9482601623,
+      "lat": 35.6359921,
+      "lon": 139.8832685,
+      "tags": {
+        "amenity": "taxi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9482601633,
+      "lat": 35.6360225,
+      "lon": 139.8833113,
+      "tags": {
+        "bus": "yes",
+        "description": "降車場",
+        "highway": "bus_stop",
+        "local_ref": "5",
+        "name": "舞浜駅",
+        "name:en": "Maihama Sta.",
+        "name:ja": "舞浜駅",
+        "operator": "東京ベイシティ交通;京成トランジットバス",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9482700320,
+      "lat": 35.6356333,
+      "lon": 139.883605
+    },
+    {
+      "type": "node",
+      "id": 9482966242,
+      "lat": 35.63179,
+      "lon": 139.8877266,
+      "tags": {
+        "highway": "traffic_signals",
+        "traffic_signals": "signal"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10294079751,
+      "lat": 35.6583597,
+      "lon": 139.9046229,
+      "tags": {
+        "crossing": "traffic_signals",
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10294079831,
+      "lat": 35.6586382,
+      "lon": 139.9045359
+    },
+    {
+      "type": "node",
+      "id": 10737859366,
+      "lat": 35.6456918,
+      "lon": 139.8916885
+    },
+    {
+      "type": "node",
+      "id": 11311295011,
+      "lat": 35.6321854,
+      "lon": 139.8911878,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11311295012,
+      "lat": 35.6319311,
+      "lon": 139.8908489,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11524813679,
+      "lat": 35.631266,
+      "lon": 139.8900762
+    },
+    {
+      "type": "node",
+      "id": 11584399646,
+      "lat": 35.6348786,
+      "lon": 139.8942415
+    },
+    {
+      "type": "node",
+      "id": 11584399648,
+      "lat": 35.6333133,
+      "lon": 139.892545,
+      "tags": {
+        "crossing": "uncontrolled",
+        "crossing:markings": "yes",
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11584399650,
+      "lat": 35.6330661,
+      "lon": 139.8922557,
+      "tags": {
+        "crossing": "uncontrolled",
+        "crossing:markings": "yes",
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11612414321,
+      "lat": 35.6376699,
+      "lon": 139.890807,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "弁天四丁目",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform",
+        "shelter": "no",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11964073581,
+      "lat": 35.631353,
+      "lon": 139.8901773
+    },
+    {
+      "type": "node",
+      "id": 11984691285,
+      "lat": 35.6333921,
+      "lon": 139.8926403
+    },
+    {
+      "type": "node",
+      "id": 12015168088,
+      "lat": 35.6338576,
+      "lon": 139.8931946
+    },
+    {
+      "type": "node",
+      "id": 12118571724,
+      "lat": 35.6473554,
+      "lon": 139.8924941
+    },
+    {
+      "type": "node",
+      "id": 12118571728,
+      "lat": 35.6472054,
+      "lon": 139.8924222
+    },
+    {
+      "type": "node",
+      "id": 12136047143,
+      "lat": 35.6348725,
+      "lon": 139.8942494,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12136047146,
+      "lat": 35.6343655,
+      "lon": 139.8938004,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12136047162,
+      "lat": 35.6369248,
+      "lon": 139.891685,
+      "tags": {
+        "crossing:island": "no",
+        "crossing:signals": "yes",
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12136047165,
+      "lat": 35.6368045,
+      "lon": 139.8918363,
+      "tags": {
+        "crossing:island": "no",
+        "crossing:signals": "yes",
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12368941327,
+      "lat": 35.6510587,
+      "lon": 139.8946184
+    },
+    {
+      "type": "node",
+      "id": 12368996365,
+      "lat": 35.6537558,
+      "lon": 139.9006015
+    },
+    {
+      "type": "node",
+      "id": 12368996366,
+      "lat": 35.6337929,
+      "lon": 139.8932505,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "舞浜三丁目",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12368996372,
+      "lat": 35.6540555,
+      "lon": 139.9015117,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "市役所前",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12368996373,
+      "lat": 35.6547458,
+      "lon": 139.9030452
+    },
+    {
+      "type": "node",
+      "id": 12368996374,
+      "lat": 35.6547458,
+      "lon": 139.9031009
+    },
+    {
+      "type": "node",
+      "id": 12368996375,
+      "lat": 35.6547366,
+      "lon": 139.9029922
+    },
+    {
+      "type": "node",
+      "id": 12385552204,
+      "lat": 35.6359603,
+      "lon": 139.8829052
+    },
+    {
+      "type": "node",
+      "id": 12421760355,
+      "lat": 35.6483855,
+      "lon": 139.8929981
+    },
+    {
+      "type": "node",
+      "id": 12697897836,
+      "lat": 35.6312119,
+      "lon": 139.888456
+    },
+    {
+      "type": "node",
+      "id": 12982948149,
+      "lat": 35.6547458,
+      "lon": 139.9030784
+    },
+    {
+      "type": "node",
+      "id": 12982948158,
+      "lat": 35.6538339,
+      "lon": 139.9007914,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12982948164,
+      "lat": 35.6543504,
+      "lon": 139.9020643,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12996587045,
+      "lat": 35.6469227,
+      "lon": 139.8922865
+    },
+    {
+      "type": "node",
+      "id": 12996587046,
+      "lat": 35.6468933,
+      "lon": 139.8922724
+    },
+    {
+      "type": "node",
+      "id": 12996587047,
+      "lat": 35.6469043,
+      "lon": 139.8922777
+    },
+    {
+      "type": "node",
+      "id": 12996587055,
+      "lat": 35.639528,
+      "lon": 139.8886868,
+      "tags": {
+        "crossing:signals": "yes",
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12996587081,
+      "lat": 35.6478735,
+      "lon": 139.8927427,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12996587086,
+      "lat": 35.6480642,
+      "lon": 139.8928342,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12996587147,
+      "lat": 35.6530018,
+      "lon": 139.8986463,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12996587151,
+      "lat": 35.6531035,
+      "lon": 139.8989135,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12996587189,
+      "lat": 35.6539418,
+      "lon": 139.9010573
+    },
+    {
+      "type": "node",
+      "id": 13001075946,
+      "lat": 35.6620664,
+      "lon": 139.8992475,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13001075947,
+      "lat": 35.6619032,
+      "lon": 139.8995004,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13011131659,
+      "lat": 35.662731,
+      "lon": 139.8982177,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13011131664,
+      "lat": 35.662575,
+      "lon": 139.8984579,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13011131671,
+      "lat": 35.6598702,
+      "lon": 139.902637,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13011131677,
+      "lat": 35.6597701,
+      "lon": 139.9027924,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13025864821,
+      "lat": 35.6555504,
+      "lon": 139.9034944
+    },
+    {
+      "type": "way",
+      "id": 26350168,
+      "nodes": [
+        288701221,
+        8432115277,
+        12996587151,
+        2536258904
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "maxspeed": "40",
+        "name": "市役所通り（段差道路）",
+        "name:en": "Dansa Road",
+        "name:es": "Avenida Dansa",
+        "name:ja-Hira": "しやくしょどおり（だんさどうろ）",
+        "oneway": "yes",
+        "sidewalk": "left",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 26350219,
+      "nodes": [
+        288701221,
+        12368996365
+      ],
+      "tags": {
+        "bridge": "yes",
+        "highway": "tertiary",
+        "lanes": "2",
+        "layer": "1",
+        "maxspeed": "40",
+        "name": "市役所通り",
+        "name:en": "Shiyakusho-dori",
+        "name:ja": "市役所通り",
+        "name:ja-Hira": "しやくしょどおり",
+        "oneway": "no",
+        "sidewalk": "right",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 26350222,
+      "nodes": [
+        288701223,
+        12982948158,
+        12996587189,
+        12982948164,
+        6666492962,
+        12368996375,
+        12368996373,
+        12982948149,
+        12368996374,
+        288701224
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "2",
+        "maxspeed": "40",
+        "name": "市役所通り",
+        "name:en": "Shiyakusho-dori",
+        "name:ja": "市役所通り",
+        "name:ja-Hira": "しやくしょどおり",
+        "oneway": "no",
+        "sidewalk": "both",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 30176170,
+      "nodes": [
+        288706610,
+        288706611
+      ],
+      "tags": {
+        "bridge": "yes",
+        "highway": "secondary",
+        "lanes": "4",
+        "layer": "1",
+        "maxspeed": "50",
+        "name": "若潮通り",
+        "name:en": "Wakashio-dori Avenue",
+        "name:es": "Calle Wakashio",
+        "name:ja": "若潮通り",
+        "name:ja-Hira": "でんぺいばし",
+        "oneway": "no",
+        "ref": "276",
+        "source": "knowledge",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 30176171,
+      "nodes": [
+        288706611,
+        1664107581,
+        12136047146,
+        12015168088,
+        8639105138,
+        11984691285,
+        11584399648,
+        332510856,
+        11584399650,
+        8639049685,
+        8639049686,
+        11311295011,
+        2302352281
+      ],
+      "tags": {
+        "highway": "secondary",
+        "lanes": "4",
+        "maxspeed": "50",
+        "name": "若潮通り",
+        "name:en": "Wakashio-dori Avenue",
+        "name:es": "Calle Wakashio",
+        "name:ja": "若潮通り",
+        "name:ja-Hira": "わかしおどおり",
+        "name:ko": "와카시오로",
+        "oneway": "no",
+        "ref": "276",
+        "source": "GSImaps/ort",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 47121218,
+      "nodes": [
+        600745301,
+        12136047143,
+        11584399646,
+        2305143621,
+        12136047165,
+        1455553561
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "2",
+        "maxspeed": "40",
+        "oneway": "no",
+        "source": "Bing 2010",
+        "surface": "paved"
+      }
+    },
+    {
+      "type": "way",
+      "id": 163404380,
+      "nodes": [
+        1751045535,
+        1751045536,
+        1751045543,
+        1751045522,
+        1751045529,
+        1751045527,
+        3757005931,
+        2517033905,
+        2285374733,
+        2285374727,
+        1751045537,
+        1751045549,
+        13011131659,
+        1751045541,
+        6832289638,
+        13011131664,
+        13001075946,
+        1751045520
+      ],
+      "tags": {
+        "highway": "secondary",
+        "lanes": "4",
+        "maxspeed": "50",
+        "name": "やなぎ通り",
+        "name:en": "Yanagi-dori",
+        "name:es": "Calle Yanagi",
+        "ref": "242",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 203564427,
+      "nodes": [
+        332517893,
+        6959383415,
+        12697897836,
+        9482966242,
+        6959347380,
+        3832530168,
+        3832530171,
+        332518668
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "maxspeed": "50",
+        "note": "オリエンタルランド社 私道",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 258419781,
+      "nodes": [
+        332518668,
+        2323999351,
+        332518639,
+        332518640,
+        332518641,
+        2302433643,
+        9482700320,
+        332518642,
+        332518643,
+        2302433647,
+        332518644,
+        332518645,
+        332518646,
+        2302433642,
+        332518647,
+        332518649,
+        332518650,
+        332518651,
+        332518653,
+        332518655,
+        6959385668,
+        12385552204,
+        6959385669,
+        6959385670,
+        9482589456,
+        332518657,
+        9482601623,
+        2302433649
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 286387769,
+      "nodes": [
+        2302352281,
+        2302352278
+      ],
+      "tags": {
+        "highway": "secondary",
+        "lanes": "4",
+        "maxspeed": "50",
+        "name": "若潮通り",
+        "name:en": "Wakashio-dori Avenue",
+        "oneway": "no",
+        "ref": "276",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 720402606,
+      "nodes": [
+        288701224,
+        2533090408,
+        13025864821,
+        2533090450,
+        1321238734,
+        1321238716,
+        2535001980,
+        10294079751,
+        1751045547
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "2",
+        "maxspeed": "40",
+        "source": "Bing",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 720406623,
+      "nodes": [
+        1455553561,
+        12136047162,
+        6680297080,
+        6962865554,
+        600745305
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "2",
+        "maxspeed": "40",
+        "oneway": "no",
+        "source": "Bing 2010",
+        "surface": "paved"
+      }
+    },
+    {
+      "type": "way",
+      "id": 796894963,
+      "nodes": [
+        2302352278,
+        11311295012,
+        11964073581,
+        11524813679
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "4",
+        "maxspeed": "50",
+        "oneway": "no",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 846881938,
+      "nodes": [
+        600745301,
+        288706610
+      ],
+      "tags": {
+        "highway": "secondary",
+        "lanes": "4",
+        "maxspeed": "50",
+        "name": "若潮通り",
+        "name:en": "Wakashio-dori Avenue",
+        "name:es": "Calle Wakashio",
+        "name:ja": "若潮通り",
+        "name:ja-Hira": "わかしおどおり",
+        "oneway": "no",
+        "ref": "276",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 847291604,
+      "nodes": [
+        2536258904,
+        12996587147,
+        1493238981,
+        1493249392,
+        1493228244,
+        288700899,
+        598553561,
+        598553562,
+        1493249370,
+        598553563,
+        598553564,
+        12368941327,
+        598553565,
+        2305143704,
+        598553566,
+        1493249409,
+        6796318514,
+        598553567,
+        2305143694,
+        1493265101,
+        1493265087,
+        12421760355
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "2",
+        "maxspeed": "50",
+        "name": "市役所通り（段差道路）",
+        "name:en": "Dansa Road",
+        "name:es": "Avenida Dansa",
+        "name:ja-Hira": "しやくしょどおり（だんさどうろ）",
+        "oneway": "yes",
+        "sidewalk": "left",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1240445586,
+      "nodes": [
+        11524813679,
+        6959383417,
+        332517893
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "5",
+        "lanes:backward": "3",
+        "lanes:forward": "2",
+        "maxspeed": "50",
+        "oneway": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1337297005,
+      "nodes": [
+        12368996365,
+        288701223
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "2",
+        "maxspeed": "40",
+        "name": "市役所通り",
+        "name:en": "Shiyakusho-dori",
+        "name:ja": "市役所通り",
+        "name:ja-Hira": "しやくしょどおり",
+        "oneway": "no",
+        "sidewalk": "right",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1339150559,
+      "nodes": [
+        1751045555,
+        13011131677,
+        1751045523,
+        10294079831,
+        1751045547
+      ],
+      "tags": {
+        "highway": "secondary",
+        "lanes": "4",
+        "maxspeed": "50",
+        "name": "やなぎ通り",
+        "name:en": "Yanagi-dori",
+        "name:es": "Calle Yanagi",
+        "ref": "242",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1342413246,
+      "nodes": [
+        1751045520,
+        13001075947,
+        1751045540,
+        13011131671,
+        1751045555
+      ],
+      "tags": {
+        "highway": "secondary",
+        "lanes": "4",
+        "maxspeed": "50",
+        "name": "やなぎ通り",
+        "name:en": "Yanagi-dori",
+        "name:es": "Calle Yanagi",
+        "ref": "242",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1342553237,
+      "nodes": [
+        12421760355,
+        2305143677,
+        12996587086,
+        2536280249,
+        12996587081,
+        12118571724,
+        12118571728,
+        7597408161,
+        12996587045,
+        12996587047,
+        12996587046,
+        1667341648,
+        6796318510,
+        10737859366,
+        1664108169,
+        6796318506,
+        1664108096,
+        1664107863,
+        12996587055,
+        600745305
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "2",
+        "maxspeed": "50",
+        "name": "市役所通り（段差道路）",
+        "name:en": "Dansa Road",
+        "name:es": "Avenida Dansa",
+        "name:ja-Hira": "しやくしょどおり（だんさどうろ）",
+        "oneway": "yes",
+        "sidewalk": "left",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 9983007,
+      "members": [
+        {
+          "type": "node",
+          "ref": 6764110351,
+          "role": "platform_entry_only"
+        },
+        {
+          "type": "node",
+          "ref": 6764110349,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 1330897048,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 1330401194,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 6778515940,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 12368996372,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 1742960273,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 6778610694,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 6778610695,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 6796278429,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 6796278430,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 6796278431,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 11612414321,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 6796278426,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 12368996366,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 6720667165,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 2301991499,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 9482601633,
+          "role": "platform_exit_only"
+        },
+        {
+          "type": "way",
+          "ref": 163404380,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 1342413246,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 1339150559,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 720402606,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 26350222,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 1337297005,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 26350219,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 26350168,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 847291604,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 1342553237,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 720406623,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 47121218,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 846881938,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 30176170,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 30176171,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 286387769,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 796894963,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 1240445586,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 203564427,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 258419781,
+          "role": ""
+        }
+      ],
+      "tags": {
+        "from": "浦安駅入口",
+        "name": "東京ベイシティバス6系統 浦安駅入口⇒東海大浦安高校⇒舞浜駅",
+        "network": "市役所線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "6",
+        "route": "bus",
+        "to": "舞浜駅",
+        "type": "route"
+      }
+    },
+    {
+      "type": "node",
+      "id": 332518234,
+      "lat": 35.6348802,
+      "lon": 139.8839593
+    },
+    {
+      "type": "node",
+      "id": 332518236,
+      "lat": 35.6335251,
+      "lon": 139.885658
+    },
+    {
+      "type": "node",
+      "id": 332518661,
+      "lat": 35.6357208,
+      "lon": 139.8837827
+    },
+    {
+      "type": "node",
+      "id": 332518662,
+      "lat": 35.6356316,
+      "lon": 139.8838242
+    },
+    {
+      "type": "node",
+      "id": 332518664,
+      "lat": 35.6355091,
+      "lon": 139.8838243
+    },
+    {
+      "type": "node",
+      "id": 598553571,
+      "lat": 35.6506625,
+      "lon": 139.8941294
+    },
+    {
+      "type": "node",
+      "id": 598553572,
+      "lat": 35.6510761,
+      "lon": 139.8944309,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "東野プール",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 598553575,
+      "lat": 35.6517571,
+      "lon": 139.8953654
+    },
+    {
+      "type": "node",
+      "id": 598553576,
+      "lat": 35.6519194,
+      "lon": 139.8956441
+    },
+    {
+      "type": "node",
+      "id": 598553577,
+      "lat": 35.6521434,
+      "lon": 139.8961115
+    },
+    {
+      "type": "node",
+      "id": 598553579,
+      "lat": 35.6534302,
+      "lon": 139.8995546
+    },
+    {
+      "type": "node",
+      "id": 600745304,
+      "lat": 35.6394466,
+      "lon": 139.8885254,
+      "tags": {
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 610279051,
+      "lat": 35.6435946,
+      "lon": 139.890549
+    },
+    {
+      "type": "node",
+      "id": 610279055,
+      "lat": 35.6520266,
+      "lon": 139.8958392
+    },
+    {
+      "type": "node",
+      "id": 748620816,
+      "lat": 35.649411,
+      "lon": 139.8933902
+    },
+    {
+      "type": "node",
+      "id": 748620828,
+      "lat": 35.6512138,
+      "lon": 139.894652
+    },
+    {
+      "type": "node",
+      "id": 748620838,
+      "lat": 35.6474702,
+      "lon": 139.8924351
+    },
+    {
+      "type": "node",
+      "id": 748620844,
+      "lat": 35.649893,
+      "lon": 139.8936244
+    },
+    {
+      "type": "node",
+      "id": 748620863,
+      "lat": 35.6525571,
+      "lon": 139.8971899
+    },
+    {
+      "type": "node",
+      "id": 748620874,
+      "lat": 35.650361,
+      "lon": 139.8939025
+    },
+    {
+      "type": "node",
+      "id": 748620929,
+      "lat": 35.6515954,
+      "lon": 139.8951322
+    },
+    {
+      "type": "node",
+      "id": 748653219,
+      "lat": 35.6528153,
+      "lon": 139.8978774
+    },
+    {
+      "type": "node",
+      "id": 748653246,
+      "lat": 35.6522976,
+      "lon": 139.8964695
+    },
+    {
+      "type": "node",
+      "id": 1652826243,
+      "lat": 35.6318339,
+      "lon": 139.8877765,
+      "tags": {
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1652826244,
+      "lat": 35.6319253,
+      "lon": 139.8876646,
+      "tags": {
+        "crossing": "marked",
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1652826334,
+      "lat": 35.6339331,
+      "lon": 139.8931509,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "舞浜三丁目",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1664107888,
+      "lat": 35.6402062,
+      "lon": 139.8888969
+    },
+    {
+      "type": "node",
+      "id": 1664107938,
+      "lat": 35.6406842,
+      "lon": 139.8891358
+    },
+    {
+      "type": "node",
+      "id": 1664108007,
+      "lat": 35.6411697,
+      "lon": 139.8893732
+    },
+    {
+      "type": "node",
+      "id": 1664108048,
+      "lat": 35.6416583,
+      "lon": 139.8896071
+    },
+    {
+      "type": "node",
+      "id": 1664108071,
+      "lat": 35.642135,
+      "lon": 139.8898482
+    },
+    {
+      "type": "node",
+      "id": 1664108110,
+      "lat": 35.6426231,
+      "lon": 139.8900816
+    },
+    {
+      "type": "node",
+      "id": 1664108135,
+      "lat": 35.6431129,
+      "lon": 139.8903145
+    },
+    {
+      "type": "node",
+      "id": 1667341571,
+      "lat": 35.6440849,
+      "lon": 139.8907788
+    },
+    {
+      "type": "node",
+      "id": 1667341579,
+      "lat": 35.6445598,
+      "lon": 139.8910235
+    },
+    {
+      "type": "node",
+      "id": 1667341588,
+      "lat": 35.6450524,
+      "lon": 139.8912608
+    },
+    {
+      "type": "node",
+      "id": 1667341604,
+      "lat": 35.6455375,
+      "lon": 139.891498
+    },
+    {
+      "type": "node",
+      "id": 1667341647,
+      "lat": 35.6465034,
+      "lon": 139.8919672
+    },
+    {
+      "type": "node",
+      "id": 1742960270,
+      "lat": 35.6529535,
+      "lon": 139.8981424,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "東野一丁目",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2301981524,
+      "lat": 35.6312873,
+      "lon": 139.8885643,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "オリエンタルランド本社前",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2302433526,
+      "lat": 35.6322323,
+      "lon": 139.8872766
+    },
+    {
+      "type": "node",
+      "id": 2302433634,
+      "lat": 35.6347018,
+      "lon": 139.8841908
+    },
+    {
+      "type": "node",
+      "id": 2305143629,
+      "lat": 35.6398255,
+      "lon": 139.8887221
+    },
+    {
+      "type": "node",
+      "id": 2305143641,
+      "lat": 35.646018,
+      "lon": 139.8917324
+    },
+    {
+      "type": "node",
+      "id": 2305143658,
+      "lat": 35.6469896,
+      "lon": 139.8922149
+    },
+    {
+      "type": "node",
+      "id": 2305143678,
+      "lat": 35.6481348,
+      "lon": 139.8927663
+    },
+    {
+      "type": "node",
+      "id": 2305143707,
+      "lat": 35.6507993,
+      "lon": 139.8942415
+    },
+    {
+      "type": "node",
+      "id": 2323999346,
+      "lat": 35.6350695,
+      "lon": 139.8836973,
+      "tags": {
+        "crossing": "marked",
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2323999350,
+      "lat": 35.6352267,
+      "lon": 139.8836717,
+      "tags": {
+        "crossing": "marked",
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2536258907,
+      "lat": 35.6531052,
+      "lon": 139.8986814,
+      "tags": {
+        "highway": "traffic_signals",
+        "name": "東野"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2536258909,
+      "lat": 35.6532412,
+      "lon": 139.8990482
+    },
+    {
+      "type": "node",
+      "id": 2536280250,
+      "lat": 35.6480344,
+      "lon": 139.8927163,
+      "tags": {
+        "highway": "traffic_signals",
+        "name": "東海大浦安入口",
+        "name:en": "Tokai Univ. H. S.",
+        "name:ja": "東海大浦安入口",
+        "traffic_signals": "signal"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2637761162,
+      "lat": 35.6354249,
+      "lon": 139.8837945
+    },
+    {
+      "type": "node",
+      "id": 2900279301,
+      "lat": 35.6611395,
+      "lon": 139.9005341,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "猫実",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4704783645,
+      "lat": 35.6536592,
+      "lon": 139.9001801
+    },
+    {
+      "type": "node",
+      "id": 6173049666,
+      "lat": 35.6314917,
+      "lon": 139.8882155
+    },
+    {
+      "type": "node",
+      "id": 6173049669,
+      "lat": 35.6315867,
+      "lon": 139.8880934
+    },
+    {
+      "type": "node",
+      "id": 6720667166,
+      "lat": 35.6325209,
+      "lon": 139.8914704,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "運動公園",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6760997389,
+      "lat": 35.6546258,
+      "lon": 139.9025137,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "市役所前",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6764110350,
+      "lat": 35.6628205,
+      "lon": 139.8979314,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "神明裏",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6764110353,
+      "lat": 35.6644872,
+      "lon": 139.8950364,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "local_ref": "X",
+        "name": "浦安駅入口",
+        "note": "降車専用",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6778515939,
+      "lat": 35.6564986,
+      "lon": 139.9038134,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "商工会議所",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6778610691,
+      "lat": 35.6433167,
+      "lon": 139.8903633,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "東野三丁目",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6778610692,
+      "lat": 35.6450061,
+      "lon": 139.8911876,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "東海大浦安高校前",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6796278427,
+      "lat": 35.6358522,
+      "lon": 139.8929698,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "見明川",
+        "operator": "東京ベイシティ交通",
+        "passenger_information_display": "yes",
+        "public_transport": "platform",
+        "shelter": "no",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6796278428,
+      "lat": 35.6400969,
+      "lon": 139.8887958,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "弁天橋",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform",
+        "shelter": "no",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6796278432,
+      "lat": 35.6376481,
+      "lon": 139.8907265,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "弁天四丁目",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform",
+        "shelter": "no",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6796318503,
+      "lat": 35.6425271,
+      "lon": 139.8900326,
+      "tags": {
+        "highway": "traffic_signals",
+        "traffic_signals": "signal"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6796318507,
+      "lat": 35.6456291,
+      "lon": 139.8915422,
+      "tags": {
+        "highway": "traffic_signals",
+        "traffic_signals": "signal"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6796318511,
+      "lat": 35.6504498,
+      "lon": 139.8939642,
+      "tags": {
+        "crossing": "marked",
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6957437530,
+      "lat": 35.6484144,
+      "lon": 139.8928546,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "東海大浦安高校入口",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6957437531,
+      "lat": 35.6501814,
+      "lon": 139.8937873
+    },
+    {
+      "type": "node",
+      "id": 6957437533,
+      "lat": 35.6514211,
+      "lon": 139.8948957
+    },
+    {
+      "type": "node",
+      "id": 9482601637,
+      "lat": 35.6357267,
+      "lon": 139.8838714,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "local_ref": "2",
+        "name": "舞浜駅",
+        "name:en": "Maihama Sta.",
+        "name:ja": "舞浜駅",
+        "note": "市役所線・舞浜線・大三角線",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform",
+        "shelter": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9482966243,
+      "lat": 35.6307186,
+      "lon": 139.8891831,
+      "tags": {
+        "crossing": "marked",
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11963044021,
+      "lat": 35.6342424,
+      "lon": 139.8847636
+    },
+    {
+      "type": "node",
+      "id": 11963044023,
+      "lat": 35.6341172,
+      "lon": 139.8849198
+    },
+    {
+      "type": "node",
+      "id": 12368941328,
+      "lat": 35.6510413,
+      "lon": 139.8944655
+    },
+    {
+      "type": "node",
+      "id": 12368941331,
+      "lat": 35.6500322,
+      "lon": 139.8936997
+    },
+    {
+      "type": "node",
+      "id": 12368941333,
+      "lat": 35.6486636,
+      "lon": 139.893028
+    },
+    {
+      "type": "node",
+      "id": 12368941334,
+      "lat": 35.648928,
+      "lon": 139.8931554
+    },
+    {
+      "type": "node",
+      "id": 12368996379,
+      "lat": 35.6589613,
+      "lon": 139.9038774,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "消防本部前",
+        "name:en": "Shoubou Honbu Mae",
+        "name:ja": "消防本部前",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12369582640,
+      "lat": 35.6355647,
+      "lon": 139.8838339
+    },
+    {
+      "type": "node",
+      "id": 12421760356,
+      "lat": 35.6483982,
+      "lon": 139.8928966
+    },
+    {
+      "type": "node",
+      "id": 12439981631,
+      "lat": 35.635683,
+      "lon": 139.8838057
+    },
+    {
+      "type": "node",
+      "id": 12996587054,
+      "lat": 35.6395595,
+      "lon": 139.888588,
+      "tags": {
+        "crossing:signals": "yes",
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12996587082,
+      "lat": 35.6479351,
+      "lon": 139.8926668,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12996587087,
+      "lat": 35.648124,
+      "lon": 139.8927609,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12996587146,
+      "lat": 35.6530557,
+      "lon": 139.898544,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12996587149,
+      "lat": 35.6531539,
+      "lon": 139.8988128,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13001072055,
+      "lat": 35.6437313,
+      "lon": 139.8906131
+    },
+    {
+      "type": "way",
+      "id": 46880119,
+      "nodes": [
+        600745304,
+        12996587054,
+        2305143629,
+        1664107888,
+        1664107938,
+        1664108007,
+        1664108048,
+        1664108071,
+        6796318503,
+        1664108110,
+        1664108135,
+        610279051,
+        13001072055,
+        1667341571,
+        1667341579,
+        1667341588,
+        1667341604,
+        6796318507,
+        2305143641,
+        1667341647,
+        2305143658,
+        748620838,
+        12996587082,
+        2536280250,
+        12996587087,
+        2305143678,
+        12421760356
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "2",
+        "maxspeed": "50",
+        "name": "市役所通り（段差道路）",
+        "name:en": "Dansa Road",
+        "name:es": "Avenida Dansa",
+        "name:ja-Hira": "しやくしょどおり（だんさどうろ）",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 258419782,
+      "nodes": [
+        332518668,
+        2323999346,
+        332518234,
+        2302433634,
+        11963044021,
+        11963044023,
+        332518236,
+        2302433526,
+        1652826244,
+        1652826243,
+        6173049669,
+        6173049666,
+        9482966243,
+        332517893
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "maxspeed": "50",
+        "note": "オリエンタルランド社 私道",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 847291605,
+      "nodes": [
+        2536258907,
+        12996587149,
+        2536258909,
+        598553579,
+        4704783645,
+        288701221
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "maxspeed": "40",
+        "name": "市役所通り（段差道路）",
+        "name:en": "Dansa Road",
+        "name:es": "Avenida Dansa",
+        "name:ja-Hira": "しやくしょどおり（だんさどうろ）",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1337138028,
+      "nodes": [
+        12369582640,
+        332518664,
+        2637761162,
+        2323999350,
+        332518668
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1337297009,
+      "nodes": [
+        600745305,
+        600745304
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "2",
+        "maxspeed": "40",
+        "oneway": "no",
+        "source": "Bing 2010",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1337358421,
+      "nodes": [
+        332518661,
+        12439981631,
+        332518662,
+        12369582640
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "oneway": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1342553236,
+      "nodes": [
+        12421760356,
+        12368941333,
+        12368941334,
+        748620816,
+        748620844,
+        12368941331,
+        6957437531,
+        748620874,
+        6796318511,
+        598553571,
+        2305143707,
+        12368941328,
+        748620828,
+        6957437533,
+        748620929,
+        598553575,
+        598553576,
+        610279055,
+        598553577,
+        748653246,
+        748620863,
+        748653219,
+        12996587146,
+        2536258907
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "2",
+        "maxspeed": "50",
+        "name": "市役所通り（段差道路）",
+        "name:en": "Dansa Road",
+        "name:es": "Avenida Dansa",
+        "name:ja-Hira": "しやくしょどおり（だんさどうろ）",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 18322968,
+      "members": [
+        {
+          "type": "node",
+          "ref": 9482601637,
+          "role": "platform_entry_only"
+        },
+        {
+          "type": "node",
+          "ref": 2301981524,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 6720667166,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 1652826334,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 6796278427,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 6796278432,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 6796278428,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 6778610691,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 6778610692,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 6957437530,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 598553572,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 1742960270,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 6760997389,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 6778515939,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 12368996379,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 2900279301,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 6764110350,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 6764110353,
+          "role": "platform_exit_only"
+        },
+        {
+          "type": "way",
+          "ref": 1337358421,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 1337138028,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 258419782,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 1240445586,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 796894963,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 286387769,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 30176171,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 30176170,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 846881938,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 47121218,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 720406623,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 1337297009,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 46880119,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 1342553236,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 847291605,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 26350219,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 1337297005,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 26350222,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 720402606,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 1339150559,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 1342413246,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 163404380,
+          "role": ""
+        }
+      ],
+      "tags": {
+        "name": "東京ベイシティバス6系統 舞浜駅⇒東海大浦安高校⇒浦安駅入口",
+        "network": "市役所線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "6",
+        "route": "bus",
+        "type": "route"
+      }
+    }
+  ]
+}

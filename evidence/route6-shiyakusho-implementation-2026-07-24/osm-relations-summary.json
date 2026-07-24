@@ -1,0 +1,811 @@
+{
+  "fetchedAt": "2026-07-24T13:49:13.984Z",
+  "route": "shiyakusho-route6",
+  "relations": [
+    {
+      "id": 18322969,
+      "label": "maihama master",
+      "ok": true,
+      "source": "overpass-api.de",
+      "name": "東京ベイシティバス6系統 浦安駅入口-東海大浦安高校-舞浜駅",
+      "tags": {
+        "name": "東京ベイシティバス6系統 浦安駅入口-東海大浦安高校-舞浜駅",
+        "network": "市役所線",
+        "operator": "東京ベイシティ交通",
+        "ref": "6",
+        "route_master": "bus",
+        "type": "route_master"
+      },
+      "memberCount": 2,
+      "wayMemberCount": 0,
+      "wayElementCount": 27,
+      "stopMemberCount": 0,
+      "stopRoleCount": 0,
+      "platformMemberCount": 0,
+      "nodeElementCount": 260,
+      "memberRoles": {
+        "": 2
+      },
+      "platformNames": [],
+      "platformsDetail": [],
+      "file": "osm-relation-18322969.json",
+      "mergedChildren": [
+        9983007,
+        18322968
+      ],
+      "mergeNote": "merged child relation geometries into master bundle"
+    },
+    {
+      "id": 9983007,
+      "label": "maihama outbound",
+      "ok": true,
+      "source": "overpass.kumi.systems",
+      "name": "東京ベイシティバス6系統 浦安駅入口⇒東海大浦安高校⇒舞浜駅",
+      "tags": {
+        "from": "浦安駅入口",
+        "name": "東京ベイシティバス6系統 浦安駅入口⇒東海大浦安高校⇒舞浜駅",
+        "network": "市役所線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "6",
+        "route": "bus",
+        "to": "舞浜駅",
+        "type": "route"
+      },
+      "memberCount": 38,
+      "wayMemberCount": 20,
+      "wayElementCount": 20,
+      "stopMemberCount": 18,
+      "stopRoleCount": 0,
+      "platformMemberCount": 18,
+      "nodeElementCount": 169,
+      "memberRoles": {
+        "platform_entry_only": 1,
+        "platform": 16,
+        "platform_exit_only": 1,
+        "": 20
+      },
+      "platformNames": [
+        "浦安駅入口",
+        "神明裏",
+        "猫実",
+        "消防本部前",
+        "商工会議所",
+        "市役所前",
+        "東野一丁目",
+        "東野プール",
+        "東海大浦安高校入口",
+        "東海大浦安高校前",
+        "東野三丁目",
+        "弁天橋",
+        "弁天四丁目",
+        "見明川",
+        "舞浜三丁目",
+        "運動公園",
+        "オリエンタルランド本社前",
+        "舞浜駅"
+      ],
+      "platformsDetail": [
+        {
+          "role": "platform_entry_only",
+          "type": "node",
+          "ref": 6764110351,
+          "name": "浦安駅入口"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6764110349,
+          "name": "神明裏"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1330897048,
+          "name": "猫実"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1330401194,
+          "name": "消防本部前"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6778515940,
+          "name": "商工会議所"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 12368996372,
+          "name": "市役所前"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1742960273,
+          "name": "東野一丁目"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6778610694,
+          "name": "東野プール"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6778610695,
+          "name": "東海大浦安高校入口"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6796278429,
+          "name": "東海大浦安高校前"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6796278430,
+          "name": "東野三丁目"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6796278431,
+          "name": "弁天橋"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11612414321,
+          "name": "弁天四丁目"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6796278426,
+          "name": "見明川"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 12368996366,
+          "name": "舞浜三丁目"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6720667165,
+          "name": "運動公園"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 2301991499,
+          "name": "オリエンタルランド本社前"
+        },
+        {
+          "role": "platform_exit_only",
+          "type": "node",
+          "ref": 9482601633,
+          "name": "舞浜駅"
+        }
+      ],
+      "file": "osm-relation-9983007.json",
+      "mergedChildren": [],
+      "mergeNote": null
+    },
+    {
+      "id": 18322968,
+      "label": "maihama inbound",
+      "ok": true,
+      "source": "overpass-api.de",
+      "name": "東京ベイシティバス6系統 舞浜駅⇒東海大浦安高校⇒浦安駅入口",
+      "tags": {
+        "name": "東京ベイシティバス6系統 舞浜駅⇒東海大浦安高校⇒浦安駅入口",
+        "network": "市役所線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "6",
+        "route": "bus",
+        "type": "route"
+      },
+      "memberCount": 40,
+      "wayMemberCount": 22,
+      "wayElementCount": 22,
+      "stopMemberCount": 18,
+      "stopRoleCount": 0,
+      "platformMemberCount": 18,
+      "nodeElementCount": 167,
+      "memberRoles": {
+        "platform_entry_only": 1,
+        "platform": 16,
+        "platform_exit_only": 1,
+        "": 22
+      },
+      "platformNames": [
+        "舞浜駅",
+        "オリエンタルランド本社前",
+        "運動公園",
+        "舞浜三丁目",
+        "見明川",
+        "弁天四丁目",
+        "弁天橋",
+        "東野三丁目",
+        "東海大浦安高校前",
+        "東海大浦安高校入口",
+        "東野プール",
+        "東野一丁目",
+        "市役所前",
+        "商工会議所",
+        "消防本部前",
+        "猫実",
+        "神明裏",
+        "浦安駅入口"
+      ],
+      "platformsDetail": [
+        {
+          "role": "platform_entry_only",
+          "type": "node",
+          "ref": 9482601637,
+          "name": "舞浜駅"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 2301981524,
+          "name": "オリエンタルランド本社前"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6720667166,
+          "name": "運動公園"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1652826334,
+          "name": "舞浜三丁目"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6796278427,
+          "name": "見明川"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6796278432,
+          "name": "弁天四丁目"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6796278428,
+          "name": "弁天橋"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6778610691,
+          "name": "東野三丁目"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6778610692,
+          "name": "東海大浦安高校前"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6957437530,
+          "name": "東海大浦安高校入口"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 598553572,
+          "name": "東野プール"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1742960270,
+          "name": "東野一丁目"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6760997389,
+          "name": "市役所前"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6778515939,
+          "name": "商工会議所"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 12368996379,
+          "name": "消防本部前"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 2900279301,
+          "name": "猫実"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6764110350,
+          "name": "神明裏"
+        },
+        {
+          "role": "platform_exit_only",
+          "type": "node",
+          "ref": 6764110353,
+          "name": "浦安駅入口"
+        }
+      ],
+      "file": "osm-relation-18322968.json",
+      "mergedChildren": [],
+      "mergeNote": null
+    },
+    {
+      "id": 18396394,
+      "label": "chidori master",
+      "ok": true,
+      "source": "overpass-api.de",
+      "name": "東京ベイシティバス6系統 浦安駅入口-東海大浦安高校-千鳥車庫",
+      "tags": {
+        "name": "東京ベイシティバス6系統 浦安駅入口-東海大浦安高校-千鳥車庫",
+        "network": "市役所線",
+        "operator": "東京ベイシティ交通",
+        "ref": "6",
+        "route_master": "bus",
+        "type": "route_master"
+      },
+      "memberCount": 2,
+      "wayMemberCount": 0,
+      "wayElementCount": 24,
+      "stopMemberCount": 0,
+      "stopRoleCount": 0,
+      "platformMemberCount": 0,
+      "nodeElementCount": 246,
+      "memberRoles": {
+        "": 2
+      },
+      "platformNames": [],
+      "platformsDetail": [],
+      "file": "osm-relation-18396394.json",
+      "mergedChildren": [
+        18396393,
+        18396392
+      ],
+      "mergeNote": "merged child relation geometries into master bundle"
+    },
+    {
+      "id": 18396393,
+      "label": "chidori outbound",
+      "ok": true,
+      "source": "overpass.kumi.systems",
+      "name": "東京ベイシティバス6系統 浦安駅入口⇒東海大浦安高校⇒千鳥車庫",
+      "tags": {
+        "name": "東京ベイシティバス6系統 浦安駅入口⇒東海大浦安高校⇒千鳥車庫",
+        "network": "市役所線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "6",
+        "route": "bus",
+        "type": "route"
+      },
+      "memberCount": 34,
+      "wayMemberCount": 17,
+      "wayElementCount": 17,
+      "stopMemberCount": 17,
+      "stopRoleCount": 0,
+      "platformMemberCount": 17,
+      "nodeElementCount": 150,
+      "memberRoles": {
+        "platform_entry_only": 1,
+        "platform": 15,
+        "platform_exit_only": 1,
+        "": 17
+      },
+      "platformNames": [
+        "浦安駅入口",
+        "神明裏",
+        "猫実",
+        "消防本部前",
+        "商工会議所",
+        "市役所前",
+        "東野一丁目",
+        "東野プール",
+        "東海大浦安高校入口",
+        "東海大浦安高校前",
+        "東野三丁目",
+        "弁天橋",
+        "弁天四丁目",
+        "見明川",
+        "舞浜三丁目",
+        "運動公園",
+        "千鳥車庫"
+      ],
+      "platformsDetail": [
+        {
+          "role": "platform_entry_only",
+          "type": "node",
+          "ref": 6764110351,
+          "name": "浦安駅入口"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6764110349,
+          "name": "神明裏"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1330897048,
+          "name": "猫実"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1330401194,
+          "name": "消防本部前"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6778515940,
+          "name": "商工会議所"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 12368996372,
+          "name": "市役所前"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1742960273,
+          "name": "東野一丁目"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6778610694,
+          "name": "東野プール"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6778610695,
+          "name": "東海大浦安高校入口"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6796278429,
+          "name": "東海大浦安高校前"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6796278430,
+          "name": "東野三丁目"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6796278431,
+          "name": "弁天橋"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11612414321,
+          "name": "弁天四丁目"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6796278426,
+          "name": "見明川"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 12368996366,
+          "name": "舞浜三丁目"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6935385497,
+          "name": "運動公園"
+        },
+        {
+          "role": "platform_exit_only",
+          "type": "node",
+          "ref": 12385535203,
+          "name": "千鳥車庫"
+        }
+      ],
+      "file": "osm-relation-18396393.json",
+      "mergedChildren": [],
+      "mergeNote": null
+    },
+    {
+      "id": 18396392,
+      "label": "chidori inbound",
+      "ok": true,
+      "source": "overpass.kumi.systems",
+      "name": "東京ベイシティバス6系統 千鳥車庫⇒東海大浦安高校⇒浦安駅入口",
+      "tags": {
+        "name": "東京ベイシティバス6系統 千鳥車庫⇒東海大浦安高校⇒浦安駅入口",
+        "network": "市役所線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "6",
+        "route": "bus",
+        "type": "route"
+      },
+      "memberCount": 36,
+      "wayMemberCount": 19,
+      "wayElementCount": 19,
+      "stopMemberCount": 17,
+      "stopRoleCount": 0,
+      "platformMemberCount": 17,
+      "nodeElementCount": 167,
+      "memberRoles": {
+        "platform_entry_only": 1,
+        "platform": 15,
+        "platform_exit_only": 1,
+        "": 19
+      },
+      "platformNames": [
+        "千鳥車庫",
+        "運動公園",
+        "舞浜三丁目",
+        "見明川",
+        "弁天四丁目",
+        "弁天橋",
+        "東野三丁目",
+        "東海大浦安高校前",
+        "東海大浦安高校入口",
+        "東野プール",
+        "東野一丁目",
+        "市役所前",
+        "商工会議所",
+        "消防本部前",
+        "猫実",
+        "神明裏",
+        "浦安駅入口"
+      ],
+      "platformsDetail": [
+        {
+          "role": "platform_entry_only",
+          "type": "node",
+          "ref": 12385535203,
+          "name": "千鳥車庫"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6720667166,
+          "name": "運動公園"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1652826334,
+          "name": "舞浜三丁目"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6796278427,
+          "name": "見明川"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6796278432,
+          "name": "弁天四丁目"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6796278428,
+          "name": "弁天橋"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6778610691,
+          "name": "東野三丁目"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6778610692,
+          "name": "東海大浦安高校前"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6957437530,
+          "name": "東海大浦安高校入口"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 598553572,
+          "name": "東野プール"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1742960270,
+          "name": "東野一丁目"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6760997389,
+          "name": "市役所前"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6778515939,
+          "name": "商工会議所"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 12368996379,
+          "name": "消防本部前"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 2900279301,
+          "name": "猫実"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6764110350,
+          "name": "神明裏"
+        },
+        {
+          "role": "platform_exit_only",
+          "type": "node",
+          "ref": 6764110353,
+          "name": "浦安駅入口"
+        }
+      ],
+      "file": "osm-relation-18396392.json",
+      "mergedChildren": [],
+      "mergeNote": null
+    }
+  ],
+  "nameChecks": {
+    "9983007": {
+      "label": "maihama outbound",
+      "allNames": [
+        "浦安駅入口",
+        "神明裏",
+        "猫実",
+        "消防本部前",
+        "商工会議所",
+        "市役所前",
+        "東野一丁目",
+        "東野プール",
+        "東海大浦安高校入口",
+        "東海大浦安高校前",
+        "東野三丁目",
+        "弁天橋",
+        "弁天四丁目",
+        "見明川",
+        "舞浜三丁目",
+        "運動公園",
+        "オリエンタルランド本社前",
+        "舞浜駅"
+      ],
+      "hits": [
+        {
+          "needle": "市役所前",
+          "found": true,
+          "matches": [
+            "市役所前"
+          ]
+        },
+        {
+          "needle": "市役所入口郵便局前",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "高校入口",
+          "found": true,
+          "matches": [
+            "東海大浦安高校入口"
+          ]
+        },
+        {
+          "needle": "高校前",
+          "found": true,
+          "matches": [
+            "東海大浦安高校前"
+          ]
+        }
+      ]
+    },
+    "18396393": {
+      "label": "chidori outbound",
+      "allNames": [
+        "浦安駅入口",
+        "神明裏",
+        "猫実",
+        "消防本部前",
+        "商工会議所",
+        "市役所前",
+        "東野一丁目",
+        "東野プール",
+        "東海大浦安高校入口",
+        "東海大浦安高校前",
+        "東野三丁目",
+        "弁天橋",
+        "弁天四丁目",
+        "見明川",
+        "舞浜三丁目",
+        "運動公園",
+        "千鳥車庫"
+      ],
+      "hits": [
+        {
+          "needle": "市役所前",
+          "found": true,
+          "matches": [
+            "市役所前"
+          ]
+        },
+        {
+          "needle": "市役所入口郵便局前",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "高校入口",
+          "found": true,
+          "matches": [
+            "東海大浦安高校入口"
+          ]
+        },
+        {
+          "needle": "高校前",
+          "found": true,
+          "matches": [
+            "東海大浦安高校前"
+          ]
+        }
+      ]
+    }
+  }
+}
