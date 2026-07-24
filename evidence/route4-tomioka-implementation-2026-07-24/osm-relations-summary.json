@@ -1,0 +1,45 @@
+{
+  "fetchedAt": "2026-07-24T10:14:37.541Z",
+  "relations": [
+    {
+      "id": 9983006,
+      "name": "東京ベイシティバス4系統 浦安駅入口⇒市役所入口郵便局前⇒舞浜駅・東京ディズニーランド",
+      "role": "outbound TDL/Maihama corridor",
+      "file": "osm-relation-9983006.json",
+      "systems": ["4-tdl", "4-maihama"]
+    },
+    {
+      "id": 18323875,
+      "name": "東京ベイシティバス4系統 東京ディズニーランド・舞浜駅⇒市役所入口郵便局前⇒浦安駅入口",
+      "role": "inbound TDL/Maihama corridor",
+      "file": "osm-relation-18323875.json",
+      "systems": ["4-urayasu-tdl", "4-urayasu-maihama"]
+    },
+    {
+      "id": 18417665,
+      "name": "東京ベイシティバス4系統 浦安駅入口⇒市役所入口郵便局前⇒千鳥車庫",
+      "role": "outbound Chidori",
+      "file": "osm-relation-18417665.json",
+      "systems": ["4-chidori"]
+    },
+    {
+      "id": 18417664,
+      "name": "東京ベイシティバス4系統 千鳥車庫⇒市役所入口郵便局前⇒浦安駅入口",
+      "role": "inbound Chidori",
+      "file": "osm-relation-18417664.json",
+      "systems": ["4-urayasu-chidori"]
+    },
+    {
+      "id": 18323876,
+      "name": "master route_master (TDL)",
+      "role": "route_master",
+      "note": "no geometry members"
+    },
+    {
+      "id": 18417666,
+      "name": "master route_master (Chidori)",
+      "role": "route_master",
+      "note": "empty members"
+    }
+  ]
+}

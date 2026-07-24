@@ -1,0 +1,26 @@
+/* 富岡線（route-4）の停留所停止画像表示。
+   .stop-image-display-v25 を再利用し、スコープ用に .tomioka-stop-image を併用。 */
+.tomioka-stop-image {
+  position: absolute;
+  inset: 0;
+  z-index: 10015;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  background: #111;
+  box-shadow: none;
+  pointer-events: none;
+}
+.tomioka-stop-image[hidden] { display: none !important; }
+.tomioka-stop-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-height: none;
+  object-fit: contain;
+  object-position: center;
+  background: #111;
+}

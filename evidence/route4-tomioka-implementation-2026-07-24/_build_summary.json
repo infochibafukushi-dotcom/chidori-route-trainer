@@ -1,0 +1,503 @@
+{
+  "generatedAt": "2026-07-24T10:30:47.533Z",
+  "systems": {
+    "4-tdl": {
+      "stops": 19,
+      "pathPoints": 375,
+      "maxGap_m": 25,
+      "maxPlatformDist_m": 14.3,
+      "pathHash": "a237430343107542480ee1bad78bd68ae64901c33018ab6e116561b1c4d66a2d",
+      "resolvedVersion": "2026-07-24-tomioka-tdl-v1",
+      "missingPlatforms": [],
+      "platformDists": [
+        {
+          "name": "浦安駅入口",
+          "dist": 7.4
+        },
+        {
+          "name": "フラワー通り",
+          "dist": 7.4
+        },
+        {
+          "name": "堀江三丁目",
+          "dist": 11.6
+        },
+        {
+          "name": "南小入口",
+          "dist": 5.9
+        },
+        {
+          "name": "堀江東",
+          "dist": 10.7
+        },
+        {
+          "name": "市役所入口・郵便局前",
+          "dist": 11
+        },
+        {
+          "name": "ＮＴＴ浦安前",
+          "dist": 4.7
+        },
+        {
+          "name": "日生研修センター",
+          "dist": 5.7
+        },
+        {
+          "name": "順天堂病院前",
+          "dist": 11.9
+        },
+        {
+          "name": "サンコーポ東口",
+          "dist": 8
+        },
+        {
+          "name": "サンコーポ西口",
+          "dist": 8
+        },
+        {
+          "name": "弁天第二",
+          "dist": 10.7
+        },
+        {
+          "name": "見明川中学校前",
+          "dist": 7.9
+        },
+        {
+          "name": "見明川住宅",
+          "dist": 10.9
+        },
+        {
+          "name": "舞浜三丁目",
+          "dist": 8.8
+        },
+        {
+          "name": "運動公園",
+          "dist": 14.3
+        },
+        {
+          "name": "オリエンタルランド本社前",
+          "dist": 5.5
+        },
+        {
+          "name": "舞浜駅",
+          "dist": 4.7
+        },
+        {
+          "name": "「東京ディズニーランド（Ｒ）」",
+          "dist": 3.3
+        }
+      ]
+    },
+    "4-maihama": {
+      "stops": 18,
+      "pathPoints": 332,
+      "maxGap_m": 25,
+      "maxPlatformDist_m": 14.3,
+      "pathHash": "2c0371f0083c28cc3ae695e6d4e19262da655487bb878d5bf09b5fff944b6686",
+      "resolvedVersion": "2026-07-24-tomioka-maihama-v1",
+      "missingPlatforms": [],
+      "platformDists": [
+        {
+          "name": "浦安駅入口",
+          "dist": 7.4
+        },
+        {
+          "name": "フラワー通り",
+          "dist": 7.4
+        },
+        {
+          "name": "堀江三丁目",
+          "dist": 11.6
+        },
+        {
+          "name": "南小入口",
+          "dist": 5.9
+        },
+        {
+          "name": "堀江東",
+          "dist": 10.7
+        },
+        {
+          "name": "市役所入口・郵便局前",
+          "dist": 11
+        },
+        {
+          "name": "ＮＴＴ浦安前",
+          "dist": 4.7
+        },
+        {
+          "name": "日生研修センター",
+          "dist": 5.7
+        },
+        {
+          "name": "順天堂病院前",
+          "dist": 11.9
+        },
+        {
+          "name": "サンコーポ東口",
+          "dist": 8
+        },
+        {
+          "name": "サンコーポ西口",
+          "dist": 8
+        },
+        {
+          "name": "弁天第二",
+          "dist": 10.7
+        },
+        {
+          "name": "見明川中学校前",
+          "dist": 7.9
+        },
+        {
+          "name": "見明川住宅",
+          "dist": 10.9
+        },
+        {
+          "name": "舞浜三丁目",
+          "dist": 8.8
+        },
+        {
+          "name": "運動公園",
+          "dist": 14.3
+        },
+        {
+          "name": "オリエンタルランド本社前",
+          "dist": 5.5
+        },
+        {
+          "name": "舞浜駅",
+          "dist": 4.7
+        }
+      ]
+    },
+    "4-chidori": {
+      "stops": 17,
+      "pathPoints": 307,
+      "maxGap_m": 24.8,
+      "maxPlatformDist_m": 11.9,
+      "pathHash": "8e7a618dd2cf38b45f29f42fbc4845f6ab4ee92856701ecb18a282f4fb254b1e",
+      "resolvedVersion": "2026-07-24-tomioka-chidori-v1",
+      "missingPlatforms": [],
+      "platformDists": [
+        {
+          "name": "浦安駅入口",
+          "dist": 7.4
+        },
+        {
+          "name": "フラワー通り",
+          "dist": 7.4
+        },
+        {
+          "name": "堀江三丁目",
+          "dist": 11.6
+        },
+        {
+          "name": "南小入口",
+          "dist": 5.9
+        },
+        {
+          "name": "堀江東",
+          "dist": 10.7
+        },
+        {
+          "name": "市役所入口・郵便局前",
+          "dist": 11
+        },
+        {
+          "name": "ＮＴＴ浦安前",
+          "dist": 4.7
+        },
+        {
+          "name": "日生研修センター",
+          "dist": 5.7
+        },
+        {
+          "name": "順天堂病院前",
+          "dist": 11.9
+        },
+        {
+          "name": "サンコーポ東口",
+          "dist": 8
+        },
+        {
+          "name": "サンコーポ西口",
+          "dist": 8
+        },
+        {
+          "name": "弁天第二",
+          "dist": 10.7
+        },
+        {
+          "name": "見明川中学校前",
+          "dist": 7.9
+        },
+        {
+          "name": "見明川住宅",
+          "dist": 10.9
+        },
+        {
+          "name": "舞浜三丁目",
+          "dist": 8.8
+        },
+        {
+          "name": "運動公園",
+          "dist": 11.2
+        },
+        {
+          "name": "千鳥車庫",
+          "dist": 4.9
+        }
+      ]
+    },
+    "4-urayasu-tdl": {
+      "stops": 19,
+      "pathPoints": 410,
+      "maxGap_m": 24.8,
+      "maxPlatformDist_m": 12.4,
+      "pathHash": "ba624a931dbb38b9f53a4fc149682b079c6b95d27ad61e605a7085abd008b930",
+      "resolvedVersion": "2026-07-24-tomioka-urayasu-tdl-v1",
+      "missingPlatforms": [],
+      "platformDists": [
+        {
+          "name": "「東京ディズニーランド（Ｒ）」",
+          "dist": 3.3
+        },
+        {
+          "name": "舞浜駅",
+          "dist": 7.1
+        },
+        {
+          "name": "オリエンタルランド本社前",
+          "dist": 12.2
+        },
+        {
+          "name": "運動公園",
+          "dist": 9.2
+        },
+        {
+          "name": "舞浜三丁目",
+          "dist": 9.3
+        },
+        {
+          "name": "見明川住宅",
+          "dist": 7.9
+        },
+        {
+          "name": "見明川中学校前",
+          "dist": 12.1
+        },
+        {
+          "name": "弁天第二",
+          "dist": 8
+        },
+        {
+          "name": "サンコーポ西口",
+          "dist": 9.1
+        },
+        {
+          "name": "サンコーポ東口",
+          "dist": 9.6
+        },
+        {
+          "name": "順天堂病院前",
+          "dist": 9.5
+        },
+        {
+          "name": "日生研修センター",
+          "dist": 12.1
+        },
+        {
+          "name": "ＮＴＴ浦安前",
+          "dist": 5.4
+        },
+        {
+          "name": "市役所入口・郵便局前",
+          "dist": 11
+        },
+        {
+          "name": "堀江東",
+          "dist": 11.4
+        },
+        {
+          "name": "南小入口",
+          "dist": 5.7
+        },
+        {
+          "name": "堀江三丁目",
+          "dist": 7.2
+        },
+        {
+          "name": "フラワー通り",
+          "dist": 12.4
+        },
+        {
+          "name": "浦安駅入口",
+          "dist": 11.1
+        }
+      ]
+    },
+    "4-urayasu-maihama": {
+      "stops": 18,
+      "pathPoints": 326,
+      "maxGap_m": 24.8,
+      "maxPlatformDist_m": 12.4,
+      "pathHash": "e2206ae2d0436ad22458982517896246caf66202a1b7538eb491e8e31777881d",
+      "resolvedVersion": "2026-07-24-tomioka-urayasu-maihama-v1",
+      "missingPlatforms": [],
+      "platformDists": [
+        {
+          "name": "舞浜駅",
+          "dist": 7.1
+        },
+        {
+          "name": "オリエンタルランド本社前",
+          "dist": 12.2
+        },
+        {
+          "name": "運動公園",
+          "dist": 9.2
+        },
+        {
+          "name": "舞浜三丁目",
+          "dist": 9.3
+        },
+        {
+          "name": "見明川住宅",
+          "dist": 7.9
+        },
+        {
+          "name": "見明川中学校前",
+          "dist": 12.1
+        },
+        {
+          "name": "弁天第二",
+          "dist": 8
+        },
+        {
+          "name": "サンコーポ西口",
+          "dist": 9.1
+        },
+        {
+          "name": "サンコーポ東口",
+          "dist": 9.6
+        },
+        {
+          "name": "順天堂病院前",
+          "dist": 9.5
+        },
+        {
+          "name": "日生研修センター",
+          "dist": 12.1
+        },
+        {
+          "name": "ＮＴＴ浦安前",
+          "dist": 5.4
+        },
+        {
+          "name": "市役所入口・郵便局前",
+          "dist": 11
+        },
+        {
+          "name": "堀江東",
+          "dist": 11.4
+        },
+        {
+          "name": "南小入口",
+          "dist": 5.7
+        },
+        {
+          "name": "堀江三丁目",
+          "dist": 7.2
+        },
+        {
+          "name": "フラワー通り",
+          "dist": 12.4
+        },
+        {
+          "name": "浦安駅入口",
+          "dist": 11.1
+        }
+      ]
+    },
+    "4-urayasu-chidori": {
+      "stops": 17,
+      "pathPoints": 322,
+      "maxGap_m": 25,
+      "maxPlatformDist_m": 12.4,
+      "pathHash": "1f3906df8f5874f9f5747e9668e2c261daa8ee6e0616d45b3cb139a795197216",
+      "resolvedVersion": "2026-07-24-tomioka-urayasu-chidori-v1",
+      "missingPlatforms": [],
+      "platformDists": [
+        {
+          "name": "千鳥車庫",
+          "dist": 5.2
+        },
+        {
+          "name": "運動公園",
+          "dist": 9.2
+        },
+        {
+          "name": "舞浜三丁目",
+          "dist": 9.3
+        },
+        {
+          "name": "見明川住宅",
+          "dist": 7.9
+        },
+        {
+          "name": "見明川中学校前",
+          "dist": 12.1
+        },
+        {
+          "name": "弁天第二",
+          "dist": 8
+        },
+        {
+          "name": "サンコーポ西口",
+          "dist": 9.1
+        },
+        {
+          "name": "サンコーポ東口",
+          "dist": 9.6
+        },
+        {
+          "name": "順天堂病院前",
+          "dist": 9.5
+        },
+        {
+          "name": "日生研修センター",
+          "dist": 12.1
+        },
+        {
+          "name": "ＮＴＴ浦安前",
+          "dist": 5.4
+        },
+        {
+          "name": "市役所入口・郵便局前",
+          "dist": 11
+        },
+        {
+          "name": "堀江東",
+          "dist": 11.4
+        },
+        {
+          "name": "南小入口",
+          "dist": 5.7
+        },
+        {
+          "name": "堀江三丁目",
+          "dist": 7.2
+        },
+        {
+          "name": "フラワー通り",
+          "dist": 12.4
+        },
+        {
+          "name": "浦安駅入口",
+          "dist": 11.1
+        }
+      ]
+    }
+  }
+}

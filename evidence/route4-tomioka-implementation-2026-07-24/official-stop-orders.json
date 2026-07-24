@@ -1,0 +1,100 @@
+{
+  "checkedAt": "2026-07-24T10:28:28.435Z",
+  "sourcePriority": [
+    "京成バスナビ個別便停留所一覧",
+    "京成バスナビ系統・行先表示",
+    "OSM relation stop/platform（座標・path）"
+  ],
+  "systems": {
+    "4-maihama": {
+      "title": "舞浜駅行き",
+      "directionGroup": "outbound",
+      "berth": "D",
+      "naviBusstop": "00020739",
+      "naviMark": "無印",
+      "relationId": 9983006,
+      "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200222-1)",
+      "confirmedDate": "2026-07-24",
+      "stops": [
+        "浦安駅入口", "フラワー通り", "堀江三丁目", "南小入口", "堀江東", "市役所入口・郵便局前",
+        "ＮＴＴ浦安前", "日生研修センター", "順天堂病院前", "サンコーポ東口", "サンコーポ西口",
+        "弁天第二", "見明川中学校前", "見明川住宅", "舞浜三丁目", "運動公園", "オリエンタルランド本社前", "舞浜駅"
+      ]
+    },
+    "4-tdl": {
+      "title": "東京ディズニーランド行き",
+      "directionGroup": "outbound",
+      "berth": "D",
+      "naviBusstop": "00020739",
+      "naviMark": "ランド",
+      "relationId": 9983006,
+      "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200222-1)",
+      "confirmedDate": "2026-07-24",
+      "stops": [
+        "浦安駅入口", "フラワー通り", "堀江三丁目", "南小入口", "堀江東", "市役所入口・郵便局前",
+        "ＮＴＴ浦安前", "日生研修センター", "順天堂病院前", "サンコーポ東口", "サンコーポ西口",
+        "弁天第二", "見明川中学校前", "見明川住宅", "舞浜三丁目", "運動公園", "オリエンタルランド本社前",
+        "舞浜駅", "「東京ディズニーランド（Ｒ）」"
+      ]
+    },
+    "4-chidori": {
+      "title": "千鳥車庫行き",
+      "directionGroup": "outbound",
+      "berth": "D",
+      "naviBusstop": "00020739",
+      "naviMark": "ち（千鳥北方面には行きません）",
+      "relationId": 18417665,
+      "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200222-1)",
+      "confirmedDate": "2026-07-24",
+      "stops": [
+        "浦安駅入口", "フラワー通り", "堀江三丁目", "南小入口", "堀江東", "市役所入口・郵便局前",
+        "ＮＴＴ浦安前", "日生研修センター", "順天堂病院前", "サンコーポ東口", "サンコーポ西口",
+        "弁天第二", "見明川中学校前", "見明川住宅", "舞浜三丁目", "運動公園", "千鳥車庫"
+      ]
+    },
+    "4-urayasu-maihama": {
+      "title": "浦安駅入口行き（舞浜駅発）",
+      "directionGroup": "inbound",
+      "naviBusstop": "00020617",
+      "relationId": 18323875,
+      "source": "Keisei Bus Navi trip stop list (舞浜駅 course=0008200223)",
+      "sourceUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811d0011/stops?departure-busstop=00020617-1&course=0008200223&datetime=2026-07-24T06:35:00%2B09:00",
+      "confirmedDate": "2026-07-24",
+      "stops": [
+        "舞浜駅", "オリエンタルランド本社前", "運動公園", "舞浜三丁目", "見明川住宅", "見明川中学校前",
+        "弁天第二", "サンコーポ西口", "サンコーポ東口", "順天堂病院前", "日生研修センター", "ＮＴＴ浦安前",
+        "市役所入口・郵便局前", "堀江東", "南小入口", "堀江三丁目", "フラワー通り", "浦安駅入口"
+      ]
+    },
+    "4-urayasu-tdl": {
+      "title": "浦安駅入口行き（東京ディズニーランド発）",
+      "directionGroup": "inbound",
+      "naviBusstop": "00020621",
+      "relationId": 18323875,
+      "source": "Keisei Bus Navi trip stop list (TDL course=0008200221)",
+      "sourceUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811b0008/stops?departure-busstop=00020621-1&course=0008200221&datetime=2026-07-26T16:06:00%2B09:00",
+      "confirmedDate": "2026-07-24",
+      "stops": [
+        "「東京ディズニーランド（Ｒ）」", "舞浜駅", "オリエンタルランド本社前", "運動公園", "舞浜三丁目",
+        "見明川住宅", "見明川中学校前", "弁天第二", "サンコーポ西口", "サンコーポ東口", "順天堂病院前",
+        "日生研修センター", "ＮＴＴ浦安前", "市役所入口・郵便局前", "堀江東", "南小入口", "堀江三丁目",
+        "フラワー通り", "浦安駅入口"
+      ]
+    },
+    "4-urayasu-chidori": {
+      "title": "浦安駅入口行き（千鳥車庫発）",
+      "directionGroup": "inbound",
+      "naviBusstop": "00020620",
+      "relationId": 18417664,
+      "source": "Keisei Bus Navi trip stop list (千鳥車庫 course=0008200225, filtered from shared timetable)",
+      "sourceUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811f0000/stops?departure-busstop=00020620-1&course=0008200225&datetime=2026-07-24T05:47:00%2B09:00",
+      "confirmedDate": "2026-07-24",
+      "note": "Shared berth timetable includes 2/6/14; Route 4 trip uses course 0008200225 via 市役所入口・郵便局前 (not 新浦安駅北口).",
+      "stops": [
+        "千鳥車庫", "運動公園", "舞浜三丁目", "見明川住宅", "見明川中学校前", "弁天第二", "サンコーポ西口",
+        "サンコーポ東口", "順天堂病院前", "日生研修センター", "ＮＴＴ浦安前", "市役所入口・郵便局前",
+        "堀江東", "南小入口", "堀江三丁目", "フラワー通り", "浦安駅入口"
+      ]
+    }
+  }
+}

@@ -1,0 +1,236 @@
+{
+  "scrapedAt": "2026-07-24T10:28:28.435Z",
+  "source": "Keisei Bus Navi",
+  "stopIds": {
+    "4-urayasu-maihama": {
+      "busstop": "00020617",
+      "displayedName": "舞浜駅 まいはまえき 系統・時刻表・のりば一覧"
+    },
+    "4-urayasu-chidori": {
+      "busstop": "00020620",
+      "displayedName": "千鳥車庫 ちどりしゃこ 系統・時刻表・のりば一覧"
+    },
+    "4-urayasu-tdl": {
+      "busstop": "00020621",
+      "displayedName": "「東京ディズニーランド（Ｒ）」〈京成バス千葉ウエスト〉 とうきょうでぃずにーらんど 系統・時刻表・のりば一覧"
+    }
+  },
+  "inbound": {
+    "4-urayasu-maihama": {
+      "busstop": "00020617",
+      "displayedName": "舞浜駅 まいはまえき 系統・時刻表・のりば一覧",
+      "courses": [
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020617&course-sequence=0008200221-2",
+          "text": "4 [4]（市役所入口・郵便局前経由）浦安駅入口行 時刻表"
+        },
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020617&course-sequence=0008200222-18",
+          "text": "4 [4]「東京ディズニーランド(R)」行 時刻表"
+        }
+      ],
+      "triedTrips": [
+        {
+          "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811d0011/stops?departure-busstop=00020617-1&course=0008200223&datetime=2026-07-24T06:35:00%2B09:00",
+          "stopNames": [
+            "舞浜駅",
+            "オリエンタルランド本社前",
+            "運動公園",
+            "舞浜三丁目",
+            "見明川住宅",
+            "見明川中学校前",
+            "弁天第二",
+            "サンコーポ西口",
+            "サンコーポ東口",
+            "順天堂病院前",
+            "日生研修センター",
+            "ＮＴＴ浦安前",
+            "市役所入口・郵便局前",
+            "堀江東",
+            "南小入口",
+            "堀江三丁目",
+            "フラワー通り",
+            "浦安駅入口"
+          ]
+        }
+      ],
+      "sample": {
+        "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811d0011/stops?departure-busstop=00020617-1&course=0008200223&datetime=2026-07-24T06:35:00%2B09:00",
+        "course": {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020617&course-sequence=0008200221-2",
+          "text": "4 [4]（市役所入口・郵便局前経由）浦安駅入口行 時刻表"
+        },
+        "stopNames": [
+          "舞浜駅",
+          "オリエンタルランド本社前",
+          "運動公園",
+          "舞浜三丁目",
+          "見明川住宅",
+          "見明川中学校前",
+          "弁天第二",
+          "サンコーポ西口",
+          "サンコーポ東口",
+          "順天堂病院前",
+          "日生研修センター",
+          "ＮＴＴ浦安前",
+          "市役所入口・郵便局前",
+          "堀江東",
+          "南小入口",
+          "堀江三丁目",
+          "フラワー通り",
+          "浦安駅入口"
+        ],
+        "stopCount": 18
+      }
+    },
+    "4-urayasu-chidori": {
+      "busstop": "00020620",
+      "displayedName": "千鳥車庫 ちどりしゃこ 系統・時刻表・のりば一覧",
+      "courses": [
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020620&course-sequence=0008200207-1",
+          "text": "14 [14]（新浦安駅北口経由）浦安駅入口、（南小入口経由）浦安駅入口（市役所前経由）浦安駅入口（弁天中央経由）（新浦安駅経由）行 2 [2]（新浦安駅北口経由）浦安駅入口、（南小入口経由）浦安駅入口（市役所前経由）浦安駅入口（弁天中央経由）（新浦安駅経由）行 4 [4]（新浦安駅北口経由）浦安駅入口、（南小入口経由）浦安駅入口（市役所前経由）浦安駅入口（弁天中央経由）（新浦安駅経由）行 6 [6]（新浦安駅北口経由）浦安駅入口、（南小入口経由）浦安駅入口（市役所前経由）浦安駅入口（弁天中央経由）（新浦安駅経由）行 時刻表"
+        }
+      ],
+      "triedTrips": [
+        {
+          "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80f50000/stops?departure-busstop=00020620-1&course=0008200207&datetime=2026-07-24T05:43:00%2B09:00",
+          "stopNames": [
+            "千鳥車庫",
+            "運動公園",
+            "舞浜三丁目",
+            "見明川住宅",
+            "見明川中学校前",
+            "弁天第二",
+            "サンコーポ西口",
+            "サンコーポ東口",
+            "順天堂病院前",
+            "若潮公園",
+            "新浦安駅北口",
+            "美浜東団地",
+            "海楽",
+            "消防本部前",
+            "猫実",
+            "神明裏",
+            "浦安駅入口"
+          ]
+        },
+        {
+          "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811f0000/stops?departure-busstop=00020620-1&course=0008200225&datetime=2026-07-24T05:47:00%2B09:00",
+          "stopNames": [
+            "千鳥車庫",
+            "運動公園",
+            "舞浜三丁目",
+            "見明川住宅",
+            "見明川中学校前",
+            "弁天第二",
+            "サンコーポ西口",
+            "サンコーポ東口",
+            "順天堂病院前",
+            "日生研修センター",
+            "ＮＴＴ浦安前",
+            "市役所入口・郵便局前",
+            "堀江東",
+            "南小入口",
+            "堀江三丁目",
+            "フラワー通り",
+            "浦安駅入口"
+          ]
+        }
+      ],
+      "sample": {
+        "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811f0000/stops?departure-busstop=00020620-1&course=0008200225&datetime=2026-07-24T05:47:00%2B09:00",
+        "course": {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020620&course-sequence=0008200207-1",
+          "text": "14 [14]（新浦安駅北口経由）浦安駅入口、（南小入口経由）浦安駅入口（市役所前経由）浦安駅入口（弁天中央経由）（新浦安駅経由）行 2 [2]（新浦安駅北口経由）浦安駅入口、（南小入口経由）浦安駅入口（市役所前経由）浦安駅入口（弁天中央経由）（新浦安駅経由）行 4 [4]（新浦安駅北口経由）浦安駅入口、（南小入口経由）浦安駅入口（市役所前経由）浦安駅入口（弁天中央経由）（新浦安駅経由）行 6 [6]（新浦安駅北口経由）浦安駅入口、（南小入口経由）浦安駅入口（市役所前経由）浦安駅入口（弁天中央経由）（新浦安駅経由）行 時刻表"
+        },
+        "stopNames": [
+          "千鳥車庫",
+          "運動公園",
+          "舞浜三丁目",
+          "見明川住宅",
+          "見明川中学校前",
+          "弁天第二",
+          "サンコーポ西口",
+          "サンコーポ東口",
+          "順天堂病院前",
+          "日生研修センター",
+          "ＮＴＴ浦安前",
+          "市役所入口・郵便局前",
+          "堀江東",
+          "南小入口",
+          "堀江三丁目",
+          "フラワー通り",
+          "浦安駅入口"
+        ],
+        "stopCount": 17
+      }
+    },
+    "4-urayasu-tdl": {
+      "busstop": "00020621",
+      "displayedName": "「東京ディズニーランド（Ｒ）」〈京成バス千葉ウエスト〉 とうきょうでぃずにーらんど 系統・時刻表・のりば一覧",
+      "courses": [
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020621&course-sequence=0008200221-1",
+          "text": "4 [4]（市役所入口・郵便局前経由）浦安駅入口行 時刻表"
+        }
+      ],
+      "triedTrips": [
+        {
+          "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811b0008/stops?departure-busstop=00020621-1&course=0008200221&datetime=2026-07-26T16:06:00%2B09:00",
+          "stopNames": [
+            "「東京ディズニーランド（Ｒ）」",
+            "舞浜駅",
+            "オリエンタルランド本社前",
+            "運動公園",
+            "舞浜三丁目",
+            "見明川住宅",
+            "見明川中学校前",
+            "弁天第二",
+            "サンコーポ西口",
+            "サンコーポ東口",
+            "順天堂病院前",
+            "日生研修センター",
+            "ＮＴＴ浦安前",
+            "市役所入口・郵便局前",
+            "堀江東",
+            "南小入口",
+            "堀江三丁目",
+            "フラワー通り",
+            "浦安駅入口"
+          ]
+        }
+      ],
+      "sample": {
+        "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811b0008/stops?departure-busstop=00020621-1&course=0008200221&datetime=2026-07-26T16:06:00%2B09:00",
+        "course": {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020621&course-sequence=0008200221-1",
+          "text": "4 [4]（市役所入口・郵便局前経由）浦安駅入口行 時刻表"
+        },
+        "stopNames": [
+          "「東京ディズニーランド（Ｒ）」",
+          "舞浜駅",
+          "オリエンタルランド本社前",
+          "運動公園",
+          "舞浜三丁目",
+          "見明川住宅",
+          "見明川中学校前",
+          "弁天第二",
+          "サンコーポ西口",
+          "サンコーポ東口",
+          "順天堂病院前",
+          "日生研修センター",
+          "ＮＴＴ浦安前",
+          "市役所入口・郵便局前",
+          "堀江東",
+          "南小入口",
+          "堀江三丁目",
+          "フラワー通り",
+          "浦安駅入口"
+        ],
+        "stopCount": 19
+      }
+    }
+  },
+  "unresolved": []
+}

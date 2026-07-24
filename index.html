@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="./hokuei-guidance-v22.css?v=34" />
   <link rel="stylesheet" href="./hokuei-stop-images-v25.css?v=32" />
   <link rel="stylesheet" href="./urayasu-higashi-danchi-stop-images-v1.css?v=63" />
+  <link rel="stylesheet" href="./tomioka-stop-images-v1.css?v=64" />
   <link rel="stylesheet" href="./study-materials.css?v=61" />
 </head>
 <body>
@@ -38,7 +39,7 @@
   <script src="./hokuei-authoritative-v12.js?v=33"></script>
   <script src="./hokuei-manual-override-v13.js?v=33"></script>
   <script src="./hokuei-shared-coordinates-v15.js?v=32"></script>
-  <script src="./hokuei-no-uturn-v17.js?v=61"></script>
+  <script src="./hokuei-no-uturn-v17.js?v=64"></script>
   <script src="./imagawa-directions-compat-v2.js?v=56"></script>
   <script src="./hokuei-streetview-stops-v26.js?v=32"></script>
   <script src="./hokuei-guidance-v22.js?v=57"></script>
@@ -54,12 +55,20 @@
   <script src="./urayasu-higashi-danchi-path-v1.js?v=63"></script>
   <script src="./urayasu-higashi-danchi-path-policy-v1.js?v=63"></script>
   <script src="./urayasu-higashi-danchi-route-v1.js?v=63"></script>
+  <script>window.STOP_EDITOR_URAYASU_HIGASHI=stopEditor;</script>
+  <script src="./tomioka-platforms-v1.js?v=64"></script>
+  <script src="./tomioka-path-v1.js?v=64"></script>
+  <script src="./tomioka-path-policy-v1.js?v=64"></script>
+  <script src="./tomioka-stop-images-v1.js?v=64"></script>
+  <script src="./tomioka-route-v1.js?v=64"></script>
   <script>
     (() => {
-      const route3StopEditor = stopEditor;
+      const route4StopEditor = stopEditor;
+      const route3StopEditor = window.STOP_EDITOR_URAYASU_HIGASHI;
       const imagawaStopEditor = window.STOP_EDITOR_IMAGAWA;
       const baseStopEditor = window.STOP_EDITOR_BEFORE_IMAGAWA;
       stopEditor = function stopEditorRouteBridge() {
+        if (routeState?.routeId === 'route-4') return route4StopEditor();
         if (routeState?.routeId === 'route-3') return route3StopEditor();
         if (routeState?.routeId === 'route-2') return imagawaStopEditor();
         return baseStopEditor();

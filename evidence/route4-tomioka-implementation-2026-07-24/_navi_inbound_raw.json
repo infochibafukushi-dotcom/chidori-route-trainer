@@ -1,0 +1,404 @@
+{
+  "scrapedAt": "2026-07-24T10:12:31.159Z",
+  "terminals": {
+    "tdl": {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811c0001/stops?departure-busstop=00020739-1&course=0008200222&datetime=2026-07-24T08:03:00%2B09:00",
+      "stopNames": [
+        "浦安駅入口",
+        "フラワー通り",
+        "堀江三丁目",
+        "南小入口",
+        "堀江東",
+        "市役所入口・郵便局前",
+        "ＮＴＴ浦安前",
+        "日生研修センター",
+        "順天堂病院前",
+        "サンコーポ東口",
+        "サンコーポ西口",
+        "弁天第二",
+        "見明川中学校前",
+        "見明川住宅",
+        "舞浜三丁目",
+        "運動公園",
+        "オリエンタルランド本社前",
+        "舞浜駅",
+        "「東京ディズニーランド（Ｒ）」"
+      ],
+      "busstopLinks": [
+        {
+          "text": "浦安駅入口 系統・時刻表・のりば一覧",
+          "href": "/keiseibus-group/courses?busstop=00020739&date=2026-07-24",
+          "id": "00020739"
+        },
+        {
+          "text": "浦安駅入口 時刻表",
+          "href": "/keiseibus-group/courses/timetables?busstop=00020739&course-sequence=0008200222-1",
+          "id": "00020739"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020739&date=2026-07-24",
+          "id": "00020739"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020723&date=2026-07-24",
+          "id": "00020723"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020705&date=2026-07-24",
+          "id": "00020705"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020651&date=2026-07-24",
+          "id": "00020651"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020707&date=2026-07-24",
+          "id": "00020707"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020870&date=2026-07-24",
+          "id": "00020870"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020721&date=2026-07-24",
+          "id": "00020721"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020660&date=2026-07-24",
+          "id": "00020660"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020875&date=2026-07-24",
+          "id": "00020875"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020879&date=2026-07-24",
+          "id": "00020879"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020878&date=2026-07-24",
+          "id": "00020878"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020684&date=2026-07-24",
+          "id": "00020684"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020853&date=2026-07-24",
+          "id": "00020853"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020851&date=2026-07-24",
+          "id": "00020851"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020679&date=2026-07-24",
+          "id": "00020679"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020746&date=2026-07-24",
+          "id": "00020746"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020630&date=2026-07-24",
+          "id": "00020630"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020617&date=2026-07-24",
+          "id": "00020617"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020621&date=2026-07-24",
+          "id": "00020621"
+        }
+      ]
+    },
+    "chidori": {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81200004/stops?departure-busstop=00020739-1&course=0008200226&datetime=2026-07-25T19:36:00%2B09:00",
+      "stopNames": [
+        "浦安駅入口",
+        "フラワー通り",
+        "堀江三丁目",
+        "南小入口",
+        "堀江東",
+        "市役所入口・郵便局前",
+        "ＮＴＴ浦安前",
+        "日生研修センター",
+        "順天堂病院前",
+        "サンコーポ東口",
+        "サンコーポ西口",
+        "弁天第二",
+        "見明川中学校前",
+        "見明川住宅",
+        "舞浜三丁目",
+        "運動公園",
+        "千鳥車庫"
+      ],
+      "busstopLinks": [
+        {
+          "text": "浦安駅入口 系統・時刻表・のりば一覧",
+          "href": "/keiseibus-group/courses?busstop=00020739&date=2026-07-25",
+          "id": "00020739"
+        },
+        {
+          "text": "浦安駅入口 時刻表",
+          "href": "/keiseibus-group/courses/timetables?busstop=00020739&course-sequence=0008200226-1",
+          "id": "00020739"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020739&date=2026-07-25",
+          "id": "00020739"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020723&date=2026-07-25",
+          "id": "00020723"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020705&date=2026-07-25",
+          "id": "00020705"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020651&date=2026-07-25",
+          "id": "00020651"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020707&date=2026-07-25",
+          "id": "00020707"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020870&date=2026-07-25",
+          "id": "00020870"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020721&date=2026-07-25",
+          "id": "00020721"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020660&date=2026-07-25",
+          "id": "00020660"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020875&date=2026-07-25",
+          "id": "00020875"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020879&date=2026-07-25",
+          "id": "00020879"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020878&date=2026-07-25",
+          "id": "00020878"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020684&date=2026-07-25",
+          "id": "00020684"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020853&date=2026-07-25",
+          "id": "00020853"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020851&date=2026-07-25",
+          "id": "00020851"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020679&date=2026-07-25",
+          "id": "00020679"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020746&date=2026-07-25",
+          "id": "00020746"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020620&date=2026-07-25",
+          "id": "00020620"
+        }
+      ]
+    },
+    "maihama": {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811e0007/stops?departure-busstop=00020739-1&course=0008200224&datetime=2026-07-24T06:38:00%2B09:00",
+      "stopNames": [
+        "浦安駅入口",
+        "フラワー通り",
+        "堀江三丁目",
+        "南小入口",
+        "堀江東",
+        "市役所入口・郵便局前",
+        "ＮＴＴ浦安前",
+        "日生研修センター",
+        "順天堂病院前",
+        "サンコーポ東口",
+        "サンコーポ西口",
+        "弁天第二",
+        "見明川中学校前",
+        "見明川住宅",
+        "舞浜三丁目",
+        "運動公園",
+        "オリエンタルランド本社前",
+        "舞浜駅"
+      ],
+      "busstopLinks": [
+        {
+          "text": "浦安駅入口 系統・時刻表・のりば一覧",
+          "href": "/keiseibus-group/courses?busstop=00020739&date=2026-07-24",
+          "id": "00020739"
+        },
+        {
+          "text": "浦安駅入口 時刻表",
+          "href": "/keiseibus-group/courses/timetables?busstop=00020739&course-sequence=0008200224-1",
+          "id": "00020739"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020739&date=2026-07-24",
+          "id": "00020739"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020723&date=2026-07-24",
+          "id": "00020723"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020705&date=2026-07-24",
+          "id": "00020705"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020651&date=2026-07-24",
+          "id": "00020651"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020707&date=2026-07-24",
+          "id": "00020707"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020870&date=2026-07-24",
+          "id": "00020870"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020721&date=2026-07-24",
+          "id": "00020721"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020660&date=2026-07-24",
+          "id": "00020660"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020875&date=2026-07-24",
+          "id": "00020875"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020879&date=2026-07-24",
+          "id": "00020879"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020878&date=2026-07-24",
+          "id": "00020878"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020684&date=2026-07-24",
+          "id": "00020684"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020853&date=2026-07-24",
+          "id": "00020853"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020851&date=2026-07-24",
+          "id": "00020851"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020679&date=2026-07-24",
+          "id": "00020679"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020746&date=2026-07-24",
+          "id": "00020746"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020630&date=2026-07-24",
+          "id": "00020630"
+        },
+        {
+          "text": "系統・時刻表一覧",
+          "href": "/keiseibus-group/courses?busstop=00020617&date=2026-07-24",
+          "id": "00020617"
+        }
+      ]
+    }
+  },
+  "inboundTrips": {},
+  "outboundPickLinks": {
+    "tdl": {
+      "href": "/keiseibus-group/courses/timetables/811c0001/stops?departure-busstop=00020739-1&course=0008200222&datetime=2026-07-24T08:03:00%2B09:00",
+      "text": "03",
+      "cell": "03ランド"
+    },
+    "chidori": {
+      "href": "/keiseibus-group/courses/timetables/81200004/stops?departure-busstop=00020739-1&course=0008200226&datetime=2026-07-25T19:36:00%2B09:00",
+      "text": "36",
+      "cell": "36ち"
+    },
+    "maihama": {
+      "href": "/keiseibus-group/courses/timetables/811e0007/stops?departure-busstop=00020739-1&course=0008200224&datetime=2026-07-24T06:38:00%2B09:00",
+      "text": "38",
+      "cell": "38"
+    }
+  },
+  "idMap": {
+    "urayasu": {
+      "id": "00020739",
+      "text": "浦安駅入口 系統・時刻表・のりば一覧"
+    }
+  }
+}

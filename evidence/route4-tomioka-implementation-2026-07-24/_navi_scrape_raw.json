@@ -1,0 +1,87 @@
+{
+  "scrapedAt": "2026-07-24T10:06:32.922Z",
+  "source": "https://transfer-cloud.navitime.biz/keiseibus-group",
+  "note": "Transcribed only from page content; nothing invented.",
+  "urayasuCourses": {
+    "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses?busstop=00020739",
+    "all": [
+      {
+        "href": "/keiseibus-group/courses/timetables?busstop=00020739&course-sequence=0008200238-1",
+        "text": "6 [6]（市役所前・東海大浦安高校入口経由）舞浜駅行 時刻表",
+        "berth": "A 地図",
+        "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020739&course-sequence=0008200238-1"
+      },
+      {
+        "href": "/keiseibus-group/courses/timetables?busstop=00020739&course-sequence=0008200206-1",
+        "text": "2 [2]（新浦安駅北口・順天堂病院前経由）舞浜駅行 時刻表",
+        "berth": "B 地図",
+        "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020739&course-sequence=0008200206-1"
+      },
+      {
+        "href": "/keiseibus-group/courses/timetables?busstop=00020739&course-sequence=0008200211-1",
+        "text": "11 [11]（新浦安駅・明海五丁目経由）総合公園（新浦安駅・ベイパーク経由）総合公園・日の出南（墓地公園）（新浦（安駅・高洲橋経由）高洲海浜公園経由）行 18 [18]（新浦安駅・明海五丁目経由）総合公園（新浦安駅・ベイパーク経由）総合公園・日の出南（墓地公園）（新浦（安駅・高洲橋経由）高洲海浜公園経由）行 3 [3]（新浦安駅・明海五丁目経由）総合公園（新浦安駅・ベイパーク経由）総合公園・日の出南（墓地公園）（新浦（安駅・高洲橋経由）高洲海浜公園経由）行 時刻表",
+        "berth": "11 [11]（新浦安駅・明海五丁目経由",
+        "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020739&course-sequence=0008200211-1"
+      },
+      {
+        "href": "/keiseibus-group/courses/timetables?busstop=00020739&course-sequence=0008200222-1",
+        "text": "12 [12]（市役所入口・郵便局前経由）舞浜駅・「東京ディズニーランド(R)」（「東京ディズニーシー(R)」・リ（ゾートホテル経由）舞浜駅経由）行 4 [4]（市役所入口・郵便局前経由）舞浜駅・「東京ディズニーランド(R)」（「東京ディズニーシー(R)」・リ（ゾートホテル経由）舞浜駅経由）行 時刻表",
+        "berth": "D 地図",
+        "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020739&course-sequence=0008200222-1"
+      },
+      {
+        "href": "/keiseibus-group/courses/timetables?busstop=00020739&course-sequence=0008200228-1",
+        "text": "5 [5]（堀江六丁目・東野中央経由）新浦安駅行 時刻表",
+        "berth": "E 地図",
+        "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020739&course-sequence=0008200228-1"
+      },
+      {
+        "href": "/keiseibus-group/courses/timetables?busstop=00020739&course-sequence=0008200244-1",
+        "text": "9 [9]（堀江六丁目・富士見三丁目経由）舞浜駅（堀江六丁目・富士見三丁目経由）京成ローズタウン行 [深夜]（堀江六丁目・富士見三丁目経由）舞浜駅（堀江六丁目・富士見三丁目経由）京成ローズタウン行 時刻表",
+        "berth": "9 [9]（堀江六丁目・富士見三丁目経由",
+        "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020739&course-sequence=0008200244-1"
+      }
+    ],
+    "route4": [
+      {
+        "href": "/keiseibus-group/courses/timetables?busstop=00020739&course-sequence=0008200222-1",
+        "text": "12 [12]（市役所入口・郵便局前経由）舞浜駅・「東京ディズニーランド(R)」（「東京ディズニーシー(R)」・リ（ゾートホテル経由）舞浜駅経由）行 4 [4]（市役所入口・郵便局前経由）舞浜駅・「東京ディズニーランド(R)」（「東京ディズニーシー(R)」・リ（ゾートホテル経由）舞浜駅経由）行 時刻表",
+        "berth": "D 地図",
+        "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020739&course-sequence=0008200222-1"
+      }
+    ]
+  },
+  "route4Timetables": [
+    {
+      "courseText": "12 [12]（市役所入口・郵便局前経由）舞浜駅・「東京ディズニーランド(R)」（「東京ディズニーシー(R)」・リ（ゾートホテル経由）舞浜駅経由）行 4 [4]（市役所入口・郵便局前経由）舞浜駅・「東京ディズニーランド(R)」（「東京ディズニーシー(R)」・リ（ゾートホテル経由）舞浜駅経由）行 時刻表",
+      "berth": "D 地図",
+      "timetableUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020739&course-sequence=0008200222-1",
+      "legend": [
+        "無印…【４系統】舞浜駅行き",
+        "ランド…【４系統】舞浜駅経由　「東京ディズニーランド(R)」行き",
+        "ち…【４系統】千鳥車庫行き（千鳥北方面には行きません）",
+        "ホ…【１２系統】「東京ディズニーシー(R)」、リゾートホテル経由　舞浜駅行き"
+      ],
+      "destinationLabels": [],
+      "tripLinks": [],
+      "sampledByDest": {},
+      "bodySnippet": "京成電鉄バスグループ\n>\nバス停時刻表検索\n>\n浦安駅入口 系統・時刻表・のりば一覧\n>\n浦安駅入口 時刻表\n京成電鉄バスグループ\n検索トップページ\nLanguage\n日本語\nEnglish\n简体中文\n繁體中文\n한국어\nไทย\n浦安駅入口\nうらやすえきいりぐち\n時刻表\nこのバス停の系統一覧\n印刷の向き\n縦向き\n横向き\n印刷\nのりば: D\n地図\n（市役所入口・郵便局前経由）舞浜駅・「東京ディズニーランド(R)」（「東京ディズニーシー(R)」・リ行 [ゾートホテル経由）舞浜駅経由]\n4 12\n系統・行先\n閉じる\n\tすべて選択・解除\n\t12\t[12]（市役所入口・郵便局前経由）舞浜駅・「東京ディズニーランド(R)」（「東京ディズニーシー(R)」・リ（ゾートホテル経由）舞浜駅経由）行\n\t4\t[4]（市役所入口・郵便局前経由）舞浜駅・「東京ディズニーランド(R)」（「東京ディズニーシー(R)」・リ（ゾートホテル経由）舞浜駅経由）行\n2026年7月24日現在\n時\n\t\n平日\n\t\n土曜\n\t\n日曜/祝日\n\n\n05\n\t\n\t\n\t\n\n\n06\n\t\n38\n58\n\t\n44\n\t\n47\n\n\n07\n\t\n18\n38\n50\n\t\n14\n46\n\t\n17\n49\n\n\n08\n\t\n03ランド\n14\n27\n47\n\t\n00ランド\n16\n33ランド\n49ホ\n\t\n04\n19ランド\n35ランド\n51ランド\n\n\n09\n\t\n06ランド\n26\n56\n\t\n19\n47\n\t\n06ホ\n32\n\n\n10\n\t\n26\n48\n\t\n17ホ\n51\n\t\n02\n32\n\n\n11\n\t\n14\n32\n56\n\t\n18\n47\n\t\n04\n30\n\n\n12\n\t\n18\n32\n45\n\t\n20\n49\n\t\n00\n32\n\n\n13\n\t\n00\n31\n\t\n16\n47\n\t\n02\n32\n\n\n14\n\t\n01\n34\n\t\n18\n45\n\t\n02\n34\n\n\n15\n\t\n04\n33\n\t\n15\n47\n\t\n04\n32\n51\n\n\n16\n\t\n07\n36\n50\n\t\n17\n47\n\t\n16\n34\n\n\n17\n\t\n09\n33\n\t\n17\n49\n\t\n02\n32\n\n\n18\n\t\n03\n33\n\t\n04\n20\n34\n\t\n02\n34\n\n\n19\n\t\n08\n33\n\t\n06\n36ち\n\t\n04ち\n30\n\n\n20\n\t\n03\n45\n\t\n02\n42\n\t\n03\n32\n\n\n21\n\t\n13\n51ち\n\t\n11\n48ち\n\t\n11\n37ち\n\n\n22\n\t\n27ち\n\t\n25ち\n\t\n14ち\n\n\n23\n\t\n\t\n\t\n\n\n00\n\t\n\t\n\t\n\n\n無印…【４系統】舞浜駅行き\nランド…【４系統】舞浜駅経由　「東京ディズニーランド(R)」行き\nち…【４系統】千鳥車庫行き（千鳥北方面には行きません）\nホ…【１２系統】「東京ディズニーシー(R)」、リゾートホテル経由　舞浜駅行き\nページの先頭へ戻る\nご利用にあたって（免責について等）\nCopyright ©Keisei Bus Co., Ltd. All rights reserved.\nPowered by"
+    }
+  ],
+  "reverseStops": {
+    "舞浜駅": {
+      "searchUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/busstops?word=%E8%88%9E%E6%B5%9C%E9%A7%85",
+      "hits": []
+    },
+    "東京ディズニーランド": {
+      "searchUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/busstops?word=%E6%9D%B1%E4%BA%AC%E3%83%87%E3%82%A3%E3%82%BA%E3%83%8B%E3%83%BC%E3%83%A9%E3%83%B3%E3%83%89",
+      "hits": []
+    },
+    "千鳥車庫": {
+      "searchUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/busstops?word=%E5%8D%83%E9%B3%A5%E8%BB%8A%E5%BA%AB",
+      "hits": []
+    }
+  },
+  "tripSamples": {},
+  "errors": []
+}
