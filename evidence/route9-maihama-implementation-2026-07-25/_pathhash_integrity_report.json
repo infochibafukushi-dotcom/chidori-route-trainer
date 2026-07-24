@@ -1,0 +1,96 @@
+{
+  "startedAt": "2026-07-24T21:40:59.544Z",
+  "intact": {
+    "9-maihama": {
+      "ok": true,
+      "pathInvalid": false,
+      "pathHash": "24d450ce6ec84428d753683342aaf29076f36945cf1d5c18d206ede327b568c2",
+      "bankHash": "24d450ce6ec84428d753683342aaf29076f36945cf1d5c18d206ede327b568c2",
+      "recomputed": "24d450ce6ec84428d753683342aaf29076f36945cf1d5c18d206ede327b568c2",
+      "hashMatch": true,
+      "resolvedVersion": "2026-07-25-maihama-line-maihama-v1",
+      "expectedVersion": "2026-07-25-maihama-line-maihama-v1",
+      "pathPoints": 277
+    },
+    "9-rosetown": {
+      "ok": true,
+      "pathInvalid": false,
+      "pathHash": "3ce4a3d5960c916854dfb59edaf5769c81bd2474d2cc70db931f3485fcf18aab",
+      "bankHash": "3ce4a3d5960c916854dfb59edaf5769c81bd2474d2cc70db931f3485fcf18aab",
+      "recomputed": "3ce4a3d5960c916854dfb59edaf5769c81bd2474d2cc70db931f3485fcf18aab",
+      "hashMatch": true,
+      "resolvedVersion": "2026-07-25-maihama-line-rosetown-v1",
+      "expectedVersion": "2026-07-25-maihama-line-rosetown-v1",
+      "pathPoints": 182
+    },
+    "9-urayasu": {
+      "ok": true,
+      "pathInvalid": false,
+      "pathHash": "ab3d6ee47035f359ea822dfe991d48687c20f9e5d65e4afe0c40bf9d2da0eeb6",
+      "bankHash": "ab3d6ee47035f359ea822dfe991d48687c20f9e5d65e4afe0c40bf9d2da0eeb6",
+      "recomputed": "ab3d6ee47035f359ea822dfe991d48687c20f9e5d65e4afe0c40bf9d2da0eeb6",
+      "hashMatch": true,
+      "resolvedVersion": "2026-07-25-maihama-line-urayasu-v1",
+      "expectedVersion": "2026-07-25-maihama-line-urayasu-v1",
+      "pathPoints": 265
+    },
+    "9-tokai": {
+      "ok": true,
+      "pathInvalid": false,
+      "pathHash": "48285e994cc9dde24206aa2f31f8f90dd20e591a2b5c96b3d36ed0e5de44036c",
+      "bankHash": "48285e994cc9dde24206aa2f31f8f90dd20e591a2b5c96b3d36ed0e5de44036c",
+      "recomputed": "48285e994cc9dde24206aa2f31f8f90dd20e591a2b5c96b3d36ed0e5de44036c",
+      "hashMatch": true,
+      "resolvedVersion": "2026-07-25-maihama-line-tokai-v1",
+      "expectedVersion": "2026-07-25-maihama-line-tokai-v1",
+      "pathPoints": 261
+    },
+    "9-maihama-tokai": {
+      "ok": true,
+      "pathInvalid": false,
+      "pathHash": "f237186a36fb127cffde44f0e228bcf1459aa109d127ebf5ed191a2d5a11066f",
+      "bankHash": "f237186a36fb127cffde44f0e228bcf1459aa109d127ebf5ed191a2d5a11066f",
+      "recomputed": "f237186a36fb127cffde44f0e228bcf1459aa109d127ebf5ed191a2d5a11066f",
+      "hashMatch": true,
+      "resolvedVersion": "2026-07-25-maihama-line-maihama-tokai-v1",
+      "expectedVersion": "2026-07-25-maihama-line-maihama-tokai-v1",
+      "pathPoints": 287
+    },
+    "9-urayasu-rosetown": {
+      "ok": true,
+      "pathInvalid": false,
+      "pathHash": "fde85e00596ce418381680951e88f781d410d7a167032555f8777156f5cccd1c",
+      "bankHash": "fde85e00596ce418381680951e88f781d410d7a167032555f8777156f5cccd1c",
+      "recomputed": "fde85e00596ce418381680951e88f781d410d7a167032555f8777156f5cccd1c",
+      "hashMatch": true,
+      "resolvedVersion": "2026-07-25-maihama-line-urayasu-rosetown-v1",
+      "expectedVersion": "2026-07-25-maihama-line-urayasu-rosetown-v1",
+      "pathPoints": 193
+    }
+  },
+  "tamper": {
+    "systemKey": "9-maihama",
+    "bankHash": "24d450ce6ec84428d753683342aaf29076f36945cf1d5c18d206ede327b568c2",
+    "originalPoint": {
+      "lat": 35.6453653,
+      "lng": 139.8876461
+    },
+    "beforeButton": true,
+    "threw": "舞浜線の走行データを確認できません。\n系統：9-maihama\n理由：pathHash不一致",
+    "pathInvalid": true,
+    "issueText": "pathHash不一致 / maxGap超過（37.1m > 30m）",
+    "messageHasPathHash": true,
+    "messageHasMaihamaBanner": true,
+    "statusText": "舞浜線の走行データを確認できません。\n系統：9-maihama\n理由：pathHash不一致",
+    "afterButton": false,
+    "driveBlocked": true
+  },
+  "restore": {
+    "ok": true,
+    "pathInvalid": false,
+    "startButton": true
+  },
+  "productionFilesUnchanged": true,
+  "pass": true,
+  "finishedAt": "2026-07-24T21:41:02.995Z"
+}

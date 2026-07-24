@@ -1,0 +1,135 @@
+[
+  {
+    "file": "9-maihama-urayasu-start-z19.png",
+    "label": "9-maihama 浦安駅入口→フラワー通り",
+    "headingDeg": 8
+  },
+  {
+    "file": "9-maihama-horie6-z19.png",
+    "label": "9-maihama 南小入口→堀江六丁目",
+    "headingDeg": 38
+  },
+  {
+    "file": "9-maihama-fujimi3-z19.png",
+    "label": "9-maihama 堀江中学校前→富士見三丁目",
+    "headingDeg": 30
+  },
+  {
+    "file": "9-maihama-rosetown-pass-z19.png",
+    "label": "9-maihama 富士見五丁目→京成ローズタウン",
+    "headingDeg": 64
+  },
+  {
+    "file": "9-maihama-maihama-entry-z19.png",
+    "label": "9-maihama 京成ローズタウン→舞浜駅",
+    "headingDeg": 261
+  },
+  {
+    "file": "9-maihama-maihama-end-z19.png",
+    "label": "9-maihama 富士見五丁目→舞浜駅",
+    "headingDeg": 294
+  },
+  {
+    "file": "9-rosetown-urayasu-start-z19.png",
+    "label": "9-rosetown 浦安駅入口→フラワー通り",
+    "headingDeg": 8
+  },
+  {
+    "file": "9-rosetown-entry-z19.png",
+    "label": "9-rosetown 堀江三丁目→南小入口",
+    "headingDeg": 297
+  },
+  {
+    "file": "9-rosetown-end-z19.png",
+    "label": "9-rosetown 富士見五丁目→京成ローズタウン",
+    "headingDeg": 64
+  },
+  {
+    "file": "9-urayasu-maihama-start-z19.png",
+    "label": "9-urayasu 舞浜駅→京成ローズタウン",
+    "headingDeg": 232
+  },
+  {
+    "file": "9-urayasu-rosetown-pass-z19.png",
+    "label": "9-urayasu 京成ローズタウン→富士見五丁目",
+    "headingDeg": 231
+  },
+  {
+    "file": "9-urayasu-horie6-z19.png",
+    "label": "9-urayasu 堀江六丁目→南小入口",
+    "headingDeg": 117
+  },
+  {
+    "file": "9-urayasu-urayasu-end-z19.png",
+    "label": "9-urayasu フラワー通り→浦安駅入口",
+    "headingDeg": 243
+  },
+  {
+    "file": "9-tokai-maihama-start-z19.png",
+    "label": "9-tokai 舞浜駅→京成ローズタウン",
+    "headingDeg": 232
+  },
+  {
+    "file": "9-tokai-horie6-branch-z19.png",
+    "label": "9-tokai 堀江六丁目→堀江東",
+    "headingDeg": 297
+  },
+  {
+    "file": "9-tokai-horiehigashi-z19.png",
+    "label": "9-tokai 堀江東→東野一丁目",
+    "headingDeg": 297
+  },
+  {
+    "file": "9-tokai-higashino-z19.png",
+    "label": "9-tokai 東野一丁目→東野プール",
+    "headingDeg": 59
+  },
+  {
+    "file": "9-tokai-end-z19.png",
+    "label": "9-tokai 東野プール→東海大浦安高校入口",
+    "headingDeg": 26
+  },
+  {
+    "file": "9-maihama-tokai-start-z19.png",
+    "label": "9-maihama-tokai 東海大浦安高校入口→東野プール",
+    "headingDeg": 214
+  },
+  {
+    "file": "9-maihama-tokai-horie6-z19.png",
+    "label": "9-maihama-tokai 堀江東→堀江六丁目",
+    "headingDeg": 101
+  },
+  {
+    "file": "9-maihama-tokai-rosetown-z19.png",
+    "label": "9-maihama-tokai 富士見五丁目→京成ローズタウン",
+    "headingDeg": 64
+  },
+  {
+    "file": "9-maihama-tokai-maihama-end-z19.png",
+    "label": "9-maihama-tokai 京成ローズタウン→舞浜駅",
+    "headingDeg": 261
+  },
+  {
+    "file": "9-urayasu-rosetown-start-z19.png",
+    "label": "9-urayasu-rosetown 京成ローズタウン→富士見五丁目",
+    "headingDeg": 234
+  },
+  {
+    "file": "9-urayasu-rosetown-horie6-z19.png",
+    "label": "9-urayasu-rosetown 堀江六丁目→南小入口",
+    "headingDeg": 117
+  },
+  {
+    "file": "9-urayasu-rosetown-urayasu-end-z19.png",
+    "label": "9-urayasu-rosetown フラワー通り→浦安駅入口",
+    "headingDeg": 243
+  },
+  {
+    "file": "ui-pc-route9.png",
+    "label": "route-9 PC UI"
+  },
+  {
+    "file": "ui-sp390-route9.png",
+    "label": "route-9 SP390 UI"
+  }
+]

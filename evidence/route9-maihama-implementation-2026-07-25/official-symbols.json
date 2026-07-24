@@ -1,0 +1,56 @@
+{
+  "checkedAt": "2026-07-24T21:20:14.841Z",
+  "lineName": "舞浜線",
+  "systemNumber": "9",
+  "symbols": {
+    "無印": {
+      "meaning": "舞浜駅行き / 浦安駅入口行き（方向による）",
+      "systems": [
+        "9-maihama",
+        "9-urayasu",
+        "9-maihama-tokai",
+        "9-urayasu-rosetown"
+      ]
+    },
+    "ロ": {
+      "meaning": "京成ローズタウン行き",
+      "systems": [
+        "9-rosetown"
+      ]
+    },
+    "と": {
+      "meaning": "東海大浦安高校入口行き（高校前ではない）",
+      "systems": [
+        "9-tokai"
+      ]
+    },
+    "★ロ": {
+      "serviceType": "late-night",
+      "sameAs": "ロ",
+      "sameSystemKey": "9-rosetown",
+      "sameStopOrder": true,
+      "present": true
+    },
+    "★と": {
+      "serviceType": "late-night",
+      "sameAs": "と",
+      "sameSystemKey": "9-tokai",
+      "sameStopOrder": true,
+      "present": true
+    }
+  },
+  "legends": {
+    "outbound": [
+      "無印…【９系統】堀江六丁目、富士見三丁目経由　舞浜駅行き",
+      "ロ…【９系統】堀江六丁目、富士見三丁目経由　京成ローズタウン行き＜★；深夜バス（運賃倍額）＞",
+      "★ロ…【９系統】堀江六丁目、富士見三丁目経由　京成ローズタウン行き＜★；深夜バス（運賃倍額）＞"
+    ],
+    "inboundMaihama": [
+      "無印…【９系統】富士見三丁目、堀江六丁目経由　浦安駅入口行き",
+      "と…【９系統】堀江六丁目経由　東海大浦安高校入口行き＜★；深夜バス（運賃倍額）＞",
+      "★と…【９系統】堀江六丁目経由　東海大浦安高校入口行き＜★；深夜バス（運賃倍額）＞"
+    ],
+    "inboundRoseTown": [],
+    "inboundTokaiEntrance": []
+  }
+}

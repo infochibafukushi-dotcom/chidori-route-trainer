@@ -1,0 +1,904 @@
+{
+  "fetchedAt": "2026-07-24T21:20:17.007Z",
+  "route": "maihama-route9",
+  "relations": [
+    {
+      "id": 18320324,
+      "label": "route9 master (candidate)",
+      "ok": true,
+      "source": "overpass-api.de",
+      "name": "東京ベイシティバス9系統 浦安駅入口-堀江中学校-舞浜駅",
+      "tags": {
+        "name": "東京ベイシティバス9系統 浦安駅入口-堀江中学校-舞浜駅",
+        "network": "舞浜線",
+        "operator": "東京ベイシティ交通",
+        "ref": "9",
+        "route_master": "bus",
+        "type": "route_master"
+      },
+      "memberCount": 2,
+      "wayMemberCount": 0,
+      "wayElementCount": 25,
+      "stopMemberCount": 0,
+      "stopRoleCount": 0,
+      "platformMemberCount": 0,
+      "nodeElementCount": 214,
+      "memberRoles": {
+        "": 2
+      },
+      "platformNames": [],
+      "platformsDetail": [],
+      "file": "osm-relation-18320324.json",
+      "mergedChildren": [
+        18320323,
+        3498220
+      ],
+      "mergeNote": "merged child relation geometries into master bundle"
+    },
+    {
+      "id": 18320323,
+      "label": "route9 variant (candidate)",
+      "ok": true,
+      "source": "overpass-api.de",
+      "name": "東京ベイシティバス9系統 浦安駅入口⇒堀江中学校⇒舞浜駅",
+      "tags": {
+        "name": "東京ベイシティバス9系統 浦安駅入口⇒堀江中学校⇒舞浜駅",
+        "network": "舞浜線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "9",
+        "route": "bus",
+        "type": "route"
+      },
+      "memberCount": 27,
+      "wayMemberCount": 16,
+      "wayElementCount": 16,
+      "stopMemberCount": 11,
+      "stopRoleCount": 0,
+      "platformMemberCount": 11,
+      "nodeElementCount": 180,
+      "memberRoles": {
+        "platform_entry_only": 1,
+        "platform": 9,
+        "platform_exit_only": 1,
+        "": 16
+      },
+      "platformNames": [
+        "浦安駅入口",
+        "フラワー通り",
+        "堀江三丁目",
+        "南小入口",
+        "堀江六丁目",
+        "清滝弁財天",
+        "堀江中学校前",
+        "富士見三丁目",
+        "富士見五丁目",
+        "京成ローズタウン",
+        "舞浜駅"
+      ],
+      "platformsDetail": [
+        {
+          "role": "platform_entry_only",
+          "type": "node",
+          "ref": 2288028442,
+          "name": "浦安駅入口"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6830439621,
+          "name": "フラワー通り"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6830439620,
+          "name": "堀江三丁目"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6830439619,
+          "name": "南小入口"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6778604852,
+          "name": "堀江六丁目"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6778604853,
+          "name": "清滝弁財天"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6778604857,
+          "name": "堀江中学校前"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6778604859,
+          "name": "富士見三丁目"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 598536218,
+          "name": "富士見五丁目"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6778604861,
+          "name": "京成ローズタウン"
+        },
+        {
+          "role": "platform_exit_only",
+          "type": "node",
+          "ref": 9482601633,
+          "name": "舞浜駅"
+        }
+      ],
+      "file": "osm-relation-18320323.json",
+      "mergedChildren": [],
+      "mergeNote": null
+    },
+    {
+      "id": 3498220,
+      "label": "route9 relation (candidate)",
+      "ok": true,
+      "source": "overpass-api.de",
+      "name": "東京ベイシティバス9系統 舞浜駅⇒堀江中学校⇒浦安駅入口",
+      "tags": {
+        "name": "東京ベイシティバス9系統 舞浜駅⇒堀江中学校⇒浦安駅入口",
+        "network": "舞浜線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "9",
+        "route": "bus",
+        "type": "route"
+      },
+      "memberCount": 33,
+      "wayMemberCount": 22,
+      "wayElementCount": 22,
+      "stopMemberCount": 11,
+      "stopRoleCount": 0,
+      "platformMemberCount": 11,
+      "nodeElementCount": 163,
+      "memberRoles": {
+        "platform_entry_only": 1,
+        "platform": 9,
+        "platform_exit_only": 1,
+        "": 22
+      },
+      "platformNames": [
+        "舞浜駅",
+        "京成ローズタウン",
+        "富士見五丁目",
+        "富士見三丁目",
+        "堀江中学校前",
+        "清滝弁財天",
+        "堀江六丁目",
+        "南小入口",
+        "堀江三丁目",
+        "フラワー通り",
+        "浦安駅入口"
+      ],
+      "platformsDetail": [
+        {
+          "role": "platform_entry_only",
+          "type": "node",
+          "ref": 9482601637,
+          "name": "舞浜駅"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6778604860,
+          "name": "京成ローズタウン"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 12367548464,
+          "name": "富士見五丁目"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6778604858,
+          "name": "富士見三丁目"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6778604856,
+          "name": "堀江中学校前"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 12367548465,
+          "name": "清滝弁財天"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 12367548459,
+          "name": "堀江六丁目"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6938860196,
+          "name": "南小入口"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 12367548457,
+          "name": "堀江三丁目"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6830439622,
+          "name": "フラワー通り"
+        },
+        {
+          "role": "platform_exit_only",
+          "type": "node",
+          "ref": 12367548448,
+          "name": "浦安駅入口"
+        }
+      ],
+      "file": "osm-relation-3498220.json",
+      "mergedChildren": [],
+      "mergeNote": null
+    },
+    {
+      "id": 18419886,
+      "label": "route9 outbound/variant (candidate)",
+      "ok": true,
+      "source": "overpass-api.de",
+      "name": "東京ベイシティバス9系統 東海大浦安高校入口-東野・堀江中学校-舞浜駅",
+      "tags": {
+        "name": "東京ベイシティバス9系統 東海大浦安高校入口-東野・堀江中学校-舞浜駅",
+        "network": "舞浜線",
+        "operator": "東京ベイシティ交通",
+        "ref": "9",
+        "route_master": "bus",
+        "type": "route_master"
+      },
+      "memberCount": 2,
+      "wayMemberCount": 0,
+      "wayElementCount": 18,
+      "stopMemberCount": 0,
+      "stopRoleCount": 0,
+      "platformMemberCount": 0,
+      "nodeElementCount": 228,
+      "memberRoles": {
+        "": 2
+      },
+      "platformNames": [],
+      "platformsDetail": [],
+      "file": "osm-relation-18419886.json",
+      "mergedChildren": [
+        18419885,
+        18419884
+      ],
+      "mergeNote": "merged child relation geometries into master bundle"
+    },
+    {
+      "id": 18419885,
+      "label": "route9 inbound/variant (candidate)",
+      "ok": true,
+      "source": "overpass-api.de",
+      "name": "東京ベイシティバス9系統 東海大浦安高校入口⇒東野・堀江中学校⇒舞浜駅",
+      "tags": {
+        "name": "東京ベイシティバス9系統 東海大浦安高校入口⇒東野・堀江中学校⇒舞浜駅",
+        "network": "舞浜線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "9",
+        "route": "bus",
+        "type": "route"
+      },
+      "memberCount": 23,
+      "wayMemberCount": 12,
+      "wayElementCount": 12,
+      "stopMemberCount": 11,
+      "stopRoleCount": 0,
+      "platformMemberCount": 11,
+      "nodeElementCount": 182,
+      "memberRoles": {
+        "platform_entry_only": 1,
+        "platform": 9,
+        "platform_exit_only": 1,
+        "": 12
+      },
+      "platformNames": [
+        "東海大浦安高校入口",
+        "東野プール",
+        "東野一丁目",
+        "堀江東",
+        "堀江六丁目",
+        "清滝弁財天",
+        "堀江中学校前",
+        "富士見三丁目",
+        "富士見五丁目",
+        "京成ローズタウン",
+        "舞浜駅"
+      ],
+      "platformsDetail": [
+        {
+          "role": "platform_entry_only",
+          "type": "node",
+          "ref": 6957437530,
+          "name": "東海大浦安高校入口"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 598553572,
+          "name": "東野プール"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1742960270,
+          "name": "東野一丁目"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 12369477682,
+          "name": "堀江東"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6778604852,
+          "name": "堀江六丁目"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6778604853,
+          "name": "清滝弁財天"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6778604857,
+          "name": "堀江中学校前"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6778604859,
+          "name": "富士見三丁目"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 598536218,
+          "name": "富士見五丁目"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6778604861,
+          "name": "京成ローズタウン"
+        },
+        {
+          "role": "platform_exit_only",
+          "type": "node",
+          "ref": 9482601633,
+          "name": "舞浜駅"
+        }
+      ],
+      "file": "osm-relation-18419885.json",
+      "mergedChildren": [],
+      "mergeNote": null
+    },
+    {
+      "id": 18419884,
+      "label": "route9 variant (candidate)",
+      "ok": true,
+      "source": "overpass-api.de",
+      "name": "東京ベイシティバス9系統 舞浜駅⇒堀江中学校・東野⇒東海大浦安高校入口",
+      "tags": {
+        "name": "東京ベイシティバス9系統 舞浜駅⇒堀江中学校・東野⇒東海大浦安高校入口",
+        "network": "舞浜線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "9",
+        "route": "bus",
+        "type": "route"
+      },
+      "memberCount": 26,
+      "wayMemberCount": 15,
+      "wayElementCount": 15,
+      "stopMemberCount": 11,
+      "stopRoleCount": 0,
+      "platformMemberCount": 11,
+      "nodeElementCount": 159,
+      "memberRoles": {
+        "platform_entry_only": 1,
+        "platform": 9,
+        "platform_exit_only": 1,
+        "": 15
+      },
+      "platformNames": [
+        "舞浜駅",
+        "京成ローズタウン",
+        "富士見五丁目",
+        "富士見三丁目",
+        "堀江中学校前",
+        "清滝弁財天",
+        "堀江六丁目",
+        "堀江東",
+        "東野一丁目",
+        "東野プール",
+        "東海大浦安高校入口"
+      ],
+      "platformsDetail": [
+        {
+          "role": "platform_entry_only",
+          "type": "node",
+          "ref": 9482601637,
+          "name": "舞浜駅"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6778604860,
+          "name": "京成ローズタウン"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 12367548464,
+          "name": "富士見五丁目"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6778604858,
+          "name": "富士見三丁目"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6778604856,
+          "name": "堀江中学校前"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 12367548465,
+          "name": "清滝弁財天"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 12367548459,
+          "name": "堀江六丁目"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6830439626,
+          "name": "堀江東"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1742960273,
+          "name": "東野一丁目"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6778610694,
+          "name": "東野プール"
+        },
+        {
+          "role": "platform_exit_only",
+          "type": "node",
+          "ref": 6778610695,
+          "name": "東海大浦安高校入口"
+        }
+      ],
+      "file": "osm-relation-18419884.json",
+      "mergedChildren": [],
+      "mergeNote": null
+    }
+  ],
+  "nameChecks": {
+    "3498220": {
+      "label": "route9 relation (candidate)",
+      "name": "東京ベイシティバス9系統 舞浜駅⇒堀江中学校⇒浦安駅入口",
+      "allNames": [
+        "舞浜駅",
+        "京成ローズタウン",
+        "富士見五丁目",
+        "富士見三丁目",
+        "堀江中学校前",
+        "清滝弁財天",
+        "堀江六丁目",
+        "南小入口",
+        "堀江三丁目",
+        "フラワー通り",
+        "浦安駅入口"
+      ],
+      "hits": [
+        {
+          "needle": "京成ローズタウン",
+          "found": true,
+          "matches": [
+            "京成ローズタウン"
+          ]
+        },
+        {
+          "needle": "富士見三丁目",
+          "found": true,
+          "matches": [
+            "富士見三丁目"
+          ]
+        },
+        {
+          "needle": "富士見五丁目",
+          "found": true,
+          "matches": [
+            "富士見五丁目"
+          ]
+        },
+        {
+          "needle": "東海大浦安高校入口",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "東海大浦安高校前",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "堀江六丁目",
+          "found": true,
+          "matches": [
+            "堀江六丁目"
+          ]
+        },
+        {
+          "needle": "舞浜駅",
+          "found": true,
+          "matches": [
+            "舞浜駅"
+          ]
+        },
+        {
+          "needle": "浦安駅入口",
+          "found": true,
+          "matches": [
+            "浦安駅入口"
+          ]
+        }
+      ]
+    },
+    "18320323": {
+      "label": "route9 variant (candidate)",
+      "name": "東京ベイシティバス9系統 浦安駅入口⇒堀江中学校⇒舞浜駅",
+      "allNames": [
+        "浦安駅入口",
+        "フラワー通り",
+        "堀江三丁目",
+        "南小入口",
+        "堀江六丁目",
+        "清滝弁財天",
+        "堀江中学校前",
+        "富士見三丁目",
+        "富士見五丁目",
+        "京成ローズタウン",
+        "舞浜駅"
+      ],
+      "hits": [
+        {
+          "needle": "京成ローズタウン",
+          "found": true,
+          "matches": [
+            "京成ローズタウン"
+          ]
+        },
+        {
+          "needle": "富士見三丁目",
+          "found": true,
+          "matches": [
+            "富士見三丁目"
+          ]
+        },
+        {
+          "needle": "富士見五丁目",
+          "found": true,
+          "matches": [
+            "富士見五丁目"
+          ]
+        },
+        {
+          "needle": "東海大浦安高校入口",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "東海大浦安高校前",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "堀江六丁目",
+          "found": true,
+          "matches": [
+            "堀江六丁目"
+          ]
+        },
+        {
+          "needle": "舞浜駅",
+          "found": true,
+          "matches": [
+            "舞浜駅"
+          ]
+        },
+        {
+          "needle": "浦安駅入口",
+          "found": true,
+          "matches": [
+            "浦安駅入口"
+          ]
+        }
+      ]
+    },
+    "18320324": {
+      "label": "route9 master (candidate)",
+      "name": "東京ベイシティバス9系統 浦安駅入口-堀江中学校-舞浜駅",
+      "allNames": [],
+      "hits": [
+        {
+          "needle": "京成ローズタウン",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "富士見三丁目",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "富士見五丁目",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "東海大浦安高校入口",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "東海大浦安高校前",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "堀江六丁目",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "舞浜駅",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "浦安駅入口",
+          "found": false,
+          "matches": []
+        }
+      ]
+    },
+    "18419884": {
+      "label": "route9 variant (candidate)",
+      "name": "東京ベイシティバス9系統 舞浜駅⇒堀江中学校・東野⇒東海大浦安高校入口",
+      "allNames": [
+        "舞浜駅",
+        "京成ローズタウン",
+        "富士見五丁目",
+        "富士見三丁目",
+        "堀江中学校前",
+        "清滝弁財天",
+        "堀江六丁目",
+        "堀江東",
+        "東野一丁目",
+        "東野プール",
+        "東海大浦安高校入口"
+      ],
+      "hits": [
+        {
+          "needle": "京成ローズタウン",
+          "found": true,
+          "matches": [
+            "京成ローズタウン"
+          ]
+        },
+        {
+          "needle": "富士見三丁目",
+          "found": true,
+          "matches": [
+            "富士見三丁目"
+          ]
+        },
+        {
+          "needle": "富士見五丁目",
+          "found": true,
+          "matches": [
+            "富士見五丁目"
+          ]
+        },
+        {
+          "needle": "東海大浦安高校入口",
+          "found": true,
+          "matches": [
+            "東海大浦安高校入口"
+          ]
+        },
+        {
+          "needle": "東海大浦安高校前",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "堀江六丁目",
+          "found": true,
+          "matches": [
+            "堀江六丁目"
+          ]
+        },
+        {
+          "needle": "舞浜駅",
+          "found": true,
+          "matches": [
+            "舞浜駅"
+          ]
+        },
+        {
+          "needle": "浦安駅入口",
+          "found": false,
+          "matches": []
+        }
+      ]
+    },
+    "18419885": {
+      "label": "route9 inbound/variant (candidate)",
+      "name": "東京ベイシティバス9系統 東海大浦安高校入口⇒東野・堀江中学校⇒舞浜駅",
+      "allNames": [
+        "東海大浦安高校入口",
+        "東野プール",
+        "東野一丁目",
+        "堀江東",
+        "堀江六丁目",
+        "清滝弁財天",
+        "堀江中学校前",
+        "富士見三丁目",
+        "富士見五丁目",
+        "京成ローズタウン",
+        "舞浜駅"
+      ],
+      "hits": [
+        {
+          "needle": "京成ローズタウン",
+          "found": true,
+          "matches": [
+            "京成ローズタウン"
+          ]
+        },
+        {
+          "needle": "富士見三丁目",
+          "found": true,
+          "matches": [
+            "富士見三丁目"
+          ]
+        },
+        {
+          "needle": "富士見五丁目",
+          "found": true,
+          "matches": [
+            "富士見五丁目"
+          ]
+        },
+        {
+          "needle": "東海大浦安高校入口",
+          "found": true,
+          "matches": [
+            "東海大浦安高校入口"
+          ]
+        },
+        {
+          "needle": "東海大浦安高校前",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "堀江六丁目",
+          "found": true,
+          "matches": [
+            "堀江六丁目"
+          ]
+        },
+        {
+          "needle": "舞浜駅",
+          "found": true,
+          "matches": [
+            "舞浜駅"
+          ]
+        },
+        {
+          "needle": "浦安駅入口",
+          "found": false,
+          "matches": []
+        }
+      ]
+    },
+    "18419886": {
+      "label": "route9 outbound/variant (candidate)",
+      "name": "東京ベイシティバス9系統 東海大浦安高校入口-東野・堀江中学校-舞浜駅",
+      "allNames": [],
+      "hits": [
+        {
+          "needle": "京成ローズタウン",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "富士見三丁目",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "富士見五丁目",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "東海大浦安高校入口",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "東海大浦安高校前",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "堀江六丁目",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "舞浜駅",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "浦安駅入口",
+          "found": false,
+          "matches": []
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,575 @@
+{
+  "checkedAt": "2026-07-24T21:20:14.841Z",
+  "sourcePriority": [
+    "京成バスナビ個別便通過時刻表（/stops?）",
+    "京成バスナビ系統・行先凡例"
+  ],
+  "lineName": "舞浜線",
+  "systemNumber": "9",
+  "missingRequired": [],
+  "expectedMaihamaCheck": {
+    "expected": [
+      "浦安駅入口",
+      "フラワー通り",
+      "堀江三丁目",
+      "南小入口",
+      "堀江六丁目",
+      "清滝弁財天",
+      "堀江中学校前",
+      "富士見三丁目",
+      "富士見五丁目",
+      "京成ローズタウン",
+      "舞浜駅"
+    ],
+    "actual": [
+      "浦安駅入口",
+      "フラワー通り",
+      "堀江三丁目",
+      "南小入口",
+      "堀江六丁目",
+      "清滝弁財天",
+      "堀江中学校前",
+      "富士見三丁目",
+      "富士見五丁目",
+      "京成ローズタウン",
+      "舞浜駅"
+    ],
+    "exactMatch": true,
+    "prefixMatch": true
+  },
+  "busstopIds": {
+    "urayasu": "00020739",
+    "maihama": "00020617",
+    "rosetown": "00020678",
+    "tokaiEntrance": "00020637"
+  },
+  "systems": {
+    "9-maihama": {
+      "title": "舞浜駅行き",
+      "directionGroup": "outbound",
+      "departure": "浦安駅入口",
+      "destination": "舞浜駅",
+      "timetableSymbol": "無印",
+      "berth": "9 [9]（堀江六丁目・富士見三丁目経由）舞浜駅（堀江六丁目・富士見三丁目経由）",
+      "naviBusstop": "00020739",
+      "courseSequence": "0008200244-1",
+      "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200244-1)",
+      "course": "0008200244",
+      "sourceUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320006/stops?departure-busstop=00020739-1&course=0008200244&datetime=2026-07-27T06:10:00%2B09:00",
+      "confirmedDate": "2026-07-24",
+      "stopCount": 11,
+      "stops": [
+        {
+          "officialName": "浦安駅入口",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200244-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "フラワー通り",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200244-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "堀江三丁目",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200244-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "南小入口",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200244-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "堀江六丁目",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200244-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "清滝弁財天",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200244-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "堀江中学校前",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200244-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "富士見三丁目",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200244-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "富士見五丁目",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200244-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "京成ローズタウン",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200244-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "舞浜駅",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200244-1)",
+          "checkedDate": "2026-07-24"
+        }
+      ],
+      "stopNames": [
+        "浦安駅入口",
+        "フラワー通り",
+        "堀江三丁目",
+        "南小入口",
+        "堀江六丁目",
+        "清滝弁財天",
+        "堀江中学校前",
+        "富士見三丁目",
+        "富士見五丁目",
+        "京成ローズタウン",
+        "舞浜駅"
+      ],
+      "nameChecks": {
+        "hasRoseTown": true,
+        "hasTokaiIriguchi": false,
+        "hasTokaiMae": false,
+        "hasHorie6": true,
+        "hasFujimi3": true,
+        "hasFujimi5": true,
+        "matchesExpectedMaihamaPrefix": true
+      }
+    },
+    "9-rosetown": {
+      "title": "京成ローズタウン行き",
+      "directionGroup": "outbound",
+      "departure": "浦安駅入口",
+      "destination": "京成ローズタウン",
+      "timetableSymbol": "ロ",
+      "berth": "9 [9]（堀江六丁目・富士見三丁目経由）舞浜駅（堀江六丁目・富士見三丁目経由）",
+      "naviBusstop": "00020739",
+      "courseSequence": "0008200244-1",
+      "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200244-1)",
+      "note": "時刻表セル標記「ロ」。",
+      "course": "0008200246",
+      "sourceUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81340003/stops?departure-busstop=00020739-1&course=0008200246&datetime=2026-07-25T19:35:00%2B09:00",
+      "confirmedDate": "2026-07-24",
+      "stopCount": 10,
+      "stops": [
+        {
+          "officialName": "浦安駅入口",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200244-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "フラワー通り",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200244-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "堀江三丁目",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200244-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "南小入口",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200244-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "堀江六丁目",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200244-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "清滝弁財天",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200244-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "堀江中学校前",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200244-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "富士見三丁目",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200244-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "富士見五丁目",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200244-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "京成ローズタウン",
+          "source": "Keisei Bus Navi trip stop list (浦安駅入口 course-sequence=0008200244-1)",
+          "checkedDate": "2026-07-24"
+        }
+      ],
+      "stopNames": [
+        "浦安駅入口",
+        "フラワー通り",
+        "堀江三丁目",
+        "南小入口",
+        "堀江六丁目",
+        "清滝弁財天",
+        "堀江中学校前",
+        "富士見三丁目",
+        "富士見五丁目",
+        "京成ローズタウン"
+      ],
+      "nameChecks": {
+        "hasRoseTown": true,
+        "hasTokaiIriguchi": false,
+        "hasTokaiMae": false,
+        "hasHorie6": true,
+        "hasFujimi3": true,
+        "hasFujimi5": true,
+        "matchesExpectedMaihamaPrefix": false
+      }
+    },
+    "9-urayasu": {
+      "title": "浦安駅入口行き（舞浜駅発）",
+      "directionGroup": "inbound",
+      "departure": "舞浜駅",
+      "destination": "浦安駅入口",
+      "timetableSymbol": "無印",
+      "berth": "9 [9]（堀江六丁目経由）浦安駅入口（堀江六丁目・堀江東経由）東海大学浦安高校",
+      "naviBusstop": "00020617",
+      "courseSequence": "0008200243-1",
+      "source": "Keisei Bus Navi trip stop list (舞浜駅 busstop=00020617 course-sequence=0008200243-1)",
+      "course": "0008200243",
+      "sourceUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131002b/stops?departure-busstop=00020617-1&course=0008200243&datetime=2026-07-27T06:39:00%2B09:00",
+      "confirmedDate": "2026-07-24",
+      "stopCount": 11,
+      "stops": [
+        {
+          "officialName": "舞浜駅",
+          "source": "Keisei Bus Navi trip stop list (舞浜駅 busstop=00020617 course-sequence=0008200243-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "京成ローズタウン",
+          "source": "Keisei Bus Navi trip stop list (舞浜駅 busstop=00020617 course-sequence=0008200243-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "富士見五丁目",
+          "source": "Keisei Bus Navi trip stop list (舞浜駅 busstop=00020617 course-sequence=0008200243-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "富士見三丁目",
+          "source": "Keisei Bus Navi trip stop list (舞浜駅 busstop=00020617 course-sequence=0008200243-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "堀江中学校前",
+          "source": "Keisei Bus Navi trip stop list (舞浜駅 busstop=00020617 course-sequence=0008200243-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "清滝弁財天",
+          "source": "Keisei Bus Navi trip stop list (舞浜駅 busstop=00020617 course-sequence=0008200243-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "堀江六丁目",
+          "source": "Keisei Bus Navi trip stop list (舞浜駅 busstop=00020617 course-sequence=0008200243-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "南小入口",
+          "source": "Keisei Bus Navi trip stop list (舞浜駅 busstop=00020617 course-sequence=0008200243-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "堀江三丁目",
+          "source": "Keisei Bus Navi trip stop list (舞浜駅 busstop=00020617 course-sequence=0008200243-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "フラワー通り",
+          "source": "Keisei Bus Navi trip stop list (舞浜駅 busstop=00020617 course-sequence=0008200243-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "浦安駅入口",
+          "source": "Keisei Bus Navi trip stop list (舞浜駅 busstop=00020617 course-sequence=0008200243-1)",
+          "checkedDate": "2026-07-24"
+        }
+      ],
+      "stopNames": [
+        "舞浜駅",
+        "京成ローズタウン",
+        "富士見五丁目",
+        "富士見三丁目",
+        "堀江中学校前",
+        "清滝弁財天",
+        "堀江六丁目",
+        "南小入口",
+        "堀江三丁目",
+        "フラワー通り",
+        "浦安駅入口"
+      ]
+    },
+    "9-tokai": {
+      "title": "東海大浦安高校入口行き",
+      "directionGroup": "inbound",
+      "departure": "舞浜駅",
+      "destination": "東海大浦安高校入口",
+      "timetableSymbol": "と",
+      "berth": "9 [9]（堀江六丁目経由）浦安駅入口（堀江六丁目・堀江東経由）東海大学浦安高校",
+      "naviBusstop": "00020617",
+      "courseSequence": "0008200243-1",
+      "source": "Keisei Bus Navi trip stop list (舞浜駅 busstop=00020617 course-sequence=0008200243-1)",
+      "note": "時刻表セル標記「と」。終点は「東海大浦安高校入口」（「東海大浦安高校前」ではない）。",
+      "course": "0008200248",
+      "sourceUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81360032/stops?departure-busstop=00020617-1&course=0008200248&datetime=2026-07-26T16:10:00%2B09:00",
+      "confirmedDate": "2026-07-24",
+      "stopCount": 11,
+      "stops": [
+        {
+          "officialName": "舞浜駅",
+          "source": "Keisei Bus Navi trip stop list (舞浜駅 busstop=00020617 course-sequence=0008200243-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "京成ローズタウン",
+          "source": "Keisei Bus Navi trip stop list (舞浜駅 busstop=00020617 course-sequence=0008200243-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "富士見五丁目",
+          "source": "Keisei Bus Navi trip stop list (舞浜駅 busstop=00020617 course-sequence=0008200243-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "富士見三丁目",
+          "source": "Keisei Bus Navi trip stop list (舞浜駅 busstop=00020617 course-sequence=0008200243-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "堀江中学校前",
+          "source": "Keisei Bus Navi trip stop list (舞浜駅 busstop=00020617 course-sequence=0008200243-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "清滝弁財天",
+          "source": "Keisei Bus Navi trip stop list (舞浜駅 busstop=00020617 course-sequence=0008200243-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "堀江六丁目",
+          "source": "Keisei Bus Navi trip stop list (舞浜駅 busstop=00020617 course-sequence=0008200243-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "堀江東",
+          "source": "Keisei Bus Navi trip stop list (舞浜駅 busstop=00020617 course-sequence=0008200243-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "東野一丁目",
+          "source": "Keisei Bus Navi trip stop list (舞浜駅 busstop=00020617 course-sequence=0008200243-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "東野プール",
+          "source": "Keisei Bus Navi trip stop list (舞浜駅 busstop=00020617 course-sequence=0008200243-1)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "東海大浦安高校入口",
+          "source": "Keisei Bus Navi trip stop list (舞浜駅 busstop=00020617 course-sequence=0008200243-1)",
+          "checkedDate": "2026-07-24"
+        }
+      ],
+      "stopNames": [
+        "舞浜駅",
+        "京成ローズタウン",
+        "富士見五丁目",
+        "富士見三丁目",
+        "堀江中学校前",
+        "清滝弁財天",
+        "堀江六丁目",
+        "堀江東",
+        "東野一丁目",
+        "東野プール",
+        "東海大浦安高校入口"
+      ],
+      "nameChecks": {
+        "hasRoseTown": true,
+        "hasTokaiIriguchi": true,
+        "hasTokaiMae": false,
+        "hasHorie6": true,
+        "hasFujimi3": true,
+        "hasFujimi5": true,
+        "matchesExpectedMaihamaPrefix": false
+      }
+    },
+    "9-maihama-tokai": {
+      "title": "舞浜駅行き（東海大浦安高校入口発）",
+      "directionGroup": "inbound",
+      "departure": "東海大浦安高校入口",
+      "destination": "舞浜駅",
+      "timetableSymbol": "無印",
+      "naviBusstop": "00020637",
+      "courseSequence": null,
+      "source": "Keisei Bus Navi trip stop list (東海大浦安高校入口 busstop=00020637)",
+      "berth": "03",
+      "course": "0008200249",
+      "sourceUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81370000/stops?departure-busstop=00020637-1&course=0008200249&datetime=2026-07-27T05:59:00%2B09:00",
+      "confirmedDate": "2026-07-24",
+      "stopCount": 11,
+      "stops": [
+        {
+          "officialName": "東海大浦安高校入口",
+          "source": "Keisei Bus Navi trip stop list (東海大浦安高校入口 busstop=00020637)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "東野プール",
+          "source": "Keisei Bus Navi trip stop list (東海大浦安高校入口 busstop=00020637)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "東野一丁目",
+          "source": "Keisei Bus Navi trip stop list (東海大浦安高校入口 busstop=00020637)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "堀江東",
+          "source": "Keisei Bus Navi trip stop list (東海大浦安高校入口 busstop=00020637)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "堀江六丁目",
+          "source": "Keisei Bus Navi trip stop list (東海大浦安高校入口 busstop=00020637)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "清滝弁財天",
+          "source": "Keisei Bus Navi trip stop list (東海大浦安高校入口 busstop=00020637)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "堀江中学校前",
+          "source": "Keisei Bus Navi trip stop list (東海大浦安高校入口 busstop=00020637)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "富士見三丁目",
+          "source": "Keisei Bus Navi trip stop list (東海大浦安高校入口 busstop=00020637)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "富士見五丁目",
+          "source": "Keisei Bus Navi trip stop list (東海大浦安高校入口 busstop=00020637)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "京成ローズタウン",
+          "source": "Keisei Bus Navi trip stop list (東海大浦安高校入口 busstop=00020637)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "舞浜駅",
+          "source": "Keisei Bus Navi trip stop list (東海大浦安高校入口 busstop=00020637)",
+          "checkedDate": "2026-07-24"
+        }
+      ],
+      "stopNames": [
+        "東海大浦安高校入口",
+        "東野プール",
+        "東野一丁目",
+        "堀江東",
+        "堀江六丁目",
+        "清滝弁財天",
+        "堀江中学校前",
+        "富士見三丁目",
+        "富士見五丁目",
+        "京成ローズタウン",
+        "舞浜駅"
+      ]
+    },
+    "9-urayasu-rosetown": {
+      "title": "浦安駅入口行き（京成ローズタウン発）",
+      "directionGroup": "inbound",
+      "departure": "京成ローズタウン",
+      "destination": "浦安駅入口",
+      "timetableSymbol": "無印",
+      "naviBusstop": "00020678",
+      "courseSequence": null,
+      "source": "Keisei Bus Navi trip stop list (京成ローズタウン busstop=00020678)",
+      "berth": "02",
+      "course": "0008200245",
+      "sourceUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81330001/stops?departure-busstop=00020678-1&course=0008200245&datetime=2026-07-27T05:58:00%2B09:00",
+      "confirmedDate": "2026-07-24",
+      "stopCount": 10,
+      "stops": [
+        {
+          "officialName": "京成ローズタウン",
+          "source": "Keisei Bus Navi trip stop list (京成ローズタウン busstop=00020678)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "富士見五丁目",
+          "source": "Keisei Bus Navi trip stop list (京成ローズタウン busstop=00020678)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "富士見三丁目",
+          "source": "Keisei Bus Navi trip stop list (京成ローズタウン busstop=00020678)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "堀江中学校前",
+          "source": "Keisei Bus Navi trip stop list (京成ローズタウン busstop=00020678)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "清滝弁財天",
+          "source": "Keisei Bus Navi trip stop list (京成ローズタウン busstop=00020678)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "堀江六丁目",
+          "source": "Keisei Bus Navi trip stop list (京成ローズタウン busstop=00020678)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "南小入口",
+          "source": "Keisei Bus Navi trip stop list (京成ローズタウン busstop=00020678)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "堀江三丁目",
+          "source": "Keisei Bus Navi trip stop list (京成ローズタウン busstop=00020678)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "フラワー通り",
+          "source": "Keisei Bus Navi trip stop list (京成ローズタウン busstop=00020678)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "浦安駅入口",
+          "source": "Keisei Bus Navi trip stop list (京成ローズタウン busstop=00020678)",
+          "checkedDate": "2026-07-24"
+        }
+      ],
+      "stopNames": [
+        "京成ローズタウン",
+        "富士見五丁目",
+        "富士見三丁目",
+        "堀江中学校前",
+        "清滝弁財天",
+        "堀江六丁目",
+        "南小入口",
+        "堀江三丁目",
+        "フラワー通り",
+        "浦安駅入口"
+      ]
+    }
+  }
+}

@@ -1,0 +1,591 @@
+{
+  "generatedAt": "2026-07-24T21:48:58.500Z",
+  "route": "route-9",
+  "lineName": "舞浜線",
+  "pathFiles": [
+    "maihama-line-path-v1.js",
+    "_path_bank.json"
+  ],
+  "systems": {
+    "9-maihama": {
+      "systemKey": "9-maihama",
+      "relationId": 18320323,
+      "pathSource": "osm-relation-18320323",
+      "pathPointCount": 277,
+      "usedWayCount": 16,
+      "selfIntersectionCount": 0,
+      "pointsFarFromWaysCount": 0,
+      "maxDistToWay_m": 0,
+      "pedestrianWayCount": 0,
+      "wrongWayCount": 0,
+      "wayTagSamples": [
+        {
+          "wayId": 1337138023,
+          "highway": "tertiary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 60193618,
+          "highway": "tertiary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 60193608,
+          "highway": "tertiary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 60194496,
+          "highway": "tertiary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 136399256,
+          "highway": "tertiary",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 260586190,
+          "highway": "tertiary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 60238527,
+          "highway": "tertiary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 60238533,
+          "highway": "tertiary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        }
+      ],
+      "buildingIntersectionCount": 0,
+      "groundGreenIntersectionCount": 0,
+      "bridgeGreenIntersectionCount": 6,
+      "visualZ19": {
+        "files": [
+          "9-maihama-urayasu-start-z19.png",
+          "9-maihama-horie6-z19.png",
+          "9-maihama-fujimi3-z19.png",
+          "9-maihama-rosetown-pass-z19.png",
+          "9-maihama-maihama-entry-z19.png",
+          "9-maihama-maihama-end-z19.png"
+        ],
+        "existingCount": 6,
+        "missing": [],
+        "buildingCrossingObserved": null,
+        "groundGreenCrossingObserved": null,
+        "note": "Manual z19 review from screenshots only — not used as automated pass/fail counts"
+      },
+      "reviewRequired": false,
+      "overpassOk": true
+    },
+    "9-rosetown": {
+      "systemKey": "9-rosetown",
+      "relationId": 18320323,
+      "pathSource": "osm-relation-18320323-prefix-to-rosetown",
+      "pathPointCount": 182,
+      "usedWayCount": 16,
+      "selfIntersectionCount": 0,
+      "pointsFarFromWaysCount": 0,
+      "maxDistToWay_m": 0,
+      "pedestrianWayCount": 0,
+      "wrongWayCount": 0,
+      "wayTagSamples": [
+        {
+          "wayId": 1337138023,
+          "highway": "tertiary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 60193618,
+          "highway": "tertiary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 60193608,
+          "highway": "tertiary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 60194496,
+          "highway": "tertiary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 136399256,
+          "highway": "tertiary",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 260586190,
+          "highway": "tertiary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 60238527,
+          "highway": "tertiary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 60238533,
+          "highway": "tertiary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        }
+      ],
+      "buildingIntersectionCount": 0,
+      "groundGreenIntersectionCount": 0,
+      "bridgeGreenIntersectionCount": 2,
+      "visualZ19": {
+        "files": [
+          "9-rosetown-urayasu-start-z19.png",
+          "9-rosetown-entry-z19.png",
+          "9-rosetown-end-z19.png"
+        ],
+        "existingCount": 3,
+        "missing": [],
+        "buildingCrossingObserved": null,
+        "groundGreenCrossingObserved": null,
+        "note": "Manual z19 review from screenshots only — not used as automated pass/fail counts"
+      },
+      "reviewRequired": false,
+      "overpassOk": true
+    },
+    "9-urayasu": {
+      "systemKey": "9-urayasu",
+      "relationId": 3498220,
+      "pathSource": "osm-relation-3498220",
+      "pathPointCount": 265,
+      "usedWayCount": 22,
+      "selfIntersectionCount": 0,
+      "pointsFarFromWaysCount": 0,
+      "maxDistToWay_m": 0,
+      "pedestrianWayCount": 0,
+      "wrongWayCount": 0,
+      "wayTagSamples": [
+        {
+          "wayId": 1337358421,
+          "highway": "tertiary",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1337138028,
+          "highway": "tertiary",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1291325002,
+          "highway": "tertiary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 260586195,
+          "highway": "tertiary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 30177041,
+          "highway": "tertiary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 260586191,
+          "highway": "tertiary",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 169959971,
+          "highway": "tertiary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 60241543,
+          "highway": "tertiary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        }
+      ],
+      "buildingIntersectionCount": 0,
+      "groundGreenIntersectionCount": 0,
+      "bridgeGreenIntersectionCount": 6,
+      "visualZ19": {
+        "files": [
+          "9-urayasu-maihama-start-z19.png",
+          "9-urayasu-rosetown-pass-z19.png",
+          "9-urayasu-horie6-z19.png",
+          "9-urayasu-urayasu-end-z19.png"
+        ],
+        "existingCount": 4,
+        "missing": [],
+        "buildingCrossingObserved": null,
+        "groundGreenCrossingObserved": null,
+        "note": "Manual z19 review from screenshots only — not used as automated pass/fail counts"
+      },
+      "reviewRequired": false,
+      "overpassOk": true
+    },
+    "9-tokai": {
+      "systemKey": "9-tokai",
+      "relationId": 18419884,
+      "pathSource": "osm-relation-18419884-prefix-to-tokai-entrance",
+      "pathPointCount": 261,
+      "usedWayCount": 15,
+      "selfIntersectionCount": 0,
+      "pointsFarFromWaysCount": 0,
+      "maxDistToWay_m": 0,
+      "pedestrianWayCount": 0,
+      "wrongWayCount": 0,
+      "wayTagSamples": [
+        {
+          "wayId": 1337358421,
+          "highway": "tertiary",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1337138028,
+          "highway": "tertiary",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1291325002,
+          "highway": "tertiary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 260586195,
+          "highway": "tertiary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 30177041,
+          "highway": "tertiary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 260586191,
+          "highway": "tertiary",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 169959971,
+          "highway": "tertiary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 60241543,
+          "highway": "tertiary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        }
+      ],
+      "buildingIntersectionCount": 0,
+      "groundGreenIntersectionCount": 0,
+      "bridgeGreenIntersectionCount": 6,
+      "visualZ19": {
+        "files": [
+          "9-tokai-maihama-start-z19.png",
+          "9-tokai-horie6-branch-z19.png",
+          "9-tokai-horiehigashi-z19.png",
+          "9-tokai-higashino-z19.png",
+          "9-tokai-end-z19.png"
+        ],
+        "existingCount": 5,
+        "missing": [],
+        "buildingCrossingObserved": null,
+        "groundGreenCrossingObserved": null,
+        "note": "Manual z19 review from screenshots only — not used as automated pass/fail counts"
+      },
+      "reviewRequired": false,
+      "overpassOk": true
+    },
+    "9-maihama-tokai": {
+      "systemKey": "9-maihama-tokai",
+      "relationId": 18419885,
+      "pathSource": "osm-relation-18419885",
+      "pathPointCount": 287,
+      "usedWayCount": 12,
+      "selfIntersectionCount": 0,
+      "pointsFarFromWaysCount": 0,
+      "maxDistToWay_m": 0,
+      "pedestrianWayCount": 0,
+      "wrongWayCount": 0,
+      "wayTagSamples": [
+        {
+          "wayId": 1342553236,
+          "highway": "tertiary",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 720402604,
+          "highway": "tertiary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 60238527,
+          "highway": "tertiary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 60238533,
+          "highway": "tertiary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1342413248,
+          "highway": "tertiary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 60241533,
+          "highway": "tertiary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 60241543,
+          "highway": "tertiary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 169959971,
+          "highway": "tertiary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        }
+      ],
+      "buildingIntersectionCount": 0,
+      "groundGreenIntersectionCount": 0,
+      "bridgeGreenIntersectionCount": 6,
+      "visualZ19": {
+        "files": [
+          "9-maihama-tokai-start-z19.png",
+          "9-maihama-tokai-horie6-z19.png",
+          "9-maihama-tokai-rosetown-z19.png",
+          "9-maihama-tokai-maihama-end-z19.png"
+        ],
+        "existingCount": 4,
+        "missing": [],
+        "buildingCrossingObserved": null,
+        "groundGreenCrossingObserved": null,
+        "note": "Manual z19 review from screenshots only — not used as automated pass/fail counts"
+      },
+      "reviewRequired": false,
+      "overpassOk": true
+    },
+    "9-urayasu-rosetown": {
+      "systemKey": "9-urayasu-rosetown",
+      "relationId": 3498220,
+      "pathSource": "osm-relation-3498220+platform-6778604861-departure",
+      "pathPointCount": 193,
+      "usedWayCount": 22,
+      "selfIntersectionCount": 0,
+      "pointsFarFromWaysCount": 0,
+      "maxDistToWay_m": 0,
+      "pedestrianWayCount": 0,
+      "wrongWayCount": 0,
+      "wayTagSamples": [
+        {
+          "wayId": 1337358421,
+          "highway": "tertiary",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1337138028,
+          "highway": "tertiary",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1291325002,
+          "highway": "tertiary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 260586195,
+          "highway": "tertiary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 30177041,
+          "highway": "tertiary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 260586191,
+          "highway": "tertiary",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 169959971,
+          "highway": "tertiary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 60241543,
+          "highway": "tertiary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        }
+      ],
+      "buildingIntersectionCount": 0,
+      "groundGreenIntersectionCount": 0,
+      "bridgeGreenIntersectionCount": 2,
+      "visualZ19": {
+        "files": [
+          "9-urayasu-rosetown-start-z19.png",
+          "9-urayasu-rosetown-horie6-z19.png",
+          "9-urayasu-rosetown-urayasu-end-z19.png"
+        ],
+        "existingCount": 3,
+        "missing": [],
+        "buildingCrossingObserved": null,
+        "groundGreenCrossingObserved": null,
+        "note": "Manual z19 review from screenshots only — not used as automated pass/fail counts"
+      },
+      "reviewRequired": false,
+      "overpassOk": true
+    }
+  },
+  "pass": true,
+  "anyReviewRequired": false,
+  "allOverpassOk": true
+}

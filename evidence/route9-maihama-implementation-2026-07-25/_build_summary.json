@@ -1,0 +1,379 @@
+{
+  "generatedAt": "2026-07-24T21:38:23.562Z",
+  "systems": {
+    "9-maihama": {
+      "stops": 11,
+      "pathPoints": 277,
+      "maxGap_m": 24.9,
+      "maxPlatformDist_m": 13.3,
+      "pathHash": "24d450ce6ec84428d753683342aaf29076f36945cf1d5c18d206ede327b568c2",
+      "resolvedVersion": "2026-07-25-maihama-line-maihama-v1",
+      "missingPlatforms": [],
+      "platformDists": [
+        {
+          "name": "浦安駅入口",
+          "dist": 7.4
+        },
+        {
+          "name": "フラワー通り",
+          "dist": 7.4
+        },
+        {
+          "name": "堀江三丁目",
+          "dist": 11.6
+        },
+        {
+          "name": "南小入口",
+          "dist": 5.9
+        },
+        {
+          "name": "堀江六丁目",
+          "dist": 11.2
+        },
+        {
+          "name": "清滝弁財天",
+          "dist": 8.8
+        },
+        {
+          "name": "堀江中学校前",
+          "dist": 11.2
+        },
+        {
+          "name": "富士見三丁目",
+          "dist": 10.2
+        },
+        {
+          "name": "富士見五丁目",
+          "dist": 9.3
+        },
+        {
+          "name": "京成ローズタウン",
+          "dist": 13.3
+        },
+        {
+          "name": "舞浜駅",
+          "dist": 4.7
+        }
+      ],
+      "sliceMeta": {
+        "si": 1,
+        "ei": 277,
+        "startDist": 7.4,
+        "endDist": 4.7
+      },
+      "maxJoin_m": 24.8,
+      "note": null
+    },
+    "9-rosetown": {
+      "stops": 10,
+      "pathPoints": 182,
+      "maxGap_m": 24.9,
+      "maxPlatformDist_m": 13.3,
+      "pathHash": "3ce4a3d5960c916854dfb59edaf5769c81bd2474d2cc70db931f3485fcf18aab",
+      "resolvedVersion": "2026-07-25-maihama-line-rosetown-v1",
+      "missingPlatforms": [],
+      "platformDists": [
+        {
+          "name": "浦安駅入口",
+          "dist": 7.4
+        },
+        {
+          "name": "フラワー通り",
+          "dist": 7.4
+        },
+        {
+          "name": "堀江三丁目",
+          "dist": 11.6
+        },
+        {
+          "name": "南小入口",
+          "dist": 5.9
+        },
+        {
+          "name": "堀江六丁目",
+          "dist": 11.2
+        },
+        {
+          "name": "清滝弁財天",
+          "dist": 8.8
+        },
+        {
+          "name": "堀江中学校前",
+          "dist": 11.2
+        },
+        {
+          "name": "富士見三丁目",
+          "dist": 10.2
+        },
+        {
+          "name": "富士見五丁目",
+          "dist": 9.3
+        },
+        {
+          "name": "京成ローズタウン",
+          "dist": 13.3
+        }
+      ],
+      "sliceMeta": {
+        "si": 1,
+        "ei": 182,
+        "startDist": 7.4,
+        "endDist": 13.3
+      },
+      "maxJoin_m": 24.8,
+      "note": null
+    },
+    "9-urayasu": {
+      "stops": 11,
+      "pathPoints": 265,
+      "maxGap_m": 24.9,
+      "maxPlatformDist_m": 12.4,
+      "pathHash": "ab3d6ee47035f359ea822dfe991d48687c20f9e5d65e4afe0c40bf9d2da0eeb6",
+      "resolvedVersion": "2026-07-25-maihama-line-urayasu-v1",
+      "missingPlatforms": [],
+      "platformDists": [
+        {
+          "name": "舞浜駅",
+          "dist": 7.7
+        },
+        {
+          "name": "京成ローズタウン",
+          "dist": 9.2
+        },
+        {
+          "name": "富士見五丁目",
+          "dist": 9.1
+        },
+        {
+          "name": "富士見三丁目",
+          "dist": 7.4
+        },
+        {
+          "name": "堀江中学校前",
+          "dist": 10.1
+        },
+        {
+          "name": "清滝弁財天",
+          "dist": 9.3
+        },
+        {
+          "name": "堀江六丁目",
+          "dist": 11.1
+        },
+        {
+          "name": "南小入口",
+          "dist": 5.7
+        },
+        {
+          "name": "堀江三丁目",
+          "dist": 7.2
+        },
+        {
+          "name": "フラワー通り",
+          "dist": 12.4
+        },
+        {
+          "name": "浦安駅入口",
+          "dist": 11.1
+        }
+      ],
+      "sliceMeta": {
+        "si": 1,
+        "ei": 265,
+        "startDist": 7.7,
+        "endDist": 11.1
+      },
+      "maxJoin_m": 0,
+      "note": null
+    },
+    "9-tokai": {
+      "stops": 11,
+      "pathPoints": 261,
+      "maxGap_m": 24.9,
+      "maxPlatformDist_m": 11.1,
+      "pathHash": "48285e994cc9dde24206aa2f31f8f90dd20e591a2b5c96b3d36ed0e5de44036c",
+      "resolvedVersion": "2026-07-25-maihama-line-tokai-v1",
+      "missingPlatforms": [],
+      "platformDists": [
+        {
+          "name": "舞浜駅",
+          "dist": 7.7
+        },
+        {
+          "name": "京成ローズタウン",
+          "dist": 9.2
+        },
+        {
+          "name": "富士見五丁目",
+          "dist": 9.1
+        },
+        {
+          "name": "富士見三丁目",
+          "dist": 7.4
+        },
+        {
+          "name": "堀江中学校前",
+          "dist": 10.1
+        },
+        {
+          "name": "清滝弁財天",
+          "dist": 9.3
+        },
+        {
+          "name": "堀江六丁目",
+          "dist": 11.1
+        },
+        {
+          "name": "堀江東",
+          "dist": 10.7
+        },
+        {
+          "name": "東野一丁目",
+          "dist": 6.3
+        },
+        {
+          "name": "東野プール",
+          "dist": 8.8
+        },
+        {
+          "name": "東海大浦安高校入口",
+          "dist": 4.7
+        }
+      ],
+      "sliceMeta": {
+        "si": 1,
+        "ei": 261,
+        "startDist": 7.7,
+        "endDist": 4.7
+      },
+      "maxJoin_m": 0,
+      "note": "終点は東海大浦安高校入口（高校前ではない）。"
+    },
+    "9-maihama-tokai": {
+      "stops": 11,
+      "pathPoints": 287,
+      "maxGap_m": 24.9,
+      "maxPlatformDist_m": 13.3,
+      "pathHash": "f237186a36fb127cffde44f0e228bcf1459aa109d127ebf5ed191a2d5a11066f",
+      "resolvedVersion": "2026-07-25-maihama-line-maihama-tokai-v1",
+      "missingPlatforms": [],
+      "platformDists": [
+        {
+          "name": "東海大浦安高校入口",
+          "dist": 4.2
+        },
+        {
+          "name": "東野プール",
+          "dist": 5
+        },
+        {
+          "name": "東野一丁目",
+          "dist": 7.5
+        },
+        {
+          "name": "堀江東",
+          "dist": 11.4
+        },
+        {
+          "name": "堀江六丁目",
+          "dist": 11.2
+        },
+        {
+          "name": "清滝弁財天",
+          "dist": 8.8
+        },
+        {
+          "name": "堀江中学校前",
+          "dist": 11.2
+        },
+        {
+          "name": "富士見三丁目",
+          "dist": 10.2
+        },
+        {
+          "name": "富士見五丁目",
+          "dist": 9.3
+        },
+        {
+          "name": "京成ローズタウン",
+          "dist": 13.3
+        },
+        {
+          "name": "舞浜駅",
+          "dist": 4.7
+        }
+      ],
+      "sliceMeta": {
+        "si": 0,
+        "ei": 286,
+        "startDist": 4.2,
+        "endDist": 4.7
+      },
+      "maxJoin_m": 0,
+      "note": null
+    },
+    "9-urayasu-rosetown": {
+      "stops": 10,
+      "pathPoints": 193,
+      "maxGap_m": 24.9,
+      "maxPlatformDist_m": 13.3,
+      "pathHash": "fde85e00596ce418381680951e88f781d410d7a167032555f8777156f5cccd1c",
+      "resolvedVersion": "2026-07-25-maihama-line-urayasu-rosetown-v1",
+      "missingPlatforms": [],
+      "platformDists": [
+        {
+          "name": "京成ローズタウン",
+          "dist": 13.3
+        },
+        {
+          "name": "富士見五丁目",
+          "dist": 9.1
+        },
+        {
+          "name": "富士見三丁目",
+          "dist": 7.4
+        },
+        {
+          "name": "堀江中学校前",
+          "dist": 10.1
+        },
+        {
+          "name": "清滝弁財天",
+          "dist": 9.3
+        },
+        {
+          "name": "堀江六丁目",
+          "dist": 11.1
+        },
+        {
+          "name": "南小入口",
+          "dist": 5.7
+        },
+        {
+          "name": "堀江三丁目",
+          "dist": 7.2
+        },
+        {
+          "name": "フラワー通り",
+          "dist": 12.4
+        },
+        {
+          "name": "浦安駅入口",
+          "dist": 11.1
+        }
+      ],
+      "sliceMeta": {
+        "si": 73,
+        "ei": 265,
+        "startDist": 13.3,
+        "endDist": 11.1
+      },
+      "maxJoin_m": 0,
+      "note": "京成ローズタウン始発は OSM node 6778604861。舞浜方面へ戻らない。"
+    }
+  },
+  "prefixChecks": {
+    "9-rosetown-vs-9-maihama": []
+  },
+  "blockers": []
+}
