@@ -14,7 +14,7 @@
 | 9-rosetown | 京成ローズタウン行き | outbound | ロ | 10 | 浦安駅入口 → 京成ローズタウン |
 | 9-urayasu | 浦安駅入口行き（舞浜駅発） | inbound | 無印 | 11 | 舞浜駅 → 浦安駅入口 |
 | 9-tokai | 東海大浦安高校入口行き | inbound | と | 11 | 舞浜駅 → 東海大浦安高校入口 |
-| 9-maihama-tokai | 舞浜駅行き（高校入口発） | inbound | 無印 | 11 | 東海大浦安高校入口 → 舞浜駅 |
+| 9-maihama-tokai | 舞浜駅行き（高校入口発） | outbound-school | 無印 | 11 | 東海大浦安高校入口 → 舞浜駅 |
 | 9-urayasu-rosetown | 浦安駅入口行き（ローズタウン発） | inbound | 無印 | 10 | 京成ローズタウン → 浦安駅入口 |
 
 

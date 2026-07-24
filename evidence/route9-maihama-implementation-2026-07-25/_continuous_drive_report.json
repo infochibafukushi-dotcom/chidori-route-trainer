@@ -1,5 +1,5 @@
 {
-  "startedAt": "2026-07-24T21:41:21.808Z",
+  "startedAt": "2026-07-24T22:37:46.332Z",
   "systems": {
     "9-maihama": {
       "key": "9-maihama",
@@ -44,7 +44,7 @@
         "lastName": "舞浜駅",
         "startLabel": "スタート",
         "pathHash": "24d450ce6ec84428d753683342aaf29076f36945cf1d5c18d206ede327b568c2",
-        "resolvedVersion": "2026-07-25-maihama-line-maihama-v1",
+        "resolvedVersion": "2026-07-25-maihama-line-maihama-v2",
         "pathInvalid": false,
         "statusState": "",
         "status": "S地点（浦安駅入口）へ戻しました。"
@@ -74,7 +74,7 @@
         "lastName": "舞浜駅",
         "startLabel": "スタート",
         "pathHash": "24d450ce6ec84428d753683342aaf29076f36945cf1d5c18d206ede327b568c2",
-        "resolvedVersion": "2026-07-25-maihama-line-maihama-v1",
+        "resolvedVersion": "2026-07-25-maihama-line-maihama-v2",
         "pathInvalid": false,
         "statusState": "",
         "status": "終点 舞浜駅 に到着しました。"
@@ -121,7 +121,7 @@
         "lastName": "京成ローズタウン",
         "startLabel": "スタート",
         "pathHash": "3ce4a3d5960c916854dfb59edaf5769c81bd2474d2cc70db931f3485fcf18aab",
-        "resolvedVersion": "2026-07-25-maihama-line-rosetown-v1",
+        "resolvedVersion": "2026-07-25-maihama-line-rosetown-v2",
         "pathInvalid": false,
         "statusState": "",
         "status": "S地点（浦安駅入口）へ戻しました。"
@@ -150,7 +150,7 @@
         "lastName": "京成ローズタウン",
         "startLabel": "スタート",
         "pathHash": "3ce4a3d5960c916854dfb59edaf5769c81bd2474d2cc70db931f3485fcf18aab",
-        "resolvedVersion": "2026-07-25-maihama-line-rosetown-v1",
+        "resolvedVersion": "2026-07-25-maihama-line-rosetown-v2",
         "pathInvalid": false,
         "statusState": "",
         "status": "終点 京成ローズタウン に到着しました。"
@@ -482,5 +482,5 @@
   "pass": true,
   "fatalConsole": [],
   "fatalPageErrors": [],
-  "finishedAt": "2026-07-24T21:47:52.301Z"
+  "finishedAt": "2026-07-24T22:44:16.649Z"
 }

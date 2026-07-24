@@ -1,0 +1,408 @@
+{
+  "label": "startHint-urayasu-E",
+  "relationId": 18320323,
+  "startHintNodeId": 2288028442,
+  "wayMemberCount": 16,
+  "connections": [
+    {
+      "index": 0,
+      "prevWayId": null,
+      "nextWayId": 1337138023,
+      "prevWayEndNode": null,
+      "prevWayEnd": null,
+      "nextWayStartNode": 12367548447,
+      "nextWayStart": {
+        "lat": 35.66426,
+        "lng": 139.8920408
+      },
+      "nextWayEndNode": 747616973,
+      "gap_m": 0,
+      "flipped": true,
+      "highway": "tertiary",
+      "oneway": "no",
+      "name": "宮前通り",
+      "service": null,
+      "junction": null,
+      "nodeCount": 2,
+      "connection": "FIRST_STARTHINT"
+    },
+    {
+      "index": 1,
+      "prevWayId": 1337138023,
+      "nextWayId": 60193618,
+      "prevWayEndNode": 747616973,
+      "prevWayEnd": {
+        "lat": 35.6640471,
+        "lng": 139.89196
+      },
+      "nextWayStartNode": 747616973,
+      "nextWayStart": {
+        "lat": 35.6640471,
+        "lng": 139.89196
+      },
+      "nextWayEndNode": 747617011,
+      "gap_m": 0,
+      "flipped": true,
+      "highway": "tertiary",
+      "oneway": "no",
+      "name": "宮前通り",
+      "service": null,
+      "junction": null,
+      "nodeCount": 9,
+      "connection": "SHARED_NODE"
+    },
+    {
+      "index": 2,
+      "prevWayId": 60193618,
+      "nextWayId": 60193608,
+      "prevWayEndNode": 747617011,
+      "prevWayEnd": {
+        "lat": 35.6626559,
+        "lng": 139.8916896
+      },
+      "nextWayStartNode": 747617011,
+      "nextWayStart": {
+        "lat": 35.6626559,
+        "lng": 139.8916896
+      },
+      "nextWayEndNode": 747616997,
+      "gap_m": 0,
+      "flipped": true,
+      "highway": "tertiary",
+      "oneway": "no",
+      "name": "宮前通り",
+      "service": null,
+      "junction": null,
+      "nodeCount": 2,
+      "connection": "SHARED_NODE"
+    },
+    {
+      "index": 3,
+      "prevWayId": 60193608,
+      "nextWayId": 60194496,
+      "prevWayEndNode": 747616997,
+      "prevWayEnd": {
+        "lat": 35.6624954,
+        "lng": 139.891665
+      },
+      "nextWayStartNode": 747616997,
+      "nextWayStart": {
+        "lat": 35.6624954,
+        "lng": 139.891665
+      },
+      "nextWayEndNode": 623655697,
+      "gap_m": 0,
+      "flipped": true,
+      "highway": "tertiary",
+      "oneway": "no",
+      "name": "宮前通り",
+      "service": null,
+      "junction": null,
+      "nodeCount": 17,
+      "connection": "SHARED_NODE"
+    },
+    {
+      "index": 4,
+      "prevWayId": 60194496,
+      "nextWayId": 136399256,
+      "prevWayEndNode": 623655697,
+      "prevWayEnd": {
+        "lat": 35.6572304,
+        "lng": 139.8908804
+      },
+      "nextWayStartNode": 623655697,
+      "nextWayStart": {
+        "lat": 35.6572304,
+        "lng": 139.8908804
+      },
+      "nextWayEndNode": 1496260778,
+      "gap_m": 0,
+      "flipped": false,
+      "highway": "tertiary",
+      "oneway": "yes",
+      "name": null,
+      "service": null,
+      "junction": null,
+      "nodeCount": 7,
+      "connection": "SHARED_NODE"
+    },
+    {
+      "index": 5,
+      "prevWayId": 136399256,
+      "nextWayId": 260586190,
+      "prevWayEndNode": 1496260778,
+      "prevWayEnd": {
+        "lat": 35.6557765,
+        "lng": 139.8935383
+      },
+      "nextWayStartNode": 1496260778,
+      "nextWayStart": {
+        "lat": 35.6557765,
+        "lng": 139.8935383
+      },
+      "nextWayEndNode": 623655691,
+      "gap_m": 0,
+      "flipped": true,
+      "highway": "tertiary",
+      "oneway": null,
+      "name": null,
+      "service": null,
+      "junction": null,
+      "nodeCount": 4,
+      "connection": "SHARED_NODE"
+    },
+    {
+      "index": 6,
+      "prevWayId": 260586190,
+      "nextWayId": 60238527,
+      "prevWayEndNode": 623655691,
+      "prevWayEnd": {
+        "lat": 35.6555569,
+        "lng": 139.8939758
+      },
+      "nextWayStartNode": 623655691,
+      "nextWayStart": {
+        "lat": 35.6555569,
+        "lng": 139.8939758
+      },
+      "nextWayEndNode": 748620796,
+      "gap_m": 0,
+      "flipped": true,
+      "highway": "tertiary",
+      "oneway": "no",
+      "name": "大三角線",
+      "service": null,
+      "junction": null,
+      "nodeCount": 7,
+      "connection": "SHARED_NODE"
+    },
+    {
+      "index": 7,
+      "prevWayId": 60238527,
+      "nextWayId": 60238533,
+      "prevWayEndNode": 748620796,
+      "prevWayEnd": {
+        "lat": 35.6533512,
+        "lng": 139.8922825
+      },
+      "nextWayStartNode": 748620796,
+      "nextWayStart": {
+        "lat": 35.6533512,
+        "lng": 139.8922825
+      },
+      "nextWayEndNode": 748620822,
+      "gap_m": 0,
+      "flipped": true,
+      "highway": "tertiary",
+      "oneway": "no",
+      "name": "大三角線",
+      "service": null,
+      "junction": null,
+      "nodeCount": 2,
+      "connection": "SHARED_NODE"
+    },
+    {
+      "index": 8,
+      "prevWayId": 60238533,
+      "nextWayId": 1342413248,
+      "prevWayEndNode": 748620822,
+      "prevWayEnd": {
+        "lat": 35.6532845,
+        "lng": 139.8922416
+      },
+      "nextWayStartNode": 748620822,
+      "nextWayStart": {
+        "lat": 35.6532845,
+        "lng": 139.8922416
+      },
+      "nextWayEndNode": 600744600,
+      "gap_m": 0,
+      "flipped": true,
+      "highway": "tertiary",
+      "oneway": "no",
+      "name": "大三角線",
+      "service": null,
+      "junction": null,
+      "nodeCount": 14,
+      "connection": "SHARED_NODE"
+    },
+    {
+      "index": 9,
+      "prevWayId": 1342413248,
+      "nextWayId": 60241533,
+      "prevWayEndNode": 600744600,
+      "prevWayEnd": {
+        "lat": 35.649884,
+        "lng": 139.890303
+      },
+      "nextWayStartNode": 600744600,
+      "nextWayStart": {
+        "lat": 35.649884,
+        "lng": 139.890303
+      },
+      "nextWayEndNode": 598534803,
+      "gap_m": 0,
+      "flipped": true,
+      "highway": "tertiary",
+      "oneway": "no",
+      "name": "大三角線",
+      "service": null,
+      "junction": null,
+      "nodeCount": 32,
+      "connection": "SHARED_NODE"
+    },
+    {
+      "index": 10,
+      "prevWayId": 60241533,
+      "nextWayId": 60241543,
+      "prevWayEndNode": 598534803,
+      "prevWayEnd": {
+        "lat": 35.6438267,
+        "lng": 139.8856505
+      },
+      "nextWayStartNode": 598534803,
+      "nextWayStart": {
+        "lat": 35.6438267,
+        "lng": 139.8856505
+      },
+      "nextWayEndNode": 11533256186,
+      "gap_m": 0,
+      "flipped": true,
+      "highway": "tertiary",
+      "oneway": "no",
+      "name": "大三角線",
+      "service": null,
+      "junction": null,
+      "nodeCount": 2,
+      "connection": "SHARED_NODE"
+    },
+    {
+      "index": 11,
+      "prevWayId": 60241543,
+      "nextWayId": 169959971,
+      "prevWayEndNode": 11533256186,
+      "prevWayEnd": {
+        "lat": 35.6435422,
+        "lng": 139.8851469
+      },
+      "nextWayStartNode": 11533256186,
+      "nextWayStart": {
+        "lat": 35.6435422,
+        "lng": 139.8851469
+      },
+      "nextWayEndNode": 2303445076,
+      "gap_m": 0,
+      "flipped": true,
+      "highway": "tertiary",
+      "oneway": "no",
+      "name": "大三角線",
+      "service": null,
+      "junction": null,
+      "nodeCount": 15,
+      "connection": "SHARED_NODE"
+    },
+    {
+      "index": 12,
+      "prevWayId": 169959971,
+      "nextWayId": 271934581,
+      "prevWayEndNode": 2303445076,
+      "prevWayEnd": {
+        "lat": 35.6408563,
+        "lng": 139.8800018
+      },
+      "nextWayStartNode": 2303445076,
+      "nextWayStart": {
+        "lat": 35.6408563,
+        "lng": 139.8800018
+      },
+      "nextWayEndNode": 332519498,
+      "gap_m": 0,
+      "flipped": false,
+      "highway": "tertiary",
+      "oneway": "yes",
+      "name": "大三角線",
+      "service": null,
+      "junction": null,
+      "nodeCount": 10,
+      "connection": "SHARED_NODE"
+    },
+    {
+      "index": 13,
+      "prevWayId": 271934581,
+      "nextWayId": 260586195,
+      "prevWayEndNode": 332519498,
+      "prevWayEnd": {
+        "lat": 35.6385875,
+        "lng": 139.8768843
+      },
+      "nextWayStartNode": 332519498,
+      "nextWayStart": {
+        "lat": 35.6385875,
+        "lng": 139.8768843
+      },
+      "nextWayEndNode": 2277933625,
+      "gap_m": 0,
+      "flipped": false,
+      "highway": "tertiary",
+      "oneway": null,
+      "name": "浦安市道幹線7号",
+      "service": null,
+      "junction": null,
+      "nodeCount": 19,
+      "connection": "SHARED_NODE"
+    },
+    {
+      "index": 14,
+      "prevWayId": 260586195,
+      "nextWayId": 1291325002,
+      "prevWayEndNode": 2277933625,
+      "prevWayEnd": {
+        "lat": 35.6366755,
+        "lng": 139.8814283
+      },
+      "nextWayStartNode": 2277933625,
+      "nextWayStart": {
+        "lat": 35.6366755,
+        "lng": 139.8814283
+      },
+      "nextWayEndNode": 332518668,
+      "gap_m": 0,
+      "flipped": false,
+      "highway": "tertiary",
+      "oneway": null,
+      "name": "浦安市道幹線7号",
+      "service": null,
+      "junction": null,
+      "nodeCount": 14,
+      "connection": "SHARED_NODE"
+    },
+    {
+      "index": 15,
+      "prevWayId": 1291325002,
+      "nextWayId": 258419781,
+      "prevWayEndNode": 332518668,
+      "prevWayEnd": {
+        "lat": 35.6351208,
+        "lng": 139.883533
+      },
+      "nextWayStartNode": 332518668,
+      "nextWayStart": {
+        "lat": 35.6351208,
+        "lng": 139.883533
+      },
+      "nextWayEndNode": 2302433649,
+      "gap_m": 0,
+      "flipped": false,
+      "highway": "tertiary",
+      "oneway": "yes",
+      "name": null,
+      "service": null,
+      "junction": null,
+      "nodeCount": 28,
+      "connection": "SHARED_NODE"
+    }
+  ],
+  "maxGap_m": 0,
+  "maxGapPair": null,
+  "gapsOver1m": []
+}

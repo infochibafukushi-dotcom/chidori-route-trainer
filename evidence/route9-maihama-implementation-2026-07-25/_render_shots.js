@@ -95,9 +95,39 @@ const SHOTS = [
   { file: '9-urayasu-rosetown-start-z19.png', ...span('9-urayasu-rosetown', '京成ローズタウン', '富士見五丁目') },
   { file: '9-urayasu-rosetown-horie6-z19.png', ...span('9-urayasu-rosetown', '堀江六丁目', '南小入口') },
   { file: '9-urayasu-rosetown-urayasu-end-z19.png', ...span('9-urayasu-rosetown', 'フラワー通り', '浦安駅入口') },
+  (() => {
+    const target = { lat: 35.6640471, lng: 139.89196 }; // shared node 747616973
+    const tip = { lat: 35.66426, lng: 139.8920408 }; // spur tip 12367548447
+    const pts = PATH['9-maihama'].pathPoints;
+    const n = nearest(pts, target);
+    const lo = Math.max(0, n.index - 10);
+    const hi = Math.min(pts.length - 1, n.index + 10);
+    const slice = pts.slice(lo, hi + 1);
+    const headingDeg = Math.round(
+      ((Math.atan2(slice[slice.length - 1].lng - slice[0].lng, slice[slice.length - 1].lat - slice[0].lat) * 180) / Math.PI + 360) % 360,
+    );
+    return {
+      file: '9-maihama-gap-join-z20.png',
+      systemKey: '9-maihama',
+      label: '9-maihama former 24.8m gap → shared node 747616973 (z20)',
+      points: slice,
+      platforms: [
+        { name: 'spur tip 12367548447', ...tip, pathDistM: Math.round(haversine(pts[n.index], tip) * 10) / 10 },
+        { name: 'shared 747616973', ...target, pathDistM: Math.round(n.dist * 10) / 10 },
+      ],
+      headingDeg,
+      zoom: 20,
+      center: target,
+      pathHash: PATH['9-maihama'].pathHash,
+      resolvedVersion: PATH['9-maihama'].resolvedVersion,
+      relationId: PATH['9-maihama'].relationId,
+    };
+  })(),
 ];
 
 function html(shot) {
+  const zoom = shot.zoom || 19;
+  const center = shot.center || shot.platforms[shot.platforms.length - 1];
   return `<!doctype html><html><head><meta charset="utf-8"/>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
 <style>html,body,#map{margin:0;height:100%;width:100%}#label{position:absolute;z-index:1000;left:10px;top:10px;background:rgba(0,0,0,.82);color:#fff;padding:10px 12px;font:13px/1.45 sans-serif;max-width:460px}</style>
@@ -112,9 +142,10 @@ document.getElementById('label').innerHTML =
   'heading ' + shot.headingDeg + '° | relation ' + shot.relationId + '<br>' +
   'resolvedVersion ' + shot.resolvedVersion + '<br>' +
   'pathHash ' + shot.pathHash.slice(0, 16) + '…';
-const center = shot.platforms[shot.platforms.length - 1];
-const map = L.map('map', { zoomControl: true }).setView([center.lat, center.lng], 19);
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19, attribution: '© OSM' }).addTo(map);
+const center = ${JSON.stringify({ lat: center.lat, lng: center.lng })};
+const zoom = ${zoom};
+const map = L.map('map', { zoomControl: true }).setView([center.lat, center.lng], zoom);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 20, maxNativeZoom: 19, attribution: '© OSM' }).addTo(map);
 L.polyline(shot.points.map(p => [p.lat, p.lng]), { color: '#0b57d0', weight: 5, opacity: 0.9 }).addTo(map);
 shot.platforms.forEach((p) => {
   L.circleMarker([p.lat, p.lng], { radius: 7, color: '#b00020', fillColor: '#ff5252', fillOpacity: 0.95 })

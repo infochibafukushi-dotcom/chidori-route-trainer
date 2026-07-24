@@ -1,9 +1,9 @@
 {
   "9-maihama": {
     "relationId": 18320323,
-    "pathSource": "osm-relation-18320323",
+    "pathSource": "osm-relation-18320323+startHint-urayasu-E",
     "pathHash": "24d450ce6ec84428d753683342aaf29076f36945cf1d5c18d206ede327b568c2",
-    "resolvedVersion": "2026-07-25-maihama-line-maihama-v1",
+    "resolvedVersion": "2026-07-25-maihama-line-maihama-v2",
     "pathPoints": [
       {
         "lat": 35.66426,
@@ -1117,9 +1117,9 @@
   },
   "9-rosetown": {
     "relationId": 18320323,
-    "pathSource": "osm-relation-18320323-prefix-to-rosetown",
+    "pathSource": "osm-relation-18320323-prefix-to-rosetown+startHint-urayasu-E",
     "pathHash": "3ce4a3d5960c916854dfb59edaf5769c81bd2474d2cc70db931f3485fcf18aab",
-    "resolvedVersion": "2026-07-25-maihama-line-rosetown-v1",
+    "resolvedVersion": "2026-07-25-maihama-line-rosetown-v2",
     "pathPoints": [
       {
         "lat": 35.66426,

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'chidori-route-map-v68';
+const CACHE_NAME = 'chidori-route-map-v69';
 const APP_SHELL = [
   './',
   './index.html',

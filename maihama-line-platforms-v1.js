@@ -1,7 +1,8 @@
 // Auto-generated OSM platforms for 舞浜線 (route-9).
 // Official stop order: Keisei Bus Navi 2026-07-25.
 // 京成ローズタウン始発は OSM node 6778604861（到着 node 6778604860 と区別）。
-// Generated: 2026-07-25-maihama-line-v1
+// 9-maihama/9-rosetown v2: 浦安駅入口E startHint で way 連続接続。
+// Generated: 2026-07-25-maihama-line-v2
 (() => {
   window.MAIHAMA_LINE_PLATFORMS_V1 = {
   "9-maihama": {

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-24T21:48:58.500Z",
+  "generatedAt": "2026-07-24T22:45:20.235Z",
   "route": "route-9",
   "lineName": "舞浜線",
   "pathFiles": [
@@ -10,7 +10,7 @@
     "9-maihama": {
       "systemKey": "9-maihama",
       "relationId": 18320323,
-      "pathSource": "osm-relation-18320323",
+      "pathSource": "osm-relation-18320323+startHint-urayasu-E",
       "pathPointCount": 277,
       "usedWayCount": 16,
       "selfIntersectionCount": 0,
@@ -108,7 +108,7 @@
     "9-rosetown": {
       "systemKey": "9-rosetown",
       "relationId": 18320323,
-      "pathSource": "osm-relation-18320323-prefix-to-rosetown",
+      "pathSource": "osm-relation-18320323-prefix-to-rosetown+startHint-urayasu-E",
       "pathPointCount": 182,
       "usedWayCount": 16,
       "selfIntersectionCount": 0,

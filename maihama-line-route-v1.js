@@ -6,8 +6,8 @@
   const ROUTE_ID = 'route-9';
   const VERSION = '2026-07-25-maihama-line-v1';
   const SYSTEM_RESOLVED_VERSIONS = {
-    '9-maihama': '2026-07-25-maihama-line-maihama-v1',
-    '9-rosetown': '2026-07-25-maihama-line-rosetown-v1',
+    '9-maihama': '2026-07-25-maihama-line-maihama-v2',
+    '9-rosetown': '2026-07-25-maihama-line-rosetown-v2',
     '9-urayasu': '2026-07-25-maihama-line-urayasu-v1',
     '9-tokai': '2026-07-25-maihama-line-tokai-v1',
     '9-maihama-tokai': '2026-07-25-maihama-line-maihama-tokai-v1',

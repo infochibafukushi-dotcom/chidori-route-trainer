@@ -1,14 +1,15 @@
 // Auto-generated OSM road path geometry for 舞浜線 (route-9).
 // Paths follow OSM route relation way members (direction-corrected). Google Directions not used.
-// Short trips use verified prefixes / departure platforms ending at Navi terminus.
-// Generated: 2026-07-25-maihama-line-v1
+// densify applies only within a single OSM way; way joins require shared node or ≤1m.
+// 9-maihama/9-rosetown v2: startHint 浦安駅入口 orients spur way 1337138023 → shared node 747616973.
+// Generated: 2026-07-25-maihama-line-v2
 (() => {
   window.MAIHAMA_LINE_PATH_V1 = {
   "9-maihama": {
     "relationId": 18320323,
-    "pathSource": "osm-relation-18320323",
+    "pathSource": "osm-relation-18320323+startHint-urayasu-E",
     "pathHash": "24d450ce6ec84428d753683342aaf29076f36945cf1d5c18d206ede327b568c2",
-    "resolvedVersion": "2026-07-25-maihama-line-maihama-v1",
+    "resolvedVersion": "2026-07-25-maihama-line-maihama-v2",
     "pathPoints": [
       {
         "lat": 35.66426,
@@ -1122,9 +1123,9 @@
   },
   "9-rosetown": {
     "relationId": 18320323,
-    "pathSource": "osm-relation-18320323-prefix-to-rosetown",
+    "pathSource": "osm-relation-18320323-prefix-to-rosetown+startHint-urayasu-E",
     "pathHash": "3ce4a3d5960c916854dfb59edaf5769c81bd2474d2cc70db931f3485fcf18aab",
-    "resolvedVersion": "2026-07-25-maihama-line-rosetown-v1",
+    "resolvedVersion": "2026-07-25-maihama-line-rosetown-v2",
     "pathPoints": [
       {
         "lat": 35.66426,

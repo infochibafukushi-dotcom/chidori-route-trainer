@@ -1,5 +1,15 @@
 {
-  "generatedAt": "2026-07-24T21:38:23.562Z",
+  "generatedAt": "2026-07-24T22:32:42.364Z",
+  "rebuildOnly": [
+    "9-maihama",
+    "9-rosetown"
+  ],
+  "preserved": [
+    "9-urayasu",
+    "9-tokai",
+    "9-maihama-tokai",
+    "9-urayasu-rosetown"
+  ],
   "systems": {
     "9-maihama": {
       "stops": 11,
@@ -7,7 +17,7 @@
       "maxGap_m": 24.9,
       "maxPlatformDist_m": 13.3,
       "pathHash": "24d450ce6ec84428d753683342aaf29076f36945cf1d5c18d206ede327b568c2",
-      "resolvedVersion": "2026-07-25-maihama-line-maihama-v1",
+      "resolvedVersion": "2026-07-25-maihama-line-maihama-v2",
       "missingPlatforms": [],
       "platformDists": [
         {
@@ -56,13 +66,79 @@
         }
       ],
       "sliceMeta": {
-        "si": 1,
-        "ei": 277,
+        "si": 0,
+        "ei": 276,
         "startDist": 7.4,
         "endDist": 4.7
       },
-      "maxJoin_m": 24.8,
-      "note": null
+      "maxJoin_m": 0,
+      "note": "先頭way 1337138023は浦安駅入口E(local_ref)側から反転。60193618とnode 747616973で共有接続。",
+      "usedWaysSample": [
+        {
+          "wayId": 1337138023,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "startHint": true
+        },
+        {
+          "wayId": 60193618,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 60193608,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 60194496,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 136399256,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 260586190,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 60238527,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 60238533,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true,
+          "verifiedJoin": false
+        }
+      ],
+      "rebuilt": true
     },
     "9-rosetown": {
       "stops": 10,
@@ -70,7 +146,7 @@
       "maxGap_m": 24.9,
       "maxPlatformDist_m": 13.3,
       "pathHash": "3ce4a3d5960c916854dfb59edaf5769c81bd2474d2cc70db931f3485fcf18aab",
-      "resolvedVersion": "2026-07-25-maihama-line-rosetown-v1",
+      "resolvedVersion": "2026-07-25-maihama-line-rosetown-v2",
       "missingPlatforms": [],
       "platformDists": [
         {
@@ -115,13 +191,79 @@
         }
       ],
       "sliceMeta": {
-        "si": 1,
-        "ei": 182,
+        "si": 0,
+        "ei": 181,
         "startDist": 7.4,
         "endDist": 13.3
       },
-      "maxJoin_m": 24.8,
-      "note": null
+      "maxJoin_m": 0,
+      "note": "9-maihamaと同一way鎖・同一接続。京成ローズタウンで営業終了。",
+      "usedWaysSample": [
+        {
+          "wayId": 1337138023,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "startHint": true
+        },
+        {
+          "wayId": 60193618,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 60193608,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 60194496,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 136399256,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 260586190,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 60238527,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 60238533,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true,
+          "verifiedJoin": false
+        }
+      ],
+      "rebuilt": true
     },
     "9-urayasu": {
       "stops": 11,
@@ -184,7 +326,8 @@
         "endDist": 11.1
       },
       "maxJoin_m": 0,
-      "note": null
+      "note": null,
+      "preserved": true
     },
     "9-tokai": {
       "stops": 11,
@@ -247,7 +390,8 @@
         "endDist": 4.7
       },
       "maxJoin_m": 0,
-      "note": "終点は東海大浦安高校入口（高校前ではない）。"
+      "note": "終点は東海大浦安高校入口（高校前ではない）。",
+      "preserved": true
     },
     "9-maihama-tokai": {
       "stops": 11,
@@ -310,7 +454,8 @@
         "endDist": 4.7
       },
       "maxJoin_m": 0,
-      "note": null
+      "note": null,
+      "preserved": true
     },
     "9-urayasu-rosetown": {
       "stops": 10,
@@ -369,11 +514,17 @@
         "endDist": 11.1
       },
       "maxJoin_m": 0,
-      "note": "京成ローズタウン始発は OSM node 6778604861。舞浜方面へ戻らない。"
+      "note": "京成ローズタウン始発は OSM node 6778604861。舞浜方面へ戻らない。",
+      "preserved": true
     }
   },
   "prefixChecks": {
     "9-rosetown-vs-9-maihama": []
   },
-  "blockers": []
+  "blockers": [],
+  "gapFix": {
+    "relationId": 18320323,
+    "cause": "First way 1337138023 was traversed tip-outward without startHint; join to 60193618 used node 747616973 24.8m away (false gap). Correct travel: platform E → node 12367548447 → 747616973 (shared) → 60193618.",
+    "fix": "startHintFromStopName=浦安駅入口 orients way 1337138023 reversed; shared node join gap=0."
+  }
 }

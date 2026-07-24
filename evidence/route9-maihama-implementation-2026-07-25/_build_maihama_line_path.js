@@ -52,12 +52,12 @@ function haversine(a, b) {
   return 2 * R * Math.asin(Math.sqrt(h));
 }
 
-function densify(points, maxGap = 25) {
-  if (points.length < 2) return points.slice();
-  const out = [points[0]];
-  for (let i = 1; i < points.length; i++) {
+function densifyWithinWay(coords, maxGap = 25) {
+  if (coords.length < 2) return coords.map((c) => ({ lat: c.lat, lng: c.lng, nodeId: c.nodeId, wayId: c.wayId }));
+  const out = [{ lat: coords[0].lat, lng: coords[0].lng, nodeId: coords[0].nodeId, wayId: coords[0].wayId }];
+  for (let i = 1; i < coords.length; i++) {
     const a = out[out.length - 1];
-    const b = points[i];
+    const b = coords[i];
     const d = haversine(a, b);
     if (d > maxGap) {
       const n = Math.ceil(d / maxGap);
@@ -66,10 +66,12 @@ function densify(points, maxGap = 25) {
         out.push({
           lat: a.lat + (b.lat - a.lat) * t,
           lng: a.lng + (b.lng - a.lng) * t,
+          wayId: b.wayId,
+          densified: true,
         });
       }
     }
-    out.push(b);
+    out.push({ lat: b.lat, lng: b.lng, nodeId: b.nodeId, wayId: b.wayId });
   }
   return out;
 }
@@ -78,7 +80,7 @@ function wayCoords(way, nodes) {
   const coords = [];
   for (const nid of way.nodes || []) {
     const n = nodes.get(nid);
-    if (n) coords.push({ lat: n.lat, lng: n.lon, nodeId: nid });
+    if (n) coords.push({ lat: n.lat, lng: n.lon, nodeId: nid, wayId: way.id });
   }
   return coords;
 }
@@ -95,12 +97,20 @@ function distEnds(seq, point) {
   };
 }
 
-function buildPathFromWays(rel, nodes, ways, startHint = null) {
+/**
+ * Build path from relation ways.
+ * - densify only within a single OSM way
+ * - way joins require shared node or gap ≤ 1m (unless verifiedJoins provided)
+ */
+function buildPathFromWays(rel, nodes, ways, startHint = null, options = {}) {
+  const MAX_JOIN_M = options.maxJoinM ?? 1;
+  const verifiedJoins = options.verifiedJoins || {};
   const wayMembers = (rel.members || []).filter((m) => m.type === 'way');
   const pathPts = [];
   const usedWays = [];
   let cursor = null;
   let maxJoin = 0;
+  let prevWayId = null;
 
   for (const m of wayMembers) {
     const way = ways.get(m.ref);
@@ -108,30 +118,72 @@ function buildPathFromWays(rel, nodes, ways, startHint = null) {
     let coords = wayCoords(way, nodes);
     if (coords.length < 2) continue;
 
+    let flipped = false;
+    let join = 0;
     if (cursor) {
       const forward = distEnds(coords, cursor);
       const rev = distEnds(reverseCoords(coords), cursor);
-      const useRev = rev.start < forward.start;
-      if (useRev) coords = reverseCoords(coords);
-      const join = haversine(cursor, coords[0]);
+      flipped = rev.start < forward.start;
+      if (flipped) coords = reverseCoords(coords);
+      join = haversine(cursor, coords[0]);
       maxJoin = Math.max(maxJoin, join);
-      usedWays.push({ wayId: m.ref, role: m.role, gapFromPrev_m: Math.round(join * 10) / 10, flipped: useRev });
-      if (join < 1) coords = coords.slice(1);
+      const shared =
+        cursor.nodeId != null
+        && coords[0].nodeId != null
+        && cursor.nodeId === coords[0].nodeId;
+      const joinKey = `${prevWayId}->${m.ref}`;
+      const verified = verifiedJoins[joinKey];
+      if (!shared && join > MAX_JOIN_M && !verified) {
+        throw new Error(
+          `way join gap ${join.toFixed(3)}m > ${MAX_JOIN_M}m between ${prevWayId} and ${m.ref} `
+          + `(end node ${cursor.nodeId} @ ${cursor.lat},${cursor.lng} → start ${coords[0].nodeId}). `
+          + 'Fix orientation / missing way, or add verifiedJoins.',
+        );
+      }
+      usedWays.push({
+        wayId: m.ref,
+        role: m.role,
+        gapFromPrev_m: Math.round(join * 1000) / 1000,
+        flipped,
+        sharedNode: shared,
+        verifiedJoin: Boolean(verified),
+      });
+      if (verified && Array.isArray(verified.controlPoints) && verified.controlPoints.length) {
+        for (const p of verified.controlPoints) {
+          pathPts.push({ lat: p.lat, lng: p.lng, wayId: 'verified-control', control: true });
+        }
+      }
     } else if (startHint) {
       const forward = distEnds(coords, startHint);
       const rev = distEnds(reverseCoords(coords), startHint);
-      const useRev = rev.start < forward.start;
-      if (useRev) coords = reverseCoords(coords);
-      usedWays.push({ wayId: m.ref, role: m.role, gapFromPrev_m: 0, flipped: useRev, startHint: true });
+      flipped = rev.start < forward.start;
+      if (flipped) coords = reverseCoords(coords);
+      usedWays.push({ wayId: m.ref, role: m.role, gapFromPrev_m: 0, flipped, startHint: true });
     } else {
       usedWays.push({ wayId: m.ref, role: m.role, gapFromPrev_m: 0, flipped: false });
     }
-    for (const c of coords) {
+
+    // Densify on the full oriented way first, then drop the shared first node.
+    // Slicing before densify left the first OSM edge (often >30m) undensified.
+    const densified = densifyWithinWay(coords, 25);
+    const skipFirst = Boolean(cursor) && (haversine(cursor, densified[0]) < 1
+      || (cursor.nodeId != null && densified[0].nodeId != null && cursor.nodeId === densified[0].nodeId));
+    const toAdd = skipFirst ? densified.slice(1) : densified;
+    for (const c of toAdd) {
       pathPts.push({ lat: c.lat, lng: c.lng });
-      cursor = c;
     }
+    // Cursor must stay on the last real OSM node for subsequent join checks
+    const lastNode = coords[coords.length - 1];
+    cursor = { lat: lastNode.lat, lng: lastNode.lng, nodeId: lastNode.nodeId };
+    prevWayId = m.ref;
   }
-  return { pathPoints: densify(pathPts, 25), usedWays, rawCount: pathPts.length, maxJoin_m: Math.round(maxJoin * 10) / 10 };
+
+  return {
+    pathPoints: pathPts.map((p) => ({ lat: p.lat, lng: p.lng })),
+    usedWays,
+    rawCount: pathPts.length,
+    maxJoin_m: Math.round(maxJoin * 10) / 10,
+  };
 }
 
 function normalizeKey(name) {
@@ -293,24 +345,29 @@ const ROSETOWN_DEPARTURE_OVERRIDE = {
 const SYSTEMS = {
   '9-maihama': {
     relationId: 18320323,
-    resolvedVersion: '2026-07-25-maihama-line-maihama-v1',
+    resolvedVersion: '2026-07-25-maihama-line-maihama-v2',
     names: ORDERS.systems['9-maihama'].stopNames,
-    pathSource: 'osm-relation-18320323',
+    pathSource: 'osm-relation-18320323+startHint-urayasu-E',
+    startHintFromStopName: '浦安駅入口',
+    note: '先頭way 1337138023は浦安駅入口E(local_ref)側から反転。60193618とnode 747616973で共有接続。',
   },
   '9-rosetown': {
     relationId: 18320323,
-    resolvedVersion: '2026-07-25-maihama-line-rosetown-v1',
+    resolvedVersion: '2026-07-25-maihama-line-rosetown-v2',
     names: ORDERS.systems['9-rosetown'].stopNames,
-    pathSource: 'osm-relation-18320323-prefix-to-rosetown',
+    pathSource: 'osm-relation-18320323-prefix-to-rosetown+startHint-urayasu-E',
     sliceToName: '京成ローズタウン',
     shortTurn: true,
     verifyPrefixOf: '9-maihama',
+    startHintFromStopName: '浦安駅入口',
+    note: '9-maihamaと同一way鎖・同一接続。京成ローズタウンで営業終了。',
   },
   '9-urayasu': {
     relationId: 3498220,
     resolvedVersion: '2026-07-25-maihama-line-urayasu-v1',
     names: ORDERS.systems['9-urayasu'].stopNames,
     pathSource: 'osm-relation-3498220',
+    skipRebuild: true,
   },
   '9-tokai': {
     relationId: 18419884,
@@ -319,12 +376,14 @@ const SYSTEMS = {
     pathSource: 'osm-relation-18419884-prefix-to-tokai-entrance',
     sliceToName: '東海大浦安高校入口',
     note: '終点は東海大浦安高校入口（高校前ではない）。',
+    skipRebuild: true,
   },
   '9-maihama-tokai': {
     relationId: 18419885,
     resolvedVersion: '2026-07-25-maihama-line-maihama-tokai-v1',
     names: ORDERS.systems['9-maihama-tokai'].stopNames,
     pathSource: 'osm-relation-18419885',
+    skipRebuild: true,
   },
   '9-urayasu-rosetown': {
     relationId: 3498220,
@@ -338,23 +397,45 @@ const SYSTEMS = {
     sliceFromStart: true,
     awayFromName: '舞浜駅',
     note: '京成ローズタウン始発は OSM node 6778604861。舞浜方面へ戻らない。',
+    skipRebuild: true,
   },
 };
 
+function findPlatformByName(platforms, name) {
+  const nk = normalizeKey(name);
+  for (const p of platforms) {
+    const pk = normalizeKey(p.name);
+    if (pk === nk || pk.includes(nk) || nk.includes(pk)) return p;
+  }
+  return null;
+}
+
 function buildSystem(key, def, cache) {
   const relId = def.relationId;
-  const startHint =
-    def.startHintFromOverride && def.platformOverrides?.[def.startHintFromOverride]
-      ? def.platformOverrides[def.startHintFromOverride]
-      : null;
-  const cacheKey = startHint ? `${relId}:hint-${startHint.platformId}` : String(relId);
-  if (!cache[cacheKey]) {
-    const loaded = loadRelation(relId);
-    const platforms = platformMembers(loaded.rel, loaded.nodes);
-    const pathBuild = buildPathFromWays(loaded.rel, loaded.nodes, loaded.ways, startHint);
-    cache[cacheKey] = { ...loaded, platforms, pathBuild };
+  const loaded = cache[`load:${relId}`] || (() => {
+    const L = loadRelation(relId);
+    cache[`load:${relId}`] = L;
+    return L;
+  })();
+  const platforms = platformMembers(loaded.rel, loaded.nodes);
+
+  let startHint = null;
+  if (def.startHintFromOverride && def.platformOverrides?.[def.startHintFromOverride]) {
+    startHint = def.platformOverrides[def.startHintFromOverride];
+  } else if (def.startHintFromStopName) {
+    const p = findPlatformByName(platforms, def.startHintFromStopName);
+    if (!p) throw new Error(`${key} startHint stop missing: ${def.startHintFromStopName}`);
+    startHint = { lat: p.lat, lng: p.lng, platformId: p.platformId };
   }
-  const { platforms, pathBuild } = cache[cacheKey];
+
+  const cacheKey = startHint
+    ? `${relId}:hint-${startHint.platformId || startHint.lat}`
+    : String(relId);
+  if (!cache[cacheKey]) {
+    const pathBuild = buildPathFromWays(loaded.rel, loaded.nodes, loaded.ways, startHint);
+    cache[cacheKey] = { pathBuild };
+  }
+  const { pathBuild } = cache[cacheKey];
   const matched = matchPlatformsToNames(platforms, def.names);
   if (def.platformOverrides) {
     for (const m of matched) {
@@ -436,21 +517,60 @@ function buildSystem(key, def, cache) {
       ? { si: sliceMeta.si, ei: sliceMeta.ei, startDist: sliceMeta.startDist, endDist: sliceMeta.endDist }
       : null,
     note: def.note || null,
-    usedWaysSample: pathBuild.usedWays.slice(0, 5),
+    usedWaysSample: pathBuild.usedWays.slice(0, 8),
     maxJoin_m: pathBuild.maxJoin_m,
     verifyPrefixOf: def.verifyPrefixOf || null,
   };
 }
 
+function loadExistingBank(relJsPath, globalName) {
+  const sandbox = { window: {} };
+  // eslint-disable-next-line no-new-func
+  new Function('window', fs.readFileSync(path.join(ROOT, relJsPath), 'utf8'))(sandbox.window);
+  return sandbox.window[globalName];
+}
+
 function main() {
   const cache = {};
-  const platformsBank = {};
-  const pathBank = {};
-  const summary = { generatedAt: new Date().toISOString(), systems: {}, prefixChecks: {}, blockers: [] };
+  const prevPlatforms = loadExistingBank('maihama-line-platforms-v1.js', 'MAIHAMA_LINE_PLATFORMS_V1');
+  const prevPaths = loadExistingBank('maihama-line-path-v1.js', 'MAIHAMA_LINE_PATH_V1');
+  const platformsBank = { ...prevPlatforms };
+  const pathBank = { ...prevPaths };
+  const summary = {
+    generatedAt: new Date().toISOString(),
+    rebuildOnly: ['9-maihama', '9-rosetown'],
+    preserved: ['9-urayasu', '9-tokai', '9-maihama-tokai', '9-urayasu-rosetown'],
+    systems: {},
+    prefixChecks: {},
+    blockers: [],
+    gapFix: {
+      relationId: 18320323,
+      cause: 'First way 1337138023 was traversed tip-outward without startHint; join to 60193618 used node 747616973 24.8m away (false gap). Correct travel: platform E → node 12367548447 → 747616973 (shared) → 60193618.',
+      fix: 'startHintFromStopName=浦安駅入口 orients way 1337138023 reversed; shared node join gap=0.',
+    },
+  };
+
+  // Preserve previous summary metrics for skipped systems if present
+  let prevSummary = {};
+  try {
+    prevSummary = JSON.parse(fs.readFileSync(path.join(OUT, '_build_summary.json'), 'utf8')).systems || {};
+  } catch (e) { /* ignore */ }
 
   const buildOrder = ['9-maihama', '9-rosetown', '9-urayasu', '9-tokai', '9-maihama-tokai', '9-urayasu-rosetown'];
   for (const key of buildOrder) {
     const def = SYSTEMS[key];
+    if (def.skipRebuild) {
+      summary.systems[key] = {
+        ...(prevSummary[key] || {}),
+        preserved: true,
+        pathHash: pathBank[key]?.pathHash,
+        resolvedVersion: pathBank[key]?.resolvedVersion || def.resolvedVersion,
+        pathPoints: pathBank[key]?.pathPoints?.length,
+      };
+      console.log(key, 'PRESERVED', 'pts', pathBank[key]?.pathPoints?.length, 'hash', String(pathBank[key]?.pathHash).slice(0, 12));
+      continue;
+    }
+
     const sys = buildSystem(key, def, cache);
     platformsBank[key] = sys.platforms;
     pathBank[key] = {
@@ -472,6 +592,8 @@ function main() {
       sliceMeta: sys.sliceMeta,
       maxJoin_m: sys.maxJoin_m,
       note: sys.note,
+      usedWaysSample: sys.usedWaysSample,
+      rebuilt: true,
     };
     if (sys.maxPlatformDist_m > 20) {
       summary.blockers.push(`${key}: maxPlatformDist ${sys.maxPlatformDist_m}m > 20m`);
@@ -479,8 +601,12 @@ function main() {
     if (sys.maxGap_m > 30) {
       summary.blockers.push(`${key}: maxGap ${sys.maxGap_m}m > 30m`);
     }
+    if (sys.maxJoin_m > 1) {
+      summary.blockers.push(`${key}: maxJoin ${sys.maxJoin_m}m > 1m`);
+    }
     console.log(
       key,
+      'REBUILT',
       'stops',
       sys.names.length,
       'pts',
@@ -489,8 +615,10 @@ function main() {
       sys.maxGap_m,
       'maxPlat',
       sys.maxPlatformDist_m,
-      'missing',
-      sys.missingPlatforms.length,
+      'maxJoin',
+      sys.maxJoin_m,
+      'hash',
+      sys.pathHash.slice(0, 12),
     );
   }
 
@@ -500,47 +628,31 @@ function main() {
     summary.blockers.push(`9-rosetown prefix platform mismatch: ${JSON.stringify(rosetownPrefix)}`);
   }
 
+  // Preserve hashes of untouched systems
+  for (const key of summary.preserved) {
+    if (pathBank[key]?.pathHash !== prevPaths[key]?.pathHash) {
+      summary.blockers.push(`${key} pathHash changed unexpectedly`);
+    }
+  }
+
   fs.writeFileSync(path.join(OUT, '_build_summary.json'), JSON.stringify(summary, null, 2));
   fs.writeFileSync(path.join(OUT, '_platforms_bank.json'), JSON.stringify(platformsBank, null, 2));
   fs.writeFileSync(path.join(OUT, '_path_bank.json'), JSON.stringify(pathBank, null, 2));
 
   fs.writeFileSync(
     path.join(ROOT, 'maihama-line-platforms-v1.js'),
-    `// Auto-generated OSM platforms for 舞浜線 (route-9).\n// Official stop order: Keisei Bus Navi 2026-07-25.\n// 京成ローズタウン始発は OSM node 6778604861（到着 node 6778604860 と区別）。\n// Generated: 2026-07-25-maihama-line-v1\n(() => {\n  window.MAIHAMA_LINE_PLATFORMS_V1 = ${JSON.stringify(platformsBank, null, 2)};\n})();\n`,
+    `// Auto-generated OSM platforms for 舞浜線 (route-9).\n// Official stop order: Keisei Bus Navi 2026-07-25.\n// 京成ローズタウン始発は OSM node 6778604861（到着 node 6778604860 と区別）。\n// 9-maihama/9-rosetown v2: 浦安駅入口E startHint で way 連続接続。\n// Generated: 2026-07-25-maihama-line-v2\n(() => {\n  window.MAIHAMA_LINE_PLATFORMS_V1 = ${JSON.stringify(platformsBank, null, 2)};\n})();\n`,
   );
   fs.writeFileSync(
     path.join(ROOT, 'maihama-line-path-v1.js'),
-    `// Auto-generated OSM road path geometry for 舞浜線 (route-9).\n// Paths follow OSM route relation way members (direction-corrected). Google Directions not used.\n// Short trips use verified prefixes / departure platforms ending at Navi terminus.\n// Generated: 2026-07-25-maihama-line-v1\n(() => {\n  window.MAIHAMA_LINE_PATH_V1 = ${JSON.stringify(pathBank, null, 2)};\n})();\n`,
+    `// Auto-generated OSM road path geometry for 舞浜線 (route-9).\n// Paths follow OSM route relation way members (direction-corrected). Google Directions not used.\n// densify applies only within a single OSM way; way joins require shared node or ≤1m.\n// 9-maihama/9-rosetown v2: startHint 浦安駅入口 orients spur way 1337138023 → shared node 747616973.\n// Generated: 2026-07-25-maihama-line-v2\n(() => {\n  window.MAIHAMA_LINE_PATH_V1 = ${JSON.stringify(pathBank, null, 2)};\n})();\n`,
   );
 
-  fs.writeFileSync(
-    path.join(OUT, 'rosetown-departure-platform-note.md'),
-    `# 京成ローズタウン 発車 platform（9-urayasu-rosetown）
-
-## 問題
-
-OSM relation \`3498220\`（舞浜駅⇒浦安駅入口）は \`platform\` に到着用 node \`6778604860\`（35.6420322, 139.8819328）を載せている。
-
-relation \`18320323\`（浦安駅入口⇒舞浜駅）の 9-rosetown 終点は node \`6778604861\`（35.6414511, 139.8812333）で、到着 node 6778604860 から約 70m 離れる。
-
-## 採用
-
-OSM node \`6778604861\`
-
-- 9-rosetown 終点 platform と同一
-- 京成バスナビ busstop 00020678 始発・浦安駅入口行き
-- path 始点（startHint 反転後）まで原則 20m 以内
-
-## path 向き
-
-relation 3498220 を 6778604861 hint で反転連結し、舞浜駅（9482601637）より後方から 浦安駅入口 方面へ slice。舞浜方面へ戻らない。
-`,
-  );
-
-  console.log('wrote maihama-line-platforms-v1.js and maihama-line-path-v1.js');
   if (summary.blockers.length) {
-    console.warn('BLOCKERS:', summary.blockers);
+    console.error('BLOCKERS', summary.blockers);
+    process.exit(1);
   }
+  console.log('wrote maihama-line-platforms-v1.js and maihama-line-path-v1.js');
 }
 
 main();

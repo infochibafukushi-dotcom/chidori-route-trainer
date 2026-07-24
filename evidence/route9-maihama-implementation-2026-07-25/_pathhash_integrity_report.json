@@ -1,5 +1,5 @@
 {
-  "startedAt": "2026-07-24T21:40:59.544Z",
+  "startedAt": "2026-07-24T22:37:26.476Z",
   "intact": {
     "9-maihama": {
       "ok": true,
@@ -8,8 +8,8 @@
       "bankHash": "24d450ce6ec84428d753683342aaf29076f36945cf1d5c18d206ede327b568c2",
       "recomputed": "24d450ce6ec84428d753683342aaf29076f36945cf1d5c18d206ede327b568c2",
       "hashMatch": true,
-      "resolvedVersion": "2026-07-25-maihama-line-maihama-v1",
-      "expectedVersion": "2026-07-25-maihama-line-maihama-v1",
+      "resolvedVersion": "2026-07-25-maihama-line-maihama-v2",
+      "expectedVersion": "2026-07-25-maihama-line-maihama-v2",
       "pathPoints": 277
     },
     "9-rosetown": {
@@ -19,8 +19,8 @@
       "bankHash": "3ce4a3d5960c916854dfb59edaf5769c81bd2474d2cc70db931f3485fcf18aab",
       "recomputed": "3ce4a3d5960c916854dfb59edaf5769c81bd2474d2cc70db931f3485fcf18aab",
       "hashMatch": true,
-      "resolvedVersion": "2026-07-25-maihama-line-rosetown-v1",
-      "expectedVersion": "2026-07-25-maihama-line-rosetown-v1",
+      "resolvedVersion": "2026-07-25-maihama-line-rosetown-v2",
+      "expectedVersion": "2026-07-25-maihama-line-rosetown-v2",
       "pathPoints": 182
     },
     "9-urayasu": {
@@ -92,5 +92,5 @@
   },
   "productionFilesUnchanged": true,
   "pass": true,
-  "finishedAt": "2026-07-24T21:41:02.995Z"
+  "finishedAt": "2026-07-24T22:37:29.848Z"
 }

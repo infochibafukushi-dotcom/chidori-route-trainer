@@ -15,4 +15,9 @@
 | 東野プール | 車道 | platform | 高校入口方面 | OK |
 | 東海大浦安高校入口 | 市役所通り | 終点（高校前ではない） | — | OK |
 
-補足: 9-maihama の relation way maxJoin 約24.8m（densify 後 maxGap 24.9m）。直線接続は未使用。
+## way連続性（v2・2026-07-25再調査）
+
+- 旧: 9-maihama / 9-rosetown で relation way maxJoin 約24.8m（spur way 向き誤りによる偽ギャップ）
+- 新: startHint 浦安駅入口で way `1337138023`→`60193618` が node `747616973` 共有。**maxJoin=0**
+- way間の直線接続は未使用（連続性確認済み）。詳細: [`way-join-gap-fix-18320323.md`](./way-join-gap-fix-18320323.md)
+- 旧ギャップ地点の z20: `screenshots/9-maihama-gap-join-z20.png`
