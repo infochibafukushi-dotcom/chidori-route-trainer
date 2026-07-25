@@ -10,7 +10,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="apple-mobile-web-app-title" content="千鳥路線図" />
   <title>千鳥路線図</title>
-  <link rel="manifest" href="./manifest.webmanifest?v=75" />
+  <link rel="manifest" href="./manifest.webmanifest?v=76" />
   <link rel="icon" href="./app-icon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="./app-icon-192.png" />
   <link rel="stylesheet" href="./styles.css?v=71" />
@@ -33,10 +33,89 @@
   <link rel="stylesheet" href="./study-materials.css?v=71" />
 </head>
 <body>
+  <script>
+  /* Boot diagnostics — must never block startup. Enable overlay with ?diag=1 or localStorage.chidoriBootDiag=1 */
+  (function () {
+    try {
+      var marks = [];
+      var t0 = (typeof performance !== 'undefined' && performance.now) ? performance.now() : Date.now();
+      function mark(name, extra) {
+        try {
+          var entry = { name: name, ms: Math.round(((typeof performance !== 'undefined' && performance.now) ? performance.now() : Date.now()) - t0), extra: extra || null };
+          marks.push(entry);
+          if (typeof console !== 'undefined' && console.info) console.info('[chidori-boot]', entry.name, entry.ms + 'ms', extra || '');
+          var el = document.getElementById('chidori-boot-diag');
+          if (el) el.textContent = marks.map(function (m) { return m.ms + 'ms ' + m.name; }).join('\n');
+        } catch (e) {}
+      }
+      window.__chidoriBoot = {
+        mark: mark,
+        marks: marks,
+        dump: function () { return marks.slice(); }
+      };
+      mark('html-reached');
+      window.addEventListener('error', function (ev) {
+        mark('window.onerror', String((ev && ev.message) || 'error'));
+      });
+      window.addEventListener('unhandledrejection', function (ev) {
+        mark('unhandledrejection', String((ev && ev.reason && (ev.reason.message || ev.reason)) || 'rejection'));
+      });
+      document.addEventListener('DOMContentLoaded', function () { mark('DOMContentLoaded'); });
+      window.addEventListener('load', function () {
+        mark('window.load');
+        try {
+          var standalone = false;
+          try { standalone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true; } catch (e) {}
+          mark('display-mode', standalone ? 'standalone' : 'browser');
+          if (!('serviceWorker' in navigator)) {
+            mark('sw-unsupported');
+            return;
+          }
+          mark('sw-controller', navigator.serviceWorker.controller ? navigator.serviceWorker.controller.scriptURL : 'none');
+          navigator.serviceWorker.getRegistration().then(function (reg) {
+            if (!reg) { mark('sw-registration', 'none'); return; }
+            mark('sw-registration', {
+              active: reg.active && reg.active.scriptURL,
+              waiting: reg.waiting && reg.waiting.scriptURL,
+              installing: reg.installing && reg.installing.scriptURL
+            });
+          }).catch(function (err) { mark('sw-registration-error', String(err && err.message || err)); });
+        } catch (e) { mark('sw-probe-error', String(e && e.message || e)); }
+      });
+      var showDiag = false;
+      try {
+        showDiag = /(?:\?|&)diag=1(?:&|$)/.test(location.search) || localStorage.getItem('chidoriBootDiag') === '1';
+      } catch (e) {}
+      if (showDiag) {
+        document.addEventListener('DOMContentLoaded', function () {
+          try {
+            var box = document.createElement('pre');
+            box.id = 'chidori-boot-diag';
+            box.setAttribute('aria-hidden', 'true');
+            box.style.cssText = 'position:fixed;left:0;right:0;bottom:0;max-height:30vh;overflow:auto;margin:0;padding:8px;background:rgba(0,0,0,.75);color:#9f9;font:11px/1.4 monospace;z-index:99999;pointer-events:none';
+            document.body.appendChild(box);
+            box.textContent = marks.map(function (m) { return m.ms + 'ms ' + m.name; }).join('\n');
+          } catch (e) {}
+        });
+      }
+      var appWatch = setInterval(function () {
+        try {
+          var app = document.getElementById('app');
+          if (app && app.querySelector('.app')) {
+            mark('render-dom');
+            clearInterval(appWatch);
+          }
+        } catch (e) { clearInterval(appWatch); }
+      }, 50);
+      setTimeout(function () { try { clearInterval(appWatch); } catch (e) {} }, 15000);
+    } catch (e) {}
+  })();
+  </script>
   <div id="app"></div>
   <script>window.GOOGLE_MAPS_API_KEY='__GOOGLE_MAPS_API_KEY__';</script>
   <script src="./data.js?v=32"></script>
-  <script src="./app.js?v=71"></script>
+  <script>try{window.__chidoriBoot&&window.__chidoriBoot.mark('app.js-load-start')}catch(e){}</script>
+  <script src="./app.js?v=76"></script>
   <script src="./study-materials-data.js?v=71"></script>
   <script src="./study-materials.js?v=71"></script>
   <script src="./home-navigation-v25.js?v=32"></script>
@@ -134,6 +213,6 @@
       }, true);
     })();
   </script>
-  <script src="./pwa-install.js?v=75"></script>
+  <script src="./pwa-install.js?v=76"></script>
 </body>
 </html>

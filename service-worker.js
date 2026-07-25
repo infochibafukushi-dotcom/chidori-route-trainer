@@ -1,105 +1,50 @@
-const CACHE_NAME = 'chidori-route-map-v75';
+const CACHE_NAME = 'chidori-route-map-v76';
+const APP_INDEX_URL = new URL('./index.html', self.location).href;
+const FETCH_TIMEOUT_MS = 7000;
 
-// Core shell must succeed for install. Route packs are best-effort so one 404
-// cannot block Service Worker updates for already-installed PWAs.
+// Minimal shell for Android/WebAPK cold start. Route packs are NOT required
+// for install — they are cached on demand when first requested.
 const CORE_SHELL = [
-  './',
-  './index.html',
-  './manifest.webmanifest?v=75',
+  APP_INDEX_URL,
+  './manifest.webmanifest?v=76',
   './app-icon.svg',
   './app-icon-192.png',
   './app-icon-512.png',
   './styles.css?v=71',
-  './hokuei-route.css?v=33',
-  './stop-editor-v8.css?v=32',
-  './d1-sync.css?v=32',
-  './hokuei-authoritative-v12.css?v=32',
-  './hokuei-manual-override-v13.css?v=33',
-  './hokuei-driving-v14.css?v=32',
-  './hokuei-guidance-v22.css?v=34',
-  './hokuei-stop-images-v25.css?v=32',
   './study-materials.css?v=71',
+  './d1-sync.css?v=32',
   './data.js?v=32',
-  './app.js?v=71',
+  './app.js?v=76',
   './study-materials-data.js?v=71',
   './study-materials.js?v=71',
   './home-navigation-v25.js?v=32',
   './route-map-link.js?v=71',
   './d1-sync.js?v=61',
-  './hokuei-authoritative-v12.js?v=33',
-  './hokuei-manual-override-v13.js?v=33',
-  './hokuei-shared-coordinates-v15.js?v=32',
-  './hokuei-no-uturn-v17.js?v=74',
-  './imagawa-directions-compat-v2.js?v=56',
-  './hokuei-streetview-stops-v26.js?v=32',
-  './hokuei-guidance-v22.js?v=57',
-  './hokuei-stop-images-v25.js?v=32',
-  './imagawa-urayasu-maihama-path-v1o.js?v=56',
-  './imagawa-chidori-garage-path-v1.js?v=58',
-  './imagawa-route-v1.js?v=58',
-  './imagawa-path-policy-v3.js?v=56',
-  './pwa-install.js?v=75'
+  './pwa-install.js?v=76'
 ];
 
-const ROUTE_SHELL = [
-  './urayasu-higashi-danchi-stop-images-v1.css?v=63',
-  './tomioka-stop-images-v1.css?v=65',
-  './horie-stop-images-v1.css?v=66',
-  './shiyakusho-stop-images-v1.css?v=67',
-  './maihama-line-stop-images-v1.css?v=69',
-  './takasu-line-stop-images-v1.css?v=72',
-  './symbol-road-line-stop-images-v1.css?v=73',
-  './maihama-resort-line-stop-images-v1.css?v=74',
-  './urayasu-higashi-danchi-platforms-v1.js?v=63',
-  './urayasu-higashi-danchi-path-v1.js?v=63',
-  './urayasu-higashi-danchi-path-policy-v1.js?v=63',
-  './urayasu-higashi-danchi-route-v1.js?v=63',
-  './tomioka-platforms-v1.js?v=65',
-  './tomioka-path-v1.js?v=65',
-  './tomioka-path-policy-v1.js?v=65',
-  './tomioka-stop-images-v1.js?v=65',
-  './tomioka-route-v1.js?v=65',
-  './horie-platforms-v1.js?v=66',
-  './horie-path-v1.js?v=66',
-  './horie-path-policy-v1.js?v=66',
-  './horie-stop-images-v1.js?v=66',
-  './horie-route-v1.js?v=66',
-  './shiyakusho-platforms-v1.js?v=67',
-  './shiyakusho-path-v1.js?v=67',
-  './shiyakusho-path-policy-v1.js?v=67',
-  './shiyakusho-stop-images-v1.js?v=67',
-  './shiyakusho-route-v1.js?v=67',
-  './maihama-line-platforms-v1.js?v=69',
-  './maihama-line-path-v1.js?v=69',
-  './maihama-line-path-policy-v1.js?v=69',
-  './maihama-line-stop-images-v1.js?v=69',
-  './maihama-line-route-v1.js?v=69',
-  './takasu-line-platforms-v1.js?v=72',
-  './takasu-line-path-v1.js?v=72',
-  './takasu-line-path-policy-v1.js?v=72',
-  './takasu-line-stop-images-v1.js?v=72',
-  './takasu-line-route-v1.js?v=72',
-  './symbol-road-line-platforms-v1.js?v=73',
-  './symbol-road-line-path-v1.js?v=73',
-  './symbol-road-line-path-policy-v1.js?v=73',
-  './symbol-road-line-stop-images-v1.js?v=73',
-  './symbol-road-line-route-v1.js?v=73',
-  './maihama-resort-line-platforms-v1.js?v=74',
-  './maihama-resort-line-path-v1.js?v=74',
-  './maihama-resort-line-path-policy-v1.js?v=74',
-  './maihama-resort-line-stop-images-v1.js?v=74',
-  './maihama-resort-line-route-v1.js?v=74'
-];
+function fetchWithTimeout(resource, options = {}, timeoutMs = FETCH_TIMEOUT_MS) {
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
+  const init = Object.assign({}, options, { signal: controller.signal });
+  return fetch(resource, init).finally(() => clearTimeout(timeoutId));
+}
 
 async function precache(cache, urls, { required }) {
   for (const url of urls) {
     try {
-      const response = await fetch(url, { cache: 'no-store' });
+      const response = await fetchWithTimeout(url, { cache: 'no-store' });
       if (!response.ok) throw new Error('HTTP ' + response.status + ' for ' + url);
-      await cache.put(url, response);
+      const cacheKey = url === APP_INDEX_URL || String(url).endsWith('/index.html')
+        ? APP_INDEX_URL
+        : url;
+      await cache.put(cacheKey, response);
     } catch (error) {
-      if (required) throw error;
-      console.warn('[sw] optional precache skipped', url, error);
+      if (required) {
+        console.error('[sw] required precache failed', url, error && error.message ? error.message : error);
+        throw error;
+      }
+      console.warn('[sw] optional precache skipped', url, error && error.message ? error.message : error);
     }
   }
 }
@@ -146,26 +91,77 @@ function offlineNavigationFallback() {
   });
 }
 
-async function matchNavigationFallback(cache, request) {
-  const candidates = [
-    request,
+async function matchAppIndex(cache) {
+  const hit = await cache.match(APP_INDEX_URL);
+  if (hit) return hit;
+  // One-time migration from older multi-key caches (v75 and earlier).
+  const legacyKeys = [
     './index.html',
     './',
-    new URL('./index.html', self.location).href,
     new URL('./', self.location).href
   ];
-  for (const key of candidates) {
-    const hit = await cache.match(key, { ignoreSearch: true });
-    if (hit) return hit;
+  for (const key of legacyKeys) {
+    const legacy = await cache.match(key, { ignoreSearch: true });
+    if (legacy) {
+      await cache.put(APP_INDEX_URL, legacy.clone());
+      return legacy;
+    }
+  }
+  return null;
+}
+
+async function updateAppIndexInBackground(cache) {
+  try {
+    const response = await fetchWithTimeout(APP_INDEX_URL, { cache: 'no-store' });
+    if (response.ok) await cache.put(APP_INDEX_URL, response.clone());
+  } catch (error) {
+    console.warn('[sw] background index update failed', error && error.message ? error.message : error);
+  }
+}
+
+async function handleNavigation(event) {
+  const cache = await caches.open(CACHE_NAME);
+  const cached = await matchAppIndex(cache);
+  // Keep background refresh tied to the fetch event lifetime.
+  event.waitUntil(updateAppIndexInBackground(cache));
+  if (cached) return cached;
+  try {
+    const response = await fetchWithTimeout(APP_INDEX_URL, { cache: 'no-store' });
+    if (response.ok) {
+      await cache.put(APP_INDEX_URL, response.clone());
+      return response;
+    }
+    console.warn('[sw] navigation network HTTP', response.status);
+  } catch (error) {
+    console.warn('[sw] navigation network failed', error && error.message ? error.message : error);
   }
   return offlineNavigationFallback();
+}
+
+async function handleAsset(request) {
+  const cache = await caches.open(CACHE_NAME);
+  const cached =
+    (await cache.match(request)) ||
+    (await cache.match(request, { ignoreSearch: true }));
+  if (cached) {
+    // Versioned assets are immutable; serve cache immediately.
+    // Still refresh in background when ignoreSearch matched a different query.
+    return cached;
+  }
+  try {
+    const response = await fetchWithTimeout(request, { cache: 'no-store' });
+    if (response.ok) await cache.put(request, response.clone());
+    return response;
+  } catch (error) {
+    console.warn('[sw] asset fetch failed', request.url, error && error.message ? error.message : error);
+    return Response.error();
+  }
 }
 
 self.addEventListener('install', (event) => {
   event.waitUntil((async () => {
     const cache = await caches.open(CACHE_NAME);
     await precache(cache, CORE_SHELL, { required: true });
-    await precache(cache, ROUTE_SHELL, { required: false });
     await self.skipWaiting();
   })());
 });
@@ -178,18 +174,6 @@ self.addEventListener('activate', (event) => {
   })());
 });
 
-async function networkFirst(request, isNavigation = false) {
-  const cache = await caches.open(CACHE_NAME);
-  try {
-    const response = await fetch(request, { cache: 'no-store' });
-    if (response.ok) await cache.put(request, response.clone());
-    return response;
-  } catch (error) {
-    if (isNavigation) return matchNavigationFallback(cache, request);
-    return (await cache.match(request, { ignoreSearch: true })) || Response.error();
-  }
-}
-
 self.addEventListener('fetch', (event) => {
   const request = event.request;
   if (request.method !== 'GET') return;
@@ -197,12 +181,17 @@ self.addEventListener('fetch', (event) => {
   if (url.origin !== self.location.origin) return;
 
   if (request.mode === 'navigate') {
-    event.respondWith(networkFirst(request, true));
+    event.respondWith(handleNavigation(event));
     return;
   }
 
-  if (/\.(?:js|css|html)$/.test(url.pathname) || url.pathname.endsWith('webmanifest') || url.pathname.endsWith('.png') || url.pathname.endsWith('.svg')) {
-    event.respondWith(networkFirst(request, false));
+  if (
+    /\.(?:js|css|html)$/.test(url.pathname) ||
+    url.pathname.endsWith('webmanifest') ||
+    url.pathname.endsWith('.png') ||
+    url.pathname.endsWith('.svg')
+  ) {
+    event.respondWith(handleAsset(request));
     return;
   }
 
@@ -210,7 +199,7 @@ self.addEventListener('fetch', (event) => {
     const cached = await caches.match(request);
     if (cached) return cached;
     try {
-      const response = await fetch(request);
+      const response = await fetchWithTimeout(request);
       if (response.ok) {
         const cache = await caches.open(CACHE_NAME);
         await cache.put(request, response.clone());

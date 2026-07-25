@@ -1,0 +1,49 @@
+{
+  "checks": [
+    "static SW source OK",
+    "static index OK",
+    "static pwa-install OK",
+    "online home + SW v76 OK",
+    "hung navigation served cache quickly (173ms)",
+    "offline navigation OK",
+    "routes navigation clicked"
+  ],
+  "errors": [],
+  "boot": {
+    "heading": "千鳥路線図",
+    "marks": [
+      "html-reached",
+      "app.js-load-start",
+      "render",
+      "render-dom",
+      "DOMContentLoaded",
+      "window.load",
+      "display-mode",
+      "sw-controller",
+      "sw-registration"
+    ],
+    "controller": "http://127.0.0.1:8760/service-worker.js?v=76",
+    "caches": [
+      "chidori-route-map-v76"
+    ],
+    "hasIndex": true,
+    "standaloneProbe": false
+  },
+  "consoleErrors": [
+    "Access to fetch at 'https://chidori-route-api.info-chibafukushi.workers.dev/data' from origin 'http://127.0.0.1:8760' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+    "Failed to load resource: net::ERR_FAILED",
+    "D1 load failed TypeError: Failed to fetch\n    at apiFetch (http://127.0.0.1:8760/d1-sync.js?v=61:40:20)\n    at loadRemote (http://127.0.0.1:8760/d1-sync.js?v=61:127:30)\n    at http://127.0.0.1:8760/d1-sync.js?v=61:208:3\n    at http://127.0.0.1:8760/d1-sync.js?v=61:209:3",
+    "Access to fetch at 'https://chidori-route-api.info-chibafukushi.workers.dev/data' from origin 'http://127.0.0.1:8760' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+    "Failed to load resource: net::ERR_FAILED",
+    "D1 load failed TypeError: Failed to fetch\n    at apiFetch (http://127.0.0.1:8760/d1-sync.js?v=61:40:20)\n    at loadRemote (http://127.0.0.1:8760/d1-sync.js?v=61:127:30)\n    at http://127.0.0.1:8760/d1-sync.js?v=61:208:3\n    at http://127.0.0.1:8760/d1-sync.js?v=61:209:3",
+    "Access to fetch at 'https://chidori-route-api.info-chibafukushi.workers.dev/data' from origin 'http://127.0.0.1:8760' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+    "Failed to load resource: net::ERR_FAILED",
+    "D1 load failed TypeError: Failed to fetch\n    at apiFetch (http://127.0.0.1:8760/d1-sync.js?v=61:40:20)\n    at loadRemote (http://127.0.0.1:8760/d1-sync.js?v=61:127:30)\n    at http://127.0.0.1:8760/d1-sync.js?v=61:208:3\n    at http://127.0.0.1:8760/d1-sync.js?v=61:209:3",
+    "Failed to load resource: net::ERR_INTERNET_DISCONNECTED",
+    "D1 load failed TypeError: Failed to fetch\n    at apiFetch (http://127.0.0.1:8760/d1-sync.js?v=61:40:20)\n    at loadRemote (http://127.0.0.1:8760/d1-sync.js?v=61:127:30)\n    at http://127.0.0.1:8760/d1-sync.js?v=61:208:3\n    at http://127.0.0.1:8760/d1-sync.js?v=61:209:3",
+    "Access to fetch at 'https://chidori-route-api.info-chibafukushi.workers.dev/data' from origin 'http://127.0.0.1:8760' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+    "Failed to load resource: net::ERR_FAILED",
+    "D1 load failed TypeError: Failed to fetch\n    at apiFetch (http://127.0.0.1:8760/d1-sync.js?v=61:40:20)\n    at loadRemote (http://127.0.0.1:8760/d1-sync.js?v=61:127:30)\n    at http://127.0.0.1:8760/d1-sync.js?v=61:208:3\n    at http://127.0.0.1:8760/d1-sync.js?v=61:209:3"
+  ],
+  "ok": true
+}
