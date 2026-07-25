@@ -1,4 +1,4 @@
-const CACHE_NAME = 'chidori-route-map-v72';
+const CACHE_NAME = 'chidori-route-map-v73';
 const APP_SHELL = [
   './',
   './index.html',
@@ -19,6 +19,7 @@ const APP_SHELL = [
   './shiyakusho-stop-images-v1.css?v=67',
   './maihama-line-stop-images-v1.css?v=69',
   './takasu-line-stop-images-v1.css?v=72',
+  './symbol-road-line-stop-images-v1.css?v=73',
   './study-materials.css?v=71',
   './data.js?v=32',
   './app.js?v=71',
@@ -30,7 +31,7 @@ const APP_SHELL = [
   './hokuei-authoritative-v12.js?v=33',
   './hokuei-manual-override-v13.js?v=33',
   './hokuei-shared-coordinates-v15.js?v=32',
-  './hokuei-no-uturn-v17.js?v=72',
+  './hokuei-no-uturn-v17.js?v=73',
   './imagawa-directions-compat-v2.js?v=56',
   './hokuei-streetview-stops-v26.js?v=32',
   './hokuei-guidance-v22.js?v=57',
@@ -68,6 +69,11 @@ const APP_SHELL = [
   './takasu-line-path-policy-v1.js?v=72',
   './takasu-line-stop-images-v1.js?v=72',
   './takasu-line-route-v1.js?v=72',
+  './symbol-road-line-platforms-v1.js?v=73',
+  './symbol-road-line-path-v1.js?v=73',
+  './symbol-road-line-path-policy-v1.js?v=73',
+  './symbol-road-line-stop-images-v1.js?v=73',
+  './symbol-road-line-route-v1.js?v=73',
   './pwa-install.js?v=71'
 ];
 

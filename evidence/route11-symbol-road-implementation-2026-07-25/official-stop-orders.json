@@ -1,0 +1,1386 @@
+{
+  "checkedAt": "2026-07-25T03:14:01.646Z",
+  "sourcePriority": [
+    "京成バスナビ個別便通過時刻表（/stops?）",
+    "京成バスナビ系統・行先凡例"
+  ],
+  "lineName": "シンボルロード線",
+  "systemNumber": "11",
+  "busstopIds": {
+    "urayasu": "00020739",
+    "shinurayasu": "00020619",
+    "baypark": "00020735",
+    "sogo": "00020745",
+    "symbolRoadPc": "00020856",
+    "hinodeKominkan": "00020652",
+    "hinode": "00020849",
+    "nozomi": "00020689",
+    "akemi5": "00020710"
+  },
+  "forbiddenRelationUnlessConfirmed": 18419852,
+  "systems": {
+    "11-hinode-shinurayasu": {
+      "title": "新浦安駅行き（日の出南発）",
+      "departure": "日の出南",
+      "destination": "新浦安駅",
+      "viaKey": "hinode-kominkan",
+      "berth": "01",
+      "night": false,
+      "naviBusstop": "00020849",
+      "sourceUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cf0013/stops?departure-busstop=00020849-1&course=0008200258&datetime=2026-07-25T10:29:00%2B09:00",
+      "confirmedDate": "2026-07-25",
+      "stopCount": 12,
+      "tripSignature": "11|00020849-1|00020619|00020849>00020622>00020745>00020681>00020735>00020736>00020856>00020652>00020848>00020713>00020663>00020619|>>>>>>>>>>>|regular",
+      "idComplete": true,
+      "stopNames": [
+        "日の出南",
+        "新浦安温泉",
+        "総合公園",
+        "ベイサイドホテルエリア",
+        "ベイパーク",
+        "ベイモール",
+        "シンボルロード・パークシティ",
+        "日の出公民館",
+        "海風の街",
+        "明海大学前",
+        "入船中央エステート",
+        "新浦安駅"
+      ],
+      "stopIds": [
+        "00020849",
+        "00020622",
+        "00020745",
+        "00020681",
+        "00020735",
+        "00020736",
+        "00020856",
+        "00020652",
+        "00020848",
+        "00020713",
+        "00020663",
+        "00020619"
+      ],
+      "stops": [
+        {
+          "officialName": "日の出南",
+          "busstopId": "00020849",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "新浦安温泉",
+          "busstopId": "00020622",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "総合公園",
+          "busstopId": "00020745",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "ベイサイドホテルエリア",
+          "busstopId": "00020681",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "ベイパーク",
+          "busstopId": "00020735",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "ベイモール",
+          "busstopId": "00020736",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "シンボルロード・パークシティ",
+          "busstopId": "00020856",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "日の出公民館",
+          "busstopId": "00020652",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "海風の街",
+          "busstopId": "00020848",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "明海大学前",
+          "busstopId": "00020713",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "入船中央エステート",
+          "busstopId": "00020663",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "新浦安駅",
+          "busstopId": "00020619",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        }
+      ]
+    },
+    "11-hinode-urayasu": {
+      "title": "浦安駅入口行き（日の出南発）",
+      "departure": "日の出南",
+      "destination": "浦安駅入口",
+      "viaKey": "hinode-kominkan",
+      "berth": "01",
+      "night": false,
+      "naviBusstop": "00020849",
+      "sourceUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cd0001/stops?departure-busstop=00020849-1&course=0008200256&datetime=2026-07-27T11:53:00%2B09:00",
+      "confirmedDate": "2026-07-25",
+      "stopCount": 18,
+      "tripSignature": "11|00020849-1|00020739|00020849>00020622>00020745>00020681>00020735>00020736>00020856>00020652>00020848>00020713>00020663>00020619>00020670>00020845>00020877>00020666>00020623>00020739|>>>>>>>>>>>>>>>>>|regular",
+      "idComplete": true,
+      "stopNames": [
+        "日の出南",
+        "新浦安温泉",
+        "総合公園",
+        "ベイサイドホテルエリア",
+        "ベイパーク",
+        "ベイモール",
+        "シンボルロード・パークシティ",
+        "日の出公民館",
+        "海風の街",
+        "明海大学前",
+        "入船中央エステート",
+        "新浦安駅",
+        "美浜東団地",
+        "海楽",
+        "消防本部前",
+        "猫実",
+        "神明裏",
+        "浦安駅入口"
+      ],
+      "stopIds": [
+        "00020849",
+        "00020622",
+        "00020745",
+        "00020681",
+        "00020735",
+        "00020736",
+        "00020856",
+        "00020652",
+        "00020848",
+        "00020713",
+        "00020663",
+        "00020619",
+        "00020670",
+        "00020845",
+        "00020877",
+        "00020666",
+        "00020623",
+        "00020739"
+      ],
+      "stops": [
+        {
+          "officialName": "日の出南",
+          "busstopId": "00020849",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "新浦安温泉",
+          "busstopId": "00020622",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "総合公園",
+          "busstopId": "00020745",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "ベイサイドホテルエリア",
+          "busstopId": "00020681",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "ベイパーク",
+          "busstopId": "00020735",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "ベイモール",
+          "busstopId": "00020736",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "シンボルロード・パークシティ",
+          "busstopId": "00020856",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "日の出公民館",
+          "busstopId": "00020652",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "海風の街",
+          "busstopId": "00020848",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "明海大学前",
+          "busstopId": "00020713",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "入船中央エステート",
+          "busstopId": "00020663",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "新浦安駅",
+          "busstopId": "00020619",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "美浜東団地",
+          "busstopId": "00020670",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "海楽",
+          "busstopId": "00020845",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "消防本部前",
+          "busstopId": "00020877",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "猫実",
+          "busstopId": "00020666",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "神明裏",
+          "busstopId": "00020623",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "浦安駅入口",
+          "busstopId": "00020739",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        }
+      ]
+    },
+    "11-shinurayasu-baypark": {
+      "title": "ベイパーク行き（新浦安駅発）",
+      "departure": "新浦安駅",
+      "destination": "ベイパーク",
+      "viaKey": "hinode-kominkan",
+      "berth": "11",
+      "night": false,
+      "naviBusstop": "00020619",
+      "sourceUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d70002/stops?departure-busstop=00020619-1&course=0008200266&datetime=2026-07-27T08:51:00%2B09:00",
+      "confirmedDate": "2026-07-25",
+      "stopCount": 8,
+      "tripSignature": "11|00020619-1|00020735|00020619>00020663>00020713>00020848>00020652>00020856>00020736>00020735|>>>>>>>|regular",
+      "idComplete": true,
+      "stopNames": [
+        "新浦安駅",
+        "入船中央エステート",
+        "明海大学前",
+        "海風の街",
+        "日の出公民館",
+        "シンボルロード・パークシティ",
+        "ベイモール",
+        "ベイパーク"
+      ],
+      "stopIds": [
+        "00020619",
+        "00020663",
+        "00020713",
+        "00020848",
+        "00020652",
+        "00020856",
+        "00020736",
+        "00020735"
+      ],
+      "stops": [
+        {
+          "officialName": "新浦安駅",
+          "busstopId": "00020619",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "入船中央エステート",
+          "busstopId": "00020663",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "明海大学前",
+          "busstopId": "00020713",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "海風の街",
+          "busstopId": "00020848",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "日の出公民館",
+          "busstopId": "00020652",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "シンボルロード・パークシティ",
+          "busstopId": "00020856",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "ベイモール",
+          "busstopId": "00020736",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "ベイパーク",
+          "busstopId": "00020735",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        }
+      ]
+    },
+    "11-shinurayasu-hinode": {
+      "title": "日の出南行き（新浦安駅発）",
+      "departure": "新浦安駅",
+      "destination": "日の出南",
+      "viaKey": "hinode-kominkan",
+      "berth": "11",
+      "night": false,
+      "naviBusstop": "00020619",
+      "sourceUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d00008/stops?departure-busstop=00020619-1&course=0008200259&datetime=2026-07-27T10:19:00%2B09:00",
+      "confirmedDate": "2026-07-25",
+      "stopCount": 12,
+      "tripSignature": "11|00020619-1|00020849|00020619>00020663>00020713>00020848>00020652>00020856>00020736>00020735>00020681>00020745>00020622>00020849|>>>>>>>>>>>|regular",
+      "idComplete": true,
+      "stopNames": [
+        "新浦安駅",
+        "入船中央エステート",
+        "明海大学前",
+        "海風の街",
+        "日の出公民館",
+        "シンボルロード・パークシティ",
+        "ベイモール",
+        "ベイパーク",
+        "ベイサイドホテルエリア",
+        "総合公園",
+        "新浦安温泉",
+        "日の出南"
+      ],
+      "stopIds": [
+        "00020619",
+        "00020663",
+        "00020713",
+        "00020848",
+        "00020652",
+        "00020856",
+        "00020736",
+        "00020735",
+        "00020681",
+        "00020745",
+        "00020622",
+        "00020849"
+      ],
+      "stops": [
+        {
+          "officialName": "新浦安駅",
+          "busstopId": "00020619",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "入船中央エステート",
+          "busstopId": "00020663",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "明海大学前",
+          "busstopId": "00020713",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "海風の街",
+          "busstopId": "00020848",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "日の出公民館",
+          "busstopId": "00020652",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "シンボルロード・パークシティ",
+          "busstopId": "00020856",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "ベイモール",
+          "busstopId": "00020736",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "ベイパーク",
+          "busstopId": "00020735",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "ベイサイドホテルエリア",
+          "busstopId": "00020681",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "総合公園",
+          "busstopId": "00020745",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "新浦安温泉",
+          "busstopId": "00020622",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "日の出南",
+          "busstopId": "00020849",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        }
+      ]
+    },
+    "11-shinurayasu-sogo": {
+      "title": "総合公園行き（新浦安駅発）",
+      "departure": "新浦安駅",
+      "destination": "総合公園",
+      "viaKey": "hinode-kominkan",
+      "berth": "11",
+      "night": false,
+      "naviBusstop": "00020619",
+      "sourceUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d40000/stops?departure-busstop=00020619-1&course=0008200263&datetime=2026-07-27T06:00:00%2B09:00",
+      "confirmedDate": "2026-07-25",
+      "stopCount": 10,
+      "tripSignature": "11|00020619-1|00020745|00020619>00020663>00020713>00020848>00020652>00020856>00020736>00020735>00020681>00020745|>>>>>>>>>|regular",
+      "idComplete": true,
+      "stopNames": [
+        "新浦安駅",
+        "入船中央エステート",
+        "明海大学前",
+        "海風の街",
+        "日の出公民館",
+        "シンボルロード・パークシティ",
+        "ベイモール",
+        "ベイパーク",
+        "ベイサイドホテルエリア",
+        "総合公園"
+      ],
+      "stopIds": [
+        "00020619",
+        "00020663",
+        "00020713",
+        "00020848",
+        "00020652",
+        "00020856",
+        "00020736",
+        "00020735",
+        "00020681",
+        "00020745"
+      ],
+      "stops": [
+        {
+          "officialName": "新浦安駅",
+          "busstopId": "00020619",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "入船中央エステート",
+          "busstopId": "00020663",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "明海大学前",
+          "busstopId": "00020713",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "海風の街",
+          "busstopId": "00020848",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "日の出公民館",
+          "busstopId": "00020652",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "シンボルロード・パークシティ",
+          "busstopId": "00020856",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "ベイモール",
+          "busstopId": "00020736",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "ベイパーク",
+          "busstopId": "00020735",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "ベイサイドホテルエリア",
+          "busstopId": "00020681",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "総合公園",
+          "busstopId": "00020745",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        }
+      ]
+    },
+    "11-sogo-shinurayasu": {
+      "title": "新浦安駅行き（総合公園発）",
+      "departure": "総合公園",
+      "destination": "新浦安駅",
+      "viaKey": "hinode-kominkan",
+      "berth": "04",
+      "night": false,
+      "naviBusstop": "00020745",
+      "sourceUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30000/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-07-27T06:18:00%2B09:00",
+      "confirmedDate": "2026-07-25",
+      "stopCount": 10,
+      "tripSignature": "11|00020745-1|00020619|00020745>00020681>00020735>00020736>00020856>00020652>00020848>00020713>00020663>00020619|>>>>>>>>>|regular",
+      "idComplete": true,
+      "stopNames": [
+        "総合公園",
+        "ベイサイドホテルエリア",
+        "ベイパーク",
+        "ベイモール",
+        "シンボルロード・パークシティ",
+        "日の出公民館",
+        "海風の街",
+        "明海大学前",
+        "入船中央エステート",
+        "新浦安駅"
+      ],
+      "stopIds": [
+        "00020745",
+        "00020681",
+        "00020735",
+        "00020736",
+        "00020856",
+        "00020652",
+        "00020848",
+        "00020713",
+        "00020663",
+        "00020619"
+      ],
+      "stops": [
+        {
+          "officialName": "総合公園",
+          "busstopId": "00020745",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "ベイサイドホテルエリア",
+          "busstopId": "00020681",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "ベイパーク",
+          "busstopId": "00020735",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "ベイモール",
+          "busstopId": "00020736",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "シンボルロード・パークシティ",
+          "busstopId": "00020856",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "日の出公民館",
+          "busstopId": "00020652",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "海風の街",
+          "busstopId": "00020848",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "明海大学前",
+          "busstopId": "00020713",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "入船中央エステート",
+          "busstopId": "00020663",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "新浦安駅",
+          "busstopId": "00020619",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        }
+      ]
+    },
+    "11-sogo-urayasu": {
+      "title": "浦安駅入口行き（総合公園発）",
+      "departure": "総合公園",
+      "destination": "浦安駅入口",
+      "viaKey": "hinode-kominkan",
+      "berth": "01",
+      "night": false,
+      "naviBusstop": "00020745",
+      "sourceUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d10000/stops?departure-busstop=00020745-1&course=0008200260&datetime=2026-07-27T06:42:00%2B09:00",
+      "confirmedDate": "2026-07-25",
+      "stopCount": 16,
+      "tripSignature": "11|00020745-1|00020739|00020745>00020681>00020735>00020736>00020856>00020652>00020848>00020713>00020663>00020619>00020670>00020845>00020877>00020666>00020623>00020739|>>>>>>>>>>>>>>>|regular",
+      "idComplete": true,
+      "stopNames": [
+        "総合公園",
+        "ベイサイドホテルエリア",
+        "ベイパーク",
+        "ベイモール",
+        "シンボルロード・パークシティ",
+        "日の出公民館",
+        "海風の街",
+        "明海大学前",
+        "入船中央エステート",
+        "新浦安駅",
+        "美浜東団地",
+        "海楽",
+        "消防本部前",
+        "猫実",
+        "神明裏",
+        "浦安駅入口"
+      ],
+      "stopIds": [
+        "00020745",
+        "00020681",
+        "00020735",
+        "00020736",
+        "00020856",
+        "00020652",
+        "00020848",
+        "00020713",
+        "00020663",
+        "00020619",
+        "00020670",
+        "00020845",
+        "00020877",
+        "00020666",
+        "00020623",
+        "00020739"
+      ],
+      "stops": [
+        {
+          "officialName": "総合公園",
+          "busstopId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "ベイサイドホテルエリア",
+          "busstopId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "ベイパーク",
+          "busstopId": "00020735",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "ベイモール",
+          "busstopId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "シンボルロード・パークシティ",
+          "busstopId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "日の出公民館",
+          "busstopId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "海風の街",
+          "busstopId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "明海大学前",
+          "busstopId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "入船中央エステート",
+          "busstopId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "新浦安駅",
+          "busstopId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "美浜東団地",
+          "busstopId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "海楽",
+          "busstopId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "消防本部前",
+          "busstopId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "猫実",
+          "busstopId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "神明裏",
+          "busstopId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "浦安駅入口",
+          "busstopId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        }
+      ]
+    },
+    "11-urayasu-baypark": {
+      "title": "ベイパーク行き（浦安駅入口発）",
+      "departure": "浦安駅入口",
+      "destination": "ベイパーク",
+      "viaKey": "hinode-kominkan",
+      "berth": "11",
+      "night": false,
+      "naviBusstop": "00020739",
+      "sourceUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d90001/stops?departure-busstop=00020739-1&course=0008200268&datetime=2026-07-25T17:34:00%2B09:00",
+      "confirmedDate": "2026-07-25",
+      "stopCount": 14,
+      "tripSignature": "11|00020739-1|00020735|00020739>00020623>00020666>00020877>00020845>00020670>00020619>00020663>00020713>00020848>00020652>00020856>00020736>00020735|>>>>>>>>>>>>>|regular",
+      "idComplete": true,
+      "stopNames": [
+        "浦安駅入口",
+        "神明裏",
+        "猫実",
+        "消防本部前",
+        "海楽",
+        "美浜東団地",
+        "新浦安駅",
+        "入船中央エステート",
+        "明海大学前",
+        "海風の街",
+        "日の出公民館",
+        "シンボルロード・パークシティ",
+        "ベイモール",
+        "ベイパーク"
+      ],
+      "stopIds": [
+        "00020739",
+        "00020623",
+        "00020666",
+        "00020877",
+        "00020845",
+        "00020670",
+        "00020619",
+        "00020663",
+        "00020713",
+        "00020848",
+        "00020652",
+        "00020856",
+        "00020736",
+        "00020735"
+      ],
+      "stops": [
+        {
+          "officialName": "浦安駅入口",
+          "busstopId": "00020739",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "神明裏",
+          "busstopId": "00020623",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "猫実",
+          "busstopId": "00020666",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "消防本部前",
+          "busstopId": "00020877",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "海楽",
+          "busstopId": "00020845",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "美浜東団地",
+          "busstopId": "00020670",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "新浦安駅",
+          "busstopId": "00020619",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "入船中央エステート",
+          "busstopId": "00020663",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "明海大学前",
+          "busstopId": "00020713",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "海風の街",
+          "busstopId": "00020848",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "日の出公民館",
+          "busstopId": "00020652",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "シンボルロード・パークシティ",
+          "busstopId": "00020856",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "ベイモール",
+          "busstopId": "00020736",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "ベイパーク",
+          "busstopId": "00020735",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        }
+      ]
+    },
+    "11-urayasu-hinode": {
+      "title": "日の出南行き（浦安駅入口発）",
+      "departure": "浦安駅入口",
+      "destination": "日の出南",
+      "viaKey": "hinode-kominkan",
+      "berth": "11",
+      "night": false,
+      "naviBusstop": "00020739",
+      "sourceUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80ce0003/stops?departure-busstop=00020739-1&course=0008200257&datetime=2026-07-25T10:33:00%2B09:00",
+      "confirmedDate": "2026-07-25",
+      "stopCount": 18,
+      "tripSignature": "11|00020739-1|00020849|00020739>00020623>00020666>00020877>00020845>00020670>00020619>00020663>00020713>00020848>00020652>00020856>00020736>00020735>00020681>00020745>00020622>00020849|>>>>>>>>>>>>>>>>>|regular",
+      "idComplete": true,
+      "stopNames": [
+        "浦安駅入口",
+        "神明裏",
+        "猫実",
+        "消防本部前",
+        "海楽",
+        "美浜東団地",
+        "新浦安駅",
+        "入船中央エステート",
+        "明海大学前",
+        "海風の街",
+        "日の出公民館",
+        "シンボルロード・パークシティ",
+        "ベイモール",
+        "ベイパーク",
+        "ベイサイドホテルエリア",
+        "総合公園",
+        "新浦安温泉",
+        "日の出南"
+      ],
+      "stopIds": [
+        "00020739",
+        "00020623",
+        "00020666",
+        "00020877",
+        "00020845",
+        "00020670",
+        "00020619",
+        "00020663",
+        "00020713",
+        "00020848",
+        "00020652",
+        "00020856",
+        "00020736",
+        "00020735",
+        "00020681",
+        "00020745",
+        "00020622",
+        "00020849"
+      ],
+      "stops": [
+        {
+          "officialName": "浦安駅入口",
+          "busstopId": "00020739",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "神明裏",
+          "busstopId": "00020623",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "猫実",
+          "busstopId": "00020666",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "消防本部前",
+          "busstopId": "00020877",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "海楽",
+          "busstopId": "00020845",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "美浜東団地",
+          "busstopId": "00020670",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "新浦安駅",
+          "busstopId": "00020619",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "入船中央エステート",
+          "busstopId": "00020663",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "明海大学前",
+          "busstopId": "00020713",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "海風の街",
+          "busstopId": "00020848",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "日の出公民館",
+          "busstopId": "00020652",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "シンボルロード・パークシティ",
+          "busstopId": "00020856",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "ベイモール",
+          "busstopId": "00020736",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "ベイパーク",
+          "busstopId": "00020735",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "ベイサイドホテルエリア",
+          "busstopId": "00020681",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "総合公園",
+          "busstopId": "00020745",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "新浦安温泉",
+          "busstopId": "00020622",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "日の出南",
+          "busstopId": "00020849",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        }
+      ]
+    },
+    "11-urayasu-shinurayasu": {
+      "title": "新浦安駅行き（浦安駅入口発）",
+      "departure": "浦安駅入口",
+      "destination": "新浦安駅",
+      "viaKey": null,
+      "berth": "11",
+      "night": false,
+      "naviBusstop": "00020739",
+      "sourceUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80db0000/stops?departure-busstop=00020739-1&course=0008200270&datetime=2026-07-27T08:00:00%2B09:00",
+      "confirmedDate": "2026-07-25",
+      "stopCount": 7,
+      "tripSignature": "11|00020739-1|00020619|00020739>00020623>00020666>00020877>00020845>00020670>00020619|>>>>>>|regular",
+      "idComplete": true,
+      "stopNames": [
+        "浦安駅入口",
+        "神明裏",
+        "猫実",
+        "消防本部前",
+        "海楽",
+        "美浜東団地",
+        "新浦安駅"
+      ],
+      "stopIds": [
+        "00020739",
+        "00020623",
+        "00020666",
+        "00020877",
+        "00020845",
+        "00020670",
+        "00020619"
+      ],
+      "stops": [
+        {
+          "officialName": "浦安駅入口",
+          "busstopId": "00020739",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "神明裏",
+          "busstopId": "00020623",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "猫実",
+          "busstopId": "00020666",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "消防本部前",
+          "busstopId": "00020877",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "海楽",
+          "busstopId": "00020845",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "美浜東団地",
+          "busstopId": "00020670",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "新浦安駅",
+          "busstopId": "00020619",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        }
+      ]
+    },
+    "11-urayasu-sogo-via-hinode-kominkan": {
+      "title": "総合公園行き（浦安駅入口発）・日の出公民館経由",
+      "departure": "浦安駅入口",
+      "destination": "総合公園",
+      "viaKey": "hinode-kominkan",
+      "berth": "11",
+      "night": false,
+      "naviBusstop": "00020739",
+      "sourceUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d20000/stops?departure-busstop=00020739-1&course=0008200261&datetime=2026-07-27T07:20:00%2B09:00",
+      "confirmedDate": "2026-07-25",
+      "stopCount": 16,
+      "tripSignature": "11|00020739-1|00020745|00020739>00020623>00020666>00020877>00020845>00020670>00020619>00020663>00020713>00020848>00020652>00020856>00020736>00020735>00020681>00020745|>>>>>>>>>>>>>>>|regular",
+      "idComplete": true,
+      "stopNames": [
+        "浦安駅入口",
+        "神明裏",
+        "猫実",
+        "消防本部前",
+        "海楽",
+        "美浜東団地",
+        "新浦安駅",
+        "入船中央エステート",
+        "明海大学前",
+        "海風の街",
+        "日の出公民館",
+        "シンボルロード・パークシティ",
+        "ベイモール",
+        "ベイパーク",
+        "ベイサイドホテルエリア",
+        "総合公園"
+      ],
+      "stopIds": [
+        "00020739",
+        "00020623",
+        "00020666",
+        "00020877",
+        "00020845",
+        "00020670",
+        "00020619",
+        "00020663",
+        "00020713",
+        "00020848",
+        "00020652",
+        "00020856",
+        "00020736",
+        "00020735",
+        "00020681",
+        "00020745"
+      ],
+      "stops": [
+        {
+          "officialName": "浦安駅入口",
+          "busstopId": "00020739",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "神明裏",
+          "busstopId": "00020623",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "猫実",
+          "busstopId": "00020666",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "消防本部前",
+          "busstopId": "00020877",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "海楽",
+          "busstopId": "00020845",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "美浜東団地",
+          "busstopId": "00020670",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "新浦安駅",
+          "busstopId": "00020619",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "入船中央エステート",
+          "busstopId": "00020663",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "明海大学前",
+          "busstopId": "00020713",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "海風の街",
+          "busstopId": "00020848",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "日の出公民館",
+          "busstopId": "00020652",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "シンボルロード・パークシティ",
+          "busstopId": "00020856",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "ベイモール",
+          "busstopId": "00020736",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "ベイパーク",
+          "busstopId": "00020735",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "ベイサイドホテルエリア",
+          "busstopId": "00020681",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "総合公園",
+          "busstopId": "00020745",
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        }
+      ]
+    }
+  },
+  "systemKeys": [
+    "11-hinode-shinurayasu",
+    "11-hinode-urayasu",
+    "11-shinurayasu-baypark",
+    "11-shinurayasu-hinode",
+    "11-shinurayasu-sogo",
+    "11-sogo-shinurayasu",
+    "11-sogo-urayasu",
+    "11-urayasu-baypark",
+    "11-urayasu-hinode",
+    "11-urayasu-shinurayasu",
+    "11-urayasu-sogo-via-hinode-kominkan"
+  ],
+  "confirmedCount": 11,
+  "auditNote": "2026-07-25 audit: removed 4 route-3 false positives; upgraded 11-sogo-urayasu sample"
+}

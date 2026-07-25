@@ -1,0 +1,1060 @@
+{
+  "generatedAt": "2026-07-25T03:36:07.911Z",
+  "route": "route-11",
+  "lineName": "シンボルロード線",
+  "pathFiles": [
+    "symbol-road-line-path-v1.js",
+    "_path_bank.json"
+  ],
+  "systems": {
+    "11-urayasu-hinode": {
+      "systemKey": "11-urayasu-hinode",
+      "relationId": 18352884,
+      "pathSource": "osm-relation-18352884+startHint-urayasu",
+      "pathPointCount": 324,
+      "usedWayCount": 50,
+      "selfIntersectionCount": 11,
+      "pointsFarFromWaysCount": 0,
+      "maxDistToWay_m": 0,
+      "pedestrianWayCount": 0,
+      "wrongWayCount": 0,
+      "wayTagSamples": [
+        {
+          "wayId": 1337341819,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 163404380,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1342413246,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1339150559,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 720402605,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1125716447,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1125716446,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 26320561,
+          "highway": "secondary",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "service": null
+        }
+      ],
+      "buildingIntersectionCount": 0,
+      "groundGreenIntersectionCount": 0,
+      "bridgeGreenIntersectionCount": 3,
+      "visualZ19": {
+        "files": [
+          "11-urayasu-hinode-start-z19.png",
+          "11-urayasu-shinurayasu-entry-z19.png",
+          "11-urayasu-hinode-kominkan-z19.png",
+          "11-urayasu-symbol-pc-z19.png",
+          "11-urayasu-baypark-z19.png",
+          "11-urayasu-sogo-z19.png",
+          "11-urayasu-hinode-end-z19.png"
+        ],
+        "existingCount": 7,
+        "missing": [],
+        "buildingCrossingObserved": null,
+        "groundGreenCrossingObserved": null,
+        "note": "Manual z19 review from screenshots only — not used as automated pass/fail counts"
+      },
+      "reviewRequired": true,
+      "overpassOk": true
+    },
+    "11-urayasu-sogo-via-hinode-kominkan": {
+      "systemKey": "11-urayasu-sogo-via-hinode-kominkan",
+      "relationId": 18352884,
+      "pathSource": "osm-relation-18352884-prefix-to-sogo+startHint-urayasu",
+      "pathPointCount": 277,
+      "usedWayCount": 50,
+      "selfIntersectionCount": 7,
+      "pointsFarFromWaysCount": 0,
+      "maxDistToWay_m": 0,
+      "pedestrianWayCount": 0,
+      "wrongWayCount": 0,
+      "wayTagSamples": [
+        {
+          "wayId": 1337341819,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 163404380,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1342413246,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1339150559,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 720402605,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1125716447,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1125716446,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 26320561,
+          "highway": "secondary",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "service": null
+        }
+      ],
+      "buildingIntersectionCount": 0,
+      "groundGreenIntersectionCount": 0,
+      "bridgeGreenIntersectionCount": 3,
+      "visualZ19": {
+        "files": [
+          "11-urayasu-sogo-short-end-z19.png"
+        ],
+        "existingCount": 1,
+        "missing": [],
+        "buildingCrossingObserved": null,
+        "groundGreenCrossingObserved": null,
+        "note": "Manual z19 review from screenshots only — not used as automated pass/fail counts"
+      },
+      "reviewRequired": true,
+      "overpassOk": true
+    },
+    "11-urayasu-baypark": {
+      "systemKey": "11-urayasu-baypark",
+      "relationId": 18352884,
+      "pathSource": "osm-relation-18352884-prefix-to-baypark+startHint-urayasu",
+      "pathPointCount": 243,
+      "usedWayCount": 50,
+      "selfIntersectionCount": 7,
+      "pointsFarFromWaysCount": 0,
+      "maxDistToWay_m": 0,
+      "pedestrianWayCount": 0,
+      "wrongWayCount": 0,
+      "wayTagSamples": [
+        {
+          "wayId": 1337341819,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 163404380,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1342413246,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1339150559,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 720402605,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1125716447,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1125716446,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 26320561,
+          "highway": "secondary",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "service": null
+        }
+      ],
+      "buildingIntersectionCount": 0,
+      "groundGreenIntersectionCount": 0,
+      "bridgeGreenIntersectionCount": 3,
+      "visualZ19": {
+        "files": [
+          "11-urayasu-baypark-short-end-z19.png"
+        ],
+        "existingCount": 1,
+        "missing": [],
+        "buildingCrossingObserved": null,
+        "groundGreenCrossingObserved": null,
+        "note": "Manual z19 review from screenshots only — not used as automated pass/fail counts"
+      },
+      "reviewRequired": true,
+      "overpassOk": true
+    },
+    "11-urayasu-shinurayasu": {
+      "systemKey": "11-urayasu-shinurayasu",
+      "relationId": 18352884,
+      "pathSource": "osm-relation-18352884-prefix-to-shinurayasu+startHint-urayasu",
+      "pathPointCount": 142,
+      "usedWayCount": 50,
+      "selfIntersectionCount": 0,
+      "pointsFarFromWaysCount": 0,
+      "maxDistToWay_m": 0,
+      "pedestrianWayCount": 0,
+      "wrongWayCount": 0,
+      "wayTagSamples": [
+        {
+          "wayId": 1337341819,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 163404380,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1342413246,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1339150559,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 720402605,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1125716447,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1125716446,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 26320561,
+          "highway": "secondary",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "service": null
+        }
+      ],
+      "buildingIntersectionCount": 0,
+      "groundGreenIntersectionCount": 0,
+      "bridgeGreenIntersectionCount": 3,
+      "visualZ19": {
+        "files": [
+          "11-urayasu-shinurayasu-end-z19.png"
+        ],
+        "existingCount": 1,
+        "missing": [],
+        "buildingCrossingObserved": null,
+        "groundGreenCrossingObserved": null,
+        "note": "Manual z19 review from screenshots only — not used as automated pass/fail counts"
+      },
+      "reviewRequired": false,
+      "overpassOk": true
+    },
+    "11-shinurayasu-hinode": {
+      "systemKey": "11-shinurayasu-hinode",
+      "relationId": 18352884,
+      "pathSource": "osm-relation-18352884-mid-shinurayasu-to-hinode",
+      "pathPointCount": 183,
+      "usedWayCount": 50,
+      "selfIntersectionCount": 4,
+      "pointsFarFromWaysCount": 0,
+      "maxDistToWay_m": 0,
+      "pedestrianWayCount": 0,
+      "wrongWayCount": 0,
+      "wayTagSamples": [
+        {
+          "wayId": 1337341819,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 163404380,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1342413246,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1339150559,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 720402605,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1125716447,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1125716446,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 26320561,
+          "highway": "secondary",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "service": null
+        }
+      ],
+      "buildingIntersectionCount": 0,
+      "groundGreenIntersectionCount": 0,
+      "bridgeGreenIntersectionCount": 0,
+      "visualZ19": {
+        "files": [
+          "11-shinurayasu-hinode-start-z19.png"
+        ],
+        "existingCount": 1,
+        "missing": [],
+        "buildingCrossingObserved": null,
+        "groundGreenCrossingObserved": null,
+        "note": "Manual z19 review from screenshots only — not used as automated pass/fail counts"
+      },
+      "reviewRequired": true,
+      "overpassOk": true
+    },
+    "11-shinurayasu-sogo": {
+      "systemKey": "11-shinurayasu-sogo",
+      "relationId": 18352884,
+      "pathSource": "osm-relation-18352884-mid-shinurayasu-to-sogo",
+      "pathPointCount": 136,
+      "usedWayCount": 50,
+      "selfIntersectionCount": 0,
+      "pointsFarFromWaysCount": 0,
+      "maxDistToWay_m": 0,
+      "pedestrianWayCount": 0,
+      "wrongWayCount": 0,
+      "wayTagSamples": [
+        {
+          "wayId": 1337341819,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 163404380,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1342413246,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1339150559,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 720402605,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1125716447,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1125716446,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 26320561,
+          "highway": "secondary",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "service": null
+        }
+      ],
+      "buildingIntersectionCount": 0,
+      "groundGreenIntersectionCount": 0,
+      "bridgeGreenIntersectionCount": 0,
+      "visualZ19": {
+        "files": [
+          "11-shinurayasu-sogo-end-z19.png"
+        ],
+        "existingCount": 1,
+        "missing": [],
+        "buildingCrossingObserved": null,
+        "groundGreenCrossingObserved": null,
+        "note": "Manual z19 review from screenshots only — not used as automated pass/fail counts"
+      },
+      "reviewRequired": false,
+      "overpassOk": true
+    },
+    "11-shinurayasu-baypark": {
+      "systemKey": "11-shinurayasu-baypark",
+      "relationId": 18352884,
+      "pathSource": "osm-relation-18352884-mid-shinurayasu-to-baypark",
+      "pathPointCount": 102,
+      "usedWayCount": 50,
+      "selfIntersectionCount": 0,
+      "pointsFarFromWaysCount": 0,
+      "maxDistToWay_m": 0,
+      "pedestrianWayCount": 0,
+      "wrongWayCount": 0,
+      "wayTagSamples": [
+        {
+          "wayId": 1337341819,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 163404380,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1342413246,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1339150559,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 720402605,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1125716447,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1125716446,
+          "highway": "secondary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 26320561,
+          "highway": "secondary",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "service": null
+        }
+      ],
+      "buildingIntersectionCount": 0,
+      "groundGreenIntersectionCount": 0,
+      "bridgeGreenIntersectionCount": 0,
+      "visualZ19": {
+        "files": [
+          "11-shinurayasu-baypark-end-z19.png"
+        ],
+        "existingCount": 1,
+        "missing": [],
+        "buildingCrossingObserved": null,
+        "groundGreenCrossingObserved": null,
+        "note": "Manual z19 review from screenshots only — not used as automated pass/fail counts"
+      },
+      "reviewRequired": false,
+      "overpassOk": true
+    },
+    "11-hinode-urayasu": {
+      "systemKey": "11-hinode-urayasu",
+      "relationId": 18352883,
+      "pathSource": "osm-relation-18352883+startHint-hinode",
+      "pathPointCount": 289,
+      "usedWayCount": 36,
+      "selfIntersectionCount": 0,
+      "pointsFarFromWaysCount": 0,
+      "maxDistToWay_m": 0,
+      "pedestrianWayCount": 0,
+      "wrongWayCount": 0,
+      "wayTagSamples": [
+        {
+          "wayId": 1338996638,
+          "highway": "service",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1338996639,
+          "highway": "service",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1338996640,
+          "highway": "service",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 368452494,
+          "highway": "service",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 26323335,
+          "highway": "service",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1339039303,
+          "highway": "tertiary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 369356240,
+          "highway": "tertiary",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1338976295,
+          "highway": "tertiary",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "service": null
+        }
+      ],
+      "buildingIntersectionCount": 0,
+      "groundGreenIntersectionCount": 0,
+      "bridgeGreenIntersectionCount": 4,
+      "visualZ19": {
+        "files": [
+          "11-hinode-urayasu-start-z19.png",
+          "11-hinode-sogo-z19.png",
+          "11-hinode-kominkan-z19.png"
+        ],
+        "existingCount": 3,
+        "missing": [],
+        "buildingCrossingObserved": null,
+        "groundGreenCrossingObserved": null,
+        "note": "Manual z19 review from screenshots only — not used as automated pass/fail counts"
+      },
+      "reviewRequired": false,
+      "overpassOk": true
+    },
+    "11-hinode-shinurayasu": {
+      "systemKey": "11-hinode-shinurayasu",
+      "relationId": 18352883,
+      "pathSource": "osm-relation-18352883-prefix-to-shinurayasu+startHint-hinode",
+      "pathPointCount": 171,
+      "usedWayCount": 36,
+      "selfIntersectionCount": 0,
+      "pointsFarFromWaysCount": 0,
+      "maxDistToWay_m": 0,
+      "pedestrianWayCount": 0,
+      "wrongWayCount": 0,
+      "wayTagSamples": [
+        {
+          "wayId": 1338996638,
+          "highway": "service",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1338996639,
+          "highway": "service",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1338996640,
+          "highway": "service",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 368452494,
+          "highway": "service",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 26323335,
+          "highway": "service",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1339039303,
+          "highway": "tertiary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 369356240,
+          "highway": "tertiary",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1338976295,
+          "highway": "tertiary",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "service": null
+        }
+      ],
+      "buildingIntersectionCount": 0,
+      "groundGreenIntersectionCount": 0,
+      "bridgeGreenIntersectionCount": 0,
+      "visualZ19": {
+        "files": [
+          "11-hinode-shinurayasu-z19.png"
+        ],
+        "existingCount": 1,
+        "missing": [],
+        "buildingCrossingObserved": null,
+        "groundGreenCrossingObserved": null,
+        "note": "Manual z19 review from screenshots only — not used as automated pass/fail counts"
+      },
+      "reviewRequired": false,
+      "overpassOk": true
+    },
+    "11-sogo-shinurayasu": {
+      "systemKey": "11-sogo-shinurayasu",
+      "relationId": 18352883,
+      "pathSource": "osm-relation-18352883-mid-sogo-to-shinurayasu",
+      "pathPointCount": 111,
+      "usedWayCount": 36,
+      "selfIntersectionCount": 0,
+      "pointsFarFromWaysCount": 0,
+      "maxDistToWay_m": 0,
+      "pedestrianWayCount": 0,
+      "wrongWayCount": 0,
+      "wayTagSamples": [
+        {
+          "wayId": 1338996638,
+          "highway": "service",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1338996639,
+          "highway": "service",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1338996640,
+          "highway": "service",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 368452494,
+          "highway": "service",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 26323335,
+          "highway": "service",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1339039303,
+          "highway": "tertiary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 369356240,
+          "highway": "tertiary",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1338976295,
+          "highway": "tertiary",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "service": null
+        }
+      ],
+      "buildingIntersectionCount": 0,
+      "groundGreenIntersectionCount": 0,
+      "bridgeGreenIntersectionCount": 0,
+      "visualZ19": {
+        "files": [
+          "11-sogo-shinurayasu-start-z19.png"
+        ],
+        "existingCount": 1,
+        "missing": [],
+        "buildingCrossingObserved": null,
+        "groundGreenCrossingObserved": null,
+        "note": "Manual z19 review from screenshots only — not used as automated pass/fail counts"
+      },
+      "reviewRequired": false,
+      "overpassOk": true
+    },
+    "11-sogo-urayasu": {
+      "systemKey": "11-sogo-urayasu",
+      "relationId": 18352883,
+      "pathSource": "osm-relation-18352883-mid-sogo-to-urayasu",
+      "pathPointCount": 229,
+      "usedWayCount": 36,
+      "selfIntersectionCount": 0,
+      "pointsFarFromWaysCount": 0,
+      "maxDistToWay_m": 0,
+      "pedestrianWayCount": 0,
+      "wrongWayCount": 0,
+      "wayTagSamples": [
+        {
+          "wayId": 1338996638,
+          "highway": "service",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1338996639,
+          "highway": "service",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1338996640,
+          "highway": "service",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 368452494,
+          "highway": "service",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 26323335,
+          "highway": "service",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1339039303,
+          "highway": "tertiary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 369356240,
+          "highway": "tertiary",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1338976295,
+          "highway": "tertiary",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "service": null
+        }
+      ],
+      "buildingIntersectionCount": 0,
+      "groundGreenIntersectionCount": 0,
+      "bridgeGreenIntersectionCount": 4,
+      "visualZ19": {
+        "files": [
+          "11-sogo-urayasu-end-z19.png"
+        ],
+        "existingCount": 1,
+        "missing": [],
+        "buildingCrossingObserved": null,
+        "groundGreenCrossingObserved": null,
+        "note": "Manual z19 review from screenshots only — not used as automated pass/fail counts"
+      },
+      "reviewRequired": false,
+      "overpassOk": true
+    }
+  },
+  "pass": true,
+  "selfIntersectionPolicy": "expected-at-sogo-hinode-loop",
+  "selfIntersectionTotals": {
+    "11-urayasu-hinode": 11,
+    "11-urayasu-sogo-via-hinode-kominkan": 7,
+    "11-urayasu-baypark": 7,
+    "11-urayasu-shinurayasu": 0,
+    "11-shinurayasu-hinode": 4,
+    "11-shinurayasu-sogo": 0,
+    "11-shinurayasu-baypark": 0,
+    "11-hinode-urayasu": 0,
+    "11-hinode-shinurayasu": 0,
+    "11-sogo-shinurayasu": 0,
+    "11-sogo-urayasu": 0
+  },
+  "anyReviewRequired": true,
+  "allOverpassOk": true,
+  "screenshotsOk": true
+}

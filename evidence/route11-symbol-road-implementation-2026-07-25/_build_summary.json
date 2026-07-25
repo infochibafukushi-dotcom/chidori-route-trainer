@@ -1,0 +1,1606 @@
+{
+  "generatedAt": "2026-07-25T03:16:47.541Z",
+  "line": "シンボルロード線",
+  "routeId": "route-11",
+  "systems": {
+    "11-urayasu-hinode": {
+      "stops": 18,
+      "pathPoints": 324,
+      "maxGap_m": 24.9,
+      "maxPlatformDist_m": 14.9,
+      "pathHash": "c28f5e3bf6a60258c94d39cd1d38fdf7ff529f4d7adf8f7fe79214419866bdab",
+      "resolvedVersion": "2026-07-25-symbol-road-urayasu-hinode-v1",
+      "missingPlatforms": [],
+      "platformDists": [
+        {
+          "name": "浦安駅入口",
+          "dist": 10.7
+        },
+        {
+          "name": "神明裏",
+          "dist": 11.1
+        },
+        {
+          "name": "猫実",
+          "dist": 9.8
+        },
+        {
+          "name": "消防本部前",
+          "dist": 14.9
+        },
+        {
+          "name": "海楽",
+          "dist": 8.7
+        },
+        {
+          "name": "美浜東団地",
+          "dist": 14.4
+        },
+        {
+          "name": "新浦安駅",
+          "dist": 7.7
+        },
+        {
+          "name": "入船中央エステート",
+          "dist": 7.6
+        },
+        {
+          "name": "明海大学前",
+          "dist": 9.1
+        },
+        {
+          "name": "海風の街",
+          "dist": 6.1
+        },
+        {
+          "name": "日の出公民館",
+          "dist": 6.8
+        },
+        {
+          "name": "シンボルロード・パークシティ",
+          "dist": 6.6
+        },
+        {
+          "name": "ベイモール",
+          "dist": 6.2
+        },
+        {
+          "name": "ベイパーク",
+          "dist": 6.3
+        },
+        {
+          "name": "ベイサイドホテルエリア",
+          "dist": 5.5
+        },
+        {
+          "name": "総合公園",
+          "dist": 7.2
+        },
+        {
+          "name": "新浦安温泉",
+          "dist": 9.6
+        },
+        {
+          "name": "日の出南",
+          "dist": 5.8
+        }
+      ],
+      "sliceMeta": {
+        "si": 0,
+        "ei": 323,
+        "startDist": 10.7,
+        "endDist": 5.8
+      },
+      "maxJoin_m": 0,
+      "note": "outbound full 浦安駅入口→日の出南。relation 18352884。",
+      "usedWaysSample": [
+        {
+          "wayId": 1337341819,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "startHint": true
+        },
+        {
+          "wayId": 163404380,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 1342413246,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 1339150559,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 720402605,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 1125716447,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 1125716446,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 26320561,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        }
+      ],
+      "orderIssues": [],
+      "usedWayCount": 50,
+      "mainlineCheck": null
+    },
+    "11-urayasu-sogo-via-hinode-kominkan": {
+      "stops": 16,
+      "pathPoints": 277,
+      "maxGap_m": 24.9,
+      "maxPlatformDist_m": 14.9,
+      "pathHash": "8fcebfb768299feb39838ff08ba0fa4f248cf280f2e925f1e0fb9044d2edbc37",
+      "resolvedVersion": "2026-07-25-symbol-road-urayasu-sogo-via-hinode-kominkan-v1",
+      "missingPlatforms": [],
+      "platformDists": [
+        {
+          "name": "浦安駅入口",
+          "dist": 10.7
+        },
+        {
+          "name": "神明裏",
+          "dist": 11.1
+        },
+        {
+          "name": "猫実",
+          "dist": 9.8
+        },
+        {
+          "name": "消防本部前",
+          "dist": 14.9
+        },
+        {
+          "name": "海楽",
+          "dist": 8.7
+        },
+        {
+          "name": "美浜東団地",
+          "dist": 14.4
+        },
+        {
+          "name": "新浦安駅",
+          "dist": 7.7
+        },
+        {
+          "name": "入船中央エステート",
+          "dist": 7.6
+        },
+        {
+          "name": "明海大学前",
+          "dist": 9.1
+        },
+        {
+          "name": "海風の街",
+          "dist": 6.1
+        },
+        {
+          "name": "日の出公民館",
+          "dist": 6.8
+        },
+        {
+          "name": "シンボルロード・パークシティ",
+          "dist": 6.6
+        },
+        {
+          "name": "ベイモール",
+          "dist": 6.2
+        },
+        {
+          "name": "ベイパーク",
+          "dist": 6.3
+        },
+        {
+          "name": "ベイサイドホテルエリア",
+          "dist": 5.5
+        },
+        {
+          "name": "総合公園",
+          "dist": 7.2
+        }
+      ],
+      "sliceMeta": {
+        "si": 0,
+        "ei": 276,
+        "startDist": 10.7,
+        "endDist": 7.2
+      },
+      "maxJoin_m": 0,
+      "note": "outbound prefix 浦安→総合公園（日の出公民館経由）。",
+      "usedWaysSample": [
+        {
+          "wayId": 1337341819,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "startHint": true
+        },
+        {
+          "wayId": 163404380,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 1342413246,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 1339150559,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 720402605,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 1125716447,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 1125716446,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 26320561,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        }
+      ],
+      "orderIssues": [],
+      "usedWayCount": 50,
+      "mainlineCheck": {
+        "type": "prefix",
+        "of": "11-urayasu-hinode",
+        "ok": true
+      }
+    },
+    "11-urayasu-baypark": {
+      "stops": 14,
+      "pathPoints": 243,
+      "maxGap_m": 24.9,
+      "maxPlatformDist_m": 14.9,
+      "pathHash": "1375bfa5d7df6df142a20ffbe5562c982d1ab737c148ba23aecefeffab51441b",
+      "resolvedVersion": "2026-07-25-symbol-road-urayasu-baypark-v1",
+      "missingPlatforms": [],
+      "platformDists": [
+        {
+          "name": "浦安駅入口",
+          "dist": 10.7
+        },
+        {
+          "name": "神明裏",
+          "dist": 11.1
+        },
+        {
+          "name": "猫実",
+          "dist": 9.8
+        },
+        {
+          "name": "消防本部前",
+          "dist": 14.9
+        },
+        {
+          "name": "海楽",
+          "dist": 8.7
+        },
+        {
+          "name": "美浜東団地",
+          "dist": 14.4
+        },
+        {
+          "name": "新浦安駅",
+          "dist": 7.7
+        },
+        {
+          "name": "入船中央エステート",
+          "dist": 7.6
+        },
+        {
+          "name": "明海大学前",
+          "dist": 9.1
+        },
+        {
+          "name": "海風の街",
+          "dist": 6.1
+        },
+        {
+          "name": "日の出公民館",
+          "dist": 6.8
+        },
+        {
+          "name": "シンボルロード・パークシティ",
+          "dist": 6.6
+        },
+        {
+          "name": "ベイモール",
+          "dist": 6.2
+        },
+        {
+          "name": "ベイパーク",
+          "dist": 6.3
+        }
+      ],
+      "sliceMeta": {
+        "si": 0,
+        "ei": 242,
+        "startDist": 10.7,
+        "endDist": 6.3
+      },
+      "maxJoin_m": 0,
+      "note": "outbound prefix 浦安→ベイパーク。",
+      "usedWaysSample": [
+        {
+          "wayId": 1337341819,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "startHint": true
+        },
+        {
+          "wayId": 163404380,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 1342413246,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 1339150559,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 720402605,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 1125716447,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 1125716446,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 26320561,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        }
+      ],
+      "orderIssues": [],
+      "usedWayCount": 50,
+      "mainlineCheck": {
+        "type": "prefix",
+        "of": "11-urayasu-hinode",
+        "ok": true
+      }
+    },
+    "11-urayasu-shinurayasu": {
+      "stops": 7,
+      "pathPoints": 142,
+      "maxGap_m": 24.9,
+      "maxPlatformDist_m": 14.9,
+      "pathHash": "8600b68a90d9c19d1d2a998a90fba167813aec44eb96f6d2fb8034e5d7a9d782",
+      "resolvedVersion": "2026-07-25-symbol-road-urayasu-shinurayasu-v1",
+      "missingPlatforms": [],
+      "platformDists": [
+        {
+          "name": "浦安駅入口",
+          "dist": 10.7
+        },
+        {
+          "name": "神明裏",
+          "dist": 11.1
+        },
+        {
+          "name": "猫実",
+          "dist": 9.8
+        },
+        {
+          "name": "消防本部前",
+          "dist": 14.9
+        },
+        {
+          "name": "海楽",
+          "dist": 8.7
+        },
+        {
+          "name": "美浜東団地",
+          "dist": 14.4
+        },
+        {
+          "name": "新浦安駅",
+          "dist": 7.7
+        }
+      ],
+      "sliceMeta": {
+        "si": 0,
+        "ei": 141,
+        "startDist": 10.7,
+        "endDist": 7.7
+      },
+      "maxJoin_m": 0,
+      "note": "outbound prefix 浦安→新浦安駅。",
+      "usedWaysSample": [
+        {
+          "wayId": 1337341819,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "startHint": true
+        },
+        {
+          "wayId": 163404380,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 1342413246,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 1339150559,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 720402605,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 1125716447,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 1125716446,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 26320561,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        }
+      ],
+      "orderIssues": [],
+      "usedWayCount": 50,
+      "mainlineCheck": {
+        "type": "prefix",
+        "of": "11-urayasu-hinode",
+        "ok": true
+      }
+    },
+    "11-shinurayasu-hinode": {
+      "stops": 12,
+      "pathPoints": 183,
+      "maxGap_m": 24.9,
+      "maxPlatformDist_m": 9.6,
+      "pathHash": "d46ee2d2fad5e41772fe46da8bb1bb55f764285b76c8b92db9d6d0c06f1e738f",
+      "resolvedVersion": "2026-07-25-symbol-road-shinurayasu-hinode-v1",
+      "missingPlatforms": [],
+      "platformDists": [
+        {
+          "name": "新浦安駅",
+          "dist": 7.7
+        },
+        {
+          "name": "入船中央エステート",
+          "dist": 7.6
+        },
+        {
+          "name": "明海大学前",
+          "dist": 9.1
+        },
+        {
+          "name": "海風の街",
+          "dist": 6.1
+        },
+        {
+          "name": "日の出公民館",
+          "dist": 6.8
+        },
+        {
+          "name": "シンボルロード・パークシティ",
+          "dist": 6.6
+        },
+        {
+          "name": "ベイモール",
+          "dist": 6.2
+        },
+        {
+          "name": "ベイパーク",
+          "dist": 6.3
+        },
+        {
+          "name": "ベイサイドホテルエリア",
+          "dist": 5.5
+        },
+        {
+          "name": "総合公園",
+          "dist": 7.2
+        },
+        {
+          "name": "新浦安温泉",
+          "dist": 9.6
+        },
+        {
+          "name": "日の出南",
+          "dist": 5.8
+        }
+      ],
+      "sliceMeta": {
+        "si": 141,
+        "ei": 323,
+        "startDist": 7.7,
+        "endDist": 5.8
+      },
+      "maxJoin_m": 0,
+      "note": "outbound mid-slice 新浦安→日の出南。",
+      "usedWaysSample": [
+        {
+          "wayId": 1337341819,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "startHint": true
+        },
+        {
+          "wayId": 163404380,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 1342413246,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 1339150559,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 720402605,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 1125716447,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 1125716446,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 26320561,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        }
+      ],
+      "orderIssues": [],
+      "usedWayCount": 50,
+      "mainlineCheck": {
+        "type": "suffix",
+        "of": "11-urayasu-hinode",
+        "ok": true,
+        "slice": {
+          "start": 6,
+          "end": 17
+        }
+      }
+    },
+    "11-shinurayasu-sogo": {
+      "stops": 10,
+      "pathPoints": 136,
+      "maxGap_m": 24.9,
+      "maxPlatformDist_m": 9.1,
+      "pathHash": "ba6e1528c48b0747fb7d7907e982e276919fa7948b673de3a5c117b342993a1c",
+      "resolvedVersion": "2026-07-25-symbol-road-shinurayasu-sogo-v1",
+      "missingPlatforms": [],
+      "platformDists": [
+        {
+          "name": "新浦安駅",
+          "dist": 7.7
+        },
+        {
+          "name": "入船中央エステート",
+          "dist": 7.6
+        },
+        {
+          "name": "明海大学前",
+          "dist": 9.1
+        },
+        {
+          "name": "海風の街",
+          "dist": 6.1
+        },
+        {
+          "name": "日の出公民館",
+          "dist": 6.8
+        },
+        {
+          "name": "シンボルロード・パークシティ",
+          "dist": 6.6
+        },
+        {
+          "name": "ベイモール",
+          "dist": 6.2
+        },
+        {
+          "name": "ベイパーク",
+          "dist": 6.3
+        },
+        {
+          "name": "ベイサイドホテルエリア",
+          "dist": 5.5
+        },
+        {
+          "name": "総合公園",
+          "dist": 7.2
+        }
+      ],
+      "sliceMeta": {
+        "si": 141,
+        "ei": 276,
+        "startDist": 7.7,
+        "endDist": 7.2
+      },
+      "maxJoin_m": 0,
+      "note": "outbound mid-slice 新浦安→総合公園。",
+      "usedWaysSample": [
+        {
+          "wayId": 1337341819,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "startHint": true
+        },
+        {
+          "wayId": 163404380,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 1342413246,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 1339150559,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 720402605,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 1125716447,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 1125716446,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 26320561,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        }
+      ],
+      "orderIssues": [],
+      "usedWayCount": 50,
+      "mainlineCheck": {
+        "type": "mid-slice",
+        "of": "11-urayasu-hinode",
+        "ok": true,
+        "slice": {
+          "start": 6,
+          "end": 15
+        }
+      }
+    },
+    "11-shinurayasu-baypark": {
+      "stops": 8,
+      "pathPoints": 102,
+      "maxGap_m": 24.9,
+      "maxPlatformDist_m": 9.1,
+      "pathHash": "3dda0b17f76511024f101fc88f386da1c5669deccbbacb5233184adac520ab4d",
+      "resolvedVersion": "2026-07-25-symbol-road-shinurayasu-baypark-v1",
+      "missingPlatforms": [],
+      "platformDists": [
+        {
+          "name": "新浦安駅",
+          "dist": 7.7
+        },
+        {
+          "name": "入船中央エステート",
+          "dist": 7.6
+        },
+        {
+          "name": "明海大学前",
+          "dist": 9.1
+        },
+        {
+          "name": "海風の街",
+          "dist": 6.1
+        },
+        {
+          "name": "日の出公民館",
+          "dist": 6.8
+        },
+        {
+          "name": "シンボルロード・パークシティ",
+          "dist": 6.6
+        },
+        {
+          "name": "ベイモール",
+          "dist": 6.2
+        },
+        {
+          "name": "ベイパーク",
+          "dist": 6.3
+        }
+      ],
+      "sliceMeta": {
+        "si": 141,
+        "ei": 242,
+        "startDist": 7.7,
+        "endDist": 6.3
+      },
+      "maxJoin_m": 0,
+      "note": "outbound mid-slice 新浦安→ベイパーク。",
+      "usedWaysSample": [
+        {
+          "wayId": 1337341819,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "startHint": true
+        },
+        {
+          "wayId": 163404380,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 1342413246,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 1339150559,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 720402605,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 1125716447,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 1125716446,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 26320561,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        }
+      ],
+      "orderIssues": [],
+      "usedWayCount": 50,
+      "mainlineCheck": {
+        "type": "mid-slice",
+        "of": "11-urayasu-hinode",
+        "ok": true,
+        "slice": {
+          "start": 6,
+          "end": 13
+        }
+      }
+    },
+    "11-hinode-urayasu": {
+      "stops": 18,
+      "pathPoints": 289,
+      "maxGap_m": 24.7,
+      "maxPlatformDist_m": 13.6,
+      "pathHash": "aab5d768a2d6034376d92bc641640b3a13ef0934b4b7d1a50853d03aec7ac233",
+      "resolvedVersion": "2026-07-25-symbol-road-hinode-urayasu-v1",
+      "missingPlatforms": [],
+      "platformDists": [
+        {
+          "name": "日の出南",
+          "dist": 5.8
+        },
+        {
+          "name": "新浦安温泉",
+          "dist": 6.6
+        },
+        {
+          "name": "総合公園",
+          "dist": 7.2
+        },
+        {
+          "name": "ベイサイドホテルエリア",
+          "dist": 6.8
+        },
+        {
+          "name": "ベイパーク",
+          "dist": 11.1
+        },
+        {
+          "name": "ベイモール",
+          "dist": 5.6
+        },
+        {
+          "name": "シンボルロード・パークシティ",
+          "dist": 5.4
+        },
+        {
+          "name": "日の出公民館",
+          "dist": 9.4
+        },
+        {
+          "name": "海風の街",
+          "dist": 7.1
+        },
+        {
+          "name": "明海大学前",
+          "dist": 7.7
+        },
+        {
+          "name": "入船中央エステート",
+          "dist": 11.1
+        },
+        {
+          "name": "新浦安駅",
+          "dist": 11.3
+        },
+        {
+          "name": "美浜東団地",
+          "dist": 7.1
+        },
+        {
+          "name": "海楽",
+          "dist": 8
+        },
+        {
+          "name": "消防本部前",
+          "dist": 13.6
+        },
+        {
+          "name": "猫実",
+          "dist": 8.5
+        },
+        {
+          "name": "神明裏",
+          "dist": 9.3
+        },
+        {
+          "name": "浦安駅入口",
+          "dist": 11.2
+        }
+      ],
+      "sliceMeta": {
+        "si": 0,
+        "ei": 288,
+        "startDist": 5.8,
+        "endDist": 11.2
+      },
+      "maxJoin_m": 0,
+      "note": "inbound full 日の出南→浦安。relation 18352883。往路逆順禁止。",
+      "usedWaysSample": [
+        {
+          "wayId": 1338996638,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "startHint": true
+        },
+        {
+          "wayId": 1338996639,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 1338996640,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 368452494,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 26323335,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 1339039303,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 369356240,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 1338976295,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        }
+      ],
+      "orderIssues": [],
+      "usedWayCount": 36,
+      "mainlineCheck": null
+    },
+    "11-hinode-shinurayasu": {
+      "stops": 12,
+      "pathPoints": 171,
+      "maxGap_m": 24.5,
+      "maxPlatformDist_m": 11.3,
+      "pathHash": "d2dae33f798f28bbb52986958ad48cd85abdcaf012519540e67047df5ed775f6",
+      "resolvedVersion": "2026-07-25-symbol-road-hinode-shinurayasu-v1",
+      "missingPlatforms": [],
+      "platformDists": [
+        {
+          "name": "日の出南",
+          "dist": 5.8
+        },
+        {
+          "name": "新浦安温泉",
+          "dist": 6.6
+        },
+        {
+          "name": "総合公園",
+          "dist": 7.2
+        },
+        {
+          "name": "ベイサイドホテルエリア",
+          "dist": 6.8
+        },
+        {
+          "name": "ベイパーク",
+          "dist": 11.1
+        },
+        {
+          "name": "ベイモール",
+          "dist": 5.6
+        },
+        {
+          "name": "シンボルロード・パークシティ",
+          "dist": 5.4
+        },
+        {
+          "name": "日の出公民館",
+          "dist": 9.4
+        },
+        {
+          "name": "海風の街",
+          "dist": 7.1
+        },
+        {
+          "name": "明海大学前",
+          "dist": 7.7
+        },
+        {
+          "name": "入船中央エステート",
+          "dist": 11.1
+        },
+        {
+          "name": "新浦安駅",
+          "dist": 11.3
+        }
+      ],
+      "sliceMeta": {
+        "si": 0,
+        "ei": 170,
+        "startDist": 5.8,
+        "endDist": 11.3
+      },
+      "maxJoin_m": 0,
+      "note": "inbound prefix 日の出南→新浦安。",
+      "usedWaysSample": [
+        {
+          "wayId": 1338996638,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "startHint": true
+        },
+        {
+          "wayId": 1338996639,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 1338996640,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 368452494,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 26323335,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 1339039303,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 369356240,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 1338976295,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        }
+      ],
+      "orderIssues": [],
+      "usedWayCount": 36,
+      "mainlineCheck": {
+        "type": "prefix",
+        "of": "11-hinode-urayasu",
+        "ok": true
+      }
+    },
+    "11-sogo-shinurayasu": {
+      "stops": 10,
+      "pathPoints": 111,
+      "maxGap_m": 24.5,
+      "maxPlatformDist_m": 11.3,
+      "pathHash": "c0b00886aa642e5621ba56fc38d7b89a6cdda5199675653de5c32d4f3894e9ac",
+      "resolvedVersion": "2026-07-25-symbol-road-sogo-shinurayasu-v1",
+      "missingPlatforms": [],
+      "platformDists": [
+        {
+          "name": "総合公園",
+          "dist": 7.2
+        },
+        {
+          "name": "ベイサイドホテルエリア",
+          "dist": 6.8
+        },
+        {
+          "name": "ベイパーク",
+          "dist": 11.1
+        },
+        {
+          "name": "ベイモール",
+          "dist": 5.6
+        },
+        {
+          "name": "シンボルロード・パークシティ",
+          "dist": 5.4
+        },
+        {
+          "name": "日の出公民館",
+          "dist": 9.4
+        },
+        {
+          "name": "海風の街",
+          "dist": 7.1
+        },
+        {
+          "name": "明海大学前",
+          "dist": 7.7
+        },
+        {
+          "name": "入船中央エステート",
+          "dist": 11.1
+        },
+        {
+          "name": "新浦安駅",
+          "dist": 11.3
+        }
+      ],
+      "sliceMeta": {
+        "si": 60,
+        "ei": 170,
+        "startDist": 7.2,
+        "endDist": 11.3
+      },
+      "maxJoin_m": 0,
+      "note": "inbound mid-slice 総合公園→新浦安。",
+      "usedWaysSample": [
+        {
+          "wayId": 1338996638,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "startHint": true
+        },
+        {
+          "wayId": 1338996639,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 1338996640,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 368452494,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 26323335,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 1339039303,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 369356240,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 1338976295,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        }
+      ],
+      "orderIssues": [],
+      "usedWayCount": 36,
+      "mainlineCheck": {
+        "type": "mid-slice",
+        "of": "11-hinode-urayasu",
+        "ok": true,
+        "slice": {
+          "start": 2,
+          "end": 11
+        }
+      }
+    },
+    "11-sogo-urayasu": {
+      "stops": 16,
+      "pathPoints": 229,
+      "maxGap_m": 24.7,
+      "maxPlatformDist_m": 13.6,
+      "pathHash": "54eb722473eee1ff9274a8e28e35bd97aa20aa427e8b130908ff51ca6271c87a",
+      "resolvedVersion": "2026-07-25-symbol-road-sogo-urayasu-v1",
+      "missingPlatforms": [],
+      "platformDists": [
+        {
+          "name": "総合公園",
+          "dist": 7.2
+        },
+        {
+          "name": "ベイサイドホテルエリア",
+          "dist": 6.8
+        },
+        {
+          "name": "ベイパーク",
+          "dist": 11.1
+        },
+        {
+          "name": "ベイモール",
+          "dist": 5.6
+        },
+        {
+          "name": "シンボルロード・パークシティ",
+          "dist": 5.4
+        },
+        {
+          "name": "日の出公民館",
+          "dist": 9.4
+        },
+        {
+          "name": "海風の街",
+          "dist": 7.1
+        },
+        {
+          "name": "明海大学前",
+          "dist": 7.7
+        },
+        {
+          "name": "入船中央エステート",
+          "dist": 11.1
+        },
+        {
+          "name": "新浦安駅",
+          "dist": 11.3
+        },
+        {
+          "name": "美浜東団地",
+          "dist": 7.1
+        },
+        {
+          "name": "海楽",
+          "dist": 8
+        },
+        {
+          "name": "消防本部前",
+          "dist": 13.6
+        },
+        {
+          "name": "猫実",
+          "dist": 8.5
+        },
+        {
+          "name": "神明裏",
+          "dist": 9.3
+        },
+        {
+          "name": "浦安駅入口",
+          "dist": 11.2
+        }
+      ],
+      "sliceMeta": {
+        "si": 60,
+        "ei": 288,
+        "startDist": 7.2,
+        "endDist": 11.2
+      },
+      "maxJoin_m": 0,
+      "note": "inbound mid/suffix 総合公園→浦安。",
+      "usedWaysSample": [
+        {
+          "wayId": 1338996638,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "startHint": true
+        },
+        {
+          "wayId": 1338996639,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 1338996640,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 368452494,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 26323335,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 1339039303,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 369356240,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 1338976295,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        }
+      ],
+      "orderIssues": [],
+      "usedWayCount": 36,
+      "mainlineCheck": {
+        "type": "suffix",
+        "of": "11-hinode-urayasu",
+        "ok": true,
+        "slice": {
+          "start": 2,
+          "end": 17
+        }
+      }
+    }
+  },
+  "blockers": [],
+  "forbiddenRelations": [
+    18419852
+  ],
+  "nameNormalization": {
+    "日の出南（墓地公園）": "日の出南"
+  },
+  "confirmedSystemCount": 11,
+  "wayConnectivity": {
+    "18352883": {
+      "maxJoin_m": 0,
+      "usedWayCount": 36,
+      "gapsOver1m": 0,
+      "ok": true
+    },
+    "18352884": {
+      "maxJoin_m": 0,
+      "usedWayCount": 50,
+      "gapsOver1m": 0,
+      "ok": true
+    }
+  }
+}

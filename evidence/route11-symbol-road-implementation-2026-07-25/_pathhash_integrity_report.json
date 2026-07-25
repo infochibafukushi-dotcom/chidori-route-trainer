@@ -1,0 +1,52 @@
+{
+  "startedAt": "2026-07-25T03:20:23.713Z",
+  "intact": {
+    "11-urayasu-hinode": {
+      "ok": true,
+      "pathInvalid": false,
+      "pathHash": "c28f5e3bf6a60258c94d39cd1d38fdf7ff529f4d7adf8f7fe79214419866bdab",
+      "bankHash": "c28f5e3bf6a60258c94d39cd1d38fdf7ff529f4d7adf8f7fe79214419866bdab",
+      "recomputed": "c28f5e3bf6a60258c94d39cd1d38fdf7ff529f4d7adf8f7fe79214419866bdab",
+      "hashMatch": true,
+      "resolvedVersion": "2026-07-25-symbol-road-urayasu-hinode-v1",
+      "expectedVersion": "2026-07-25-symbol-road-urayasu-hinode-v1",
+      "pathPoints": 324
+    },
+    "11-urayasu-sogo-via-hinode-kominkan": {
+      "ok": true,
+      "pathInvalid": false,
+      "pathHash": "8fcebfb768299feb39838ff08ba0fa4f248cf280f2e925f1e0fb9044d2edbc37",
+      "bankHash": "8fcebfb768299feb39838ff08ba0fa4f248cf280f2e925f1e0fb9044d2edbc37",
+      "recomputed": "8fcebfb768299feb39838ff08ba0fa4f248cf280f2e925f1e0fb9044d2edbc37",
+      "hashMatch": true,
+      "resolvedVersion": "2026-07-25-symbol-road-urayasu-sogo-via-hinode-kominkan-v1",
+      "expectedVersion": "2026-07-25-symbol-road-urayasu-sogo-via-hinode-kominkan-v1",
+      "pathPoints": 277
+    }
+  },
+  "tamper": {
+    "systemKey": "11-urayasu-hinode",
+    "bankHash": "c28f5e3bf6a60258c94d39cd1d38fdf7ff529f4d7adf8f7fe79214419866bdab",
+    "originalPoint": {
+      "lat": 35.64986106,
+      "lng": 139.91565903999998
+    },
+    "beforeButton": true,
+    "threw": "シンボルロード線の走行データを確認できません。\n系統：11-urayasu-hinode\n理由：pathHash不一致",
+    "pathInvalid": true,
+    "issueText": "pathHash不一致 / maxGap超過（39.4m > 30m）",
+    "messageHasPathHash": true,
+    "messageHasSymbolRoadBanner": true,
+    "statusText": "シンボルロード線の走行データを確認できません。\n系統：11-urayasu-hinode\n理由：pathHash不一致 / maxGap超過（39.4m > 30m）",
+    "afterButton": false,
+    "driveBlocked": true
+  },
+  "restore": {
+    "ok": true,
+    "pathInvalid": false,
+    "startButton": true
+  },
+  "productionFilesUnchanged": true,
+  "pass": true,
+  "finishedAt": "2026-07-25T03:20:27.578Z"
+}

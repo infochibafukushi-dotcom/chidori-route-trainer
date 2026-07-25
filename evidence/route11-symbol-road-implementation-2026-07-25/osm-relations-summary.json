@@ -1,0 +1,1175 @@
+{
+  "fetchedAt": "2026-07-25T01:54:43.083Z",
+  "route": "symbol-road-route11",
+  "knownPathSourceIds": [
+    18352885,
+    18352884,
+    18352883
+  ],
+  "forbiddenPathSourceIds": [
+    18419852
+  ],
+  "forbiddenNote": "18419852 must NOT be used as a path source unless later confirmed. Optional doc-only fetch only.",
+  "takasuKaihinParkNote": "高洲海浜公園 must NOT be treated as implementable without official confirmation.",
+  "relations": [
+    {
+      "id": 18352885,
+      "label": "route11 route_master",
+      "ok": true,
+      "source": "overpass-api.de",
+      "name": "東京ベイシティバス11系統 浦安駅入口-新浦安駅-日の出南",
+      "tags": {
+        "name": "東京ベイシティバス11系統 浦安駅入口-新浦安駅-日の出南",
+        "network": "シンボルロード線",
+        "operator": "東京ベイシティ交通",
+        "ref": "11",
+        "route_master": "bus",
+        "type": "route_master"
+      },
+      "memberCount": 2,
+      "wayMemberCount": 0,
+      "wayElementCount": 74,
+      "stopMemberCount": 0,
+      "stopRoleCount": 0,
+      "platformMemberCount": 0,
+      "nodeElementCount": 292,
+      "memberRoles": {
+        "": 2
+      },
+      "platformNames": [],
+      "platformsDetail": [],
+      "wayMemberIds": [],
+      "file": "osm-relation-18352885.json",
+      "mergedChildren": [
+        18352884,
+        18352883
+      ],
+      "mergeNote": "merged child relation geometries into master bundle"
+    },
+    {
+      "id": 18352884,
+      "label": "route11 浦安駅入口→日の出南 (outbound)",
+      "ok": true,
+      "source": "overpass-api.de",
+      "name": "東京ベイシティバス11系統 浦安駅入口⇒新浦安駅⇒日の出南",
+      "tags": {
+        "name": "東京ベイシティバス11系統 浦安駅入口⇒新浦安駅⇒日の出南",
+        "network": "シンボルロード線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "11",
+        "route": "bus",
+        "type": "route"
+      },
+      "memberCount": 68,
+      "wayMemberCount": 50,
+      "wayElementCount": 49,
+      "stopMemberCount": 18,
+      "stopRoleCount": 0,
+      "platformMemberCount": 18,
+      "nodeElementCount": 207,
+      "memberRoles": {
+        "platform_entry_only": 1,
+        "platform": 16,
+        "platform_exit_only": 1,
+        "": 50
+      },
+      "platformNames": [
+        "浦安駅入口",
+        "神明裏",
+        "猫実",
+        "消防本部前",
+        "海楽",
+        "美浜東団地",
+        "新浦安駅",
+        "入船中央エステート",
+        "明海大学前",
+        "海風の街",
+        "日の出公民館",
+        "シンボルロード・パークシティ",
+        "ベイモール",
+        "ベイパーク",
+        "ベイサイドホテルエリア",
+        "総合公園",
+        "新浦安温泉",
+        "日の出南（墓地公園）"
+      ],
+      "platformsDetail": [
+        {
+          "role": "platform_entry_only",
+          "type": "node",
+          "ref": 6764110352,
+          "name": "浦安駅入口",
+          "lat": 35.6647047,
+          "lon": 139.8949743,
+          "local_ref": "B",
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "local_ref": "B",
+            "name": "浦安駅入口",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform",
+            "wheelchair": "yes"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6764110349,
+          "name": "神明裏",
+          "lat": 35.6623799,
+          "lon": 139.8989516,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "神明裏",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1330897048,
+          "name": "猫実",
+          "lat": 35.6608375,
+          "lon": 139.9012946,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "猫実",
+            "name:en": "Nekozane",
+            "name:ja": "猫実",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1330401194,
+          "name": "消防本部前",
+          "lat": 35.6594904,
+          "lon": 139.9034126,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "消防本部前",
+            "name:en": "Shoubou Honbu Mae",
+            "name:ja": "消防本部前",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 12369418230,
+          "name": "海楽",
+          "lat": 35.6576449,
+          "lon": 139.9059641,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "海楽",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1330406914,
+          "name": "美浜東団地",
+          "lat": 35.6522225,
+          "lon": 139.9128348,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "美浜東団地",
+            "name:ja": "美浜東団地",
+            "name:ja-Latn": "Mihama Higashi Danchi",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 8415001162,
+          "name": "新浦安駅",
+          "lat": 35.6500008,
+          "lon": 139.9137632,
+          "local_ref": "D",
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "local_ref": "D",
+            "name": "新浦安駅",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11425579726,
+          "name": "入船中央エステート",
+          "lat": 35.6489816,
+          "lon": 139.9168586,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "covered": "yes",
+            "highway": "bus_stop",
+            "name": "入船中央エステート",
+            "operator": "東京ベイシティ交通",
+            "passenger_information_display": "yes",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6813952156,
+          "name": "明海大学前",
+          "lat": 35.6460348,
+          "lon": 139.9205782,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "明海大学前",
+            "operator": "東京ベイシティ交通",
+            "passenger_information_display": "yes",
+            "public_transport": "platform",
+            "shelter": "yes"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1312616399,
+          "name": "海風の街",
+          "lat": 35.6445955,
+          "lon": 139.922359,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "海風の街",
+            "operator": "東京ベイシティ交通",
+            "passenger_information_display": "yes",
+            "public_transport": "platform",
+            "shelter": "yes"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11513466340,
+          "name": "日の出公民館",
+          "lat": 35.6434006,
+          "lon": 139.9238746,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "日の出公民館",
+            "operator": "東京ベイシティ交通",
+            "passenger_information_display": "yes",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11513466336,
+          "name": "シンボルロード・パークシティ",
+          "lat": 35.6425816,
+          "lon": 139.9248919,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "シンボルロード・パークシティ",
+            "operator": "東京ベイシティ交通",
+            "passenger_information_display": "yes",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11513466333,
+          "name": "ベイモール",
+          "lat": 35.6412862,
+          "lon": 139.9265112,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "ベイモール",
+            "operator": "東京ベイシティ交通",
+            "passenger_information_display": "yes",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11578740590,
+          "name": "ベイパーク",
+          "lat": 35.6399947,
+          "lon": 139.9281165,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "ベイパーク",
+            "operator": "東京ベイシティ交通",
+            "passenger_information_display": "yes",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11513466416,
+          "name": "ベイサイドホテルエリア",
+          "lat": 35.6382279,
+          "lon": 139.9302502,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "ベイサイドホテルエリア",
+            "operator": "東京ベイシティ交通",
+            "passenger_information_display": "yes",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6720667160,
+          "name": "総合公園",
+          "lat": 35.6373096,
+          "lon": 139.9309872,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "総合公園",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1312639512,
+          "name": "新浦安温泉",
+          "lat": 35.63937,
+          "lon": 139.9317584,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "新浦安温泉",
+            "operator": "東京ベイシティ交通",
+            "passenger_information_display": "yes",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform_exit_only",
+          "type": "node",
+          "ref": 6899769112,
+          "name": "日の出南（墓地公園）",
+          "lat": 35.6390708,
+          "lon": 139.9337073,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "日の出南（墓地公園）",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        }
+      ],
+      "wayMemberIds": [
+        1337341819,
+        163404380,
+        1342413246,
+        1339150559,
+        720402605,
+        1125716447,
+        1125716446,
+        26320561,
+        1125716452,
+        1125716443,
+        26320821,
+        1125716442,
+        1125716457,
+        1125716454,
+        26320819,
+        26320596,
+        720406630,
+        906161756,
+        720406629,
+        906161755,
+        1337353918,
+        1339035467,
+        1339150560,
+        1341526745,
+        906161758,
+        1342408590,
+        1342409930,
+        1340739633,
+        906161743,
+        369356254,
+        906161757,
+        720406630,
+        1338996611,
+        720406627,
+        1341529159,
+        1340739632,
+        1241264348,
+        847288816,
+        1338976291,
+        847288814,
+        1338996592,
+        847288113,
+        369356240,
+        1338976295,
+        1339039302,
+        1339039303,
+        26323335,
+        1339039304,
+        1338996640,
+        1338996641
+      ],
+      "file": "osm-relation-18352884.json",
+      "mergedChildren": [],
+      "mergeNote": null
+    },
+    {
+      "id": 18352883,
+      "label": "route11 日の出南→浦安駅入口 (inbound)",
+      "ok": true,
+      "source": "overpass-api.de",
+      "name": "東京ベイシティバス11系統 日の出南⇒新浦安駅⇒浦安駅入口",
+      "tags": {
+        "name": "東京ベイシティバス11系統 日の出南⇒新浦安駅⇒浦安駅入口",
+        "network": "シンボルロード線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "11",
+        "route": "bus",
+        "type": "route"
+      },
+      "memberCount": 54,
+      "wayMemberCount": 36,
+      "wayElementCount": 36,
+      "stopMemberCount": 18,
+      "stopRoleCount": 0,
+      "platformMemberCount": 18,
+      "nodeElementCount": 169,
+      "memberRoles": {
+        "platform_entry_only": 1,
+        "platform": 16,
+        "platform_exit_only": 1,
+        "": 36
+      },
+      "platformNames": [
+        "日の出南（墓地公園）",
+        "新浦安温泉",
+        "総合公園",
+        "ベイサイドホテルエリア",
+        "ベイパーク",
+        "ベイモール",
+        "シンボルロード・パークシティ",
+        "日の出公民館",
+        "海風の街",
+        "明海大学前",
+        "入船中央エステート",
+        "新浦安駅",
+        "美浜東団地",
+        "海楽",
+        "消防本部前",
+        "猫実",
+        "神明裏",
+        "浦安駅入口"
+      ],
+      "platformsDetail": [
+        {
+          "role": "platform_entry_only",
+          "type": "node",
+          "ref": 6899769112,
+          "name": "日の出南（墓地公園）",
+          "lat": 35.6390708,
+          "lon": 139.9337073,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "日の出南（墓地公園）",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11578740591,
+          "name": "新浦安温泉",
+          "lat": 35.6391794,
+          "lon": 139.9316879,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "新浦安温泉",
+            "operator": "東京ベイシティ交通",
+            "passenger_information_display": "yes",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6720667160,
+          "name": "総合公園",
+          "lat": 35.6373096,
+          "lon": 139.9309872,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "総合公園",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6720667159,
+          "name": "ベイサイドホテルエリア",
+          "lat": 35.638018,
+          "lon": 139.9301879,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "ベイサイドホテルエリア",
+            "operator": "東京ベイシティ交通",
+            "passenger_information_display": "yes",
+            "public_transport": "platform",
+            "shelter": "yes"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1312639490,
+          "name": "ベイパーク",
+          "lat": 35.6397865,
+          "lon": 139.9279072,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "covered": "yes",
+            "highway": "bus_stop",
+            "name": "ベイパーク",
+            "operator": "東京ベイシティ交通",
+            "passenger_information_display": "yes",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6720667158,
+          "name": "ベイモール",
+          "lat": 35.6406782,
+          "lon": 139.9267945,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "ベイモール",
+            "operator": "東京ベイシティ交通",
+            "passenger_information_display": "yes",
+            "public_transport": "platform",
+            "shelter": "yes"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1312639507,
+          "name": "シンボルロード・パークシティ",
+          "lat": 35.641903,
+          "lon": 139.9252613,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "シンボルロード・パークシティ",
+            "operator": "東京ベイシティ交通",
+            "passenger_information_display": "yes",
+            "public_transport": "platform",
+            "shelter": "yes"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1312711917,
+          "name": "日の出公民館",
+          "lat": 35.6432923,
+          "lon": 139.9234638,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "日の出公民館",
+            "operator": "東京ベイシティ交通",
+            "passenger_information_display": "yes",
+            "public_transport": "platform",
+            "shelter": "yes"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1312670873,
+          "name": "海風の街",
+          "lat": 35.6442605,
+          "lon": 139.922292,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "海風の街",
+            "operator": "東京ベイシティ交通",
+            "passenger_information_display": "yes",
+            "public_transport": "platform",
+            "shelter": "yes"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1312670870,
+          "name": "明海大学前",
+          "lat": 35.6458877,
+          "lon": 139.9202433,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "明海大学前",
+            "operator": "東京ベイシティ交通",
+            "passenger_information_display": "yes",
+            "public_transport": "platform",
+            "shelter": "yes"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1312711918,
+          "name": "入船中央エステート",
+          "lat": 35.648721,
+          "lon": 139.9166753,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "入船中央エステート",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 8415001143,
+          "name": "新浦安駅",
+          "lat": 35.6506245,
+          "lon": 139.9142535,
+          "local_ref": "H",
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "local_ref": "H",
+            "name": "新浦安駅",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1330409783,
+          "name": "美浜東団地",
+          "lat": 35.6522648,
+          "lon": 139.9122584,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "美浜東団地",
+            "name:ja": "美浜東団地",
+            "name:ja-Latn": "Mihama Higashi Danchi",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6720667167,
+          "name": "海楽",
+          "lat": 35.6573684,
+          "lon": 139.9059647,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "海楽",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 12368996379,
+          "name": "消防本部前",
+          "lat": 35.6589613,
+          "lon": 139.9038774,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "消防本部前",
+            "name:en": "Shoubou Honbu Mae",
+            "name:ja": "消防本部前",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 2900279301,
+          "name": "猫実",
+          "lat": 35.6611395,
+          "lon": 139.9005341,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "猫実",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6764110350,
+          "name": "神明裏",
+          "lat": 35.6628205,
+          "lon": 139.8979314,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "神明裏",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform",
+            "wheelchair": "yes"
+          }
+        },
+        {
+          "role": "platform_exit_only",
+          "type": "node",
+          "ref": 6764110353,
+          "name": "浦安駅入口",
+          "lat": 35.6644872,
+          "lon": 139.8950364,
+          "local_ref": "X",
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "local_ref": "X",
+            "name": "浦安駅入口",
+            "note": "降車専用",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform",
+            "wheelchair": "yes"
+          }
+        }
+      ],
+      "wayMemberIds": [
+        1338996638,
+        1338996639,
+        1338996640,
+        368452494,
+        26323335,
+        1339039303,
+        369356240,
+        1338976295,
+        369356241,
+        1342408150,
+        1338996593,
+        847288115,
+        1342408151,
+        1338976292,
+        847288818,
+        1241264346,
+        1341518494,
+        1340739631,
+        847288812,
+        1338996609,
+        720406628,
+        720406632,
+        26320590,
+        1125716455,
+        1125716456,
+        1125716445,
+        216617622,
+        1125716444,
+        1125716453,
+        26349778,
+        1125716446,
+        1125716447,
+        720402605,
+        1339150559,
+        1342413246,
+        163404380
+      ],
+      "file": "osm-relation-18352883.json",
+      "mergedChildren": [],
+      "mergeNote": null
+    }
+  ],
+  "forbiddenCandidate": {
+    "id": 18419852,
+    "ok": true,
+    "forbidden": true,
+    "pathSourceAllowed": false,
+    "source": "overpass-api.de",
+    "name": "東京ベイシティバス11系統 高洲海浜公園⇒ベイパーク⇒新浦安駅",
+    "tags": {
+      "name": "東京ベイシティバス11系統 高洲海浜公園⇒ベイパーク⇒新浦安駅",
+      "network": "シンボルロード線",
+      "operator": "東京ベイシティ交通",
+      "public_transport:version": "2",
+      "ref": "11",
+      "route": "bus",
+      "type": "route"
+    },
+    "wayMemberCount": 17,
+    "platformNames": [
+      "高洲海浜公園",
+      "ハイアットリージェンシー",
+      "明海五丁目",
+      "ベイパーク",
+      "ベイモール",
+      "シンボルロード・パークシティ",
+      "日の出公民館",
+      "海風の街",
+      "明海大学前",
+      "入船中央エステート",
+      "新浦安駅"
+    ],
+    "file": "_forbidden_candidate_18419852.json"
+  },
+  "ref11Search": {
+    "fetchedAt": "2026-07-25T01:57:13.721Z",
+    "ok": true,
+    "query": {
+      "type": "route|route_master",
+      "route": "bus",
+      "ref": "11",
+      "bbox": {
+        "south": 35.62,
+        "west": 139.88,
+        "north": 35.67,
+        "east": 139.93
+      },
+      "around": {
+        "lat": 35.64,
+        "lon": 139.9,
+        "radiusM": 12000
+      }
+    },
+    "source": "overpass-api.de",
+    "method": "POST",
+    "candidateCount": 4,
+    "candidates": [
+      {
+        "id": 18352885,
+        "name": "東京ベイシティバス11系統 浦安駅入口-新浦安駅-日の出南",
+        "from": null,
+        "to": null,
+        "ref": "11",
+        "type": "route_master",
+        "route": "bus",
+        "tags": {
+          "name": "東京ベイシティバス11系統 浦安駅入口-新浦安駅-日の出南",
+          "network": "シンボルロード線",
+          "operator": "東京ベイシティ交通",
+          "ref": "11",
+          "route_master": "bus",
+          "type": "route_master"
+        },
+        "isKnownPathSource": true,
+        "isForbiddenPathSource": false,
+        "note": "Included from direct fetch; Overpass spatial query did not return route_master"
+      },
+      {
+        "id": 18352883,
+        "name": "東京ベイシティバス11系統 日の出南⇒新浦安駅⇒浦安駅入口",
+        "from": null,
+        "to": null,
+        "ref": "11",
+        "type": "route",
+        "route": "bus",
+        "tags": {
+          "name": "東京ベイシティバス11系統 日の出南⇒新浦安駅⇒浦安駅入口",
+          "network": "シンボルロード線",
+          "operator": "東京ベイシティ交通",
+          "public_transport:version": "2",
+          "ref": "11",
+          "route": "bus",
+          "type": "route"
+        },
+        "isKnownPathSource": true,
+        "isForbiddenPathSource": false,
+        "note": null
+      },
+      {
+        "id": 18352884,
+        "name": "東京ベイシティバス11系統 浦安駅入口⇒新浦安駅⇒日の出南",
+        "from": null,
+        "to": null,
+        "ref": "11",
+        "type": "route",
+        "route": "bus",
+        "tags": {
+          "name": "東京ベイシティバス11系統 浦安駅入口⇒新浦安駅⇒日の出南",
+          "network": "シンボルロード線",
+          "operator": "東京ベイシティ交通",
+          "public_transport:version": "2",
+          "ref": "11",
+          "route": "bus",
+          "type": "route"
+        },
+        "isKnownPathSource": true,
+        "isForbiddenPathSource": false,
+        "note": null
+      },
+      {
+        "id": 18419852,
+        "name": "東京ベイシティバス11系統 高洲海浜公園⇒ベイパーク⇒新浦安駅",
+        "from": null,
+        "to": null,
+        "ref": "11",
+        "type": "route",
+        "route": "bus",
+        "tags": {
+          "name": "東京ベイシティバス11系統 高洲海浜公園⇒ベイパーク⇒新浦安駅",
+          "network": "シンボルロード線",
+          "operator": "東京ベイシティ交通",
+          "public_transport:version": "2",
+          "ref": "11",
+          "route": "bus",
+          "type": "route"
+        },
+        "isKnownPathSource": false,
+        "isForbiddenPathSource": true,
+        "note": "NOT implementable without official confirmation (高洲海浜公園)"
+      }
+    ],
+    "knownPathSourceIds": [
+      18352885,
+      18352884,
+      18352883
+    ],
+    "forbiddenPathSourceIds": [
+      18419852
+    ],
+    "noteMaster": "route_master 18352885 added from direct fetch (not returned by Overpass spatial query)",
+    "warning": "Do not treat 高洲海浜公園 variants as implementable without official confirmation. Do not use 18419852 as a path source unless later confirmed."
+  },
+  "nameChecks": {
+    "18352883": {
+      "label": "route11 日の出南→浦安駅入口 (inbound)",
+      "name": "東京ベイシティバス11系統 日の出南⇒新浦安駅⇒浦安駅入口",
+      "allNames": [
+        "日の出南（墓地公園）",
+        "新浦安温泉",
+        "総合公園",
+        "ベイサイドホテルエリア",
+        "ベイパーク",
+        "ベイモール",
+        "シンボルロード・パークシティ",
+        "日の出公民館",
+        "海風の街",
+        "明海大学前",
+        "入船中央エステート",
+        "新浦安駅",
+        "美浜東団地",
+        "海楽",
+        "消防本部前",
+        "猫実",
+        "神明裏",
+        "浦安駅入口"
+      ],
+      "hits": [
+        {
+          "needle": "浦安駅入口",
+          "found": true,
+          "matches": [
+            "浦安駅入口"
+          ]
+        },
+        {
+          "needle": "浦安駅",
+          "found": true,
+          "matches": [
+            "新浦安駅",
+            "浦安駅入口"
+          ]
+        },
+        {
+          "needle": "日の出南",
+          "found": true,
+          "matches": [
+            "日の出南（墓地公園）"
+          ]
+        },
+        {
+          "needle": "シンボル",
+          "found": true,
+          "matches": [
+            "シンボルロード・パークシティ"
+          ]
+        },
+        {
+          "needle": "高洲海浜公園",
+          "found": false,
+          "matches": []
+        }
+      ],
+      "hasTakasuKaihinPark": false
+    },
+    "18352884": {
+      "label": "route11 浦安駅入口→日の出南 (outbound)",
+      "name": "東京ベイシティバス11系統 浦安駅入口⇒新浦安駅⇒日の出南",
+      "allNames": [
+        "浦安駅入口",
+        "神明裏",
+        "猫実",
+        "消防本部前",
+        "海楽",
+        "美浜東団地",
+        "新浦安駅",
+        "入船中央エステート",
+        "明海大学前",
+        "海風の街",
+        "日の出公民館",
+        "シンボルロード・パークシティ",
+        "ベイモール",
+        "ベイパーク",
+        "ベイサイドホテルエリア",
+        "総合公園",
+        "新浦安温泉",
+        "日の出南（墓地公園）"
+      ],
+      "hits": [
+        {
+          "needle": "浦安駅入口",
+          "found": true,
+          "matches": [
+            "浦安駅入口"
+          ]
+        },
+        {
+          "needle": "浦安駅",
+          "found": true,
+          "matches": [
+            "浦安駅入口",
+            "新浦安駅"
+          ]
+        },
+        {
+          "needle": "日の出南",
+          "found": true,
+          "matches": [
+            "日の出南（墓地公園）"
+          ]
+        },
+        {
+          "needle": "シンボル",
+          "found": true,
+          "matches": [
+            "シンボルロード・パークシティ"
+          ]
+        },
+        {
+          "needle": "高洲海浜公園",
+          "found": false,
+          "matches": []
+        }
+      ],
+      "hasTakasuKaihinPark": false
+    },
+    "18352885": {
+      "label": "route11 route_master",
+      "name": "東京ベイシティバス11系統 浦安駅入口-新浦安駅-日の出南",
+      "allNames": [],
+      "hits": [
+        {
+          "needle": "浦安駅入口",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "浦安駅",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "日の出南",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "シンボル",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "高洲海浜公園",
+          "found": false,
+          "matches": []
+        }
+      ],
+      "hasTakasuKaihinPark": false
+    }
+  },
+  "fetchedAtSearchRetry": "2026-07-25T01:57:13.725Z"
+}

@@ -1,0 +1,105 @@
+[
+  {
+    "file": "11-urayasu-hinode-start-z19.png",
+    "label": "11-urayasu-hinode 浦安駅入口→神明裏",
+    "headingDeg": 303
+  },
+  {
+    "file": "11-urayasu-shinurayasu-entry-z19.png",
+    "label": "11-urayasu-hinode 美浜東団地→新浦安駅",
+    "headingDeg": 96
+  },
+  {
+    "file": "11-urayasu-hinode-kominkan-z19.png",
+    "label": "11-urayasu-hinode 海風の街→日の出公民館",
+    "headingDeg": 308
+  },
+  {
+    "file": "11-urayasu-symbol-pc-z19.png",
+    "label": "11-urayasu-hinode 日の出公民館→シンボルロード・パークシティ",
+    "headingDeg": 0
+  },
+  {
+    "file": "11-urayasu-baypark-z19.png",
+    "label": "11-urayasu-hinode ベイモール→ベイパーク",
+    "headingDeg": 309
+  },
+  {
+    "file": "11-urayasu-sogo-z19.png",
+    "label": "11-urayasu-hinode ベイサイドホテルエリア→総合公園",
+    "headingDeg": 72
+  },
+  {
+    "file": "11-urayasu-hinode-end-z19.png",
+    "label": "11-urayasu-hinode 新浦安温泉→日の出南",
+    "headingDeg": 189
+  },
+  {
+    "file": "11-shinurayasu-hinode-start-z19.png",
+    "label": "11-shinurayasu-hinode 新浦安駅→入船中央エステート",
+    "headingDeg": 302
+  },
+  {
+    "file": "11-shinurayasu-baypark-end-z19.png",
+    "label": "11-shinurayasu-baypark ベイモール→ベイパーク",
+    "headingDeg": 309
+  },
+  {
+    "file": "11-shinurayasu-sogo-end-z19.png",
+    "label": "11-shinurayasu-sogo ベイサイドホテルエリア→総合公園",
+    "headingDeg": 72
+  },
+  {
+    "file": "11-hinode-urayasu-start-z19.png",
+    "label": "11-hinode-urayasu 日の出南→新浦安温泉",
+    "headingDeg": 132
+  },
+  {
+    "file": "11-hinode-sogo-z19.png",
+    "label": "11-hinode-urayasu 新浦安温泉→総合公園",
+    "headingDeg": 325
+  },
+  {
+    "file": "11-hinode-kominkan-z19.png",
+    "label": "11-hinode-urayasu シンボルロード・パークシティ→日の出公民館",
+    "headingDeg": 129
+  },
+  {
+    "file": "11-hinode-shinurayasu-z19.png",
+    "label": "11-hinode-shinurayasu 入船中央エステート→新浦安駅",
+    "headingDeg": 127
+  },
+  {
+    "file": "11-sogo-shinurayasu-start-z19.png",
+    "label": "11-sogo-shinurayasu 総合公園→ベイサイドホテルエリア",
+    "headingDeg": 130
+  },
+  {
+    "file": "11-sogo-urayasu-end-z19.png",
+    "label": "11-sogo-urayasu 神明裏→浦安駅入口",
+    "headingDeg": 120
+  },
+  {
+    "file": "11-urayasu-shinurayasu-end-z19.png",
+    "label": "11-urayasu-shinurayasu 美浜東団地→新浦安駅",
+    "headingDeg": 96
+  },
+  {
+    "file": "11-urayasu-baypark-short-end-z19.png",
+    "label": "11-urayasu-baypark ベイモール→ベイパーク",
+    "headingDeg": 309
+  },
+  {
+    "file": "11-urayasu-sogo-short-end-z19.png",
+    "label": "11-urayasu-sogo-via-hinode-kominkan ベイサイドホテルエリア→総合公園",
+    "headingDeg": 72
+  },
+  {
+    "file": "ui-pc-route10.png",
+    "label": "route-11 PC UI"
+  },
+  {
+    "file": "ui-sp390-route10.png",
+    "label": "route-11 SP390 UI"
+  }
+]

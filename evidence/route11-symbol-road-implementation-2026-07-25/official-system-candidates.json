@@ -1,0 +1,923 @@
+{
+  "candidateCount": 11,
+  "confirmedSystems": [
+    {
+      "proposedSystemKey": "11-hinode-shinurayasu",
+      "title": "新浦安駅行き（日の出南発）",
+      "departure": "日の出南",
+      "destination": "新浦安駅",
+      "viaKey": "hinode-kominkan",
+      "stopNames": [
+        "日の出南",
+        "新浦安温泉",
+        "総合公園",
+        "ベイサイドホテルエリア",
+        "ベイパーク",
+        "ベイモール",
+        "シンボルロード・パークシティ",
+        "日の出公民館",
+        "海風の街",
+        "明海大学前",
+        "入船中央エステート",
+        "新浦安駅"
+      ],
+      "stopIds": [
+        "00020849",
+        "00020622",
+        "00020745",
+        "00020681",
+        "00020735",
+        "00020736",
+        "00020856",
+        "00020652",
+        "00020848",
+        "00020713",
+        "00020663",
+        "00020619"
+      ],
+      "idComplete": true,
+      "berth": "01",
+      "berths": [
+        "01"
+      ],
+      "night": false,
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cf0013/stops?departure-busstop=00020849-1&course=0008200258&datetime=2026-07-25T10:29:00%2B09:00",
+      "tripSignature": "11|00020849-1|00020619|00020849>00020622>00020745>00020681>00020735>00020736>00020856>00020652>00020848>00020713>00020663>00020619|>>>>>>>>>>>|regular",
+      "stopCount": 12,
+      "frequency": 1,
+      "dayLabels": [
+        "weekday"
+      ]
+    },
+    {
+      "proposedSystemKey": "11-hinode-urayasu",
+      "title": "浦安駅入口行き（日の出南発）",
+      "departure": "日の出南",
+      "destination": "浦安駅入口",
+      "viaKey": "hinode-kominkan",
+      "stopNames": [
+        "日の出南",
+        "新浦安温泉",
+        "総合公園",
+        "ベイサイドホテルエリア",
+        "ベイパーク",
+        "ベイモール",
+        "シンボルロード・パークシティ",
+        "日の出公民館",
+        "海風の街",
+        "明海大学前",
+        "入船中央エステート",
+        "新浦安駅",
+        "美浜東団地",
+        "海楽",
+        "消防本部前",
+        "猫実",
+        "神明裏",
+        "浦安駅入口"
+      ],
+      "stopIds": [
+        "00020849",
+        "00020622",
+        "00020745",
+        "00020681",
+        "00020735",
+        "00020736",
+        "00020856",
+        "00020652",
+        "00020848",
+        "00020713",
+        "00020663",
+        "00020619",
+        "00020670",
+        "00020845",
+        "00020877",
+        "00020666",
+        "00020623",
+        "00020739"
+      ],
+      "idComplete": true,
+      "berth": "01",
+      "berths": [
+        "01"
+      ],
+      "night": false,
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cd0001/stops?departure-busstop=00020849-1&course=0008200256&datetime=2026-07-27T11:53:00%2B09:00",
+      "tripSignature": "11|00020849-1|00020739|00020849>00020622>00020745>00020681>00020735>00020736>00020856>00020652>00020848>00020713>00020663>00020619>00020670>00020845>00020877>00020666>00020623>00020739|>>>>>>>>>>>>>>>>>|regular",
+      "stopCount": 18,
+      "frequency": 1,
+      "dayLabels": [
+        "weekday"
+      ]
+    },
+    {
+      "proposedSystemKey": "11-shinurayasu-baypark",
+      "title": "ベイパーク行き（新浦安駅発）",
+      "departure": "新浦安駅",
+      "destination": "ベイパーク",
+      "viaKey": "hinode-kominkan",
+      "stopNames": [
+        "新浦安駅",
+        "入船中央エステート",
+        "明海大学前",
+        "海風の街",
+        "日の出公民館",
+        "シンボルロード・パークシティ",
+        "ベイモール",
+        "ベイパーク"
+      ],
+      "stopIds": [
+        "00020619",
+        "00020663",
+        "00020713",
+        "00020848",
+        "00020652",
+        "00020856",
+        "00020736",
+        "00020735"
+      ],
+      "idComplete": true,
+      "berth": "11",
+      "berths": [
+        "11"
+      ],
+      "night": false,
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d70002/stops?departure-busstop=00020619-1&course=0008200266&datetime=2026-07-27T08:51:00%2B09:00",
+      "tripSignature": "11|00020619-1|00020735|00020619>00020663>00020713>00020848>00020652>00020856>00020736>00020735|>>>>>>>|regular",
+      "stopCount": 8,
+      "frequency": 1,
+      "dayLabels": [
+        "weekday"
+      ]
+    },
+    {
+      "proposedSystemKey": "11-shinurayasu-hinode",
+      "title": "日の出南行き（新浦安駅発）",
+      "departure": "新浦安駅",
+      "destination": "日の出南",
+      "viaKey": "hinode-kominkan",
+      "stopNames": [
+        "新浦安駅",
+        "入船中央エステート",
+        "明海大学前",
+        "海風の街",
+        "日の出公民館",
+        "シンボルロード・パークシティ",
+        "ベイモール",
+        "ベイパーク",
+        "ベイサイドホテルエリア",
+        "総合公園",
+        "新浦安温泉",
+        "日の出南"
+      ],
+      "stopIds": [
+        "00020619",
+        "00020663",
+        "00020713",
+        "00020848",
+        "00020652",
+        "00020856",
+        "00020736",
+        "00020735",
+        "00020681",
+        "00020745",
+        "00020622",
+        "00020849"
+      ],
+      "idComplete": true,
+      "berth": "11",
+      "berths": [
+        "11"
+      ],
+      "night": false,
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d00008/stops?departure-busstop=00020619-1&course=0008200259&datetime=2026-07-27T10:19:00%2B09:00",
+      "tripSignature": "11|00020619-1|00020849|00020619>00020663>00020713>00020848>00020652>00020856>00020736>00020735>00020681>00020745>00020622>00020849|>>>>>>>>>>>|regular",
+      "stopCount": 12,
+      "frequency": 1,
+      "dayLabels": [
+        "weekday"
+      ]
+    },
+    {
+      "proposedSystemKey": "11-shinurayasu-sogo",
+      "title": "総合公園行き（新浦安駅発）",
+      "departure": "新浦安駅",
+      "destination": "総合公園",
+      "viaKey": "hinode-kominkan",
+      "stopNames": [
+        "新浦安駅",
+        "入船中央エステート",
+        "明海大学前",
+        "海風の街",
+        "日の出公民館",
+        "シンボルロード・パークシティ",
+        "ベイモール",
+        "ベイパーク",
+        "ベイサイドホテルエリア",
+        "総合公園"
+      ],
+      "stopIds": [
+        "00020619",
+        "00020663",
+        "00020713",
+        "00020848",
+        "00020652",
+        "00020856",
+        "00020736",
+        "00020735",
+        "00020681",
+        "00020745"
+      ],
+      "idComplete": true,
+      "berth": "11",
+      "berths": [
+        "11"
+      ],
+      "night": false,
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d40000/stops?departure-busstop=00020619-1&course=0008200263&datetime=2026-07-27T06:00:00%2B09:00",
+      "tripSignature": "11|00020619-1|00020745|00020619>00020663>00020713>00020848>00020652>00020856>00020736>00020735>00020681>00020745|>>>>>>>>>|regular",
+      "stopCount": 10,
+      "frequency": 1,
+      "dayLabels": [
+        "weekday"
+      ]
+    },
+    {
+      "proposedSystemKey": "11-sogo-shinurayasu",
+      "title": "新浦安駅行き（総合公園発）",
+      "departure": "総合公園",
+      "destination": "新浦安駅",
+      "viaKey": "hinode-kominkan",
+      "stopNames": [
+        "総合公園",
+        "ベイサイドホテルエリア",
+        "ベイパーク",
+        "ベイモール",
+        "シンボルロード・パークシティ",
+        "日の出公民館",
+        "海風の街",
+        "明海大学前",
+        "入船中央エステート",
+        "新浦安駅"
+      ],
+      "stopIds": [
+        "00020745",
+        "00020681",
+        "00020735",
+        "00020736",
+        "00020856",
+        "00020652",
+        "00020848",
+        "00020713",
+        "00020663",
+        "00020619"
+      ],
+      "idComplete": true,
+      "berth": "04",
+      "berths": [
+        "04"
+      ],
+      "night": false,
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30000/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-07-27T06:18:00%2B09:00",
+      "tripSignature": "11|00020745-1|00020619|00020745>00020681>00020735>00020736>00020856>00020652>00020848>00020713>00020663>00020619|>>>>>>>>>|regular",
+      "stopCount": 10,
+      "frequency": 1,
+      "dayLabels": [
+        "weekday"
+      ]
+    },
+    {
+      "proposedSystemKey": "11-sogo-urayasu",
+      "title": "浦安駅入口行き（総合公園発）",
+      "departure": "総合公園",
+      "destination": "浦安駅入口",
+      "viaKey": "hinode-kominkan",
+      "stopNames": [
+        "総合公園",
+        "ベイサイドホテルエリア",
+        "ベイパーク",
+        "ベイモール",
+        "シンボルロード・パークシティ",
+        "日の出公民館",
+        "海風の街",
+        "明海大学前",
+        "入船中央エステート",
+        "新浦安駅",
+        "美浜東団地",
+        "海楽",
+        "消防本部前",
+        "猫実",
+        "神明裏",
+        "浦安駅入口"
+      ],
+      "stopIds": [
+        "00020745",
+        "00020681",
+        "00020735",
+        "00020736",
+        "00020856",
+        "00020652",
+        "00020848",
+        "00020713",
+        "00020663",
+        "00020619",
+        "00020670",
+        "00020845",
+        "00020877",
+        "00020666",
+        "00020623",
+        "00020739"
+      ],
+      "idComplete": true,
+      "berth": "01",
+      "berths": [
+        "01"
+      ],
+      "night": false,
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d10000/stops?departure-busstop=00020745-1&course=0008200260&datetime=2026-07-27T06:42:00%2B09:00",
+      "tripSignature": "11|00020745-1|00020739|00020745>00020681>00020735>00020736>00020856>00020652>00020848>00020713>00020663>00020619>00020670>00020845>00020877>00020666>00020623>00020739|>>>>>>>>>>>>>>>|regular",
+      "stopCount": 16,
+      "frequency": 1,
+      "dayLabels": [
+        "weekday"
+      ],
+      "auditNote": "sample upgraded to 総合公園 departure; confirmed 【11系統】 2026-07-25"
+    },
+    {
+      "proposedSystemKey": "11-urayasu-baypark",
+      "title": "ベイパーク行き（浦安駅入口発）",
+      "departure": "浦安駅入口",
+      "destination": "ベイパーク",
+      "viaKey": "hinode-kominkan",
+      "stopNames": [
+        "浦安駅入口",
+        "神明裏",
+        "猫実",
+        "消防本部前",
+        "海楽",
+        "美浜東団地",
+        "新浦安駅",
+        "入船中央エステート",
+        "明海大学前",
+        "海風の街",
+        "日の出公民館",
+        "シンボルロード・パークシティ",
+        "ベイモール",
+        "ベイパーク"
+      ],
+      "stopIds": [
+        "00020739",
+        "00020623",
+        "00020666",
+        "00020877",
+        "00020845",
+        "00020670",
+        "00020619",
+        "00020663",
+        "00020713",
+        "00020848",
+        "00020652",
+        "00020856",
+        "00020736",
+        "00020735"
+      ],
+      "idComplete": true,
+      "berth": "11",
+      "berths": [
+        "11"
+      ],
+      "night": false,
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d90001/stops?departure-busstop=00020739-1&course=0008200268&datetime=2026-07-25T17:34:00%2B09:00",
+      "tripSignature": "11|00020739-1|00020735|00020739>00020623>00020666>00020877>00020845>00020670>00020619>00020663>00020713>00020848>00020652>00020856>00020736>00020735|>>>>>>>>>>>>>|regular",
+      "stopCount": 14,
+      "frequency": 1,
+      "dayLabels": [
+        "weekday"
+      ]
+    },
+    {
+      "proposedSystemKey": "11-urayasu-hinode",
+      "title": "日の出南行き（浦安駅入口発）",
+      "departure": "浦安駅入口",
+      "destination": "日の出南",
+      "viaKey": "hinode-kominkan",
+      "stopNames": [
+        "浦安駅入口",
+        "神明裏",
+        "猫実",
+        "消防本部前",
+        "海楽",
+        "美浜東団地",
+        "新浦安駅",
+        "入船中央エステート",
+        "明海大学前",
+        "海風の街",
+        "日の出公民館",
+        "シンボルロード・パークシティ",
+        "ベイモール",
+        "ベイパーク",
+        "ベイサイドホテルエリア",
+        "総合公園",
+        "新浦安温泉",
+        "日の出南"
+      ],
+      "stopIds": [
+        "00020739",
+        "00020623",
+        "00020666",
+        "00020877",
+        "00020845",
+        "00020670",
+        "00020619",
+        "00020663",
+        "00020713",
+        "00020848",
+        "00020652",
+        "00020856",
+        "00020736",
+        "00020735",
+        "00020681",
+        "00020745",
+        "00020622",
+        "00020849"
+      ],
+      "idComplete": true,
+      "berth": "11",
+      "berths": [
+        "11"
+      ],
+      "night": false,
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80ce0003/stops?departure-busstop=00020739-1&course=0008200257&datetime=2026-07-25T10:33:00%2B09:00",
+      "tripSignature": "11|00020739-1|00020849|00020739>00020623>00020666>00020877>00020845>00020670>00020619>00020663>00020713>00020848>00020652>00020856>00020736>00020735>00020681>00020745>00020622>00020849|>>>>>>>>>>>>>>>>>|regular",
+      "stopCount": 18,
+      "frequency": 1,
+      "dayLabels": [
+        "weekday"
+      ]
+    },
+    {
+      "proposedSystemKey": "11-urayasu-shinurayasu",
+      "title": "新浦安駅行き（浦安駅入口発）",
+      "departure": "浦安駅入口",
+      "destination": "新浦安駅",
+      "viaKey": null,
+      "stopNames": [
+        "浦安駅入口",
+        "神明裏",
+        "猫実",
+        "消防本部前",
+        "海楽",
+        "美浜東団地",
+        "新浦安駅"
+      ],
+      "stopIds": [
+        "00020739",
+        "00020623",
+        "00020666",
+        "00020877",
+        "00020845",
+        "00020670",
+        "00020619"
+      ],
+      "idComplete": true,
+      "berth": "11",
+      "berths": [
+        "11"
+      ],
+      "night": false,
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80db0000/stops?departure-busstop=00020739-1&course=0008200270&datetime=2026-07-27T08:00:00%2B09:00",
+      "tripSignature": "11|00020739-1|00020619|00020739>00020623>00020666>00020877>00020845>00020670>00020619|>>>>>>|regular",
+      "stopCount": 7,
+      "frequency": 1,
+      "dayLabels": [
+        "weekday"
+      ]
+    },
+    {
+      "proposedSystemKey": "11-urayasu-sogo-via-hinode-kominkan",
+      "title": "総合公園行き（浦安駅入口発）・日の出公民館経由",
+      "departure": "浦安駅入口",
+      "destination": "総合公園",
+      "viaKey": "hinode-kominkan",
+      "stopNames": [
+        "浦安駅入口",
+        "神明裏",
+        "猫実",
+        "消防本部前",
+        "海楽",
+        "美浜東団地",
+        "新浦安駅",
+        "入船中央エステート",
+        "明海大学前",
+        "海風の街",
+        "日の出公民館",
+        "シンボルロード・パークシティ",
+        "ベイモール",
+        "ベイパーク",
+        "ベイサイドホテルエリア",
+        "総合公園"
+      ],
+      "stopIds": [
+        "00020739",
+        "00020623",
+        "00020666",
+        "00020877",
+        "00020845",
+        "00020670",
+        "00020619",
+        "00020663",
+        "00020713",
+        "00020848",
+        "00020652",
+        "00020856",
+        "00020736",
+        "00020735",
+        "00020681",
+        "00020745"
+      ],
+      "idComplete": true,
+      "berth": "11",
+      "berths": [
+        "11"
+      ],
+      "night": false,
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d20000/stops?departure-busstop=00020739-1&course=0008200261&datetime=2026-07-27T07:20:00%2B09:00",
+      "tripSignature": "11|00020739-1|00020745|00020739>00020623>00020666>00020877>00020845>00020670>00020619>00020663>00020713>00020848>00020652>00020856>00020736>00020735>00020681>00020745|>>>>>>>>>>>>>>>|regular",
+      "stopCount": 16,
+      "frequency": 1,
+      "dayLabels": [
+        "weekday"
+      ]
+    }
+  ],
+  "sameEndpointDifferentRoute": [],
+  "unconfirmedCandidates": [
+    {
+      "candidateKey": "11-shinurayasu-urayasu",
+      "from": "新浦安駅",
+      "to": "浦安駅入口",
+      "night": false,
+      "status": "unconfirmed",
+      "note": "監査再オープン: H/[11]時刻表上で新浦安駅始発→浦安駅入口の【11系統】便は未確認（多くは総合公園始発の通過）"
+    },
+    {
+      "candidateKey": "11-baypark-shinurayasu",
+      "from": "ベイパーク",
+      "to": "新浦安駅",
+      "night": false,
+      "status": "unconfirmed",
+      "note": "監査再オープン: ベイパーク発として独立始発の【11系統】は未確認。観測は総合公園発11の中間乗車（=11-sogo-shinurayasuの部分）"
+    },
+    {
+      "candidateKey": "11-shinurayasu-nozomi-night",
+      "from": "新浦安駅",
+      "to": "望海の街",
+      "night": true,
+      "status": "rejected-route3",
+      "note": "監査再オープン: ★シ/シ深夜は【3系統】シンボルロード・パークシティ行き（望海経由）。11の望海止まりではない"
+    },
+    {
+      "candidateKey": "11-baypark-urayasu",
+      "from": "ベイパーク",
+      "to": "浦安駅入口",
+      "night": false,
+      "status": "unconfirmed",
+      "note": "公式個別便で系統11として確認できず"
+    },
+    {
+      "candidateKey": "11-sogo-hinode",
+      "from": "総合公園",
+      "to": "日の出南",
+      "night": false,
+      "status": "unconfirmed",
+      "note": "公式個別便で系統11として確認できず"
+    },
+    {
+      "candidateKey": "11-akemi5-start",
+      "from": "明海五丁目",
+      "to": null,
+      "night": false,
+      "status": "unconfirmed",
+      "note": "公式個別便で系統11として確認できず"
+    },
+    {
+      "candidateKey": "11-nozomi-shinurayasu",
+      "from": "望海の街",
+      "to": "新浦安駅",
+      "night": false,
+      "status": "unconfirmed",
+      "note": "公式個別便で系統11として確認できず"
+    }
+  ],
+  "lateNightSystems": [],
+  "rejectedRoute3Trips": [],
+  "rejectedRoute18Trips": [],
+  "rejectedRoute25Trips": [],
+  "rejectedOtherTrips": [
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80ec0000/stops?departure-busstop=00020739-1&course=0008200286&datetime=2026-07-27T06:38:00%2B09:00",
+      "stopNames": [
+        "浦安駅入口",
+        "神明裏",
+        "猫実",
+        "消防本部前",
+        "海楽",
+        "美浜東団地",
+        "新浦安駅",
+        "入船中央エステート",
+        "明海大学前",
+        "海風の街",
+        "夢海の街",
+        "高洲橋",
+        "高洲中央公園",
+        "潮音の街",
+        "高洲海浜公園"
+      ],
+      "cellText": "38ゆ",
+      "reason": "forbidden-stop-name:高洲海浜公園",
+      "heading": "通過時刻表"
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80eb0000/stops?departure-busstop=00020619-9&course=0008200285&datetime=2026-07-27T06:16:00%2B09:00",
+      "stopNames": [
+        "高洲海浜公園",
+        "潮音の街",
+        "高洲中央公園",
+        "高洲橋",
+        "夢海の街",
+        "海風の街",
+        "明海大学前",
+        "入船中央エステート",
+        "新浦安駅",
+        "美浜東団地",
+        "海楽",
+        "消防本部前",
+        "猫実",
+        "神明裏",
+        "浦安駅入口"
+      ],
+      "cellText": "16",
+      "reason": "forbidden-stop-name:高洲海浜公園",
+      "heading": "通過時刻表"
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80dc0000/stops?departure-busstop=00020735-4&course=0008202661&datetime=2026-07-27T06:09:00%2B09:00",
+      "stopNames": [
+        "高洲海浜公園",
+        "ハイアットリージェンシー",
+        "明海五丁目",
+        "ベイパーク",
+        "ベイモール",
+        "シンボルロード・パークシティ",
+        "日の出公民館",
+        "海風の街",
+        "明海大学前",
+        "入船中央エステート",
+        "新浦安駅"
+      ],
+      "cellText": "09",
+      "reason": "forbidden-stop-name:高洲海浜公園",
+      "heading": "通過時刻表"
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80dc0000/stops?departure-busstop=00020710-3&course=0008202661&datetime=2026-07-27T06:07:00%2B09:00",
+      "stopNames": [
+        "高洲海浜公園",
+        "ハイアットリージェンシー",
+        "明海五丁目",
+        "ベイパーク",
+        "ベイモール",
+        "シンボルロード・パークシティ",
+        "日の出公民館",
+        "海風の街",
+        "明海大学前",
+        "入船中央エステート",
+        "新浦安駅"
+      ],
+      "cellText": "07",
+      "reason": "forbidden-stop-name:高洲海浜公園",
+      "heading": "通過時刻表"
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81050004/stops?departure-busstop=00020856-17&course=0008200308&datetime=2026-07-25T09:01:00%2B09:00",
+      "stopNames": [
+        "舞浜駅",
+        "オリエンタルランド本社前",
+        "運動公園",
+        "舞浜三丁目",
+        "見明川住宅",
+        "見明川中学校前",
+        "弁天第二",
+        "今川消防署",
+        "順天堂大学浦安キャンパス",
+        "高洲西児童公園",
+        "高洲三丁目",
+        "高洲四丁目",
+        "高洲七丁目",
+        "潮音の街北",
+        "海園の街",
+        "明海四丁目",
+        "シンボルロード・パークシティ",
+        "ベイモール",
+        "ベイパーク",
+        "ベイサイドホテルエリア",
+        "総合公園"
+      ],
+      "cellText": "01◇",
+      "reason": "forbidden-stop-name:舞浜駅",
+      "heading": "通過時刻表"
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80dc0000/stops?departure-busstop=00020856-6&course=0008202661&datetime=2026-07-27T06:11:00%2B09:00",
+      "stopNames": [
+        "高洲海浜公園",
+        "ハイアットリージェンシー",
+        "明海五丁目",
+        "ベイパーク",
+        "ベイモール",
+        "シンボルロード・パークシティ",
+        "日の出公民館",
+        "海風の街",
+        "明海大学前",
+        "入船中央エステート",
+        "新浦安駅"
+      ],
+      "cellText": "11",
+      "reason": "forbidden-stop-name:高洲海浜公園",
+      "heading": "通過時刻表"
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80dc0000/stops?departure-busstop=00020652-7&course=0008202661&datetime=2026-07-27T06:12:00%2B09:00",
+      "stopNames": [
+        "高洲海浜公園",
+        "ハイアットリージェンシー",
+        "明海五丁目",
+        "ベイパーク",
+        "ベイモール",
+        "シンボルロード・パークシティ",
+        "日の出公民館",
+        "海風の街",
+        "明海大学前",
+        "入船中央エステート",
+        "新浦安駅"
+      ],
+      "cellText": "12",
+      "reason": "forbidden-stop-name:高洲海浜公園",
+      "heading": "通過時刻表"
+    }
+  ],
+  "knownIds": {
+    "urayasu": "00020739",
+    "shinurayasu": "00020619",
+    "baypark": "00020735",
+    "sogo": "00020745",
+    "symbolRoadPc": "00020856",
+    "hinodeKominkan": "00020652",
+    "hinode": "00020849",
+    "nozomi": "00020689",
+    "akemi5": "00020710"
+  },
+  "stats": {
+    "terminalsScraped": 9,
+    "timetables": 28,
+    "tripsScraped": 15,
+    "uniqueSignatures": 15,
+    "uniqueStopNameSignatures": 15,
+    "rejectedRoute3": 0,
+    "rejectedRoute18": 0,
+    "rejectedRoute25": 0,
+    "rejectedOther": 7,
+    "knownIds": {
+      "urayasu": "00020739",
+      "shinurayasu": "00020619",
+      "baypark": "00020735",
+      "sogo": "00020745",
+      "symbolRoadPc": "00020856",
+      "hinodeKominkan": "00020652",
+      "hinode": "00020849",
+      "nozomi": "00020689",
+      "akemi5": "00020710"
+    },
+    "elapsedMs": 125667,
+    "auditAt": "2026-07-25T03:14:01.646Z",
+    "confirmedAfterAudit": 11,
+    "removedFalsePositives": [
+      "11-shinurayasu-symbol-road-pc",
+      "11-shinurayasu-symbol-road-pc-night",
+      "11-urayasu-akemi5",
+      "11-urayasu-sogo-via-akemi5"
+    ],
+    "addedSystems": []
+  },
+  "rejectedRoute3": [
+    {
+      "proposedSystemKey": "11-shinurayasu-symbol-road-pc",
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/810f0004/stops?departure-busstop=00020735-12&course=0008200219&datetime=2026-07-27T20:29:00%2B09:00",
+      "stopNames": [
+        "新浦安駅",
+        "入船中央エステート",
+        "明海大学前",
+        "海風の街",
+        "夢海の街",
+        "望海の街",
+        "明海六丁目",
+        "明海南小学校",
+        "三井ガーデンホテル",
+        "ハイアットリージェンシー",
+        "明海五丁目",
+        "ベイパーク",
+        "ベイモール",
+        "シンボルロード・パークシティ"
+      ],
+      "reason": "audit-reopen: trip page 【3系統】 (or route3 pattern), not 11",
+      "auditedAt": "2026-07-25T03:14:01.646Z"
+    },
+    {
+      "proposedSystemKey": "11-shinurayasu-symbol-road-pc-night",
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81100000/stops?departure-busstop=00020735-12&course=0008200220&datetime=2026-07-27T23:42:00%2B09:00",
+      "stopNames": [
+        "新浦安駅",
+        "入船中央エステート",
+        "明海大学前",
+        "海風の街",
+        "夢海の街",
+        "望海の街",
+        "明海六丁目",
+        "明海南小学校",
+        "三井ガーデンホテル",
+        "ハイアットリージェンシー",
+        "明海五丁目",
+        "ベイパーク",
+        "ベイモール",
+        "シンボルロード・パークシティ"
+      ],
+      "reason": "audit-reopen: trip page 【3系統】 (or route3 pattern), not 11",
+      "auditedAt": "2026-07-25T03:14:01.646Z"
+    },
+    {
+      "proposedSystemKey": "11-urayasu-akemi5",
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/810e0001/stops?departure-busstop=00020739-1&course=0008200218&datetime=2026-07-27T13:51:00%2B09:00",
+      "stopNames": [
+        "浦安駅入口",
+        "神明裏",
+        "猫実",
+        "消防本部前",
+        "海楽",
+        "美浜東団地",
+        "新浦安駅",
+        "入船中央エステート",
+        "明海大学前",
+        "海風の街",
+        "夢海の街",
+        "望海の街",
+        "明海六丁目",
+        "明海南小学校",
+        "三井ガーデンホテル",
+        "ハイアットリージェンシー",
+        "明海五丁目"
+      ],
+      "reason": "audit-reopen: trip page 【3系統】 (or route3 pattern), not 11",
+      "auditedAt": "2026-07-25T03:14:01.646Z"
+    },
+    {
+      "proposedSystemKey": "11-urayasu-sogo-via-akemi5",
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81070003/stops?departure-busstop=00020739-1&course=0008200211&datetime=2026-07-27T06:55:00%2B09:00",
+      "stopNames": [
+        "浦安駅入口",
+        "神明裏",
+        "猫実",
+        "消防本部前",
+        "海楽",
+        "美浜東団地",
+        "新浦安駅",
+        "入船中央エステート",
+        "明海大学前",
+        "海風の街",
+        "夢海の街",
+        "望海の街",
+        "明海六丁目",
+        "明海南小学校",
+        "三井ガーデンホテル",
+        "ハイアットリージェンシー",
+        "明海五丁目",
+        "ベイサイドホテルエリア",
+        "総合公園"
+      ],
+      "reason": "audit-reopen: trip page 【3系統】 (or route3 pattern), not 11",
+      "auditedAt": "2026-07-25T03:14:01.646Z"
+    }
+  ],
+  "audit": {
+    "auditedAt": "2026-07-25T03:14:01.646Z",
+    "remove": [
+      "11-shinurayasu-symbol-road-pc",
+      "11-shinurayasu-symbol-road-pc-night",
+      "11-urayasu-akemi5",
+      "11-urayasu-sogo-via-akemi5"
+    ],
+    "keepSuspicious": [
+      "11-sogo-urayasu"
+    ],
+    "add": [],
+    "evidenceFile": "_audit_trip_samples.json"
+  }
+}

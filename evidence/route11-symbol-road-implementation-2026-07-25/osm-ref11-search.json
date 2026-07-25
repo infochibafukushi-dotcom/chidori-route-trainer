@@ -1,0 +1,118 @@
+{
+  "fetchedAt": "2026-07-25T01:57:13.721Z",
+  "ok": true,
+  "query": {
+    "type": "route|route_master",
+    "route": "bus",
+    "ref": "11",
+    "bbox": {
+      "south": 35.62,
+      "west": 139.88,
+      "north": 35.67,
+      "east": 139.93
+    },
+    "around": {
+      "lat": 35.64,
+      "lon": 139.9,
+      "radiusM": 12000
+    }
+  },
+  "source": "overpass-api.de",
+  "method": "POST",
+  "candidateCount": 4,
+  "candidates": [
+    {
+      "id": 18352885,
+      "name": "東京ベイシティバス11系統 浦安駅入口-新浦安駅-日の出南",
+      "from": null,
+      "to": null,
+      "ref": "11",
+      "type": "route_master",
+      "route": "bus",
+      "tags": {
+        "name": "東京ベイシティバス11系統 浦安駅入口-新浦安駅-日の出南",
+        "network": "シンボルロード線",
+        "operator": "東京ベイシティ交通",
+        "ref": "11",
+        "route_master": "bus",
+        "type": "route_master"
+      },
+      "isKnownPathSource": true,
+      "isForbiddenPathSource": false,
+      "note": "Included from direct fetch; Overpass spatial query did not return route_master"
+    },
+    {
+      "id": 18352883,
+      "name": "東京ベイシティバス11系統 日の出南⇒新浦安駅⇒浦安駅入口",
+      "from": null,
+      "to": null,
+      "ref": "11",
+      "type": "route",
+      "route": "bus",
+      "tags": {
+        "name": "東京ベイシティバス11系統 日の出南⇒新浦安駅⇒浦安駅入口",
+        "network": "シンボルロード線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "11",
+        "route": "bus",
+        "type": "route"
+      },
+      "isKnownPathSource": true,
+      "isForbiddenPathSource": false,
+      "note": null
+    },
+    {
+      "id": 18352884,
+      "name": "東京ベイシティバス11系統 浦安駅入口⇒新浦安駅⇒日の出南",
+      "from": null,
+      "to": null,
+      "ref": "11",
+      "type": "route",
+      "route": "bus",
+      "tags": {
+        "name": "東京ベイシティバス11系統 浦安駅入口⇒新浦安駅⇒日の出南",
+        "network": "シンボルロード線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "11",
+        "route": "bus",
+        "type": "route"
+      },
+      "isKnownPathSource": true,
+      "isForbiddenPathSource": false,
+      "note": null
+    },
+    {
+      "id": 18419852,
+      "name": "東京ベイシティバス11系統 高洲海浜公園⇒ベイパーク⇒新浦安駅",
+      "from": null,
+      "to": null,
+      "ref": "11",
+      "type": "route",
+      "route": "bus",
+      "tags": {
+        "name": "東京ベイシティバス11系統 高洲海浜公園⇒ベイパーク⇒新浦安駅",
+        "network": "シンボルロード線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "11",
+        "route": "bus",
+        "type": "route"
+      },
+      "isKnownPathSource": false,
+      "isForbiddenPathSource": true,
+      "note": "NOT implementable without official confirmation (高洲海浜公園)"
+    }
+  ],
+  "knownPathSourceIds": [
+    18352885,
+    18352884,
+    18352883
+  ],
+  "forbiddenPathSourceIds": [
+    18419852
+  ],
+  "noteMaster": "route_master 18352885 added from direct fetch (not returned by Overpass spatial query)",
+  "warning": "Do not treat 高洲海浜公園 variants as implementable without official confirmation. Do not use 18419852 as a path source unless later confirmed."
+}

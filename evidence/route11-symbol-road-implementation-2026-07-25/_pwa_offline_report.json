@@ -1,0 +1,78 @@
+{
+  "startedAt": "2026-07-25T03:39:30.538Z",
+  "cacheName": "chidori-route-map-v73",
+  "expectCache": "chidori-route-map-v73",
+  "cacheOk": true,
+  "missingInIndex": [],
+  "missingInShell": [],
+  "shellNotInIndex": [],
+  "indexNotInShell": [],
+  "appShellMatchIndex": true,
+  "browser": {
+    "online": {
+      "routeIds": [
+        "route-1",
+        "route-2",
+        "route-3",
+        "route-4",
+        "route-5",
+        "route-6",
+        "route-9",
+        "route-10",
+        "route-11",
+        "route-12",
+        "route-14",
+        "route-15",
+        "route-16",
+        "route-17",
+        "route-18",
+        "route-19",
+        "route-20",
+        "route-22",
+        "route-23",
+        "route-24",
+        "route-25",
+        "route-37",
+        "route-38"
+      ],
+      "hasRoute10": true,
+      "hasRoute9": true,
+      "hasRoute1": true,
+      "route10Name": "シンボルロード線",
+      "systems": [
+        "11-urayasu-hinode",
+        "11-urayasu-sogo-via-hinode-kominkan",
+        "11-urayasu-baypark",
+        "11-urayasu-shinurayasu",
+        "11-shinurayasu-hinode",
+        "11-shinurayasu-sogo",
+        "11-shinurayasu-baypark",
+        "11-hinode-urayasu",
+        "11-hinode-shinurayasu",
+        "11-sogo-shinurayasu",
+        "11-sogo-urayasu"
+      ],
+      "swState": [
+        {
+          "scope": "http://127.0.0.1:8833/",
+          "active": true
+        }
+      ],
+      "takasuApi": true
+    },
+    "afterSw": {
+      "ok": true,
+      "count": 1,
+      "active": true
+    },
+    "offlineOk": true,
+    "offlineDetail": {
+      "hasTakasu": true,
+      "hasMaihama": true,
+      "title": "千鳥路線図"
+    }
+  },
+  "pass": true,
+  "offlineNote": "offline reload retained modules",
+  "finishedAt": "2026-07-25T03:39:36.954Z"
+}

@@ -1,0 +1,263 @@
+{
+  "relationId": 18352883,
+  "startHint": "日の出南",
+  "maxJoin_m": 0,
+  "usedWayCount": 36,
+  "pathPointCount": 289,
+  "joins": [
+    {
+      "wayId": 1338996638,
+      "gapFromPrev_m": 0,
+      "flipped": false,
+      "sharedNode": false,
+      "startHint": true
+    },
+    {
+      "wayId": 1338996639,
+      "gapFromPrev_m": 0,
+      "flipped": true,
+      "sharedNode": true,
+      "startHint": false
+    },
+    {
+      "wayId": 1338996640,
+      "gapFromPrev_m": 0,
+      "flipped": true,
+      "sharedNode": true,
+      "startHint": false
+    },
+    {
+      "wayId": 368452494,
+      "gapFromPrev_m": 0,
+      "flipped": false,
+      "sharedNode": true,
+      "startHint": false
+    },
+    {
+      "wayId": 26323335,
+      "gapFromPrev_m": 0,
+      "flipped": true,
+      "sharedNode": true,
+      "startHint": false
+    },
+    {
+      "wayId": 1339039303,
+      "gapFromPrev_m": 0,
+      "flipped": false,
+      "sharedNode": true,
+      "startHint": false
+    },
+    {
+      "wayId": 369356240,
+      "gapFromPrev_m": 0,
+      "flipped": false,
+      "sharedNode": true,
+      "startHint": false
+    },
+    {
+      "wayId": 1338976295,
+      "gapFromPrev_m": 0,
+      "flipped": false,
+      "sharedNode": true,
+      "startHint": false
+    },
+    {
+      "wayId": 369356241,
+      "gapFromPrev_m": 0,
+      "flipped": false,
+      "sharedNode": true,
+      "startHint": false
+    },
+    {
+      "wayId": 1342408150,
+      "gapFromPrev_m": 0,
+      "flipped": false,
+      "sharedNode": true,
+      "startHint": false
+    },
+    {
+      "wayId": 1338996593,
+      "gapFromPrev_m": 0,
+      "flipped": false,
+      "sharedNode": true,
+      "startHint": false
+    },
+    {
+      "wayId": 847288115,
+      "gapFromPrev_m": 0,
+      "flipped": false,
+      "sharedNode": true,
+      "startHint": false
+    },
+    {
+      "wayId": 1342408151,
+      "gapFromPrev_m": 0,
+      "flipped": false,
+      "sharedNode": true,
+      "startHint": false
+    },
+    {
+      "wayId": 1338976292,
+      "gapFromPrev_m": 0,
+      "flipped": false,
+      "sharedNode": true,
+      "startHint": false
+    },
+    {
+      "wayId": 847288818,
+      "gapFromPrev_m": 0,
+      "flipped": false,
+      "sharedNode": true,
+      "startHint": false
+    },
+    {
+      "wayId": 1241264346,
+      "gapFromPrev_m": 0,
+      "flipped": false,
+      "sharedNode": true,
+      "startHint": false
+    },
+    {
+      "wayId": 1341518494,
+      "gapFromPrev_m": 0,
+      "flipped": false,
+      "sharedNode": true,
+      "startHint": false
+    },
+    {
+      "wayId": 1340739631,
+      "gapFromPrev_m": 0,
+      "flipped": false,
+      "sharedNode": true,
+      "startHint": false
+    },
+    {
+      "wayId": 847288812,
+      "gapFromPrev_m": 0,
+      "flipped": false,
+      "sharedNode": true,
+      "startHint": false
+    },
+    {
+      "wayId": 1338996609,
+      "gapFromPrev_m": 0,
+      "flipped": false,
+      "sharedNode": true,
+      "startHint": false
+    },
+    {
+      "wayId": 720406628,
+      "gapFromPrev_m": 0,
+      "flipped": false,
+      "sharedNode": true,
+      "startHint": false
+    },
+    {
+      "wayId": 720406632,
+      "gapFromPrev_m": 0,
+      "flipped": false,
+      "sharedNode": true,
+      "startHint": false
+    },
+    {
+      "wayId": 26320590,
+      "gapFromPrev_m": 0,
+      "flipped": false,
+      "sharedNode": true,
+      "startHint": false
+    },
+    {
+      "wayId": 1125716455,
+      "gapFromPrev_m": 0,
+      "flipped": false,
+      "sharedNode": true,
+      "startHint": false
+    },
+    {
+      "wayId": 1125716456,
+      "gapFromPrev_m": 0,
+      "flipped": false,
+      "sharedNode": true,
+      "startHint": false
+    },
+    {
+      "wayId": 1125716445,
+      "gapFromPrev_m": 0,
+      "flipped": false,
+      "sharedNode": true,
+      "startHint": false
+    },
+    {
+      "wayId": 216617622,
+      "gapFromPrev_m": 0,
+      "flipped": false,
+      "sharedNode": true,
+      "startHint": false
+    },
+    {
+      "wayId": 1125716444,
+      "gapFromPrev_m": 0,
+      "flipped": false,
+      "sharedNode": true,
+      "startHint": false
+    },
+    {
+      "wayId": 1125716453,
+      "gapFromPrev_m": 0,
+      "flipped": false,
+      "sharedNode": true,
+      "startHint": false
+    },
+    {
+      "wayId": 26349778,
+      "gapFromPrev_m": 0,
+      "flipped": false,
+      "sharedNode": true,
+      "startHint": false
+    },
+    {
+      "wayId": 1125716446,
+      "gapFromPrev_m": 0,
+      "flipped": true,
+      "sharedNode": true,
+      "startHint": false
+    },
+    {
+      "wayId": 1125716447,
+      "gapFromPrev_m": 0,
+      "flipped": true,
+      "sharedNode": true,
+      "startHint": false
+    },
+    {
+      "wayId": 720402605,
+      "gapFromPrev_m": 0,
+      "flipped": true,
+      "sharedNode": true,
+      "startHint": false
+    },
+    {
+      "wayId": 1339150559,
+      "gapFromPrev_m": 0,
+      "flipped": true,
+      "sharedNode": true,
+      "startHint": false
+    },
+    {
+      "wayId": 1342413246,
+      "gapFromPrev_m": 0,
+      "flipped": true,
+      "sharedNode": true,
+      "startHint": false
+    },
+    {
+      "wayId": 163404380,
+      "gapFromPrev_m": 0,
+      "flipped": true,
+      "sharedNode": true,
+      "startHint": false
+    }
+  ],
+  "gapsOver1m": [],
+  "ok": true
+}

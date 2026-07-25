@@ -1,0 +1,17 @@
+{
+  "skipped": [
+    {
+      "id": "望海の街 night",
+      "note": "対象便なし（★シ/シ深夜は系統3）"
+    },
+    {
+      "id": "akemi5 / 明海五丁目",
+      "note": "対象便なし（系統3、route-11非対象）"
+    },
+    {
+      "id": "symbol-road-pc terminus as 11",
+      "note": "対象便なし（系統3誤分類を除外）"
+    }
+  ],
+  "lateNightSystems": 0
+}
