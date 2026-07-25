@@ -1,11 +1,11 @@
-const CACHE_NAME = 'chidori-route-map-v78';
+const CACHE_NAME = 'chidori-route-map-v79';
 const APP_INDEX_URL = new URL('./index.html', self.location).href;
 const FETCH_TIMEOUT_MS = 7000;
 
 // Minimal shell for Android/WebAPK cold start. Route packs are cached on demand.
 const CORE_SHELL = [
   APP_INDEX_URL,
-  './manifest.webmanifest?v=78',
+  './manifest.webmanifest',
   './app-icon.svg',
   './app-icon-192.png',
   './app-icon-512.png',
@@ -20,7 +20,7 @@ const CORE_SHELL = [
   './route-map-link.js?v=71',
   './route-assets-loader.js?v=78',
   './d1-sync.js?v=61',
-  './pwa-install.js?v=78'
+  './pwa-install.js?v=79'
 ];
 
 function fetchWithTimeout(resource, options = {}, timeoutMs = FETCH_TIMEOUT_MS) {

@@ -1,0 +1,291 @@
+{
+  "static": [
+    "versions + guards + manifest ok"
+  ],
+  "browser": {
+    "mode": "browser",
+    "checks": [
+      "DOMContentLoaded 80ms",
+      "setTimeout 1ms / rAF ok",
+      "browser mode install unbound/ready",
+      "MutationObserver stable delta=0 tight=6",
+      "CPU probe maxGap=18 busyRatio=0.000",
+      "quiz 18ms",
+      "materials 12ms",
+      "restart x10 ok",
+      "loop repro old=200 new=2"
+    ],
+    "errors": [],
+    "timers": {
+      "domContentLoadedMs": 80,
+      "setTimeoutMs": 1,
+      "rafFired": true
+    },
+    "quizMs": 18,
+    "materialsMs": 12,
+    "observerCallbacks": {
+      "before": 11,
+      "after": 11,
+      "delta": 0,
+      "recent": [
+        68.5,
+        69,
+        70.59999999962747,
+        71.69999999925494,
+        72.69999999925494,
+        73.19999999925494,
+        78.19999999925494,
+        274.5,
+        293.5,
+        295.3999999994412,
+        307.8999999994412
+      ]
+    },
+    "restartOk": [
+      {
+        "i": 0,
+        "setTimeoutMs": 7,
+        "raf": true,
+        "interactive": true,
+        "installState": null,
+        "heading": "千鳥路線図"
+      },
+      {
+        "i": 1,
+        "setTimeoutMs": 0,
+        "raf": true,
+        "interactive": true,
+        "installState": null,
+        "heading": "千鳥路線図"
+      },
+      {
+        "i": 2,
+        "setTimeoutMs": 12,
+        "raf": true,
+        "interactive": true,
+        "installState": null,
+        "heading": "千鳥路線図"
+      },
+      {
+        "i": 3,
+        "setTimeoutMs": 0,
+        "raf": true,
+        "interactive": true,
+        "installState": null,
+        "heading": "千鳥路線図"
+      },
+      {
+        "i": 4,
+        "setTimeoutMs": 10,
+        "raf": true,
+        "interactive": true,
+        "installState": null,
+        "heading": "千鳥路線図"
+      },
+      {
+        "i": 5,
+        "setTimeoutMs": 0,
+        "raf": true,
+        "interactive": true,
+        "installState": null,
+        "heading": "千鳥路線図"
+      },
+      {
+        "i": 6,
+        "setTimeoutMs": 11,
+        "raf": true,
+        "interactive": true,
+        "installState": null,
+        "heading": "千鳥路線図"
+      },
+      {
+        "i": 7,
+        "setTimeoutMs": 0,
+        "raf": true,
+        "interactive": true,
+        "installState": null,
+        "heading": "千鳥路線図"
+      },
+      {
+        "i": 8,
+        "setTimeoutMs": 11,
+        "raf": true,
+        "interactive": true,
+        "installState": null,
+        "heading": "千鳥路線図"
+      },
+      {
+        "i": 9,
+        "setTimeoutMs": 12,
+        "raf": true,
+        "interactive": true,
+        "installState": null,
+        "heading": "千鳥路線図"
+      }
+    ],
+    "cpuBusyMs": {
+      "maxGap": 18,
+      "busyRatio": 0,
+      "samples": 300
+    },
+    "loopUnit": {
+      "oldResult": {
+        "kind": "old",
+        "callbacks": 200,
+        "hitCap": true
+      },
+      "newResult": {
+        "kind": "new",
+        "callbacks": 2,
+        "hitCap": false
+      }
+    },
+    "ok": true
+  },
+  "standalone": {
+    "mode": "standalone",
+    "checks": [
+      "DOMContentLoaded 132ms",
+      "setTimeout 1ms / rAF ok",
+      "standalone install marked once",
+      "MutationObserver stable delta=1 tight=9",
+      "CPU probe maxGap=20 busyRatio=0.000",
+      "quiz 16ms",
+      "materials 12ms",
+      "restart x10 ok",
+      "loop repro old=200 new=2"
+    ],
+    "errors": [],
+    "timers": {
+      "domContentLoadedMs": 132,
+      "setTimeoutMs": 1,
+      "rafFired": true
+    },
+    "quizMs": 16,
+    "materialsMs": 12,
+    "observerCallbacks": {
+      "before": 13,
+      "after": 14,
+      "delta": 1,
+      "recent": [
+        124.6000000005588,
+        125,
+        126.29999999981374,
+        127.90000000037253,
+        127.90000000037253,
+        127.90000000037253,
+        128.20000000018626,
+        129.6000000005588,
+        129.90000000037253,
+        131.29999999981374,
+        141.90000000037253,
+        145.1000000005588,
+        156.70000000018626,
+        251.5
+      ]
+    },
+    "restartOk": [
+      {
+        "i": 0,
+        "setTimeoutMs": 10,
+        "raf": true,
+        "interactive": true,
+        "installState": "installed",
+        "heading": "千鳥路線図"
+      },
+      {
+        "i": 1,
+        "setTimeoutMs": 0,
+        "raf": true,
+        "interactive": true,
+        "installState": "installed",
+        "heading": "千鳥路線図"
+      },
+      {
+        "i": 2,
+        "setTimeoutMs": 1,
+        "raf": true,
+        "interactive": true,
+        "installState": "installed",
+        "heading": "千鳥路線図"
+      },
+      {
+        "i": 3,
+        "setTimeoutMs": 9,
+        "raf": true,
+        "interactive": true,
+        "installState": "installed",
+        "heading": "千鳥路線図"
+      },
+      {
+        "i": 4,
+        "setTimeoutMs": 0,
+        "raf": true,
+        "interactive": true,
+        "installState": "installed",
+        "heading": "千鳥路線図"
+      },
+      {
+        "i": 5,
+        "setTimeoutMs": 1,
+        "raf": true,
+        "interactive": true,
+        "installState": "installed",
+        "heading": "千鳥路線図"
+      },
+      {
+        "i": 6,
+        "setTimeoutMs": 7,
+        "raf": true,
+        "interactive": true,
+        "installState": "installed",
+        "heading": "千鳥路線図"
+      },
+      {
+        "i": 7,
+        "setTimeoutMs": 10,
+        "raf": true,
+        "interactive": true,
+        "installState": "installed",
+        "heading": "千鳥路線図"
+      },
+      {
+        "i": 8,
+        "setTimeoutMs": 1,
+        "raf": true,
+        "interactive": true,
+        "installState": "installed",
+        "heading": "千鳥路線図"
+      },
+      {
+        "i": 9,
+        "setTimeoutMs": 8,
+        "raf": true,
+        "interactive": true,
+        "installState": "installed",
+        "heading": "千鳥路線図"
+      }
+    ],
+    "cpuBusyMs": {
+      "maxGap": 20,
+      "busyRatio": 0,
+      "samples": 301
+    },
+    "loopUnit": {
+      "oldResult": {
+        "kind": "old",
+        "callbacks": 200,
+        "hitCap": true
+      },
+      "newResult": {
+        "kind": "new",
+        "callbacks": 2,
+        "hitCap": false
+      }
+    },
+    "ok": true
+  },
+  "ok": true,
+  "errors": [],
+  "androidDevice": "not-checked"
+}
