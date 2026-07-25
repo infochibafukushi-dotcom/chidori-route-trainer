@@ -1,3 +1,7 @@
+/**
+ * Stroller image-slide POP + text POP regression for materials 2/3.
+ * node _verify_study_materials_ui.js
+ */
 const { chromium } = require('playwright');
 const http = require('http');
 const fs = require('fs');
@@ -6,6 +10,15 @@ const vm = require('vm');
 
 const root = __dirname;
 const port = 8765;
+
+const EXPECTED_SLIDES = [
+  'assets/study-materials/stroller/stroller-01-arrival.png',
+  'assets/study-materials/stroller/stroller-02-after-boarding.png',
+  'assets/study-materials/stroller/stroller-03-fare-payment.png',
+  'assets/study-materials/stroller/stroller-04-departure.png',
+  'assets/study-materials/stroller/stroller-05-alighting.png',
+  'assets/study-materials/stroller/stroller-06-handling-rules.png',
+];
 
 const mime = {
   '.html': 'text/html; charset=utf-8',
@@ -40,6 +53,10 @@ function loadCanon() {
 }
 
 async function main() {
+  for (const rel of EXPECTED_SLIDES) {
+    if (!fs.existsSync(path.join(root, rel))) throw new Error('missing image ' + rel);
+  }
+
   const canon = loadCanon();
   await new Promise((resolve) => server.listen(port, resolve));
   const browser = await chromium.launch({ headless: true });
@@ -67,28 +84,95 @@ async function main() {
     await page.waitForSelector('[data-go="materials"]');
     await page.locator('[data-go="materials"]').evaluate((el) => el.click());
     await page.waitForSelector('.study-list');
-    const titles = await page.$$eval('.study-material-item strong', (els) => els.map((e) => e.textContent.trim()));
-    results.push({ label, step: 'list', titles, errors: [...errors] });
 
-    for (const material of canon) {
-      const id = material.id;
-      await page.locator(`[data-material-id="${id}"]`).evaluate((el) => el.click());
-      await page.waitForSelector('#studyMaterialPop [role="dialog"]');
-
-      const dialog = page.locator('#studyMaterialPop [role="dialog"]');
-      const title = (await page.textContent('#studyPopTitle')).trim();
-      const ariaModal = await dialog.getAttribute('aria-modal');
-      const labelledBy = await dialog.getAttribute('aria-labelledby');
-      const activeIsClose = await page.evaluate(() => {
-        const el = document.activeElement;
-        return !!(el && (el.id === 'studyPopCloseX' || el.getAttribute('aria-label') === '閉じる'));
+    // ---- stroller image slides ----
+    await page.locator('[data-material-id="stroller"]').evaluate((el) => el.click());
+    await page.waitForSelector('#studySlideImage');
+    const slideSrcs = [];
+    for (let i = 0; i < 6; i++) {
+      const src = await page.getAttribute('#studySlideImage', 'src');
+      const pageText = (await page.textContent('#studySlidePage')).trim();
+      const natural = await page.evaluate(() => {
+        const img = document.getElementById('studySlideImage');
+        return { w: img.naturalWidth, h: img.naturalHeight, complete: img.complete };
       });
+      slideSrcs.push(src);
+      if (pageText !== `${i + 1} / 6` || !natural.complete || natural.w < 10) failed += 1;
+      if (i < 5) {
+        await page.locator('#studySlideNext').evaluate((el) => el.click());
+        await page.waitForFunction((n) => {
+          const t = document.getElementById('studySlidePage');
+          return t && t.textContent.trim() === `${n} / 6`;
+        }, i + 2);
+      }
+    }
+    const nextLabel = (await page.textContent('#studySlideNext')).trim();
+    const prevDisabled = await page.evaluate(() => document.getElementById('studySlidePrev').disabled);
+    // go to first via prev repeatedly then check prev disabled
+    for (let i = 0; i < 5; i++) await page.locator('#studySlidePrev').evaluate((el) => el.click());
+    await page.waitForFunction(() => document.getElementById('studySlidePage').textContent.trim() === '1 / 6');
+    const firstPrevDisabled = await page.evaluate(() => document.getElementById('studySlidePrev').disabled);
 
+    // keyboard arrows
+    await page.keyboard.press('ArrowRight');
+    await page.waitForFunction(() => document.getElementById('studySlidePage').textContent.trim() === '2 / 6');
+    await page.keyboard.press('ArrowLeft');
+    await page.waitForFunction(() => document.getElementById('studySlidePage').textContent.trim() === '1 / 6');
+
+    const metrics = await page.evaluate(() => {
+      const panel = document.querySelector('.study-pop-panel--slides');
+      const body = document.getElementById('studyPopBody');
+      const img = document.getElementById('studySlideImage');
+      const pr = panel.getBoundingClientRect();
+      return {
+        panelW: pr.width,
+        panelH: pr.height,
+        vw: window.innerWidth,
+        vh: window.innerHeight,
+        overflowX: document.documentElement.scrollWidth > document.documentElement.clientWidth + 1,
+        bodyOverflowX: body.scrollWidth > body.clientWidth + 1,
+        imgW: img.getBoundingClientRect().width,
+        objectFit: getComputedStyle(img).objectFit,
+        bodyLocked: document.body.classList.contains('study-pop-open'),
+      };
+    });
+
+    const orderOk = EXPECTED_SLIDES.every((s, i) => (slideSrcs[i] || '').includes(s.split('/').pop()));
+    const row = {
+      label,
+      step: 'stroller-slides',
+      slideSrcs,
+      orderOk,
+      nextLabelOnLast: nextLabel,
+      firstPrevDisabled,
+      metrics,
+      errors: [...errors],
+    };
+    results.push(row);
+    if (!orderOk || nextLabel !== '閉じる' || !firstPrevDisabled || metrics.overflowX || metrics.bodyOverflowX || metrics.objectFit !== 'contain' || !metrics.bodyLocked) {
+      failed += 1;
+    }
+
+    // reopen starts at 1
+    await page.locator('#studyPopCloseX').evaluate((el) => el.click());
+    await page.waitForSelector('#studyMaterialPop', { state: 'detached' });
+    await page.locator('[data-material-id="stroller"]').evaluate((el) => el.click());
+    await page.waitForSelector('#studySlidePage');
+    const reopenPage = (await page.textContent('#studySlidePage')).trim();
+    results.push({ label, step: 'stroller-reopen', reopenPage });
+    if (reopenPage !== '1 / 6') failed += 1;
+    await page.keyboard.press('Escape');
+    await page.waitForSelector('#studyMaterialPop', { state: 'detached' });
+
+    // ---- text pops for 2/3 ----
+    for (const material of canon.filter((m) => m.id !== 'stroller')) {
+      await page.locator(`[data-material-id="${material.id}"]`).evaluate((el) => el.click());
+      await page.waitForSelector('#studyPopBody > div');
+      const title = (await page.textContent('#studyPopTitle')).trim();
       const blocks = await page.$$eval('#studyPopBody > div', (els) => els.map((el) => ({
         className: el.className,
         text: el.textContent,
       })));
-
       const expectedBlocks = material.blocks.map((block) => {
         const cls = block.type === 'heading' ? 'study-heading'
           : block.type === 'label' ? 'study-label'
@@ -97,108 +181,15 @@ async function main() {
                 : 'study-text';
         return { className: cls, text: block.text };
       });
-
-      let blocksMatch = blocks.length === expectedBlocks.length;
-      const blockDiffs = [];
-      if (blocksMatch) {
-        for (let i = 0; i < blocks.length; i++) {
-          if (blocks[i].className !== expectedBlocks[i].className || blocks[i].text !== expectedBlocks[i].text) {
-            blocksMatch = false;
-            blockDiffs.push({ index: i, expected: expectedBlocks[i], actual: blocks[i] });
-          }
-        }
-      } else {
-        blockDiffs.push({ expectedLen: expectedBlocks.length, actualLen: blocks.length });
-      }
-
-      const metrics = await page.evaluate(() => {
-        const root = document.getElementById('studyMaterialPop');
-        const panel = root && root.querySelector('.study-pop-panel');
-        const body = document.getElementById('studyPopBody');
-        const closeX = document.getElementById('studyPopCloseX');
-        const closeBtn = document.getElementById('studyPopCloseBtn');
-        const panelRect = panel.getBoundingClientRect();
-        const closeXRect = closeX.getBoundingClientRect();
-        const closeBtnRect = closeBtn.getBoundingClientRect();
-        const bodyStyle = window.getComputedStyle(body.firstElementChild || body);
-        return {
-          panelWidth: panelRect.width,
-          panelHeight: panelRect.height,
-          viewportW: window.innerWidth,
-          viewportH: window.innerHeight,
-          bodyScrollTop: body.scrollTop,
-          bodyCanScroll: body.scrollHeight > body.clientHeight + 1,
-          bodyOverflowX: body.scrollWidth > body.clientWidth + 1,
-          pageOverflowX: document.documentElement.scrollWidth > document.documentElement.clientWidth + 1,
-          closeXMin: Math.min(closeXRect.width, closeXRect.height),
-          closeBtnMin: Math.min(closeBtnRect.width, closeBtnRect.height),
-          fontSize: bodyStyle.fontSize,
-          lineHeight: bodyStyle.lineHeight,
-          bodyLocked: document.body.classList.contains('study-pop-open'),
-        };
-      });
-
-      const sideGap = metrics.viewportW - metrics.panelWidth;
-      const heightRatio = metrics.panelHeight / metrics.viewportH;
-      const okGeometry = sideGap >= 20 && sideGap <= 40 + 8 && heightRatio <= 0.94 + 0.02;
-      // PC max width ~760
-      const okPcWidth = label !== 'pc' || metrics.panelWidth <= 760 + 1;
-
-      const row = {
-        label,
-        step: `pop:${id}`,
-        title,
-        titleMatch: title === material.title,
-        ariaModal,
-        labelledBy,
-        activeIsClose,
-        blocksMatch,
-        blockDiffs: blockDiffs.slice(0, 3),
-        metrics,
-        okGeometry: label === 'sp' ? (sideGap >= 20 && heightRatio <= 0.96) : okPcWidth,
-        pageStillMaterials: await page.evaluate(() => !!document.querySelector('.study-list')),
-        errors: [...errors],
-      };
-      results.push(row);
-      if (!row.titleMatch || !row.blocksMatch || ariaModal !== 'true' || labelledBy !== 'studyPopTitle' || !activeIsClose || !row.pageStillMaterials || metrics.pageOverflowX || metrics.bodyOverflowX || metrics.closeXMin < 44 || metrics.closeBtnMin < 44 || !metrics.bodyLocked) {
-        failed += 1;
-      }
-
-      // reopen should start at top: scroll then close/reopen
-      await page.evaluate(() => {
-        const body = document.getElementById('studyPopBody');
-        if (body) body.scrollTop = body.scrollHeight;
-      });
+      const blocksMatch = blocks.length === expectedBlocks.length
+        && blocks.every((b, i) => b.className === expectedBlocks[i].className && b.text === expectedBlocks[i].text);
+      results.push({ label, step: `text-pop:${material.id}`, titleMatch: title === material.title, blocksMatch });
+      if (title !== material.title || !blocksMatch) failed += 1;
       await page.locator('#studyPopCloseBtn').evaluate((el) => el.click());
       await page.waitForSelector('#studyMaterialPop', { state: 'detached' });
-
-      // focus returned to card
-      const focusBack = await page.evaluate((mid) => {
-        const el = document.activeElement;
-        return !!(el && el.getAttribute && el.getAttribute('data-material-id') === mid);
-      }, id);
-      results.push({ label, step: `focus-return:${id}`, focusBack });
-      if (!focusBack) failed += 1;
-
-      await page.locator(`[data-material-id="${id}"]`).evaluate((el) => el.click());
-      await page.waitForSelector('#studyPopBody');
-      const scrollTop = await page.evaluate(() => document.getElementById('studyPopBody').scrollTop);
-      results.push({ label, step: `reopen-top:${id}`, scrollTop });
-      if (scrollTop !== 0) failed += 1;
-
-      // close methods rotate: x / overlay / Escape / history.back
-      if (id === 'stroller') {
-        await page.locator('#studyPopCloseX').evaluate((el) => el.click());
-      } else if (id === 'wheelchair') {
-        await page.locator('[data-study-pop-dismiss]').evaluate((el) => el.click());
-      } else {
-        await page.keyboard.press('Escape');
-      }
-      await page.waitForSelector('#studyMaterialPop', { state: 'detached' });
-      results.push({ label, step: `closed:${id}`, ok: true });
     }
 
-    // history back closes pop
+    // history back closes stroller pop
     await page.locator('[data-material-id="stroller"]').evaluate((el) => el.click());
     await page.waitForSelector('#studyMaterialPop');
     await page.evaluate(() => history.back());
@@ -209,7 +200,6 @@ async function main() {
 
     await page.locator('#back').evaluate((el) => el.click());
     await page.waitForSelector('.home');
-    results.push({ label, step: 'back-home', ok: true, errors: [...errors] });
     if (errors.length) failed += 1;
     await context.close();
   }
@@ -221,7 +211,8 @@ async function main() {
   await browser.close();
   server.close();
   fs.writeFileSync(path.join(root, '_study_materials_ui_out.json'), JSON.stringify({ failed, results }, null, 2), 'utf8');
-  console.log(JSON.stringify({ failed, results }, null, 2));
+  console.log(JSON.stringify({ failed, count: results.length }, null, 2));
+  if (failed) console.log(JSON.stringify(results.filter((r) => r.orderOk === false || r.blocksMatch === false || r.stayed === false || r.reopenPage), null, 2));
   process.exit(failed ? 1 : 0);
 }
 

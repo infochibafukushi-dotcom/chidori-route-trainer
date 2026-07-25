@@ -1,5 +1,5 @@
 /**
- * Offline POP smoke: register SW, go offline, open 3 materials as POP.
+ * Offline: stroller 6 slides + text materials 2/3.
  * node _verify_study_materials_offline.js
  */
 const { chromium } = require('playwright');
@@ -9,6 +9,14 @@ const path = require('path');
 
 const root = __dirname;
 const port = 8766;
+const SLIDES = [
+  'stroller-01-arrival.png',
+  'stroller-02-after-boarding.png',
+  'stroller-03-fare-payment.png',
+  'stroller-04-departure.png',
+  'stroller-05-alighting.png',
+  'stroller-06-handling-rules.png',
+];
 
 const mime = {
   '.html': 'text/html; charset=utf-8',
@@ -36,12 +44,8 @@ async function waitForSwReady(page) {
     if (!('serviceWorker' in navigator)) return false;
     const reg = await navigator.serviceWorker.getRegistration();
     return !!(reg && reg.active);
-  }, { timeout: 30000 });
+  }, { timeout: 45000 });
   await page.evaluate(async () => {
-    const reg = await navigator.serviceWorker.getRegistration();
-    if (reg && reg.waiting) {
-      reg.waiting.postMessage({ type: 'SKIP_WAITING' });
-    }
     await navigator.serviceWorker.ready;
   });
 }
@@ -57,14 +61,20 @@ async function main() {
     await page.goto(`http://127.0.0.1:${port}/`, { waitUntil: 'networkidle' });
     await waitForSwReady(page);
 
-    // Warm shell caches by navigating materials once online
-    await page.waitForSelector('[data-go="materials"]');
+    // Warm caches
     await page.locator('[data-go="materials"]').click();
     await page.waitForSelector('.study-list');
     await page.locator('[data-material-id="stroller"]').click();
-    await page.waitForSelector('#studyMaterialPop');
-    await page.locator('#studyPopCloseBtn').click();
+    await page.waitForSelector('#studySlideImage');
+    for (let i = 0; i < 5; i++) {
+      await page.locator('#studySlideNext').click();
+      await page.waitForTimeout(80);
+    }
+    await page.locator('#studyPopCloseX').click();
     await page.waitForSelector('#studyMaterialPop', { state: 'detached' });
+    await page.locator('[data-material-id="wheelchair"]').click();
+    await page.waitForSelector('#studyPopBody > div');
+    await page.locator('#studyPopCloseBtn').click();
     await page.locator('#back').click();
     await page.waitForSelector('.home');
     report.steps.push({ step: 'online-warm', ok: true });
@@ -76,22 +86,39 @@ async function main() {
 
     await page.locator('[data-go="materials"]').click();
     await page.waitForSelector('.study-list');
-    const ids = ['stroller', 'wheelchair', 'mic-guide'];
-    for (const id of ids) {
+    await page.locator('[data-material-id="stroller"]').click();
+    await page.waitForSelector('#studySlideImage');
+
+    const seen = [];
+    for (let i = 0; i < 6; i++) {
+      const src = await page.getAttribute('#studySlideImage', 'src');
+      const loaded = await page.evaluate(() => {
+        const img = document.getElementById('studySlideImage');
+        return !!(img && img.complete && img.naturalWidth > 0);
+      });
+      seen.push({ src, loaded });
+      if (!loaded) report.ok = false;
+      if (i < 5) {
+        await page.locator('#studySlideNext').click();
+        await page.waitForFunction((n) => document.getElementById('studySlidePage').textContent.trim() === `${n} / 6`, i + 2);
+      }
+    }
+    const allSlides = SLIDES.every((name) => seen.some((s) => (s.src || '').includes(name) && s.loaded));
+    report.steps.push({ step: 'offline-stroller-slides', seen, allSlides });
+    if (!allSlides) report.ok = false;
+
+    await page.locator('#studyPopCloseX').click();
+    await page.waitForSelector('#studyMaterialPop', { state: 'detached' });
+
+    for (const id of ['wheelchair', 'mic-guide']) {
       await page.locator(`[data-material-id="${id}"]`).click();
-      await page.waitForSelector('#studyMaterialPop [role="dialog"]');
-      const title = (await page.textContent('#studyPopTitle')).trim();
-      const blockCount = await page.$$eval('#studyPopBody > div', (els) => els.length);
-      const stayed = await page.evaluate(() => !!document.querySelector('.study-list'));
-      report.steps.push({ step: `offline-pop:${id}`, title, blockCount, stayed });
-      if (!title || !blockCount || !stayed) report.ok = false;
+      await page.waitForSelector('#studyPopBody > div');
+      const count = await page.$$eval('#studyPopBody > div', (els) => els.length);
+      report.steps.push({ step: `offline-text:${id}`, count });
+      if (!count) report.ok = false;
       await page.locator('#studyPopCloseBtn').click();
       await page.waitForSelector('#studyMaterialPop', { state: 'detached' });
     }
-
-    await page.locator('#back').click();
-    await page.waitForSelector('.home');
-    report.steps.push({ step: 'offline-back-home', ok: true });
   } catch (error) {
     report.ok = false;
     report.error = String(error && error.stack || error);

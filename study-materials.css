@@ -262,6 +262,78 @@ body.study-pop-open {
   outline-offset: 2px;
 }
 
+/* ---- Image slide POP (stroller manual) ---- */
+
+.study-pop-panel--slides {
+  width: min(780px, calc(100vw - 20px));
+  max-height: min(95vh, calc(100dvh - 16px));
+  background: #111;
+}
+
+.study-pop-panel--slides .study-pop-header {
+  background: #0b4f8c;
+}
+
+.study-pop-body--slides {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 10px;
+  background: #1a1a1a;
+  min-height: 0;
+}
+
+.study-slide-image {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  user-select: none;
+  -webkit-user-drag: none;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.study-pop-footer--slides {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  border-top: 1px solid #2a2a2a;
+  background: #111;
+}
+
+.study-pop-nav-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 12px 14px;
+  border: 1px solid #5a6a78;
+  border-radius: 12px;
+  background: #2a323a;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.study-pop-nav-btn--primary {
+  border-color: #0b4f8c;
+  background: #0b4f8c;
+}
+
+.study-pop-nav-btn:disabled,
+.study-pop-nav-btn[aria-disabled="true"] {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.study-pop-nav-btn:focus-visible {
+  outline: 2px solid #8ec5ff;
+  outline-offset: 2px;
+}
+
 @media (max-width: 700px) {
   .study-doc-title {
     font-size: 18px;
@@ -283,6 +355,11 @@ body.study-pop-open {
     max-height: min(94vh, calc(100dvh - 24px));
   }
 
+  .study-pop-panel--slides {
+    width: calc(100vw - 20px);
+    max-height: min(95vh, calc(100dvh - 12px));
+  }
+
   .study-pop-title {
     font-size: 16px;
   }
@@ -290,11 +367,19 @@ body.study-pop-open {
   .study-pop-body {
     padding: 14px 14px 8px;
   }
+
+  .study-pop-body--slides {
+    padding: 8px;
+  }
 }
 
 @media (orientation: landscape) and (max-height: 500px) {
   .study-pop-panel {
     max-height: min(94vh, calc(100dvh - 16px));
+  }
+
+  .study-pop-panel--slides {
+    max-height: min(95vh, calc(100dvh - 10px));
   }
 
   .study-pop-header {
