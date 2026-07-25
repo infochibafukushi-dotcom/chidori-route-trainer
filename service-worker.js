@@ -1,4 +1,4 @@
-const CACHE_NAME = 'chidori-route-map-v71';
+const CACHE_NAME = 'chidori-route-map-v72';
 const APP_SHELL = [
   './',
   './index.html',
@@ -18,6 +18,7 @@ const APP_SHELL = [
   './horie-stop-images-v1.css?v=66',
   './shiyakusho-stop-images-v1.css?v=67',
   './maihama-line-stop-images-v1.css?v=69',
+  './takasu-line-stop-images-v1.css?v=72',
   './study-materials.css?v=71',
   './data.js?v=32',
   './app.js?v=71',
@@ -29,7 +30,7 @@ const APP_SHELL = [
   './hokuei-authoritative-v12.js?v=33',
   './hokuei-manual-override-v13.js?v=33',
   './hokuei-shared-coordinates-v15.js?v=32',
-  './hokuei-no-uturn-v17.js?v=69',
+  './hokuei-no-uturn-v17.js?v=72',
   './imagawa-directions-compat-v2.js?v=56',
   './hokuei-streetview-stops-v26.js?v=32',
   './hokuei-guidance-v22.js?v=57',
@@ -62,6 +63,11 @@ const APP_SHELL = [
   './maihama-line-path-policy-v1.js?v=69',
   './maihama-line-stop-images-v1.js?v=69',
   './maihama-line-route-v1.js?v=69',
+  './takasu-line-platforms-v1.js?v=72',
+  './takasu-line-path-v1.js?v=72',
+  './takasu-line-path-policy-v1.js?v=72',
+  './takasu-line-stop-images-v1.js?v=72',
+  './takasu-line-route-v1.js?v=72',
   './pwa-install.js?v=71'
 ];
 

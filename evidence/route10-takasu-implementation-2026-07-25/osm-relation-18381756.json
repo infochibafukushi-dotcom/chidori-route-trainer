@@ -1,0 +1,1245 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-07-24T23:43:01Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "node",
+      "id": 288384935,
+      "lat": 35.650126,
+      "lon": 139.9150322,
+      "tags": {
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 288384937,
+      "lat": 35.6498949,
+      "lon": 139.9147479
+    },
+    {
+      "type": "node",
+      "id": 288384996,
+      "lat": 35.6497221,
+      "lon": 139.914542
+    },
+    {
+      "type": "node",
+      "id": 288385100,
+      "lat": 35.6500254,
+      "lon": 139.9149057
+    },
+    {
+      "type": "node",
+      "id": 288797933,
+      "lat": 35.6420177,
+      "lon": 139.9121681
+    },
+    {
+      "type": "node",
+      "id": 289007785,
+      "lat": 35.6359754,
+      "lon": 139.9116636
+    },
+    {
+      "type": "node",
+      "id": 289008075,
+      "lat": 35.6364531,
+      "lon": 139.9110662
+    },
+    {
+      "type": "node",
+      "id": 289008636,
+      "lat": 35.6377543,
+      "lon": 139.9115245
+    },
+    {
+      "type": "node",
+      "id": 289009379,
+      "lat": 35.6343921,
+      "lon": 139.9136429,
+      "tags": {
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 289009383,
+      "lat": 35.6329013,
+      "lon": 139.9118614,
+      "tags": {
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 289022221,
+      "lat": 35.6320397,
+      "lon": 139.9108336
+    },
+    {
+      "type": "node",
+      "id": 289022228,
+      "lat": 35.6312382,
+      "lon": 139.9098744
+    },
+    {
+      "type": "node",
+      "id": 289022231,
+      "lat": 35.6294709,
+      "lon": 139.9077448
+    },
+    {
+      "type": "node",
+      "id": 289022611,
+      "lat": 35.6273933,
+      "lon": 139.9079483
+    },
+    {
+      "type": "node",
+      "id": 289023236,
+      "lat": 35.6403461,
+      "lon": 139.9101539,
+      "tags": {
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1312670866,
+      "lat": 35.6399969,
+      "lon": 139.9105145,
+      "tags": {
+        "bus": "yes",
+        "covered": "yes",
+        "highway": "bus_stop",
+        "name": "高洲北小学校",
+        "operator": "東京ベイシティ交通",
+        "passenger_information_display": "yes",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1312711918,
+      "lat": 35.648721,
+      "lon": 139.9166753,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "入船中央エステート",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1312776534,
+      "lat": 35.6494508,
+      "lon": 139.9142125
+    },
+    {
+      "type": "node",
+      "id": 1336182831,
+      "lat": 35.6475124,
+      "lon": 139.9183306
+    },
+    {
+      "type": "node",
+      "id": 2303738204,
+      "lat": 35.636912,
+      "lon": 139.9104946,
+      "tags": {
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2303738230,
+      "lat": 35.6385306,
+      "lon": 139.9124398,
+      "tags": {
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2534635816,
+      "lat": 35.6491874,
+      "lon": 139.9162222,
+      "tags": {
+        "highway": "traffic_signals",
+        "name": "入船中央",
+        "name:en": "Irifune chuo",
+        "name:ja": "入船中央"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2593542684,
+      "lat": 35.6473414,
+      "lon": 139.9185538,
+      "tags": {
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3722879102,
+      "lat": 35.6283748,
+      "lon": 139.9091155
+    },
+    {
+      "type": "node",
+      "id": 3722879114,
+      "lat": 35.632831,
+      "lon": 139.9117786,
+      "tags": {
+        "crossing": "traffic_signals",
+        "crossing_ref": "zebra",
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3722879120,
+      "lat": 35.6352401,
+      "lon": 139.9125848
+    },
+    {
+      "type": "node",
+      "id": 3722883544,
+      "lat": 35.6396244,
+      "lon": 139.9110603,
+      "tags": {
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3788621454,
+      "lat": 35.6422967,
+      "lon": 139.9124204
+    },
+    {
+      "type": "node",
+      "id": 3788621456,
+      "lat": 35.6433591,
+      "lon": 139.9137025
+    },
+    {
+      "type": "node",
+      "id": 6899769126,
+      "lat": 35.6361075,
+      "lon": 139.9114258,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "高洲西児童公園",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6899769128,
+      "lat": 35.6342355,
+      "lon": 139.9133844,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "高洲四丁目",
+        "operator": "東京ベイシティ交通",
+        "passenger_information_display": "yes",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6899769129,
+      "lat": 35.6316968,
+      "lon": 139.9102932,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "鉄鋼団地入口",
+        "operator": "東京ベイシティ交通",
+        "passenger_information_display": "yes",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6899769131,
+      "lat": 35.628804,
+      "lon": 139.9084934,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "みなと第二",
+        "operator": "東京ベイシティ交通",
+        "passenger_information_display": "yes",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6899769132,
+      "lat": 35.6268046,
+      "lon": 139.9084854,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "みなと南（鉄鋼団地）",
+        "operator": "東京ベイシティ交通",
+        "passenger_information_display": "yes",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8415001163,
+      "lat": 35.649411,
+      "lon": 139.9142448,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "local_ref": "X",
+        "name": "新浦安駅",
+        "note": "降車専用",
+        "operator": "京成トランジットバス;東京ベイシティ交通",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9956759392,
+      "lat": 35.6500449,
+      "lon": 139.9151399,
+      "tags": {
+        "crossing": "marked",
+        "crossing:markings": "zebra",
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9956759395,
+      "lat": 35.6500415,
+      "lon": 139.914926,
+      "tags": {
+        "crossing": "marked",
+        "crossing:markings": "zebra",
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9956759412,
+      "lat": 35.6492843,
+      "lon": 139.9160839,
+      "tags": {
+        "crossing": "marked",
+        "crossing:markings": "zebra",
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11311289922,
+      "lat": 35.6329644,
+      "lon": 139.911936,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11311289927,
+      "lat": 35.6327685,
+      "lon": 139.9117022,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11424227119,
+      "lat": 35.6460304,
+      "lon": 139.9169746
+    },
+    {
+      "type": "node",
+      "id": 11530698640,
+      "lat": 35.6299876,
+      "lon": 139.9082078,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "アライプロバンス",
+        "operator": "東京ベイシティ交通",
+        "passenger_information_display": "yes",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11530698641,
+      "lat": 35.629978,
+      "lon": 139.9083554
+    },
+    {
+      "type": "node",
+      "id": 11530698643,
+      "lat": 35.6268515,
+      "lon": 139.9085404
+    },
+    {
+      "type": "node",
+      "id": 11530698644,
+      "lat": 35.6288437,
+      "lon": 139.908533
+    },
+    {
+      "type": "node",
+      "id": 11530698654,
+      "lat": 35.6273301,
+      "lon": 139.9079476
+    },
+    {
+      "type": "node",
+      "id": 11530698655,
+      "lat": 35.6273083,
+      "lon": 139.9079631
+    },
+    {
+      "type": "node",
+      "id": 11530698656,
+      "lat": 35.6273606,
+      "lon": 139.9079416
+    },
+    {
+      "type": "node",
+      "id": 11530698657,
+      "lat": 35.6274282,
+      "lon": 139.9079704
+    },
+    {
+      "type": "node",
+      "id": 11533169241,
+      "lat": 35.6427097,
+      "lon": 139.9129204
+    },
+    {
+      "type": "node",
+      "id": 11533169242,
+      "lat": 35.6437788,
+      "lon": 139.9141999
+    },
+    {
+      "type": "node",
+      "id": 11553788850,
+      "lat": 35.6360667,
+      "lon": 139.9115525
+    },
+    {
+      "type": "node",
+      "id": 11553825394,
+      "lat": 35.6348023,
+      "lon": 139.9130599,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "高洲三丁目",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11553825395,
+      "lat": 35.6348055,
+      "lon": 139.9131278
+    },
+    {
+      "type": "node",
+      "id": 11557035679,
+      "lat": 35.6371996,
+      "lon": 139.9107606,
+      "tags": {
+        "bus": "yes",
+        "covered": "yes",
+        "highway": "bus_stop",
+        "name": "順天堂大学入口",
+        "operator": "東京ベイシティ交通",
+        "passenger_information_display": "yes",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11557035680,
+      "lat": 35.6372004,
+      "lon": 139.9108458
+    },
+    {
+      "type": "node",
+      "id": 11557035681,
+      "lat": 35.6382669,
+      "lon": 139.9120327,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "高洲二丁目",
+        "operator": "東京ベイシティ交通",
+        "passenger_information_display": "yes",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11557035684,
+      "lat": 35.6384615,
+      "lon": 139.9123628
+    },
+    {
+      "type": "node",
+      "id": 11557035685,
+      "lat": 35.6388966,
+      "lon": 139.9118939,
+      "tags": {
+        "bus": "yes",
+        "covered": "yes",
+        "highway": "bus_stop",
+        "name": "東京学館前",
+        "operator": "東京ベイシティ交通",
+        "passenger_information_display": "yes",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11557035686,
+      "lat": 35.6388971,
+      "lon": 139.9119787
+    },
+    {
+      "type": "node",
+      "id": 11573201384,
+      "lat": 35.636834,
+      "lon": 139.9105924
+    },
+    {
+      "type": "node",
+      "id": 11573201385,
+      "lat": 35.6359425,
+      "lon": 139.9117045
+    },
+    {
+      "type": "node",
+      "id": 11573201405,
+      "lat": 35.6343486,
+      "lon": 139.9135909
+    },
+    {
+      "type": "node",
+      "id": 11573201407,
+      "lat": 35.6344504,
+      "lon": 139.9135702
+    },
+    {
+      "type": "node",
+      "id": 11573201409,
+      "lat": 35.635284,
+      "lon": 139.9125298
+    },
+    {
+      "type": "node",
+      "id": 11580949264,
+      "lat": 35.6407729,
+      "lon": 139.9105319,
+      "tags": {
+        "bus": "yes",
+        "covered": "yes",
+        "highway": "bus_stop",
+        "name": "入船橋",
+        "operator": "東京ベイシティ交通",
+        "passenger_information_display": "yes",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11586798112,
+      "lat": 35.6466212,
+      "lon": 139.9175634,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "明海交差点",
+        "operator": "東京ベイシティ交通",
+        "passenger_information_display": "yes",
+        "public_transport": "platform",
+        "shelter": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12052336936,
+      "lat": 35.6334162,
+      "lon": 139.9124761
+    },
+    {
+      "type": "node",
+      "id": 12052363078,
+      "lat": 35.635054,
+      "lon": 139.9128174
+    },
+    {
+      "type": "node",
+      "id": 12409259395,
+      "lat": 35.6449711,
+      "lon": 139.9156873
+    },
+    {
+      "type": "node",
+      "id": 12409259396,
+      "lat": 35.6448599,
+      "lon": 139.9155128
+    },
+    {
+      "type": "node",
+      "id": 12409259397,
+      "lat": 35.6439597,
+      "lon": 139.9144265
+    },
+    {
+      "type": "node",
+      "id": 12419760828,
+      "lat": 35.640032,
+      "lon": 139.9105484
+    },
+    {
+      "type": "node",
+      "id": 12964665418,
+      "lat": 35.6347183,
+      "lon": 139.9132364
+    },
+    {
+      "type": "node",
+      "id": 13002108246,
+      "lat": 35.6384479,
+      "lon": 139.9123467,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13002108247,
+      "lat": 35.6386215,
+      "lon": 139.9123255,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13007735591,
+      "lat": 35.637362,
+      "lon": 139.9110438
+    },
+    {
+      "type": "node",
+      "id": 13007735612,
+      "lat": 35.6369796,
+      "lon": 139.9105769,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13012906139,
+      "lat": 35.6396827,
+      "lon": 139.910987,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13012906143,
+      "lat": 35.639566,
+      "lon": 139.911134,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13087226189,
+      "lat": 35.6348835,
+      "lon": 139.9130304
+    },
+    {
+      "type": "node",
+      "id": 13087255457,
+      "lat": 35.6375112,
+      "lon": 139.9112266
+    },
+    {
+      "type": "node",
+      "id": 13808269245,
+      "lat": 35.6420857,
+      "lon": 139.9122247
+    },
+    {
+      "type": "way",
+      "id": 26350465,
+      "nodes": [
+        12419760828,
+        13012906139,
+        3722883544,
+        13012906143,
+        11557035686,
+        13002108247,
+        2303738230
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "source": "GSImaps/ort"
+      }
+    },
+    {
+      "type": "way",
+      "id": 26359823,
+      "nodes": [
+        288797933,
+        289023236
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "4",
+        "maxspeed": "60",
+        "name": "第二湾岸通り",
+        "name:en": "Daini-Wangan Road",
+        "name:es": "Calle Daini-Wangan",
+        "name:ja-Hira": "だいにわんがんどおり",
+        "source": "GSImaps/std"
+      }
+    },
+    {
+      "type": "way",
+      "id": 26380836,
+      "nodes": [
+        289009383,
+        3722879114,
+        11311289927,
+        289022221,
+        289022228,
+        11530698641,
+        289022231
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "name": "桜通り",
+        "source": "GSImaps/ort"
+      }
+    },
+    {
+      "type": "way",
+      "id": 375499007,
+      "nodes": [
+        13808269245,
+        3788621454,
+        11533169241
+      ],
+      "tags": {
+        "bridge": "yes",
+        "highway": "tertiary",
+        "lanes": "2",
+        "layer": "1",
+        "maxspeed": "60",
+        "name": "第二湾岸通り",
+        "name:en": "Daini-Wangan Road",
+        "name:es": "Calle Daini-Wangan",
+        "name:ja": "第二湾岸通り",
+        "name:ja-Hira": "だいにわんがんどおり",
+        "oneway": "yes",
+        "source": "GSImaps/ort"
+      }
+    },
+    {
+      "type": "way",
+      "id": 414384377,
+      "nodes": [
+        2593542684,
+        11424227119,
+        12409259395
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "4",
+        "maxspeed": "60",
+        "name": "第二湾岸通り",
+        "name:en": "Daini-Wangan Road",
+        "name:es": "Calle Daini-Wangan",
+        "name:ja": "第二湾岸通り",
+        "name:ja-Hira": "だいにわんがんどおり",
+        "source": "GSImaps/std"
+      }
+    },
+    {
+      "type": "way",
+      "id": 720406629,
+      "nodes": [
+        288384935,
+        9956759395,
+        288385100,
+        288384937,
+        288384996
+      ],
+      "tags": {
+        "access": "yes",
+        "highway": "service",
+        "oneway": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 847288812,
+      "nodes": [
+        2593542684,
+        1336182831,
+        2534635816
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "maxspeed": "50",
+        "name": "シンボルロード",
+        "name:en": "Symbol Road",
+        "name:es": "Ruta Symbol",
+        "name:ja": "シンボルロード",
+        "name:ko": "심볼로",
+        "oneway": "yes",
+        "source": "GSImaps/ort",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 906161755,
+      "nodes": [
+        288384996,
+        1312776534
+      ],
+      "tags": {
+        "access": "permit",
+        "bus": "yes",
+        "highway": "service",
+        "oneway": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1238608003,
+      "nodes": [
+        289009379,
+        11573201405,
+        12052336936,
+        11311289922,
+        289009383
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "source": "GSImaps/ort"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1241264342,
+      "nodes": [
+        11533169241,
+        3788621456
+      ],
+      "tags": {
+        "bridge": "yes",
+        "highway": "tertiary",
+        "lanes": "2",
+        "layer": "1",
+        "maxspeed": "60",
+        "name": "第二湾岸通り",
+        "name:en": "Daini-Wangan Road",
+        "name:es": "Calle Daini-Wangan",
+        "name:ja": "第二湾岸通り",
+        "name:ja-Hira": "だいにわんがんどおり",
+        "oneway": "yes",
+        "source": "GSImaps/ort"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1241264344,
+      "nodes": [
+        3788621456,
+        11533169242,
+        12409259397
+      ],
+      "tags": {
+        "bridge": "yes",
+        "highway": "tertiary",
+        "lanes": "2",
+        "layer": "1",
+        "maxspeed": "60",
+        "name": "第二湾岸通り",
+        "name:en": "Daini-Wangan Road",
+        "name:es": "Calle Daini-Wangan",
+        "name:ja": "第二湾岸通り",
+        "name:ja-Hira": "だいにわんがんどおり",
+        "oneway": "yes",
+        "source": "GSImaps/ort"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1338975836,
+      "nodes": [
+        289009379,
+        11573201407,
+        12964665418,
+        11553825395,
+        13087226189,
+        12052363078,
+        3722879120,
+        11573201409,
+        11573201385,
+        289007785,
+        11553788850,
+        289008075,
+        11573201384,
+        2303738204
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "oneway": "no",
+        "source": "GSImaps/ort",
+        "surface": "paved"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1338996609,
+      "nodes": [
+        2534635816,
+        9956759412,
+        9956759392,
+        288384935
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "maxspeed": "50",
+        "name": "シンボルロード",
+        "name:en": "Symbol Road",
+        "name:es": "Ruta Symbol",
+        "name:ja": "シンボルロード",
+        "name:ko": "심볼로",
+        "oneway": "yes",
+        "source": "GSImaps/ort"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1340739630,
+      "nodes": [
+        2303738204,
+        13007735612,
+        11557035680,
+        13007735591,
+        13087255457,
+        289008636,
+        13002108246,
+        11557035684,
+        2303738230
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "2",
+        "source": "GSImaps/ort"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1340739634,
+      "nodes": [
+        11530698643,
+        11530698655,
+        11530698654,
+        11530698656,
+        289022611,
+        11530698657,
+        3722879102
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "source": "GSImaps/ort"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1340739635,
+      "nodes": [
+        289022231,
+        11530698644,
+        3722879102
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "source": "GSImaps/ort"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1342409927,
+      "nodes": [
+        289023236,
+        12419760828
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "source": "GSImaps/ort"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1510259339,
+      "nodes": [
+        12409259397,
+        12409259396,
+        12409259395
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "2",
+        "maxspeed": "60",
+        "name": "第二湾岸通り",
+        "name:en": "Daini-Wangan Road",
+        "name:es": "Calle Daini-Wangan",
+        "name:ja": "第二湾岸通り",
+        "name:ja-Hira": "だいにわんがんどおり",
+        "oneway": "yes",
+        "source": "GSImaps/ort"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1510521682,
+      "nodes": [
+        288797933,
+        13808269245
+      ],
+      "tags": {
+        "bridge": "yes",
+        "highway": "tertiary",
+        "lanes": "2",
+        "maxspeed": "60",
+        "name": "第二湾岸通り",
+        "name:en": "Daini-Wangan Road",
+        "name:es": "Calle Daini-Wangan",
+        "name:ja": "第二湾岸通り",
+        "name:ja-Hira": "だいにわんがんどおり",
+        "oneway": "yes",
+        "source": "GSImaps/ort"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 18381756,
+      "members": [
+        {
+          "type": "node",
+          "ref": 6899769132,
+          "role": "platform_entry_only"
+        },
+        {
+          "type": "node",
+          "ref": 6899769131,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 11530698640,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 6899769129,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 6899769128,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 11553825394,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 6899769126,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 11557035679,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 11557035681,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 11557035685,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 1312670866,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 11580949264,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 11586798112,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 1312711918,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 8415001163,
+          "role": "platform_exit_only"
+        },
+        {
+          "type": "way",
+          "ref": 1340739634,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 1340739635,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 26380836,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 1238608003,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 1338975836,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 1340739630,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 26350465,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 1342409927,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 26359823,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 1510521682,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 375499007,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 1241264342,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 1241264344,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 1510259339,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 414384377,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 847288812,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 1338996609,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 720406629,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 906161755,
+          "role": ""
+        }
+      ],
+      "tags": {
+        "name": "東京ベイシティバス10系統 みなと南⇒東京学館⇒新浦安駅",
+        "network": "高洲線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "10",
+        "route": "bus",
+        "type": "route"
+      }
+    }
+  ]
+}

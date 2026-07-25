@@ -27,6 +27,7 @@
   <link rel="stylesheet" href="./horie-stop-images-v1.css?v=66" />
   <link rel="stylesheet" href="./shiyakusho-stop-images-v1.css?v=67" />
   <link rel="stylesheet" href="./maihama-line-stop-images-v1.css?v=69" />
+  <link rel="stylesheet" href="./takasu-line-stop-images-v1.css?v=72" />
   <link rel="stylesheet" href="./study-materials.css?v=71" />
 </head>
 <body>
@@ -42,7 +43,7 @@
   <script src="./hokuei-authoritative-v12.js?v=33"></script>
   <script src="./hokuei-manual-override-v13.js?v=33"></script>
   <script src="./hokuei-shared-coordinates-v15.js?v=32"></script>
-  <script src="./hokuei-no-uturn-v17.js?v=69"></script>
+  <script src="./hokuei-no-uturn-v17.js?v=72"></script>
   <script src="./imagawa-directions-compat-v2.js?v=56"></script>
   <script src="./hokuei-streetview-stops-v26.js?v=32"></script>
   <script src="./hokuei-guidance-v22.js?v=57"></script>
@@ -82,9 +83,16 @@
   <script src="./maihama-line-path-policy-v1.js?v=69"></script>
   <script src="./maihama-line-stop-images-v1.js?v=69"></script>
   <script src="./maihama-line-route-v1.js?v=69"></script>
+  <script>window.STOP_EDITOR_MAIHAMA_LINE=stopEditor;</script>
+  <script src="./takasu-line-platforms-v1.js?v=72"></script>
+  <script src="./takasu-line-path-v1.js?v=72"></script>
+  <script src="./takasu-line-path-policy-v1.js?v=72"></script>
+  <script src="./takasu-line-stop-images-v1.js?v=72"></script>
+  <script src="./takasu-line-route-v1.js?v=72"></script>
   <script>
     (() => {
-      const route9StopEditor = stopEditor;
+      const route10StopEditor = stopEditor;
+      const route9StopEditor = window.STOP_EDITOR_MAIHAMA_LINE;
       const route6StopEditor = window.STOP_EDITOR_SHIYAKUSHO;
       const route5StopEditor = window.STOP_EDITOR_HORIE;
       const route4StopEditor = window.STOP_EDITOR_TOMIOKA;
@@ -92,6 +100,7 @@
       const imagawaStopEditor = window.STOP_EDITOR_IMAGAWA;
       const baseStopEditor = window.STOP_EDITOR_BEFORE_IMAGAWA;
       stopEditor = function stopEditorRouteBridge() {
+        if (routeState?.routeId === 'route-10') return route10StopEditor();
         if (routeState?.routeId === 'route-9') return route9StopEditor();
         if (routeState?.routeId === 'route-6') return route6StopEditor();
         if (routeState?.routeId === 'route-5') return route5StopEditor();

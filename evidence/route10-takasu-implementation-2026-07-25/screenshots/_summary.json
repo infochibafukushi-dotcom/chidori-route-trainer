@@ -1,0 +1,90 @@
+[
+  {
+    "file": "10-minato-shinurayasu-start-z19.png",
+    "label": "10-minato-minami 新浦安駅→入船中央エステート",
+    "headingDeg": 309
+  },
+  {
+    "file": "10-minato-meikai-crossing-z19.png",
+    "label": "10-minato-minami 入船中央エステート→明海交差点",
+    "headingDeg": 10
+  },
+  {
+    "file": "10-minato-irifunebashi-z19.png",
+    "label": "10-minato-minami 明海交差点→入船橋",
+    "headingDeg": 51
+  },
+  {
+    "file": "10-minato-gakkan-z19.png",
+    "label": "10-minato-minami 高洲北小学校→東京学館前",
+    "headingDeg": 308
+  },
+  {
+    "file": "10-minato-takasu4-branch-z20.png",
+    "label": "10-minato-minami 高洲三丁目→鉄鋼団地入口",
+    "headingDeg": 50
+  },
+  {
+    "file": "10-minato-steel-entry-z19.png",
+    "label": "10-minato-minami 高洲四丁目→鉄鋼団地入口",
+    "headingDeg": 50
+  },
+  {
+    "file": "10-minato-arai-z19.png",
+    "label": "10-minato-minami 鉄鋼団地入口→アライプロバンス",
+    "headingDeg": 50
+  },
+  {
+    "file": "10-minato-minato2-z19.png",
+    "label": "10-minato-minami アライプロバンス→みなと第二",
+    "headingDeg": 309
+  },
+  {
+    "file": "10-minato-minato-end-z19.png",
+    "label": "10-minato-minami みなと第二→みなと南",
+    "headingDeg": 126
+  },
+  {
+    "file": "10-shinurayasu-minato-start-z19.png",
+    "label": "10-shinurayasu みなと南→みなと第二",
+    "headingDeg": 230
+  },
+  {
+    "file": "10-shinurayasu-steel-entry-z19.png",
+    "label": "10-shinurayasu アライプロバンス→鉄鋼団地入口",
+    "headingDeg": 230
+  },
+  {
+    "file": "10-shinurayasu-takasu4-z20.png",
+    "label": "10-shinurayasu 鉄鋼団地入口→高洲三丁目",
+    "headingDeg": 226
+  },
+  {
+    "file": "10-shinurayasu-gakkan-z19.png",
+    "label": "10-shinurayasu 高洲二丁目→東京学館前",
+    "headingDeg": 0
+  },
+  {
+    "file": "10-shinurayasu-irifunebashi-z19.png",
+    "label": "10-shinurayasu 高洲北小学校→入船橋",
+    "headingDeg": 357
+  },
+  {
+    "file": "10-shinurayasu-station-entry-z19.png",
+    "label": "10-shinurayasu 入船中央エステート→新浦安駅",
+    "headingDeg": 51
+  },
+  {
+    "file": "10-shinurayasu-station-end-z19.png",
+    "label": "10-shinurayasu 明海交差点→新浦安駅",
+    "headingDeg": 110
+  },
+  {
+    "file": "ui-pc-route10.png",
+    "label": "route-10 PC UI"
+  },
+  {
+    "file": "ui-sp390-route10.png",
+    "label": "route-10 SP390 UI"
+  }
+]

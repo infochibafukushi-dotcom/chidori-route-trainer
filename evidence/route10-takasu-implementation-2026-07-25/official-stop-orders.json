@@ -1,0 +1,344 @@
+{
+  "checkedAt": "2026-07-24T23:44:12.989Z",
+  "sourcePriority": [
+    "京成バスナビ個別便通過時刻表（/stops?）",
+    "京成バスナビ系統・行先凡例"
+  ],
+  "lineName": "高洲線",
+  "systemNumber": "10",
+  "missingRequired": [],
+  "expectedOutboundCheck": {
+    "expected": [
+      "新浦安駅",
+      "入船中央エステート",
+      "明海交差点",
+      "入船橋",
+      "高洲北小学校",
+      "東京学館前",
+      "高洲二丁目",
+      "順天堂大学入口",
+      "高洲西児童公園",
+      "高洲三丁目",
+      "高洲四丁目",
+      "鉄鋼団地入口",
+      "アライプロバンス",
+      "みなと第二",
+      "みなと南"
+    ],
+    "actual": [
+      "新浦安駅",
+      "入船中央エステート",
+      "明海交差点",
+      "入船橋",
+      "高洲北小学校",
+      "東京学館前",
+      "高洲二丁目",
+      "順天堂大学入口",
+      "高洲西児童公園",
+      "高洲三丁目",
+      "高洲四丁目",
+      "鉄鋼団地入口",
+      "アライプロバンス",
+      "みなと第二",
+      "みなと南"
+    ],
+    "exactMatch": true,
+    "prefixMatch": true
+  },
+  "inboundReverseCheck": {
+    "outbound": [
+      "新浦安駅",
+      "入船中央エステート",
+      "明海交差点",
+      "入船橋",
+      "高洲北小学校",
+      "東京学館前",
+      "高洲二丁目",
+      "順天堂大学入口",
+      "高洲西児童公園",
+      "高洲三丁目",
+      "高洲四丁目",
+      "鉄鋼団地入口",
+      "アライプロバンス",
+      "みなと第二",
+      "みなと南"
+    ],
+    "inbound": [
+      "みなと南",
+      "みなと第二",
+      "アライプロバンス",
+      "鉄鋼団地入口",
+      "高洲四丁目",
+      "高洲三丁目",
+      "高洲西児童公園",
+      "順天堂大学入口",
+      "高洲二丁目",
+      "東京学館前",
+      "高洲北小学校",
+      "入船橋",
+      "明海交差点",
+      "入船中央エステート",
+      "新浦安駅"
+    ],
+    "exactReverse": true
+  },
+  "busstopIds": {
+    "shinurayasu": "00020619",
+    "minatoMinami": "00020640"
+  },
+  "osmNameNormalization": {
+    "みなと南（鉄鋼団地）": "みなと南",
+    "note": "OSM platform end name maps to official Navi name みなと南"
+  },
+  "route19Separation": {
+    "symbol10": "み",
+    "symbol19": "無印",
+    "forbiddenStops": [
+      "高洲海浜公園",
+      "浦安南高校"
+    ],
+    "forbiddenRelations": [
+      18381771,
+      18381770
+    ],
+    "note": "F乗り場に10と19が同居。み=10みなと南、無印=19高洲海浜公園。混同禁止。"
+  },
+  "systems": {
+    "10-minato-minami": {
+      "title": "みなと南（鉄鋼団地）行き",
+      "directionGroup": "outbound",
+      "departure": "新浦安駅",
+      "destination": "みなと南",
+      "timetableSymbol": "み",
+      "berth": "F",
+      "naviBusstop": "00020619",
+      "courseSequence": "0008200254-1",
+      "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200254-1 / symbol み)",
+      "note": "時刻表セル標記「み」。【１０系統】みなと南（鉄鋼団地）行き。無印は【１９系統】高洲海浜公園行きで本実装対象外。",
+      "course": "0008200254",
+      "sourceUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cb0003/stops?departure-busstop=00020619-1&course=0008200254&datetime=2026-07-27T07:11:00%2B09:00",
+      "confirmedDate": "2026-07-24",
+      "stopCount": 15,
+      "stops": [
+        {
+          "officialName": "新浦安駅",
+          "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200254-1 / symbol み)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "入船中央エステート",
+          "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200254-1 / symbol み)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "明海交差点",
+          "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200254-1 / symbol み)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "入船橋",
+          "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200254-1 / symbol み)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "高洲北小学校",
+          "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200254-1 / symbol み)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "東京学館前",
+          "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200254-1 / symbol み)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "高洲二丁目",
+          "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200254-1 / symbol み)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "順天堂大学入口",
+          "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200254-1 / symbol み)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "高洲西児童公園",
+          "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200254-1 / symbol み)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "高洲三丁目",
+          "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200254-1 / symbol み)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "高洲四丁目",
+          "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200254-1 / symbol み)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "鉄鋼団地入口",
+          "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200254-1 / symbol み)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "アライプロバンス",
+          "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200254-1 / symbol み)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "みなと第二",
+          "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200254-1 / symbol み)",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "みなと南",
+          "source": "Keisei Bus Navi trip stop list (新浦安駅 busstop=00020619 course-sequence=0008200254-1 / symbol み)",
+          "checkedDate": "2026-07-24"
+        }
+      ],
+      "stopNames": [
+        "新浦安駅",
+        "入船中央エステート",
+        "明海交差点",
+        "入船橋",
+        "高洲北小学校",
+        "東京学館前",
+        "高洲二丁目",
+        "順天堂大学入口",
+        "高洲西児童公園",
+        "高洲三丁目",
+        "高洲四丁目",
+        "鉄鋼団地入口",
+        "アライプロバンス",
+        "みなと第二",
+        "みなと南"
+      ],
+      "nameChecks": {
+        "stopCount": 15,
+        "hasMinatoMinami": true,
+        "hasSteelEntry": true,
+        "hasTakasu4": true,
+        "hasKaihin": false,
+        "hasMinamiHigh": false,
+        "hasGakkan": true,
+        "matchesExpectedOutbound": true,
+        "route19Contamination": false
+      },
+      "cellText": "11み"
+    },
+    "10-shinurayasu": {
+      "title": "新浦安駅行き",
+      "directionGroup": "inbound",
+      "departure": "みなと南",
+      "destination": "新浦安駅",
+      "timetableSymbol": "無印(10)",
+      "berth": "01",
+      "naviBusstop": "00020640",
+      "courseSequence": "0008200253-1",
+      "source": "Keisei Bus Navi trip stop list (みなと南 busstop=00020640 course=0008200253 / [10])",
+      "note": "みなと南発・[10]（東京学館前経由）新浦安駅行。OSM platform名「みなと南（鉄鋼団地）」は公式名「みなと南」に正規化。",
+      "course": "0008200253",
+      "sourceUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80ca0000/stops?departure-busstop=00020640-1&course=0008200253&datetime=2026-07-27T11:44:00%2B09:00",
+      "confirmedDate": "2026-07-24",
+      "stopCount": 15,
+      "stops": [
+        {
+          "officialName": "みなと南",
+          "source": "Keisei Bus Navi trip stop list (みなと南 busstop=00020640 course=0008200253 / [10])",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "みなと第二",
+          "source": "Keisei Bus Navi trip stop list (みなと南 busstop=00020640 course=0008200253 / [10])",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "アライプロバンス",
+          "source": "Keisei Bus Navi trip stop list (みなと南 busstop=00020640 course=0008200253 / [10])",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "鉄鋼団地入口",
+          "source": "Keisei Bus Navi trip stop list (みなと南 busstop=00020640 course=0008200253 / [10])",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "高洲四丁目",
+          "source": "Keisei Bus Navi trip stop list (みなと南 busstop=00020640 course=0008200253 / [10])",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "高洲三丁目",
+          "source": "Keisei Bus Navi trip stop list (みなと南 busstop=00020640 course=0008200253 / [10])",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "高洲西児童公園",
+          "source": "Keisei Bus Navi trip stop list (みなと南 busstop=00020640 course=0008200253 / [10])",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "順天堂大学入口",
+          "source": "Keisei Bus Navi trip stop list (みなと南 busstop=00020640 course=0008200253 / [10])",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "高洲二丁目",
+          "source": "Keisei Bus Navi trip stop list (みなと南 busstop=00020640 course=0008200253 / [10])",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "東京学館前",
+          "source": "Keisei Bus Navi trip stop list (みなと南 busstop=00020640 course=0008200253 / [10])",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "高洲北小学校",
+          "source": "Keisei Bus Navi trip stop list (みなと南 busstop=00020640 course=0008200253 / [10])",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "入船橋",
+          "source": "Keisei Bus Navi trip stop list (みなと南 busstop=00020640 course=0008200253 / [10])",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "明海交差点",
+          "source": "Keisei Bus Navi trip stop list (みなと南 busstop=00020640 course=0008200253 / [10])",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "入船中央エステート",
+          "source": "Keisei Bus Navi trip stop list (みなと南 busstop=00020640 course=0008200253 / [10])",
+          "checkedDate": "2026-07-24"
+        },
+        {
+          "officialName": "新浦安駅",
+          "source": "Keisei Bus Navi trip stop list (みなと南 busstop=00020640 course=0008200253 / [10])",
+          "checkedDate": "2026-07-24"
+        }
+      ],
+      "stopNames": [
+        "みなと南",
+        "みなと第二",
+        "アライプロバンス",
+        "鉄鋼団地入口",
+        "高洲四丁目",
+        "高洲三丁目",
+        "高洲西児童公園",
+        "順天堂大学入口",
+        "高洲二丁目",
+        "東京学館前",
+        "高洲北小学校",
+        "入船橋",
+        "明海交差点",
+        "入船中央エステート",
+        "新浦安駅"
+      ],
+      "nameChecks": null,
+      "cellText": "44",
+      "bodyHasSystem10": true,
+      "bodyHasSystem19": false
+    }
+  }
+}

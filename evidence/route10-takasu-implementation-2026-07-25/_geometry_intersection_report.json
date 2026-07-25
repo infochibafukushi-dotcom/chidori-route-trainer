@@ -1,0 +1,232 @@
+{
+  "generatedAt": "2026-07-25T00:02:38.790Z",
+  "route": "route-10",
+  "lineName": "高洲線",
+  "pathFiles": [
+    "takasu-line-path-v1.js",
+    "_path_bank.json"
+  ],
+  "systems": {
+    "10-minato-minami": {
+      "systemKey": "10-minato-minami",
+      "relationId": 18381757,
+      "pathSource": "osm-relation-18381757+startHint-shinurayasu-F",
+      "pathPointCount": 219,
+      "usedWayCount": 23,
+      "selfIntersectionCount": 0,
+      "pointsFarFromWaysCount": 0,
+      "maxDistToWay_m": 0,
+      "pedestrianWayCount": 0,
+      "wrongWayCount": 0,
+      "wayTagSamples": [
+        {
+          "wayId": 1340739633,
+          "highway": "service",
+          "oneway": "yes",
+          "access": "permit",
+          "bus": "yes",
+          "service": null
+        },
+        {
+          "wayId": 906161743,
+          "highway": "service",
+          "oneway": "yes",
+          "access": "permit",
+          "bus": "yes",
+          "service": null
+        },
+        {
+          "wayId": 369356254,
+          "highway": "service",
+          "oneway": "yes",
+          "access": "yes",
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 906161757,
+          "highway": "service",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 720406630,
+          "highway": "tertiary",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1338996611,
+          "highway": "tertiary",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 720406627,
+          "highway": "tertiary",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1340739637,
+          "highway": "tertiary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        }
+      ],
+      "buildingIntersectionCount": 0,
+      "groundGreenIntersectionCount": 0,
+      "bridgeGreenIntersectionCount": 2,
+      "visualZ19": {
+        "files": [
+          "10-minato-shinurayasu-start-z19.png",
+          "10-minato-meikai-crossing-z19.png",
+          "10-minato-irifunebashi-z19.png",
+          "10-minato-gakkan-z19.png",
+          "10-minato-takasu4-branch-z20.png",
+          "10-minato-steel-entry-z19.png",
+          "10-minato-arai-z19.png",
+          "10-minato-minato2-z19.png",
+          "10-minato-minato-end-z19.png"
+        ],
+        "existingCount": 0,
+        "missing": [
+          "10-minato-shinurayasu-start-z19.png",
+          "10-minato-meikai-crossing-z19.png",
+          "10-minato-irifunebashi-z19.png",
+          "10-minato-gakkan-z19.png",
+          "10-minato-takasu4-branch-z20.png",
+          "10-minato-steel-entry-z19.png",
+          "10-minato-arai-z19.png",
+          "10-minato-minato2-z19.png",
+          "10-minato-minato-end-z19.png"
+        ],
+        "buildingCrossingObserved": null,
+        "groundGreenCrossingObserved": null,
+        "note": "Manual z19 review from screenshots only — not used as automated pass/fail counts"
+      },
+      "reviewRequired": false,
+      "overpassOk": true
+    },
+    "10-shinurayasu": {
+      "systemKey": "10-shinurayasu",
+      "relationId": 18381756,
+      "pathSource": "osm-relation-18381756+startHint-minato-minami",
+      "pathPointCount": 187,
+      "usedWayCount": 19,
+      "selfIntersectionCount": 0,
+      "pointsFarFromWaysCount": 0,
+      "maxDistToWay_m": 0,
+      "pedestrianWayCount": 0,
+      "wrongWayCount": 0,
+      "wayTagSamples": [
+        {
+          "wayId": 1340739634,
+          "highway": "tertiary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1340739635,
+          "highway": "tertiary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 26380836,
+          "highway": "tertiary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1238608003,
+          "highway": "tertiary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1338975836,
+          "highway": "tertiary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1340739630,
+          "highway": "tertiary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 26350465,
+          "highway": "tertiary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1342409927,
+          "highway": "tertiary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        }
+      ],
+      "buildingIntersectionCount": 0,
+      "groundGreenIntersectionCount": 0,
+      "bridgeGreenIntersectionCount": 2,
+      "visualZ19": {
+        "files": [
+          "10-shinurayasu-minato-start-z19.png",
+          "10-shinurayasu-steel-entry-z19.png",
+          "10-shinurayasu-takasu4-z20.png",
+          "10-shinurayasu-gakkan-z19.png",
+          "10-shinurayasu-irifunebashi-z19.png",
+          "10-shinurayasu-station-entry-z19.png",
+          "10-shinurayasu-station-end-z19.png"
+        ],
+        "existingCount": 0,
+        "missing": [
+          "10-shinurayasu-minato-start-z19.png",
+          "10-shinurayasu-steel-entry-z19.png",
+          "10-shinurayasu-takasu4-z20.png",
+          "10-shinurayasu-gakkan-z19.png",
+          "10-shinurayasu-irifunebashi-z19.png",
+          "10-shinurayasu-station-entry-z19.png",
+          "10-shinurayasu-station-end-z19.png"
+        ],
+        "buildingCrossingObserved": null,
+        "groundGreenCrossingObserved": null,
+        "note": "Manual z19 review from screenshots only — not used as automated pass/fail counts"
+      },
+      "reviewRequired": false,
+      "overpassOk": true
+    }
+  },
+  "pass": true,
+  "anyReviewRequired": false,
+  "allOverpassOk": true
+}

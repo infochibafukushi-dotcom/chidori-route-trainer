@@ -1,0 +1,262 @@
+{
+  "checkedAt": "2026-07-24T23:44:12.989Z",
+  "source": "https://transfer-cloud.navitime.biz/keiseibus-group",
+  "missingRequired": [],
+  "outbound": {
+    "busstop": "00020619",
+    "busstopName": "新浦安駅",
+    "berth": "F",
+    "courseSequence": "0008200254-1",
+    "timetableUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200254-1&datetime=2026-07-24T12%3A00",
+    "legend": [
+      "（東京学館前・高洲四丁目経由）高洲海浜公園・みなと南（鉄鋼団地）行",
+      "10\t[10]（東京学館前・高洲四丁目経由）高洲海浜公園・みなと南（鉄鋼団地）行",
+      "19\t[19]（東京学館前・高洲四丁目経由）高洲海浜公園・みなと南（鉄鋼団地）行",
+      "無印…【１９系統】東京学館前、高洲四丁目、浦安南高校・特養ホーム経由　高洲海浜公園行き",
+      "み…【１０系統】東京学館前、高洲四丁目経由　みなと南（鉄鋼団地）行き"
+    ],
+    "samples": {
+      "10-minato-minami": {
+        "cellText": "11み",
+        "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cb0003/stops?departure-busstop=00020619-1&course=0008200254&datetime=2026-07-27T07:11:00%2B09:00",
+        "course": "0008200254",
+        "stopNames": [
+          "新浦安駅",
+          "入船中央エステート",
+          "明海交差点",
+          "入船橋",
+          "高洲北小学校",
+          "東京学館前",
+          "高洲二丁目",
+          "順天堂大学入口",
+          "高洲西児童公園",
+          "高洲三丁目",
+          "高洲四丁目",
+          "鉄鋼団地入口",
+          "アライプロバンス",
+          "みなと第二",
+          "みなと南"
+        ],
+        "stopCount": 15,
+        "rawStops": [
+          {
+            "time": "07:11",
+            "kind": "発",
+            "name": "新浦安駅"
+          },
+          {
+            "time": "07:12",
+            "kind": "着",
+            "name": "入船中央エステート"
+          },
+          {
+            "time": "07:13",
+            "kind": "着",
+            "name": "明海交差点"
+          },
+          {
+            "time": "07:14",
+            "kind": "着",
+            "name": "入船橋"
+          },
+          {
+            "time": "07:14",
+            "kind": "着",
+            "name": "高洲北小学校"
+          },
+          {
+            "time": "07:15",
+            "kind": "着",
+            "name": "東京学館前"
+          },
+          {
+            "time": "07:16",
+            "kind": "着",
+            "name": "高洲二丁目"
+          },
+          {
+            "time": "07:16",
+            "kind": "着",
+            "name": "順天堂大学入口"
+          },
+          {
+            "time": "07:17",
+            "kind": "着",
+            "name": "高洲西児童公園"
+          },
+          {
+            "time": "07:17",
+            "kind": "着",
+            "name": "高洲三丁目"
+          },
+          {
+            "time": "07:18",
+            "kind": "着",
+            "name": "高洲四丁目"
+          },
+          {
+            "time": "07:19",
+            "kind": "着",
+            "name": "鉄鋼団地入口"
+          },
+          {
+            "time": "07:20",
+            "kind": "着",
+            "name": "アライプロバンス"
+          },
+          {
+            "time": "07:21",
+            "kind": "着",
+            "name": "みなと第二"
+          },
+          {
+            "time": "07:28",
+            "kind": "着",
+            "name": "みなと南"
+          }
+        ],
+        "nameChecks": {
+          "stopCount": 15,
+          "hasMinatoMinami": true,
+          "hasSteelEntry": true,
+          "hasTakasu4": true,
+          "hasKaihin": false,
+          "hasMinamiHigh": false,
+          "hasGakkan": true,
+          "matchesExpectedOutbound": true,
+          "route19Contamination": false
+        },
+        "lateNight": false
+      }
+    }
+  },
+  "inboundMinato": {
+    "busstop": "00020640",
+    "busstopName": "みなと南",
+    "berth": "01",
+    "courseSequence": "0008200253-1",
+    "timetableUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020640&course-sequence=0008200253-1&datetime=2026-07-24T12%3A00",
+    "legend": [
+      "みなと南 系統・時刻表・のりば一覧",
+      "みなと南 時刻表",
+      "みなと南",
+      "みなとみなみ",
+      "無印…【１０系統】東京学館前経由　新浦安駅行き"
+    ],
+    "samples": {
+      "10-shinurayasu": {
+        "cellText": "44",
+        "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80ca0000/stops?departure-busstop=00020640-1&course=0008200253&datetime=2026-07-27T11:44:00%2B09:00",
+        "course": "0008200253",
+        "stopNames": [
+          "みなと南",
+          "みなと第二",
+          "アライプロバンス",
+          "鉄鋼団地入口",
+          "高洲四丁目",
+          "高洲三丁目",
+          "高洲西児童公園",
+          "順天堂大学入口",
+          "高洲二丁目",
+          "東京学館前",
+          "高洲北小学校",
+          "入船橋",
+          "明海交差点",
+          "入船中央エステート",
+          "新浦安駅"
+        ],
+        "stopCount": 15,
+        "rawStops": [
+          {
+            "time": "11:44",
+            "kind": "発",
+            "name": "みなと南"
+          },
+          {
+            "time": "11:45",
+            "kind": "着",
+            "name": "みなと第二"
+          },
+          {
+            "time": "11:46",
+            "kind": "着",
+            "name": "アライプロバンス"
+          },
+          {
+            "time": "11:47",
+            "kind": "着",
+            "name": "鉄鋼団地入口"
+          },
+          {
+            "time": "11:49",
+            "kind": "着",
+            "name": "高洲四丁目"
+          },
+          {
+            "time": "11:50",
+            "kind": "着",
+            "name": "高洲三丁目"
+          },
+          {
+            "time": "11:50",
+            "kind": "着",
+            "name": "高洲西児童公園"
+          },
+          {
+            "time": "11:51",
+            "kind": "着",
+            "name": "順天堂大学入口"
+          },
+          {
+            "time": "11:51",
+            "kind": "着",
+            "name": "高洲二丁目"
+          },
+          {
+            "time": "11:52",
+            "kind": "着",
+            "name": "東京学館前"
+          },
+          {
+            "time": "11:53",
+            "kind": "着",
+            "name": "高洲北小学校"
+          },
+          {
+            "time": "11:54",
+            "kind": "着",
+            "name": "入船橋"
+          },
+          {
+            "time": "11:55",
+            "kind": "着",
+            "name": "明海交差点"
+          },
+          {
+            "time": "11:56",
+            "kind": "着",
+            "name": "入船中央エステート"
+          },
+          {
+            "time": "12:02",
+            "kind": "着",
+            "name": "新浦安駅"
+          }
+        ],
+        "bodyHasSystem10": true,
+        "bodyHasSystem19": false,
+        "lateNight": false
+      }
+    }
+  },
+  "extraPatterns": {},
+  "rejectedRoute19": {
+    "note": "無印 = 19系統 高洲海浜公園行き。本実装では取得・混入しない。",
+    "legendLines": [
+      "（東京学館前・高洲四丁目経由）高洲海浜公園・みなと南（鉄鋼団地）行",
+      "10\t[10]（東京学館前・高洲四丁目経由）高洲海浜公園・みなと南（鉄鋼団地）行",
+      "19\t[19]（東京学館前・高洲四丁目経由）高洲海浜公園・みなと南（鉄鋼団地）行",
+      "無印…【１９系統】東京学館前、高洲四丁目、浦安南高校・特養ホーム経由　高洲海浜公園行き"
+    ]
+  }
+}

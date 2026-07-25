@@ -1,0 +1,313 @@
+{
+  "generatedAt": "2026-07-24T23:53:59.552Z",
+  "line": "高洲線",
+  "routeId": "route-10",
+  "systems": {
+    "10-minato-minami": {
+      "stops": 15,
+      "pathPoints": 219,
+      "maxGap_m": 25,
+      "maxPlatformDist_m": 12.3,
+      "pathHash": "2bbeb93a208f9aa344e6b7934ecb4fdff6e4310c3b03a82afca5c9d940b3e02f",
+      "resolvedVersion": "2026-07-25-takasu-line-minato-minami-v1",
+      "missingPlatforms": [],
+      "platformDists": [
+        {
+          "name": "新浦安駅",
+          "dist": 6.4
+        },
+        {
+          "name": "入船中央エステート",
+          "dist": 7.6
+        },
+        {
+          "name": "明海交差点",
+          "dist": 9.3
+        },
+        {
+          "name": "入船橋",
+          "dist": 10.1
+        },
+        {
+          "name": "高洲北小学校",
+          "dist": 9.9
+        },
+        {
+          "name": "東京学館前",
+          "dist": 11.6
+        },
+        {
+          "name": "高洲二丁目",
+          "dist": 9.5
+        },
+        {
+          "name": "順天堂大学入口",
+          "dist": 10.5
+        },
+        {
+          "name": "高洲西児童公園",
+          "dist": 4.6
+        },
+        {
+          "name": "高洲三丁目",
+          "dist": 8.3
+        },
+        {
+          "name": "高洲四丁目",
+          "dist": 8.7
+        },
+        {
+          "name": "鉄鋼団地入口",
+          "dist": 11.2
+        },
+        {
+          "name": "アライプロバンス",
+          "dist": 12.3
+        },
+        {
+          "name": "みなと第二",
+          "dist": 6.6
+        },
+        {
+          "name": "みなと南",
+          "dist": 7.2
+        }
+      ],
+      "sliceMeta": {
+        "si": 0,
+        "ei": 218,
+        "startDist": 6.4,
+        "endDist": 7.2
+      },
+      "maxJoin_m": 0,
+      "note": "outbound 新浦安駅→みなと南。高洲四丁目から鉄鋼団地方向。route-19禁止。",
+      "usedWaysSample": [
+        {
+          "wayId": 1340739633,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "startHint": true
+        },
+        {
+          "wayId": 906161743,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 369356254,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 906161757,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 720406630,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 1338996611,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 720406627,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 1340739637,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        }
+      ],
+      "orderIssues": [],
+      "usedWayCount": 23
+    },
+    "10-shinurayasu": {
+      "stops": 15,
+      "pathPoints": 187,
+      "maxGap_m": 25,
+      "maxPlatformDist_m": 14.4,
+      "pathHash": "eb5d31ba81c55b6ec38949bea6400abb722d3c730fc45d909380eb541b4c51d8",
+      "resolvedVersion": "2026-07-25-takasu-line-shinurayasu-v1",
+      "missingPlatforms": [],
+      "platformDists": [
+        {
+          "name": "みなと南",
+          "dist": 7.2
+        },
+        {
+          "name": "みなと第二",
+          "dist": 5.7
+        },
+        {
+          "name": "アライプロバンス",
+          "dist": 13.4
+        },
+        {
+          "name": "鉄鋼団地入口",
+          "dist": 14.4
+        },
+        {
+          "name": "高洲四丁目",
+          "dist": 5.1
+        },
+        {
+          "name": "高洲三丁目",
+          "dist": 6.1
+        },
+        {
+          "name": "高洲西児童公園",
+          "dist": 10.3
+        },
+        {
+          "name": "順天堂大学入口",
+          "dist": 7.7
+        },
+        {
+          "name": "高洲二丁目",
+          "dist": 10.8
+        },
+        {
+          "name": "東京学館前",
+          "dist": 7.7
+        },
+        {
+          "name": "高洲北小学校",
+          "dist": 5
+        },
+        {
+          "name": "入船橋",
+          "dist": 13.7
+        },
+        {
+          "name": "明海交差点",
+          "dist": 10.3
+        },
+        {
+          "name": "入船中央エステート",
+          "dist": 11.1
+        },
+        {
+          "name": "新浦安駅",
+          "dist": 5.3
+        }
+      ],
+      "sliceMeta": {
+        "si": 0,
+        "ei": 186,
+        "startDist": 7.2,
+        "endDist": 5.3
+      },
+      "maxJoin_m": 0,
+      "note": "inbound みなと南→新浦安駅。往路逆順禁止。OSM みなと南（鉄鋼団地）→公式みなと南。",
+      "usedWaysSample": [
+        {
+          "wayId": 1340739634,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "startHint": true
+        },
+        {
+          "wayId": 1340739635,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 26380836,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 1238608003,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 1338975836,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 1340739630,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 26350465,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 1342409927,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true,
+          "verifiedJoin": false
+        }
+      ],
+      "orderIssues": [],
+      "usedWayCount": 19
+    }
+  },
+  "blockers": [],
+  "route19Separation": {
+    "forbiddenRelations": [
+      18381771,
+      18381770
+    ],
+    "forbiddenStops": [
+      "高洲海浜公園",
+      "浦安南高校"
+    ]
+  },
+  "nameNormalization": {
+    "みなと南（鉄鋼団地）": "みなと南"
+  }
+}
