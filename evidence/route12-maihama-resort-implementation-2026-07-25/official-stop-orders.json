@@ -1,0 +1,445 @@
+{
+  "checkedAt": "2026-07-25T04:09:31.025Z",
+  "sourcePriority": [
+    "京成バスナビ個別便通過時刻表（/stops?）",
+    "京成バスナビ系統・行先凡例（ホ＝１２系統）"
+  ],
+  "lineName": "舞浜リゾート線",
+  "systemNumber": "12",
+  "busstopIds": {
+    "urayasu": "00020739",
+    "maihama": "00020617",
+    "tds": "00020627",
+    "hotelSouth": "00020701",
+    "hotelNorth": "00020653",
+    "bayside": "00020638",
+    "undokoen": "00020746"
+  },
+  "forbiddenRelationsUnlessConfirmed": [
+    9983006,
+    18323875
+  ],
+  "note": "候補21停留所は補助資料。正本は個別便 stopNames。route-4（無印/ランド/ち/TDL）は除外。",
+  "systems": {
+    "12-maihama-via-resort": {
+      "title": "舞浜駅行き（TDS・ホテル経由）",
+      "departure": "浦安駅入口",
+      "destination": "舞浜駅",
+      "berth": "D",
+      "timetableSymbol": "ホ",
+      "routeNumber": "12",
+      "course": "0008200272",
+      "naviBusstop": "00020739",
+      "sourceUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80de0001/stops?departure-busstop=00020739-1&course=0008200272&datetime=2026-07-25T08:49:00%2B09:00",
+      "confirmedDate": "2026-07-25",
+      "stopCount": 21,
+      "tripSignature": "12|00020739-1|00020617|00020739>00020723>00020705>00020651>00020707>00020870>00020721>00020660>00020875>00020879>00020878>00020684>00020853>00020851>00020679>00020746>00020627>00020638>00020701>00020653>00020617|>>>>>>>>>>>>>>>>>>>>|regular",
+      "idComplete": true,
+      "stopNames": [
+        "浦安駅入口",
+        "フラワー通り",
+        "堀江三丁目",
+        "南小入口",
+        "堀江東",
+        "市役所入口・郵便局前",
+        "ＮＴＴ浦安前",
+        "日生研修センター",
+        "順天堂病院前",
+        "サンコーポ東口",
+        "サンコーポ西口",
+        "弁天第二",
+        "見明川中学校前",
+        "見明川住宅",
+        "舞浜三丁目",
+        "運動公園",
+        "東京ディズニーシー（Ｒ）",
+        "「ベイサイド・ステーション」",
+        "リゾートホテルエリア・サウス",
+        "リゾートホテルエリア・ノース",
+        "舞浜駅"
+      ],
+      "stopIds": [
+        "00020739",
+        "00020723",
+        "00020705",
+        "00020651",
+        "00020707",
+        "00020870",
+        "00020721",
+        "00020660",
+        "00020875",
+        "00020879",
+        "00020878",
+        "00020684",
+        "00020853",
+        "00020851",
+        "00020679",
+        "00020746",
+        "00020627",
+        "00020638",
+        "00020701",
+        "00020653",
+        "00020617"
+      ],
+      "stops": [
+        {
+          "officialName": "浦安駅入口",
+          "busstopId": "00020739",
+          "platformId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "フラワー通り",
+          "busstopId": "00020723",
+          "platformId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "堀江三丁目",
+          "busstopId": "00020705",
+          "platformId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "南小入口",
+          "busstopId": "00020651",
+          "platformId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "堀江東",
+          "busstopId": "00020707",
+          "platformId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "市役所入口・郵便局前",
+          "busstopId": "00020870",
+          "platformId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "ＮＴＴ浦安前",
+          "busstopId": "00020721",
+          "platformId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "日生研修センター",
+          "busstopId": "00020660",
+          "platformId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "順天堂病院前",
+          "busstopId": "00020875",
+          "platformId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "サンコーポ東口",
+          "busstopId": "00020879",
+          "platformId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "サンコーポ西口",
+          "busstopId": "00020878",
+          "platformId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "弁天第二",
+          "busstopId": "00020684",
+          "platformId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "見明川中学校前",
+          "busstopId": "00020853",
+          "platformId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "見明川住宅",
+          "busstopId": "00020851",
+          "platformId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "舞浜三丁目",
+          "busstopId": "00020679",
+          "platformId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "運動公園",
+          "busstopId": "00020746",
+          "platformId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "東京ディズニーシー（Ｒ）",
+          "busstopId": "00020627",
+          "platformId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "「ベイサイド・ステーション」",
+          "busstopId": "00020638",
+          "platformId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "リゾートホテルエリア・サウス",
+          "busstopId": "00020701",
+          "platformId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "リゾートホテルエリア・ノース",
+          "busstopId": "00020653",
+          "platformId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "舞浜駅",
+          "busstopId": "00020617",
+          "platformId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        }
+      ]
+    },
+    "12-urayasu-via-resort": {
+      "title": "浦安駅入口行き（ホテル・TDS経由）",
+      "departure": "舞浜駅",
+      "destination": "浦安駅入口",
+      "berth": "04",
+      "timetableSymbol": "ホ",
+      "routeNumber": "12",
+      "course": "0008200271",
+      "naviBusstop": "00020617",
+      "sourceUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80dd0000/stops?departure-busstop=00020617-1&course=0008200271&datetime=2026-07-25T09:43:00%2B09:00",
+      "confirmedDate": "2026-07-25",
+      "stopCount": 21,
+      "tripSignature": "12|00020617-1|00020739|00020617>00020653>00020701>00020638>00020627>00020746>00020679>00020851>00020853>00020684>00020878>00020879>00020875>00020660>00020721>00020870>00020707>00020651>00020705>00020723>00020739|>>>>>>>>>>>>>>>>>>>>|regular",
+      "idComplete": true,
+      "stopNames": [
+        "舞浜駅",
+        "リゾートホテルエリア・ノース",
+        "リゾートホテルエリア・サウス",
+        "「ベイサイド・ステーション」",
+        "東京ディズニーシー（Ｒ）",
+        "運動公園",
+        "舞浜三丁目",
+        "見明川住宅",
+        "見明川中学校前",
+        "弁天第二",
+        "サンコーポ西口",
+        "サンコーポ東口",
+        "順天堂病院前",
+        "日生研修センター",
+        "ＮＴＴ浦安前",
+        "市役所入口・郵便局前",
+        "堀江東",
+        "南小入口",
+        "堀江三丁目",
+        "フラワー通り",
+        "浦安駅入口"
+      ],
+      "stopIds": [
+        "00020617",
+        "00020653",
+        "00020701",
+        "00020638",
+        "00020627",
+        "00020746",
+        "00020679",
+        "00020851",
+        "00020853",
+        "00020684",
+        "00020878",
+        "00020879",
+        "00020875",
+        "00020660",
+        "00020721",
+        "00020870",
+        "00020707",
+        "00020651",
+        "00020705",
+        "00020723",
+        "00020739"
+      ],
+      "stops": [
+        {
+          "officialName": "舞浜駅",
+          "busstopId": "00020617",
+          "platformId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "リゾートホテルエリア・ノース",
+          "busstopId": "00020653",
+          "platformId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "リゾートホテルエリア・サウス",
+          "busstopId": "00020701",
+          "platformId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "「ベイサイド・ステーション」",
+          "busstopId": "00020638",
+          "platformId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "東京ディズニーシー（Ｒ）",
+          "busstopId": "00020627",
+          "platformId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "運動公園",
+          "busstopId": "00020746",
+          "platformId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "舞浜三丁目",
+          "busstopId": "00020679",
+          "platformId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "見明川住宅",
+          "busstopId": "00020851",
+          "platformId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "見明川中学校前",
+          "busstopId": "00020853",
+          "platformId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "弁天第二",
+          "busstopId": "00020684",
+          "platformId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "サンコーポ西口",
+          "busstopId": "00020878",
+          "platformId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "サンコーポ東口",
+          "busstopId": "00020879",
+          "platformId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "順天堂病院前",
+          "busstopId": "00020875",
+          "platformId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "日生研修センター",
+          "busstopId": "00020660",
+          "platformId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "ＮＴＴ浦安前",
+          "busstopId": "00020721",
+          "platformId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "市役所入口・郵便局前",
+          "busstopId": "00020870",
+          "platformId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "堀江東",
+          "busstopId": "00020707",
+          "platformId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "南小入口",
+          "busstopId": "00020651",
+          "platformId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "堀江三丁目",
+          "busstopId": "00020705",
+          "platformId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "フラワー通り",
+          "busstopId": "00020723",
+          "platformId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        },
+        {
+          "officialName": "浦安駅入口",
+          "busstopId": "00020739",
+          "platformId": null,
+          "source": "Keisei Bus Navi trip stop list (/stops?)",
+          "checkedDate": "2026-07-25"
+        }
+      ]
+    }
+  }
+}

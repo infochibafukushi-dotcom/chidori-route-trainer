@@ -1,0 +1,190 @@
+{
+  "fetchedAt": "2026-07-25T04:51:57.587Z",
+  "count": 11,
+  "candidates": [
+    {
+      "id": 6778619326,
+      "lat": 35.6309927,
+      "lon": 139.8728617,
+      "name": "東京ベイ舞浜ホテル",
+      "operator": "東京ベイシティ交通",
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "東京ベイ舞浜ホテル",
+        "name:en": "Tokyo Bay Maihama Hotel",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "id": 6778619327,
+      "lat": 35.6306744,
+      "lon": 139.8730347,
+      "name": "東京ベイ舞浜ホテル",
+      "operator": "東京ベイシティ交通",
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "東京ベイ舞浜ホテル",
+        "name:en": "Tokyo Bay Maihama Hotel",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "id": 6796292904,
+      "lat": 35.628236,
+      "lon": 139.8744938,
+      "name": "ヒルトンホテル・グランドニッコー",
+      "operator": "東京ベイシティ交通",
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "ヒルトンホテル・グランドニッコー",
+        "name:en": "Hilton Hotel - Grand Nikko",
+        "name:ja": "ヒルトンホテル・グランドニッコー",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "id": 6796292905,
+      "lat": 35.6281122,
+      "lon": 139.8744073,
+      "name": "ヒルトンホテル・グランドニッコー",
+      "operator": "東京ベイシティ交通",
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "ヒルトンホテル・グランドニッコー",
+        "name:en": "Hilton Hotel - Grand Nikko",
+        "name:ja": "ヒルトンホテル・グランドニッコー",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "id": 6796292906,
+      "lat": 35.6275745,
+      "lon": 139.8767188,
+      "name": "シェラトンホテル・ホテルオークラ",
+      "operator": "東京ベイシティ交通",
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "シェラトンホテル・ホテルオークラ",
+        "name:en": "Sheraton Hotel - Hotel Okura",
+        "name:ja": "シェラトンホテル・ホテルオークラ",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "id": 6796292907,
+      "lat": 35.627481,
+      "lon": 139.8777508,
+      "name": "シェラトンホテル・ホテルオークラ",
+      "operator": "東京ベイシティ交通",
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "シェラトンホテル・ホテルオークラ",
+        "name:en": "Sheraton Hotel - Hotel Okura",
+        "name:ja": "シェラトンホテル・ホテルオークラ",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "id": 9482668406,
+      "lat": 35.6279955,
+      "lon": 139.8761807,
+      "name": "ベイサイド・ステーション",
+      "network": "ディズニーリゾートクルーザー",
+      "local_ref": "5",
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "local_ref": "5",
+        "name": "ベイサイド・ステーション",
+        "name:en": "Bay Side Station",
+        "name:es": "Estación Bayside",
+        "network": "ディズニーリゾートクルーザー",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "id": 9482668407,
+      "lat": 35.6279571,
+      "lon": 139.8763495,
+      "name": "ベイサイド・ステーション",
+      "network": "ディズニーリゾートクルーザー",
+      "local_ref": "4",
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "local_ref": "4",
+        "name": "ベイサイド・ステーション",
+        "name:en": "Bay Side Station",
+        "name:es": "Estación Bayside",
+        "network": "ディズニーリゾートクルーザー",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "id": 9482668408,
+      "lat": 35.6279249,
+      "lon": 139.8765129,
+      "name": "ベイサイド・ステーション",
+      "network": "ディズニーリゾートクルーザー",
+      "local_ref": "3",
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "local_ref": "3",
+        "name": "ベイサイド・ステーション",
+        "name:en": "Bay Side Station",
+        "name:es": "Estación Bayside",
+        "network": "ディズニーリゾートクルーザー",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "id": 9482668409,
+      "lat": 35.6278812,
+      "lon": 139.8767029,
+      "name": "ベイサイド・ステーション",
+      "network": "ディズニーリゾートクルーザー",
+      "local_ref": "2",
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "local_ref": "2",
+        "name": "ベイサイド・ステーション",
+        "name:en": "Bay Side Station",
+        "name:es": "Estación Bayside",
+        "network": "ディズニーリゾートクルーザー",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "id": 9482668410,
+      "lat": 35.6278468,
+      "lon": 139.8768693,
+      "name": "ベイサイド・ステーション",
+      "network": "ディズニーリゾートクルーザー",
+      "local_ref": "1",
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "local_ref": "1",
+        "name": "ベイサイド・ステーション",
+        "name:en": "Bay Side Station",
+        "name:es": "Estación Bayside",
+        "network": "ディズニーリゾートクルーザー",
+        "public_transport": "platform"
+      }
+    }
+  ]
+}

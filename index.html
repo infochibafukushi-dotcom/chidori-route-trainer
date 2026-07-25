@@ -29,6 +29,7 @@
   <link rel="stylesheet" href="./maihama-line-stop-images-v1.css?v=69" />
   <link rel="stylesheet" href="./takasu-line-stop-images-v1.css?v=72" />
   <link rel="stylesheet" href="./symbol-road-line-stop-images-v1.css?v=73" />
+  <link rel="stylesheet" href="./maihama-resort-line-stop-images-v1.css?v=74" />
   <link rel="stylesheet" href="./study-materials.css?v=71" />
 </head>
 <body>
@@ -44,7 +45,7 @@
   <script src="./hokuei-authoritative-v12.js?v=33"></script>
   <script src="./hokuei-manual-override-v13.js?v=33"></script>
   <script src="./hokuei-shared-coordinates-v15.js?v=32"></script>
-  <script src="./hokuei-no-uturn-v17.js?v=73"></script>
+  <script src="./hokuei-no-uturn-v17.js?v=74"></script>
   <script src="./imagawa-directions-compat-v2.js?v=56"></script>
   <script src="./hokuei-streetview-stops-v26.js?v=32"></script>
   <script src="./hokuei-guidance-v22.js?v=57"></script>
@@ -96,9 +97,16 @@
   <script src="./symbol-road-line-path-policy-v1.js?v=73"></script>
   <script src="./symbol-road-line-stop-images-v1.js?v=73"></script>
   <script src="./symbol-road-line-route-v1.js?v=73"></script>
+  <script>window.STOP_EDITOR_SYMBOL_ROAD_LINE=stopEditor;</script>
+  <script src="./maihama-resort-line-platforms-v1.js?v=74"></script>
+  <script src="./maihama-resort-line-path-v1.js?v=74"></script>
+  <script src="./maihama-resort-line-path-policy-v1.js?v=74"></script>
+  <script src="./maihama-resort-line-stop-images-v1.js?v=74"></script>
+  <script src="./maihama-resort-line-route-v1.js?v=74"></script>
   <script>
     (() => {
-      const route11StopEditor = stopEditor;
+      const route12StopEditor = stopEditor;
+      const route11StopEditor = window.STOP_EDITOR_SYMBOL_ROAD_LINE;
       const route10StopEditor = window.STOP_EDITOR_TAKASU_LINE;
       const route9StopEditor = window.STOP_EDITOR_MAIHAMA_LINE;
       const route6StopEditor = window.STOP_EDITOR_SHIYAKUSHO;
@@ -108,6 +116,7 @@
       const imagawaStopEditor = window.STOP_EDITOR_IMAGAWA;
       const baseStopEditor = window.STOP_EDITOR_BEFORE_IMAGAWA;
       stopEditor = function stopEditorRouteBridge() {
+        if (routeState?.routeId === 'route-12') return route12StopEditor();
         if (routeState?.routeId === 'route-11') return route11StopEditor();
         if (routeState?.routeId === 'route-10') return route10StopEditor();
         if (routeState?.routeId === 'route-9') return route9StopEditor();

@@ -1,0 +1,52 @@
+{
+  "startedAt": "2026-07-25T05:34:30.835Z",
+  "intact": {
+    "12-maihama-via-resort": {
+      "ok": true,
+      "pathInvalid": false,
+      "pathHash": "0ac1e3bdc9926d8830e6e71b99e31e2f04b6529271fc72eb149af6c780a67803",
+      "bankHash": "0ac1e3bdc9926d8830e6e71b99e31e2f04b6529271fc72eb149af6c780a67803",
+      "recomputed": "0ac1e3bdc9926d8830e6e71b99e31e2f04b6529271fc72eb149af6c780a67803",
+      "hashMatch": true,
+      "resolvedVersion": "2026-07-25-maihama-resort-maihama-v1",
+      "expectedVersion": "2026-07-25-maihama-resort-maihama-v1",
+      "pathPoints": 664
+    },
+    "12-urayasu-via-resort": {
+      "ok": true,
+      "pathInvalid": false,
+      "pathHash": "51cc07c0d3943cb62491b7890a8070a59a6b8790128a87dcddee4753f18f04bc",
+      "bankHash": "51cc07c0d3943cb62491b7890a8070a59a6b8790128a87dcddee4753f18f04bc",
+      "recomputed": "51cc07c0d3943cb62491b7890a8070a59a6b8790128a87dcddee4753f18f04bc",
+      "hashMatch": true,
+      "resolvedVersion": "2026-07-25-maihama-resort-urayasu-v1",
+      "expectedVersion": "2026-07-25-maihama-resort-urayasu-v1",
+      "pathPoints": 657
+    }
+  },
+  "tamper": {
+    "systemKey": "12-maihama-via-resort",
+    "bankHash": "0ac1e3bdc9926d8830e6e71b99e31e2f04b6529271fc72eb149af6c780a67803",
+    "originalPoint": {
+      "lat": 35.629277933333334,
+      "lng": 139.88897793333334
+    },
+    "beforeButton": true,
+    "threw": "舞浜リゾート線の走行データを確認できません。\n系統：12-maihama-via-resort\n理由：pathHash不一致",
+    "pathInvalid": true,
+    "issueText": "pathHash不一致 / maxGap超過（37.9m > 30m）",
+    "messageHasPathHash": true,
+    "messageHasMaihamaResortBanner": true,
+    "statusText": "舞浜リゾート線の走行データを確認できません。\n系統：12-maihama-via-resort\n理由：pathHash不一致",
+    "afterButton": false,
+    "driveBlocked": true
+  },
+  "restore": {
+    "ok": true,
+    "pathInvalid": false,
+    "startButton": true
+  },
+  "productionFilesUnchanged": true,
+  "pass": true,
+  "finishedAt": "2026-07-25T05:34:34.846Z"
+}

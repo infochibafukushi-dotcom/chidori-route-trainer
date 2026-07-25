@@ -1,0 +1,238 @@
+{
+  "generatedAt": "2026-07-25T05:50:32.299Z",
+  "route": "route-12",
+  "lineName": "舞浜リゾート線",
+  "pathFiles": [
+    "maihama-resort-line-path-v1.js",
+    "_path_bank.json"
+  ],
+  "systems": {
+    "12-maihama-via-resort": {
+      "systemKey": "12-maihama-via-resort",
+      "relationId": 18381677,
+      "pathSource": "osm-relation-18381677+startHint-urayasu+bayside-external",
+      "pathPointCount": 664,
+      "usedWayCount": 44,
+      "selfIntersectionCount": 8,
+      "pointsFarFromWaysCount": 0,
+      "maxDistToWay_m": 0,
+      "pedestrianWayCount": 0,
+      "wrongWayCount": 0,
+      "wayTagSamples": [
+        {
+          "wayId": 1337138023,
+          "highway": "tertiary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 60193618,
+          "highway": "tertiary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 60193608,
+          "highway": "tertiary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 60194496,
+          "highway": "tertiary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 136399256,
+          "highway": "tertiary",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 260586190,
+          "highway": "tertiary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 720402604,
+          "highway": "tertiary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1338996620,
+          "highway": "tertiary",
+          "oneway": "no",
+          "access": null,
+          "bus": null,
+          "service": null
+        }
+      ],
+      "buildingIntersectionCount": 0,
+      "groundGreenIntersectionCount": 0,
+      "bridgeGreenIntersectionCount": 4,
+      "visualZ19": {
+        "files": [
+          "12-maihama-urayasu-start-z19.png",
+          "12-maihama-cityhall-entry-z19.png",
+          "12-maihama-juntendo-z19.png",
+          "12-maihama-undokoen-branch-z20.png",
+          "12-maihama-tds-entry-z20.png",
+          "12-maihama-tds-platform-z20.png",
+          "12-maihama-tds-exit-z20.png",
+          "12-maihama-bayside-z20.png",
+          "12-maihama-hotel-south-z20.png",
+          "12-maihama-hotel-north-z20.png",
+          "12-maihama-maihama-end-z19.png"
+        ],
+        "existingCount": 11,
+        "missing": [],
+        "buildingCrossingObserved": null,
+        "groundGreenCrossingObserved": null,
+        "note": "Manual z19 review from screenshots only — not used as automated pass/fail counts"
+      },
+      "reviewRequired": true,
+      "overpassOk": true,
+      "restrictedAccessWayCount": 7,
+      "busPermittedRestrictedWayCount": 7,
+      "unresolvedRestrictedWayCount": 0,
+      "platformDistException": {
+        "name": "「ベイサイド・ステーション」",
+        "dist": 28.6,
+        "exception": true
+      }
+    },
+    "12-urayasu-via-resort": {
+      "systemKey": "12-urayasu-via-resort",
+      "relationId": 18381676,
+      "pathSource": "osm-relation-18381676+startHint-maihama+bayside-external",
+      "pathPointCount": 657,
+      "usedWayCount": 47,
+      "selfIntersectionCount": 8,
+      "pointsFarFromWaysCount": 0,
+      "maxDistToWay_m": 0,
+      "pedestrianWayCount": 0,
+      "wrongWayCount": 0,
+      "wayTagSamples": [
+        {
+          "wayId": 1337138021,
+          "highway": "tertiary",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1337341818,
+          "highway": "tertiary",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1337358421,
+          "highway": "tertiary",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1337138028,
+          "highway": "tertiary",
+          "oneway": "yes",
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1291325002,
+          "highway": "tertiary",
+          "oneway": null,
+          "access": null,
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 72272367,
+          "highway": "service",
+          "oneway": "yes",
+          "access": "no",
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 1291324999,
+          "highway": "service",
+          "oneway": "yes",
+          "access": "no",
+          "bus": null,
+          "service": null
+        },
+        {
+          "wayId": 680722811,
+          "highway": "service",
+          "oneway": "yes",
+          "access": "no",
+          "bus": null,
+          "service": null
+        }
+      ],
+      "buildingIntersectionCount": 0,
+      "groundGreenIntersectionCount": 0,
+      "bridgeGreenIntersectionCount": 4,
+      "visualZ19": {
+        "files": [
+          "12-urayasu-maihama-start-z19.png",
+          "12-urayasu-hotel-north-z20.png",
+          "12-urayasu-hotel-south-z20.png",
+          "12-urayasu-bayside-z20.png",
+          "12-urayasu-tds-platform-z20.png",
+          "12-urayasu-undokoen-z19.png",
+          "12-urayasu-cityhall-z19.png",
+          "12-urayasu-urayasu-end-z19.png"
+        ],
+        "existingCount": 8,
+        "missing": [],
+        "buildingCrossingObserved": null,
+        "groundGreenCrossingObserved": null,
+        "note": "Manual z19 review from screenshots only — not used as automated pass/fail counts"
+      },
+      "reviewRequired": true,
+      "overpassOk": true,
+      "restrictedAccessWayCount": 7,
+      "busPermittedRestrictedWayCount": 7,
+      "unresolvedRestrictedWayCount": 0,
+      "platformDistException": {
+        "name": "「ベイサイド・ステーション」",
+        "dist": 22.2,
+        "exception": true
+      }
+    }
+  },
+  "pass": true,
+  "selfIntersectionPolicy": "expected-at-tds-hotel-loop",
+  "selfIntersectionTotals": {
+    "12-maihama-via-resort": 8,
+    "12-urayasu-via-resort": 8
+  },
+  "anyReviewRequired": true,
+  "allOverpassOk": true
+}

@@ -1,0 +1,105 @@
+[
+  {
+    "file": "12-maihama-urayasu-start-z19.png",
+    "label": "12-maihama-via-resort 浦安駅入口→フラワー通り",
+    "headingDeg": 8
+  },
+  {
+    "file": "12-maihama-cityhall-entry-z19.png",
+    "label": "12-maihama-via-resort 堀江東→市役所入口・郵便局前",
+    "headingDeg": 297
+  },
+  {
+    "file": "12-maihama-juntendo-z19.png",
+    "label": "12-maihama-via-resort 日生研修センター→順天堂病院前",
+    "headingDeg": 50
+  },
+  {
+    "file": "12-maihama-undokoen-branch-z20.png",
+    "label": "12-maihama-via-resort 舞浜三丁目→東京ディズニーシー（Ｒ）",
+    "headingDeg": 45
+  },
+  {
+    "file": "12-maihama-tds-entry-z20.png",
+    "label": "12-maihama-via-resort 運動公園→東京ディズニーシー（Ｒ）",
+    "headingDeg": 27
+  },
+  {
+    "file": "12-maihama-tds-platform-z20.png",
+    "label": "12-maihama-via-resort 東京ディズニーシー（Ｒ）→「ベイサイド・ステーション」",
+    "headingDeg": 115
+  },
+  {
+    "file": "12-maihama-tds-exit-z20.png",
+    "label": "12-maihama-via-resort 東京ディズニーシー（Ｒ）→「ベイサイド・ステーション」",
+    "headingDeg": 115
+  },
+  {
+    "file": "12-maihama-bayside-z20.png",
+    "label": "12-maihama-via-resort 東京ディズニーシー（Ｒ）→リゾートホテルエリア・サウス",
+    "headingDeg": 115
+  },
+  {
+    "file": "12-maihama-hotel-south-z20.png",
+    "label": "12-maihama-via-resort 「ベイサイド・ステーション」→リゾートホテルエリア・ノース",
+    "headingDeg": 103
+  },
+  {
+    "file": "12-maihama-hotel-north-z20.png",
+    "label": "12-maihama-via-resort リゾートホテルエリア・サウス→舞浜駅",
+    "headingDeg": 277
+  },
+  {
+    "file": "12-maihama-maihama-end-z19.png",
+    "label": "12-maihama-via-resort リゾートホテルエリア・ノース→舞浜駅",
+    "headingDeg": 275
+  },
+  {
+    "file": "12-urayasu-maihama-start-z19.png",
+    "label": "12-urayasu-via-resort 舞浜駅→リゾートホテルエリア・ノース",
+    "headingDeg": 15
+  },
+  {
+    "file": "12-urayasu-hotel-north-z20.png",
+    "label": "12-urayasu-via-resort 舞浜駅→リゾートホテルエリア・サウス",
+    "headingDeg": 353
+  },
+  {
+    "file": "12-urayasu-hotel-south-z20.png",
+    "label": "12-urayasu-via-resort リゾートホテルエリア・ノース→「ベイサイド・ステーション」",
+    "headingDeg": 283
+  },
+  {
+    "file": "12-urayasu-bayside-z20.png",
+    "label": "12-urayasu-via-resort リゾートホテルエリア・サウス→東京ディズニーシー（Ｒ）",
+    "headingDeg": 161
+  },
+  {
+    "file": "12-urayasu-tds-platform-z20.png",
+    "label": "12-urayasu-via-resort 「ベイサイド・ステーション」→運動公園",
+    "headingDeg": 199
+  },
+  {
+    "file": "12-urayasu-undokoen-z19.png",
+    "label": "12-urayasu-via-resort 東京ディズニーシー（Ｒ）→舞浜三丁目",
+    "headingDeg": 230
+  },
+  {
+    "file": "12-urayasu-cityhall-z19.png",
+    "label": "12-urayasu-via-resort ＮＴＴ浦安前→堀江東",
+    "headingDeg": 117
+  },
+  {
+    "file": "12-urayasu-urayasu-end-z19.png",
+    "label": "12-urayasu-via-resort フラワー通り→浦安駅入口",
+    "headingDeg": 243
+  },
+  {
+    "file": "ui-pc-route10.png",
+    "label": "route-12 PC UI"
+  },
+  {
+    "file": "ui-sp390-route10.png",
+    "label": "route-12 SP390 UI"
+  }
+]

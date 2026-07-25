@@ -1,4 +1,4 @@
-const CACHE_NAME = 'chidori-route-map-v73';
+const CACHE_NAME = 'chidori-route-map-v74';
 const APP_SHELL = [
   './',
   './index.html',
@@ -20,6 +20,7 @@ const APP_SHELL = [
   './maihama-line-stop-images-v1.css?v=69',
   './takasu-line-stop-images-v1.css?v=72',
   './symbol-road-line-stop-images-v1.css?v=73',
+  './maihama-resort-line-stop-images-v1.css?v=74',
   './study-materials.css?v=71',
   './data.js?v=32',
   './app.js?v=71',
@@ -31,7 +32,7 @@ const APP_SHELL = [
   './hokuei-authoritative-v12.js?v=33',
   './hokuei-manual-override-v13.js?v=33',
   './hokuei-shared-coordinates-v15.js?v=32',
-  './hokuei-no-uturn-v17.js?v=73',
+  './hokuei-no-uturn-v17.js?v=74',
   './imagawa-directions-compat-v2.js?v=56',
   './hokuei-streetview-stops-v26.js?v=32',
   './hokuei-guidance-v22.js?v=57',
@@ -74,6 +75,11 @@ const APP_SHELL = [
   './symbol-road-line-path-policy-v1.js?v=73',
   './symbol-road-line-stop-images-v1.js?v=73',
   './symbol-road-line-route-v1.js?v=73',
+  './maihama-resort-line-platforms-v1.js?v=74',
+  './maihama-resort-line-path-v1.js?v=74',
+  './maihama-resort-line-path-policy-v1.js?v=74',
+  './maihama-resort-line-stop-images-v1.js?v=74',
+  './maihama-resort-line-route-v1.js?v=74',
   './pwa-install.js?v=71'
 ];
 

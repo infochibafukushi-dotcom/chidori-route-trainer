@@ -1,0 +1,114 @@
+{
+  "fetchedAt": "2026-07-25T04:51:24.048Z",
+  "officialBusstopId": "00020638",
+  "officialName": "「ベイサイド・ステーション」",
+  "queryHint": "name~ベイサイド / Bayside near TDS hotel area",
+  "count": 5,
+  "candidates": [
+    {
+      "id": 9482668406,
+      "lat": 35.6279955,
+      "lon": 139.8761807,
+      "name": "ベイサイド・ステーション",
+      "nameEn": "Bay Side Station",
+      "operator": null,
+      "local_ref": "5",
+      "highway": "bus_stop",
+      "public_transport": "platform",
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "local_ref": "5",
+        "name": "ベイサイド・ステーション",
+        "name:en": "Bay Side Station",
+        "name:es": "Estación Bayside",
+        "network": "ディズニーリゾートクルーザー",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "id": 9482668407,
+      "lat": 35.6279571,
+      "lon": 139.8763495,
+      "name": "ベイサイド・ステーション",
+      "nameEn": "Bay Side Station",
+      "operator": null,
+      "local_ref": "4",
+      "highway": "bus_stop",
+      "public_transport": "platform",
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "local_ref": "4",
+        "name": "ベイサイド・ステーション",
+        "name:en": "Bay Side Station",
+        "name:es": "Estación Bayside",
+        "network": "ディズニーリゾートクルーザー",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "id": 9482668408,
+      "lat": 35.6279249,
+      "lon": 139.8765129,
+      "name": "ベイサイド・ステーション",
+      "nameEn": "Bay Side Station",
+      "operator": null,
+      "local_ref": "3",
+      "highway": "bus_stop",
+      "public_transport": "platform",
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "local_ref": "3",
+        "name": "ベイサイド・ステーション",
+        "name:en": "Bay Side Station",
+        "name:es": "Estación Bayside",
+        "network": "ディズニーリゾートクルーザー",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "id": 9482668409,
+      "lat": 35.6278812,
+      "lon": 139.8767029,
+      "name": "ベイサイド・ステーション",
+      "nameEn": "Bay Side Station",
+      "operator": null,
+      "local_ref": "2",
+      "highway": "bus_stop",
+      "public_transport": "platform",
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "local_ref": "2",
+        "name": "ベイサイド・ステーション",
+        "name:en": "Bay Side Station",
+        "name:es": "Estación Bayside",
+        "network": "ディズニーリゾートクルーザー",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "id": 9482668410,
+      "lat": 35.6278468,
+      "lon": 139.8768693,
+      "name": "ベイサイド・ステーション",
+      "nameEn": "Bay Side Station",
+      "operator": null,
+      "local_ref": "1",
+      "highway": "bus_stop",
+      "public_transport": "platform",
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "local_ref": "1",
+        "name": "ベイサイド・ステーション",
+        "name:en": "Bay Side Station",
+        "name:es": "Estación Bayside",
+        "network": "ディズニーリゾートクルーザー",
+        "public_transport": "platform"
+      }
+    }
+  ]
+}

@@ -1,0 +1,459 @@
+{
+  "generatedAt": "2026-07-25T05:25:56.266Z",
+  "line": "舞浜リゾート線",
+  "routeId": "route-12",
+  "systems": {
+    "12-maihama-via-resort": {
+      "stops": 21,
+      "pathPoints": 664,
+      "maxGap_m": 24.8,
+      "maxPlatformDist_m": 28.6,
+      "pathHash": "0ac1e3bdc9926d8830e6e71b99e31e2f04b6529271fc72eb149af6c780a67803",
+      "resolvedVersion": "2026-07-25-maihama-resort-maihama-v1",
+      "missingPlatforms": [],
+      "platformDists": [
+        {
+          "name": "浦安駅入口",
+          "dist": 7.4,
+          "exception": false
+        },
+        {
+          "name": "フラワー通り",
+          "dist": 7.4,
+          "exception": false
+        },
+        {
+          "name": "堀江三丁目",
+          "dist": 11.6,
+          "exception": false
+        },
+        {
+          "name": "南小入口",
+          "dist": 5.9,
+          "exception": false
+        },
+        {
+          "name": "堀江東",
+          "dist": 10.7,
+          "exception": false
+        },
+        {
+          "name": "市役所入口・郵便局前",
+          "dist": 11,
+          "exception": false
+        },
+        {
+          "name": "ＮＴＴ浦安前",
+          "dist": 4.7,
+          "exception": false
+        },
+        {
+          "name": "日生研修センター",
+          "dist": 5.7,
+          "exception": false
+        },
+        {
+          "name": "順天堂病院前",
+          "dist": 11.9,
+          "exception": false
+        },
+        {
+          "name": "サンコーポ東口",
+          "dist": 8,
+          "exception": false
+        },
+        {
+          "name": "サンコーポ西口",
+          "dist": 8,
+          "exception": false
+        },
+        {
+          "name": "弁天第二",
+          "dist": 10.7,
+          "exception": false
+        },
+        {
+          "name": "見明川中学校前",
+          "dist": 7.9,
+          "exception": false
+        },
+        {
+          "name": "見明川住宅",
+          "dist": 10.9,
+          "exception": false
+        },
+        {
+          "name": "舞浜三丁目",
+          "dist": 8.8,
+          "exception": false
+        },
+        {
+          "name": "運動公園",
+          "dist": 14.3,
+          "exception": false
+        },
+        {
+          "name": "東京ディズニーシー（Ｒ）",
+          "dist": 2.5,
+          "exception": false
+        },
+        {
+          "name": "「ベイサイド・ステーション」",
+          "dist": 28.6,
+          "exception": true
+        },
+        {
+          "name": "リゾートホテルエリア・サウス",
+          "dist": 3.5,
+          "exception": false
+        },
+        {
+          "name": "リゾートホテルエリア・ノース",
+          "dist": 4.7,
+          "exception": false
+        },
+        {
+          "name": "舞浜駅",
+          "dist": 4.7,
+          "exception": false
+        }
+      ],
+      "sliceMeta": {
+        "si": 0,
+        "ei": 663,
+        "startDist": 7.4,
+        "endDist": 4.7
+      },
+      "maxJoin_m": 0,
+      "note": "outbound 浦安駅入口→舞浜駅。TDS・ホテル経由。TDL非停車。route-4禁止。",
+      "usedWaysSample": [
+        {
+          "wayId": 1337138023,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "startHint": true
+        },
+        {
+          "wayId": 60193618,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 60193608,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 60194496,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 136399256,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 260586190,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 720402604,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 1338996620,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true,
+          "verifiedJoin": false
+        }
+      ],
+      "orderIssues": [],
+      "orderWarnings": [
+        {
+          "name": "リゾートホテルエリア・サウス",
+          "index": 457,
+          "prev": 459,
+          "pairDist_m": 54.1,
+          "idxDelta": 2,
+          "note": "tdr-cluster-soft-order"
+        }
+      ],
+      "usedWayCount": 44,
+      "access": {
+        "restrictedAccessWayCount": 7,
+        "busPermittedRestrictedWayCount": 7,
+        "unresolvedRestrictedWayCount": 0
+      },
+      "bayside": {
+        "name": "「ベイサイド・ステーション」",
+        "dist": 28.6,
+        "exception": true
+      },
+      "reviewRequired": true
+    },
+    "12-urayasu-via-resort": {
+      "stops": 21,
+      "pathPoints": 657,
+      "maxGap_m": 24.8,
+      "maxPlatformDist_m": 22.2,
+      "pathHash": "51cc07c0d3943cb62491b7890a8070a59a6b8790128a87dcddee4753f18f04bc",
+      "resolvedVersion": "2026-07-25-maihama-resort-urayasu-v1",
+      "missingPlatforms": [],
+      "platformDists": [
+        {
+          "name": "舞浜駅",
+          "dist": 4.7,
+          "exception": false
+        },
+        {
+          "name": "リゾートホテルエリア・ノース",
+          "dist": 5.5,
+          "exception": false
+        },
+        {
+          "name": "リゾートホテルエリア・サウス",
+          "dist": 6.8,
+          "exception": false
+        },
+        {
+          "name": "「ベイサイド・ステーション」",
+          "dist": 22.2,
+          "exception": true
+        },
+        {
+          "name": "東京ディズニーシー（Ｒ）",
+          "dist": 2.5,
+          "exception": false
+        },
+        {
+          "name": "運動公園",
+          "dist": 9.2,
+          "exception": false
+        },
+        {
+          "name": "舞浜三丁目",
+          "dist": 9.3,
+          "exception": false
+        },
+        {
+          "name": "見明川住宅",
+          "dist": 7.9,
+          "exception": false
+        },
+        {
+          "name": "見明川中学校前",
+          "dist": 12.1,
+          "exception": false
+        },
+        {
+          "name": "弁天第二",
+          "dist": 8,
+          "exception": false
+        },
+        {
+          "name": "サンコーポ西口",
+          "dist": 9.1,
+          "exception": false
+        },
+        {
+          "name": "サンコーポ東口",
+          "dist": 9.6,
+          "exception": false
+        },
+        {
+          "name": "順天堂病院前",
+          "dist": 9.5,
+          "exception": false
+        },
+        {
+          "name": "日生研修センター",
+          "dist": 12.1,
+          "exception": false
+        },
+        {
+          "name": "ＮＴＴ浦安前",
+          "dist": 5.4,
+          "exception": false
+        },
+        {
+          "name": "市役所入口・郵便局前",
+          "dist": 11,
+          "exception": false
+        },
+        {
+          "name": "堀江東",
+          "dist": 11.4,
+          "exception": false
+        },
+        {
+          "name": "南小入口",
+          "dist": 5.7,
+          "exception": false
+        },
+        {
+          "name": "堀江三丁目",
+          "dist": 7.2,
+          "exception": false
+        },
+        {
+          "name": "フラワー通り",
+          "dist": 12.4,
+          "exception": false
+        },
+        {
+          "name": "浦安駅入口",
+          "dist": 11.1,
+          "exception": false
+        }
+      ],
+      "sliceMeta": {
+        "si": 0,
+        "ei": 656,
+        "startDist": 4.7,
+        "endDist": 11.1
+      },
+      "maxJoin_m": 0,
+      "note": "inbound 舞浜駅→浦安駅入口。公式順（NORTH before SOUTH）。往路逆順禁止。",
+      "usedWaysSample": [
+        {
+          "wayId": 1337138021,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "startHint": true
+        },
+        {
+          "wayId": 1337341818,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 1337358421,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 1337138028,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 1291325002,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 72272367,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 1291324999,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        },
+        {
+          "wayId": 680722811,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true,
+          "verifiedJoin": false
+        }
+      ],
+      "orderIssues": [],
+      "orderWarnings": [
+        {
+          "name": "「ベイサイド・ステーション」",
+          "index": 188,
+          "prev": 193,
+          "pairDist_m": 122.3,
+          "idxDelta": 5,
+          "note": "tdr-cluster-soft-order"
+        }
+      ],
+      "usedWayCount": 47,
+      "access": {
+        "restrictedAccessWayCount": 7,
+        "busPermittedRestrictedWayCount": 7,
+        "unresolvedRestrictedWayCount": 0
+      },
+      "bayside": {
+        "name": "「ベイサイド・ステーション」",
+        "dist": 22.2,
+        "exception": true
+      },
+      "reviewRequired": true
+    }
+  },
+  "blockers": [],
+  "warnings": [
+    "12-maihama-via-resort: 「ベイサイド・ステーション」 dist 28.6m platformDistException (TDR setback)",
+    "12-maihama-via-resort: soft order [{\"name\":\"リゾートホテルエリア・サウス\",\"index\":457,\"prev\":459,\"pairDist_m\":54.1,\"idxDelta\":2,\"note\":\"tdr-cluster-soft-order\"}]",
+    "12-urayasu-via-resort: 「ベイサイド・ステーション」 dist 22.2m platformDistException (TDR setback)",
+    "12-urayasu-via-resort: soft order [{\"name\":\"「ベイサイド・ステーション」\",\"index\":188,\"prev\":193,\"pairDist_m\":122.3,\"idxDelta\":5,\"note\":\"tdr-cluster-soft-order\"}]"
+  ],
+  "route4Separation": {
+    "forbiddenRelations": [
+      9983006,
+      18323875
+    ]
+  },
+  "hotelMapping": {
+    "sheraton": "リゾートホテルエリア・サウス",
+    "hilton": "リゾートホテルエリア・ノース"
+  },
+  "nameNormalization": {
+    "市役所入口郵便局前": "市役所入口・郵便局前",
+    "NTT浦安前": "ＮＴＴ浦安前",
+    "東京ディズニーシー®": "東京ディズニーシー（Ｒ）",
+    "stripQuotes": true
+  },
+  "platformDistPolicy": {
+    "softMax_m": 20,
+    "hardMax_m": 30,
+    "baysideExceptionNote": "TDR setback: allow 20-30m with platformDistException + reviewRequired + z20 proof"
+  }
+}

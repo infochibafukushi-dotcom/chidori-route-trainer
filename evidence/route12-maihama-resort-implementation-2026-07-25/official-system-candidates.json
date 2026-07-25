@@ -1,0 +1,1316 @@
+{
+  "checkedAt": "2026-07-25T04:09:31.025Z",
+  "candidateCount": 10,
+  "confirmedSystems": [
+    {
+      "proposedSystemKey": "12-maihama-via-resort",
+      "title": "舞浜駅行き（TDS・ホテル経由）",
+      "departure": "浦安駅入口",
+      "destination": "舞浜駅",
+      "stopNames": [
+        "浦安駅入口",
+        "フラワー通り",
+        "堀江三丁目",
+        "南小入口",
+        "堀江東",
+        "市役所入口・郵便局前",
+        "ＮＴＴ浦安前",
+        "日生研修センター",
+        "順天堂病院前",
+        "サンコーポ東口",
+        "サンコーポ西口",
+        "弁天第二",
+        "見明川中学校前",
+        "見明川住宅",
+        "舞浜三丁目",
+        "運動公園",
+        "東京ディズニーシー（Ｒ）",
+        "「ベイサイド・ステーション」",
+        "リゾートホテルエリア・サウス",
+        "リゾートホテルエリア・ノース",
+        "舞浜駅"
+      ],
+      "stopIds": [
+        "00020739",
+        "00020723",
+        "00020705",
+        "00020651",
+        "00020707",
+        "00020870",
+        "00020721",
+        "00020660",
+        "00020875",
+        "00020879",
+        "00020878",
+        "00020684",
+        "00020853",
+        "00020851",
+        "00020679",
+        "00020746",
+        "00020627",
+        "00020638",
+        "00020701",
+        "00020653",
+        "00020617"
+      ],
+      "idComplete": true,
+      "berth": "D",
+      "berths": [
+        "D"
+      ],
+      "course": "0008200272",
+      "courses": [
+        "0008200272"
+      ],
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80de0001/stops?departure-busstop=00020739-1&course=0008200272&datetime=2026-07-25T08:49:00%2B09:00",
+      "tripSignature": "12|00020739-1|00020617|00020739>00020723>00020705>00020651>00020707>00020870>00020721>00020660>00020875>00020879>00020878>00020684>00020853>00020851>00020679>00020746>00020627>00020638>00020701>00020653>00020617|>>>>>>>>>>>>>>>>>>>>|regular",
+      "stopCount": 21,
+      "frequency": 1,
+      "dayLabels": [
+        "weekday"
+      ],
+      "timetableSymbol": "ホ",
+      "routeNumber": "12",
+      "isBase": true,
+      "isShortTurn": false
+    },
+    {
+      "proposedSystemKey": "12-urayasu-via-resort",
+      "title": "浦安駅入口行き（ホテル・TDS経由）",
+      "departure": "舞浜駅",
+      "destination": "浦安駅入口",
+      "stopNames": [
+        "舞浜駅",
+        "リゾートホテルエリア・ノース",
+        "リゾートホテルエリア・サウス",
+        "「ベイサイド・ステーション」",
+        "東京ディズニーシー（Ｒ）",
+        "運動公園",
+        "舞浜三丁目",
+        "見明川住宅",
+        "見明川中学校前",
+        "弁天第二",
+        "サンコーポ西口",
+        "サンコーポ東口",
+        "順天堂病院前",
+        "日生研修センター",
+        "ＮＴＴ浦安前",
+        "市役所入口・郵便局前",
+        "堀江東",
+        "南小入口",
+        "堀江三丁目",
+        "フラワー通り",
+        "浦安駅入口"
+      ],
+      "stopIds": [
+        "00020617",
+        "00020653",
+        "00020701",
+        "00020638",
+        "00020627",
+        "00020746",
+        "00020679",
+        "00020851",
+        "00020853",
+        "00020684",
+        "00020878",
+        "00020879",
+        "00020875",
+        "00020660",
+        "00020721",
+        "00020870",
+        "00020707",
+        "00020651",
+        "00020705",
+        "00020723",
+        "00020739"
+      ],
+      "idComplete": true,
+      "berth": "04",
+      "berths": [
+        "04"
+      ],
+      "course": "0008200271",
+      "courses": [
+        "0008200271"
+      ],
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80dd0000/stops?departure-busstop=00020617-1&course=0008200271&datetime=2026-07-25T09:43:00%2B09:00",
+      "tripSignature": "12|00020617-1|00020739|00020617>00020653>00020701>00020638>00020627>00020746>00020679>00020851>00020853>00020684>00020878>00020879>00020875>00020660>00020721>00020870>00020707>00020651>00020705>00020723>00020739|>>>>>>>>>>>>>>>>>>>>|regular",
+      "stopCount": 21,
+      "frequency": 1,
+      "dayLabels": [
+        "weekday"
+      ],
+      "timetableSymbol": "ホ",
+      "routeNumber": "12",
+      "isBase": true,
+      "isShortTurn": false
+    }
+  ],
+  "rejectedRoute4Trips": [
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811e0007/stops?departure-busstop=00020739-1&course=0008200224&datetime=2026-07-27T06:38:00%2B09:00",
+      "cellText": "38",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday",
+      "terminal": "浦安駅入口",
+      "berth": "D",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811e000f/stops?departure-busstop=00020739-1&course=0008200224&datetime=2026-07-27T06:58:00%2B09:00",
+      "cellText": "58",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday",
+      "terminal": "浦安駅入口",
+      "berth": "D",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811e0031/stops?departure-busstop=00020739-1&course=0008200224&datetime=2026-07-25T06:44:00%2B09:00",
+      "cellText": "44",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday",
+      "terminal": "浦安駅入口",
+      "berth": "D",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811e0042/stops?departure-busstop=00020739-1&course=0008200224&datetime=2026-07-26T06:47:00%2B09:00",
+      "cellText": "47",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday",
+      "terminal": "浦安駅入口",
+      "berth": "D",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811e0010/stops?departure-busstop=00020739-1&course=0008200224&datetime=2026-07-27T07:18:00%2B09:00",
+      "cellText": "18",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday",
+      "terminal": "浦安駅入口",
+      "berth": "D",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811e0012/stops?departure-busstop=00020739-1&course=0008200224&datetime=2026-07-27T07:38:00%2B09:00",
+      "cellText": "38",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday",
+      "terminal": "浦安駅入口",
+      "berth": "D",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811e0008/stops?departure-busstop=00020739-1&course=0008200224&datetime=2026-07-27T07:50:00%2B09:00",
+      "cellText": "50",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday",
+      "terminal": "浦安駅入口",
+      "berth": "D",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811e0039/stops?departure-busstop=00020739-1&course=0008200224&datetime=2026-07-25T07:14:00%2B09:00",
+      "cellText": "14",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday",
+      "terminal": "浦安駅入口",
+      "berth": "D",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811e0007/stops?departure-busstop=00020739-1&course=0008200224&datetime=2026-07-27T06:38:00%2B09:00",
+      "cellText": "38",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "saturday-holiday",
+      "terminal": "浦安駅入口",
+      "berth": "D",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811e000f/stops?departure-busstop=00020739-1&course=0008200224&datetime=2026-07-27T06:58:00%2B09:00",
+      "cellText": "58",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "saturday-holiday",
+      "terminal": "浦安駅入口",
+      "berth": "D",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811e0031/stops?departure-busstop=00020739-1&course=0008200224&datetime=2026-07-25T06:44:00%2B09:00",
+      "cellText": "44",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "saturday-holiday",
+      "terminal": "浦安駅入口",
+      "berth": "D",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811e0042/stops?departure-busstop=00020739-1&course=0008200224&datetime=2026-07-26T06:47:00%2B09:00",
+      "cellText": "47",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "saturday-holiday",
+      "terminal": "浦安駅入口",
+      "berth": "D",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811e0010/stops?departure-busstop=00020739-1&course=0008200224&datetime=2026-07-27T07:18:00%2B09:00",
+      "cellText": "18",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "saturday-holiday",
+      "terminal": "浦安駅入口",
+      "berth": "D",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811e0012/stops?departure-busstop=00020739-1&course=0008200224&datetime=2026-07-27T07:38:00%2B09:00",
+      "cellText": "38",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "saturday-holiday",
+      "terminal": "浦安駅入口",
+      "berth": "D",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811e0008/stops?departure-busstop=00020739-1&course=0008200224&datetime=2026-07-27T07:50:00%2B09:00",
+      "cellText": "50",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "saturday-holiday",
+      "terminal": "浦安駅入口",
+      "berth": "D",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811e0039/stops?departure-busstop=00020739-1&course=0008200224&datetime=2026-07-25T07:14:00%2B09:00",
+      "cellText": "14",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "saturday-holiday",
+      "terminal": "浦安駅入口",
+      "berth": "D",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811e0007/stops?departure-busstop=00020739-1&course=0008200224&datetime=2026-07-27T06:38:00%2B09:00",
+      "cellText": "38",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday-alt",
+      "terminal": "浦安駅入口",
+      "berth": "D",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811e000f/stops?departure-busstop=00020739-1&course=0008200224&datetime=2026-07-27T06:58:00%2B09:00",
+      "cellText": "58",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday-alt",
+      "terminal": "浦安駅入口",
+      "berth": "D",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811e0031/stops?departure-busstop=00020739-1&course=0008200224&datetime=2026-07-25T06:44:00%2B09:00",
+      "cellText": "44",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday-alt",
+      "terminal": "浦安駅入口",
+      "berth": "D",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811e0042/stops?departure-busstop=00020739-1&course=0008200224&datetime=2026-07-26T06:47:00%2B09:00",
+      "cellText": "47",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday-alt",
+      "terminal": "浦安駅入口",
+      "berth": "D",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811e0010/stops?departure-busstop=00020739-1&course=0008200224&datetime=2026-07-27T07:18:00%2B09:00",
+      "cellText": "18",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday-alt",
+      "terminal": "浦安駅入口",
+      "berth": "D",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811e0012/stops?departure-busstop=00020739-1&course=0008200224&datetime=2026-07-27T07:38:00%2B09:00",
+      "cellText": "38",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday-alt",
+      "terminal": "浦安駅入口",
+      "berth": "D",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811e0008/stops?departure-busstop=00020739-1&course=0008200224&datetime=2026-07-27T07:50:00%2B09:00",
+      "cellText": "50",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday-alt",
+      "terminal": "浦安駅入口",
+      "berth": "D",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811e0039/stops?departure-busstop=00020739-1&course=0008200224&datetime=2026-07-25T07:14:00%2B09:00",
+      "cellText": "14",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday-alt",
+      "terminal": "浦安駅入口",
+      "berth": "D",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80dd0000/stops?departure-busstop=00020627-5&course=0008200271&datetime=2026-07-25T09:56:00%2B09:00",
+      "cellText": "56",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday",
+      "terminal": "東京ディズニーシー",
+      "berth": "12",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80dd0002/stops?departure-busstop=00020627-5&course=0008200271&datetime=2026-07-25T10:55:00%2B09:00",
+      "cellText": "55",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday",
+      "terminal": "東京ディズニーシー",
+      "berth": "12",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80dd0003/stops?departure-busstop=00020627-5&course=0008200271&datetime=2026-07-26T15:36:00%2B09:00",
+      "cellText": "36",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday",
+      "terminal": "東京ディズニーシー",
+      "berth": "12",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80dd0001/stops?departure-busstop=00020627-5&course=0008200271&datetime=2026-07-25T16:54:00%2B09:00",
+      "cellText": "54",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday",
+      "terminal": "東京ディズニーシー",
+      "berth": "12",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80dd0000/stops?departure-busstop=00020627-5&course=0008200271&datetime=2026-07-25T09:56:00%2B09:00",
+      "cellText": "56",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "saturday-holiday",
+      "terminal": "東京ディズニーシー",
+      "berth": "12",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80dd0002/stops?departure-busstop=00020627-5&course=0008200271&datetime=2026-07-25T10:55:00%2B09:00",
+      "cellText": "55",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "saturday-holiday",
+      "terminal": "東京ディズニーシー",
+      "berth": "12",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80dd0003/stops?departure-busstop=00020627-5&course=0008200271&datetime=2026-07-26T15:36:00%2B09:00",
+      "cellText": "36",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "saturday-holiday",
+      "terminal": "東京ディズニーシー",
+      "berth": "12",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80dd0001/stops?departure-busstop=00020627-5&course=0008200271&datetime=2026-07-25T16:54:00%2B09:00",
+      "cellText": "54",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "saturday-holiday",
+      "terminal": "東京ディズニーシー",
+      "berth": "12",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80dd0000/stops?departure-busstop=00020627-5&course=0008200271&datetime=2026-07-25T09:56:00%2B09:00",
+      "cellText": "56",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday-alt",
+      "terminal": "東京ディズニーシー",
+      "berth": "12",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80dd0002/stops?departure-busstop=00020627-5&course=0008200271&datetime=2026-07-25T10:55:00%2B09:00",
+      "cellText": "55",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday-alt",
+      "terminal": "東京ディズニーシー",
+      "berth": "12",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80dd0003/stops?departure-busstop=00020627-5&course=0008200271&datetime=2026-07-26T15:36:00%2B09:00",
+      "cellText": "36",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday-alt",
+      "terminal": "東京ディズニーシー",
+      "berth": "12",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80dd0001/stops?departure-busstop=00020627-5&course=0008200271&datetime=2026-07-25T16:54:00%2B09:00",
+      "cellText": "54",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday-alt",
+      "terminal": "東京ディズニーシー",
+      "berth": "12",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80dd0000/stops?departure-busstop=00020701-3&course=0008200271&datetime=2026-07-25T09:48:00%2B09:00",
+      "cellText": "48",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday",
+      "terminal": "リゾートホテルエリア・サウス",
+      "berth": "01",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80dd0002/stops?departure-busstop=00020701-3&course=0008200271&datetime=2026-07-25T10:47:00%2B09:00",
+      "cellText": "47",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday",
+      "terminal": "リゾートホテルエリア・サウス",
+      "berth": "01",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80dd0003/stops?departure-busstop=00020701-3&course=0008200271&datetime=2026-07-26T15:28:00%2B09:00",
+      "cellText": "28",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday",
+      "terminal": "リゾートホテルエリア・サウス",
+      "berth": "01",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80dd0001/stops?departure-busstop=00020701-3&course=0008200271&datetime=2026-07-25T16:46:00%2B09:00",
+      "cellText": "46",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday",
+      "terminal": "リゾートホテルエリア・サウス",
+      "berth": "01",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80dd0000/stops?departure-busstop=00020701-3&course=0008200271&datetime=2026-07-25T09:48:00%2B09:00",
+      "cellText": "48",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "saturday-holiday",
+      "terminal": "リゾートホテルエリア・サウス",
+      "berth": "01",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80dd0002/stops?departure-busstop=00020701-3&course=0008200271&datetime=2026-07-25T10:47:00%2B09:00",
+      "cellText": "47",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "saturday-holiday",
+      "terminal": "リゾートホテルエリア・サウス",
+      "berth": "01",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80dd0003/stops?departure-busstop=00020701-3&course=0008200271&datetime=2026-07-26T15:28:00%2B09:00",
+      "cellText": "28",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "saturday-holiday",
+      "terminal": "リゾートホテルエリア・サウス",
+      "berth": "01",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80dd0001/stops?departure-busstop=00020701-3&course=0008200271&datetime=2026-07-25T16:46:00%2B09:00",
+      "cellText": "46",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "saturday-holiday",
+      "terminal": "リゾートホテルエリア・サウス",
+      "berth": "01",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80dd0000/stops?departure-busstop=00020701-3&course=0008200271&datetime=2026-07-25T09:48:00%2B09:00",
+      "cellText": "48",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday-alt",
+      "terminal": "リゾートホテルエリア・サウス",
+      "berth": "01",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80dd0002/stops?departure-busstop=00020701-3&course=0008200271&datetime=2026-07-25T10:47:00%2B09:00",
+      "cellText": "47",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday-alt",
+      "terminal": "リゾートホテルエリア・サウス",
+      "berth": "01",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80dd0003/stops?departure-busstop=00020701-3&course=0008200271&datetime=2026-07-26T15:28:00%2B09:00",
+      "cellText": "28",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday-alt",
+      "terminal": "リゾートホテルエリア・サウス",
+      "berth": "01",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80dd0001/stops?departure-busstop=00020701-3&course=0008200271&datetime=2026-07-25T16:46:00%2B09:00",
+      "cellText": "46",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday-alt",
+      "terminal": "リゾートホテルエリア・サウス",
+      "berth": "01",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80de0001/stops?departure-busstop=00020701-19&course=0008200272&datetime=2026-07-25T09:18:00%2B09:00",
+      "cellText": "18",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday",
+      "terminal": "リゾートホテルエリア・サウス",
+      "berth": "02",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80de0002/stops?departure-busstop=00020701-19&course=0008200272&datetime=2026-07-26T09:35:00%2B09:00",
+      "cellText": "35",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday",
+      "terminal": "リゾートホテルエリア・サウス",
+      "berth": "02",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80de0000/stops?departure-busstop=00020701-19&course=0008200272&datetime=2026-07-25T10:45:00%2B09:00",
+      "cellText": "45",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday",
+      "terminal": "リゾートホテルエリア・サウス",
+      "berth": "02",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80de0001/stops?departure-busstop=00020701-19&course=0008200272&datetime=2026-07-25T09:18:00%2B09:00",
+      "cellText": "18",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "saturday-holiday",
+      "terminal": "リゾートホテルエリア・サウス",
+      "berth": "02",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80de0002/stops?departure-busstop=00020701-19&course=0008200272&datetime=2026-07-26T09:35:00%2B09:00",
+      "cellText": "35",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "saturday-holiday",
+      "terminal": "リゾートホテルエリア・サウス",
+      "berth": "02",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80de0000/stops?departure-busstop=00020701-19&course=0008200272&datetime=2026-07-25T10:45:00%2B09:00",
+      "cellText": "45",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "saturday-holiday",
+      "terminal": "リゾートホテルエリア・サウス",
+      "berth": "02",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80de0001/stops?departure-busstop=00020701-19&course=0008200272&datetime=2026-07-25T09:18:00%2B09:00",
+      "cellText": "18",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday-alt",
+      "terminal": "リゾートホテルエリア・サウス",
+      "berth": "02",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80de0002/stops?departure-busstop=00020701-19&course=0008200272&datetime=2026-07-26T09:35:00%2B09:00",
+      "cellText": "35",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday-alt",
+      "terminal": "リゾートホテルエリア・サウス",
+      "berth": "02",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80de0000/stops?departure-busstop=00020701-19&course=0008200272&datetime=2026-07-25T10:45:00%2B09:00",
+      "cellText": "45",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday-alt",
+      "terminal": "リゾートホテルエリア・サウス",
+      "berth": "02",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80dd0000/stops?departure-busstop=00020653-2&course=0008200271&datetime=2026-07-25T09:46:00%2B09:00",
+      "cellText": "46",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday",
+      "terminal": "リゾートホテルエリア・ノース",
+      "berth": "01",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80dd0002/stops?departure-busstop=00020653-2&course=0008200271&datetime=2026-07-25T10:45:00%2B09:00",
+      "cellText": "45",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday",
+      "terminal": "リゾートホテルエリア・ノース",
+      "berth": "01",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80dd0003/stops?departure-busstop=00020653-2&course=0008200271&datetime=2026-07-26T15:26:00%2B09:00",
+      "cellText": "26",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday",
+      "terminal": "リゾートホテルエリア・ノース",
+      "berth": "01",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80dd0001/stops?departure-busstop=00020653-2&course=0008200271&datetime=2026-07-25T16:44:00%2B09:00",
+      "cellText": "44",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday",
+      "terminal": "リゾートホテルエリア・ノース",
+      "berth": "01",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80dd0000/stops?departure-busstop=00020653-2&course=0008200271&datetime=2026-07-25T09:46:00%2B09:00",
+      "cellText": "46",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "saturday-holiday",
+      "terminal": "リゾートホテルエリア・ノース",
+      "berth": "01",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80dd0002/stops?departure-busstop=00020653-2&course=0008200271&datetime=2026-07-25T10:45:00%2B09:00",
+      "cellText": "45",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "saturday-holiday",
+      "terminal": "リゾートホテルエリア・ノース",
+      "berth": "01",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80dd0003/stops?departure-busstop=00020653-2&course=0008200271&datetime=2026-07-26T15:26:00%2B09:00",
+      "cellText": "26",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "saturday-holiday",
+      "terminal": "リゾートホテルエリア・ノース",
+      "berth": "01",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80dd0001/stops?departure-busstop=00020653-2&course=0008200271&datetime=2026-07-25T16:44:00%2B09:00",
+      "cellText": "44",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "saturday-holiday",
+      "terminal": "リゾートホテルエリア・ノース",
+      "berth": "01",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80dd0000/stops?departure-busstop=00020653-2&course=0008200271&datetime=2026-07-25T09:46:00%2B09:00",
+      "cellText": "46",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday-alt",
+      "terminal": "リゾートホテルエリア・ノース",
+      "berth": "01",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80dd0002/stops?departure-busstop=00020653-2&course=0008200271&datetime=2026-07-25T10:45:00%2B09:00",
+      "cellText": "45",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday-alt",
+      "terminal": "リゾートホテルエリア・ノース",
+      "berth": "01",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80dd0003/stops?departure-busstop=00020653-2&course=0008200271&datetime=2026-07-26T15:26:00%2B09:00",
+      "cellText": "26",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday-alt",
+      "terminal": "リゾートホテルエリア・ノース",
+      "berth": "01",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80dd0001/stops?departure-busstop=00020653-2&course=0008200271&datetime=2026-07-25T16:44:00%2B09:00",
+      "cellText": "44",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday-alt",
+      "terminal": "リゾートホテルエリア・ノース",
+      "berth": "01",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80de0001/stops?departure-busstop=00020653-20&course=0008200272&datetime=2026-07-25T09:19:00%2B09:00",
+      "cellText": "19",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday",
+      "terminal": "リゾートホテルエリア・ノース",
+      "berth": "02",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80de0002/stops?departure-busstop=00020653-20&course=0008200272&datetime=2026-07-26T09:36:00%2B09:00",
+      "cellText": "36",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday",
+      "terminal": "リゾートホテルエリア・ノース",
+      "berth": "02",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80de0000/stops?departure-busstop=00020653-20&course=0008200272&datetime=2026-07-25T10:46:00%2B09:00",
+      "cellText": "46",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday",
+      "terminal": "リゾートホテルエリア・ノース",
+      "berth": "02",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80de0001/stops?departure-busstop=00020653-20&course=0008200272&datetime=2026-07-25T09:19:00%2B09:00",
+      "cellText": "19",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "saturday-holiday",
+      "terminal": "リゾートホテルエリア・ノース",
+      "berth": "02",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80de0002/stops?departure-busstop=00020653-20&course=0008200272&datetime=2026-07-26T09:36:00%2B09:00",
+      "cellText": "36",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "saturday-holiday",
+      "terminal": "リゾートホテルエリア・ノース",
+      "berth": "02",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80de0000/stops?departure-busstop=00020653-20&course=0008200272&datetime=2026-07-25T10:46:00%2B09:00",
+      "cellText": "46",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "saturday-holiday",
+      "terminal": "リゾートホテルエリア・ノース",
+      "berth": "02",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80de0001/stops?departure-busstop=00020653-20&course=0008200272&datetime=2026-07-25T09:19:00%2B09:00",
+      "cellText": "19",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday-alt",
+      "terminal": "リゾートホテルエリア・ノース",
+      "berth": "02",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80de0002/stops?departure-busstop=00020653-20&course=0008200272&datetime=2026-07-26T09:36:00%2B09:00",
+      "cellText": "36",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday-alt",
+      "terminal": "リゾートホテルエリア・ノース",
+      "berth": "02",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80de0000/stops?departure-busstop=00020653-20&course=0008200272&datetime=2026-07-25T10:46:00%2B09:00",
+      "cellText": "46",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday-alt",
+      "terminal": "リゾートホテルエリア・ノース",
+      "berth": "02",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80dd0000/stops?departure-busstop=00020638-4&course=0008200271&datetime=2026-07-25T09:49:00%2B09:00",
+      "cellText": "49",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday",
+      "terminal": "ベイサイド・ステーション",
+      "berth": "01",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80dd0002/stops?departure-busstop=00020638-4&course=0008200271&datetime=2026-07-25T10:48:00%2B09:00",
+      "cellText": "48",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday",
+      "terminal": "ベイサイド・ステーション",
+      "berth": "01",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80dd0003/stops?departure-busstop=00020638-4&course=0008200271&datetime=2026-07-26T15:29:00%2B09:00",
+      "cellText": "29",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday",
+      "terminal": "ベイサイド・ステーション",
+      "berth": "01",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80dd0001/stops?departure-busstop=00020638-4&course=0008200271&datetime=2026-07-25T16:47:00%2B09:00",
+      "cellText": "47",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday",
+      "terminal": "ベイサイド・ステーション",
+      "berth": "01",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80dd0000/stops?departure-busstop=00020638-4&course=0008200271&datetime=2026-07-25T09:49:00%2B09:00",
+      "cellText": "49",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "saturday-holiday",
+      "terminal": "ベイサイド・ステーション",
+      "berth": "01",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80dd0002/stops?departure-busstop=00020638-4&course=0008200271&datetime=2026-07-25T10:48:00%2B09:00",
+      "cellText": "48",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "saturday-holiday",
+      "terminal": "ベイサイド・ステーション",
+      "berth": "01",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80dd0003/stops?departure-busstop=00020638-4&course=0008200271&datetime=2026-07-26T15:29:00%2B09:00",
+      "cellText": "29",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "saturday-holiday",
+      "terminal": "ベイサイド・ステーション",
+      "berth": "01",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80dd0001/stops?departure-busstop=00020638-4&course=0008200271&datetime=2026-07-25T16:47:00%2B09:00",
+      "cellText": "47",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "saturday-holiday",
+      "terminal": "ベイサイド・ステーション",
+      "berth": "01",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80de0001/stops?departure-busstop=00020638-18&course=0008200272&datetime=2026-07-25T09:17:00%2B09:00",
+      "cellText": "17",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday",
+      "terminal": "ベイサイド・ステーション",
+      "berth": "02",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80de0002/stops?departure-busstop=00020638-18&course=0008200272&datetime=2026-07-26T09:34:00%2B09:00",
+      "cellText": "34",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday",
+      "terminal": "ベイサイド・ステーション",
+      "berth": "02",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80de0000/stops?departure-busstop=00020638-18&course=0008200272&datetime=2026-07-25T10:44:00%2B09:00",
+      "cellText": "44",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday",
+      "terminal": "ベイサイド・ステーション",
+      "berth": "02",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80de0001/stops?departure-busstop=00020638-18&course=0008200272&datetime=2026-07-25T09:17:00%2B09:00",
+      "cellText": "17",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "saturday-holiday",
+      "terminal": "ベイサイド・ステーション",
+      "berth": "02",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80de0002/stops?departure-busstop=00020638-18&course=0008200272&datetime=2026-07-26T09:34:00%2B09:00",
+      "cellText": "34",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "saturday-holiday",
+      "terminal": "ベイサイド・ステーション",
+      "berth": "02",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80de0000/stops?departure-busstop=00020638-18&course=0008200272&datetime=2026-07-25T10:44:00%2B09:00",
+      "cellText": "44",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "saturday-holiday",
+      "terminal": "ベイサイド・ステーション",
+      "berth": "02",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80de0001/stops?departure-busstop=00020638-18&course=0008200272&datetime=2026-07-25T09:17:00%2B09:00",
+      "cellText": "17",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday-alt",
+      "terminal": "ベイサイド・ステーション",
+      "berth": "02",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80de0002/stops?departure-busstop=00020638-18&course=0008200272&datetime=2026-07-26T09:34:00%2B09:00",
+      "cellText": "34",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday-alt",
+      "terminal": "ベイサイド・ステーション",
+      "berth": "02",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80de0000/stops?departure-busstop=00020638-18&course=0008200272&datetime=2026-07-25T10:44:00%2B09:00",
+      "cellText": "44",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday-alt",
+      "terminal": "ベイサイド・ステーション",
+      "berth": "02",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811f0000/stops?departure-busstop=00020746-2&course=0008200225&datetime=2026-07-27T05:49:00%2B09:00",
+      "cellText": "49",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday",
+      "terminal": "運動公園",
+      "berth": "02",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811f0001/stops?departure-busstop=00020746-2&course=0008200225&datetime=2026-07-27T06:04:00%2B09:00",
+      "cellText": "04",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday",
+      "terminal": "運動公園",
+      "berth": "02",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811f0002/stops?departure-busstop=00020746-2&course=0008200225&datetime=2026-07-27T06:23:00%2B09:00",
+      "cellText": "23",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday",
+      "terminal": "運動公園",
+      "berth": "02",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811d0011/stops?departure-busstop=00020746-3&course=0008200223&datetime=2026-07-27T06:38:00%2B09:00",
+      "cellText": "38",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday",
+      "terminal": "運動公園",
+      "berth": "02",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811d0000/stops?departure-busstop=00020746-3&course=0008200223&datetime=2026-07-27T06:57:00%2B09:00",
+      "cellText": "57",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday",
+      "terminal": "運動公園",
+      "berth": "02",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811f0004/stops?departure-busstop=00020746-2&course=0008200225&datetime=2026-07-25T06:15:00%2B09:00",
+      "cellText": "15",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday",
+      "terminal": "運動公園",
+      "berth": "02",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811d003b/stops?departure-busstop=00020746-3&course=0008200223&datetime=2026-07-25T06:45:00%2B09:00",
+      "cellText": "45",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday",
+      "terminal": "運動公園",
+      "berth": "02",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811f0005/stops?departure-busstop=00020746-2&course=0008200225&datetime=2026-07-26T06:16:00%2B09:00",
+      "cellText": "16",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday",
+      "terminal": "運動公園",
+      "berth": "02",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811f0000/stops?departure-busstop=00020746-2&course=0008200225&datetime=2026-07-27T05:49:00%2B09:00",
+      "cellText": "49",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "saturday-holiday",
+      "terminal": "運動公園",
+      "berth": "02",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811f0001/stops?departure-busstop=00020746-2&course=0008200225&datetime=2026-07-27T06:04:00%2B09:00",
+      "cellText": "04",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "saturday-holiday",
+      "terminal": "運動公園",
+      "berth": "02",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811f0002/stops?departure-busstop=00020746-2&course=0008200225&datetime=2026-07-27T06:23:00%2B09:00",
+      "cellText": "23",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "saturday-holiday",
+      "terminal": "運動公園",
+      "berth": "02",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811d0011/stops?departure-busstop=00020746-3&course=0008200223&datetime=2026-07-27T06:38:00%2B09:00",
+      "cellText": "38",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "saturday-holiday",
+      "terminal": "運動公園",
+      "berth": "02",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811d0000/stops?departure-busstop=00020746-3&course=0008200223&datetime=2026-07-27T06:57:00%2B09:00",
+      "cellText": "57",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "saturday-holiday",
+      "terminal": "運動公園",
+      "berth": "02",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811f0004/stops?departure-busstop=00020746-2&course=0008200225&datetime=2026-07-25T06:15:00%2B09:00",
+      "cellText": "15",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "saturday-holiday",
+      "terminal": "運動公園",
+      "berth": "02",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811d003b/stops?departure-busstop=00020746-3&course=0008200223&datetime=2026-07-25T06:45:00%2B09:00",
+      "cellText": "45",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "saturday-holiday",
+      "terminal": "運動公園",
+      "berth": "02",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811f0005/stops?departure-busstop=00020746-2&course=0008200225&datetime=2026-07-26T06:16:00%2B09:00",
+      "cellText": "16",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "saturday-holiday",
+      "terminal": "運動公園",
+      "berth": "02",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811f0000/stops?departure-busstop=00020746-2&course=0008200225&datetime=2026-07-27T05:49:00%2B09:00",
+      "cellText": "49",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday-alt",
+      "terminal": "運動公園",
+      "berth": "02",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811f0001/stops?departure-busstop=00020746-2&course=0008200225&datetime=2026-07-27T06:04:00%2B09:00",
+      "cellText": "04",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday-alt",
+      "terminal": "運動公園",
+      "berth": "02",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811f0002/stops?departure-busstop=00020746-2&course=0008200225&datetime=2026-07-27T06:23:00%2B09:00",
+      "cellText": "23",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday-alt",
+      "terminal": "運動公園",
+      "berth": "02",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811d0011/stops?departure-busstop=00020746-3&course=0008200223&datetime=2026-07-27T06:38:00%2B09:00",
+      "cellText": "38",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday-alt",
+      "terminal": "運動公園",
+      "berth": "02",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811d0000/stops?departure-busstop=00020746-3&course=0008200223&datetime=2026-07-27T06:57:00%2B09:00",
+      "cellText": "57",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday-alt",
+      "terminal": "運動公園",
+      "berth": "02",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811f0004/stops?departure-busstop=00020746-2&course=0008200225&datetime=2026-07-25T06:15:00%2B09:00",
+      "cellText": "15",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday-alt",
+      "terminal": "運動公園",
+      "berth": "02",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811d003b/stops?departure-busstop=00020746-3&course=0008200223&datetime=2026-07-25T06:45:00%2B09:00",
+      "cellText": "45",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday-alt",
+      "terminal": "運動公園",
+      "berth": "02",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811f0005/stops?departure-busstop=00020746-2&course=0008200225&datetime=2026-07-26T06:16:00%2B09:00",
+      "cellText": "16",
+      "reason": "route4-unmarked-digits",
+      "dayLabel": "weekday-alt",
+      "terminal": "運動公園",
+      "berth": "02",
+      "preReject": true
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811c0001/stops?departure-busstop=00020746-16&course=0008200222&datetime=2026-07-27T08:23:00%2B09:00",
+      "cellText": "23ランド",
+      "reason": "route4-symbol-land",
+      "dayLabel": "weekday",
+      "terminal": "運動公園",
+      "berth": "07",
+      "preReject": true
+    }
+  ],
+  "rejectedOtherTrips": [],
+  "unconfirmedShortTurns": [
+    {
+      "candidateKey": "12-tds-maihama",
+      "from": "東京ディズニーシー",
+      "to": "舞浜駅",
+      "status": "unconfirmed",
+      "note": "個別便の始発または終点として公式【１２系統】では未確認（中間停留所表示のみでは採用しない）"
+    },
+    {
+      "candidateKey": "12-tds-urayasu",
+      "from": "東京ディズニーシー",
+      "to": "浦安駅入口",
+      "status": "unconfirmed",
+      "note": "個別便の始発または終点として公式【１２系統】では未確認（中間停留所表示のみでは採用しない）"
+    },
+    {
+      "candidateKey": "12-urayasu-tds",
+      "from": "浦安駅入口",
+      "to": "東京ディズニーシー",
+      "status": "unconfirmed",
+      "note": "個別便の始発または終点として公式【１２系統】では未確認（中間停留所表示のみでは採用しない）"
+    },
+    {
+      "candidateKey": "12-maihama-tds",
+      "from": "舞浜駅",
+      "to": "東京ディズニーシー",
+      "status": "unconfirmed",
+      "note": "個別便の始発または終点として公式【１２系統】では未確認（中間停留所表示のみでは採用しない）"
+    },
+    {
+      "candidateKey": "12-hotel-start",
+      "from": "リゾートホテル",
+      "to": null,
+      "status": "unconfirmed",
+      "note": "個別便の始発または終点として公式【１２系統】では未確認（中間停留所表示のみでは採用しない）"
+    },
+    {
+      "candidateKey": "12-hotel-end",
+      "from": null,
+      "to": "リゾートホテル",
+      "status": "unconfirmed",
+      "note": "個別便の始発または終点として公式【１２系統】では未確認（中間停留所表示のみでは採用しない）"
+    },
+    {
+      "candidateKey": "12-undokoen-start",
+      "from": "運動公園",
+      "to": null,
+      "status": "unconfirmed",
+      "note": "個別便の始発または終点として公式【１２系統】では未確認（中間停留所表示のみでは採用しない）"
+    },
+    {
+      "candidateKey": "12-undokoen-end",
+      "from": null,
+      "to": "運動公園",
+      "status": "unconfirmed",
+      "note": "個別便の始発または終点として公式【１２系統】では未確認（中間停留所表示のみでは採用しない）"
+    }
+  ],
+  "missingBaseCandidates": [],
+  "sameEndpointDifferentStopOrders": [],
+  "provenShortTurns": [],
+  "courseIds": [
+    "0008200272",
+    "0008200271"
+  ],
+  "tripCountByDayType": {
+    "weekday": 2
+  },
+  "knownIds": {
+    "urayasu": "00020739",
+    "maihama": "00020617",
+    "tds": "00020627",
+    "hotelSouth": "00020701",
+    "hotelNorth": "00020653",
+    "bayside": "00020638",
+    "undokoen": "00020746"
+  },
+  "stats": {
+    "tripCount": 2,
+    "uniqueSignatures": 2,
+    "rejectedRoute4Count": 140,
+    "unconfirmedTripCount": 0
+  }
+}

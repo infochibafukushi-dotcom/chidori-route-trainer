@@ -1,0 +1,1783 @@
+{
+  "fetchedAt": "2026-07-25T04:03:15.374Z",
+  "route": "maihama-resort-route12",
+  "knownPathSourceIds": [
+    18381678,
+    18381677,
+    18381676
+  ],
+  "forbiddenRoute4Ids": [
+    9983006,
+    18323875
+  ],
+  "forbiddenNote": "9983006 and 18323875 are route-4 and must NOT be used as route-12 canonical. Optional doc-only fetch only.",
+  "relations": [
+    {
+      "id": 18381678,
+      "label": "route12 route_master",
+      "ok": true,
+      "source": "overpass-api.de",
+      "name": "東京ベイシティバス12系統 浦安駅入口-市役所入口郵便局前-東京ディズニーシー・舞浜駅",
+      "tags": {
+        "name": "東京ベイシティバス12系統 浦安駅入口-市役所入口郵便局前-東京ディズニーシー・舞浜駅",
+        "network": "舞浜リゾート線",
+        "operator": "東京ベイシティ交通",
+        "ref": "12",
+        "route_master": "bus",
+        "type": "route_master"
+      },
+      "memberCount": 2,
+      "wayMemberCount": 0,
+      "wayElementCount": 59,
+      "stopMemberCount": 0,
+      "stopRoleCount": 0,
+      "platformMemberCount": 0,
+      "nodeElementCount": 540,
+      "memberRoles": {
+        "": 2
+      },
+      "platformNames": [],
+      "platformsDetail": [],
+      "wayMemberIds": [],
+      "waysSummary": {
+        "wayCountSummarized": 59,
+        "summarizedFrom": "all-way-elements",
+        "access": {
+          "(unset)": 52,
+          "no": 7
+        },
+        "bus": {
+          "(unset)": 55,
+          "yes": 4
+        },
+        "psv": {
+          "(unset)": 52,
+          "yes": 7
+        },
+        "highway": {
+          "secondary": 8,
+          "tertiary": 40,
+          "service": 7,
+          "tertiary_link": 3,
+          "unclassified": 1
+        },
+        "waysWithAccessBusOrPsv": [
+          {
+            "id": 72272367,
+            "name": null,
+            "access": "no",
+            "bus": null,
+            "psv": "yes",
+            "highway": "service"
+          },
+          {
+            "id": 271934564,
+            "name": null,
+            "access": "no",
+            "bus": "yes",
+            "psv": "yes",
+            "highway": "service"
+          },
+          {
+            "id": 271934565,
+            "name": null,
+            "access": "no",
+            "bus": "yes",
+            "psv": "yes",
+            "highway": "service"
+          },
+          {
+            "id": 271934572,
+            "name": null,
+            "access": "no",
+            "bus": "yes",
+            "psv": "yes",
+            "highway": "service"
+          },
+          {
+            "id": 680722811,
+            "name": null,
+            "access": "no",
+            "bus": null,
+            "psv": "yes",
+            "highway": "service"
+          },
+          {
+            "id": 1291324999,
+            "name": null,
+            "access": "no",
+            "bus": null,
+            "psv": "yes",
+            "highway": "service"
+          },
+          {
+            "id": 1337319406,
+            "name": null,
+            "access": "no",
+            "bus": "yes",
+            "psv": "yes",
+            "highway": "service"
+          }
+        ],
+        "waysWithAccessBusOrPsvCount": 7
+      },
+      "tdlContamination": {
+        "contaminated": false,
+        "hits": []
+      },
+      "file": "osm-relation-18381678.json",
+      "mergedChildren": [
+        18381677,
+        18381676
+      ],
+      "mergeNote": "merged child relation geometries into master bundle"
+    },
+    {
+      "id": 18381677,
+      "label": "route12 浦安→舞浜 (outbound)",
+      "ok": true,
+      "source": "overpass-api.de",
+      "name": "東京ベイシティバス12系統 浦安駅入口⇒市役所入口郵便局前⇒東京ディズニーシー・舞浜駅",
+      "tags": {
+        "name": "東京ベイシティバス12系統 浦安駅入口⇒市役所入口郵便局前⇒東京ディズニーシー・舞浜駅",
+        "network": "舞浜リゾート線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "12",
+        "route": "bus",
+        "type": "route"
+      },
+      "memberCount": 66,
+      "wayMemberCount": 44,
+      "wayElementCount": 44,
+      "stopMemberCount": 22,
+      "stopRoleCount": 0,
+      "platformMemberCount": 22,
+      "nodeElementCount": 389,
+      "memberRoles": {
+        "platform_entry_only": 1,
+        "platform": 20,
+        "platform_exit_only": 1,
+        "": 44
+      },
+      "platformNames": [
+        "浦安駅入口",
+        "フラワー通り",
+        "堀江三丁目",
+        "南小入口",
+        "堀江東",
+        "市役所入口郵便局前",
+        "NTT浦安前",
+        "日生研修センター",
+        "順天堂病院前",
+        "サンコーポ東口",
+        "サンコーポ西口",
+        "弁天第二",
+        "見明川中学校前",
+        "見明川住宅",
+        "舞浜三丁目",
+        "運動公園",
+        "東京ディズニーシー®",
+        "シェラトンホテル・ホテルオークラ",
+        "ヒルトンホテル・グランドニッコー",
+        "東京ベイ舞浜ホテル",
+        "東京ディズニーランド®",
+        "舞浜駅"
+      ],
+      "platformsDetail": [
+        {
+          "role": "platform_entry_only",
+          "type": "node",
+          "ref": 2288028442,
+          "name": "浦安駅入口",
+          "lat": 35.664245,
+          "lon": 139.8921201,
+          "local_ref": "E",
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "local_ref": "E",
+            "name": "浦安駅入口",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6830439621,
+          "name": "フラワー通り",
+          "lat": 35.6611992,
+          "lon": 139.8915342,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "フラワー通り",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform",
+            "wheelchair": "yes"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6830439620,
+          "name": "堀江三丁目",
+          "lat": 35.6584326,
+          "lon": 139.891135,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "堀江三丁目",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform",
+            "wheelchair": "yes"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6830439619,
+          "name": "南小入口",
+          "lat": 35.6560935,
+          "lon": 139.8931638,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "南小入口",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform",
+            "wheelchair": "yes"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6830439626,
+          "name": "堀江東",
+          "lat": 35.6545049,
+          "lon": 139.8961521,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "堀江東",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1742862060,
+          "name": "市役所入口郵便局前",
+          "lat": 35.6526218,
+          "lon": 139.8997667,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "市役所入口郵便局前",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6778515937,
+          "name": "NTT浦安前",
+          "lat": 35.6494055,
+          "lon": 139.9047687,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "NTT浦安前",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6778515936,
+          "name": "日生研修センター",
+          "lat": 35.6473785,
+          "lon": 139.9073073,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "日生研修センター",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform",
+            "shelter": "no"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6720667162,
+          "name": "順天堂病院前",
+          "lat": 35.6453182,
+          "lon": 139.9070393,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "covered": "yes",
+            "highway": "bus_stop",
+            "name": "順天堂病院前",
+            "operator": "東京ベイシティ交通",
+            "passenger_information_display": "yes",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11581097367,
+          "name": "サンコーポ東口",
+          "lat": 35.6439144,
+          "lon": 139.905342,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "サンコーポ東口",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6720667164,
+          "name": "サンコーポ西口",
+          "lat": 35.6420634,
+          "lon": 139.9031259,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "covered": "yes",
+            "highway": "bus_stop",
+            "name": "サンコーポ西口",
+            "operator": "東京ベイシティ交通",
+            "passenger_information_display": "yes",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1652792931,
+          "name": "弁天第二",
+          "lat": 35.6398165,
+          "lon": 139.9004629,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "covered": "yes",
+            "highway": "bus_stop",
+            "name": "弁天第二",
+            "operator": "東京ベイシティ交通",
+            "passenger_information_display": "yes",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1652792821,
+          "name": "見明川中学校前",
+          "lat": 35.6384265,
+          "lon": 139.8987768,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "covered": "yes",
+            "highway": "bus_stop",
+            "name": "見明川中学校前",
+            "operator": "東京ベイシティ交通",
+            "passenger_information_display": "yes",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11581103371,
+          "name": "見明川住宅",
+          "lat": 35.6364748,
+          "lon": 139.8964564,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "covered": "yes",
+            "highway": "bus_stop",
+            "name": "見明川住宅",
+            "operator": "東京ベイシティ交通",
+            "passenger_information_display": "yes",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 12368996366,
+          "name": "舞浜三丁目",
+          "lat": 35.6337929,
+          "lon": 139.8932505,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "舞浜三丁目",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform",
+            "wheelchair": "yes"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6720667165,
+          "name": "運動公園",
+          "lat": 35.6310025,
+          "lon": 139.8899547,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "運動公園",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform",
+            "wheelchair": "yes"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 2768542070,
+          "name": "東京ディズニーシー®",
+          "lat": 35.6290596,
+          "lon": 139.8881506,
+          "local_ref": "9",
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "local_ref": "9",
+            "name": "東京ディズニーシー®",
+            "name:en": "Tokyo DisneySea",
+            "name:es": "Tokyo DisneySea",
+            "name:ja": "東京ディズニーシー®",
+            "operator": "京成バス;東京ベイシティ交通",
+            "public_transport": "platform",
+            "source": "Bing"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6796292906,
+          "name": "シェラトンホテル・ホテルオークラ",
+          "lat": 35.6275745,
+          "lon": 139.8767188,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "シェラトンホテル・ホテルオークラ",
+            "name:en": "Sheraton Hotel - Hotel Okura",
+            "name:ja": "シェラトンホテル・ホテルオークラ",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6796292905,
+          "name": "ヒルトンホテル・グランドニッコー",
+          "lat": 35.6281122,
+          "lon": 139.8744073,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "ヒルトンホテル・グランドニッコー",
+            "name:en": "Hilton Hotel - Grand Nikko",
+            "name:ja": "ヒルトンホテル・グランドニッコー",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6778619326,
+          "name": "東京ベイ舞浜ホテル",
+          "lat": 35.6309927,
+          "lon": 139.8728617,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "東京ベイ舞浜ホテル",
+            "name:en": "Tokyo Bay Maihama Hotel",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 2768542037,
+          "name": "東京ディズニーランド®",
+          "lat": 35.6361945,
+          "lon": 139.8815241,
+          "local_ref": "12",
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "local_ref": "12",
+            "name": "東京ディズニーランド®",
+            "name:en": "Tokyo Disneyland",
+            "name:es": "Tokyo Disneyland",
+            "name:ja": "東京ディズニーランド®",
+            "operator": "京成バス;東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform_exit_only",
+          "type": "node",
+          "ref": 9482601633,
+          "name": "舞浜駅",
+          "lat": 35.6360225,
+          "lon": 139.8833113,
+          "local_ref": "5",
+          "tags": {
+            "bus": "yes",
+            "description": "降車場",
+            "highway": "bus_stop",
+            "local_ref": "5",
+            "name": "舞浜駅",
+            "name:en": "Maihama Sta.",
+            "name:ja": "舞浜駅",
+            "operator": "東京ベイシティ交通;京成トランジットバス",
+            "public_transport": "platform"
+          }
+        }
+      ],
+      "wayMemberIds": [
+        1337138023,
+        60193618,
+        60193608,
+        60194496,
+        136399256,
+        260586190,
+        720402604,
+        1338996620,
+        1338996621,
+        1338996625,
+        720402603,
+        883069538,
+        883069232,
+        846881938,
+        30176170,
+        30176171,
+        286387769,
+        796894963,
+        1240445586,
+        30177020,
+        258226622,
+        271934572,
+        1337319406,
+        271934564,
+        271934565,
+        1307684851,
+        1307684852,
+        271934583,
+        1248129212,
+        258419862,
+        1248129210,
+        1248129208,
+        1235503618,
+        1340734327,
+        169960004,
+        914607516,
+        796894965,
+        30177041,
+        260586195,
+        72272367,
+        1291324999,
+        680722811,
+        1291325002,
+        258419781
+      ],
+      "waysSummary": {
+        "wayCountSummarized": 44,
+        "summarizedFrom": "relation-way-members",
+        "access": {
+          "(unset)": 37,
+          "no": 7
+        },
+        "bus": {
+          "(unset)": 40,
+          "yes": 4
+        },
+        "psv": {
+          "(unset)": 37,
+          "yes": 7
+        },
+        "highway": {
+          "secondary": 7,
+          "tertiary": 26,
+          "service": 7,
+          "tertiary_link": 3,
+          "unclassified": 1
+        },
+        "waysWithAccessBusOrPsv": [
+          {
+            "id": 72272367,
+            "name": null,
+            "access": "no",
+            "bus": null,
+            "psv": "yes",
+            "highway": "service"
+          },
+          {
+            "id": 271934564,
+            "name": null,
+            "access": "no",
+            "bus": "yes",
+            "psv": "yes",
+            "highway": "service"
+          },
+          {
+            "id": 271934565,
+            "name": null,
+            "access": "no",
+            "bus": "yes",
+            "psv": "yes",
+            "highway": "service"
+          },
+          {
+            "id": 271934572,
+            "name": null,
+            "access": "no",
+            "bus": "yes",
+            "psv": "yes",
+            "highway": "service"
+          },
+          {
+            "id": 680722811,
+            "name": null,
+            "access": "no",
+            "bus": null,
+            "psv": "yes",
+            "highway": "service"
+          },
+          {
+            "id": 1291324999,
+            "name": null,
+            "access": "no",
+            "bus": null,
+            "psv": "yes",
+            "highway": "service"
+          },
+          {
+            "id": 1337319406,
+            "name": null,
+            "access": "no",
+            "bus": "yes",
+            "psv": "yes",
+            "highway": "service"
+          }
+        ],
+        "waysWithAccessBusOrPsvCount": 7
+      },
+      "tdlContamination": {
+        "contaminated": true,
+        "hits": [
+          {
+            "name": "東京ディズニーシー®",
+            "needle": "ディズニーシー"
+          },
+          {
+            "name": "東京ディズニーランド®",
+            "needle": "東京ディズニーランド"
+          }
+        ]
+      },
+      "file": "osm-relation-18381677.json",
+      "mergedChildren": [],
+      "mergeNote": null
+    },
+    {
+      "id": 18381676,
+      "label": "route12 舞浜→浦安 (inbound)",
+      "ok": true,
+      "source": "overpass-api.de",
+      "name": "東京ベイシティバス12系統 舞浜駅・東京ディズニーシー⇒市役所入口郵便局前⇒浦安駅入口",
+      "tags": {
+        "name": "東京ベイシティバス12系統 舞浜駅・東京ディズニーシー⇒市役所入口郵便局前⇒浦安駅入口",
+        "network": "舞浜リゾート線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "12",
+        "route": "bus",
+        "type": "route"
+      },
+      "memberCount": 69,
+      "wayMemberCount": 47,
+      "wayElementCount": 47,
+      "stopMemberCount": 22,
+      "stopRoleCount": 0,
+      "platformMemberCount": 22,
+      "nodeElementCount": 389,
+      "memberRoles": {
+        "platform_entry_only": 1,
+        "platform": 20,
+        "platform_exit_only": 1,
+        "": 47
+      },
+      "platformNames": [
+        "舞浜駅",
+        "東京ディズニーランド®",
+        "東京ベイ舞浜ホテル",
+        "ヒルトンホテル・グランドニッコー",
+        "シェラトンホテル・ホテルオークラ",
+        "東京ディズニーシー®",
+        "運動公園",
+        "舞浜三丁目",
+        "見明川住宅",
+        "見明川中学校前",
+        "弁天第二",
+        "サンコーポ西口",
+        "サンコーポ東口",
+        "順天堂病院前",
+        "日生研修センター",
+        "NTT浦安前",
+        "市役所入口郵便局前",
+        "堀江東",
+        "南小入口",
+        "堀江三丁目",
+        "フラワー通り",
+        "浦安駅入口"
+      ],
+      "platformsDetail": [
+        {
+          "role": "platform_entry_only",
+          "type": "node",
+          "ref": 9482601636,
+          "name": "舞浜駅",
+          "lat": 35.6359331,
+          "lon": 139.8835561,
+          "local_ref": "4",
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "local_ref": "4",
+            "name": "舞浜駅",
+            "name:en": "Maihama Sta.",
+            "name:ja": "舞浜駅",
+            "note": "舞浜リゾート線・舞浜高洲線・東京ディズニーランド行き・東京ディズニーシー行き",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform",
+            "shelter": "yes",
+            "wheelchair": "yes"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 2768542037,
+          "name": "東京ディズニーランド®",
+          "lat": 35.6361945,
+          "lon": 139.8815241,
+          "local_ref": "12",
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "local_ref": "12",
+            "name": "東京ディズニーランド®",
+            "name:en": "Tokyo Disneyland",
+            "name:es": "Tokyo Disneyland",
+            "name:ja": "東京ディズニーランド®",
+            "operator": "京成バス;東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6778619327,
+          "name": "東京ベイ舞浜ホテル",
+          "lat": 35.6306744,
+          "lon": 139.8730347,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "東京ベイ舞浜ホテル",
+            "name:en": "Tokyo Bay Maihama Hotel",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6796292904,
+          "name": "ヒルトンホテル・グランドニッコー",
+          "lat": 35.628236,
+          "lon": 139.8744938,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "ヒルトンホテル・グランドニッコー",
+            "name:en": "Hilton Hotel - Grand Nikko",
+            "name:ja": "ヒルトンホテル・グランドニッコー",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6796292907,
+          "name": "シェラトンホテル・ホテルオークラ",
+          "lat": 35.627481,
+          "lon": 139.8777508,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "シェラトンホテル・ホテルオークラ",
+            "name:en": "Sheraton Hotel - Hotel Okura",
+            "name:ja": "シェラトンホテル・ホテルオークラ",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 2768542070,
+          "name": "東京ディズニーシー®",
+          "lat": 35.6290596,
+          "lon": 139.8881506,
+          "local_ref": "9",
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "local_ref": "9",
+            "name": "東京ディズニーシー®",
+            "name:en": "Tokyo DisneySea",
+            "name:es": "Tokyo DisneySea",
+            "name:ja": "東京ディズニーシー®",
+            "operator": "京成バス;東京ベイシティ交通",
+            "public_transport": "platform",
+            "source": "Bing"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6720667166,
+          "name": "運動公園",
+          "lat": 35.6325209,
+          "lon": 139.8914704,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "運動公園",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform",
+            "wheelchair": "yes"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1652826334,
+          "name": "舞浜三丁目",
+          "lat": 35.6339331,
+          "lon": 139.8931509,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "舞浜三丁目",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform",
+            "wheelchair": "yes"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1652792629,
+          "name": "見明川住宅",
+          "lat": 35.6366143,
+          "lon": 139.8963732,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "covered": "yes",
+            "highway": "bus_stop",
+            "name": "見明川住宅",
+            "operator": "東京ベイシティ交通",
+            "passenger_information_display": "yes",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11581103370,
+          "name": "見明川中学校前",
+          "lat": 35.6385937,
+          "lon": 139.8987376,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "covered": "yes",
+            "highway": "bus_stop",
+            "name": "見明川中学校前",
+            "operator": "東京ベイシティ交通",
+            "passenger_information_display": "yes",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11581103369,
+          "name": "弁天第二",
+          "lat": 35.6400525,
+          "lon": 139.900479,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "covered": "yes",
+            "highway": "bus_stop",
+            "name": "弁天第二",
+            "operator": "東京ベイシティ交通",
+            "passenger_information_display": "yes",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11581097368,
+          "name": "サンコーポ西口",
+          "lat": 35.6423093,
+          "lon": 139.9031895,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "covered": "yes",
+            "highway": "bus_stop",
+            "name": "サンコーポ西口",
+            "operator": "東京ベイシティ交通",
+            "passenger_information_display": "yes",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6720667163,
+          "name": "サンコーポ東口",
+          "lat": 35.6440928,
+          "lon": 139.9053323,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "サンコーポ東口",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11581097365,
+          "name": "順天堂病院前",
+          "lat": 35.645692,
+          "lon": 139.907214,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "covered": "yes",
+            "highway": "bus_stop",
+            "name": "順天堂病院前",
+            "operator": "東京ベイシティ交通",
+            "passenger_information_display": "yes",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11610520498,
+          "name": "日生研修センター",
+          "lat": 35.6472894,
+          "lon": 139.9072966,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "日生研修センター",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform",
+            "shelter": "no"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6778515938,
+          "name": "NTT浦安前",
+          "lat": 35.6500921,
+          "lon": 139.9037571,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "covered": "yes",
+            "highway": "bus_stop",
+            "name": "NTT浦安前",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1742862067,
+          "name": "市役所入口郵便局前",
+          "lat": 35.6526644,
+          "lon": 139.8993437,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "市役所入口郵便局前",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 12369477682,
+          "name": "堀江東",
+          "lat": 35.654377,
+          "lon": 139.8960829,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "堀江東",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6938860196,
+          "name": "南小入口",
+          "lat": 35.6560001,
+          "lon": 139.8929023,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "南小入口",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform",
+            "wheelchair": "yes"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 12367548457,
+          "name": "堀江三丁目",
+          "lat": 35.6585581,
+          "lon": 139.8910055,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "堀江三丁目",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform",
+            "wheelchair": "yes"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6830439622,
+          "name": "フラワー通り",
+          "lat": 35.6617739,
+          "lon": 139.8915121,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "フラワー通り",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform",
+            "wheelchair": "yes"
+          }
+        },
+        {
+          "role": "platform_exit_only",
+          "type": "node",
+          "ref": 12367548448,
+          "name": "浦安駅入口",
+          "lat": 35.6648451,
+          "lon": 139.8940873,
+          "local_ref": "X",
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "local_ref": "X",
+            "name": "浦安駅入口",
+            "note": "降車専用",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform",
+            "wheelchair": "yes"
+          }
+        }
+      ],
+      "wayMemberIds": [
+        1337138021,
+        1337341818,
+        1337358421,
+        1337138028,
+        1291325002,
+        72272367,
+        1291324999,
+        680722811,
+        260586195,
+        260586192,
+        1340734325,
+        30176970,
+        1340734322,
+        1293097550,
+        1248129207,
+        258226622,
+        271934572,
+        1337319406,
+        271934564,
+        271934565,
+        1307684851,
+        1307684852,
+        271934583,
+        30177020,
+        1240445586,
+        796894963,
+        286387769,
+        30176171,
+        30176170,
+        846881938,
+        883069232,
+        883069538,
+        720402603,
+        1338996625,
+        1338996621,
+        1338996620,
+        720402604,
+        260586190,
+        136399258,
+        1337138022,
+        60194496,
+        60193608,
+        60193618,
+        1337138023,
+        1339033670,
+        281487774,
+        1337138024
+      ],
+      "waysSummary": {
+        "wayCountSummarized": 47,
+        "summarizedFrom": "relation-way-members",
+        "access": {
+          "(unset)": 40,
+          "no": 7
+        },
+        "bus": {
+          "(unset)": 43,
+          "yes": 4
+        },
+        "psv": {
+          "(unset)": 40,
+          "yes": 7
+        },
+        "highway": {
+          "secondary": 8,
+          "tertiary": 31,
+          "service": 7,
+          "unclassified": 1
+        },
+        "waysWithAccessBusOrPsv": [
+          {
+            "id": 72272367,
+            "name": null,
+            "access": "no",
+            "bus": null,
+            "psv": "yes",
+            "highway": "service"
+          },
+          {
+            "id": 271934564,
+            "name": null,
+            "access": "no",
+            "bus": "yes",
+            "psv": "yes",
+            "highway": "service"
+          },
+          {
+            "id": 271934565,
+            "name": null,
+            "access": "no",
+            "bus": "yes",
+            "psv": "yes",
+            "highway": "service"
+          },
+          {
+            "id": 271934572,
+            "name": null,
+            "access": "no",
+            "bus": "yes",
+            "psv": "yes",
+            "highway": "service"
+          },
+          {
+            "id": 680722811,
+            "name": null,
+            "access": "no",
+            "bus": null,
+            "psv": "yes",
+            "highway": "service"
+          },
+          {
+            "id": 1291324999,
+            "name": null,
+            "access": "no",
+            "bus": null,
+            "psv": "yes",
+            "highway": "service"
+          },
+          {
+            "id": 1337319406,
+            "name": null,
+            "access": "no",
+            "bus": "yes",
+            "psv": "yes",
+            "highway": "service"
+          }
+        ],
+        "waysWithAccessBusOrPsvCount": 7
+      },
+      "tdlContamination": {
+        "contaminated": true,
+        "hits": [
+          {
+            "name": "東京ディズニーランド®",
+            "needle": "東京ディズニーランド"
+          },
+          {
+            "name": "東京ディズニーシー®",
+            "needle": "ディズニーシー"
+          }
+        ]
+      },
+      "file": "osm-relation-18381676.json",
+      "mergedChildren": [],
+      "mergeNote": null
+    }
+  ],
+  "forbiddenRoute4": [
+    {
+      "id": 9983006,
+      "ok": true,
+      "forbidden": true,
+      "route4": true,
+      "pathSourceAllowed": false,
+      "source": "overpass-api.de",
+      "name": "東京ベイシティバス4系統 浦安駅入口⇒市役所入口郵便局前⇒舞浜駅・東京ディズニーランド",
+      "tags": {
+        "from": "浦安駅入口",
+        "name": "東京ベイシティバス4系統 浦安駅入口⇒市役所入口郵便局前⇒舞浜駅・東京ディズニーランド",
+        "network": "富岡線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "4",
+        "route": "bus",
+        "to": "東京ディズニーランド",
+        "type": "route"
+      },
+      "wayMemberCount": 28,
+      "platformNames": [
+        "浦安駅入口",
+        "フラワー通り",
+        "堀江三丁目",
+        "南小入口",
+        "堀江東",
+        "市役所入口郵便局前",
+        "NTT浦安前",
+        "日生研修センター",
+        "順天堂病院前",
+        "サンコーポ東口",
+        "サンコーポ西口",
+        "弁天第二",
+        "見明川中学校前",
+        "見明川住宅",
+        "舞浜三丁目",
+        "運動公園",
+        "オリエンタルランド本社前",
+        "舞浜駅",
+        "東京ディズニーランド®"
+      ],
+      "waysSummary": {
+        "wayCountSummarized": 28,
+        "summarizedFrom": "relation-way-members",
+        "access": {
+          "(unset)": 27,
+          "no": 1
+        },
+        "bus": {
+          "(unset)": 28
+        },
+        "psv": {
+          "(unset)": 27,
+          "yes": 1
+        },
+        "highway": {
+          "secondary": 7,
+          "tertiary": 20,
+          "service": 1
+        },
+        "waysWithAccessBusOrPsv": [
+          {
+            "id": 72272367,
+            "name": null,
+            "access": "no",
+            "bus": null,
+            "psv": "yes",
+            "highway": "service"
+          }
+        ],
+        "waysWithAccessBusOrPsvCount": 1
+      },
+      "tdlContamination": {
+        "contaminated": true,
+        "hits": [
+          {
+            "name": "東京ディズニーランド®",
+            "needle": "東京ディズニーランド"
+          }
+        ]
+      },
+      "file": "_forbidden_route4_9983006.json"
+    },
+    {
+      "id": 18323875,
+      "ok": true,
+      "forbidden": true,
+      "route4": true,
+      "pathSourceAllowed": false,
+      "source": "overpass-api.de",
+      "name": "東京ベイシティバス4系統 東京ディズニーランド・舞浜駅⇒市役所入口郵便局前⇒浦安駅入口",
+      "tags": {
+        "name": "東京ベイシティバス4系統 東京ディズニーランド・舞浜駅⇒市役所入口郵便局前⇒浦安駅入口",
+        "network": "富岡線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "4",
+        "route": "bus",
+        "type": "route"
+      },
+      "wayMemberCount": 33,
+      "platformNames": [
+        "東京ディズニーランド®",
+        "舞浜駅",
+        "オリエンタルランド本社前",
+        "運動公園",
+        "舞浜三丁目",
+        "見明川住宅",
+        "見明川中学校前",
+        "弁天第二",
+        "サンコーポ西口",
+        "サンコーポ東口",
+        "順天堂病院前",
+        "日生研修センター",
+        "NTT浦安前",
+        "市役所入口郵便局前",
+        "堀江東",
+        "南小入口",
+        "堀江三丁目",
+        "フラワー通り",
+        "浦安駅入口"
+      ],
+      "waysSummary": {
+        "wayCountSummarized": 33,
+        "summarizedFrom": "relation-way-members",
+        "access": {
+          "(unset)": 31,
+          "no": 2
+        },
+        "bus": {
+          "(unset)": 33
+        },
+        "psv": {
+          "(unset)": 31,
+          "yes": 2
+        },
+        "highway": {
+          "secondary": 8,
+          "tertiary": 23,
+          "service": 2
+        },
+        "waysWithAccessBusOrPsv": [
+          {
+            "id": 680722811,
+            "name": null,
+            "access": "no",
+            "bus": null,
+            "psv": "yes",
+            "highway": "service"
+          },
+          {
+            "id": 1291324999,
+            "name": null,
+            "access": "no",
+            "bus": null,
+            "psv": "yes",
+            "highway": "service"
+          }
+        ],
+        "waysWithAccessBusOrPsvCount": 2
+      },
+      "tdlContamination": {
+        "contaminated": true,
+        "hits": [
+          {
+            "name": "東京ディズニーランド®",
+            "needle": "東京ディズニーランド"
+          }
+        ]
+      },
+      "file": "_forbidden_route4_18323875.json"
+    }
+  ],
+  "nameChecks": {
+    "18381676": {
+      "label": "route12 舞浜→浦安 (inbound)",
+      "name": "東京ベイシティバス12系統 舞浜駅・東京ディズニーシー⇒市役所入口郵便局前⇒浦安駅入口",
+      "allNames": [
+        "舞浜駅",
+        "東京ディズニーランド®",
+        "東京ベイ舞浜ホテル",
+        "ヒルトンホテル・グランドニッコー",
+        "シェラトンホテル・ホテルオークラ",
+        "東京ディズニーシー®",
+        "運動公園",
+        "舞浜三丁目",
+        "見明川住宅",
+        "見明川中学校前",
+        "弁天第二",
+        "サンコーポ西口",
+        "サンコーポ東口",
+        "順天堂病院前",
+        "日生研修センター",
+        "NTT浦安前",
+        "市役所入口郵便局前",
+        "堀江東",
+        "南小入口",
+        "堀江三丁目",
+        "フラワー通り",
+        "浦安駅入口"
+      ],
+      "hits": [
+        {
+          "needle": "浦安駅",
+          "found": true,
+          "matches": [
+            "浦安駅入口"
+          ]
+        },
+        {
+          "needle": "浦安駅入口",
+          "found": true,
+          "matches": [
+            "浦安駅入口"
+          ]
+        },
+        {
+          "needle": "舞浜",
+          "found": true,
+          "matches": [
+            "舞浜駅",
+            "東京ベイ舞浜ホテル",
+            "舞浜三丁目"
+          ]
+        },
+        {
+          "needle": "舞浜駅",
+          "found": true,
+          "matches": [
+            "舞浜駅"
+          ]
+        },
+        {
+          "needle": "舞浜リゾート",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "イクスピアリ",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "ディズニー",
+          "found": true,
+          "matches": [
+            "東京ディズニーランド®",
+            "東京ディズニーシー®"
+          ]
+        },
+        {
+          "needle": "TDL",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "TDS",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "東京ディズニーランド",
+          "found": true,
+          "matches": [
+            "東京ディズニーランド®"
+          ]
+        },
+        {
+          "needle": "千鳥",
+          "found": false,
+          "matches": []
+        }
+      ],
+      "tdlContamination": {
+        "contaminated": true,
+        "hits": [
+          {
+            "name": "東京ディズニーランド®",
+            "needle": "東京ディズニーランド"
+          },
+          {
+            "name": "東京ディズニーシー®",
+            "needle": "ディズニーシー"
+          }
+        ]
+      }
+    },
+    "18381677": {
+      "label": "route12 浦安→舞浜 (outbound)",
+      "name": "東京ベイシティバス12系統 浦安駅入口⇒市役所入口郵便局前⇒東京ディズニーシー・舞浜駅",
+      "allNames": [
+        "浦安駅入口",
+        "フラワー通り",
+        "堀江三丁目",
+        "南小入口",
+        "堀江東",
+        "市役所入口郵便局前",
+        "NTT浦安前",
+        "日生研修センター",
+        "順天堂病院前",
+        "サンコーポ東口",
+        "サンコーポ西口",
+        "弁天第二",
+        "見明川中学校前",
+        "見明川住宅",
+        "舞浜三丁目",
+        "運動公園",
+        "東京ディズニーシー®",
+        "シェラトンホテル・ホテルオークラ",
+        "ヒルトンホテル・グランドニッコー",
+        "東京ベイ舞浜ホテル",
+        "東京ディズニーランド®",
+        "舞浜駅"
+      ],
+      "hits": [
+        {
+          "needle": "浦安駅",
+          "found": true,
+          "matches": [
+            "浦安駅入口"
+          ]
+        },
+        {
+          "needle": "浦安駅入口",
+          "found": true,
+          "matches": [
+            "浦安駅入口"
+          ]
+        },
+        {
+          "needle": "舞浜",
+          "found": true,
+          "matches": [
+            "舞浜三丁目",
+            "東京ベイ舞浜ホテル",
+            "舞浜駅"
+          ]
+        },
+        {
+          "needle": "舞浜駅",
+          "found": true,
+          "matches": [
+            "舞浜駅"
+          ]
+        },
+        {
+          "needle": "舞浜リゾート",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "イクスピアリ",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "ディズニー",
+          "found": true,
+          "matches": [
+            "東京ディズニーシー®",
+            "東京ディズニーランド®"
+          ]
+        },
+        {
+          "needle": "TDL",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "TDS",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "東京ディズニーランド",
+          "found": true,
+          "matches": [
+            "東京ディズニーランド®"
+          ]
+        },
+        {
+          "needle": "千鳥",
+          "found": false,
+          "matches": []
+        }
+      ],
+      "tdlContamination": {
+        "contaminated": true,
+        "hits": [
+          {
+            "name": "東京ディズニーシー®",
+            "needle": "ディズニーシー"
+          },
+          {
+            "name": "東京ディズニーランド®",
+            "needle": "東京ディズニーランド"
+          }
+        ]
+      }
+    },
+    "18381678": {
+      "label": "route12 route_master",
+      "name": "東京ベイシティバス12系統 浦安駅入口-市役所入口郵便局前-東京ディズニーシー・舞浜駅",
+      "allNames": [],
+      "hits": [
+        {
+          "needle": "浦安駅",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "浦安駅入口",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "舞浜",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "舞浜駅",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "舞浜リゾート",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "イクスピアリ",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "ディズニー",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "TDL",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "TDS",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "東京ディズニーランド",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "千鳥",
+          "found": false,
+          "matches": []
+        }
+      ],
+      "tdlContamination": {
+        "contaminated": false,
+        "hits": []
+      }
+    }
+  }
+}

@@ -1,0 +1,310 @@
+// Auto-generated OSM platforms for 舞浜リゾート線 (route-12).
+// Official stop order: Keisei Bus Navi 2026-07-25. Hotel SOUTH/NORTH by outbound path order.
+// TDL is never a route-12 stop. Bayside from Overpass external nodes.
+// Generated: 2026-07-25-maihama-resort-v1
+(() => {
+  window.MAIHAMA_RESORT_LINE_PLATFORMS_V1 = {
+  "12-maihama-via-resort": {
+    "浦安駅入口": {
+      "lat": 35.664245,
+      "lng": 139.8921201,
+      "platformId": 2288028442,
+      "role": "platform_entry_only",
+      "osmName": "浦安駅入口"
+    },
+    "フラワー通り": {
+      "lat": 35.6611992,
+      "lng": 139.8915342,
+      "platformId": 6830439621,
+      "role": "platform",
+      "osmName": "フラワー通り"
+    },
+    "堀江三丁目": {
+      "lat": 35.6584326,
+      "lng": 139.891135,
+      "platformId": 6830439620,
+      "role": "platform",
+      "osmName": "堀江三丁目"
+    },
+    "南小入口": {
+      "lat": 35.6560935,
+      "lng": 139.8931638,
+      "platformId": 6830439619,
+      "role": "platform",
+      "osmName": "南小入口"
+    },
+    "堀江東": {
+      "lat": 35.6545049,
+      "lng": 139.8961521,
+      "platformId": 6830439626,
+      "role": "platform",
+      "osmName": "堀江東"
+    },
+    "市役所入口・郵便局前": {
+      "lat": 35.6526218,
+      "lng": 139.8997667,
+      "platformId": 1742862060,
+      "role": "platform",
+      "osmName": "市役所入口郵便局前"
+    },
+    "ＮＴＴ浦安前": {
+      "lat": 35.6494055,
+      "lng": 139.9047687,
+      "platformId": 6778515937,
+      "role": "platform",
+      "osmName": "NTT浦安前"
+    },
+    "日生研修センター": {
+      "lat": 35.6473785,
+      "lng": 139.9073073,
+      "platformId": 6778515936,
+      "role": "platform",
+      "osmName": "日生研修センター"
+    },
+    "順天堂病院前": {
+      "lat": 35.6453182,
+      "lng": 139.9070393,
+      "platformId": 6720667162,
+      "role": "platform",
+      "osmName": "順天堂病院前"
+    },
+    "サンコーポ東口": {
+      "lat": 35.6439144,
+      "lng": 139.905342,
+      "platformId": 11581097367,
+      "role": "platform",
+      "osmName": "サンコーポ東口"
+    },
+    "サンコーポ西口": {
+      "lat": 35.6420634,
+      "lng": 139.9031259,
+      "platformId": 6720667164,
+      "role": "platform",
+      "osmName": "サンコーポ西口"
+    },
+    "弁天第二": {
+      "lat": 35.6398165,
+      "lng": 139.9004629,
+      "platformId": 1652792931,
+      "role": "platform",
+      "osmName": "弁天第二"
+    },
+    "見明川中学校前": {
+      "lat": 35.6384265,
+      "lng": 139.8987768,
+      "platformId": 1652792821,
+      "role": "platform",
+      "osmName": "見明川中学校前"
+    },
+    "見明川住宅": {
+      "lat": 35.6364748,
+      "lng": 139.8964564,
+      "platformId": 11581103371,
+      "role": "platform",
+      "osmName": "見明川住宅"
+    },
+    "舞浜三丁目": {
+      "lat": 35.6337929,
+      "lng": 139.8932505,
+      "platformId": 12368996366,
+      "role": "platform",
+      "osmName": "舞浜三丁目"
+    },
+    "運動公園": {
+      "lat": 35.6310025,
+      "lng": 139.8899547,
+      "platformId": 6720667165,
+      "role": "platform",
+      "osmName": "運動公園"
+    },
+    "東京ディズニーシー（Ｒ）": {
+      "lat": 35.6290596,
+      "lng": 139.8881506,
+      "platformId": 2768542070,
+      "role": "platform",
+      "osmName": "東京ディズニーシー®"
+    },
+    "「ベイサイド・ステーション」": {
+      "lat": 35.6279571,
+      "lng": 139.8763495,
+      "platformId": 9482668407,
+      "role": "platform-external",
+      "osmName": "ベイサイド・ステーション",
+      "local_ref": "4",
+      "platformDistException": true
+    },
+    "リゾートホテルエリア・サウス": {
+      "lat": 35.6275745,
+      "lng": 139.8767188,
+      "platformId": 6796292906,
+      "role": "platform",
+      "osmName": "シェラトンホテル・ホテルオークラ"
+    },
+    "リゾートホテルエリア・ノース": {
+      "lat": 35.6281122,
+      "lng": 139.8744073,
+      "platformId": 6796292905,
+      "role": "platform",
+      "osmName": "ヒルトンホテル・グランドニッコー"
+    },
+    "舞浜駅": {
+      "lat": 35.6360225,
+      "lng": 139.8833113,
+      "platformId": 9482601633,
+      "role": "platform_exit_only",
+      "osmName": "舞浜駅"
+    }
+  },
+  "12-urayasu-via-resort": {
+    "舞浜駅": {
+      "lat": 35.6359331,
+      "lng": 139.8835561,
+      "platformId": 9482601636,
+      "role": "platform_entry_only",
+      "osmName": "舞浜駅"
+    },
+    "リゾートホテルエリア・ノース": {
+      "lat": 35.628236,
+      "lng": 139.8744938,
+      "platformId": 6796292904,
+      "role": "platform",
+      "osmName": "ヒルトンホテル・グランドニッコー"
+    },
+    "リゾートホテルエリア・サウス": {
+      "lat": 35.627481,
+      "lng": 139.8777508,
+      "platformId": 6796292907,
+      "role": "platform",
+      "osmName": "シェラトンホテル・ホテルオークラ"
+    },
+    "「ベイサイド・ステーション」": {
+      "lat": 35.6279249,
+      "lng": 139.8765129,
+      "platformId": 9482668408,
+      "role": "platform-external",
+      "osmName": "ベイサイド・ステーション",
+      "local_ref": "3",
+      "platformDistException": true
+    },
+    "東京ディズニーシー（Ｒ）": {
+      "lat": 35.6290596,
+      "lng": 139.8881506,
+      "platformId": 2768542070,
+      "role": "platform",
+      "osmName": "東京ディズニーシー®"
+    },
+    "運動公園": {
+      "lat": 35.6325209,
+      "lng": 139.8914704,
+      "platformId": 6720667166,
+      "role": "platform",
+      "osmName": "運動公園"
+    },
+    "舞浜三丁目": {
+      "lat": 35.6339331,
+      "lng": 139.8931509,
+      "platformId": 1652826334,
+      "role": "platform",
+      "osmName": "舞浜三丁目"
+    },
+    "見明川住宅": {
+      "lat": 35.6366143,
+      "lng": 139.8963732,
+      "platformId": 1652792629,
+      "role": "platform",
+      "osmName": "見明川住宅"
+    },
+    "見明川中学校前": {
+      "lat": 35.6385937,
+      "lng": 139.8987376,
+      "platformId": 11581103370,
+      "role": "platform",
+      "osmName": "見明川中学校前"
+    },
+    "弁天第二": {
+      "lat": 35.6400525,
+      "lng": 139.900479,
+      "platformId": 11581103369,
+      "role": "platform",
+      "osmName": "弁天第二"
+    },
+    "サンコーポ西口": {
+      "lat": 35.6423093,
+      "lng": 139.9031895,
+      "platformId": 11581097368,
+      "role": "platform",
+      "osmName": "サンコーポ西口"
+    },
+    "サンコーポ東口": {
+      "lat": 35.6440928,
+      "lng": 139.9053323,
+      "platformId": 6720667163,
+      "role": "platform",
+      "osmName": "サンコーポ東口"
+    },
+    "順天堂病院前": {
+      "lat": 35.645692,
+      "lng": 139.907214,
+      "platformId": 11581097365,
+      "role": "platform",
+      "osmName": "順天堂病院前"
+    },
+    "日生研修センター": {
+      "lat": 35.6472894,
+      "lng": 139.9072966,
+      "platformId": 11610520498,
+      "role": "platform",
+      "osmName": "日生研修センター"
+    },
+    "ＮＴＴ浦安前": {
+      "lat": 35.6500921,
+      "lng": 139.9037571,
+      "platformId": 6778515938,
+      "role": "platform",
+      "osmName": "NTT浦安前"
+    },
+    "市役所入口・郵便局前": {
+      "lat": 35.6526644,
+      "lng": 139.8993437,
+      "platformId": 1742862067,
+      "role": "platform",
+      "osmName": "市役所入口郵便局前"
+    },
+    "堀江東": {
+      "lat": 35.654377,
+      "lng": 139.8960829,
+      "platformId": 12369477682,
+      "role": "platform",
+      "osmName": "堀江東"
+    },
+    "南小入口": {
+      "lat": 35.6560001,
+      "lng": 139.8929023,
+      "platformId": 6938860196,
+      "role": "platform",
+      "osmName": "南小入口"
+    },
+    "堀江三丁目": {
+      "lat": 35.6585581,
+      "lng": 139.8910055,
+      "platformId": 12367548457,
+      "role": "platform",
+      "osmName": "堀江三丁目"
+    },
+    "フラワー通り": {
+      "lat": 35.6617739,
+      "lng": 139.8915121,
+      "platformId": 6830439622,
+      "role": "platform",
+      "osmName": "フラワー通り"
+    },
+    "浦安駅入口": {
+      "lat": 35.6648451,
+      "lng": 139.8940873,
+      "platformId": 12367548448,
+      "role": "platform_exit_only",
+      "osmName": "浦安駅入口"
+    }
+  }
+};
+})();

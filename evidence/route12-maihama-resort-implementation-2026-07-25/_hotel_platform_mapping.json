@@ -1,0 +1,42 @@
+{
+  "byOsmNamePrefix": {
+    "sheraton": "リゾートホテルエリア・サウス",
+    "hilton": "リゾートホテルエリア・ノース"
+  },
+  "rows": [
+    {
+      "osmName": "シェラトンホテル・ホテルオークラ",
+      "platformId": 6796292906,
+      "lat": 35.6275745,
+      "lng": 139.8767188,
+      "pathIndex": 457,
+      "pathDist_m": 3.5,
+      "assignedOfficialName": "リゾートホテルエリア・サウス",
+      "reason": "outbound path order after TDS: first sheraton/hilton → サウス, second → ノース (OSM hotel names outdated; path+official order wins over alias Hilton→サウス)"
+    },
+    {
+      "osmName": "ヒルトンホテル・グランドニッコー",
+      "platformId": 6796292905,
+      "lat": 35.6281122,
+      "lng": 139.8744073,
+      "pathIndex": 470,
+      "pathDist_m": 4.7,
+      "assignedOfficialName": "リゾートホテルエリア・ノース",
+      "reason": "outbound path order after TDS: first sheraton/hilton → サウス, second → ノース (OSM hotel names outdated; path+official order wins over alias Hilton→サウス)"
+    },
+    {
+      "osmName": "東京ベイ舞浜ホテル",
+      "platformId": 6778619326,
+      "lat": 35.6309927,
+      "lng": 139.8728617,
+      "pathIndex": 492,
+      "pathDist_m": 6.6,
+      "assignedOfficialName": null,
+      "reason": "skip as route-12 stop (東京ベイ舞浜ホテル not in official 21 stops); ways may still be used"
+    }
+  ],
+  "primaryOrder": [
+    "シェラトンホテル・ホテルオークラ",
+    "ヒルトンホテル・グランドニッコー"
+  ]
+}

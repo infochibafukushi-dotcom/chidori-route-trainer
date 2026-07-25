@@ -1,0 +1,597 @@
+{
+  "checkedAt": "2026-07-25T05:37:19.637Z",
+  "note": "Compare path banks vs git HEAD. Route-12 is new (no HEAD baseline required).",
+  "routes": {
+    "シンボルロード線 route-11": {
+      "label": "シンボルロード線 route-11",
+      "file": "symbol-road-line-path-v1.js",
+      "ok": true,
+      "fileIdentical": true,
+      "headAvailable": true,
+      "systems": {
+        "11-urayasu-hinode": {
+          "current": {
+            "pathHash": "c28f5e3bf6a60258c94d39cd1d38fdf7ff529f4d7adf8f7fe79214419866bdab",
+            "resolvedVersion": "2026-07-25-symbol-road-urayasu-hinode-v1",
+            "pathPoints": 324
+          },
+          "head": {
+            "pathHash": "c28f5e3bf6a60258c94d39cd1d38fdf7ff529f4d7adf8f7fe79214419866bdab",
+            "resolvedVersion": "2026-07-25-symbol-road-urayasu-hinode-v1",
+            "pathPoints": 324
+          },
+          "unchanged": true
+        },
+        "11-urayasu-sogo-via-hinode-kominkan": {
+          "current": {
+            "pathHash": "8fcebfb768299feb39838ff08ba0fa4f248cf280f2e925f1e0fb9044d2edbc37",
+            "resolvedVersion": "2026-07-25-symbol-road-urayasu-sogo-via-hinode-kominkan-v1",
+            "pathPoints": 277
+          },
+          "head": {
+            "pathHash": "8fcebfb768299feb39838ff08ba0fa4f248cf280f2e925f1e0fb9044d2edbc37",
+            "resolvedVersion": "2026-07-25-symbol-road-urayasu-sogo-via-hinode-kominkan-v1",
+            "pathPoints": 277
+          },
+          "unchanged": true
+        },
+        "11-urayasu-baypark": {
+          "current": {
+            "pathHash": "1375bfa5d7df6df142a20ffbe5562c982d1ab737c148ba23aecefeffab51441b",
+            "resolvedVersion": "2026-07-25-symbol-road-urayasu-baypark-v1",
+            "pathPoints": 243
+          },
+          "head": {
+            "pathHash": "1375bfa5d7df6df142a20ffbe5562c982d1ab737c148ba23aecefeffab51441b",
+            "resolvedVersion": "2026-07-25-symbol-road-urayasu-baypark-v1",
+            "pathPoints": 243
+          },
+          "unchanged": true
+        },
+        "11-urayasu-shinurayasu": {
+          "current": {
+            "pathHash": "8600b68a90d9c19d1d2a998a90fba167813aec44eb96f6d2fb8034e5d7a9d782",
+            "resolvedVersion": "2026-07-25-symbol-road-urayasu-shinurayasu-v1",
+            "pathPoints": 142
+          },
+          "head": {
+            "pathHash": "8600b68a90d9c19d1d2a998a90fba167813aec44eb96f6d2fb8034e5d7a9d782",
+            "resolvedVersion": "2026-07-25-symbol-road-urayasu-shinurayasu-v1",
+            "pathPoints": 142
+          },
+          "unchanged": true
+        },
+        "11-shinurayasu-hinode": {
+          "current": {
+            "pathHash": "d46ee2d2fad5e41772fe46da8bb1bb55f764285b76c8b92db9d6d0c06f1e738f",
+            "resolvedVersion": "2026-07-25-symbol-road-shinurayasu-hinode-v1",
+            "pathPoints": 183
+          },
+          "head": {
+            "pathHash": "d46ee2d2fad5e41772fe46da8bb1bb55f764285b76c8b92db9d6d0c06f1e738f",
+            "resolvedVersion": "2026-07-25-symbol-road-shinurayasu-hinode-v1",
+            "pathPoints": 183
+          },
+          "unchanged": true
+        },
+        "11-shinurayasu-sogo": {
+          "current": {
+            "pathHash": "ba6e1528c48b0747fb7d7907e982e276919fa7948b673de3a5c117b342993a1c",
+            "resolvedVersion": "2026-07-25-symbol-road-shinurayasu-sogo-v1",
+            "pathPoints": 136
+          },
+          "head": {
+            "pathHash": "ba6e1528c48b0747fb7d7907e982e276919fa7948b673de3a5c117b342993a1c",
+            "resolvedVersion": "2026-07-25-symbol-road-shinurayasu-sogo-v1",
+            "pathPoints": 136
+          },
+          "unchanged": true
+        },
+        "11-shinurayasu-baypark": {
+          "current": {
+            "pathHash": "3dda0b17f76511024f101fc88f386da1c5669deccbbacb5233184adac520ab4d",
+            "resolvedVersion": "2026-07-25-symbol-road-shinurayasu-baypark-v1",
+            "pathPoints": 102
+          },
+          "head": {
+            "pathHash": "3dda0b17f76511024f101fc88f386da1c5669deccbbacb5233184adac520ab4d",
+            "resolvedVersion": "2026-07-25-symbol-road-shinurayasu-baypark-v1",
+            "pathPoints": 102
+          },
+          "unchanged": true
+        },
+        "11-hinode-urayasu": {
+          "current": {
+            "pathHash": "aab5d768a2d6034376d92bc641640b3a13ef0934b4b7d1a50853d03aec7ac233",
+            "resolvedVersion": "2026-07-25-symbol-road-hinode-urayasu-v1",
+            "pathPoints": 289
+          },
+          "head": {
+            "pathHash": "aab5d768a2d6034376d92bc641640b3a13ef0934b4b7d1a50853d03aec7ac233",
+            "resolvedVersion": "2026-07-25-symbol-road-hinode-urayasu-v1",
+            "pathPoints": 289
+          },
+          "unchanged": true
+        },
+        "11-hinode-shinurayasu": {
+          "current": {
+            "pathHash": "d2dae33f798f28bbb52986958ad48cd85abdcaf012519540e67047df5ed775f6",
+            "resolvedVersion": "2026-07-25-symbol-road-hinode-shinurayasu-v1",
+            "pathPoints": 171
+          },
+          "head": {
+            "pathHash": "d2dae33f798f28bbb52986958ad48cd85abdcaf012519540e67047df5ed775f6",
+            "resolvedVersion": "2026-07-25-symbol-road-hinode-shinurayasu-v1",
+            "pathPoints": 171
+          },
+          "unchanged": true
+        },
+        "11-sogo-shinurayasu": {
+          "current": {
+            "pathHash": "c0b00886aa642e5621ba56fc38d7b89a6cdda5199675653de5c32d4f3894e9ac",
+            "resolvedVersion": "2026-07-25-symbol-road-sogo-shinurayasu-v1",
+            "pathPoints": 111
+          },
+          "head": {
+            "pathHash": "c0b00886aa642e5621ba56fc38d7b89a6cdda5199675653de5c32d4f3894e9ac",
+            "resolvedVersion": "2026-07-25-symbol-road-sogo-shinurayasu-v1",
+            "pathPoints": 111
+          },
+          "unchanged": true
+        },
+        "11-sogo-urayasu": {
+          "current": {
+            "pathHash": "54eb722473eee1ff9274a8e28e35bd97aa20aa427e8b130908ff51ca6271c87a",
+            "resolvedVersion": "2026-07-25-symbol-road-sogo-urayasu-v1",
+            "pathPoints": 229
+          },
+          "head": {
+            "pathHash": "54eb722473eee1ff9274a8e28e35bd97aa20aa427e8b130908ff51ca6271c87a",
+            "resolvedVersion": "2026-07-25-symbol-road-sogo-urayasu-v1",
+            "pathPoints": 229
+          },
+          "unchanged": true
+        }
+      }
+    },
+    "高洲線 route-10": {
+      "label": "高洲線 route-10",
+      "file": "takasu-line-path-v1.js",
+      "ok": true,
+      "fileIdentical": true,
+      "headAvailable": true,
+      "systems": {
+        "10-minato-minami": {
+          "current": {
+            "pathHash": "2bbeb93a208f9aa344e6b7934ecb4fdff6e4310c3b03a82afca5c9d940b3e02f",
+            "resolvedVersion": "2026-07-25-takasu-line-minato-minami-v1",
+            "pathPoints": 219
+          },
+          "head": {
+            "pathHash": "2bbeb93a208f9aa344e6b7934ecb4fdff6e4310c3b03a82afca5c9d940b3e02f",
+            "resolvedVersion": "2026-07-25-takasu-line-minato-minami-v1",
+            "pathPoints": 219
+          },
+          "unchanged": true
+        },
+        "10-shinurayasu": {
+          "current": {
+            "pathHash": "eb5d31ba81c55b6ec38949bea6400abb722d3c730fc45d909380eb541b4c51d8",
+            "resolvedVersion": "2026-07-25-takasu-line-shinurayasu-v1",
+            "pathPoints": 187
+          },
+          "head": {
+            "pathHash": "eb5d31ba81c55b6ec38949bea6400abb722d3c730fc45d909380eb541b4c51d8",
+            "resolvedVersion": "2026-07-25-takasu-line-shinurayasu-v1",
+            "pathPoints": 187
+          },
+          "unchanged": true
+        }
+      }
+    },
+    "舞浜線 route-9": {
+      "label": "舞浜線 route-9",
+      "file": "maihama-line-path-v1.js",
+      "ok": true,
+      "fileIdentical": true,
+      "headAvailable": true,
+      "systems": {
+        "9-maihama": {
+          "current": {
+            "pathHash": "24d450ce6ec84428d753683342aaf29076f36945cf1d5c18d206ede327b568c2",
+            "resolvedVersion": "2026-07-25-maihama-line-maihama-v2",
+            "pathPoints": 277
+          },
+          "head": {
+            "pathHash": "24d450ce6ec84428d753683342aaf29076f36945cf1d5c18d206ede327b568c2",
+            "resolvedVersion": "2026-07-25-maihama-line-maihama-v2",
+            "pathPoints": 277
+          },
+          "unchanged": true
+        },
+        "9-rosetown": {
+          "current": {
+            "pathHash": "3ce4a3d5960c916854dfb59edaf5769c81bd2474d2cc70db931f3485fcf18aab",
+            "resolvedVersion": "2026-07-25-maihama-line-rosetown-v2",
+            "pathPoints": 182
+          },
+          "head": {
+            "pathHash": "3ce4a3d5960c916854dfb59edaf5769c81bd2474d2cc70db931f3485fcf18aab",
+            "resolvedVersion": "2026-07-25-maihama-line-rosetown-v2",
+            "pathPoints": 182
+          },
+          "unchanged": true
+        },
+        "9-urayasu": {
+          "current": {
+            "pathHash": "ab3d6ee47035f359ea822dfe991d48687c20f9e5d65e4afe0c40bf9d2da0eeb6",
+            "resolvedVersion": "2026-07-25-maihama-line-urayasu-v1",
+            "pathPoints": 265
+          },
+          "head": {
+            "pathHash": "ab3d6ee47035f359ea822dfe991d48687c20f9e5d65e4afe0c40bf9d2da0eeb6",
+            "resolvedVersion": "2026-07-25-maihama-line-urayasu-v1",
+            "pathPoints": 265
+          },
+          "unchanged": true
+        },
+        "9-tokai": {
+          "current": {
+            "pathHash": "48285e994cc9dde24206aa2f31f8f90dd20e591a2b5c96b3d36ed0e5de44036c",
+            "resolvedVersion": "2026-07-25-maihama-line-tokai-v1",
+            "pathPoints": 261
+          },
+          "head": {
+            "pathHash": "48285e994cc9dde24206aa2f31f8f90dd20e591a2b5c96b3d36ed0e5de44036c",
+            "resolvedVersion": "2026-07-25-maihama-line-tokai-v1",
+            "pathPoints": 261
+          },
+          "unchanged": true
+        },
+        "9-maihama-tokai": {
+          "current": {
+            "pathHash": "f237186a36fb127cffde44f0e228bcf1459aa109d127ebf5ed191a2d5a11066f",
+            "resolvedVersion": "2026-07-25-maihama-line-maihama-tokai-v1",
+            "pathPoints": 287
+          },
+          "head": {
+            "pathHash": "f237186a36fb127cffde44f0e228bcf1459aa109d127ebf5ed191a2d5a11066f",
+            "resolvedVersion": "2026-07-25-maihama-line-maihama-tokai-v1",
+            "pathPoints": 287
+          },
+          "unchanged": true
+        },
+        "9-urayasu-rosetown": {
+          "current": {
+            "pathHash": "fde85e00596ce418381680951e88f781d410d7a167032555f8777156f5cccd1c",
+            "resolvedVersion": "2026-07-25-maihama-line-urayasu-rosetown-v1",
+            "pathPoints": 193
+          },
+          "head": {
+            "pathHash": "fde85e00596ce418381680951e88f781d410d7a167032555f8777156f5cccd1c",
+            "resolvedVersion": "2026-07-25-maihama-line-urayasu-rosetown-v1",
+            "pathPoints": 193
+          },
+          "unchanged": true
+        }
+      }
+    },
+    "市役所線 route-6": {
+      "label": "市役所線 route-6",
+      "file": "shiyakusho-path-v1.js",
+      "ok": true,
+      "fileIdentical": true,
+      "headAvailable": true,
+      "systems": {
+        "6-maihama": {
+          "current": {
+            "pathHash": "eddc37a02dcb1f2c56e23d6c082f8083fa6e6ccb4983137df78e31990b183d2e",
+            "resolvedVersion": "2026-07-24-shiyakusho-maihama-v1",
+            "pathPoints": 329
+          },
+          "head": {
+            "pathHash": "eddc37a02dcb1f2c56e23d6c082f8083fa6e6ccb4983137df78e31990b183d2e",
+            "resolvedVersion": "2026-07-24-shiyakusho-maihama-v1",
+            "pathPoints": 329
+          },
+          "unchanged": true
+        },
+        "6-chidori": {
+          "current": {
+            "pathHash": "104afb5c920600b6f35806b2256f2693356c465c83e6e040c21cd81b9e588131",
+            "resolvedVersion": "2026-07-24-shiyakusho-chidori-v1",
+            "pathPoints": 304
+          },
+          "head": {
+            "pathHash": "104afb5c920600b6f35806b2256f2693356c465c83e6e040c21cd81b9e588131",
+            "resolvedVersion": "2026-07-24-shiyakusho-chidori-v1",
+            "pathPoints": 304
+          },
+          "unchanged": true
+        },
+        "6-urayasu-maihama": {
+          "current": {
+            "pathHash": "1062591f5ca84218553d43d9cfadb6a2a377a75b817e1360d3b75189c5adfeb2",
+            "resolvedVersion": "2026-07-24-shiyakusho-urayasu-maihama-v1",
+            "pathPoints": 320
+          },
+          "head": {
+            "pathHash": "1062591f5ca84218553d43d9cfadb6a2a377a75b817e1360d3b75189c5adfeb2",
+            "resolvedVersion": "2026-07-24-shiyakusho-urayasu-maihama-v1",
+            "pathPoints": 320
+          },
+          "unchanged": true
+        },
+        "6-tokai": {
+          "current": {
+            "pathHash": "24f94a28ba0c0d6cc8d563856dd098eb1b6e0a2fabfc4038d5650f5ee927ff1b",
+            "resolvedVersion": "2026-07-24-shiyakusho-tokai-v1",
+            "pathPoints": 148
+          },
+          "head": {
+            "pathHash": "24f94a28ba0c0d6cc8d563856dd098eb1b6e0a2fabfc4038d5650f5ee927ff1b",
+            "resolvedVersion": "2026-07-24-shiyakusho-tokai-v1",
+            "pathPoints": 148
+          },
+          "unchanged": true
+        },
+        "6-urayasu-chidori": {
+          "current": {
+            "pathHash": "f235ac4f0fe3e018d3d8dc00ceef0686a6c71fb0b0ace3abb259da922861c682",
+            "resolvedVersion": "2026-07-24-shiyakusho-urayasu-chidori-v1",
+            "pathPoints": 317
+          },
+          "head": {
+            "pathHash": "f235ac4f0fe3e018d3d8dc00ceef0686a6c71fb0b0ace3abb259da922861c682",
+            "resolvedVersion": "2026-07-24-shiyakusho-urayasu-chidori-v1",
+            "pathPoints": 317
+          },
+          "unchanged": true
+        }
+      }
+    },
+    "堀江線 route-5": {
+      "label": "堀江線 route-5",
+      "file": "horie-path-v1.js",
+      "ok": true,
+      "fileIdentical": true,
+      "headAvailable": true,
+      "systems": {
+        "5-shinurayasu": {
+          "current": {
+            "pathHash": "08d0f32192fcaf4aacf967d8270ec9c5664aed169a668e2bb47024a293a55400",
+            "resolvedVersion": "2026-07-24-horie-shinurayasu-v1",
+            "pathPoints": 284
+          },
+          "head": {
+            "pathHash": "08d0f32192fcaf4aacf967d8270ec9c5664aed169a668e2bb47024a293a55400",
+            "resolvedVersion": "2026-07-24-horie-shinurayasu-v1",
+            "pathPoints": 284
+          },
+          "unchanged": true
+        },
+        "5-ntt": {
+          "current": {
+            "pathHash": "60b750d30c6dd5f6bfcca39b8599fb9196836392f49f0b5defb254178ed1ffb3",
+            "resolvedVersion": "2026-07-24-horie-ntt-v1",
+            "pathPoints": 203
+          },
+          "head": {
+            "pathHash": "60b750d30c6dd5f6bfcca39b8599fb9196836392f49f0b5defb254178ed1ffb3",
+            "resolvedVersion": "2026-07-24-horie-ntt-v1",
+            "pathPoints": 203
+          },
+          "unchanged": true
+        },
+        "5-urayasu": {
+          "current": {
+            "pathHash": "74a8979d60f23b12eb9620ab01ffeb69625561aece2f58dd17d8de327e61391b",
+            "resolvedVersion": "2026-07-24-horie-urayasu-v1",
+            "pathPoints": 309
+          },
+          "head": {
+            "pathHash": "74a8979d60f23b12eb9620ab01ffeb69625561aece2f58dd17d8de327e61391b",
+            "resolvedVersion": "2026-07-24-horie-urayasu-v1",
+            "pathPoints": 309
+          },
+          "unchanged": true
+        },
+        "5-tokai": {
+          "current": {
+            "pathHash": "cf97e4ab5f0a319f5b0400adf5df9275f1ada97e88e8699bbf87a2e2a8530a9e",
+            "resolvedVersion": "2026-07-24-horie-tokai-v1",
+            "pathPoints": 174
+          },
+          "head": {
+            "pathHash": "cf97e4ab5f0a319f5b0400adf5df9275f1ada97e88e8699bbf87a2e2a8530a9e",
+            "resolvedVersion": "2026-07-24-horie-tokai-v1",
+            "pathPoints": 174
+          },
+          "unchanged": true
+        },
+        "5-higashino-chuo": {
+          "current": {
+            "pathHash": "76d50d549b06029ff6ffc0461dfbe7cb44b4b673d4b04dfaf9b3163d5ef34224",
+            "resolvedVersion": "2026-07-24-horie-higashino-chuo-v1",
+            "pathPoints": 161
+          },
+          "head": {
+            "pathHash": "76d50d549b06029ff6ffc0461dfbe7cb44b4b673d4b04dfaf9b3163d5ef34224",
+            "resolvedVersion": "2026-07-24-horie-higashino-chuo-v1",
+            "pathPoints": 161
+          },
+          "unchanged": true
+        }
+      }
+    },
+    "富岡線 route-4": {
+      "label": "富岡線 route-4",
+      "file": "tomioka-path-v1.js",
+      "ok": true,
+      "fileIdentical": true,
+      "headAvailable": true,
+      "systems": {
+        "4-tdl": {
+          "current": {
+            "pathHash": "a237430343107542480ee1bad78bd68ae64901c33018ab6e116561b1c4d66a2d",
+            "resolvedVersion": "2026-07-24-tomioka-tdl-v1",
+            "pathPoints": 375
+          },
+          "head": {
+            "pathHash": "a237430343107542480ee1bad78bd68ae64901c33018ab6e116561b1c4d66a2d",
+            "resolvedVersion": "2026-07-24-tomioka-tdl-v1",
+            "pathPoints": 375
+          },
+          "unchanged": true
+        },
+        "4-maihama": {
+          "current": {
+            "pathHash": "2c0371f0083c28cc3ae695e6d4e19262da655487bb878d5bf09b5fff944b6686",
+            "resolvedVersion": "2026-07-24-tomioka-maihama-v1",
+            "pathPoints": 332
+          },
+          "head": {
+            "pathHash": "2c0371f0083c28cc3ae695e6d4e19262da655487bb878d5bf09b5fff944b6686",
+            "resolvedVersion": "2026-07-24-tomioka-maihama-v1",
+            "pathPoints": 332
+          },
+          "unchanged": true
+        },
+        "4-chidori": {
+          "current": {
+            "pathHash": "8e7a618dd2cf38b45f29f42fbc4845f6ab4ee92856701ecb18a282f4fb254b1e",
+            "resolvedVersion": "2026-07-24-tomioka-chidori-v1",
+            "pathPoints": 307
+          },
+          "head": {
+            "pathHash": "8e7a618dd2cf38b45f29f42fbc4845f6ab4ee92856701ecb18a282f4fb254b1e",
+            "resolvedVersion": "2026-07-24-tomioka-chidori-v1",
+            "pathPoints": 307
+          },
+          "unchanged": true
+        },
+        "4-urayasu-tdl": {
+          "current": {
+            "pathHash": "ba624a931dbb38b9f53a4fc149682b079c6b95d27ad61e605a7085abd008b930",
+            "resolvedVersion": "2026-07-24-tomioka-urayasu-tdl-v1",
+            "pathPoints": 410
+          },
+          "head": {
+            "pathHash": "ba624a931dbb38b9f53a4fc149682b079c6b95d27ad61e605a7085abd008b930",
+            "resolvedVersion": "2026-07-24-tomioka-urayasu-tdl-v1",
+            "pathPoints": 410
+          },
+          "unchanged": true
+        },
+        "4-urayasu-maihama": {
+          "current": {
+            "pathHash": "e2206ae2d0436ad22458982517896246caf66202a1b7538eb491e8e31777881d",
+            "resolvedVersion": "2026-07-24-tomioka-urayasu-maihama-v1",
+            "pathPoints": 326
+          },
+          "head": {
+            "pathHash": "e2206ae2d0436ad22458982517896246caf66202a1b7538eb491e8e31777881d",
+            "resolvedVersion": "2026-07-24-tomioka-urayasu-maihama-v1",
+            "pathPoints": 326
+          },
+          "unchanged": true
+        },
+        "4-urayasu-chidori": {
+          "current": {
+            "pathHash": "1f3906df8f5874f9f5747e9668e2c261daa8ee6e0616d45b3cb139a795197216",
+            "resolvedVersion": "2026-07-24-tomioka-urayasu-chidori-v1",
+            "pathPoints": 322
+          },
+          "head": {
+            "pathHash": "1f3906df8f5874f9f5747e9668e2c261daa8ee6e0616d45b3cb139a795197216",
+            "resolvedVersion": "2026-07-24-tomioka-urayasu-chidori-v1",
+            "pathPoints": 322
+          },
+          "unchanged": true
+        }
+      }
+    },
+    "浦安東団地線 route-3": {
+      "label": "浦安東団地線 route-3",
+      "file": "urayasu-higashi-danchi-path-v1.js",
+      "ok": true,
+      "fileIdentical": true,
+      "headAvailable": true,
+      "systems": {
+        "3-sogo": {
+          "current": {
+            "pathHash": "3daf39e59686b2b20d0c5d724cb14003a1e04dee55dd459b58527873ccc4eafa",
+            "resolvedVersion": "2026-07-23-urayasu-higashi-danchi-sogo-v4",
+            "pathPoints": 306
+          },
+          "head": {
+            "pathHash": "3daf39e59686b2b20d0c5d724cb14003a1e04dee55dd459b58527873ccc4eafa",
+            "resolvedVersion": "2026-07-23-urayasu-higashi-danchi-sogo-v4",
+            "pathPoints": 306
+          },
+          "unchanged": true
+        },
+        "3-urayasu": {
+          "current": {
+            "pathHash": "a9ec5527f136b2ac832aac68f4f5be032d1717af8a708f38636b534f99cee2f7",
+            "resolvedVersion": "2026-07-23-urayasu-higashi-danchi-urayasu-v3",
+            "pathPoints": 182
+          },
+          "head": {
+            "pathHash": "a9ec5527f136b2ac832aac68f4f5be032d1717af8a708f38636b534f99cee2f7",
+            "resolvedVersion": "2026-07-23-urayasu-higashi-danchi-urayasu-v3",
+            "pathPoints": 182
+          },
+          "unchanged": true
+        },
+        "3-symbol": {
+          "current": {
+            "pathHash": "1026178ab4987963bddc1c044e91fdaab3f87c63690e74b5f7b5295646c3d70b",
+            "resolvedVersion": "2026-07-23-urayasu-higashi-danchi-symbol-v4",
+            "pathPoints": 161
+          },
+          "head": {
+            "pathHash": "1026178ab4987963bddc1c044e91fdaab3f87c63690e74b5f7b5295646c3d70b",
+            "resolvedVersion": "2026-07-23-urayasu-higashi-danchi-symbol-v4",
+            "pathPoints": 161
+          },
+          "unchanged": true
+        },
+        "3-akeumi": {
+          "current": {
+            "pathHash": "75b336c39143045eb52ad48cda9b08751674a11341656e02543b6b683d92bf5d",
+            "resolvedVersion": "2026-07-23-urayasu-higashi-danchi-akeumi-v4",
+            "pathPoints": 277
+          },
+          "head": {
+            "pathHash": "75b336c39143045eb52ad48cda9b08751674a11341656e02543b6b683d92bf5d",
+            "resolvedVersion": "2026-07-23-urayasu-higashi-danchi-akeumi-v4",
+            "pathPoints": 277
+          },
+          "unchanged": true
+        }
+      }
+    },
+    "今川線 route-2": {
+      "ok": true,
+      "fileIdentical": true,
+      "file": "imagawa-route-v1.js"
+    },
+    "舞浜リゾート線 route-12 (new)": {
+      "ok": true,
+      "systems": [
+        {
+          "key": "12-maihama-via-resort",
+          "present": true,
+          "pathHash": "0ac1e3bdc9926d8830e6e71b99e31e2f04b6529271fc72eb149af6c780a67803"
+        },
+        {
+          "key": "12-urayasu-via-resort",
+          "present": true,
+          "pathHash": "51cc07c0d3943cb62491b7890a8070a59a6b8790128a87dcddee4753f18f04bc"
+        }
+      ]
+    }
+  },
+  "pass": true
+}
