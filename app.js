@@ -22,23 +22,56 @@ function shell(body,backTo='home'){
   app.innerHTML=`<div class="app${isHome?' app--home':''}"><header class="header${isHome?' header--home':''}">${isHome?'':`<button class="back" id="back" aria-label="戻る">←</button>`}<div class="header-brand">${isHome?`<span class="header-bus" aria-hidden="true">${HOME_ICONS.bus}</span>`:''}<div><h1>${brandTitle}</h1><p>路線・停留所・注意地点</p></div></div>${shortcuts}</header><main class="main">${body}</main>${footer}</div>`;
   document.getElementById('back')?.addEventListener('click',()=>go(backTo));
 }
+function showRouteLoadError(error,retryFn){
+  const msg=esc((error&&error.message)||'読み込みに失敗しました');
+  shell(`<section><p class="status">路線データを読み込めませんでした。再試行してください。</p><p class="status">${msg}</p><p style="display:flex;gap:8px;flex-wrap:wrap"><button type="button" class="primary" id="retryRouteLoad">再試行</button><button type="button" class="secondary" id="backHomeFromRouteError">ホームへ</button></p></section>`);
+  document.getElementById('retryRouteLoad')?.addEventListener('click',()=>{if(typeof retryFn==='function')retryFn();});
+  document.getElementById('backHomeFromRouteError')?.addEventListener('click',()=>go('home'));
+}
+window.__chidoriShowRouteLoadError=showRouteLoadError;
 function go(next){
+  try{window.__chidoriBoot&&window.__chidoriBoot.mark('go',next)}catch(e){}
   page=next;
-  if((next==='routes'||next==='settings')&&window.__chidoriRouteAssets&&!window.__chidoriRouteAssets.isReady()){
+  if(next==='home'||next==='quiz'||next==='materials'||next==='materials-detail'){
+    render();
+    return;
+  }
+  if((next==='routes'||next==='settings')&&window.__chidoriRouteAssets){
+    const routeId=routeState.routeId||data.routes[0]?.id||'route-1';
+    if(window.__chidoriRouteAssets.isRouteReady(routeId)){
+      render();
+      return;
+    }
     const started=Date.now();
-    try{window.__chidoriBoot&&window.__chidoriBoot.mark('await-route-assets')}catch(e){}
-    shell(`<section><p class="status">路線データを読み込み中...</p></section>`);
-    window.__chidoriRouteAssets.ensure().then(()=>{
+    try{window.__chidoriBoot&&window.__chidoriBoot.mark('await-route-assets',routeId)}catch(e){}
+    shell(`<section><p class="status">路線データを読み込み中...</p><p style="margin-top:12px"><button type="button" class="secondary" id="cancelRouteLoad">ホームへ戻る</button></p></section>`);
+    document.getElementById('cancelRouteLoad')?.addEventListener('click',()=>go('home'));
+    window.__chidoriRouteAssets.ensureRoute(routeId).then(()=>{
       try{window.__chidoriBoot&&window.__chidoriBoot.mark('route-assets-ready',Date.now()-started)}catch(e){}
       if(page===next)render();
-    }).catch(()=>{if(page===next)render();});
+    }).catch((error)=>{
+      console.error('[chidori] route assets failed',error);
+      if(page!==next)return;
+      showRouteLoadError(error,()=>go(next));
+    });
     return;
   }
   render();
 }
 function render(){if(page==='materials'||page==='materials-detail'){if(typeof window.renderStudyMaterials==='function')window.renderStudyMaterials();try{window.__chidoriBoot&&window.__chidoriBoot.mark('render')}catch(e){}return}if(page==='home')home();if(page==='routes')routes();if(page==='quiz')quiz();if(page==='settings')settings();try{window.__chidoriBoot&&window.__chidoriBoot.mark('render')}catch(e){}}
 function homeCard(goTo,tone,icon,title,desc){return`<button type="button" class="home-card home-card--${tone}" data-go="${goTo}"><span class="home-card-icon" aria-hidden="true">${icon}</span><span class="home-card-text"><strong>${title}</strong><span>${desc}</span></span><span class="home-card-chevron" aria-hidden="true">${HOME_ICONS.chevron}</span></button>`}
-function home(){shell(`<section class="home">${homeCard('routes','routes',HOME_ICONS.routes,'千鳥営業所 路線図','各路線の往路・復路と停留所を確認')}${homeCard('materials','materials',HOME_ICONS.materials,'基本研修資料','乗務員向け作業マニュアル・マイク案内')}${homeCard('quiz','quiz',HOME_ICONS.quiz,'問題','次の停留所・この路線は何線')}${homeCard('settings','settings',HOME_ICONS.settings,'設定','停留所・ヒヤリハット・注意地点を登録')}</section>`);document.querySelectorAll('[data-go]').forEach(b=>b.onclick=()=>go(b.dataset.go))}
+function home(){
+  shell(`<section class="home">${homeCard('routes','routes',HOME_ICONS.routes,'千鳥営業所 路線図','各路線の往路・復路と停留所を確認')}${homeCard('materials','materials',HOME_ICONS.materials,'基本研修資料','乗務員向け作業マニュアル・マイク案内')}${homeCard('quiz','quiz',HOME_ICONS.quiz,'問題','次の停留所・この路線は何線')}${homeCard('settings','settings',HOME_ICONS.settings,'設定','停留所・ヒヤリハット・注意地点を登録')}</section>`);
+  document.querySelectorAll('[data-go]').forEach((b)=>{
+    b.addEventListener('pointerdown',()=>{try{window.__chidoriBoot&&window.__chidoriBoot.mark('pointerdown',b.dataset.go)}catch(e){}},{passive:true});
+    b.onclick=()=>go(b.dataset.go);
+  });
+  window.__chidoriHomeInteractive=true;
+  try{window.__chidoriBoot&&window.__chidoriBoot.mark('home-interactive')}catch(e){}
+  if(typeof window.__chidoriOnHomeInteractive==='function'){
+    try{window.__chidoriOnHomeInteractive()}catch(e){console.warn(e)}
+  }
+}
 let routeState={routeId:data.routes[0]?.id||'',direction:'outbound'};
 function routes(){const r=data.routes.find(x=>x.id===routeState.routeId)||data.routes[0];const stops=r?.[routeState.direction]||[];shell(`<section><div class="controls"><label>路線<select id="routeSelect">${data.routes.map(x=>`<option value="${x.id}" ${x.id===r?.id?'selected':''}>${label(x)}</option>`).join('')}</select></label><div class="seg"><button data-dir="outbound" class="${routeState.direction==='outbound'?'active':''}">往路</button><button data-dir="inbound" class="${routeState.direction==='inbound'?'active':''}">復路</button></div></div><div class="split"><div id="routeMap" class="map"></div><div id="street" class="street"></div></div><p id="mapStatus" class="status">停留所ピンを押すと下半分にStreet Viewを表示します。</p>${stops.length?'':`<div class="empty">この路線の停留所は未登録です。設定から登録してください。</div>`}</section>`);document.getElementById('routeSelect').onchange=e=>{routeState.routeId=e.target.value;routes()};document.querySelectorAll('[data-dir]').forEach(b=>b.onclick=()=>{routeState.direction=b.dataset.dir;routes()});drawRoute(r,stops)}
 function loadMaps(){if(window.google?.maps)return Promise.resolve(window.google);if(window._mapsPromise)return window._mapsPromise;const key=window.GOOGLE_MAPS_API_KEY;if(!key||key.includes('__'))return Promise.reject(new Error('Google Maps APIキーが未設定です。'));window._mapsPromise=new Promise((resolve,reject)=>{const cb='gmapsInit'+Date.now();window[cb]=()=>{delete window[cb];resolve(window.google)};const s=document.createElement('script');s.src=`https://maps.googleapis.com/maps/api/js?key=${encodeURIComponent(key)}&callback=${cb}&v=weekly&language=ja&region=JP`;s.async=true;s.onerror=()=>reject(new Error('Google Mapsを読み込めませんでした。'));document.head.appendChild(s)});return window._mapsPromise}

@@ -1,11 +1,11 @@
-const CACHE_NAME = 'chidori-route-map-v77';
+const CACHE_NAME = 'chidori-route-map-v78';
 const APP_INDEX_URL = new URL('./index.html', self.location).href;
 const FETCH_TIMEOUT_MS = 7000;
 
 // Minimal shell for Android/WebAPK cold start. Route packs are cached on demand.
 const CORE_SHELL = [
   APP_INDEX_URL,
-  './manifest.webmanifest?v=77',
+  './manifest.webmanifest?v=78',
   './app-icon.svg',
   './app-icon-192.png',
   './app-icon-512.png',
@@ -13,13 +13,14 @@ const CORE_SHELL = [
   './study-materials.css?v=71',
   './d1-sync.css?v=32',
   './data.js?v=32',
-  './app.js?v=77',
+  './app.js?v=78',
   './study-materials-data.js?v=71',
   './study-materials.js?v=71',
   './home-navigation-v25.js?v=32',
   './route-map-link.js?v=71',
+  './route-assets-loader.js?v=78',
   './d1-sync.js?v=61',
-  './pwa-install.js?v=77'
+  './pwa-install.js?v=78'
 ];
 
 function fetchWithTimeout(resource, options = {}, timeoutMs = FETCH_TIMEOUT_MS) {
@@ -93,7 +94,6 @@ function offlineNavigationFallback() {
 async function matchAppIndex(cache) {
   const hit = await cache.match(APP_INDEX_URL);
   if (hit) return hit;
-  // One-time migration from older multi-key caches (v76 and earlier).
   const legacyKeys = [
     './index.html',
     './',
@@ -118,7 +118,6 @@ async function updateAppIndexInBackground(cache) {
   }
 }
 
-// No event argument — callers register waitUntil synchronously outside.
 async function handleNavigation(cachePromise) {
   const cache = await cachePromise;
   const cached = await matchAppIndex(cache);
@@ -177,7 +176,6 @@ self.addEventListener('fetch', (event) => {
   if (request.mode === 'navigate') {
     const cachePromise = caches.open(CACHE_NAME);
 
-    // Register waitUntil synchronously — before any await in this listener.
     event.waitUntil(
       cachePromise
         .then((cache) => updateAppIndexInBackground(cache))

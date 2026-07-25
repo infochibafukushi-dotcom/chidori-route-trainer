@@ -1,11 +1,12 @@
 (() => {
-  const SW_VERSION = '77';
-  const RELOAD_KEY = `chidori-sw-reloaded-${SW_VERSION}`;
+  const SW_VERSION = '78';
   let installPrompt = null;
 
   const isInstalled = () =>
     window.matchMedia('(display-mode: standalone)').matches ||
     window.navigator.standalone === true;
+
+  const isAndroid = () => /android/i.test(window.navigator.userAgent || '');
 
   const isIos = () =>
     /iphone|ipad|ipod/i.test(window.navigator.userAgent) ||
@@ -88,44 +89,42 @@
   }
 
   if ('serviceWorker' in navigator) {
-    let controllerChanged = false;
+    // Never auto-reload on controllerchange — avoids WebAPK splash / boot races.
     navigator.serviceWorker.addEventListener('controllerchange', () => {
-      if (controllerChanged) return;
-      controllerChanged = true;
       try {
-        if (sessionStorage.getItem(RELOAD_KEY)) return;
-        sessionStorage.setItem(RELOAD_KEY, '1');
-      } catch (error) {
-        console.warn('SW reload key unavailable', error);
-      }
-      location.reload();
+        window.__chidoriBoot && window.__chidoriBoot.mark('sw-controllerchange-no-reload');
+      } catch (error) {}
     });
 
-    const registerAndUpdate = async () => {
+    const registerOnce = async () => {
       try {
         const registration = await navigator.serviceWorker.register(`./service-worker.js?v=${SW_VERSION}`, {
           updateViaCache: 'none',
         });
-        await registration.update();
-        if (registration.waiting) registration.waiting.postMessage({ type: 'SKIP_WAITING' });
-        registration.addEventListener('updatefound', () => {
-          const worker = registration.installing;
-          if (!worker) return;
-          worker.addEventListener('statechange', () => {
-            if (worker.state === 'installed' && navigator.serviceWorker.controller) {
-              worker.postMessage({ type: 'SKIP_WAITING' });
-            }
-          });
+        try {
+          window.__chidoriBoot && window.__chidoriBoot.mark('sw-registered', registration.scope);
+        } catch (error) {}
+
+        // Android standalone: do not update/skipWaiting during this session.
+        // New SW applies on the next cold start.
+        if (isAndroid() && isInstalled()) {
+          return;
+        }
+
+        // Browser tab: allow background update discovery, but never force claim/reload here.
+        registration.update().catch((error) => {
+          console.warn('SW update check failed', error);
         });
       } catch (error) {
         console.error('Service Worker登録失敗', error);
       }
     };
 
-    window.addEventListener('load', registerAndUpdate);
-    document.addEventListener('visibilitychange', () => {
-      if (document.visibilityState === 'visible') registerAndUpdate();
-    });
+    if (document.readyState === 'complete') {
+      registerOnce();
+    } else {
+      window.addEventListener('load', registerOnce, { once: true });
+    }
   }
 
   bindInstallButton();

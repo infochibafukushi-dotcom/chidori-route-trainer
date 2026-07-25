@@ -1,0 +1,68 @@
+{
+  "checks": [
+    "static index: no auto deferred / no route packs in HTML",
+    "pwa-install: no reload / no visibility update",
+    "SW v78",
+    "home interactive without route asset requests",
+    "quiz x10 max=37ms",
+    "materials x10 max=20ms",
+    "route tap loaded selected pack only",
+    "hung nav 33ms",
+    "offline ok"
+  ],
+  "errors": [],
+  "androidDevice": "not-checked-adb-missing",
+  "bootFiles": [
+    "http://127.0.0.1:8762/data.js?v=32",
+    "http://127.0.0.1:8762/app.js?v=78",
+    "http://127.0.0.1:8762/study-materials-data.js?v=71",
+    "http://127.0.0.1:8762/study-materials.js?v=71",
+    "http://127.0.0.1:8762/home-navigation-v25.js?v=32",
+    "http://127.0.0.1:8762/route-map-link.js?v=71",
+    "http://127.0.0.1:8762/route-assets-loader.js?v=78",
+    "http://127.0.0.1:8762/pwa-install.js?v=78"
+  ],
+  "homeNetwork": [],
+  "quizTimes": [
+    37,
+    14,
+    14,
+    14,
+    12,
+    13,
+    13,
+    12,
+    11,
+    12
+  ],
+  "materialsTimes": [
+    20,
+    12,
+    12,
+    12,
+    13,
+    13,
+    13,
+    11,
+    12,
+    14
+  ],
+  "routeFilesAfterTap": [
+    "stop-editor-v8.css?v=32",
+    "hokuei-route.css?v=33",
+    "hokuei-authoritative-v12.css?v=32",
+    "hokuei-manual-override-v13.css?v=33",
+    "hokuei-driving-v14.css?v=32",
+    "hokuei-guidance-v22.css?v=34",
+    "hokuei-stop-images-v25.css?v=32",
+    "hokuei-authoritative-v12.js?v=33",
+    "hokuei-manual-override-v13.js?v=33",
+    "hokuei-shared-coordinates-v15.js?v=32",
+    "hokuei-no-uturn-v17.js?v=74",
+    "imagawa-directions-compat-v2.js?v=56",
+    "hokuei-streetview-stops-v26.js?v=32",
+    "hokuei-guidance-v22.js?v=57",
+    "hokuei-stop-images-v25.js?v=32"
+  ],
+  "ok": true
+}

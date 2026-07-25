@@ -205,5 +205,13 @@
   };
 
   ensureSyncBar();
-  loadRemote();
+  if (window.__chidoriDeferD1) {
+    window.__chidoriStartD1 = () => {
+      if (window.__chidoriD1Started) return;
+      window.__chidoriD1Started = true;
+      loadRemote();
+    };
+  } else {
+    loadRemote();
+  }
 })();
