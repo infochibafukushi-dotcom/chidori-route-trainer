@@ -10,31 +10,16 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="apple-mobile-web-app-title" content="千鳥路線図" />
   <title>千鳥路線図</title>
-  <link rel="manifest" href="./manifest.webmanifest?v=76" />
+  <link rel="manifest" href="./manifest.webmanifest?v=77" />
   <link rel="icon" href="./app-icon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="./app-icon-192.png" />
   <link rel="stylesheet" href="./styles.css?v=71" />
-  <link rel="stylesheet" href="./hokuei-route.css?v=33" />
-  <link rel="stylesheet" href="./stop-editor-v8.css?v=32" />
   <link rel="stylesheet" href="./d1-sync.css?v=32" />
-  <link rel="stylesheet" href="./hokuei-authoritative-v12.css?v=32" />
-  <link rel="stylesheet" href="./hokuei-manual-override-v13.css?v=33" />
-  <link rel="stylesheet" href="./hokuei-driving-v14.css?v=32" />
-  <link rel="stylesheet" href="./hokuei-guidance-v22.css?v=34" />
-  <link rel="stylesheet" href="./hokuei-stop-images-v25.css?v=32" />
-  <link rel="stylesheet" href="./urayasu-higashi-danchi-stop-images-v1.css?v=63" />
-  <link rel="stylesheet" href="./tomioka-stop-images-v1.css?v=65" />
-  <link rel="stylesheet" href="./horie-stop-images-v1.css?v=66" />
-  <link rel="stylesheet" href="./shiyakusho-stop-images-v1.css?v=67" />
-  <link rel="stylesheet" href="./maihama-line-stop-images-v1.css?v=69" />
-  <link rel="stylesheet" href="./takasu-line-stop-images-v1.css?v=72" />
-  <link rel="stylesheet" href="./symbol-road-line-stop-images-v1.css?v=73" />
-  <link rel="stylesheet" href="./maihama-resort-line-stop-images-v1.css?v=74" />
   <link rel="stylesheet" href="./study-materials.css?v=71" />
 </head>
 <body>
   <script>
-  /* Boot diagnostics — must never block startup. Enable overlay with ?diag=1 or localStorage.chidoriBootDiag=1 */
+  /* Boot diagnostics — must never block startup. Overlay: ?diag=1 or localStorage.chidoriBootDiag=1 */
   (function () {
     try {
       var marks = [];
@@ -115,104 +100,202 @@
   <script>window.GOOGLE_MAPS_API_KEY='__GOOGLE_MAPS_API_KEY__';</script>
   <script src="./data.js?v=32"></script>
   <script>try{window.__chidoriBoot&&window.__chidoriBoot.mark('app.js-load-start')}catch(e){}</script>
-  <script src="./app.js?v=76"></script>
+  <script src="./app.js?v=77"></script>
   <script src="./study-materials-data.js?v=71"></script>
   <script src="./study-materials.js?v=71"></script>
   <script src="./home-navigation-v25.js?v=32"></script>
   <script src="./route-map-link.js?v=71"></script>
   <script src="./d1-sync.js?v=61"></script>
-  <script src="./hokuei-authoritative-v12.js?v=33"></script>
-  <script src="./hokuei-manual-override-v13.js?v=33"></script>
-  <script src="./hokuei-shared-coordinates-v15.js?v=32"></script>
-  <script src="./hokuei-no-uturn-v17.js?v=74"></script>
-  <script src="./imagawa-directions-compat-v2.js?v=56"></script>
-  <script src="./hokuei-streetview-stops-v26.js?v=32"></script>
-  <script src="./hokuei-guidance-v22.js?v=57"></script>
-  <script src="./hokuei-stop-images-v25.js?v=32"></script>
-  <script>window.STOP_EDITOR_BEFORE_IMAGAWA=stopEditor;</script>
-  <script src="./imagawa-urayasu-maihama-path-v1o.js?v=56"></script>
-  <script src="./imagawa-chidori-garage-path-v1.js?v=58"></script>
-  <script src="./imagawa-route-v1.js?v=58"></script>
-  <script src="./imagawa-path-policy-v3.js?v=56"></script>
-  <script>window.STOP_EDITOR_IMAGAWA=stopEditor;</script>
-  <script src="./urayasu-higashi-danchi-platforms-v1.js?v=63"></script>
-  <!-- urayasu-higashi-danchi-path-patches-v3.js は出典記録用。path-v1へ焼き込み済みのためランタイム非読込。 -->
-  <script src="./urayasu-higashi-danchi-path-v1.js?v=63"></script>
-  <script src="./urayasu-higashi-danchi-path-policy-v1.js?v=63"></script>
-  <script src="./urayasu-higashi-danchi-route-v1.js?v=63"></script>
-  <script>window.STOP_EDITOR_URAYASU_HIGASHI=stopEditor;</script>
-  <script src="./tomioka-platforms-v1.js?v=65"></script>
-  <script src="./tomioka-path-v1.js?v=65"></script>
-  <script src="./tomioka-path-policy-v1.js?v=65"></script>
-  <script src="./tomioka-stop-images-v1.js?v=65"></script>
-  <script src="./tomioka-route-v1.js?v=65"></script>
-  <script>window.STOP_EDITOR_TOMIOKA=stopEditor;</script>
-  <script src="./horie-platforms-v1.js?v=66"></script>
-  <script src="./horie-path-v1.js?v=66"></script>
-  <script src="./horie-path-policy-v1.js?v=66"></script>
-  <script src="./horie-stop-images-v1.js?v=66"></script>
-  <script src="./horie-route-v1.js?v=66"></script>
-  <script>window.STOP_EDITOR_HORIE=stopEditor;</script>
-  <script src="./shiyakusho-platforms-v1.js?v=67"></script>
-  <script src="./shiyakusho-path-v1.js?v=67"></script>
-  <script src="./shiyakusho-path-policy-v1.js?v=67"></script>
-  <script src="./shiyakusho-stop-images-v1.js?v=67"></script>
-  <script src="./shiyakusho-route-v1.js?v=67"></script>
-  <script>window.STOP_EDITOR_SHIYAKUSHO=stopEditor;</script>
-  <script src="./maihama-line-platforms-v1.js?v=69"></script>
-  <script src="./maihama-line-path-v1.js?v=69"></script>
-  <script src="./maihama-line-path-policy-v1.js?v=69"></script>
-  <script src="./maihama-line-stop-images-v1.js?v=69"></script>
-  <script src="./maihama-line-route-v1.js?v=69"></script>
-  <script>window.STOP_EDITOR_MAIHAMA_LINE=stopEditor;</script>
-  <script src="./takasu-line-platforms-v1.js?v=72"></script>
-  <script src="./takasu-line-path-v1.js?v=72"></script>
-  <script src="./takasu-line-path-policy-v1.js?v=72"></script>
-  <script src="./takasu-line-stop-images-v1.js?v=72"></script>
-  <script src="./takasu-line-route-v1.js?v=72"></script>
-  <script>window.STOP_EDITOR_TAKASU_LINE=stopEditor;</script>
-  <script src="./symbol-road-line-platforms-v1.js?v=73"></script>
-  <script src="./symbol-road-line-path-v1.js?v=73"></script>
-  <script src="./symbol-road-line-path-policy-v1.js?v=73"></script>
-  <script src="./symbol-road-line-stop-images-v1.js?v=73"></script>
-  <script src="./symbol-road-line-route-v1.js?v=73"></script>
-  <script>window.STOP_EDITOR_SYMBOL_ROAD_LINE=stopEditor;</script>
-  <script src="./maihama-resort-line-platforms-v1.js?v=74"></script>
-  <script src="./maihama-resort-line-path-v1.js?v=74"></script>
-  <script src="./maihama-resort-line-path-policy-v1.js?v=74"></script>
-  <script src="./maihama-resort-line-stop-images-v1.js?v=74"></script>
-  <script src="./maihama-resort-line-route-v1.js?v=74"></script>
+  <script src="./pwa-install.js?v=77"></script>
   <script>
-    (() => {
-      const route12StopEditor = stopEditor;
-      const route11StopEditor = window.STOP_EDITOR_SYMBOL_ROAD_LINE;
-      const route10StopEditor = window.STOP_EDITOR_TAKASU_LINE;
-      const route9StopEditor = window.STOP_EDITOR_MAIHAMA_LINE;
-      const route6StopEditor = window.STOP_EDITOR_SHIYAKUSHO;
-      const route5StopEditor = window.STOP_EDITOR_HORIE;
-      const route4StopEditor = window.STOP_EDITOR_TOMIOKA;
-      const route3StopEditor = window.STOP_EDITOR_URAYASU_HIGASHI;
-      const imagawaStopEditor = window.STOP_EDITOR_IMAGAWA;
-      const baseStopEditor = window.STOP_EDITOR_BEFORE_IMAGAWA;
+  /* Defer route-only CSS/JS so home stays interactive. Features unchanged. */
+  (function () {
+    var css = [
+      './hokuei-route.css?v=33',
+      './stop-editor-v8.css?v=32',
+      './hokuei-authoritative-v12.css?v=32',
+      './hokuei-manual-override-v13.css?v=33',
+      './hokuei-driving-v14.css?v=32',
+      './hokuei-guidance-v22.css?v=34',
+      './hokuei-stop-images-v25.css?v=32',
+      './urayasu-higashi-danchi-stop-images-v1.css?v=63',
+      './tomioka-stop-images-v1.css?v=65',
+      './horie-stop-images-v1.css?v=66',
+      './shiyakusho-stop-images-v1.css?v=67',
+      './maihama-line-stop-images-v1.css?v=69',
+      './takasu-line-stop-images-v1.css?v=72',
+      './symbol-road-line-stop-images-v1.css?v=73',
+      './maihama-resort-line-stop-images-v1.css?v=74'
+    ];
+    var scripts = [
+      './hokuei-authoritative-v12.js?v=33',
+      './hokuei-manual-override-v13.js?v=33',
+      './hokuei-shared-coordinates-v15.js?v=32',
+      './hokuei-no-uturn-v17.js?v=74',
+      './imagawa-directions-compat-v2.js?v=56',
+      './hokuei-streetview-stops-v26.js?v=32',
+      './hokuei-guidance-v22.js?v=57',
+      './hokuei-stop-images-v25.js?v=32',
+      { mark: 'STOP_EDITOR_BEFORE_IMAGAWA' },
+      './imagawa-urayasu-maihama-path-v1o.js?v=56',
+      './imagawa-chidori-garage-path-v1.js?v=58',
+      './imagawa-route-v1.js?v=58',
+      './imagawa-path-policy-v3.js?v=56',
+      { mark: 'STOP_EDITOR_IMAGAWA' },
+      './urayasu-higashi-danchi-platforms-v1.js?v=63',
+      './urayasu-higashi-danchi-path-v1.js?v=63',
+      './urayasu-higashi-danchi-path-policy-v1.js?v=63',
+      './urayasu-higashi-danchi-route-v1.js?v=63',
+      { mark: 'STOP_EDITOR_URAYASU_HIGASHI' },
+      './tomioka-platforms-v1.js?v=65',
+      './tomioka-path-v1.js?v=65',
+      './tomioka-path-policy-v1.js?v=65',
+      './tomioka-stop-images-v1.js?v=65',
+      './tomioka-route-v1.js?v=65',
+      { mark: 'STOP_EDITOR_TOMIOKA' },
+      './horie-platforms-v1.js?v=66',
+      './horie-path-v1.js?v=66',
+      './horie-path-policy-v1.js?v=66',
+      './horie-stop-images-v1.js?v=66',
+      './horie-route-v1.js?v=66',
+      { mark: 'STOP_EDITOR_HORIE' },
+      './shiyakusho-platforms-v1.js?v=67',
+      './shiyakusho-path-v1.js?v=67',
+      './shiyakusho-path-policy-v1.js?v=67',
+      './shiyakusho-stop-images-v1.js?v=67',
+      './shiyakusho-route-v1.js?v=67',
+      { mark: 'STOP_EDITOR_SHIYAKUSHO' },
+      './maihama-line-platforms-v1.js?v=69',
+      './maihama-line-path-v1.js?v=69',
+      './maihama-line-path-policy-v1.js?v=69',
+      './maihama-line-stop-images-v1.js?v=69',
+      './maihama-line-route-v1.js?v=69',
+      { mark: 'STOP_EDITOR_MAIHAMA_LINE' },
+      './takasu-line-platforms-v1.js?v=72',
+      './takasu-line-path-v1.js?v=72',
+      './takasu-line-path-policy-v1.js?v=72',
+      './takasu-line-stop-images-v1.js?v=72',
+      './takasu-line-route-v1.js?v=72',
+      { mark: 'STOP_EDITOR_TAKASU_LINE' },
+      './symbol-road-line-platforms-v1.js?v=73',
+      './symbol-road-line-path-v1.js?v=73',
+      './symbol-road-line-path-policy-v1.js?v=73',
+      './symbol-road-line-stop-images-v1.js?v=73',
+      './symbol-road-line-route-v1.js?v=73',
+      { mark: 'STOP_EDITOR_SYMBOL_ROAD_LINE' },
+      './maihama-resort-line-platforms-v1.js?v=74',
+      './maihama-resort-line-path-v1.js?v=74',
+      './maihama-resort-line-path-policy-v1.js?v=74',
+      './maihama-resort-line-stop-images-v1.js?v=74',
+      './maihama-resort-line-route-v1.js?v=74',
+      { bridge: true }
+    ];
+
+    var promise = null;
+    var ready = false;
+
+    function loadCss(href) {
+      return new Promise(function (resolve) {
+        try {
+          if (document.querySelector('link[data-chidori-deferred="' + href + '"]')) {
+            resolve();
+            return;
+          }
+          var link = document.createElement('link');
+          link.rel = 'stylesheet';
+          link.href = href;
+          link.setAttribute('data-chidori-deferred', href);
+          link.onload = function () { resolve(); };
+          link.onerror = function () {
+            try { console.warn('[chidori] deferred css failed', href); } catch (e) {}
+            resolve();
+          };
+          document.head.appendChild(link);
+        } catch (e) { resolve(); }
+      });
+    }
+
+    function loadJs(src) {
+      return new Promise(function (resolve) {
+        try {
+          var script = document.createElement('script');
+          script.src = src;
+          script.async = false;
+          script.onload = function () { resolve(); };
+          script.onerror = function () {
+            try { console.warn('[chidori] deferred js failed', src); } catch (e) {}
+            resolve();
+          };
+          document.body.appendChild(script);
+        } catch (e) { resolve(); }
+      });
+    }
+
+    function installStopEditorBridge() {
+      var route12StopEditor = stopEditor;
+      var route11StopEditor = window.STOP_EDITOR_SYMBOL_ROAD_LINE;
+      var route10StopEditor = window.STOP_EDITOR_TAKASU_LINE;
+      var route9StopEditor = window.STOP_EDITOR_MAIHAMA_LINE;
+      var route6StopEditor = window.STOP_EDITOR_SHIYAKUSHO;
+      var route5StopEditor = window.STOP_EDITOR_HORIE;
+      var route4StopEditor = window.STOP_EDITOR_TOMIOKA;
+      var route3StopEditor = window.STOP_EDITOR_URAYASU_HIGASHI;
+      var imagawaStopEditor = window.STOP_EDITOR_IMAGAWA;
+      var baseStopEditor = window.STOP_EDITOR_BEFORE_IMAGAWA;
       stopEditor = function stopEditorRouteBridge() {
-        if (routeState?.routeId === 'route-12') return route12StopEditor();
-        if (routeState?.routeId === 'route-11') return route11StopEditor();
-        if (routeState?.routeId === 'route-10') return route10StopEditor();
-        if (routeState?.routeId === 'route-9') return route9StopEditor();
-        if (routeState?.routeId === 'route-6') return route6StopEditor();
-        if (routeState?.routeId === 'route-5') return route5StopEditor();
-        if (routeState?.routeId === 'route-4') return route4StopEditor();
-        if (routeState?.routeId === 'route-3') return route3StopEditor();
-        if (routeState?.routeId === 'route-2') return imagawaStopEditor();
+        if (routeState && routeState.routeId === 'route-12') return route12StopEditor();
+        if (routeState && routeState.routeId === 'route-11') return route11StopEditor();
+        if (routeState && routeState.routeId === 'route-10') return route10StopEditor();
+        if (routeState && routeState.routeId === 'route-9') return route9StopEditor();
+        if (routeState && routeState.routeId === 'route-6') return route6StopEditor();
+        if (routeState && routeState.routeId === 'route-5') return route5StopEditor();
+        if (routeState && routeState.routeId === 'route-4') return route4StopEditor();
+        if (routeState && routeState.routeId === 'route-3') return route3StopEditor();
+        if (routeState && routeState.routeId === 'route-2') return imagawaStopEditor();
         return baseStopEditor();
       };
-      document.addEventListener('change', (event) => {
-        if (event.target?.id !== 'sRoute') return;
+      document.addEventListener('change', function (event) {
+        if (!event.target || event.target.id !== 'sRoute') return;
         routeState.routeId = event.target.value;
-        setTimeout(() => stopEditor(), 0);
+        setTimeout(function () { stopEditor(); }, 0);
       }, true);
-    })();
+    }
+
+    function ensure() {
+      if (promise) return promise;
+      promise = (async function () {
+        try { window.__chidoriBoot && window.__chidoriBoot.mark('deferred-assets-start'); } catch (e) {}
+        await Promise.all(css.map(loadCss));
+        for (var i = 0; i < scripts.length; i += 1) {
+          var item = scripts[i];
+          if (typeof item === 'string') {
+            await loadJs(item);
+          } else if (item && item.mark) {
+            window[item.mark] = stopEditor;
+          } else if (item && item.bridge) {
+            installStopEditorBridge();
+          }
+        }
+        ready = true;
+        try { window.__chidoriBoot && window.__chidoriBoot.mark('deferred-assets-ready'); } catch (e) {}
+      })();
+      return promise;
+    }
+
+    window.__chidoriRouteAssets = {
+      ensure: ensure,
+      isReady: function () { return ready; }
+    };
+
+    function startDeferred() {
+      ensure().catch(function (err) {
+        try { console.warn('[chidori] deferred assets failed', err); } catch (e) {}
+      });
+    }
+
+    // Home already rendered above; start route packs immediately in background.
+    setTimeout(startDeferred, 0);
+  })();
   </script>
-  <script src="./pwa-install.js?v=76"></script>
 </body>
 </html>

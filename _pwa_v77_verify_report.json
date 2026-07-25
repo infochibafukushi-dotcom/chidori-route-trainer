@@ -1,0 +1,37 @@
+{
+  "checks": [
+    "static SW source OK",
+    "static index OK",
+    "static pwa-install OK",
+    "online home + SW v77 OK",
+    "routes tap 136ms + labels OK",
+    "hung navigation served cache quickly (71ms)",
+    "offline navigation OK"
+  ],
+  "errors": [],
+  "androidDevice": "not-checked-adb-missing",
+  "boot": {
+    "heading": "千鳥路線図",
+    "marks": [
+      "html-reached",
+      "app.js-load-start",
+      "render",
+      "deferred-assets-start",
+      "DOMContentLoaded",
+      "render-dom",
+      "deferred-assets-ready",
+      "window.load",
+      "display-mode",
+      "sw-controller",
+      "sw-registration"
+    ],
+    "controller": "http://127.0.0.1:8761/service-worker.js?v=77",
+    "caches": [
+      "chidori-route-map-v77"
+    ],
+    "hasIndex": true,
+    "deferredReady": true
+  },
+  "tapMs": 136,
+  "ok": true
+}

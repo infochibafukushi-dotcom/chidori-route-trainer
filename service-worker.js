@@ -1,12 +1,11 @@
-const CACHE_NAME = 'chidori-route-map-v76';
+const CACHE_NAME = 'chidori-route-map-v77';
 const APP_INDEX_URL = new URL('./index.html', self.location).href;
 const FETCH_TIMEOUT_MS = 7000;
 
-// Minimal shell for Android/WebAPK cold start. Route packs are NOT required
-// for install — they are cached on demand when first requested.
+// Minimal shell for Android/WebAPK cold start. Route packs are cached on demand.
 const CORE_SHELL = [
   APP_INDEX_URL,
-  './manifest.webmanifest?v=76',
+  './manifest.webmanifest?v=77',
   './app-icon.svg',
   './app-icon-192.png',
   './app-icon-512.png',
@@ -14,13 +13,13 @@ const CORE_SHELL = [
   './study-materials.css?v=71',
   './d1-sync.css?v=32',
   './data.js?v=32',
-  './app.js?v=76',
+  './app.js?v=77',
   './study-materials-data.js?v=71',
   './study-materials.js?v=71',
   './home-navigation-v25.js?v=32',
   './route-map-link.js?v=71',
   './d1-sync.js?v=61',
-  './pwa-install.js?v=76'
+  './pwa-install.js?v=77'
 ];
 
 function fetchWithTimeout(resource, options = {}, timeoutMs = FETCH_TIMEOUT_MS) {
@@ -94,7 +93,7 @@ function offlineNavigationFallback() {
 async function matchAppIndex(cache) {
   const hit = await cache.match(APP_INDEX_URL);
   if (hit) return hit;
-  // One-time migration from older multi-key caches (v75 and earlier).
+  // One-time migration from older multi-key caches (v76 and earlier).
   const legacyKeys = [
     './index.html',
     './',
@@ -103,7 +102,7 @@ async function matchAppIndex(cache) {
   for (const key of legacyKeys) {
     const legacy = await cache.match(key, { ignoreSearch: true });
     if (legacy) {
-      await cache.put(APP_INDEX_URL, legacy.clone());
+      try { await cache.put(APP_INDEX_URL, legacy.clone()); } catch (e) {}
       return legacy;
     }
   }
@@ -119,11 +118,10 @@ async function updateAppIndexInBackground(cache) {
   }
 }
 
-async function handleNavigation(event) {
-  const cache = await caches.open(CACHE_NAME);
+// No event argument — callers register waitUntil synchronously outside.
+async function handleNavigation(cachePromise) {
+  const cache = await cachePromise;
   const cached = await matchAppIndex(cache);
-  // Keep background refresh tied to the fetch event lifetime.
-  event.waitUntil(updateAppIndexInBackground(cache));
   if (cached) return cached;
   try {
     const response = await fetchWithTimeout(APP_INDEX_URL, { cache: 'no-store' });
@@ -143,11 +141,7 @@ async function handleAsset(request) {
   const cached =
     (await cache.match(request)) ||
     (await cache.match(request, { ignoreSearch: true }));
-  if (cached) {
-    // Versioned assets are immutable; serve cache immediately.
-    // Still refresh in background when ignoreSearch matched a different query.
-    return cached;
-  }
+  if (cached) return cached;
   try {
     const response = await fetchWithTimeout(request, { cache: 'no-store' });
     if (response.ok) await cache.put(request, response.clone());
@@ -181,7 +175,23 @@ self.addEventListener('fetch', (event) => {
   if (url.origin !== self.location.origin) return;
 
   if (request.mode === 'navigate') {
-    event.respondWith(handleNavigation(event));
+    const cachePromise = caches.open(CACHE_NAME);
+
+    // Register waitUntil synchronously — before any await in this listener.
+    event.waitUntil(
+      cachePromise
+        .then((cache) => updateAppIndexInBackground(cache))
+        .catch((error) => {
+          console.warn('[sw] background index update failed', error && error.message ? error.message : error);
+        })
+    );
+
+    event.respondWith(
+      handleNavigation(cachePromise).catch((error) => {
+        console.warn('[sw] navigation handler rejected', error && error.message ? error.message : error);
+        return offlineNavigationFallback();
+      })
+    );
     return;
   }
 
@@ -191,7 +201,12 @@ self.addEventListener('fetch', (event) => {
     url.pathname.endsWith('.png') ||
     url.pathname.endsWith('.svg')
   ) {
-    event.respondWith(handleAsset(request));
+    event.respondWith(
+      handleAsset(request).catch((error) => {
+        console.warn('[sw] asset handler rejected', request.url, error && error.message ? error.message : error);
+        return Response.error();
+      })
+    );
     return;
   }
 
@@ -208,7 +223,7 @@ self.addEventListener('fetch', (event) => {
     } catch (error) {
       return Response.error();
     }
-  })());
+  })().catch(() => Response.error()));
 });
 
 self.addEventListener('message', (event) => {

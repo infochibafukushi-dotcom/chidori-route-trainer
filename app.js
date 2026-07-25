@@ -22,7 +22,21 @@ function shell(body,backTo='home'){
   app.innerHTML=`<div class="app${isHome?' app--home':''}"><header class="header${isHome?' header--home':''}">${isHome?'':`<button class="back" id="back" aria-label="戻る">←</button>`}<div class="header-brand">${isHome?`<span class="header-bus" aria-hidden="true">${HOME_ICONS.bus}</span>`:''}<div><h1>${brandTitle}</h1><p>路線・停留所・注意地点</p></div></div>${shortcuts}</header><main class="main">${body}</main>${footer}</div>`;
   document.getElementById('back')?.addEventListener('click',()=>go(backTo));
 }
-function go(next){page=next;render()}function render(){if(page==='materials'||page==='materials-detail'){if(typeof window.renderStudyMaterials==='function')window.renderStudyMaterials();try{window.__chidoriBoot&&window.__chidoriBoot.mark('render')}catch(e){}return}if(page==='home')home();if(page==='routes')routes();if(page==='quiz')quiz();if(page==='settings')settings();try{window.__chidoriBoot&&window.__chidoriBoot.mark('render')}catch(e){}}
+function go(next){
+  page=next;
+  if((next==='routes'||next==='settings')&&window.__chidoriRouteAssets&&!window.__chidoriRouteAssets.isReady()){
+    const started=Date.now();
+    try{window.__chidoriBoot&&window.__chidoriBoot.mark('await-route-assets')}catch(e){}
+    shell(`<section><p class="status">路線データを読み込み中...</p></section>`);
+    window.__chidoriRouteAssets.ensure().then(()=>{
+      try{window.__chidoriBoot&&window.__chidoriBoot.mark('route-assets-ready',Date.now()-started)}catch(e){}
+      if(page===next)render();
+    }).catch(()=>{if(page===next)render();});
+    return;
+  }
+  render();
+}
+function render(){if(page==='materials'||page==='materials-detail'){if(typeof window.renderStudyMaterials==='function')window.renderStudyMaterials();try{window.__chidoriBoot&&window.__chidoriBoot.mark('render')}catch(e){}return}if(page==='home')home();if(page==='routes')routes();if(page==='quiz')quiz();if(page==='settings')settings();try{window.__chidoriBoot&&window.__chidoriBoot.mark('render')}catch(e){}}
 function homeCard(goTo,tone,icon,title,desc){return`<button type="button" class="home-card home-card--${tone}" data-go="${goTo}"><span class="home-card-icon" aria-hidden="true">${icon}</span><span class="home-card-text"><strong>${title}</strong><span>${desc}</span></span><span class="home-card-chevron" aria-hidden="true">${HOME_ICONS.chevron}</span></button>`}
 function home(){shell(`<section class="home">${homeCard('routes','routes',HOME_ICONS.routes,'千鳥営業所 路線図','各路線の往路・復路と停留所を確認')}${homeCard('materials','materials',HOME_ICONS.materials,'基本研修資料','乗務員向け作業マニュアル・マイク案内')}${homeCard('quiz','quiz',HOME_ICONS.quiz,'問題','次の停留所・この路線は何線')}${homeCard('settings','settings',HOME_ICONS.settings,'設定','停留所・ヒヤリハット・注意地点を登録')}</section>`);document.querySelectorAll('[data-go]').forEach(b=>b.onclick=()=>go(b.dataset.go))}
 let routeState={routeId:data.routes[0]?.id||'',direction:'outbound'};
