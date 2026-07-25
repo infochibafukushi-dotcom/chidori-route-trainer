@@ -1,5 +1,5 @@
 (() => {
-  const SW_VERSION = '71';
+  const SW_VERSION = '75';
   const RELOAD_KEY = `chidori-sw-reloaded-${SW_VERSION}`;
   let installPrompt = null;
 
@@ -79,31 +79,52 @@
     markInstalled(document.querySelector('[data-pwa-install]'));
   });
 
-  new MutationObserver(bindInstallButton).observe(document.getElementById('app'), {
-    childList: true,
-    subtree: true,
-  });
+  const appRoot = document.getElementById('app');
+  if (appRoot) {
+    new MutationObserver(bindInstallButton).observe(appRoot, {
+      childList: true,
+      subtree: true,
+    });
+  }
 
   if ('serviceWorker' in navigator) {
     let controllerChanged = false;
     navigator.serviceWorker.addEventListener('controllerchange', () => {
       if (controllerChanged) return;
       controllerChanged = true;
-      if (sessionStorage.getItem(RELOAD_KEY)) return;
-      sessionStorage.setItem(RELOAD_KEY, '1');
+      try {
+        if (sessionStorage.getItem(RELOAD_KEY)) return;
+        sessionStorage.setItem(RELOAD_KEY, '1');
+      } catch (error) {
+        console.warn('SW reload key unavailable', error);
+      }
       location.reload();
     });
 
-    window.addEventListener('load', async () => {
+    const registerAndUpdate = async () => {
       try {
         const registration = await navigator.serviceWorker.register(`./service-worker.js?v=${SW_VERSION}`, {
           updateViaCache: 'none',
         });
         await registration.update();
         if (registration.waiting) registration.waiting.postMessage({ type: 'SKIP_WAITING' });
+        registration.addEventListener('updatefound', () => {
+          const worker = registration.installing;
+          if (!worker) return;
+          worker.addEventListener('statechange', () => {
+            if (worker.state === 'installed' && navigator.serviceWorker.controller) {
+              worker.postMessage({ type: 'SKIP_WAITING' });
+            }
+          });
+        });
       } catch (error) {
         console.error('Service Worker登録失敗', error);
       }
+    };
+
+    window.addEventListener('load', registerAndUpdate);
+    document.addEventListener('visibilitychange', () => {
+      if (document.visibilityState === 'visible') registerAndUpdate();
     });
   }
 
