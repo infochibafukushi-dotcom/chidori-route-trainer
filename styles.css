@@ -189,21 +189,50 @@ textarea{min-height:90px}
   .menu{min-height:100px}
   .header{position:static;top:auto}
   .header--home{
-    flex-wrap:wrap;
+    display:flex;
+    flex-wrap:nowrap;
     align-items:flex-start;
-    gap:12px;
+    justify-content:space-between;
+    gap:10px;
     padding:14px 16px;
   }
-  .header-brand{flex:1 1 auto;min-width:0}
-  .header-bus{width:40px;height:40px}
-  .header--home h1{font-size:clamp(24px,7.2vw,30px)}
-  .header--home p{font-size:clamp(13px,3.6vw,15px)}
-  .header-shortcuts{margin-left:auto}
-  .home-shortcut{
-    width:clamp(76px,22vw,92px);
-    height:clamp(76px,22vw,92px);
-    border-radius:14px;
+  .header-brand{
+    display:flex;
+    align-items:flex-start;
+    flex:1 1 auto;
+    min-width:0;
+    gap:10px;
   }
+  .header-bus{width:40px;height:40px;margin-top:2px}
+  .header--home h1{
+    font-size:clamp(24px,6.4vw,30px);
+    white-space:nowrap;
+    line-height:1.2;
+  }
+  .header--home p{
+    font-size:clamp(12px,3.2vw,14px);
+    margin-top:3px;
+    line-height:1.35;
+  }
+  .header-shortcuts{
+    display:flex;
+    align-items:flex-start;
+    flex:0 0 auto;
+    gap:8px;
+    margin-left:0;
+  }
+  .home-shortcut{
+    width:82px;
+    min-width:82px;
+    height:auto;
+    min-height:96px;
+    padding:8px 4px;
+    border-radius:14px;
+    gap:3px;
+  }
+  .home-shortcut-icon{width:26px;height:26px}
+  .home-shortcut-label{font-size:10px;line-height:1.2}
+  .home-shortcut.is-installed .home-shortcut-label{font-size:10px}
   .app--home .main{padding:12px 16px 4px}
   .home{
     grid-template-columns:1fr;
@@ -221,16 +250,24 @@ textarea{min-height:90px}
 }
 
 @media(max-width:390px){
-  .header--home{padding:12px}
-  .header-bus{width:36px;height:36px}
-  .header--home h1{font-size:clamp(22px,7vw,26px)}
-  .header-shortcuts{gap:8px}
-  .home-shortcut{
-    width:clamp(72px,21vw,84px);
-    height:clamp(72px,21vw,84px);
-    padding:6px 4px;
+  .header--home{
+    gap:6px;
+    padding:12px;
   }
-  .home-shortcut-label{font-size:10px}
+  .header-brand{gap:8px}
+  .header-bus{width:34px;height:34px;margin-top:3px}
+  .header--home h1{font-size:clamp(22px,6.8vw,26px)}
+  .header--home p{font-size:11px}
+  .header-shortcuts{gap:6px}
+  .home-shortcut{
+    width:74px;
+    min-width:74px;
+    min-height:90px;
+    padding:6px 3px;
+  }
+  .home-shortcut-icon{width:24px;height:24px}
+  .home-shortcut-label{font-size:9px}
+  .home-shortcut.is-installed .home-shortcut-label{font-size:9px}
   .home-card{padding:14px;gap:12px;border-radius:18px}
   .home-card-text strong{font-size:clamp(18px,5.2vw,21px)}
   .home-card-text span{font-size:13px}
@@ -238,17 +275,17 @@ textarea{min-height:90px}
 
 @media(max-width:360px){
   .header--home{
-    flex-direction:column;
-    align-items:stretch;
+    gap:6px;
+    padding:12px 10px;
   }
-  .header-brand{width:100%}
-  .header-shortcuts{
-    width:100%;
-    justify-content:flex-end;
-    margin-left:0;
-  }
+  .header-brand{gap:6px}
+  .header-bus{width:32px;height:32px;margin-top:2px}
+  .header--home h1{font-size:clamp(20px,6.4vw,24px)}
+  .header-shortcuts{gap:6px}
   .home-shortcut{
-    width:clamp(70px,24vw,82px);
-    height:clamp(70px,24vw,82px);
+    width:70px;
+    min-width:70px;
+    min-height:86px;
+    padding:6px 2px;
   }
 }

@@ -1,0 +1,186 @@
+{
+  "widths": {
+    "360": {
+      "width": 360,
+      "title": "千鳥路線図",
+      "subtitle": "路線・停留所・注意地点",
+      "sameRow": true,
+      "buttonsBelowTitle": false,
+      "titleWraps": false,
+      "scrollX": false,
+      "overlap": false,
+      "equalButtons": true,
+      "subUnderButtons": false,
+      "brand": {
+        "top": 12,
+        "right": 198,
+        "bottom": 57.5
+      },
+      "actions": {
+        "top": 12,
+        "left": 204,
+        "bottom": 98
+      },
+      "titleTop": 12,
+      "actionsTop": 12,
+      "buttons": [
+        {
+          "left": 204,
+          "top": 12,
+          "width": 70,
+          "height": 86,
+          "right": 274,
+          "bottom": 98
+        },
+        {
+          "left": 280,
+          "top": 12,
+          "width": 70,
+          "height": 86,
+          "right": 350,
+          "bottom": 98
+        }
+      ],
+      "pdfHref": "https://www.keiseibus.co.jp/wp-content/uploads/2026/02/routemap-chidori.pdf",
+      "pdfText": "千鳥路線図 全体図",
+      "installText": "ショートカット 作成"
+    },
+    "390": {
+      "width": 390,
+      "title": "千鳥路線図",
+      "subtitle": "路線・停留所・注意地点",
+      "sameRow": true,
+      "buttonsBelowTitle": false,
+      "titleWraps": false,
+      "scrollX": false,
+      "overlap": false,
+      "equalButtons": true,
+      "subUnderButtons": false,
+      "brand": {
+        "top": 12,
+        "right": 218,
+        "bottom": 61
+      },
+      "actions": {
+        "top": 12,
+        "left": 224,
+        "bottom": 102
+      },
+      "titleTop": 12,
+      "actionsTop": 12,
+      "buttons": [
+        {
+          "left": 224,
+          "top": 12,
+          "width": 74,
+          "height": 90,
+          "right": 298,
+          "bottom": 102
+        },
+        {
+          "left": 304,
+          "top": 12,
+          "width": 74,
+          "height": 90,
+          "right": 378,
+          "bottom": 102
+        }
+      ],
+      "pdfHref": "https://www.keiseibus.co.jp/wp-content/uploads/2026/02/routemap-chidori.pdf",
+      "pdfText": "千鳥路線図 全体図",
+      "installText": "ショートカット 作成"
+    },
+    "412": {
+      "width": 412,
+      "title": "千鳥路線図",
+      "subtitle": "路線・停留所・注意地点",
+      "sameRow": true,
+      "buttonsBelowTitle": false,
+      "titleWraps": false,
+      "scrollX": false,
+      "overlap": false,
+      "equalButtons": true,
+      "subUnderButtons": false,
+      "brand": {
+        "top": 14,
+        "right": 214,
+        "bottom": 66.4
+      },
+      "actions": {
+        "top": 14,
+        "left": 224,
+        "bottom": 110
+      },
+      "titleTop": 14,
+      "actionsTop": 14,
+      "buttons": [
+        {
+          "left": 224,
+          "top": 14,
+          "width": 82,
+          "height": 96,
+          "right": 306,
+          "bottom": 110
+        },
+        {
+          "left": 314,
+          "top": 14,
+          "width": 82,
+          "height": 96,
+          "right": 396,
+          "bottom": 110
+        }
+      ],
+      "pdfHref": "https://www.keiseibus.co.jp/wp-content/uploads/2026/02/routemap-chidori.pdf",
+      "pdfText": "千鳥路線図 全体図",
+      "installText": "ショートカット 作成"
+    },
+    "1280": {
+      "width": 1280,
+      "title": "千鳥路線図",
+      "subtitle": "路線・停留所・注意地点",
+      "sameRow": false,
+      "buttonsBelowTitle": false,
+      "titleWraps": false,
+      "scrollX": false,
+      "overlap": false,
+      "equalButtons": true,
+      "subUnderButtons": false,
+      "brand": {
+        "top": 30.5,
+        "right": 369,
+        "bottom": 101.5
+      },
+      "actions": {
+        "top": 18,
+        "left": 934,
+        "bottom": 114
+      },
+      "titleTop": 30.5,
+      "actionsTop": 18,
+      "buttons": [
+        {
+          "left": 934,
+          "top": 18,
+          "width": 96,
+          "height": 96,
+          "right": 1030,
+          "bottom": 114
+        },
+        {
+          "left": 1040,
+          "top": 18,
+          "width": 96,
+          "height": 96,
+          "right": 1136,
+          "bottom": 114
+        }
+      ],
+      "pdfHref": "https://www.keiseibus.co.jp/wp-content/uploads/2026/02/routemap-chidori.pdf",
+      "pdfText": "千鳥路線図 全体図",
+      "installText": "ショートカット 作成"
+    }
+  },
+  "pass": true,
+  "fails": []
+}
