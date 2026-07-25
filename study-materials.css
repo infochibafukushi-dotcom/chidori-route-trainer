@@ -71,17 +71,195 @@
 .study-text,
 .study-note {
   font-size: 16px;
-  line-height: 1.85;
+  line-height: 1.8;
   white-space: pre-wrap;
 }
 
 .study-note {
   color: #56636d;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: #f7f4e8;
+  border: 1px solid #e2d9b8;
 }
 
 .study-back-list {
   margin-top: 8px;
   margin-bottom: 24px;
+}
+
+/* ---- POP (poster-style overlay) ---- */
+
+body.study-pop-open {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.study-pop-root {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:
+    max(12px, env(safe-area-inset-top, 0px))
+    max(12px, env(safe-area-inset-right, 0px))
+    max(12px, env(safe-area-inset-bottom, 0px))
+    max(12px, env(safe-area-inset-left, 0px));
+  box-sizing: border-box;
+}
+
+.study-pop-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.study-pop-panel {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  width: min(760px, calc(100vw - 24px));
+  max-height: min(92vh, calc(100dvh - 24px));
+  height: auto;
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.28);
+  box-sizing: border-box;
+}
+
+.study-pop-header {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 14px 14px 14px 16px;
+  background: #0b4f8c;
+  color: #fff;
+}
+
+.study-pop-header-text {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.study-pop-number {
+  margin: 0 0 4px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  opacity: 0.9;
+}
+
+.study-pop-title {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.45;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+.study-pop-close-x {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  margin: -4px -6px 0 0;
+  padding: 0;
+  border: 0;
+  border-radius: 10px;
+  background: transparent;
+  color: #fff;
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.study-pop-close-x:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+.study-pop-body {
+  flex: 1 1 auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  padding: 16px 16px 8px;
+  display: grid;
+  gap: 12px;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  color: #17202a;
+  box-sizing: border-box;
+}
+
+.study-pop-body .study-heading {
+  margin-top: 4px;
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.study-pop-body .study-label {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.75;
+}
+
+.study-pop-body .study-sublabel {
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.study-pop-body .study-text,
+.study-pop-body .study-note {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #17202a;
+}
+
+.study-pop-body .study-note {
+  color: #4a5560;
+  background: #f7f4e8;
+  border: 1px solid #e2d9b8;
+}
+
+.study-pop-footer {
+  flex: 0 0 auto;
+  padding: 12px 16px calc(12px + env(safe-area-inset-bottom, 0px));
+  border-top: 1px solid #e4ebf0;
+  background: #fff;
+}
+
+.study-pop-close-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 16px;
+  border: 1px solid #0b4f8c;
+  border-radius: 12px;
+  background: #0b4f8c;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.study-pop-close-btn:focus-visible {
+  outline: 2px solid #0b4f8c;
+  outline-offset: 2px;
 }
 
 @media (max-width: 700px) {
@@ -98,5 +276,32 @@
   .study-note,
   .study-label {
     font-size: 16px;
+  }
+
+  .study-pop-panel {
+    width: calc(100vw - 24px);
+    max-height: min(94vh, calc(100dvh - 24px));
+  }
+
+  .study-pop-title {
+    font-size: 16px;
+  }
+
+  .study-pop-body {
+    padding: 14px 14px 8px;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .study-pop-panel {
+    max-height: min(94vh, calc(100dvh - 16px));
+  }
+
+  .study-pop-header {
+    padding: 10px 12px;
+  }
+
+  .study-pop-title {
+    font-size: 15px;
   }
 }
