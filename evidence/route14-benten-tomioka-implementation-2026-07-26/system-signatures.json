@@ -1,0 +1,114 @@
+{
+  "checkedAt": "2026-07-26T09:42:52.793Z",
+  "routeId": "route-14",
+  "systemNumber": "14",
+  "note": "各系統キーが公式停留所順として一意であることの証明。停留所ID列（busstop id）が主キー。",
+  "uniqueness": {
+    "systemCount": 4,
+    "allStopIdSignaturesDistinct": true,
+    "allStopNameSignaturesDistinct": true,
+    "osmAllMatch": true
+  },
+  "systems": {
+    "14-maihama": {
+      "course": "0008200274",
+      "timetableSymbol": "無印",
+      "berth": "14",
+      "terminal": "新浦安駅",
+      "stopCount": 19,
+      "stopIdSignature": "00020619>00020668>00020873>00020875>00020879>00020673>00020672>00020633>00020687>00020683>00020685>00020852>00020686>00020730>00020850>00020679>00020746>00020630>00020617",
+      "stopNameSignature": "新浦安駅>新浦安駅北口>若潮公園>順天堂病院前>サンコーポ東口>富岡第三児童公園>富岡第一児童公園>中央公園>弁天保育園入口>弁天西児童公園入口>弁天中央>見明川小学校>弁天南>ふれあいの森公園>見明川>舞浜三丁目>運動公園>オリエンタルランド本社前>舞浜駅",
+      "legendProof": [
+        "無印…【１４系統】順天堂病院前・弁天中央経由　舞浜駅行き"
+      ],
+      "tripsObserved": 51,
+      "dayLabels": [
+        "weekday"
+      ],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e00002/stops?departure-busstop=00020619-1&course=0008200274&datetime=2026-07-27T06:37:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e0000b/stops?departure-busstop=00020619-1&course=0008200274&datetime=2026-07-27T07:07:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e00003/stops?departure-busstop=00020619-1&course=0008200274&datetime=2026-07-27T07:52:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e00013/stops?departure-busstop=00020619-1&course=0008200274&datetime=2026-08-01T07:02:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e00024/stops?departure-busstop=00020619-1&course=0008200274&datetime=2026-07-26T07:02:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e0000c/stops?departure-busstop=00020619-1&course=0008200274&datetime=2026-07-27T08:26:00%2B09:00"
+      ],
+      "osmRelationId": 18323926,
+      "osmPlatformOrderMatchesOfficial": true
+    },
+    "14-chidori-garage": {
+      "course": "0008200276",
+      "timetableSymbol": "ち",
+      "berth": "14",
+      "terminal": "新浦安駅",
+      "stopCount": 18,
+      "stopIdSignature": "00020619>00020668>00020873>00020875>00020879>00020673>00020672>00020633>00020687>00020683>00020685>00020852>00020686>00020730>00020850>00020679>00020746>00020620",
+      "stopNameSignature": "新浦安駅>新浦安駅北口>若潮公園>順天堂病院前>サンコーポ東口>富岡第三児童公園>富岡第一児童公園>中央公園>弁天保育園入口>弁天西児童公園入口>弁天中央>見明川小学校>弁天南>ふれあいの森公園>見明川>舞浜三丁目>運動公園>千鳥車庫",
+      "legendProof": [
+        "ち…【１４系統】順天堂病院前・弁天中央経由　千鳥車庫行き（千鳥北方面には行きません）"
+      ],
+      "tripsObserved": 4,
+      "dayLabels": [
+        "weekday"
+      ],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e20001/stops?departure-busstop=00020619-1&course=0008200276&datetime=2026-07-27T19:19:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e20000/stops?departure-busstop=00020619-1&course=0008200276&datetime=2026-07-27T20:56:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e20002/stops?departure-busstop=00020619-1&course=0008200276&datetime=2026-08-01T20:41:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e20003/stops?departure-busstop=00020619-1&course=0008200276&datetime=2026-07-26T20:50:00%2B09:00"
+      ],
+      "osmRelationId": 18419877,
+      "osmPlatformOrderMatchesOfficial": true
+    },
+    "14-shinurayasu-maihama": {
+      "course": "0008200273",
+      "timetableSymbol": "無印",
+      "berth": "14",
+      "terminal": "舞浜駅",
+      "stopCount": 19,
+      "stopIdSignature": "00020617>00020630>00020746>00020679>00020850>00020730>00020686>00020852>00020685>00020683>00020687>00020633>00020672>00020673>00020879>00020875>00020873>00020668>00020619",
+      "stopNameSignature": "舞浜駅>オリエンタルランド本社前>運動公園>舞浜三丁目>見明川>ふれあいの森公園>弁天南>見明川小学校>弁天中央>弁天西児童公園入口>弁天保育園入口>中央公園>富岡第一児童公園>富岡第三児童公園>サンコーポ東口>順天堂病院前>若潮公園>新浦安駅北口>新浦安駅",
+      "legendProof": [
+        "無印…【１４系統】弁天中央経由　新浦安駅行き"
+      ],
+      "tripsObserved": 52,
+      "dayLabels": [
+        "weekday"
+      ],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80df0003/stops?departure-busstop=00020617-1&course=0008200273&datetime=2026-07-27T07:19:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80df000b/stops?departure-busstop=00020617-1&course=0008200273&datetime=2026-07-27T07:47:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80df0014/stops?departure-busstop=00020617-1&course=0008200273&datetime=2026-08-01T07:39:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80df0025/stops?departure-busstop=00020617-1&course=0008200273&datetime=2026-07-26T07:39:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80df0004/stops?departure-busstop=00020617-1&course=0008200273&datetime=2026-07-27T08:29:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80df001e/stops?departure-busstop=00020617-1&course=0008200273&datetime=2026-08-01T08:09:00%2B09:00"
+      ],
+      "osmRelationId": 9983017,
+      "osmPlatformOrderMatchesOfficial": true
+    },
+    "14-shinurayasu-chidori": {
+      "course": "0008200275",
+      "timetableSymbol": "し",
+      "berth": "02",
+      "terminal": "千鳥車庫",
+      "stopCount": 18,
+      "stopIdSignature": "00020620>00020746>00020679>00020850>00020730>00020686>00020852>00020685>00020683>00020687>00020633>00020672>00020673>00020879>00020875>00020873>00020668>00020619",
+      "stopNameSignature": "千鳥車庫>運動公園>舞浜三丁目>見明川>ふれあいの森公園>弁天南>見明川小学校>弁天中央>弁天西児童公園入口>弁天保育園入口>中央公園>富岡第一児童公園>富岡第三児童公園>サンコーポ東口>順天堂病院前>若潮公園>新浦安駅北口>新浦安駅",
+      "legendProof": [
+        "し…【１４系統】弁天中央経由　新浦安駅行き"
+      ],
+      "tripsObserved": 4,
+      "dayLabels": [
+        "weekday"
+      ],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e10000/stops?departure-busstop=00020620-1&course=0008200275&datetime=2026-07-27T06:05:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e10001/stops?departure-busstop=00020620-1&course=0008200275&datetime=2026-07-27T06:34:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e10002/stops?departure-busstop=00020620-1&course=0008200275&datetime=2026-08-01T06:30:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e10003/stops?departure-busstop=00020620-1&course=0008200275&datetime=2026-07-26T06:30:00%2B09:00"
+      ],
+      "osmRelationId": 18419876,
+      "osmPlatformOrderMatchesOfficial": true
+    }
+  }
+}

@@ -1,0 +1,78 @@
+﻿fetch 18323926 route14 譁ｰ豬ｦ螳蛾ｧ・∫荳ｭ螟ｮ蜈ｬ蝨停∫闊樊ｵ憺ｧ・  overpass via overpass.kumi.systems
+18323926 route14 譁ｰ豬ｦ螳蛾ｧ・∫荳ｭ螟ｮ蜈ｬ蝨停∫闊樊ｵ憺ｧ・| ways 26 | wayElems 26 | platforms 19 | via overpass
+fetch 9983017 route14 闊樊ｵ憺ｧ・∫荳ｭ螟ｮ蜈ｬ蝨停∫譁ｰ豬ｦ螳蛾ｧ・  overpass via overpass.kumi.systems
+node :   fail overpass.kumi.systems HTTP 504 https://overpass.kumi.systems/api/interpreter?data=%5Bout%3Ajson%5D%5Btime
+out%3A180%5D%3Brelation(9983017)%3B(._%3B%3E%3B)%3Bout%20body%3B
+発生場所 C:\Users\yamam\AppData\Local\Temp\ps-script-15343d49-c0c9-4659-a03a-63dc7055118a.ps1:107 文字:32
++ ... NG="utf-8"; node "evidence/route14-benten-tomioka-implementation-2026 ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (  fail overpass...3Bout%20body%3B:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  overpass via overpass-api.de
+  fail overpass-api.de HTTP 504 https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A180%5D%3Brela
+tion(9983017)%3B(._%3B%3E%3B)%3Bout%20body%3B
+  overpass via overpass.osm.jp
+  fail overpass.osm.jp certificate has expired
+  fallback osm-api-0.6 9983017
+9983017 route14 闊樊ｵ憺ｧ・∫荳ｭ螟ｮ蜈ｬ蝨停∫譁ｰ豬ｦ螳蛾ｧ・| ways 26 | wayElems 26 | platforms 19 | via api.openstreetmap.org/0.6
+fetch 18419877 route14 譁ｰ豬ｦ螳蛾ｧ・∫荳ｭ螟ｮ蜈ｬ蝨停∫蜊・ｳ･霆雁ｺｫ
+  overpass via overpass.kumi.systems
+  fail overpass.kumi.systems HTTP 504 https://overpass.kumi.systems/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A1
+80%5D%3Brelation(18419877)%3B(._%3B%3E%3B)%3Bout%20body%3B
+  overpass via overpass-api.de
+  fail overpass-api.de HTTP 504 https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A180%5D%3Brela
+tion(18419877)%3B(._%3B%3E%3B)%3Bout%20body%3B
+  overpass via overpass.osm.jp
+  fail overpass.osm.jp certificate has expired
+  fallback osm-api-0.6 18419877
+18419877 route14 譁ｰ豬ｦ螳蛾ｧ・∫荳ｭ螟ｮ蜈ｬ蝨停∫蜊・ｳ･霆雁ｺｫ | ways 23 | wayElems 23 | platforms 18 | via api.openstreetmap.org/0.6
+fetch 18419876 route14 蜊・ｳ･霆雁ｺｫ竍剃ｸｭ螟ｮ蜈ｬ蝨停∫譁ｰ豬ｦ螳蛾ｧ・  overpass via overpass.kumi.systems
+18419876 route14 蜊・ｳ･霆雁ｺｫ竍剃ｸｭ螟ｮ蜈ｬ蝨停∫譁ｰ豬ｦ螳蛾ｧ・| ways 22 | wayElems 22 | platforms 18 | via overpass
+probe ref=14 relations in bbox
+  overpass via overpass.kumi.systems
+  fail overpass.kumi.systems HTTP 504 https://overpass.kumi.systems/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A1
+20%5D%3B%0Arelation%5B%22route%22%3D%22bus%22%5D%5B%22ref%22%3D%2214%22%5D(35.60%2C139.85%2C35.70%2C139.96)%3B%0Aout%20
+tags%3B%0Arelation%5B%22type%22%3D%22route_master%22%5D%5B%22ref%22%3D%2214%22%5D(35.60%2C139.85%2C35.70%2C139.96)%3B%0
+Aout%20tags%3B
+  overpass via overpass-api.de
+  fail overpass-api.de HTTP 504 https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A120%5D%3B%0Ar
+elation%5B%22route%22%3D%22bus%22%5D%5B%22ref%22%3D%2214%22%5D(35.60%2C139.85%2C35.70%2C139.96)%3B%0Aout%20tags%3B%0Are
+lation%5B%22type%22%3D%22route_master%22%5D%5B%22ref%22%3D%2214%22%5D(35.60%2C139.85%2C35.70%2C139.96)%3B%0Aout%20tags%
+3B
+  overpass via overpass.osm.jp
+  fail overpass.osm.jp certificate has expired
+done
+[
+  {
+    "id": 18323926,
+    "ok": true,
+    "ways": 26,
+    "platforms": 19,
+    "name": "譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ14邉ｻ邨ｱ 譁ｰ豬ｦ螳蛾ｧ・∫荳ｭ螟ｮ蜈ｬ蝨停∫闊樊ｵ憺ｧ・
+  },
+  {
+    "id": 9983017,
+    "ok": true,
+    "ways": 26,
+    "platforms": 19,
+    "name": "譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ14邉ｻ邨ｱ 闊樊ｵ憺ｧ・∫荳ｭ螟ｮ蜈ｬ蝨停∫譁ｰ豬ｦ螳蛾ｧ・
+  },
+  {
+    "id": 18419877,
+    "ok": true,
+    "ways": 23,
+    "platforms": 18,
+    "name": "譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ14邉ｻ邨ｱ 譁ｰ豬ｦ螳蛾ｧ・∫荳ｭ螟ｮ蜈ｬ蝨停∫蜊・ｳ･霆雁ｺｫ"
+  },
+  {
+    "id": 18419876,
+    "ok": true,
+    "ways": 22,
+    "platforms": 18,
+    "name": "譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ14邉ｻ邨ｱ 蜊・ｳ･霆雁ｺｫ竍剃ｸｭ螟ｮ蜈ｬ蝨停∫譁ｰ豬ｦ螳蛾ｧ・
+  }
+]
+--- 18323926 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ14邉ｻ邨ｱ 譁ｰ豬ｦ螳蛾ｧ・∫荳ｭ螟ｮ蜈ｬ蝨停∫闊樊ｵ憺ｧ・譁ｰ豬ｦ螳蛾ｧ・> 譁ｰ豬ｦ螳蛾ｧ・圏蜿｣ > 闍･貎ｮ蜈ｬ蝨・> 鬆・､ｩ蝣ら羅髯｢蜑・> 繧ｵ繝ｳ繧ｳ繝ｼ繝晄擲蜿｣ > 蟇悟ｲ｡隨ｬ荳牙・遶･蜈ｬ蝨・> 蟇悟ｲ｡隨ｬ荳蜈千ｫ･蜈ｬ蝨・> 荳ｭ螟ｮ蜈ｬ蝨・> 蠑∝､ｩ菫晁ご蝨貞・蜿｣ > 蠑∝､ｩ隘ｿ蜈千ｫ･蜈ｬ蝨貞・蜿｣ > 蠑∝､ｩ荳ｭ螟ｮ > 隕区・蟾晏ｰ丞ｭｦ譬｡ > 蠑∝､ｩ蜊・> 縺ｵ繧後≠縺・・譽ｮ蜈ｬ蝨・> 隕区・蟾・> 闊樊ｵ應ｸ我ｸ∫岼 > 驕句虚蜈ｬ蝨・> 繧ｪ繝ｪ繧ｨ繝ｳ繧ｿ繝ｫ繝ｩ繝ｳ繝画悽遉ｾ蜑・> 闊樊ｵ憺ｧ・--- 9983017 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ14邉ｻ邨ｱ 闊樊ｵ憺ｧ・∫荳ｭ螟ｮ蜈ｬ蝨停∫譁ｰ豬ｦ螳蛾ｧ・闊樊ｵ憺ｧ・> 繧ｪ繝ｪ繧ｨ繝ｳ繧ｿ繝ｫ繝ｩ繝ｳ繝画悽遉ｾ蜑・> 驕句虚蜈ｬ蝨・> 闊樊ｵ應ｸ我ｸ∫岼 > 隕区・蟾・> 縺ｵ繧後≠縺・・譽ｮ蜈ｬ蝨・> 蠑∝､ｩ蜊・> 隕区・蟾晏ｰ丞ｭｦ譬｡ > 蠑∝､ｩ荳ｭ螟ｮ > 蠑∝､ｩ隘ｿ蜈千ｫ･蜈ｬ蝨貞・蜿｣ > 蠑∝､ｩ菫晁ご蝨貞・蜿｣ > 荳ｭ螟ｮ蜈ｬ蝨・> 蟇悟ｲ｡隨ｬ荳蜈千ｫ･蜈ｬ蝨・> 蟇悟ｲ｡隨ｬ荳牙・遶･蜈ｬ蝨・> 繧ｵ繝ｳ繧ｳ繝ｼ繝晄擲蜿｣ > 鬆・､ｩ蝣ら羅髯｢蜑・> 闍･貎ｮ蜈ｬ蝨・> 譁ｰ豬ｦ螳蛾ｧ・圏蜿｣ > 譁ｰ豬ｦ螳蛾ｧ・--- 18419877 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ14邉ｻ邨ｱ 譁ｰ豬ｦ螳蛾ｧ・∫荳ｭ螟ｮ蜈ｬ蝨停∫蜊・ｳ･霆雁ｺｫ
+譁ｰ豬ｦ螳蛾ｧ・> 譁ｰ豬ｦ螳蛾ｧ・圏蜿｣ > 闍･貎ｮ蜈ｬ蝨・> 鬆・､ｩ蝣ら羅髯｢蜑・> 繧ｵ繝ｳ繧ｳ繝ｼ繝晄擲蜿｣ > 蟇悟ｲ｡隨ｬ荳牙・遶･蜈ｬ蝨・> 蟇悟ｲ｡隨ｬ荳蜈千ｫ･蜈ｬ蝨・> 荳ｭ螟ｮ蜈ｬ蝨・> 蠑∝､ｩ菫晁ご蝨貞・蜿｣ > 蠑∝､ｩ隘ｿ蜈千ｫ･蜈ｬ蝨貞・蜿｣ > 蠑∝､ｩ荳ｭ螟ｮ > 隕区・蟾晏ｰ丞ｭｦ譬｡ > 蠑∝､ｩ蜊・> 縺ｵ繧後≠縺・・譽ｮ蜈ｬ蝨・> 隕区・蟾・> 闊樊ｵ應ｸ我ｸ∫岼 > 驕句虚蜈ｬ蝨・> 蜊・ｳ･霆雁ｺｫ
+--- 18419876 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ14邉ｻ邨ｱ 蜊・ｳ･霆雁ｺｫ竍剃ｸｭ螟ｮ蜈ｬ蝨停∫譁ｰ豬ｦ螳蛾ｧ・蜊・ｳ･霆雁ｺｫ > 驕句虚蜈ｬ蝨・> 闊樊ｵ應ｸ我ｸ∫岼 > 隕区・蟾・> 縺ｵ繧後≠縺・・譽ｮ蜈ｬ蝨・> 蠑∝､ｩ蜊・> 隕区・蟾晏ｰ丞ｭｦ譬｡ > 蠑∝､ｩ荳ｭ螟ｮ > 蠑∝､ｩ隘ｿ蜈千ｫ･蜈ｬ蝨貞・蜿｣ > 蠑∝､ｩ菫晁ご蝨貞・蜿｣ > 荳ｭ螟ｮ蜈ｬ蝨・> 蟇悟ｲ｡隨ｬ荳蜈千ｫ･蜈ｬ蝨・> 蟇悟ｲ｡隨ｬ荳牙・遶･蜈ｬ蝨・> 繧ｵ繝ｳ繧ｳ繝ｼ繝晄擲蜿｣ > 鬆・､ｩ蝣ら羅髯｢蜑・> 闍･貎ｮ蜈ｬ蝨・> 譁ｰ豬ｦ螳蛾ｧ・圏蜿｣ > 譁ｰ豬ｦ螳蛾ｧ・

@@ -1,0 +1,52 @@
+﻿COURSE JOBS 2
+TT 譁ｰ豬ｦ螳蛾ｧ・weekday links 55
+NEW SIG 19 譁ｰ豬ｦ螳蛾ｧ・-> 闊樊ｵ憺ｧ・course 0008200274
+CHECKPOINT new-signature {"uniqueSignatures":1,"tripsOpened":1,"rejected":0,"errors":0,"elapsedSec":4}
+CHECKPOINT progress-weekday-15 {"uniqueSignatures":1,"tripsOpened":1,"rejected":0,"errors":0,"elapsedSec":18}
+CHECKPOINT progress-weekday-30 {"uniqueSignatures":1,"tripsOpened":1,"rejected":0,"errors":0,"elapsedSec":34}
+CHECKPOINT progress-weekday-45 {"uniqueSignatures":1,"tripsOpened":1,"rejected":0,"errors":0,"elapsedSec":49}
+NEW SIG 18 譁ｰ豬ｦ螳蛾ｧ・-> 蜊・ｳ･霆雁ｺｫ course 0008200276
+CHECKPOINT new-signature {"uniqueSignatures":2,"tripsOpened":2,"rejected":0,"errors":0,"elapsedSec":53}
+CHECKPOINT after-譁ｰ豬ｦ螳蛾ｧ・weekday {"uniqueSignatures":2,"tripsOpened":2,"rejected":0,"errors":0,"elapsedSec":59}
+TT 譁ｰ豬ｦ螳蛾ｧ・saturday links 55
+CHECKPOINT after-譁ｰ豬ｦ螳蛾ｧ・saturday {"uniqueSignatures":2,"tripsOpened":2,"rejected":0,"errors":0,"elapsedSec":61}
+TT 譁ｰ豬ｦ螳蛾ｧ・sunday-holiday links 55
+CHECKPOINT after-譁ｰ豬ｦ螳蛾ｧ・sunday-holiday {"uniqueSignatures":2,"tripsOpened":2,"rejected":0,"errors":0,"elapsedSec":64}
+TT 闊樊ｵ憺ｧ・weekday links 52
+NEW SIG 19 闊樊ｵ憺ｧ・-> 譁ｰ豬ｦ螳蛾ｧ・course 0008200273
+CHECKPOINT new-signature {"uniqueSignatures":3,"tripsOpened":3,"rejected":0,"errors":0,"elapsedSec":66}
+CHECKPOINT progress-weekday-15 {"uniqueSignatures":3,"tripsOpened":3,"rejected":0,"errors":0,"elapsedSec":80}
+CHECKPOINT progress-weekday-30 {"uniqueSignatures":3,"tripsOpened":3,"rejected":0,"errors":0,"elapsedSec":96}
+CHECKPOINT progress-weekday-45 {"uniqueSignatures":3,"tripsOpened":3,"rejected":0,"errors":0,"elapsedSec":110}
+CHECKPOINT after-闊樊ｵ憺ｧ・weekday {"uniqueSignatures":3,"tripsOpened":3,"rejected":0,"errors":0,"elapsedSec":118}
+TT 闊樊ｵ憺ｧ・saturday links 52
+CHECKPOINT after-闊樊ｵ憺ｧ・saturday {"uniqueSignatures":3,"tripsOpened":3,"rejected":0,"errors":0,"elapsedSec":119}
+TT 闊樊ｵ憺ｧ・sunday-holiday links 52
+CHECKPOINT after-闊樊ｵ憺ｧ・sunday-holiday {"uniqueSignatures":3,"tripsOpened":3,"rejected":0,"errors":0,"elapsedSec":121}
+CHIDORI GARAGE busstop 00020620
+TT 蜊・ｳ･霆雁ｺｫ weekday links 29
+NEW SIG 17 蜊・ｳ･霆雁ｺｫ -> 豬ｦ螳蛾ｧ・・蜿｣ course 0008200207
+CHECKPOINT new-signature {"uniqueSignatures":4,"tripsOpened":4,"rejected":0,"errors":0,"elapsedSec":126}
+NEW SIG 17 蜊・ｳ･霆雁ｺｫ -> 豬ｦ螳蛾ｧ・・蜿｣ course 0008200225
+CHECKPOINT new-signature {"uniqueSignatures":5,"tripsOpened":5,"rejected":0,"errors":0,"elapsedSec":127}
+NEW SIG 18 蜊・ｳ･霆雁ｺｫ -> 譁ｰ豬ｦ螳蛾ｧ・course 0008200275
+CHECKPOINT new-signature {"uniqueSignatures":6,"tripsOpened":6,"rejected":0,"errors":0,"elapsedSec":131}
+NEW SIG 17 蜊・ｳ･霆雁ｺｫ -> 豬ｦ螳蛾ｧ・・蜿｣ course 0008200241
+CHECKPOINT new-signature {"uniqueSignatures":7,"tripsOpened":7,"rejected":0,"errors":0,"elapsedSec":133}
+CHECKPOINT progress-weekday-15 {"uniqueSignatures":7,"tripsOpened":7,"rejected":0,"errors":0,"elapsedSec":139}
+TT 蜊・ｳ･霆雁ｺｫ saturday links 29
+TT 蜊・ｳ･霆雁ｺｫ sunday-holiday links 29
+CHECKPOINT final {"uniqueSignatures":7,"tripsOpened":7,"rejected":0,"errors":0,"elapsedSec":156}
+=== UNIQUE SIGNATURES ===
+19 stops | count 51 | courses 0008200274 | days weekday
+    譁ｰ豬ｦ螳蛾ｧ・> 譁ｰ豬ｦ螳蛾ｧ・圏蜿｣ > 闍･貎ｮ蜈ｬ蝨・> 鬆・､ｩ蝣ら羅髯｢蜑・> 繧ｵ繝ｳ繧ｳ繝ｼ繝晄擲蜿｣ > 蟇悟ｲ｡隨ｬ荳牙・遶･蜈ｬ蝨・> 蟇悟ｲ｡隨ｬ荳蜈千ｫ･蜈ｬ蝨・> 荳ｭ螟ｮ蜈ｬ蝨・> 蠑∝､ｩ菫晁ご蝨貞・蜿｣ > 蠑∝､ｩ隘ｿ蜈千ｫ･蜈ｬ蝨貞・蜿｣ > 蠑∝､ｩ荳ｭ螟ｮ > 隕区・蟾晏ｰ丞ｭｦ譬｡ > 蠑∝､ｩ蜊・> 縺ｵ繧後≠縺・・譽ｮ蜈ｬ蝨・> 隕区・蟾・> 闊樊ｵ應ｸ我ｸ∫岼 > 驕句虚蜈ｬ蝨・> 繧ｪ繝ｪ繧ｨ繝ｳ繧ｿ繝ｫ繝ｩ繝ｳ繝画悽遉ｾ蜑・> 闊樊ｵ憺ｧ・18 stops | count 4 | courses 0008200276 | days weekday
+    譁ｰ豬ｦ螳蛾ｧ・> 譁ｰ豬ｦ螳蛾ｧ・圏蜿｣ > 闍･貎ｮ蜈ｬ蝨・> 鬆・､ｩ蝣ら羅髯｢蜑・> 繧ｵ繝ｳ繧ｳ繝ｼ繝晄擲蜿｣ > 蟇悟ｲ｡隨ｬ荳牙・遶･蜈ｬ蝨・> 蟇悟ｲ｡隨ｬ荳蜈千ｫ･蜈ｬ蝨・> 荳ｭ螟ｮ蜈ｬ蝨・> 蠑∝､ｩ菫晁ご蝨貞・蜿｣ > 蠑∝､ｩ隘ｿ蜈千ｫ･蜈ｬ蝨貞・蜿｣ > 蠑∝､ｩ荳ｭ螟ｮ > 隕区・蟾晏ｰ丞ｭｦ譬｡ > 蠑∝､ｩ蜊・> 縺ｵ繧後≠縺・・譽ｮ蜈ｬ蝨・> 隕区・蟾・> 闊樊ｵ應ｸ我ｸ∫岼 > 驕句虚蜈ｬ蝨・> 蜊・ｳ･霆雁ｺｫ
+19 stops | count 52 | courses 0008200273 | days weekday
+    闊樊ｵ憺ｧ・> 繧ｪ繝ｪ繧ｨ繝ｳ繧ｿ繝ｫ繝ｩ繝ｳ繝画悽遉ｾ蜑・> 驕句虚蜈ｬ蝨・> 闊樊ｵ應ｸ我ｸ∫岼 > 隕区・蟾・> 縺ｵ繧後≠縺・・譽ｮ蜈ｬ蝨・> 蠑∝､ｩ蜊・> 隕区・蟾晏ｰ丞ｭｦ譬｡ > 蠑∝､ｩ荳ｭ螟ｮ > 蠑∝､ｩ隘ｿ蜈千ｫ･蜈ｬ蝨貞・蜿｣ > 蠑∝､ｩ菫晁ご蝨貞・蜿｣ > 荳ｭ螟ｮ蜈ｬ蝨・> 蟇悟ｲ｡隨ｬ荳蜈千ｫ･蜈ｬ蝨・> 蟇悟ｲ｡隨ｬ荳牙・遶･蜈ｬ蝨・> 繧ｵ繝ｳ繧ｳ繝ｼ繝晄擲蜿｣ > 鬆・､ｩ蝣ら羅髯｢蜑・> 闍･貎ｮ蜈ｬ蝨・> 譁ｰ豬ｦ螳蛾ｧ・圏蜿｣ > 譁ｰ豬ｦ螳蛾ｧ・17 stops | count 14 | courses 0008200207 | days weekday
+    蜊・ｳ･霆雁ｺｫ > 驕句虚蜈ｬ蝨・> 闊樊ｵ應ｸ我ｸ∫岼 > 隕区・蟾昜ｽ丞ｮ・> 隕区・蟾昜ｸｭ蟄ｦ譬｡蜑・> 蠑∝､ｩ隨ｬ莠・> 繧ｵ繝ｳ繧ｳ繝ｼ繝晁･ｿ蜿｣ > 繧ｵ繝ｳ繧ｳ繝ｼ繝晄擲蜿｣ > 鬆・､ｩ蝣ら羅髯｢蜑・> 闍･貎ｮ蜈ｬ蝨・> 譁ｰ豬ｦ螳蛾ｧ・圏蜿｣ > 鄒取ｵ懈擲蝗｣蝨ｰ > 豬ｷ讌ｽ > 豸磯亟譛ｬ驛ｨ蜑・> 迪ｫ螳・> 逾樊・陬・> 豬ｦ螳蛾ｧ・・蜿｣
+17 stops | count 6 | courses 0008200225 | days weekday
+    蜊・ｳ･霆雁ｺｫ > 驕句虚蜈ｬ蝨・> 闊樊ｵ應ｸ我ｸ∫岼 > 隕区・蟾昜ｽ丞ｮ・> 隕区・蟾昜ｸｭ蟄ｦ譬｡蜑・> 蠑∝､ｩ隨ｬ莠・> 繧ｵ繝ｳ繧ｳ繝ｼ繝晁･ｿ蜿｣ > 繧ｵ繝ｳ繧ｳ繝ｼ繝晄擲蜿｣ > 鬆・､ｩ蝣ら羅髯｢蜑・> 譌･逕溽比ｿｮ繧ｻ繝ｳ繧ｿ繝ｼ > ・ｮ・ｴ・ｴ豬ｦ螳牙燕 > 蟶ょｽｹ謇蜈･蜿｣繝ｻ驛ｵ萓ｿ螻蜑・> 蝣豎滓擲 > 蜊怜ｰ丞・蜿｣ > 蝣豎滉ｸ我ｸ∫岼 > 繝輔Λ繝ｯ繝ｼ騾壹ｊ > 豬ｦ螳蛾ｧ・・蜿｣
+18 stops | count 4 | courses 0008200275 | days weekday
+    蜊・ｳ･霆雁ｺｫ > 驕句虚蜈ｬ蝨・> 闊樊ｵ應ｸ我ｸ∫岼 > 隕区・蟾・> 縺ｵ繧後≠縺・・譽ｮ蜈ｬ蝨・> 蠑∝､ｩ蜊・> 隕区・蟾晏ｰ丞ｭｦ譬｡ > 蠑∝､ｩ荳ｭ螟ｮ > 蠑∝､ｩ隘ｿ蜈千ｫ･蜈ｬ蝨貞・蜿｣ > 蠑∝､ｩ菫晁ご蝨貞・蜿｣ > 荳ｭ螟ｮ蜈ｬ蝨・> 蟇悟ｲ｡隨ｬ荳蜈千ｫ･蜈ｬ蝨・> 蟇悟ｲ｡隨ｬ荳牙・遶･蜈ｬ蝨・> 繧ｵ繝ｳ繧ｳ繝ｼ繝晄擲蜿｣ > 鬆・､ｩ蝣ら羅髯｢蜑・> 闍･貎ｮ蜈ｬ蝨・> 譁ｰ豬ｦ螳蛾ｧ・圏蜿｣ > 譁ｰ豬ｦ螳蛾ｧ・17 stops | count 5 | courses 0008200241 | days weekday
+    蜊・ｳ･霆雁ｺｫ > 驕句虚蜈ｬ蝨・> 闊樊ｵ應ｸ我ｸ∫岼 > 隕区・蟾・> 蠑∝､ｩ蝗帑ｸ∫岼 > 蠑∝､ｩ讖・> 譚ｱ驥惹ｸ我ｸ∫岼 > 譚ｱ豬ｷ螟ｧ豬ｦ螳蛾ｫ俶｡蜑・> 譚ｱ豬ｷ螟ｧ豬ｦ螳蛾ｫ俶｡蜈･蜿｣ > 譚ｱ驥弱・繝ｼ繝ｫ > 譚ｱ驥惹ｸ荳∫岼 > 蟶ょｽｹ謇蜑・> 蝠・ｷ･莨夊ｭｰ謇 > 豸磯亟譛ｬ驛ｨ蜑・> 迪ｫ螳・> 逾樊・陬・> 豬ｦ螳蛾ｧ・・蜿｣
+{"uniqueSignatures":7,"tripsOpened":7,"rejected":0,"errors":0,"elapsedSec":156}

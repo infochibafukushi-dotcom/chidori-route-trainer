@@ -1,0 +1,25 @@
+=== 18323926 ok=true ways=26 platforms=19 roles={"platform_entry_only":1,"platform":17,"platform_exit_only":1,"":26}
+name: 東京ベイシティバス14系統 新浦安駅⇒中央公園⇒舞浜駅
+platforms: 新浦安駅 > 新浦安駅北口 > 若潮公園 > 順天堂病院前 > サンコーポ東口 > 富岡第三児童公園 > 富岡第一児童公園 > 中央公園 > 弁天保育園入口 > 弁天西児童公園入口 > 弁天中央 > 見明川小学校 > 弁天南 > ふれあいの森公園 > 見明川 > 舞浜三丁目 > 運動公園 > オリエンタルランド本社前 > 舞浜駅
+restricted: [{"id":369356254,"name":null,"access":"yes","bus":null,"psv":null,"highway":"service","vehicle":null,"motor_vehicle":null,"oneway":"yes"},{"id":906161743,"name":null,"access":"permit","bus":"yes","psv":null,"highway":"service","vehicle":null,"motor_vehicle":null,"oneway":"yes"},{"id":906161758,"name":null,"access":"permit","bus":"yes","psv":null,"highway":"service","vehicle":null,"motor_vehicle":null,"oneway":"yes"},{"id":1340739633,"name":null,"access":"permit","bus":"yes","psv":null,"highway":"service","vehicle":null,"motor_vehicle":null,"oneway":"yes"},{"id":1341526745,"name":null,"access":"permit","bus":"yes","psv":null,"highway":"service","vehicle":null,"motor_vehicle":null,"oneway":"yes"},{"id":1342408590,"name":null,"access":"permit","bus":"yes","psv":null,"highway":"service","vehicle":null,"motor_vehicle":null,"oneway":"yes"},{"id":1342409930,"name":null,"access":"permit","bus":"yes","psv":null,"highway":"service","vehicle":null,"motor_vehicle":null,"oneway":"yes"}]
+
+=== 9983017 ok=true ways=26 platforms=19 roles={"platform_entry_only":1,"platform":17,"platform_exit_only":1,"":26}
+name: 東京ベイシティバス14系統 舞浜駅⇒中央公園⇒新浦安駅
+platforms: 舞浜駅 > オリエンタルランド本社前 > 運動公園 > 舞浜三丁目 > 見明川 > ふれあいの森公園 > 弁天南 > 見明川小学校 > 弁天中央 > 弁天西児童公園入口 > 弁天保育園入口 > 中央公園 > 富岡第一児童公園 > 富岡第三児童公園 > サンコーポ東口 > 順天堂病院前 > 若潮公園 > 新浦安駅北口 > 新浦安駅
+restricted: [{"id":720406629,"name":null,"access":"yes","bus":null,"psv":null,"highway":"service","vehicle":null,"motor_vehicle":null,"oneway":"yes"},{"id":906161755,"name":null,"access":"permit","bus":"yes","psv":null,"highway":"service","vehicle":null,"motor_vehicle":null,"oneway":"yes"}]
+
+=== 18419877 ok=true ways=23 platforms=18 roles={"platform_entry_only":1,"platform":16,"platform_exit_only":1,"":23}
+name: 東京ベイシティバス14系統 新浦安駅⇒中央公園⇒千鳥車庫
+platforms: 新浦安駅 > 新浦安駅北口 > 若潮公園 > 順天堂病院前 > サンコーポ東口 > 富岡第三児童公園 > 富岡第一児童公園 > 中央公園 > 弁天保育園入口 > 弁天西児童公園入口 > 弁天中央 > 見明川小学校 > 弁天南 > ふれあいの森公園 > 見明川 > 舞浜三丁目 > 運動公園 > 千鳥車庫
+restricted: [{"id":369356254,"name":null,"access":"yes","bus":null,"psv":null,"highway":"service","vehicle":null,"motor_vehicle":null,"oneway":"yes"},{"id":906161743,"name":null,"access":"permit","bus":"yes","psv":null,"highway":"service","vehicle":null,"motor_vehicle":null,"oneway":"yes"},{"id":906161758,"name":null,"access":"permit","bus":"yes","psv":null,"highway":"service","vehicle":null,"motor_vehicle":null,"oneway":"yes"},{"id":1296818464,"name":null,"access":"private","bus":null,"psv":null,"highway":"service","vehicle":null,"motor_vehicle":null,"oneway":null},{"id":1340739633,"name":null,"access":"permit","bus":"yes","psv":null,"highway":"service","vehicle":null,"motor_vehicle":null,"oneway":"yes"},{"id":1341526745,"name":null,"access":"permit","bus":"yes","psv":null,"highway":"service","vehicle":null,"motor_vehicle":null,"oneway":"yes"},{"id":1342408590,"name":null,"access":"permit","bus":"yes","psv":null,"highway":"service","vehicle":null,"motor_vehicle":null,"oneway":"yes"},{"id":1342409930,"name":null,"access":"permit","bus":"yes","psv":null,"highway":"service","vehicle":null,"motor_vehicle":null,"oneway":"yes"}]
+
+=== 18419876 ok=true ways=22 platforms=18 roles={"platform_entry_only":1,"platform":16,"platform_exit_only":1,"":22}
+name: 東京ベイシティバス14系統 千鳥車庫⇒中央公園⇒新浦安駅
+platforms: 千鳥車庫 > 運動公園 > 舞浜三丁目 > 見明川 > ふれあいの森公園 > 弁天南 > 見明川小学校 > 弁天中央 > 弁天西児童公園入口 > 弁天保育園入口 > 中央公園 > 富岡第一児童公園 > 富岡第三児童公園 > サンコーポ東口 > 順天堂病院前 > 若潮公園 > 新浦安駅北口 > 新浦安駅
+restricted: [{"id":720406629,"name":null,"access":"yes","bus":null,"psv":null,"highway":"service","vehicle":null,"motor_vehicle":null,"oneway":"yes"},{"id":906161755,"name":null,"access":"permit","bus":"yes","psv":null,"highway":"service","vehicle":null,"motor_vehicle":null,"oneway":"yes"}]
+
+refProbe: [
+ {
+  "error": "certificate has expired"
+ }
+]

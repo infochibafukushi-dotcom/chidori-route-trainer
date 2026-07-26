@@ -1,0 +1,1506 @@
+{
+  "generatedAt": "2026-07-26T09:44:50.501Z",
+  "line": "弁天・富岡線",
+  "routeId": "route-14",
+  "generated": "2026-07-26-benten-tomioka-v1",
+  "policy": {
+    "stopOrderSource": "official-stop-orders.json（京成バスナビ個別便通過時刻表）",
+    "pathSource": "OSM route relation way members（方向補正あり）",
+    "googleDirectionsUsed": false,
+    "reverseReuseForbidden": true,
+    "truncationReuseForbidden": true,
+    "maxGap_m": 30,
+    "maxJoin_m": 1,
+    "platformDistSoftMax_m": 20,
+    "platformDistHardMax_m": 30
+  },
+  "accessExceptions": {
+    "1296818464": "千鳥車庫（東京ベイシティ交通の営業所）構内サービス道路。access=private だが自社バスの入出庫路であり14系統ちの終点。"
+  },
+  "systems": {
+    "14-maihama": {
+      "stops": 19,
+      "pathPoints": 299,
+      "relationId": 18323926,
+      "pathHash": "3d3383abd203dda1006705cd6cd59f904540e53ae8ee224c507c1f7e0cc4c157",
+      "resolvedVersion": "2026-07-26-benten-tomioka-maihama-v1",
+      "maxGap_m": 25,
+      "maxJoin_m": 0,
+      "maxPlatformDist_m": 14.3,
+      "nanCount": 0,
+      "missingPlatforms": [],
+      "platformDists": [
+        {
+          "name": "新浦安駅",
+          "dist": 7.9,
+          "pathIndex": 0,
+          "reviewRequired": false
+        },
+        {
+          "name": "新浦安駅北口",
+          "dist": 8.4,
+          "pathIndex": 38,
+          "reviewRequired": false
+        },
+        {
+          "name": "若潮公園",
+          "dist": 8.6,
+          "pathIndex": 62,
+          "reviewRequired": false
+        },
+        {
+          "name": "順天堂病院前",
+          "dist": 11.9,
+          "pathIndex": 79,
+          "reviewRequired": false
+        },
+        {
+          "name": "サンコーポ東口",
+          "dist": 5.7,
+          "pathIndex": 97,
+          "reviewRequired": false
+        },
+        {
+          "name": "富岡第三児童公園",
+          "dist": 11.5,
+          "pathIndex": 108,
+          "reviewRequired": false
+        },
+        {
+          "name": "富岡第一児童公園",
+          "dist": 9.1,
+          "pathIndex": 120,
+          "reviewRequired": false
+        },
+        {
+          "name": "中央公園",
+          "dist": 7.2,
+          "pathIndex": 130,
+          "reviewRequired": false
+        },
+        {
+          "name": "弁天保育園入口",
+          "dist": 11.4,
+          "pathIndex": 140,
+          "reviewRequired": false
+        },
+        {
+          "name": "弁天西児童公園入口",
+          "dist": 2.9,
+          "pathIndex": 154,
+          "reviewRequired": false
+        },
+        {
+          "name": "弁天中央",
+          "dist": 7.4,
+          "pathIndex": 158,
+          "reviewRequired": false
+        },
+        {
+          "name": "見明川小学校",
+          "dist": 6.3,
+          "pathIndex": 167,
+          "reviewRequired": false
+        },
+        {
+          "name": "弁天南",
+          "dist": 4.2,
+          "pathIndex": 172,
+          "reviewRequired": false
+        },
+        {
+          "name": "ふれあいの森公園",
+          "dist": 6.5,
+          "pathIndex": 180,
+          "reviewRequired": false
+        },
+        {
+          "name": "見明川",
+          "dist": 5.4,
+          "pathIndex": 192,
+          "reviewRequired": false
+        },
+        {
+          "name": "舞浜三丁目",
+          "dist": 8.8,
+          "pathIndex": 212,
+          "reviewRequired": false
+        },
+        {
+          "name": "運動公園",
+          "dist": 14.3,
+          "pathIndex": 235,
+          "reviewRequired": false
+        },
+        {
+          "name": "オリエンタルランド本社前",
+          "dist": 5.5,
+          "pathIndex": 250,
+          "reviewRequired": false
+        },
+        {
+          "name": "舞浜駅",
+          "dist": 4.7,
+          "pathIndex": 298,
+          "reviewRequired": false
+        }
+      ],
+      "orderIssues": [],
+      "sliceMeta": {
+        "si": 0,
+        "ei": 298,
+        "startDist": 7.9,
+        "endDist": 4.7,
+        "fullPathPoints": 299
+      },
+      "usedWayCount": 26,
+      "usedWays": [
+        {
+          "wayId": 1341526745,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "startHint": true
+        },
+        {
+          "wayId": 906161758,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1342408590,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1342409930,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1340739633,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 906161743,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 369356254,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 720406632,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 26382176,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 369356242,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 369356244,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1249418062,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        },
+        {
+          "wayId": 26382284,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 26382285,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 720402603,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 720406626,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        },
+        {
+          "wayId": 883071633,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        },
+        {
+          "wayId": 47121218,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        },
+        {
+          "wayId": 846881938,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 30176170,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 30176171,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 286387769,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 796894963,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1240445586,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 203564427,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 258419781,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        }
+      ],
+      "access": {
+        "restrictedAccessWayCount": 6,
+        "busPermittedRestrictedWayCount": 6,
+        "documentedExceptionWayCount": 0,
+        "unresolvedRestrictedWayCount": 0,
+        "restrictedWays": [
+          {
+            "id": 1341526745,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          },
+          {
+            "id": 906161758,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          },
+          {
+            "id": 1342408590,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          },
+          {
+            "id": 1342409930,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          },
+          {
+            "id": 1340739633,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          },
+          {
+            "id": 906161743,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          }
+        ],
+        "documentedExceptionWays": [],
+        "unresolvedWays": []
+      },
+      "note": "outbound 新浦安駅→舞浜駅（無印）。千鳥車庫便の切り詰めではなく専用relation。"
+    },
+    "14-chidori-garage": {
+      "stops": 18,
+      "pathPoints": 274,
+      "relationId": 18419877,
+      "pathHash": "b8e695aefd46953ee9351d03795a94bbaf87bc78458c71f2375cf7ce94554c8b",
+      "resolvedVersion": "2026-07-26-benten-tomioka-chidori-garage-v1",
+      "maxGap_m": 25,
+      "maxJoin_m": 0,
+      "maxPlatformDist_m": 11.9,
+      "nanCount": 0,
+      "missingPlatforms": [],
+      "platformDists": [
+        {
+          "name": "新浦安駅",
+          "dist": 7.9,
+          "pathIndex": 0,
+          "reviewRequired": false
+        },
+        {
+          "name": "新浦安駅北口",
+          "dist": 8.4,
+          "pathIndex": 38,
+          "reviewRequired": false
+        },
+        {
+          "name": "若潮公園",
+          "dist": 8.6,
+          "pathIndex": 62,
+          "reviewRequired": false
+        },
+        {
+          "name": "順天堂病院前",
+          "dist": 11.9,
+          "pathIndex": 79,
+          "reviewRequired": false
+        },
+        {
+          "name": "サンコーポ東口",
+          "dist": 5.7,
+          "pathIndex": 97,
+          "reviewRequired": false
+        },
+        {
+          "name": "富岡第三児童公園",
+          "dist": 11.5,
+          "pathIndex": 108,
+          "reviewRequired": false
+        },
+        {
+          "name": "富岡第一児童公園",
+          "dist": 9.1,
+          "pathIndex": 120,
+          "reviewRequired": false
+        },
+        {
+          "name": "中央公園",
+          "dist": 7.2,
+          "pathIndex": 130,
+          "reviewRequired": false
+        },
+        {
+          "name": "弁天保育園入口",
+          "dist": 11.4,
+          "pathIndex": 140,
+          "reviewRequired": false
+        },
+        {
+          "name": "弁天西児童公園入口",
+          "dist": 2.9,
+          "pathIndex": 154,
+          "reviewRequired": false
+        },
+        {
+          "name": "弁天中央",
+          "dist": 7.4,
+          "pathIndex": 158,
+          "reviewRequired": false
+        },
+        {
+          "name": "見明川小学校",
+          "dist": 6.3,
+          "pathIndex": 167,
+          "reviewRequired": false
+        },
+        {
+          "name": "弁天南",
+          "dist": 4.2,
+          "pathIndex": 172,
+          "reviewRequired": false
+        },
+        {
+          "name": "ふれあいの森公園",
+          "dist": 6.5,
+          "pathIndex": 180,
+          "reviewRequired": false
+        },
+        {
+          "name": "見明川",
+          "dist": 5.4,
+          "pathIndex": 192,
+          "reviewRequired": false
+        },
+        {
+          "name": "舞浜三丁目",
+          "dist": 8.8,
+          "pathIndex": 212,
+          "reviewRequired": false
+        },
+        {
+          "name": "運動公園",
+          "dist": 11.2,
+          "pathIndex": 230,
+          "reviewRequired": false
+        },
+        {
+          "name": "千鳥車庫",
+          "dist": 4.9,
+          "pathIndex": 273,
+          "reviewRequired": false
+        }
+      ],
+      "orderIssues": [],
+      "sliceMeta": {
+        "si": 0,
+        "ei": 273,
+        "startDist": 7.9,
+        "endDist": 4.9,
+        "fullPathPoints": 274
+      },
+      "usedWayCount": 23,
+      "usedWays": [
+        {
+          "wayId": 1341526745,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "startHint": true
+        },
+        {
+          "wayId": 906161758,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1342408590,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1342409930,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1340739633,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 906161743,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 369356254,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 720406632,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 26382176,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 369356242,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 369356244,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1249418062,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        },
+        {
+          "wayId": 26382284,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 26382285,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 720402603,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 720406626,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        },
+        {
+          "wayId": 883071633,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        },
+        {
+          "wayId": 47121218,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        },
+        {
+          "wayId": 846881938,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 30176170,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 30176171,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 286387770,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1296818464,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        }
+      ],
+      "access": {
+        "restrictedAccessWayCount": 7,
+        "busPermittedRestrictedWayCount": 6,
+        "documentedExceptionWayCount": 1,
+        "unresolvedRestrictedWayCount": 0,
+        "restrictedWays": [
+          {
+            "id": 1341526745,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          },
+          {
+            "id": 906161758,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          },
+          {
+            "id": 1342408590,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          },
+          {
+            "id": 1342409930,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          },
+          {
+            "id": 1340739633,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          },
+          {
+            "id": 906161743,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          },
+          {
+            "id": 1296818464,
+            "name": null,
+            "access": "private",
+            "bus": null,
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": null
+          }
+        ],
+        "documentedExceptionWays": [
+          {
+            "id": 1296818464,
+            "name": null,
+            "access": "private",
+            "bus": null,
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": null,
+            "reason": "千鳥車庫（東京ベイシティ交通の営業所）構内サービス道路。access=private だが自社バスの入出庫路であり14系統ちの終点。"
+          }
+        ],
+        "unresolvedWays": []
+      },
+      "note": "outbound 新浦安駅→千鳥車庫（ち）。舞浜便path流用禁止。千鳥北方面へは行かない。"
+    },
+    "14-shinurayasu-maihama": {
+      "stops": 19,
+      "pathPoints": 271,
+      "relationId": 9983017,
+      "pathHash": "af02316a545d0317cf43bea7ccaaf21eb7c8d50dba299744108f792751f21338",
+      "resolvedVersion": "2026-07-26-benten-tomioka-shinurayasu-maihama-v1",
+      "maxGap_m": 25,
+      "maxJoin_m": 0,
+      "maxPlatformDist_m": 12.5,
+      "nanCount": 0,
+      "missingPlatforms": [],
+      "platformDists": [
+        {
+          "name": "舞浜駅",
+          "dist": 7.1,
+          "pathIndex": 0,
+          "reviewRequired": false
+        },
+        {
+          "name": "オリエンタルランド本社前",
+          "dist": 12.2,
+          "pathIndex": 39,
+          "reviewRequired": false
+        },
+        {
+          "name": "運動公園",
+          "dist": 9.2,
+          "pathIndex": 58,
+          "reviewRequired": false
+        },
+        {
+          "name": "舞浜三丁目",
+          "dist": 9.3,
+          "pathIndex": 70,
+          "reviewRequired": false
+        },
+        {
+          "name": "見明川",
+          "dist": 5,
+          "pathIndex": 88,
+          "reviewRequired": false
+        },
+        {
+          "name": "ふれあいの森公園",
+          "dist": 9.9,
+          "pathIndex": 101,
+          "reviewRequired": false
+        },
+        {
+          "name": "弁天南",
+          "dist": 5.4,
+          "pathIndex": 109,
+          "reviewRequired": false
+        },
+        {
+          "name": "見明川小学校",
+          "dist": 12,
+          "pathIndex": 116,
+          "reviewRequired": false
+        },
+        {
+          "name": "弁天中央",
+          "dist": 7,
+          "pathIndex": 124,
+          "reviewRequired": false
+        },
+        {
+          "name": "弁天西児童公園入口",
+          "dist": 10.5,
+          "pathIndex": 131,
+          "reviewRequired": false
+        },
+        {
+          "name": "弁天保育園入口",
+          "dist": 12.5,
+          "pathIndex": 142,
+          "reviewRequired": false
+        },
+        {
+          "name": "中央公園",
+          "dist": 5.6,
+          "pathIndex": 152,
+          "reviewRequired": false
+        },
+        {
+          "name": "富岡第一児童公園",
+          "dist": 8,
+          "pathIndex": 162,
+          "reviewRequired": false
+        },
+        {
+          "name": "富岡第三児童公園",
+          "dist": 7.2,
+          "pathIndex": 173,
+          "reviewRequired": false
+        },
+        {
+          "name": "サンコーポ東口",
+          "dist": 9.6,
+          "pathIndex": 193,
+          "reviewRequired": false
+        },
+        {
+          "name": "順天堂病院前",
+          "dist": 9.5,
+          "pathIndex": 205,
+          "reviewRequired": false
+        },
+        {
+          "name": "若潮公園",
+          "dist": 8.9,
+          "pathIndex": 220,
+          "reviewRequired": false
+        },
+        {
+          "name": "新浦安駅北口",
+          "dist": 7,
+          "pathIndex": 244,
+          "reviewRequired": false
+        },
+        {
+          "name": "新浦安駅",
+          "dist": 5.3,
+          "pathIndex": 270,
+          "reviewRequired": false
+        }
+      ],
+      "orderIssues": [],
+      "sliceMeta": {
+        "si": 0,
+        "ei": 270,
+        "startDist": 7.1,
+        "endDist": 5.3,
+        "fullPathPoints": 271
+      },
+      "usedWayCount": 26,
+      "usedWays": [
+        {
+          "wayId": 1337341818,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "startHint": true
+        },
+        {
+          "wayId": 1337358421,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1337138028,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 258419782,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1240445586,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        },
+        {
+          "wayId": 796894963,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        },
+        {
+          "wayId": 286387769,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        },
+        {
+          "wayId": 30176171,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        },
+        {
+          "wayId": 30176170,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        },
+        {
+          "wayId": 846881938,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        },
+        {
+          "wayId": 47121218,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 883071633,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 720406626,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 720402603,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        },
+        {
+          "wayId": 26382285,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        },
+        {
+          "wayId": 26382284,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1249418062,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 378366425,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 369356243,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 26382176,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        },
+        {
+          "wayId": 906161754,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        },
+        {
+          "wayId": 26320596,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 720406630,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 906161756,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 720406629,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 906161755,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        }
+      ],
+      "access": {
+        "restrictedAccessWayCount": 1,
+        "busPermittedRestrictedWayCount": 1,
+        "documentedExceptionWayCount": 0,
+        "unresolvedRestrictedWayCount": 0,
+        "restrictedWays": [
+          {
+            "id": 906161755,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          }
+        ],
+        "documentedExceptionWays": [],
+        "unresolvedWays": []
+      },
+      "note": "inbound 舞浜駅→新浦安駅（無印）。往路18323926の反転は禁止。"
+    },
+    "14-shinurayasu-chidori": {
+      "stops": 18,
+      "pathPoints": 265,
+      "relationId": 18419876,
+      "pathHash": "f92789f92d2d78624f9442dda9648680b907ca09db7720baced67127c324c5d6",
+      "resolvedVersion": "2026-07-26-benten-tomioka-shinurayasu-chidori-v1",
+      "maxGap_m": 25,
+      "maxJoin_m": 0,
+      "maxPlatformDist_m": 12.5,
+      "nanCount": 0,
+      "missingPlatforms": [],
+      "platformDists": [
+        {
+          "name": "千鳥車庫",
+          "dist": 5.2,
+          "pathIndex": 0,
+          "reviewRequired": false
+        },
+        {
+          "name": "運動公園",
+          "dist": 9.2,
+          "pathIndex": 52,
+          "reviewRequired": false
+        },
+        {
+          "name": "舞浜三丁目",
+          "dist": 9.3,
+          "pathIndex": 64,
+          "reviewRequired": false
+        },
+        {
+          "name": "見明川",
+          "dist": 5,
+          "pathIndex": 82,
+          "reviewRequired": false
+        },
+        {
+          "name": "ふれあいの森公園",
+          "dist": 9.9,
+          "pathIndex": 95,
+          "reviewRequired": false
+        },
+        {
+          "name": "弁天南",
+          "dist": 5.4,
+          "pathIndex": 103,
+          "reviewRequired": false
+        },
+        {
+          "name": "見明川小学校",
+          "dist": 12,
+          "pathIndex": 110,
+          "reviewRequired": false
+        },
+        {
+          "name": "弁天中央",
+          "dist": 7,
+          "pathIndex": 118,
+          "reviewRequired": false
+        },
+        {
+          "name": "弁天西児童公園入口",
+          "dist": 10.5,
+          "pathIndex": 125,
+          "reviewRequired": false
+        },
+        {
+          "name": "弁天保育園入口",
+          "dist": 12.5,
+          "pathIndex": 136,
+          "reviewRequired": false
+        },
+        {
+          "name": "中央公園",
+          "dist": 5.6,
+          "pathIndex": 146,
+          "reviewRequired": false
+        },
+        {
+          "name": "富岡第一児童公園",
+          "dist": 8,
+          "pathIndex": 156,
+          "reviewRequired": false
+        },
+        {
+          "name": "富岡第三児童公園",
+          "dist": 7.2,
+          "pathIndex": 167,
+          "reviewRequired": false
+        },
+        {
+          "name": "サンコーポ東口",
+          "dist": 9.6,
+          "pathIndex": 187,
+          "reviewRequired": false
+        },
+        {
+          "name": "順天堂病院前",
+          "dist": 9.5,
+          "pathIndex": 199,
+          "reviewRequired": false
+        },
+        {
+          "name": "若潮公園",
+          "dist": 8.9,
+          "pathIndex": 214,
+          "reviewRequired": false
+        },
+        {
+          "name": "新浦安駅北口",
+          "dist": 7,
+          "pathIndex": 238,
+          "reviewRequired": false
+        },
+        {
+          "name": "新浦安駅",
+          "dist": 5.3,
+          "pathIndex": 264,
+          "reviewRequired": false
+        }
+      ],
+      "orderIssues": [],
+      "sliceMeta": {
+        "si": 0,
+        "ei": 264,
+        "startDist": 5.2,
+        "endDist": 5.3,
+        "fullPathPoints": 265
+      },
+      "usedWayCount": 22,
+      "usedWays": [
+        {
+          "wayId": 1337358420,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "startHint": true
+        },
+        {
+          "wayId": 30176278,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 286387769,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        },
+        {
+          "wayId": 30176171,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        },
+        {
+          "wayId": 30176170,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        },
+        {
+          "wayId": 846881938,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        },
+        {
+          "wayId": 47121218,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 883071633,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 720406626,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 720402603,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        },
+        {
+          "wayId": 26382285,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        },
+        {
+          "wayId": 26382284,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1249418062,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 378366425,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 369356243,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 26382176,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        },
+        {
+          "wayId": 906161754,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        },
+        {
+          "wayId": 26320596,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 720406630,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 906161756,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 720406629,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 906161755,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        }
+      ],
+      "access": {
+        "restrictedAccessWayCount": 1,
+        "busPermittedRestrictedWayCount": 1,
+        "documentedExceptionWayCount": 0,
+        "unresolvedRestrictedWayCount": 0,
+        "restrictedWays": [
+          {
+            "id": 906161755,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          }
+        ],
+        "documentedExceptionWays": [],
+        "unresolvedWays": []
+      },
+      "note": "inbound 千鳥車庫→新浦安駅（し）。往路18419877の反転は禁止。"
+    }
+  },
+  "blockers": [],
+  "warnings": [
+    "14-chidori-garage: documented access exception ways 1296818464"
+  ],
+  "pathHashDistinct": true,
+  "reverseChecks": [
+    {
+      "a": "14-maihama",
+      "b": "14-shinurayasu-maihama",
+      "isExactReverse": false
+    },
+    {
+      "a": "14-chidori-garage",
+      "b": "14-shinurayasu-chidori",
+      "isExactReverse": false
+    }
+  ],
+  "truncationChecks": [
+    {
+      "a": "14-maihama",
+      "b": "14-chidori-garage",
+      "samePathHash": false,
+      "aPoints": 299,
+      "bPoints": 274,
+      "aRelation": 18323926,
+      "bRelation": 18419877,
+      "distinctRelations": true
+    },
+    {
+      "a": "14-shinurayasu-maihama",
+      "b": "14-shinurayasu-chidori",
+      "samePathHash": false,
+      "aPoints": 271,
+      "bPoints": 265,
+      "aRelation": 9983017,
+      "bRelation": 18419876,
+      "distinctRelations": true
+    }
+  ]
+}

@@ -123,6 +123,16 @@
         './maihama-resort-line-stop-images-v1.js?v=74',
         './maihama-resort-line-route-v1.js?v=74'
       ]
+    },
+    'route-14': {
+      css: ['./benten-tomioka-line-stop-images-v1.css?v=106'],
+      js: [
+        './benten-tomioka-line-platforms-v1.js?v=106',
+        './benten-tomioka-line-path-v1.js?v=106',
+        './benten-tomioka-line-path-policy-v1.js?v=106',
+        './benten-tomioka-line-stop-images-v1.js?v=106',
+        './benten-tomioka-line-route-v1.js?v=106'
+      ]
     }
   };
 

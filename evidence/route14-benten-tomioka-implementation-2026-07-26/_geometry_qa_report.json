@@ -1,0 +1,781 @@
+{
+  "checkedAt": "2026-07-26T09:46:04.187Z",
+  "routeId": "route-14",
+  "thresholds": {
+    "maxGap_m": 30,
+    "uturnDeg": 150,
+    "platformSoft_m": 20,
+    "platformHard_m": 30
+  },
+  "systems": {
+    "14-maihama": {
+      "relationId": 18323926,
+      "pathSource": "osm-relation-18323926+startHint-shinurayasu",
+      "resolvedVersion": "2026-07-26-benten-tomioka-maihama-v1",
+      "pathPoints": 299,
+      "pathLength_m": 5094,
+      "storedPathHash": "3d3383abd203dda1006705cd6cd59f904540e53ae8ee224c507c1f7e0cc4c157",
+      "recomputedPathHash": "3d3383abd203dda1006705cd6cd59f904540e53ae8ee224c507c1f7e0cc4c157",
+      "pathHashMatches": true,
+      "maxGap_m": 25,
+      "gapsOverLimit": [],
+      "nanCount": 0,
+      "wayIssues": {
+        "forbiddenHighway": [],
+        "unknownHighway": [],
+        "buildingOrGreen": [],
+        "wrongWay": [],
+        "onewayOk": 12
+      },
+      "uturnsTotal": 0,
+      "terminalTurnarounds": [],
+      "unnecessaryUturns": [],
+      "platformChecks": [
+        {
+          "name": "新浦安駅",
+          "dist_m": 7.9,
+          "pathIndex": 0,
+          "status": "OK"
+        },
+        {
+          "name": "新浦安駅北口",
+          "dist_m": 8.4,
+          "pathIndex": 38,
+          "status": "OK"
+        },
+        {
+          "name": "若潮公園",
+          "dist_m": 8.6,
+          "pathIndex": 62,
+          "status": "OK"
+        },
+        {
+          "name": "順天堂病院前",
+          "dist_m": 11.9,
+          "pathIndex": 79,
+          "status": "OK"
+        },
+        {
+          "name": "サンコーポ東口",
+          "dist_m": 5.7,
+          "pathIndex": 97,
+          "status": "OK"
+        },
+        {
+          "name": "富岡第三児童公園",
+          "dist_m": 11.5,
+          "pathIndex": 108,
+          "status": "OK"
+        },
+        {
+          "name": "富岡第一児童公園",
+          "dist_m": 9.1,
+          "pathIndex": 120,
+          "status": "OK"
+        },
+        {
+          "name": "中央公園",
+          "dist_m": 7.2,
+          "pathIndex": 130,
+          "status": "OK"
+        },
+        {
+          "name": "弁天保育園入口",
+          "dist_m": 11.4,
+          "pathIndex": 140,
+          "status": "OK"
+        },
+        {
+          "name": "弁天西児童公園入口",
+          "dist_m": 2.9,
+          "pathIndex": 154,
+          "status": "OK"
+        },
+        {
+          "name": "弁天中央",
+          "dist_m": 7.4,
+          "pathIndex": 158,
+          "status": "OK"
+        },
+        {
+          "name": "見明川小学校",
+          "dist_m": 6.3,
+          "pathIndex": 167,
+          "status": "OK"
+        },
+        {
+          "name": "弁天南",
+          "dist_m": 4.2,
+          "pathIndex": 172,
+          "status": "OK"
+        },
+        {
+          "name": "ふれあいの森公園",
+          "dist_m": 6.5,
+          "pathIndex": 180,
+          "status": "OK"
+        },
+        {
+          "name": "見明川",
+          "dist_m": 5.4,
+          "pathIndex": 192,
+          "status": "OK"
+        },
+        {
+          "name": "舞浜三丁目",
+          "dist_m": 8.8,
+          "pathIndex": 212,
+          "status": "OK"
+        },
+        {
+          "name": "運動公園",
+          "dist_m": 14.3,
+          "pathIndex": 235,
+          "status": "OK"
+        },
+        {
+          "name": "オリエンタルランド本社前",
+          "dist_m": 5.5,
+          "pathIndex": 250,
+          "status": "OK"
+        },
+        {
+          "name": "舞浜駅",
+          "dist_m": 4.7,
+          "pathIndex": 298,
+          "status": "OK"
+        }
+      ],
+      "maxPlatformDist_m": 14.3,
+      "accessRestrictedWays": {
+        "restrictedAccessWayCount": 6,
+        "busPermittedRestrictedWayCount": 6,
+        "documentedExceptionWayCount": 0,
+        "unresolvedRestrictedWayCount": 0,
+        "restrictedWays": [
+          {
+            "id": 1341526745,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          },
+          {
+            "id": 906161758,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          },
+          {
+            "id": 1342408590,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          },
+          {
+            "id": 1342409930,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          },
+          {
+            "id": 1340739633,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          },
+          {
+            "id": 906161743,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          }
+        ],
+        "documentedExceptionWays": [],
+        "unresolvedWays": []
+      }
+    },
+    "14-chidori-garage": {
+      "relationId": 18419877,
+      "pathSource": "osm-relation-18419877+startHint-shinurayasu",
+      "resolvedVersion": "2026-07-26-benten-tomioka-chidori-garage-v1",
+      "pathPoints": 274,
+      "pathLength_m": 4797,
+      "storedPathHash": "b8e695aefd46953ee9351d03795a94bbaf87bc78458c71f2375cf7ce94554c8b",
+      "recomputedPathHash": "b8e695aefd46953ee9351d03795a94bbaf87bc78458c71f2375cf7ce94554c8b",
+      "pathHashMatches": true,
+      "maxGap_m": 25,
+      "gapsOverLimit": [],
+      "nanCount": 0,
+      "wayIssues": {
+        "forbiddenHighway": [],
+        "unknownHighway": [],
+        "buildingOrGreen": [],
+        "wrongWay": [],
+        "onewayOk": 11
+      },
+      "uturnsTotal": 0,
+      "terminalTurnarounds": [],
+      "unnecessaryUturns": [],
+      "platformChecks": [
+        {
+          "name": "新浦安駅",
+          "dist_m": 7.9,
+          "pathIndex": 0,
+          "status": "OK"
+        },
+        {
+          "name": "新浦安駅北口",
+          "dist_m": 8.4,
+          "pathIndex": 38,
+          "status": "OK"
+        },
+        {
+          "name": "若潮公園",
+          "dist_m": 8.6,
+          "pathIndex": 62,
+          "status": "OK"
+        },
+        {
+          "name": "順天堂病院前",
+          "dist_m": 11.9,
+          "pathIndex": 79,
+          "status": "OK"
+        },
+        {
+          "name": "サンコーポ東口",
+          "dist_m": 5.7,
+          "pathIndex": 97,
+          "status": "OK"
+        },
+        {
+          "name": "富岡第三児童公園",
+          "dist_m": 11.5,
+          "pathIndex": 108,
+          "status": "OK"
+        },
+        {
+          "name": "富岡第一児童公園",
+          "dist_m": 9.1,
+          "pathIndex": 120,
+          "status": "OK"
+        },
+        {
+          "name": "中央公園",
+          "dist_m": 7.2,
+          "pathIndex": 130,
+          "status": "OK"
+        },
+        {
+          "name": "弁天保育園入口",
+          "dist_m": 11.4,
+          "pathIndex": 140,
+          "status": "OK"
+        },
+        {
+          "name": "弁天西児童公園入口",
+          "dist_m": 2.9,
+          "pathIndex": 154,
+          "status": "OK"
+        },
+        {
+          "name": "弁天中央",
+          "dist_m": 7.4,
+          "pathIndex": 158,
+          "status": "OK"
+        },
+        {
+          "name": "見明川小学校",
+          "dist_m": 6.3,
+          "pathIndex": 167,
+          "status": "OK"
+        },
+        {
+          "name": "弁天南",
+          "dist_m": 4.2,
+          "pathIndex": 172,
+          "status": "OK"
+        },
+        {
+          "name": "ふれあいの森公園",
+          "dist_m": 6.5,
+          "pathIndex": 180,
+          "status": "OK"
+        },
+        {
+          "name": "見明川",
+          "dist_m": 5.4,
+          "pathIndex": 192,
+          "status": "OK"
+        },
+        {
+          "name": "舞浜三丁目",
+          "dist_m": 8.8,
+          "pathIndex": 212,
+          "status": "OK"
+        },
+        {
+          "name": "運動公園",
+          "dist_m": 11.2,
+          "pathIndex": 230,
+          "status": "OK"
+        },
+        {
+          "name": "千鳥車庫",
+          "dist_m": 4.9,
+          "pathIndex": 273,
+          "status": "OK"
+        }
+      ],
+      "maxPlatformDist_m": 11.9,
+      "accessRestrictedWays": {
+        "restrictedAccessWayCount": 7,
+        "busPermittedRestrictedWayCount": 6,
+        "documentedExceptionWayCount": 1,
+        "unresolvedRestrictedWayCount": 0,
+        "restrictedWays": [
+          {
+            "id": 1341526745,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          },
+          {
+            "id": 906161758,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          },
+          {
+            "id": 1342408590,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          },
+          {
+            "id": 1342409930,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          },
+          {
+            "id": 1340739633,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          },
+          {
+            "id": 906161743,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          },
+          {
+            "id": 1296818464,
+            "name": null,
+            "access": "private",
+            "bus": null,
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": null
+          }
+        ],
+        "documentedExceptionWays": [
+          {
+            "id": 1296818464,
+            "name": null,
+            "access": "private",
+            "bus": null,
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": null,
+            "reason": "千鳥車庫（東京ベイシティ交通の営業所）構内サービス道路。access=private だが自社バスの入出庫路であり14系統ちの終点。"
+          }
+        ],
+        "unresolvedWays": []
+      }
+    },
+    "14-shinurayasu-maihama": {
+      "relationId": 9983017,
+      "pathSource": "osm-relation-9983017+startHint-maihama",
+      "resolvedVersion": "2026-07-26-benten-tomioka-shinurayasu-maihama-v1",
+      "pathPoints": 271,
+      "pathLength_m": 4943,
+      "storedPathHash": "af02316a545d0317cf43bea7ccaaf21eb7c8d50dba299744108f792751f21338",
+      "recomputedPathHash": "af02316a545d0317cf43bea7ccaaf21eb7c8d50dba299744108f792751f21338",
+      "pathHashMatches": true,
+      "maxGap_m": 25,
+      "gapsOverLimit": [],
+      "nanCount": 0,
+      "wayIssues": {
+        "forbiddenHighway": [],
+        "unknownHighway": [],
+        "buildingOrGreen": [],
+        "wrongWay": [],
+        "onewayOk": 11
+      },
+      "uturnsTotal": 0,
+      "terminalTurnarounds": [],
+      "unnecessaryUturns": [],
+      "platformChecks": [
+        {
+          "name": "舞浜駅",
+          "dist_m": 7.1,
+          "pathIndex": 0,
+          "status": "OK"
+        },
+        {
+          "name": "オリエンタルランド本社前",
+          "dist_m": 12.2,
+          "pathIndex": 39,
+          "status": "OK"
+        },
+        {
+          "name": "運動公園",
+          "dist_m": 9.2,
+          "pathIndex": 58,
+          "status": "OK"
+        },
+        {
+          "name": "舞浜三丁目",
+          "dist_m": 9.3,
+          "pathIndex": 70,
+          "status": "OK"
+        },
+        {
+          "name": "見明川",
+          "dist_m": 5,
+          "pathIndex": 88,
+          "status": "OK"
+        },
+        {
+          "name": "ふれあいの森公園",
+          "dist_m": 9.9,
+          "pathIndex": 101,
+          "status": "OK"
+        },
+        {
+          "name": "弁天南",
+          "dist_m": 5.4,
+          "pathIndex": 109,
+          "status": "OK"
+        },
+        {
+          "name": "見明川小学校",
+          "dist_m": 12,
+          "pathIndex": 116,
+          "status": "OK"
+        },
+        {
+          "name": "弁天中央",
+          "dist_m": 7,
+          "pathIndex": 124,
+          "status": "OK"
+        },
+        {
+          "name": "弁天西児童公園入口",
+          "dist_m": 10.5,
+          "pathIndex": 131,
+          "status": "OK"
+        },
+        {
+          "name": "弁天保育園入口",
+          "dist_m": 12.5,
+          "pathIndex": 142,
+          "status": "OK"
+        },
+        {
+          "name": "中央公園",
+          "dist_m": 5.6,
+          "pathIndex": 152,
+          "status": "OK"
+        },
+        {
+          "name": "富岡第一児童公園",
+          "dist_m": 8,
+          "pathIndex": 162,
+          "status": "OK"
+        },
+        {
+          "name": "富岡第三児童公園",
+          "dist_m": 7.2,
+          "pathIndex": 173,
+          "status": "OK"
+        },
+        {
+          "name": "サンコーポ東口",
+          "dist_m": 9.6,
+          "pathIndex": 193,
+          "status": "OK"
+        },
+        {
+          "name": "順天堂病院前",
+          "dist_m": 9.5,
+          "pathIndex": 205,
+          "status": "OK"
+        },
+        {
+          "name": "若潮公園",
+          "dist_m": 8.9,
+          "pathIndex": 220,
+          "status": "OK"
+        },
+        {
+          "name": "新浦安駅北口",
+          "dist_m": 7,
+          "pathIndex": 244,
+          "status": "OK"
+        },
+        {
+          "name": "新浦安駅",
+          "dist_m": 5.3,
+          "pathIndex": 270,
+          "status": "OK"
+        }
+      ],
+      "maxPlatformDist_m": 12.5,
+      "accessRestrictedWays": {
+        "restrictedAccessWayCount": 1,
+        "busPermittedRestrictedWayCount": 1,
+        "documentedExceptionWayCount": 0,
+        "unresolvedRestrictedWayCount": 0,
+        "restrictedWays": [
+          {
+            "id": 906161755,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          }
+        ],
+        "documentedExceptionWays": [],
+        "unresolvedWays": []
+      }
+    },
+    "14-shinurayasu-chidori": {
+      "relationId": 18419876,
+      "pathSource": "osm-relation-18419876+startHint-chidori-garage",
+      "resolvedVersion": "2026-07-26-benten-tomioka-shinurayasu-chidori-v1",
+      "pathPoints": 265,
+      "pathLength_m": 4752,
+      "storedPathHash": "f92789f92d2d78624f9442dda9648680b907ca09db7720baced67127c324c5d6",
+      "recomputedPathHash": "f92789f92d2d78624f9442dda9648680b907ca09db7720baced67127c324c5d6",
+      "pathHashMatches": true,
+      "maxGap_m": 25,
+      "gapsOverLimit": [],
+      "nanCount": 0,
+      "wayIssues": {
+        "forbiddenHighway": [],
+        "unknownHighway": [],
+        "buildingOrGreen": [],
+        "wrongWay": [],
+        "onewayOk": 8
+      },
+      "uturnsTotal": 0,
+      "terminalTurnarounds": [],
+      "unnecessaryUturns": [],
+      "platformChecks": [
+        {
+          "name": "千鳥車庫",
+          "dist_m": 5.2,
+          "pathIndex": 0,
+          "status": "OK"
+        },
+        {
+          "name": "運動公園",
+          "dist_m": 9.2,
+          "pathIndex": 52,
+          "status": "OK"
+        },
+        {
+          "name": "舞浜三丁目",
+          "dist_m": 9.3,
+          "pathIndex": 64,
+          "status": "OK"
+        },
+        {
+          "name": "見明川",
+          "dist_m": 5,
+          "pathIndex": 82,
+          "status": "OK"
+        },
+        {
+          "name": "ふれあいの森公園",
+          "dist_m": 9.9,
+          "pathIndex": 95,
+          "status": "OK"
+        },
+        {
+          "name": "弁天南",
+          "dist_m": 5.4,
+          "pathIndex": 103,
+          "status": "OK"
+        },
+        {
+          "name": "見明川小学校",
+          "dist_m": 12,
+          "pathIndex": 110,
+          "status": "OK"
+        },
+        {
+          "name": "弁天中央",
+          "dist_m": 7,
+          "pathIndex": 118,
+          "status": "OK"
+        },
+        {
+          "name": "弁天西児童公園入口",
+          "dist_m": 10.5,
+          "pathIndex": 125,
+          "status": "OK"
+        },
+        {
+          "name": "弁天保育園入口",
+          "dist_m": 12.5,
+          "pathIndex": 136,
+          "status": "OK"
+        },
+        {
+          "name": "中央公園",
+          "dist_m": 5.6,
+          "pathIndex": 146,
+          "status": "OK"
+        },
+        {
+          "name": "富岡第一児童公園",
+          "dist_m": 8,
+          "pathIndex": 156,
+          "status": "OK"
+        },
+        {
+          "name": "富岡第三児童公園",
+          "dist_m": 7.2,
+          "pathIndex": 167,
+          "status": "OK"
+        },
+        {
+          "name": "サンコーポ東口",
+          "dist_m": 9.6,
+          "pathIndex": 187,
+          "status": "OK"
+        },
+        {
+          "name": "順天堂病院前",
+          "dist_m": 9.5,
+          "pathIndex": 199,
+          "status": "OK"
+        },
+        {
+          "name": "若潮公園",
+          "dist_m": 8.9,
+          "pathIndex": 214,
+          "status": "OK"
+        },
+        {
+          "name": "新浦安駅北口",
+          "dist_m": 7,
+          "pathIndex": 238,
+          "status": "OK"
+        },
+        {
+          "name": "新浦安駅",
+          "dist_m": 5.3,
+          "pathIndex": 264,
+          "status": "OK"
+        }
+      ],
+      "maxPlatformDist_m": 12.5,
+      "accessRestrictedWays": {
+        "restrictedAccessWayCount": 1,
+        "busPermittedRestrictedWayCount": 1,
+        "documentedExceptionWayCount": 0,
+        "unresolvedRestrictedWayCount": 0,
+        "restrictedWays": [
+          {
+            "id": 906161755,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          }
+        ],
+        "documentedExceptionWays": [],
+        "unresolvedWays": []
+      }
+    }
+  },
+  "failures": [],
+  "reviewRequired": [],
+  "pass": true
+}
