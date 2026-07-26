@@ -1,0 +1,99 @@
+[
+  {
+    "id": 13764790,
+    "type": "relation",
+    "tags": {
+      "from": "舞浜駅",
+      "name": "東京ベイシティバス20系統 舞浜駅⇒千鳥東⇒千鳥車庫",
+      "network": "千鳥線",
+      "operator": "東京ベイシティ交通",
+      "public_transport:version": "2",
+      "ref": "20",
+      "route": "bus",
+      "to": "舞浜駅",
+      "type": "route"
+    }
+  },
+  {
+    "id": 18323971,
+    "type": "relation",
+    "tags": {
+      "name": "東京ベイシティバス20系統 千鳥車庫⇒千鳥東⇒舞浜駅",
+      "network": "千鳥線",
+      "operator": "東京ベイシティ交通",
+      "public_transport:version": "2",
+      "ref": "20",
+      "route": "bus",
+      "type": "route"
+    }
+  },
+  {
+    "id": 18323972,
+    "type": "relation",
+    "tags": {
+      "from": "舞浜駅",
+      "name": "東京ベイシティバス20系統 舞浜駅⇒千鳥循環",
+      "network": "千鳥線",
+      "operator": "東京ベイシティ交通",
+      "public_transport:version": "2",
+      "ref": "20",
+      "route": "bus",
+      "to": "舞浜駅",
+      "type": "route"
+    }
+  },
+  {
+    "id": 18351939,
+    "type": "relation",
+    "tags": {
+      "name": "東京ベイシティバス20系統 クリーンセンター⇒千鳥車庫⇒舞浜駅",
+      "network": "千鳥線",
+      "operator": "東京ベイシティ交通",
+      "public_transport:version": "2",
+      "ref": "20",
+      "route": "bus",
+      "type": "route"
+    }
+  },
+  {
+    "id": 18351940,
+    "type": "relation",
+    "tags": {
+      "from": "舞浜駅",
+      "name": "東京ベイシティバス20系統 舞浜駅⇒千鳥車庫⇒クリーンセンター",
+      "network": "千鳥線",
+      "operator": "東京ベイシティ交通",
+      "public_transport:version": "2",
+      "ref": "20",
+      "route": "bus",
+      "to": "舞浜駅",
+      "type": "route"
+    }
+  },
+  {
+    "id": 18396546,
+    "type": "relation",
+    "tags": {
+      "name": "東京ベイシティバス22系統 千鳥車庫⇒千鳥東⇒新浦安駅",
+      "network": "若潮通り線",
+      "operator": "東京ベイシティ交通",
+      "public_transport:version": "2",
+      "ref": "22",
+      "route": "bus",
+      "type": "route"
+    }
+  },
+  {
+    "id": 18396547,
+    "type": "relation",
+    "tags": {
+      "name": "東京ベイシティバス22系統 新浦安駅⇒千鳥東⇒千鳥車庫",
+      "network": "若潮通り線",
+      "operator": "東京ベイシティ交通",
+      "public_transport:version": "2",
+      "ref": "22",
+      "route": "bus",
+      "type": "route"
+    }
+  }
+]

@@ -1,0 +1,631 @@
+{
+  "generatedAt": "2026-07-26T22:27:34.077Z",
+  "line": "千鳥線",
+  "routeId": "route-20",
+  "generated": "2026-07-27-chidori-line-v1",
+  "policy": {
+    "stopOrderSource": "official-stop-orders.json（京成バスナビ・【２０系統】凡例ゲート）",
+    "pathSource": "OSM route relation way members（方向補正・verified composition/stitch）",
+    "googleDirectionsUsed": false,
+    "forbiddenSiblingRelations": {
+      "22": [
+        18396546,
+        18396547
+      ]
+    },
+    "maxGap_m": 30,
+    "maxJoin_m": 1
+  },
+  "accessExceptions": {
+    "30176865": "千鳥車庫構内サービス道路。13764790/18323971 が使用。access=private だが自社バス入出庫路。",
+    "1296818464": "千鳥車庫（東京ベイシティ交通営業所）構内。20系統 garage 便が使用。"
+  },
+  "systems": {
+    "20-maihama-clean-center": {
+      "stops": 7,
+      "pathPoints": 154,
+      "relationId": 18351940,
+      "pathSource": "osm-relation-18351940+startHint-maihama",
+      "pathHash": "ec1585e1695aa13f6dcda17612da6f6a7f9406139febe4c4a410c470b6f0b18e",
+      "resolvedVersion": "2026-07-27-chidori20-maihama-clean-center-v1",
+      "maxGap_m": 24.7,
+      "maxJoin_m": 0,
+      "maxPlatformDist_m": 12.2,
+      "missingPlatforms": [],
+      "platformDists": [
+        {
+          "name": "舞浜駅",
+          "index": 0,
+          "dist": 6.7,
+          "pathIndex": 0,
+          "reviewRequired": false
+        },
+        {
+          "name": "オリエンタルランド本社前",
+          "index": 1,
+          "dist": 12.2,
+          "pathIndex": 34,
+          "reviewRequired": false
+        },
+        {
+          "name": "運動公園",
+          "index": 2,
+          "dist": 11.2,
+          "pathIndex": 53,
+          "reviewRequired": false
+        },
+        {
+          "name": "千鳥車庫",
+          "index": 3,
+          "dist": 5.2,
+          "pathIndex": 95,
+          "reviewRequired": false
+        },
+        {
+          "name": "千鳥北",
+          "index": 4,
+          "dist": 7,
+          "pathIndex": 109,
+          "reviewRequired": false
+        },
+        {
+          "name": "千鳥中央",
+          "index": 5,
+          "dist": 5.2,
+          "pathIndex": 121,
+          "reviewRequired": false
+        },
+        {
+          "name": "クリーンセンター",
+          "index": 6,
+          "dist": 4.8,
+          "pathIndex": 153,
+          "reviewRequired": false
+        }
+      ],
+      "orderIssues": [],
+      "compositionMeta": null,
+      "note": "outbound 舞浜駅→クリーンセンター（ク）。relation 18351940 exact match。"
+    },
+    "20-maihama-chidori-nishi": {
+      "stops": 9,
+      "pathPoints": 176,
+      "relationId": 18323972,
+      "pathSource": "osm-relation-18323972-composition-prefix-stops-1-9",
+      "pathHash": "43450a367936c82ad8d1c6275c5300d3aaa08ce664f6bf13cfe85dbb182b3848",
+      "resolvedVersion": "2026-07-27-chidori20-maihama-chidori-nishi-v1",
+      "maxGap_m": 24.7,
+      "maxJoin_m": 0,
+      "maxPlatformDist_m": 12.2,
+      "missingPlatforms": [],
+      "platformDists": [
+        {
+          "name": "舞浜駅",
+          "index": 0,
+          "dist": 6.7,
+          "pathIndex": 0,
+          "reviewRequired": false
+        },
+        {
+          "name": "オリエンタルランド本社前",
+          "index": 1,
+          "dist": 12.2,
+          "pathIndex": 34,
+          "reviewRequired": false
+        },
+        {
+          "name": "運動公園",
+          "index": 2,
+          "dist": 11.2,
+          "pathIndex": 53,
+          "reviewRequired": false
+        },
+        {
+          "name": "千鳥車庫",
+          "index": 3,
+          "dist": 5.2,
+          "pathIndex": 95,
+          "reviewRequired": false
+        },
+        {
+          "name": "千鳥北",
+          "index": 4,
+          "dist": 7,
+          "pathIndex": 109,
+          "reviewRequired": false
+        },
+        {
+          "name": "千鳥中央",
+          "index": 5,
+          "dist": 5.2,
+          "pathIndex": 121,
+          "reviewRequired": false
+        },
+        {
+          "name": "クリーンセンター",
+          "index": 6,
+          "dist": 5.4,
+          "pathIndex": 140,
+          "reviewRequired": false
+        },
+        {
+          "name": "浦安斎場",
+          "index": 7,
+          "dist": 4.9,
+          "pathIndex": 154,
+          "reviewRequired": false
+        },
+        {
+          "name": "千鳥西",
+          "index": 8,
+          "dist": 7.4,
+          "pathIndex": 175,
+          "reviewRequired": false
+        }
+      ],
+      "orderIssues": [],
+      "compositionMeta": {
+        "sourceRelation": 18323972,
+        "platformSlice": "1..9",
+        "platformIds": [
+          9482601638,
+          2301981524,
+          6935385497,
+          6796353425,
+          9482675705,
+          6796350270,
+          2302366865,
+          6796350273,
+          6796350274
+        ],
+        "proof": "Verified prefix of loop relation 18323972 platforms stops 1..9 (ends 千鳥西). No dedicated relation.",
+        "pathSlice": {
+          "si": 0,
+          "ei": 175,
+          "startDist_m": 6.7,
+          "endDist_m": 7.4
+        }
+      },
+      "note": "branch 舞浜駅→千鳥西（に）。loop 18323972 stops 1..9 composition。"
+    },
+    "20-chidori-loop": {
+      "stops": 14,
+      "pathPoints": 343,
+      "relationId": 18323972,
+      "pathSource": "osm-relation-18323972+startHint-maihama",
+      "pathHash": "a505e3883b9ea46e8a8f77b1e7d5d5b0735ea56a4660673aad48068a478a3996",
+      "resolvedVersion": "2026-07-27-chidori20-chidori-loop-v1",
+      "maxGap_m": 25,
+      "maxJoin_m": 0,
+      "maxPlatformDist_m": 12.2,
+      "missingPlatforms": [],
+      "platformDists": [
+        {
+          "name": "舞浜駅",
+          "index": 0,
+          "dist": 6.7,
+          "pathIndex": 0,
+          "reviewRequired": false
+        },
+        {
+          "name": "オリエンタルランド本社前",
+          "index": 1,
+          "dist": 12.2,
+          "pathIndex": 34,
+          "reviewRequired": false
+        },
+        {
+          "name": "運動公園",
+          "index": 2,
+          "dist": 11.2,
+          "pathIndex": 53,
+          "reviewRequired": false
+        },
+        {
+          "name": "千鳥車庫",
+          "index": 3,
+          "dist": 5.2,
+          "pathIndex": 95,
+          "reviewRequired": false
+        },
+        {
+          "name": "千鳥北",
+          "index": 4,
+          "dist": 7,
+          "pathIndex": 109,
+          "reviewRequired": false
+        },
+        {
+          "name": "千鳥中央",
+          "index": 5,
+          "dist": 5.2,
+          "pathIndex": 121,
+          "reviewRequired": false
+        },
+        {
+          "name": "クリーンセンター",
+          "index": 6,
+          "dist": 5.4,
+          "pathIndex": 140,
+          "reviewRequired": false
+        },
+        {
+          "name": "浦安斎場",
+          "index": 7,
+          "dist": 4.9,
+          "pathIndex": 154,
+          "reviewRequired": false
+        },
+        {
+          "name": "千鳥西",
+          "index": 8,
+          "dist": 7.4,
+          "pathIndex": 175,
+          "reviewRequired": false
+        },
+        {
+          "name": "千鳥中央",
+          "index": 9,
+          "dist": 5.7,
+          "pathIndex": 196,
+          "reviewRequired": false
+        },
+        {
+          "name": "千鳥北",
+          "index": 10,
+          "dist": 8.2,
+          "pathIndex": 207,
+          "reviewRequired": false
+        },
+        {
+          "name": "千鳥車庫",
+          "index": 11,
+          "dist": 6.5,
+          "pathIndex": 225,
+          "reviewRequired": false
+        },
+        {
+          "name": "オリエンタルランド本社前",
+          "index": 12,
+          "dist": 5.5,
+          "pathIndex": 294,
+          "reviewRequired": false
+        },
+        {
+          "name": "舞浜駅",
+          "index": 13,
+          "dist": 4.7,
+          "pathIndex": 342,
+          "reviewRequired": false
+        }
+      ],
+      "orderIssues": [],
+      "compositionMeta": {
+        "loopEndDistinctPlatforms": {
+          "start": 9482601638,
+          "end": 9482601633
+        }
+      },
+      "note": "loop 舞浜駅→舞浜駅（さ）。relation 18323972 exact。1周で終了。"
+    },
+    "20-maihama-chidori-garage": {
+      "stops": 8,
+      "pathPoints": 163,
+      "relationId": 13764790,
+      "pathSource": "osm-relation-13764790+stitch-loop-kita+startHint-maihama",
+      "pathHash": "fcdf49d8ac12e1fbed93308f76b3c39356b5ef88d6646b50d2220237e3ad9523",
+      "resolvedVersion": "2026-07-27-chidori20-maihama-chidori-garage-v1",
+      "maxGap_m": 24.8,
+      "maxJoin_m": 0,
+      "maxPlatformDist_m": 12.2,
+      "missingPlatforms": [],
+      "platformDists": [
+        {
+          "name": "舞浜駅",
+          "index": 0,
+          "dist": 6.7,
+          "pathIndex": 0,
+          "reviewRequired": false
+        },
+        {
+          "name": "オリエンタルランド本社前",
+          "index": 1,
+          "dist": 12.2,
+          "pathIndex": 34,
+          "reviewRequired": false
+        },
+        {
+          "name": "運動公園",
+          "index": 2,
+          "dist": 11.2,
+          "pathIndex": 53,
+          "reviewRequired": false
+        },
+        {
+          "name": "千鳥車庫",
+          "index": 3,
+          "dist": 5.2,
+          "pathIndex": 95,
+          "reviewRequired": false
+        },
+        {
+          "name": "千鳥北",
+          "index": 4,
+          "dist": 7,
+          "pathIndex": 109,
+          "reviewRequired": false
+        },
+        {
+          "name": "千鳥東",
+          "index": 5,
+          "dist": 9.7,
+          "pathIndex": 124,
+          "reviewRequired": false
+        },
+        {
+          "name": "車庫裏",
+          "index": 6,
+          "dist": 5.3,
+          "pathIndex": 146,
+          "reviewRequired": false
+        },
+        {
+          "name": "千鳥車庫",
+          "index": 7,
+          "dist": 4.4,
+          "pathIndex": 162,
+          "reviewRequired": false
+        }
+      ],
+      "orderIssues": [],
+      "compositionMeta": {
+        "baseRelation": 13764790,
+        "prefixRelation": 18351940,
+        "connectorRelation": 18323971,
+        "kitaPlatformInjected": 9482675705,
+        "sharedPrefixWayProof": true,
+        "sharedPrefixWayIds": [
+          1337138028,
+          258419782,
+          1240445586,
+          796894963,
+          286387769,
+          286387770,
+          1338973095
+        ],
+        "proof": "13764790 OSM platforms skip 千鳥北 vs Navi. Insert platform 9482675705 (loop outbound) and stitch loop ways 千鳥車庫→千鳥北→千鳥東 with shared-node proof at way 1338973095.",
+        "osmPlatformOrderMatchesOfficial": true
+      },
+      "note": "outbound 舞浜駅→千鳥車庫（無印・千鳥東経由）。13764790 + loop stitch for 千鳥北。"
+    },
+    "20-chidori-garage-maihama": {
+      "stops": 7,
+      "pathPoints": 187,
+      "relationId": 18323971,
+      "pathSource": "osm-relation-18323971+startHint-chidori-garage",
+      "pathHash": "c306bbbd0414404401bffe2ffa658b54c1070ce8045ad4d51ad2a480a186befe",
+      "resolvedVersion": "2026-07-27-chidori20-chidori-garage-maihama-v1",
+      "maxGap_m": 25,
+      "maxJoin_m": 0,
+      "maxPlatformDist_m": 8.7,
+      "missingPlatforms": [],
+      "platformDists": [
+        {
+          "name": "千鳥車庫",
+          "index": 0,
+          "dist": 3.3,
+          "pathIndex": 0,
+          "reviewRequired": false
+        },
+        {
+          "name": "車庫裏",
+          "index": 1,
+          "dist": 7.8,
+          "pathIndex": 18,
+          "reviewRequired": false
+        },
+        {
+          "name": "千鳥東",
+          "index": 2,
+          "dist": 8.7,
+          "pathIndex": 38,
+          "reviewRequired": false
+        },
+        {
+          "name": "千鳥北",
+          "index": 3,
+          "dist": 8.2,
+          "pathIndex": 51,
+          "reviewRequired": false
+        },
+        {
+          "name": "千鳥車庫",
+          "index": 4,
+          "dist": 6.5,
+          "pathIndex": 69,
+          "reviewRequired": false
+        },
+        {
+          "name": "オリエンタルランド本社前",
+          "index": 5,
+          "dist": 5.5,
+          "pathIndex": 138,
+          "reviewRequired": false
+        },
+        {
+          "name": "舞浜駅",
+          "index": 6,
+          "dist": 4.7,
+          "pathIndex": 186,
+          "reviewRequired": false
+        }
+      ],
+      "orderIssues": [],
+      "compositionMeta": null,
+      "note": "inbound 千鳥車庫→舞浜駅（無印）。運動公園スkip。relation 18323971 exact。"
+    },
+    "20-clean-center-maihama": {
+      "stops": 6,
+      "pathPoints": 157,
+      "relationId": 18351939,
+      "pathSource": "osm-relation-18351939+startHint-clean-center",
+      "pathHash": "e943bdeb28e76af735c764d842f51f6f1824e7d26bf0e713c66e921272d4d52e",
+      "resolvedVersion": "2026-07-27-chidori20-clean-center-maihama-v1",
+      "maxGap_m": 25,
+      "maxJoin_m": 0,
+      "maxPlatformDist_m": 8.2,
+      "missingPlatforms": [],
+      "platformDists": [
+        {
+          "name": "クリーンセンター",
+          "index": 0,
+          "dist": 6.5,
+          "pathIndex": 0,
+          "reviewRequired": false
+        },
+        {
+          "name": "千鳥中央",
+          "index": 1,
+          "dist": 5.7,
+          "pathIndex": 10,
+          "reviewRequired": false
+        },
+        {
+          "name": "千鳥北",
+          "index": 2,
+          "dist": 8.2,
+          "pathIndex": 21,
+          "reviewRequired": false
+        },
+        {
+          "name": "千鳥車庫",
+          "index": 3,
+          "dist": 6.5,
+          "pathIndex": 39,
+          "reviewRequired": false
+        },
+        {
+          "name": "オリエンタルランド本社前",
+          "index": 4,
+          "dist": 5.5,
+          "pathIndex": 108,
+          "reviewRequired": false
+        },
+        {
+          "name": "舞浜駅",
+          "index": 5,
+          "dist": 4.7,
+          "pathIndex": 156,
+          "reviewRequired": false
+        }
+      ],
+      "orderIssues": [],
+      "compositionMeta": null,
+      "note": "inbound クリーンセンター→舞浜駅（無印）。relation 18351939 exact。"
+    },
+    "20-clean-center-maihama-via-saijo": {
+      "stops": 8,
+      "pathPoints": 203,
+      "relationId": 18323972,
+      "pathSource": "osm-relation-18323972-composition-suffix-stops-7-14",
+      "pathHash": "db28f79d84b913e7b03c424feda50b301aa5cf6ba769a4a509afe1ffbe5550b0",
+      "resolvedVersion": "2026-07-27-chidori20-clean-center-maihama-via-saijo-v1",
+      "maxGap_m": 25,
+      "maxJoin_m": 0,
+      "maxPlatformDist_m": 8.2,
+      "missingPlatforms": [],
+      "platformDists": [
+        {
+          "name": "クリーンセンター",
+          "index": 0,
+          "dist": 5.4,
+          "pathIndex": 0,
+          "reviewRequired": false
+        },
+        {
+          "name": "浦安斎場",
+          "index": 1,
+          "dist": 4.9,
+          "pathIndex": 14,
+          "reviewRequired": false
+        },
+        {
+          "name": "千鳥西",
+          "index": 2,
+          "dist": 7.4,
+          "pathIndex": 35,
+          "reviewRequired": false
+        },
+        {
+          "name": "千鳥中央",
+          "index": 3,
+          "dist": 5.7,
+          "pathIndex": 56,
+          "reviewRequired": false
+        },
+        {
+          "name": "千鳥北",
+          "index": 4,
+          "dist": 8.2,
+          "pathIndex": 67,
+          "reviewRequired": false
+        },
+        {
+          "name": "千鳥車庫",
+          "index": 5,
+          "dist": 6.5,
+          "pathIndex": 85,
+          "reviewRequired": false
+        },
+        {
+          "name": "オリエンタルランド本社前",
+          "index": 6,
+          "dist": 5.5,
+          "pathIndex": 154,
+          "reviewRequired": false
+        },
+        {
+          "name": "舞浜駅",
+          "index": 7,
+          "dist": 4.7,
+          "pathIndex": 202,
+          "reviewRequired": false
+        }
+      ],
+      "orderIssues": [],
+      "compositionMeta": {
+        "sourceRelation": 18323972,
+        "platformSlice": "7..14",
+        "platformIds": [
+          2302366865,
+          6796350273,
+          6796350274,
+          6796350271,
+          9482675706,
+          6796353426,
+          2301991499,
+          9482601633
+        ],
+        "proof": "Verified suffix of loop relation 18323972 platforms stops 7..14 (クリーンセンター→舞浜駅 via 浦安斎場).",
+        "pathSlice": {
+          "si": 140,
+          "ei": 342,
+          "startDist_m": 5.4,
+          "endDist_m": 4.7
+        }
+      },
+      "note": "inbound クリーンセンター→舞浜駅（浦安斎場経由）。loop 18323972 stops 7..14 composition。"
+    }
+  },
+  "blockers": [],
+  "warnings": [],
+  "pathHashBySystem": {
+    "20-maihama-clean-center": "ec1585e1695aa13f6dcda17612da6f6a7f9406139febe4c4a410c470b6f0b18e",
+    "20-maihama-chidori-nishi": "43450a367936c82ad8d1c6275c5300d3aaa08ce664f6bf13cfe85dbb182b3848",
+    "20-chidori-loop": "a505e3883b9ea46e8a8f77b1e7d5d5b0735ea56a4660673aad48068a478a3996",
+    "20-maihama-chidori-garage": "fcdf49d8ac12e1fbed93308f76b3c39356b5ef88d6646b50d2220237e3ad9523",
+    "20-chidori-garage-maihama": "c306bbbd0414404401bffe2ffa658b54c1070ce8045ad4d51ad2a480a186befe",
+    "20-clean-center-maihama": "e943bdeb28e76af735c764d842f51f6f1824e7d26bf0e713c66e921272d4d52e",
+    "20-clean-center-maihama-via-saijo": "db28f79d84b913e7b03c424feda50b301aa5cf6ba769a4a509afe1ffbe5550b0"
+  }
+}

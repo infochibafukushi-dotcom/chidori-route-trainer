@@ -1,0 +1,1980 @@
+{
+  "scrapedAt": "2026-07-26T20:41:53.926Z",
+  "source": "https://transfer-cloud.navitime.biz/keiseibus-group",
+  "routeNumber": "20",
+  "siblingRouteNumbers": [
+    "22",
+    "9",
+    "12",
+    "25",
+    "6",
+    "14",
+    "4",
+    "2"
+  ],
+  "lineName": "千鳥線",
+  "note": "Exhaustive per-course trip enumeration for route-20. Mixed cells with [22] require legend gate.",
+  "courses": [
+    {
+      "terminalKey": "maihama",
+      "terminal": "舞浜駅",
+      "terminalId": "00020617",
+      "courseText": "20 [20]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行 [循環]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行 時刻表",
+      "berth": "01",
+      "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020617&course-sequence=0008200294-1"
+    },
+    {
+      "terminalKey": "chidoriGarage",
+      "terminal": "千鳥車庫",
+      "terminalId": "00020620",
+      "courseText": "20 [20]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行 [循環]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行 22千鳥東 [22千鳥東]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行 時刻表",
+      "berth": "01",
+      "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020620&course-sequence=0008200294-4"
+    },
+    {
+      "terminalKey": "chidoriGarage",
+      "terminal": "千鳥車庫",
+      "terminalId": "00020620",
+      "courseText": "20 [20 直通]＜急行＞舞浜駅（運動公園通過）（順天堂病院経由）新浦安駅行 [20]＜急行＞舞浜駅（運動公園通過）（順天堂病院経由）新浦安駅行 [循環]＜急行＞舞浜駅（運動公園通過）（順天堂病院経由）新浦安駅行 22千鳥東 [22千鳥東]＜急行＞舞浜駅（運動公園通過）（順天堂病院経由）新浦安駅行 時刻表",
+      "berth": "03",
+      "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020620&course-sequence=0008200293-5"
+    },
+    {
+      "terminalKey": "chidoriGarage",
+      "terminal": "千鳥車庫",
+      "terminalId": "00020620",
+      "courseText": "20 [20]（千鳥東経由）＜急行＞舞浜駅（千鳥東・順天堂病院経由）新浦安駅行 22千鳥東 [22千鳥東]（千鳥東経由）＜急行＞舞浜駅（千鳥東・順天堂病院経由）新浦安駅行 時刻表",
+      "berth": "04",
+      "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020620&course-sequence=0008200293-1"
+    },
+    {
+      "terminalKey": "undokoen",
+      "terminal": "運動公園",
+      "terminalId": "00020746",
+      "courseText": "14 [14]千鳥車庫（次停留所が終点）（千鳥北・千鳥中央方面）クリーンセンター・千鳥西・千鳥循環（千鳥北・千鳥東（・車庫裏方面）千鳥車庫経由）行 2 [2]千鳥車庫（次停留所が終点）（千鳥北・千鳥中央方面）クリーンセンター・千鳥西・千鳥循環（千鳥北・千鳥東（・車庫裏方面）千鳥車庫経由）行 20 [20]千鳥車庫（次停留所が終点）（千鳥北・千鳥中央方面）クリーンセンター・千鳥西・千鳥循環（千鳥北・千鳥東（・車庫裏方面）千鳥車庫経由）行 [循環]千鳥車庫（次停留所が終点）（千鳥北・千鳥中央方面）クリーンセンター・千鳥西・千鳥循環（千鳥北・千鳥東（・車庫裏方面）千鳥車庫経由）行 22千鳥東 [22千鳥東]千鳥車庫（次停留所が終点）（千鳥北・千鳥中央方面）クリーンセンター・千鳥西・千鳥循環（千鳥北・千鳥東（・車庫裏方面）千鳥車庫経由）行 4 [4]千鳥車庫（次停留所が終点）（千鳥北・千鳥中央方面）クリーンセンター・千鳥西・千鳥循環（千鳥北・千鳥東（・車庫裏方面）千鳥車庫経由）行 6 [6]千鳥車庫（次停留所が終点）（千鳥北・千鳥中央方面）クリーンセンター・千鳥西・千鳥循環（千鳥北・千鳥東（・",
+      "berth": "05",
+      "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020746&course-sequence=0008200208-16"
+    }
+  ],
+  "timetables": [
+    {
+      "terminal": "舞浜駅",
+      "terminalId": "00020617",
+      "berth": "01",
+      "courseText": "20 [20]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行 [循環]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行 時刻表",
+      "dayLabel": "weekday",
+      "dayIso": "2026-07-27",
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020617&course-sequence=0008200294-1&datetime=2026-07-27T05%3A00",
+      "legend": [
+        "20\t[20]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行",
+        "無印…【２０系統】千鳥車庫行き",
+        "ク…【２０系統】クリーンセンター行き（浦安斎場方面には行きません）",
+        "に…【２０系統】浦安斎場経由　千鳥西行き",
+        "さ…【２０系統】クリーンセンター・浦安斎場方面　千鳥循環（舞浜駅行き）"
+      ],
+      "tripLinkCount": 90
+    },
+    {
+      "terminal": "舞浜駅",
+      "terminalId": "00020617",
+      "berth": "01",
+      "courseText": "20 [20]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行 [循環]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行 時刻表",
+      "dayLabel": "saturday",
+      "dayIso": "2026-08-01",
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020617&course-sequence=0008200294-1&datetime=2026-08-01T05%3A00",
+      "legend": [
+        "20\t[20]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行",
+        "無印…【２０系統】千鳥車庫行き",
+        "ク…【２０系統】クリーンセンター行き（浦安斎場方面には行きません）",
+        "に…【２０系統】浦安斎場経由　千鳥西行き",
+        "さ…【２０系統】クリーンセンター・浦安斎場方面　千鳥循環（舞浜駅行き）"
+      ],
+      "tripLinkCount": 90
+    },
+    {
+      "terminal": "舞浜駅",
+      "terminalId": "00020617",
+      "berth": "01",
+      "courseText": "20 [20]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行 [循環]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行 時刻表",
+      "dayLabel": "sunday-holiday",
+      "dayIso": "2026-08-02",
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020617&course-sequence=0008200294-1&datetime=2026-08-02T05%3A00",
+      "legend": [
+        "20\t[20]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行",
+        "無印…【２０系統】千鳥車庫行き",
+        "ク…【２０系統】クリーンセンター行き（浦安斎場方面には行きません）",
+        "に…【２０系統】浦安斎場経由　千鳥西行き",
+        "さ…【２０系統】クリーンセンター・浦安斎場方面　千鳥循環（舞浜駅行き）"
+      ],
+      "tripLinkCount": 90
+    },
+    {
+      "terminal": "千鳥車庫",
+      "terminalId": "00020620",
+      "berth": "01",
+      "courseText": "20 [20]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行 [循環]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行 22千鳥東 [22千鳥東]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行 時刻表",
+      "dayLabel": "weekday",
+      "dayIso": "2026-07-27",
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020620&course-sequence=0008200294-4&datetime=2026-07-27T05%3A00",
+      "legend": [
+        "20\t[20]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行",
+        "無印…【２０系統】千鳥車庫行き",
+        "ク…【２０系統】クリーンセンター行き（浦安斎場方面には行きません）",
+        "に…【２０系統】浦安斎場経由　千鳥西行き",
+        "さ…【２０系統】クリーンセンター・浦安斎場方面　千鳥循環（舞浜駅行き）",
+        "◎ち…【２２系統】千鳥東経由　千鳥車庫行き"
+      ],
+      "tripLinkCount": 96
+    },
+    {
+      "terminal": "千鳥車庫",
+      "terminalId": "00020620",
+      "berth": "01",
+      "courseText": "20 [20]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行 [循環]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行 22千鳥東 [22千鳥東]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行 時刻表",
+      "dayLabel": "saturday",
+      "dayIso": "2026-08-01",
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020620&course-sequence=0008200294-4&datetime=2026-08-01T05%3A00",
+      "legend": [
+        "20\t[20]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行",
+        "無印…【２０系統】千鳥車庫行き",
+        "ク…【２０系統】クリーンセンター行き（浦安斎場方面には行きません）",
+        "に…【２０系統】浦安斎場経由　千鳥西行き",
+        "さ…【２０系統】クリーンセンター・浦安斎場方面　千鳥循環（舞浜駅行き）",
+        "◎ち…【２２系統】千鳥東経由　千鳥車庫行き"
+      ],
+      "tripLinkCount": 96
+    },
+    {
+      "terminal": "千鳥車庫",
+      "terminalId": "00020620",
+      "berth": "01",
+      "courseText": "20 [20]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行 [循環]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行 22千鳥東 [22千鳥東]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行 時刻表",
+      "dayLabel": "sunday-holiday",
+      "dayIso": "2026-08-02",
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020620&course-sequence=0008200294-4&datetime=2026-08-02T05%3A00",
+      "legend": [
+        "20\t[20]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行",
+        "無印…【２０系統】千鳥車庫行き",
+        "ク…【２０系統】クリーンセンター行き（浦安斎場方面には行きません）",
+        "に…【２０系統】浦安斎場経由　千鳥西行き",
+        "さ…【２０系統】クリーンセンター・浦安斎場方面　千鳥循環（舞浜駅行き）",
+        "◎ち…【２２系統】千鳥東経由　千鳥車庫行き"
+      ],
+      "tripLinkCount": 96
+    },
+    {
+      "terminal": "千鳥車庫",
+      "terminalId": "00020620",
+      "berth": "03",
+      "courseText": "20 [20 直通]＜急行＞舞浜駅（運動公園通過）（順天堂病院経由）新浦安駅行 [20]＜急行＞舞浜駅（運動公園通過）（順天堂病院経由）新浦安駅行 [循環]＜急行＞舞浜駅（運動公園通過）（順天堂病院経由）新浦安駅行 22千鳥東 [22千鳥東]＜急行＞舞浜駅（運動公園通過）（順天堂病院経由）新浦安駅行 時刻表",
+      "dayLabel": "weekday",
+      "dayIso": "2026-07-27",
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020620&course-sequence=0008200293-5&datetime=2026-07-27T05%3A00",
+      "legend": [
+        "20\t[20]＜急行＞舞浜駅（運動公園通過）（順天堂病院経由）新浦安駅行",
+        "無印…【２０系統】舞浜駅行き（運動公園バス停には停車いたしませんので、ご注意ください）",
+        "し…【２２系統】順天堂病院前経由　新浦安駅行き"
+      ],
+      "tripLinkCount": 90
+    }
+  ],
+  "signatures": {
+    "舞浜駅>オリエンタルランド本社前>運動公園>千鳥車庫>千鳥北>千鳥中央>クリーンセンター": {
+      "stopNames": [
+        "舞浜駅",
+        "オリエンタルランド本社前",
+        "運動公園",
+        "千鳥車庫",
+        "千鳥北",
+        "千鳥中央",
+        "クリーンセンター"
+      ],
+      "stopCount": 7,
+      "stopIds": [
+        "00020617",
+        "00020630",
+        "00020746",
+        "00020620",
+        "00020629",
+        "00020626",
+        "00020872"
+      ],
+      "platformIds": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "idComplete": true,
+      "count": 18,
+      "courses": [
+        "0008200296"
+      ],
+      "berths": [
+        "01"
+      ],
+      "dayLabels": [
+        "weekday"
+      ],
+      "departureTimes": [
+        "06:30",
+        "06:45",
+        "06:40",
+        "07:00",
+        "07:13",
+        "07:26",
+        "09:45",
+        "19:10"
+      ],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fb0000/stops?departure-busstop=00020617-1&course=0008200296&datetime=2026-07-27T06:30:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fb0003/stops?departure-busstop=00020617-1&course=0008200296&datetime=2026-07-27T06:45:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fb0006/stops?departure-busstop=00020617-1&course=0008200296&datetime=2026-08-01T06:40:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fb0007/stops?departure-busstop=00020617-1&course=0008200296&datetime=2026-08-02T06:45:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fb0001/stops?departure-busstop=00020617-1&course=0008200296&datetime=2026-07-27T07:00:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fb0004/stops?departure-busstop=00020617-1&course=0008200296&datetime=2026-07-27T07:13:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fb0002/stops?departure-busstop=00020617-1&course=0008200296&datetime=2026-07-27T07:26:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fb0008/stops?departure-busstop=00020617-1&course=0008200296&datetime=2026-08-02T09:45:00%2B09:00"
+      ],
+      "terminal": "舞浜駅",
+      "cellTexts": [
+        "30ク",
+        "45ク",
+        "40ク",
+        "00ク",
+        "13ク",
+        "26ク",
+        "10ク",
+        "35ク"
+      ]
+    },
+    "舞浜駅>オリエンタルランド本社前>運動公園>千鳥車庫>千鳥北>千鳥中央>クリーンセンター>浦安斎場>千鳥西": {
+      "stopNames": [
+        "舞浜駅",
+        "オリエンタルランド本社前",
+        "運動公園",
+        "千鳥車庫",
+        "千鳥北",
+        "千鳥中央",
+        "クリーンセンター",
+        "浦安斎場",
+        "千鳥西"
+      ],
+      "stopCount": 9,
+      "stopIds": [
+        "00020617",
+        "00020630",
+        "00020746",
+        "00020620",
+        "00020629",
+        "00020626",
+        "00020872",
+        "00020743",
+        "00020625"
+      ],
+      "platformIds": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "idComplete": true,
+      "count": 54,
+      "courses": [
+        "0008200297"
+      ],
+      "berths": [
+        "01"
+      ],
+      "dayLabels": [
+        "weekday"
+      ],
+      "departureTimes": [
+        "07:39",
+        "07:52",
+        "07:30",
+        "07:45",
+        "07:33",
+        "08:05",
+        "08:15",
+        "08:25",
+        "08:42",
+        "08:56",
+        "08:00",
+        "08:30",
+        "08:08",
+        "08:41",
+        "09:06",
+        "09:18",
+        "09:30",
+        "09:44",
+        "13:18",
+        "13:37",
+        "14:19",
+        "14:13",
+        "16:09",
+        "16:35",
+        "18:30",
+        "19:10"
+      ],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fc0006/stops?departure-busstop=00020617-1&course=0008200297&datetime=2026-07-27T07:39:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fc0001/stops?departure-busstop=00020617-1&course=0008200297&datetime=2026-07-27T07:52:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fc000c/stops?departure-busstop=00020617-1&course=0008200297&datetime=2026-08-01T07:30:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fc000a/stops?departure-busstop=00020617-1&course=0008200297&datetime=2026-08-01T07:45:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fc0015/stops?departure-busstop=00020617-1&course=0008200297&datetime=2026-08-02T07:33:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fc0000/stops?departure-busstop=00020617-1&course=0008200297&datetime=2026-07-27T08:05:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fc0007/stops?departure-busstop=00020617-1&course=0008200297&datetime=2026-07-27T08:15:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fc0002/stops?departure-busstop=00020617-1&course=0008200297&datetime=2026-07-27T08:25:00%2B09:00"
+      ],
+      "terminal": "舞浜駅",
+      "cellTexts": [
+        "39に",
+        "52に",
+        "30に",
+        "45に",
+        "33に",
+        "05に",
+        "15に",
+        "25に"
+      ]
+    },
+    "舞浜駅>オリエンタルランド本社前>運動公園>千鳥車庫>千鳥北>千鳥中央>クリーンセンター>浦安斎場>千鳥西>千鳥中央>千鳥北>千鳥車庫>オリエンタルランド本社前>舞浜駅": {
+      "stopNames": [
+        "舞浜駅",
+        "オリエンタルランド本社前",
+        "運動公園",
+        "千鳥車庫",
+        "千鳥北",
+        "千鳥中央",
+        "クリーンセンター",
+        "浦安斎場",
+        "千鳥西",
+        "千鳥中央",
+        "千鳥北",
+        "千鳥車庫",
+        "オリエンタルランド本社前",
+        "舞浜駅"
+      ],
+      "stopCount": 14,
+      "stopIds": [
+        "00020617",
+        "00020630",
+        "00020746",
+        "00020620",
+        "00020629",
+        "00020626",
+        "00020872",
+        "00020743",
+        "00020625",
+        "00020626",
+        "00020629",
+        "00020620",
+        "00020630",
+        "00020617"
+      ],
+      "platformIds": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "idComplete": true,
+      "count": 144,
+      "courses": [
+        "0008200299"
+      ],
+      "berths": [
+        "01",
+        "03"
+      ],
+      "dayLabels": [
+        "weekday"
+      ],
+      "departureTimes": [
+        "07:10",
+        "07:15",
+        "07:50",
+        "08:35",
+        "08:50",
+        "08:45",
+        "08:23",
+        "08:59",
+        "09:45",
+        "09:00",
+        "09:20",
+        "09:15",
+        "10:08",
+        "11:34",
+        "11:56",
+        "11:08",
+        "11:43",
+        "12:13",
+        "12:48",
+        "13:00",
+        "13:30",
+        "13:18",
+        "13:48",
+        "14:27",
+        "15:30",
+        "15:44",
+        "16:00",
+        "16:25",
+        "16:31",
+        "17:00",
+        "17:17",
+        "17:30",
+        "17:28",
+        "17:35",
+        "18:05",
+        "18:50",
+        "18:15",
+        "18:47",
+        "19:25",
+        "19:19",
+        "19:45",
+        "20:00",
+        "11:38",
+        "12:09",
+        "12:30",
+        "12:18"
+      ],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fe002e/stops?departure-busstop=00020617-1&course=0008200299&datetime=2026-08-01T07:10:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fe0050/stops?departure-busstop=00020617-1&course=0008200299&datetime=2026-08-02T07:15:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fe0052/stops?departure-busstop=00020617-1&course=0008200299&datetime=2026-08-02T07:50:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fe0006/stops?departure-busstop=00020617-1&course=0008200299&datetime=2026-07-27T08:35:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fe001e/stops?departure-busstop=00020617-1&course=0008200299&datetime=2026-07-27T08:50:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fe0030/stops?departure-busstop=00020617-1&course=0008200299&datetime=2026-08-01T08:45:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fe0054/stops?departure-busstop=00020617-1&course=0008200299&datetime=2026-08-02T08:23:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fe0056/stops?departure-busstop=00020617-1&course=0008200299&datetime=2026-08-02T08:59:00%2B09:00"
+      ],
+      "terminal": "舞浜駅",
+      "cellTexts": [
+        "10さ",
+        "15さ",
+        "50さ",
+        "35さ",
+        "45さ",
+        "23さ",
+        "59さ",
+        "00さ"
+      ]
+    },
+    "舞浜駅>オリエンタルランド本社前>運動公園>千鳥車庫>千鳥北>千鳥東>車庫裏>千鳥車庫": {
+      "stopNames": [
+        "舞浜駅",
+        "オリエンタルランド本社前",
+        "運動公園",
+        "千鳥車庫",
+        "千鳥北",
+        "千鳥東",
+        "車庫裏",
+        "千鳥車庫"
+      ],
+      "stopCount": 8,
+      "stopIds": [
+        "00020617",
+        "00020630",
+        "00020746",
+        "00020620",
+        "00020629",
+        "00020628",
+        "00020871",
+        "00020620"
+      ],
+      "platformIds": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "idComplete": true,
+      "count": 4,
+      "courses": [
+        "0008200294"
+      ],
+      "berths": [
+        "01"
+      ],
+      "dayLabels": [
+        "weekday"
+      ],
+      "departureTimes": [
+        "09:31",
+        "10:20"
+      ],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80f90002/stops?departure-busstop=00020617-1&course=0008200294&datetime=2026-08-02T09:31:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80f90000/stops?departure-busstop=00020617-1&course=0008200294&datetime=2026-07-27T10:20:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80f90002/stops?departure-busstop=00020620-4&course=0008200294&datetime=2026-08-02T09:36:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80f90000/stops?departure-busstop=00020620-4&course=0008200294&datetime=2026-07-27T10:25:00%2B09:00"
+      ],
+      "terminal": "舞浜駅",
+      "cellTexts": [
+        "31",
+        "20",
+        "36",
+        "25"
+      ]
+    },
+    "新浦安駅>新浦安駅北口>若潮公園>順天堂病院前>サンコーポ東口>サンコーポ西口>弁天第二>見明川中学校前>見明川住宅>舞浜三丁目>運動公園>千鳥車庫>千鳥北>千鳥東>車庫裏>千鳥車庫": {
+      "stopNames": [
+        "新浦安駅",
+        "新浦安駅北口",
+        "若潮公園",
+        "順天堂病院前",
+        "サンコーポ東口",
+        "サンコーポ西口",
+        "弁天第二",
+        "見明川中学校前",
+        "見明川住宅",
+        "舞浜三丁目",
+        "運動公園",
+        "千鳥車庫",
+        "千鳥北",
+        "千鳥東",
+        "車庫裏",
+        "千鳥車庫"
+      ],
+      "stopCount": 16,
+      "stopIds": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "00020620",
+        null,
+        null,
+        null,
+        null
+      ],
+      "platformIds": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "idComplete": false,
+      "count": 6,
+      "courses": [
+        "0008200301"
+      ],
+      "berths": [
+        "01"
+      ],
+      "dayLabels": [
+        "weekday"
+      ],
+      "departureTimes": [
+        "08:20",
+        "10:06",
+        "09:52",
+        "11:57",
+        "12:53",
+        "18:15"
+      ],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81000006/stops?departure-busstop=00020620-12&course=0008200301&datetime=2026-07-27T08:33:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81000004/stops?departure-busstop=00020620-12&course=0008200301&datetime=2026-07-27T10:19:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8100000a/stops?departure-busstop=00020620-12&course=0008200301&datetime=2026-08-01T10:05:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81000008/stops?departure-busstop=00020620-12&course=0008200301&datetime=2026-08-01T12:10:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81000000/stops?departure-busstop=00020620-12&course=0008200301&datetime=2026-07-27T13:06:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81000002/stops?departure-busstop=00020620-12&course=0008200301&datetime=2026-07-27T18:28:00%2B09:00"
+      ],
+      "terminal": "千鳥車庫",
+      "cellTexts": [
+        "33◎ち",
+        "19◎ち",
+        "05◎ち",
+        "10◎ち",
+        "06◎ち",
+        "28◎ち"
+      ]
+    },
+    "千鳥車庫>車庫裏>千鳥東>千鳥北>千鳥車庫>オリエンタルランド本社前>舞浜駅": {
+      "stopNames": [
+        "千鳥車庫",
+        "車庫裏",
+        "千鳥東",
+        "千鳥北",
+        "千鳥車庫",
+        "オリエンタルランド本社前",
+        "舞浜駅"
+      ],
+      "stopCount": 7,
+      "stopIds": [
+        "00020620",
+        "00020871",
+        "00020628",
+        "00020629",
+        "00020620",
+        "00020630",
+        "00020617"
+      ],
+      "platformIds": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "idComplete": true,
+      "count": 5,
+      "courses": [
+        "0008200293"
+      ],
+      "berths": [
+        "03"
+      ],
+      "dayLabels": [
+        "weekday"
+      ],
+      "departureTimes": [
+        "09:56",
+        "11:15",
+        "17:32",
+        "18:38",
+        "18:46"
+      ],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80f80005/stops?departure-busstop=00020620-5&course=0008200293&datetime=2026-07-27T10:00:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80f80001/stops?departure-busstop=00020620-5&course=0008200293&datetime=2026-07-27T11:19:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80f80003/stops?departure-busstop=00020620-5&course=0008200293&datetime=2026-07-27T17:36:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80f80007/stops?departure-busstop=00020620-5&course=0008200293&datetime=2026-08-01T18:42:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80f8000b/stops?departure-busstop=00020620-5&course=0008200293&datetime=2026-08-02T18:50:00%2B09:00"
+      ],
+      "terminal": "千鳥車庫",
+      "cellTexts": [
+        "00",
+        "19",
+        "36",
+        "42",
+        "50"
+      ]
+    },
+    "クリーンセンター>千鳥中央>千鳥北>千鳥車庫>オリエンタルランド本社前>舞浜駅": {
+      "stopNames": [
+        "クリーンセンター",
+        "千鳥中央",
+        "千鳥北",
+        "千鳥車庫",
+        "オリエンタルランド本社前",
+        "舞浜駅"
+      ],
+      "stopCount": 6,
+      "stopIds": [
+        null,
+        null,
+        null,
+        "00020620",
+        null,
+        null
+      ],
+      "platformIds": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "idComplete": false,
+      "count": 2,
+      "courses": [
+        "0008200295"
+      ],
+      "berths": [
+        "03"
+      ],
+      "dayLabels": [
+        "weekday"
+      ],
+      "departureTimes": [
+        "09:57"
+      ],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fa0000/stops?departure-busstop=00020620-4&course=0008200295&datetime=2026-08-01T10:00:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fa0001/stops?departure-busstop=00020620-4&course=0008200295&datetime=2026-08-02T10:00:00%2B09:00"
+      ],
+      "terminal": "千鳥車庫",
+      "cellTexts": [
+        "00"
+      ]
+    },
+    "千鳥車庫>車庫裏>千鳥東>千鳥北>千鳥車庫>運動公園>舞浜三丁目>見明川住宅>見明川中学校前>弁天第二>サンコーポ西口>サンコーポ東口>順天堂病院前>若潮公園>新浦安駅北口>新浦安駅": {
+      "stopNames": [
+        "千鳥車庫",
+        "車庫裏",
+        "千鳥東",
+        "千鳥北",
+        "千鳥車庫",
+        "運動公園",
+        "舞浜三丁目",
+        "見明川住宅",
+        "見明川中学校前",
+        "弁天第二",
+        "サンコーポ西口",
+        "サンコーポ東口",
+        "順天堂病院前",
+        "若潮公園",
+        "新浦安駅北口",
+        "新浦安駅"
+      ],
+      "stopCount": 16,
+      "stopIds": [
+        "00020620",
+        "00020871",
+        "00020628",
+        "00020629",
+        "00020620",
+        "00020746",
+        "00020679",
+        "00020851",
+        "00020853",
+        "00020684",
+        "00020878",
+        "00020879",
+        "00020875",
+        "00020873",
+        "00020668",
+        "00020619"
+      ],
+      "platformIds": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "idComplete": true,
+      "count": 4,
+      "courses": [
+        "0008200300"
+      ],
+      "berths": [
+        "03"
+      ],
+      "dayLabels": [
+        "weekday"
+      ],
+      "departureTimes": [
+        "10:38",
+        "11:36",
+        "11:49",
+        "17:45"
+      ],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80ff0007/stops?departure-busstop=00020620-5&course=0008200300&datetime=2026-08-01T10:42:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80ff0001/stops?departure-busstop=00020620-5&course=0008200300&datetime=2026-07-27T11:40:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80ff0005/stops?departure-busstop=00020620-5&course=0008200300&datetime=2026-07-27T11:53:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80ff0003/stops?departure-busstop=00020620-5&course=0008200300&datetime=2026-07-27T17:49:00%2B09:00"
+      ],
+      "terminal": "千鳥車庫",
+      "cellTexts": [
+        "42し",
+        "40し",
+        "53し",
+        "49し"
+      ]
+    },
+    "クリーンセンター>浦安斎場>千鳥西>千鳥中央>千鳥北>千鳥車庫>オリエンタルランド本社前>舞浜駅": {
+      "stopNames": [
+        "クリーンセンター",
+        "浦安斎場",
+        "千鳥西",
+        "千鳥中央",
+        "千鳥北",
+        "千鳥車庫",
+        "オリエンタルランド本社前",
+        "舞浜駅"
+      ],
+      "stopCount": 8,
+      "stopIds": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        "00020620",
+        null,
+        null
+      ],
+      "platformIds": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "idComplete": false,
+      "count": 22,
+      "courses": [
+        "0008200298"
+      ],
+      "berths": [
+        "03"
+      ],
+      "dayLabels": [
+        "weekday"
+      ],
+      "departureTimes": [
+        "16:22",
+        "16:02",
+        "16:27",
+        "16:52",
+        "16:30",
+        "16:55",
+        "17:15",
+        "17:20",
+        "17:47",
+        "17:18",
+        "17:54",
+        "17:09",
+        "17:26",
+        "18:00",
+        "18:08",
+        "18:26",
+        "18:39",
+        "18:10",
+        "17:56",
+        "18:22",
+        "19:11"
+      ],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fd0004/stops?departure-busstop=00020620-6&course=0008200298&datetime=2026-07-27T16:27:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fd000f/stops?departure-busstop=00020620-6&course=0008200298&datetime=2026-08-01T16:07:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fd0010/stops?departure-busstop=00020620-6&course=0008200298&datetime=2026-08-01T16:32:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fd000d/stops?departure-busstop=00020620-6&course=0008200298&datetime=2026-08-01T16:57:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fd0014/stops?departure-busstop=00020620-6&course=0008200298&datetime=2026-08-02T16:35:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fd0015/stops?departure-busstop=00020620-6&course=0008200298&datetime=2026-08-02T16:57:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fd0000/stops?departure-busstop=00020620-6&course=0008200298&datetime=2026-07-27T17:00:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fd0008/stops?departure-busstop=00020620-6&course=0008200298&datetime=2026-07-27T17:20:00%2B09:00"
+      ],
+      "terminal": "千鳥車庫",
+      "cellTexts": [
+        "27",
+        "07",
+        "32",
+        "57",
+        "35",
+        "00",
+        "20",
+        "25"
+      ]
+    }
+  },
+  "trips": [
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fb0000/stops?departure-busstop=00020617-1&course=0008200296&datetime=2026-07-27T06:30:00%2B09:00",
+      "cellText": "30ク",
+      "courseText": "20 [20]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行 [循環]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行 時刻表",
+      "heading": "通過時刻表",
+      "title": "20 [20]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行の通過時刻表 | 京成バスナビ | 京成電鉄バスグループ",
+      "course": "0008200296",
+      "courseSequence": null,
+      "departureBusstopId": "00020617-1",
+      "destinationBusstopId": null,
+      "dayLabel": "weekday",
+      "terminal": "舞浜駅",
+      "berth": "01",
+      "stopNames": [
+        "舞浜駅",
+        "オリエンタルランド本社前",
+        "運動公園",
+        "千鳥車庫",
+        "千鳥北",
+        "千鳥中央",
+        "クリーンセンター"
+      ],
+      "stopIds": [
+        "00020617",
+        "00020630",
+        "00020746",
+        "00020620",
+        "00020629",
+        "00020626",
+        "00020872"
+      ],
+      "platformIds": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "idComplete": true,
+      "stops": [
+        {
+          "time": "06:30",
+          "kind": "発",
+          "name": "舞浜駅"
+        },
+        {
+          "time": "06:31",
+          "kind": "着",
+          "name": "オリエンタルランド本社前"
+        },
+        {
+          "time": "06:33",
+          "kind": "着",
+          "name": "運動公園"
+        },
+        {
+          "time": "06:35",
+          "kind": "着",
+          "name": "千鳥車庫"
+        },
+        {
+          "time": "06:36",
+          "kind": "着",
+          "name": "千鳥北"
+        },
+        {
+          "time": "06:37",
+          "kind": "着",
+          "name": "千鳥中央"
+        },
+        {
+          "time": "06:42",
+          "kind": "着",
+          "name": "クリーンセンター"
+        }
+      ],
+      "legend": [
+        "20\t[20]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行",
+        "無印…【２０系統】千鳥車庫行き",
+        "ク…【２０系統】クリーンセンター行き（浦安斎場方面には行きません）",
+        "に…【２０系統】浦安斎場経由　千鳥西行き",
+        "さ…【２０系統】クリーンセンター・浦安斎場方面　千鳥循環（舞浜駅行き）"
+      ]
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fc0006/stops?departure-busstop=00020617-1&course=0008200297&datetime=2026-07-27T07:39:00%2B09:00",
+      "cellText": "39に",
+      "courseText": "20 [20]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行 [循環]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行 時刻表",
+      "heading": "通過時刻表",
+      "title": "20 [20]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行の通過時刻表 | 京成バスナビ | 京成電鉄バスグループ",
+      "course": "0008200297",
+      "courseSequence": null,
+      "departureBusstopId": "00020617-1",
+      "destinationBusstopId": null,
+      "dayLabel": "weekday",
+      "terminal": "舞浜駅",
+      "berth": "01",
+      "stopNames": [
+        "舞浜駅",
+        "オリエンタルランド本社前",
+        "運動公園",
+        "千鳥車庫",
+        "千鳥北",
+        "千鳥中央",
+        "クリーンセンター",
+        "浦安斎場",
+        "千鳥西"
+      ],
+      "stopIds": [
+        "00020617",
+        "00020630",
+        "00020746",
+        "00020620",
+        "00020629",
+        "00020626",
+        "00020872",
+        "00020743",
+        "00020625"
+      ],
+      "platformIds": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "idComplete": true,
+      "stops": [
+        {
+          "time": "07:39",
+          "kind": "発",
+          "name": "舞浜駅"
+        },
+        {
+          "time": "07:40",
+          "kind": "着",
+          "name": "オリエンタルランド本社前"
+        },
+        {
+          "time": "07:42",
+          "kind": "着",
+          "name": "運動公園"
+        },
+        {
+          "time": "07:44",
+          "kind": "着",
+          "name": "千鳥車庫"
+        },
+        {
+          "time": "07:45",
+          "kind": "着",
+          "name": "千鳥北"
+        },
+        {
+          "time": "07:46",
+          "kind": "着",
+          "name": "千鳥中央"
+        },
+        {
+          "time": "07:47",
+          "kind": "着",
+          "name": "クリーンセンター"
+        },
+        {
+          "time": "07:48",
+          "kind": "着",
+          "name": "浦安斎場"
+        },
+        {
+          "time": "07:53",
+          "kind": "着",
+          "name": "千鳥西"
+        }
+      ],
+      "legend": [
+        "20\t[20]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行",
+        "無印…【２０系統】千鳥車庫行き",
+        "ク…【２０系統】クリーンセンター行き（浦安斎場方面には行きません）",
+        "に…【２０系統】浦安斎場経由　千鳥西行き",
+        "さ…【２０系統】クリーンセンター・浦安斎場方面　千鳥循環（舞浜駅行き）"
+      ]
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fe002e/stops?departure-busstop=00020617-1&course=0008200299&datetime=2026-08-01T07:10:00%2B09:00",
+      "cellText": "10さ",
+      "courseText": "20 [20]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行 [循環]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行 時刻表",
+      "heading": "通過時刻表",
+      "title": "20 [循環]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行の通過時刻表 | 京成バスナビ | 京成電鉄バスグループ",
+      "course": "0008200299",
+      "courseSequence": null,
+      "departureBusstopId": "00020617-1",
+      "destinationBusstopId": null,
+      "dayLabel": "weekday",
+      "terminal": "舞浜駅",
+      "berth": "01",
+      "stopNames": [
+        "舞浜駅",
+        "オリエンタルランド本社前",
+        "運動公園",
+        "千鳥車庫",
+        "千鳥北",
+        "千鳥中央",
+        "クリーンセンター",
+        "浦安斎場",
+        "千鳥西",
+        "千鳥中央",
+        "千鳥北",
+        "千鳥車庫",
+        "オリエンタルランド本社前",
+        "舞浜駅"
+      ],
+      "stopIds": [
+        "00020617",
+        "00020630",
+        "00020746",
+        "00020620",
+        "00020629",
+        "00020626",
+        "00020872",
+        "00020743",
+        "00020625",
+        "00020626",
+        "00020629",
+        "00020620",
+        "00020630",
+        "00020617"
+      ],
+      "platformIds": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "idComplete": true,
+      "stops": [
+        {
+          "time": "07:10",
+          "kind": "発",
+          "name": "舞浜駅"
+        },
+        {
+          "time": "07:11",
+          "kind": "着",
+          "name": "オリエンタルランド本社前"
+        },
+        {
+          "time": "07:13",
+          "kind": "着",
+          "name": "運動公園"
+        },
+        {
+          "time": "07:15",
+          "kind": "着",
+          "name": "千鳥車庫"
+        },
+        {
+          "time": "07:16",
+          "kind": "着",
+          "name": "千鳥北"
+        },
+        {
+          "time": "07:17",
+          "kind": "着",
+          "name": "千鳥中央"
+        },
+        {
+          "time": "07:18",
+          "kind": "着",
+          "name": "クリーンセンター"
+        },
+        {
+          "time": "07:19",
+          "kind": "着",
+          "name": "浦安斎場"
+        },
+        {
+          "time": "07:20",
+          "kind": "着",
+          "name": "千鳥西"
+        },
+        {
+          "time": "07:21",
+          "kind": "着",
+          "name": "千鳥中央"
+        },
+        {
+          "time": "07:22",
+          "kind": "着",
+          "name": "千鳥北"
+        },
+        {
+          "time": "07:23",
+          "kind": "着",
+          "name": "千鳥車庫"
+        },
+        {
+          "time": "07:26",
+          "kind": "着",
+          "name": "オリエンタルランド本社前"
+        },
+        {
+          "time": "07:35",
+          "kind": "着",
+          "name": "舞浜駅"
+        }
+      ],
+      "legend": [
+        "20\t[20]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行",
+        "無印…【２０系統】千鳥車庫行き",
+        "ク…【２０系統】クリーンセンター行き（浦安斎場方面には行きません）",
+        "に…【２０系統】浦安斎場経由　千鳥西行き",
+        "さ…【２０系統】クリーンセンター・浦安斎場方面　千鳥循環（舞浜駅行き）"
+      ]
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80f90002/stops?departure-busstop=00020617-1&course=0008200294&datetime=2026-08-02T09:31:00%2B09:00",
+      "cellText": "31",
+      "courseText": "20 [20]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行 [循環]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行 時刻表",
+      "heading": "通過時刻表",
+      "title": "20 [20]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行の通過時刻表 | 京成バスナビ | 京成電鉄バスグループ",
+      "course": "0008200294",
+      "courseSequence": null,
+      "departureBusstopId": "00020617-1",
+      "destinationBusstopId": null,
+      "dayLabel": "weekday",
+      "terminal": "舞浜駅",
+      "berth": "01",
+      "stopNames": [
+        "舞浜駅",
+        "オリエンタルランド本社前",
+        "運動公園",
+        "千鳥車庫",
+        "千鳥北",
+        "千鳥東",
+        "車庫裏",
+        "千鳥車庫"
+      ],
+      "stopIds": [
+        "00020617",
+        "00020630",
+        "00020746",
+        "00020620",
+        "00020629",
+        "00020628",
+        "00020871",
+        "00020620"
+      ],
+      "platformIds": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "idComplete": true,
+      "stops": [
+        {
+          "time": "09:31",
+          "kind": "発",
+          "name": "舞浜駅"
+        },
+        {
+          "time": "09:32",
+          "kind": "着",
+          "name": "オリエンタルランド本社前"
+        },
+        {
+          "time": "09:34",
+          "kind": "着",
+          "name": "運動公園"
+        },
+        {
+          "time": "09:36",
+          "kind": "着",
+          "name": "千鳥車庫"
+        },
+        {
+          "time": "09:37",
+          "kind": "着",
+          "name": "千鳥北"
+        },
+        {
+          "time": "09:38",
+          "kind": "着",
+          "name": "千鳥東"
+        },
+        {
+          "time": "09:39",
+          "kind": "着",
+          "name": "車庫裏"
+        },
+        {
+          "time": "09:43",
+          "kind": "着",
+          "name": "千鳥車庫"
+        }
+      ],
+      "legend": [
+        "20\t[20]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行",
+        "無印…【２０系統】千鳥車庫行き",
+        "ク…【２０系統】クリーンセンター行き（浦安斎場方面には行きません）",
+        "に…【２０系統】浦安斎場経由　千鳥西行き",
+        "さ…【２０系統】クリーンセンター・浦安斎場方面　千鳥循環（舞浜駅行き）"
+      ]
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81000006/stops?departure-busstop=00020620-12&course=0008200301&datetime=2026-07-27T08:33:00%2B09:00",
+      "cellText": "33◎ち",
+      "courseText": "20 [20]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行 [循環]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行 22千鳥東 [22千鳥東]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行 時刻表",
+      "heading": "通過時刻表",
+      "title": "22千鳥東 [22千鳥東]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行の通過時刻表 | 京成バスナビ | 京成電鉄バスグループ",
+      "course": "0008200301",
+      "courseSequence": null,
+      "departureBusstopId": "00020620-12",
+      "destinationBusstopId": null,
+      "dayLabel": "weekday",
+      "terminal": "千鳥車庫",
+      "berth": "01",
+      "stopNames": [
+        "新浦安駅",
+        "新浦安駅北口",
+        "若潮公園",
+        "順天堂病院前",
+        "サンコーポ東口",
+        "サンコーポ西口",
+        "弁天第二",
+        "見明川中学校前",
+        "見明川住宅",
+        "舞浜三丁目",
+        "運動公園",
+        "千鳥車庫",
+        "千鳥北",
+        "千鳥東",
+        "車庫裏",
+        "千鳥車庫"
+      ],
+      "stopIds": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        "00020620",
+        null,
+        null,
+        null,
+        null
+      ],
+      "platformIds": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "idComplete": false,
+      "stops": [
+        {
+          "time": "08:20",
+          "kind": "発",
+          "name": "新浦安駅"
+        },
+        {
+          "time": "08:22",
+          "kind": "発",
+          "name": "新浦安駅北口"
+        },
+        {
+          "time": "08:23",
+          "kind": "発",
+          "name": "若潮公園"
+        },
+        {
+          "time": "08:24",
+          "kind": "発",
+          "name": "順天堂病院前"
+        },
+        {
+          "time": "08:25",
+          "kind": "発",
+          "name": "サンコーポ東口"
+        },
+        {
+          "time": "08:26",
+          "kind": "発",
+          "name": "サンコーポ西口"
+        },
+        {
+          "time": "08:27",
+          "kind": "発",
+          "name": "弁天第二"
+        },
+        {
+          "time": "08:28",
+          "kind": "発",
+          "name": "見明川中学校前"
+        },
+        {
+          "time": "08:29",
+          "kind": "発",
+          "name": "見明川住宅"
+        },
+        {
+          "time": "08:30",
+          "kind": "発",
+          "name": "舞浜三丁目"
+        },
+        {
+          "time": "08:31",
+          "kind": "発",
+          "name": "運動公園"
+        },
+        {
+          "time": "08:33",
+          "kind": "発",
+          "name": "千鳥車庫"
+        },
+        {
+          "time": "08:34",
+          "kind": "着",
+          "name": "千鳥北"
+        },
+        {
+          "time": "08:35",
+          "kind": "着",
+          "name": "千鳥東"
+        },
+        {
+          "time": "08:36",
+          "kind": "着",
+          "name": "車庫裏"
+        },
+        {
+          "time": "08:40",
+          "kind": "着",
+          "name": "千鳥車庫"
+        }
+      ],
+      "legend": [
+        "20\t[20]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行",
+        "無印…【２０系統】千鳥車庫行き",
+        "ク…【２０系統】クリーンセンター行き（浦安斎場方面には行きません）",
+        "に…【２０系統】浦安斎場経由　千鳥西行き",
+        "さ…【２０系統】クリーンセンター・浦安斎場方面　千鳥循環（舞浜駅行き）",
+        "◎ち…【２２系統】千鳥東経由　千鳥車庫行き"
+      ]
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80f80005/stops?departure-busstop=00020620-5&course=0008200293&datetime=2026-07-27T10:00:00%2B09:00",
+      "cellText": "00",
+      "courseText": "20 [20 直通]＜急行＞舞浜駅（運動公園通過）（順天堂病院経由）新浦安駅行 [20]＜急行＞舞浜駅（運動公園通過）（順天堂病院経由）新浦安駅行 [循環]＜急行＞舞浜駅（運動公園通過）（順天堂病院経由）新浦安駅行 22千鳥東 [22千鳥東]＜急行＞舞浜駅（運動公園通過）（順天堂病院経由）新浦安駅行 時刻表",
+      "heading": "通過時刻表",
+      "title": "20 [20]＜急行＞舞浜駅（運動公園通過）（順天堂病院経由）新浦安駅行の通過時刻表 | 京成バスナビ | 京成電鉄バスグループ",
+      "course": "0008200293",
+      "courseSequence": null,
+      "departureBusstopId": "00020620-5",
+      "destinationBusstopId": null,
+      "dayLabel": "weekday",
+      "terminal": "千鳥車庫",
+      "berth": "03",
+      "stopNames": [
+        "千鳥車庫",
+        "車庫裏",
+        "千鳥東",
+        "千鳥北",
+        "千鳥車庫",
+        "オリエンタルランド本社前",
+        "舞浜駅"
+      ],
+      "stopIds": [
+        "00020620",
+        "00020871",
+        "00020628",
+        "00020629",
+        "00020620",
+        "00020630",
+        "00020617"
+      ],
+      "platformIds": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "idComplete": true,
+      "stops": [
+        {
+          "time": "09:56",
+          "kind": "発",
+          "name": "千鳥車庫"
+        },
+        {
+          "time": "09:56",
+          "kind": "発",
+          "name": "車庫裏"
+        },
+        {
+          "time": "09:57",
+          "kind": "発",
+          "name": "千鳥東"
+        },
+        {
+          "time": "09:59",
+          "kind": "発",
+          "name": "千鳥北"
+        },
+        {
+          "time": "10:00",
+          "kind": "発",
+          "name": "千鳥車庫"
+        },
+        {
+          "time": "10:03",
+          "kind": "着",
+          "name": "オリエンタルランド本社前"
+        },
+        {
+          "time": "10:08",
+          "kind": "着",
+          "name": "舞浜駅"
+        }
+      ],
+      "legend": [
+        "20\t[20]＜急行＞舞浜駅（運動公園通過）（順天堂病院経由）新浦安駅行",
+        "無印…【２０系統】舞浜駅行き（運動公園バス停には停車いたしませんので、ご注意ください）",
+        "し…【２２系統】順天堂病院前経由　新浦安駅行き"
+      ]
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fa0000/stops?departure-busstop=00020620-4&course=0008200295&datetime=2026-08-01T10:00:00%2B09:00",
+      "cellText": "00",
+      "courseText": "20 [20 直通]＜急行＞舞浜駅（運動公園通過）（順天堂病院経由）新浦安駅行 [20]＜急行＞舞浜駅（運動公園通過）（順天堂病院経由）新浦安駅行 [循環]＜急行＞舞浜駅（運動公園通過）（順天堂病院経由）新浦安駅行 22千鳥東 [22千鳥東]＜急行＞舞浜駅（運動公園通過）（順天堂病院経由）新浦安駅行 時刻表",
+      "heading": "通過時刻表",
+      "title": "20 [20 直通]＜急行＞舞浜駅（運動公園通過）（順天堂病院経由）新浦安駅行の通過時刻表 | 京成バスナビ | 京成電鉄バスグループ",
+      "course": "0008200295",
+      "courseSequence": null,
+      "departureBusstopId": "00020620-4",
+      "destinationBusstopId": null,
+      "dayLabel": "weekday",
+      "terminal": "千鳥車庫",
+      "berth": "03",
+      "stopNames": [
+        "クリーンセンター",
+        "千鳥中央",
+        "千鳥北",
+        "千鳥車庫",
+        "オリエンタルランド本社前",
+        "舞浜駅"
+      ],
+      "stopIds": [
+        null,
+        null,
+        null,
+        "00020620",
+        null,
+        null
+      ],
+      "platformIds": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "idComplete": false,
+      "stops": [
+        {
+          "time": "09:57",
+          "kind": "発",
+          "name": "クリーンセンター"
+        },
+        {
+          "time": "09:58",
+          "kind": "発",
+          "name": "千鳥中央"
+        },
+        {
+          "time": "09:59",
+          "kind": "発",
+          "name": "千鳥北"
+        },
+        {
+          "time": "10:00",
+          "kind": "発",
+          "name": "千鳥車庫"
+        },
+        {
+          "time": "10:03",
+          "kind": "着",
+          "name": "オリエンタルランド本社前"
+        },
+        {
+          "time": "10:09",
+          "kind": "着",
+          "name": "舞浜駅"
+        }
+      ],
+      "legend": [
+        "20\t[20]＜急行＞舞浜駅（運動公園通過）（順天堂病院経由）新浦安駅行",
+        "無印…【２０系統】舞浜駅行き（運動公園バス停には停車いたしませんので、ご注意ください）",
+        "し…【２２系統】順天堂病院前経由　新浦安駅行き"
+      ]
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80ff0007/stops?departure-busstop=00020620-5&course=0008200300&datetime=2026-08-01T10:42:00%2B09:00",
+      "cellText": "42し",
+      "courseText": "20 [20 直通]＜急行＞舞浜駅（運動公園通過）（順天堂病院経由）新浦安駅行 [20]＜急行＞舞浜駅（運動公園通過）（順天堂病院経由）新浦安駅行 [循環]＜急行＞舞浜駅（運動公園通過）（順天堂病院経由）新浦安駅行 22千鳥東 [22千鳥東]＜急行＞舞浜駅（運動公園通過）（順天堂病院経由）新浦安駅行 時刻表",
+      "heading": "通過時刻表",
+      "title": "22千鳥東 [22千鳥東]＜急行＞舞浜駅（運動公園通過）（順天堂病院経由）新浦安駅行の通過時刻表 | 京成バスナビ | 京成電鉄バスグループ",
+      "course": "0008200300",
+      "courseSequence": null,
+      "departureBusstopId": "00020620-5",
+      "destinationBusstopId": null,
+      "dayLabel": "weekday",
+      "terminal": "千鳥車庫",
+      "berth": "03",
+      "stopNames": [
+        "千鳥車庫",
+        "車庫裏",
+        "千鳥東",
+        "千鳥北",
+        "千鳥車庫",
+        "運動公園",
+        "舞浜三丁目",
+        "見明川住宅",
+        "見明川中学校前",
+        "弁天第二",
+        "サンコーポ西口",
+        "サンコーポ東口",
+        "順天堂病院前",
+        "若潮公園",
+        "新浦安駅北口",
+        "新浦安駅"
+      ],
+      "stopIds": [
+        "00020620",
+        "00020871",
+        "00020628",
+        "00020629",
+        "00020620",
+        "00020746",
+        "00020679",
+        "00020851",
+        "00020853",
+        "00020684",
+        "00020878",
+        "00020879",
+        "00020875",
+        "00020873",
+        "00020668",
+        "00020619"
+      ],
+      "platformIds": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "idComplete": true,
+      "stops": [
+        {
+          "time": "10:38",
+          "kind": "発",
+          "name": "千鳥車庫"
+        },
+        {
+          "time": "10:38",
+          "kind": "発",
+          "name": "車庫裏"
+        },
+        {
+          "time": "10:39",
+          "kind": "発",
+          "name": "千鳥東"
+        },
+        {
+          "time": "10:41",
+          "kind": "発",
+          "name": "千鳥北"
+        },
+        {
+          "time": "10:42",
+          "kind": "発",
+          "name": "千鳥車庫"
+        },
+        {
+          "time": "10:44",
+          "kind": "着",
+          "name": "運動公園"
+        },
+        {
+          "time": "10:44",
+          "kind": "着",
+          "name": "舞浜三丁目"
+        },
+        {
+          "time": "10:46",
+          "kind": "着",
+          "name": "見明川住宅"
+        },
+        {
+          "time": "10:47",
+          "kind": "着",
+          "name": "見明川中学校前"
+        },
+        {
+          "time": "10:48",
+          "kind": "着",
+          "name": "弁天第二"
+        },
+        {
+          "time": "10:49",
+          "kind": "着",
+          "name": "サンコーポ西口"
+        },
+        {
+          "time": "10:50",
+          "kind": "着",
+          "name": "サンコーポ東口"
+        },
+        {
+          "time": "10:52",
+          "kind": "着",
+          "name": "順天堂病院前"
+        },
+        {
+          "time": "10:53",
+          "kind": "着",
+          "name": "若潮公園"
+        },
+        {
+          "time": "10:55",
+          "kind": "着",
+          "name": "新浦安駅北口"
+        },
+        {
+          "time": "10:58",
+          "kind": "着",
+          "name": "新浦安駅"
+        }
+      ],
+      "legend": [
+        "20\t[20]＜急行＞舞浜駅（運動公園通過）（順天堂病院経由）新浦安駅行",
+        "無印…【２０系統】舞浜駅行き（運動公園バス停には停車いたしませんので、ご注意ください）",
+        "し…【２２系統】順天堂病院前経由　新浦安駅行き"
+      ]
+    },
+    {
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fd0004/stops?departure-busstop=00020620-6&course=0008200298&datetime=2026-07-27T16:27:00%2B09:00",
+      "cellText": "27",
+      "courseText": "20 [20 直通]＜急行＞舞浜駅（運動公園通過）（順天堂病院経由）新浦安駅行 [20]＜急行＞舞浜駅（運動公園通過）（順天堂病院経由）新浦安駅行 [循環]＜急行＞舞浜駅（運動公園通過）（順天堂病院経由）新浦安駅行 22千鳥東 [22千鳥東]＜急行＞舞浜駅（運動公園通過）（順天堂病院経由）新浦安駅行 時刻表",
+      "heading": "通過時刻表",
+      "title": "20 [20]＜急行＞舞浜駅（運動公園通過）（順天堂病院経由）新浦安駅行の通過時刻表 | 京成バスナビ | 京成電鉄バスグループ",
+      "course": "0008200298",
+      "courseSequence": null,
+      "departureBusstopId": "00020620-6",
+      "destinationBusstopId": null,
+      "dayLabel": "weekday",
+      "terminal": "千鳥車庫",
+      "berth": "03",
+      "stopNames": [
+        "クリーンセンター",
+        "浦安斎場",
+        "千鳥西",
+        "千鳥中央",
+        "千鳥北",
+        "千鳥車庫",
+        "オリエンタルランド本社前",
+        "舞浜駅"
+      ],
+      "stopIds": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        "00020620",
+        null,
+        null
+      ],
+      "platformIds": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "idComplete": false,
+      "stops": [
+        {
+          "time": "16:22",
+          "kind": "発",
+          "name": "クリーンセンター"
+        },
+        {
+          "time": "16:23",
+          "kind": "発",
+          "name": "浦安斎場"
+        },
+        {
+          "time": "16:24",
+          "kind": "発",
+          "name": "千鳥西"
+        },
+        {
+          "time": "16:25",
+          "kind": "発",
+          "name": "千鳥中央"
+        },
+        {
+          "time": "16:26",
+          "kind": "発",
+          "name": "千鳥北"
+        },
+        {
+          "time": "16:27",
+          "kind": "発",
+          "name": "千鳥車庫"
+        },
+        {
+          "time": "16:30",
+          "kind": "着",
+          "name": "オリエンタルランド本社前"
+        },
+        {
+          "time": "16:38",
+          "kind": "着",
+          "name": "舞浜駅"
+        }
+      ],
+      "legend": [
+        "20\t[20]＜急行＞舞浜駅（運動公園通過）（順天堂病院経由）新浦安駅行",
+        "無印…【２０系統】舞浜駅行き（運動公園バス停には停車いたしませんので、ご注意ください）",
+        "し…【２２系統】順天堂病院前経由　新浦安駅行き"
+      ]
+    }
+  ],
+  "rejected": [],
+  "discoveredBusstopIds": {
+    "舞浜駅": "00020617",
+    "オリエンタルランド本社前": "00020630",
+    "運動公園": "00020746",
+    "千鳥車庫": "00020620",
+    "千鳥北": "00020629",
+    "千鳥中央": "00020626",
+    "クリーンセンター": "00020872",
+    "浦安斎場": "00020743",
+    "千鳥西": "00020625",
+    "千鳥東": "00020628",
+    "車庫裏": "00020871",
+    "舞浜三丁目": "00020679",
+    "見明川住宅": "00020851",
+    "見明川中学校前": "00020853",
+    "弁天第二": "00020684",
+    "サンコーポ西口": "00020878",
+    "サンコーポ東口": "00020879",
+    "順天堂病院前": "00020875",
+    "若潮公園": "00020873",
+    "新浦安駅北口": "00020668",
+    "新浦安駅": "00020619"
+  },
+  "followUps": {},
+  "errors": [
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fe0058/stops?departure-busstop=00020617-1&course=0008200299&datetime=2026-08-02T11:08:00%2B09:00",
+      "error": "page.goto: net::ERR_INSUFFICIENT_RESOURCES at https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fe0058/stops?departure-busstop=00020617-1&course=0008200299&datetime=2026-08-02T11:08:00%2B09:00\nCall log:\n  - navigating to \"https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fe0058/stops?departure-busstop=00020617-1&course=0008200299&datetime=2026-08-02T11:08:00%2B09:00\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fe005a/stops?departure-busstop=00020617-1&course=0008200299&datetime=2026-08-02T11:38:00%2B09:00",
+      "error": "page.goto: net::ERR_ABORTED at https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fe005a/stops?departure-busstop=00020617-1&course=0008200299&datetime=2026-08-02T11:38:00%2B09:00\nCall log:\n  - navigating to \"https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fe005a/stops?departure-busstop=00020617-1&course=0008200299&datetime=2026-08-02T11:38:00%2B09:00\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fe001c/stops?departure-busstop=00020617-1&course=0008200299&datetime=2026-07-27T12:09:00%2B09:00",
+      "error": "page.goto: net::ERR_INSUFFICIENT_RESOURCES at https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fe001c/stops?departure-busstop=00020617-1&course=0008200299&datetime=2026-07-27T12:09:00%2B09:00\nCall log:\n  - navigating to \"https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fe001c/stops?departure-busstop=00020617-1&course=0008200299&datetime=2026-07-27T12:09:00%2B09:00\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fe0018/stops?departure-busstop=00020617-1&course=0008200299&datetime=2026-07-27T12:30:00%2B09:00",
+      "error": "page.goto: net::ERR_ABORTED at https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fe0018/stops?departure-busstop=00020617-1&course=0008200299&datetime=2026-07-27T12:30:00%2B09:00\nCall log:\n  - navigating to \"https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fe0018/stops?departure-busstop=00020617-1&course=0008200299&datetime=2026-07-27T12:30:00%2B09:00\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fe0038/stops?departure-busstop=00020617-1&course=0008200299&datetime=2026-08-01T12:18:00%2B09:00",
+      "error": "page.goto: net::ERR_INSUFFICIENT_RESOURCES at https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fe0038/stops?departure-busstop=00020617-1&course=0008200299&datetime=2026-08-01T12:18:00%2B09:00\nCall log:\n  - navigating to \"https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fe0038/stops?departure-busstop=00020617-1&course=0008200299&datetime=2026-08-01T12:18:00%2B09:00\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fe003a/stops?departure-busstop=00020617-1&course=0008200299&datetime=2026-08-01T12:48:00%2B09:00",
+      "error": "page.goto: net::ERR_ABORTED at https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fe003a/stops?departure-busstop=00020617-1&course=0008200299&datetime=2026-08-01T12:48:00%2B09:00\nCall log:\n  - navigating to \"https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fe003a/stops?departure-busstop=00020617-1&course=0008200299&datetime=2026-08-01T12:48:00%2B09:00\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fd0012/stops?departure-busstop=00020620-6&course=0008200298&datetime=2026-08-01T14:29:00%2B09:00",
+      "error": "page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80fd0012/stops?departure-busstop=00020620-6&course=0008200298&datetime=2026-08-01T14:29:00%2B09:00\", waiting until \"domcontentloaded\"\n"
+    }
+  ],
+  "stats": {
+    "uniqueSignatures": 9,
+    "tripsOpened": 9,
+    "rejected": 0,
+    "errors": 7,
+    "elapsedSec": 380
+  },
+  "partialReason": "progress-weekday-80"
+}

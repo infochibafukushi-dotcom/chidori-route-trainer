@@ -1,0 +1,464 @@
+{
+  "20-maihama-clean-center": {
+    "舞浜駅": {
+      "lat": 35.6355509,
+      "lng": 139.8839058,
+      "platformId": 9482601638,
+      "role": "platform_entry_only",
+      "osmName": "舞浜駅"
+    },
+    "オリエンタルランド本社前": {
+      "lat": 35.6312873,
+      "lng": 139.8885643,
+      "platformId": 2301981524,
+      "role": "platform",
+      "osmName": "オリエンタルランド本社前"
+    },
+    "運動公園": {
+      "lat": 35.6316986,
+      "lng": 139.8916963,
+      "platformId": 6935385497,
+      "role": "platform",
+      "osmName": "運動公園"
+    },
+    "千鳥車庫": {
+      "lat": 35.6266968,
+      "lng": 139.8978974,
+      "platformId": 6796353425,
+      "role": "platform",
+      "osmName": "千鳥車庫"
+    },
+    "千鳥北": {
+      "lat": 35.6246911,
+      "lng": 139.8988744,
+      "platformId": 9482675705,
+      "role": "platform",
+      "osmName": "千鳥北"
+    },
+    "千鳥中央": {
+      "lat": 35.6224627,
+      "lng": 139.8996502,
+      "platformId": 6796350270,
+      "role": "platform",
+      "osmName": "千鳥中央"
+    },
+    "クリーンセンター": {
+      "lat": 35.6194936,
+      "lng": 139.9004636,
+      "platformId": 6796350272,
+      "role": "platform_exit_only",
+      "osmName": "クリーンセンター"
+    }
+  },
+  "20-maihama-chidori-nishi": {
+    "舞浜駅": {
+      "lat": 35.6355509,
+      "lng": 139.8839058,
+      "platformId": 9482601638,
+      "role": "platform_entry_only",
+      "osmName": "舞浜駅"
+    },
+    "オリエンタルランド本社前": {
+      "lat": 35.6312873,
+      "lng": 139.8885643,
+      "platformId": 2301981524,
+      "role": "platform",
+      "osmName": "オリエンタルランド本社前"
+    },
+    "運動公園": {
+      "lat": 35.6316986,
+      "lng": 139.8916963,
+      "platformId": 6935385497,
+      "role": "platform",
+      "osmName": "運動公園"
+    },
+    "千鳥車庫": {
+      "lat": 35.6266968,
+      "lng": 139.8978974,
+      "platformId": 6796353425,
+      "role": "platform",
+      "osmName": "千鳥車庫"
+    },
+    "千鳥北": {
+      "lat": 35.6246911,
+      "lng": 139.8988744,
+      "platformId": 9482675705,
+      "role": "platform",
+      "osmName": "千鳥北"
+    },
+    "千鳥中央": {
+      "lat": 35.6224627,
+      "lng": 139.8996502,
+      "platformId": 6796350270,
+      "role": "platform",
+      "osmName": "千鳥中央"
+    },
+    "クリーンセンター": {
+      "lat": 35.6200289,
+      "lng": 139.8997495,
+      "platformId": 2302366865,
+      "role": "platform",
+      "osmName": "クリーンセンター"
+    },
+    "浦安斎場": {
+      "lat": 35.6193187,
+      "lng": 139.8967548,
+      "platformId": 6796350273,
+      "role": "platform",
+      "osmName": "浦安斎場"
+    },
+    "千鳥西": {
+      "lat": 35.6211606,
+      "lng": 139.8965033,
+      "platformId": 6796350274,
+      "role": "platform",
+      "osmName": "千鳥西"
+    }
+  },
+  "20-chidori-loop": {
+    "byIndex": [
+      {
+        "name": "舞浜駅",
+        "lat": 35.6355509,
+        "lng": 139.8839058,
+        "platformId": 9482601638,
+        "role": "platform_entry_only",
+        "osmName": "舞浜駅"
+      },
+      {
+        "name": "オリエンタルランド本社前",
+        "lat": 35.6312873,
+        "lng": 139.8885643,
+        "platformId": 2301981524,
+        "role": "platform",
+        "osmName": "オリエンタルランド本社前"
+      },
+      {
+        "name": "運動公園",
+        "lat": 35.6316986,
+        "lng": 139.8916963,
+        "platformId": 6935385497,
+        "role": "platform",
+        "osmName": "運動公園"
+      },
+      {
+        "name": "千鳥車庫",
+        "lat": 35.6266968,
+        "lng": 139.8978974,
+        "platformId": 6796353425,
+        "role": "platform",
+        "osmName": "千鳥車庫"
+      },
+      {
+        "name": "千鳥北",
+        "lat": 35.6246911,
+        "lng": 139.8988744,
+        "platformId": 9482675705,
+        "role": "platform",
+        "osmName": "千鳥北"
+      },
+      {
+        "name": "千鳥中央",
+        "lat": 35.6224627,
+        "lng": 139.8996502,
+        "platformId": 6796350270,
+        "role": "platform",
+        "osmName": "千鳥中央"
+      },
+      {
+        "name": "クリーンセンター",
+        "lat": 35.6200289,
+        "lng": 139.8997495,
+        "platformId": 2302366865,
+        "role": "platform",
+        "osmName": "クリーンセンター"
+      },
+      {
+        "name": "浦安斎場",
+        "lat": 35.6193187,
+        "lng": 139.8967548,
+        "platformId": 6796350273,
+        "role": "platform",
+        "osmName": "浦安斎場"
+      },
+      {
+        "name": "千鳥西",
+        "lat": 35.6211606,
+        "lng": 139.8965033,
+        "platformId": 6796350274,
+        "role": "platform",
+        "osmName": "千鳥西"
+      },
+      {
+        "name": "千鳥中央",
+        "lat": 35.6222905,
+        "lng": 139.8994665,
+        "platformId": 6796350271,
+        "role": "platform",
+        "osmName": "千鳥中央"
+      },
+      {
+        "name": "千鳥北",
+        "lat": 35.6244672,
+        "lng": 139.8986946,
+        "platformId": 9482675706,
+        "role": "platform",
+        "osmName": "千鳥北"
+      },
+      {
+        "name": "千鳥車庫",
+        "lat": 35.6267251,
+        "lng": 139.8975313,
+        "platformId": 6796353426,
+        "role": "platform",
+        "osmName": "千鳥車庫"
+      },
+      {
+        "name": "オリエンタルランド本社前",
+        "lat": 35.6320206,
+        "lng": 139.887359,
+        "platformId": 2301991499,
+        "role": "platform",
+        "osmName": "オリエンタルランド本社前"
+      },
+      {
+        "name": "舞浜駅",
+        "lat": 35.6360225,
+        "lng": 139.8833113,
+        "platformId": 9482601633,
+        "role": "platform_exit_only",
+        "osmName": "舞浜駅"
+      }
+    ]
+  },
+  "20-maihama-chidori-garage": {
+    "byIndex": [
+      {
+        "name": "舞浜駅",
+        "lat": 35.6355509,
+        "lng": 139.8839058,
+        "platformId": 9482601638,
+        "role": "platform_entry_only",
+        "osmName": "舞浜駅"
+      },
+      {
+        "name": "オリエンタルランド本社前",
+        "lat": 35.6312873,
+        "lng": 139.8885643,
+        "platformId": 2301981524,
+        "role": "platform",
+        "osmName": "オリエンタルランド本社前"
+      },
+      {
+        "name": "運動公園",
+        "lat": 35.6316986,
+        "lng": 139.8916963,
+        "platformId": 6935385497,
+        "role": "platform",
+        "osmName": "運動公園"
+      },
+      {
+        "name": "千鳥車庫",
+        "lat": 35.6266968,
+        "lng": 139.8978974,
+        "platformId": 6796353425,
+        "role": "platform",
+        "osmName": "千鳥車庫"
+      },
+      {
+        "name": "千鳥北",
+        "lat": 35.6246911,
+        "lng": 139.8988744,
+        "platformId": 9482675705,
+        "role": "platform",
+        "osmName": "千鳥北"
+      },
+      {
+        "name": "千鳥東",
+        "lat": 35.6247863,
+        "lng": 139.9000968,
+        "platformId": 6796350269,
+        "role": "platform",
+        "osmName": "千鳥東"
+      },
+      {
+        "name": "車庫裏",
+        "lat": 35.6269812,
+        "lng": 139.8994732,
+        "platformId": 6796350268,
+        "role": "platform",
+        "osmName": "車庫裏"
+      },
+      {
+        "name": "千鳥車庫",
+        "lat": 35.6276692,
+        "lng": 139.898082,
+        "platformId": 9482700319,
+        "role": "platform_exit_only",
+        "osmName": "千鳥車庫"
+      }
+    ]
+  },
+  "20-chidori-garage-maihama": {
+    "byIndex": [
+      {
+        "name": "千鳥車庫",
+        "lat": 35.6277143,
+        "lng": 139.8980169,
+        "platformId": 6796350267,
+        "role": "platform_entry_only",
+        "osmName": "千鳥車庫"
+      },
+      {
+        "name": "車庫裏",
+        "lat": 35.6269235,
+        "lng": 139.8997012,
+        "platformId": 12369582639,
+        "role": "platform",
+        "osmName": "車庫裏"
+      },
+      {
+        "name": "千鳥東",
+        "lat": 35.6247215,
+        "lng": 139.9001598,
+        "platformId": 12369582638,
+        "role": "platform",
+        "osmName": "千鳥東"
+      },
+      {
+        "name": "千鳥北",
+        "lat": 35.6244672,
+        "lng": 139.8986946,
+        "platformId": 9482675706,
+        "role": "platform",
+        "osmName": "千鳥北"
+      },
+      {
+        "name": "千鳥車庫",
+        "lat": 35.6267251,
+        "lng": 139.8975313,
+        "platformId": 6796353426,
+        "role": "platform",
+        "osmName": "千鳥車庫"
+      },
+      {
+        "name": "オリエンタルランド本社前",
+        "lat": 35.6320206,
+        "lng": 139.887359,
+        "platformId": 2301991499,
+        "role": "platform",
+        "osmName": "オリエンタルランド本社前"
+      },
+      {
+        "name": "舞浜駅",
+        "lat": 35.6360225,
+        "lng": 139.8833113,
+        "platformId": 9482601633,
+        "role": "platform_exit_only",
+        "osmName": "舞浜駅"
+      }
+    ]
+  },
+  "20-clean-center-maihama": {
+    "クリーンセンター": {
+      "lat": 35.6207163,
+      "lng": 139.9000123,
+      "platformId": 12385517051,
+      "role": "platform_entry_only",
+      "osmName": "クリーンセンター"
+    },
+    "千鳥中央": {
+      "lat": 35.6222905,
+      "lng": 139.8994665,
+      "platformId": 6796350271,
+      "role": "platform",
+      "osmName": "千鳥中央"
+    },
+    "千鳥北": {
+      "lat": 35.6244672,
+      "lng": 139.8986946,
+      "platformId": 9482675706,
+      "role": "platform",
+      "osmName": "千鳥北"
+    },
+    "千鳥車庫": {
+      "lat": 35.6267251,
+      "lng": 139.8975313,
+      "platformId": 6796353426,
+      "role": "platform",
+      "osmName": "千鳥車庫"
+    },
+    "オリエンタルランド本社前": {
+      "lat": 35.6320206,
+      "lng": 139.887359,
+      "platformId": 2301991499,
+      "role": "platform",
+      "osmName": "オリエンタルランド本社前"
+    },
+    "舞浜駅": {
+      "lat": 35.6360225,
+      "lng": 139.8833113,
+      "platformId": 9482601633,
+      "role": "platform_exit_only",
+      "osmName": "舞浜駅"
+    }
+  },
+  "20-clean-center-maihama-via-saijo": {
+    "クリーンセンター": {
+      "lat": 35.6200289,
+      "lng": 139.8997495,
+      "platformId": 2302366865,
+      "role": "platform",
+      "osmName": "クリーンセンター"
+    },
+    "浦安斎場": {
+      "lat": 35.6193187,
+      "lng": 139.8967548,
+      "platformId": 6796350273,
+      "role": "platform",
+      "osmName": "浦安斎場"
+    },
+    "千鳥西": {
+      "lat": 35.6211606,
+      "lng": 139.8965033,
+      "platformId": 6796350274,
+      "role": "platform",
+      "osmName": "千鳥西"
+    },
+    "千鳥中央": {
+      "lat": 35.6222905,
+      "lng": 139.8994665,
+      "platformId": 6796350271,
+      "role": "platform",
+      "osmName": "千鳥中央"
+    },
+    "千鳥北": {
+      "lat": 35.6244672,
+      "lng": 139.8986946,
+      "platformId": 9482675706,
+      "role": "platform",
+      "osmName": "千鳥北"
+    },
+    "千鳥車庫": {
+      "lat": 35.6267251,
+      "lng": 139.8975313,
+      "platformId": 6796353426,
+      "role": "platform",
+      "osmName": "千鳥車庫"
+    },
+    "オリエンタルランド本社前": {
+      "lat": 35.6320206,
+      "lng": 139.887359,
+      "platformId": 2301991499,
+      "role": "platform",
+      "osmName": "オリエンタルランド本社前"
+    },
+    "舞浜駅": {
+      "lat": 35.6360225,
+      "lng": 139.8833113,
+      "platformId": 9482601633,
+      "role": "platform_exit_only",
+      "osmName": "舞浜駅"
+    }
+  }
+}

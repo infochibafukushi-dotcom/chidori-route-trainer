@@ -1,0 +1,351 @@
+{
+  "startedAt": "2026-07-26T22:29:44.121Z",
+  "routeId": "route-20",
+  "integrity": {
+    "20-maihama-clean-center": {
+      "stopNames": [
+        "舞浜駅",
+        "オリエンタルランド本社前",
+        "運動公園",
+        "千鳥車庫",
+        "千鳥北",
+        "千鳥中央",
+        "クリーンセンター"
+      ],
+      "stopIds": [
+        "chidori-20-maihama-clean-center-01",
+        "chidori-20-maihama-clean-center-02",
+        "chidori-20-maihama-clean-center-03",
+        "chidori-20-maihama-clean-center-04",
+        "chidori-20-maihama-clean-center-05",
+        "chidori-20-maihama-clean-center-06",
+        "chidori-20-maihama-clean-center-07"
+      ],
+      "coordsValid": true,
+      "pathPoints": 154,
+      "pathHash": "ec1585e1695aa13f6dcda17612da6f6a7f9406139febe4c4a410c470b6f0b18e",
+      "recomputedHash": "ec1585e1695aa13f6dcda17612da6f6a7f9406139febe4c4a410c470b6f0b18e",
+      "resolvedVersion": "2026-07-27-chidori20-maihama-clean-center-v1",
+      "pathInvalid": false,
+      "validation": {
+        "ok": true,
+        "reasons": [],
+        "maxGapM": 24.7,
+        "pointCount": 154,
+        "policyVersion": "2026-07-27-chidori-line-v1-path"
+      },
+      "stopOrderMatchesOfficial": true,
+      "pathHashMatchesBank": true,
+      "pathHashRecomputeMatches": true,
+      "resolvedVersionMatches": true,
+      "siblingLeak": []
+    },
+    "20-maihama-chidori-nishi": {
+      "stopNames": [
+        "舞浜駅",
+        "オリエンタルランド本社前",
+        "運動公園",
+        "千鳥車庫",
+        "千鳥北",
+        "千鳥中央",
+        "クリーンセンター",
+        "浦安斎場",
+        "千鳥西"
+      ],
+      "stopIds": [
+        "chidori-20-maihama-chidori-nishi-01",
+        "chidori-20-maihama-chidori-nishi-02",
+        "chidori-20-maihama-chidori-nishi-03",
+        "chidori-20-maihama-chidori-nishi-04",
+        "chidori-20-maihama-chidori-nishi-05",
+        "chidori-20-maihama-chidori-nishi-06",
+        "chidori-20-maihama-chidori-nishi-07",
+        "chidori-20-maihama-chidori-nishi-08",
+        "chidori-20-maihama-chidori-nishi-09"
+      ],
+      "coordsValid": true,
+      "pathPoints": 176,
+      "pathHash": "43450a367936c82ad8d1c6275c5300d3aaa08ce664f6bf13cfe85dbb182b3848",
+      "recomputedHash": "43450a367936c82ad8d1c6275c5300d3aaa08ce664f6bf13cfe85dbb182b3848",
+      "resolvedVersion": "2026-07-27-chidori20-maihama-chidori-nishi-v1",
+      "pathInvalid": false,
+      "validation": {
+        "ok": true,
+        "reasons": [],
+        "maxGapM": 24.7,
+        "pointCount": 176,
+        "policyVersion": "2026-07-27-chidori-line-v1-path"
+      },
+      "stopOrderMatchesOfficial": true,
+      "pathHashMatchesBank": true,
+      "pathHashRecomputeMatches": true,
+      "resolvedVersionMatches": true,
+      "siblingLeak": []
+    },
+    "20-chidori-loop": {
+      "stopNames": [
+        "舞浜駅",
+        "オリエンタルランド本社前",
+        "運動公園",
+        "千鳥車庫",
+        "千鳥北",
+        "千鳥中央",
+        "クリーンセンター",
+        "浦安斎場",
+        "千鳥西",
+        "千鳥中央",
+        "千鳥北",
+        "千鳥車庫",
+        "オリエンタルランド本社前",
+        "舞浜駅"
+      ],
+      "stopIds": [
+        "chidori-20-chidori-loop-01",
+        "chidori-20-chidori-loop-02",
+        "chidori-20-chidori-loop-03",
+        "chidori-20-chidori-loop-04",
+        "chidori-20-chidori-loop-05",
+        "chidori-20-chidori-loop-06",
+        "chidori-20-chidori-loop-07",
+        "chidori-20-chidori-loop-08",
+        "chidori-20-chidori-loop-09",
+        "chidori-20-chidori-loop-10",
+        "chidori-20-chidori-loop-11",
+        "chidori-20-chidori-loop-12",
+        "chidori-20-chidori-loop-13",
+        "chidori-20-chidori-loop-14"
+      ],
+      "coordsValid": true,
+      "pathPoints": 343,
+      "pathHash": "a505e3883b9ea46e8a8f77b1e7d5d5b0735ea56a4660673aad48068a478a3996",
+      "recomputedHash": "a505e3883b9ea46e8a8f77b1e7d5d5b0735ea56a4660673aad48068a478a3996",
+      "resolvedVersion": "2026-07-27-chidori20-chidori-loop-v1",
+      "pathInvalid": false,
+      "validation": {
+        "ok": true,
+        "reasons": [],
+        "maxGapM": 25,
+        "pointCount": 343,
+        "policyVersion": "2026-07-27-chidori-line-v1-path"
+      },
+      "stopOrderMatchesOfficial": true,
+      "pathHashMatchesBank": true,
+      "pathHashRecomputeMatches": true,
+      "resolvedVersionMatches": true,
+      "siblingLeak": []
+    },
+    "20-maihama-chidori-garage": {
+      "stopNames": [
+        "舞浜駅",
+        "オリエンタルランド本社前",
+        "運動公園",
+        "千鳥車庫",
+        "千鳥北",
+        "千鳥東",
+        "車庫裏",
+        "千鳥車庫"
+      ],
+      "stopIds": [
+        "chidori-20-maihama-chidori-garage-01",
+        "chidori-20-maihama-chidori-garage-02",
+        "chidori-20-maihama-chidori-garage-03",
+        "chidori-20-maihama-chidori-garage-04",
+        "chidori-20-maihama-chidori-garage-05",
+        "chidori-20-maihama-chidori-garage-06",
+        "chidori-20-maihama-chidori-garage-07",
+        "chidori-20-maihama-chidori-garage-08"
+      ],
+      "coordsValid": true,
+      "pathPoints": 163,
+      "pathHash": "fcdf49d8ac12e1fbed93308f76b3c39356b5ef88d6646b50d2220237e3ad9523",
+      "recomputedHash": "fcdf49d8ac12e1fbed93308f76b3c39356b5ef88d6646b50d2220237e3ad9523",
+      "resolvedVersion": "2026-07-27-chidori20-maihama-chidori-garage-v1",
+      "pathInvalid": false,
+      "validation": {
+        "ok": true,
+        "reasons": [],
+        "maxGapM": 24.8,
+        "pointCount": 163,
+        "policyVersion": "2026-07-27-chidori-line-v1-path"
+      },
+      "stopOrderMatchesOfficial": true,
+      "pathHashMatchesBank": true,
+      "pathHashRecomputeMatches": true,
+      "resolvedVersionMatches": true,
+      "siblingLeak": []
+    },
+    "20-chidori-garage-maihama": {
+      "stopNames": [
+        "千鳥車庫",
+        "車庫裏",
+        "千鳥東",
+        "千鳥北",
+        "千鳥車庫",
+        "オリエンタルランド本社前",
+        "舞浜駅"
+      ],
+      "stopIds": [
+        "chidori-20-chidori-garage-maihama-01",
+        "chidori-20-chidori-garage-maihama-02",
+        "chidori-20-chidori-garage-maihama-03",
+        "chidori-20-chidori-garage-maihama-04",
+        "chidori-20-chidori-garage-maihama-05",
+        "chidori-20-chidori-garage-maihama-06",
+        "chidori-20-chidori-garage-maihama-07"
+      ],
+      "coordsValid": true,
+      "pathPoints": 187,
+      "pathHash": "c306bbbd0414404401bffe2ffa658b54c1070ce8045ad4d51ad2a480a186befe",
+      "recomputedHash": "c306bbbd0414404401bffe2ffa658b54c1070ce8045ad4d51ad2a480a186befe",
+      "resolvedVersion": "2026-07-27-chidori20-chidori-garage-maihama-v1",
+      "pathInvalid": false,
+      "validation": {
+        "ok": true,
+        "reasons": [],
+        "maxGapM": 25,
+        "pointCount": 187,
+        "policyVersion": "2026-07-27-chidori-line-v1-path"
+      },
+      "stopOrderMatchesOfficial": true,
+      "pathHashMatchesBank": true,
+      "pathHashRecomputeMatches": true,
+      "resolvedVersionMatches": true,
+      "siblingLeak": []
+    },
+    "20-clean-center-maihama": {
+      "stopNames": [
+        "クリーンセンター",
+        "千鳥中央",
+        "千鳥北",
+        "千鳥車庫",
+        "オリエンタルランド本社前",
+        "舞浜駅"
+      ],
+      "stopIds": [
+        "chidori-20-clean-center-maihama-01",
+        "chidori-20-clean-center-maihama-02",
+        "chidori-20-clean-center-maihama-03",
+        "chidori-20-clean-center-maihama-04",
+        "chidori-20-clean-center-maihama-05",
+        "chidori-20-clean-center-maihama-06"
+      ],
+      "coordsValid": true,
+      "pathPoints": 157,
+      "pathHash": "e943bdeb28e76af735c764d842f51f6f1824e7d26bf0e713c66e921272d4d52e",
+      "recomputedHash": "e943bdeb28e76af735c764d842f51f6f1824e7d26bf0e713c66e921272d4d52e",
+      "resolvedVersion": "2026-07-27-chidori20-clean-center-maihama-v1",
+      "pathInvalid": false,
+      "validation": {
+        "ok": true,
+        "reasons": [],
+        "maxGapM": 25,
+        "pointCount": 157,
+        "policyVersion": "2026-07-27-chidori-line-v1-path"
+      },
+      "stopOrderMatchesOfficial": true,
+      "pathHashMatchesBank": true,
+      "pathHashRecomputeMatches": true,
+      "resolvedVersionMatches": true,
+      "siblingLeak": []
+    },
+    "20-clean-center-maihama-via-saijo": {
+      "stopNames": [
+        "クリーンセンター",
+        "浦安斎場",
+        "千鳥西",
+        "千鳥中央",
+        "千鳥北",
+        "千鳥車庫",
+        "オリエンタルランド本社前",
+        "舞浜駅"
+      ],
+      "stopIds": [
+        "chidori-20-clean-center-maihama-via-saijo-01",
+        "chidori-20-clean-center-maihama-via-saijo-02",
+        "chidori-20-clean-center-maihama-via-saijo-03",
+        "chidori-20-clean-center-maihama-via-saijo-04",
+        "chidori-20-clean-center-maihama-via-saijo-05",
+        "chidori-20-clean-center-maihama-via-saijo-06",
+        "chidori-20-clean-center-maihama-via-saijo-07",
+        "chidori-20-clean-center-maihama-via-saijo-08"
+      ],
+      "coordsValid": true,
+      "pathPoints": 203,
+      "pathHash": "db28f79d84b913e7b03c424feda50b301aa5cf6ba769a4a509afe1ffbe5550b0",
+      "recomputedHash": "db28f79d84b913e7b03c424feda50b301aa5cf6ba769a4a509afe1ffbe5550b0",
+      "resolvedVersion": "2026-07-27-chidori20-clean-center-maihama-via-saijo-v1",
+      "pathInvalid": false,
+      "validation": {
+        "ok": true,
+        "reasons": [],
+        "maxGapM": 25,
+        "pointCount": 203,
+        "policyVersion": "2026-07-27-chidori-line-v1-path"
+      },
+      "stopOrderMatchesOfficial": true,
+      "pathHashMatchesBank": true,
+      "pathHashRecomputeMatches": true,
+      "resolvedVersionMatches": true,
+      "siblingLeak": []
+    }
+  },
+  "drives": {
+    "20-maihama-clean-center": {
+      "ok": true,
+      "endReached": true,
+      "jumps": 0,
+      "registeredStops": 7,
+      "stopCount": 7
+    },
+    "20-maihama-chidori-nishi": {
+      "ok": true,
+      "endReached": true,
+      "jumps": 0,
+      "registeredStops": 9,
+      "stopCount": 9
+    },
+    "20-chidori-loop": {
+      "ok": true,
+      "endReached": true,
+      "jumps": 0,
+      "registeredStops": 14,
+      "stopCount": 14
+    },
+    "20-maihama-chidori-garage": {
+      "ok": true,
+      "endReached": true,
+      "jumps": 0,
+      "registeredStops": 8,
+      "stopCount": 8
+    },
+    "20-chidori-garage-maihama": {
+      "ok": true,
+      "endReached": true,
+      "jumps": 0,
+      "registeredStops": 7,
+      "stopCount": 7
+    },
+    "20-clean-center-maihama": {
+      "ok": true,
+      "endReached": true,
+      "jumps": 0,
+      "registeredStops": 6,
+      "stopCount": 6
+    },
+    "20-clean-center-maihama-via-saijo": {
+      "ok": true,
+      "endReached": true,
+      "jumps": 0,
+      "registeredStops": 8,
+      "stopCount": 8
+    }
+  },
+  "pageErrors": [],
+  "consoleErrors": [],
+  "failures": [],
+  "pass": true,
+  "regressions": {
+    "route-19": true,
+    "route-22": "skipped-no-pack"
+  }
+}

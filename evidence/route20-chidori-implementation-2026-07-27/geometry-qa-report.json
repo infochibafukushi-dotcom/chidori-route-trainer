@@ -1,0 +1,41 @@
+{
+  "systems": {
+    "20-maihama-clean-center": {
+      "pathPoints": 154,
+      "maxGap_m": 24.7,
+      "pathHash": "ec1585e1695aa13f6dcda17612da6f6a7f9406139febe4c4a410c470b6f0b18e"
+    },
+    "20-maihama-chidori-nishi": {
+      "pathPoints": 176,
+      "maxGap_m": 24.7,
+      "pathHash": "43450a367936c82ad8d1c6275c5300d3aaa08ce664f6bf13cfe85dbb182b3848"
+    },
+    "20-chidori-loop": {
+      "pathPoints": 343,
+      "maxGap_m": 25,
+      "pathHash": "a505e3883b9ea46e8a8f77b1e7d5d5b0735ea56a4660673aad48068a478a3996"
+    },
+    "20-maihama-chidori-garage": {
+      "pathPoints": 163,
+      "maxGap_m": 24.8,
+      "pathHash": "fcdf49d8ac12e1fbed93308f76b3c39356b5ef88d6646b50d2220237e3ad9523"
+    },
+    "20-chidori-garage-maihama": {
+      "pathPoints": 187,
+      "maxGap_m": 25,
+      "pathHash": "c306bbbd0414404401bffe2ffa658b54c1070ce8045ad4d51ad2a480a186befe"
+    },
+    "20-clean-center-maihama": {
+      "pathPoints": 157,
+      "maxGap_m": 25,
+      "pathHash": "e943bdeb28e76af735c764d842f51f6f1824e7d26bf0e713c66e921272d4d52e"
+    },
+    "20-clean-center-maihama-via-saijo": {
+      "pathPoints": 203,
+      "maxGap_m": 25,
+      "pathHash": "db28f79d84b913e7b03c424feda50b301aa5cf6ba769a4a509afe1ffbe5550b0"
+    }
+  },
+  "failures": [],
+  "ok": true
+}

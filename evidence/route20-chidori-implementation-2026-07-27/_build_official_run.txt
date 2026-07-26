@@ -1,0 +1,26 @@
+﻿node : C:\Users\yamam\OneDrive\繝峨く繝･繝｡繝ｳ繝・GitHub\chidori-route-trainer\evidence\route20-chidori-implementation-2026-07-
+27\_build_official_gate.js:117
+発生場所 C:\Users\yamam\AppData\Local\Temp\ps-script-2d7d5215-f040-4247-9aa9-49909fa30ddc.ps1:107 文字:1
++ node _build_official_gate.js 2>&1 | Out-File -Encoding utf8 _build_of ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Users\yamam\...ial_gate.js:117:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+        throw new Error(`conflicting stop order for ${def.key}`);
+        ^
+
+Error: conflicting stop order for 20-clean-center-maihama
+    at main (C:\Users\yamam\OneDrive\繝峨く繝･繝｡繝ｳ繝・GitHub\chidori-route-trainer\evidence\route20-chidori-implementation-20
+26-07-27\_build_official_gate.js:117:15)
+    at Object.<anonymous> (C:\Users\yamam\OneDrive\繝峨く繝･繝｡繝ｳ繝・GitHub\chidori-route-trainer\evidence\route20-chidori-imp
+lementation-2026-07-27\_build_official_gate.js:306:1)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+    at node:internal/main/run_main_module:36:49
+
+Node.js v22.21.0

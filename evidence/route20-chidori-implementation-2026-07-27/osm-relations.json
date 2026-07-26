@@ -1,0 +1,749 @@
+{
+  "fetchedAt": "2026-07-26T20:36:38.851Z",
+  "route": "chidori-route20",
+  "lineName": "千鳥線",
+  "knownPathSourceIds": [
+    13764790,
+    18323971,
+    18323972,
+    18351939,
+    18351940
+  ],
+  "separationGuard": "ref=22 (若潮通り線 / 22千鳥東) relations are listed but NEVER used for route-20 geometry.",
+  "relations": [
+    {
+      "id": 13764790,
+      "label": "route20 舞浜駅⇒千鳥東⇒千鳥車庫",
+      "ok": true,
+      "source": "api.openstreetmap.org/0.6",
+      "name": "東京ベイシティバス20系統 舞浜駅⇒千鳥東⇒千鳥車庫",
+      "tags": {
+        "from": "舞浜駅",
+        "name": "東京ベイシティバス20系統 舞浜駅⇒千鳥東⇒千鳥車庫",
+        "network": "千鳥線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "20",
+        "route": "bus",
+        "to": "舞浜駅",
+        "type": "route"
+      },
+      "memberCount": 15,
+      "wayMemberCount": 8,
+      "platformMemberCount": 7,
+      "memberRoles": {
+        "platform_entry_only": 1,
+        "platform": 5,
+        "platform_exit_only": 1,
+        "": 8
+      },
+      "platformNames": [
+        "舞浜駅",
+        "オリエンタルランド本社前",
+        "運動公園",
+        "千鳥車庫",
+        "千鳥東",
+        "車庫裏",
+        "千鳥車庫"
+      ],
+      "platformsDetail": [
+        {
+          "role": "platform_entry_only",
+          "type": "node",
+          "ref": 9482601638,
+          "name": "舞浜駅",
+          "lat": 35.6355509,
+          "lon": 139.8839058,
+          "local_ref": "1"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 2301981524,
+          "name": "オリエンタルランド本社前",
+          "lat": 35.6312873,
+          "lon": 139.8885643,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6935385497,
+          "name": "運動公園",
+          "lat": 35.6316986,
+          "lon": 139.8916963,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6796353425,
+          "name": "千鳥車庫",
+          "lat": 35.6266968,
+          "lon": 139.8978974,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6796350269,
+          "name": "千鳥東",
+          "lat": 35.6247863,
+          "lon": 139.9000968,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6796350268,
+          "name": "車庫裏",
+          "lat": 35.6269812,
+          "lon": 139.8994732,
+          "local_ref": null
+        },
+        {
+          "role": "platform_exit_only",
+          "type": "node",
+          "ref": 9482700319,
+          "name": "千鳥車庫",
+          "lat": 35.6276692,
+          "lon": 139.898082,
+          "local_ref": null
+        }
+      ],
+      "wayMemberIds": [
+        1337138028,
+        258419782,
+        1240445586,
+        796894963,
+        286387769,
+        286387770,
+        1338973095,
+        30176865
+      ],
+      "file": "osm-relation-13764790.json"
+    },
+    {
+      "id": 18323971,
+      "label": "route20 千鳥車庫⇒千鳥東⇒舞浜駅",
+      "ok": true,
+      "source": "overpass",
+      "name": "東京ベイシティバス20系統 千鳥車庫⇒千鳥東⇒舞浜駅",
+      "tags": {
+        "name": "東京ベイシティバス20系統 千鳥車庫⇒千鳥東⇒舞浜駅",
+        "network": "千鳥線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "20",
+        "route": "bus",
+        "type": "route"
+      },
+      "memberCount": 15,
+      "wayMemberCount": 8,
+      "platformMemberCount": 7,
+      "memberRoles": {
+        "platform_entry_only": 1,
+        "platform": 5,
+        "platform_exit_only": 1,
+        "": 8
+      },
+      "platformNames": [
+        "千鳥車庫",
+        "車庫裏",
+        "千鳥東",
+        "千鳥北",
+        "千鳥車庫",
+        "オリエンタルランド本社前",
+        "舞浜駅"
+      ],
+      "platformsDetail": [
+        {
+          "role": "platform_entry_only",
+          "type": "node",
+          "ref": 6796350267,
+          "name": "千鳥車庫",
+          "lat": 35.6277143,
+          "lon": 139.8980169,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 12369582639,
+          "name": "車庫裏",
+          "lat": 35.6269235,
+          "lon": 139.8997012,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 12369582638,
+          "name": "千鳥東",
+          "lat": 35.6247215,
+          "lon": 139.9001598,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 9482675706,
+          "name": "千鳥北",
+          "lat": 35.6244672,
+          "lon": 139.8986946,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6796353426,
+          "name": "千鳥車庫",
+          "lat": 35.6267251,
+          "lon": 139.8975313,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 2301991499,
+          "name": "オリエンタルランド本社前",
+          "lat": 35.6320206,
+          "lon": 139.887359,
+          "local_ref": null
+        },
+        {
+          "role": "platform_exit_only",
+          "type": "node",
+          "ref": 9482601633,
+          "name": "舞浜駅",
+          "lat": 35.6360225,
+          "lon": 139.8833113,
+          "local_ref": "5"
+        }
+      ],
+      "wayMemberIds": [
+        30176865,
+        1337358418,
+        1338973093,
+        30176278,
+        796894963,
+        1240445586,
+        203564427,
+        258419781
+      ],
+      "file": "osm-relation-18323971.json"
+    },
+    {
+      "id": 18323972,
+      "label": "route20 舞浜駅⇒千鳥循環",
+      "ok": true,
+      "source": "overpass",
+      "name": "東京ベイシティバス20系統 舞浜駅⇒千鳥循環",
+      "tags": {
+        "from": "舞浜駅",
+        "name": "東京ベイシティバス20系統 舞浜駅⇒千鳥循環",
+        "network": "千鳥線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "20",
+        "route": "bus",
+        "to": "舞浜駅",
+        "type": "route"
+      },
+      "memberCount": 34,
+      "wayMemberCount": 20,
+      "platformMemberCount": 14,
+      "memberRoles": {
+        "platform_entry_only": 1,
+        "platform": 12,
+        "platform_exit_only": 1,
+        "": 20
+      },
+      "platformNames": [
+        "舞浜駅",
+        "オリエンタルランド本社前",
+        "運動公園",
+        "千鳥車庫",
+        "千鳥北",
+        "千鳥中央",
+        "クリーンセンター",
+        "浦安斎場",
+        "千鳥西",
+        "千鳥中央",
+        "千鳥北",
+        "千鳥車庫",
+        "オリエンタルランド本社前",
+        "舞浜駅"
+      ],
+      "platformsDetail": [
+        {
+          "role": "platform_entry_only",
+          "type": "node",
+          "ref": 9482601638,
+          "name": "舞浜駅",
+          "lat": 35.6355509,
+          "lon": 139.8839058,
+          "local_ref": "1"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 2301981524,
+          "name": "オリエンタルランド本社前",
+          "lat": 35.6312873,
+          "lon": 139.8885643,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6935385497,
+          "name": "運動公園",
+          "lat": 35.6316986,
+          "lon": 139.8916963,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6796353425,
+          "name": "千鳥車庫",
+          "lat": 35.6266968,
+          "lon": 139.8978974,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 9482675705,
+          "name": "千鳥北",
+          "lat": 35.6246911,
+          "lon": 139.8988744,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6796350270,
+          "name": "千鳥中央",
+          "lat": 35.6224627,
+          "lon": 139.8996502,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 2302366865,
+          "name": "クリーンセンター",
+          "lat": 35.6200289,
+          "lon": 139.8997495,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6796350273,
+          "name": "浦安斎場",
+          "lat": 35.6193187,
+          "lon": 139.8967548,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6796350274,
+          "name": "千鳥西",
+          "lat": 35.6211606,
+          "lon": 139.8965033,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6796350271,
+          "name": "千鳥中央",
+          "lat": 35.6222905,
+          "lon": 139.8994665,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 9482675706,
+          "name": "千鳥北",
+          "lat": 35.6244672,
+          "lon": 139.8986946,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6796353426,
+          "name": "千鳥車庫",
+          "lat": 35.6267251,
+          "lon": 139.8975313,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 2301991499,
+          "name": "オリエンタルランド本社前",
+          "lat": 35.6320206,
+          "lon": 139.887359,
+          "local_ref": null
+        },
+        {
+          "role": "platform_exit_only",
+          "type": "node",
+          "ref": 9482601633,
+          "name": "舞浜駅",
+          "lat": 35.6360225,
+          "lon": 139.8833113,
+          "local_ref": "5"
+        }
+      ],
+      "wayMemberIds": [
+        1337138028,
+        258419782,
+        1240445586,
+        796894963,
+        286387769,
+        286387770,
+        1338973095,
+        1337358417,
+        1230565490,
+        1230565491,
+        1028567697,
+        1028567699,
+        1230565492,
+        1337358416,
+        1338973093,
+        30176278,
+        796894963,
+        1240445586,
+        203564427,
+        258419781
+      ],
+      "file": "osm-relation-18323972.json"
+    },
+    {
+      "id": 18351939,
+      "label": "route20 クリーンセンター⇒千鳥車庫⇒舞浜駅",
+      "ok": true,
+      "source": "overpass",
+      "name": "東京ベイシティバス20系統 クリーンセンター⇒千鳥車庫⇒舞浜駅",
+      "tags": {
+        "name": "東京ベイシティバス20系統 クリーンセンター⇒千鳥車庫⇒舞浜駅",
+        "network": "千鳥線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "20",
+        "route": "bus",
+        "type": "route"
+      },
+      "memberCount": 15,
+      "wayMemberCount": 9,
+      "platformMemberCount": 6,
+      "memberRoles": {
+        "platform_entry_only": 1,
+        "platform": 4,
+        "platform_exit_only": 1,
+        "": 9
+      },
+      "platformNames": [
+        "クリーンセンター",
+        "千鳥中央",
+        "千鳥北",
+        "千鳥車庫",
+        "オリエンタルランド本社前",
+        "舞浜駅"
+      ],
+      "platformsDetail": [
+        {
+          "role": "platform_entry_only",
+          "type": "node",
+          "ref": 12385517051,
+          "name": "クリーンセンター",
+          "lat": 35.6207163,
+          "lon": 139.9000123,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6796350271,
+          "name": "千鳥中央",
+          "lat": 35.6222905,
+          "lon": 139.8994665,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 9482675706,
+          "name": "千鳥北",
+          "lat": 35.6244672,
+          "lon": 139.8986946,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6796353426,
+          "name": "千鳥車庫",
+          "lat": 35.6267251,
+          "lon": 139.8975313,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 2301991499,
+          "name": "オリエンタルランド本社前",
+          "lat": 35.6320206,
+          "lon": 139.887359,
+          "local_ref": null
+        },
+        {
+          "role": "platform_exit_only",
+          "type": "node",
+          "ref": 9482601633,
+          "name": "舞浜駅",
+          "lat": 35.6360225,
+          "lon": 139.8833113,
+          "local_ref": "5"
+        }
+      ],
+      "wayMemberIds": [
+        1028567696,
+        1230565492,
+        1337358416,
+        1338973093,
+        30176278,
+        796894963,
+        1240445586,
+        203564427,
+        258419781
+      ],
+      "file": "osm-relation-18351939.json"
+    },
+    {
+      "id": 18351940,
+      "label": "route20 舞浜駅⇒千鳥車庫⇒クリーンセンター",
+      "ok": true,
+      "source": "overpass",
+      "name": "東京ベイシティバス20系統 舞浜駅⇒千鳥車庫⇒クリーンセンター",
+      "tags": {
+        "from": "舞浜駅",
+        "name": "東京ベイシティバス20系統 舞浜駅⇒千鳥車庫⇒クリーンセンター",
+        "network": "千鳥線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "20",
+        "route": "bus",
+        "to": "舞浜駅",
+        "type": "route"
+      },
+      "memberCount": 19,
+      "wayMemberCount": 12,
+      "platformMemberCount": 7,
+      "memberRoles": {
+        "platform_entry_only": 1,
+        "platform": 5,
+        "platform_exit_only": 1,
+        "": 12
+      },
+      "platformNames": [
+        "舞浜駅",
+        "オリエンタルランド本社前",
+        "運動公園",
+        "千鳥車庫",
+        "千鳥北",
+        "千鳥中央",
+        "クリーンセンター"
+      ],
+      "platformsDetail": [
+        {
+          "role": "platform_entry_only",
+          "type": "node",
+          "ref": 9482601638,
+          "name": "舞浜駅",
+          "lat": 35.6355509,
+          "lon": 139.8839058,
+          "local_ref": "1"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 2301981524,
+          "name": "オリエンタルランド本社前",
+          "lat": 35.6312873,
+          "lon": 139.8885643,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6935385497,
+          "name": "運動公園",
+          "lat": 35.6316986,
+          "lon": 139.8916963,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6796353425,
+          "name": "千鳥車庫",
+          "lat": 35.6266968,
+          "lon": 139.8978974,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 9482675705,
+          "name": "千鳥北",
+          "lat": 35.6246911,
+          "lon": 139.8988744,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6796350270,
+          "name": "千鳥中央",
+          "lat": 35.6224627,
+          "lon": 139.8996502,
+          "local_ref": null
+        },
+        {
+          "role": "platform_exit_only",
+          "type": "node",
+          "ref": 6796350272,
+          "name": "クリーンセンター",
+          "lat": 35.6194936,
+          "lon": 139.9004636,
+          "local_ref": null
+        }
+      ],
+      "wayMemberIds": [
+        1337138028,
+        258419782,
+        1240445586,
+        796894963,
+        286387769,
+        286387770,
+        1338973095,
+        1337358417,
+        1230565490,
+        1230565491,
+        30176428,
+        1028567695
+      ],
+      "file": "osm-relation-18351940.json"
+    }
+  ],
+  "refProbe20": [
+    {
+      "id": 13764790,
+      "type": "relation",
+      "tags": {
+        "from": "舞浜駅",
+        "name": "東京ベイシティバス20系統 舞浜駅⇒千鳥東⇒千鳥車庫",
+        "network": "千鳥線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "20",
+        "route": "bus",
+        "to": "舞浜駅",
+        "type": "route"
+      }
+    },
+    {
+      "id": 18323971,
+      "type": "relation",
+      "tags": {
+        "name": "東京ベイシティバス20系統 千鳥車庫⇒千鳥東⇒舞浜駅",
+        "network": "千鳥線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "20",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "id": 18323972,
+      "type": "relation",
+      "tags": {
+        "from": "舞浜駅",
+        "name": "東京ベイシティバス20系統 舞浜駅⇒千鳥循環",
+        "network": "千鳥線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "20",
+        "route": "bus",
+        "to": "舞浜駅",
+        "type": "route"
+      }
+    },
+    {
+      "id": 18351939,
+      "type": "relation",
+      "tags": {
+        "name": "東京ベイシティバス20系統 クリーンセンター⇒千鳥車庫⇒舞浜駅",
+        "network": "千鳥線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "20",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "id": 18351940,
+      "type": "relation",
+      "tags": {
+        "from": "舞浜駅",
+        "name": "東京ベイシティバス20系統 舞浜駅⇒千鳥車庫⇒クリーンセンター",
+        "network": "千鳥線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "20",
+        "route": "bus",
+        "to": "舞浜駅",
+        "type": "route"
+      }
+    }
+  ],
+  "refProbe22": [
+    {
+      "id": 18396546,
+      "type": "relation",
+      "tags": {
+        "name": "東京ベイシティバス22系統 千鳥車庫⇒千鳥東⇒新浦安駅",
+        "network": "若潮通り線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "22",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "id": 18396547,
+      "type": "relation",
+      "tags": {
+        "name": "東京ベイシティバス22系統 新浦安駅⇒千鳥東⇒千鳥車庫",
+        "network": "若潮通り線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "22",
+        "route": "bus",
+        "type": "route"
+      }
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "systems": {
+    "20-maihama-clean-center": {
+      "pathHash": "ec1585e1695aa13f6dcda17612da6f6a7f9406139febe4c4a410c470b6f0b18e",
+      "recomputed": "ec1585e1695aa13f6dcda17612da6f6a7f9406139febe4c4a410c470b6f0b18e",
+      "match": true,
+      "pathPoints": 154,
+      "resolvedVersion": "2026-07-27-chidori20-maihama-clean-center-v1"
+    },
+    "20-maihama-chidori-nishi": {
+      "pathHash": "43450a367936c82ad8d1c6275c5300d3aaa08ce664f6bf13cfe85dbb182b3848",
+      "recomputed": "43450a367936c82ad8d1c6275c5300d3aaa08ce664f6bf13cfe85dbb182b3848",
+      "match": true,
+      "pathPoints": 176,
+      "resolvedVersion": "2026-07-27-chidori20-maihama-chidori-nishi-v1"
+    },
+    "20-chidori-loop": {
+      "pathHash": "a505e3883b9ea46e8a8f77b1e7d5d5b0735ea56a4660673aad48068a478a3996",
+      "recomputed": "a505e3883b9ea46e8a8f77b1e7d5d5b0735ea56a4660673aad48068a478a3996",
+      "match": true,
+      "pathPoints": 343,
+      "resolvedVersion": "2026-07-27-chidori20-chidori-loop-v1"
+    },
+    "20-maihama-chidori-garage": {
+      "pathHash": "fcdf49d8ac12e1fbed93308f76b3c39356b5ef88d6646b50d2220237e3ad9523",
+      "recomputed": "fcdf49d8ac12e1fbed93308f76b3c39356b5ef88d6646b50d2220237e3ad9523",
+      "match": true,
+      "pathPoints": 163,
+      "resolvedVersion": "2026-07-27-chidori20-maihama-chidori-garage-v1"
+    },
+    "20-chidori-garage-maihama": {
+      "pathHash": "c306bbbd0414404401bffe2ffa658b54c1070ce8045ad4d51ad2a480a186befe",
+      "recomputed": "c306bbbd0414404401bffe2ffa658b54c1070ce8045ad4d51ad2a480a186befe",
+      "match": true,
+      "pathPoints": 187,
+      "resolvedVersion": "2026-07-27-chidori20-chidori-garage-maihama-v1"
+    },
+    "20-clean-center-maihama": {
+      "pathHash": "e943bdeb28e76af735c764d842f51f6f1824e7d26bf0e713c66e921272d4d52e",
+      "recomputed": "e943bdeb28e76af735c764d842f51f6f1824e7d26bf0e713c66e921272d4d52e",
+      "match": true,
+      "pathPoints": 157,
+      "resolvedVersion": "2026-07-27-chidori20-clean-center-maihama-v1"
+    },
+    "20-clean-center-maihama-via-saijo": {
+      "pathHash": "db28f79d84b913e7b03c424feda50b301aa5cf6ba769a4a509afe1ffbe5550b0",
+      "recomputed": "db28f79d84b913e7b03c424feda50b301aa5cf6ba769a4a509afe1ffbe5550b0",
+      "match": true,
+      "pathPoints": 203,
+      "resolvedVersion": "2026-07-27-chidori20-clean-center-maihama-via-saijo-v1"
+    }
+  },
+  "failures": [],
+  "ok": true
+}

@@ -188,6 +188,17 @@
         './takasu-minami-line-stop-images-v1.js?v=111',
         './takasu-minami-line-route-v1.js?v=111'
       ]
+    },
+    // route-20 千鳥線。千鳥車庫のりば02等で22系統と混載するが別系統。CHIDORI_LINE_* で分離。
+    'route-20': {
+      css: ['./chidori-line-stop-images-v1.css?v=112'],
+      js: [
+        './chidori-line-platforms-v1.js?v=112',
+        './chidori-line-path-v1.js?v=112',
+        './chidori-line-path-policy-v1.js?v=112',
+        './chidori-line-stop-images-v1.js?v=112',
+        './chidori-line-route-v1.js?v=112'
+      ]
     }
   };
 
