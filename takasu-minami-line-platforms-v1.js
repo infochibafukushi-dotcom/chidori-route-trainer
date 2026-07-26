@@ -1,0 +1,211 @@
+// Auto-generated OSM platforms for 高洲南線 系統19 (route-19).
+// Official stop order: Keisei Bus Navi 個別便通過時刻表 2026-07-26（2段凡例ゲートで【１９系統】に確定）。
+// 新浦安駅のりばFの符号無印＝【１９系統】、み＝【１０系統】。高洲海浜公園のりば19は[19]単独。
+// 10系統（みなと南）/15系統（潮音の街・高洲中央公園・高洲）/18系統（夢海の街・高洲橋）は混載セルでも別系統。
+// 停留所は採用していない（潮音の街・高洲中央公園・高洲・夢海の街・高洲橋・みなと南は route-19 に存在しない）。
+// Each dedicated system uses the platforms of its own OSM relation; outbound/inbound platforms differ.
+// Generated: 2026-07-26-takasu-minami-line-v1
+(() => {
+  window.TAKASU_MINAMI_LINE_PLATFORMS_V1 = {
+  "19-takasu-seaside": {
+    "新浦安駅": {
+      "lat": 35.6498736,
+      "lng": 139.9141187,
+      "platformId": 8415001160,
+      "role": "platform_entry_only",
+      "osmName": "新浦安駅"
+    },
+    "入船中央エステート": {
+      "lat": 35.6489816,
+      "lng": 139.9168586,
+      "platformId": 11425579726,
+      "role": "platform",
+      "osmName": "入船中央エステート"
+    },
+    "明海交差点": {
+      "lat": 35.6465372,
+      "lng": 139.9177203,
+      "platformId": 6899487150,
+      "role": "platform",
+      "osmName": "明海交差点"
+    },
+    "入船橋": {
+      "lat": 35.6406464,
+      "lng": 139.9106432,
+      "platformId": 6853044760,
+      "role": "platform",
+      "osmName": "入船橋"
+    },
+    "高洲北小学校": {
+      "lat": 35.6398879,
+      "lng": 139.910827,
+      "platformId": 11580949263,
+      "role": "platform",
+      "osmName": "高洲北小学校"
+    },
+    "東京学館前": {
+      "lat": 35.638865,
+      "lng": 139.9121011,
+      "platformId": 1312670860,
+      "role": "platform",
+      "osmName": "東京学館前"
+    },
+    "高洲二丁目": {
+      "lat": 35.6380846,
+      "lng": 139.9120159,
+      "platformId": 6852993562,
+      "role": "platform",
+      "osmName": "高洲二丁目"
+    },
+    "順天堂大学入口": {
+      "lat": 35.6370993,
+      "lng": 139.9108269,
+      "platformId": 6813929329,
+      "role": "platform",
+      "osmName": "順天堂大学入口"
+    },
+    "高洲西児童公園": {
+      "lat": 35.6360987,
+      "lng": 139.911584,
+      "platformId": 11553788849,
+      "role": "platform",
+      "osmName": "高洲西児童公園"
+    },
+    "高洲三丁目": {
+      "lat": 35.6347924,
+      "lng": 139.9132249,
+      "platformId": 6899769127,
+      "role": "platform",
+      "osmName": "高洲三丁目"
+    },
+    "高洲四丁目": {
+      "lat": 35.6339484,
+      "lng": 139.9142763,
+      "platformId": 11602310172,
+      "role": "platform",
+      "osmName": "高洲四丁目"
+    },
+    "高洲八丁目": {
+      "lat": 35.6326735,
+      "lng": 139.915881,
+      "platformId": 2810280427,
+      "role": "platform",
+      "osmName": "高洲八丁目"
+    },
+    "浦安南高校特養ホーム": {
+      "lat": 35.6315137,
+      "lng": 139.9179751,
+      "platformId": 12385704987,
+      "role": "platform",
+      "osmName": "浦安南高校・特養ホーム"
+    },
+    "高洲海浜公園": {
+      "lat": 35.633492,
+      "lng": 139.9205111,
+      "platformId": 11549952449,
+      "role": "platform_exit_only",
+      "osmName": "高洲海浜公園"
+    }
+  },
+  "19-shinurayasu": {
+    "高洲海浜公園": {
+      "lat": 35.6334627,
+      "lng": 139.9207726,
+      "platformId": 11549952452,
+      "role": "platform_entry_only",
+      "osmName": "高洲海浜公園"
+    },
+    "浦安南高校特養ホーム": {
+      "lat": 35.6316633,
+      "lng": 139.9185376,
+      "platformId": 6779057605,
+      "role": "platform",
+      "osmName": "浦安南高校・特養ホーム"
+    },
+    "高洲八丁目": {
+      "lat": 35.6326904,
+      "lng": 139.9157026,
+      "platformId": 11578740581,
+      "role": "platform",
+      "osmName": "高洲八丁目"
+    },
+    "高洲四丁目": {
+      "lat": 35.6339376,
+      "lng": 139.9141288,
+      "platformId": 2810280428,
+      "role": "platform",
+      "osmName": "高洲四丁目"
+    },
+    "高洲三丁目": {
+      "lat": 35.6348023,
+      "lng": 139.9130599,
+      "platformId": 11553825394,
+      "role": "platform",
+      "osmName": "高洲三丁目"
+    },
+    "高洲西児童公園": {
+      "lat": 35.6361075,
+      "lng": 139.9114258,
+      "platformId": 6899769126,
+      "role": "platform",
+      "osmName": "高洲西児童公園"
+    },
+    "順天堂大学入口": {
+      "lat": 35.6371996,
+      "lng": 139.9107606,
+      "platformId": 11557035679,
+      "role": "platform",
+      "osmName": "順天堂大学入口"
+    },
+    "高洲二丁目": {
+      "lat": 35.6382669,
+      "lng": 139.9120327,
+      "platformId": 11557035681,
+      "role": "platform",
+      "osmName": "高洲二丁目"
+    },
+    "東京学館前": {
+      "lat": 35.6388966,
+      "lng": 139.9118939,
+      "platformId": 11557035685,
+      "role": "platform",
+      "osmName": "東京学館前"
+    },
+    "高洲北小学校": {
+      "lat": 35.6399969,
+      "lng": 139.9105145,
+      "platformId": 1312670866,
+      "role": "platform",
+      "osmName": "高洲北小学校"
+    },
+    "入船橋": {
+      "lat": 35.6407729,
+      "lng": 139.9105319,
+      "platformId": 11580949264,
+      "role": "platform",
+      "osmName": "入船橋"
+    },
+    "明海交差点": {
+      "lat": 35.6466212,
+      "lng": 139.9175634,
+      "platformId": 11586798112,
+      "role": "platform",
+      "osmName": "明海交差点"
+    },
+    "入船中央エステート": {
+      "lat": 35.648721,
+      "lng": 139.9166753,
+      "platformId": 1312711918,
+      "role": "platform",
+      "osmName": "入船中央エステート"
+    },
+    "新浦安駅": {
+      "lat": 35.649411,
+      "lng": 139.9142448,
+      "platformId": 8415001163,
+      "role": "platform_exit_only",
+      "osmName": "新浦安駅"
+    }
+  }
+};
+})();

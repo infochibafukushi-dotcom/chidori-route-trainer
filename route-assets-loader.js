@@ -176,6 +176,18 @@
         './akemi-takasu-line-stop-images-v1.js?v=110',
         './akemi-takasu-line-route-v1.js?v=110'
       ]
+    },
+    // route-19 高洲南線。新浦安駅のりばFを route-10 と共有するが別系統（無印=19／み=10）。
+    // 資産名・グローバル名とも TAKASU_MINAMI_LINE_* で分離する。route-10/15/18 pathは流用しない。
+    'route-19': {
+      css: ['./takasu-minami-line-stop-images-v1.css?v=111'],
+      js: [
+        './takasu-minami-line-platforms-v1.js?v=111',
+        './takasu-minami-line-path-v1.js?v=111',
+        './takasu-minami-line-path-policy-v1.js?v=111',
+        './takasu-minami-line-stop-images-v1.js?v=111',
+        './takasu-minami-line-route-v1.js?v=111'
+      ]
     }
   };
 

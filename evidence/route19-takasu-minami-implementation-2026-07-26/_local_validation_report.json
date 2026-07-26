@@ -1,0 +1,22 @@
+{
+  "routeId": "route-19",
+  "failures": [],
+  "ok": true,
+  "info": {
+    "hasGlobal": true,
+    "systemKeys": [
+      "19-takasu-seaside",
+      "19-shinurayasu"
+    ],
+    "pathKeys": [
+      "19-takasu-seaside",
+      "19-shinurayasu"
+    ],
+    "hashes": {
+      "19-takasu-seaside": "77b15f94c1ce5acbf973627fa6c12eb4e439b01b28f33f9f4fbf34a61e35a417",
+      "19-shinurayasu": "d53830fdb2969a022fe935fddca428c84ea8bf44a5632f130dbeea6b30784129"
+    },
+    "routeSystems": [],
+    "cacheHint": "http://127.0.0.1:8814/route-assets-loader.js?v=111"
+  }
+}

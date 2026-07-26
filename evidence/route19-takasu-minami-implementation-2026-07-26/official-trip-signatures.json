@@ -1,0 +1,42 @@
+{
+  "routeId": "route-19",
+  "lineName": "高洲南線",
+  "checkedAt": "2026-07-26",
+  "policy": "(A) 掲載時刻表の凡例 と (B) 出発のりばの時刻表の凡例 の二段で系統を判定する。新浦安駅のりばFは [10] と [19] を同一セルで混載し（無印=19／み=10）、高洲海浜公園のりば19は [19] 単独、(B) を決定打とする。",
+  "accepted": [
+    {
+      "systemKey": "19-takasu-seaside",
+      "course": "0008200292",
+      "stopCount": 14,
+      "departureBerth": "F",
+      "departureBerthRouteNumber": "19",
+      "timetableSymbol": "無印",
+      "legendLine": "無印…【１９系統】東京学館前、高洲四丁目、浦安南高校・特養ホーム経由　高洲海浜公園行き",
+      "stopNameSignature": "新浦安駅>入船中央エステート>明海交差点>入船橋>高洲北小学校>東京学館前>高洲二丁目>順天堂大学入口>高洲西児童公園>高洲三丁目>高洲四丁目>高洲八丁目>浦安南高校特養ホーム>高洲海浜公園",
+      "stopIdSignature": "00020619>00020663>00020711>00020661>00020720>00020641>00020863>00020865>00020861>00020858>00020859>00020864>00020744>00020855",
+      "tripCountObservedPartial": 164,
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80f2000e/stops?departure-busstop=00020720-5&course=0008200292&datetime=2026-07-27T06:31:00%2B09:00"
+    },
+    {
+      "systemKey": "19-shinurayasu",
+      "course": "0008200291",
+      "stopCount": 14,
+      "departureBerth": "19",
+      "departureBerthRouteNumber": "19",
+      "timetableSymbol": "無印",
+      "legendLine": "無印…【１９系統】高洲四丁目、東京学館前経由　新浦安駅行き",
+      "stopNameSignature": "高洲海浜公園>浦安南高校特養ホーム>高洲八丁目>高洲四丁目>高洲三丁目>高洲西児童公園>順天堂大学入口>高洲二丁目>東京学館前>高洲北小学校>入船橋>明海交差点>入船中央エステート>新浦安駅",
+      "stopIdSignature": "00020855>00020744>00020864>00020859>00020858>00020861>00020865>00020863>00020641>00020720>00020661>00020711>00020663>00020619",
+      "tripCountObservedPartial": 60,
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80f10000/stops?departure-busstop=00020720-10&course=0008200291&datetime=2026-07-27T06:07:00%2B09:00"
+    }
+  ],
+  "rejected": [
+    {
+      "course": "0008200254",
+      "verdict": "REJECT-route-10",
+      "stopNameSignature": "新浦安駅>入船中央エステート>明海交差点>入船橋>高洲北小学校>東京学館前>高洲二丁目>順天堂大学入口>高洲西児童公園>高洲三丁目>高洲四丁目>鉄鋼団地入口>アライプロバンス>みなと第二>みなと南",
+      "reason": "のりばF 符号み → 【１０系統】みなと南（鉄鋼団地）行き。高洲四丁目の次で19系統と分岐。"
+    }
+  ]
+}

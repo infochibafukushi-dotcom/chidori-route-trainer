@@ -1,0 +1,134 @@
+{
+  "startedAt": "2026-07-26T15:48:38.918Z",
+  "routeId": "route-19",
+  "integrity": {
+    "19-takasu-seaside": {
+      "stopNames": [
+        "新浦安駅",
+        "入船中央エステート",
+        "明海交差点",
+        "入船橋",
+        "高洲北小学校",
+        "東京学館前",
+        "高洲二丁目",
+        "順天堂大学入口",
+        "高洲西児童公園",
+        "高洲三丁目",
+        "高洲四丁目",
+        "高洲八丁目",
+        "浦安南高校特養ホーム",
+        "高洲海浜公園"
+      ],
+      "stopIds": [
+        "takasu-minami-19-takasu-seaside-01",
+        "takasu-minami-19-takasu-seaside-02",
+        "takasu-minami-19-takasu-seaside-03",
+        "takasu-minami-19-takasu-seaside-04",
+        "takasu-minami-19-takasu-seaside-05",
+        "takasu-minami-19-takasu-seaside-06",
+        "takasu-minami-19-takasu-seaside-07",
+        "takasu-minami-19-takasu-seaside-08",
+        "takasu-minami-19-takasu-seaside-09",
+        "takasu-minami-19-takasu-seaside-10",
+        "takasu-minami-19-takasu-seaside-11",
+        "takasu-minami-19-takasu-seaside-12",
+        "takasu-minami-19-takasu-seaside-13",
+        "takasu-minami-19-takasu-seaside-14"
+      ],
+      "coordsValid": true,
+      "pathPoints": 197,
+      "pathHash": "77b15f94c1ce5acbf973627fa6c12eb4e439b01b28f33f9f4fbf34a61e35a417",
+      "recomputedHash": "77b15f94c1ce5acbf973627fa6c12eb4e439b01b28f33f9f4fbf34a61e35a417",
+      "resolvedVersion": "2026-07-26-takasuminami19-takasu-seaside-v1",
+      "pathInvalid": false,
+      "validation": {
+        "ok": true,
+        "reasons": [],
+        "maxGapM": 25,
+        "pointCount": 197,
+        "policyVersion": "2026-07-26-takasu-minami-line-v1-path"
+      },
+      "stopOrderMatchesOfficial": true,
+      "pathHashMatchesBank": true,
+      "pathHashRecomputeMatches": true,
+      "resolvedVersionMatches": true,
+      "siblingLeak": []
+    },
+    "19-shinurayasu": {
+      "stopNames": [
+        "高洲海浜公園",
+        "浦安南高校特養ホーム",
+        "高洲八丁目",
+        "高洲四丁目",
+        "高洲三丁目",
+        "高洲西児童公園",
+        "順天堂大学入口",
+        "高洲二丁目",
+        "東京学館前",
+        "高洲北小学校",
+        "入船橋",
+        "明海交差点",
+        "入船中央エステート",
+        "新浦安駅"
+      ],
+      "stopIds": [
+        "takasu-minami-19-shinurayasu-01",
+        "takasu-minami-19-shinurayasu-02",
+        "takasu-minami-19-shinurayasu-03",
+        "takasu-minami-19-shinurayasu-04",
+        "takasu-minami-19-shinurayasu-05",
+        "takasu-minami-19-shinurayasu-06",
+        "takasu-minami-19-shinurayasu-07",
+        "takasu-minami-19-shinurayasu-08",
+        "takasu-minami-19-shinurayasu-09",
+        "takasu-minami-19-shinurayasu-10",
+        "takasu-minami-19-shinurayasu-11",
+        "takasu-minami-19-shinurayasu-12",
+        "takasu-minami-19-shinurayasu-13",
+        "takasu-minami-19-shinurayasu-14"
+      ],
+      "coordsValid": true,
+      "pathPoints": 186,
+      "pathHash": "d53830fdb2969a022fe935fddca428c84ea8bf44a5632f130dbeea6b30784129",
+      "recomputedHash": "d53830fdb2969a022fe935fddca428c84ea8bf44a5632f130dbeea6b30784129",
+      "resolvedVersion": "2026-07-26-takasuminami19-shinurayasu-v1",
+      "pathInvalid": false,
+      "validation": {
+        "ok": true,
+        "reasons": [],
+        "maxGapM": 25,
+        "pointCount": 186,
+        "policyVersion": "2026-07-26-takasu-minami-line-v1-path"
+      },
+      "stopOrderMatchesOfficial": true,
+      "pathHashMatchesBank": true,
+      "pathHashRecomputeMatches": true,
+      "resolvedVersionMatches": true,
+      "siblingLeak": []
+    }
+  },
+  "drives": {
+    "19-takasu-seaside": {
+      "ok": true,
+      "endReached": true,
+      "jumps": 0,
+      "registeredStops": 14,
+      "stopCount": 14
+    },
+    "19-shinurayasu": {
+      "ok": true,
+      "endReached": true,
+      "jumps": 0,
+      "registeredStops": 14,
+      "stopCount": 14
+    }
+  },
+  "pageErrors": [],
+  "consoleErrors": [],
+  "failures": [],
+  "pass": true,
+  "regressions": {
+    "route-18": true,
+    "route-15": true
+  }
+}

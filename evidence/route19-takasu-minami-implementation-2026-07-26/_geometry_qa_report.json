@@ -1,0 +1,20 @@
+{
+  "checkedAt": "2026-07-26T15:33:30.295Z",
+  "checks": [
+    {
+      "system": "19-takasu-seaside",
+      "pathPoints": 197,
+      "pathHash": "77b15f94c1ce5acbf973627fa6c12eb4e439b01b28f33f9f4fbf34a61e35a417",
+      "relationId": 18381771
+    },
+    {
+      "system": "19-shinurayasu",
+      "pathPoints": 186,
+      "pathHash": "d53830fdb2969a022fe935fddca428c84ea8bf44a5632f130dbeea6b30784129",
+      "relationId": 18381770
+    }
+  ],
+  "failures": [],
+  "ok": true,
+  "note": "Proves route-19 geometry is not a truncate/reverse of route-10/15/18 packs."
+}
