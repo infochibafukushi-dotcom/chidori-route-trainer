@@ -343,6 +343,15 @@ for (const material of materials) {
     }
     continue;
   }
+  if (material.id === 'passenger-door-safety-guide') {
+    if (material.title !== '乗降扱い時の安全習慣') {
+      console.error('TITLE MISMATCH passenger-door-safety', material.title);
+      failed++;
+    } else {
+      console.log('OK', material.id, 'image-only');
+    }
+    continue;
+  }
   const exp = expected[material.id];
   if (!exp) {
     console.error('UNKNOWN id', material.id);
@@ -364,8 +373,8 @@ for (const material of materials) {
   }
 }
 
-if (materials.length !== 13) {
-  console.error('Expected 13 materials, got', materials.length);
+if (materials.length !== 14) {
+  console.error('Expected 14 materials, got', materials.length);
   failed++;
 }
 

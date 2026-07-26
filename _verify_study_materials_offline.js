@@ -61,6 +61,9 @@ const DECKS = {
     'bus-stop-arrival-safety-01.png',
     'bus-stop-arrival-safety-02.png',
   ],
+  'passenger-door-safety-guide': [
+    'passenger-door-safety-guide.png',
+  ],
 };
 
 const mime = {

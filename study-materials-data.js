@@ -258,4 +258,11 @@ window.STUDY_MATERIALS = [
     showThumbnail: true,
     blocks: [],
   },
+  {
+    id: 'passenger-door-safety-guide',
+    title: '乗降扱い時の安全習慣',
+    description: '降車扉・乗車扉の操作順序、接遇アナウンス、車内外の安全確認、扉を閉める際の基本動作を確認します。',
+    showThumbnail: true,
+    blocks: [],
+  },
 ];

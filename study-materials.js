@@ -136,6 +136,13 @@
     },
   ];
 
+  const PASSENGER_DOOR_SAFETY_SLIDES = [
+    {
+      src: 'assets/study-materials/passenger-door-safety/passenger-door-safety-guide.png',
+      alt: '乗降扱い時の安全習慣',
+    },
+  ];
+
   const MATERIAL_SLIDES = {
     stroller: STROLLER_SLIDES,
     wheelchair: WHEELCHAIR_SLIDES,
@@ -150,6 +157,7 @@
     'pre-trip-inspection-procedure': PRE_TRIP_INSPECTION_SLIDES,
     'bus-stop-departure-safety': BUS_STOP_DEPARTURE_SLIDES,
     'bus-stop-arrival-safety': BUS_STOP_ARRIVAL_SLIDES,
+    'passenger-door-safety-guide': PASSENGER_DOOR_SAFETY_SLIDES,
   };
 
   let popOpen = false;

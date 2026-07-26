@@ -718,5 +718,10 @@
     "id": "bus-stop-arrival-safety",
     "title": "停留所到着時の安全習慣",
     "blocks": []
+  },
+  {
+    "id": "passenger-door-safety-guide",
+    "title": "乗降扱い時の安全習慣",
+    "blocks": []
   }
 ]

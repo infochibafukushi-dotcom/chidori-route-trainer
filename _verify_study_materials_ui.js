@@ -62,6 +62,9 @@ const DECKS = {
     'bus-stop-arrival-safety-01.png',
     'bus-stop-arrival-safety-02.png',
   ],
+  'passenger-door-safety-guide': [
+    'passenger-door-safety-guide.png',
+  ],
 };
 
 const mime = {
@@ -158,7 +161,8 @@ async function main() {
                     : id === 'pre-trip-inspection-procedure' ? 'pre-trip-inspection'
                       : id === 'bus-stop-departure-safety' ? 'bus-stop-departure'
                         : id === 'bus-stop-arrival-safety' ? 'bus-stop-arrival'
-                          : id;
+                          : id === 'passenger-door-safety-guide' ? 'passenger-door-safety'
+                            : id;
     for (const name of names) {
       const p = path.join(root, 'assets/study-materials', dir, name);
       if (!fs.existsSync(p)) throw new Error('missing ' + p);
@@ -189,7 +193,7 @@ async function main() {
     const listTitles = await page.$$eval('.study-material-item .study-material-copy strong', (els) => els.map((e) => e.textContent.trim()));
     const listHints = await page.$$eval('.study-material-item .study-material-desc', (els) => els.map((e) => e.textContent.trim()));
     const pageBadges = await page.$$eval('.study-material-item .study-material-pages', (els) => els.map((e) => e.textContent.trim()));
-    const listOk = listTitles.length === 13
+    const listOk = listTitles.length === 14
       && listTitles[4] === '5. 運行中に体調の異変を感じた時の対応'
       && listTitles[5] === '6. 事故発生時の処置'
       && listTitles[6] === '7. バスジャック対応マニュアル'
@@ -199,9 +203,11 @@ async function main() {
       && listTitles[10] === '11. 始業点検の手順'
       && listTitles[11] === '12. 停留所発進時の安全習慣'
       && listTitles[12] === '13. 停留所到着時の安全習慣'
+      && listTitles[13] === '14. 乗降扱い時の安全習慣'
       && listHints[0] === 'タップして本文を表示'
       && listHints[11].includes('着座確認')
       && listHints[12].includes('到着前')
+      && listHints[13].includes('降車扉')
       && pageBadges.includes('全3ページ')
       && pageBadges.includes('全2ページ')
       && pageBadges.includes('全6ページ');
@@ -258,7 +264,7 @@ async function main() {
     await page.waitForSelector('#studyMaterialPop', { state: 'detached' });
 
     // regressions for other decks
-    for (const id of ['mic-guide', 'stroller', 'wheelchair', 'bicycle-accident-prevention', 'driver-health-emergency-response', 'accident-response-guide', 'bus-hijacking-response-manual', 'intersection-turning-safety-guide', 'passenger-injury-prevention-guide', 'start-end-roll-call-guide', 'pre-trip-inspection-procedure']) {
+    for (const id of ['mic-guide', 'stroller', 'wheelchair', 'bicycle-accident-prevention', 'driver-health-emergency-response', 'accident-response-guide', 'bus-hijacking-response-manual', 'intersection-turning-safety-guide', 'passenger-injury-prevention-guide', 'start-end-roll-call-guide', 'pre-trip-inspection-procedure', 'passenger-door-safety-guide']) {
       await page.locator(`[data-material-id="${id}"]`).evaluate((el) => el.click());
       await page.waitForSelector('#studySlideImage');
       const walked = await walkSlides(page, DECKS[id]);

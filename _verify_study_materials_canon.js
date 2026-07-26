@@ -97,6 +97,12 @@ if (!arrival || arrival.title !== '停留所到着時の安全習慣') {
   process.exit(1);
 }
 
+const doorSafety = materials.find((m) => m.id === 'passenger-door-safety-guide');
+if (!doorSafety || doorSafety.title !== '乗降扱い時の安全習慣') {
+  console.error('passenger-door-safety material missing or title mismatch', doorSafety);
+  process.exit(1);
+}
+
 fs.writeFileSync(snapshotPath, JSON.stringify(actual, null, 2) + '\n', 'utf8');
 
 console.log('OK canon', {
@@ -113,5 +119,6 @@ console.log('OK canon', {
   preTripOk: true,
   departureOk: true,
   arrivalOk: true,
+  doorSafetyOk: true,
 });
 process.exit(0);
