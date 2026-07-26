@@ -1,4 +1,4 @@
-const CACHE_NAME = 'chidori-route-map-v88';
+const CACHE_NAME = 'chidori-route-map-v89';
 const APP_INDEX_URL = new URL('./index.html', self.location).href;
 const FETCH_TIMEOUT_MS = 7000;
 
@@ -10,17 +10,17 @@ const CORE_SHELL = [
   './app-icon-192.png',
   './app-icon-512.png',
   './styles.css?v=72',
-  './study-materials.css?v=88',
+  './study-materials.css?v=89',
   './d1-sync.css?v=32',
   './data.js?v=32',
   './app.js?v=78',
-  './study-materials-data.js?v=88',
-  './study-materials.js?v=88',
+  './study-materials-data.js?v=89',
+  './study-materials.js?v=89',
   './home-navigation-v25.js?v=32',
   './route-map-link.js?v=71',
   './route-assets-loader.js?v=78',
   './d1-sync.js?v=61',
-  './pwa-install.js?v=88',
+  './pwa-install.js?v=89',
   './assets/study-materials/stroller/stroller-01-arrival.png',
   './assets/study-materials/stroller/stroller-02-after-boarding.png',
   './assets/study-materials/stroller/stroller-03-fare-payment.png',
@@ -35,7 +35,8 @@ const CORE_SHELL = [
   './assets/study-materials/bicycle/bicycle-accident-prevention-three-principles.png',
   './assets/study-materials/driver-health/driver-health-emergency-response.png',
   './assets/study-materials/accident-response/accident-response-guide.png',
-  './assets/study-materials/bus-hijacking/bus-hijacking-response-manual.png'
+  './assets/study-materials/bus-hijacking/bus-hijacking-response-manual.png',
+  './assets/study-materials/intersection-turning/intersection-turning-safety-guide.png'
 ];
 
 function fetchWithTimeout(resource, options = {}, timeoutMs = FETCH_TIMEOUT_MS) {

@@ -61,6 +61,12 @@ if (!hijacking || hijacking.title !== 'バスジャック対応マニュアル')
   process.exit(1);
 }
 
+const intersection = materials.find((m) => m.id === 'intersection-turning-safety-guide');
+if (!intersection || intersection.title !== '交差点右左折時の実践要領') {
+  console.error('intersection-turning material missing or title mismatch', intersection);
+  process.exit(1);
+}
+
 fs.writeFileSync(snapshotPath, JSON.stringify(actual, null, 2) + '\n', 'utf8');
 
 console.log('OK canon', {
@@ -71,5 +77,6 @@ console.log('OK canon', {
   driverHealthOk: true,
   accidentOk: true,
   hijackingOk: true,
+  intersectionOk: true,
 });
 process.exit(0);

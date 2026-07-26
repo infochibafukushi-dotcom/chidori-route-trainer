@@ -688,5 +688,10 @@
     "id": "bus-hijacking-response-manual",
     "title": "バスジャック対応マニュアル",
     "blocks": []
+  },
+  {
+    "id": "intersection-turning-safety-guide",
+    "title": "交差点右左折時の実践要領",
+    "blocks": []
   }
 ]

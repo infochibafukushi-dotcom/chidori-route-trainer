@@ -40,6 +40,9 @@ const DECKS = {
   'bus-hijacking-response-manual': [
     'bus-hijacking-response-manual.png',
   ],
+  'intersection-turning-safety-guide': [
+    'intersection-turning-safety-guide.png',
+  ],
 };
 
 const mime = {

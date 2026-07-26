@@ -82,6 +82,13 @@
     },
   ];
 
+  const INTERSECTION_TURNING_SLIDES = [
+    {
+      src: 'assets/study-materials/intersection-turning/intersection-turning-safety-guide.png',
+      alt: '交差点右左折時の実践要領',
+    },
+  ];
+
   const MATERIAL_SLIDES = {
     stroller: STROLLER_SLIDES,
     wheelchair: WHEELCHAIR_SLIDES,
@@ -90,6 +97,7 @@
     'driver-health-emergency-response': DRIVER_HEALTH_SLIDES,
     'accident-response-guide': ACCIDENT_RESPONSE_SLIDES,
     'bus-hijacking-response-manual': BUS_HIJACKING_SLIDES,
+    'intersection-turning-safety-guide': INTERSECTION_TURNING_SLIDES,
   };
 
   let popOpen = false;

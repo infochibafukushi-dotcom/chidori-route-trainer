@@ -289,6 +289,15 @@ for (const material of materials) {
     }
     continue;
   }
+  if (material.id === 'intersection-turning-safety-guide') {
+    if (material.title !== '交差点右左折時の実践要領') {
+      console.error('TITLE MISMATCH intersection-turning', material.title);
+      failed++;
+    } else {
+      console.log('OK', material.id, 'image-only');
+    }
+    continue;
+  }
   const exp = expected[material.id];
   if (!exp) {
     console.error('UNKNOWN id', material.id);
@@ -310,8 +319,8 @@ for (const material of materials) {
   }
 }
 
-if (materials.length !== 7) {
-  console.error('Expected 7 materials, got', materials.length);
+if (materials.length !== 8) {
+  console.error('Expected 8 materials, got', materials.length);
   failed++;
 }
 

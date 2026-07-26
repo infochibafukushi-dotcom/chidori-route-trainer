@@ -216,4 +216,11 @@ window.STUDY_MATERIALS = [
     showThumbnail: true,
     blocks: [],
   },
+  {
+    id: 'intersection-turning-safety-guide',
+    title: '交差点右左折時の実践要領',
+    description: '交差点進入時の減速、右左折時の安全確認、発進時の死角確認手順を学習します。',
+    showThumbnail: true,
+    blocks: [],
+  },
 ];
