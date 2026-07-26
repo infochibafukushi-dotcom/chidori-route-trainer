@@ -96,6 +96,13 @@
     },
   ];
 
+  const START_END_ROLL_CALL_SLIDES = [
+    {
+      src: 'assets/study-materials/start-end-roll-call/start-end-roll-call-guide.png',
+      alt: '始業・終業点呼の手順',
+    },
+  ];
+
   const MATERIAL_SLIDES = {
     stroller: STROLLER_SLIDES,
     wheelchair: WHEELCHAIR_SLIDES,
@@ -106,6 +113,7 @@
     'bus-hijacking-response-manual': BUS_HIJACKING_SLIDES,
     'intersection-turning-safety-guide': INTERSECTION_TURNING_SLIDES,
     'passenger-injury-prevention-guide': PASSENGER_INJURY_PREVENTION_SLIDES,
+    'start-end-roll-call-guide': START_END_ROLL_CALL_SLIDES,
   };
 
   let popOpen = false;

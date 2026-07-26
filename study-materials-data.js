@@ -230,4 +230,11 @@ window.STUDY_MATERIALS = [
     showThumbnail: true,
     blocks: [],
   },
+  {
+    id: 'start-end-roll-call-guide',
+    title: '始業・終業点呼の手順',
+    description: '始業点呼・終業点呼における携行品、車両点検、アルコール確認、報告・返納の手順を確認します。',
+    showThumbnail: true,
+    blocks: [],
+  },
 ];

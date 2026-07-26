@@ -73,6 +73,12 @@ if (!passenger || passenger.title !== '車内事故防止の徹底') {
   process.exit(1);
 }
 
+const rollCall = materials.find((m) => m.id === 'start-end-roll-call-guide');
+if (!rollCall || rollCall.title !== '始業・終業点呼の手順') {
+  console.error('start-end-roll-call material missing or title mismatch', rollCall);
+  process.exit(1);
+}
+
 fs.writeFileSync(snapshotPath, JSON.stringify(actual, null, 2) + '\n', 'utf8');
 
 console.log('OK canon', {
@@ -85,5 +91,6 @@ console.log('OK canon', {
   hijackingOk: true,
   intersectionOk: true,
   passengerOk: true,
+  rollCallOk: true,
 });
 process.exit(0);

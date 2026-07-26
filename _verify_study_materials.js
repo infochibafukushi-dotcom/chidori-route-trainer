@@ -307,6 +307,15 @@ for (const material of materials) {
     }
     continue;
   }
+  if (material.id === 'start-end-roll-call-guide') {
+    if (material.title !== '始業・終業点呼の手順') {
+      console.error('TITLE MISMATCH start-end-roll-call', material.title);
+      failed++;
+    } else {
+      console.log('OK', material.id, 'image-only');
+    }
+    continue;
+  }
   const exp = expected[material.id];
   if (!exp) {
     console.error('UNKNOWN id', material.id);
@@ -328,8 +337,8 @@ for (const material of materials) {
   }
 }
 
-if (materials.length !== 9) {
-  console.error('Expected 9 materials, got', materials.length);
+if (materials.length !== 10) {
+  console.error('Expected 10 materials, got', materials.length);
   failed++;
 }
 

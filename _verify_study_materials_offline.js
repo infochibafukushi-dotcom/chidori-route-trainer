@@ -46,6 +46,9 @@ const DECKS = {
   'passenger-injury-prevention-guide': [
     'passenger-injury-prevention-guide.png',
   ],
+  'start-end-roll-call-guide': [
+    'start-end-roll-call-guide.png',
+  ],
 };
 
 const mime = {
