@@ -352,6 +352,15 @@ for (const material of materials) {
     }
     continue;
   }
+  if (material.id === 'door-lever-safety-operation') {
+    if (material.title !== '扉開閉レバーの安全操作') {
+      console.error('TITLE MISMATCH door-lever-safety', material.title);
+      failed++;
+    } else {
+      console.log('OK', material.id, 'image-only');
+    }
+    continue;
+  }
   const exp = expected[material.id];
   if (!exp) {
     console.error('UNKNOWN id', material.id);
@@ -373,8 +382,8 @@ for (const material of materials) {
   }
 }
 
-if (materials.length !== 14) {
-  console.error('Expected 14 materials, got', materials.length);
+if (materials.length !== 15) {
+  console.error('Expected 15 materials, got', materials.length);
   failed++;
 }
 

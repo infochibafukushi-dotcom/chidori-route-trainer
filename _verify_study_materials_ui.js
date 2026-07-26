@@ -65,6 +65,9 @@ const DECKS = {
   'passenger-door-safety-guide': [
     'passenger-door-safety-guide.png',
   ],
+  'door-lever-safety-operation': [
+    'door-lever-safety-operation.png',
+  ],
 };
 
 const mime = {
@@ -162,7 +165,8 @@ async function main() {
                       : id === 'bus-stop-departure-safety' ? 'bus-stop-departure'
                         : id === 'bus-stop-arrival-safety' ? 'bus-stop-arrival'
                           : id === 'passenger-door-safety-guide' ? 'passenger-door-safety'
-                            : id;
+                            : id === 'door-lever-safety-operation' ? 'door-lever-safety'
+                              : id;
     for (const name of names) {
       const p = path.join(root, 'assets/study-materials', dir, name);
       if (!fs.existsSync(p)) throw new Error('missing ' + p);
@@ -193,18 +197,20 @@ async function main() {
     const listTitles = await page.$$eval('.study-material-item .study-material-copy strong', (els) => els.map((e) => e.textContent.trim()));
     const listHints = await page.$$eval('.study-material-item .study-material-desc', (els) => els.map((e) => e.textContent.trim()));
     const pageBadges = await page.$$eval('.study-material-item .study-material-pages', (els) => els.map((e) => e.textContent.trim()));
-    const listOk = listTitles.length === 14
+    const listOk = listTitles.length === 15
       && listTitles[0] === '1. ベビーカー利用客の乗降時での作業マニュアル'
       && listTitles[3] === '4. 自転車事故防止の三原則'
       && listTitles[4] === '5. 運行中に体調の異変を感じた時の対応'
       && listTitles[13] === '14. 乗降扱い時の安全習慣'
+      && listTitles[14] === '15. 扉開閉レバーの安全操作'
       && listHints[0] === 'タップして本文を表示'
       && listHints[13].includes('降車扉')
+      && listHints[14].includes('閉扉前の安全確認')
       && pageBadges.includes('全3ページ')
       && pageBadges.includes('全2ページ')
       && pageBadges.includes('全6ページ');
     const thumbCount = await page.$$eval('.study-material-item--thumb .study-material-thumb', (els) => els.length);
-    const thumbsOk = thumbCount === 14;
+    const thumbsOk = thumbCount === 15;
     results.push({ label, step: 'list', listTitles, listHints, pageBadges, listOk, thumbCount, thumbsOk });
     if (!listOk || !thumbsOk) failed += 1;
 
@@ -258,7 +264,7 @@ async function main() {
     await page.waitForSelector('#studyMaterialPop', { state: 'detached' });
 
     // regressions for other decks
-    for (const id of ['mic-guide', 'stroller', 'wheelchair', 'bicycle-accident-prevention', 'driver-health-emergency-response', 'accident-response-guide', 'bus-hijacking-response-manual', 'intersection-turning-safety-guide', 'passenger-injury-prevention-guide', 'start-end-roll-call-guide', 'pre-trip-inspection-procedure', 'passenger-door-safety-guide']) {
+    for (const id of ['mic-guide', 'stroller', 'wheelchair', 'bicycle-accident-prevention', 'driver-health-emergency-response', 'accident-response-guide', 'bus-hijacking-response-manual', 'intersection-turning-safety-guide', 'passenger-injury-prevention-guide', 'start-end-roll-call-guide', 'pre-trip-inspection-procedure', 'passenger-door-safety-guide', 'door-lever-safety-operation']) {
       await page.locator(`[data-material-id="${id}"]`).evaluate((el) => el.click());
       await page.waitForSelector('#studySlideImage');
       const walked = await walkSlides(page, DECKS[id]);

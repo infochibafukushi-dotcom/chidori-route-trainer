@@ -1,4 +1,4 @@
-const CACHE_NAME = 'chidori-route-map-v96';
+const CACHE_NAME = 'chidori-route-map-v97';
 const APP_INDEX_URL = new URL('./index.html', self.location).href;
 const FETCH_TIMEOUT_MS = 7000;
 
@@ -9,18 +9,18 @@ const CORE_SHELL = [
   './app-icon.svg',
   './app-icon-192.png',
   './app-icon-512.png',
-  './styles.css?v=96',
-  './study-materials.css?v=96',
+  './styles.css?v=97',
+  './study-materials.css?v=97',
   './d1-sync.css?v=32',
-  './data.js?v=96',
-  './app.js?v=96',
-  './study-materials-data.js?v=96',
-  './study-materials.js?v=96',
+  './data.js?v=97',
+  './app.js?v=97',
+  './study-materials-data.js?v=97',
+  './study-materials.js?v=97',
   './home-navigation-v25.js?v=32',
   './route-map-link.js?v=71',
   './route-assets-loader.js?v=78',
   './d1-sync.js?v=61',
-  './pwa-install.js?v=96',
+  './pwa-install.js?v=97',
   './assets/study-materials/stroller/stroller-01-arrival.png',
   './assets/study-materials/stroller/stroller-02-after-boarding.png',
   './assets/study-materials/stroller/stroller-03-fare-payment.png',
@@ -50,7 +50,8 @@ const CORE_SHELL = [
   './assets/study-materials/covers/01-baby-car.png',
   './assets/study-materials/covers/02-wheelchair-slope.png',
   './assets/study-materials/covers/03-microphone-guide.png',
-  './assets/study-materials/covers/04-bicycle-accident.png'
+  './assets/study-materials/covers/04-bicycle-accident.png',
+  './assets/study-materials/door-lever-safety/door-lever-safety-operation.png'
 ];
 
 function fetchWithTimeout(resource, options = {}, timeoutMs = FETCH_TIMEOUT_MS) {

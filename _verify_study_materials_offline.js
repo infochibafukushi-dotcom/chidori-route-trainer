@@ -64,6 +64,9 @@ const DECKS = {
   'passenger-door-safety-guide': [
     'passenger-door-safety-guide.png',
   ],
+  'door-lever-safety-operation': [
+    'door-lever-safety-operation.png',
+  ],
 };
 
 const mime = {

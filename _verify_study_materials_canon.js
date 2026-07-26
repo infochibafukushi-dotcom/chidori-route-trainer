@@ -103,6 +103,12 @@ if (!doorSafety || doorSafety.title !== '乗降扱い時の安全習慣') {
   process.exit(1);
 }
 
+const doorLever = materials.find((m) => m.id === 'door-lever-safety-operation');
+if (!doorLever || doorLever.title !== '扉開閉レバーの安全操作') {
+  console.error('door-lever-safety material missing or title mismatch', doorLever);
+  process.exit(1);
+}
+
 fs.writeFileSync(snapshotPath, JSON.stringify(actual, null, 2) + '\n', 'utf8');
 
 console.log('OK canon', {
@@ -120,5 +126,6 @@ console.log('OK canon', {
   departureOk: true,
   arrivalOk: true,
   doorSafetyOk: true,
+  doorLeverOk: true,
 });
 process.exit(0);

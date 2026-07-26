@@ -723,5 +723,10 @@
     "id": "passenger-door-safety-guide",
     "title": "乗降扱い時の安全習慣",
     "blocks": []
+  },
+  {
+    "id": "door-lever-safety-operation",
+    "title": "扉開閉レバーの安全操作",
+    "blocks": []
   }
 ]

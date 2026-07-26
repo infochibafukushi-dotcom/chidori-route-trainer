@@ -300,4 +300,12 @@ window.STUDY_MATERIALS = [
 
     blocks: [],
   },
+  {
+    id: 'door-lever-safety-operation',
+    title: '扉開閉レバーの安全操作',
+    description: '乗降中の誤操作防止、閉扉前の安全確認、扉が完全に閉まるまでの操作と監視手順を確認します。',
+    showThumbnail: true,
+    defaultOrder: 15,
+    blocks: [],
+  },
 ];

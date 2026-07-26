@@ -143,6 +143,13 @@
     },
   ];
 
+  const DOOR_LEVER_SAFETY_SLIDES = [
+    {
+      src: 'assets/study-materials/door-lever-safety/door-lever-safety-operation.png',
+      alt: '扉開閉レバーの安全操作',
+    },
+  ];
+
   const MATERIAL_SLIDES = {
     stroller: STROLLER_SLIDES,
     wheelchair: WHEELCHAIR_SLIDES,
@@ -158,6 +165,7 @@
     'bus-stop-departure-safety': BUS_STOP_DEPARTURE_SLIDES,
     'bus-stop-arrival-safety': BUS_STOP_ARRIVAL_SLIDES,
     'passenger-door-safety-guide': PASSENGER_DOOR_SAFETY_SLIDES,
+    'door-lever-safety-operation': DOOR_LEVER_SAFETY_SLIDES,
   };
 
   const DEFAULT_THUMB = 'assets/study-materials/covers/default-document.png';
