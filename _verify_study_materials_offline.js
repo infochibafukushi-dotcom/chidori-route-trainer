@@ -37,6 +37,9 @@ const DECKS = {
   'accident-response-guide': [
     'accident-response-guide.png',
   ],
+  'bus-hijacking-response-manual': [
+    'bus-hijacking-response-manual.png',
+  ],
 };
 
 const mime = {

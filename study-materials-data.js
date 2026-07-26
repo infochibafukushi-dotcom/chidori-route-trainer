@@ -209,4 +209,11 @@ window.STUDY_MATERIALS = [
     showThumbnail: true,
     blocks: [],
   },
+  {
+    id: 'bus-hijacking-response-manual',
+    title: 'バスジャック対応マニュアル',
+    description: 'バスジャック発生時の車内対応、車外への緊急連絡、予告情報を受けた場合の対応手順を確認します。',
+    showThumbnail: true,
+    blocks: [],
+  },
 ];

@@ -280,6 +280,15 @@ for (const material of materials) {
     }
     continue;
   }
+  if (material.id === 'bus-hijacking-response-manual') {
+    if (material.title !== 'バスジャック対応マニュアル') {
+      console.error('TITLE MISMATCH bus-hijacking', material.title);
+      failed++;
+    } else {
+      console.log('OK', material.id, 'image-only');
+    }
+    continue;
+  }
   const exp = expected[material.id];
   if (!exp) {
     console.error('UNKNOWN id', material.id);
@@ -301,8 +310,8 @@ for (const material of materials) {
   }
 }
 
-if (materials.length !== 6) {
-  console.error('Expected 6 materials, got', materials.length);
+if (materials.length !== 7) {
+  console.error('Expected 7 materials, got', materials.length);
   failed++;
 }
 

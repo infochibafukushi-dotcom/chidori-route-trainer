@@ -55,6 +55,12 @@ if (!accident || accident.title !== '事故発生時の処置') {
   process.exit(1);
 }
 
+const hijacking = materials.find((m) => m.id === 'bus-hijacking-response-manual');
+if (!hijacking || hijacking.title !== 'バスジャック対応マニュアル') {
+  console.error('bus-hijacking material missing or title mismatch', hijacking);
+  process.exit(1);
+}
+
 fs.writeFileSync(snapshotPath, JSON.stringify(actual, null, 2) + '\n', 'utf8');
 
 console.log('OK canon', {
@@ -64,5 +70,6 @@ console.log('OK canon', {
   bicycleOk: true,
   driverHealthOk: true,
   accidentOk: true,
+  hijackingOk: true,
 });
 process.exit(0);

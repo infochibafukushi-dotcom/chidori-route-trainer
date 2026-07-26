@@ -683,5 +683,10 @@
     "id": "accident-response-guide",
     "title": "事故発生時の処置",
     "blocks": []
+  },
+  {
+    "id": "bus-hijacking-response-manual",
+    "title": "バスジャック対応マニュアル",
+    "blocks": []
   }
 ]
