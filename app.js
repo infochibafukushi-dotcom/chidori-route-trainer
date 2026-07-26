@@ -60,8 +60,9 @@ function go(next){
 }
 function render(){if(page==='materials'||page==='materials-detail'){if(typeof window.renderStudyMaterials==='function')window.renderStudyMaterials();try{window.__chidoriBoot&&window.__chidoriBoot.mark('render')}catch(e){}return}if(page==='home')home();if(page==='routes')routes();if(page==='quiz')quiz();if(page==='settings')settings();try{window.__chidoriBoot&&window.__chidoriBoot.mark('render')}catch(e){}}
 function homeCard(goTo,tone,icon,title,desc){return`<button type="button" class="home-card home-card--${tone}" data-go="${goTo}"><span class="home-card-icon" aria-hidden="true">${icon}</span><span class="home-card-text"><strong>${title}</strong><span>${desc}</span></span><span class="home-card-chevron" aria-hidden="true">${HOME_ICONS.chevron}</span></button>`}
-const HOME_CARD_ORDER_KEY='chidoriHomeCardOrderV1';
-const HOME_CARD_DEFAULT_ORDER=['route-map','training','quiz','settings'];
+const HOME_CARD_ORDER_STORAGE_KEY='chidori-home-card-order-v1';
+const HOME_CARD_ORDER_LEGACY_KEY='chidoriHomeCardOrderV1';
+const DEFAULT_HOME_CARD_ORDER=['route-map','training','quiz','settings'];
 const HOME_CARD_DEFS={
   'route-map':{go:'routes',tone:'routes',icon:()=>HOME_ICONS.routes,title:'千鳥営業所 路線図',desc:'各路線の往路・復路と停留所を確認'},
   'training':{go:'materials',tone:'materials',icon:()=>HOME_ICONS.materials,title:'基本研修資料',desc:'乗務員向け作業マニュアル・マイク案内'},
@@ -69,7 +70,7 @@ const HOME_CARD_DEFS={
   'settings':{go:'settings',tone:'settings',icon:()=>HOME_ICONS.settings,title:'設定',desc:'停留所・ヒヤリハット・注意地点を登録'}
 };
 function normalizeHomeCardOrder(raw){
-  const valid=new Set(HOME_CARD_DEFAULT_ORDER);
+  const valid=new Set(DEFAULT_HOME_CARD_ORDER);
   const seen=new Set();
   const out=[];
   if(Array.isArray(raw)){
@@ -79,29 +80,43 @@ function normalizeHomeCardOrder(raw){
       out.push(id);
     }
   }
-  for(const id of HOME_CARD_DEFAULT_ORDER){
+  for(const id of DEFAULT_HOME_CARD_ORDER){
     if(!seen.has(id))out.push(id);
   }
   return out;
 }
-function readHomeCardOrder(){
+function loadHomeCardOrder(){
   try{
-    const raw=localStorage.getItem(HOME_CARD_ORDER_KEY);
-    if(raw==null||raw==='')return HOME_CARD_DEFAULT_ORDER.slice();
-    return normalizeHomeCardOrder(JSON.parse(raw));
-  }catch{
-    return HOME_CARD_DEFAULT_ORDER.slice();
+    let raw=localStorage.getItem(HOME_CARD_ORDER_STORAGE_KEY);
+    if(raw==null||raw===''){
+      raw=localStorage.getItem(HOME_CARD_ORDER_LEGACY_KEY);
+    }
+    if(raw==null||raw==='')return DEFAULT_HOME_CARD_ORDER.slice();
+    const parsed=JSON.parse(raw);
+    if(!Array.isArray(parsed))return DEFAULT_HOME_CARD_ORDER.slice();
+    return normalizeHomeCardOrder(parsed);
+  }catch(error){
+    console.error('ホームカードの並び順を読み込めませんでした',error);
+    return DEFAULT_HOME_CARD_ORDER.slice();
   }
 }
-function writeHomeCardOrder(ids){
-  const normalized=normalizeHomeCardOrder(ids);
-  localStorage.setItem(HOME_CARD_ORDER_KEY,JSON.stringify(normalized));
+function saveHomeCardOrder(order){
+  const normalized=normalizeHomeCardOrder(order);
+  try{
+    localStorage.setItem(HOME_CARD_ORDER_STORAGE_KEY,JSON.stringify(normalized));
+    try{localStorage.removeItem(HOME_CARD_ORDER_LEGACY_KEY)}catch(_){}
+  }catch(error){
+    console.error('ホームカードの並び順を保存できませんでした',error);
+    throw error;
+  }
+  currentHomeCardOrder=normalized.slice();
   return normalized;
 }
+let currentHomeCardOrder=loadHomeCardOrder();
 let homeCardOrderDraft=null;
 function home(){
-  const order=readHomeCardOrder();
-  const cards=order.map((id)=>{
+  currentHomeCardOrder=loadHomeCardOrder();
+  const cards=currentHomeCardOrder.map((id)=>{
     const def=HOME_CARD_DEFS[id];
     if(!def)return '';
     return homeCard(def.go,def.tone,def.icon(),def.title,def.desc);
@@ -125,11 +140,11 @@ let quizType='next';
 function quiz(){const qs=makeQuestion();shell(`<section><div class="seg" style="margin-bottom:16px"><button data-qt="next" class="${quizType==='next'?'active':''}">次の停留所</button><button data-qt="route" class="${quizType==='route'?'active':''}">この路線</button></div>${qs?`<div class="question">${qs.text}</div><div class="answers">${qs.options.map(o=>`<button data-answer="${esc(o)}">${esc(o)}</button>`).join('')}</div><p id="result" class="status"></p><button class="primary" id="nextQ">次の問題</button>`:'<div class="empty">問題を作るには、設定から停留所を2件以上登録してください。</div>'}</section>`);document.querySelectorAll('[data-qt]').forEach(b=>b.onclick=()=>{quizType=b.dataset.qt;quiz()});if(qs){document.querySelectorAll('[data-answer]').forEach(b=>b.onclick=()=>document.getElementById('result').textContent=b.dataset.answer===qs.answer?'正解です。':`不正解です。正解：${qs.answer}`);document.getElementById('nextQ').onclick=quiz}}
 function makeQuestion(){const usable=data.routes.filter(r=>r.outbound.length>=2||r.inbound.length>=2);if(!usable.length)return null;const r=usable[Math.floor(Math.random()*usable.length)];const dir=r.outbound.length>=2?'outbound':'inbound';const s=r[dir];if(quizType==='next'){const i=Math.floor(Math.random()*(s.length-1));const answer=s[i+1].name;const pool=[answer,...data.routes.flatMap(x=>[...x.outbound,...x.inbound]).map(x=>x.name).filter(x=>x!==answer)].filter((v,i,a)=>a.indexOf(v)===i).slice(0,4).sort(()=>Math.random()-.5);return{text:`${label(r)}・${dir==='outbound'?'往路':'復路'}<br>現在：${esc(s[i].name)}<br>次の停留所は？`,answer,options:pool}}const answer=label(r);const options=[answer,...data.routes.filter(x=>x.id!==r.id).sort(()=>Math.random()-.5).slice(0,3).map(label)].sort(()=>Math.random()-.5);return{text:`停留所順<br>${s.slice(0,3).map(x=>esc(x.name)).join(' → ')}<br>この路線は？`,answer,options}}
 function settings(){shell(`<section><div class="tabs tabs--5"><button data-tab="stops" class="${settingsTab==='stops'?'active':''}">停留所</button><button data-tab="pins" class="${settingsTab==='pins'?'active':''}">注意ピン</button><button data-tab="categories" class="${settingsTab==='categories'?'active':''}">項目</button><button data-tab="materials-order" class="${settingsTab==='materials-order'?'active':''}">資料順</button><button data-tab="home-order" class="${settingsTab==='home-order'?'active':''}">カード順</button></div><div id="settingsBody"></div></section>`);document.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>{settingsTab=b.dataset.tab;settings()});if(settingsTab==='stops')stopEditor();if(settingsTab==='pins')pinEditor();if(settingsTab==='categories')categoryEditor();if(settingsTab==='materials-order')materialsOrderEditor();if(settingsTab==='home-order')homeCardOrderEditor()}
-function homeCardOrderEditor(){
+function homeCardOrderEditor(statusMessage){
   const body=document.getElementById('settingsBody');
   if(!body)return;
   let draft=normalizeHomeCardOrder(
-    Array.isArray(homeCardOrderDraft)&&homeCardOrderDraft.length?homeCardOrderDraft:readHomeCardOrder()
+    Array.isArray(homeCardOrderDraft)&&homeCardOrderDraft.length?homeCardOrderDraft:loadHomeCardOrder()
   );
   homeCardOrderDraft=draft.slice();
   body.innerHTML=
@@ -152,19 +167,31 @@ function homeCardOrderEditor(){
       );
     }).join('')+
     `</div>`+
-    `<p id="homeOrderStatus" class="status"></p>`+
+    `<p id="homeOrderStatus" class="status">${statusMessage?esc(statusMessage):''}</p>`+
     `<div class="home-order-footer">`+
     `<button type="button" class="primary" id="homeOrderSave">保存</button>`+
     `<button type="button" class="secondary" id="homeOrderReset">初期状態に戻す</button>`+
     `</div></div>`;
+
+  function persist(next,message){
+    homeCardOrderDraft=next.slice();
+    try{
+      saveHomeCardOrder(next);
+      homeCardOrderEditor(message||'並び順を保存しました');
+    }catch(err){
+      console.error(err);
+      homeCardOrderEditor();
+      const status=document.getElementById('homeOrderStatus');
+      if(status)status.textContent='保存できませんでした。もう一度お試しください。';
+    }
+  }
 
   function move(from,to){
     if(to<0||to>=draft.length)return;
     const next=draft.slice();
     const [item]=next.splice(from,1);
     next.splice(to,0,item);
-    homeCardOrderDraft=next;
-    homeCardOrderEditor();
+    persist(next);
   }
 
   body.querySelectorAll('[data-move-up]').forEach((btn)=>{
@@ -175,22 +202,11 @@ function homeCardOrderEditor(){
   });
 
   document.getElementById('homeOrderReset').onclick=()=>{
-    homeCardOrderDraft=HOME_CARD_DEFAULT_ORDER.slice();
-    homeCardOrderEditor();
+    persist(DEFAULT_HOME_CARD_ORDER.slice(),'初期状態に戻しました');
   };
 
   document.getElementById('homeOrderSave').onclick=()=>{
-    const status=document.getElementById('homeOrderStatus');
-    try{
-      const normalized=writeHomeCardOrder(homeCardOrderDraft);
-      homeCardOrderDraft=normalized.slice();
-      homeCardOrderEditor();
-      const after=document.getElementById('homeOrderStatus');
-      if(after)after.textContent='並び順を保存しました';
-    }catch(err){
-      console.error(err);
-      if(status)status.textContent='保存できませんでした。もう一度お試しください。';
-    }
+    persist(homeCardOrderDraft||loadHomeCardOrder(),'並び順を保存しました');
   };
 }
 function stopEditor(){document.getElementById('settingsBody').innerHTML=`<div class="grid"><div class="card"><label>路線<select id="sRoute">${data.routes.map(r=>`<option value="${r.id}">${label(r)}</option>`).join('')}</select></label><label>方向<select id="sDir"><option value="outbound">往路</option><option value="inbound">復路</option></select></label><label>停留所名<input id="sName"></label><label>住所・施設名<input id="sAddress"></label><button class="secondary" id="sSearch">住所から位置を取得</button><div id="picker" class="picker"></div><p id="sStatus" class="status">地図をタップしても位置を指定できます。</p><button class="primary" id="sAdd">停留所を追加</button></div><div class="card"><strong>登録済み停留所</strong><div id="stopList"></div></div></div>`;const state={pos:null};picker('picker',state,'sStatus');document.getElementById('sSearch').onclick=async()=>{try{state.pos=await geocode(document.getElementById('sAddress').value);settings()}catch(e){document.getElementById('sStatus').textContent=e.message}};document.getElementById('sAdd').onclick=()=>{const r=data.routes.find(x=>x.id===document.getElementById('sRoute').value);const dir=document.getElementById('sDir').value;const name=document.getElementById('sName').value.trim();if(!r||!name||!state.pos)return alert('停留所名と位置を設定してください。');r[dir].push({id:id('stop'),name,address:document.getElementById('sAddress').value.trim(),...state.pos});save();settings()};renderStopList()}
