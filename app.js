@@ -18,7 +18,7 @@ function shell(body,backTo='home'){
   const isHome=page==='home';
   const brandTitle=isHome?'千鳥路線図':'千鳥営業所 路線学習';
   const shortcuts=isHome?`<div class="header-shortcuts"><a class="home-shortcut" data-route-map-pdf href="https://www.keiseibus.co.jp/wp-content/uploads/2026/02/routemap-chidori.pdf" target="_blank" rel="noopener noreferrer"><span class="home-shortcut-icon">${HOME_ICONS.map}</span><span class="home-shortcut-label"><span>千鳥路線図</span><span>全体図</span></span></a><button type="button" class="home-shortcut" data-pwa-install><span class="home-shortcut-icon">${HOME_ICONS.install}</span><span class="home-shortcut-label"><span>ショートカット</span><span>作成</span></span></button></div>`:'';
-  const footer=isHome?`<footer class="home-footer">${HOME_ICONS.city}</footer>`:'';
+  const footer=isHome?`<footer class="home-footer">${HOME_ICONS.city}<p class="home-copy">©山本信勝</p></footer>`:'';
   app.innerHTML=`<div class="app${isHome?' app--home':''}"><header class="header${isHome?' header--home':''}">${isHome?'':`<button class="back" id="back" aria-label="戻る">←</button>`}<div class="header-brand">${isHome?`<span class="header-bus" aria-hidden="true">${HOME_ICONS.bus}</span>`:''}<div><h1>${brandTitle}</h1><p>路線・停留所・注意地点</p></div></div>${shortcuts}</header><main class="main">${body}</main>${footer}</div>`;
   document.getElementById('back')?.addEventListener('click',()=>go(backTo));
 }

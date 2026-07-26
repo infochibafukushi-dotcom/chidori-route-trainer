@@ -1,0 +1,245 @@
+{
+  "version": {
+    "indexApp": true,
+    "indexStyles": true,
+    "indexPwa": true,
+    "cache": true,
+    "swApp": true,
+    "swStyles": true,
+    "swPwa": true,
+    "copyrightInApp": true
+  },
+  "syntax": {
+    "app.js": "ok",
+    "pwa-install.js": "ok",
+    "service-worker.js": "ok"
+  },
+  "widths": {
+    "320": {
+      "title": "千鳥路線図",
+      "subtitle": "路線・停留所・注意地点",
+      "copyText": "©山本信勝",
+      "scrollX": false,
+      "cardCount": 4,
+      "gapCardToCity": 24,
+      "gapCityToCopy": 3,
+      "subFontSize": "12px",
+      "subWhiteSpace": "nowrap",
+      "subNowrap": true,
+      "subLines": 1,
+      "footerMarginTop": "24px",
+      "footerJustify": "flex-start",
+      "mainFlex": "0 0 auto",
+      "brandShortCenterDelta": 0,
+      "brandHeaderCenterDelta": 1,
+      "h1SubGap": 4,
+      "copyVisible": true,
+      "copyFullyInDoc": true,
+      "shortcutSizes": [
+        {
+          "w": 68,
+          "h": 68
+        },
+        {
+          "w": 68,
+          "h": 68
+        }
+      ],
+      "cols": "288px"
+    },
+    "355": {
+      "title": "千鳥路線図",
+      "subtitle": "路線・停留所・注意地点",
+      "copyText": "©山本信勝",
+      "scrollX": false,
+      "cardCount": 4,
+      "gapCardToCity": 24,
+      "gapCityToCopy": 3,
+      "subFontSize": "12px",
+      "subWhiteSpace": "nowrap",
+      "subNowrap": true,
+      "subLines": 1,
+      "footerMarginTop": "24px",
+      "footerJustify": "flex-start",
+      "mainFlex": "0 0 auto",
+      "brandShortCenterDelta": 0,
+      "brandHeaderCenterDelta": 1,
+      "h1SubGap": 4,
+      "copyVisible": true,
+      "copyFullyInDoc": true,
+      "shortcutSizes": [
+        {
+          "w": 68,
+          "h": 68
+        },
+        {
+          "w": 68,
+          "h": 68
+        }
+      ],
+      "cols": "323px"
+    },
+    "390": {
+      "title": "千鳥路線図",
+      "subtitle": "路線・停留所・注意地点",
+      "copyText": "©山本信勝",
+      "scrollX": false,
+      "cardCount": 4,
+      "gapCardToCity": 24,
+      "gapCityToCopy": 3,
+      "subFontSize": "12px",
+      "subWhiteSpace": "nowrap",
+      "subNowrap": true,
+      "subLines": 1,
+      "footerMarginTop": "24px",
+      "footerJustify": "flex-start",
+      "mainFlex": "0 0 auto",
+      "brandShortCenterDelta": 0,
+      "brandHeaderCenterDelta": 1,
+      "h1SubGap": 4,
+      "copyVisible": true,
+      "copyFullyInDoc": true,
+      "shortcutSizes": [
+        {
+          "w": 68,
+          "h": 68
+        },
+        {
+          "w": 68,
+          "h": 68
+        }
+      ],
+      "cols": "358px"
+    },
+    "400": {
+      "title": "千鳥路線図",
+      "subtitle": "路線・停留所・注意地点",
+      "copyText": "©山本信勝",
+      "scrollX": false,
+      "cardCount": 4,
+      "gapCardToCity": 24,
+      "gapCityToCopy": 3,
+      "subFontSize": "12px",
+      "subWhiteSpace": "nowrap",
+      "subNowrap": true,
+      "subLines": 1,
+      "footerMarginTop": "24px",
+      "footerJustify": "flex-start",
+      "mainFlex": "0 0 auto",
+      "brandShortCenterDelta": 0,
+      "brandHeaderCenterDelta": 1,
+      "h1SubGap": 4,
+      "copyVisible": true,
+      "copyFullyInDoc": true,
+      "shortcutSizes": [
+        {
+          "w": 68,
+          "h": 68
+        },
+        {
+          "w": 68,
+          "h": 68
+        }
+      ],
+      "cols": "368px"
+    },
+    "768": {
+      "title": "千鳥路線図",
+      "subtitle": "路線・停留所・注意地点",
+      "copyText": "©山本信勝",
+      "scrollX": false,
+      "cardCount": 4,
+      "gapCardToCity": 190,
+      "gapCityToCopy": 4,
+      "subFontSize": "14px",
+      "subWhiteSpace": "normal",
+      "subNowrap": false,
+      "subLines": 1,
+      "footerMarginTop": "0px",
+      "footerJustify": "normal",
+      "mainFlex": "1 1 0%",
+      "brandShortCenterDelta": 7,
+      "brandHeaderCenterDelta": 8,
+      "h1SubGap": 3,
+      "copyVisible": true,
+      "copyFullyInDoc": true,
+      "shortcutSizes": [
+        {
+          "w": 72,
+          "h": 72
+        },
+        {
+          "w": 72,
+          "h": 72
+        }
+      ],
+      "cols": "736px"
+    },
+    "1280": {
+      "title": "千鳥路線図",
+      "subtitle": "路線・停留所・注意地点",
+      "copyText": "©山本信勝",
+      "scrollX": false,
+      "cardCount": 4,
+      "gapCardToCity": 320,
+      "gapCityToCopy": 4,
+      "subFontSize": "15.36px",
+      "subWhiteSpace": "normal",
+      "subNowrap": false,
+      "subLines": null,
+      "footerMarginTop": "0px",
+      "footerJustify": "normal",
+      "mainFlex": "1 1 0%",
+      "brandShortCenterDelta": 0,
+      "brandHeaderCenterDelta": 1,
+      "h1SubGap": 4,
+      "copyVisible": true,
+      "copyFullyInDoc": true,
+      "shortcutSizes": [
+        {
+          "w": 96,
+          "h": 96
+        },
+        {
+          "w": 96,
+          "h": 96
+        }
+      ],
+      "cols": "451px 451px"
+    }
+  },
+  "fails": [],
+  "ok": true,
+  "reorder390": {
+    "title": "千鳥路線図",
+    "subtitle": "路線・停留所・注意地点",
+    "copyText": "©山本信勝",
+    "scrollX": false,
+    "cardCount": 4,
+    "gapCardToCity": 24,
+    "gapCityToCopy": 3,
+    "subFontSize": "12px",
+    "subWhiteSpace": "nowrap",
+    "subNowrap": true,
+    "subLines": 1,
+    "footerMarginTop": "24px",
+    "footerJustify": "flex-start",
+    "mainFlex": "0 0 auto",
+    "brandShortCenterDelta": 0,
+    "brandHeaderCenterDelta": 1,
+    "h1SubGap": 4,
+    "copyVisible": true,
+    "copyFullyInDoc": true,
+    "shortcutSizes": [
+      {
+        "w": 68,
+        "h": 68
+      },
+      {
+        "w": 68,
+        "h": 68
+      }
+    ],
+    "cols": "358px"
+  }
+}
