@@ -223,4 +223,11 @@ window.STUDY_MATERIALS = [
     showThumbnail: true,
     blocks: [],
   },
+  {
+    id: 'passenger-injury-prevention-guide',
+    title: '車内事故防止の徹底',
+    description: '乗車時、発進時、走行中の安全確認と、車内転倒事故を防止する運転・案内方法を確認します。',
+    showThumbnail: true,
+    blocks: [],
+  },
 ];

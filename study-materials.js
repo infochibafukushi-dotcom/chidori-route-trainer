@@ -89,6 +89,13 @@
     },
   ];
 
+  const PASSENGER_INJURY_PREVENTION_SLIDES = [
+    {
+      src: 'assets/study-materials/passenger-injury-prevention/passenger-injury-prevention-guide.png',
+      alt: '車内事故防止の徹底',
+    },
+  ];
+
   const MATERIAL_SLIDES = {
     stroller: STROLLER_SLIDES,
     wheelchair: WHEELCHAIR_SLIDES,
@@ -98,6 +105,7 @@
     'accident-response-guide': ACCIDENT_RESPONSE_SLIDES,
     'bus-hijacking-response-manual': BUS_HIJACKING_SLIDES,
     'intersection-turning-safety-guide': INTERSECTION_TURNING_SLIDES,
+    'passenger-injury-prevention-guide': PASSENGER_INJURY_PREVENTION_SLIDES,
   };
 
   let popOpen = false;

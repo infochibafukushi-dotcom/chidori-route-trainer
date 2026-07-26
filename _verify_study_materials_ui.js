@@ -44,6 +44,9 @@ const DECKS = {
   'intersection-turning-safety-guide': [
     'intersection-turning-safety-guide.png',
   ],
+  'passenger-injury-prevention-guide': [
+    'passenger-injury-prevention-guide.png',
+  ],
 };
 
 const mime = {
@@ -135,7 +138,8 @@ async function main() {
           : id === 'accident-response-guide' ? 'accident-response'
             : id === 'bus-hijacking-response-manual' ? 'bus-hijacking'
               : id === 'intersection-turning-safety-guide' ? 'intersection-turning'
-                : id;
+                : id === 'passenger-injury-prevention-guide' ? 'passenger-injury-prevention'
+                  : id;
     for (const name of names) {
       const p = path.join(root, 'assets/study-materials', dir, name);
       if (!fs.existsSync(p)) throw new Error('missing ' + p);
@@ -165,42 +169,43 @@ async function main() {
     await page.waitForSelector('.study-list');
     const listTitles = await page.$$eval('.study-material-item .study-material-copy strong', (els) => els.map((e) => e.textContent.trim()));
     const listHints = await page.$$eval('.study-material-item .study-material-copy > span', (els) => els.map((e) => e.textContent.trim()));
-    const listOk = listTitles.length === 8
+    const listOk = listTitles.length === 9
       && listTitles[4] === '5. 運行中に体調の異変を感じた時の対応'
       && listTitles[5] === '6. 事故発生時の処置'
       && listTitles[6] === '7. バスジャック対応マニュアル'
       && listTitles[7] === '8. 交差点右左折時の実践要領'
+      && listTitles[8] === '9. 車内事故防止の徹底'
       && listHints[0] === 'タップして本文を表示'
-      && listHints[7].includes('減速');
+      && listHints[8].includes('車内転倒');
     results.push({ label, step: 'list', listTitles, listHints, listOk });
     if (!listOk) failed += 1;
 
-    // intersection-turning primary
-    await page.locator('[data-material-id="intersection-turning-safety-guide"]').evaluate((el) => el.click());
+    // passenger-injury primary
+    await page.locator('[data-material-id="passenger-injury-prevention-guide"]').evaluate((el) => el.click());
     await page.waitForSelector('#studySlideImage');
-    const intersection = await walkSlides(page, DECKS['intersection-turning-safety-guide']);
+    const passenger = await walkSlides(page, DECKS['passenger-injury-prevention-guide']);
     const metrics = await measure(page);
     await page.locator('#studyPopCloseX').evaluate((el) => el.click());
     await page.waitForSelector('#studyMaterialPop', { state: 'detached' });
     await page.waitForFunction(() => {
-      const img = document.querySelector('[data-material-id="intersection-turning-safety-guide"] .study-material-thumb');
+      const img = document.querySelector('[data-material-id="passenger-injury-prevention-guide"] .study-material-thumb');
       return !!(img && img.complete && img.naturalWidth > 0);
     });
     const thumbOnList = true;
-    await page.locator('[data-material-id="intersection-turning-safety-guide"]').evaluate((el) => el.click());
+    await page.locator('[data-material-id="passenger-injury-prevention-guide"]').evaluate((el) => el.click());
     await page.waitForSelector('#studySlideImage');
     const phoneOk = label === 'sp-landscape'
       ? metrics.panelW <= 760 + 1 && metrics.heightRatio <= 0.96 && metrics.imgFillRatio >= 0.9
       : label.startsWith('sp')
         ? metrics.sideGap >= 12 && metrics.sideGap <= 28 && metrics.heightRatio <= 0.96 && metrics.imgFillRatio >= 0.9
         : metrics.panelW <= 760 + 1;
-    results.push({ label, step: 'intersection-turning', ok: intersection.ok, metrics, phoneOk, thumbOnList, nextLabel: intersection.nextLabel });
-    if (!intersection.ok || !phoneOk || !thumbOnList || metrics.overflowX || metrics.bodyOverflowX || metrics.objectFit !== 'contain') failed += 1;
+    results.push({ label, step: 'passenger-injury', ok: passenger.ok, metrics, phoneOk, thumbOnList, nextLabel: passenger.nextLabel });
+    if (!passenger.ok || !phoneOk || !thumbOnList || metrics.overflowX || metrics.bodyOverflowX || metrics.objectFit !== 'contain') failed += 1;
     await page.locator('#studyPopCloseX').evaluate((el) => el.click());
     await page.waitForSelector('#studyMaterialPop', { state: 'detached' });
 
     // regressions for other decks
-    for (const id of ['mic-guide', 'stroller', 'wheelchair', 'bicycle-accident-prevention', 'driver-health-emergency-response', 'accident-response-guide', 'bus-hijacking-response-manual']) {
+    for (const id of ['mic-guide', 'stroller', 'wheelchair', 'bicycle-accident-prevention', 'driver-health-emergency-response', 'accident-response-guide', 'bus-hijacking-response-manual', 'intersection-turning-safety-guide']) {
       await page.locator(`[data-material-id="${id}"]`).evaluate((el) => el.click());
       await page.waitForSelector('#studySlideImage');
       const walked = await walkSlides(page, DECKS[id]);

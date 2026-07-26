@@ -67,6 +67,12 @@ if (!intersection || intersection.title !== '交差点右左折時の実践要�
   process.exit(1);
 }
 
+const passenger = materials.find((m) => m.id === 'passenger-injury-prevention-guide');
+if (!passenger || passenger.title !== '車内事故防止の徹底') {
+  console.error('passenger-injury material missing or title mismatch', passenger);
+  process.exit(1);
+}
+
 fs.writeFileSync(snapshotPath, JSON.stringify(actual, null, 2) + '\n', 'utf8');
 
 console.log('OK canon', {
@@ -78,5 +84,6 @@ console.log('OK canon', {
   accidentOk: true,
   hijackingOk: true,
   intersectionOk: true,
+  passengerOk: true,
 });
 process.exit(0);

@@ -298,6 +298,15 @@ for (const material of materials) {
     }
     continue;
   }
+  if (material.id === 'passenger-injury-prevention-guide') {
+    if (material.title !== '車内事故防止の徹底') {
+      console.error('TITLE MISMATCH passenger-injury', material.title);
+      failed++;
+    } else {
+      console.log('OK', material.id, 'image-only');
+    }
+    continue;
+  }
   const exp = expected[material.id];
   if (!exp) {
     console.error('UNKNOWN id', material.id);
@@ -319,8 +328,8 @@ for (const material of materials) {
   }
 }
 
-if (materials.length !== 8) {
-  console.error('Expected 8 materials, got', materials.length);
+if (materials.length !== 9) {
+  console.error('Expected 9 materials, got', materials.length);
   failed++;
 }
 

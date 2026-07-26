@@ -43,6 +43,9 @@ const DECKS = {
   'intersection-turning-safety-guide': [
     'intersection-turning-safety-guide.png',
   ],
+  'passenger-injury-prevention-guide': [
+    'passenger-injury-prevention-guide.png',
+  ],
 };
 
 const mime = {
