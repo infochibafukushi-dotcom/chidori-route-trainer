@@ -1,0 +1,1079 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-06-12T12:14:17Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "node",
+      "id": 288384935,
+      "lat": 35.650126,
+      "lon": 139.9150322,
+      "tags": {
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 288384937,
+      "lat": 35.6498949,
+      "lon": 139.9147479
+    },
+    {
+      "type": "node",
+      "id": 288384996,
+      "lat": 35.6497221,
+      "lon": 139.914542
+    },
+    {
+      "type": "node",
+      "id": 288385100,
+      "lat": 35.6500254,
+      "lon": 139.9149057
+    },
+    {
+      "type": "node",
+      "id": 1312616404,
+      "lat": 35.6445303,
+      "lon": 139.9281425,
+      "tags": {
+        "bus": "yes",
+        "covered": "yes",
+        "highway": "bus_stop",
+        "name": "プラウド新浦安パークマリーナ",
+        "old_name": "日航浦安",
+        "operator": "東京ベイシティ交通",
+        "passenger_information_display": "yes",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1312616405,
+      "lat": 35.6457915,
+      "lon": 139.9265606,
+      "tags": {
+        "bus": "yes",
+        "covered": "yes",
+        "highway": "bus_stop",
+        "name": "日の出中学校",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1312616409,
+      "lat": 35.6425331,
+      "lon": 139.9344894,
+      "tags": {
+        "bus": "yes",
+        "covered": "yes",
+        "highway": "bus_stop",
+        "name": "日の出七丁目",
+        "operator": "東京ベイシティ交通",
+        "passenger_information_display": "yes",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1312616418,
+      "lat": 35.6455707,
+      "lon": 139.9248818,
+      "tags": {
+        "bus": "yes",
+        "covered": "yes",
+        "highway": "bus_stop",
+        "name": "ベイシティ浦安",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1312670870,
+      "lat": 35.6458877,
+      "lon": 139.9202433,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "明海大学前",
+        "operator": "東京ベイシティ交通",
+        "passenger_information_display": "yes",
+        "public_transport": "platform",
+        "shelter": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1312670873,
+      "lat": 35.6442605,
+      "lon": 139.922292,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "海風の街",
+        "operator": "東京ベイシティ交通",
+        "passenger_information_display": "yes",
+        "public_transport": "platform",
+        "shelter": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1312711918,
+      "lat": 35.648721,
+      "lon": 139.9166753,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "入船中央エステート",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1312776534,
+      "lat": 35.6494508,
+      "lon": 139.9142125
+    },
+    {
+      "type": "node",
+      "id": 1336182831,
+      "lat": 35.6475124,
+      "lon": 139.9183306
+    },
+    {
+      "type": "node",
+      "id": 1666878475,
+      "lat": 35.6415106,
+      "lon": 139.9320709
+    },
+    {
+      "type": "node",
+      "id": 1666878485,
+      "lat": 35.6416129,
+      "lon": 139.9322004,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1666878498,
+      "lat": 35.6430514,
+      "lon": 139.9339221
+    },
+    {
+      "type": "node",
+      "id": 2303738273,
+      "lat": 35.6415734,
+      "lon": 139.9319077
+    },
+    {
+      "type": "node",
+      "id": 2303738288,
+      "lat": 35.6424704,
+      "lon": 139.9307927,
+      "tags": {
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2303738324,
+      "lat": 35.6459236,
+      "lon": 139.9252479
+    },
+    {
+      "type": "node",
+      "id": 2303738325,
+      "lat": 35.6459024,
+      "lon": 139.9264837
+    },
+    {
+      "type": "node",
+      "id": 2303738326,
+      "lat": 35.6459705,
+      "lon": 139.9253444
+    },
+    {
+      "type": "node",
+      "id": 2303738327,
+      "lat": 35.6460103,
+      "lon": 139.925447
+    },
+    {
+      "type": "node",
+      "id": 2303738328,
+      "lat": 35.6459498,
+      "lon": 139.9263992
+    },
+    {
+      "type": "node",
+      "id": 2303738329,
+      "lat": 35.6460381,
+      "lon": 139.9255449
+    },
+    {
+      "type": "node",
+      "id": 2303738330,
+      "lat": 35.6459912,
+      "lon": 139.926306
+    },
+    {
+      "type": "node",
+      "id": 2303738332,
+      "lat": 35.6460724,
+      "lon": 139.9258822
+    },
+    {
+      "type": "node",
+      "id": 2303738334,
+      "lat": 35.6460244,
+      "lon": 139.926198
+    },
+    {
+      "type": "node",
+      "id": 2303738336,
+      "lat": 35.6460642,
+      "lon": 139.9259915
+    },
+    {
+      "type": "node",
+      "id": 2534635816,
+      "lat": 35.6491874,
+      "lon": 139.9162222,
+      "tags": {
+        "highway": "traffic_signals",
+        "name": "入船中央",
+        "name:en": "Irifune chuo",
+        "name:ja": "入船中央"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2593542684,
+      "lat": 35.6473414,
+      "lon": 139.9185538,
+      "tags": {
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3722883761,
+      "lat": 35.6421248,
+      "lon": 139.9328103
+    },
+    {
+      "type": "node",
+      "id": 3722883789,
+      "lat": 35.6441743,
+      "lon": 139.9286493
+    },
+    {
+      "type": "node",
+      "id": 3722883791,
+      "lat": 35.6442464,
+      "lon": 139.9285584,
+      "tags": {
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3722883796,
+      "lat": 35.6460479,
+      "lon": 139.9260988
+    },
+    {
+      "type": "node",
+      "id": 3731206098,
+      "lat": 35.6453302,
+      "lon": 139.924515,
+      "tags": {
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3731206103,
+      "lat": 35.6457433,
+      "lon": 139.9250065
+    },
+    {
+      "type": "node",
+      "id": 3731514467,
+      "lat": 35.6439137,
+      "lon": 139.9228294,
+      "tags": {
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3731514468,
+      "lat": 35.6439785,
+      "lon": 139.9227496,
+      "tags": {
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3731514469,
+      "lat": 35.6440295,
+      "lon": 139.9229707,
+      "tags": {
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3731514476,
+      "lat": 35.6462798,
+      "lon": 139.9198675,
+      "tags": {
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6813929336,
+      "lat": 35.6456865,
+      "lon": 139.9267642,
+      "tags": {
+        "highway": "traffic_signals",
+        "traffic_signals": "signal"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6816784106,
+      "lat": 35.6422915,
+      "lon": 139.9330126
+    },
+    {
+      "type": "node",
+      "id": 6899769125,
+      "lat": 35.6418241,
+      "lon": 139.9325281,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "日の出西",
+        "operator": "東京ベイシティ交通",
+        "passenger_information_display": "yes",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8415001163,
+      "lat": 35.649411,
+      "lon": 139.9142448,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "local_ref": "X",
+        "name": "新浦安駅",
+        "note": "降車専用",
+        "operator": "京成トランジットバス;東京ベイシティ交通",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9956759392,
+      "lat": 35.6500449,
+      "lon": 139.9151399,
+      "tags": {
+        "crossing": "marked",
+        "crossing:markings": "zebra",
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9956759395,
+      "lat": 35.6500415,
+      "lon": 139.914926,
+      "tags": {
+        "crossing": "marked",
+        "crossing:markings": "zebra",
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9956759412,
+      "lat": 35.6492843,
+      "lon": 139.9160839,
+      "tags": {
+        "crossing": "marked",
+        "crossing:markings": "zebra",
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11513466342,
+      "lat": 35.6443194,
+      "lon": 139.9223229
+    },
+    {
+      "type": "node",
+      "id": 11513466344,
+      "lat": 35.6459473,
+      "lon": 139.9202869
+    },
+    {
+      "type": "node",
+      "id": 11519206417,
+      "lat": 35.6458032,
+      "lon": 139.9250782
+    },
+    {
+      "type": "node",
+      "id": 11519206418,
+      "lat": 35.645868,
+      "lon": 139.9251594
+    },
+    {
+      "type": "node",
+      "id": 11519206419,
+      "lat": 35.6460582,
+      "lon": 139.9256542
+    },
+    {
+      "type": "node",
+      "id": 11519206420,
+      "lat": 35.6460686,
+      "lon": 139.9257676
+    },
+    {
+      "type": "node",
+      "id": 11519206423,
+      "lat": 35.64326,
+      "lon": 139.9298076
+    },
+    {
+      "type": "node",
+      "id": 11533169244,
+      "lat": 35.6465405,
+      "lon": 139.9195334
+    },
+    {
+      "type": "node",
+      "id": 11553607568,
+      "lat": 35.6424056,
+      "lon": 139.9308752
+    },
+    {
+      "type": "node",
+      "id": 11553714671,
+      "lat": 35.6420263,
+      "lon": 139.9313486
+    },
+    {
+      "type": "node",
+      "id": 11553714672,
+      "lat": 35.6425372,
+      "lon": 139.9307105,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11553714673,
+      "lat": 35.645607,
+      "lon": 139.9248449
+    },
+    {
+      "type": "node",
+      "id": 11553714678,
+      "lat": 35.6458299,
+      "lon": 139.9265876
+    },
+    {
+      "type": "node",
+      "id": 11553714684,
+      "lat": 35.6445657,
+      "lon": 139.9281554
+    },
+    {
+      "type": "node",
+      "id": 11581215033,
+      "lat": 35.6451357,
+      "lon": 139.9274513
+    },
+    {
+      "type": "node",
+      "id": 11591351728,
+      "lat": 35.6461848,
+      "lon": 139.9199882,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12385704998,
+      "lat": 35.6435074,
+      "lon": 139.9294294,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "順天堂大学・日の出正門",
+        "old_name": "日の出南小学校",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12409319218,
+      "lat": 35.642565,
+      "lon": 139.934538
+    },
+    {
+      "type": "node",
+      "id": 12963360975,
+      "lat": 35.644895,
+      "lon": 139.9239983
+    },
+    {
+      "type": "node",
+      "id": 12982631627,
+      "lat": 35.6441654,
+      "lon": 139.9286606,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12982631639,
+      "lat": 35.6443384,
+      "lon": 139.9284423,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12982631644,
+      "lat": 35.6423916,
+      "lon": 139.9308926,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12982654260,
+      "lat": 35.6459376,
+      "lon": 139.9264209
+    },
+    {
+      "type": "node",
+      "id": 12982654447,
+      "lat": 35.6440422,
+      "lon": 139.9226699,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12982654450,
+      "lat": 35.6441101,
+      "lon": 139.9230664,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12990649354,
+      "lat": 35.6452711,
+      "lon": 139.9244448,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12993461769,
+      "lat": 35.6415823,
+      "lon": 139.9318967,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13013349238,
+      "lat": 35.6429775,
+      "lon": 139.9338337,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13013349284,
+      "lat": 35.6429782,
+      "lon": 139.9340148,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13026138624,
+      "lat": 35.6463689,
+      "lon": 139.9197533,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "way",
+      "id": 221344566,
+      "nodes": [
+        3722883791,
+        12982631639,
+        11553714684,
+        11581215033,
+        6813929336,
+        11553714678,
+        2303738325,
+        12982654260,
+        2303738328,
+        2303738330,
+        2303738334,
+        3722883796,
+        2303738336,
+        2303738332,
+        11519206420,
+        11519206419,
+        2303738329,
+        2303738327,
+        2303738326,
+        2303738324,
+        11519206418,
+        11519206417,
+        3731206103,
+        11553714673
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "oneway": "yes",
+        "source": "GSImaps/ort",
+        "surface": "paved"
+      }
+    },
+    {
+      "type": "way",
+      "id": 720406629,
+      "nodes": [
+        288384935,
+        9956759395,
+        288385100,
+        288384937,
+        288384996
+      ],
+      "tags": {
+        "access": "yes",
+        "highway": "service",
+        "oneway": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 847288812,
+      "nodes": [
+        2593542684,
+        1336182831,
+        2534635816
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "maxspeed": "50",
+        "name": "シンボルロード",
+        "name:en": "Symbol Road",
+        "name:es": "Ruta Symbol",
+        "name:ja": "シンボルロード",
+        "name:ko": "심볼로",
+        "oneway": "yes",
+        "source": "GSImaps/ort",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 847288815,
+      "nodes": [
+        3731514469,
+        3731514467
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "oneway": "yes",
+        "source": "Bing",
+        "surface": "paved"
+      }
+    },
+    {
+      "type": "way",
+      "id": 847288818,
+      "nodes": [
+        3731514467,
+        3731514468
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "maxspeed": "50",
+        "name": "シンボルロード",
+        "name:en": "Symbol Road",
+        "name:es": "Ruta Symbol",
+        "name:ja": "シンボルロード",
+        "name:ko": "심볼로",
+        "oneway": "yes",
+        "source": "GSImaps/ort"
+      }
+    },
+    {
+      "type": "way",
+      "id": 906161755,
+      "nodes": [
+        288384996,
+        1312776534
+      ],
+      "tags": {
+        "access": "permit",
+        "bus": "yes",
+        "highway": "service",
+        "oneway": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1241264346,
+      "nodes": [
+        3731514468,
+        12982654447,
+        11513466342,
+        11513466344,
+        11591351728,
+        3731514476
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "maxspeed": "50",
+        "name": "シンボルロード",
+        "name:en": "Symbol Road",
+        "name:es": "Ruta Symbol",
+        "name:ja": "シンボルロード",
+        "name:ko": "심볼로",
+        "oneway": "yes",
+        "source": "GSImaps/ort",
+        "surface": "paved"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1243156093,
+      "nodes": [
+        1666878475,
+        2303738273,
+        12993461769,
+        11553714671,
+        12982631644,
+        11553607568,
+        2303738288
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "oneway": "yes",
+        "source": "GSImaps/std",
+        "surface": "paved"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1338996598,
+      "nodes": [
+        2303738288,
+        11553714672,
+        11519206423,
+        12982631627,
+        3722883789,
+        3722883791
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "oneway": "yes",
+        "source": "GSImaps/ort",
+        "surface": "paved"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1338996609,
+      "nodes": [
+        2534635816,
+        9956759412,
+        9956759392,
+        288384935
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "maxspeed": "50",
+        "name": "シンボルロード",
+        "name:en": "Symbol Road",
+        "name:es": "Ruta Symbol",
+        "name:ja": "シンボルロード",
+        "name:ko": "심볼로",
+        "oneway": "yes",
+        "source": "GSImaps/ort"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1340739631,
+      "nodes": [
+        11533169244,
+        2593542684
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "maxspeed": "50",
+        "name": "シンボルロード",
+        "name:en": "Symbol Road",
+        "name:es": "Ruta Symbol",
+        "name:ja": "シンボルロード",
+        "name:ko": "심볼로",
+        "oneway": "yes",
+        "source": "GSImaps/ort"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1341518494,
+      "nodes": [
+        3731514476,
+        13026138624,
+        11533169244
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "maxspeed": "50",
+        "name": "シンボルロード",
+        "name:en": "Symbol Road",
+        "name:es": "Ruta Symbol",
+        "name:ja": "シンボルロード",
+        "name:ko": "심볼로",
+        "oneway": "yes",
+        "source": "GSImaps/ort",
+        "surface": "paved"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1341526746,
+      "nodes": [
+        1666878498,
+        13013349238,
+        6816784106,
+        3722883761,
+        1666878485,
+        1666878475
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "source": "GSImaps/ort",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1341526747,
+      "nodes": [
+        12409319218,
+        13013349284,
+        1666878498
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "source": "GSImaps/ort",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1341529808,
+      "nodes": [
+        11553714673,
+        3731206098,
+        12990649354,
+        12963360975,
+        12982654450,
+        3731514469
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "oneway": "yes",
+        "source": "GSImaps/ort",
+        "surface": "paved"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 18396562,
+      "members": [
+        {
+          "type": "node",
+          "ref": 1312616409,
+          "role": "platform_entry_only"
+        },
+        {
+          "type": "node",
+          "ref": 6899769125,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 12385704998,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 1312616404,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 1312616405,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 1312616418,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 1312670873,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 1312670870,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 1312711918,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 8415001163,
+          "role": "platform_exit_only"
+        },
+        {
+          "type": "way",
+          "ref": 1341526747,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 1341526746,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 1243156093,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 1338996598,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 221344566,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 1341529808,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 847288815,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 847288818,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 1241264346,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 1341518494,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 1340739631,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 847288812,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 1338996609,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 720406629,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 906161755,
+          "role": ""
+        }
+      ],
+      "tags": {
+        "name": "東京ベイシティバス16系統 日の出七丁目⇒プラウド新浦安パークマリーナ⇒新浦安駅",
+        "network": "日の出線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "16",
+        "route": "bus",
+        "type": "route"
+      }
+    }
+  ]
+}

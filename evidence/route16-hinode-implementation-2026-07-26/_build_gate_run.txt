@@ -1,0 +1,4 @@
+﻿systems: 16-hinode-nanachome, 16-shinurayasu
+uniqueness: {"systemCount":2,"allStopIdSignaturesDistinct":true,"allStopNameSignaturesDistinct":true,"osmAllMatch":true,"route17StopsAbsent":true}
+rejected: 繝・route17
+wrote official-stop-orders.json, system-signatures.json, official-sources.md, route-pattern-summary.md

@@ -1,0 +1,154 @@
+// Auto-generated OSM platforms for 日の出線 系統16 (route-16).
+// Official stop order: Keisei Bus Navi 個別便通過時刻表 2026-07-26（凡例でゲート）。
+// 新浦安駅のりばCの [16]（プラウド新浦安パークマリーナ経由）日の出七丁目行 のみを採用。
+// 17系統（日の出東経由）は同じ日の出七丁目発着だが別系統であり、停留所は採用していない。
+// Each system uses the platforms of its own OSM relation; outbound/inbound platforms differ.
+// Generated: 2026-07-26-hinode-line-v1
+(() => {
+  window.HINODE_LINE_PLATFORMS_V1 = {
+  "16-hinode-nanachome": {
+    "新浦安駅": {
+      "lat": 35.649709,
+      "lng": 139.9136809,
+      "platformId": 8415001167,
+      "role": "platform_entry_only",
+      "osmName": "新浦安駅"
+    },
+    "入船中央エステート": {
+      "lat": 35.6489816,
+      "lng": 139.9168586,
+      "platformId": 11425579726,
+      "role": "platform",
+      "osmName": "入船中央エステート"
+    },
+    "明海大学前": {
+      "lat": 35.6460348,
+      "lng": 139.9205782,
+      "platformId": 6813952156,
+      "role": "platform",
+      "osmName": "明海大学前"
+    },
+    "海風の街": {
+      "lat": 35.6445955,
+      "lng": 139.922359,
+      "platformId": 1312616399,
+      "role": "platform",
+      "osmName": "海風の街"
+    },
+    "ベイシティ浦安": {
+      "lat": 35.6456566,
+      "lng": 139.9247,
+      "platformId": 6813929333,
+      "role": "platform",
+      "osmName": "ベイシティ浦安"
+    },
+    "日の出中学校": {
+      "lat": 35.6455623,
+      "lng": 139.9271315,
+      "platformId": 6813929334,
+      "role": "platform",
+      "osmName": "日の出中学校"
+    },
+    "プラウド新浦安パークマリーナ": {
+      "lat": 35.6446485,
+      "lng": 139.9282908,
+      "platformId": 6813929337,
+      "role": "platform",
+      "osmName": "プラウド新浦安パークマリーナ"
+    },
+    "順天堂大学・日の出 正門": {
+      "lat": 35.6436712,
+      "lng": 139.9295068,
+      "platformId": 6813929338,
+      "role": "platform",
+      "osmName": "順天堂大学・日の出正門"
+    },
+    "日の出西": {
+      "lat": 35.6420157,
+      "lng": 139.9325931,
+      "platformId": 11425363971,
+      "role": "platform",
+      "osmName": "日の出西"
+    },
+    "日の出七丁目": {
+      "lat": 35.642641,
+      "lng": 139.9345498,
+      "platformId": 11425363970,
+      "role": "platform_exit_only",
+      "osmName": "日の出七丁目"
+    }
+  },
+  "16-shinurayasu": {
+    "日の出七丁目": {
+      "lat": 35.6425331,
+      "lng": 139.9344894,
+      "platformId": 1312616409,
+      "role": "platform_entry_only",
+      "osmName": "日の出七丁目"
+    },
+    "日の出西": {
+      "lat": 35.6418241,
+      "lng": 139.9325281,
+      "platformId": 6899769125,
+      "role": "platform",
+      "osmName": "日の出西"
+    },
+    "順天堂大学・日の出 正門": {
+      "lat": 35.6435074,
+      "lng": 139.9294294,
+      "platformId": 12385704998,
+      "role": "platform",
+      "osmName": "順天堂大学・日の出正門"
+    },
+    "プラウド新浦安パークマリーナ": {
+      "lat": 35.6445303,
+      "lng": 139.9281425,
+      "platformId": 1312616404,
+      "role": "platform",
+      "osmName": "プラウド新浦安パークマリーナ"
+    },
+    "日の出中学校": {
+      "lat": 35.6457915,
+      "lng": 139.9265606,
+      "platformId": 1312616405,
+      "role": "platform",
+      "osmName": "日の出中学校"
+    },
+    "ベイシティ浦安": {
+      "lat": 35.6455707,
+      "lng": 139.9248818,
+      "platformId": 1312616418,
+      "role": "platform",
+      "osmName": "ベイシティ浦安"
+    },
+    "海風の街": {
+      "lat": 35.6442605,
+      "lng": 139.922292,
+      "platformId": 1312670873,
+      "role": "platform",
+      "osmName": "海風の街"
+    },
+    "明海大学前": {
+      "lat": 35.6458877,
+      "lng": 139.9202433,
+      "platformId": 1312670870,
+      "role": "platform",
+      "osmName": "明海大学前"
+    },
+    "入船中央エステート": {
+      "lat": 35.648721,
+      "lng": 139.9166753,
+      "platformId": 1312711918,
+      "role": "platform",
+      "osmName": "入船中央エステート"
+    },
+    "新浦安駅": {
+      "lat": 35.649411,
+      "lng": 139.9142448,
+      "platformId": 8415001163,
+      "role": "platform_exit_only",
+      "osmName": "新浦安駅"
+    }
+  }
+};
+})();

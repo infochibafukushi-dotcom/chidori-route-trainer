@@ -1,0 +1,274 @@
+{
+  "checkedAt": "2026-07-26T11:32:06.525Z",
+  "routeId": "route-16",
+  "thresholds": {
+    "maxGap_m": 30,
+    "uturnDeg": 150,
+    "platformSoft_m": 20,
+    "platformHard_m": 30
+  },
+  "route17RelationsUsed": [],
+  "systems": {
+    "16-hinode-nanachome": {
+      "relationId": 18396563,
+      "pathSource": "osm-relation-18396563+startHint-shinurayasu",
+      "resolvedVersion": "2026-07-26-hinode-nanachome-v1",
+      "pathPoints": 159,
+      "pathLength_m": 2621,
+      "storedPathHash": "18bed8c3ae9d3e772fa96f9ba737db6257d4911cdbb063de26f8c6b8ec99361a",
+      "recomputedPathHash": "18bed8c3ae9d3e772fa96f9ba737db6257d4911cdbb063de26f8c6b8ec99361a",
+      "pathHashMatches": true,
+      "maxGap_m": 24.6,
+      "gapsOverLimit": [],
+      "nanCount": 0,
+      "wayIssues": {
+        "forbiddenHighway": [],
+        "unknownHighway": [],
+        "buildingOrGreen": [],
+        "wrongWay": [],
+        "onewayOk": 16
+      },
+      "uturnsTotal": 0,
+      "terminalTurnarounds": [],
+      "unnecessaryUturns": [],
+      "platformChecks": [
+        {
+          "name": "新浦安駅",
+          "dist_m": 7.9,
+          "pathIndex": 0,
+          "status": "OK"
+        },
+        {
+          "name": "入船中央エステート",
+          "dist_m": 7.6,
+          "pathIndex": 33,
+          "status": "OK"
+        },
+        {
+          "name": "明海大学前",
+          "dist_m": 9.1,
+          "pathIndex": 59,
+          "status": "OK"
+        },
+        {
+          "name": "海風の街",
+          "dist_m": 6.1,
+          "pathIndex": 69,
+          "status": "OK"
+        },
+        {
+          "name": "ベイシティ浦安",
+          "dist_m": 3.9,
+          "pathIndex": 85,
+          "status": "OK"
+        },
+        {
+          "name": "日の出中学校",
+          "dist_m": 4.4,
+          "pathIndex": 107,
+          "status": "OK"
+        },
+        {
+          "name": "プラウド新浦安パークマリーナ",
+          "dist_m": 4.9,
+          "pathIndex": 114,
+          "status": "OK"
+        },
+        {
+          "name": "順天堂大学・日の出 正門",
+          "dist_m": 5.3,
+          "pathIndex": 123,
+          "status": "OK"
+        },
+        {
+          "name": "日の出西",
+          "dist_m": 6.2,
+          "pathIndex": 145,
+          "status": "OK"
+        },
+        {
+          "name": "日の出七丁目",
+          "dist_m": 8.5,
+          "pathIndex": 158,
+          "status": "OK"
+        }
+      ],
+      "maxPlatformDist_m": 9.1,
+      "accessRestrictedWays": {
+        "restrictedAccessWayCount": 5,
+        "busPermittedRestrictedWayCount": 5,
+        "documentedExceptionWayCount": 0,
+        "unresolvedRestrictedWayCount": 0,
+        "restrictedWays": [
+          {
+            "id": 906161758,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          },
+          {
+            "id": 1342408590,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          },
+          {
+            "id": 1342409930,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          },
+          {
+            "id": 1340739633,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          },
+          {
+            "id": 906161743,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          }
+        ],
+        "documentedExceptionWays": [],
+        "unresolvedWays": []
+      }
+    },
+    "16-shinurayasu": {
+      "relationId": 18396562,
+      "pathSource": "osm-relation-18396562+startHint-hinode-nanachome",
+      "resolvedVersion": "2026-07-26-hinode-shinurayasu-v1",
+      "pathPoints": 139,
+      "pathLength_m": 2544,
+      "storedPathHash": "9b36bbf512e3c648a82992d8a893049d4a9f52f7e4174ed16b11c904bc1b8de8",
+      "recomputedPathHash": "9b36bbf512e3c648a82992d8a893049d4a9f52f7e4174ed16b11c904bc1b8de8",
+      "pathHashMatches": true,
+      "maxGap_m": 24.3,
+      "gapsOverLimit": [],
+      "nanCount": 0,
+      "wayIssues": {
+        "forbiddenHighway": [],
+        "unknownHighway": [],
+        "buildingOrGreen": [],
+        "wrongWay": [],
+        "onewayOk": 13
+      },
+      "uturnsTotal": 0,
+      "terminalTurnarounds": [],
+      "unnecessaryUturns": [],
+      "platformChecks": [
+        {
+          "name": "日の出七丁目",
+          "dist_m": 5.6,
+          "pathIndex": 0,
+          "status": "OK"
+        },
+        {
+          "name": "日の出西",
+          "dist_m": 5.4,
+          "pathIndex": 14,
+          "status": "OK"
+        },
+        {
+          "name": "順天堂大学・日の出 正門",
+          "dist_m": 6.1,
+          "pathIndex": 35,
+          "status": "OK"
+        },
+        {
+          "name": "プラウド新浦安パークマリーナ",
+          "dist_m": 4.1,
+          "pathIndex": 44,
+          "status": "OK"
+        },
+        {
+          "name": "日の出中学校",
+          "dist_m": 4.9,
+          "pathIndex": 53,
+          "status": "OK"
+        },
+        {
+          "name": "ベイシティ浦安",
+          "dist_m": 5.2,
+          "pathIndex": 71,
+          "status": "OK"
+        },
+        {
+          "name": "海風の街",
+          "dist_m": 7.1,
+          "pathIndex": 88,
+          "status": "OK"
+        },
+        {
+          "name": "明海大学前",
+          "dist_m": 7.7,
+          "pathIndex": 99,
+          "status": "OK"
+        },
+        {
+          "name": "入船中央エステート",
+          "dist_m": 11.1,
+          "pathIndex": 121,
+          "status": "OK"
+        },
+        {
+          "name": "新浦安駅",
+          "dist_m": 5.3,
+          "pathIndex": 138,
+          "status": "OK"
+        }
+      ],
+      "maxPlatformDist_m": 11.1,
+      "accessRestrictedWays": {
+        "restrictedAccessWayCount": 1,
+        "busPermittedRestrictedWayCount": 1,
+        "documentedExceptionWayCount": 0,
+        "unresolvedRestrictedWayCount": 0,
+        "restrictedWays": [
+          {
+            "id": 906161755,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          }
+        ],
+        "documentedExceptionWays": [],
+        "unresolvedWays": []
+      }
+    }
+  },
+  "failures": [],
+  "reviewRequired": [],
+  "pass": true
+}

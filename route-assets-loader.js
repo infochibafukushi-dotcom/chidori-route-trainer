@@ -143,6 +143,16 @@
         './shione-no-machi-line-stop-images-v1.js?v=107',
         './shione-no-machi-line-route-v1.js?v=107'
       ]
+    },
+    'route-16': {
+      css: ['./hinode-line-stop-images-v1.css?v=108'],
+      js: [
+        './hinode-line-platforms-v1.js?v=108',
+        './hinode-line-path-v1.js?v=108',
+        './hinode-line-path-policy-v1.js?v=108',
+        './hinode-line-stop-images-v1.js?v=108',
+        './hinode-line-route-v1.js?v=108'
+      ]
     }
   };
 

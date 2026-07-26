@@ -1,0 +1,6 @@
+﻿16-hinode-nanachome stops 10 pts 159 maxGap 24.6 maxJoin 0 maxPlat 9.1 hash 18bed8c3ae9d
+16-shinurayasu stops 10 pts 139 maxGap 24.3 maxJoin 0 maxPlat 11.1 hash 9b36bbf512e3
+pathHashDistinct true
+reverseChecks [{"a":"16-hinode-nanachome","b":"16-shinurayasu","isExactReverse":false}]
+warnings []
+wrote hinode-line-platforms-v1.js and hinode-line-path-v1.js

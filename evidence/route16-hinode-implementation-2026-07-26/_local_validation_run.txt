@@ -1,0 +1,9 @@
+﻿integrity 16-hinode-nanachome stops 10 pts 159 orderOK true hashOK true policyOK true maxGap 24.6
+integrity 16-shinurayasu stops 10 pts 139 orderOK true hashOK true policyOK true maxGap 24.3
+driving 16-hinode-nanachome
+DRIVE PASS 16-hinode-nanachome registered 10 / 10 final 譌･縺ｮ蜃ｺ荳・ｸ∫岼
+driving 16-shinurayasu
+DRIVE PASS 16-shinurayasu registered 10 / 10 final 譁ｰ豬ｦ螳蛾ｧ・route-15 regression {"stops":10,"pathPoints":163,"pathHash":"dd5ecff8bb7f2dfc15084f45624dc29596f0f76d1c42a454b70ce6daac0380f2"}
+route-14 regression {"stops":19,"pathPoints":299,"pathHash":"3d3383abd203dda1006705cd6cd59f904540e53ae8ee224c507c1f7e0cc4c157"}
+route-12 regression {"stops":21,"pathPoints":664,"pathHash":"0ac1e3bdc9926d8830e6e71b99e31e2f04b6529271fc72eb149af6c780a67803"}
+PASS: true

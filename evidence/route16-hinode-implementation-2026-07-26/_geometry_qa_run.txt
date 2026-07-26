@@ -1,0 +1,3 @@
+﻿16-hinode-nanachome | pts 159 | len 2621m | maxGap 24.6 | maxStop 9.1 | hashOK true | uturn 0 | wrongWay 0 | badHighway 0
+16-shinurayasu | pts 139 | len 2544m | maxGap 24.3 | maxStop 11.1 | hashOK true | uturn 0 | wrongWay 0 | badHighway 0
+PASS: true
