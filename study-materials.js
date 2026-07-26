@@ -160,6 +160,9 @@
     'passenger-door-safety-guide': PASSENGER_DOOR_SAFETY_SLIDES,
   };
 
+  const DEFAULT_THUMB = 'assets/study-materials/covers/default-document.png';
+  const ORDER_LS_KEY = 'chidori-study-materials-order-v1';
+
   let popOpen = false;
   let popReturnFocus = null;
   let savedScrollY = 0;
@@ -172,16 +175,88 @@
   let slideMode = false;
   let activeSlides = [];
 
+  function catalogMaterials() {
+    return Array.isArray(window.STUDY_MATERIALS) ? window.STUDY_MATERIALS.slice() : [];
+  }
+
+  function getDefaultOrderIds(list) {
+    const items = list || catalogMaterials();
+    return items
+      .slice()
+      .sort((a, b) => {
+        const ao = Number.isFinite(a.defaultOrder) ? a.defaultOrder : 9999;
+        const bo = Number.isFinite(b.defaultOrder) ? b.defaultOrder : 9999;
+        if (ao !== bo) return ao - bo;
+        return items.indexOf(a) - items.indexOf(b);
+      })
+      .map((m) => m.id);
+  }
+
+  function normalizeStudyMaterialOrder(savedIds, materialsList) {
+    const list = materialsList || catalogMaterials();
+    const byId = new Map(list.map((m) => [m.id, m]));
+    const seen = new Set();
+    const ordered = [];
+    if (Array.isArray(savedIds)) {
+      for (const id of savedIds) {
+        if (typeof id !== 'string' || seen.has(id) || !byId.has(id)) continue;
+        seen.add(id);
+        ordered.push(id);
+      }
+    }
+    for (const id of getDefaultOrderIds(list)) {
+      if (!seen.has(id) && byId.has(id)) {
+        seen.add(id);
+        ordered.push(id);
+      }
+    }
+    return ordered;
+  }
+
+  function readSavedOrderIds() {
+    try {
+      if (typeof window.__chidoriGetStudyMaterialsOrder === 'function') {
+        const fromData = window.__chidoriGetStudyMaterialsOrder();
+        if (Array.isArray(fromData)) return fromData;
+      }
+    } catch (e) { /* ignore */ }
+    try {
+      const raw = localStorage.getItem(ORDER_LS_KEY);
+      if (!raw) return null;
+      const parsed = JSON.parse(raw);
+      return Array.isArray(parsed) ? parsed : null;
+    } catch (e) {
+      return null;
+    }
+  }
+
   function materials() {
-    return Array.isArray(window.STUDY_MATERIALS) ? window.STUDY_MATERIALS : [];
+    const list = catalogMaterials();
+    const order = normalizeStudyMaterialOrder(readSavedOrderIds(), list);
+    const byId = new Map(list.map((m) => [m.id, m]));
+    return order.map((id) => byId.get(id)).filter(Boolean);
   }
 
   function findMaterial(id) {
-    return materials().find((item) => item.id === id) || null;
+    return catalogMaterials().find((item) => item.id === id) || null;
   }
 
   function materialIndex(id) {
     return materials().findIndex((item) => item.id === id);
+  }
+
+  function getThumbnailSrc(item) {
+    if (item && item.thumbnail) return item.thumbnail;
+    const slides = item && MATERIAL_SLIDES[item.id];
+    if (slides && slides[0] && slides[0].src) return slides[0].src;
+    return DEFAULT_THUMB;
+  }
+
+  function getPageCount(item) {
+    const slides = MATERIAL_SLIDES[item.id];
+    if (slides && slides.length) return slides.length;
+    if (Number.isFinite(item.pageCount) && item.pageCount > 0) return item.pageCount;
+    return 1;
   }
 
   function blockClass(type) {
@@ -562,15 +637,19 @@
     studyMaterialId = null;
     const items = materials().map((item, index) => {
       const slides = MATERIAL_SLIDES[item.id];
-      const thumb = item.showThumbnail && slides && slides[0]
-        ? `<img class="study-material-thumb" src="${esc(slides[0].src)}" alt="" loading="lazy" decoding="async" />`
+      const thumbSrc = getThumbnailSrc(item);
+      const pages = getPageCount(item);
+      const pageCount = pages > 1
+        ? `<span class="study-material-pages">全${pages}ページ</span>`
         : '';
-      const pageCount = slides && slides.length > 1
-        ? `<span class="study-material-pages">全${slides.length}ページ</span>`
-        : '';
+      const thumb = (
+        `<span class="study-material-thumb-wrap" aria-hidden="true">` +
+        `<img class="study-material-thumb" src="${esc(thumbSrc)}" alt="" loading="lazy" decoding="async" data-fallback="${esc(DEFAULT_THUMB)}" />` +
+        `</span>`
+      );
       return (
-        `<button type="button" class="menu study-material-item${thumb ? ' study-material-item--thumb' : ''}" data-material-id="${esc(item.id)}">` +
-        (thumb ? `<span class="study-material-thumb-wrap" aria-hidden="true">${thumb}</span>` : '') +
+        `<button type="button" class="menu study-material-item study-material-item--thumb" data-material-id="${esc(item.id)}">` +
+        thumb +
         `<span class="study-material-copy">` +
         `<strong>${index + 1}. ${esc(item.title)}</strong>` +
         `<span class="study-material-desc">${esc(item.description || 'タップして本文を表示')}</span>` +
@@ -589,6 +668,15 @@
     );
 
     bindHeaderBackGuard();
+
+    document.querySelectorAll('.study-material-thumb').forEach((img) => {
+      img.addEventListener('error', function onThumbError() {
+        const fallback = img.getAttribute('data-fallback') || DEFAULT_THUMB;
+        if (img.dataset.fallbackApplied === '1' || img.getAttribute('src') === fallback) return;
+        img.dataset.fallbackApplied = '1';
+        img.src = fallback;
+      });
+    });
 
     document.querySelectorAll('[data-material-id]').forEach((button) => {
       button.addEventListener('click', () => {
@@ -639,6 +727,19 @@
     bicycleSlides: BICYCLE_SLIDES,
     driverHealthSlides: DRIVER_HEALTH_SLIDES,
     accidentResponseSlides: ACCIDENT_RESPONSE_SLIDES,
+  };
+
+  window.__chidoriStudyMaterialsApi = {
+    ORDER_LS_KEY,
+    DEFAULT_THUMB,
+    catalog: catalogMaterials,
+    ordered: materials,
+    getDefaultOrderIds,
+    normalizeStudyMaterialOrder,
+    readSavedOrderIds,
+    getThumbnailSrc,
+    getPageCount,
+    materialSlides: MATERIAL_SLIDES,
   };
 
   window.__chidoriOpenStudyMaterialDetail = openDetail;

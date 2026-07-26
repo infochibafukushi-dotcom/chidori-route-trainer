@@ -34,5 +34,6 @@ window.INITIAL_DATA = {
     {id:'bus-stop',name:'バス停注意点',color:'#2471a3'},
     {id:'caution',name:'注意地点',color:'#8e44ad'}
   ],
-  pins: []
+  pins: [],
+  studyMaterialsOrder: null
 };

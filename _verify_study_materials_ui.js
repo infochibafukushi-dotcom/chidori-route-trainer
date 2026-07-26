@@ -194,25 +194,19 @@ async function main() {
     const listHints = await page.$$eval('.study-material-item .study-material-desc', (els) => els.map((e) => e.textContent.trim()));
     const pageBadges = await page.$$eval('.study-material-item .study-material-pages', (els) => els.map((e) => e.textContent.trim()));
     const listOk = listTitles.length === 14
+      && listTitles[0] === '1. ベビーカー利用客の乗降時での作業マニュアル'
+      && listTitles[3] === '4. 自転車事故防止の三原則'
       && listTitles[4] === '5. 運行中に体調の異変を感じた時の対応'
-      && listTitles[5] === '6. 事故発生時の処置'
-      && listTitles[6] === '7. バスジャック対応マニュアル'
-      && listTitles[7] === '8. 交差点右左折時の実践要領'
-      && listTitles[8] === '9. 車内事故防止の徹底'
-      && listTitles[9] === '10. 始業・終業点呼の手順'
-      && listTitles[10] === '11. 始業点検の手順'
-      && listTitles[11] === '12. 停留所発進時の安全習慣'
-      && listTitles[12] === '13. 停留所到着時の安全習慣'
       && listTitles[13] === '14. 乗降扱い時の安全習慣'
       && listHints[0] === 'タップして本文を表示'
-      && listHints[11].includes('着座確認')
-      && listHints[12].includes('到着前')
       && listHints[13].includes('降車扉')
       && pageBadges.includes('全3ページ')
       && pageBadges.includes('全2ページ')
       && pageBadges.includes('全6ページ');
-    results.push({ label, step: 'list', listTitles, listHints, pageBadges, listOk });
-    if (!listOk) failed += 1;
+    const thumbCount = await page.$$eval('.study-material-item--thumb .study-material-thumb', (els) => els.length);
+    const thumbsOk = thumbCount === 14;
+    results.push({ label, step: 'list', listTitles, listHints, pageBadges, listOk, thumbCount, thumbsOk });
+    if (!listOk || !thumbsOk) failed += 1;
 
     // arrival primary (2 pages)
     await page.locator('[data-material-id="bus-stop-arrival-safety"]').evaluate((el) => el.click());

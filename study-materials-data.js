@@ -6,6 +6,10 @@ window.STUDY_MATERIALS = [
   {
     id: 'stroller',
     title: 'ベビーカー利用客の乗降時での作業マニュアル',
+    description: 'タップして本文を表示',
+    showThumbnail: true,
+    defaultOrder: 1,
+    thumbnail: 'assets/study-materials/covers/01-baby-car.png',
     blocks: [
       { type: 'heading', text: '【1．バス停に着車した時】' },
       { type: 'label', text: '乗務員の案内' },
@@ -78,6 +82,10 @@ window.STUDY_MATERIALS = [
   {
     id: 'wheelchair',
     title: '車椅子客乗降時の作業マニュアル（スロープ板付）',
+    description: 'タップして本文を表示',
+    showThumbnail: true,
+    defaultOrder: 2,
+    thumbnail: 'assets/study-materials/covers/02-wheelchair-slope.png',
     blocks: [
       { type: 'text', text: '車椅子利用の方が停留所の近辺にいる場合は、お客様です。' },
       { type: 'text', text: '停留所に近づいたら車椅子客の有無を確認する。' },
@@ -146,6 +154,10 @@ window.STUDY_MATERIALS = [
   {
     id: 'mic-guide',
     title: 'マイク案内の基本的な用語',
+    description: 'タップして本文を表示',
+    showThumbnail: true,
+    defaultOrder: 3,
+    thumbnail: 'assets/study-materials/covers/03-microphone-guide.png',
     blocks: [
       { type: 'note', text: '※事業所、営業所によって内容が異なります。ここでは一例を挙げます。' },
       { type: 'heading', text: '【（1）起点での案内（停留所での待ち合い時間や発車時など）】' },
@@ -193,6 +205,9 @@ window.STUDY_MATERIALS = [
     id: 'bicycle-accident-prevention',
     title: '自転車事故防止の三原則',
     description: 'タップして資料画像を表示',
+    showThumbnail: true,
+    defaultOrder: 4,
+    thumbnail: 'assets/study-materials/covers/04-bicycle-accident.png',
     blocks: [],
   },
   {
@@ -200,6 +215,8 @@ window.STUDY_MATERIALS = [
     title: '運行中に体調の異変を感じた時の対応',
     description: '運行中に体調不良を感じた場合の、運行中断・連絡・救援要請・緊急時対応を確認します。',
     showThumbnail: true,
+    defaultOrder: 5,
+
     blocks: [],
   },
   {
@@ -207,6 +224,8 @@ window.STUDY_MATERIALS = [
     title: '事故発生時の処置',
     description: '事故発生時の停止、救護、警察・営業所への連絡、証人確保、お客様対応の手順を確認します。',
     showThumbnail: true,
+    defaultOrder: 6,
+
     blocks: [],
   },
   {
@@ -214,6 +233,8 @@ window.STUDY_MATERIALS = [
     title: 'バスジャック対応マニュアル',
     description: 'バスジャック発生時の車内対応、車外への緊急連絡、予告情報を受けた場合の対応手順を確認します。',
     showThumbnail: true,
+    defaultOrder: 7,
+
     blocks: [],
   },
   {
@@ -221,6 +242,8 @@ window.STUDY_MATERIALS = [
     title: '交差点右左折時の実践要領',
     description: '交差点進入時の減速、右左折時の安全確認、発進時の死角確認手順を学習します。',
     showThumbnail: true,
+    defaultOrder: 8,
+
     blocks: [],
   },
   {
@@ -228,6 +251,8 @@ window.STUDY_MATERIALS = [
     title: '車内事故防止の徹底',
     description: '乗車時、発進時、走行中の安全確認と、車内転倒事故を防止する運転・案内方法を確認します。',
     showThumbnail: true,
+    defaultOrder: 9,
+
     blocks: [],
   },
   {
@@ -235,6 +260,8 @@ window.STUDY_MATERIALS = [
     title: '始業・終業点呼の手順',
     description: '始業点呼・終業点呼における携行品、車両点検、アルコール確認、報告・返納の手順を確認します。',
     showThumbnail: true,
+    defaultOrder: 10,
+
     blocks: [],
   },
   {
@@ -242,6 +269,8 @@ window.STUDY_MATERIALS = [
     title: '始業点検の手順',
     description: '運転席、車両外周、灯火類、タイヤ、車内設備など、始業前に確認する点検項目と順番を学習します。',
     showThumbnail: true,
+    defaultOrder: 11,
+
     blocks: [],
   },
   {
@@ -249,6 +278,8 @@ window.STUDY_MATERIALS = [
     title: '停留所発進時の安全習慣',
     description: '着座確認、発進アナウンス、周囲確認、サイドブレーキ解除、発進後のオーバーハング確認までの安全手順を学習します。',
     showThumbnail: true,
+    defaultOrder: 12,
+
     blocks: [],
   },
   {
@@ -256,6 +287,8 @@ window.STUDY_MATERIALS = [
     title: '停留所到着時の安全習慣',
     description: '停留所到着前のアナウンス、車内確認、減速、左寄せ、安全な停車、サイドブレーキ使用までの手順を学習します。',
     showThumbnail: true,
+    defaultOrder: 13,
+
     blocks: [],
   },
   {
@@ -263,6 +296,8 @@ window.STUDY_MATERIALS = [
     title: '乗降扱い時の安全習慣',
     description: '降車扉・乗車扉の操作順序、接遇アナウンス、車内外の安全確認、扉を閉める際の基本動作を確認します。',
     showThumbnail: true,
+    defaultOrder: 14,
+
     blocks: [],
   },
 ];
