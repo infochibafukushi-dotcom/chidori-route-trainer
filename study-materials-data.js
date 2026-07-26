@@ -202,4 +202,11 @@ window.STUDY_MATERIALS = [
     showThumbnail: true,
     blocks: [],
   },
+  {
+    id: 'accident-response-guide',
+    title: '事故発生時の処置',
+    description: '事故発生時の停止、救護、警察・営業所への連絡、証人確保、お客様対応の手順を確認します。',
+    showThumbnail: true,
+    blocks: [],
+  },
 ];

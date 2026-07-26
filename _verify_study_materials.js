@@ -271,6 +271,15 @@ for (const material of materials) {
     }
     continue;
   }
+  if (material.id === 'accident-response-guide') {
+    if (material.title !== '事故発生時の処置') {
+      console.error('TITLE MISMATCH accident-response', material.title);
+      failed++;
+    } else {
+      console.log('OK', material.id, 'image-only');
+    }
+    continue;
+  }
   const exp = expected[material.id];
   if (!exp) {
     console.error('UNKNOWN id', material.id);
@@ -292,8 +301,8 @@ for (const material of materials) {
   }
 }
 
-if (materials.length !== 5) {
-  console.error('Expected 5 materials, got', materials.length);
+if (materials.length !== 6) {
+  console.error('Expected 6 materials, got', materials.length);
   failed++;
 }
 

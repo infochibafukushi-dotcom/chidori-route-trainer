@@ -678,5 +678,10 @@
     "id": "driver-health-emergency-response",
     "title": "運行中に体調の異変を感じた時の対応",
     "blocks": []
+  },
+  {
+    "id": "accident-response-guide",
+    "title": "事故発生時の処置",
+    "blocks": []
   }
 ]

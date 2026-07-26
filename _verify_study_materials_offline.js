@@ -34,6 +34,9 @@ const DECKS = {
   'driver-health-emergency-response': [
     'driver-health-emergency-response.png',
   ],
+  'accident-response-guide': [
+    'accident-response-guide.png',
+  ],
 };
 
 const mime = {

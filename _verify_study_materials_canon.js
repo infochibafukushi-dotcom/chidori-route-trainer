@@ -49,6 +49,12 @@ if (!driverHealth || driverHealth.title !== '運行中に体調の異変を感�
   process.exit(1);
 }
 
+const accident = materials.find((m) => m.id === 'accident-response-guide');
+if (!accident || accident.title !== '事故発生時の処置') {
+  console.error('accident-response material missing or title mismatch', accident);
+  process.exit(1);
+}
+
 fs.writeFileSync(snapshotPath, JSON.stringify(actual, null, 2) + '\n', 'utf8');
 
 console.log('OK canon', {
@@ -57,5 +63,6 @@ console.log('OK canon', {
   coreBlocks: actualCore.reduce((n, m) => n + m.blocks.length, 0),
   bicycleOk: true,
   driverHealthOk: true,
+  accidentOk: true,
 });
 process.exit(0);

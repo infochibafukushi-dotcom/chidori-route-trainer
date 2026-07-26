@@ -48,7 +48,7 @@ async function main() {
     await page.locator('[data-go="materials"]').click();
     await page.waitForSelector('.study-list');
     report.steps.push({ step: 'materials', count: await page.locator('.study-material-item').count() });
-    if (report.steps[report.steps.length - 1].count !== 5) report.ok = false;
+    if (report.steps[report.steps.length - 1].count !== 6) report.ok = false;
 
     await page.locator('#back').click();
     await page.waitForSelector('.home');

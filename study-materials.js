@@ -68,12 +68,20 @@
     },
   ];
 
+  const ACCIDENT_RESPONSE_SLIDES = [
+    {
+      src: 'assets/study-materials/accident-response/accident-response-guide.png',
+      alt: '事故発生時の処置',
+    },
+  ];
+
   const MATERIAL_SLIDES = {
     stroller: STROLLER_SLIDES,
     wheelchair: WHEELCHAIR_SLIDES,
     'mic-guide': MIC_GUIDE_SLIDES,
     'bicycle-accident-prevention': BICYCLE_SLIDES,
     'driver-health-emergency-response': DRIVER_HEALTH_SLIDES,
+    'accident-response-guide': ACCIDENT_RESPONSE_SLIDES,
   };
 
   let popOpen = false;
@@ -550,6 +558,7 @@
     micGuideSlides: MIC_GUIDE_SLIDES,
     bicycleSlides: BICYCLE_SLIDES,
     driverHealthSlides: DRIVER_HEALTH_SLIDES,
+    accidentResponseSlides: ACCIDENT_RESPONSE_SLIDES,
   };
 
   window.__chidoriOpenStudyMaterialDetail = openDetail;
