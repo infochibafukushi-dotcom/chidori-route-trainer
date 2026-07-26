@@ -54,10 +54,18 @@
     },
   ];
 
+  const BICYCLE_SLIDES = [
+    {
+      src: 'assets/study-materials/bicycle/bicycle-accident-prevention-three-principles.png',
+      alt: '自転車事故防止の三原則',
+    },
+  ];
+
   const MATERIAL_SLIDES = {
     stroller: STROLLER_SLIDES,
     wheelchair: WHEELCHAIR_SLIDES,
     'mic-guide': MIC_GUIDE_SLIDES,
+    'bicycle-accident-prevention': BICYCLE_SLIDES,
   };
 
   let popOpen = false;
@@ -463,7 +471,7 @@
     const items = materials().map((item, index) => (
       `<button type="button" class="menu study-material-item" data-material-id="${esc(item.id)}">` +
       `<strong>${index + 1}. ${esc(item.title)}</strong>` +
-      `<span>タップして本文を表示</span>` +
+      `<span>${esc(item.description || 'タップして本文を表示')}</span>` +
       `</button>`
     )).join('');
 
@@ -523,6 +531,7 @@
     strollerSlides: STROLLER_SLIDES,
     wheelchairSlides: WHEELCHAIR_SLIDES,
     micGuideSlides: MIC_GUIDE_SLIDES,
+    bicycleSlides: BICYCLE_SLIDES,
   };
 
   window.__chidoriOpenStudyMaterialDetail = openDetail;

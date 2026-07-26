@@ -28,6 +28,9 @@ const DECKS = {
     'mic-guide-01-start-terminal.png',
     'mic-guide-02-safety-guidance.png',
   ],
+  'bicycle-accident-prevention': [
+    'bicycle-accident-prevention-three-principles.png',
+  ],
 };
 
 const mime = {

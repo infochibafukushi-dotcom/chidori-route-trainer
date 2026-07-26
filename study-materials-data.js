@@ -189,4 +189,10 @@ window.STUDY_MATERIALS = [
       { type: 'text', text: '傘、携帯電話、イヤホンなどのお忘れ物がたいへん多くなっております。ご注意ください。' },
     ],
   },
+  {
+    id: 'bicycle-accident-prevention',
+    title: '自転車事故防止の三原則',
+    description: 'タップして資料画像を表示',
+    blocks: [],
+  },
 ];

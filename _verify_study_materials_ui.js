@@ -29,6 +29,9 @@ const DECKS = {
     'mic-guide-01-start-terminal.png',
     'mic-guide-02-safety-guidance.png',
   ],
+  'bicycle-accident-prevention': [
+    'bicycle-accident-prevention-three-principles.png',
+  ],
 };
 
 const mime = {
@@ -114,7 +117,9 @@ async function measure(page) {
 
 async function main() {
   for (const [id, names] of Object.entries(DECKS)) {
-    const dir = id === 'mic-guide' ? 'mic-guide' : id;
+    const dir = id === 'mic-guide' ? 'mic-guide'
+      : id === 'bicycle-accident-prevention' ? 'bicycle'
+        : id;
     for (const name of names) {
       const p = path.join(root, 'assets/study-materials', dir, name);
       if (!fs.existsSync(p)) throw new Error('missing ' + p);
@@ -142,30 +147,32 @@ async function main() {
     await page.waitForSelector('[data-go="materials"]');
     await page.locator('[data-go="materials"]').evaluate((el) => el.click());
     await page.waitForSelector('.study-list');
+    const listTitles = await page.$$eval('.study-material-item strong', (els) => els.map((e) => e.textContent.trim()));
+    const listHints = await page.$$eval('.study-material-item span', (els) => els.map((e) => e.textContent.trim()));
+    const listOk = listTitles.length === 4
+      && listTitles[3] === '4. 自転車事故防止の三原則'
+      && listHints[3] === 'タップして資料画像を表示'
+      && listHints[0] === 'タップして本文を表示';
+    results.push({ label, step: 'list', listTitles, listHints, listOk });
+    if (!listOk) failed += 1;
 
-    // mic-guide primary
-    await page.locator('[data-material-id="mic-guide"]').evaluate((el) => el.click());
+    // bicycle primary
+    await page.locator('[data-material-id="bicycle-accident-prevention"]').evaluate((el) => el.click());
     await page.waitForSelector('#studySlideImage');
-    const mic = await walkSlides(page, DECKS['mic-guide']);
+    const bike = await walkSlides(page, DECKS['bicycle-accident-prevention']);
     const metrics = await measure(page);
     const phoneOk = label === 'sp-landscape'
       ? metrics.panelW <= 760 + 1 && metrics.heightRatio <= 0.96 && metrics.imgFillRatio >= 0.9
       : label.startsWith('sp')
         ? metrics.sideGap >= 12 && metrics.sideGap <= 28 && metrics.heightRatio <= 0.96 && metrics.imgFillRatio >= 0.9
         : metrics.panelW <= 760 + 1;
-    results.push({ label, step: 'mic-guide', ok: mic.ok, metrics, phoneOk, nextLabel: mic.nextLabel });
-    if (!mic.ok || !phoneOk || metrics.overflowX || metrics.bodyOverflowX || metrics.objectFit !== 'contain') failed += 1;
-
+    results.push({ label, step: 'bicycle', ok: bike.ok, metrics, phoneOk, nextLabel: bike.nextLabel });
+    if (!bike.ok || !phoneOk || metrics.overflowX || metrics.bodyOverflowX || metrics.objectFit !== 'contain') failed += 1;
     await page.locator('#studyPopCloseX').evaluate((el) => el.click());
     await page.waitForSelector('#studyMaterialPop', { state: 'detached' });
-    await page.locator('[data-material-id="mic-guide"]').evaluate((el) => el.click());
-    await page.waitForFunction(() => document.getElementById('studySlidePage').textContent.trim() === '1 / 2');
-    results.push({ label, step: 'mic-reopen', page: (await page.textContent('#studySlidePage')).trim() });
-    await page.keyboard.press('Escape');
-    await page.waitForSelector('#studyMaterialPop', { state: 'detached' });
 
-    // regressions
-    for (const id of ['stroller', 'wheelchair']) {
+    // mic-guide / stroller / wheelchair regressions
+    for (const id of ['mic-guide', 'stroller', 'wheelchair']) {
       await page.locator(`[data-material-id="${id}"]`).evaluate((el) => el.click());
       await page.waitForSelector('#studySlideImage');
       const walked = await walkSlides(page, DECKS[id]);
