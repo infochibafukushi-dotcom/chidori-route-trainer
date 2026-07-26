@@ -1,4 +1,4 @@
-const CACHE_NAME = 'chidori-route-map-v94';
+const CACHE_NAME = 'chidori-route-map-v95';
 const APP_INDEX_URL = new URL('./index.html', self.location).href;
 const FETCH_TIMEOUT_MS = 7000;
 
@@ -10,17 +10,17 @@ const CORE_SHELL = [
   './app-icon-192.png',
   './app-icon-512.png',
   './styles.css?v=72',
-  './study-materials.css?v=94',
+  './study-materials.css?v=95',
   './d1-sync.css?v=32',
   './data.js?v=32',
   './app.js?v=78',
-  './study-materials-data.js?v=94',
-  './study-materials.js?v=94',
+  './study-materials-data.js?v=95',
+  './study-materials.js?v=95',
   './home-navigation-v25.js?v=32',
   './route-map-link.js?v=71',
   './route-assets-loader.js?v=78',
   './d1-sync.js?v=61',
-  './pwa-install.js?v=94',
+  './pwa-install.js?v=95',
   './assets/study-materials/stroller/stroller-01-arrival.png',
   './assets/study-materials/stroller/stroller-02-after-boarding.png',
   './assets/study-materials/stroller/stroller-03-fare-payment.png',
@@ -81,7 +81,7 @@ function offlineNavigationFallback() {
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#0f5ea8" />
-  <title>千鳥路線図</title>
+  <title>蜊・ｳ･霍ｯ邱壼峙</title>
   <style>
     body{font-family:sans-serif;margin:0;padding:24px;background:#f3f7fb;color:#17202a}
     main{max-width:420px;margin:15vh auto;background:#fff;border-radius:16px;padding:24px;box-shadow:0 8px 24px rgba(15,94,168,.12)}
@@ -92,9 +92,9 @@ function offlineNavigationFallback() {
 </head>
 <body>
   <main>
-    <h1>千鳥路線図</h1>
-    <p>オフラインのためアプリを表示できません。通信できる場所でもう一度開くと、自動的に最新版へ更新されます。</p>
-    <button type="button" id="retry">再読み込み</button>
+    <h1>蜊・ｳ･霍ｯ邱壼峙</h1>
+    <p>繧ｪ繝輔Λ繧､繝ｳ縺ｮ縺溘ａ繧｢繝励Μ繧定｡ｨ遉ｺ縺ｧ縺阪∪縺帙ｓ縲る壻ｿ｡縺ｧ縺阪ｋ蝣ｴ謇縺ｧ繧ゅ≧荳蠎ｦ髢九￥縺ｨ縲∬・蜍慕噪縺ｫ譛譁ｰ迚医∈譖ｴ譁ｰ縺輔ｌ縺ｾ縺吶・/p>
+    <button type="button" id="retry">蜀崎ｪｭ縺ｿ霎ｼ縺ｿ</button>
   </main>
   <script>
     document.getElementById('retry').onclick = function () { location.reload(); };
