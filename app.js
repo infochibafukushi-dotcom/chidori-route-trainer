@@ -31,6 +31,9 @@ function showRouteLoadError(error,retryFn){
 window.__chidoriShowRouteLoadError=showRouteLoadError;
 function go(next){
   try{window.__chidoriBoot&&window.__chidoriBoot.mark('go',next)}catch(e){}
+  if(next==='quiz'&&page!=='quiz'){
+    quizType='basic';
+  }
   page=next;
   if(next==='home'||next==='quiz'||next==='materials'||next==='materials-detail'){
     render();
@@ -66,7 +69,7 @@ const DEFAULT_HOME_CARD_ORDER=['route-map','training','quiz','settings'];
 const HOME_CARD_DEFS={
   'route-map':{go:'routes',tone:'routes',icon:()=>HOME_ICONS.routes,title:'千鳥営業所 路線図',desc:'各路線の往路・復路と停留所を確認'},
   'training':{go:'materials',tone:'materials',icon:()=>HOME_ICONS.materials,title:'基本研修資料',desc:'乗務員向け作業マニュアル・マイク案内'},
-  'quiz':{go:'quiz',tone:'quiz',icon:()=>HOME_ICONS.quiz,title:'問題',desc:'次の停留所・この路線は何線'},
+  'quiz':{go:'quiz',tone:'quiz',icon:()=>HOME_ICONS.quiz,title:'問題',desc:'基礎研修・次の停留所・この路線は何線'},
   'settings':{go:'settings',tone:'settings',icon:()=>HOME_ICONS.settings,title:'設定',desc:'停留所・ヒヤリハット・注意地点を登録'}
 };
 function normalizeHomeCardOrder(raw){
@@ -136,9 +139,186 @@ let routeState={routeId:data.routes[0]?.id||'',direction:'outbound'};
 function routes(){const r=data.routes.find(x=>x.id===routeState.routeId)||data.routes[0];const stops=r?.[routeState.direction]||[];shell(`<section><div class="controls"><label>路線<select id="routeSelect">${data.routes.map(x=>`<option value="${x.id}" ${x.id===r?.id?'selected':''}>${label(x)}</option>`).join('')}</select></label><div class="seg"><button data-dir="outbound" class="${routeState.direction==='outbound'?'active':''}">往路</button><button data-dir="inbound" class="${routeState.direction==='inbound'?'active':''}">復路</button></div></div><div class="split"><div id="routeMap" class="map"></div><div id="street" class="street"></div></div><p id="mapStatus" class="status">停留所ピンを押すと下半分にStreet Viewを表示します。</p>${stops.length?'':`<div class="empty">この路線の停留所は未登録です。設定から登録してください。</div>`}</section>`);document.getElementById('routeSelect').onchange=e=>{routeState.routeId=e.target.value;routes()};document.querySelectorAll('[data-dir]').forEach(b=>b.onclick=()=>{routeState.direction=b.dataset.dir;routes()});drawRoute(r,stops)}
 function loadMaps(){if(window.google?.maps)return Promise.resolve(window.google);if(window._mapsPromise)return window._mapsPromise;const key=window.GOOGLE_MAPS_API_KEY;if(!key||key.includes('__'))return Promise.reject(new Error('Google Maps APIキーが未設定です。'));window._mapsPromise=new Promise((resolve,reject)=>{const cb='gmapsInit'+Date.now();window[cb]=()=>{delete window[cb];resolve(window.google)};const s=document.createElement('script');s.src=`https://maps.googleapis.com/maps/api/js?key=${encodeURIComponent(key)}&callback=${cb}&v=weekly&language=ja&region=JP`;s.async=true;s.onerror=()=>reject(new Error('Google Mapsを読み込めませんでした。'));document.head.appendChild(s)});return window._mapsPromise}
 async function drawRoute(route,stops){const status=document.getElementById('mapStatus');try{const g=await loadMaps();const valid=stops.filter(s=>Number.isFinite(s.lat)&&Number.isFinite(s.lng));const center=valid[0]?{lat:valid[0].lat,lng:valid[0].lng}:{lat:35.653,lng:139.901};const map=new g.maps.Map(document.getElementById('routeMap'),{center,zoom:valid.length?14:12,mapTypeControl:false});const pano=new g.maps.StreetViewPanorama(document.getElementById('street'),{position:center,pov:{heading:0,pitch:0},zoom:1});valid.forEach((s,i)=>{const m=new g.maps.Marker({map,position:{lat:s.lat,lng:s.lng},label:String(i+1),title:s.name});m.addListener('click',()=>{pano.setPosition({lat:s.lat,lng:s.lng});status.textContent=`${s.name}${s.address?'｜'+s.address:''}`})});if(valid.length>1)new g.maps.Polyline({map,path:valid.map(s=>({lat:s.lat,lng:s.lng})),strokeColor:'#0f5ea8',strokeWeight:5});data.pins.filter(p=>!p.routeId||p.routeId===route?.id).forEach(p=>new g.maps.Marker({map,position:{lat:p.lat,lng:p.lng},title:p.title,icon:{path:g.maps.SymbolPath.CIRCLE,scale:8,fillColor:data.categories.find(c=>c.id===p.categoryId)?.color||'#555',fillOpacity:1,strokeColor:'#fff',strokeWeight:2}}));}catch(e){status.textContent=e.message}}
-let quizType='next';
-function quiz(){const qs=makeQuestion();shell(`<section><div class="seg" style="margin-bottom:16px"><button data-qt="next" class="${quizType==='next'?'active':''}">次の停留所</button><button data-qt="route" class="${quizType==='route'?'active':''}">この路線</button></div>${qs?`<div class="question">${qs.text}</div><div class="answers">${qs.options.map(o=>`<button data-answer="${esc(o)}">${esc(o)}</button>`).join('')}</div><p id="result" class="status"></p><button class="primary" id="nextQ">次の問題</button>`:'<div class="empty">問題を作るには、設定から停留所を2件以上登録してください。</div>'}</section>`);document.querySelectorAll('[data-qt]').forEach(b=>b.onclick=()=>{quizType=b.dataset.qt;quiz()});if(qs){document.querySelectorAll('[data-answer]').forEach(b=>b.onclick=()=>document.getElementById('result').textContent=b.dataset.answer===qs.answer?'正解です。':`不正解です。正解：${qs.answer}`);document.getElementById('nextQ').onclick=quiz}}
-function makeQuestion(){const usable=data.routes.filter(r=>r.outbound.length>=2||r.inbound.length>=2);if(!usable.length)return null;const r=usable[Math.floor(Math.random()*usable.length)];const dir=r.outbound.length>=2?'outbound':'inbound';const s=r[dir];if(quizType==='next'){const i=Math.floor(Math.random()*(s.length-1));const answer=s[i+1].name;const pool=[answer,...data.routes.flatMap(x=>[...x.outbound,...x.inbound]).map(x=>x.name).filter(x=>x!==answer)].filter((v,i,a)=>a.indexOf(v)===i).slice(0,4).sort(()=>Math.random()-.5);return{text:`${label(r)}・${dir==='outbound'?'往路':'復路'}<br>現在：${esc(s[i].name)}<br>次の停留所は？`,answer,options:pool}}const answer=label(r);const options=[answer,...data.routes.filter(x=>x.id!==r.id).sort(()=>Math.random()-.5).slice(0,3).map(label)].sort(()=>Math.random()-.5);return{text:`停留所順<br>${s.slice(0,3).map(x=>esc(x.name)).join(' → ')}<br>この路線は？`,answer,options}}
+let quizType='basic';
+let lastBasicQuestionId=null;
+function shuffleCopy(list){
+  const copy=list.slice();
+  for(let i=copy.length-1;i>0;i--){
+    const j=Math.floor(Math.random()*(i+1));
+    const tmp=copy[i];
+    copy[i]=copy[j];
+    copy[j]=tmp;
+  }
+  return copy;
+}
+function studyMaterialTitle(materialId){
+  const materials=Array.isArray(window.STUDY_MATERIALS)?window.STUDY_MATERIALS:[];
+  const found=materials.find((m)=>m&&m.id===materialId);
+  return found&&found.title?found.title:'基本研修資料';
+}
+function makeBasicTrainingQuestion(){
+  const bank=Array.isArray(window.BASIC_TRAINING_QUIZ)?window.BASIC_TRAINING_QUIZ:[];
+  if(!bank.length)return null;
+  let pool=bank;
+  if(bank.length>1&&lastBasicQuestionId){
+    const filtered=bank.filter((q)=>q.id!==lastBasicQuestionId);
+    if(filtered.length)pool=filtered;
+  }
+  const item=pool[Math.floor(Math.random()*pool.length)];
+  lastBasicQuestionId=item.id;
+  const answerChoice=item.choices.find((c)=>c.id===item.answerId);
+  const options=shuffleCopy(item.choices);
+  return{
+    kind:'basic',
+    id:item.id,
+    category:item.category||'',
+    text:item.question,
+    options,
+    answerId:item.answerId,
+    answer:answerChoice?answerChoice.text:'',
+    explanation:item.explanation||'',
+    sourceTitle:studyMaterialTitle(item.sourceMaterialId)
+  };
+}
+function makeNextStopQuestion(usable){
+  const r=usable[Math.floor(Math.random()*usable.length)];
+  const dir=r.outbound.length>=2?'outbound':'inbound';
+  const s=r[dir];
+  const i=Math.floor(Math.random()*(s.length-1));
+  const answer=s[i+1].name;
+  const pool=shuffleCopy(
+    [answer,...data.routes.flatMap((x)=>[...x.outbound,...x.inbound]).map((x)=>x.name).filter((x)=>x!==answer)]
+      .filter((v,idx,a)=>a.indexOf(v)===idx)
+      .slice(0,4)
+  );
+  return{
+    kind:'next',
+    text:`${label(r)}・${dir==='outbound'?'往路':'復路'}<br>現在：${esc(s[i].name)}<br>次の停留所は？`,
+    answer,
+    options:pool
+  };
+}
+function makeRouteQuestion(usable){
+  const r=usable[Math.floor(Math.random()*usable.length)];
+  const dir=r.outbound.length>=2?'outbound':'inbound';
+  const s=r[dir];
+  const answer=label(r);
+  const options=shuffleCopy(
+    [answer,...shuffleCopy(data.routes.filter((x)=>x.id!==r.id)).slice(0,3).map(label)]
+  );
+  return{
+    kind:'route',
+    text:`停留所順<br>${s.slice(0,3).map((x)=>esc(x.name)).join(' → ')}<br>この路線は？`,
+    answer,
+    options
+  };
+}
+function makeQuestion(){
+  if(quizType==='basic'){
+    return makeBasicTrainingQuestion();
+  }
+  const usable=data.routes.filter((r)=>r.outbound.length>=2||r.inbound.length>=2);
+  if(!usable.length)return null;
+  if(quizType==='next'){
+    return makeNextStopQuestion(usable);
+  }
+  return makeRouteQuestion(usable);
+}
+function quizTypePickerHtml(){
+  const types=[
+    {id:'basic',num:'①',label:'基礎研修'},
+    {id:'next',num:'②',label:'次の停留所は？'},
+    {id:'route',num:'③',label:'この路線は？'}
+  ];
+  return (
+    `<div class="quiz-type-block">`+
+    `<h2 class="quiz-type-heading">問題の種類を選択</h2>`+
+    `<p class="quiz-type-lead">ボタンをタップすると問題が切り替わります</p>`+
+    `<div class="quiz-type-grid" role="group" aria-label="問題の種類">`+
+    types.map((t)=>{
+      const selected=quizType===t.id;
+      return (
+        `<button type="button" class="quiz-type-btn${selected?' is-selected':''}" data-qt="${t.id}" aria-pressed="${selected?'true':'false'}">`+
+        `<span class="quiz-type-num">${t.num}</span>`+
+        `<span class="quiz-type-label">${t.label}</span>`+
+        `${selected?'<span class="quiz-type-badge">選択中</span>':''}`+
+        `</button>`
+      );
+    }).join('')+
+    `</div></div>`
+  );
+}
+function quiz(){
+  const qs=makeQuestion();
+  let body='';
+  if(!qs){
+    body=quizType==='basic'
+      ?'<div class="empty">基礎研修問題データを読み込めませんでした。再読み込みしてください。</div>'
+      :'<div class="empty">問題を作るには、設定から停留所を2件以上登録してください。</div>';
+  }else if(qs.kind==='basic'){
+    body=
+      `<div class="quiz-category">${esc(qs.category)}</div>`+
+      `<div class="question quiz-question">${esc(qs.text)}</div>`+
+      `<div class="answers">${qs.options.map((o)=>`<button type="button" data-choice-id="${esc(o.id)}">${esc(o.text)}</button>`).join('')}</div>`+
+      `<div id="quizFeedback" class="quiz-feedback" hidden></div>`+
+      `<button type="button" class="primary" id="nextQ">次の問題</button>`;
+  }else{
+    body=
+      `<div class="question">${qs.text}</div>`+
+      `<div class="answers">${qs.options.map((o)=>`<button type="button" data-answer="${esc(o)}">${esc(o)}</button>`).join('')}</div>`+
+      `<p id="result" class="status"></p>`+
+      `<button type="button" class="primary" id="nextQ">次の問題</button>`;
+  }
+  shell(`<section class="quiz-page">${quizTypePickerHtml()}${body}</section>`);
+  document.querySelectorAll('[data-qt]').forEach((b)=>{
+    b.onclick=()=>{
+      quizType=b.dataset.qt;
+      quiz();
+    };
+  });
+  if(!qs)return;
+  if(qs.kind==='basic'){
+    let answered=false;
+    const feedback=document.getElementById('quizFeedback');
+    document.querySelectorAll('[data-choice-id]').forEach((btn)=>{
+      btn.onclick=()=>{
+        if(answered)return;
+        answered=true;
+        const selectedId=btn.dataset.choiceId;
+        const correct=selectedId===qs.answerId;
+        document.querySelectorAll('[data-choice-id]').forEach((b)=>{
+          b.disabled=true;
+          if(b.dataset.choiceId===qs.answerId)b.classList.add('is-correct');
+          if(b.dataset.choiceId===selectedId&&!correct)b.classList.add('is-wrong');
+        });
+        feedback.hidden=false;
+        feedback.className=`quiz-feedback ${correct?'is-correct':'is-wrong'}`;
+        feedback.innerHTML=
+          `<p class="quiz-result">${correct?'正解です。':`不正解です。正解：${esc(qs.answer)}`}</p>`+
+          `<p class="quiz-explanation"><strong>解説：</strong>${esc(qs.explanation)}</p>`+
+          `<p class="quiz-source"><strong>出典：</strong>${esc(qs.sourceTitle)}</p>`;
+      };
+    });
+  }else{
+    let answered=false;
+    document.querySelectorAll('[data-answer]').forEach((b)=>{
+      b.onclick=()=>{
+        if(answered)return;
+        answered=true;
+        const correct=b.dataset.answer===qs.answer;
+        document.querySelectorAll('[data-answer]').forEach((btn)=>{
+          btn.disabled=true;
+          if(btn.dataset.answer===qs.answer)btn.classList.add('is-correct');
+          if(btn===b&&!correct)btn.classList.add('is-wrong');
+        });
+        const result=document.getElementById('result');
+        result.className=`status quiz-result-line ${correct?'is-correct':'is-wrong'}`;
+        result.textContent=correct?'正解です。':`不正解です。正解：${qs.answer}`;
+      };
+    });
+  }
+  document.getElementById('nextQ').onclick=quiz;
+}
 function settings(){shell(`<section><div class="tabs tabs--5"><button data-tab="stops" class="${settingsTab==='stops'?'active':''}">停留所</button><button data-tab="pins" class="${settingsTab==='pins'?'active':''}">注意ピン</button><button data-tab="categories" class="${settingsTab==='categories'?'active':''}">項目</button><button data-tab="materials-order" class="${settingsTab==='materials-order'?'active':''}">資料順</button><button data-tab="home-order" class="${settingsTab==='home-order'?'active':''}">カード順</button></div><div id="settingsBody"></div></section>`);document.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>{settingsTab=b.dataset.tab;settings()});if(settingsTab==='stops')stopEditor();if(settingsTab==='pins')pinEditor();if(settingsTab==='categories')categoryEditor();if(settingsTab==='materials-order')materialsOrderEditor();if(settingsTab==='home-order')homeCardOrderEditor()}
 function homeCardOrderEditor(statusMessage){
   const body=document.getElementById('settingsBody');

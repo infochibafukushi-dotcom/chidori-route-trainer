@@ -1,0 +1,138 @@
+{
+  "checks": [
+    {
+      "ok": true,
+      "msg": "CACHE_NAME v102"
+    },
+    {
+      "ok": true,
+      "msg": "basic quiz data in index+SW"
+    },
+    {
+      "ok": true,
+      "msg": "index query v102"
+    },
+    {
+      "ok": true,
+      "msg": "basic questions count=24"
+    },
+    {
+      "ok": true,
+      "msg": "required question ids present"
+    },
+    {
+      "ok": true,
+      "msg": "all answerId resolve"
+    },
+    {
+      "ok": true,
+      "msg": "initial selected basic"
+    },
+    {
+      "ok": true,
+      "msg": "basic question rendered"
+    },
+    {
+      "ok": true,
+      "msg": "answer feedback + lock"
+    },
+    {
+      "ok": true,
+      "msg": "switched to next"
+    },
+    {
+      "ok": true,
+      "msg": "switched to route"
+    },
+    {
+      "ok": true,
+      "msg": "nextQ keeps route type"
+    },
+    {
+      "ok": true,
+      "msg": "re-enter quiz resets to basic"
+    },
+    {
+      "ok": true,
+      "msg": "390px layout ok"
+    },
+    {
+      "ok": true,
+      "msg": "320px no h-scroll + nums"
+    },
+    {
+      "ok": true,
+      "msg": "no consecutive duplicate basic questions in sample"
+    },
+    {
+      "ok": true,
+      "msg": "SW cache v102 present"
+    },
+    {
+      "ok": true,
+      "msg": "offline basic quiz works"
+    },
+    {
+      "ok": true,
+      "msg": "no console errors"
+    }
+  ],
+  "fails": [],
+  "consoleErrors": [],
+  "cacheName": "chidori-route-map-v102",
+  "bankMeta": {
+    "count": 24,
+    "cats": [
+      "自転車事故防止",
+      "交差点の安全速度",
+      "停留所発進",
+      "扉開閉レバー",
+      "ベビーカー",
+      "車椅子",
+      "体調異変・事故対応"
+    ],
+    "missingRequired": [],
+    "answerIdsOk": true
+  },
+  "initial": {
+    "quizType": "basic",
+    "aria": "true",
+    "hasCategory": true,
+    "hasQuestion": true,
+    "choiceCount": 4
+  },
+  "mobile390": {
+    "overflowX": false,
+    "count": 3,
+    "heights": [
+      62,
+      62,
+      62
+    ],
+    "minHeight": 62,
+    "allInViewport": true,
+    "textOverflow": false
+  },
+  "mobile320": {
+    "overflowX": false,
+    "nums": [
+      "①",
+      "②",
+      "③"
+    ]
+  },
+  "consecutiveDupes": 0,
+  "swInfo": {
+    "supported": true,
+    "controller": true,
+    "scriptURL": "http://127.0.0.1:8765/service-worker.js?v=102",
+    "caches": [
+      "chidori-route-map-v102"
+    ]
+  },
+  "offline": {
+    "ok": true,
+    "selected": "basic",
+    "bank": 24
+  }
+}
