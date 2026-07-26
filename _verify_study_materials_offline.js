@@ -1,5 +1,5 @@
 /**
- * Offline: stroller 6 slides + text materials 2/3.
+ * Offline: stroller 6 + wheelchair 3 + mic-guide text.
  * node _verify_study_materials_offline.js
  */
 const { chromium } = require('playwright');
@@ -9,13 +9,19 @@ const path = require('path');
 
 const root = __dirname;
 const port = 8766;
-const SLIDES = [
+
+const STROLLER = [
   'stroller-01-arrival.png',
   'stroller-02-after-boarding.png',
   'stroller-03-fare-payment.png',
   'stroller-04-departure.png',
   'stroller-05-alighting.png',
   'stroller-06-handling-rules.png',
+];
+const WHEELCHAIR = [
+  'wheelchair-01-departure-check.png',
+  'wheelchair-02-boarding.png',
+  'wheelchair-03-alighting.png',
 ];
 
 const mime = {
@@ -45,9 +51,24 @@ async function waitForSwReady(page) {
     const reg = await navigator.serviceWorker.getRegistration();
     return !!(reg && reg.active);
   }, { timeout: 45000 });
-  await page.evaluate(async () => {
-    await navigator.serviceWorker.ready;
-  });
+  await page.evaluate(async () => { await navigator.serviceWorker.ready; });
+}
+
+async function walk(page, names) {
+  const seen = [];
+  for (let i = 0; i < names.length; i++) {
+    const src = await page.getAttribute('#studySlideImage', 'src');
+    const loaded = await page.evaluate(() => {
+      const img = document.getElementById('studySlideImage');
+      return !!(img && img.complete && img.naturalWidth > 0);
+    });
+    seen.push({ src, loaded });
+    if (i < names.length - 1) {
+      await page.locator('#studySlideNext').click();
+      await page.waitForFunction(({ n, total }) => document.getElementById('studySlidePage').textContent.trim() === `${n} / ${total}`, { n: i + 2, total: names.length });
+    }
+  }
+  return names.every((name) => seen.some((s) => (s.src || '').includes(name) && s.loaded));
 }
 
 async function main() {
@@ -61,18 +82,20 @@ async function main() {
     await page.goto(`http://127.0.0.1:${port}/`, { waitUntil: 'networkidle' });
     await waitForSwReady(page);
 
-    // Warm caches
     await page.locator('[data-go="materials"]').click();
     await page.waitForSelector('.study-list');
-    await page.locator('[data-material-id="stroller"]').click();
-    await page.waitForSelector('#studySlideImage');
-    for (let i = 0; i < 5; i++) {
-      await page.locator('#studySlideNext').click();
-      await page.waitForTimeout(80);
+    for (const id of ['stroller', 'wheelchair']) {
+      await page.locator(`[data-material-id="${id}"]`).click();
+      await page.waitForSelector('#studySlideImage');
+      const names = id === 'stroller' ? STROLLER : WHEELCHAIR;
+      for (let i = 0; i < names.length - 1; i++) {
+        await page.locator('#studySlideNext').click();
+        await page.waitForTimeout(50);
+      }
+      await page.locator('#studyPopCloseX').click();
+      await page.waitForSelector('#studyMaterialPop', { state: 'detached' });
     }
-    await page.locator('#studyPopCloseX').click();
-    await page.waitForSelector('#studyMaterialPop', { state: 'detached' });
-    await page.locator('[data-material-id="wheelchair"]').click();
+    await page.locator('[data-material-id="mic-guide"]').click();
     await page.waitForSelector('#studyPopBody > div');
     await page.locator('#studyPopCloseBtn').click();
     await page.locator('#back').click();
@@ -82,43 +105,28 @@ async function main() {
     await context.setOffline(true);
     await page.reload({ waitUntil: 'domcontentloaded' });
     await page.waitForSelector('[data-go="materials"]', { timeout: 15000 });
-    report.steps.push({ step: 'offline-home', ok: true });
-
     await page.locator('[data-go="materials"]').click();
     await page.waitForSelector('.study-list');
+
+    await page.locator('[data-material-id="wheelchair"]').click();
+    await page.waitForSelector('#studySlideImage');
+    const wcOk = await walk(page, WHEELCHAIR);
+    report.steps.push({ step: 'offline-wheelchair', ok: wcOk });
+    if (!wcOk) report.ok = false;
+    await page.locator('#studyPopCloseX').click();
+
     await page.locator('[data-material-id="stroller"]').click();
     await page.waitForSelector('#studySlideImage');
-
-    const seen = [];
-    for (let i = 0; i < 6; i++) {
-      const src = await page.getAttribute('#studySlideImage', 'src');
-      const loaded = await page.evaluate(() => {
-        const img = document.getElementById('studySlideImage');
-        return !!(img && img.complete && img.naturalWidth > 0);
-      });
-      seen.push({ src, loaded });
-      if (!loaded) report.ok = false;
-      if (i < 5) {
-        await page.locator('#studySlideNext').click();
-        await page.waitForFunction((n) => document.getElementById('studySlidePage').textContent.trim() === `${n} / 6`, i + 2);
-      }
-    }
-    const allSlides = SLIDES.every((name) => seen.some((s) => (s.src || '').includes(name) && s.loaded));
-    report.steps.push({ step: 'offline-stroller-slides', seen, allSlides });
-    if (!allSlides) report.ok = false;
-
+    const stOk = await walk(page, STROLLER);
+    report.steps.push({ step: 'offline-stroller', ok: stOk });
+    if (!stOk) report.ok = false;
     await page.locator('#studyPopCloseX').click();
-    await page.waitForSelector('#studyMaterialPop', { state: 'detached' });
 
-    for (const id of ['wheelchair', 'mic-guide']) {
-      await page.locator(`[data-material-id="${id}"]`).click();
-      await page.waitForSelector('#studyPopBody > div');
-      const count = await page.$$eval('#studyPopBody > div', (els) => els.length);
-      report.steps.push({ step: `offline-text:${id}`, count });
-      if (!count) report.ok = false;
-      await page.locator('#studyPopCloseBtn').click();
-      await page.waitForSelector('#studyMaterialPop', { state: 'detached' });
-    }
+    await page.locator('[data-material-id="mic-guide"]').click();
+    await page.waitForSelector('#studyPopBody > div');
+    const micCount = await page.$$eval('#studyPopBody > div', (els) => els.length);
+    report.steps.push({ step: 'offline-mic-guide', count: micCount });
+    if (!micCount) report.ok = false;
   } catch (error) {
     report.ok = false;
     report.error = String(error && error.stack || error);

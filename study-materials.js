@@ -28,6 +28,21 @@
     },
   ];
 
+  const WHEELCHAIR_SLIDES = [
+    {
+      src: 'assets/study-materials/wheelchair/wheelchair-01-departure-check.png',
+      alt: '車椅子客乗降時の作業マニュアル 発車時対応と車両操作',
+    },
+    {
+      src: 'assets/study-materials/wheelchair/wheelchair-02-boarding.png',
+      alt: '車椅子客乗降時の作業マニュアル 乗車時対応',
+    },
+    {
+      src: 'assets/study-materials/wheelchair/wheelchair-03-alighting.png',
+      alt: '車椅子客乗降時の作業マニュアル 降車時対応',
+    },
+  ];
+
   let popOpen = false;
   let popReturnFocus = null;
   let savedScrollY = 0;
@@ -38,6 +53,7 @@
   let openMaterialId = null;
   let slideIndex = 0;
   let slideMode = false;
+  let activeSlides = [];
 
   function materials() {
     return Array.isArray(window.STUDY_MATERIALS) ? window.STUDY_MATERIALS : [];
@@ -112,6 +128,7 @@
     openMaterialId = null;
     slideMode = false;
     slideIndex = 0;
+    activeSlides = [];
     detachPopListeners();
     removePopDom();
     unlockBackgroundScroll();
@@ -206,7 +223,8 @@
   }
 
   function updateSlideView() {
-    const slide = STROLLER_SLIDES[slideIndex];
+    const slides = activeSlides;
+    const slide = slides[slideIndex];
     const img = document.getElementById('studySlideImage');
     const pageLabel = document.getElementById('studySlidePage');
     const stage = document.getElementById('studyPopBody');
@@ -216,11 +234,11 @@
 
     img.src = slide.src;
     img.alt = slide.alt;
-    pageLabel.textContent = `${slideIndex + 1} / ${STROLLER_SLIDES.length}`;
+    pageLabel.textContent = `${slideIndex + 1} / ${slides.length}`;
     if (stage) stage.scrollTop = 0;
 
     const atFirst = slideIndex <= 0;
-    const atLast = slideIndex >= STROLLER_SLIDES.length - 1;
+    const atLast = slideIndex >= slides.length - 1;
     prevBtn.disabled = atFirst;
     prevBtn.setAttribute('aria-disabled', atFirst ? 'true' : 'false');
 
@@ -242,7 +260,7 @@
   function goSlide(delta) {
     if (!slideMode || !popOpen) return;
     const next = slideIndex + delta;
-    if (next < 0 || next >= STROLLER_SLIDES.length) return;
+    if (next < 0 || next >= activeSlides.length) return;
     slideIndex = next;
     updateSlideView();
   }
@@ -272,23 +290,29 @@
     }, { passive: true });
   }
 
-  function openImageSlides(material, triggerEl) {
+  function openImageSlides(material, slides, triggerEl) {
+    if (!Array.isArray(slides) || !slides.length) return;
+
     beginPop(material, triggerEl);
     slideMode = true;
     slideIndex = 0;
-    preloadSlides(STROLLER_SLIDES);
+    activeSlides = slides.slice();
+    preloadSlides(activeSlides);
 
+    const index = materialIndex(material.id);
+    const numberLabel = index >= 0 ? String(index + 1) : '';
     const titleId = 'studyPopTitle';
-    const first = STROLLER_SLIDES[0];
+    const first = activeSlides[0];
     const root = document.createElement('div');
     root.id = 'studyMaterialPop';
     root.className = 'study-pop-root';
     root.innerHTML =
       `<div class="study-pop-overlay" data-study-pop-dismiss="1"></div>` +
       `<div class="study-pop-panel study-pop-panel--slides" role="dialog" aria-modal="true" aria-labelledby="${titleId}">` +
-      `<header class="study-pop-header">` +
+      `<header class="study-pop-header study-pop-header--slides">` +
       `<div class="study-pop-header-text">` +
-      `<p class="study-pop-number" id="studySlidePage">1 / ${STROLLER_SLIDES.length}</p>` +
+      (numberLabel ? `<p class="study-pop-docno">資料 ${esc(numberLabel)}</p>` : '') +
+      `<p class="study-pop-number" id="studySlidePage">1 / ${activeSlides.length}</p>` +
       `<h2 class="study-pop-title" id="${titleId}">${esc(material.title)}</h2>` +
       `</div>` +
       `<button type="button" class="study-pop-close-x" id="studyPopCloseX" aria-label="資料を閉じる">×</button>` +
@@ -324,7 +348,7 @@
       onEscapeExtra: (event) => {
         if (event.key === 'ArrowRight') {
           event.preventDefault();
-          if (slideIndex >= STROLLER_SLIDES.length - 1) return;
+          if (slideIndex >= activeSlides.length - 1) return;
           goSlide(1);
         } else if (event.key === 'ArrowLeft') {
           event.preventDefault();
@@ -379,7 +403,11 @@
     const material = findMaterial(id);
     if (!material) return;
     if (material.id === 'stroller') {
-      openImageSlides(material, triggerEl);
+      openImageSlides(material, STROLLER_SLIDES, triggerEl);
+      return;
+    }
+    if (material.id === 'wheelchair') {
+      openImageSlides(material, WHEELCHAIR_SLIDES, triggerEl);
       return;
     }
     openTextMaterialPopup(material, triggerEl);
@@ -477,7 +505,9 @@
     close: closePop,
     openMaterialId: () => openMaterialId,
     slideIndex: () => slideIndex,
+    activeSlides: () => activeSlides.slice(),
     strollerSlides: STROLLER_SLIDES,
+    wheelchairSlides: WHEELCHAIR_SLIDES,
   };
 
   window.__chidoriOpenStudyMaterialDetail = openDetail;

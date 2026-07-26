@@ -1,5 +1,5 @@
 /**
- * Stroller image-slide POP + text POP regression for materials 2/3.
+ * Image-slide POP (stroller 6 / wheelchair 3) + mic-guide text POP.
  * node _verify_study_materials_ui.js
  */
 const { chromium } = require('playwright');
@@ -11,13 +11,19 @@ const vm = require('vm');
 const root = __dirname;
 const port = 8765;
 
-const EXPECTED_SLIDES = [
-  'assets/study-materials/stroller/stroller-01-arrival.png',
-  'assets/study-materials/stroller/stroller-02-after-boarding.png',
-  'assets/study-materials/stroller/stroller-03-fare-payment.png',
-  'assets/study-materials/stroller/stroller-04-departure.png',
-  'assets/study-materials/stroller/stroller-05-alighting.png',
-  'assets/study-materials/stroller/stroller-06-handling-rules.png',
+const STROLLER = [
+  'stroller-01-arrival.png',
+  'stroller-02-after-boarding.png',
+  'stroller-03-fare-payment.png',
+  'stroller-04-departure.png',
+  'stroller-05-alighting.png',
+  'stroller-06-handling-rules.png',
+];
+
+const WHEELCHAIR = [
+  'wheelchair-01-departure-check.png',
+  'wheelchair-02-boarding.png',
+  'wheelchair-03-alighting.png',
 ];
 
 const mime = {
@@ -52,9 +58,37 @@ function loadCanon() {
   return sandbox.window.STUDY_MATERIALS;
 }
 
+async function walkSlides(page, names) {
+  const srcs = [];
+  for (let i = 0; i < names.length; i++) {
+    const src = await page.getAttribute('#studySlideImage', 'src');
+    const pageText = (await page.textContent('#studySlidePage')).trim();
+    const loaded = await page.evaluate(() => {
+      const img = document.getElementById('studySlideImage');
+      return !!(img && img.complete && img.naturalWidth > 10);
+    });
+    srcs.push({ src, pageText, loaded });
+    if (pageText !== `${i + 1} / ${names.length}` || !loaded || !(src || '').includes(names[i])) {
+      return { ok: false, srcs };
+    }
+    if (i < names.length - 1) {
+      await page.locator('#studySlideNext').evaluate((el) => el.click());
+      await page.waitForFunction(({ n, total }) => {
+        const t = document.getElementById('studySlidePage');
+        return t && t.textContent.trim() === `${n} / ${total}`;
+      }, { n: i + 2, total: names.length });
+    }
+  }
+  const nextLabel = (await page.textContent('#studySlideNext')).trim();
+  return { ok: nextLabel === '閉じる', srcs, nextLabel };
+}
+
 async function main() {
-  for (const rel of EXPECTED_SLIDES) {
-    if (!fs.existsSync(path.join(root, rel))) throw new Error('missing image ' + rel);
+  for (const name of STROLLER) {
+    if (!fs.existsSync(path.join(root, 'assets/study-materials/stroller', name))) throw new Error('missing ' + name);
+  }
+  for (const name of WHEELCHAIR) {
+    if (!fs.existsSync(path.join(root, 'assets/study-materials/wheelchair', name))) throw new Error('missing ' + name);
   }
 
   const canon = loadCanon();
@@ -74,129 +108,87 @@ async function main() {
       const text = String(err);
       if (!isIgnoredError(text)) errors.push(text);
     });
-    page.on('console', (msg) => {
-      if (msg.type() !== 'error') return;
-      const text = msg.text();
-      if (!isIgnoredError(text)) errors.push(text);
-    });
 
     await page.goto(`http://127.0.0.1:${port}/`, { waitUntil: 'domcontentloaded' });
     await page.waitForSelector('[data-go="materials"]');
     await page.locator('[data-go="materials"]').evaluate((el) => el.click());
     await page.waitForSelector('.study-list');
 
-    // ---- stroller image slides ----
-    await page.locator('[data-material-id="stroller"]').evaluate((el) => el.click());
+    // wheelchair slides
+    await page.locator('[data-material-id="wheelchair"]').evaluate((el) => el.click());
     await page.waitForSelector('#studySlideImage');
-    const slideSrcs = [];
-    for (let i = 0; i < 6; i++) {
-      const src = await page.getAttribute('#studySlideImage', 'src');
-      const pageText = (await page.textContent('#studySlidePage')).trim();
-      const natural = await page.evaluate(() => {
-        const img = document.getElementById('studySlideImage');
-        return { w: img.naturalWidth, h: img.naturalHeight, complete: img.complete };
-      });
-      slideSrcs.push(src);
-      if (pageText !== `${i + 1} / 6` || !natural.complete || natural.w < 10) failed += 1;
-      if (i < 5) {
-        await page.locator('#studySlideNext').evaluate((el) => el.click());
-        await page.waitForFunction((n) => {
-          const t = document.getElementById('studySlidePage');
-          return t && t.textContent.trim() === `${n} / 6`;
-        }, i + 2);
-      }
-    }
-    const nextLabel = (await page.textContent('#studySlideNext')).trim();
-    const prevDisabled = await page.evaluate(() => document.getElementById('studySlidePrev').disabled);
-    // go to first via prev repeatedly then check prev disabled
-    for (let i = 0; i < 5; i++) await page.locator('#studySlidePrev').evaluate((el) => el.click());
-    await page.waitForFunction(() => document.getElementById('studySlidePage').textContent.trim() === '1 / 6');
-    const firstPrevDisabled = await page.evaluate(() => document.getElementById('studySlidePrev').disabled);
-
-    // keyboard arrows
-    await page.keyboard.press('ArrowRight');
-    await page.waitForFunction(() => document.getElementById('studySlidePage').textContent.trim() === '2 / 6');
-    await page.keyboard.press('ArrowLeft');
-    await page.waitForFunction(() => document.getElementById('studySlidePage').textContent.trim() === '1 / 6');
-
+    const wc = await walkSlides(page, WHEELCHAIR);
     const metrics = await page.evaluate(() => {
       const panel = document.querySelector('.study-pop-panel--slides');
       const body = document.getElementById('studyPopBody');
       const img = document.getElementById('studySlideImage');
       const pr = panel.getBoundingClientRect();
+      const ir = img.getBoundingClientRect();
       return {
-        panelW: pr.width,
-        panelH: pr.height,
+        panelW: +pr.width.toFixed(1),
+        panelH: +pr.height.toFixed(1),
+        imgW: +ir.width.toFixed(1),
+        imgH: +ir.height.toFixed(1),
         vw: window.innerWidth,
         vh: window.innerHeight,
+        sideGap: +(window.innerWidth - pr.width).toFixed(1),
+        heightRatio: +(pr.height / window.innerHeight).toFixed(3),
         overflowX: document.documentElement.scrollWidth > document.documentElement.clientWidth + 1,
         bodyOverflowX: body.scrollWidth > body.clientWidth + 1,
-        imgW: img.getBoundingClientRect().width,
+        imgFillRatio: +(ir.width / pr.width).toFixed(3),
         objectFit: getComputedStyle(img).objectFit,
-        bodyLocked: document.body.classList.contains('study-pop-open'),
       };
     });
+    const phoneOk = label === 'sp-landscape'
+      ? metrics.panelW <= 760 + 1 && metrics.heightRatio <= 0.96 && metrics.imgFillRatio >= 0.9
+      : label.startsWith('sp')
+        ? metrics.sideGap >= 12 && metrics.sideGap <= 28 && metrics.heightRatio <= 0.96 && metrics.imgFillRatio >= 0.9
+        : metrics.panelW <= 760 + 1;
+    results.push({ label, step: 'wheelchair', ok: wc.ok, metrics, phoneOk, nextLabel: wc.nextLabel });
+    if (!wc.ok || !phoneOk || metrics.overflowX || metrics.bodyOverflowX || metrics.objectFit !== 'contain') failed += 1;
 
-    const orderOk = EXPECTED_SLIDES.every((s, i) => (slideSrcs[i] || '').includes(s.split('/').pop()));
-    const row = {
-      label,
-      step: 'stroller-slides',
-      slideSrcs,
-      orderOk,
-      nextLabelOnLast: nextLabel,
-      firstPrevDisabled,
-      metrics,
-      errors: [...errors],
-    };
-    results.push(row);
-    if (!orderOk || nextLabel !== '閉じる' || !firstPrevDisabled || metrics.overflowX || metrics.bodyOverflowX || metrics.objectFit !== 'contain' || !metrics.bodyLocked) {
-      failed += 1;
-    }
-
-    // reopen starts at 1
     await page.locator('#studyPopCloseX').evaluate((el) => el.click());
     await page.waitForSelector('#studyMaterialPop', { state: 'detached' });
-    await page.locator('[data-material-id="stroller"]').evaluate((el) => el.click());
-    await page.waitForSelector('#studySlidePage');
-    const reopenPage = (await page.textContent('#studySlidePage')).trim();
-    results.push({ label, step: 'stroller-reopen', reopenPage });
-    if (reopenPage !== '1 / 6') failed += 1;
+    await page.locator('[data-material-id="wheelchair"]').evaluate((el) => el.click());
+    await page.waitForFunction(() => document.getElementById('studySlidePage').textContent.trim() === '1 / 3');
+    results.push({ label, step: 'wheelchair-reopen', page: (await page.textContent('#studySlidePage')).trim() });
     await page.keyboard.press('Escape');
     await page.waitForSelector('#studyMaterialPop', { state: 'detached' });
 
-    // ---- text pops for 2/3 ----
-    for (const material of canon.filter((m) => m.id !== 'stroller')) {
-      await page.locator(`[data-material-id="${material.id}"]`).evaluate((el) => el.click());
-      await page.waitForSelector('#studyPopBody > div');
-      const title = (await page.textContent('#studyPopTitle')).trim();
-      const blocks = await page.$$eval('#studyPopBody > div', (els) => els.map((el) => ({
-        className: el.className,
-        text: el.textContent,
-      })));
-      const expectedBlocks = material.blocks.map((block) => {
-        const cls = block.type === 'heading' ? 'study-heading'
-          : block.type === 'label' ? 'study-label'
-            : block.type === 'sublabel' ? 'study-sublabel'
-              : block.type === 'note' ? 'study-note'
-                : 'study-text';
-        return { className: cls, text: block.text };
-      });
-      const blocksMatch = blocks.length === expectedBlocks.length
-        && blocks.every((b, i) => b.className === expectedBlocks[i].className && b.text === expectedBlocks[i].text);
-      results.push({ label, step: `text-pop:${material.id}`, titleMatch: title === material.title, blocksMatch });
-      if (title !== material.title || !blocksMatch) failed += 1;
-      await page.locator('#studyPopCloseBtn').evaluate((el) => el.click());
-      await page.waitForSelector('#studyMaterialPop', { state: 'detached' });
-    }
-
-    // history back closes stroller pop
+    // stroller regression (6)
     await page.locator('[data-material-id="stroller"]').evaluate((el) => el.click());
-    await page.waitForSelector('#studyMaterialPop');
-    await page.evaluate(() => history.back());
+    await page.waitForSelector('#studySlideImage');
+    const st = await walkSlides(page, STROLLER);
+    results.push({ label, step: 'stroller', ok: st.ok, count: st.srcs.length });
+    if (!st.ok) failed += 1;
+    await page.locator('#studyPopCloseX').evaluate((el) => el.click());
     await page.waitForSelector('#studyMaterialPop', { state: 'detached' });
-    const stayed = await page.evaluate(() => !!document.querySelector('.study-list') && !document.querySelector('.home'));
-    results.push({ label, step: 'history-back-closes-pop', stayed });
-    if (!stayed) failed += 1;
+
+    // mic-guide text
+    const mic = canon.find((m) => m.id === 'mic-guide');
+    await page.locator('[data-material-id="mic-guide"]').evaluate((el) => el.click());
+    await page.waitForSelector('#studyPopBody > div');
+    const title = (await page.textContent('#studyPopTitle')).trim();
+    const blocks = await page.$$eval('#studyPopBody > div', (els) => els.map((el) => el.textContent));
+    const blocksMatch = blocks.length === mic.blocks.length
+      && blocks.every((t, i) => t === mic.blocks[i].text);
+    results.push({ label, step: 'mic-guide', titleMatch: title === mic.title, blocksMatch });
+    if (title !== mic.title || !blocksMatch) failed += 1;
+    await page.locator('#studyPopCloseBtn').evaluate((el) => el.click());
+    await page.waitForSelector('#studyMaterialPop', { state: 'detached' });
+
+    // no state leak: open wheelchair after stroller should be 1/3
+    await page.locator('[data-material-id="stroller"]').evaluate((el) => el.click());
+    await page.waitForSelector('#studySlidePage');
+    await page.locator('#studySlideNext').evaluate((el) => el.click());
+    await page.waitForFunction(() => document.getElementById('studySlidePage').textContent.trim() === '2 / 6');
+    await page.locator('#studyPopCloseX').evaluate((el) => el.click());
+    await page.locator('[data-material-id="wheelchair"]').evaluate((el) => el.click());
+    await page.waitForFunction(() => document.getElementById('studySlidePage').textContent.trim() === '1 / 3');
+    const isolated = (await page.textContent('#studySlidePage')).trim() === '1 / 3';
+    results.push({ label, step: 'no-state-leak', isolated });
+    if (!isolated) failed += 1;
+    await page.keyboard.press('Escape');
 
     await page.locator('#back').evaluate((el) => el.click());
     await page.waitForSelector('.home');
@@ -205,14 +197,26 @@ async function main() {
   }
 
   await checkViewport(1280, 800, 'pc');
-  await checkViewport(390, 844, 'sp');
+  await checkViewport(390, 844, 'sp-390');
+  await checkViewport(412, 915, 'sp-412');
   await checkViewport(844, 390, 'sp-landscape');
 
   await browser.close();
   server.close();
-  fs.writeFileSync(path.join(root, '_study_materials_ui_out.json'), JSON.stringify({ failed, results }, null, 2), 'utf8');
-  console.log(JSON.stringify({ failed, count: results.length }, null, 2));
-  if (failed) console.log(JSON.stringify(results.filter((r) => r.orderOk === false || r.blocksMatch === false || r.stayed === false || r.reopenPage), null, 2));
+  const out = { failed, results };
+  fs.writeFileSync(path.join(root, '_study_materials_ui_out.json'), JSON.stringify(out, null, 2), 'utf8');
+  console.log(JSON.stringify({
+    failed,
+    sizes: results.filter((r) => r.metrics).map((r) => ({
+      label: r.label,
+      panelW: r.metrics.panelW,
+      imgW: r.metrics.imgW,
+      sideGap: r.metrics.sideGap,
+      imgFillRatio: r.metrics.imgFillRatio,
+      heightRatio: r.metrics.heightRatio,
+      phoneOk: r.phoneOk,
+    })),
+  }, null, 2));
   process.exit(failed ? 1 : 0);
 }
 

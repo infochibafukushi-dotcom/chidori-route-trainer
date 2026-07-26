@@ -1,4 +1,4 @@
-const CACHE_NAME = 'chidori-route-map-v82';
+const CACHE_NAME = 'chidori-route-map-v83';
 const APP_INDEX_URL = new URL('./index.html', self.location).href;
 const FETCH_TIMEOUT_MS = 7000;
 
@@ -10,23 +10,26 @@ const CORE_SHELL = [
   './app-icon-192.png',
   './app-icon-512.png',
   './styles.css?v=72',
-  './study-materials.css?v=82',
+  './study-materials.css?v=83',
   './d1-sync.css?v=32',
   './data.js?v=32',
   './app.js?v=78',
   './study-materials-data.js?v=71',
-  './study-materials.js?v=82',
+  './study-materials.js?v=83',
   './home-navigation-v25.js?v=32',
   './route-map-link.js?v=71',
   './route-assets-loader.js?v=78',
   './d1-sync.js?v=61',
-  './pwa-install.js?v=82',
+  './pwa-install.js?v=83',
   './assets/study-materials/stroller/stroller-01-arrival.png',
   './assets/study-materials/stroller/stroller-02-after-boarding.png',
   './assets/study-materials/stroller/stroller-03-fare-payment.png',
   './assets/study-materials/stroller/stroller-04-departure.png',
   './assets/study-materials/stroller/stroller-05-alighting.png',
-  './assets/study-materials/stroller/stroller-06-handling-rules.png'
+  './assets/study-materials/stroller/stroller-06-handling-rules.png',
+  './assets/study-materials/wheelchair/wheelchair-01-departure-check.png',
+  './assets/study-materials/wheelchair/wheelchair-02-boarding.png',
+  './assets/study-materials/wheelchair/wheelchair-03-alighting.png'
 ];
 
 function fetchWithTimeout(resource, options = {}, timeoutMs = FETCH_TIMEOUT_MS) {
