@@ -43,6 +43,12 @@ if (!bicycle || bicycle.title !== '自転車事故防止の三原則') {
   process.exit(1);
 }
 
+const driverHealth = materials.find((m) => m.id === 'driver-health-emergency-response');
+if (!driverHealth || driverHealth.title !== '運行中に体調の異変を感じた時の対応') {
+  console.error('driver-health material missing or title mismatch', driverHealth);
+  process.exit(1);
+}
+
 fs.writeFileSync(snapshotPath, JSON.stringify(actual, null, 2) + '\n', 'utf8');
 
 console.log('OK canon', {
@@ -50,5 +56,6 @@ console.log('OK canon', {
   materials: actual.length,
   coreBlocks: actualCore.reduce((n, m) => n + m.blocks.length, 0),
   bicycleOk: true,
+  driverHealthOk: true,
 });
 process.exit(0);

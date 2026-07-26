@@ -262,6 +262,15 @@ for (const material of materials) {
     }
     continue;
   }
+  if (material.id === 'driver-health-emergency-response') {
+    if (material.title !== '運行中に体調の異変を感じた時の対応') {
+      console.error('TITLE MISMATCH driver-health', material.title);
+      failed++;
+    } else {
+      console.log('OK', material.id, 'image-only');
+    }
+    continue;
+  }
   const exp = expected[material.id];
   if (!exp) {
     console.error('UNKNOWN id', material.id);
@@ -283,8 +292,8 @@ for (const material of materials) {
   }
 }
 
-if (materials.length !== 4) {
-  console.error('Expected 4 materials, got', materials.length);
+if (materials.length !== 5) {
+  console.error('Expected 5 materials, got', materials.length);
   failed++;
 }
 

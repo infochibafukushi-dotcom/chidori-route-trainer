@@ -673,5 +673,10 @@
     "id": "bicycle-accident-prevention",
     "title": "自転車事故防止の三原則",
     "blocks": []
+  },
+  {
+    "id": "driver-health-emergency-response",
+    "title": "運行中に体調の異変を感じた時の対応",
+    "blocks": []
   }
 ]

@@ -31,6 +31,9 @@ const DECKS = {
   'bicycle-accident-prevention': [
     'bicycle-accident-prevention-three-principles.png',
   ],
+  'driver-health-emergency-response': [
+    'driver-health-emergency-response.png',
+  ],
 };
 
 const mime = {

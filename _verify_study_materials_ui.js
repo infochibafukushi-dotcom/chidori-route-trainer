@@ -32,6 +32,9 @@ const DECKS = {
   'bicycle-accident-prevention': [
     'bicycle-accident-prevention-three-principles.png',
   ],
+  'driver-health-emergency-response': [
+    'driver-health-emergency-response.png',
+  ],
 };
 
 const mime = {
@@ -119,7 +122,8 @@ async function main() {
   for (const [id, names] of Object.entries(DECKS)) {
     const dir = id === 'mic-guide' ? 'mic-guide'
       : id === 'bicycle-accident-prevention' ? 'bicycle'
-        : id;
+        : id === 'driver-health-emergency-response' ? 'driver-health'
+          : id;
     for (const name of names) {
       const p = path.join(root, 'assets/study-materials', dir, name);
       if (!fs.existsSync(p)) throw new Error('missing ' + p);
@@ -147,32 +151,45 @@ async function main() {
     await page.waitForSelector('[data-go="materials"]');
     await page.locator('[data-go="materials"]').evaluate((el) => el.click());
     await page.waitForSelector('.study-list');
-    const listTitles = await page.$$eval('.study-material-item strong', (els) => els.map((e) => e.textContent.trim()));
-    const listHints = await page.$$eval('.study-material-item span', (els) => els.map((e) => e.textContent.trim()));
-    const listOk = listTitles.length === 4
+    const listTitles = await page.$$eval('.study-material-item .study-material-copy strong', (els) => els.map((e) => e.textContent.trim()));
+    const listHints = await page.$$eval('.study-material-item .study-material-copy > span', (els) => els.map((e) => e.textContent.trim()));
+    const listOk = listTitles.length === 5
       && listTitles[3] === '4. 自転車事故防止の三原則'
+      && listTitles[4] === '5. 運行中に体調の異変を感じた時の対応'
+      && listHints[0] === 'タップして本文を表示'
       && listHints[3] === 'タップして資料画像を表示'
-      && listHints[0] === 'タップして本文を表示';
+      && listHints[4].includes('運行中断');
     results.push({ label, step: 'list', listTitles, listHints, listOk });
     if (!listOk) failed += 1;
 
-    // bicycle primary
-    await page.locator('[data-material-id="bicycle-accident-prevention"]').evaluate((el) => el.click());
+    // driver-health primary
+    await page.locator('[data-material-id="driver-health-emergency-response"]').evaluate((el) => el.click());
     await page.waitForSelector('#studySlideImage');
-    const bike = await walkSlides(page, DECKS['bicycle-accident-prevention']);
+    const health = await walkSlides(page, DECKS['driver-health-emergency-response']);
     const metrics = await measure(page);
+    const hasThumb = await page.evaluate(() => !!document.querySelector('[data-material-id="driver-health-emergency-response"] .study-material-thumb'));
+    // reopen list to check thumb without pop
+    await page.locator('#studyPopCloseX').evaluate((el) => el.click());
+    await page.waitForSelector('#studyMaterialPop', { state: 'detached' });
+    await page.waitForFunction(() => {
+      const img = document.querySelector('[data-material-id="driver-health-emergency-response"] .study-material-thumb');
+      return !!(img && img.complete && img.naturalWidth > 0);
+    });
+    const thumbOnList = true;
+    await page.locator('[data-material-id="driver-health-emergency-response"]').evaluate((el) => el.click());
+    await page.waitForSelector('#studySlideImage');
     const phoneOk = label === 'sp-landscape'
       ? metrics.panelW <= 760 + 1 && metrics.heightRatio <= 0.96 && metrics.imgFillRatio >= 0.9
       : label.startsWith('sp')
         ? metrics.sideGap >= 12 && metrics.sideGap <= 28 && metrics.heightRatio <= 0.96 && metrics.imgFillRatio >= 0.9
         : metrics.panelW <= 760 + 1;
-    results.push({ label, step: 'bicycle', ok: bike.ok, metrics, phoneOk, nextLabel: bike.nextLabel });
-    if (!bike.ok || !phoneOk || metrics.overflowX || metrics.bodyOverflowX || metrics.objectFit !== 'contain') failed += 1;
+    results.push({ label, step: 'driver-health', ok: health.ok, metrics, phoneOk, thumbOnList, nextLabel: health.nextLabel });
+    if (!health.ok || !phoneOk || !thumbOnList || metrics.overflowX || metrics.bodyOverflowX || metrics.objectFit !== 'contain') failed += 1;
     await page.locator('#studyPopCloseX').evaluate((el) => el.click());
     await page.waitForSelector('#studyMaterialPop', { state: 'detached' });
 
-    // mic-guide / stroller / wheelchair regressions
-    for (const id of ['mic-guide', 'stroller', 'wheelchair']) {
+    // regressions for other decks
+    for (const id of ['mic-guide', 'stroller', 'wheelchair', 'bicycle-accident-prevention']) {
       await page.locator(`[data-material-id="${id}"]`).evaluate((el) => el.click());
       await page.waitForSelector('#studySlideImage');
       const walked = await walkSlides(page, DECKS[id]);

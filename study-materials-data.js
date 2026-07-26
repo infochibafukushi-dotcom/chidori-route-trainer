@@ -195,4 +195,11 @@ window.STUDY_MATERIALS = [
     description: 'タップして資料画像を表示',
     blocks: [],
   },
+  {
+    id: 'driver-health-emergency-response',
+    title: '運行中に体調の異変を感じた時の対応',
+    description: '運行中に体調不良を感じた場合の、運行中断・連絡・救援要請・緊急時対応を確認します。',
+    showThumbnail: true,
+    blocks: [],
+  },
 ];

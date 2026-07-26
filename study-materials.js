@@ -61,11 +61,19 @@
     },
   ];
 
+  const DRIVER_HEALTH_SLIDES = [
+    {
+      src: 'assets/study-materials/driver-health/driver-health-emergency-response.png',
+      alt: '運行中に体調の異変を感じた時の対応',
+    },
+  ];
+
   const MATERIAL_SLIDES = {
     stroller: STROLLER_SLIDES,
     wheelchair: WHEELCHAIR_SLIDES,
     'mic-guide': MIC_GUIDE_SLIDES,
     'bicycle-accident-prevention': BICYCLE_SLIDES,
+    'driver-health-emergency-response': DRIVER_HEALTH_SLIDES,
   };
 
   let popOpen = false;
@@ -468,12 +476,21 @@
       historyPushed = false;
     }
     studyMaterialId = null;
-    const items = materials().map((item, index) => (
-      `<button type="button" class="menu study-material-item" data-material-id="${esc(item.id)}">` +
-      `<strong>${index + 1}. ${esc(item.title)}</strong>` +
-      `<span>${esc(item.description || 'タップして本文を表示')}</span>` +
-      `</button>`
-    )).join('');
+    const items = materials().map((item, index) => {
+      const slides = MATERIAL_SLIDES[item.id];
+      const thumb = item.showThumbnail && slides && slides[0]
+        ? `<img class="study-material-thumb" src="${esc(slides[0].src)}" alt="" loading="lazy" decoding="async" />`
+        : '';
+      return (
+        `<button type="button" class="menu study-material-item${thumb ? ' study-material-item--thumb' : ''}" data-material-id="${esc(item.id)}">` +
+        (thumb ? `<span class="study-material-thumb-wrap" aria-hidden="true">${thumb}</span>` : '') +
+        `<span class="study-material-copy">` +
+        `<strong>${index + 1}. ${esc(item.title)}</strong>` +
+        `<span>${esc(item.description || 'タップして本文を表示')}</span>` +
+        `</span>` +
+        `</button>`
+      );
+    }).join('');
 
     shell(
       `<section class="study-materials">` +
@@ -532,6 +549,7 @@
     wheelchairSlides: WHEELCHAIR_SLIDES,
     micGuideSlides: MIC_GUIDE_SLIDES,
     bicycleSlides: BICYCLE_SLIDES,
+    driverHealthSlides: DRIVER_HEALTH_SLIDES,
   };
 
   window.__chidoriOpenStudyMaterialDetail = openDetail;
