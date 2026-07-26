@@ -14,6 +14,8 @@
     return JSON.parse(JSON.stringify(value));
   }
 
+  window.__chidoriIsEditorVerified = () => editorVerified;
+
   function ensureSyncBar() {
     // 利用者向け画面では同期バーを出さない（D1取得・保存処理自体は維持）
     document.getElementById('d1SyncBar')?.remove();
@@ -61,6 +63,22 @@
     }
   }
 
+  function migrateHomeCardOrderIfNeeded() {
+    if (!editorVerified || Array.isArray(data?.uiSettings?.homeCardOrder)) return false;
+    const migratedOrder = loadHomeCardOrder();
+    data.uiSettings = data.uiSettings || {};
+    data.uiSettings.homeCardOrder = migratedOrder;
+    try {
+      localStorage.setItem(HOME_CARD_ORDER_STORAGE_KEY, JSON.stringify(migratedOrder));
+      localStorage.removeItem(HOME_CARD_ORDER_LEGACY_KEY);
+    } catch (error) {
+      console.warn('ホームカード順の端末内バックアップに失敗しました', error);
+    }
+    currentHomeCardOrder = migratedOrder.slice();
+    save();
+    return true;
+  }
+
   function mountEditorPanel() {
     const section = document.querySelector('.tabs')?.parentElement;
     if (!section || document.getElementById('d1EditorPanel')) {
@@ -81,7 +99,7 @@
           <button type="button" id="d1TokenClear" class="secondary">解除</button>
         </div>
       </div>
-      <p class="d1-editor-help">トークンはこのブラウザだけに保存され、閲覧者には表示されません。</p>
+      <p class="d1-editor-help">トークンはこのブラウザだけに保存され、閲覧者には表示されません。起動時の自動確認は行いません。</p>
       <p id="d1EditorStatus" class="d1-editor-status"></p>`;
     section.insertBefore(panel, section.querySelector('.tabs'));
 
@@ -101,6 +119,7 @@
       const ok = await uploadRemote(true);
       if (ok) {
         editorVerified = true;
+        migrateHomeCardOrderIfNeeded();
         status.textContent = '編集可能です。現在のデータをD1へ保存しました。';
       } else {
         editorVerified = false;
@@ -139,23 +158,20 @@
         if (studyPopOpen) {
           console.info('[chidori] D1 data applied while study material POP is open');
         }
+        // home() は loadHomeCardOrder() 経由で data.uiSettings.homeCardOrder を反映
         render();
         applyingRemote = false;
         setSyncStatus('D1共通データを表示中', 'ok');
-        if (editToken && !editorVerified) {
-          editorVerified = await uploadRemote(true);
-          if (page === 'settings') {
-            mountEditorPanel();
-            applySettingsAccess();
-          }
+        // 起動時の自動PUTは行わない（無効トークンによる401・データ上書きを防ぐ）
+        // 編集権限は設定画面の「登録して確認」でのみ確立する
+        if (page === 'settings') {
+          mountEditorPanel();
+          applySettingsAccess();
         }
         return;
       }
       setSyncStatus('D1は空です。編集トークン登録後に現在のデータを初期保存します', 'working');
-      if (editToken) {
-        editorVerified = await uploadRemote(true);
-        if (editorVerified) setSyncStatus('現在のデータをD1へ初期保存しました', 'ok');
-      }
+      // 空の場合も起動時自動PUTはしない
     } catch (error) {
       applyingRemote = false;
       console.error('D1 load failed', error);
@@ -177,7 +193,25 @@
       });
       if (response.status === 401) {
         editorVerified = false;
-        if (!silent) setSyncStatus('編集トークンが一致しません', 'error');
+        editToken = '';
+        try {
+          localStorage.removeItem(TOKEN_KEY);
+        } catch (error) {
+          console.warn('無効な編集トークンを削除できませんでした', error);
+        }
+        if (!silent) {
+          setSyncStatus(
+            '編集トークンが無効です。設定画面から再登録してください',
+            'error'
+          );
+        }
+        if (page === 'settings') {
+          const input = document.getElementById('d1EditToken');
+          if (input) input.value = '';
+          const status = document.getElementById('d1EditorStatus');
+          if (status) status.textContent = '編集トークンが無効です。再登録してください。';
+          applySettingsAccess();
+        }
         return false;
       }
       if (!response.ok) throw new Error(`保存エラー（${response.status}）`);

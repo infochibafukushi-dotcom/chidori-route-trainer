@@ -1,0 +1,49 @@
+{
+  "d1Order": [
+    "training",
+    "route-map",
+    "quiz",
+    "settings"
+  ],
+  "d1GetStatus": 200,
+  "contexts": {
+    "chrome": [
+      "基本研修資料",
+      "千鳥営業所 路線図",
+      "問題",
+      "設定"
+    ],
+    "chromeDataOrder": [
+      "training",
+      "route-map",
+      "quiz",
+      "settings"
+    ],
+    "secret": [
+      "基本研修資料",
+      "千鳥営業所 路線図",
+      "問題",
+      "設定"
+    ],
+    "secretDataOrder": [
+      "training",
+      "route-map",
+      "quiz",
+      "settings"
+    ],
+    "mobile390": [
+      "基本研修資料",
+      "千鳥営業所 路線図",
+      "問題",
+      "設定"
+    ],
+    "mobileDataOrder": [
+      "training",
+      "route-map",
+      "quiz",
+      "settings"
+    ]
+  },
+  "note": "Live D1 GET proxied into pages to bypass localhost CORS",
+  "pass": true
+}

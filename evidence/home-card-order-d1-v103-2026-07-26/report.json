@@ -1,0 +1,232 @@
+{
+  "report": {
+    "checks": [
+      {
+        "name": "CACHE_NAME v103",
+        "ok": true,
+        "detail": null
+      },
+      {
+        "name": "index app.js?v=103",
+        "ok": true,
+        "detail": null
+      },
+      {
+        "name": "index d1-sync.js?v=63",
+        "ok": true,
+        "detail": null
+      },
+      {
+        "name": "SW d1-sync.js?v=63",
+        "ok": true,
+        "detail": null
+      },
+      {
+        "name": "loadHomeCardOrder uses uiSettings",
+        "ok": true,
+        "detail": null
+      },
+      {
+        "name": "saveHomeCardOrder calls save()",
+        "ok": true,
+        "detail": null
+      },
+      {
+        "name": "no auto-PUT after GET",
+        "ok": true,
+        "detail": null
+      },
+      {
+        "name": "401 clears TOKEN_KEY",
+        "ok": true,
+        "detail": null
+      },
+      {
+        "name": "D1 order on PC home",
+        "ok": true,
+        "detail": "基本研修資料|千鳥営業所 路線図|問題|設定"
+      },
+      {
+        "name": "no auto PUT on load",
+        "ok": true,
+        "detail": "0"
+      },
+      {
+        "name": "secret context same D1 order",
+        "ok": true,
+        "detail": "基本研修資料|千鳥営業所 路線図|問題|設定"
+      },
+      {
+        "name": "mobile 390 same D1 order",
+        "ok": true,
+        "detail": "基本研修資料|千鳥営業所 路線図|問題|設定"
+      },
+      {
+        "name": "nav routes",
+        "ok": true,
+        "detail": null
+      },
+      {
+        "name": "nav materials",
+        "ok": true,
+        "detail": null
+      },
+      {
+        "name": "nav quiz",
+        "ok": true,
+        "detail": null
+      },
+      {
+        "name": "nav settings",
+        "ok": true,
+        "detail": null
+      },
+      {
+        "name": "D1 failure uses local backup",
+        "ok": true,
+        "detail": "基本研修資料|千鳥営業所 路線図|問題|設定"
+      },
+      {
+        "name": "no-editor message",
+        "ok": true,
+        "detail": "共通の並び順を変更するには、有効な編集トークンが必要です。"
+      },
+      {
+        "name": "no-editor did not write shared",
+        "ok": true,
+        "detail": "null"
+      },
+      {
+        "name": "token verify ok",
+        "ok": true,
+        "detail": "編集可能です。現在のデータをD1へ保存しました。"
+      },
+      {
+        "name": "verified flag",
+        "ok": true,
+        "detail": null
+      },
+      {
+        "name": "verified save message",
+        "ok": true,
+        "detail": "並び順を保存しました"
+      },
+      {
+        "name": "verified save local backup",
+        "ok": true,
+        "detail": "[\"training\",\"route-map\",\"quiz\",\"settings\"]"
+      },
+      {
+        "name": "verified save data.uiSettings",
+        "ok": true,
+        "detail": "[\"training\",\"route-map\",\"quiz\",\"settings\"]"
+      },
+      {
+        "name": "verified save PUT body has homeCardOrder",
+        "ok": true,
+        "detail": "{\"homeCardOrder\":[\"training\",\"route-map\",\"quiz\",\"settings\"]}"
+      },
+      {
+        "name": "home after save",
+        "ok": true,
+        "detail": "基本研修資料|千鳥営業所 路線図|問題|設定"
+      },
+      {
+        "name": "reload keeps local backup order",
+        "ok": true,
+        "detail": "基本研修資料|千鳥営業所 路線図|問題|設定"
+      },
+      {
+        "name": "401 clears token",
+        "ok": true,
+        "detail": "null"
+      },
+      {
+        "name": "401 put only on explicit verify",
+        "ok": true,
+        "detail": "1"
+      },
+      {
+        "name": "401 no repeat puts",
+        "ok": true,
+        "detail": "1"
+      },
+      {
+        "name": "legacy key fallback",
+        "ok": true,
+        "detail": "基本研修資料|千鳥営業所 路線図|問題|設定"
+      }
+    ],
+    "version": "v103",
+    "afterD1Pc": [
+      "基本研修資料",
+      "千鳥営業所 路線図",
+      "問題",
+      "設定"
+    ],
+    "secret": [
+      "基本研修資料",
+      "千鳥営業所 路線図",
+      "問題",
+      "設定"
+    ],
+    "mobile390": [
+      "基本研修資料",
+      "千鳥営業所 路線図",
+      "問題",
+      "設定"
+    ],
+    "nav": {
+      "基本研修資料": "materials",
+      "千鳥営業所 路線図": "routes",
+      "問題": "quiz",
+      "設定": "settings"
+    },
+    "offlineBackup": [
+      "基本研修資料",
+      "千鳥営業所 路線図",
+      "問題",
+      "設定"
+    ],
+    "denied": {
+      "status": "共通の並び順を変更するには、有効な編集トークンが必要です。",
+      "ls": null,
+      "shared": null
+    },
+    "editorStatus": "編集可能です。現在のデータをD1へ保存しました。",
+    "saved": {
+      "status": "並び順を保存しました",
+      "ls": "[\"training\",\"route-map\",\"quiz\",\"settings\"]",
+      "shared": [
+        "training",
+        "route-map",
+        "quiz",
+        "settings"
+      ],
+      "verified": true
+    },
+    "putBodiesCount": 3,
+    "lastPutOrder": [
+      "training",
+      "route-map",
+      "quiz",
+      "settings"
+    ],
+    "afterReloadLocal": [
+      "基本研修資料",
+      "千鳥営業所 路線図",
+      "問題",
+      "設定"
+    ],
+    "tokenAfter401": null,
+    "put401Count": 1,
+    "legacy": [
+      "基本研修資料",
+      "千鳥営業所 路線図",
+      "問題",
+      "設定"
+    ]
+  },
+  "fails": [],
+  "pass": true
+}

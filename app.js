@@ -88,31 +88,50 @@ function normalizeHomeCardOrder(raw){
   }
   return out;
 }
+function canSaveSharedHomeCardOrder(){
+  if(typeof window.__chidoriIsEditorVerified==='function'){
+    return !!window.__chidoriIsEditorVerified();
+  }
+  // d1-sync未読込時は端末内のみ保存を許可（ローカル検証用）
+  return true;
+}
 function loadHomeCardOrder(){
   try{
-    let raw=localStorage.getItem(HOME_CARD_ORDER_STORAGE_KEY);
-    if(raw==null||raw===''){
-      raw=localStorage.getItem(HOME_CARD_ORDER_LEGACY_KEY);
+    const sharedOrder=data?.uiSettings?.homeCardOrder;
+    if(Array.isArray(sharedOrder)){
+      return normalizeHomeCardOrder(sharedOrder);
     }
-    if(raw==null||raw==='')return DEFAULT_HOME_CARD_ORDER.slice();
-    const parsed=JSON.parse(raw);
-    if(!Array.isArray(parsed))return DEFAULT_HOME_CARD_ORDER.slice();
-    return normalizeHomeCardOrder(parsed);
+    const localOrder=
+      localStorage.getItem(HOME_CARD_ORDER_STORAGE_KEY)||
+      localStorage.getItem(HOME_CARD_ORDER_LEGACY_KEY);
+    if(localOrder){
+      const parsed=JSON.parse(localOrder);
+      if(Array.isArray(parsed)){
+        return normalizeHomeCardOrder(parsed);
+      }
+    }
   }catch(error){
     console.error('ホームカードの並び順を読み込めませんでした',error);
-    return DEFAULT_HOME_CARD_ORDER.slice();
   }
+  return DEFAULT_HOME_CARD_ORDER.slice();
 }
 function saveHomeCardOrder(order){
+  if(!canSaveSharedHomeCardOrder()){
+    const err=new Error('共通の並び順を変更するには、有効な編集トークンが必要です。');
+    err.code='HOME_CARD_ORDER_NO_EDITOR';
+    throw err;
+  }
   const normalized=normalizeHomeCardOrder(order);
+  data.uiSettings=data.uiSettings||{};
+  data.uiSettings.homeCardOrder=normalized.slice();
   try{
     localStorage.setItem(HOME_CARD_ORDER_STORAGE_KEY,JSON.stringify(normalized));
-    try{localStorage.removeItem(HOME_CARD_ORDER_LEGACY_KEY)}catch(_){}
+    localStorage.removeItem(HOME_CARD_ORDER_LEGACY_KEY);
   }catch(error){
-    console.error('ホームカードの並び順を保存できませんでした',error);
-    throw error;
+    console.warn('ホームカード順の端末内バックアップに失敗しました',error);
   }
   currentHomeCardOrder=normalized.slice();
+  save();
   return normalized;
 }
 let currentHomeCardOrder=loadHomeCardOrder();
@@ -355,14 +374,19 @@ function homeCardOrderEditor(statusMessage){
 
   function persist(next,message){
     homeCardOrderDraft=next.slice();
+    if(!canSaveSharedHomeCardOrder()){
+      homeCardOrderEditor('共通の並び順を変更するには、有効な編集トークンが必要です。');
+      return;
+    }
     try{
       saveHomeCardOrder(next);
       homeCardOrderEditor(message||'並び順を保存しました');
     }catch(err){
       console.error(err);
-      homeCardOrderEditor();
-      const status=document.getElementById('homeOrderStatus');
-      if(status)status.textContent='保存できませんでした。もう一度お試しください。';
+      const msg=err&&err.code==='HOME_CARD_ORDER_NO_EDITOR'
+        ?'共通の並び順を変更するには、有効な編集トークンが必要です。'
+        :'保存できませんでした。もう一度お試しください。';
+      homeCardOrderEditor(msg);
     }
   }
 
@@ -371,6 +395,11 @@ function homeCardOrderEditor(statusMessage){
     const next=draft.slice();
     const [item]=next.splice(from,1);
     next.splice(to,0,item);
+    if(!canSaveSharedHomeCardOrder()){
+      homeCardOrderDraft=next.slice();
+      homeCardOrderEditor('共通の並び順を変更するには、有効な編集トークンが必要です。');
+      return;
+    }
     persist(next);
   }
 
