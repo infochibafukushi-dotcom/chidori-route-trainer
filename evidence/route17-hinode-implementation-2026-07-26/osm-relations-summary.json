@@ -1,0 +1,1528 @@
+{
+  "fetchedAt": "2026-07-26T12:18:49.778Z",
+  "route": "hinode-route17",
+  "lineName": "日の出線",
+  "seedIds": [
+    18396569,
+    18396568
+  ],
+  "separationGuard": "ref=16 (プラウド新浦安パークマリーナ・海風の街経由) relations 18396562/18396563 are listed but NEVER used for route-17 geometry.",
+  "relations": [
+    {
+      "id": 18396569,
+      "label": "route17 新浦安駅⇒東京電力⇒日の出七丁目 (seed)",
+      "ok": true,
+      "source": "overpass",
+      "name": "東京ベイシティバス17系統 新浦安駅⇒東京電力⇒日の出七丁目",
+      "tags": {
+        "name": "東京ベイシティバス17系統 新浦安駅⇒東京電力⇒日の出七丁目",
+        "network": "日の出線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "17",
+        "route": "bus",
+        "type": "route"
+      },
+      "memberCount": 25,
+      "wayMemberCount": 15,
+      "wayElementCount": 15,
+      "stopRoleCount": 0,
+      "platformMemberCount": 10,
+      "nodeElementCount": 126,
+      "memberRoles": {
+        "platform_entry_only": 1,
+        "platform": 8,
+        "platform_exit_only": 1,
+        "": 15
+      },
+      "platformNames": [
+        "新浦安駅",
+        "入船中央エステート",
+        "明海大学前",
+        "日の出保育園入口",
+        "東京電力",
+        "日の出小学校",
+        "日の出東",
+        "アールフォーラム",
+        "順天堂大学・日の出東口",
+        "日の出七丁目"
+      ],
+      "platformsDetail": [
+        {
+          "role": "platform_entry_only",
+          "type": "node",
+          "ref": 8415001167,
+          "name": "新浦安駅",
+          "lat": 35.649709,
+          "lon": 139.9136809,
+          "local_ref": "C",
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "local_ref": "C",
+            "name": "新浦安駅",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11425579726,
+          "name": "入船中央エステート",
+          "lat": 35.6489816,
+          "lon": 139.9168586,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "covered": "yes",
+            "highway": "bus_stop",
+            "name": "入船中央エステート",
+            "operator": "東京ベイシティ交通",
+            "passenger_information_display": "yes",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6813952155,
+          "name": "明海大学前",
+          "lat": 35.6469394,
+          "lon": 139.920555,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "明海大学前",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform",
+            "route_ref": "17"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 12385819137,
+          "name": "日の出保育園入口",
+          "lat": 35.6483768,
+          "lon": 139.9214351,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "日の出保育園入口",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6813929347,
+          "name": "東京電力",
+          "lat": 35.649751,
+          "lon": 139.9230892,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "東京電力",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6813929343,
+          "name": "日の出小学校",
+          "lat": 35.6478427,
+          "lon": 139.9265958,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "日の出小学校",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11581215015,
+          "name": "日の出東",
+          "lat": 35.6459953,
+          "lon": 139.9303287,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "日の出東",
+            "operator": "東京ベイシティ交通",
+            "passenger_information_display": "yes",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11425363969,
+          "name": "アールフォーラム",
+          "lat": 35.6452217,
+          "lon": 139.931303,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "アールフォーラム",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6813929339,
+          "name": "順天堂大学・日の出東口",
+          "lat": 35.6438084,
+          "lon": 139.9330787,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "順天堂大学・日の出東口",
+            "operator": "東京ベイシティ交通",
+            "passenger_information_display": "yes",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform_exit_only",
+          "type": "node",
+          "ref": 11425363970,
+          "name": "日の出七丁目",
+          "lat": 35.642641,
+          "lon": 139.9345498,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "covered": "yes",
+            "highway": "bus_stop",
+            "name": "日の出七丁目",
+            "note": "降車場",
+            "operator": "東京ベイシティ交通",
+            "passenger_information_display": "yes",
+            "public_transport": "platform"
+          }
+        }
+      ],
+      "wayMemberIds": [
+        906161758,
+        1342408590,
+        1342409930,
+        1340739633,
+        906161743,
+        369356254,
+        906161757,
+        720406630,
+        1338996611,
+        720406627,
+        1341529159,
+        1341518495,
+        1338996604,
+        26323130,
+        1341526747
+      ],
+      "waysSummary": {
+        "wayCountSummarized": 15,
+        "summarizedFrom": "relation-way-members",
+        "access": {
+          "(unset)": 9,
+          "yes": 1,
+          "permit": 5
+        },
+        "bus": {
+          "(unset)": 10,
+          "yes": 5
+        },
+        "psv": {
+          "(unset)": 15
+        },
+        "highway": {
+          "tertiary": 8,
+          "service": 7
+        },
+        "waysWithAccessBusOrPsv": [
+          {
+            "id": 369356254,
+            "name": null,
+            "access": "yes",
+            "bus": null,
+            "psv": null,
+            "highway": "service",
+            "vehicle": null,
+            "motor_vehicle": null,
+            "oneway": "yes"
+          },
+          {
+            "id": 906161743,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "highway": "service",
+            "vehicle": null,
+            "motor_vehicle": null,
+            "oneway": "yes"
+          },
+          {
+            "id": 906161758,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "highway": "service",
+            "vehicle": null,
+            "motor_vehicle": null,
+            "oneway": "yes"
+          },
+          {
+            "id": 1340739633,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "highway": "service",
+            "vehicle": null,
+            "motor_vehicle": null,
+            "oneway": "yes"
+          },
+          {
+            "id": 1342408590,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "highway": "service",
+            "vehicle": null,
+            "motor_vehicle": null,
+            "oneway": "yes"
+          },
+          {
+            "id": 1342409930,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "highway": "service",
+            "vehicle": null,
+            "motor_vehicle": null,
+            "oneway": "yes"
+          }
+        ],
+        "waysWithAccessBusOrPsvCount": 6
+      },
+      "file": "osm-relation-18396569.json"
+    },
+    {
+      "id": 18396568,
+      "label": "route17 日の出七丁目⇒東京電力⇒新浦安駅 (seed)",
+      "ok": true,
+      "source": "api.openstreetmap.org/0.6",
+      "name": "東京ベイシティバス17系統 日の出七丁目⇒東京電力⇒新浦安駅",
+      "tags": {
+        "name": "東京ベイシティバス17系統 日の出七丁目⇒東京電力⇒新浦安駅",
+        "network": "日の出線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "17",
+        "route": "bus",
+        "type": "route"
+      },
+      "memberCount": 21,
+      "wayMemberCount": 11,
+      "wayElementCount": 11,
+      "stopRoleCount": 0,
+      "platformMemberCount": 10,
+      "nodeElementCount": 104,
+      "memberRoles": {
+        "platform_entry_only": 1,
+        "platform": 8,
+        "platform_exit_only": 1,
+        "": 11
+      },
+      "platformNames": [
+        "日の出七丁目",
+        "順天堂大学・日の出東口",
+        "アールフォーラム",
+        "日の出東",
+        "日の出小学校",
+        "東京電力",
+        "日の出保育園入口",
+        "明海大学前",
+        "入船中央エステート",
+        "新浦安駅"
+      ],
+      "platformsDetail": [
+        {
+          "role": "platform_entry_only",
+          "type": "node",
+          "ref": 1312616409,
+          "name": "日の出七丁目",
+          "lat": 35.6425331,
+          "lon": 139.9344894,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "covered": "yes",
+            "highway": "bus_stop",
+            "name": "日の出七丁目",
+            "operator": "東京ベイシティ交通",
+            "passenger_information_display": "yes",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6813929340,
+          "name": "順天堂大学・日の出東口",
+          "lat": 35.6443817,
+          "lon": 139.932187,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "順天堂大学・日の出東口",
+            "operator": "東京ベイシティ交通",
+            "passenger_information_display": "yes",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6813929341,
+          "name": "アールフォーラム",
+          "lat": 35.6451204,
+          "lon": 139.9312439,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "covered": "yes",
+            "highway": "bus_stop",
+            "name": "アールフォーラム",
+            "operator": "東京ベイシティ交通",
+            "passenger_information_display": "yes",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6813929342,
+          "name": "日の出東",
+          "lat": 35.6461639,
+          "lon": 139.9299411,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "covered": "yes",
+            "highway": "bus_stop",
+            "name": "日の出東",
+            "operator": "東京ベイシティ交通",
+            "passenger_information_display": "yes",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6813929344,
+          "name": "日の出小学校",
+          "lat": 35.6481496,
+          "lon": 139.9260477,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "日の出小学校",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6813929348,
+          "name": "東京電力",
+          "lat": 35.649163,
+          "lon": 139.922547,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "東京電力",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 12385819136,
+          "name": "日の出保育園入口",
+          "lat": 35.6483577,
+          "lon": 139.9215759,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "日の出保育園入口",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6813952154,
+          "name": "明海大学前",
+          "lat": 35.6470533,
+          "lon": 139.9208307,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "departures_board": "timetable",
+            "highway": "bus_stop",
+            "name": "明海大学前",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform",
+            "route_ref": "17",
+            "shelter": "no"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1312711918,
+          "name": "入船中央エステート",
+          "lat": 35.648721,
+          "lon": 139.9166753,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "入船中央エステート",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform_exit_only",
+          "type": "node",
+          "ref": 8415001163,
+          "name": "新浦安駅",
+          "lat": 35.649411,
+          "lon": 139.9142448,
+          "local_ref": "X",
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "local_ref": "X",
+            "name": "新浦安駅",
+            "note": "降車専用",
+            "operator": "京成トランジットバス;東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        }
+      ],
+      "wayMemberIds": [
+        1341526747,
+        26323130,
+        1338996604,
+        1341518495,
+        1341529158,
+        1341518494,
+        1340739631,
+        847288812,
+        1338996609,
+        720406629,
+        906161755
+      ],
+      "waysSummary": {
+        "wayCountSummarized": 11,
+        "summarizedFrom": "relation-way-members",
+        "access": {
+          "(unset)": 9,
+          "yes": 1,
+          "permit": 1
+        },
+        "bus": {
+          "(unset)": 10,
+          "yes": 1
+        },
+        "psv": {
+          "(unset)": 11
+        },
+        "highway": {
+          "tertiary": 9,
+          "service": 2
+        },
+        "waysWithAccessBusOrPsv": [
+          {
+            "id": 720406629,
+            "name": null,
+            "access": "yes",
+            "bus": null,
+            "psv": null,
+            "highway": "service",
+            "vehicle": null,
+            "motor_vehicle": null,
+            "oneway": "yes"
+          },
+          {
+            "id": 906161755,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "highway": "service",
+            "vehicle": null,
+            "motor_vehicle": null,
+            "oneway": "yes"
+          }
+        ],
+        "waysWithAccessBusOrPsvCount": 2
+      },
+      "file": "osm-relation-18396568.json"
+    },
+    {
+      "id": 18396583,
+      "label": null,
+      "ok": true,
+      "source": "overpass",
+      "name": "東京ベイシティバス17系統 新浦安駅⇒東京電力・プラウド新浦安パークマリーナ⇒ベイシティ浦安",
+      "tags": {
+        "name": "東京ベイシティバス17系統 新浦安駅⇒東京電力・プラウド新浦安パークマリーナ⇒ベイシティ浦安",
+        "network": "日の出線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "17",
+        "route": "bus",
+        "type": "route"
+      },
+      "memberCount": 32,
+      "wayMemberCount": 18,
+      "wayElementCount": 18,
+      "stopRoleCount": 0,
+      "platformMemberCount": 14,
+      "nodeElementCount": 167,
+      "memberRoles": {
+        "platform_entry_only": 1,
+        "platform": 12,
+        "platform_exit_only": 1,
+        "": 18
+      },
+      "platformNames": [
+        "新浦安駅",
+        "入船中央エステート",
+        "明海大学前",
+        "日の出保育園入口",
+        "東京電力",
+        "日の出小学校",
+        "日の出東",
+        "アールフォーラム",
+        "順天堂大学・日の出東口",
+        "日の出西",
+        "順天堂大学・日の出正門",
+        "プラウド新浦安パークマリーナ",
+        "日の出中学校",
+        "ベイシティ浦安"
+      ],
+      "platformsDetail": [
+        {
+          "role": "platform_entry_only",
+          "type": "node",
+          "ref": 8415001167,
+          "name": "新浦安駅",
+          "lat": 35.649709,
+          "lon": 139.9136809,
+          "local_ref": "C",
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "local_ref": "C",
+            "name": "新浦安駅",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11425579726,
+          "name": "入船中央エステート",
+          "lat": 35.6489816,
+          "lon": 139.9168586,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "covered": "yes",
+            "highway": "bus_stop",
+            "name": "入船中央エステート",
+            "operator": "東京ベイシティ交通",
+            "passenger_information_display": "yes",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6813952155,
+          "name": "明海大学前",
+          "lat": 35.6469394,
+          "lon": 139.920555,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "明海大学前",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform",
+            "route_ref": "17"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 12385819137,
+          "name": "日の出保育園入口",
+          "lat": 35.6483768,
+          "lon": 139.9214351,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "日の出保育園入口",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6813929347,
+          "name": "東京電力",
+          "lat": 35.649751,
+          "lon": 139.9230892,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "東京電力",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6813929343,
+          "name": "日の出小学校",
+          "lat": 35.6478427,
+          "lon": 139.9265958,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "日の出小学校",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11581215015,
+          "name": "日の出東",
+          "lat": 35.6459953,
+          "lon": 139.9303287,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "日の出東",
+            "operator": "東京ベイシティ交通",
+            "passenger_information_display": "yes",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11425363969,
+          "name": "アールフォーラム",
+          "lat": 35.6452217,
+          "lon": 139.931303,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "アールフォーラム",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6813929339,
+          "name": "順天堂大学・日の出東口",
+          "lat": 35.6438084,
+          "lon": 139.9330787,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "順天堂大学・日の出東口",
+            "operator": "東京ベイシティ交通",
+            "passenger_information_display": "yes",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6899769125,
+          "name": "日の出西",
+          "lat": 35.6418241,
+          "lon": 139.9325281,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "日の出西",
+            "operator": "東京ベイシティ交通",
+            "passenger_information_display": "yes",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 12385704998,
+          "name": "順天堂大学・日の出正門",
+          "lat": 35.6435074,
+          "lon": 139.9294294,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "順天堂大学・日の出正門",
+            "old_name": "日の出南小学校",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1312616404,
+          "name": "プラウド新浦安パークマリーナ",
+          "lat": 35.6445303,
+          "lon": 139.9281425,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "covered": "yes",
+            "highway": "bus_stop",
+            "name": "プラウド新浦安パークマリーナ",
+            "old_name": "日航浦安",
+            "operator": "東京ベイシティ交通",
+            "passenger_information_display": "yes",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1312616405,
+          "name": "日の出中学校",
+          "lat": 35.6457915,
+          "lon": 139.9265606,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "covered": "yes",
+            "highway": "bus_stop",
+            "name": "日の出中学校",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform_exit_only",
+          "type": "node",
+          "ref": 1312616418,
+          "name": "ベイシティ浦安",
+          "lat": 35.6455707,
+          "lon": 139.9248818,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "covered": "yes",
+            "highway": "bus_stop",
+            "name": "ベイシティ浦安",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        }
+      ],
+      "wayMemberIds": [
+        906161758,
+        1342408590,
+        1342409930,
+        1340739633,
+        906161743,
+        369356254,
+        906161757,
+        720406630,
+        1338996611,
+        720406627,
+        1341529159,
+        1341518495,
+        1338996604,
+        26323130,
+        1341526746,
+        1243156093,
+        1338996598,
+        221344566
+      ],
+      "waysSummary": {
+        "wayCountSummarized": 18,
+        "summarizedFrom": "relation-way-members",
+        "access": {
+          "(unset)": 12,
+          "yes": 1,
+          "permit": 5
+        },
+        "bus": {
+          "(unset)": 13,
+          "yes": 5
+        },
+        "psv": {
+          "(unset)": 18
+        },
+        "highway": {
+          "tertiary": 11,
+          "service": 7
+        },
+        "waysWithAccessBusOrPsv": [
+          {
+            "id": 369356254,
+            "name": null,
+            "access": "yes",
+            "bus": null,
+            "psv": null,
+            "highway": "service",
+            "vehicle": null,
+            "motor_vehicle": null,
+            "oneway": "yes"
+          },
+          {
+            "id": 906161743,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "highway": "service",
+            "vehicle": null,
+            "motor_vehicle": null,
+            "oneway": "yes"
+          },
+          {
+            "id": 906161758,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "highway": "service",
+            "vehicle": null,
+            "motor_vehicle": null,
+            "oneway": "yes"
+          },
+          {
+            "id": 1340739633,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "highway": "service",
+            "vehicle": null,
+            "motor_vehicle": null,
+            "oneway": "yes"
+          },
+          {
+            "id": 1342408590,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "highway": "service",
+            "vehicle": null,
+            "motor_vehicle": null,
+            "oneway": "yes"
+          },
+          {
+            "id": 1342409930,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "highway": "service",
+            "vehicle": null,
+            "motor_vehicle": null,
+            "oneway": "yes"
+          }
+        ],
+        "waysWithAccessBusOrPsvCount": 6
+      },
+      "file": "osm-relation-18396583.json"
+    }
+  ],
+  "refProbe17": [
+    {
+      "id": 18396568,
+      "type": "relation",
+      "tags": {
+        "name": "東京ベイシティバス17系統 日の出七丁目⇒東京電力⇒新浦安駅",
+        "network": "日の出線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "17",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "id": 18396569,
+      "type": "relation",
+      "tags": {
+        "name": "東京ベイシティバス17系統 新浦安駅⇒東京電力⇒日の出七丁目",
+        "network": "日の出線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "17",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "id": 18396583,
+      "type": "relation",
+      "tags": {
+        "name": "東京ベイシティバス17系統 新浦安駅⇒東京電力・プラウド新浦安パークマリーナ⇒ベイシティ浦安",
+        "network": "日の出線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "17",
+        "route": "bus",
+        "type": "route"
+      }
+    }
+  ],
+  "refProbe16": [
+    {
+      "id": 18396562,
+      "type": "relation",
+      "tags": {
+        "name": "東京ベイシティバス16系統 日の出七丁目⇒プラウド新浦安パークマリーナ⇒新浦安駅",
+        "network": "日の出線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "16",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "id": 18396563,
+      "type": "relation",
+      "tags": {
+        "name": "東京ベイシティバス16系統 新浦安駅⇒プラウド新浦安パークマリーナ⇒日の出七丁目",
+        "network": "日の出線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "16",
+        "route": "bus",
+        "type": "route"
+      }
+    }
+  ],
+  "platformProbe": [
+    {
+      "id": 18352418,
+      "type": "relation",
+      "tags": {
+        "name": "浦安市おさんぽバス じゅんかい線（つつじルート）",
+        "operator": "浦安市コミュニティバス",
+        "public_transport:version": "2",
+        "ref": "じゅんかい線",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "id": 18352419,
+      "type": "relation",
+      "tags": {
+        "name": "浦安市おさんぽバス じゅんかい線（いちょうルート）",
+        "operator": "浦安市コミュニティバス",
+        "public_transport:version": "2",
+        "ref": "じゅんかい線",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "id": 18396568,
+      "type": "relation",
+      "tags": {
+        "name": "東京ベイシティバス17系統 日の出七丁目⇒東京電力⇒新浦安駅",
+        "network": "日の出線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "17",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "id": 18396569,
+      "type": "relation",
+      "tags": {
+        "name": "東京ベイシティバス17系統 新浦安駅⇒東京電力⇒日の出七丁目",
+        "network": "日の出線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "17",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "id": 18396583,
+      "type": "relation",
+      "tags": {
+        "name": "東京ベイシティバス17系統 新浦安駅⇒東京電力・プラウド新浦安パークマリーナ⇒ベイシティ浦安",
+        "network": "日の出線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "17",
+        "route": "bus",
+        "type": "route"
+      }
+    }
+  ],
+  "fetchedIds": [
+    18396569,
+    18396568,
+    18396583
+  ],
+  "discoveredBeyondSeeds": [
+    18396583
+  ],
+  "nameChecks": {
+    "18396568": {
+      "label": "route17 日の出七丁目⇒東京電力⇒新浦安駅 (seed)",
+      "name": "東京ベイシティバス17系統 日の出七丁目⇒東京電力⇒新浦安駅",
+      "stopCount": 10,
+      "allNames": [
+        "日の出七丁目",
+        "順天堂大学・日の出東口",
+        "アールフォーラム",
+        "日の出東",
+        "日の出小学校",
+        "東京電力",
+        "日の出保育園入口",
+        "明海大学前",
+        "入船中央エステート",
+        "新浦安駅"
+      ],
+      "hits": [
+        {
+          "needle": "新浦安駅",
+          "found": true,
+          "matches": [
+            "新浦安駅"
+          ]
+        },
+        {
+          "needle": "日の出七丁目",
+          "found": true,
+          "matches": [
+            "日の出七丁目"
+          ]
+        },
+        {
+          "needle": "ベイシティ浦安",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "日の出東",
+          "found": true,
+          "matches": [
+            "順天堂大学・日の出東口",
+            "日の出東"
+          ]
+        },
+        {
+          "needle": "東京電力",
+          "found": true,
+          "matches": [
+            "東京電力"
+          ]
+        },
+        {
+          "needle": "日の出小学校",
+          "found": true,
+          "matches": [
+            "日の出小学校"
+          ]
+        },
+        {
+          "needle": "日の出保育園入口",
+          "found": true,
+          "matches": [
+            "日の出保育園入口"
+          ]
+        },
+        {
+          "needle": "アールフォーラム",
+          "found": true,
+          "matches": [
+            "アールフォーラム"
+          ]
+        },
+        {
+          "needle": "順天堂大学",
+          "found": true,
+          "matches": [
+            "順天堂大学・日の出東口"
+          ]
+        },
+        {
+          "needle": "日の出 東口",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "日の出正門",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "プラウド新浦安パークマリーナ",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "日の出中学校",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "日の出西",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "明海大学",
+          "found": true,
+          "matches": [
+            "明海大学前"
+          ]
+        },
+        {
+          "needle": "入船中央エステート",
+          "found": true,
+          "matches": [
+            "入船中央エステート"
+          ]
+        },
+        {
+          "needle": "海風の街",
+          "found": false,
+          "matches": []
+        }
+      ]
+    },
+    "18396569": {
+      "label": "route17 新浦安駅⇒東京電力⇒日の出七丁目 (seed)",
+      "name": "東京ベイシティバス17系統 新浦安駅⇒東京電力⇒日の出七丁目",
+      "stopCount": 10,
+      "allNames": [
+        "新浦安駅",
+        "入船中央エステート",
+        "明海大学前",
+        "日の出保育園入口",
+        "東京電力",
+        "日の出小学校",
+        "日の出東",
+        "アールフォーラム",
+        "順天堂大学・日の出東口",
+        "日の出七丁目"
+      ],
+      "hits": [
+        {
+          "needle": "新浦安駅",
+          "found": true,
+          "matches": [
+            "新浦安駅"
+          ]
+        },
+        {
+          "needle": "日の出七丁目",
+          "found": true,
+          "matches": [
+            "日の出七丁目"
+          ]
+        },
+        {
+          "needle": "ベイシティ浦安",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "日の出東",
+          "found": true,
+          "matches": [
+            "日の出東",
+            "順天堂大学・日の出東口"
+          ]
+        },
+        {
+          "needle": "東京電力",
+          "found": true,
+          "matches": [
+            "東京電力"
+          ]
+        },
+        {
+          "needle": "日の出小学校",
+          "found": true,
+          "matches": [
+            "日の出小学校"
+          ]
+        },
+        {
+          "needle": "日の出保育園入口",
+          "found": true,
+          "matches": [
+            "日の出保育園入口"
+          ]
+        },
+        {
+          "needle": "アールフォーラム",
+          "found": true,
+          "matches": [
+            "アールフォーラム"
+          ]
+        },
+        {
+          "needle": "順天堂大学",
+          "found": true,
+          "matches": [
+            "順天堂大学・日の出東口"
+          ]
+        },
+        {
+          "needle": "日の出 東口",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "日の出正門",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "プラウド新浦安パークマリーナ",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "日の出中学校",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "日の出西",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "明海大学",
+          "found": true,
+          "matches": [
+            "明海大学前"
+          ]
+        },
+        {
+          "needle": "入船中央エステート",
+          "found": true,
+          "matches": [
+            "入船中央エステート"
+          ]
+        },
+        {
+          "needle": "海風の街",
+          "found": false,
+          "matches": []
+        }
+      ]
+    },
+    "18396583": {
+      "label": null,
+      "name": "東京ベイシティバス17系統 新浦安駅⇒東京電力・プラウド新浦安パークマリーナ⇒ベイシティ浦安",
+      "stopCount": 14,
+      "allNames": [
+        "新浦安駅",
+        "入船中央エステート",
+        "明海大学前",
+        "日の出保育園入口",
+        "東京電力",
+        "日の出小学校",
+        "日の出東",
+        "アールフォーラム",
+        "順天堂大学・日の出東口",
+        "日の出西",
+        "順天堂大学・日の出正門",
+        "プラウド新浦安パークマリーナ",
+        "日の出中学校",
+        "ベイシティ浦安"
+      ],
+      "hits": [
+        {
+          "needle": "新浦安駅",
+          "found": true,
+          "matches": [
+            "新浦安駅"
+          ]
+        },
+        {
+          "needle": "日の出七丁目",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "ベイシティ浦安",
+          "found": true,
+          "matches": [
+            "ベイシティ浦安"
+          ]
+        },
+        {
+          "needle": "日の出東",
+          "found": true,
+          "matches": [
+            "日の出東",
+            "順天堂大学・日の出東口"
+          ]
+        },
+        {
+          "needle": "東京電力",
+          "found": true,
+          "matches": [
+            "東京電力"
+          ]
+        },
+        {
+          "needle": "日の出小学校",
+          "found": true,
+          "matches": [
+            "日の出小学校"
+          ]
+        },
+        {
+          "needle": "日の出保育園入口",
+          "found": true,
+          "matches": [
+            "日の出保育園入口"
+          ]
+        },
+        {
+          "needle": "アールフォーラム",
+          "found": true,
+          "matches": [
+            "アールフォーラム"
+          ]
+        },
+        {
+          "needle": "順天堂大学",
+          "found": true,
+          "matches": [
+            "順天堂大学・日の出東口",
+            "順天堂大学・日の出正門"
+          ]
+        },
+        {
+          "needle": "日の出 東口",
+          "found": false,
+          "matches": []
+        },
+        {
+          "needle": "日の出正門",
+          "found": true,
+          "matches": [
+            "順天堂大学・日の出正門"
+          ]
+        },
+        {
+          "needle": "プラウド新浦安パークマリーナ",
+          "found": true,
+          "matches": [
+            "プラウド新浦安パークマリーナ"
+          ]
+        },
+        {
+          "needle": "日の出中学校",
+          "found": true,
+          "matches": [
+            "日の出中学校"
+          ]
+        },
+        {
+          "needle": "日の出西",
+          "found": true,
+          "matches": [
+            "日の出西"
+          ]
+        },
+        {
+          "needle": "明海大学",
+          "found": true,
+          "matches": [
+            "明海大学前"
+          ]
+        },
+        {
+          "needle": "入船中央エステート",
+          "found": true,
+          "matches": [
+            "入船中央エステート"
+          ]
+        },
+        {
+          "needle": "海風の街",
+          "found": false,
+          "matches": []
+        }
+      ]
+    }
+  }
+}

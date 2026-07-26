@@ -1,0 +1,20 @@
+ACCEPT-route17 | stops 10 | trips 488 | terminal 新浦安駅 | berth 17,01 | course 0008200282 | symbols (無印) | listingLegend 17 | departureBerth 17
+    新浦安駅 > 入船中央エステート > 明海大学前 > 日の出保育園入口 > 東京電力 > 日の出小学校 > 日の出東 > アールフォーラム > 順天堂大学・日の出 東口 > 日の出七丁目
+    route16-exclusive stops: (none) | route17-exclusive stops: 日の出東,東京電力,日の出小学校,日の出保育園入口,アールフォーラム,順天堂大学・日の出 東口
+    listing legend: 無印…【１７系統】日の出東経由　日の出七丁目行き
+    departure berth: 17 [17]（日の出東経由）日の出七丁目（日の出東・プラウド新浦安パークマリー 符号(無印) -> 系統17 : 無印…【１７系統】日の出東経由　日の出七丁目行き
+ACCEPT-route17 | stops 14 | trips 164 | terminal 新浦安駅 | berth 17,01,02 | course 0008200283 | symbols ベ | listingLegend 17 | departureBerth 17
+    新浦安駅 > 入船中央エステート > 明海大学前 > 日の出保育園入口 > 東京電力 > 日の出小学校 > 日の出東 > アールフォーラム > 順天堂大学・日の出 東口 > 日の出西 > 順天堂大学・日の出 正門 > プラウド新浦安パークマリーナ > 日の出中学校 > ベイシティ浦安
+    route16-exclusive stops: (none) | route17-exclusive stops: 日の出東,東京電力,日の出小学校,日の出保育園入口,アールフォーラム,順天堂大学・日の出 東口
+    listing legend: ベ…【１７系統】日の出東・プラウド新浦安パークマリーナ経由　ベイシティ浦安行き＜★；深夜バス（運賃倍額）＞
+    departure berth: 17 [17]（日の出東経由）日の出七丁目（日の出東・プラウド新浦安パークマリー 符号ベ -> 系統17 : ベ…【１７系統】日の出東・プラウド新浦安パークマリーナ経由　ベイシティ浦安行き＜★；深夜バス（運賃倍額）＞
+ACCEPT-route17 | stops 10 | trips 531 | terminal 日の出七丁目 | berth 17,02 | course 0008200281 | symbols (無印) | listingLegend 17 | departureBerth 17
+    日の出七丁目 > 順天堂大学・日の出 東口 > アールフォーラム > 日の出東 > 日の出小学校 > 東京電力 > 日の出保育園入口 > 明海大学前 > 入船中央エステート > 新浦安駅
+    route16-exclusive stops: (none) | route17-exclusive stops: 日の出東,東京電力,日の出小学校,日の出保育園入口,アールフォーラム,順天堂大学・日の出 東口
+    listing legend: 無印…【１７系統】東京電力経由　新浦安駅行き
+    departure berth: 17 [17]（東京電力経由）新浦安駅行 時刻表 符号(無印) -> 系統17 : 無印…【１７系統】東京電力経由　新浦安駅行き
+REJECT-route-16 | stops 10 | trips 128 | terminal プラウド新浦安パークマリーナ | berth 02 | course 0008200279 | symbols (無印) | listingLegend 16 | departureBerth 16
+    日の出七丁目 > 日の出西 > 順天堂大学・日の出 正門 > プラウド新浦安パークマリーナ > 日の出中学校 > ベイシティ浦安 > 海風の街 > 明海大学前 > 入船中央エステート > 新浦安駅
+    route16-exclusive stops: 海風の街 | route17-exclusive stops: (none)
+    listing legend: 無印…【１６系統】海風の街経由　新浦安駅行き
+    departure berth: 01 符号(無印) -> 系統16 : 無印…【１６系統】プラウド新浦安パークマリーナ・海風の街経由　新浦安駅行き

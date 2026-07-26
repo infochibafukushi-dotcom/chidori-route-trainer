@@ -153,6 +153,17 @@
         './hinode-line-stop-images-v1.js?v=108',
         './hinode-line-route-v1.js?v=108'
       ]
+    },
+    // route-17 は route-16 と同じ「日の出線」だが別系統。資産名・グローバル名とも別系統で分離する。
+    'route-17': {
+      css: ['./hinode-line-17-stop-images-v1.css?v=109'],
+      js: [
+        './hinode-line-17-platforms-v1.js?v=109',
+        './hinode-line-17-path-v1.js?v=109',
+        './hinode-line-17-path-policy-v1.js?v=109',
+        './hinode-line-17-stop-images-v1.js?v=109',
+        './hinode-line-17-route-v1.js?v=109'
+      ]
     }
   };
 

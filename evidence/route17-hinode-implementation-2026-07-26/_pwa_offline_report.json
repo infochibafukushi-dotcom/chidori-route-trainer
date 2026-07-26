@@ -1,0 +1,193 @@
+{
+  "startedAt": "2026-07-26T12:58:17.992Z",
+  "expectedCacheName": "chidori-route-map-v109",
+  "swFileCacheName": "chidori-route-map-v109",
+  "indexLoaderTag": "109",
+  "failures": [],
+  "pass": true,
+  "swRegistration": {
+    "supported": true,
+    "scope": "http://127.0.0.1:8851/",
+    "scriptURL": "http://127.0.0.1:8851/service-worker.js?v=105",
+    "controlled": true
+  },
+  "online": {
+    "17-hinode-nanachome": {
+      "stops": 10,
+      "stopNames": [
+        "新浦安駅",
+        "入船中央エステート",
+        "明海大学前",
+        "日の出保育園入口",
+        "東京電力",
+        "日の出小学校",
+        "日の出東",
+        "アールフォーラム",
+        "順天堂大学・日の出 東口",
+        "日の出七丁目"
+      ],
+      "pathPoints": 176,
+      "pathHash": "78599ef2fd60f7d2e9c81fdd09287007387937d4384a028e3cb54628b6de3af5",
+      "pathSource": "osm-relation-18396569+startHint-shinurayasu",
+      "pathInvalid": false
+    },
+    "17-baycity-urayasu": {
+      "stops": 14,
+      "stopNames": [
+        "新浦安駅",
+        "入船中央エステート",
+        "明海大学前",
+        "日の出保育園入口",
+        "東京電力",
+        "日の出小学校",
+        "日の出東",
+        "アールフォーラム",
+        "順天堂大学・日の出 東口",
+        "日の出西",
+        "順天堂大学・日の出 正門",
+        "プラウド新浦安パークマリーナ",
+        "日の出中学校",
+        "ベイシティ浦安"
+      ],
+      "pathPoints": 239,
+      "pathHash": "72e9bcc87c8ed02d011b678b58351ae4063f8f84f2a3e812907059c10396ad35",
+      "pathSource": "osm-relation-18396583+startHint-shinurayasu",
+      "pathInvalid": false
+    },
+    "17-shinurayasu": {
+      "stops": 10,
+      "stopNames": [
+        "日の出七丁目",
+        "順天堂大学・日の出 東口",
+        "アールフォーラム",
+        "日の出東",
+        "日の出小学校",
+        "東京電力",
+        "日の出保育園入口",
+        "明海大学前",
+        "入船中央エステート",
+        "新浦安駅"
+      ],
+      "pathPoints": 157,
+      "pathHash": "4bd7f2479a338adf1628e75213029d55af59161341ae291a705b293fa5addc86",
+      "pathSource": "osm-relation-18396568+startHint-hinode-nanachome",
+      "pathInvalid": false
+    }
+  },
+  "caches": {
+    "cacheKeys": [
+      "chidori-route-map-v109"
+    ],
+    "staleAppCaches": [],
+    "entryCount": 70,
+    "route17Present": [
+      "./hinode-line-17-stop-images-v1.css?v=109",
+      "./hinode-line-17-platforms-v1.js?v=109",
+      "./hinode-line-17-path-v1.js?v=109",
+      "./hinode-line-17-path-policy-v1.js?v=109",
+      "./hinode-line-17-stop-images-v1.js?v=109",
+      "./hinode-line-17-route-v1.js?v=109"
+    ],
+    "route17Missing": [],
+    "route16Present": [],
+    "route17WrongVersion": [],
+    "route16WrongVersion": []
+  },
+  "offlineBooted": true,
+  "offline": {
+    "17-hinode-nanachome": {
+      "stops": 10,
+      "stopNames": [
+        "新浦安駅",
+        "入船中央エステート",
+        "明海大学前",
+        "日の出保育園入口",
+        "東京電力",
+        "日の出小学校",
+        "日の出東",
+        "アールフォーラム",
+        "順天堂大学・日の出 東口",
+        "日の出七丁目"
+      ],
+      "pathPoints": 176,
+      "pathHash": "78599ef2fd60f7d2e9c81fdd09287007387937d4384a028e3cb54628b6de3af5",
+      "pathSource": "osm-relation-18396569+startHint-shinurayasu",
+      "pathInvalid": false
+    },
+    "17-baycity-urayasu": {
+      "stops": 14,
+      "stopNames": [
+        "新浦安駅",
+        "入船中央エステート",
+        "明海大学前",
+        "日の出保育園入口",
+        "東京電力",
+        "日の出小学校",
+        "日の出東",
+        "アールフォーラム",
+        "順天堂大学・日の出 東口",
+        "日の出西",
+        "順天堂大学・日の出 正門",
+        "プラウド新浦安パークマリーナ",
+        "日の出中学校",
+        "ベイシティ浦安"
+      ],
+      "pathPoints": 239,
+      "pathHash": "72e9bcc87c8ed02d011b678b58351ae4063f8f84f2a3e812907059c10396ad35",
+      "pathSource": "osm-relation-18396583+startHint-shinurayasu",
+      "pathInvalid": false
+    },
+    "17-shinurayasu": {
+      "stops": 10,
+      "stopNames": [
+        "日の出七丁目",
+        "順天堂大学・日の出 東口",
+        "アールフォーラム",
+        "日の出東",
+        "日の出小学校",
+        "東京電力",
+        "日の出保育園入口",
+        "明海大学前",
+        "入船中央エステート",
+        "新浦安駅"
+      ],
+      "pathPoints": 157,
+      "pathHash": "4bd7f2479a338adf1628e75213029d55af59161341ae291a705b293fa5addc86",
+      "pathSource": "osm-relation-18396568+startHint-hinode-nanachome",
+      "pathInvalid": false
+    }
+  },
+  "hashComparison": {
+    "17-hinode-nanachome": {
+      "expectedPathHash": "78599ef2fd60f7d2e9c81fdd09287007387937d4384a028e3cb54628b6de3af5",
+      "onlinePathHash": "78599ef2fd60f7d2e9c81fdd09287007387937d4384a028e3cb54628b6de3af5",
+      "offlinePathHash": "78599ef2fd60f7d2e9c81fdd09287007387937d4384a028e3cb54628b6de3af5",
+      "onlineMatches": true,
+      "offlineMatches": true,
+      "stopsOnline": 10,
+      "stopsOffline": 10,
+      "stopOrderIdentical": true
+    },
+    "17-baycity-urayasu": {
+      "expectedPathHash": "72e9bcc87c8ed02d011b678b58351ae4063f8f84f2a3e812907059c10396ad35",
+      "onlinePathHash": "72e9bcc87c8ed02d011b678b58351ae4063f8f84f2a3e812907059c10396ad35",
+      "offlinePathHash": "72e9bcc87c8ed02d011b678b58351ae4063f8f84f2a3e812907059c10396ad35",
+      "onlineMatches": true,
+      "offlineMatches": true,
+      "stopsOnline": 14,
+      "stopsOffline": 14,
+      "stopOrderIdentical": true
+    },
+    "17-shinurayasu": {
+      "expectedPathHash": "4bd7f2479a338adf1628e75213029d55af59161341ae291a705b293fa5addc86",
+      "onlinePathHash": "4bd7f2479a338adf1628e75213029d55af59161341ae291a705b293fa5addc86",
+      "offlinePathHash": "4bd7f2479a338adf1628e75213029d55af59161341ae291a705b293fa5addc86",
+      "onlineMatches": true,
+      "offlineMatches": true,
+      "stopsOnline": 10,
+      "stopsOffline": 10,
+      "stopOrderIdentical": true
+    }
+  },
+  "finishedAt": "2026-07-26T12:58:25.833Z"
+}

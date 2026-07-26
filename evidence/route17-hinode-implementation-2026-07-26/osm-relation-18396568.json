@@ -1,0 +1,1737 @@
+{
+  "version": "0.6",
+  "generator": "openstreetmap-cgimap 2.1.0 (3771511 spike-08.openstreetmap.org)",
+  "copyright": "OpenStreetMap and contributors",
+  "attribution": "http://www.openstreetmap.org/copyright",
+  "license": "http://opendatacommons.org/licenses/odbl/1-0/",
+  "elements": [
+    {
+      "type": "node",
+      "id": 288384935,
+      "lat": 35.650126,
+      "lon": 139.9150322,
+      "timestamp": "2024-01-20T05:57:41Z",
+      "version": 4,
+      "changeset": 146466364,
+      "user": "penguin_the_dawn",
+      "uid": 2929244,
+      "tags": {
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 288384937,
+      "lat": 35.6498949,
+      "lon": 139.9147479,
+      "timestamp": "2021-02-11T12:53:47Z",
+      "version": 2,
+      "changeset": 99108776,
+      "user": "gyotoku810",
+      "uid": 2738487
+    },
+    {
+      "type": "node",
+      "id": 288384996,
+      "lat": 35.6497221,
+      "lon": 139.914542,
+      "timestamp": "2024-11-24T12:01:18Z",
+      "version": 5,
+      "changeset": 159530645,
+      "user": "Netzach",
+      "uid": 2352862
+    },
+    {
+      "type": "node",
+      "id": 288385100,
+      "lat": 35.6500254,
+      "lon": 139.9149057,
+      "timestamp": "2021-02-11T12:53:47Z",
+      "version": 2,
+      "changeset": 99108776,
+      "user": "gyotoku810",
+      "uid": 2738487
+    },
+    {
+      "type": "node",
+      "id": 288389838,
+      "lat": 35.6466475,
+      "lon": 139.9203003,
+      "timestamp": "2008-08-16T09:22:53Z",
+      "version": 2,
+      "changeset": 274655,
+      "user": "kiya",
+      "uid": 22052
+    },
+    {
+      "type": "node",
+      "id": 288390215,
+      "lat": 35.6468638,
+      "lon": 139.9205578,
+      "timestamp": "2008-08-16T09:22:53Z",
+      "version": 1,
+      "changeset": 274655,
+      "user": "kiya",
+      "uid": 22052
+    },
+    {
+      "type": "node",
+      "id": 288390218,
+      "lat": 35.6472537,
+      "lon": 139.9208357,
+      "timestamp": "2023-12-17T13:56:13Z",
+      "version": 4,
+      "changeset": 145215950,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 288390221,
+      "lat": 35.647767,
+      "lon": 139.9209041,
+      "timestamp": "2024-11-30T07:18:04Z",
+      "version": 3,
+      "changeset": 159764544,
+      "user": "Netzach",
+      "uid": 2352862
+    },
+    {
+      "type": "node",
+      "id": 288390225,
+      "lat": 35.6485871,
+      "lon": 139.9217764,
+      "timestamp": "2023-12-17T04:06:07Z",
+      "version": 3,
+      "changeset": 145203596,
+      "user": "penguin_the_dawn",
+      "uid": 2929244,
+      "tags": {
+        "highway": "traffic_signals",
+        "traffic_signals": "signal",
+        "traffic_signals:direction": "both"
+      }
+    },
+    {
+      "type": "node",
+      "id": 288390226,
+      "lat": 35.6489228,
+      "lon": 139.9221808,
+      "timestamp": "2023-12-17T04:06:07Z",
+      "version": 2,
+      "changeset": 145203596,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 288390228,
+      "lat": 35.6495352,
+      "lon": 139.9229144,
+      "timestamp": "2023-12-17T04:06:07Z",
+      "version": 2,
+      "changeset": 145203596,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 288390229,
+      "lat": 35.649787,
+      "lon": 139.9232215,
+      "timestamp": "2023-12-17T04:06:07Z",
+      "version": 3,
+      "changeset": 145203596,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 288390231,
+      "lat": 35.6499134,
+      "lon": 139.9236681,
+      "timestamp": "2023-12-17T04:06:07Z",
+      "version": 3,
+      "changeset": 145203596,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 288390232,
+      "lat": 35.6498829,
+      "lon": 139.9238625,
+      "timestamp": "2023-12-17T04:06:07Z",
+      "version": 3,
+      "changeset": 145203596,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 288390245,
+      "lat": 35.6458266,
+      "lon": 139.9304487,
+      "timestamp": "2023-12-17T04:06:07Z",
+      "version": 6,
+      "changeset": 145203596,
+      "user": "penguin_the_dawn",
+      "uid": 2929244,
+      "tags": {
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 288390375,
+      "lat": 35.6470961,
+      "lon": 139.920775,
+      "timestamp": "2023-12-17T13:56:13Z",
+      "version": 5,
+      "changeset": 145215950,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 288390379,
+      "lat": 35.6483163,
+      "lon": 139.9214539,
+      "timestamp": "2023-12-17T04:06:07Z",
+      "version": 2,
+      "changeset": 145203596,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 288390380,
+      "lat": 35.6492486,
+      "lon": 139.9225724,
+      "timestamp": "2023-12-17T04:06:07Z",
+      "version": 2,
+      "changeset": 145203596,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 288390381,
+      "lat": 35.6498676,
+      "lon": 139.9233797,
+      "timestamp": "2023-12-17T04:06:07Z",
+      "version": 3,
+      "changeset": 145203596,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 288390382,
+      "lat": 35.6498153,
+      "lon": 139.9240261,
+      "timestamp": "2023-12-17T04:06:07Z",
+      "version": 3,
+      "changeset": 145203596,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 288390383,
+      "lat": 35.648671,
+      "lon": 139.9254638,
+      "timestamp": "2023-12-17T04:06:07Z",
+      "version": 2,
+      "changeset": 145203596,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 288390385,
+      "lat": 35.6468423,
+      "lon": 139.9277624,
+      "timestamp": "2023-12-17T04:06:07Z",
+      "version": 4,
+      "changeset": 145203596,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 288390388,
+      "lat": 35.6463307,
+      "lon": 139.929762,
+      "timestamp": "2023-12-17T04:06:07Z",
+      "version": 4,
+      "changeset": 145203596,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 288391209,
+      "lat": 35.6469492,
+      "lon": 139.9206557,
+      "timestamp": "2023-12-17T13:56:13Z",
+      "version": 2,
+      "changeset": 145215950,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 288391210,
+      "lat": 35.6476935,
+      "lon": 139.9208772,
+      "timestamp": "2024-11-30T07:18:04Z",
+      "version": 3,
+      "changeset": 159764544,
+      "user": "Netzach",
+      "uid": 2352862
+    },
+    {
+      "type": "node",
+      "id": 288391211,
+      "lat": 35.6480275,
+      "lon": 139.9211059,
+      "timestamp": "2023-12-17T04:06:07Z",
+      "version": 3,
+      "changeset": 145203596,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 288391850,
+      "lat": 35.647451,
+      "lon": 139.9208578,
+      "timestamp": "2023-12-17T04:06:07Z",
+      "version": 7,
+      "changeset": 145203596,
+      "user": "penguin_the_dawn",
+      "uid": 2929244,
+      "tags": {
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1312616409,
+      "lat": 35.6425331,
+      "lon": 139.9344894,
+      "timestamp": "2024-12-10T12:16:51Z",
+      "version": 6,
+      "changeset": 160127137,
+      "user": "Netzach",
+      "uid": 2352862,
+      "tags": {
+        "bus": "yes",
+        "covered": "yes",
+        "highway": "bus_stop",
+        "name": "日の出七丁目",
+        "operator": "東京ベイシティ交通",
+        "passenger_information_display": "yes",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1312711918,
+      "lat": 35.648721,
+      "lon": 139.9166753,
+      "timestamp": "2024-11-30T11:21:19Z",
+      "version": 5,
+      "changeset": 159770310,
+      "user": "Netzach",
+      "uid": 2352862,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "入船中央エステート",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1312776534,
+      "lat": 35.6494508,
+      "lon": 139.9142125,
+      "timestamp": "2024-11-24T12:01:18Z",
+      "version": 4,
+      "changeset": 159530645,
+      "user": "Netzach",
+      "uid": 2352862
+    },
+    {
+      "type": "node",
+      "id": 1336182831,
+      "lat": 35.6475124,
+      "lon": 139.9183306,
+      "timestamp": "2023-12-17T04:06:07Z",
+      "version": 5,
+      "changeset": 145203596,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 1343373247,
+      "lat": 35.6478902,
+      "lon": 139.9209778,
+      "timestamp": "2023-12-17T04:06:07Z",
+      "version": 2,
+      "changeset": 145203596,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 1343373335,
+      "lat": 35.6475235,
+      "lon": 139.9208578,
+      "timestamp": "2023-12-17T04:06:07Z",
+      "version": 3,
+      "changeset": 145203596,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 1343377582,
+      "lat": 35.6499058,
+      "lon": 139.9237673,
+      "timestamp": "2023-12-17T04:06:07Z",
+      "version": 2,
+      "changeset": 145203596,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 1343377593,
+      "lat": 35.6498534,
+      "lon": 139.9239457,
+      "timestamp": "2023-12-17T04:06:07Z",
+      "version": 2,
+      "changeset": 145203596,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 1343377601,
+      "lat": 35.6498349,
+      "lon": 139.9232925,
+      "timestamp": "2023-12-17T04:06:07Z",
+      "version": 2,
+      "changeset": 145203596,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 1343377616,
+      "lat": 35.6498949,
+      "lon": 139.9234669,
+      "timestamp": "2023-12-17T04:06:07Z",
+      "version": 2,
+      "changeset": 145203596,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 1343383588,
+      "lat": 35.6484029,
+      "lon": 139.9258004,
+      "timestamp": "2023-12-17T04:06:07Z",
+      "version": 3,
+      "changeset": 145203596,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 1343383595,
+      "lat": 35.6488579,
+      "lon": 139.9221043,
+      "timestamp": "2023-12-17T04:06:07Z",
+      "version": 2,
+      "changeset": 145203596,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 1343417097,
+      "lat": 35.64702,
+      "lon": 139.9207194,
+      "timestamp": "2024-11-30T07:18:04Z",
+      "version": 3,
+      "changeset": 159764544,
+      "user": "Netzach",
+      "uid": 2352862
+    },
+    {
+      "type": "node",
+      "id": 1666878498,
+      "lat": 35.6430514,
+      "lon": 139.9339221,
+      "timestamp": "2012-03-09T08:36:40Z",
+      "version": 1,
+      "changeset": 10917110,
+      "user": "u277a",
+      "uid": 156122
+    },
+    {
+      "type": "node",
+      "id": 1666878503,
+      "lat": 35.6440448,
+      "lon": 139.9326876,
+      "timestamp": "2023-12-17T04:06:07Z",
+      "version": 4,
+      "changeset": 145203596,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 1700573260,
+      "lat": 35.6463606,
+      "lon": 139.9296722,
+      "timestamp": "2023-12-17T04:06:07Z",
+      "version": 3,
+      "changeset": 145203596,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 1700573261,
+      "lat": 35.6464119,
+      "lon": 139.9294375,
+      "timestamp": "2024-02-03T04:59:50Z",
+      "version": 4,
+      "changeset": 147007808,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 1700573262,
+      "lat": 35.6467361,
+      "lon": 139.9279582,
+      "timestamp": "2023-12-17T04:06:07Z",
+      "version": 3,
+      "changeset": 145203596,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 1700573264,
+      "lat": 35.6467824,
+      "lon": 139.9278563,
+      "timestamp": "2023-12-17T04:06:07Z",
+      "version": 3,
+      "changeset": 145203596,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 2534635816,
+      "lat": 35.6491874,
+      "lon": 139.9162222,
+      "timestamp": "2024-11-30T11:21:19Z",
+      "version": 7,
+      "changeset": 159770310,
+      "user": "Netzach",
+      "uid": 2352862,
+      "tags": {
+        "highway": "traffic_signals",
+        "name": "入船中央",
+        "name:en": "Irifune chuo",
+        "name:ja": "入船中央"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2593542684,
+      "lat": 35.6473414,
+      "lon": 139.9185538,
+      "timestamp": "2024-01-20T05:57:41Z",
+      "version": 3,
+      "changeset": 146466364,
+      "user": "penguin_the_dawn",
+      "uid": 2929244,
+      "tags": {
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3731514476,
+      "lat": 35.6462798,
+      "lon": 139.9198675,
+      "timestamp": "2024-02-06T10:42:20Z",
+      "version": 3,
+      "changeset": 147129319,
+      "user": "penguin_the_dawn",
+      "uid": 2929244,
+      "tags": {
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3731514477,
+      "lat": 35.6463851,
+      "lon": 139.91999,
+      "timestamp": "2024-01-20T05:57:41Z",
+      "version": 3,
+      "changeset": 146466364,
+      "user": "penguin_the_dawn",
+      "uid": 2929244,
+      "tags": {
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6813929340,
+      "lat": 35.6443817,
+      "lon": 139.932187,
+      "timestamp": "2024-12-10T12:16:51Z",
+      "version": 3,
+      "changeset": 160127137,
+      "user": "Netzach",
+      "uid": 2352862,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "順天堂大学・日の出東口",
+        "operator": "東京ベイシティ交通",
+        "passenger_information_display": "yes",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6813929341,
+      "lat": 35.6451204,
+      "lon": 139.9312439,
+      "timestamp": "2024-12-10T12:16:51Z",
+      "version": 5,
+      "changeset": 160127137,
+      "user": "Netzach",
+      "uid": 2352862,
+      "tags": {
+        "bus": "yes",
+        "covered": "yes",
+        "highway": "bus_stop",
+        "name": "アールフォーラム",
+        "operator": "東京ベイシティ交通",
+        "passenger_information_display": "yes",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6813929342,
+      "lat": 35.6461639,
+      "lon": 139.9299411,
+      "timestamp": "2024-12-10T12:16:51Z",
+      "version": 5,
+      "changeset": 160127137,
+      "user": "Netzach",
+      "uid": 2352862,
+      "tags": {
+        "bus": "yes",
+        "covered": "yes",
+        "highway": "bus_stop",
+        "name": "日の出東",
+        "operator": "東京ベイシティ交通",
+        "passenger_information_display": "yes",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6813929344,
+      "lat": 35.6481496,
+      "lon": 139.9260477,
+      "timestamp": "2024-12-10T12:16:51Z",
+      "version": 3,
+      "changeset": 160127137,
+      "user": "Netzach",
+      "uid": 2352862,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "日の出小学校",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6813929345,
+      "lat": 35.6480411,
+      "lon": 139.9262564,
+      "timestamp": "2023-12-17T04:06:07Z",
+      "version": 2,
+      "changeset": 145203596,
+      "user": "penguin_the_dawn",
+      "uid": 2929244,
+      "tags": {
+        "crossing": "marked",
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6813929346,
+      "lat": 35.6471671,
+      "lon": 139.9273507,
+      "timestamp": "2023-12-17T04:06:07Z",
+      "version": 2,
+      "changeset": 145203596,
+      "user": "penguin_the_dawn",
+      "uid": 2929244,
+      "tags": {
+        "crossing": "marked",
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6813929348,
+      "lat": 35.649163,
+      "lon": 139.922547,
+      "timestamp": "2024-11-30T07:18:04Z",
+      "version": 3,
+      "changeset": 159764544,
+      "user": "Netzach",
+      "uid": 2352862,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "東京電力",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6813952154,
+      "lat": 35.6470533,
+      "lon": 139.9208307,
+      "timestamp": "2024-12-10T12:22:54Z",
+      "version": 3,
+      "changeset": 160127366,
+      "user": "Netzach",
+      "uid": 2352862,
+      "tags": {
+        "bus": "yes",
+        "departures_board": "timetable",
+        "highway": "bus_stop",
+        "name": "明海大学前",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform",
+        "route_ref": "17",
+        "shelter": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6816784105,
+      "lat": 35.643558,
+      "lon": 139.9332972,
+      "timestamp": "2023-12-17T04:06:07Z",
+      "version": 2,
+      "changeset": 145203596,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 6816784116,
+      "lat": 35.6455281,
+      "lon": 139.9308282,
+      "timestamp": "2024-01-27T16:25:59Z",
+      "version": 3,
+      "changeset": 146750686,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 6816784123,
+      "lat": 35.6446747,
+      "lon": 139.9318917,
+      "timestamp": "2023-12-17T04:06:07Z",
+      "version": 2,
+      "changeset": 145203596,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 7250841498,
+      "lat": 35.6459056,
+      "lon": 139.9303568,
+      "timestamp": "2023-12-17T04:06:07Z",
+      "version": 2,
+      "changeset": 145203596,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 7250841501,
+      "lat": 35.6456948,
+      "lon": 139.930623,
+      "timestamp": "2023-12-17T04:06:07Z",
+      "version": 2,
+      "changeset": 145203596,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 8415001163,
+      "lat": 35.649411,
+      "lon": 139.9142448,
+      "timestamp": "2024-11-30T11:38:48Z",
+      "version": 4,
+      "changeset": 159770733,
+      "user": "Netzach",
+      "uid": 2352862,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "local_ref": "X",
+        "name": "新浦安駅",
+        "note": "降車専用",
+        "operator": "京成トランジットバス;東京ベイシティ交通",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9956759392,
+      "lat": 35.6500449,
+      "lon": 139.9151399,
+      "timestamp": "2025-02-02T13:58:58Z",
+      "version": 3,
+      "changeset": 162047462,
+      "user": "wvdp",
+      "uid": 436419,
+      "tags": {
+        "crossing": "marked",
+        "crossing:markings": "zebra",
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9956759395,
+      "lat": 35.6500415,
+      "lon": 139.914926,
+      "timestamp": "2025-02-02T13:58:58Z",
+      "version": 2,
+      "changeset": 162047462,
+      "user": "wvdp",
+      "uid": 436419,
+      "tags": {
+        "crossing": "marked",
+        "crossing:markings": "zebra",
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9956759412,
+      "lat": 35.6492843,
+      "lon": 139.9160839,
+      "timestamp": "2025-02-02T13:58:58Z",
+      "version": 3,
+      "changeset": 162047462,
+      "user": "wvdp",
+      "uid": 436419,
+      "tags": {
+        "crossing": "marked",
+        "crossing:markings": "zebra",
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11422662030,
+      "lat": 35.6467582,
+      "lon": 139.9204309,
+      "timestamp": "2023-12-16T12:34:43Z",
+      "version": 1,
+      "changeset": 145182725,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 11424227104,
+      "lat": 35.6462642,
+      "lon": 139.9298901,
+      "timestamp": "2024-02-03T04:59:50Z",
+      "version": 2,
+      "changeset": 147007808,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 11424227105,
+      "lat": 35.6463029,
+      "lon": 139.9298157,
+      "timestamp": "2024-02-03T04:59:50Z",
+      "version": 2,
+      "changeset": 147007808,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 11424227106,
+      "lat": 35.6466952,
+      "lon": 139.9280991,
+      "timestamp": "2023-12-17T04:06:07Z",
+      "version": 1,
+      "changeset": 145203596,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 11424227107,
+      "lat": 35.6467023,
+      "lon": 139.9280582,
+      "timestamp": "2023-12-17T04:06:07Z",
+      "version": 1,
+      "changeset": 145203596,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 11424227108,
+      "lat": 35.6478139,
+      "lon": 139.9265387,
+      "timestamp": "2023-12-17T04:06:07Z",
+      "version": 1,
+      "changeset": 145203596,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 11424227109,
+      "lat": 35.6492704,
+      "lon": 139.9247114,
+      "timestamp": "2023-12-17T04:06:07Z",
+      "version": 1,
+      "changeset": 145203596,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 11424227110,
+      "lat": 35.6497663,
+      "lon": 139.9240999,
+      "timestamp": "2023-12-17T04:06:07Z",
+      "version": 1,
+      "changeset": 145203596,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 11424227111,
+      "lat": 35.6499068,
+      "lon": 139.9235621,
+      "timestamp": "2023-12-17T04:06:07Z",
+      "version": 1,
+      "changeset": 145203596,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 11424227112,
+      "lat": 35.6497259,
+      "lon": 139.9231383,
+      "timestamp": "2023-12-17T04:06:07Z",
+      "version": 1,
+      "changeset": 145203596,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 11424227113,
+      "lat": 35.6478155,
+      "lon": 139.9209315,
+      "timestamp": "2023-12-17T04:06:07Z",
+      "version": 1,
+      "changeset": 145203596,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 11424227114,
+      "lat": 35.6476085,
+      "lon": 139.9208618,
+      "timestamp": "2024-11-30T07:18:04Z",
+      "version": 2,
+      "changeset": 159764544,
+      "user": "Netzach",
+      "uid": 2352862
+    },
+    {
+      "type": "node",
+      "id": 11425579724,
+      "lat": 35.6473262,
+      "lon": 139.9208477,
+      "timestamp": "2023-12-17T13:56:13Z",
+      "version": 1,
+      "changeset": 145215950,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 11425579725,
+      "lat": 35.6471802,
+      "lon": 139.9208102,
+      "timestamp": "2023-12-17T13:56:13Z",
+      "version": 1,
+      "changeset": 145215950,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 11513466440,
+      "lat": 35.6437701,
+      "lon": 139.9330343,
+      "timestamp": "2024-01-13T07:46:03Z",
+      "version": 1,
+      "changeset": 146205138,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 11513466441,
+      "lat": 35.6444055,
+      "lon": 139.932229,
+      "timestamp": "2024-01-13T07:46:03Z",
+      "version": 1,
+      "changeset": 146205138,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 11533169244,
+      "lat": 35.6465405,
+      "lon": 139.9195334,
+      "timestamp": "2024-01-20T05:57:41Z",
+      "version": 1,
+      "changeset": 146466364,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 11581215014,
+      "lat": 35.6460904,
+      "lon": 139.9301188,
+      "timestamp": "2024-02-03T04:59:50Z",
+      "version": 1,
+      "changeset": 147007808,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 11581215016,
+      "lat": 35.6462064,
+      "lon": 139.9299746,
+      "timestamp": "2024-02-03T04:59:50Z",
+      "version": 1,
+      "changeset": 147007808,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 12385819136,
+      "lat": 35.6483577,
+      "lon": 139.9215759,
+      "timestamp": "2024-11-30T07:18:04Z",
+      "version": 1,
+      "changeset": 159764544,
+      "user": "Netzach",
+      "uid": 2352862,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "日の出保育園入口",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12409319218,
+      "lat": 35.642565,
+      "lon": 139.934538,
+      "timestamp": "2024-12-10T12:16:51Z",
+      "version": 1,
+      "changeset": 160127137,
+      "user": "Netzach",
+      "uid": 2352862
+    },
+    {
+      "type": "node",
+      "id": 12969341021,
+      "lat": 35.6479665,
+      "lon": 139.9210428,
+      "timestamp": "2025-07-02T10:57:38Z",
+      "version": 1,
+      "changeset": 168392614,
+      "user": "user_14955076",
+      "uid": 14955076
+    },
+    {
+      "type": "node",
+      "id": 13013345098,
+      "lat": 35.6472326,
+      "lon": 139.9272685,
+      "timestamp": "2025-07-20T09:59:48Z",
+      "version": 1,
+      "changeset": 169187620,
+      "user": "user_14955076",
+      "uid": 14955076
+    },
+    {
+      "type": "node",
+      "id": 13013349013,
+      "lat": 35.6466461,
+      "lon": 139.9283309,
+      "timestamp": "2025-07-20T09:59:48Z",
+      "version": 1,
+      "changeset": 169187620,
+      "user": "user_14955076",
+      "uid": 14955076
+    },
+    {
+      "type": "node",
+      "id": 13013349026,
+      "lat": 35.6466281,
+      "lon": 139.928416,
+      "timestamp": "2025-07-20T09:59:48Z",
+      "version": 1,
+      "changeset": 169187620,
+      "user": "user_14955076",
+      "uid": 14955076
+    },
+    {
+      "type": "node",
+      "id": 13013349027,
+      "lat": 35.6466451,
+      "lon": 139.9283358,
+      "timestamp": "2025-07-20T09:59:48Z",
+      "version": 1,
+      "changeset": 169187620,
+      "user": "user_14955076",
+      "uid": 14955076
+    },
+    {
+      "type": "node",
+      "id": 13013349280,
+      "lat": 35.643128,
+      "lon": 139.9338276,
+      "timestamp": "2025-07-20T09:59:48Z",
+      "version": 1,
+      "changeset": 169187620,
+      "user": "user_14955076",
+      "uid": 14955076,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13013349284,
+      "lat": 35.6429782,
+      "lon": 139.9340148,
+      "timestamp": "2025-07-20T09:59:48Z",
+      "version": 1,
+      "changeset": 169187620,
+      "user": "user_14955076",
+      "uid": 14955076,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13013349290,
+      "lat": 35.6457462,
+      "lon": 139.9305551,
+      "timestamp": "2025-07-20T09:59:48Z",
+      "version": 1,
+      "changeset": 169187620,
+      "user": "user_14955076",
+      "uid": 14955076,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13013349589,
+      "lat": 35.6492572,
+      "lon": 139.924728,
+      "timestamp": "2025-07-20T09:59:48Z",
+      "version": 1,
+      "changeset": 169187620,
+      "user": "user_14955076",
+      "uid": 14955076
+    },
+    {
+      "type": "node",
+      "id": 13026138624,
+      "lat": 35.6463689,
+      "lon": 139.9197533,
+      "timestamp": "2025-07-26T07:56:58Z",
+      "version": 1,
+      "changeset": 169491196,
+      "user": "user_14955076",
+      "uid": 14955076,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13026138669,
+      "lat": 35.6486275,
+      "lon": 139.9218254,
+      "timestamp": "2025-07-26T07:56:58Z",
+      "version": 1,
+      "changeset": 169491196,
+      "user": "user_14955076",
+      "uid": 14955076,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13026138674,
+      "lat": 35.6485455,
+      "lon": 139.9217269,
+      "timestamp": "2025-07-26T07:56:58Z",
+      "version": 1,
+      "changeset": 169491196,
+      "user": "user_14955076",
+      "uid": 14955076,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13026156654,
+      "lat": 35.6483831,
+      "lon": 139.9215335,
+      "timestamp": "2025-07-26T07:56:58Z",
+      "version": 1,
+      "changeset": 169491196,
+      "user": "user_14955076",
+      "uid": 14955076
+    },
+    {
+      "type": "node",
+      "id": 13026156751,
+      "lat": 35.6489568,
+      "lon": 139.9222217,
+      "timestamp": "2025-07-26T07:56:58Z",
+      "version": 1,
+      "changeset": 169491196,
+      "user": "user_14955076",
+      "uid": 14955076
+    },
+    {
+      "type": "node",
+      "id": 13026156777,
+      "lat": 35.6495264,
+      "lon": 139.9229039,
+      "timestamp": "2025-07-26T07:56:58Z",
+      "version": 1,
+      "changeset": 169491196,
+      "user": "user_14955076",
+      "uid": 14955076
+    },
+    {
+      "type": "node",
+      "id": 13026156779,
+      "lat": 35.6487735,
+      "lon": 139.9220021,
+      "timestamp": "2025-07-26T07:56:58Z",
+      "version": 1,
+      "changeset": 169491196,
+      "user": "user_14955076",
+      "uid": 14955076
+    },
+    {
+      "type": "way",
+      "id": 26323130,
+      "timestamp": "2026-02-24T19:41:31Z",
+      "version": 22,
+      "changeset": 179005376,
+      "user": "kevko22",
+      "uid": 21322525,
+      "nodes": [
+        1666878498,
+        13013349280,
+        6816784105,
+        11513466440,
+        1666878503,
+        11513466441,
+        6816784123,
+        6816784116,
+        7250841501,
+        13013349290,
+        288390245,
+        7250841498,
+        11581215014,
+        11581215016,
+        11424227104,
+        11424227105,
+        288390388,
+        1700573260,
+        1700573261,
+        13013349026,
+        13013349027,
+        13013349013,
+        11424227106,
+        11424227107,
+        1700573262,
+        1700573264,
+        288390385,
+        6813929346,
+        13013345098,
+        11424227108,
+        6813929345,
+        1343383588,
+        288390383,
+        13013349589,
+        11424227109,
+        11424227110,
+        288390382,
+        1343377593,
+        288390232,
+        1343377582,
+        288390231,
+        11424227111,
+        1343377616,
+        288390381,
+        1343377601,
+        288390229,
+        11424227112,
+        288390228,
+        13026156777,
+        288390380,
+        13026156751,
+        288390226,
+        1343383595,
+        13026156779,
+        13026138669,
+        288390225
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "source": "GSImaps/ort",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 720406629,
+      "timestamp": "2024-07-21T00:41:31Z",
+      "version": 6,
+      "changeset": 154200173,
+      "user": "Xperia1VI",
+      "uid": 21504947,
+      "nodes": [
+        288384935,
+        9956759395,
+        288385100,
+        288384937,
+        288384996
+      ],
+      "tags": {
+        "access": "yes",
+        "highway": "service",
+        "oneway": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 847288812,
+      "timestamp": "2026-02-24T19:38:05Z",
+      "version": 8,
+      "changeset": 179005266,
+      "user": "kevko22",
+      "uid": 21322525,
+      "nodes": [
+        2593542684,
+        1336182831,
+        2534635816
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "maxspeed": "50",
+        "name": "シンボルロード",
+        "name:en": "Symbol Road",
+        "name:es": "Ruta Symbol",
+        "name:ja": "シンボルロード",
+        "name:ko": "심볼로",
+        "oneway": "yes",
+        "source": "GSImaps/ort",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 906161755,
+      "timestamp": "2025-11-01T14:54:33Z",
+      "version": 5,
+      "changeset": 174066490,
+      "user": "yoisho2734",
+      "uid": 23288121,
+      "nodes": [
+        288384996,
+        1312776534
+      ],
+      "tags": {
+        "access": "permit",
+        "bus": "yes",
+        "highway": "service",
+        "oneway": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1338996604,
+      "timestamp": "2026-02-24T19:41:31Z",
+      "version": 4,
+      "changeset": 179005376,
+      "user": "kevko22",
+      "uid": 21322525,
+      "nodes": [
+        288390225,
+        13026138674,
+        13026156654,
+        288390379,
+        288391211,
+        12969341021,
+        1343373247,
+        11424227113,
+        288390221,
+        288391210,
+        11424227114,
+        1343373335,
+        288391850
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "source": "GSImaps/ort",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1338996609,
+      "timestamp": "2024-11-30T07:18:04Z",
+      "version": 1,
+      "changeset": 159764544,
+      "user": "Netzach",
+      "uid": 2352862,
+      "nodes": [
+        2534635816,
+        9956759412,
+        9956759392,
+        288384935
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "maxspeed": "50",
+        "name": "シンボルロード",
+        "name:en": "Symbol Road",
+        "name:es": "Ruta Symbol",
+        "name:ja": "シンボルロード",
+        "name:ko": "심볼로",
+        "oneway": "yes",
+        "source": "GSImaps/ort"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1340739631,
+      "timestamp": "2024-12-07T12:44:05Z",
+      "version": 1,
+      "changeset": 160025812,
+      "user": "Netzach",
+      "uid": 2352862,
+      "nodes": [
+        11533169244,
+        2593542684
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "maxspeed": "50",
+        "name": "シンボルロード",
+        "name:en": "Symbol Road",
+        "name:es": "Ruta Symbol",
+        "name:ja": "シンボルロード",
+        "name:ko": "심볼로",
+        "oneway": "yes",
+        "source": "GSImaps/ort"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1341518494,
+      "timestamp": "2025-07-26T07:56:58Z",
+      "version": 2,
+      "changeset": 169491196,
+      "user": "user_14955076",
+      "uid": 14955076,
+      "nodes": [
+        3731514476,
+        13026138624,
+        11533169244
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "maxspeed": "50",
+        "name": "シンボルロード",
+        "name:en": "Symbol Road",
+        "name:es": "Ruta Symbol",
+        "name:ja": "シンボルロード",
+        "name:ko": "심볼로",
+        "oneway": "yes",
+        "source": "GSImaps/ort",
+        "surface": "paved"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1341518495,
+      "timestamp": "2024-12-10T12:22:54Z",
+      "version": 2,
+      "changeset": 160127366,
+      "user": "Netzach",
+      "uid": 2352862,
+      "nodes": [
+        288391850,
+        11425579724,
+        288390218,
+        11425579725,
+        288390375,
+        1343417097,
+        288391209,
+        288390215,
+        11422662030,
+        288389838,
+        3731514477
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "source": "GSImaps/ort",
+        "surface": "paved"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1341526747,
+      "timestamp": "2026-02-24T19:43:44Z",
+      "version": 3,
+      "changeset": 179005441,
+      "user": "kevko22",
+      "uid": 21322525,
+      "nodes": [
+        12409319218,
+        13013349284,
+        1666878498
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "source": "GSImaps/ort",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1341529158,
+      "timestamp": "2024-12-10T12:22:54Z",
+      "version": 1,
+      "changeset": 160127366,
+      "user": "Netzach",
+      "uid": 2352862,
+      "nodes": [
+        3731514477,
+        3731514476
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "source": "GSImaps/ort",
+        "surface": "paved"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 18396568,
+      "timestamp": "2024-12-10T12:22:54Z",
+      "version": 1,
+      "changeset": 160127366,
+      "user": "Netzach",
+      "uid": 2352862,
+      "members": [
+        {
+          "type": "node",
+          "ref": 1312616409,
+          "role": "platform_entry_only"
+        },
+        {
+          "type": "node",
+          "ref": 6813929340,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 6813929341,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 6813929342,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 6813929344,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 6813929348,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 12385819136,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 6813952154,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 1312711918,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 8415001163,
+          "role": "platform_exit_only"
+        },
+        {
+          "type": "way",
+          "ref": 1341526747,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 26323130,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 1338996604,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 1341518495,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 1341529158,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 1341518494,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 1340739631,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 847288812,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 1338996609,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 720406629,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 906161755,
+          "role": ""
+        }
+      ],
+      "tags": {
+        "name": "東京ベイシティバス17系統 日の出七丁目⇒東京電力⇒新浦安駅",
+        "network": "日の出線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "17",
+        "route": "bus",
+        "type": "route"
+      }
+    }
+  ]
+}

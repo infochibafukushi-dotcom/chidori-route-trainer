@@ -1,0 +1,142 @@
+{
+  "checkedAt": "2026-07-26T12:34:11.604Z",
+  "routeId": "route-17",
+  "systemNumber": "17",
+  "systems": {
+    "17-hinode-nanachome": {
+      "directionGroup": "outbound",
+      "title": "日の出七丁目行き",
+      "departure": "新浦安駅",
+      "destination": "日の出七丁目",
+      "berth": "17",
+      "timetableSymbol": "(無印)",
+      "departureBerthLegend": "無印…【１７系統】日の出東経由　日の出七丁目行き",
+      "course": "0008200282",
+      "allCourses": [
+        "0008200282"
+      ],
+      "tripsObserved": 488,
+      "stopCount": 10,
+      "stopNames": [
+        "新浦安駅",
+        "入船中央エステート",
+        "明海大学前",
+        "日の出保育園入口",
+        "東京電力",
+        "日の出小学校",
+        "日の出東",
+        "アールフォーラム",
+        "順天堂大学・日の出 東口",
+        "日の出七丁目"
+      ],
+      "stopIds": [
+        "00020619",
+        "00020663",
+        "00020713",
+        "00020658",
+        "00020642",
+        "00020654",
+        "00020656",
+        "00020722",
+        "00020733",
+        "00020866"
+      ],
+      "osmRelationId": 18396569,
+      "osmRelationName": "東京ベイシティバス17系統 新浦安駅⇒東京電力⇒日の出七丁目",
+      "osmPlatformOrderMatchesOfficial": true
+    },
+    "17-baycity-urayasu": {
+      "directionGroup": "outbound",
+      "title": "ベイシティ浦安行き",
+      "departure": "新浦安駅",
+      "destination": "ベイシティ浦安",
+      "berth": "17",
+      "timetableSymbol": "ベ",
+      "departureBerthLegend": "ベ…【１７系統】日の出東・プラウド新浦安パークマリーナ経由　ベイシティ浦安行き＜★；深夜バス（運賃倍額）＞",
+      "course": "0008200283",
+      "allCourses": [
+        "0008200283",
+        "0008200284"
+      ],
+      "tripsObserved": 164,
+      "stopCount": 14,
+      "stopNames": [
+        "新浦安駅",
+        "入船中央エステート",
+        "明海大学前",
+        "日の出保育園入口",
+        "東京電力",
+        "日の出小学校",
+        "日の出東",
+        "アールフォーラム",
+        "順天堂大学・日の出 東口",
+        "日の出西",
+        "順天堂大学・日の出 正門",
+        "プラウド新浦安パークマリーナ",
+        "日の出中学校",
+        "ベイシティ浦安"
+      ],
+      "stopIds": [
+        "00020619",
+        "00020663",
+        "00020713",
+        "00020658",
+        "00020642",
+        "00020654",
+        "00020656",
+        "00020722",
+        "00020733",
+        "00020724",
+        "00020657",
+        "00020659",
+        "00020655",
+        "00020734"
+      ],
+      "osmRelationId": 18396583,
+      "osmRelationName": "東京ベイシティバス17系統 新浦安駅⇒東京電力・プラウド新浦安パークマリーナ⇒ベイシティ浦安",
+      "osmPlatformOrderMatchesOfficial": true
+    },
+    "17-shinurayasu": {
+      "directionGroup": "inbound",
+      "title": "新浦安駅行き",
+      "departure": "日の出七丁目",
+      "destination": "新浦安駅",
+      "berth": "17",
+      "timetableSymbol": "(無印)",
+      "departureBerthLegend": "無印…【１７系統】東京電力経由　新浦安駅行き",
+      "course": "0008200281",
+      "allCourses": [
+        "0008200281"
+      ],
+      "tripsObserved": 531,
+      "stopCount": 10,
+      "stopNames": [
+        "日の出七丁目",
+        "順天堂大学・日の出 東口",
+        "アールフォーラム",
+        "日の出東",
+        "日の出小学校",
+        "東京電力",
+        "日の出保育園入口",
+        "明海大学前",
+        "入船中央エステート",
+        "新浦安駅"
+      ],
+      "stopIds": [
+        "00020866",
+        "00020733",
+        "00020722",
+        "00020656",
+        "00020654",
+        "00020642",
+        "00020658",
+        "00020713",
+        "00020663",
+        "00020619"
+      ],
+      "osmRelationId": 18396568,
+      "osmRelationName": "東京ベイシティバス17系統 日の出七丁目⇒東京電力⇒新浦安駅",
+      "osmPlatformOrderMatchesOfficial": true
+    }
+  }
+}

@@ -1,0 +1,413 @@
+{
+  "checkedAt": "2026-07-26T12:34:11.604Z",
+  "routeNumber": "17",
+  "siblingRouteNumber": "16",
+  "policy": "(A) 掲載時刻表の凡例 と (B) 出発のりばの時刻表の凡例 の二段で系統を判定する。16系統（プラウド新浦安パークマリーナ・海風の街経由）も日の出七丁目発着で、中間停留所ののりばでは16と17が混載されるため、(B) 出発のりば（新浦安駅のりば17 ほか）の凡例を決定打とする。",
+  "acceptedCount": 3,
+  "rejectedCount": 1,
+  "accepted": [
+    {
+      "systemKey": "17-hinode-nanachome",
+      "verdict": "ACCEPT-route17",
+      "routeNumber": "17",
+      "course": "0008200282",
+      "allCourses": [
+        "0008200282"
+      ],
+      "courseSequence": "0008200282",
+      "courseText": "17 [17]（日の出東経由）日の出七丁目（日の出東・プラウド新浦安パークマリーナ経由）ベイシティ浦安行 [深夜]（日の出東経由）日の出七丁目（日の出東・プラウド新浦安パークマリーナ経由）ベイシティ浦安行 時刻表",
+      "departureBerth": "17 [17]（日の出東経由）日の出七丁目（日の出東・プラウド新浦安パークマリー",
+      "departureBerthLegendLine": "無印…【１７系統】日の出東経由　日の出七丁目行き",
+      "departureBerthRouteNumber": "17",
+      "listingLegendLines": [
+        "無印…【１７系統】日の出東経由　日の出七丁目行き"
+      ],
+      "listingLegendRouteNumbers": [
+        "17"
+      ],
+      "tripPageRouteNumbers": [],
+      "timetableSymbols": [
+        "(無印)"
+      ],
+      "tripsObserved": 488,
+      "dayLabels": [
+        "weekday"
+      ],
+      "stopCount": 10,
+      "stopNames": [
+        "新浦安駅",
+        "入船中央エステート",
+        "明海大学前",
+        "日の出保育園入口",
+        "東京電力",
+        "日の出小学校",
+        "日の出東",
+        "アールフォーラム",
+        "順天堂大学・日の出 東口",
+        "日の出七丁目"
+      ],
+      "stopIds": [
+        "00020619",
+        "00020663",
+        "00020713",
+        "00020658",
+        "00020642",
+        "00020654",
+        "00020656",
+        "00020722",
+        "00020733",
+        "00020866"
+      ],
+      "platformIds": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "idComplete": true,
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e80008/stops?departure-busstop=00020619-1&course=0008200282&datetime=2026-07-27T06:30:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e80000/stops?departure-busstop=00020619-1&course=0008200282&datetime=2026-07-27T06:44:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e8004c/stops?departure-busstop=00020619-1&course=0008200282&datetime=2026-08-01T06:54:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e80025/stops?departure-busstop=00020619-1&course=0008200282&datetime=2026-07-27T07:00:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e8002d/stops?departure-busstop=00020619-1&course=0008200282&datetime=2026-07-27T07:16:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e80001/stops?departure-busstop=00020619-1&course=0008200282&datetime=2026-07-27T07:23:00%2B09:00"
+      ],
+      "route17ExclusiveStopsPresent": [
+        "日の出東",
+        "東京電力",
+        "日の出小学校",
+        "日の出保育園入口",
+        "アールフォーラム",
+        "順天堂大学・日の出 東口"
+      ],
+      "route16ExclusiveStopsPresent": []
+    },
+    {
+      "systemKey": "17-baycity-urayasu",
+      "verdict": "ACCEPT-route17",
+      "routeNumber": "17",
+      "course": "0008200283",
+      "allCourses": [
+        "0008200283",
+        "0008200284"
+      ],
+      "courseSequence": "0008200283",
+      "courseText": "17 [17]（日の出東経由）日の出七丁目（日の出東・プラウド新浦安パークマリーナ経由）ベイシティ浦安行 [深夜]（日の出東経由）日の出七丁目（日の出東・プラウド新浦安パークマリーナ経由）ベイシティ浦安行 時刻表",
+      "departureBerth": "17 [17]（日の出東経由）日の出七丁目（日の出東・プラウド新浦安パークマリー",
+      "departureBerthLegendLine": "ベ…【１７系統】日の出東・プラウド新浦安パークマリーナ経由　ベイシティ浦安行き＜★；深夜バス（運賃倍額）＞",
+      "departureBerthRouteNumber": "17",
+      "listingLegendLines": [
+        "ベ…【１７系統】日の出東・プラウド新浦安パークマリーナ経由　ベイシティ浦安行き＜★；深夜バス（運賃倍額）＞"
+      ],
+      "listingLegendRouteNumbers": [
+        "17"
+      ],
+      "tripPageRouteNumbers": [],
+      "timetableSymbols": [
+        "ベ"
+      ],
+      "tripsObserved": 164,
+      "dayLabels": [
+        "weekday"
+      ],
+      "stopCount": 14,
+      "stopNames": [
+        "新浦安駅",
+        "入船中央エステート",
+        "明海大学前",
+        "日の出保育園入口",
+        "東京電力",
+        "日の出小学校",
+        "日の出東",
+        "アールフォーラム",
+        "順天堂大学・日の出 東口",
+        "日の出西",
+        "順天堂大学・日の出 正門",
+        "プラウド新浦安パークマリーナ",
+        "日の出中学校",
+        "ベイシティ浦安"
+      ],
+      "stopIds": [
+        "00020619",
+        "00020663",
+        "00020713",
+        "00020658",
+        "00020642",
+        "00020654",
+        "00020656",
+        "00020722",
+        "00020733",
+        "00020724",
+        "00020657",
+        "00020659",
+        "00020655",
+        "00020734"
+      ],
+      "platformIds": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "idComplete": true,
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e90025/stops?departure-busstop=00020619-1&course=0008200283&datetime=2026-07-26T11:41:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e90013/stops?departure-busstop=00020619-1&course=0008200283&datetime=2026-08-01T15:49:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e90014/stops?departure-busstop=00020619-1&course=0008200283&datetime=2026-08-01T16:06:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e9000d/stops?departure-busstop=00020619-1&course=0008200283&datetime=2026-07-27T19:39:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e9001b/stops?departure-busstop=00020619-1&course=0008200283&datetime=2026-07-26T19:18:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e9001c/stops?departure-busstop=00020619-1&course=0008200283&datetime=2026-07-26T19:51:00%2B09:00"
+      ],
+      "route17ExclusiveStopsPresent": [
+        "日の出東",
+        "東京電力",
+        "日の出小学校",
+        "日の出保育園入口",
+        "アールフォーラム",
+        "順天堂大学・日の出 東口"
+      ],
+      "route16ExclusiveStopsPresent": []
+    },
+    {
+      "systemKey": "17-shinurayasu",
+      "verdict": "ACCEPT-route17",
+      "routeNumber": "17",
+      "course": "0008200281",
+      "allCourses": [
+        "0008200281"
+      ],
+      "courseSequence": "0008200281",
+      "courseText": "17 [17]（東京電力経由）新浦安駅行 時刻表",
+      "departureBerth": "17 [17]（東京電力経由）新浦安駅行 時刻表",
+      "departureBerthLegendLine": "無印…【１７系統】東京電力経由　新浦安駅行き",
+      "departureBerthRouteNumber": "17",
+      "listingLegendLines": [
+        "無印…【１７系統】東京電力経由　新浦安駅行き"
+      ],
+      "listingLegendRouteNumbers": [
+        "17"
+      ],
+      "tripPageRouteNumbers": [],
+      "timetableSymbols": [
+        "(無印)"
+      ],
+      "tripsObserved": 531,
+      "dayLabels": [
+        "weekday"
+      ],
+      "stopCount": 10,
+      "stopNames": [
+        "日の出七丁目",
+        "順天堂大学・日の出 東口",
+        "アールフォーラム",
+        "日の出東",
+        "日の出小学校",
+        "東京電力",
+        "日の出保育園入口",
+        "明海大学前",
+        "入船中央エステート",
+        "新浦安駅"
+      ],
+      "stopIds": [
+        "00020866",
+        "00020733",
+        "00020722",
+        "00020656",
+        "00020654",
+        "00020642",
+        "00020658",
+        "00020713",
+        "00020663",
+        "00020619"
+      ],
+      "platformIds": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "idComplete": true,
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e70000/stops?departure-busstop=00020866-1&course=0008200281&datetime=2026-07-27T06:03:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e7000a/stops?departure-busstop=00020866-1&course=0008200281&datetime=2026-07-27T06:16:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e70001/stops?departure-busstop=00020866-1&course=0008200281&datetime=2026-07-27T06:29:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e70019/stops?departure-busstop=00020866-1&course=0008200281&datetime=2026-07-27T06:39:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e70026/stops?departure-busstop=00020866-1&course=0008200281&datetime=2026-07-27T06:45:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e7000b/stops?departure-busstop=00020866-1&course=0008200281&datetime=2026-07-27T06:53:00%2B09:00"
+      ],
+      "route17ExclusiveStopsPresent": [
+        "日の出東",
+        "東京電力",
+        "日の出小学校",
+        "日の出保育園入口",
+        "アールフォーラム",
+        "順天堂大学・日の出 東口"
+      ],
+      "route16ExclusiveStopsPresent": []
+    }
+  ],
+  "rejected": [
+    {
+      "verdict": "REJECT-route-16",
+      "resolvedRouteNumber": "16",
+      "reason": "出発のりばの凡例が【16系統】に解決したため route-17 から除外",
+      "departureBerth": "01",
+      "departureBerthLegendLine": "無印…【１６系統】プラウド新浦安パークマリーナ・海風の街経由　新浦安駅行き",
+      "listingLegendLines": [
+        "無印…【１６系統】海風の街経由　新浦安駅行き"
+      ],
+      "course": "0008200279",
+      "courseText": "16 [16]（海風の街経由）新浦安駅ベイシティ浦安行 17 [17]（海風の街経由）新浦安駅ベイシティ浦安行 [深夜]（海風の街経由）新浦安駅ベイシティ浦安行 時刻表",
+      "tripsObserved": 128,
+      "stopCount": 10,
+      "stopNames": [
+        "日の出七丁目",
+        "日の出西",
+        "順天堂大学・日の出 正門",
+        "プラウド新浦安パークマリーナ",
+        "日の出中学校",
+        "ベイシティ浦安",
+        "海風の街",
+        "明海大学前",
+        "入船中央エステート",
+        "新浦安駅"
+      ],
+      "route16ExclusiveStopsPresent": [
+        "海風の街"
+      ],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e50000/stops?departure-busstop=00020659-4&course=0008200279&datetime=2026-07-27T06:11:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e5000c/stops?departure-busstop=00020659-4&course=0008200279&datetime=2026-07-27T06:26:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e50001/stops?departure-busstop=00020659-4&course=0008200279&datetime=2026-07-27T06:40:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e5001a/stops?departure-busstop=00020659-4&course=0008200279&datetime=2026-07-27T06:54:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e50038/stops?departure-busstop=00020659-4&course=0008200279&datetime=2026-08-01T06:23:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e50039/stops?departure-busstop=00020659-4&course=0008200279&datetime=2026-08-01T06:56:00%2B09:00"
+      ]
+    }
+  ],
+  "timetableLegends": {
+    "0008200282": {
+      "terminal": "新浦安駅",
+      "berth": "17",
+      "courseText": "17 [17]（日の出東経由）日の出七丁目（日の出東・プラウド新浦安パークマリーナ経由）ベイシティ浦安行 [深夜]（日の出東経由）日の出七丁目（日の出東・プラウド新浦安パークマリーナ経由）ベイシティ浦安行 時刻表",
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200282-1&datetime=2026-07-27T05%3A00",
+      "legendRaw": [
+        "17\t[17]（日の出東経由）日の出七丁目（日の出東・プラウド新浦安パークマリーナ経由）ベイシティ浦安行",
+        "無印…【１７系統】日の出東経由　日の出七丁目行き",
+        "ベ…【１７系統】日の出東・プラウド新浦安パークマリーナ経由　ベイシティ浦安行き＜★；深夜バス（運賃倍額）＞",
+        "★ベ…【１７系統】日の出東・プラウド新浦安パークマリーナ経由　ベイシティ浦安行き＜★；深夜バス（運賃倍額）＞"
+      ],
+      "legendParsed": [
+        {
+          "symbolRaw": "無印",
+          "symbol": "",
+          "routeNumber": "17",
+          "description": "日の出東経由　日の出七丁目行き",
+          "line": "無印…【１７系統】日の出東経由　日の出七丁目行き"
+        },
+        {
+          "symbolRaw": "ベ",
+          "symbol": "ベ",
+          "routeNumber": "17",
+          "description": "日の出東・プラウド新浦安パークマリーナ経由　ベイシティ浦安行き＜★；深夜バス（運賃倍額）＞",
+          "line": "ベ…【１７系統】日の出東・プラウド新浦安パークマリーナ経由　ベイシティ浦安行き＜★；深夜バス（運賃倍額）＞"
+        },
+        {
+          "symbolRaw": "★ベ",
+          "symbol": "★ベ",
+          "routeNumber": "17",
+          "description": "日の出東・プラウド新浦安パークマリーナ経由　ベイシティ浦安行き＜★；深夜バス（運賃倍額）＞",
+          "line": "★ベ…【１７系統】日の出東・プラウド新浦安パークマリーナ経由　ベイシティ浦安行き＜★；深夜バス（運賃倍額）＞"
+        }
+      ],
+      "routeNumbersPresent": [
+        "17"
+      ]
+    },
+    "0008200281": {
+      "terminal": "日の出七丁目",
+      "berth": "17",
+      "courseText": "17 [17]（東京電力経由）新浦安駅行 時刻表",
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020866&course-sequence=0008200281-1&datetime=2026-07-27T05%3A00",
+      "legendRaw": [
+        "17\t[17]（東京電力経由）新浦安駅行",
+        "無印…【１７系統】東京電力経由　新浦安駅行き"
+      ],
+      "legendParsed": [
+        {
+          "symbolRaw": "無印",
+          "symbol": "",
+          "routeNumber": "17",
+          "description": "東京電力経由　新浦安駅行き",
+          "line": "無印…【１７系統】東京電力経由　新浦安駅行き"
+        }
+      ],
+      "routeNumbersPresent": [
+        "17"
+      ]
+    },
+    "0008200279": {
+      "terminal": "プラウド新浦安パークマリーナ",
+      "berth": "02",
+      "courseText": "16 [16]（海風の街経由）新浦安駅ベイシティ浦安行 17 [17]（海風の街経由）新浦安駅ベイシティ浦安行 [深夜]（海風の街経由）新浦安駅ベイシティ浦安行 時刻表",
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020659&course-sequence=0008200279-4&datetime=2026-07-27T05%3A00",
+      "legendRaw": [
+        "16\t[16]（海風の街経由）新浦安駅ベイシティ浦安行",
+        "17\t[17]（海風の街経由）新浦安駅ベイシティ浦安行",
+        "無印…【１６系統】海風の街経由　新浦安駅行き",
+        "ベ…【１７系統】ベイシティ浦安行き＜★ベ；深夜バス（運賃倍額）＞",
+        "★ベ…【１７系統】ベイシティ浦安行き＜★ベ；深夜バス（運賃倍額）＞"
+      ],
+      "legendParsed": [
+        {
+          "symbolRaw": "無印",
+          "symbol": "",
+          "routeNumber": "16",
+          "description": "海風の街経由　新浦安駅行き",
+          "line": "無印…【１６系統】海風の街経由　新浦安駅行き"
+        },
+        {
+          "symbolRaw": "ベ",
+          "symbol": "ベ",
+          "routeNumber": "17",
+          "description": "ベイシティ浦安行き＜★ベ；深夜バス（運賃倍額）＞",
+          "line": "ベ…【１７系統】ベイシティ浦安行き＜★ベ；深夜バス（運賃倍額）＞"
+        },
+        {
+          "symbolRaw": "★ベ",
+          "symbol": "★ベ",
+          "routeNumber": "17",
+          "description": "ベイシティ浦安行き＜★ベ；深夜バス（運賃倍額）＞",
+          "line": "★ベ…【１７系統】ベイシティ浦安行き＜★ベ；深夜バス（運賃倍額）＞"
+        }
+      ],
+      "routeNumbersPresent": [
+        "16",
+        "17"
+      ]
+    }
+  }
+}

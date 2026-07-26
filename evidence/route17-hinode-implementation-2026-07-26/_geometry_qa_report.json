@@ -1,0 +1,967 @@
+{
+  "checkedAt": "2026-07-26T12:43:41.904Z",
+  "routeId": "route-17",
+  "thresholds": {
+    "maxGap_m": 30,
+    "uturnDeg": 150,
+    "platformSoft_m": 20,
+    "platformHard_m": 30
+  },
+  "route16RelationsUsed": [],
+  "route16StopsUsed": [],
+  "systems": {
+    "17-hinode-nanachome": {
+      "relationId": 18396569,
+      "pathSource": "osm-relation-18396569+startHint-shinurayasu",
+      "resolvedVersion": "2026-07-26-hinode17-nanachome-v1",
+      "pathPoints": 176,
+      "pathLength_m": 2642,
+      "storedPathHash": "78599ef2fd60f7d2e9c81fdd09287007387937d4384a028e3cb54628b6de3af5",
+      "recomputedPathHash": "78599ef2fd60f7d2e9c81fdd09287007387937d4384a028e3cb54628b6de3af5",
+      "pathHashMatches": true,
+      "maxGap_m": 24.2,
+      "gapsOverLimit": [],
+      "nanCount": 0,
+      "wayIssues": {
+        "forbiddenHighway": [],
+        "unknownHighway": [],
+        "buildingOrGreen": [],
+        "wrongWay": [],
+        "onewayOk": 11
+      },
+      "uturnsTotal": 0,
+      "terminalTurnarounds": [],
+      "unnecessaryUturns": [],
+      "platformChecks": [
+        {
+          "name": "新浦安駅",
+          "dist_m": 7.9,
+          "pathIndex": 0,
+          "status": "OK"
+        },
+        {
+          "name": "入船中央エステート",
+          "dist_m": 7.6,
+          "pathIndex": 33,
+          "status": "OK"
+        },
+        {
+          "name": "明海大学前",
+          "dist_m": 8.4,
+          "pathIndex": 60,
+          "status": "OK"
+        },
+        {
+          "name": "日の出保育園入口",
+          "dist_m": 6.9,
+          "pathIndex": 77,
+          "status": "OK"
+        },
+        {
+          "name": "東京電力",
+          "dist_m": 5.2,
+          "pathIndex": 93,
+          "status": "OK"
+        },
+        {
+          "name": "日の出小学校",
+          "dist_m": 6.1,
+          "pathIndex": 120,
+          "status": "OK"
+        },
+        {
+          "name": "日の出東",
+          "dist_m": 8.2,
+          "pathIndex": 146,
+          "status": "OK"
+        },
+        {
+          "name": "アールフォーラム",
+          "dist_m": 11.1,
+          "pathIndex": 154,
+          "status": "OK"
+        },
+        {
+          "name": "順天堂大学・日の出 東口",
+          "dist_m": 5.9,
+          "pathIndex": 165,
+          "status": "OK"
+        },
+        {
+          "name": "日の出七丁目",
+          "dist_m": 8.5,
+          "pathIndex": 175,
+          "status": "OK"
+        }
+      ],
+      "maxPlatformDist_m": 11.1,
+      "accessRestrictedWays": {
+        "restrictedAccessWayCount": 5,
+        "busPermittedRestrictedWayCount": 5,
+        "documentedExceptionWayCount": 0,
+        "unresolvedRestrictedWayCount": 0,
+        "restrictedWays": [
+          {
+            "id": 906161758,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          },
+          {
+            "id": 1342408590,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          },
+          {
+            "id": 1342409930,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          },
+          {
+            "id": 1340739633,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          },
+          {
+            "id": 906161743,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          }
+        ],
+        "documentedExceptionWays": [],
+        "unresolvedWays": []
+      },
+      "busPsvTags": {
+        "busCounts": {
+          "yes": 5,
+          "(unset)": 10
+        },
+        "psvCounts": {
+          "(unset)": 15
+        },
+        "ways": [
+          {
+            "id": 906161758,
+            "name": null,
+            "highway": "service",
+            "oneway": "yes",
+            "bus": "yes",
+            "psv": null,
+            "access": "permit",
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1342408590,
+            "name": null,
+            "highway": "service",
+            "oneway": "yes",
+            "bus": "yes",
+            "psv": null,
+            "access": "permit",
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1342409930,
+            "name": null,
+            "highway": "service",
+            "oneway": "yes",
+            "bus": "yes",
+            "psv": null,
+            "access": "permit",
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1340739633,
+            "name": null,
+            "highway": "service",
+            "oneway": "yes",
+            "bus": "yes",
+            "psv": null,
+            "access": "permit",
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 906161743,
+            "name": null,
+            "highway": "service",
+            "oneway": "yes",
+            "bus": "yes",
+            "psv": null,
+            "access": "permit",
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 369356254,
+            "name": null,
+            "highway": "service",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": "yes",
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 906161757,
+            "name": null,
+            "highway": "service",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 720406630,
+            "name": "シンボルロード",
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1338996611,
+            "name": "シンボルロード",
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 720406627,
+            "name": "シンボルロード",
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1341529159,
+            "name": "シンボルロード",
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1341518495,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1338996604,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 26323130,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1341526747,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          }
+        ]
+      }
+    },
+    "17-baycity-urayasu": {
+      "relationId": 18396583,
+      "pathSource": "osm-relation-18396583+startHint-shinurayasu",
+      "resolvedVersion": "2026-07-26-hinode17-baycity-v1",
+      "pathPoints": 239,
+      "pathLength_m": 3677,
+      "storedPathHash": "72e9bcc87c8ed02d011b678b58351ae4063f8f84f2a3e812907059c10396ad35",
+      "recomputedPathHash": "72e9bcc87c8ed02d011b678b58351ae4063f8f84f2a3e812907059c10396ad35",
+      "pathHashMatches": true,
+      "maxGap_m": 24.2,
+      "gapsOverLimit": [],
+      "nanCount": 0,
+      "wayIssues": {
+        "forbiddenHighway": [],
+        "unknownHighway": [],
+        "buildingOrGreen": [],
+        "wrongWay": [],
+        "onewayOk": 14
+      },
+      "uturnsTotal": 0,
+      "terminalTurnarounds": [],
+      "unnecessaryUturns": [],
+      "platformChecks": [
+        {
+          "name": "新浦安駅",
+          "dist_m": 7.9,
+          "pathIndex": 0,
+          "status": "OK"
+        },
+        {
+          "name": "入船中央エステート",
+          "dist_m": 7.6,
+          "pathIndex": 33,
+          "status": "OK"
+        },
+        {
+          "name": "明海大学前",
+          "dist_m": 8.4,
+          "pathIndex": 60,
+          "status": "OK"
+        },
+        {
+          "name": "日の出保育園入口",
+          "dist_m": 6.9,
+          "pathIndex": 77,
+          "status": "OK"
+        },
+        {
+          "name": "東京電力",
+          "dist_m": 5.2,
+          "pathIndex": 93,
+          "status": "OK"
+        },
+        {
+          "name": "日の出小学校",
+          "dist_m": 6.1,
+          "pathIndex": 120,
+          "status": "OK"
+        },
+        {
+          "name": "日の出東",
+          "dist_m": 8.2,
+          "pathIndex": 146,
+          "status": "OK"
+        },
+        {
+          "name": "アールフォーラム",
+          "dist_m": 11.1,
+          "pathIndex": 154,
+          "status": "OK"
+        },
+        {
+          "name": "順天堂大学・日の出 東口",
+          "dist_m": 5.9,
+          "pathIndex": 165,
+          "status": "OK"
+        },
+        {
+          "name": "日の出西",
+          "dist_m": 5.4,
+          "pathIndex": 181,
+          "status": "OK"
+        },
+        {
+          "name": "順天堂大学・日の出 正門",
+          "dist_m": 6.1,
+          "pathIndex": 202,
+          "status": "OK"
+        },
+        {
+          "name": "プラウド新浦安パークマリーナ",
+          "dist_m": 4.1,
+          "pathIndex": 211,
+          "status": "OK"
+        },
+        {
+          "name": "日の出中学校",
+          "dist_m": 4.9,
+          "pathIndex": 220,
+          "status": "OK"
+        },
+        {
+          "name": "ベイシティ浦安",
+          "dist_m": 5.2,
+          "pathIndex": 238,
+          "status": "OK"
+        }
+      ],
+      "maxPlatformDist_m": 11.1,
+      "accessRestrictedWays": {
+        "restrictedAccessWayCount": 5,
+        "busPermittedRestrictedWayCount": 5,
+        "documentedExceptionWayCount": 0,
+        "unresolvedRestrictedWayCount": 0,
+        "restrictedWays": [
+          {
+            "id": 906161758,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          },
+          {
+            "id": 1342408590,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          },
+          {
+            "id": 1342409930,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          },
+          {
+            "id": 1340739633,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          },
+          {
+            "id": 906161743,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          }
+        ],
+        "documentedExceptionWays": [],
+        "unresolvedWays": []
+      },
+      "busPsvTags": {
+        "busCounts": {
+          "yes": 5,
+          "(unset)": 13
+        },
+        "psvCounts": {
+          "(unset)": 18
+        },
+        "ways": [
+          {
+            "id": 906161758,
+            "name": null,
+            "highway": "service",
+            "oneway": "yes",
+            "bus": "yes",
+            "psv": null,
+            "access": "permit",
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1342408590,
+            "name": null,
+            "highway": "service",
+            "oneway": "yes",
+            "bus": "yes",
+            "psv": null,
+            "access": "permit",
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1342409930,
+            "name": null,
+            "highway": "service",
+            "oneway": "yes",
+            "bus": "yes",
+            "psv": null,
+            "access": "permit",
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1340739633,
+            "name": null,
+            "highway": "service",
+            "oneway": "yes",
+            "bus": "yes",
+            "psv": null,
+            "access": "permit",
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 906161743,
+            "name": null,
+            "highway": "service",
+            "oneway": "yes",
+            "bus": "yes",
+            "psv": null,
+            "access": "permit",
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 369356254,
+            "name": null,
+            "highway": "service",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": "yes",
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 906161757,
+            "name": null,
+            "highway": "service",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 720406630,
+            "name": "シンボルロード",
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1338996611,
+            "name": "シンボルロード",
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 720406627,
+            "name": "シンボルロード",
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1341529159,
+            "name": "シンボルロード",
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1341518495,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1338996604,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 26323130,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1341526746,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1243156093,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1338996598,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 221344566,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          }
+        ]
+      }
+    },
+    "17-shinurayasu": {
+      "relationId": 18396568,
+      "pathSource": "osm-relation-18396568+startHint-hinode-nanachome",
+      "resolvedVersion": "2026-07-26-hinode17-shinurayasu-v1",
+      "pathPoints": 157,
+      "pathLength_m": 2567,
+      "storedPathHash": "4bd7f2479a338adf1628e75213029d55af59161341ae291a705b293fa5addc86",
+      "recomputedPathHash": "4bd7f2479a338adf1628e75213029d55af59161341ae291a705b293fa5addc86",
+      "pathHashMatches": true,
+      "maxGap_m": 24.2,
+      "gapsOverLimit": [],
+      "nanCount": 0,
+      "wayIssues": {
+        "forbiddenHighway": [],
+        "unknownHighway": [],
+        "buildingOrGreen": [],
+        "wrongWay": [],
+        "onewayOk": 6
+      },
+      "uturnsTotal": 0,
+      "terminalTurnarounds": [],
+      "unnecessaryUturns": [],
+      "platformChecks": [
+        {
+          "name": "日の出七丁目",
+          "dist_m": 5.6,
+          "pathIndex": 0,
+          "status": "OK"
+        },
+        {
+          "name": "順天堂大学・日の出 東口",
+          "dist_m": 4.6,
+          "pathIndex": 15,
+          "status": "OK"
+        },
+        {
+          "name": "アールフォーラム",
+          "dist_m": 10.7,
+          "pathIndex": 20,
+          "status": "OK"
+        },
+        {
+          "name": "日の出東",
+          "dist_m": 5.6,
+          "pathIndex": 31,
+          "status": "OK"
+        },
+        {
+          "name": "日の出小学校",
+          "dist_m": 5.3,
+          "pathIndex": 58,
+          "status": "OK"
+        },
+        {
+          "name": "東京電力",
+          "dist_m": 9.8,
+          "pathIndex": 87,
+          "status": "OK"
+        },
+        {
+          "name": "日の出保育園入口",
+          "dist_m": 4.8,
+          "pathIndex": 97,
+          "status": "OK"
+        },
+        {
+          "name": "明海大学前",
+          "dist_m": 6.9,
+          "pathIndex": 112,
+          "status": "OK"
+        },
+        {
+          "name": "入船中央エステート",
+          "dist_m": 11.1,
+          "pathIndex": 139,
+          "status": "OK"
+        },
+        {
+          "name": "新浦安駅",
+          "dist_m": 5.3,
+          "pathIndex": 156,
+          "status": "OK"
+        }
+      ],
+      "maxPlatformDist_m": 11.1,
+      "accessRestrictedWays": {
+        "restrictedAccessWayCount": 1,
+        "busPermittedRestrictedWayCount": 1,
+        "documentedExceptionWayCount": 0,
+        "unresolvedRestrictedWayCount": 0,
+        "restrictedWays": [
+          {
+            "id": 906161755,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          }
+        ],
+        "documentedExceptionWays": [],
+        "unresolvedWays": []
+      },
+      "busPsvTags": {
+        "busCounts": {
+          "(unset)": 10,
+          "yes": 1
+        },
+        "psvCounts": {
+          "(unset)": 11
+        },
+        "ways": [
+          {
+            "id": 1341526747,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 26323130,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1338996604,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1341518495,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1341529158,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1341518494,
+            "name": "シンボルロード",
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1340739631,
+            "name": "シンボルロード",
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 847288812,
+            "name": "シンボルロード",
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1338996609,
+            "name": "シンボルロード",
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 720406629,
+            "name": null,
+            "highway": "service",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": "yes",
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 906161755,
+            "name": null,
+            "highway": "service",
+            "oneway": "yes",
+            "bus": "yes",
+            "psv": null,
+            "access": "permit",
+            "vehicle": null,
+            "motor_vehicle": null
+          }
+        ]
+      }
+    }
+  },
+  "failures": [],
+  "reviewRequired": [],
+  "pass": true
+}
