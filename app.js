@@ -18,7 +18,7 @@ function shell(body,backTo='home'){
   const isHome=page==='home';
   const brandTitle=isHome?'千鳥路線図':'千鳥営業所 路線学習';
   const shortcuts=isHome?`<div class="header-shortcuts"><a class="home-shortcut" data-route-map-pdf href="https://www.keiseibus.co.jp/wp-content/uploads/2026/02/routemap-chidori.pdf" target="_blank" rel="noopener noreferrer"><span class="home-shortcut-icon">${HOME_ICONS.map}</span><span class="home-shortcut-label"><span>千鳥路線図</span><span>全体図</span></span></a><button type="button" class="home-shortcut" data-pwa-install><span class="home-shortcut-icon">${HOME_ICONS.install}</span><span class="home-shortcut-label"><span>ショートカット</span><span>作成</span></span></button></div>`:'';
-  const footer=isHome?`<footer class="home-footer">${HOME_ICONS.city}<p class="home-copy">© 千鳥営業所</p></footer>`:'';
+  const footer=isHome?`<footer class="home-footer">${HOME_ICONS.city}</footer>`:'';
   app.innerHTML=`<div class="app${isHome?' app--home':''}"><header class="header${isHome?' header--home':''}">${isHome?'':`<button class="back" id="back" aria-label="戻る">←</button>`}<div class="header-brand">${isHome?`<span class="header-bus" aria-hidden="true">${HOME_ICONS.bus}</span>`:''}<div><h1>${brandTitle}</h1><p>路線・停留所・注意地点</p></div></div>${shortcuts}</header><main class="main">${body}</main>${footer}</div>`;
   document.getElementById('back')?.addEventListener('click',()=>go(backTo));
 }
@@ -60,8 +60,53 @@ function go(next){
 }
 function render(){if(page==='materials'||page==='materials-detail'){if(typeof window.renderStudyMaterials==='function')window.renderStudyMaterials();try{window.__chidoriBoot&&window.__chidoriBoot.mark('render')}catch(e){}return}if(page==='home')home();if(page==='routes')routes();if(page==='quiz')quiz();if(page==='settings')settings();try{window.__chidoriBoot&&window.__chidoriBoot.mark('render')}catch(e){}}
 function homeCard(goTo,tone,icon,title,desc){return`<button type="button" class="home-card home-card--${tone}" data-go="${goTo}"><span class="home-card-icon" aria-hidden="true">${icon}</span><span class="home-card-text"><strong>${title}</strong><span>${desc}</span></span><span class="home-card-chevron" aria-hidden="true">${HOME_ICONS.chevron}</span></button>`}
+const HOME_CARD_ORDER_KEY='chidoriHomeCardOrderV1';
+const HOME_CARD_DEFAULT_ORDER=['route-map','training','quiz','settings'];
+const HOME_CARD_DEFS={
+  'route-map':{go:'routes',tone:'routes',icon:()=>HOME_ICONS.routes,title:'千鳥営業所 路線図',desc:'各路線の往路・復路と停留所を確認'},
+  'training':{go:'materials',tone:'materials',icon:()=>HOME_ICONS.materials,title:'基本研修資料',desc:'乗務員向け作業マニュアル・マイク案内'},
+  'quiz':{go:'quiz',tone:'quiz',icon:()=>HOME_ICONS.quiz,title:'問題',desc:'次の停留所・この路線は何線'},
+  'settings':{go:'settings',tone:'settings',icon:()=>HOME_ICONS.settings,title:'設定',desc:'停留所・ヒヤリハット・注意地点を登録'}
+};
+function normalizeHomeCardOrder(raw){
+  const valid=new Set(HOME_CARD_DEFAULT_ORDER);
+  const seen=new Set();
+  const out=[];
+  if(Array.isArray(raw)){
+    for(const id of raw){
+      if(typeof id!=='string'||!valid.has(id)||seen.has(id))continue;
+      seen.add(id);
+      out.push(id);
+    }
+  }
+  for(const id of HOME_CARD_DEFAULT_ORDER){
+    if(!seen.has(id))out.push(id);
+  }
+  return out;
+}
+function readHomeCardOrder(){
+  try{
+    const raw=localStorage.getItem(HOME_CARD_ORDER_KEY);
+    if(raw==null||raw==='')return HOME_CARD_DEFAULT_ORDER.slice();
+    return normalizeHomeCardOrder(JSON.parse(raw));
+  }catch{
+    return HOME_CARD_DEFAULT_ORDER.slice();
+  }
+}
+function writeHomeCardOrder(ids){
+  const normalized=normalizeHomeCardOrder(ids);
+  localStorage.setItem(HOME_CARD_ORDER_KEY,JSON.stringify(normalized));
+  return normalized;
+}
+let homeCardOrderDraft=null;
 function home(){
-  shell(`<section class="home">${homeCard('routes','routes',HOME_ICONS.routes,'千鳥営業所 路線図','各路線の往路・復路と停留所を確認')}${homeCard('materials','materials',HOME_ICONS.materials,'基本研修資料','乗務員向け作業マニュアル・マイク案内')}${homeCard('quiz','quiz',HOME_ICONS.quiz,'問題','次の停留所・この路線は何線')}${homeCard('settings','settings',HOME_ICONS.settings,'設定','停留所・ヒヤリハット・注意地点を登録')}</section>`);
+  const order=readHomeCardOrder();
+  const cards=order.map((id)=>{
+    const def=HOME_CARD_DEFS[id];
+    if(!def)return '';
+    return homeCard(def.go,def.tone,def.icon(),def.title,def.desc);
+  }).join('');
+  shell(`<section class="home">${cards}</section>`);
   document.querySelectorAll('[data-go]').forEach((b)=>{
     b.addEventListener('pointerdown',()=>{try{window.__chidoriBoot&&window.__chidoriBoot.mark('pointerdown',b.dataset.go)}catch(e){}},{passive:true});
     b.onclick=()=>go(b.dataset.go);
@@ -79,7 +124,75 @@ async function drawRoute(route,stops){const status=document.getElementById('mapS
 let quizType='next';
 function quiz(){const qs=makeQuestion();shell(`<section><div class="seg" style="margin-bottom:16px"><button data-qt="next" class="${quizType==='next'?'active':''}">次の停留所</button><button data-qt="route" class="${quizType==='route'?'active':''}">この路線</button></div>${qs?`<div class="question">${qs.text}</div><div class="answers">${qs.options.map(o=>`<button data-answer="${esc(o)}">${esc(o)}</button>`).join('')}</div><p id="result" class="status"></p><button class="primary" id="nextQ">次の問題</button>`:'<div class="empty">問題を作るには、設定から停留所を2件以上登録してください。</div>'}</section>`);document.querySelectorAll('[data-qt]').forEach(b=>b.onclick=()=>{quizType=b.dataset.qt;quiz()});if(qs){document.querySelectorAll('[data-answer]').forEach(b=>b.onclick=()=>document.getElementById('result').textContent=b.dataset.answer===qs.answer?'正解です。':`不正解です。正解：${qs.answer}`);document.getElementById('nextQ').onclick=quiz}}
 function makeQuestion(){const usable=data.routes.filter(r=>r.outbound.length>=2||r.inbound.length>=2);if(!usable.length)return null;const r=usable[Math.floor(Math.random()*usable.length)];const dir=r.outbound.length>=2?'outbound':'inbound';const s=r[dir];if(quizType==='next'){const i=Math.floor(Math.random()*(s.length-1));const answer=s[i+1].name;const pool=[answer,...data.routes.flatMap(x=>[...x.outbound,...x.inbound]).map(x=>x.name).filter(x=>x!==answer)].filter((v,i,a)=>a.indexOf(v)===i).slice(0,4).sort(()=>Math.random()-.5);return{text:`${label(r)}・${dir==='outbound'?'往路':'復路'}<br>現在：${esc(s[i].name)}<br>次の停留所は？`,answer,options:pool}}const answer=label(r);const options=[answer,...data.routes.filter(x=>x.id!==r.id).sort(()=>Math.random()-.5).slice(0,3).map(label)].sort(()=>Math.random()-.5);return{text:`停留所順<br>${s.slice(0,3).map(x=>esc(x.name)).join(' → ')}<br>この路線は？`,answer,options}}
-function settings(){shell(`<section><div class="tabs tabs--4"><button data-tab="stops" class="${settingsTab==='stops'?'active':''}">停留所</button><button data-tab="pins" class="${settingsTab==='pins'?'active':''}">注意ピン</button><button data-tab="categories" class="${settingsTab==='categories'?'active':''}">項目</button><button data-tab="materials-order" class="${settingsTab==='materials-order'?'active':''}">資料順</button></div><div id="settingsBody"></div></section>`);document.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>{settingsTab=b.dataset.tab;settings()});if(settingsTab==='stops')stopEditor();if(settingsTab==='pins')pinEditor();if(settingsTab==='categories')categoryEditor();if(settingsTab==='materials-order')materialsOrderEditor()}
+function settings(){shell(`<section><div class="tabs tabs--5"><button data-tab="stops" class="${settingsTab==='stops'?'active':''}">停留所</button><button data-tab="pins" class="${settingsTab==='pins'?'active':''}">注意ピン</button><button data-tab="categories" class="${settingsTab==='categories'?'active':''}">項目</button><button data-tab="materials-order" class="${settingsTab==='materials-order'?'active':''}">資料順</button><button data-tab="home-order" class="${settingsTab==='home-order'?'active':''}">カード順</button></div><div id="settingsBody"></div></section>`);document.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>{settingsTab=b.dataset.tab;settings()});if(settingsTab==='stops')stopEditor();if(settingsTab==='pins')pinEditor();if(settingsTab==='categories')categoryEditor();if(settingsTab==='materials-order')materialsOrderEditor();if(settingsTab==='home-order')homeCardOrderEditor()}
+function homeCardOrderEditor(){
+  const body=document.getElementById('settingsBody');
+  if(!body)return;
+  let draft=normalizeHomeCardOrder(
+    Array.isArray(homeCardOrderDraft)&&homeCardOrderDraft.length?homeCardOrderDraft:readHomeCardOrder()
+  );
+  homeCardOrderDraft=draft.slice();
+  body.innerHTML=
+    `<div class="card home-order-card">`+
+    `<h3 class="home-order-title">ホーム画面カードの並び順</h3>`+
+    `<p class="home-order-lead">ホーム画面に表示するカードの順番を変更できます。</p>`+
+    `<div class="home-order-list" id="homeOrderList">`+
+    draft.map((id,index)=>{
+      const def=HOME_CARD_DEFS[id];
+      if(!def)return '';
+      const atFirst=index===0;
+      const atLast=index===draft.length-1;
+      return (
+        `<div class="home-order-row" data-order-id="${esc(id)}" data-order-index="${index}">`+
+        `<span class="home-order-label">${esc(def.title)}</span>`+
+        `<span class="home-order-actions">`+
+        `<button type="button" class="home-order-btn" data-move-up="${index}" ${atFirst?'disabled':''} aria-label="上へ移動">↑</button>`+
+        `<button type="button" class="home-order-btn" data-move-down="${index}" ${atLast?'disabled':''} aria-label="下へ移動">↓</button>`+
+        `</span></div>`
+      );
+    }).join('')+
+    `</div>`+
+    `<p id="homeOrderStatus" class="status"></p>`+
+    `<div class="home-order-footer">`+
+    `<button type="button" class="primary" id="homeOrderSave">保存</button>`+
+    `<button type="button" class="secondary" id="homeOrderReset">初期状態に戻す</button>`+
+    `</div></div>`;
+
+  function move(from,to){
+    if(to<0||to>=draft.length)return;
+    const next=draft.slice();
+    const [item]=next.splice(from,1);
+    next.splice(to,0,item);
+    homeCardOrderDraft=next;
+    homeCardOrderEditor();
+  }
+
+  body.querySelectorAll('[data-move-up]').forEach((btn)=>{
+    btn.onclick=()=>move(Number(btn.dataset.moveUp),Number(btn.dataset.moveUp)-1);
+  });
+  body.querySelectorAll('[data-move-down]').forEach((btn)=>{
+    btn.onclick=()=>move(Number(btn.dataset.moveDown),Number(btn.dataset.moveDown)+1);
+  });
+
+  document.getElementById('homeOrderReset').onclick=()=>{
+    homeCardOrderDraft=HOME_CARD_DEFAULT_ORDER.slice();
+    homeCardOrderEditor();
+  };
+
+  document.getElementById('homeOrderSave').onclick=()=>{
+    const status=document.getElementById('homeOrderStatus');
+    try{
+      const normalized=writeHomeCardOrder(homeCardOrderDraft);
+      homeCardOrderDraft=normalized.slice();
+      homeCardOrderEditor();
+      const after=document.getElementById('homeOrderStatus');
+      if(after)after.textContent='並び順を保存しました';
+    }catch(err){
+      console.error(err);
+      if(status)status.textContent='保存できませんでした。もう一度お試しください。';
+    }
+  };
+}
 function stopEditor(){document.getElementById('settingsBody').innerHTML=`<div class="grid"><div class="card"><label>路線<select id="sRoute">${data.routes.map(r=>`<option value="${r.id}">${label(r)}</option>`).join('')}</select></label><label>方向<select id="sDir"><option value="outbound">往路</option><option value="inbound">復路</option></select></label><label>停留所名<input id="sName"></label><label>住所・施設名<input id="sAddress"></label><button class="secondary" id="sSearch">住所から位置を取得</button><div id="picker" class="picker"></div><p id="sStatus" class="status">地図をタップしても位置を指定できます。</p><button class="primary" id="sAdd">停留所を追加</button></div><div class="card"><strong>登録済み停留所</strong><div id="stopList"></div></div></div>`;const state={pos:null};picker('picker',state,'sStatus');document.getElementById('sSearch').onclick=async()=>{try{state.pos=await geocode(document.getElementById('sAddress').value);settings()}catch(e){document.getElementById('sStatus').textContent=e.message}};document.getElementById('sAdd').onclick=()=>{const r=data.routes.find(x=>x.id===document.getElementById('sRoute').value);const dir=document.getElementById('sDir').value;const name=document.getElementById('sName').value.trim();if(!r||!name||!state.pos)return alert('停留所名と位置を設定してください。');r[dir].push({id:id('stop'),name,address:document.getElementById('sAddress').value.trim(),...state.pos});save();settings()};renderStopList()}
 function renderStopList(){const box=document.getElementById('stopList');box.innerHTML=data.routes.map(r=>['outbound','inbound'].map(dir=>r[dir].map(s=>`<div class="item"><span>${label(r)}・${dir==='outbound'?'往路':'復路'}｜${esc(s.name)}</span><button data-delstop="${r.id}|${dir}|${s.id}">削除</button></div>`).join('')).join('')).join('')||'<p>未登録</p>';document.querySelectorAll('[data-delstop]').forEach(b=>b.onclick=()=>{const [rid,dir,sid]=b.dataset.delstop.split('|');const r=data.routes.find(x=>x.id===rid);r[dir]=r[dir].filter(s=>s.id!==sid);save();settings()})}
 function pinEditor(){document.getElementById('settingsBody').innerHTML=`<div class="grid"><div class="card"><label>項目<select id="pCat">${data.categories.map(c=>`<option value="${c.id}">${esc(c.name)}</option>`).join('')}</select></label><label>タイトル<input id="pTitle"></label><label>対象路線<select id="pRoute"><option value="">全路線共通</option>${data.routes.map(r=>`<option value="${r.id}">${label(r)}</option>`).join('')}</select></label><label>方向<select id="pDir"><option value="both">往復共通</option><option value="outbound">往路</option><option value="inbound">復路</option></select></label><label>住所・施設名<input id="pAddress"></label><button class="secondary" id="pSearch">住所から位置を取得</button><div id="picker" class="picker"></div><label>注意内容<textarea id="pNote"></textarea></label><p id="pStatus" class="status">地図をタップしても位置を指定できます。</p><button class="primary" id="pAdd">注意ピンを追加</button></div><div class="card"><strong>登録済みピン</strong>${data.pins.map(p=>`<div class="item"><span>${esc(data.categories.find(c=>c.id===p.categoryId)?.name||'未分類')}｜${esc(p.title)}</span><button data-delpin="${p.id}">削除</button></div>`).join('')||'<p>未登録</p>'}</div></div>`;const state={pos:null};picker('picker',state,'pStatus');document.getElementById('pSearch').onclick=async()=>{try{state.pos=await geocode(document.getElementById('pAddress').value);settings()}catch(e){document.getElementById('pStatus').textContent=e.message}};document.getElementById('pAdd').onclick=()=>{const title=document.getElementById('pTitle').value.trim();if(!title||!state.pos)return alert('タイトルと位置を設定してください。');data.pins.push({id:id('pin'),title,categoryId:document.getElementById('pCat').value,routeId:document.getElementById('pRoute').value||undefined,direction:document.getElementById('pDir').value,address:document.getElementById('pAddress').value.trim(),lat:state.pos.lat,lng:state.pos.lng,note:document.getElementById('pNote').value.trim()});save();settings()};document.querySelectorAll('[data-delpin]').forEach(b=>b.onclick=()=>{data.pins=data.pins.filter(p=>p.id!==b.dataset.delpin);save();settings()})}
