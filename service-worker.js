@@ -1,4 +1,4 @@
-const CACHE_NAME = 'chidori-route-map-v97';
+const CACHE_NAME = 'chidori-route-map-v98';
 const APP_INDEX_URL = new URL('./index.html', self.location).href;
 const FETCH_TIMEOUT_MS = 7000;
 
@@ -9,18 +9,18 @@ const CORE_SHELL = [
   './app-icon.svg',
   './app-icon-192.png',
   './app-icon-512.png',
-  './styles.css?v=97',
-  './study-materials.css?v=97',
+  './styles.css?v=98',
+  './study-materials.css?v=98',
   './d1-sync.css?v=32',
-  './data.js?v=97',
-  './app.js?v=97',
-  './study-materials-data.js?v=97',
-  './study-materials.js?v=97',
+  './data.js?v=98',
+  './app.js?v=98',
+  './study-materials-data.js?v=98',
+  './study-materials.js?v=98',
   './home-navigation-v25.js?v=32',
   './route-map-link.js?v=71',
   './route-assets-loader.js?v=78',
   './d1-sync.js?v=61',
-  './pwa-install.js?v=97',
+  './pwa-install.js?v=98',
   './assets/study-materials/stroller/stroller-01-arrival.png',
   './assets/study-materials/stroller/stroller-02-after-boarding.png',
   './assets/study-materials/stroller/stroller-03-fare-payment.png',

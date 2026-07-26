@@ -190,8 +190,9 @@ function materialsOrderEditor(){
         localStorage.setItem(api.ORDER_LS_KEY,JSON.stringify(normalized));
       }
       materialsOrderDraft=normalized.slice();
-      if(status)status.textContent='基本研修資料の並び順を保存しました';
       materialsOrderEditor();
+      const after=document.getElementById('materialsOrderStatus');
+      if(after)after.textContent='基本研修資料の並び順を保存しました';
     }catch(err){
       console.error(err);
       if(status)status.textContent='保存できませんでした。通信状態を確認して、もう一度お試しください';
