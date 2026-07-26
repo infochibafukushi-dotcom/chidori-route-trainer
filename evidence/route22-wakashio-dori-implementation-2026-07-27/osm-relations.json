@@ -1,0 +1,447 @@
+{
+  "fetchedAt": "2026-07-26T22:41:54.451Z",
+  "route": "wakashio-dori-route22",
+  "lineName": "若潮通り線",
+  "knownPathSourceIds": [
+    18396546,
+    18396547
+  ],
+  "separationGuard": "ref=20 (千鳥線) relations are listed but NEVER used for route-22 geometry.",
+  "relations": [
+    {
+      "id": 18396546,
+      "label": "route22 千鳥車庫⇒千鳥東⇒新浦安駅",
+      "ok": true,
+      "source": "overpass",
+      "name": "東京ベイシティバス22系統 千鳥車庫⇒千鳥東⇒新浦安駅",
+      "tags": {
+        "name": "東京ベイシティバス22系統 千鳥車庫⇒千鳥東⇒新浦安駅",
+        "network": "若潮通り線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "22",
+        "route": "bus",
+        "type": "route"
+      },
+      "memberCount": 39,
+      "wayMemberCount": 23,
+      "platformMemberCount": 16,
+      "memberRoles": {
+        "platform_entry_only": 1,
+        "platform": 14,
+        "platform_exit_only": 1,
+        "": 23
+      },
+      "platformNames": [
+        "千鳥車庫",
+        "車庫裏",
+        "千鳥東",
+        "千鳥北",
+        "千鳥車庫",
+        "運動公園",
+        "舞浜三丁目",
+        "見明川住宅",
+        "見明川中学校前",
+        "弁天第二",
+        "サンコーポ西口",
+        "サンコーポ東口",
+        "順天堂病院前",
+        "若潮公園",
+        "新浦安駅北口",
+        "新浦安駅"
+      ],
+      "platformsDetail": [
+        {
+          "role": "platform_entry_only",
+          "type": "node",
+          "ref": 6796350267,
+          "name": "千鳥車庫",
+          "lat": 35.6277143,
+          "lon": 139.8980169,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 12369582639,
+          "name": "車庫裏",
+          "lat": 35.6269235,
+          "lon": 139.8997012,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 12369582638,
+          "name": "千鳥東",
+          "lat": 35.6247215,
+          "lon": 139.9001598,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 9482675706,
+          "name": "千鳥北",
+          "lat": 35.6244672,
+          "lon": 139.8986946,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6796353426,
+          "name": "千鳥車庫",
+          "lat": 35.6267251,
+          "lon": 139.8975313,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6720667166,
+          "name": "運動公園",
+          "lat": 35.6325209,
+          "lon": 139.8914704,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1652826334,
+          "name": "舞浜三丁目",
+          "lat": 35.6339331,
+          "lon": 139.8931509,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1652792629,
+          "name": "見明川住宅",
+          "lat": 35.6366143,
+          "lon": 139.8963732,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11581103370,
+          "name": "見明川中学校前",
+          "lat": 35.6385937,
+          "lon": 139.8987376,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11581103369,
+          "name": "弁天第二",
+          "lat": 35.6400525,
+          "lon": 139.900479,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11581097368,
+          "name": "サンコーポ西口",
+          "lat": 35.6423093,
+          "lon": 139.9031895,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6720667163,
+          "name": "サンコーポ東口",
+          "lat": 35.6440928,
+          "lon": 139.9053323,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11581097365,
+          "name": "順天堂病院前",
+          "lat": 35.645692,
+          "lon": 139.907214,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6720667161,
+          "name": "若潮公園",
+          "lat": 35.6475041,
+          "lon": 139.9093912,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 12369534179,
+          "name": "新浦安駅北口",
+          "lat": 35.650054,
+          "lon": 139.9124041,
+          "local_ref": "L"
+        },
+        {
+          "role": "platform_exit_only",
+          "type": "node",
+          "ref": 8415001163,
+          "name": "新浦安駅",
+          "lat": 35.649411,
+          "lon": 139.9142448,
+          "local_ref": "X"
+        }
+      ],
+      "wayMemberIds": [
+        30176865,
+        1337358418,
+        1338973093,
+        30176278,
+        286387769,
+        30176171,
+        30176170,
+        846881938,
+        883069232,
+        883069538,
+        720402603,
+        26382285,
+        26382284,
+        1249418062,
+        378366425,
+        369356243,
+        26382176,
+        906161754,
+        26320596,
+        720406630,
+        906161756,
+        720406629,
+        906161755
+      ],
+      "file": "osm-relation-18396546.json"
+    },
+    {
+      "id": 18396547,
+      "label": "route22 新浦安駅⇒千鳥東⇒千鳥車庫",
+      "ok": true,
+      "source": "overpass",
+      "name": "東京ベイシティバス22系統 新浦安駅⇒千鳥東⇒千鳥車庫",
+      "tags": {
+        "name": "東京ベイシティバス22系統 新浦安駅⇒千鳥東⇒千鳥車庫",
+        "network": "若潮通り線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "22",
+        "route": "bus",
+        "type": "route"
+      },
+      "memberCount": 39,
+      "wayMemberCount": 23,
+      "platformMemberCount": 16,
+      "memberRoles": {
+        "platform_entry_only": 1,
+        "platform": 14,
+        "platform_exit_only": 1,
+        "": 23
+      },
+      "platformNames": [
+        "新浦安駅",
+        "新浦安駅北口",
+        "若潮公園",
+        "順天堂病院前",
+        "サンコーポ東口",
+        "サンコーポ西口",
+        "弁天第二",
+        "見明川中学校前",
+        "見明川住宅",
+        "舞浜三丁目",
+        "運動公園",
+        "千鳥車庫",
+        "千鳥北",
+        "千鳥東",
+        "車庫裏",
+        "千鳥車庫"
+      ],
+      "platformsDetail": [
+        {
+          "role": "platform_entry_only",
+          "type": "node",
+          "ref": 8415001166,
+          "name": "新浦安駅",
+          "lat": 35.6496296,
+          "lon": 139.9137782,
+          "local_ref": "B"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6778578838,
+          "name": "新浦安駅北口",
+          "lat": 35.6499903,
+          "lon": 139.9126359,
+          "local_ref": "J"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11581097364,
+          "name": "若潮公園",
+          "lat": 35.6473943,
+          "lon": 139.9095296,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6720667162,
+          "name": "順天堂病院前",
+          "lat": 35.6453182,
+          "lon": 139.9070393,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11581097367,
+          "name": "サンコーポ東口",
+          "lat": 35.6439144,
+          "lon": 139.905342,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6720667164,
+          "name": "サンコーポ西口",
+          "lat": 35.6420634,
+          "lon": 139.9031259,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1652792931,
+          "name": "弁天第二",
+          "lat": 35.6398165,
+          "lon": 139.9004629,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1652792821,
+          "name": "見明川中学校前",
+          "lat": 35.6384265,
+          "lon": 139.8987768,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11581103371,
+          "name": "見明川住宅",
+          "lat": 35.6364748,
+          "lon": 139.8964564,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 12368996366,
+          "name": "舞浜三丁目",
+          "lat": 35.6337929,
+          "lon": 139.8932505,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6935385497,
+          "name": "運動公園",
+          "lat": 35.6316986,
+          "lon": 139.8916963,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6796353425,
+          "name": "千鳥車庫",
+          "lat": 35.6266968,
+          "lon": 139.8978974,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 9482675705,
+          "name": "千鳥北",
+          "lat": 35.6246911,
+          "lon": 139.8988744,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6796350269,
+          "name": "千鳥東",
+          "lat": 35.6247863,
+          "lon": 139.9000968,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6796350268,
+          "name": "車庫裏",
+          "lat": 35.6269812,
+          "lon": 139.8994732,
+          "local_ref": null
+        },
+        {
+          "role": "platform_exit_only",
+          "type": "node",
+          "ref": 9482700319,
+          "name": "千鳥車庫",
+          "lat": 35.6276692,
+          "lon": 139.898082,
+          "local_ref": null
+        }
+      ],
+      "wayMemberIds": [
+        1341526745,
+        906161758,
+        1342408590,
+        1342409930,
+        1340739633,
+        906161743,
+        369356254,
+        720406632,
+        26382176,
+        369356242,
+        369356244,
+        1249418062,
+        26382284,
+        26382285,
+        720402603,
+        883069538,
+        883069232,
+        846881938,
+        30176170,
+        30176171,
+        286387770,
+        1338973095,
+        30176865
+      ],
+      "file": "osm-relation-18396547.json"
+    }
+  ],
+  "refProbe20": [
+    {
+      "error": "certificate has expired"
+    }
+  ]
+}

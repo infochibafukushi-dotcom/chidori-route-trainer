@@ -1,0 +1,20 @@
+{
+  "systems": {
+    "22-shinurayasu-chidori-garage": {
+      "pathHash": "052484b252cc996bdeb04a9087112581073d105a6a634403c6544d70a3e69f8f",
+      "recomputed": "052484b252cc996bdeb04a9087112581073d105a6a634403c6544d70a3e69f8f",
+      "match": true,
+      "pathPoints": 293,
+      "resolvedVersion": "2026-07-27-wakashio22-shinurayasu-chidori-garage-v1"
+    },
+    "22-chidori-garage-shinurayasu": {
+      "pathHash": "ac964a9f7706e2ea1777e1ab1793eda5d9f970b88bb6040482ecbf8a872fa7eb",
+      "recomputed": "ac964a9f7706e2ea1777e1ab1793eda5d9f970b88bb6040482ecbf8a872fa7eb",
+      "match": true,
+      "pathPoints": 288,
+      "resolvedVersion": "2026-07-27-wakashio22-chidori-garage-shinurayasu-v1"
+    }
+  },
+  "failures": [],
+  "ok": true
+}

@@ -199,6 +199,17 @@
         './chidori-line-stop-images-v1.js?v=112',
         './chidori-line-route-v1.js?v=112'
       ]
+    },
+    // route-22 若潮通り線（表示22千鳥東）。新浦安↔千鳥車庫。WAKASHIO_DORI_LINE_22_* で route-20 と分離。
+    'route-22': {
+      css: ['./wakashio-dori-line-22-stop-images-v1.css?v=113'],
+      js: [
+        './wakashio-dori-line-22-platforms-v1.js?v=113',
+        './wakashio-dori-line-22-path-v1.js?v=113',
+        './wakashio-dori-line-22-path-policy-v1.js?v=113',
+        './wakashio-dori-line-22-stop-images-v1.js?v=113',
+        './wakashio-dori-line-22-route-v1.js?v=113'
+      ]
     }
   };
 

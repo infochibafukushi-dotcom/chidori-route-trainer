@@ -1,0 +1,142 @@
+{
+  "startedAt": "2026-07-26T23:25:18.112Z",
+  "routeId": "route-22",
+  "integrity": {
+    "22-shinurayasu-chidori-garage": {
+      "stopNames": [
+        "新浦安駅",
+        "新浦安駅北口",
+        "若潮公園",
+        "順天堂病院前",
+        "サンコーポ東口",
+        "サンコーポ西口",
+        "弁天第二",
+        "見明川中学校前",
+        "見明川住宅",
+        "舞浜三丁目",
+        "運動公園",
+        "千鳥車庫",
+        "千鳥北",
+        "千鳥東",
+        "車庫裏",
+        "千鳥車庫"
+      ],
+      "stopIds": [
+        "wakashio-22-22-shinurayasu-chidori-garage-01",
+        "wakashio-22-22-shinurayasu-chidori-garage-02",
+        "wakashio-22-22-shinurayasu-chidori-garage-03",
+        "wakashio-22-22-shinurayasu-chidori-garage-04",
+        "wakashio-22-22-shinurayasu-chidori-garage-05",
+        "wakashio-22-22-shinurayasu-chidori-garage-06",
+        "wakashio-22-22-shinurayasu-chidori-garage-07",
+        "wakashio-22-22-shinurayasu-chidori-garage-08",
+        "wakashio-22-22-shinurayasu-chidori-garage-09",
+        "wakashio-22-22-shinurayasu-chidori-garage-10",
+        "wakashio-22-22-shinurayasu-chidori-garage-11",
+        "wakashio-22-22-shinurayasu-chidori-garage-12",
+        "wakashio-22-22-shinurayasu-chidori-garage-13",
+        "wakashio-22-22-shinurayasu-chidori-garage-14",
+        "wakashio-22-22-shinurayasu-chidori-garage-15",
+        "wakashio-22-22-shinurayasu-chidori-garage-16"
+      ],
+      "coordsValid": true,
+      "pathPoints": 293,
+      "pathHash": "052484b252cc996bdeb04a9087112581073d105a6a634403c6544d70a3e69f8f",
+      "recomputedHash": "052484b252cc996bdeb04a9087112581073d105a6a634403c6544d70a3e69f8f",
+      "resolvedVersion": "2026-07-27-wakashio22-shinurayasu-chidori-garage-v1",
+      "pathInvalid": false,
+      "validation": {
+        "ok": true,
+        "reasons": [],
+        "maxGapM": 24.8,
+        "pointCount": 293,
+        "policyVersion": "2026-07-27-wakashio-dori-line-22-v1-path"
+      },
+      "stopOrderMatchesOfficial": true,
+      "pathHashMatchesBank": true,
+      "pathHashRecomputeMatches": true,
+      "resolvedVersionMatches": true,
+      "siblingLeak": []
+    },
+    "22-chidori-garage-shinurayasu": {
+      "stopNames": [
+        "千鳥車庫",
+        "車庫裏",
+        "千鳥東",
+        "千鳥北",
+        "千鳥車庫",
+        "運動公園",
+        "舞浜三丁目",
+        "見明川住宅",
+        "見明川中学校前",
+        "弁天第二",
+        "サンコーポ西口",
+        "サンコーポ東口",
+        "順天堂病院前",
+        "若潮公園",
+        "新浦安駅北口",
+        "新浦安駅"
+      ],
+      "stopIds": [
+        "wakashio-22-22-chidori-garage-shinurayasu-01",
+        "wakashio-22-22-chidori-garage-shinurayasu-02",
+        "wakashio-22-22-chidori-garage-shinurayasu-03",
+        "wakashio-22-22-chidori-garage-shinurayasu-04",
+        "wakashio-22-22-chidori-garage-shinurayasu-05",
+        "wakashio-22-22-chidori-garage-shinurayasu-06",
+        "wakashio-22-22-chidori-garage-shinurayasu-07",
+        "wakashio-22-22-chidori-garage-shinurayasu-08",
+        "wakashio-22-22-chidori-garage-shinurayasu-09",
+        "wakashio-22-22-chidori-garage-shinurayasu-10",
+        "wakashio-22-22-chidori-garage-shinurayasu-11",
+        "wakashio-22-22-chidori-garage-shinurayasu-12",
+        "wakashio-22-22-chidori-garage-shinurayasu-13",
+        "wakashio-22-22-chidori-garage-shinurayasu-14",
+        "wakashio-22-22-chidori-garage-shinurayasu-15",
+        "wakashio-22-22-chidori-garage-shinurayasu-16"
+      ],
+      "coordsValid": true,
+      "pathPoints": 288,
+      "pathHash": "ac964a9f7706e2ea1777e1ab1793eda5d9f970b88bb6040482ecbf8a872fa7eb",
+      "recomputedHash": "ac964a9f7706e2ea1777e1ab1793eda5d9f970b88bb6040482ecbf8a872fa7eb",
+      "resolvedVersion": "2026-07-27-wakashio22-chidori-garage-shinurayasu-v1",
+      "pathInvalid": false,
+      "validation": {
+        "ok": true,
+        "reasons": [],
+        "maxGapM": 24.8,
+        "pointCount": 288,
+        "policyVersion": "2026-07-27-wakashio-dori-line-22-v1-path"
+      },
+      "stopOrderMatchesOfficial": true,
+      "pathHashMatchesBank": true,
+      "pathHashRecomputeMatches": true,
+      "resolvedVersionMatches": true,
+      "siblingLeak": []
+    }
+  },
+  "drives": {
+    "22-shinurayasu-chidori-garage": {
+      "ok": true,
+      "endReached": true,
+      "jumps": 0,
+      "registeredStops": 16,
+      "stopCount": 16
+    },
+    "22-chidori-garage-shinurayasu": {
+      "ok": true,
+      "endReached": true,
+      "jumps": 0,
+      "registeredStops": 16,
+      "stopCount": 16
+    }
+  },
+  "pageErrors": [],
+  "consoleErrors": [],
+  "failures": [],
+  "pass": true,
+  "regressions": {
+    "route-20": true,
+    "route-19": true
+  }
+}

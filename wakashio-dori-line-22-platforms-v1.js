@@ -1,0 +1,483 @@
+// Auto-generated OSM platforms for 若潮通り線 系統22 (route-22 / 22千鳥東).
+// Official stop order: Keisei Bus Navi 2026-07-27（【２２系統】凡例ゲート）。20系統は除外。
+// Duplicate stop names (千鳥車庫) use byIndex array.
+// NEVER use route-20 relations 13764790/18323971/18323972/18351939/18351940.
+// Generated: 2026-07-27-wakashio-dori-line-22-v1
+(() => {
+  window.WAKASHIO_DORI_LINE_22_PLATFORMS_V1 = {
+  "22-shinurayasu-chidori-garage": {
+    "byIndex": [
+      {
+        "lat": 35.6496296,
+        "lng": 139.9137782,
+        "platformId": 8415001166,
+        "role": "platform_entry_only",
+        "osmName": "新浦安駅",
+        "name": "新浦安駅"
+      },
+      {
+        "lat": 35.6499903,
+        "lng": 139.9126359,
+        "platformId": 6778578838,
+        "role": "platform",
+        "osmName": "新浦安駅北口",
+        "name": "新浦安駅北口"
+      },
+      {
+        "lat": 35.6473943,
+        "lng": 139.9095296,
+        "platformId": 11581097364,
+        "role": "platform",
+        "osmName": "若潮公園",
+        "name": "若潮公園"
+      },
+      {
+        "lat": 35.6453182,
+        "lng": 139.9070393,
+        "platformId": 6720667162,
+        "role": "platform",
+        "osmName": "順天堂病院前",
+        "name": "順天堂病院前"
+      },
+      {
+        "lat": 35.6439144,
+        "lng": 139.905342,
+        "platformId": 11581097367,
+        "role": "platform",
+        "osmName": "サンコーポ東口",
+        "name": "サンコーポ東口"
+      },
+      {
+        "lat": 35.6420634,
+        "lng": 139.9031259,
+        "platformId": 6720667164,
+        "role": "platform",
+        "osmName": "サンコーポ西口",
+        "name": "サンコーポ西口"
+      },
+      {
+        "lat": 35.6398165,
+        "lng": 139.9004629,
+        "platformId": 1652792931,
+        "role": "platform",
+        "osmName": "弁天第二",
+        "name": "弁天第二"
+      },
+      {
+        "lat": 35.6384265,
+        "lng": 139.8987768,
+        "platformId": 1652792821,
+        "role": "platform",
+        "osmName": "見明川中学校前",
+        "name": "見明川中学校前"
+      },
+      {
+        "lat": 35.6364748,
+        "lng": 139.8964564,
+        "platformId": 11581103371,
+        "role": "platform",
+        "osmName": "見明川住宅",
+        "name": "見明川住宅"
+      },
+      {
+        "lat": 35.6337929,
+        "lng": 139.8932505,
+        "platformId": 12368996366,
+        "role": "platform",
+        "osmName": "舞浜三丁目",
+        "name": "舞浜三丁目"
+      },
+      {
+        "lat": 35.6316986,
+        "lng": 139.8916963,
+        "platformId": 6935385497,
+        "role": "platform",
+        "osmName": "運動公園",
+        "name": "運動公園"
+      },
+      {
+        "lat": 35.6266968,
+        "lng": 139.8978974,
+        "platformId": 6796353425,
+        "role": "platform",
+        "osmName": "千鳥車庫",
+        "name": "千鳥車庫"
+      },
+      {
+        "lat": 35.6246911,
+        "lng": 139.8988744,
+        "platformId": 9482675705,
+        "role": "platform",
+        "osmName": "千鳥北",
+        "name": "千鳥北"
+      },
+      {
+        "lat": 35.6247863,
+        "lng": 139.9000968,
+        "platformId": 6796350269,
+        "role": "platform",
+        "osmName": "千鳥東",
+        "name": "千鳥東"
+      },
+      {
+        "lat": 35.6269812,
+        "lng": 139.8994732,
+        "platformId": 6796350268,
+        "role": "platform",
+        "osmName": "車庫裏",
+        "name": "車庫裏"
+      },
+      {
+        "lat": 35.6276692,
+        "lng": 139.898082,
+        "platformId": 9482700319,
+        "role": "platform_exit_only",
+        "osmName": "千鳥車庫",
+        "name": "千鳥車庫"
+      }
+    ],
+    "新浦安駅": {
+      "lat": 35.6496296,
+      "lng": 139.9137782,
+      "platformId": 8415001166,
+      "role": "platform_entry_only",
+      "osmName": "新浦安駅"
+    },
+    "新浦安駅北口": {
+      "lat": 35.6499903,
+      "lng": 139.9126359,
+      "platformId": 6778578838,
+      "role": "platform",
+      "osmName": "新浦安駅北口"
+    },
+    "若潮公園": {
+      "lat": 35.6473943,
+      "lng": 139.9095296,
+      "platformId": 11581097364,
+      "role": "platform",
+      "osmName": "若潮公園"
+    },
+    "順天堂病院前": {
+      "lat": 35.6453182,
+      "lng": 139.9070393,
+      "platformId": 6720667162,
+      "role": "platform",
+      "osmName": "順天堂病院前"
+    },
+    "サンコーポ東口": {
+      "lat": 35.6439144,
+      "lng": 139.905342,
+      "platformId": 11581097367,
+      "role": "platform",
+      "osmName": "サンコーポ東口"
+    },
+    "サンコーポ西口": {
+      "lat": 35.6420634,
+      "lng": 139.9031259,
+      "platformId": 6720667164,
+      "role": "platform",
+      "osmName": "サンコーポ西口"
+    },
+    "弁天第二": {
+      "lat": 35.6398165,
+      "lng": 139.9004629,
+      "platformId": 1652792931,
+      "role": "platform",
+      "osmName": "弁天第二"
+    },
+    "見明川中学校前": {
+      "lat": 35.6384265,
+      "lng": 139.8987768,
+      "platformId": 1652792821,
+      "role": "platform",
+      "osmName": "見明川中学校前"
+    },
+    "見明川住宅": {
+      "lat": 35.6364748,
+      "lng": 139.8964564,
+      "platformId": 11581103371,
+      "role": "platform",
+      "osmName": "見明川住宅"
+    },
+    "舞浜三丁目": {
+      "lat": 35.6337929,
+      "lng": 139.8932505,
+      "platformId": 12368996366,
+      "role": "platform",
+      "osmName": "舞浜三丁目"
+    },
+    "運動公園": {
+      "lat": 35.6316986,
+      "lng": 139.8916963,
+      "platformId": 6935385497,
+      "role": "platform",
+      "osmName": "運動公園"
+    },
+    "千鳥車庫": {
+      "lat": 35.6276692,
+      "lng": 139.898082,
+      "platformId": 9482700319,
+      "role": "platform_exit_only",
+      "osmName": "千鳥車庫"
+    },
+    "千鳥北": {
+      "lat": 35.6246911,
+      "lng": 139.8988744,
+      "platformId": 9482675705,
+      "role": "platform",
+      "osmName": "千鳥北"
+    },
+    "千鳥東": {
+      "lat": 35.6247863,
+      "lng": 139.9000968,
+      "platformId": 6796350269,
+      "role": "platform",
+      "osmName": "千鳥東"
+    },
+    "車庫裏": {
+      "lat": 35.6269812,
+      "lng": 139.8994732,
+      "platformId": 6796350268,
+      "role": "platform",
+      "osmName": "車庫裏"
+    }
+  },
+  "22-chidori-garage-shinurayasu": {
+    "byIndex": [
+      {
+        "lat": 35.6277143,
+        "lng": 139.8980169,
+        "platformId": 6796350267,
+        "role": "platform_entry_only",
+        "osmName": "千鳥車庫",
+        "name": "千鳥車庫"
+      },
+      {
+        "lat": 35.6269235,
+        "lng": 139.8997012,
+        "platformId": 12369582639,
+        "role": "platform",
+        "osmName": "車庫裏",
+        "name": "車庫裏"
+      },
+      {
+        "lat": 35.6247215,
+        "lng": 139.9001598,
+        "platformId": 12369582638,
+        "role": "platform",
+        "osmName": "千鳥東",
+        "name": "千鳥東"
+      },
+      {
+        "lat": 35.6244672,
+        "lng": 139.8986946,
+        "platformId": 9482675706,
+        "role": "platform",
+        "osmName": "千鳥北",
+        "name": "千鳥北"
+      },
+      {
+        "lat": 35.6267251,
+        "lng": 139.8975313,
+        "platformId": 6796353426,
+        "role": "platform",
+        "osmName": "千鳥車庫",
+        "name": "千鳥車庫"
+      },
+      {
+        "lat": 35.6325209,
+        "lng": 139.8914704,
+        "platformId": 6720667166,
+        "role": "platform",
+        "osmName": "運動公園",
+        "name": "運動公園"
+      },
+      {
+        "lat": 35.6339331,
+        "lng": 139.8931509,
+        "platformId": 1652826334,
+        "role": "platform",
+        "osmName": "舞浜三丁目",
+        "name": "舞浜三丁目"
+      },
+      {
+        "lat": 35.6366143,
+        "lng": 139.8963732,
+        "platformId": 1652792629,
+        "role": "platform",
+        "osmName": "見明川住宅",
+        "name": "見明川住宅"
+      },
+      {
+        "lat": 35.6385937,
+        "lng": 139.8987376,
+        "platformId": 11581103370,
+        "role": "platform",
+        "osmName": "見明川中学校前",
+        "name": "見明川中学校前"
+      },
+      {
+        "lat": 35.6400525,
+        "lng": 139.900479,
+        "platformId": 11581103369,
+        "role": "platform",
+        "osmName": "弁天第二",
+        "name": "弁天第二"
+      },
+      {
+        "lat": 35.6423093,
+        "lng": 139.9031895,
+        "platformId": 11581097368,
+        "role": "platform",
+        "osmName": "サンコーポ西口",
+        "name": "サンコーポ西口"
+      },
+      {
+        "lat": 35.6440928,
+        "lng": 139.9053323,
+        "platformId": 6720667163,
+        "role": "platform",
+        "osmName": "サンコーポ東口",
+        "name": "サンコーポ東口"
+      },
+      {
+        "lat": 35.645692,
+        "lng": 139.907214,
+        "platformId": 11581097365,
+        "role": "platform",
+        "osmName": "順天堂病院前",
+        "name": "順天堂病院前"
+      },
+      {
+        "lat": 35.6475041,
+        "lng": 139.9093912,
+        "platformId": 6720667161,
+        "role": "platform",
+        "osmName": "若潮公園",
+        "name": "若潮公園"
+      },
+      {
+        "lat": 35.650054,
+        "lng": 139.9124041,
+        "platformId": 12369534179,
+        "role": "platform",
+        "osmName": "新浦安駅北口",
+        "name": "新浦安駅北口"
+      },
+      {
+        "lat": 35.649411,
+        "lng": 139.9142448,
+        "platformId": 8415001163,
+        "role": "platform_exit_only",
+        "osmName": "新浦安駅",
+        "name": "新浦安駅"
+      }
+    ],
+    "千鳥車庫": {
+      "lat": 35.6267251,
+      "lng": 139.8975313,
+      "platformId": 6796353426,
+      "role": "platform",
+      "osmName": "千鳥車庫"
+    },
+    "車庫裏": {
+      "lat": 35.6269235,
+      "lng": 139.8997012,
+      "platformId": 12369582639,
+      "role": "platform",
+      "osmName": "車庫裏"
+    },
+    "千鳥東": {
+      "lat": 35.6247215,
+      "lng": 139.9001598,
+      "platformId": 12369582638,
+      "role": "platform",
+      "osmName": "千鳥東"
+    },
+    "千鳥北": {
+      "lat": 35.6244672,
+      "lng": 139.8986946,
+      "platformId": 9482675706,
+      "role": "platform",
+      "osmName": "千鳥北"
+    },
+    "運動公園": {
+      "lat": 35.6325209,
+      "lng": 139.8914704,
+      "platformId": 6720667166,
+      "role": "platform",
+      "osmName": "運動公園"
+    },
+    "舞浜三丁目": {
+      "lat": 35.6339331,
+      "lng": 139.8931509,
+      "platformId": 1652826334,
+      "role": "platform",
+      "osmName": "舞浜三丁目"
+    },
+    "見明川住宅": {
+      "lat": 35.6366143,
+      "lng": 139.8963732,
+      "platformId": 1652792629,
+      "role": "platform",
+      "osmName": "見明川住宅"
+    },
+    "見明川中学校前": {
+      "lat": 35.6385937,
+      "lng": 139.8987376,
+      "platformId": 11581103370,
+      "role": "platform",
+      "osmName": "見明川中学校前"
+    },
+    "弁天第二": {
+      "lat": 35.6400525,
+      "lng": 139.900479,
+      "platformId": 11581103369,
+      "role": "platform",
+      "osmName": "弁天第二"
+    },
+    "サンコーポ西口": {
+      "lat": 35.6423093,
+      "lng": 139.9031895,
+      "platformId": 11581097368,
+      "role": "platform",
+      "osmName": "サンコーポ西口"
+    },
+    "サンコーポ東口": {
+      "lat": 35.6440928,
+      "lng": 139.9053323,
+      "platformId": 6720667163,
+      "role": "platform",
+      "osmName": "サンコーポ東口"
+    },
+    "順天堂病院前": {
+      "lat": 35.645692,
+      "lng": 139.907214,
+      "platformId": 11581097365,
+      "role": "platform",
+      "osmName": "順天堂病院前"
+    },
+    "若潮公園": {
+      "lat": 35.6475041,
+      "lng": 139.9093912,
+      "platformId": 6720667161,
+      "role": "platform",
+      "osmName": "若潮公園"
+    },
+    "新浦安駅北口": {
+      "lat": 35.650054,
+      "lng": 139.9124041,
+      "platformId": 12369534179,
+      "role": "platform",
+      "osmName": "新浦安駅北口"
+    },
+    "新浦安駅": {
+      "lat": 35.649411,
+      "lng": 139.9142448,
+      "platformId": 8415001163,
+      "role": "platform_exit_only",
+      "osmName": "新浦安駅"
+    }
+  }
+};
+})();

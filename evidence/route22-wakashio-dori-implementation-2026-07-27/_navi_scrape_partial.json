@@ -1,0 +1,455 @@
+{
+  "scrapedAt": "2026-07-26T22:43:59.287Z",
+  "source": "https://transfer-cloud.navitime.biz/keiseibus-group",
+  "routeNumber": "22",
+  "siblingRouteNumbers": [
+    "20",
+    "9",
+    "12",
+    "25",
+    "6",
+    "14",
+    "4",
+    "2"
+  ],
+  "lineName": "若潮通り線",
+  "note": "Route 22 discovery (22千鳥東). Gate 【２２系統】. Separate from [20] 千鳥線.",
+  "knownIds": {
+    "chidoriGarage": "00020620",
+    "shinurayasu": "00020619"
+  },
+  "searches": {
+    "新浦安駅": {
+      "searchUrl": null,
+      "word": "新浦安駅",
+      "hits": []
+    },
+    "新浦安駅北口": {
+      "searchUrl": null,
+      "word": "新浦安駅北口",
+      "hits": []
+    },
+    "若潮公園": {
+      "searchUrl": null,
+      "word": "若潮公園",
+      "hits": []
+    },
+    "順天堂病院前": {
+      "searchUrl": null,
+      "word": "順天堂病院前",
+      "hits": []
+    },
+    "千鳥車庫": {
+      "searchUrl": null,
+      "word": "千鳥車庫",
+      "hits": []
+    },
+    "千鳥北": {
+      "searchUrl": null,
+      "word": "千鳥北",
+      "hits": []
+    },
+    "千鳥東": {
+      "searchUrl": null,
+      "word": "千鳥東",
+      "hits": []
+    },
+    "車庫裏": {
+      "searchUrl": null,
+      "word": "車庫裏",
+      "hits": []
+    },
+    "運動公園": {
+      "searchUrl": null,
+      "word": "運動公園",
+      "hits": []
+    },
+    "舞浜三丁目": {
+      "searchUrl": null,
+      "word": "舞浜三丁目",
+      "hits": []
+    }
+  },
+  "terminals": {
+    "shinurayasu": {
+      "label": "新浦安駅",
+      "busstopId": "00020619",
+      "coursesUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses?busstop=00020619",
+      "title": "新浦安駅〈京成バス千葉ウエスト〉の系統・時刻表・のりば一覧 | 京成バスナビ | 京成電鉄バスグループ",
+      "heading": "新浦安駅〈京成バス千葉ウエスト〉 しんうらやすえき 系統・時刻表・のりば一覧",
+      "all": [
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200498-1",
+          "text": "浦安０３ [浦安０３]本八幡駅南口行 時刻表",
+          "berth": "01 地図",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200498-1",
+          "berthLetter": "01",
+          "siblingsInCell": [],
+          "has22": false
+        },
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200227-1",
+          "text": "5 [5]（東野二丁目経由）浦安駅入口行 時刻表",
+          "berth": "A 地図",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200227-1",
+          "berthLetter": "A",
+          "siblingsInCell": [],
+          "has22": false
+        },
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200202-1",
+          "text": "１－５ [１－１]（美浜中学校・北栄中央・浦安駅東口・東京ベイ医療センター方面）北栄循環行 [１－３]（美浜中学校・北栄中央・浦安駅東口・東京ベイ医療センター方面）北栄循環行 [１－５]（美浜中学校・北栄中央・浦安駅東口・東京ベイ医療センター方面）北栄循環行 時刻表",
+          "berth": "１－５ [１－１]（美浜中学校・北栄中央・浦安駅東口・東京ベイ医療センター方面）北栄循環行 [１－３]（美浜中学校・北栄中央・浦安駅東口・東京ベイ医療センター方面）北栄循環行 [１－５]（美浜中学校・北栄中央・浦安駅東口・東京ベイ医療センタ",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200202-1",
+          "berthLetter": "１－５ [１－１]（美浜中学校・北栄中央",
+          "siblingsInCell": [],
+          "has22": false
+        },
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200301-1",
+          "text": "22千鳥東 [22千鳥東]（順天堂病院前・千鳥東経由）千鳥車庫行 時刻表",
+          "berth": "B 地図",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200301-1",
+          "berthLetter": "B",
+          "siblingsInCell": [],
+          "has22": true
+        },
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200274-1",
+          "text": "14 [14]（順天堂病院前・弁天中央経由）舞浜駅・千鳥車庫行 時刻表",
+          "berth": "14 [14]（順天堂病院前・弁天中央経由）舞浜駅・千鳥車庫行 時刻表",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200274-1",
+          "berthLetter": "14",
+          "siblingsInCell": [
+            "14"
+          ],
+          "has22": false
+        },
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200304-1",
+          "text": "24 [24]富士見循環（順天堂病院前・中央公園・東海大浦安高校前・富士見五丁目方面）行 時刻表",
+          "berth": "24 [24]富士見循環（順天堂病院前・中央公園・東海大浦安高校前・富士見五丁目方面）行 時刻表",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200304-1",
+          "berthLetter": "24",
+          "siblingsInCell": [],
+          "has22": false
+        },
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200316-1",
+          "text": "38 [38]＜急行＞明海小学校・クオン新浦安方面行 時刻表",
+          "berth": "38 [38]＜急行＞明海小学校・クオン新浦安方面行 時刻表",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200316-1",
+          "berthLetter": "38",
+          "siblingsInCell": [],
+          "has22": false
+        },
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200280-1",
+          "text": "16 [16]（プラウド新浦安パークマリーナ経由）日の出七丁目行 時刻表",
+          "berth": "C 地図",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200280-1",
+          "berthLetter": "C",
+          "siblingsInCell": [],
+          "has22": false
+        },
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200282-1",
+          "text": "17 [17]（日の出東経由）日の出七丁目（日の出東・プラウド新浦安パークマリーナ経由）ベイシティ浦安行 [深夜]（日の出東経由）日の出七丁目（日の出東・プラウド新浦安パークマリーナ経由）ベイシティ浦安行 時刻表",
+          "berth": "17 [17]（日の出東経由）日の出七丁目（日の出東・プラウド新浦安パークマリーナ経由）ベイシティ浦安行 [深夜]（日の出東経由）日の出七丁目（日の出東・プラウド新浦安パークマリーナ経由）ベイシティ浦安行 時刻表",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200282-1",
+          "berthLetter": "17",
+          "siblingsInCell": [],
+          "has22": false
+        },
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200211-7",
+          "text": "3 [23]（明海五丁目経由）総合公園（明海五丁目・ベイパーク経由）シンボルロード・パークシティ行 [3]（明海五丁目経由）総合公園（明海五丁目・ベイパーク経由）シンボルロード・パークシティ行 [深夜]（明海五丁目経由）総合公園（明海五丁目・ベイパーク経由）シンボルロード・パークシティ行 時刻表",
+          "berth": "D 地図",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200211-7",
+          "berthLetter": "D",
+          "siblingsInCell": [],
+          "has22": false
+        },
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200257-7",
+          "text": "11 [11]（ベイパーク経由）総合公園・日の出南（墓地公園）行 時刻表",
+          "berth": "11 [11]（ベイパーク経由）総合公園・日の出南（墓地公園）行 時刻表",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200257-7",
+          "berthLetter": "11",
+          "siblingsInCell": [],
+          "has22": false
+        },
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200278-1",
+          "text": "15 [15]高洲海浜公園(潮音の街・高洲四丁目経由)高洲北小学校行 18 [18]高洲海浜公園(潮音の街・高洲四丁目経由)高洲北小学校行 [深夜]高洲海浜公園(潮音の街・高洲四丁目経由)高洲北小学校行 時刻表",
+          "berth": "E 地図",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200278-1",
+          "berthLetter": "E",
+          "siblingsInCell": [],
+          "has22": false
+        },
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200254-1",
+          "text": "10 [10]（東京学館前・高洲四丁目経由）高洲海浜公園・みなと南（鉄鋼団地）行 19 [19]（東京学館前・高洲四丁目経由）高洲海浜公園・みなと南（鉄鋼団地）行 時刻表",
+          "berth": "F 地図",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200254-1",
+          "berthLetter": "F",
+          "siblingsInCell": [],
+          "has22": false
+        },
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200210-13",
+          "text": "11 [11]（消防本部前経由）浦安駅入口（順天堂病院前・見明川住宅経由）舞浜駅行 18 [18]（消防本部前経由）浦安駅入口（順天堂病院前・見明川住宅経由）舞浜駅行 3 [23]（消防本部前経由）浦安駅入口（順天堂病院前・見明川住宅経由）舞浜駅行 [3]（消防本部前経由）浦安駅入口（順天堂病院前・見明川住宅経由）舞浜駅行 時刻表",
+          "berth": "H 地図",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200210-13",
+          "berthLetter": "H",
+          "siblingsInCell": [],
+          "has22": false
+        },
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020224&course-sequence=0008200051-1",
+          "text": "瑞75 江戸川スポーツランド行 [南行徳駅経由] 時刻表",
+          "berth": "接近情報",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020224&course-sequence=0008200051-1",
+          "berthLetter": "接近情報",
+          "siblingsInCell": [],
+          "has22": false
+        }
+      ],
+      "route22": [
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200301-1",
+          "text": "22千鳥東 [22千鳥東]（順天堂病院前・千鳥東経由）千鳥車庫行 時刻表",
+          "berth": "B 地図",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200301-1",
+          "berthLetter": "B",
+          "siblingsInCell": [],
+          "has22": true
+        }
+      ],
+      "siblingOnly": [
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200274-1",
+          "text": "14 [14]（順天堂病院前・弁天中央経由）舞浜駅・千鳥車庫行 時刻表",
+          "berth": "14 [14]（順天堂病院前・弁天中央経由）舞浜駅・千鳥車庫行 時刻表",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200274-1",
+          "berthLetter": "14",
+          "siblingsInCell": [
+            "14"
+          ],
+          "has22": false
+        }
+      ],
+      "mixedWithSiblings": []
+    },
+    "chidoriGarage": {
+      "label": "千鳥車庫",
+      "busstopId": "00020620",
+      "coursesUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses?busstop=00020620",
+      "title": "千鳥車庫の系統・時刻表・のりば一覧 | 京成バスナビ | 京成電鉄バスグループ",
+      "heading": "千鳥車庫 ちどりしゃこ 系統・時刻表・のりば一覧",
+      "all": [
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020620&course-sequence=0008200294-4",
+          "text": "20 [20]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行 [循環]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行 22千鳥東 [22千鳥東]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行 時刻表",
+          "berth": "01 地図",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020620&course-sequence=0008200294-4",
+          "berthLetter": "01",
+          "siblingsInCell": [
+            "20"
+          ],
+          "has22": true
+        },
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020620&course-sequence=0008200207-1",
+          "text": "14 [14]（新浦安駅北口経由）浦安駅入口、（南小入口経由）浦安駅入口（市役所前経由）浦安駅入口（弁天中央経由）（新浦安駅経由）行 2 [2]（新浦安駅北口経由）浦安駅入口、（南小入口経由）浦安駅入口（市役所前経由）浦安駅入口（弁天中央経由）（新浦安駅経由）行 4 [4]（新浦安駅北口経由）浦安駅入口、（南小入口経由）浦安駅入口（市役所前経由）浦安駅入口（弁天中央経由）（新浦安駅経由）行 6 [6]（新浦安駅北口経由）浦安駅入口、（南小入口経由）浦安駅入口（市役所前経由）浦安駅入口（弁天中央経由）（新浦安駅経由）行 時刻表",
+          "berth": "02 地図",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020620&course-sequence=0008200207-1",
+          "berthLetter": "02",
+          "siblingsInCell": [
+            "6",
+            "14",
+            "4",
+            "2"
+          ],
+          "has22": false
+        },
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020620&course-sequence=0008200293-5",
+          "text": "20 [20 直通]＜急行＞舞浜駅（運動公園通過）（順天堂病院経由）新浦安駅行 [20]＜急行＞舞浜駅（運動公園通過）（順天堂病院経由）新浦安駅行 [循環]＜急行＞舞浜駅（運動公園通過）（順天堂病院経由）新浦安駅行 22千鳥東 [22千鳥東]＜急行＞舞浜駅（運動公園通過）（順天堂病院経由）新浦安駅行 時刻表",
+          "berth": "03 地図",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020620&course-sequence=0008200293-5",
+          "berthLetter": "03",
+          "siblingsInCell": [
+            "20"
+          ],
+          "has22": true
+        },
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020620&course-sequence=0008200293-1",
+          "text": "20 [20]（千鳥東経由）＜急行＞舞浜駅（千鳥東・順天堂病院経由）新浦安駅行 22千鳥東 [22千鳥東]（千鳥東経由）＜急行＞舞浜駅（千鳥東・順天堂病院経由）新浦安駅行 時刻表",
+          "berth": "04 地図",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020620&course-sequence=0008200293-1",
+          "berthLetter": "04",
+          "siblingsInCell": [
+            "20"
+          ],
+          "has22": true
+        }
+      ],
+      "route22": [
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020620&course-sequence=0008200294-4",
+          "text": "20 [20]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行 [循環]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行 22千鳥東 [22千鳥東]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行 時刻表",
+          "berth": "01 地図",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020620&course-sequence=0008200294-4",
+          "berthLetter": "01",
+          "siblingsInCell": [
+            "20"
+          ],
+          "has22": true
+        },
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020620&course-sequence=0008200293-5",
+          "text": "20 [20 直通]＜急行＞舞浜駅（運動公園通過）（順天堂病院経由）新浦安駅行 [20]＜急行＞舞浜駅（運動公園通過）（順天堂病院経由）新浦安駅行 [循環]＜急行＞舞浜駅（運動公園通過）（順天堂病院経由）新浦安駅行 22千鳥東 [22千鳥東]＜急行＞舞浜駅（運動公園通過）（順天堂病院経由）新浦安駅行 時刻表",
+          "berth": "03 地図",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020620&course-sequence=0008200293-5",
+          "berthLetter": "03",
+          "siblingsInCell": [
+            "20"
+          ],
+          "has22": true
+        },
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020620&course-sequence=0008200293-1",
+          "text": "20 [20]（千鳥東経由）＜急行＞舞浜駅（千鳥東・順天堂病院経由）新浦安駅行 22千鳥東 [22千鳥東]（千鳥東経由）＜急行＞舞浜駅（千鳥東・順天堂病院経由）新浦安駅行 時刻表",
+          "berth": "04 地図",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020620&course-sequence=0008200293-1",
+          "berthLetter": "04",
+          "siblingsInCell": [
+            "20"
+          ],
+          "has22": true
+        }
+      ],
+      "siblingOnly": [
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020620&course-sequence=0008200207-1",
+          "text": "14 [14]（新浦安駅北口経由）浦安駅入口、（南小入口経由）浦安駅入口（市役所前経由）浦安駅入口（弁天中央経由）（新浦安駅経由）行 2 [2]（新浦安駅北口経由）浦安駅入口、（南小入口経由）浦安駅入口（市役所前経由）浦安駅入口（弁天中央経由）（新浦安駅経由）行 4 [4]（新浦安駅北口経由）浦安駅入口、（南小入口経由）浦安駅入口（市役所前経由）浦安駅入口（弁天中央経由）（新浦安駅経由）行 6 [6]（新浦安駅北口経由）浦安駅入口、（南小入口経由）浦安駅入口（市役所前経由）浦安駅入口（弁天中央経由）（新浦安駅経由）行 時刻表",
+          "berth": "02 地図",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020620&course-sequence=0008200207-1",
+          "berthLetter": "02",
+          "siblingsInCell": [
+            "6",
+            "14",
+            "4",
+            "2"
+          ],
+          "has22": false
+        }
+      ],
+      "mixedWithSiblings": [
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020620&course-sequence=0008200294-4",
+          "text": "20 [20]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行 [循環]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行 22千鳥東 [22千鳥東]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行 時刻表",
+          "berth": "01 地図",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020620&course-sequence=0008200294-4",
+          "berthLetter": "01",
+          "siblingsInCell": [
+            "20"
+          ],
+          "has22": true
+        },
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020620&course-sequence=0008200293-5",
+          "text": "20 [20 直通]＜急行＞舞浜駅（運動公園通過）（順天堂病院経由）新浦安駅行 [20]＜急行＞舞浜駅（運動公園通過）（順天堂病院経由）新浦安駅行 [循環]＜急行＞舞浜駅（運動公園通過）（順天堂病院経由）新浦安駅行 22千鳥東 [22千鳥東]＜急行＞舞浜駅（運動公園通過）（順天堂病院経由）新浦安駅行 時刻表",
+          "berth": "03 地図",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020620&course-sequence=0008200293-5",
+          "berthLetter": "03",
+          "siblingsInCell": [
+            "20"
+          ],
+          "has22": true
+        },
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020620&course-sequence=0008200293-1",
+          "text": "20 [20]（千鳥東経由）＜急行＞舞浜駅（千鳥東・順天堂病院経由）新浦安駅行 22千鳥東 [22千鳥東]（千鳥東経由）＜急行＞舞浜駅（千鳥東・順天堂病院経由）新浦安駅行 時刻表",
+          "berth": "04 地図",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020620&course-sequence=0008200293-1",
+          "berthLetter": "04",
+          "siblingsInCell": [
+            "20"
+          ],
+          "has22": true
+        }
+      ]
+    }
+  },
+  "terminalPlan": [
+    {
+      "key": "shinurayasu",
+      "label": "新浦安駅",
+      "id": "00020619"
+    },
+    {
+      "key": "chidoriGarage",
+      "label": "千鳥車庫",
+      "id": "00020620"
+    }
+  ],
+  "berthsSeen": [
+    {
+      "terminal": "新浦安駅",
+      "busstopId": "00020619",
+      "berth": "B",
+      "courseText": "22千鳥東 [22千鳥東]（順天堂病院前・千鳥東経由）千鳥車庫行 時刻表",
+      "href": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200301-1",
+      "siblingsInCell": [],
+      "mixedCell": false
+    },
+    {
+      "terminal": "千鳥車庫",
+      "busstopId": "00020620",
+      "berth": "01",
+      "courseText": "20 [20]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行 [循環]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行 22千鳥東 [22千鳥東]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行 時刻表",
+      "href": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020620&course-sequence=0008200294-4",
+      "siblingsInCell": [
+        "20"
+      ],
+      "mixedCell": true
+    },
+    {
+      "terminal": "千鳥車庫",
+      "busstopId": "00020620",
+      "berth": "03",
+      "courseText": "20 [20 直通]＜急行＞舞浜駅（運動公園通過）（順天堂病院経由）新浦安駅行 [20]＜急行＞舞浜駅（運動公園通過）（順天堂病院経由）新浦安駅行 [循環]＜急行＞舞浜駅（運動公園通過）（順天堂病院経由）新浦安駅行 22千鳥東 [22千鳥東]＜急行＞舞浜駅（運動公園通過）（順天堂病院経由）新浦安駅行 時刻表",
+      "href": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020620&course-sequence=0008200293-5",
+      "siblingsInCell": [
+        "20"
+      ],
+      "mixedCell": true
+    },
+    {
+      "terminal": "千鳥車庫",
+      "busstopId": "00020620",
+      "berth": "04",
+      "courseText": "20 [20]（千鳥東経由）＜急行＞舞浜駅（千鳥東・順天堂病院経由）新浦安駅行 22千鳥東 [22千鳥東]（千鳥東経由）＜急行＞舞浜駅（千鳥東・順天堂病院経由）新浦安駅行 時刻表",
+      "href": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020620&course-sequence=0008200293-1",
+      "siblingsInCell": [
+        "20"
+      ],
+      "mixedCell": true
+    }
+  ],
+  "rejectedSiblingCells": [],
+  "errors": [],
+  "stats": {
+    "terminals": 2,
+    "route22Courses": 4,
+    "mixedCells": 3,
+    "sibling20Cells": 0,
+    "elapsedSec": 38
+  },
+  "partialFlushAt": "2026-07-26T22:44:37.768Z",
+  "partialFlushReason": "final"
+}

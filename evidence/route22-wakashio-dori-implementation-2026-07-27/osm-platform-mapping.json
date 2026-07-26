@@ -1,0 +1,280 @@
+{
+  "22-shinurayasu-chidori-garage": {
+    "relationId": 18396547,
+    "composition": null,
+    "compositionMeta": null,
+    "platformByIndex": false,
+    "stopNames": [
+      "新浦安駅",
+      "新浦安駅北口",
+      "若潮公園",
+      "順天堂病院前",
+      "サンコーポ東口",
+      "サンコーポ西口",
+      "弁天第二",
+      "見明川中学校前",
+      "見明川住宅",
+      "舞浜三丁目",
+      "運動公園",
+      "千鳥車庫",
+      "千鳥北",
+      "千鳥東",
+      "車庫裏",
+      "千鳥車庫"
+    ],
+    "platformDists": [
+      {
+        "name": "新浦安駅",
+        "dist": 7.9,
+        "pathIndex": 0,
+        "reviewRequired": false,
+        "index": 0
+      },
+      {
+        "name": "新浦安駅北口",
+        "dist": 8.4,
+        "pathIndex": 38,
+        "reviewRequired": false,
+        "index": 1
+      },
+      {
+        "name": "若潮公園",
+        "dist": 8.6,
+        "pathIndex": 62,
+        "reviewRequired": false,
+        "index": 2
+      },
+      {
+        "name": "順天堂病院前",
+        "dist": 11.9,
+        "pathIndex": 79,
+        "reviewRequired": false,
+        "index": 3
+      },
+      {
+        "name": "サンコーポ東口",
+        "dist": 8,
+        "pathIndex": 90,
+        "reviewRequired": false,
+        "index": 4
+      },
+      {
+        "name": "サンコーポ西口",
+        "dist": 8,
+        "pathIndex": 104,
+        "reviewRequired": false,
+        "index": 5
+      },
+      {
+        "name": "弁天第二",
+        "dist": 10.7,
+        "pathIndex": 119,
+        "reviewRequired": false,
+        "index": 6
+      },
+      {
+        "name": "見明川中学校前",
+        "dist": 7.9,
+        "pathIndex": 128,
+        "reviewRequired": false,
+        "index": 7
+      },
+      {
+        "name": "見明川住宅",
+        "dist": 10.9,
+        "pathIndex": 145,
+        "reviewRequired": false,
+        "index": 8
+      },
+      {
+        "name": "舞浜三丁目",
+        "dist": 8.8,
+        "pathIndex": 167,
+        "reviewRequired": false,
+        "index": 9
+      },
+      {
+        "name": "運動公園",
+        "dist": 11.2,
+        "pathIndex": 185,
+        "reviewRequired": false,
+        "index": 10
+      },
+      {
+        "name": "千鳥車庫",
+        "dist": 5.2,
+        "pathIndex": 227,
+        "reviewRequired": false,
+        "index": 11
+      },
+      {
+        "name": "千鳥北",
+        "dist": 7,
+        "pathIndex": 241,
+        "reviewRequired": false,
+        "index": 12
+      },
+      {
+        "name": "千鳥東",
+        "dist": 9.7,
+        "pathIndex": 254,
+        "reviewRequired": false,
+        "index": 13
+      },
+      {
+        "name": "車庫裏",
+        "dist": 5.3,
+        "pathIndex": 276,
+        "reviewRequired": false,
+        "index": 14
+      },
+      {
+        "name": "千鳥車庫",
+        "dist": 4.4,
+        "pathIndex": 292,
+        "reviewRequired": false,
+        "index": 15
+      }
+    ],
+    "osmPlatformOrderMatchesOfficial": true
+  },
+  "22-chidori-garage-shinurayasu": {
+    "relationId": 18396546,
+    "composition": null,
+    "compositionMeta": null,
+    "platformByIndex": false,
+    "stopNames": [
+      "千鳥車庫",
+      "車庫裏",
+      "千鳥東",
+      "千鳥北",
+      "千鳥車庫",
+      "運動公園",
+      "舞浜三丁目",
+      "見明川住宅",
+      "見明川中学校前",
+      "弁天第二",
+      "サンコーポ西口",
+      "サンコーポ東口",
+      "順天堂病院前",
+      "若潮公園",
+      "新浦安駅北口",
+      "新浦安駅"
+    ],
+    "platformDists": [
+      {
+        "name": "千鳥車庫",
+        "dist": 3.3,
+        "pathIndex": 0,
+        "reviewRequired": false,
+        "index": 0
+      },
+      {
+        "name": "車庫裏",
+        "dist": 7.8,
+        "pathIndex": 18,
+        "reviewRequired": false,
+        "index": 1
+      },
+      {
+        "name": "千鳥東",
+        "dist": 8.7,
+        "pathIndex": 38,
+        "reviewRequired": false,
+        "index": 2
+      },
+      {
+        "name": "千鳥北",
+        "dist": 8.2,
+        "pathIndex": 51,
+        "reviewRequired": false,
+        "index": 3
+      },
+      {
+        "name": "千鳥車庫",
+        "dist": 6.5,
+        "pathIndex": 69,
+        "reviewRequired": false,
+        "index": 4
+      },
+      {
+        "name": "運動公園",
+        "dist": 9.2,
+        "pathIndex": 120,
+        "reviewRequired": false,
+        "index": 5
+      },
+      {
+        "name": "舞浜三丁目",
+        "dist": 9.3,
+        "pathIndex": 132,
+        "reviewRequired": false,
+        "index": 6
+      },
+      {
+        "name": "見明川住宅",
+        "dist": 7.9,
+        "pathIndex": 155,
+        "reviewRequired": false,
+        "index": 7
+      },
+      {
+        "name": "見明川中学校前",
+        "dist": 12.1,
+        "pathIndex": 171,
+        "reviewRequired": false,
+        "index": 8
+      },
+      {
+        "name": "弁天第二",
+        "dist": 8,
+        "pathIndex": 181,
+        "reviewRequired": false,
+        "index": 9
+      },
+      {
+        "name": "サンコーポ西口",
+        "dist": 9.1,
+        "pathIndex": 196,
+        "reviewRequired": false,
+        "index": 10
+      },
+      {
+        "name": "サンコーポ東口",
+        "dist": 9.6,
+        "pathIndex": 210,
+        "reviewRequired": false,
+        "index": 11
+      },
+      {
+        "name": "順天堂病院前",
+        "dist": 9.5,
+        "pathIndex": 222,
+        "reviewRequired": false,
+        "index": 12
+      },
+      {
+        "name": "若潮公園",
+        "dist": 8.9,
+        "pathIndex": 237,
+        "reviewRequired": false,
+        "index": 13
+      },
+      {
+        "name": "新浦安駅北口",
+        "dist": 7,
+        "pathIndex": 261,
+        "reviewRequired": false,
+        "index": 14
+      },
+      {
+        "name": "新浦安駅",
+        "dist": 5.3,
+        "pathIndex": 287,
+        "reviewRequired": false,
+        "index": 15
+      }
+    ],
+    "osmPlatformOrderMatchesOfficial": true
+  }
+}

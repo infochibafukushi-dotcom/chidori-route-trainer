@@ -1,0 +1,82 @@
+{
+  "checkedAt": "2026-07-26T22:49:29.816Z",
+  "routeId": "route-22",
+  "systemNumber": "22",
+  "note": "各系統キーが公式停留所順として一意であることの証明。",
+  "uniqueness": {
+    "systemCount": 2,
+    "acceptedSignatureCount": 2,
+    "rejectedSignatureCount": 7,
+    "allStopIdSignaturesDistinct": true
+  },
+  "systems": {
+    "22-shinurayasu-chidori-garage": {
+      "course": "0008200301",
+      "timetableSymbol": "◎ち",
+      "berth": "B",
+      "terminal": "新浦安駅",
+      "stopCount": 16,
+      "stopIdSignature": "00020619>00020668>00020873>00020875>00020879>00020878>00020684>00020853>00020851>00020679>00020746>00020620>00020629>00020628>00020871>00020620",
+      "stopNameSignature": "新浦安駅>新浦安駅北口>若潮公園>順天堂病院前>サンコーポ東口>サンコーポ西口>弁天第二>見明川中学校前>見明川住宅>舞浜三丁目>運動公園>千鳥車庫>千鳥北>千鳥東>車庫裏>千鳥車庫",
+      "legendProof": [
+        "◎ち…【２２系統】順天堂病院前・千鳥東経由　千鳥車庫行き"
+      ],
+      "departureBerthProof": {
+        "originStopName": "新浦安駅",
+        "busstopId": "00020619",
+        "berthLabel": "B",
+        "routeNumber": "22",
+        "legendLine": "◎ち…【２２系統】順天堂病院前・千鳥東経由　千鳥車庫行き",
+        "timetableUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200301-1"
+      },
+      "tripsObserved": 12,
+      "dayLabels": [
+        "weekday"
+      ],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81000006/stops?departure-busstop=00020619-1&course=0008200301&datetime=2026-07-27T08:20:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8100000a/stops?departure-busstop=00020619-1&course=0008200301&datetime=2026-08-01T09:52:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81000004/stops?departure-busstop=00020619-1&course=0008200301&datetime=2026-07-27T10:06:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81000008/stops?departure-busstop=00020619-1&course=0008200301&datetime=2026-08-01T11:57:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81000000/stops?departure-busstop=00020619-1&course=0008200301&datetime=2026-07-27T12:53:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81000002/stops?departure-busstop=00020619-1&course=0008200301&datetime=2026-07-27T18:15:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81000006/stops?departure-busstop=00020620-12&course=0008200301&datetime=2026-07-27T08:33:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81000004/stops?departure-busstop=00020620-12&course=0008200301&datetime=2026-07-27T10:19:00%2B09:00"
+      ],
+      "osmRelationId": 18396547,
+      "osmPlatformOrderMatchesOfficial": true
+    },
+    "22-chidori-garage-shinurayasu": {
+      "course": "0008200300",
+      "timetableSymbol": "し",
+      "berth": "03",
+      "terminal": "千鳥車庫",
+      "stopCount": 16,
+      "stopIdSignature": "00020620>00020871>00020628>00020629>00020620>00020746>00020679>00020851>00020853>00020684>00020878>00020879>00020875>00020873>00020668>00020619",
+      "stopNameSignature": "千鳥車庫>車庫裏>千鳥東>千鳥北>千鳥車庫>運動公園>舞浜三丁目>見明川住宅>見明川中学校前>弁天第二>サンコーポ西口>サンコーポ東口>順天堂病院前>若潮公園>新浦安駅北口>新浦安駅",
+      "legendProof": [
+        "し…【２２系統】順天堂病院前経由　新浦安駅行き"
+      ],
+      "departureBerthProof": {
+        "originStopName": "千鳥車庫",
+        "busstopId": "00020620",
+        "berthLabel": "03",
+        "routeNumber": "22",
+        "legendLine": "し…【２２系統】順天堂病院前経由　新浦安駅行き",
+        "timetableUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020620&course-sequence=0008200293-5"
+      },
+      "tripsObserved": 3,
+      "dayLabels": [
+        "weekday"
+      ],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80ff0007/stops?departure-busstop=00020620-5&course=0008200300&datetime=2026-08-01T10:42:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80ff0001/stops?departure-busstop=00020620-5&course=0008200300&datetime=2026-07-27T11:40:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80ff0005/stops?departure-busstop=00020620-5&course=0008200300&datetime=2026-07-27T11:53:00%2B09:00"
+      ],
+      "osmRelationId": 18396546,
+      "osmPlatformOrderMatchesOfficial": true
+    }
+  },
+  "rejectedSiblingRoute22": []
+}

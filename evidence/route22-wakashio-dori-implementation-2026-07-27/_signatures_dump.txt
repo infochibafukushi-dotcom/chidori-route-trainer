@@ -1,0 +1,27 @@
+ACCEPT-route22 | stops 16 | trips 12 | terminal 新浦安駅 | berth B,01 | course 0008200301 | symbols ◎ち | listing 22 | depBerth 22
+    新浦安駅 > 新浦安駅北口 > 若潮公園 > 順天堂病院前 > サンコーポ東口 > サンコーポ西口 > 弁天第二 > 見明川中学校前 > 見明川住宅 > 舞浜三丁目 > 運動公園 > 千鳥車庫 > 千鳥北 > 千鳥東 > 車庫裏 > 千鳥車庫
+    departure berth: B 符号◎ち -> 系統22 : ◎ち…【２２系統】順天堂病院前・千鳥東経由　千鳥車庫行き
+REJECT-route-20 | stops 7 | trips 9 | terminal 千鳥車庫 | berth 01 | course 0008200296 | symbols ク | listing 20 | depBerth 20
+    舞浜駅 > オリエンタルランド本社前 > 運動公園 > 千鳥車庫 > 千鳥北 > 千鳥中央 > クリーンセンター
+    departure berth: 01 符号ク -> 系統20 : ク…【２０系統】クリーンセンター行き（浦安斎場方面には行きません）
+REJECT-route-20 | stops 9 | trips 27 | terminal 千鳥車庫 | berth 01 | course 0008200297 | symbols に | listing 20 | depBerth 20
+    舞浜駅 > オリエンタルランド本社前 > 運動公園 > 千鳥車庫 > 千鳥北 > 千鳥中央 > クリーンセンター > 浦安斎場 > 千鳥西
+    departure berth: 01 符号に -> 系統20 : に…【２０系統】浦安斎場経由　千鳥西行き
+REJECT-route-20 | stops 14 | trips 89 | terminal 千鳥車庫 | berth 01,03 | course 0008200299 | symbols さ | listing 20 | depBerth 20
+    舞浜駅 > オリエンタルランド本社前 > 運動公園 > 千鳥車庫 > 千鳥北 > 千鳥中央 > クリーンセンター > 浦安斎場 > 千鳥西 > 千鳥中央 > 千鳥北 > 千鳥車庫 > オリエンタルランド本社前 > 舞浜駅
+    departure berth: 01 符号さ -> 系統20 : さ…【２０系統】クリーンセンター・浦安斎場方面　千鳥循環（舞浜駅行き）
+REJECT-route-20 | stops 8 | trips 2 | terminal 千鳥車庫 | berth 01 | course 0008200294 | symbols (無印) | listing 20 | depBerth 20
+    舞浜駅 > オリエンタルランド本社前 > 運動公園 > 千鳥車庫 > 千鳥北 > 千鳥東 > 車庫裏 > 千鳥車庫
+    departure berth: 01 符号(無印) -> 系統20 : 無印…【２０系統】千鳥車庫行き
+REJECT-route-20 | stops 7 | trips 2 | terminal 千鳥車庫 | berth 03 | course 0008200293 | symbols (無印) | listing 20 | depBerth 20
+    千鳥車庫 > 車庫裏 > 千鳥東 > 千鳥北 > 千鳥車庫 > オリエンタルランド本社前 > 舞浜駅
+    departure berth: 03 符号(無印) -> 系統20 : 無印…【２０系統】舞浜駅行き（運動公園バス停には停車いたしませんので、ご注意ください）
+    departure berth: 04 符号(無印) -> 系統20 : 無印…【２０系統】舞浜駅行き（運動公園バス停には停車いたしませんので、ご注意ください）
+REJECT-route-20 | stops 6 | trips 2 | terminal 千鳥車庫 | berth 03 | course 0008200295 | symbols (無印) | listing 20 | depBerth -
+    クリーンセンター > 千鳥中央 > 千鳥北 > 千鳥車庫 > オリエンタルランド本社前 > 舞浜駅
+ACCEPT-route22 | stops 16 | trips 3 | terminal 千鳥車庫 | berth 03 | course 0008200300 | symbols し | listing 22 | depBerth 22
+    千鳥車庫 > 車庫裏 > 千鳥東 > 千鳥北 > 千鳥車庫 > 運動公園 > 舞浜三丁目 > 見明川住宅 > 見明川中学校前 > 弁天第二 > サンコーポ西口 > サンコーポ東口 > 順天堂病院前 > 若潮公園 > 新浦安駅北口 > 新浦安駅
+    departure berth: 03 符号し -> 系統22 : し…【２２系統】順天堂病院前経由　新浦安駅行き
+    departure berth: 04 符号し -> 系統22 : し…【２２系統】順天堂病院前経由　新浦安駅行き
+REJECT-route-20 | stops 8 | trips 8 | terminal 千鳥車庫 | berth 03 | course 0008200298 | symbols (無印) | listing 20 | depBerth -
+    クリーンセンター > 浦安斎場 > 千鳥西 > 千鳥中央 > 千鳥北 > 千鳥車庫 > オリエンタルランド本社前 > 舞浜駅

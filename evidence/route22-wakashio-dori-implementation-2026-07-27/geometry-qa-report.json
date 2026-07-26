@@ -1,0 +1,16 @@
+{
+  "systems": {
+    "22-shinurayasu-chidori-garage": {
+      "pathPoints": 293,
+      "maxGap_m": 24.8,
+      "pathHash": "052484b252cc996bdeb04a9087112581073d105a6a634403c6544d70a3e69f8f"
+    },
+    "22-chidori-garage-shinurayasu": {
+      "pathPoints": 288,
+      "maxGap_m": 24.8,
+      "pathHash": "ac964a9f7706e2ea1777e1ab1793eda5d9f970b88bb6040482ecbf8a872fa7eb"
+    }
+  },
+  "failures": [],
+  "ok": true
+}

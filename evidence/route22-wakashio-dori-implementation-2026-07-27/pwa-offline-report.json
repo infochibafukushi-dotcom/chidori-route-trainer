@@ -1,0 +1,18 @@
+{
+  "routeId": "route-22",
+  "expectedCache": "chidori-route-map-v113",
+  "failures": [],
+  "pass": true,
+  "d1PutCount": 0,
+  "cacheInfo": {
+    "cacheNames": [
+      "chidori-route-map-v113"
+    ],
+    "packPresent": true
+  },
+  "loaderTag": "http://127.0.0.1:8881/route-assets-loader.js?v=113",
+  "offlineHashes": {
+    "22-shinurayasu-chidori-garage": "052484b252cc996bdeb04a9087112581073d105a6a634403c6544d70a3e69f8f",
+    "22-chidori-garage-shinurayasu": "ac964a9f7706e2ea1777e1ab1793eda5d9f970b88bb6040482ecbf8a872fa7eb"
+  }
+}
