@@ -118,6 +118,24 @@
     },
   ];
 
+  const BUS_STOP_DEPARTURE_SLIDES = [
+    {
+      src: 'assets/study-materials/bus-stop-departure/bus-stop-departure-safety.png',
+      alt: '停留所発進時の安全習慣',
+    },
+  ];
+
+  const BUS_STOP_ARRIVAL_SLIDES = [
+    {
+      src: 'assets/study-materials/bus-stop-arrival/bus-stop-arrival-safety-01.png',
+      alt: '停留所到着時の安全習慣 1ページ目（予告・確認・減速）',
+    },
+    {
+      src: 'assets/study-materials/bus-stop-arrival/bus-stop-arrival-safety-02.png',
+      alt: '停留所到着時の安全習慣 2ページ目（左寄せ・停車・サイドブレーキ）',
+    },
+  ];
+
   const MATERIAL_SLIDES = {
     stroller: STROLLER_SLIDES,
     wheelchair: WHEELCHAIR_SLIDES,
@@ -130,6 +148,8 @@
     'passenger-injury-prevention-guide': PASSENGER_INJURY_PREVENTION_SLIDES,
     'start-end-roll-call-guide': START_END_ROLL_CALL_SLIDES,
     'pre-trip-inspection-procedure': PRE_TRIP_INSPECTION_SLIDES,
+    'bus-stop-departure-safety': BUS_STOP_DEPARTURE_SLIDES,
+    'bus-stop-arrival-safety': BUS_STOP_ARRIVAL_SLIDES,
   };
 
   let popOpen = false;

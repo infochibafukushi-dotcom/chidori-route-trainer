@@ -1,4 +1,4 @@
-const CACHE_NAME = 'chidori-route-map-v92';
+const CACHE_NAME = 'chidori-route-map-v93';
 const APP_INDEX_URL = new URL('./index.html', self.location).href;
 const FETCH_TIMEOUT_MS = 7000;
 
@@ -10,17 +10,17 @@ const CORE_SHELL = [
   './app-icon-192.png',
   './app-icon-512.png',
   './styles.css?v=72',
-  './study-materials.css?v=92',
+  './study-materials.css?v=93',
   './d1-sync.css?v=32',
   './data.js?v=32',
   './app.js?v=78',
-  './study-materials-data.js?v=92',
-  './study-materials.js?v=92',
+  './study-materials-data.js?v=93',
+  './study-materials.js?v=93',
   './home-navigation-v25.js?v=32',
   './route-map-link.js?v=71',
   './route-assets-loader.js?v=78',
   './d1-sync.js?v=61',
-  './pwa-install.js?v=92',
+  './pwa-install.js?v=93',
   './assets/study-materials/stroller/stroller-01-arrival.png',
   './assets/study-materials/stroller/stroller-02-after-boarding.png',
   './assets/study-materials/stroller/stroller-03-fare-payment.png',
@@ -41,7 +41,10 @@ const CORE_SHELL = [
   './assets/study-materials/start-end-roll-call/start-end-roll-call-guide.png',
   './assets/study-materials/pre-trip-inspection/pre-trip-inspection-01.png',
   './assets/study-materials/pre-trip-inspection/pre-trip-inspection-02.png',
-  './assets/study-materials/pre-trip-inspection/pre-trip-inspection-03.png'
+  './assets/study-materials/pre-trip-inspection/pre-trip-inspection-03.png',
+  './assets/study-materials/bus-stop-departure/bus-stop-departure-safety.png',
+  './assets/study-materials/bus-stop-arrival/bus-stop-arrival-safety-01.png',
+  './assets/study-materials/bus-stop-arrival/bus-stop-arrival-safety-02.png'
 ];
 
 function fetchWithTimeout(resource, options = {}, timeoutMs = FETCH_TIMEOUT_MS) {

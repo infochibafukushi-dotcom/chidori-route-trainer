@@ -708,5 +708,15 @@
     "id": "pre-trip-inspection-procedure",
     "title": "始業点検の手順",
     "blocks": []
+  },
+  {
+    "id": "bus-stop-departure-safety",
+    "title": "停留所発進時の安全習慣",
+    "blocks": []
+  },
+  {
+    "id": "bus-stop-arrival-safety",
+    "title": "停留所到着時の安全習慣",
+    "blocks": []
   }
 ]

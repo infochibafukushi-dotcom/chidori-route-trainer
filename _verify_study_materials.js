@@ -325,6 +325,24 @@ for (const material of materials) {
     }
     continue;
   }
+  if (material.id === 'bus-stop-departure-safety') {
+    if (material.title !== '停留所発進時の安全習慣') {
+      console.error('TITLE MISMATCH bus-stop-departure', material.title);
+      failed++;
+    } else {
+      console.log('OK', material.id, 'image-only');
+    }
+    continue;
+  }
+  if (material.id === 'bus-stop-arrival-safety') {
+    if (material.title !== '停留所到着時の安全習慣') {
+      console.error('TITLE MISMATCH bus-stop-arrival', material.title);
+      failed++;
+    } else {
+      console.log('OK', material.id, 'image-only');
+    }
+    continue;
+  }
   const exp = expected[material.id];
   if (!exp) {
     console.error('UNKNOWN id', material.id);
@@ -346,8 +364,8 @@ for (const material of materials) {
   }
 }
 
-if (materials.length !== 11) {
-  console.error('Expected 11 materials, got', materials.length);
+if (materials.length !== 13) {
+  console.error('Expected 13 materials, got', materials.length);
   failed++;
 }
 

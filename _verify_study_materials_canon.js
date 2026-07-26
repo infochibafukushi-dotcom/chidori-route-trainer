@@ -85,6 +85,18 @@ if (!preTrip || preTrip.title !== '始業点検の手順') {
   process.exit(1);
 }
 
+const departure = materials.find((m) => m.id === 'bus-stop-departure-safety');
+if (!departure || departure.title !== '停留所発進時の安全習慣') {
+  console.error('bus-stop-departure material missing or title mismatch', departure);
+  process.exit(1);
+}
+
+const arrival = materials.find((m) => m.id === 'bus-stop-arrival-safety');
+if (!arrival || arrival.title !== '停留所到着時の安全習慣') {
+  console.error('bus-stop-arrival material missing or title mismatch', arrival);
+  process.exit(1);
+}
+
 fs.writeFileSync(snapshotPath, JSON.stringify(actual, null, 2) + '\n', 'utf8');
 
 console.log('OK canon', {
@@ -99,5 +111,7 @@ console.log('OK canon', {
   passengerOk: true,
   rollCallOk: true,
   preTripOk: true,
+  departureOk: true,
+  arrivalOk: true,
 });
 process.exit(0);

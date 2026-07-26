@@ -54,6 +54,13 @@ const DECKS = {
     'pre-trip-inspection-02.png',
     'pre-trip-inspection-03.png',
   ],
+  'bus-stop-departure-safety': [
+    'bus-stop-departure-safety.png',
+  ],
+  'bus-stop-arrival-safety': [
+    'bus-stop-arrival-safety-01.png',
+    'bus-stop-arrival-safety-02.png',
+  ],
 };
 
 const mime = {

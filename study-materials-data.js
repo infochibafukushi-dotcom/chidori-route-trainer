@@ -244,4 +244,18 @@ window.STUDY_MATERIALS = [
     showThumbnail: true,
     blocks: [],
   },
+  {
+    id: 'bus-stop-departure-safety',
+    title: '停留所発進時の安全習慣',
+    description: '着座確認、発進アナウンス、周囲確認、サイドブレーキ解除、発進後のオーバーハング確認までの安全手順を学習します。',
+    showThumbnail: true,
+    blocks: [],
+  },
+  {
+    id: 'bus-stop-arrival-safety',
+    title: '停留所到着時の安全習慣',
+    description: '停留所到着前のアナウンス、車内確認、減速、左寄せ、安全な停車、サイドブレーキ使用までの手順を学習します。',
+    showThumbnail: true,
+    blocks: [],
+  },
 ];

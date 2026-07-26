@@ -55,6 +55,13 @@ const DECKS = {
     'pre-trip-inspection-02.png',
     'pre-trip-inspection-03.png',
   ],
+  'bus-stop-departure-safety': [
+    'bus-stop-departure-safety.png',
+  ],
+  'bus-stop-arrival-safety': [
+    'bus-stop-arrival-safety-01.png',
+    'bus-stop-arrival-safety-02.png',
+  ],
 };
 
 const mime = {
@@ -149,7 +156,9 @@ async function main() {
                 : id === 'passenger-injury-prevention-guide' ? 'passenger-injury-prevention'
                   : id === 'start-end-roll-call-guide' ? 'start-end-roll-call'
                     : id === 'pre-trip-inspection-procedure' ? 'pre-trip-inspection'
-                      : id;
+                      : id === 'bus-stop-departure-safety' ? 'bus-stop-departure'
+                        : id === 'bus-stop-arrival-safety' ? 'bus-stop-arrival'
+                          : id;
     for (const name of names) {
       const p = path.join(root, 'assets/study-materials', dir, name);
       if (!fs.existsSync(p)) throw new Error('missing ' + p);
@@ -180,7 +189,7 @@ async function main() {
     const listTitles = await page.$$eval('.study-material-item .study-material-copy strong', (els) => els.map((e) => e.textContent.trim()));
     const listHints = await page.$$eval('.study-material-item .study-material-desc', (els) => els.map((e) => e.textContent.trim()));
     const pageBadges = await page.$$eval('.study-material-item .study-material-pages', (els) => els.map((e) => e.textContent.trim()));
-    const listOk = listTitles.length === 11
+    const listOk = listTitles.length === 13
       && listTitles[4] === '5. 運行中に体調の異変を感じた時の対応'
       && listTitles[5] === '6. 事故発生時の処置'
       && listTitles[6] === '7. バスジャック対応マニュアル'
@@ -188,32 +197,44 @@ async function main() {
       && listTitles[8] === '9. 車内事故防止の徹底'
       && listTitles[9] === '10. 始業・終業点呼の手順'
       && listTitles[10] === '11. 始業点検の手順'
+      && listTitles[11] === '12. 停留所発進時の安全習慣'
+      && listTitles[12] === '13. 停留所到着時の安全習慣'
       && listHints[0] === 'タップして本文を表示'
-      && listHints[10].includes('点検項目')
+      && listHints[11].includes('着座確認')
+      && listHints[12].includes('到着前')
       && pageBadges.includes('全3ページ')
+      && pageBadges.includes('全2ページ')
       && pageBadges.includes('全6ページ');
     results.push({ label, step: 'list', listTitles, listHints, pageBadges, listOk });
     if (!listOk) failed += 1;
 
-    // pre-trip-inspection primary (3 pages)
-    await page.locator('[data-material-id="pre-trip-inspection-procedure"]').evaluate((el) => el.click());
+    // arrival primary (2 pages)
+    await page.locator('[data-material-id="bus-stop-arrival-safety"]').evaluate((el) => el.click());
     await page.waitForSelector('#studySlideImage');
-    const preTrip = await walkSlides(page, DECKS['pre-trip-inspection-procedure']);
+    const arrival = await walkSlides(page, DECKS['bus-stop-arrival-safety']);
     const metrics = await measure(page);
     await page.locator('#studyPopCloseX').evaluate((el) => el.click());
     await page.waitForSelector('#studyMaterialPop', { state: 'detached' });
     await page.waitForFunction(() => {
-      const img = document.querySelector('[data-material-id="pre-trip-inspection-procedure"] .study-material-thumb');
+      const img = document.querySelector('[data-material-id="bus-stop-arrival-safety"] .study-material-thumb');
       return !!(img && img.complete && img.naturalWidth > 0);
     });
     const thumbOnList = true;
-    await page.locator('[data-material-id="pre-trip-inspection-procedure"]').evaluate((el) => el.click());
+    await page.locator('[data-material-id="bus-stop-arrival-safety"]').evaluate((el) => el.click());
     await page.waitForSelector('#studySlideImage');
-    // verify prev disabled on first, then walk to last
     const firstPrevDisabled = await page.$eval('#studySlidePrev', (el) => el.disabled);
     await page.locator('#studyPopCloseX').evaluate((el) => el.click());
     await page.waitForSelector('#studyMaterialPop', { state: 'detached' });
-    await page.locator('[data-material-id="pre-trip-inspection-procedure"]').evaluate((el) => el.click());
+
+    // departure single-image
+    await page.locator('[data-material-id="bus-stop-departure-safety"]').evaluate((el) => el.click());
+    await page.waitForSelector('#studySlideImage');
+    const departure = await walkSlides(page, DECKS['bus-stop-departure-safety']);
+    const depPage = (await page.textContent('#studySlidePage')).trim();
+    await page.locator('#studyPopCloseX').evaluate((el) => el.click());
+    await page.waitForSelector('#studyMaterialPop', { state: 'detached' });
+
+    await page.locator('[data-material-id="bus-stop-arrival-safety"]').evaluate((el) => el.click());
     await page.waitForSelector('#studySlideImage');
     const phoneOk = label === 'sp-landscape'
       ? metrics.panelW <= 760 + 1 && metrics.heightRatio <= 0.96 && metrics.imgFillRatio >= 0.9
@@ -222,20 +243,22 @@ async function main() {
         : metrics.panelW <= 760 + 1;
     results.push({
       label,
-      step: 'pre-trip-inspection',
-      ok: preTrip.ok && firstPrevDisabled,
+      step: 'bus-stop-arrival',
+      ok: arrival.ok && firstPrevDisabled && departure.ok && depPage === '1 / 1',
       metrics,
       phoneOk,
       thumbOnList,
-      nextLabel: preTrip.nextLabel,
+      nextLabel: arrival.nextLabel,
       firstPrevDisabled,
+      departureOk: departure.ok,
+      depPage,
     });
-    if (!preTrip.ok || !firstPrevDisabled || !phoneOk || !thumbOnList || metrics.overflowX || metrics.bodyOverflowX || metrics.objectFit !== 'contain') failed += 1;
+    if (!arrival.ok || !firstPrevDisabled || !departure.ok || depPage !== '1 / 1' || !phoneOk || !thumbOnList || metrics.overflowX || metrics.bodyOverflowX || metrics.objectFit !== 'contain') failed += 1;
     await page.locator('#studyPopCloseX').evaluate((el) => el.click());
     await page.waitForSelector('#studyMaterialPop', { state: 'detached' });
 
     // regressions for other decks
-    for (const id of ['mic-guide', 'stroller', 'wheelchair', 'bicycle-accident-prevention', 'driver-health-emergency-response', 'accident-response-guide', 'bus-hijacking-response-manual', 'intersection-turning-safety-guide', 'passenger-injury-prevention-guide', 'start-end-roll-call-guide']) {
+    for (const id of ['mic-guide', 'stroller', 'wheelchair', 'bicycle-accident-prevention', 'driver-health-emergency-response', 'accident-response-guide', 'bus-hijacking-response-manual', 'intersection-turning-safety-guide', 'passenger-injury-prevention-guide', 'start-end-roll-call-guide', 'pre-trip-inspection-procedure']) {
       await page.locator(`[data-material-id="${id}"]`).evaluate((el) => el.click());
       await page.waitForSelector('#studySlideImage');
       const walked = await walkSlides(page, DECKS[id]);
