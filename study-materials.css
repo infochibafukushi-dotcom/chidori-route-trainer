@@ -274,7 +274,7 @@ body.study-pop-open {
 .study-pop-panel--slides .study-pop-header,
 .study-pop-header--slides {
   background: #0b4f8c;
-  padding: 10px 12px 10px 14px;
+  padding: 8px 10px 8px 12px;
 }
 
 .study-pop-docno {
@@ -301,7 +301,7 @@ body.study-pop-open {
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   overscroll-behavior: contain;
-  padding: 6px;
+  padding: 4px;
   background: #1a1a1a;
   min-height: 0;
 }
@@ -386,7 +386,7 @@ body.study-pop-open {
   }
 
   .study-pop-header--slides {
-    padding: 8px 10px;
+    padding: 7px 9px;
   }
 
   .study-pop-panel--slides .study-pop-title {
@@ -402,7 +402,11 @@ body.study-pop-open {
   }
 
   .study-pop-body--slides {
-    padding: 4px;
+    padding: 3px;
+  }
+
+  .study-pop-footer--slides {
+    padding: 7px 8px calc(7px + env(safe-area-inset-bottom, 0px));
   }
 
   .study-slide-image {

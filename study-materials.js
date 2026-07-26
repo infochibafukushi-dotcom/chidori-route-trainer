@@ -43,6 +43,23 @@
     },
   ];
 
+  const MIC_GUIDE_SLIDES = [
+    {
+      src: 'assets/study-materials/mic-guide/mic-guide-01-start-terminal.png',
+      alt: 'マイク案内の基本的な用語 起点での案内と終点案内',
+    },
+    {
+      src: 'assets/study-materials/mic-guide/mic-guide-02-safety-guidance.png',
+      alt: 'マイク案内の基本的な用語 注意喚起と案内',
+    },
+  ];
+
+  const MATERIAL_SLIDES = {
+    stroller: STROLLER_SLIDES,
+    wheelchair: WHEELCHAIR_SLIDES,
+    'mic-guide': MIC_GUIDE_SLIDES,
+  };
+
   let popOpen = false;
   let popReturnFocus = null;
   let savedScrollY = 0;
@@ -402,12 +419,9 @@
   function openPop(id, triggerEl) {
     const material = findMaterial(id);
     if (!material) return;
-    if (material.id === 'stroller') {
-      openImageSlides(material, STROLLER_SLIDES, triggerEl);
-      return;
-    }
-    if (material.id === 'wheelchair') {
-      openImageSlides(material, WHEELCHAIR_SLIDES, triggerEl);
+    const slides = MATERIAL_SLIDES[material.id];
+    if (slides) {
+      openImageSlides(material, slides, triggerEl);
       return;
     }
     openTextMaterialPopup(material, triggerEl);
@@ -508,6 +522,7 @@
     activeSlides: () => activeSlides.slice(),
     strollerSlides: STROLLER_SLIDES,
     wheelchairSlides: WHEELCHAIR_SLIDES,
+    micGuideSlides: MIC_GUIDE_SLIDES,
   };
 
   window.__chidoriOpenStudyMaterialDetail = openDetail;

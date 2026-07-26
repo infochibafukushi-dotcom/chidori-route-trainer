@@ -1,5 +1,5 @@
 /**
- * Offline: stroller 6 + wheelchair 3 + mic-guide text.
+ * Offline: stroller 6 + wheelchair 3 + mic-guide 2
  * node _verify_study_materials_offline.js
  */
 const { chromium } = require('playwright');
@@ -10,19 +10,25 @@ const path = require('path');
 const root = __dirname;
 const port = 8766;
 
-const STROLLER = [
-  'stroller-01-arrival.png',
-  'stroller-02-after-boarding.png',
-  'stroller-03-fare-payment.png',
-  'stroller-04-departure.png',
-  'stroller-05-alighting.png',
-  'stroller-06-handling-rules.png',
-];
-const WHEELCHAIR = [
-  'wheelchair-01-departure-check.png',
-  'wheelchair-02-boarding.png',
-  'wheelchair-03-alighting.png',
-];
+const DECKS = {
+  stroller: [
+    'stroller-01-arrival.png',
+    'stroller-02-after-boarding.png',
+    'stroller-03-fare-payment.png',
+    'stroller-04-departure.png',
+    'stroller-05-alighting.png',
+    'stroller-06-handling-rules.png',
+  ],
+  wheelchair: [
+    'wheelchair-01-departure-check.png',
+    'wheelchair-02-boarding.png',
+    'wheelchair-03-alighting.png',
+  ],
+  'mic-guide': [
+    'mic-guide-01-start-terminal.png',
+    'mic-guide-02-safety-guidance.png',
+  ],
+};
 
 const mime = {
   '.html': 'text/html; charset=utf-8',
@@ -84,20 +90,17 @@ async function main() {
 
     await page.locator('[data-go="materials"]').click();
     await page.waitForSelector('.study-list');
-    for (const id of ['stroller', 'wheelchair']) {
+    for (const id of Object.keys(DECKS)) {
       await page.locator(`[data-material-id="${id}"]`).click();
       await page.waitForSelector('#studySlideImage');
-      const names = id === 'stroller' ? STROLLER : WHEELCHAIR;
+      const names = DECKS[id];
       for (let i = 0; i < names.length - 1; i++) {
         await page.locator('#studySlideNext').click();
-        await page.waitForTimeout(50);
+        await page.waitForTimeout(40);
       }
       await page.locator('#studyPopCloseX').click();
       await page.waitForSelector('#studyMaterialPop', { state: 'detached' });
     }
-    await page.locator('[data-material-id="mic-guide"]').click();
-    await page.waitForSelector('#studyPopBody > div');
-    await page.locator('#studyPopCloseBtn').click();
     await page.locator('#back').click();
     await page.waitForSelector('.home');
     report.steps.push({ step: 'online-warm', ok: true });
@@ -108,25 +111,15 @@ async function main() {
     await page.locator('[data-go="materials"]').click();
     await page.waitForSelector('.study-list');
 
-    await page.locator('[data-material-id="wheelchair"]').click();
-    await page.waitForSelector('#studySlideImage');
-    const wcOk = await walk(page, WHEELCHAIR);
-    report.steps.push({ step: 'offline-wheelchair', ok: wcOk });
-    if (!wcOk) report.ok = false;
-    await page.locator('#studyPopCloseX').click();
-
-    await page.locator('[data-material-id="stroller"]').click();
-    await page.waitForSelector('#studySlideImage');
-    const stOk = await walk(page, STROLLER);
-    report.steps.push({ step: 'offline-stroller', ok: stOk });
-    if (!stOk) report.ok = false;
-    await page.locator('#studyPopCloseX').click();
-
-    await page.locator('[data-material-id="mic-guide"]').click();
-    await page.waitForSelector('#studyPopBody > div');
-    const micCount = await page.$$eval('#studyPopBody > div', (els) => els.length);
-    report.steps.push({ step: 'offline-mic-guide', count: micCount });
-    if (!micCount) report.ok = false;
+    for (const id of Object.keys(DECKS)) {
+      await page.locator(`[data-material-id="${id}"]`).click();
+      await page.waitForSelector('#studySlideImage');
+      const ok = await walk(page, DECKS[id]);
+      report.steps.push({ step: `offline-${id}`, ok });
+      if (!ok) report.ok = false;
+      await page.locator('#studyPopCloseX').click();
+      await page.waitForSelector('#studyMaterialPop', { state: 'detached' });
+    }
   } catch (error) {
     report.ok = false;
     report.error = String(error && error.stack || error);

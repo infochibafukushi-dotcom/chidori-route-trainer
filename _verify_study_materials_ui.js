@@ -1,5 +1,5 @@
 /**
- * Image-slide POP (stroller 6 / wheelchair 3) + mic-guide text POP.
+ * Slide POPs: stroller 6 / wheelchair 3 / mic-guide 2
  * node _verify_study_materials_ui.js
  */
 const { chromium } = require('playwright');
@@ -11,20 +11,25 @@ const vm = require('vm');
 const root = __dirname;
 const port = 8765;
 
-const STROLLER = [
-  'stroller-01-arrival.png',
-  'stroller-02-after-boarding.png',
-  'stroller-03-fare-payment.png',
-  'stroller-04-departure.png',
-  'stroller-05-alighting.png',
-  'stroller-06-handling-rules.png',
-];
-
-const WHEELCHAIR = [
-  'wheelchair-01-departure-check.png',
-  'wheelchair-02-boarding.png',
-  'wheelchair-03-alighting.png',
-];
+const DECKS = {
+  stroller: [
+    'stroller-01-arrival.png',
+    'stroller-02-after-boarding.png',
+    'stroller-03-fare-payment.png',
+    'stroller-04-departure.png',
+    'stroller-05-alighting.png',
+    'stroller-06-handling-rules.png',
+  ],
+  wheelchair: [
+    'wheelchair-01-departure-check.png',
+    'wheelchair-02-boarding.png',
+    'wheelchair-03-alighting.png',
+  ],
+  'mic-guide': [
+    'mic-guide-01-start-terminal.png',
+    'mic-guide-02-safety-guidance.png',
+  ],
+};
 
 const mime = {
   '.html': 'text/html; charset=utf-8',
@@ -49,13 +54,6 @@ const server = http.createServer((req, res) => {
 
 function isIgnoredError(text) {
   return /D1 load failed|Failed to fetch|CORS policy|chidori-route-api|ERR_FAILED|net::ERR|Cannot read properties of undefined \(reading 'addEventListener'\)/i.test(text);
-}
-
-function loadCanon() {
-  const code = fs.readFileSync(path.join(root, 'study-materials-data.js'), 'utf8');
-  const sandbox = { window: {} };
-  vm.runInNewContext(code, sandbox);
-  return sandbox.window.STUDY_MATERIALS;
 }
 
 async function walkSlides(page, names) {
@@ -83,15 +81,46 @@ async function walkSlides(page, names) {
   return { ok: nextLabel === '閉じる', srcs, nextLabel };
 }
 
+async function measure(page) {
+  return page.evaluate(() => {
+    const panel = document.querySelector('.study-pop-panel--slides');
+    const header = panel.querySelector('.study-pop-header');
+    const footer = panel.querySelector('.study-pop-footer--slides');
+    const body = document.getElementById('studyPopBody');
+    const img = document.getElementById('studySlideImage');
+    const pr = panel.getBoundingClientRect();
+    const hr = header.getBoundingClientRect();
+    const fr = footer.getBoundingClientRect();
+    const ir = img.getBoundingClientRect();
+    return {
+      panelW: +pr.width.toFixed(1),
+      panelH: +pr.height.toFixed(1),
+      imgW: +ir.width.toFixed(1),
+      imgH: +ir.height.toFixed(1),
+      headerH: +hr.height.toFixed(1),
+      footerH: +fr.height.toFixed(1),
+      vw: window.innerWidth,
+      vh: window.innerHeight,
+      sideGap: +(window.innerWidth - pr.width).toFixed(1),
+      heightRatio: +(pr.height / window.innerHeight).toFixed(3),
+      overflowX: document.documentElement.scrollWidth > document.documentElement.clientWidth + 1,
+      bodyOverflowX: body.scrollWidth > body.clientWidth + 1,
+      imgFillRatio: +(ir.width / pr.width).toFixed(3),
+      objectFit: getComputedStyle(img).objectFit,
+      bodyCanScroll: body.scrollHeight > body.clientHeight + 1,
+    };
+  });
+}
+
 async function main() {
-  for (const name of STROLLER) {
-    if (!fs.existsSync(path.join(root, 'assets/study-materials/stroller', name))) throw new Error('missing ' + name);
-  }
-  for (const name of WHEELCHAIR) {
-    if (!fs.existsSync(path.join(root, 'assets/study-materials/wheelchair', name))) throw new Error('missing ' + name);
+  for (const [id, names] of Object.entries(DECKS)) {
+    const dir = id === 'mic-guide' ? 'mic-guide' : id;
+    for (const name of names) {
+      const p = path.join(root, 'assets/study-materials', dir, name);
+      if (!fs.existsSync(p)) throw new Error('missing ' + p);
+    }
   }
 
-  const canon = loadCanon();
   await new Promise((resolve) => server.listen(port, resolve));
   const browser = await chromium.launch({ headless: true });
   const results = [];
@@ -114,78 +143,47 @@ async function main() {
     await page.locator('[data-go="materials"]').evaluate((el) => el.click());
     await page.waitForSelector('.study-list');
 
-    // wheelchair slides
-    await page.locator('[data-material-id="wheelchair"]').evaluate((el) => el.click());
+    // mic-guide primary
+    await page.locator('[data-material-id="mic-guide"]').evaluate((el) => el.click());
     await page.waitForSelector('#studySlideImage');
-    const wc = await walkSlides(page, WHEELCHAIR);
-    const metrics = await page.evaluate(() => {
-      const panel = document.querySelector('.study-pop-panel--slides');
-      const body = document.getElementById('studyPopBody');
-      const img = document.getElementById('studySlideImage');
-      const pr = panel.getBoundingClientRect();
-      const ir = img.getBoundingClientRect();
-      return {
-        panelW: +pr.width.toFixed(1),
-        panelH: +pr.height.toFixed(1),
-        imgW: +ir.width.toFixed(1),
-        imgH: +ir.height.toFixed(1),
-        vw: window.innerWidth,
-        vh: window.innerHeight,
-        sideGap: +(window.innerWidth - pr.width).toFixed(1),
-        heightRatio: +(pr.height / window.innerHeight).toFixed(3),
-        overflowX: document.documentElement.scrollWidth > document.documentElement.clientWidth + 1,
-        bodyOverflowX: body.scrollWidth > body.clientWidth + 1,
-        imgFillRatio: +(ir.width / pr.width).toFixed(3),
-        objectFit: getComputedStyle(img).objectFit,
-      };
-    });
+    const mic = await walkSlides(page, DECKS['mic-guide']);
+    const metrics = await measure(page);
     const phoneOk = label === 'sp-landscape'
       ? metrics.panelW <= 760 + 1 && metrics.heightRatio <= 0.96 && metrics.imgFillRatio >= 0.9
       : label.startsWith('sp')
         ? metrics.sideGap >= 12 && metrics.sideGap <= 28 && metrics.heightRatio <= 0.96 && metrics.imgFillRatio >= 0.9
         : metrics.panelW <= 760 + 1;
-    results.push({ label, step: 'wheelchair', ok: wc.ok, metrics, phoneOk, nextLabel: wc.nextLabel });
-    if (!wc.ok || !phoneOk || metrics.overflowX || metrics.bodyOverflowX || metrics.objectFit !== 'contain') failed += 1;
+    results.push({ label, step: 'mic-guide', ok: mic.ok, metrics, phoneOk, nextLabel: mic.nextLabel });
+    if (!mic.ok || !phoneOk || metrics.overflowX || metrics.bodyOverflowX || metrics.objectFit !== 'contain') failed += 1;
 
     await page.locator('#studyPopCloseX').evaluate((el) => el.click());
     await page.waitForSelector('#studyMaterialPop', { state: 'detached' });
-    await page.locator('[data-material-id="wheelchair"]').evaluate((el) => el.click());
-    await page.waitForFunction(() => document.getElementById('studySlidePage').textContent.trim() === '1 / 3');
-    results.push({ label, step: 'wheelchair-reopen', page: (await page.textContent('#studySlidePage')).trim() });
+    await page.locator('[data-material-id="mic-guide"]').evaluate((el) => el.click());
+    await page.waitForFunction(() => document.getElementById('studySlidePage').textContent.trim() === '1 / 2');
+    results.push({ label, step: 'mic-reopen', page: (await page.textContent('#studySlidePage')).trim() });
     await page.keyboard.press('Escape');
     await page.waitForSelector('#studyMaterialPop', { state: 'detached' });
 
-    // stroller regression (6)
-    await page.locator('[data-material-id="stroller"]').evaluate((el) => el.click());
-    await page.waitForSelector('#studySlideImage');
-    const st = await walkSlides(page, STROLLER);
-    results.push({ label, step: 'stroller', ok: st.ok, count: st.srcs.length });
-    if (!st.ok) failed += 1;
-    await page.locator('#studyPopCloseX').evaluate((el) => el.click());
-    await page.waitForSelector('#studyMaterialPop', { state: 'detached' });
+    // regressions
+    for (const id of ['stroller', 'wheelchair']) {
+      await page.locator(`[data-material-id="${id}"]`).evaluate((el) => el.click());
+      await page.waitForSelector('#studySlideImage');
+      const walked = await walkSlides(page, DECKS[id]);
+      results.push({ label, step: id, ok: walked.ok, count: walked.srcs.length });
+      if (!walked.ok) failed += 1;
+      await page.locator('#studyPopCloseX').evaluate((el) => el.click());
+      await page.waitForSelector('#studyMaterialPop', { state: 'detached' });
+    }
 
-    // mic-guide text
-    const mic = canon.find((m) => m.id === 'mic-guide');
-    await page.locator('[data-material-id="mic-guide"]').evaluate((el) => el.click());
-    await page.waitForSelector('#studyPopBody > div');
-    const title = (await page.textContent('#studyPopTitle')).trim();
-    const blocks = await page.$$eval('#studyPopBody > div', (els) => els.map((el) => el.textContent));
-    const blocksMatch = blocks.length === mic.blocks.length
-      && blocks.every((t, i) => t === mic.blocks[i].text);
-    results.push({ label, step: 'mic-guide', titleMatch: title === mic.title, blocksMatch });
-    if (title !== mic.title || !blocksMatch) failed += 1;
-    await page.locator('#studyPopCloseBtn').evaluate((el) => el.click());
-    await page.waitForSelector('#studyMaterialPop', { state: 'detached' });
-
-    // no state leak: open wheelchair after stroller should be 1/3
+    // no state leak across materials
     await page.locator('[data-material-id="stroller"]').evaluate((el) => el.click());
     await page.waitForSelector('#studySlidePage');
     await page.locator('#studySlideNext').evaluate((el) => el.click());
     await page.waitForFunction(() => document.getElementById('studySlidePage').textContent.trim() === '2 / 6');
     await page.locator('#studyPopCloseX').evaluate((el) => el.click());
-    await page.locator('[data-material-id="wheelchair"]').evaluate((el) => el.click());
-    await page.waitForFunction(() => document.getElementById('studySlidePage').textContent.trim() === '1 / 3');
-    const isolated = (await page.textContent('#studySlidePage')).trim() === '1 / 3';
+    await page.locator('[data-material-id="mic-guide"]').evaluate((el) => el.click());
+    await page.waitForFunction(() => document.getElementById('studySlidePage').textContent.trim() === '1 / 2');
+    const isolated = (await page.textContent('#studySlidePage')).trim() === '1 / 2';
     results.push({ label, step: 'no-state-leak', isolated });
     if (!isolated) failed += 1;
     await page.keyboard.press('Escape');
@@ -212,6 +210,8 @@ async function main() {
       panelW: r.metrics.panelW,
       imgW: r.metrics.imgW,
       sideGap: r.metrics.sideGap,
+      headerH: r.metrics.headerH,
+      footerH: r.metrics.footerH,
       imgFillRatio: r.metrics.imgFillRatio,
       heightRatio: r.metrics.heightRatio,
       phoneOk: r.phoneOk,
