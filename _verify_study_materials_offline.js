@@ -49,6 +49,11 @@ const DECKS = {
   'start-end-roll-call-guide': [
     'start-end-roll-call-guide.png',
   ],
+  'pre-trip-inspection-procedure': [
+    'pre-trip-inspection-01.png',
+    'pre-trip-inspection-02.png',
+    'pre-trip-inspection-03.png',
+  ],
 };
 
 const mime = {

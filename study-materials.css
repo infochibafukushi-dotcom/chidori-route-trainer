@@ -60,6 +60,19 @@
   overflow-wrap: anywhere;
 }
 
+.study-material-desc {
+  color: inherit;
+}
+
+.study-material-pages {
+  display: inline-block;
+  margin-top: 2px;
+  font-size: 12px;
+  line-height: 1.3;
+  color: #4a6b82;
+  font-weight: 600;
+}
+
 .study-doc-title {
   margin: 0 0 18px;
   font-size: 20px;

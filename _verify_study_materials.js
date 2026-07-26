@@ -316,6 +316,15 @@ for (const material of materials) {
     }
     continue;
   }
+  if (material.id === 'pre-trip-inspection-procedure') {
+    if (material.title !== '始業点検の手順') {
+      console.error('TITLE MISMATCH pre-trip-inspection', material.title);
+      failed++;
+    } else {
+      console.log('OK', material.id, 'image-only');
+    }
+    continue;
+  }
   const exp = expected[material.id];
   if (!exp) {
     console.error('UNKNOWN id', material.id);
@@ -337,8 +346,8 @@ for (const material of materials) {
   }
 }
 
-if (materials.length !== 10) {
-  console.error('Expected 10 materials, got', materials.length);
+if (materials.length !== 11) {
+  console.error('Expected 11 materials, got', materials.length);
   failed++;
 }
 

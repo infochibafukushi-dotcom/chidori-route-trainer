@@ -50,6 +50,11 @@ const DECKS = {
   'start-end-roll-call-guide': [
     'start-end-roll-call-guide.png',
   ],
+  'pre-trip-inspection-procedure': [
+    'pre-trip-inspection-01.png',
+    'pre-trip-inspection-02.png',
+    'pre-trip-inspection-03.png',
+  ],
 };
 
 const mime = {
@@ -143,7 +148,8 @@ async function main() {
               : id === 'intersection-turning-safety-guide' ? 'intersection-turning'
                 : id === 'passenger-injury-prevention-guide' ? 'passenger-injury-prevention'
                   : id === 'start-end-roll-call-guide' ? 'start-end-roll-call'
-                    : id;
+                    : id === 'pre-trip-inspection-procedure' ? 'pre-trip-inspection'
+                      : id;
     for (const name of names) {
       const p = path.join(root, 'assets/study-materials', dir, name);
       if (!fs.existsSync(p)) throw new Error('missing ' + p);
@@ -172,45 +178,64 @@ async function main() {
     await page.locator('[data-go="materials"]').evaluate((el) => el.click());
     await page.waitForSelector('.study-list');
     const listTitles = await page.$$eval('.study-material-item .study-material-copy strong', (els) => els.map((e) => e.textContent.trim()));
-    const listHints = await page.$$eval('.study-material-item .study-material-copy > span', (els) => els.map((e) => e.textContent.trim()));
-    const listOk = listTitles.length === 10
+    const listHints = await page.$$eval('.study-material-item .study-material-desc', (els) => els.map((e) => e.textContent.trim()));
+    const pageBadges = await page.$$eval('.study-material-item .study-material-pages', (els) => els.map((e) => e.textContent.trim()));
+    const listOk = listTitles.length === 11
       && listTitles[4] === '5. 運行中に体調の異変を感じた時の対応'
       && listTitles[5] === '6. 事故発生時の処置'
       && listTitles[6] === '7. バスジャック対応マニュアル'
       && listTitles[7] === '8. 交差点右左折時の実践要領'
       && listTitles[8] === '9. 車内事故防止の徹底'
       && listTitles[9] === '10. 始業・終業点呼の手順'
+      && listTitles[10] === '11. 始業点検の手順'
       && listHints[0] === 'タップして本文を表示'
-      && listHints[9].includes('点呼');
-    results.push({ label, step: 'list', listTitles, listHints, listOk });
+      && listHints[10].includes('点検項目')
+      && pageBadges.includes('全3ページ')
+      && pageBadges.includes('全6ページ');
+    results.push({ label, step: 'list', listTitles, listHints, pageBadges, listOk });
     if (!listOk) failed += 1;
 
-    // start-end-roll-call primary
-    await page.locator('[data-material-id="start-end-roll-call-guide"]').evaluate((el) => el.click());
+    // pre-trip-inspection primary (3 pages)
+    await page.locator('[data-material-id="pre-trip-inspection-procedure"]').evaluate((el) => el.click());
     await page.waitForSelector('#studySlideImage');
-    const rollCall = await walkSlides(page, DECKS['start-end-roll-call-guide']);
+    const preTrip = await walkSlides(page, DECKS['pre-trip-inspection-procedure']);
     const metrics = await measure(page);
     await page.locator('#studyPopCloseX').evaluate((el) => el.click());
     await page.waitForSelector('#studyMaterialPop', { state: 'detached' });
     await page.waitForFunction(() => {
-      const img = document.querySelector('[data-material-id="start-end-roll-call-guide"] .study-material-thumb');
+      const img = document.querySelector('[data-material-id="pre-trip-inspection-procedure"] .study-material-thumb');
       return !!(img && img.complete && img.naturalWidth > 0);
     });
     const thumbOnList = true;
-    await page.locator('[data-material-id="start-end-roll-call-guide"]').evaluate((el) => el.click());
+    await page.locator('[data-material-id="pre-trip-inspection-procedure"]').evaluate((el) => el.click());
+    await page.waitForSelector('#studySlideImage');
+    // verify prev disabled on first, then walk to last
+    const firstPrevDisabled = await page.$eval('#studySlidePrev', (el) => el.disabled);
+    await page.locator('#studyPopCloseX').evaluate((el) => el.click());
+    await page.waitForSelector('#studyMaterialPop', { state: 'detached' });
+    await page.locator('[data-material-id="pre-trip-inspection-procedure"]').evaluate((el) => el.click());
     await page.waitForSelector('#studySlideImage');
     const phoneOk = label === 'sp-landscape'
       ? metrics.panelW <= 760 + 1 && metrics.heightRatio <= 0.96 && metrics.imgFillRatio >= 0.9
       : label.startsWith('sp')
         ? metrics.sideGap >= 12 && metrics.sideGap <= 28 && metrics.heightRatio <= 0.96 && metrics.imgFillRatio >= 0.9
         : metrics.panelW <= 760 + 1;
-    results.push({ label, step: 'start-end-roll-call', ok: rollCall.ok, metrics, phoneOk, thumbOnList, nextLabel: rollCall.nextLabel });
-    if (!rollCall.ok || !phoneOk || !thumbOnList || metrics.overflowX || metrics.bodyOverflowX || metrics.objectFit !== 'contain') failed += 1;
+    results.push({
+      label,
+      step: 'pre-trip-inspection',
+      ok: preTrip.ok && firstPrevDisabled,
+      metrics,
+      phoneOk,
+      thumbOnList,
+      nextLabel: preTrip.nextLabel,
+      firstPrevDisabled,
+    });
+    if (!preTrip.ok || !firstPrevDisabled || !phoneOk || !thumbOnList || metrics.overflowX || metrics.bodyOverflowX || metrics.objectFit !== 'contain') failed += 1;
     await page.locator('#studyPopCloseX').evaluate((el) => el.click());
     await page.waitForSelector('#studyMaterialPop', { state: 'detached' });
 
     // regressions for other decks
-    for (const id of ['mic-guide', 'stroller', 'wheelchair', 'bicycle-accident-prevention', 'driver-health-emergency-response', 'accident-response-guide', 'bus-hijacking-response-manual', 'intersection-turning-safety-guide', 'passenger-injury-prevention-guide']) {
+    for (const id of ['mic-guide', 'stroller', 'wheelchair', 'bicycle-accident-prevention', 'driver-health-emergency-response', 'accident-response-guide', 'bus-hijacking-response-manual', 'intersection-turning-safety-guide', 'passenger-injury-prevention-guide', 'start-end-roll-call-guide']) {
       await page.locator(`[data-material-id="${id}"]`).evaluate((el) => el.click());
       await page.waitForSelector('#studySlideImage');
       const walked = await walkSlides(page, DECKS[id]);

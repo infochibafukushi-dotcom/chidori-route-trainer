@@ -237,4 +237,11 @@ window.STUDY_MATERIALS = [
     showThumbnail: true,
     blocks: [],
   },
+  {
+    id: 'pre-trip-inspection-procedure',
+    title: '始業点検の手順',
+    description: '運転席、車両外周、灯火類、タイヤ、車内設備など、始業前に確認する点検項目と順番を学習します。',
+    showThumbnail: true,
+    blocks: [],
+  },
 ];

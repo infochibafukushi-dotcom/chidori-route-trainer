@@ -103,6 +103,21 @@
     },
   ];
 
+  const PRE_TRIP_INSPECTION_SLIDES = [
+    {
+      src: 'assets/study-materials/pre-trip-inspection/pre-trip-inspection-01.png',
+      alt: '始業点検の手順 1ページ目（準備・①〜④）',
+    },
+    {
+      src: 'assets/study-materials/pre-trip-inspection/pre-trip-inspection-02.png',
+      alt: '始業点検の手順 2ページ目（⑤〜⑨）',
+    },
+    {
+      src: 'assets/study-materials/pre-trip-inspection/pre-trip-inspection-03.png',
+      alt: '始業点検の手順 3ページ目（⑩車内・点検後・点呼）',
+    },
+  ];
+
   const MATERIAL_SLIDES = {
     stroller: STROLLER_SLIDES,
     wheelchair: WHEELCHAIR_SLIDES,
@@ -114,6 +129,7 @@
     'intersection-turning-safety-guide': INTERSECTION_TURNING_SLIDES,
     'passenger-injury-prevention-guide': PASSENGER_INJURY_PREVENTION_SLIDES,
     'start-end-roll-call-guide': START_END_ROLL_CALL_SLIDES,
+    'pre-trip-inspection-procedure': PRE_TRIP_INSPECTION_SLIDES,
   };
 
   let popOpen = false;
@@ -521,12 +537,16 @@
       const thumb = item.showThumbnail && slides && slides[0]
         ? `<img class="study-material-thumb" src="${esc(slides[0].src)}" alt="" loading="lazy" decoding="async" />`
         : '';
+      const pageCount = slides && slides.length > 1
+        ? `<span class="study-material-pages">全${slides.length}ページ</span>`
+        : '';
       return (
         `<button type="button" class="menu study-material-item${thumb ? ' study-material-item--thumb' : ''}" data-material-id="${esc(item.id)}">` +
         (thumb ? `<span class="study-material-thumb-wrap" aria-hidden="true">${thumb}</span>` : '') +
         `<span class="study-material-copy">` +
         `<strong>${index + 1}. ${esc(item.title)}</strong>` +
-        `<span>${esc(item.description || 'タップして本文を表示')}</span>` +
+        `<span class="study-material-desc">${esc(item.description || 'タップして本文を表示')}</span>` +
+        pageCount +
         `</span>` +
         `</button>`
       );

@@ -79,6 +79,12 @@ if (!rollCall || rollCall.title !== '始業・終業点呼の手順') {
   process.exit(1);
 }
 
+const preTrip = materials.find((m) => m.id === 'pre-trip-inspection-procedure');
+if (!preTrip || preTrip.title !== '始業点検の手順') {
+  console.error('pre-trip-inspection material missing or title mismatch', preTrip);
+  process.exit(1);
+}
+
 fs.writeFileSync(snapshotPath, JSON.stringify(actual, null, 2) + '\n', 'utf8');
 
 console.log('OK canon', {
@@ -92,5 +98,6 @@ console.log('OK canon', {
   intersectionOk: true,
   passengerOk: true,
   rollCallOk: true,
+  preTripOk: true,
 });
 process.exit(0);
