@@ -1,6 +1,7 @@
-const CACHE_NAME = 'chidori-route-map-v104';
+const CACHE_NAME = 'chidori-route-map-v105';
 const APP_INDEX_URL = new URL('./index.html', self.location).href;
 const FETCH_TIMEOUT_MS = 7000;
+const NAV_TIMEOUT_MS = 2500;
 
 // Minimal shell for Android/WebAPK cold start. Route packs are cached on demand.
 const CORE_SHELL = [
@@ -9,19 +10,19 @@ const CORE_SHELL = [
   './app-icon.svg',
   './app-icon-192.png',
   './app-icon-512.png',
-  './styles.css?v=104',
+  './styles.css?v=105',
   './study-materials.css?v=98',
   './d1-sync.css?v=32',
   './data.js?v=98',
-  './app.js?v=104',
+  './app.js?v=105',
   './study-materials-data.js?v=98',
   './basic-training-quiz-data.js?v=103',
   './study-materials.js?v=99',
   './home-navigation-v25.js?v=32',
   './route-map-link.js?v=71',
   './route-assets-loader.js?v=78',
-  './d1-sync.js?v=63',
-  './pwa-install.js?v=104',
+  './d1-sync.js?v=64',
+  './pwa-install.js?v=105',
   './assets/study-materials/stroller/stroller-01-arrival.png',
   './assets/study-materials/stroller/stroller-02-after-boarding.png',
   './assets/study-materials/stroller/stroller-03-fare-payment.png',
@@ -88,7 +89,7 @@ function offlineNavigationFallback() {
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#0f5ea8" />
-  <title>蜊・ｳ･霍ｯ邱壼峙</title>
+  <title>千鳥路線図</title>
   <style>
     body{font-family:sans-serif;margin:0;padding:24px;background:#f3f7fb;color:#17202a}
     main{max-width:420px;margin:15vh auto;background:#fff;border-radius:16px;padding:24px;box-shadow:0 8px 24px rgba(15,94,168,.12)}
@@ -99,9 +100,9 @@ function offlineNavigationFallback() {
 </head>
 <body>
   <main>
-    <h1>蜊・ｳ･霍ｯ邱壼峙</h1>
-    <p>繧ｪ繝輔Λ繧､繝ｳ縺ｮ縺溘ａ繧｢繝励Μ繧定｡ｨ遉ｺ縺ｧ縺阪∪縺帙ｓ縲る壻ｿ｡縺ｧ縺阪ｋ蝣ｴ謇縺ｧ繧ゅ≧荳蠎ｦ髢九￥縺ｨ縲∬・蜍慕噪縺ｫ譛譁ｰ迚医∈譖ｴ譁ｰ縺輔ｌ縺ｾ縺吶・/p>
-    <button type="button" id="retry">蜀崎ｪｭ縺ｿ霎ｼ縺ｿ</button>
+    <h1>千鳥路線図</h1>
+    <p>オフラインのためアプリを表示できません。通信できる場所でもう一度開いてください。</p>
+    <button type="button" id="retry">再読み込み</button>
   </main>
   <script>
     document.getElementById('retry').onclick = function () { location.reload(); };
@@ -132,7 +133,7 @@ async function matchAppIndex(cache) {
     new URL('./', self.location).href
   ];
   for (const key of legacyKeys) {
-    const legacy = await cache.match(key, { ignoreSearch: true });
+    const legacy = await cache.match(key);
     if (legacy) {
       try { await cache.put(APP_INDEX_URL, legacy.clone()); } catch (e) {}
       return legacy;
@@ -141,21 +142,10 @@ async function matchAppIndex(cache) {
   return null;
 }
 
-async function updateAppIndexInBackground(cache) {
-  try {
-    const response = await fetchWithTimeout(APP_INDEX_URL, { cache: 'no-store' });
-    if (response.ok) await cache.put(APP_INDEX_URL, response.clone());
-  } catch (error) {
-    console.warn('[sw] background index update failed', error && error.message ? error.message : error);
-  }
-}
-
 async function handleNavigation(cachePromise) {
   const cache = await cachePromise;
-  const cached = await matchAppIndex(cache);
-  if (cached) return cached;
   try {
-    const response = await fetchWithTimeout(APP_INDEX_URL, { cache: 'no-store' });
+    const response = await fetchWithTimeout(APP_INDEX_URL, { cache: 'no-store' }, NAV_TIMEOUT_MS);
     if (response.ok) {
       await cache.put(APP_INDEX_URL, response.clone());
       return response;
@@ -164,10 +154,46 @@ async function handleNavigation(cachePromise) {
   } catch (error) {
     console.warn('[sw] navigation network failed', error && error.message ? error.message : error);
   }
+  const cached = await matchAppIndex(cache);
+  if (cached) return cached;
   return offlineNavigationFallback();
 }
 
-async function handleAsset(request) {
+function isVersionedCodeAsset(url) {
+  return /\.(?:js|css|html)$/.test(url.pathname) || url.pathname.endsWith('webmanifest');
+}
+
+function isImageAsset(url) {
+  return url.pathname.endsWith('.png') || url.pathname.endsWith('.svg');
+}
+
+async function handleCodeAsset(request) {
+  const cache = await caches.open(CACHE_NAME);
+  // JS/CSS/HTML: exact cache key only — never ignoreSearch (avoids app.js?v=105 serving v=100).
+  const cached = await cache.match(request);
+  if (cached) {
+    try {
+      const response = await fetchWithTimeout(request, { cache: 'no-store' });
+      if (response.ok) {
+        await cache.put(request, response.clone());
+        return response;
+      }
+    } catch (error) {
+      // stale-while-revalidate: network failed, use exact cached version
+    }
+    return cached;
+  }
+  try {
+    const response = await fetchWithTimeout(request, { cache: 'no-store' });
+    if (response.ok) await cache.put(request, response.clone());
+    return response;
+  } catch (error) {
+    console.warn('[sw] code asset fetch failed', request.url, error && error.message ? error.message : error);
+    return Response.error();
+  }
+}
+
+async function handleImageAsset(request) {
   const cache = await caches.open(CACHE_NAME);
   const cached =
     (await cache.match(request)) ||
@@ -178,7 +204,7 @@ async function handleAsset(request) {
     if (response.ok) await cache.put(request, response.clone());
     return response;
   } catch (error) {
-    console.warn('[sw] asset fetch failed', request.url, error && error.message ? error.message : error);
+    console.warn('[sw] image asset fetch failed', request.url, error && error.message ? error.message : error);
     return Response.error();
   }
 }
@@ -207,15 +233,6 @@ self.addEventListener('fetch', (event) => {
 
   if (request.mode === 'navigate') {
     const cachePromise = caches.open(CACHE_NAME);
-
-    event.waitUntil(
-      cachePromise
-        .then((cache) => updateAppIndexInBackground(cache))
-        .catch((error) => {
-          console.warn('[sw] background index update failed', error && error.message ? error.message : error);
-        })
-    );
-
     event.respondWith(
       handleNavigation(cachePromise).catch((error) => {
         console.warn('[sw] navigation handler rejected', error && error.message ? error.message : error);
@@ -225,15 +242,20 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  if (
-    /\.(?:js|css|html)$/.test(url.pathname) ||
-    url.pathname.endsWith('webmanifest') ||
-    url.pathname.endsWith('.png') ||
-    url.pathname.endsWith('.svg')
-  ) {
+  if (isVersionedCodeAsset(url)) {
     event.respondWith(
-      handleAsset(request).catch((error) => {
-        console.warn('[sw] asset handler rejected', request.url, error && error.message ? error.message : error);
+      handleCodeAsset(request).catch((error) => {
+        console.warn('[sw] code asset handler rejected', request.url, error && error.message ? error.message : error);
+        return Response.error();
+      })
+    );
+    return;
+  }
+
+  if (isImageAsset(url)) {
+    event.respondWith(
+      handleImageAsset(request).catch((error) => {
+        console.warn('[sw] image asset handler rejected', request.url, error && error.message ? error.message : error);
         return Response.error();
       })
     );

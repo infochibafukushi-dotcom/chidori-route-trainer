@@ -92,8 +92,8 @@ function canSaveSharedHomeCardOrder(){
   if(typeof window.__chidoriIsEditorVerified==='function'){
     return !!window.__chidoriIsEditorVerified();
   }
-  // d1-sync未読込時は端末内のみ保存を許可（ローカル検証用）
-  return true;
+  // d1-sync未読込時は共有保存不可（端末内だけの成功表示を防ぐ）
+  return false;
 }
 function loadHomeCardOrder(){
   try{
@@ -339,13 +339,20 @@ function quiz(){
   document.getElementById('nextQ').onclick=quiz;
 }
 function settings(){shell(`<section><div class="tabs tabs--5"><button data-tab="stops" class="${settingsTab==='stops'?'active':''}">停留所</button><button data-tab="pins" class="${settingsTab==='pins'?'active':''}">注意ピン</button><button data-tab="categories" class="${settingsTab==='categories'?'active':''}">項目</button><button data-tab="materials-order" class="${settingsTab==='materials-order'?'active':''}">資料順</button><button data-tab="home-order" class="${settingsTab==='home-order'?'active':''}">カード順</button></div><div id="settingsBody"></div></section>`);document.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>{settingsTab=b.dataset.tab;settings()});if(settingsTab==='stops')stopEditor();if(settingsTab==='pins')pinEditor();if(settingsTab==='categories')categoryEditor();if(settingsTab==='materials-order')materialsOrderEditor();if(settingsTab==='home-order')homeCardOrderEditor()}
-function homeCardOrderEditor(statusMessage){
+function homeCardOrderEditor(statusMessage,options={}){
   const body=document.getElementById('settingsBody');
   if(!body)return;
+  const saving=!!options.saving;
+  const showRetry=!!options.showRetry;
+  const committed=loadHomeCardOrder();
   let draft=normalizeHomeCardOrder(
-    Array.isArray(homeCardOrderDraft)&&homeCardOrderDraft.length?homeCardOrderDraft:loadHomeCardOrder()
+    Array.isArray(homeCardOrderDraft)&&homeCardOrderDraft.length?homeCardOrderDraft:committed
   );
   homeCardOrderDraft=draft.slice();
+  const dirty=JSON.stringify(draft)!==JSON.stringify(committed);
+  const defaultStatus=dirty?'並び順が変更されています。「保存」を押してください。':'';
+  const statusText=statusMessage!=null?statusMessage:defaultStatus;
+  const saveDisabled=saving||!dirty;
   body.innerHTML=
     `<div class="card home-order-card">`+
     `<h3 class="home-order-title">ホーム画面カードの並び順</h3>`+
@@ -356,51 +363,71 @@ function homeCardOrderEditor(statusMessage){
       if(!def)return '';
       const atFirst=index===0;
       const atLast=index===draft.length-1;
+      const moveDisabled=saving;
       return (
         `<div class="home-order-row" data-order-id="${esc(id)}" data-order-index="${index}">`+
         `<span class="home-order-label">${esc(def.title)}</span>`+
         `<span class="home-order-actions">`+
-        `<button type="button" class="home-order-btn" data-move-up="${index}" ${atFirst?'disabled':''} aria-label="上へ移動">↑</button>`+
-        `<button type="button" class="home-order-btn" data-move-down="${index}" ${atLast?'disabled':''} aria-label="下へ移動">↓</button>`+
+        `<button type="button" class="home-order-btn" data-move-up="${index}" ${atFirst||moveDisabled?'disabled':''} aria-label="上へ移動">↑</button>`+
+        `<button type="button" class="home-order-btn" data-move-down="${index}" ${atLast||moveDisabled?'disabled':''} aria-label="下へ移動">↓</button>`+
         `</span></div>`
       );
     }).join('')+
     `</div>`+
-    `<p id="homeOrderStatus" class="status">${statusMessage?esc(statusMessage):''}</p>`+
+    `<p id="homeOrderStatus" class="status">${statusText?esc(statusText):''}</p>`+
     `<div class="home-order-footer">`+
-    `<button type="button" class="primary" id="homeOrderSave">保存</button>`+
-    `<button type="button" class="secondary" id="homeOrderReset">初期状態に戻す</button>`+
+    `<button type="button" class="primary" id="homeOrderSave" ${saveDisabled?'disabled':''}>保存</button>`+
+    (showRetry?`<button type="button" class="secondary" id="homeOrderRetry">再試行</button>`:'')+
+    `<button type="button" class="secondary" id="homeOrderReset" ${saving?'disabled':''}>初期状態に戻す</button>`+
     `</div></div>`;
 
-  function persist(next,message){
-    homeCardOrderDraft=next.slice();
-    if(!canSaveSharedHomeCardOrder()){
-      homeCardOrderEditor('共通の並び順を変更するには、有効な編集トークンが必要です。');
-      return;
-    }
-    try{
-      saveHomeCardOrder(next);
-      homeCardOrderEditor(message||'並び順を保存しました');
-    }catch(err){
-      console.error(err);
-      const msg=err&&err.code==='HOME_CARD_ORDER_NO_EDITOR'
-        ?'共通の並び順を変更するには、有効な編集トークンが必要です。'
-        :'保存できませんでした。もう一度お試しください。';
-      homeCardOrderEditor(msg);
-    }
-  }
-
   function move(from,to){
+    if(saving)return;
     if(to<0||to>=draft.length)return;
     const next=draft.slice();
     const [item]=next.splice(from,1);
     next.splice(to,0,item);
+    homeCardOrderDraft=next.slice();
+    homeCardOrderEditor();
+  }
+
+  async function flushSharedOrder(order,{fromRetry=false}={}){
     if(!canSaveSharedHomeCardOrder()){
-      homeCardOrderDraft=next.slice();
-      homeCardOrderEditor('共通の並び順を変更するには、有効な編集トークンが必要です。');
+      homeCardOrderEditor('共通の並び順を変更するには、編集トークンの確認が必要です。');
       return;
     }
-    persist(next);
+    if(typeof window.__chidoriFlushD1Save!=='function'){
+      homeCardOrderEditor('共通の並び順を変更するには、編集トークンの確認が必要です。');
+      return;
+    }
+    homeCardOrderDraft=order.slice();
+    homeCardOrderEditor('全端末へ保存中…',{saving:true});
+    const saveBtn=document.getElementById('homeOrderSave');
+    if(saveBtn)saveBtn.disabled=true;
+    try{
+      if(!fromRetry){
+        saveHomeCardOrder(order);
+      }
+      const result=await window.__chidoriFlushD1Save();
+      if(result&&result.ok){
+        homeCardOrderDraft=loadHomeCardOrder().slice();
+        homeCardOrderEditor('並び順を保存しました。全端末で共有されます。');
+        const locked=document.getElementById('homeOrderSave');
+        if(locked)locked.disabled=true;
+        return;
+      }
+      homeCardOrderDraft=loadHomeCardOrder().slice();
+      homeCardOrderEditor(
+        'この端末には保存しましたが、全端末には共有できませんでした。通信状態を確認して再試行してください。',
+        {showRetry:true}
+      );
+    }catch(err){
+      console.error(err);
+      const msg=err&&err.code==='HOME_CARD_ORDER_NO_EDITOR'
+        ?'共通の並び順を変更するには、編集トークンの確認が必要です。'
+        :'保存できませんでした。もう一度お試しください。';
+      homeCardOrderEditor(msg,err&&err.code==='HOME_CARD_ORDER_NO_EDITOR'?{}:{showRetry:true});
+    }
   }
 
   body.querySelectorAll('[data-move-up]').forEach((btn)=>{
@@ -411,12 +438,22 @@ function homeCardOrderEditor(statusMessage){
   });
 
   document.getElementById('homeOrderReset').onclick=()=>{
-    persist(DEFAULT_HOME_CARD_ORDER.slice(),'初期状態に戻しました');
+    if(saving)return;
+    homeCardOrderDraft=DEFAULT_HOME_CARD_ORDER.slice();
+    homeCardOrderEditor();
   };
 
   document.getElementById('homeOrderSave').onclick=()=>{
-    persist(homeCardOrderDraft||loadHomeCardOrder(),'並び順を保存しました');
+    if(saveDisabled)return;
+    flushSharedOrder(homeCardOrderDraft||loadHomeCardOrder());
   };
+
+  const retryBtn=document.getElementById('homeOrderRetry');
+  if(retryBtn){
+    retryBtn.onclick=()=>{
+      flushSharedOrder(loadHomeCardOrder(),{fromRetry:true});
+    };
+  }
 }
 function stopEditor(){document.getElementById('settingsBody').innerHTML=`<div class="grid"><div class="card"><label>路線<select id="sRoute">${data.routes.map(r=>`<option value="${r.id}">${label(r)}</option>`).join('')}</select></label><label>方向<select id="sDir"><option value="outbound">往路</option><option value="inbound">復路</option></select></label><label>停留所名<input id="sName"></label><label>住所・施設名<input id="sAddress"></label><button class="secondary" id="sSearch">住所から位置を取得</button><div id="picker" class="picker"></div><p id="sStatus" class="status">地図をタップしても位置を指定できます。</p><button class="primary" id="sAdd">停留所を追加</button></div><div class="card"><strong>登録済み停留所</strong><div id="stopList"></div></div></div>`;const state={pos:null};picker('picker',state,'sStatus');document.getElementById('sSearch').onclick=async()=>{try{state.pos=await geocode(document.getElementById('sAddress').value);settings()}catch(e){document.getElementById('sStatus').textContent=e.message}};document.getElementById('sAdd').onclick=()=>{const r=data.routes.find(x=>x.id===document.getElementById('sRoute').value);const dir=document.getElementById('sDir').value;const name=document.getElementById('sName').value.trim();if(!r||!name||!state.pos)return alert('停留所名と位置を設定してください。');r[dir].push({id:id('stop'),name,address:document.getElementById('sAddress').value.trim(),...state.pos});save();settings()};renderStopList()}
 function renderStopList(){const box=document.getElementById('stopList');box.innerHTML=data.routes.map(r=>['outbound','inbound'].map(dir=>r[dir].map(s=>`<div class="item"><span>${label(r)}・${dir==='outbound'?'往路':'復路'}｜${esc(s.name)}</span><button data-delstop="${r.id}|${dir}|${s.id}">削除</button></div>`).join('')).join('')).join('')||'<p>未登録</p>';document.querySelectorAll('[data-delstop]').forEach(b=>b.onclick=()=>{const [rid,dir,sid]=b.dataset.delstop.split('|');const r=data.routes.find(x=>x.id===rid);r[dir]=r[dir].filter(s=>s.id!==sid);save();settings()})}

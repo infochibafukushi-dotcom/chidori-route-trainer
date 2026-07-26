@@ -9,12 +9,24 @@
   let editorVerified = false;
   let applyingRemote = false;
   let uploadTimer = null;
+  let uploadInFlight = null;
+  // ローカル変更世代。遅延GETが編集中・保存中の data を巻き戻さないためのガード。
+  // 注意: カード順変更でも全データをPUTしているため、複数端末競合の根本解決には
+  // 部分更新APIまたはrevision制御が必要。
+  let localMutationVersion = 0;
+  let hasUnsharedLocalData = false;
 
   function clone(value) {
     return JSON.parse(JSON.stringify(value));
   }
 
+  function bumpLocalMutation() {
+    localMutationVersion += 1;
+  }
+
   window.__chidoriIsEditorVerified = () => editorVerified;
+  window.__chidoriGetLocalMutationVersion = () => localMutationVersion;
+  window.__chidoriHasUnsharedLocalData = () => hasUnsharedLocalData;
 
   function ensureSyncBar() {
     // 利用者向け画面では同期バーを出さない（D1取得・保存処理自体は維持）
@@ -63,6 +75,16 @@
     }
   }
 
+  function updateEditorTokenStatus() {
+    const status = document.getElementById('d1EditorStatus');
+    if (!status) return;
+    if (editorVerified) return;
+    if (editToken) {
+      status.textContent =
+        '編集トークンは保存されていますが、この起動では未確認です。「登録して確認」を押してください。';
+    }
+  }
+
   function migrateHomeCardOrderIfNeeded() {
     if (!editorVerified || Array.isArray(data?.uiSettings?.homeCardOrder)) return false;
     const migratedOrder = loadHomeCardOrder();
@@ -83,6 +105,7 @@
     const section = document.querySelector('.tabs')?.parentElement;
     if (!section || document.getElementById('d1EditorPanel')) {
       applySettingsAccess();
+      updateEditorTokenStatus();
       return;
     }
     const panel = document.createElement('div');
@@ -116,8 +139,8 @@
       editToken = token;
       localStorage.setItem(TOKEN_KEY, token);
       status.textContent = 'トークンを確認しています…';
-      const ok = await uploadRemote(true);
-      if (ok) {
+      const result = await uploadRemoteDetailed(true);
+      if (result.ok) {
         editorVerified = true;
         migrateHomeCardOrderIfNeeded();
         status.textContent = '編集可能です。現在のデータをD1へ保存しました。';
@@ -138,15 +161,38 @@
     };
 
     applySettingsAccess();
+    updateEditorTokenStatus();
+  }
+
+  function shouldSkipRemoteApply(versionAtLoadStart) {
+    if (versionAtLoadStart !== localMutationVersion) return true;
+    if (hasUnsharedLocalData) return true;
+    if (uploadTimer) return true;
+    if (uploadInFlight) return true;
+    if (page === 'settings' && settingsTab === 'home-order' && homeCardOrderDraft) {
+      const committed = loadHomeCardOrder();
+      if (JSON.stringify(homeCardOrderDraft) !== JSON.stringify(committed)) return true;
+    }
+    return false;
   }
 
   async function loadRemote(force = false) {
     setSyncStatus('D1の共通データを読込中…', 'working');
+    const versionAtLoadStart = localMutationVersion;
     try {
       const response = await apiFetch({ method: 'GET' });
       if (!response.ok) throw new Error(`読込エラー（${response.status}）`);
       const result = await response.json();
       if (result.data && typeof result.data === 'object') {
+        if (shouldSkipRemoteApply(versionAtLoadStart)) {
+          console.info('[chidori] skipped stale D1 response because local data changed');
+          setSyncStatus('端末内の最新データを優先中', 'working');
+          if (page === 'settings') {
+            mountEditorPanel();
+            applySettingsAccess();
+          }
+          return;
+        }
         applyingRemote = true;
         data = clone(result.data);
         originalSave();
@@ -179,59 +225,113 @@
     }
   }
 
-  async function uploadRemote(silent = false) {
-    if (!editToken || applyingRemote) return false;
-    if (!silent) setSyncStatus('D1へ保存中…', 'working');
-    try {
-      const response = await apiFetch({
-        method: 'PUT',
-        headers: {
-          'Content-Type': 'application/json',
-          Authorization: `Bearer ${editToken}`,
-        },
-        body: JSON.stringify({ data: clone(data) }),
-      });
-      if (response.status === 401) {
-        editorVerified = false;
-        editToken = '';
-        try {
-          localStorage.removeItem(TOKEN_KEY);
-        } catch (error) {
-          console.warn('無効な編集トークンを削除できませんでした', error);
-        }
-        if (!silent) {
-          setSyncStatus(
-            '編集トークンが無効です。設定画面から再登録してください',
-            'error'
-          );
-        }
-        if (page === 'settings') {
-          const input = document.getElementById('d1EditToken');
-          if (input) input.value = '';
-          const status = document.getElementById('d1EditorStatus');
-          if (status) status.textContent = '編集トークンが無効です。再登録してください。';
-          applySettingsAccess();
-        }
-        return false;
-      }
-      if (!response.ok) throw new Error(`保存エラー（${response.status}）`);
-      editorVerified = true;
-      setSyncStatus('D1へ保存済み｜全端末で共有されます', 'ok');
-      return true;
-    } catch (error) {
-      console.error('D1 save failed', error);
-      if (!silent) setSyncStatus(errorMessage(error), 'error');
-      return false;
+  async function uploadRemoteDetailed(silent = false) {
+    if (!editToken) {
+      return {
+        ok: false,
+        reason: 'unauthorized',
+        message: '編集トークンが未設定です',
+      };
     }
+    if (applyingRemote) {
+      return {
+        ok: false,
+        reason: 'conflict',
+        message: 'D1データの反映中のため保存できません',
+      };
+    }
+    if (!silent) setSyncStatus('D1へ保存中…', 'working');
+
+    const run = async () => {
+      try {
+        // カード順変更でも routes / studyMaterialsOrder 等を含む全データをPUTしている。
+        // 複数端末競合の根本解決には部分更新APIまたはrevision制御が必要。
+        const response = await apiFetch({
+          method: 'PUT',
+          headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${editToken}`,
+          },
+          body: JSON.stringify({ data: clone(data) }),
+        });
+        if (response.status === 401) {
+          editorVerified = false;
+          editToken = '';
+          hasUnsharedLocalData = true;
+          try {
+            localStorage.removeItem(TOKEN_KEY);
+          } catch (error) {
+            console.warn('無効な編集トークンを削除できませんでした', error);
+          }
+          if (!silent) {
+            setSyncStatus(
+              '編集トークンが無効です。設定画面から再登録してください',
+              'error'
+            );
+          }
+          if (page === 'settings') {
+            const input = document.getElementById('d1EditToken');
+            if (input) input.value = '';
+            const status = document.getElementById('d1EditorStatus');
+            if (status) status.textContent = '編集トークンが無効です。再登録してください。';
+            applySettingsAccess();
+          }
+          return {
+            ok: false,
+            reason: 'unauthorized',
+            message: '編集トークンが無効です',
+          };
+        }
+        if (!response.ok) {
+          hasUnsharedLocalData = true;
+          throw new Error(`保存エラー（${response.status}）`);
+        }
+        editorVerified = true;
+        hasUnsharedLocalData = false;
+        setSyncStatus('D1へ保存済み｜全端末で共有されます', 'ok');
+        return { ok: true };
+      } catch (error) {
+        console.error('D1 save failed', error);
+        hasUnsharedLocalData = true;
+        const message = errorMessage(error);
+        if (!silent) setSyncStatus(message, 'error');
+        const reason = error?.name === 'AbortError' ? 'network' : 'unknown';
+        return { ok: false, reason, message };
+      }
+    };
+
+    if (uploadInFlight) {
+      return uploadInFlight;
+    }
+    uploadInFlight = run().finally(() => {
+      uploadInFlight = null;
+    });
+    return uploadInFlight;
+  }
+
+  async function uploadRemote(silent = false) {
+    const result = await uploadRemoteDetailed(silent);
+    return !!result.ok;
   }
 
   function scheduleUpload() {
     if (!editorVerified || applyingRemote) return;
     clearTimeout(uploadTimer);
-    uploadTimer = setTimeout(() => uploadRemote(false), 500);
+    uploadTimer = setTimeout(() => {
+      uploadTimer = null;
+      uploadRemote(false);
+    }, 500);
   }
 
+  window.__chidoriFlushD1Save = async function __chidoriFlushD1Save() {
+    clearTimeout(uploadTimer);
+    uploadTimer = null;
+    return uploadRemoteDetailed(false);
+  };
+
   save = function saveWithD1() {
+    bumpLocalMutation();
+    hasUnsharedLocalData = true;
     originalSave();
     scheduleUpload();
   };

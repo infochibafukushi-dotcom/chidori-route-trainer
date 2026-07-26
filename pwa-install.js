@@ -1,12 +1,11 @@
 (() => {
-  const SW_VERSION = '104';
+  const SW_VERSION = '105';
+  const SW_RELOAD_FLAG = 'chidori-sw-reloaded';
   let installPrompt = null;
 
   const isInstalled = () =>
     window.matchMedia('(display-mode: standalone)').matches ||
     window.navigator.standalone === true;
-
-  const isAndroid = () => /android/i.test(window.navigator.userAgent || '');
 
   const isIos = () =>
     /iphone|ipad|ipod/i.test(window.navigator.userAgent) ||
@@ -81,6 +80,14 @@
     });
   }
 
+  function clearSwReloadFlagSoon() {
+    setTimeout(() => {
+      try {
+        sessionStorage.removeItem(SW_RELOAD_FLAG);
+      } catch (error) {}
+    }, 3000);
+  }
+
   window.addEventListener('beforeinstallprompt', (event) => {
     event.preventDefault();
     installPrompt = event;
@@ -116,11 +123,18 @@
   }
 
   if ('serviceWorker' in navigator) {
-    // Never auto-reload on controllerchange — avoids WebAPK splash / boot races.
     navigator.serviceWorker.addEventListener('controllerchange', () => {
       try {
-        window.__chidoriBoot && window.__chidoriBoot.mark('sw-controllerchange-no-reload');
-      } catch (error) {}
+        if (sessionStorage.getItem(SW_RELOAD_FLAG) === '1') {
+          window.__chidoriBoot && window.__chidoriBoot.mark('sw-controllerchange-skip');
+          return;
+        }
+        sessionStorage.setItem(SW_RELOAD_FLAG, '1');
+        window.__chidoriBoot && window.__chidoriBoot.mark('sw-controllerchange-reload');
+        location.reload();
+      } catch (error) {
+        location.reload();
+      }
     });
 
     const registerOnce = async () => {
@@ -132,16 +146,10 @@
           window.__chidoriBoot && window.__chidoriBoot.mark('sw-registered', registration.scope);
         } catch (error) {}
 
-        // Android standalone: do not update/skipWaiting during this session.
-        // New SW applies on the next cold start.
-        if (isAndroid() && isInstalled()) {
-          return;
-        }
-
-        // Browser tab: allow background update discovery, but never force claim/reload here.
         registration.update().catch((error) => {
           console.warn('SW update check failed', error);
         });
+        clearSwReloadFlagSoon();
       } catch (error) {
         console.error('Service Worker登録失敗', error);
       }
@@ -156,4 +164,3 @@
 
   bindInstallButton();
 })();
-
