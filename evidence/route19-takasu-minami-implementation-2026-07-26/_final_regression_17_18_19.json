@@ -1,0 +1,174 @@
+{
+  "startedAt": "2026-07-26T15:51:46.793Z",
+  "baseline": "66c8596",
+  "pathHashRegression": {
+    "route-3": {
+      "label": "route-3",
+      "file": "urayasu-higashi-danchi-path-v1.js",
+      "ok": true
+    },
+    "route-4": {
+      "label": "route-4",
+      "file": "tomioka-path-v1.js",
+      "ok": true
+    },
+    "route-5": {
+      "label": "route-5",
+      "file": "horie-path-v1.js",
+      "ok": true
+    },
+    "route-6": {
+      "label": "route-6",
+      "file": "shiyakusho-path-v1.js",
+      "ok": true
+    },
+    "route-9": {
+      "label": "route-9",
+      "file": "maihama-line-path-v1.js",
+      "ok": true
+    },
+    "route-10": {
+      "label": "route-10",
+      "file": "takasu-line-path-v1.js",
+      "ok": true
+    },
+    "route-11": {
+      "label": "route-11",
+      "file": "symbol-road-line-path-v1.js",
+      "ok": true
+    },
+    "route-12": {
+      "label": "route-12",
+      "file": "maihama-resort-line-path-v1.js",
+      "ok": true
+    },
+    "route-14": {
+      "label": "route-14",
+      "file": "benten-tomioka-line-path-v1.js",
+      "ok": true
+    },
+    "route-15": {
+      "label": "route-15",
+      "file": "shione-no-machi-line-path-v1.js",
+      "ok": true
+    },
+    "route-16": {
+      "label": "route-16",
+      "file": "hinode-line-path-v1.js",
+      "ok": true
+    }
+  },
+  "switchTest": [
+    {
+      "routeId": "route-16",
+      "routeName": "日の出線",
+      "selectText": "16 日の出線",
+      "systemKeys": [
+        "16-hinode-nanachome",
+        "16-shinurayasu"
+      ],
+      "stopCount": 10,
+      "firstStop": "新浦安駅",
+      "lastStop": "日の出七丁目",
+      "ok": true,
+      "expect": "route-16",
+      "noMix": true
+    },
+    {
+      "routeId": "route-17",
+      "routeName": "日の出線",
+      "selectText": "17 日の出線",
+      "systemKeys": [
+        "17-hinode-nanachome",
+        "17-baycity-urayasu",
+        "17-shinurayasu"
+      ],
+      "stopCount": 10,
+      "firstStop": "新浦安駅",
+      "lastStop": "日の出七丁目",
+      "ok": true,
+      "expect": "route-17",
+      "noMix": true
+    },
+    {
+      "routeId": "route-18",
+      "routeName": "明海・高洲線",
+      "selectText": "18 明海・高洲線",
+      "systemKeys": [
+        "18-takasu-seaside",
+        "18-urayasu-eki-iriguchi",
+        "18-takasu-kita-shogakko",
+        "18-takasu-seaside-from-shinurayasu",
+        "18-shinurayasu-from-takasu"
+      ],
+      "stopCount": 15,
+      "firstStop": "浦安駅入口",
+      "lastStop": "高洲海浜公園",
+      "ok": true,
+      "expect": "route-18",
+      "noMix": true
+    },
+    {
+      "routeId": "route-19",
+      "routeName": "高洲南線",
+      "selectText": "19 高洲南線",
+      "systemKeys": [
+        "19-takasu-seaside",
+        "19-shinurayasu"
+      ],
+      "stopCount": 14,
+      "firstStop": "新浦安駅",
+      "lastStop": "高洲海浜公園",
+      "ok": true,
+      "expect": "route-19",
+      "noMix": true
+    },
+    {
+      "routeId": "route-15",
+      "routeName": "潮音の街線",
+      "selectText": "15 潮音の街線",
+      "systemKeys": [
+        "15-takasu-seaside",
+        "15-shinurayasu"
+      ],
+      "stopCount": 10,
+      "firstStop": "新浦安駅",
+      "lastStop": "高洲海浜公園",
+      "ok": true,
+      "expect": "route-15",
+      "noMix": true
+    },
+    {
+      "routeId": "route-1",
+      "selectText": "1 北栄線",
+      "selectValue": "route-1",
+      "ok": true,
+      "expect": "route-1",
+      "systemKeys": []
+    }
+  ],
+  "layout": {
+    "pc1280": {
+      "scrollX": 0,
+      "buttonsOut": []
+    },
+    "sp390": {
+      "scrollX": 0,
+      "buttonsOut": []
+    }
+  },
+  "d1Puts": [],
+  "pass": true,
+  "homeCopyrightOk": true,
+  "consoleErrors": [],
+  "route16vs17Separated": true,
+  "summary": {
+    "pathOk": true,
+    "switchOk": true,
+    "layoutOk": true,
+    "d1Ok": true,
+    "consoleOk": true,
+    "homeCopyrightOk": true,
+    "route16vs17Separated": true
+  }
+}

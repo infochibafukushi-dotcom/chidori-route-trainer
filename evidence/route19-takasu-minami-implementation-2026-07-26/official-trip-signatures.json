@@ -14,7 +14,7 @@
       "legendLine": "無印…【１９系統】東京学館前、高洲四丁目、浦安南高校・特養ホーム経由　高洲海浜公園行き",
       "stopNameSignature": "新浦安駅>入船中央エステート>明海交差点>入船橋>高洲北小学校>東京学館前>高洲二丁目>順天堂大学入口>高洲西児童公園>高洲三丁目>高洲四丁目>高洲八丁目>浦安南高校特養ホーム>高洲海浜公園",
       "stopIdSignature": "00020619>00020663>00020711>00020661>00020720>00020641>00020863>00020865>00020861>00020858>00020859>00020864>00020744>00020855",
-      "tripCountObservedPartial": 164,
+      "tripCount": 819,
       "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80f2000e/stops?departure-busstop=00020720-5&course=0008200292&datetime=2026-07-27T06:31:00%2B09:00"
     },
     {
@@ -27,7 +27,7 @@
       "legendLine": "無印…【１９系統】高洲四丁目、東京学館前経由　新浦安駅行き",
       "stopNameSignature": "高洲海浜公園>浦安南高校特養ホーム>高洲八丁目>高洲四丁目>高洲三丁目>高洲西児童公園>順天堂大学入口>高洲二丁目>東京学館前>高洲北小学校>入船橋>明海交差点>入船中央エステート>新浦安駅",
       "stopIdSignature": "00020855>00020744>00020864>00020859>00020858>00020861>00020865>00020863>00020641>00020720>00020661>00020711>00020663>00020619",
-      "tripCountObservedPartial": 60,
+      "tripCount": 774,
       "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80f10000/stops?departure-busstop=00020720-10&course=0008200291&datetime=2026-07-27T06:07:00%2B09:00"
     }
   ],
@@ -35,8 +35,40 @@
     {
       "course": "0008200254",
       "verdict": "REJECT-route-10",
+      "tripCount": 36,
       "stopNameSignature": "新浦安駅>入船中央エステート>明海交差点>入船橋>高洲北小学校>東京学館前>高洲二丁目>順天堂大学入口>高洲西児童公園>高洲三丁目>高洲四丁目>鉄鋼団地入口>アライプロバンス>みなと第二>みなと南",
       "reason": "のりばF 符号み → 【１０系統】みなと南（鉄鋼団地）行き。高洲四丁目の次で19系統と分岐。"
+    },
+    {
+      "course": "0008200278",
+      "verdict": "REJECT-route-15",
+      "tripCount": 173,
+      "reason": "潮音の街・高洲中央公園・高洲経由（【１５系統】）。"
+    },
+    {
+      "course": "0008200277",
+      "verdict": "REJECT-route-15",
+      "tripCount": 332,
+      "reason": "潮音の街・高洲中央公園・高洲経由 復路（【１５系統】）。"
+    },
+    {
+      "courses": ["0008200289", "0008200290"],
+      "verdict": "REJECT-route-18",
+      "tripCount": 87,
+      "reason": "夢海の街・高洲橋経由 高洲北小学校行き（【１８系統】）。"
+    },
+    {
+      "courses": ["0008200255", "0008200253"],
+      "verdict": "REJECT-route-10",
+      "tripCount": 18,
+      "reason": "みなと南／アライプロバンス側（【１０系統】）。"
+    },
+    {
+      "courses": ["0008200308", "0008200306"],
+      "verdict": "REJECT-route-25",
+      "tripCount": 20,
+      "reason": "舞浜駅発（【２５系統】系）。"
     }
-  ]
+  ],
+  "note": "Deep scrape opened unique signature samples across shared [19] cells; tripCount is aggregate link hits for that stop-order. Final ACCEPT remains the two 14-stop patterns gated by departure-berth legend 【１９系統】. No short-turn / night / holiday-only stop-order variants for route-19."
 }
