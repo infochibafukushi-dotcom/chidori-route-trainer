@@ -638,10 +638,6 @@
   }
 
   function renderList() {
-    if (popOpen) {
-      closePop({ fromPopstate: true });
-      historyPushed = false;
-    }
     studyMaterialId = null;
     const items = materials().map((item, index) => {
       const slides = MATERIAL_SLIDES[item.id];
@@ -691,6 +687,19 @@
         openPop(button.getAttribute('data-material-id'), button);
       });
     });
+
+    // Keep POP open across list re-renders (e.g. D1 sync). Refresh return-focus
+    // to the replacement card so closing later restores focus correctly.
+    if (popOpen && openMaterialId) {
+      const replacementTrigger = Array.from(
+        document.querySelectorAll('[data-material-id]')
+      ).find((element) =>
+        element.getAttribute('data-material-id') === openMaterialId
+      );
+      if (replacementTrigger) {
+        popReturnFocus = replacementTrigger;
+      }
+    }
   }
 
   function renderDetail() {

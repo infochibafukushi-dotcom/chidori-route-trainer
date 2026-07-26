@@ -131,6 +131,14 @@
         applyingRemote = true;
         data = clone(result.data);
         originalSave();
+        const studyPopOpen =
+          page === 'materials' &&
+          window.__chidoriStudyMaterialsPop &&
+          typeof window.__chidoriStudyMaterialsPop.isOpen === 'function' &&
+          window.__chidoriStudyMaterialsPop.isOpen();
+        if (studyPopOpen) {
+          console.info('[chidori] D1 data applied while study material POP is open');
+        }
         render();
         applyingRemote = false;
         setSyncStatus('D1共通データを表示中', 'ok');

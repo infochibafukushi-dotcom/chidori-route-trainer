@@ -1,5 +1,5 @@
 (() => {
-  const SW_VERSION = '98';
+  const SW_VERSION = '99';
   let installPrompt = null;
 
   const isInstalled = () =>
