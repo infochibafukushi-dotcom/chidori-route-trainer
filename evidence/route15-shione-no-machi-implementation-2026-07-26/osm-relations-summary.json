@@ -1,0 +1,775 @@
+{
+  "fetchedAt": "2026-07-26T10:02:29.183Z",
+  "route": "shione-no-machi-route15",
+  "lineName": "潮音の街線",
+  "knownPathSourceIds": [
+    18419865,
+    18419864
+  ],
+  "relations": [
+    {
+      "id": 18419865,
+      "label": "route15 新浦安駅⇒東京学館⇒高洲海浜公園",
+      "ok": true,
+      "source": "overpass",
+      "name": "東京ベイシティバス15系統 新浦安駅⇒東京学館⇒高洲海浜公園",
+      "tags": {
+        "name": "東京ベイシティバス15系統 新浦安駅⇒東京学館⇒高洲海浜公園",
+        "network": "潮音の街線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "15",
+        "route": "bus",
+        "type": "route"
+      },
+      "memberCount": 33,
+      "wayMemberCount": 23,
+      "wayElementCount": 23,
+      "stopRoleCount": 0,
+      "platformMemberCount": 10,
+      "nodeElementCount": 88,
+      "memberRoles": {
+        "platform_entry_only": 1,
+        "platform": 8,
+        "platform_exit_only": 1,
+        "": 23
+      },
+      "platformNames": [
+        "新浦安駅",
+        "入船中央エステート",
+        "明海交差点",
+        "入船橋",
+        "高洲北小学校",
+        "東京学館前",
+        "高洲",
+        "高洲中央公園",
+        "潮音の街",
+        "高洲海浜公園"
+      ],
+      "platformsDetail": [
+        {
+          "role": "platform_entry_only",
+          "type": "node",
+          "ref": 8415001161,
+          "name": "新浦安駅",
+          "lat": 35.6499537,
+          "lon": 139.9140181,
+          "local_ref": "E",
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "local_ref": "E",
+            "name": "新浦安駅",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11425579726,
+          "name": "入船中央エステート",
+          "lat": 35.6489816,
+          "lon": 139.9168586,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "covered": "yes",
+            "highway": "bus_stop",
+            "name": "入船中央エステート",
+            "operator": "東京ベイシティ交通",
+            "passenger_information_display": "yes",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6899487150,
+          "name": "明海交差点",
+          "lat": 35.6465372,
+          "lon": 139.9177203,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "明海交差点",
+            "operator": "東京ベイシティ交通",
+            "passenger_information_display": "yes",
+            "public_transport": "platform",
+            "shelter": "no"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6853044760,
+          "name": "入船橋",
+          "lat": 35.6406464,
+          "lon": 139.9106432,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "入船橋",
+            "operator": "東京ベイシティ交通",
+            "passenger_information_display": "yes",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11580949263,
+          "name": "高洲北小学校",
+          "lat": 35.6398879,
+          "lon": 139.910827,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "高洲北小学校",
+            "operator": "東京ベイシティ交通",
+            "passenger_information_display": "yes",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1312670860,
+          "name": "東京学館前",
+          "lat": 35.638865,
+          "lon": 139.9121011,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "東京学館前",
+            "operator": "東京ベイシティ交通",
+            "passenger_information_display": "yes",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 12421750201,
+          "name": "高洲",
+          "lat": 35.6386258,
+          "lon": 139.9142911,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "高洲",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6852993563,
+          "name": "高洲中央公園",
+          "lat": 35.636194,
+          "lon": 139.9173305,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "covered": "yes",
+            "highway": "bus_stop",
+            "name": "高洲中央公園",
+            "operator": "東京ベイシティ交通",
+            "passenger_information_display": "yes",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11549952448,
+          "name": "潮音の街",
+          "lat": 35.6347646,
+          "lon": 139.9191318,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "潮音の街",
+            "operator": "東京ベイシティ交通",
+            "passenger_information_display": "yes",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform_exit_only",
+          "type": "node",
+          "ref": 1312685258,
+          "name": "高洲海浜公園",
+          "lat": 35.6338864,
+          "lon": 139.9202403,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "description": "降車場",
+            "highway": "bus_stop",
+            "name": "高洲海浜公園",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        }
+      ],
+      "wayMemberIds": [
+        1342409930,
+        1340739633,
+        906161743,
+        369356254,
+        906161757,
+        720406630,
+        1338996611,
+        720406627,
+        1340739637,
+        414384377,
+        1341518498,
+        731810586,
+        26359820,
+        1241264343,
+        1241264345,
+        1510521681,
+        26359823,
+        1342409927,
+        26350465,
+        26350506,
+        1339040066,
+        1338975833,
+        1342409929
+      ],
+      "waysSummary": {
+        "wayCountSummarized": 23,
+        "summarizedFrom": "relation-way-members",
+        "access": {
+          "(unset)": 19,
+          "yes": 1,
+          "permit": 3
+        },
+        "bus": {
+          "(unset)": 20,
+          "yes": 3
+        },
+        "psv": {
+          "(unset)": 23
+        },
+        "highway": {
+          "tertiary": 18,
+          "service": 5
+        },
+        "waysWithAccessBusOrPsv": [
+          {
+            "id": 369356254,
+            "name": null,
+            "access": "yes",
+            "bus": null,
+            "psv": null,
+            "highway": "service",
+            "vehicle": null,
+            "motor_vehicle": null,
+            "oneway": "yes"
+          },
+          {
+            "id": 906161743,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "highway": "service",
+            "vehicle": null,
+            "motor_vehicle": null,
+            "oneway": "yes"
+          },
+          {
+            "id": 1340739633,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "highway": "service",
+            "vehicle": null,
+            "motor_vehicle": null,
+            "oneway": "yes"
+          },
+          {
+            "id": 1342409930,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "highway": "service",
+            "vehicle": null,
+            "motor_vehicle": null,
+            "oneway": "yes"
+          }
+        ],
+        "waysWithAccessBusOrPsvCount": 4
+      },
+      "file": "osm-relation-18419865.json"
+    },
+    {
+      "id": 18419864,
+      "label": "route15 高洲海浜公園⇒東京学館⇒新浦安駅",
+      "ok": true,
+      "source": "overpass",
+      "name": "東京ベイシティバス15系統 高洲海浜公園⇒東京学館⇒新浦安駅",
+      "tags": {
+        "name": "東京ベイシティバス15系統 高洲海浜公園⇒東京学館⇒新浦安駅",
+        "network": "潮音の街線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "15",
+        "route": "bus",
+        "type": "route"
+      },
+      "memberCount": 27,
+      "wayMemberCount": 17,
+      "wayElementCount": 17,
+      "stopRoleCount": 0,
+      "platformMemberCount": 10,
+      "nodeElementCount": 72,
+      "memberRoles": {
+        "platform_entry_only": 1,
+        "platform": 8,
+        "platform_exit_only": 1,
+        "": 17
+      },
+      "platformNames": [
+        "高洲海浜公園",
+        "潮音の街",
+        "高洲中央公園",
+        "高洲",
+        "東京学館前",
+        "高洲北小学校",
+        "入船橋",
+        "明海交差点",
+        "入船中央エステート",
+        "新浦安駅"
+      ],
+      "platformsDetail": [
+        {
+          "role": "platform_entry_only",
+          "type": "node",
+          "ref": 11549952451,
+          "name": "高洲海浜公園",
+          "lat": 35.6337264,
+          "lon": 139.9202107,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "高洲海浜公園",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11549952447,
+          "name": "潮音の街",
+          "lat": 35.6347434,
+          "lon": 139.9189434,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "covered": "yes",
+            "highway": "bus_stop",
+            "name": "潮音の街",
+            "operator": "東京ベイシティ交通",
+            "passenger_information_display": "yes",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1312685254,
+          "name": "高洲中央公園",
+          "lat": 35.636672,
+          "lon": 139.916519,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "covered": "yes",
+            "highway": "bus_stop",
+            "name": "高洲中央公園",
+            "operator": "東京ベイシティ交通",
+            "passenger_information_display": "yes",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 12421720000,
+          "name": "高洲",
+          "lat": 35.6385125,
+          "lon": 139.914228,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "高洲",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11557035685,
+          "name": "東京学館前",
+          "lat": 35.6388966,
+          "lon": 139.9118939,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "covered": "yes",
+            "highway": "bus_stop",
+            "name": "東京学館前",
+            "operator": "東京ベイシティ交通",
+            "passenger_information_display": "yes",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1312670866,
+          "name": "高洲北小学校",
+          "lat": 35.6399969,
+          "lon": 139.9105145,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "covered": "yes",
+            "highway": "bus_stop",
+            "name": "高洲北小学校",
+            "operator": "東京ベイシティ交通",
+            "passenger_information_display": "yes",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11580949264,
+          "name": "入船橋",
+          "lat": 35.6407729,
+          "lon": 139.9105319,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "covered": "yes",
+            "highway": "bus_stop",
+            "name": "入船橋",
+            "operator": "東京ベイシティ交通",
+            "passenger_information_display": "yes",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11586798112,
+          "name": "明海交差点",
+          "lat": 35.6466212,
+          "lon": 139.9175634,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "明海交差点",
+            "operator": "東京ベイシティ交通",
+            "passenger_information_display": "yes",
+            "public_transport": "platform",
+            "shelter": "no"
+          }
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1312711918,
+          "name": "入船中央エステート",
+          "lat": 35.648721,
+          "lon": 139.9166753,
+          "local_ref": null,
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "name": "入船中央エステート",
+            "operator": "東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        },
+        {
+          "role": "platform_exit_only",
+          "type": "node",
+          "ref": 8415001163,
+          "name": "新浦安駅",
+          "lat": 35.649411,
+          "lon": 139.9142448,
+          "local_ref": "X",
+          "tags": {
+            "bus": "yes",
+            "highway": "bus_stop",
+            "local_ref": "X",
+            "name": "新浦安駅",
+            "note": "降車専用",
+            "operator": "京成トランジットバス;東京ベイシティ交通",
+            "public_transport": "platform"
+          }
+        }
+      ],
+      "wayMemberIds": [
+        1342409929,
+        1338975833,
+        1339040066,
+        26350506,
+        26350465,
+        1342409927,
+        26359823,
+        1510521682,
+        375499007,
+        1241264342,
+        1241264344,
+        1510259339,
+        414384377,
+        847288812,
+        1338996609,
+        720406629,
+        906161755
+      ],
+      "waysSummary": {
+        "wayCountSummarized": 17,
+        "summarizedFrom": "relation-way-members",
+        "access": {
+          "(unset)": 15,
+          "yes": 1,
+          "permit": 1
+        },
+        "bus": {
+          "(unset)": 16,
+          "yes": 1
+        },
+        "psv": {
+          "(unset)": 17
+        },
+        "highway": {
+          "tertiary": 15,
+          "service": 2
+        },
+        "waysWithAccessBusOrPsv": [
+          {
+            "id": 720406629,
+            "name": null,
+            "access": "yes",
+            "bus": null,
+            "psv": null,
+            "highway": "service",
+            "vehicle": null,
+            "motor_vehicle": null,
+            "oneway": "yes"
+          },
+          {
+            "id": 906161755,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "highway": "service",
+            "vehicle": null,
+            "motor_vehicle": null,
+            "oneway": "yes"
+          }
+        ],
+        "waysWithAccessBusOrPsvCount": 2
+      },
+      "file": "osm-relation-18419864.json"
+    }
+  ],
+  "refProbe": [
+    {
+      "id": 18419864,
+      "type": "relation",
+      "tags": {
+        "name": "東京ベイシティバス15系統 高洲海浜公園⇒東京学館⇒新浦安駅",
+        "network": "潮音の街線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "15",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "id": 18419865,
+      "type": "relation",
+      "tags": {
+        "name": "東京ベイシティバス15系統 新浦安駅⇒東京学館⇒高洲海浜公園",
+        "network": "潮音の街線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "15",
+        "route": "bus",
+        "type": "route"
+      }
+    }
+  ],
+  "nameChecks": {
+    "18419864": {
+      "label": "route15 高洲海浜公園⇒東京学館⇒新浦安駅",
+      "name": "東京ベイシティバス15系統 高洲海浜公園⇒東京学館⇒新浦安駅",
+      "stopCount": 10,
+      "allNames": [
+        "高洲海浜公園",
+        "潮音の街",
+        "高洲中央公園",
+        "高洲",
+        "東京学館前",
+        "高洲北小学校",
+        "入船橋",
+        "明海交差点",
+        "入船中央エステート",
+        "新浦安駅"
+      ],
+      "hits": [
+        {
+          "needle": "新浦安駅",
+          "found": true,
+          "matches": [
+            "新浦安駅"
+          ]
+        },
+        {
+          "needle": "入船橋",
+          "found": true,
+          "matches": [
+            "入船橋"
+          ]
+        },
+        {
+          "needle": "東京学館",
+          "found": true,
+          "matches": [
+            "東京学館前"
+          ]
+        },
+        {
+          "needle": "高洲中央公園",
+          "found": true,
+          "matches": [
+            "高洲中央公園"
+          ]
+        },
+        {
+          "needle": "潮音の街",
+          "found": true,
+          "matches": [
+            "潮音の街"
+          ]
+        },
+        {
+          "needle": "高洲海浜公園",
+          "found": true,
+          "matches": [
+            "高洲海浜公園"
+          ]
+        },
+        {
+          "needle": "高洲北小学校",
+          "found": true,
+          "matches": [
+            "高洲北小学校"
+          ]
+        },
+        {
+          "needle": "高洲四丁目",
+          "found": false,
+          "matches": []
+        }
+      ]
+    },
+    "18419865": {
+      "label": "route15 新浦安駅⇒東京学館⇒高洲海浜公園",
+      "name": "東京ベイシティバス15系統 新浦安駅⇒東京学館⇒高洲海浜公園",
+      "stopCount": 10,
+      "allNames": [
+        "新浦安駅",
+        "入船中央エステート",
+        "明海交差点",
+        "入船橋",
+        "高洲北小学校",
+        "東京学館前",
+        "高洲",
+        "高洲中央公園",
+        "潮音の街",
+        "高洲海浜公園"
+      ],
+      "hits": [
+        {
+          "needle": "新浦安駅",
+          "found": true,
+          "matches": [
+            "新浦安駅"
+          ]
+        },
+        {
+          "needle": "入船橋",
+          "found": true,
+          "matches": [
+            "入船橋"
+          ]
+        },
+        {
+          "needle": "東京学館",
+          "found": true,
+          "matches": [
+            "東京学館前"
+          ]
+        },
+        {
+          "needle": "高洲中央公園",
+          "found": true,
+          "matches": [
+            "高洲中央公園"
+          ]
+        },
+        {
+          "needle": "潮音の街",
+          "found": true,
+          "matches": [
+            "潮音の街"
+          ]
+        },
+        {
+          "needle": "高洲海浜公園",
+          "found": true,
+          "matches": [
+            "高洲海浜公園"
+          ]
+        },
+        {
+          "needle": "高洲北小学校",
+          "found": true,
+          "matches": [
+            "高洲北小学校"
+          ]
+        },
+        {
+          "needle": "高洲四丁目",
+          "found": false,
+          "matches": []
+        }
+      ]
+    }
+  }
+}

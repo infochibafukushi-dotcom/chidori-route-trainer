@@ -1,0 +1,547 @@
+{
+  "generatedAt": "2026-07-26T10:49:43.271Z",
+  "line": "潮音の街線",
+  "routeId": "route-15",
+  "generated": "2026-07-26-shione-no-machi-v1",
+  "policy": {
+    "stopOrderSource": "official-stop-orders.json（京成バスナビ個別便通過時刻表・凡例【１５系統】でゲート済み）",
+    "pathSource": "OSM route relation way members（方向補正あり）",
+    "googleDirectionsUsed": false,
+    "reverseReuseForbidden": true,
+    "truncationReuseForbidden": true,
+    "otherRouteReuseForbidden": "route-10 / route-18 / route-19 の path・停留所順は corridor が重なっても流用しない",
+    "maxGap_m": 30,
+    "maxJoin_m": 1,
+    "platformDistSoftMax_m": 20,
+    "platformDistHardMax_m": 30
+  },
+  "accessExceptions": {},
+  "systems": {
+    "15-takasu-seaside": {
+      "stops": 10,
+      "pathPoints": 163,
+      "relationId": 18419865,
+      "pathHash": "dd5ecff8bb7f2dfc15084f45624dc29596f0f76d1c42a454b70ce6daac0380f2",
+      "resolvedVersion": "2026-07-26-shione-no-machi-takasu-seaside-v1",
+      "maxGap_m": 25,
+      "maxJoin_m": 0,
+      "maxPlatformDist_m": 12.3,
+      "nanCount": 0,
+      "missingPlatforms": [],
+      "platformDists": [
+        {
+          "name": "新浦安駅",
+          "dist": 5.9,
+          "pathIndex": 0,
+          "reviewRequired": false
+        },
+        {
+          "name": "入船中央エステート",
+          "dist": 7.6,
+          "pathIndex": 23,
+          "reviewRequired": false
+        },
+        {
+          "name": "明海交差点",
+          "dist": 9.3,
+          "pathIndex": 44,
+          "reviewRequired": false
+        },
+        {
+          "name": "入船橋",
+          "dist": 11.1,
+          "pathIndex": 88,
+          "reviewRequired": false
+        },
+        {
+          "name": "高洲北小学校",
+          "dist": 9.9,
+          "pathIndex": 94,
+          "reviewRequired": false
+        },
+        {
+          "name": "東京学館前",
+          "dist": 11.6,
+          "pathIndex": 102,
+          "reviewRequired": false
+        },
+        {
+          "name": "高洲",
+          "dist": 9.7,
+          "pathIndex": 124,
+          "reviewRequired": false
+        },
+        {
+          "name": "高洲中央公園",
+          "dist": 9.3,
+          "pathIndex": 144,
+          "reviewRequired": false
+        },
+        {
+          "name": "潮音の街",
+          "dist": 7,
+          "pathIndex": 155,
+          "reviewRequired": false
+        },
+        {
+          "name": "高洲海浜公園",
+          "dist": 12.3,
+          "pathIndex": 162,
+          "reviewRequired": false
+        }
+      ],
+      "orderIssues": [],
+      "sliceMeta": {
+        "si": 0,
+        "ei": 162,
+        "startDist": 5.9,
+        "endDist": 12.3,
+        "fullPathPoints": 163
+      },
+      "usedWayCount": 23,
+      "usedWays": [
+        {
+          "wayId": 1342409930,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "startHint": true
+        },
+        {
+          "wayId": 1340739633,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 906161743,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 369356254,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 906161757,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 720406630,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1338996611,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 720406627,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1340739637,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 414384377,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1341518498,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 731810586,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 26359820,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1241264343,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1241264345,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1510521681,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 26359823,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1342409927,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 26350465,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 26350506,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1339040066,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1338975833,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1342409929,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        }
+      ],
+      "access": {
+        "restrictedAccessWayCount": 3,
+        "busPermittedRestrictedWayCount": 3,
+        "documentedExceptionWayCount": 0,
+        "unresolvedRestrictedWayCount": 0,
+        "restrictedWays": [
+          {
+            "id": 1342409930,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          },
+          {
+            "id": 1340739633,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          },
+          {
+            "id": 906161743,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          }
+        ],
+        "documentedExceptionWays": [],
+        "unresolvedWays": []
+      },
+      "note": "outbound 新浦安駅→高洲海浜公園（無印＝【１５系統】東京学館前経由）。18系統(ゆ/た)の便やpathは流用禁止。"
+    },
+    "15-shinurayasu": {
+      "stops": 10,
+      "pathPoints": 150,
+      "relationId": 18419864,
+      "pathHash": "7880492560c594a65b8b5f7968e6b11272d93ed240d51357d31c23a82749bc25",
+      "resolvedVersion": "2026-07-26-shione-no-machi-shinurayasu-v1",
+      "maxGap_m": 25,
+      "maxJoin_m": 0,
+      "maxPlatformDist_m": 13.7,
+      "nanCount": 0,
+      "missingPlatforms": [],
+      "platformDists": [
+        {
+          "name": "高洲海浜公園",
+          "dist": 7.9,
+          "pathIndex": 0,
+          "reviewRequired": false
+        },
+        {
+          "name": "潮音の街",
+          "dist": 10.7,
+          "pathIndex": 7,
+          "reviewRequired": false
+        },
+        {
+          "name": "高洲中央公園",
+          "dist": 11.9,
+          "pathIndex": 24,
+          "reviewRequired": false
+        },
+        {
+          "name": "高洲",
+          "dist": 11.7,
+          "pathIndex": 37,
+          "reviewRequired": false
+        },
+        {
+          "name": "東京学館前",
+          "dist": 7.7,
+          "pathIndex": 60,
+          "reviewRequired": false
+        },
+        {
+          "name": "高洲北小学校",
+          "dist": 5,
+          "pathIndex": 70,
+          "reviewRequired": false
+        },
+        {
+          "name": "入船橋",
+          "dist": 13.7,
+          "pathIndex": 74,
+          "reviewRequired": false
+        },
+        {
+          "name": "明海交差点",
+          "dist": 10.3,
+          "pathIndex": 117,
+          "reviewRequired": false
+        },
+        {
+          "name": "入船中央エステート",
+          "dist": 11.1,
+          "pathIndex": 132,
+          "reviewRequired": false
+        },
+        {
+          "name": "新浦安駅",
+          "dist": 5.3,
+          "pathIndex": 149,
+          "reviewRequired": false
+        }
+      ],
+      "orderIssues": [],
+      "sliceMeta": {
+        "si": 0,
+        "ei": 149,
+        "startDist": 7.9,
+        "endDist": 5.3,
+        "fullPathPoints": 150
+      },
+      "usedWayCount": 17,
+      "usedWays": [
+        {
+          "wayId": 1342409929,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "startHint": true
+        },
+        {
+          "wayId": 1338975833,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1339040066,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        },
+        {
+          "wayId": 26350506,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        },
+        {
+          "wayId": 26350465,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1342409927,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        },
+        {
+          "wayId": 26359823,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1510521682,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 375499007,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1241264342,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1241264344,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1510259339,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 414384377,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        },
+        {
+          "wayId": 847288812,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1338996609,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 720406629,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 906161755,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        }
+      ],
+      "access": {
+        "restrictedAccessWayCount": 1,
+        "busPermittedRestrictedWayCount": 1,
+        "documentedExceptionWayCount": 0,
+        "unresolvedRestrictedWayCount": 0,
+        "restrictedWays": [
+          {
+            "id": 906161755,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          }
+        ],
+        "documentedExceptionWays": [],
+        "unresolvedWays": []
+      },
+      "note": "inbound 高洲海浜公園→新浦安駅。往路18419865の反転は禁止（中央分離帯道路で往復の車線が異なる）。"
+    }
+  },
+  "blockers": [],
+  "warnings": [],
+  "pathHashDistinct": true,
+  "reverseChecks": [
+    {
+      "a": "15-takasu-seaside",
+      "b": "15-shinurayasu",
+      "isExactReverse": false
+    }
+  ]
+}

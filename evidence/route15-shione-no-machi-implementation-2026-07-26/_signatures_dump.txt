@@ -1,0 +1,48 @@
+ACCEPT-route15 | stops 10 | trips 519 | terminal 新浦安駅 | berth E,01,02 | course 0008200278 | symbols (無印) | listingLegend 15 | departureBerth 15
+    新浦安駅 > 入船中央エステート > 明海交差点 > 入船橋 > 高洲北小学校 > 東京学館前 > 高洲 > 高洲中央公園 > 潮音の街 > 高洲海浜公園
+    listing legend: 無印…【１５系統】東京学館前経由　高洲海浜公園行き
+    departure berth: E 符号(無印) -> 系統15 : 無印…【１５系統】東京学館前経由　高洲海浜公園行き
+REJECT-route-18 | stops 15 | trips 48 | terminal 新浦安駅 | berth E,02 | course 0008200286 | symbols ゆ | listingLegend 18 | departureBerth 18
+    浦安駅入口 > 神明裏 > 猫実 > 消防本部前 > 海楽 > 美浜東団地 > 新浦安駅 > 入船中央エステート > 明海大学前 > 海風の街 > 夢海の街 > 高洲橋 > 高洲中央公園 > 潮音の街 > 高洲海浜公園
+    listing legend: ゆ…【１８系統】夢海の街、高洲橋、潮音の街経由　高洲海浜公園行き
+    departure berth: 11 [11]（新浦安駅・明海五丁目経由）総合公園（新浦安駅・ベイパーク経由）総 符号ゆ -> 系統18 : ゆ…【１８系統】新浦安駅・高洲橋経由　高洲海浜公園行き
+REJECT-route-18 | stops 9 | trips 52 | terminal 新浦安駅 | berth E,02 | course 0008200288 | symbols ゆ | listingLegend 18 | departureBerth 18
+    新浦安駅 > 入船中央エステート > 明海大学前 > 海風の街 > 夢海の街 > 高洲橋 > 高洲中央公園 > 潮音の街 > 高洲海浜公園
+    listing legend: ゆ…【１８系統】夢海の街、高洲橋、潮音の街経由　高洲海浜公園行き
+    departure berth: E 符号ゆ -> 系統18 : ゆ…【１８系統】夢海の街、高洲橋、潮音の街経由　高洲海浜公園行き
+REJECT-route-18 | stops 16 | trips 58 | terminal 新浦安駅 | berth E,02 | course 0008200289 | symbols た | listingLegend 18 | departureBerth 18
+    新浦安駅 > 入船中央エステート > 明海大学前 > 海風の街 > 夢海の街 > 高洲橋 > 高洲中央公園 > 潮音の街 > 高洲八丁目 > 高洲四丁目 > 高洲三丁目 > 高洲西児童公園 > 順天堂大学入口 > 高洲二丁目 > 東京学館前 > 高洲北小学校
+    listing legend: た…【１８系統】夢海の街・潮音の街・高洲四丁目経由　高洲北小学校行き＜★；深夜バス 運賃倍額＞
+    departure berth: E 符号た -> 系統18 : た…【１８系統】夢海の街・潮音の街・高洲四丁目経由　高洲北小学校行き＜★；深夜バス 運賃倍額＞
+REJECT-route-18 | stops 15 | trips 50 | terminal 高洲海浜公園 | berth 03,15 | course 0008200285 | symbols う | listingLegend 18 | departureBerth 18
+    高洲海浜公園 > 潮音の街 > 高洲中央公園 > 高洲橋 > 夢海の街 > 海風の街 > 明海大学前 > 入船中央エステート > 新浦安駅 > 美浜東団地 > 海楽 > 消防本部前 > 猫実 > 神明裏 > 浦安駅入口
+    listing legend: う…【１８系統】夢海の街、新浦安駅経由　浦安駅入口行き
+    departure berth: 03 符号う -> 系統18 : う…【１８系統】夢海の街、新浦安駅経由　浦安駅入口行き
+ACCEPT-route15 | stops 10 | trips 498 | terminal 高洲海浜公園 | berth 03,02,15 | course 0008200277 | symbols (無印) | listingLegend 15 | departureBerth 15
+    高洲海浜公園 > 潮音の街 > 高洲中央公園 > 高洲 > 東京学館前 > 高洲北小学校 > 入船橋 > 明海交差点 > 入船中央エステート > 新浦安駅
+    listing legend: 無印…【１５系統】東京学館前経由　新浦安駅行き
+    departure berth: 03 符号(無印) -> 系統15 : 無印…【１５系統】東京学館前経由　新浦安駅行き
+REJECT-route-18 | stops 9 | trips 58 | terminal 高洲海浜公園 | berth 03,15 | course 0008200287 | symbols ゆ | listingLegend 18 | departureBerth 18
+    高洲海浜公園 > 潮音の街 > 高洲中央公園 > 高洲橋 > 夢海の街 > 海風の街 > 明海大学前 > 入船中央エステート > 新浦安駅
+    listing legend: ゆ…【１８系統】夢海の街経由　新浦安駅行き
+    departure berth: 03 符号ゆ -> 系統18 : ゆ…【１８系統】夢海の街経由　新浦安駅行き
+REJECT-route-19 | stops 14 | trips 164 | terminal 高洲北小学校 | berth 01 | course 0008200292 | symbols (無印) | listingLegend 15 | departureBerth 19
+    新浦安駅 > 入船中央エステート > 明海交差点 > 入船橋 > 高洲北小学校 > 東京学館前 > 高洲二丁目 > 順天堂大学入口 > 高洲西児童公園 > 高洲三丁目 > 高洲四丁目 > 高洲八丁目 > 浦安南高校特養ホーム > 高洲海浜公園
+    listing legend: 無印…【１５系統】東京学館前経由　高洲海浜公園行き
+    departure berth: F 符号(無印) -> 系統19 : 無印…【１９系統】東京学館前、高洲四丁目、浦安南高校・特養ホーム経由　高洲海浜公園行き
+REJECT-route-10 | stops 15 | trips 12 | terminal 高洲北小学校 | berth 01 | course 0008200254 | symbols み | listingLegend 10 | departureBerth 10
+    新浦安駅 > 入船中央エステート > 明海交差点 > 入船橋 > 高洲北小学校 > 東京学館前 > 高洲二丁目 > 順天堂大学入口 > 高洲西児童公園 > 高洲三丁目 > 高洲四丁目 > 鉄鋼団地入口 > アライプロバンス > みなと第二 > みなと南
+    listing legend: み…【１０系統】東京学館前、高洲四丁目経由　みなと南（鉄鋼団地）行き
+    departure berth: F 符号み -> 系統10 : み…【１０系統】東京学館前、高洲四丁目経由　みなと南（鉄鋼団地）行き
+REJECT-route-19 | stops 14 | trips 162 | terminal 高洲北小学校 | berth 02 | course 0008200291 | symbols (無印) | listingLegend - | departureBerth 19
+    高洲海浜公園 > 浦安南高校特養ホーム > 高洲八丁目 > 高洲四丁目 > 高洲三丁目 > 高洲西児童公園 > 順天堂大学入口 > 高洲二丁目 > 東京学館前 > 高洲北小学校 > 入船橋 > 明海交差点 > 入船中央エステート > 新浦安駅
+    departure berth: 19 [19]（高洲四丁目・東京学館前経由） 新浦安駅行 時刻表 符号(無印) -> 系統19 : 無印…【１９系統】高洲四丁目、東京学館前経由　新浦安駅行き
+UNDECIDED-no-legend-match | stops 13 | trips 2 | terminal 高洲北小学校 | berth 02 | course 0008200255 | symbols (無印) | listingLegend - | departureBerth -
+    アライプロバンス > 鉄鋼団地入口 > 高洲四丁目 > 高洲三丁目 > 高洲西児童公園 > 順天堂大学入口 > 高洲二丁目 > 東京学館前 > 高洲北小学校 > 入船橋 > 明海交差点 > 入船中央エステート > 新浦安駅
+    departure berth: UNRESOLVED (departure busstop or course unknown)
+UNDECIDED-no-legend-match | stops 15 | trips 7 | terminal 高洲北小学校 | berth 02 | course 0008200253 | symbols (無印) | listingLegend - | departureBerth -
+    みなと南 > みなと第二 > アライプロバンス > 鉄鋼団地入口 > 高洲四丁目 > 高洲三丁目 > 高洲西児童公園 > 順天堂大学入口 > 高洲二丁目 > 東京学館前 > 高洲北小学校 > 入船橋 > 明海交差点 > 入船中央エステート > 新浦安駅
+    departure berth: UNRESOLVED (departure busstop or course unknown)
+UNDECIDED-no-legend-match | stops 15 | trips 11 | terminal 潮音の街 | berth 02 | course 0008200306 | symbols (無印) | listingLegend - | departureBerth -
+    舞浜駅 > オリエンタルランド本社前 > 運動公園 > 舞浜三丁目 > 見明川住宅 > 見明川中学校前 > 弁天第二 > 今川消防署 > 順天堂大学浦安キャンパス > 高洲西児童公園 > 高洲三丁目 > 高洲四丁目 > 高洲七丁目 > 潮音の街 > 高洲海浜公園
+    departure berth: UNRESOLVED (departure busstop or course unknown)

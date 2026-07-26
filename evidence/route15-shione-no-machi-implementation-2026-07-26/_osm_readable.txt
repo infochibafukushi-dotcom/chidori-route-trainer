@@ -1,0 +1,81 @@
+fetchedAt: 2026-07-26T10:02:29.183Z
+line: 潮音の街線 / shione-no-machi-route15
+
+==============================================================================
+relation 18419865  ok=true  source=overpass
+  name: 東京ベイシティバス15系統 新浦安駅⇒東京学館⇒高洲海浜公園
+  tags: {"name":"東京ベイシティバス15系統 新浦安駅⇒東京学館⇒高洲海浜公園","network":"潮音の街線","operator":"東京ベイシティ交通","public_transport:version":"2","ref":"15","route":"bus","type":"route"}
+  members: 33 (ways 23, platforms 10, stop-role 0)
+  roles: {"platform_entry_only":1,"platform":8,"platform_exit_only":1,"":23}
+  platforms:
+     1 新浦安駅  node/8415001161  role=platform_entry_only  35.6499537,139.9140181
+     2 入船中央エステート  node/11425579726  role=platform  35.6489816,139.9168586
+     3 明海交差点  node/6899487150  role=platform  35.6465372,139.9177203
+     4 入船橋  node/6853044760  role=platform  35.6406464,139.9106432
+     5 高洲北小学校  node/11580949263  role=platform  35.6398879,139.910827
+     6 東京学館前  node/1312670860  role=platform  35.638865,139.9121011
+     7 高洲  node/12421750201  role=platform  35.6386258,139.9142911
+     8 高洲中央公園  node/6852993563  role=platform  35.636194,139.9173305
+     9 潮音の街  node/11549952448  role=platform  35.6347646,139.9191318
+    10 高洲海浜公園  node/1312685258  role=platform_exit_only  35.6338864,139.9202403
+  highway tag counts: {"tertiary":18,"service":5}
+  access tag counts: {"(unset)":19,"yes":1,"permit":3}
+  bus tag counts: {"(unset)":20,"yes":3}
+  psv tag counts: {"(unset)":23}
+  ways with access/bus/psv (4):
+    way 369356254  highway=service access=yes bus=null psv=null vehicle=null motor_vehicle=null oneway=yes
+    way 906161743  highway=service access=permit bus=yes psv=null vehicle=null motor_vehicle=null oneway=yes
+    way 1340739633  highway=service access=permit bus=yes psv=null vehicle=null motor_vehicle=null oneway=yes
+    way 1342409930  highway=service access=permit bus=yes psv=null vehicle=null motor_vehicle=null oneway=yes
+  wayMemberIds: 1342409930,1340739633,906161743,369356254,906161757,720406630,1338996611,720406627,1340739637,414384377,1341518498,731810586,26359820,1241264343,1241264345,1510521681,26359823,1342409927,26350465,26350506,1339040066,1338975833,1342409929
+
+==============================================================================
+relation 18419864  ok=true  source=overpass
+  name: 東京ベイシティバス15系統 高洲海浜公園⇒東京学館⇒新浦安駅
+  tags: {"name":"東京ベイシティバス15系統 高洲海浜公園⇒東京学館⇒新浦安駅","network":"潮音の街線","operator":"東京ベイシティ交通","public_transport:version":"2","ref":"15","route":"bus","type":"route"}
+  members: 27 (ways 17, platforms 10, stop-role 0)
+  roles: {"platform_entry_only":1,"platform":8,"platform_exit_only":1,"":17}
+  platforms:
+     1 高洲海浜公園  node/11549952451  role=platform_entry_only  35.6337264,139.9202107
+     2 潮音の街  node/11549952447  role=platform  35.6347434,139.9189434
+     3 高洲中央公園  node/1312685254  role=platform  35.636672,139.916519
+     4 高洲  node/12421720000  role=platform  35.6385125,139.914228
+     5 東京学館前  node/11557035685  role=platform  35.6388966,139.9118939
+     6 高洲北小学校  node/1312670866  role=platform  35.6399969,139.9105145
+     7 入船橋  node/11580949264  role=platform  35.6407729,139.9105319
+     8 明海交差点  node/11586798112  role=platform  35.6466212,139.9175634
+     9 入船中央エステート  node/1312711918  role=platform  35.648721,139.9166753
+    10 新浦安駅  node/8415001163  role=platform_exit_only  35.649411,139.9142448
+  highway tag counts: {"tertiary":15,"service":2}
+  access tag counts: {"(unset)":15,"yes":1,"permit":1}
+  bus tag counts: {"(unset)":16,"yes":1}
+  psv tag counts: {"(unset)":17}
+  ways with access/bus/psv (2):
+    way 720406629  highway=service access=yes bus=null psv=null vehicle=null motor_vehicle=null oneway=yes
+    way 906161755  highway=service access=permit bus=yes psv=null vehicle=null motor_vehicle=null oneway=yes
+  wayMemberIds: 1342409929,1338975833,1339040066,26350506,26350465,1342409927,26359823,1510521682,375499007,1241264342,1241264344,1510259339,414384377,847288812,1338996609,720406629,906161755
+
+==============================================================================
+ref=15 probe (bbox 35.60,139.85,35.70,139.96):
+  relation 18419864 {"name":"東京ベイシティバス15系統 高洲海浜公園⇒東京学館⇒新浦安駅","network":"潮音の街線","operator":"東京ベイシティ交通","public_transport:version":"2","ref":"15","route":"bus","type":"route"}
+  relation 18419865 {"name":"東京ベイシティバス15系統 新浦安駅⇒東京学館⇒高洲海浜公園","network":"潮音の街線","operator":"東京ベイシティ交通","public_transport:version":"2","ref":"15","route":"bus","type":"route"}
+
+name checks:
+  18419864 (10 stops): 高洲海浜公園 > 潮音の街 > 高洲中央公園 > 高洲 > 東京学館前 > 高洲北小学校 > 入船橋 > 明海交差点 > 入船中央エステート > 新浦安駅
+    HIT  新浦安駅 -> 新浦安駅
+    HIT  入船橋 -> 入船橋
+    HIT  東京学館 -> 東京学館前
+    HIT  高洲中央公園 -> 高洲中央公園
+    HIT  潮音の街 -> 潮音の街
+    HIT  高洲海浜公園 -> 高洲海浜公園
+    HIT  高洲北小学校 -> 高洲北小学校
+    MISS 高洲四丁目
+  18419865 (10 stops): 新浦安駅 > 入船中央エステート > 明海交差点 > 入船橋 > 高洲北小学校 > 東京学館前 > 高洲 > 高洲中央公園 > 潮音の街 > 高洲海浜公園
+    HIT  新浦安駅 -> 新浦安駅
+    HIT  入船橋 -> 入船橋
+    HIT  東京学館 -> 東京学館前
+    HIT  高洲中央公園 -> 高洲中央公園
+    HIT  潮音の街 -> 潮音の街
+    HIT  高洲海浜公園 -> 高洲海浜公園
+    HIT  高洲北小学校 -> 高洲北小学校
+    MISS 高洲四丁目

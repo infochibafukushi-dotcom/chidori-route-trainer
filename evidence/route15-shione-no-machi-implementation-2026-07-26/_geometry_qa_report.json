@@ -1,0 +1,251 @@
+{
+  "checkedAt": "2026-07-26T10:51:57.514Z",
+  "routeId": "route-15",
+  "thresholds": {
+    "maxGap_m": 30,
+    "uturnDeg": 150,
+    "platformSoft_m": 20,
+    "platformHard_m": 30
+  },
+  "systems": {
+    "15-takasu-seaside": {
+      "relationId": 18419865,
+      "pathSource": "osm-relation-18419865+startHint-shinurayasu",
+      "resolvedVersion": "2026-07-26-shione-no-machi-takasu-seaside-v1",
+      "pathPoints": 163,
+      "pathLength_m": 2940,
+      "storedPathHash": "dd5ecff8bb7f2dfc15084f45624dc29596f0f76d1c42a454b70ce6daac0380f2",
+      "recomputedPathHash": "dd5ecff8bb7f2dfc15084f45624dc29596f0f76d1c42a454b70ce6daac0380f2",
+      "pathHashMatches": true,
+      "maxGap_m": 25,
+      "gapsOverLimit": [],
+      "nanCount": 0,
+      "wayIssues": {
+        "forbiddenHighway": [],
+        "unknownHighway": [],
+        "buildingOrGreen": [],
+        "wrongWay": [],
+        "onewayOk": 12
+      },
+      "uturnsTotal": 0,
+      "terminalTurnarounds": [],
+      "unnecessaryUturns": [],
+      "platformChecks": [
+        {
+          "name": "新浦安駅",
+          "dist_m": 5.9,
+          "pathIndex": 0,
+          "status": "OK"
+        },
+        {
+          "name": "入船中央エステート",
+          "dist_m": 7.6,
+          "pathIndex": 23,
+          "status": "OK"
+        },
+        {
+          "name": "明海交差点",
+          "dist_m": 9.3,
+          "pathIndex": 44,
+          "status": "OK"
+        },
+        {
+          "name": "入船橋",
+          "dist_m": 11.1,
+          "pathIndex": 88,
+          "status": "OK"
+        },
+        {
+          "name": "高洲北小学校",
+          "dist_m": 9.9,
+          "pathIndex": 94,
+          "status": "OK"
+        },
+        {
+          "name": "東京学館前",
+          "dist_m": 11.6,
+          "pathIndex": 102,
+          "status": "OK"
+        },
+        {
+          "name": "高洲",
+          "dist_m": 9.7,
+          "pathIndex": 124,
+          "status": "OK"
+        },
+        {
+          "name": "高洲中央公園",
+          "dist_m": 9.3,
+          "pathIndex": 144,
+          "status": "OK"
+        },
+        {
+          "name": "潮音の街",
+          "dist_m": 7,
+          "pathIndex": 155,
+          "status": "OK"
+        },
+        {
+          "name": "高洲海浜公園",
+          "dist_m": 12.3,
+          "pathIndex": 162,
+          "status": "OK"
+        }
+      ],
+      "maxPlatformDist_m": 12.3,
+      "accessRestrictedWays": {
+        "restrictedAccessWayCount": 3,
+        "busPermittedRestrictedWayCount": 3,
+        "documentedExceptionWayCount": 0,
+        "unresolvedRestrictedWayCount": 0,
+        "restrictedWays": [
+          {
+            "id": 1342409930,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          },
+          {
+            "id": 1340739633,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          },
+          {
+            "id": 906161743,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          }
+        ],
+        "documentedExceptionWays": [],
+        "unresolvedWays": []
+      }
+    },
+    "15-shinurayasu": {
+      "relationId": 18419864,
+      "pathSource": "osm-relation-18419864+startHint-takasu-seaside",
+      "resolvedVersion": "2026-07-26-shione-no-machi-shinurayasu-v1",
+      "pathPoints": 150,
+      "pathLength_m": 2876,
+      "storedPathHash": "7880492560c594a65b8b5f7968e6b11272d93ed240d51357d31c23a82749bc25",
+      "recomputedPathHash": "7880492560c594a65b8b5f7968e6b11272d93ed240d51357d31c23a82749bc25",
+      "pathHashMatches": true,
+      "maxGap_m": 25,
+      "gapsOverLimit": [],
+      "nanCount": 0,
+      "wayIssues": {
+        "forbiddenHighway": [],
+        "unknownHighway": [],
+        "buildingOrGreen": [],
+        "wrongWay": [],
+        "onewayOk": 9
+      },
+      "uturnsTotal": 0,
+      "terminalTurnarounds": [],
+      "unnecessaryUturns": [],
+      "platformChecks": [
+        {
+          "name": "高洲海浜公園",
+          "dist_m": 7.9,
+          "pathIndex": 0,
+          "status": "OK"
+        },
+        {
+          "name": "潮音の街",
+          "dist_m": 10.7,
+          "pathIndex": 7,
+          "status": "OK"
+        },
+        {
+          "name": "高洲中央公園",
+          "dist_m": 11.9,
+          "pathIndex": 24,
+          "status": "OK"
+        },
+        {
+          "name": "高洲",
+          "dist_m": 11.7,
+          "pathIndex": 37,
+          "status": "OK"
+        },
+        {
+          "name": "東京学館前",
+          "dist_m": 7.7,
+          "pathIndex": 60,
+          "status": "OK"
+        },
+        {
+          "name": "高洲北小学校",
+          "dist_m": 5,
+          "pathIndex": 70,
+          "status": "OK"
+        },
+        {
+          "name": "入船橋",
+          "dist_m": 13.7,
+          "pathIndex": 74,
+          "status": "OK"
+        },
+        {
+          "name": "明海交差点",
+          "dist_m": 10.3,
+          "pathIndex": 117,
+          "status": "OK"
+        },
+        {
+          "name": "入船中央エステート",
+          "dist_m": 11.1,
+          "pathIndex": 132,
+          "status": "OK"
+        },
+        {
+          "name": "新浦安駅",
+          "dist_m": 5.3,
+          "pathIndex": 149,
+          "status": "OK"
+        }
+      ],
+      "maxPlatformDist_m": 13.7,
+      "accessRestrictedWays": {
+        "restrictedAccessWayCount": 1,
+        "busPermittedRestrictedWayCount": 1,
+        "documentedExceptionWayCount": 0,
+        "unresolvedRestrictedWayCount": 0,
+        "restrictedWays": [
+          {
+            "id": 906161755,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          }
+        ],
+        "documentedExceptionWays": [],
+        "unresolvedWays": []
+      }
+    }
+  },
+  "failures": [],
+  "reviewRequired": [],
+  "pass": true
+}

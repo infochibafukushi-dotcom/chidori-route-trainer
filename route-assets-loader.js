@@ -133,6 +133,16 @@
         './benten-tomioka-line-stop-images-v1.js?v=106',
         './benten-tomioka-line-route-v1.js?v=106'
       ]
+    },
+    'route-15': {
+      css: ['./shione-no-machi-line-stop-images-v1.css?v=107'],
+      js: [
+        './shione-no-machi-line-platforms-v1.js?v=107',
+        './shione-no-machi-line-path-v1.js?v=107',
+        './shione-no-machi-line-path-policy-v1.js?v=107',
+        './shione-no-machi-line-stop-images-v1.js?v=107',
+        './shione-no-machi-line-route-v1.js?v=107'
+      ]
     }
   };
 

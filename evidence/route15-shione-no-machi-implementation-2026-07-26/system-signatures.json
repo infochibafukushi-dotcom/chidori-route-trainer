@@ -1,0 +1,86 @@
+{
+  "checkedAt": "2026-07-26T10:49:13.144Z",
+  "routeId": "route-15",
+  "systemNumber": "15",
+  "note": "各系統キーが公式停留所順として一意であることの証明。停留所ID列（busstop id）が主キー。",
+  "uniqueness": {
+    "systemCount": 2,
+    "allStopIdSignaturesDistinct": true,
+    "allStopNameSignaturesDistinct": true,
+    "osmAllMatch": true
+  },
+  "systems": {
+    "15-takasu-seaside": {
+      "course": "0008200278",
+      "timetableSymbol": "無印",
+      "berth": "E",
+      "observedBerths": "E,01,02",
+      "terminal": "新浦安駅",
+      "stopCount": 10,
+      "stopIdSignature": "00020619>00020663>00020711>00020661>00020720>00020641>00020854>00020862>00020634>00020855",
+      "stopNameSignature": "新浦安駅>入船中央エステート>明海交差点>入船橋>高洲北小学校>東京学館前>高洲>高洲中央公園>潮音の街>高洲海浜公園",
+      "legendProof": [
+        "無印…【１５系統】東京学館前経由　高洲海浜公園行き"
+      ],
+      "departureBerthProof": {
+        "originStopName": "新浦安駅",
+        "busstopId": "00020619",
+        "berthLabel": "E",
+        "symbol": "(無印)",
+        "routeNumber": "15",
+        "legendLine": "無印…【１５系統】東京学館前経由　高洲海浜公園行き",
+        "timetableUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200278-1"
+      },
+      "tripsObserved": 519,
+      "dayLabels": [
+        "weekday"
+      ],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e40006/stops?departure-busstop=00020619-1&course=0008200278&datetime=2026-07-27T06:31:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e40041/stops?departure-busstop=00020619-1&course=0008200278&datetime=2026-08-01T06:33:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e4004d/stops?departure-busstop=00020619-1&course=0008200278&datetime=2026-08-01T06:50:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e40079/stops?departure-busstop=00020619-1&course=0008200278&datetime=2026-07-26T06:35:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e40085/stops?departure-busstop=00020619-1&course=0008200278&datetime=2026-07-26T06:57:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e40023/stops?departure-busstop=00020619-1&course=0008200278&datetime=2026-07-27T07:04:00%2B09:00"
+      ],
+      "osmRelationId": 18419865,
+      "osmPlatformOrderMatchesOfficial": true
+    },
+    "15-shinurayasu": {
+      "course": "0008200277",
+      "timetableSymbol": "無印",
+      "berth": "03",
+      "observedBerths": "03,02,15",
+      "terminal": "高洲海浜公園",
+      "stopCount": 10,
+      "stopIdSignature": "00020855>00020634>00020862>00020854>00020641>00020720>00020661>00020711>00020663>00020619",
+      "stopNameSignature": "高洲海浜公園>潮音の街>高洲中央公園>高洲>東京学館前>高洲北小学校>入船橋>明海交差点>入船中央エステート>新浦安駅",
+      "legendProof": [
+        "無印…【１５系統】東京学館前経由　新浦安駅行き"
+      ],
+      "departureBerthProof": {
+        "originStopName": "高洲海浜公園",
+        "busstopId": "00020855",
+        "berthLabel": "03",
+        "symbol": "(無印)",
+        "routeNumber": "15",
+        "legendLine": "無印…【１５系統】東京学館前経由　新浦安駅行き",
+        "timetableUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020855&course-sequence=0008200277-1"
+      },
+      "tripsObserved": 498,
+      "dayLabels": [
+        "weekday"
+      ],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e30005/stops?departure-busstop=00020855-1&course=0008200277&datetime=2026-07-27T06:15:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e30013/stops?departure-busstop=00020855-1&course=0008200277&datetime=2026-07-27T06:25:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e3001e/stops?departure-busstop=00020855-1&course=0008200277&datetime=2026-07-27T06:35:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e30023/stops?departure-busstop=00020855-1&course=0008200277&datetime=2026-07-27T06:45:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e30009/stops?departure-busstop=00020855-1&course=0008200277&datetime=2026-07-27T06:54:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e30040/stops?departure-busstop=00020855-1&course=0008200277&datetime=2026-08-01T06:18:00%2B09:00"
+      ],
+      "osmRelationId": 18419864,
+      "osmPlatformOrderMatchesOfficial": true
+    }
+  }
+}
