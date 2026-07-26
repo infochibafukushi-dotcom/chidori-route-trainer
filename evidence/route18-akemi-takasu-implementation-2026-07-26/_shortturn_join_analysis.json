@@ -1,0 +1,2081 @@
+{
+ "analyzedAt": "2026-07-26T14:33:54.959Z",
+ "purpose": "短縮便2便（0008200288 / 0008200287）の道路出典判定",
+ "platforms": {
+  "18352907": [
+   {
+    "index": 0,
+    "nodeId": 11549952451,
+    "role": "platform_entry_only",
+    "name": "高洲海浜公園",
+    "lat": 35.6337264,
+    "lon": 139.9202107,
+    "tags": {
+     "bus": "yes",
+     "highway": "bus_stop",
+     "name": "高洲海浜公園",
+     "operator": "東京ベイシティ交通",
+     "public_transport": "platform"
+    }
+   },
+   {
+    "index": 1,
+    "nodeId": 11549952447,
+    "role": "platform",
+    "name": "潮音の街",
+    "lat": 35.6347434,
+    "lon": 139.9189434,
+    "tags": {
+     "bus": "yes",
+     "covered": "yes",
+     "highway": "bus_stop",
+     "name": "潮音の街",
+     "operator": "東京ベイシティ交通",
+     "passenger_information_display": "yes",
+     "public_transport": "platform"
+    }
+   },
+   {
+    "index": 2,
+    "nodeId": 1312685254,
+    "role": "platform",
+    "name": "高洲中央公園",
+    "lat": 35.636672,
+    "lon": 139.916519,
+    "tags": {
+     "bus": "yes",
+     "covered": "yes",
+     "highway": "bus_stop",
+     "name": "高洲中央公園",
+     "operator": "東京ベイシティ交通",
+     "passenger_information_display": "yes",
+     "public_transport": "platform"
+    }
+   },
+   {
+    "index": 3,
+    "nodeId": 6813929330,
+    "role": "platform",
+    "name": "高洲橋",
+    "lat": 35.6381462,
+    "lon": 139.9157261,
+    "tags": {
+     "bus": "yes",
+     "highway": "bus_stop",
+     "name": "高洲橋",
+     "operator": "東京ベイシティ交通",
+     "passenger_information_display": "yes",
+     "public_transport": "platform"
+    }
+   },
+   {
+    "index": 4,
+    "nodeId": 6813929331,
+    "role": "platform",
+    "name": "夢海の街",
+    "lat": 35.6417004,
+    "lon": 139.9199572,
+    "tags": {
+     "bus": "yes",
+     "highway": "bus_stop",
+     "name": "夢海の街",
+     "operator": "東京ベイシティ交通",
+     "passenger_information_display": "yes",
+     "public_transport": "platform",
+     "shelter": "yes"
+    }
+   },
+   {
+    "index": 5,
+    "nodeId": 1312670873,
+    "role": "platform",
+    "name": "海風の街",
+    "lat": 35.6442605,
+    "lon": 139.922292,
+    "tags": {
+     "bus": "yes",
+     "highway": "bus_stop",
+     "name": "海風の街",
+     "operator": "東京ベイシティ交通",
+     "passenger_information_display": "yes",
+     "public_transport": "platform",
+     "shelter": "yes"
+    }
+   },
+   {
+    "index": 6,
+    "nodeId": 1312670870,
+    "role": "platform",
+    "name": "明海大学前",
+    "lat": 35.6458877,
+    "lon": 139.9202433,
+    "tags": {
+     "bus": "yes",
+     "highway": "bus_stop",
+     "name": "明海大学前",
+     "operator": "東京ベイシティ交通",
+     "passenger_information_display": "yes",
+     "public_transport": "platform",
+     "shelter": "yes"
+    }
+   },
+   {
+    "index": 7,
+    "nodeId": 1312711918,
+    "role": "platform",
+    "name": "入船中央エステート",
+    "lat": 35.648721,
+    "lon": 139.9166753,
+    "tags": {
+     "bus": "yes",
+     "highway": "bus_stop",
+     "name": "入船中央エステート",
+     "operator": "東京ベイシティ交通",
+     "public_transport": "platform"
+    }
+   },
+   {
+    "index": 8,
+    "nodeId": 8415001143,
+    "role": "platform",
+    "name": "新浦安駅",
+    "lat": 35.6506245,
+    "lon": 139.9142535,
+    "tags": {
+     "bus": "yes",
+     "highway": "bus_stop",
+     "local_ref": "H",
+     "name": "新浦安駅",
+     "public_transport": "platform"
+    }
+   },
+   {
+    "index": 9,
+    "nodeId": 1330409783,
+    "role": "platform",
+    "name": "美浜東団地",
+    "lat": 35.6522648,
+    "lon": 139.9122584,
+    "tags": {
+     "bus": "yes",
+     "highway": "bus_stop",
+     "name": "美浜東団地",
+     "name:ja": "美浜東団地",
+     "name:ja-Latn": "Mihama Higashi Danchi",
+     "operator": "東京ベイシティ交通",
+     "public_transport": "platform"
+    }
+   },
+   {
+    "index": 10,
+    "nodeId": 6720667167,
+    "role": "platform",
+    "name": "海楽",
+    "lat": 35.6573684,
+    "lon": 139.9059647,
+    "tags": {
+     "bus": "yes",
+     "highway": "bus_stop",
+     "name": "海楽",
+     "operator": "東京ベイシティ交通",
+     "public_transport": "platform"
+    }
+   },
+   {
+    "index": 11,
+    "nodeId": 12368996379,
+    "role": "platform",
+    "name": "消防本部前",
+    "lat": 35.6589613,
+    "lon": 139.9038774,
+    "tags": {
+     "bus": "yes",
+     "highway": "bus_stop",
+     "name": "消防本部前",
+     "name:en": "Shoubou Honbu Mae",
+     "name:ja": "消防本部前",
+     "operator": "東京ベイシティ交通",
+     "public_transport": "platform"
+    }
+   },
+   {
+    "index": 12,
+    "nodeId": 2900279301,
+    "role": "platform",
+    "name": "猫実",
+    "lat": 35.6611395,
+    "lon": 139.9005341,
+    "tags": {
+     "bus": "yes",
+     "highway": "bus_stop",
+     "name": "猫実",
+     "operator": "東京ベイシティ交通",
+     "public_transport": "platform"
+    }
+   },
+   {
+    "index": 13,
+    "nodeId": 6764110350,
+    "role": "platform",
+    "name": "神明裏",
+    "lat": 35.6628205,
+    "lon": 139.8979314,
+    "tags": {
+     "bus": "yes",
+     "highway": "bus_stop",
+     "name": "神明裏",
+     "operator": "東京ベイシティ交通",
+     "public_transport": "platform",
+     "wheelchair": "yes"
+    }
+   },
+   {
+    "index": 14,
+    "nodeId": 6764110353,
+    "role": "platform_exit_only",
+    "name": "浦安駅入口",
+    "lat": 35.6644872,
+    "lon": 139.8950364,
+    "tags": {
+     "bus": "yes",
+     "highway": "bus_stop",
+     "local_ref": "X",
+     "name": "浦安駅入口",
+     "note": "降車専用",
+     "operator": "東京ベイシティ交通",
+     "public_transport": "platform",
+     "wheelchair": "yes"
+    }
+   }
+  ],
+  "18352908": [
+   {
+    "index": 0,
+    "nodeId": 6764110352,
+    "role": "platform_entry_only",
+    "name": "浦安駅入口",
+    "lat": 35.6647047,
+    "lon": 139.8949743,
+    "tags": {
+     "bus": "yes",
+     "highway": "bus_stop",
+     "local_ref": "B",
+     "name": "浦安駅入口",
+     "operator": "東京ベイシティ交通",
+     "public_transport": "platform",
+     "wheelchair": "yes"
+    }
+   },
+   {
+    "index": 1,
+    "nodeId": 6764110349,
+    "role": "platform",
+    "name": "神明裏",
+    "lat": 35.6623799,
+    "lon": 139.8989516,
+    "tags": {
+     "bus": "yes",
+     "highway": "bus_stop",
+     "name": "神明裏",
+     "operator": "東京ベイシティ交通",
+     "public_transport": "platform"
+    }
+   },
+   {
+    "index": 2,
+    "nodeId": 1330897048,
+    "role": "platform",
+    "name": "猫実",
+    "lat": 35.6608375,
+    "lon": 139.9012946,
+    "tags": {
+     "bus": "yes",
+     "highway": "bus_stop",
+     "name": "猫実",
+     "name:en": "Nekozane",
+     "name:ja": "猫実",
+     "operator": "東京ベイシティ交通",
+     "public_transport": "platform"
+    }
+   },
+   {
+    "index": 3,
+    "nodeId": 1330401194,
+    "role": "platform",
+    "name": "消防本部前",
+    "lat": 35.6594904,
+    "lon": 139.9034126,
+    "tags": {
+     "bus": "yes",
+     "highway": "bus_stop",
+     "name": "消防本部前",
+     "name:en": "Shoubou Honbu Mae",
+     "name:ja": "消防本部前",
+     "operator": "東京ベイシティ交通",
+     "public_transport": "platform"
+    }
+   },
+   {
+    "index": 4,
+    "nodeId": 12369418230,
+    "role": "platform",
+    "name": "海楽",
+    "lat": 35.6576449,
+    "lon": 139.9059641,
+    "tags": {
+     "bus": "yes",
+     "highway": "bus_stop",
+     "name": "海楽",
+     "operator": "東京ベイシティ交通",
+     "public_transport": "platform"
+    }
+   },
+   {
+    "index": 5,
+    "nodeId": 1330406914,
+    "role": "platform",
+    "name": "美浜東団地",
+    "lat": 35.6522225,
+    "lon": 139.9128348,
+    "tags": {
+     "bus": "yes",
+     "highway": "bus_stop",
+     "name": "美浜東団地",
+     "name:ja": "美浜東団地",
+     "name:ja-Latn": "Mihama Higashi Danchi",
+     "operator": "東京ベイシティ交通",
+     "public_transport": "platform"
+    }
+   },
+   {
+    "index": 6,
+    "nodeId": 8415001161,
+    "role": "platform",
+    "name": "新浦安駅",
+    "lat": 35.6499537,
+    "lon": 139.9140181,
+    "tags": {
+     "bus": "yes",
+     "highway": "bus_stop",
+     "local_ref": "E",
+     "name": "新浦安駅",
+     "operator": "東京ベイシティ交通",
+     "public_transport": "platform"
+    }
+   },
+   {
+    "index": 7,
+    "nodeId": 11425579726,
+    "role": "platform",
+    "name": "入船中央エステート",
+    "lat": 35.6489816,
+    "lon": 139.9168586,
+    "tags": {
+     "bus": "yes",
+     "covered": "yes",
+     "highway": "bus_stop",
+     "name": "入船中央エステート",
+     "operator": "東京ベイシティ交通",
+     "passenger_information_display": "yes",
+     "public_transport": "platform"
+    }
+   },
+   {
+    "index": 8,
+    "nodeId": 6813952156,
+    "role": "platform",
+    "name": "明海大学前",
+    "lat": 35.6460348,
+    "lon": 139.9205782,
+    "tags": {
+     "bus": "yes",
+     "highway": "bus_stop",
+     "name": "明海大学前",
+     "operator": "東京ベイシティ交通",
+     "passenger_information_display": "yes",
+     "public_transport": "platform",
+     "shelter": "yes"
+    }
+   },
+   {
+    "index": 9,
+    "nodeId": 12409259393,
+    "role": "platform",
+    "name": "海風の街",
+    "lat": 35.6435042,
+    "lon": 139.9224383,
+    "tags": {
+     "bus": "yes",
+     "highway": "bus_stop",
+     "name": "海風の街",
+     "operator": "東京ベイシティ交通",
+     "public_transport": "platform"
+    }
+   },
+   {
+    "index": 10,
+    "nodeId": 6813929332,
+    "role": "platform",
+    "name": "夢海の街",
+    "lat": 35.6415042,
+    "lon": 139.9200062,
+    "tags": {
+     "bus": "yes",
+     "highway": "bus_stop",
+     "name": "夢海の街",
+     "operator": "東京ベイシティ交通",
+     "passenger_information_display": "yes",
+     "public_transport": "platform"
+    }
+   },
+   {
+    "index": 11,
+    "nodeId": 11578685157,
+    "role": "platform",
+    "name": "高洲橋",
+    "lat": 35.6381407,
+    "lon": 139.9159621,
+    "tags": {
+     "bus": "yes",
+     "highway": "bus_stop",
+     "name": "高洲橋",
+     "operator": "東京ベイシティ交通",
+     "passenger_information_display": "yes",
+     "public_transport": "platform"
+    }
+   },
+   {
+    "index": 12,
+    "nodeId": 6852993563,
+    "role": "platform",
+    "name": "高洲中央公園",
+    "lat": 35.636194,
+    "lon": 139.9173305,
+    "tags": {
+     "bus": "yes",
+     "covered": "yes",
+     "highway": "bus_stop",
+     "name": "高洲中央公園",
+     "operator": "東京ベイシティ交通",
+     "passenger_information_display": "yes",
+     "public_transport": "platform"
+    }
+   },
+   {
+    "index": 13,
+    "nodeId": 11549952448,
+    "role": "platform",
+    "name": "潮音の街",
+    "lat": 35.6347646,
+    "lon": 139.9191318,
+    "tags": {
+     "bus": "yes",
+     "highway": "bus_stop",
+     "name": "潮音の街",
+     "operator": "東京ベイシティ交通",
+     "passenger_information_display": "yes",
+     "public_transport": "platform"
+    }
+   },
+   {
+    "index": 14,
+    "nodeId": 1312685258,
+    "role": "platform_exit_only",
+    "name": "高洲海浜公園",
+    "lat": 35.6338864,
+    "lon": 139.9202403,
+    "tags": {
+     "bus": "yes",
+     "description": "降車場",
+     "highway": "bus_stop",
+     "name": "高洲海浜公園",
+     "operator": "東京ベイシティ交通",
+     "public_transport": "platform"
+    }
+   }
+  ],
+  "18417590": [
+   {
+    "index": 0,
+    "nodeId": 8415001161,
+    "role": "platform_entry_only",
+    "name": "新浦安駅",
+    "lat": 35.6499537,
+    "lon": 139.9140181,
+    "tags": {
+     "bus": "yes",
+     "highway": "bus_stop",
+     "local_ref": "E",
+     "name": "新浦安駅",
+     "operator": "東京ベイシティ交通",
+     "public_transport": "platform"
+    }
+   },
+   {
+    "index": 1,
+    "nodeId": 11425579726,
+    "role": "platform",
+    "name": "入船中央エステート",
+    "lat": 35.6489816,
+    "lon": 139.9168586,
+    "tags": {
+     "bus": "yes",
+     "covered": "yes",
+     "highway": "bus_stop",
+     "name": "入船中央エステート",
+     "operator": "東京ベイシティ交通",
+     "passenger_information_display": "yes",
+     "public_transport": "platform"
+    }
+   },
+   {
+    "index": 2,
+    "nodeId": 6813952156,
+    "role": "platform",
+    "name": "明海大学前",
+    "lat": 35.6460348,
+    "lon": 139.9205782,
+    "tags": {
+     "bus": "yes",
+     "highway": "bus_stop",
+     "name": "明海大学前",
+     "operator": "東京ベイシティ交通",
+     "passenger_information_display": "yes",
+     "public_transport": "platform",
+     "shelter": "yes"
+    }
+   },
+   {
+    "index": 3,
+    "nodeId": 12409259393,
+    "role": "platform",
+    "name": "海風の街",
+    "lat": 35.6435042,
+    "lon": 139.9224383,
+    "tags": {
+     "bus": "yes",
+     "highway": "bus_stop",
+     "name": "海風の街",
+     "operator": "東京ベイシティ交通",
+     "public_transport": "platform"
+    }
+   },
+   {
+    "index": 4,
+    "nodeId": 6813929332,
+    "role": "platform",
+    "name": "夢海の街",
+    "lat": 35.6415042,
+    "lon": 139.9200062,
+    "tags": {
+     "bus": "yes",
+     "highway": "bus_stop",
+     "name": "夢海の街",
+     "operator": "東京ベイシティ交通",
+     "passenger_information_display": "yes",
+     "public_transport": "platform"
+    }
+   },
+   {
+    "index": 5,
+    "nodeId": 11578685157,
+    "role": "platform",
+    "name": "高洲橋",
+    "lat": 35.6381407,
+    "lon": 139.9159621,
+    "tags": {
+     "bus": "yes",
+     "highway": "bus_stop",
+     "name": "高洲橋",
+     "operator": "東京ベイシティ交通",
+     "passenger_information_display": "yes",
+     "public_transport": "platform"
+    }
+   },
+   {
+    "index": 6,
+    "nodeId": 6852993563,
+    "role": "platform",
+    "name": "高洲中央公園",
+    "lat": 35.636194,
+    "lon": 139.9173305,
+    "tags": {
+     "bus": "yes",
+     "covered": "yes",
+     "highway": "bus_stop",
+     "name": "高洲中央公園",
+     "operator": "東京ベイシティ交通",
+     "passenger_information_display": "yes",
+     "public_transport": "platform"
+    }
+   },
+   {
+    "index": 7,
+    "nodeId": 11549952448,
+    "role": "platform",
+    "name": "潮音の街",
+    "lat": 35.6347646,
+    "lon": 139.9191318,
+    "tags": {
+     "bus": "yes",
+     "highway": "bus_stop",
+     "name": "潮音の街",
+     "operator": "東京ベイシティ交通",
+     "passenger_information_display": "yes",
+     "public_transport": "platform"
+    }
+   },
+   {
+    "index": 8,
+    "nodeId": 11578740581,
+    "role": "platform",
+    "name": "高洲八丁目",
+    "lat": 35.6326904,
+    "lon": 139.9157026,
+    "tags": {
+     "bus": "yes",
+     "highway": "bus_stop",
+     "name": "高洲八丁目",
+     "name:ja": "高洲八丁目",
+     "operator": "東京ベイシティ交通",
+     "passenger_information_display": "yes",
+     "public_transport": "platform"
+    }
+   },
+   {
+    "index": 9,
+    "nodeId": 2810280428,
+    "role": "platform",
+    "name": "高洲四丁目",
+    "lat": 35.6339376,
+    "lon": 139.9141288,
+    "tags": {
+     "bus": "yes",
+     "covered": "yes",
+     "highway": "bus_stop",
+     "name": "高洲四丁目",
+     "operator": "東京ベイシティ交通",
+     "passenger_information_display": "yes",
+     "public_transport": "platform"
+    }
+   },
+   {
+    "index": 10,
+    "nodeId": 11553825394,
+    "role": "platform",
+    "name": "高洲三丁目",
+    "lat": 35.6348023,
+    "lon": 139.9130599,
+    "tags": {
+     "bus": "yes",
+     "highway": "bus_stop",
+     "name": "高洲三丁目",
+     "operator": "東京ベイシティ交通",
+     "public_transport": "platform"
+    }
+   },
+   {
+    "index": 11,
+    "nodeId": 6899769126,
+    "role": "platform",
+    "name": "高洲西児童公園",
+    "lat": 35.6361075,
+    "lon": 139.9114258,
+    "tags": {
+     "bus": "yes",
+     "highway": "bus_stop",
+     "name": "高洲西児童公園",
+     "operator": "東京ベイシティ交通",
+     "public_transport": "platform"
+    }
+   },
+   {
+    "index": 12,
+    "nodeId": 11557035679,
+    "role": "platform",
+    "name": "順天堂大学入口",
+    "lat": 35.6371996,
+    "lon": 139.9107606,
+    "tags": {
+     "bus": "yes",
+     "covered": "yes",
+     "highway": "bus_stop",
+     "name": "順天堂大学入口",
+     "operator": "東京ベイシティ交通",
+     "passenger_information_display": "yes",
+     "public_transport": "platform"
+    }
+   },
+   {
+    "index": 13,
+    "nodeId": 11557035683,
+    "role": "platform",
+    "name": "高洲二丁目",
+    "lat": 35.6382639,
+    "lon": 139.9120289,
+    "tags": {
+     "bus": "yes",
+     "highway": "bus_stop",
+     "name": "高洲二丁目",
+     "operator": "浦安市コミュニティバス",
+     "public_transport": "platform"
+    }
+   },
+   {
+    "index": 14,
+    "nodeId": 11557035685,
+    "role": "platform",
+    "name": "東京学館前",
+    "lat": 35.6388966,
+    "lon": 139.9118939,
+    "tags": {
+     "bus": "yes",
+     "covered": "yes",
+     "highway": "bus_stop",
+     "name": "東京学館前",
+     "operator": "東京ベイシティ交通",
+     "passenger_information_display": "yes",
+     "public_transport": "platform"
+    }
+   },
+   {
+    "index": 15,
+    "nodeId": 1312670866,
+    "role": "platform_exit_only",
+    "name": "高洲北小学校",
+    "lat": 35.6399969,
+    "lon": 139.9105145,
+    "tags": {
+     "bus": "yes",
+     "covered": "yes",
+     "highway": "bus_stop",
+     "name": "高洲北小学校",
+     "operator": "東京ベイシティ交通",
+     "passenger_information_display": "yes",
+     "public_transport": "platform"
+    }
+   }
+  ]
+ },
+ "wayOrder": {
+  "18352907": [
+   {
+    "wayId": 1342409929,
+    "name": null,
+    "highway": "tertiary",
+    "oneway": null,
+    "bus": null,
+    "psv": null,
+    "firstNode": 288796885,
+    "lastNode": 12385552209,
+    "nodeCount": 3
+   },
+   {
+    "wayId": 1338975833,
+    "name": null,
+    "highway": "tertiary",
+    "oneway": null,
+    "bus": null,
+    "psv": null,
+    "firstNode": 288704759,
+    "lastNode": 288796885,
+    "nodeCount": 3
+   },
+   {
+    "wayId": 1339040066,
+    "name": null,
+    "highway": "tertiary",
+    "oneway": null,
+    "bus": null,
+    "psv": null,
+    "firstNode": 289006509,
+    "lastNode": 288704759,
+    "nodeCount": 8
+   },
+   {
+    "wayId": 26380597,
+    "name": null,
+    "highway": "tertiary",
+    "oneway": null,
+    "bus": null,
+    "psv": null,
+    "firstNode": 289006530,
+    "lastNode": 289006509,
+    "nodeCount": 5
+   },
+   {
+    "wayId": 1239911940,
+    "name": null,
+    "highway": "tertiary",
+    "oneway": null,
+    "bus": null,
+    "psv": null,
+    "firstNode": 11519206416,
+    "lastNode": 289006530,
+    "nodeCount": 2
+   },
+   {
+    "wayId": 26380598,
+    "name": null,
+    "highway": "tertiary",
+    "oneway": null,
+    "bus": null,
+    "psv": null,
+    "firstNode": 289006498,
+    "lastNode": 11519206416,
+    "nodeCount": 2
+   },
+   {
+    "wayId": 1342406123,
+    "name": null,
+    "highway": "tertiary",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 289006498,
+    "lastNode": 3722883602,
+    "nodeCount": 4
+   },
+   {
+    "wayId": 26323165,
+    "name": null,
+    "highway": "tertiary",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 3722883602,
+    "lastNode": 3731514468,
+    "nodeCount": 9
+   },
+   {
+    "wayId": 1241264346,
+    "name": "シンボルロード",
+    "highway": "tertiary",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 3731514468,
+    "lastNode": 3731514476,
+    "nodeCount": 6
+   },
+   {
+    "wayId": 1341518494,
+    "name": "シンボルロード",
+    "highway": "tertiary",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 3731514476,
+    "lastNode": 11533169244,
+    "nodeCount": 3
+   },
+   {
+    "wayId": 1340739631,
+    "name": "シンボルロード",
+    "highway": "tertiary",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 11533169244,
+    "lastNode": 2593542684,
+    "nodeCount": 2
+   },
+   {
+    "wayId": 847288812,
+    "name": "シンボルロード",
+    "highway": "tertiary",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 2593542684,
+    "lastNode": 2534635816,
+    "nodeCount": 3
+   },
+   {
+    "wayId": 1338996609,
+    "name": "シンボルロード",
+    "highway": "tertiary",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 2534635816,
+    "lastNode": 288384935,
+    "nodeCount": 4
+   },
+   {
+    "wayId": 720406628,
+    "name": "シンボルロード",
+    "highway": "tertiary",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 288384935,
+    "lastNode": 3731514483,
+    "nodeCount": 2
+   },
+   {
+    "wayId": 720406632,
+    "name": "シンボルロード",
+    "highway": "tertiary",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 3731514483,
+    "lastNode": 288364075,
+    "nodeCount": 5
+   },
+   {
+    "wayId": 26320590,
+    "name": "シンボルロード",
+    "highway": "secondary",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 288364075,
+    "lastNode": 2534592558,
+    "nodeCount": 5
+   },
+   {
+    "wayId": 1125716455,
+    "name": "シンボルロード",
+    "highway": "secondary",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 2534592558,
+    "lastNode": 288769189,
+    "nodeCount": 3
+   },
+   {
+    "wayId": 1125716456,
+    "name": "シンボルロード",
+    "highway": "secondary",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 288769189,
+    "lastNode": 288364095,
+    "nodeCount": 3
+   },
+   {
+    "wayId": 1125716445,
+    "name": "シンボルロード",
+    "highway": "secondary",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 288364095,
+    "lastNode": 598552298,
+    "nodeCount": 3
+   },
+   {
+    "wayId": 216617622,
+    "name": "シンボルロード",
+    "highway": "secondary",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 598552298,
+    "lastNode": 598550697,
+    "nodeCount": 2
+   },
+   {
+    "wayId": 1125716444,
+    "name": "シンボルロード",
+    "highway": "secondary",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 598550697,
+    "lastNode": 288364105,
+    "nodeCount": 3
+   },
+   {
+    "wayId": 1125716453,
+    "name": "シンボルロード",
+    "highway": "secondary",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 288364105,
+    "lastNode": 444299345,
+    "nodeCount": 3
+   },
+   {
+    "wayId": 26349778,
+    "name": "シンボルロード",
+    "highway": "secondary",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 444299345,
+    "lastNode": 1751045528,
+    "nodeCount": 4
+   },
+   {
+    "wayId": 1125716446,
+    "name": "やなぎ通り",
+    "highway": "secondary",
+    "oneway": null,
+    "bus": null,
+    "psv": null,
+    "firstNode": 1751045550,
+    "lastNode": 1751045528,
+    "nodeCount": 4
+   },
+   {
+    "wayId": 1125716447,
+    "name": "やなぎ通り",
+    "highway": "secondary",
+    "oneway": null,
+    "bus": null,
+    "psv": null,
+    "firstNode": 1751045552,
+    "lastNode": 1751045550,
+    "nodeCount": 2
+   },
+   {
+    "wayId": 720402605,
+    "name": "やなぎ通り",
+    "highway": "secondary",
+    "oneway": null,
+    "bus": null,
+    "psv": null,
+    "firstNode": 1751045547,
+    "lastNode": 1751045552,
+    "nodeCount": 4
+   },
+   {
+    "wayId": 1339150559,
+    "name": "やなぎ通り",
+    "highway": "secondary",
+    "oneway": null,
+    "bus": null,
+    "psv": null,
+    "firstNode": 1751045555,
+    "lastNode": 1751045547,
+    "nodeCount": 5
+   },
+   {
+    "wayId": 1342413246,
+    "name": "やなぎ通り",
+    "highway": "secondary",
+    "oneway": null,
+    "bus": null,
+    "psv": null,
+    "firstNode": 1751045520,
+    "lastNode": 1751045555,
+    "nodeCount": 5
+   },
+   {
+    "wayId": 163404380,
+    "name": "やなぎ通り",
+    "highway": "secondary",
+    "oneway": null,
+    "bus": null,
+    "psv": null,
+    "firstNode": 1751045535,
+    "lastNode": 1751045520,
+    "nodeCount": 18
+   }
+  ],
+  "18352908": [
+   {
+    "wayId": 1337341819,
+    "name": "やなぎ通り",
+    "highway": "secondary",
+    "oneway": null,
+    "bus": null,
+    "psv": null,
+    "firstNode": 1751045546,
+    "lastNode": 1751045535,
+    "nodeCount": 2
+   },
+   {
+    "wayId": 163404380,
+    "name": "やなぎ通り",
+    "highway": "secondary",
+    "oneway": null,
+    "bus": null,
+    "psv": null,
+    "firstNode": 1751045535,
+    "lastNode": 1751045520,
+    "nodeCount": 18
+   },
+   {
+    "wayId": 1342413246,
+    "name": "やなぎ通り",
+    "highway": "secondary",
+    "oneway": null,
+    "bus": null,
+    "psv": null,
+    "firstNode": 1751045520,
+    "lastNode": 1751045555,
+    "nodeCount": 5
+   },
+   {
+    "wayId": 1339150559,
+    "name": "やなぎ通り",
+    "highway": "secondary",
+    "oneway": null,
+    "bus": null,
+    "psv": null,
+    "firstNode": 1751045555,
+    "lastNode": 1751045547,
+    "nodeCount": 5
+   },
+   {
+    "wayId": 720402605,
+    "name": "やなぎ通り",
+    "highway": "secondary",
+    "oneway": null,
+    "bus": null,
+    "psv": null,
+    "firstNode": 1751045547,
+    "lastNode": 1751045552,
+    "nodeCount": 4
+   },
+   {
+    "wayId": 1125716447,
+    "name": "やなぎ通り",
+    "highway": "secondary",
+    "oneway": null,
+    "bus": null,
+    "psv": null,
+    "firstNode": 1751045552,
+    "lastNode": 1751045550,
+    "nodeCount": 2
+   },
+   {
+    "wayId": 1125716446,
+    "name": "やなぎ通り",
+    "highway": "secondary",
+    "oneway": null,
+    "bus": null,
+    "psv": null,
+    "firstNode": 1751045550,
+    "lastNode": 1751045528,
+    "nodeCount": 4
+   },
+   {
+    "wayId": 26320561,
+    "name": "シンボルロード",
+    "highway": "secondary",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 1751045528,
+    "lastNode": 600744544,
+    "nodeCount": 3
+   },
+   {
+    "wayId": 1125716452,
+    "name": "シンボルロード",
+    "highway": "secondary",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 600744544,
+    "lastNode": 288363757,
+    "nodeCount": 3
+   },
+   {
+    "wayId": 1125716443,
+    "name": "シンボルロード",
+    "highway": "secondary",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 288363757,
+    "lastNode": 598550776,
+    "nodeCount": 3
+   },
+   {
+    "wayId": 26320821,
+    "name": "シンボルロード",
+    "highway": "secondary",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 598550776,
+    "lastNode": 598552299,
+    "nodeCount": 2
+   },
+   {
+    "wayId": 1125716442,
+    "name": "シンボルロード",
+    "highway": "secondary",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 598552299,
+    "lastNode": 288363828,
+    "nodeCount": 3
+   },
+   {
+    "wayId": 1125716457,
+    "name": "シンボルロード",
+    "highway": "secondary",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 288363828,
+    "lastNode": 600744543,
+    "nodeCount": 5
+   },
+   {
+    "wayId": 1125716454,
+    "name": "シンボルロード",
+    "highway": "secondary",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 600744543,
+    "lastNode": 2534592560,
+    "nodeCount": 3
+   },
+   {
+    "wayId": 26320819,
+    "name": "シンボルロード",
+    "highway": "secondary",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 2534592560,
+    "lastNode": 288363771,
+    "nodeCount": 4
+   },
+   {
+    "wayId": 26320596,
+    "name": "シンボルロード",
+    "highway": "tertiary",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 288363771,
+    "lastNode": 288385024,
+    "nodeCount": 4
+   },
+   {
+    "wayId": 720406630,
+    "name": "シンボルロード",
+    "highway": "tertiary",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 288385024,
+    "lastNode": 288385020,
+    "nodeCount": 2
+   },
+   {
+    "wayId": 906161756,
+    "name": null,
+    "highway": "service",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 288385020,
+    "lastNode": 288384935,
+    "nodeCount": 2
+   },
+   {
+    "wayId": 720406629,
+    "name": null,
+    "highway": "service",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 288384935,
+    "lastNode": 288384996,
+    "nodeCount": 5
+   },
+   {
+    "wayId": 906161755,
+    "name": null,
+    "highway": "service",
+    "oneway": "yes",
+    "bus": "yes",
+    "psv": null,
+    "firstNode": 288384996,
+    "lastNode": 1312776534,
+    "nodeCount": 2
+   },
+   {
+    "wayId": 1337353918,
+    "name": null,
+    "highway": "service",
+    "oneway": "yes",
+    "bus": "yes",
+    "psv": null,
+    "firstNode": 1312776534,
+    "lastNode": 12386096960,
+    "nodeCount": 5
+   },
+   {
+    "wayId": 1339035467,
+    "name": null,
+    "highway": "service",
+    "oneway": "yes",
+    "bus": "yes",
+    "psv": null,
+    "firstNode": 12386096960,
+    "lastNode": 12387342929,
+    "nodeCount": 2
+   },
+   {
+    "wayId": 1339150560,
+    "name": null,
+    "highway": "service",
+    "oneway": "yes",
+    "bus": "yes",
+    "psv": null,
+    "firstNode": 12387342929,
+    "lastNode": 12369534180,
+    "nodeCount": 2
+   },
+   {
+    "wayId": 1341526745,
+    "name": null,
+    "highway": "service",
+    "oneway": "yes",
+    "bus": "yes",
+    "psv": null,
+    "firstNode": 12369534180,
+    "lastNode": 12409319217,
+    "nodeCount": 2
+   },
+   {
+    "wayId": 906161758,
+    "name": null,
+    "highway": "service",
+    "oneway": "yes",
+    "bus": "yes",
+    "psv": null,
+    "firstNode": 12409319217,
+    "lastNode": 12419749370,
+    "nodeCount": 6
+   },
+   {
+    "wayId": 1342408590,
+    "name": null,
+    "highway": "service",
+    "oneway": "yes",
+    "bus": "yes",
+    "psv": null,
+    "firstNode": 12419749370,
+    "lastNode": 12419760829,
+    "nodeCount": 6
+   },
+   {
+    "wayId": 1342409930,
+    "name": null,
+    "highway": "service",
+    "oneway": "yes",
+    "bus": "yes",
+    "psv": null,
+    "firstNode": 12419760829,
+    "lastNode": 12401906268,
+    "nodeCount": 2
+   },
+   {
+    "wayId": 1340739633,
+    "name": null,
+    "highway": "service",
+    "oneway": "yes",
+    "bus": "yes",
+    "psv": null,
+    "firstNode": 12401906268,
+    "lastNode": 6778578832,
+    "nodeCount": 2
+   },
+   {
+    "wayId": 906161743,
+    "name": null,
+    "highway": "service",
+    "oneway": "yes",
+    "bus": "yes",
+    "psv": null,
+    "firstNode": 6778578832,
+    "lastNode": 288384997,
+    "nodeCount": 6
+   },
+   {
+    "wayId": 369356254,
+    "name": null,
+    "highway": "service",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 288384997,
+    "lastNode": 3731514483,
+    "nodeCount": 4
+   },
+   {
+    "wayId": 906161757,
+    "name": null,
+    "highway": "service",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 3731514483,
+    "lastNode": 288385024,
+    "nodeCount": 2
+   },
+   {
+    "wayId": 720406630,
+    "name": "シンボルロード",
+    "highway": "tertiary",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 288385024,
+    "lastNode": 288385020,
+    "nodeCount": 2
+   },
+   {
+    "wayId": 1338996611,
+    "name": "シンボルロード",
+    "highway": "tertiary",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 288385020,
+    "lastNode": 2534635818,
+    "nodeCount": 4
+   },
+   {
+    "wayId": 720406627,
+    "name": "シンボルロード",
+    "highway": "tertiary",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 2534635818,
+    "lastNode": 2593542694,
+    "nodeCount": 10
+   },
+   {
+    "wayId": 1341529159,
+    "name": "シンボルロード",
+    "highway": "tertiary",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 2593542694,
+    "lastNode": 3731514477,
+    "nodeCount": 3
+   },
+   {
+    "wayId": 1340739632,
+    "name": "シンボルロード",
+    "highway": "tertiary",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 3731514477,
+    "lastNode": 11533169247,
+    "nodeCount": 4
+   },
+   {
+    "wayId": 1241264348,
+    "name": "シンボルロード",
+    "highway": "tertiary",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 11533169247,
+    "lastNode": 3731514470,
+    "nodeCount": 4
+   },
+   {
+    "wayId": 847288816,
+    "name": "シンボルロード",
+    "highway": "tertiary",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 3731514470,
+    "lastNode": 3731514469,
+    "nodeCount": 2
+   },
+   {
+    "wayId": 847288815,
+    "name": null,
+    "highway": "tertiary",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 3731514469,
+    "lastNode": 3731514467,
+    "nodeCount": 2
+   },
+   {
+    "wayId": 847288819,
+    "name": null,
+    "highway": "tertiary",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 3731514467,
+    "lastNode": 3722883603,
+    "nodeCount": 11
+   },
+   {
+    "wayId": 1342406125,
+    "name": null,
+    "highway": "tertiary",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 3722883603,
+    "lastNode": 3722883601,
+    "nodeCount": 2
+   },
+   {
+    "wayId": 1341518497,
+    "name": null,
+    "highway": "tertiary",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 3722883601,
+    "lastNode": 289006498,
+    "nodeCount": 4
+   },
+   {
+    "wayId": 26380598,
+    "name": null,
+    "highway": "tertiary",
+    "oneway": null,
+    "bus": null,
+    "psv": null,
+    "firstNode": 289006498,
+    "lastNode": 11519206416,
+    "nodeCount": 2
+   },
+   {
+    "wayId": 1239911940,
+    "name": null,
+    "highway": "tertiary",
+    "oneway": null,
+    "bus": null,
+    "psv": null,
+    "firstNode": 11519206416,
+    "lastNode": 289006530,
+    "nodeCount": 2
+   },
+   {
+    "wayId": 26380597,
+    "name": null,
+    "highway": "tertiary",
+    "oneway": null,
+    "bus": null,
+    "psv": null,
+    "firstNode": 289006530,
+    "lastNode": 289006509,
+    "nodeCount": 5
+   },
+   {
+    "wayId": 1339040066,
+    "name": null,
+    "highway": "tertiary",
+    "oneway": null,
+    "bus": null,
+    "psv": null,
+    "firstNode": 289006509,
+    "lastNode": 288704759,
+    "nodeCount": 8
+   },
+   {
+    "wayId": 1338975833,
+    "name": null,
+    "highway": "tertiary",
+    "oneway": null,
+    "bus": null,
+    "psv": null,
+    "firstNode": 288704759,
+    "lastNode": 288796885,
+    "nodeCount": 3
+   },
+   {
+    "wayId": 1342409929,
+    "name": null,
+    "highway": "tertiary",
+    "oneway": null,
+    "bus": null,
+    "psv": null,
+    "firstNode": 288796885,
+    "lastNode": 12385552209,
+    "nodeCount": 3
+   }
+  ],
+  "18417590": [
+   {
+    "wayId": 1342409930,
+    "name": null,
+    "highway": "service",
+    "oneway": "yes",
+    "bus": "yes",
+    "psv": null,
+    "firstNode": 12419760829,
+    "lastNode": 12401906268,
+    "nodeCount": 2
+   },
+   {
+    "wayId": 1340739633,
+    "name": null,
+    "highway": "service",
+    "oneway": "yes",
+    "bus": "yes",
+    "psv": null,
+    "firstNode": 12401906268,
+    "lastNode": 6778578832,
+    "nodeCount": 2
+   },
+   {
+    "wayId": 906161743,
+    "name": null,
+    "highway": "service",
+    "oneway": "yes",
+    "bus": "yes",
+    "psv": null,
+    "firstNode": 6778578832,
+    "lastNode": 288384997,
+    "nodeCount": 6
+   },
+   {
+    "wayId": 369356254,
+    "name": null,
+    "highway": "service",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 288384997,
+    "lastNode": 3731514483,
+    "nodeCount": 4
+   },
+   {
+    "wayId": 906161757,
+    "name": null,
+    "highway": "service",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 3731514483,
+    "lastNode": 288385024,
+    "nodeCount": 2
+   },
+   {
+    "wayId": 720406630,
+    "name": "シンボルロード",
+    "highway": "tertiary",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 288385024,
+    "lastNode": 288385020,
+    "nodeCount": 2
+   },
+   {
+    "wayId": 1338996611,
+    "name": "シンボルロード",
+    "highway": "tertiary",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 288385020,
+    "lastNode": 2534635818,
+    "nodeCount": 4
+   },
+   {
+    "wayId": 720406627,
+    "name": "シンボルロード",
+    "highway": "tertiary",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 2534635818,
+    "lastNode": 2593542694,
+    "nodeCount": 10
+   },
+   {
+    "wayId": 1341529159,
+    "name": "シンボルロード",
+    "highway": "tertiary",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 2593542694,
+    "lastNode": 3731514477,
+    "nodeCount": 3
+   },
+   {
+    "wayId": 1340739632,
+    "name": "シンボルロード",
+    "highway": "tertiary",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 3731514477,
+    "lastNode": 11533169247,
+    "nodeCount": 4
+   },
+   {
+    "wayId": 1241264348,
+    "name": "シンボルロード",
+    "highway": "tertiary",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 11533169247,
+    "lastNode": 3731514470,
+    "nodeCount": 4
+   },
+   {
+    "wayId": 847288816,
+    "name": "シンボルロード",
+    "highway": "tertiary",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 3731514470,
+    "lastNode": 3731514469,
+    "nodeCount": 2
+   },
+   {
+    "wayId": 847288815,
+    "name": null,
+    "highway": "tertiary",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 3731514469,
+    "lastNode": 3731514467,
+    "nodeCount": 2
+   },
+   {
+    "wayId": 847288819,
+    "name": null,
+    "highway": "tertiary",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 3731514467,
+    "lastNode": 3722883603,
+    "nodeCount": 11
+   },
+   {
+    "wayId": 1342406125,
+    "name": null,
+    "highway": "tertiary",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 3722883603,
+    "lastNode": 3722883601,
+    "nodeCount": 2
+   },
+   {
+    "wayId": 1341518497,
+    "name": null,
+    "highway": "tertiary",
+    "oneway": "yes",
+    "bus": null,
+    "psv": null,
+    "firstNode": 3722883601,
+    "lastNode": 289006498,
+    "nodeCount": 4
+   },
+   {
+    "wayId": 26380598,
+    "name": null,
+    "highway": "tertiary",
+    "oneway": null,
+    "bus": null,
+    "psv": null,
+    "firstNode": 289006498,
+    "lastNode": 11519206416,
+    "nodeCount": 2
+   },
+   {
+    "wayId": 1239911940,
+    "name": null,
+    "highway": "tertiary",
+    "oneway": null,
+    "bus": null,
+    "psv": null,
+    "firstNode": 11519206416,
+    "lastNode": 289006530,
+    "nodeCount": 2
+   },
+   {
+    "wayId": 26380597,
+    "name": null,
+    "highway": "tertiary",
+    "oneway": null,
+    "bus": null,
+    "psv": null,
+    "firstNode": 289006530,
+    "lastNode": 289006509,
+    "nodeCount": 5
+   },
+   {
+    "wayId": 1339040066,
+    "name": null,
+    "highway": "tertiary",
+    "oneway": null,
+    "bus": null,
+    "psv": null,
+    "firstNode": 289006509,
+    "lastNode": 288704759,
+    "nodeCount": 8
+   },
+   {
+    "wayId": 1338975833,
+    "name": null,
+    "highway": "tertiary",
+    "oneway": null,
+    "bus": null,
+    "psv": null,
+    "firstNode": 288704759,
+    "lastNode": 288796885,
+    "nodeCount": 3
+   },
+   {
+    "wayId": 26359698,
+    "name": null,
+    "highway": "tertiary",
+    "oneway": null,
+    "bus": null,
+    "psv": null,
+    "firstNode": 288796885,
+    "lastNode": 288796893,
+    "nodeCount": 4
+   },
+   {
+    "wayId": 1342409928,
+    "name": null,
+    "highway": "tertiary",
+    "oneway": null,
+    "bus": null,
+    "psv": null,
+    "firstNode": 288705116,
+    "lastNode": 288796893,
+    "nodeCount": 5
+   },
+   {
+    "wayId": 1340739629,
+    "name": null,
+    "highway": "tertiary",
+    "oneway": "no",
+    "bus": null,
+    "psv": null,
+    "firstNode": 288705116,
+    "lastNode": 289009379,
+    "nodeCount": 8
+   },
+   {
+    "wayId": 1338975836,
+    "name": null,
+    "highway": "tertiary",
+    "oneway": "no",
+    "bus": null,
+    "psv": null,
+    "firstNode": 289009379,
+    "lastNode": 2303738204,
+    "nodeCount": 14
+   },
+   {
+    "wayId": 1340739630,
+    "name": null,
+    "highway": "tertiary",
+    "oneway": null,
+    "bus": null,
+    "psv": null,
+    "firstNode": 2303738204,
+    "lastNode": 2303738230,
+    "nodeCount": 9
+   },
+   {
+    "wayId": 26350465,
+    "name": null,
+    "highway": "tertiary",
+    "oneway": null,
+    "bus": null,
+    "psv": null,
+    "firstNode": 12419760828,
+    "lastNode": 2303738230,
+    "nodeCount": 7
+   }
+  ]
+ },
+ "shinurayasuPlatformIdentity": {
+  "perRelation": {
+   "18352907": [
+    {
+     "index": 8,
+     "nodeId": 8415001143,
+     "role": "platform",
+     "lat": 35.6506245,
+     "lon": 139.9142535,
+     "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "local_ref": "H",
+      "name": "新浦安駅",
+      "public_transport": "platform"
+     }
+    }
+   ],
+   "18352908": [
+    {
+     "index": 6,
+     "nodeId": 8415001161,
+     "role": "platform",
+     "lat": 35.6499537,
+     "lon": 139.9140181,
+     "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "local_ref": "E",
+      "name": "新浦安駅",
+      "operator": "東京ベイシティ交通",
+      "public_transport": "platform"
+     }
+    }
+   ],
+   "18417590": [
+    {
+     "index": 0,
+     "nodeId": 8415001161,
+     "role": "platform_entry_only",
+     "lat": 35.6499537,
+     "lon": 139.9140181,
+     "tags": {
+      "bus": "yes",
+      "highway": "bus_stop",
+      "local_ref": "E",
+      "name": "新浦安駅",
+      "operator": "東京ベイシティ交通",
+      "public_transport": "platform"
+     }
+    }
+   ]
+  },
+  "sameNodeAcrossAll": false
+ },
+ "joinAnalysis": {
+  "outboundShort": {
+   "course": "0008200288",
+   "nightWays": 27,
+   "throughWays": 48,
+   "sharedWayIds": [
+    1342409930,
+    1340739633,
+    906161743,
+    369356254,
+    906161757,
+    720406630,
+    1338996611,
+    720406627,
+    1341529159,
+    1340739632,
+    1241264348,
+    847288816,
+    847288815,
+    847288819,
+    1342406125,
+    1341518497,
+    26380598,
+    1239911940,
+    26380597,
+    1339040066,
+    1338975833
+   ],
+   "sharedCount": 21,
+   "nightIndexOfShared": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+   ],
+   "throughIndexOfShared": [
+    26,
+    27,
+    28,
+    29,
+    30,
+    16,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46
+   ]
+  },
+  "inboundShort": {
+   "course": "0008200287",
+   "inboundWays": 29,
+   "sharedWithNight": [
+    1338975833,
+    1339040066,
+    26380597,
+    1239911940,
+    26380598
+   ]
+  },
+  "pairwise": {
+   "18352908->18352907": {
+    "commonPrefix": [],
+    "commonSuffix": []
+   },
+   "18352908->18417590": {
+    "commonPrefix": [],
+    "commonSuffix": []
+   },
+   "18352907->18352908": {
+    "commonPrefix": [],
+    "commonSuffix": []
+   },
+   "18352907->18417590": {
+    "commonPrefix": [],
+    "commonSuffix": []
+   },
+   "18417590->18352908": {
+    "commonPrefix": [],
+    "commonSuffix": []
+   },
+   "18417590->18352907": {
+    "commonPrefix": [],
+    "commonSuffix": []
+   }
+  }
+ }
+}

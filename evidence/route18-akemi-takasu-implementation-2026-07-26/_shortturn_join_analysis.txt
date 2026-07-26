@@ -1,0 +1,126 @@
+﻿--- 譁ｰ豬ｦ螳蛾ｧ・platform node
+  18352907 [{"index":8,"nodeId":8415001143,"role":"platform","lat":35.6506245,"lon":139.9142535,"tags":{"bus":"yes","highway":"bus_stop","local_ref":"H","name":"譁ｰ豬ｦ螳蛾ｧ・,"public_transport":"platform"}}]
+  18352908 [{"index":6,"nodeId":8415001161,"role":"platform","lat":35.6499537,"lon":139.9140181,"tags":{"bus":"yes","highway":"bus_stop","local_ref":"E","name":"譁ｰ豬ｦ螳蛾ｧ・,"operator":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ莠､騾・,"public_transport":"platform"}}]
+  18417590 [{"index":0,"nodeId":8415001161,"role":"platform_entry_only","lat":35.6499537,"lon":139.9140181,"tags":{"bus":"yes","highway":"bus_stop","local_ref":"E","name":"譁ｰ豬ｦ螳蛾ｧ・,"operator":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ莠､騾・,"public_transport":"platform"}}]
+sameNodeAcrossAll false
+
+--- 蠕霍ｯ遏ｭ邵ｮ (0008200288) 18417590 vs 18352908
+  nightWays 27 throughWays 48 shared 21
+  shared wayIds [1342409930,1340739633,906161743,369356254,906161757,720406630,1338996611,720406627,1341529159,1340739632,1241264348,847288816,847288815,847288819,1342406125,1341518497,26380598,1239911940,26380597,1339040066,1338975833]
+  night idx [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+  through idx [26,27,28,29,30,16,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46]
+
+--- 蠕ｩ霍ｯ遏ｭ邵ｮ (0008200287)
+  inboundWays 29 sharedWithNight [1338975833,1339040066,26380597,1239911940,26380598]
+
+--- 18417590 way order (縺ｮ繧翫・E逋ｺ)
+    1342409930 null | service | oneway yes | bus yes | n 2 12419760829 -> 12401906268
+    1340739633 null | service | oneway yes | bus yes | n 2 12401906268 -> 6778578832
+    906161743 null | service | oneway yes | bus yes | n 6 6778578832 -> 288384997
+    369356254 null | service | oneway yes | bus null | n 4 288384997 -> 3731514483
+    906161757 null | service | oneway yes | bus null | n 2 3731514483 -> 288385024
+    720406630 繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝・| tertiary | oneway yes | bus null | n 2 288385024 -> 288385020
+    1338996611 繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝・| tertiary | oneway yes | bus null | n 4 288385020 -> 2534635818
+    720406627 繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝・| tertiary | oneway yes | bus null | n 10 2534635818 -> 2593542694
+    1341529159 繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝・| tertiary | oneway yes | bus null | n 3 2593542694 -> 3731514477
+    1340739632 繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝・| tertiary | oneway yes | bus null | n 4 3731514477 -> 11533169247
+    1241264348 繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝・| tertiary | oneway yes | bus null | n 4 11533169247 -> 3731514470
+    847288816 繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝・| tertiary | oneway yes | bus null | n 2 3731514470 -> 3731514469
+    847288815 null | tertiary | oneway yes | bus null | n 2 3731514469 -> 3731514467
+    847288819 null | tertiary | oneway yes | bus null | n 11 3731514467 -> 3722883603
+    1342406125 null | tertiary | oneway yes | bus null | n 2 3722883603 -> 3722883601
+    1341518497 null | tertiary | oneway yes | bus null | n 4 3722883601 -> 289006498
+    26380598 null | tertiary | oneway null | bus null | n 2 289006498 -> 11519206416
+    1239911940 null | tertiary | oneway null | bus null | n 2 11519206416 -> 289006530
+    26380597 null | tertiary | oneway null | bus null | n 5 289006530 -> 289006509
+    1339040066 null | tertiary | oneway null | bus null | n 8 289006509 -> 288704759
+    1338975833 null | tertiary | oneway null | bus null | n 3 288704759 -> 288796885
+    26359698 null | tertiary | oneway null | bus null | n 4 288796885 -> 288796893
+    1342409928 null | tertiary | oneway null | bus null | n 5 288705116 -> 288796893
+    1340739629 null | tertiary | oneway no | bus null | n 8 288705116 -> 289009379
+    1338975836 null | tertiary | oneway no | bus null | n 14 289009379 -> 2303738204
+    1340739630 null | tertiary | oneway null | bus null | n 9 2303738204 -> 2303738230
+    26350465 null | tertiary | oneway null | bus null | n 7 12419760828 -> 2303738230
+
+--- 18352908 way order (豬ｦ螳蛾ｧ・・蜿｣逋ｺ 騾壹＠)
+    0 1337341819 繧・↑縺朱壹ｊ | secondary | oneway null | bus null | n 2 1751045546 -> 1751045535
+    1 163404380 繧・↑縺朱壹ｊ | secondary | oneway null | bus null | n 18 1751045535 -> 1751045520
+    2 1342413246 繧・↑縺朱壹ｊ | secondary | oneway null | bus null | n 5 1751045520 -> 1751045555
+    3 1339150559 繧・↑縺朱壹ｊ | secondary | oneway null | bus null | n 5 1751045555 -> 1751045547
+    4 720402605 繧・↑縺朱壹ｊ | secondary | oneway null | bus null | n 4 1751045547 -> 1751045552
+    5 1125716447 繧・↑縺朱壹ｊ | secondary | oneway null | bus null | n 2 1751045552 -> 1751045550
+    6 1125716446 繧・↑縺朱壹ｊ | secondary | oneway null | bus null | n 4 1751045550 -> 1751045528
+    7 26320561 繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝・| secondary | oneway yes | bus null | n 3 1751045528 -> 600744544
+    8 1125716452 繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝・| secondary | oneway yes | bus null | n 3 600744544 -> 288363757
+    9 1125716443 繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝・| secondary | oneway yes | bus null | n 3 288363757 -> 598550776
+    10 26320821 繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝・| secondary | oneway yes | bus null | n 2 598550776 -> 598552299
+    11 1125716442 繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝・| secondary | oneway yes | bus null | n 3 598552299 -> 288363828
+    12 1125716457 繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝・| secondary | oneway yes | bus null | n 5 288363828 -> 600744543
+    13 1125716454 繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝・| secondary | oneway yes | bus null | n 3 600744543 -> 2534592560
+    14 26320819 繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝・| secondary | oneway yes | bus null | n 4 2534592560 -> 288363771
+    15 26320596 繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝・| tertiary | oneway yes | bus null | n 4 288363771 -> 288385024
+    16 720406630 繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝・| tertiary | oneway yes | bus null | n 2 288385024 -> 288385020
+    17 906161756 null | service | oneway yes | bus null | n 2 288385020 -> 288384935
+    18 720406629 null | service | oneway yes | bus null | n 5 288384935 -> 288384996
+    19 906161755 null | service | oneway yes | bus yes | n 2 288384996 -> 1312776534
+    20 1337353918 null | service | oneway yes | bus yes | n 5 1312776534 -> 12386096960
+    21 1339035467 null | service | oneway yes | bus yes | n 2 12386096960 -> 12387342929
+    22 1339150560 null | service | oneway yes | bus yes | n 2 12387342929 -> 12369534180
+    23 1341526745 null | service | oneway yes | bus yes | n 2 12369534180 -> 12409319217
+    24 906161758 null | service | oneway yes | bus yes | n 6 12409319217 -> 12419749370
+    25 1342408590 null | service | oneway yes | bus yes | n 6 12419749370 -> 12419760829
+    26 1342409930 null | service | oneway yes | bus yes | n 2 12419760829 -> 12401906268
+    27 1340739633 null | service | oneway yes | bus yes | n 2 12401906268 -> 6778578832
+    28 906161743 null | service | oneway yes | bus yes | n 6 6778578832 -> 288384997
+    29 369356254 null | service | oneway yes | bus null | n 4 288384997 -> 3731514483
+    30 906161757 null | service | oneway yes | bus null | n 2 3731514483 -> 288385024
+    31 720406630 繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝・| tertiary | oneway yes | bus null | n 2 288385024 -> 288385020
+    32 1338996611 繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝・| tertiary | oneway yes | bus null | n 4 288385020 -> 2534635818
+    33 720406627 繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝・| tertiary | oneway yes | bus null | n 10 2534635818 -> 2593542694
+    34 1341529159 繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝・| tertiary | oneway yes | bus null | n 3 2593542694 -> 3731514477
+    35 1340739632 繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝・| tertiary | oneway yes | bus null | n 4 3731514477 -> 11533169247
+    36 1241264348 繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝・| tertiary | oneway yes | bus null | n 4 11533169247 -> 3731514470
+    37 847288816 繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝・| tertiary | oneway yes | bus null | n 2 3731514470 -> 3731514469
+    38 847288815 null | tertiary | oneway yes | bus null | n 2 3731514469 -> 3731514467
+    39 847288819 null | tertiary | oneway yes | bus null | n 11 3731514467 -> 3722883603
+    40 1342406125 null | tertiary | oneway yes | bus null | n 2 3722883603 -> 3722883601
+    41 1341518497 null | tertiary | oneway yes | bus null | n 4 3722883601 -> 289006498
+    42 26380598 null | tertiary | oneway null | bus null | n 2 289006498 -> 11519206416
+    43 1239911940 null | tertiary | oneway null | bus null | n 2 11519206416 -> 289006530
+    44 26380597 null | tertiary | oneway null | bus null | n 5 289006530 -> 289006509
+    45 1339040066 null | tertiary | oneway null | bus null | n 8 289006509 -> 288704759
+    46 1338975833 null | tertiary | oneway null | bus null | n 3 288704759 -> 288796885
+    47 1342409929 null | tertiary | oneway null | bus null | n 3 288796885 -> 12385552209
+
+--- 18352907 way order (鬮俶ｴｲ豬ｷ豬懷・蝨堤匱 騾壹＠)
+    0 1342409929 null | tertiary | oneway null | bus null | n 3 288796885 -> 12385552209
+    1 1338975833 null | tertiary | oneway null | bus null | n 3 288704759 -> 288796885
+    2 1339040066 null | tertiary | oneway null | bus null | n 8 289006509 -> 288704759
+    3 26380597 null | tertiary | oneway null | bus null | n 5 289006530 -> 289006509
+    4 1239911940 null | tertiary | oneway null | bus null | n 2 11519206416 -> 289006530
+    5 26380598 null | tertiary | oneway null | bus null | n 2 289006498 -> 11519206416
+    6 1342406123 null | tertiary | oneway yes | bus null | n 4 289006498 -> 3722883602
+    7 26323165 null | tertiary | oneway yes | bus null | n 9 3722883602 -> 3731514468
+    8 1241264346 繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝・| tertiary | oneway yes | bus null | n 6 3731514468 -> 3731514476
+    9 1341518494 繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝・| tertiary | oneway yes | bus null | n 3 3731514476 -> 11533169244
+    10 1340739631 繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝・| tertiary | oneway yes | bus null | n 2 11533169244 -> 2593542684
+    11 847288812 繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝・| tertiary | oneway yes | bus null | n 3 2593542684 -> 2534635816
+    12 1338996609 繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝・| tertiary | oneway yes | bus null | n 4 2534635816 -> 288384935
+    13 720406628 繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝・| tertiary | oneway yes | bus null | n 2 288384935 -> 3731514483
+    14 720406632 繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝・| tertiary | oneway yes | bus null | n 5 3731514483 -> 288364075
+    15 26320590 繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝・| secondary | oneway yes | bus null | n 5 288364075 -> 2534592558
+    16 1125716455 繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝・| secondary | oneway yes | bus null | n 3 2534592558 -> 288769189
+    17 1125716456 繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝・| secondary | oneway yes | bus null | n 3 288769189 -> 288364095
+    18 1125716445 繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝・| secondary | oneway yes | bus null | n 3 288364095 -> 598552298
+    19 216617622 繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝・| secondary | oneway yes | bus null | n 2 598552298 -> 598550697
+    20 1125716444 繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝・| secondary | oneway yes | bus null | n 3 598550697 -> 288364105
+    21 1125716453 繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝・| secondary | oneway yes | bus null | n 3 288364105 -> 444299345
+    22 26349778 繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝・| secondary | oneway yes | bus null | n 4 444299345 -> 1751045528
+    23 1125716446 繧・↑縺朱壹ｊ | secondary | oneway null | bus null | n 4 1751045550 -> 1751045528
+    24 1125716447 繧・↑縺朱壹ｊ | secondary | oneway null | bus null | n 2 1751045552 -> 1751045550
+    25 720402605 繧・↑縺朱壹ｊ | secondary | oneway null | bus null | n 4 1751045547 -> 1751045552
+    26 1339150559 繧・↑縺朱壹ｊ | secondary | oneway null | bus null | n 5 1751045555 -> 1751045547
+    27 1342413246 繧・↑縺朱壹ｊ | secondary | oneway null | bus null | n 5 1751045520 -> 1751045555
+    28 163404380 繧・↑縺朱壹ｊ | secondary | oneway null | bus null | n 18 1751045535 -> 1751045520
+
+wrote C:\Users\yamam\OneDrive\繝峨く繝･繝｡繝ｳ繝・GitHub\chidori-route-trainer\evidence\route18-akemi-takasu-implementation-2026-07-26\_shortturn_join_analysis.json

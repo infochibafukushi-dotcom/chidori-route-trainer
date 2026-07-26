@@ -1,0 +1,3630 @@
+{
+  "generatedAt": "2026-07-26T15:04:04.539Z",
+  "line": "明海・高洲線",
+  "routeId": "route-18",
+  "generated": "2026-07-26-akemi-takasu-line-v1",
+  "policy": {
+    "stopOrderSource": "official-stop-orders.json（京成バスナビ個別便通過時刻表・2段凡例ゲートで【１８系統】に確定）",
+    "pathSource": "OSM route relation way members（方向補正あり）。短縮便2本は route-18 自身の relation の検証済み composition",
+    "googleDirectionsUsed": false,
+    "reverseReuseForbidden": true,
+    "truncationReuseForbidden": true,
+    "spliceForbidden": "blind mid-station slice は禁止。のりばE始発／のりばX降車の検証済み composition のみ許可。",
+    "otherRouteReuseForbidden": "route-15（東京学館前・高洲経由）/ 19（浦安南高校経由）/ 10（みなと南経由）/ 11・3・23（ベイパーク・望海の街経由）の path・停留所順は、のりばを共有していても流用しない",
+    "forbiddenSiblingRelations": {
+      "3": [
+        18417570,
+        18417571,
+        18417579
+      ],
+      "10": [
+        18381757,
+        18381756
+      ],
+      "11": [
+        18352883,
+        18352884,
+        18419852
+      ],
+      "15": [
+        18419865,
+        18419864
+      ],
+      "16": [
+        18396562,
+        18396563
+      ],
+      "17": [
+        18396568,
+        18396569,
+        18396583
+      ],
+      "19": [
+        18381771,
+        18381770
+      ],
+      "23": [
+        18419894,
+        18419895
+      ],
+      "25": [
+        18352022,
+        18352023,
+        18352044,
+        18352045
+      ],
+      "38": [
+        18396354
+      ]
+    },
+    "forbiddenSiblingStops": {
+      "10": [
+        "みなと南"
+      ],
+      "11": [
+        "ベイパーク",
+        "ベイモール",
+        "シンボルロードパークシティ",
+        "日の出公民館",
+        "日の出南",
+        "新浦安温泉"
+      ],
+      "15": [
+        "明海交差点",
+        "入船橋",
+        "高洲"
+      ],
+      "19": [
+        "浦安南高校",
+        "特別養護老人ホーム"
+      ],
+      "25": [
+        "サンコーポ東口",
+        "サンコーポ西口",
+        "若潮公園",
+        "新浦安駅北口"
+      ],
+      "3/23": [
+        "総合公園",
+        "ベイサイドホテルエリア",
+        "望海の街",
+        "明海五丁目",
+        "ハイアットリージェンシー",
+        "三井ガーデンホテル",
+        "明海南小学校",
+        "明海六丁目"
+      ]
+    },
+    "maxGap_m": 30,
+    "maxJoin_m": 1,
+    "platformDistSoftMax_m": 20,
+    "platformDistHardMax_m": 30,
+    "allowedContiguousSlicePairs": [
+      {
+        "a": "18-takasu-seaside-from-shinurayasu",
+        "b": "18-takasu-seaside",
+        "reason": "verified berth-E composition ≡ 18352908 subsequence from platform 8415001161"
+      }
+    ]
+  },
+  "accessExceptions": {},
+  "systems": {
+    "18-takasu-seaside": {
+      "stops": 15,
+      "pathPoints": 292,
+      "relationId": 18352908,
+      "compositionRelations": [
+        18352908
+      ],
+      "composition": null,
+      "compositionMeta": null,
+      "pathSource": "osm-relation-18352908+startHint-urayasu-eki-iriguchi",
+      "pathHash": "4b04f78629731300a84cf4e23918efd749edf9f9693ad5fb63317790d403b5f3",
+      "resolvedVersion": "2026-07-26-akemitakasu18-takasu-seaside-v1",
+      "maxGap_m": 24.9,
+      "maxJoin_m": 0,
+      "maxPlatformDist_m": 14.9,
+      "nanCount": 0,
+      "missingPlatforms": [],
+      "looseMatches": [],
+      "platformDists": [
+        {
+          "name": "浦安駅入口",
+          "dist": 10.7,
+          "pathIndex": 0,
+          "reviewRequired": false
+        },
+        {
+          "name": "神明裏",
+          "dist": 11.1,
+          "pathIndex": 24,
+          "reviewRequired": false
+        },
+        {
+          "name": "猫実",
+          "dist": 9.8,
+          "pathIndex": 37,
+          "reviewRequired": false
+        },
+        {
+          "name": "消防本部前",
+          "dist": 14.9,
+          "pathIndex": 49,
+          "reviewRequired": false
+        },
+        {
+          "name": "海楽",
+          "dist": 8.7,
+          "pathIndex": 66,
+          "reviewRequired": false
+        },
+        {
+          "name": "美浜東団地",
+          "dist": 14.4,
+          "pathIndex": 107,
+          "reviewRequired": false
+        },
+        {
+          "name": "新浦安駅",
+          "dist": 5.9,
+          "pathIndex": 146,
+          "reviewRequired": false
+        },
+        {
+          "name": "入船中央エステート",
+          "dist": 7.6,
+          "pathIndex": 169,
+          "reviewRequired": false
+        },
+        {
+          "name": "明海大学前",
+          "dist": 9.1,
+          "pathIndex": 195,
+          "reviewRequired": false
+        },
+        {
+          "name": "海風の街",
+          "dist": 6.7,
+          "pathIndex": 214,
+          "reviewRequired": false
+        },
+        {
+          "name": "夢海の街",
+          "dist": 4.1,
+          "pathIndex": 230,
+          "reviewRequired": false
+        },
+        {
+          "name": "高洲橋",
+          "dist": 8.5,
+          "pathIndex": 256,
+          "reviewRequired": false
+        },
+        {
+          "name": "高洲中央公園",
+          "dist": 9.3,
+          "pathIndex": 273,
+          "reviewRequired": false
+        },
+        {
+          "name": "潮音の街",
+          "dist": 7,
+          "pathIndex": 284,
+          "reviewRequired": false
+        },
+        {
+          "name": "高洲海浜公園",
+          "dist": 12.3,
+          "pathIndex": 291,
+          "reviewRequired": false
+        }
+      ],
+      "orderIssues": [],
+      "sliceMeta": {
+        "si": 0,
+        "ei": 291,
+        "startDist": 10.7,
+        "endDist": 12.3,
+        "fullPathPoints": 292
+      },
+      "usedWayCount": 48,
+      "usedWays": [
+        {
+          "wayId": 1337341819,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "startHint": true
+        },
+        {
+          "wayId": 163404380,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1342413246,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1339150559,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 720402605,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1125716447,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1125716446,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 26320561,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1125716452,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1125716443,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 26320821,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1125716442,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1125716457,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1125716454,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 26320819,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 26320596,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 720406630,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 906161756,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 720406629,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 906161755,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1337353918,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1339035467,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1339150560,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1341526745,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 906161758,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1342408590,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1342409930,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1340739633,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 906161743,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 369356254,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 906161757,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 720406630,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1338996611,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 720406627,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1341529159,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1340739632,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1241264348,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 847288816,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 847288815,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 847288819,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1342406125,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1341518497,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 26380598,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1239911940,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 26380597,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1339040066,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1338975833,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1342409929,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        }
+      ],
+      "access": {
+        "restrictedAccessWayCount": 10,
+        "busPermittedRestrictedWayCount": 10,
+        "documentedExceptionWayCount": 0,
+        "unresolvedRestrictedWayCount": 0,
+        "restrictedWays": [
+          {
+            "id": 906161755,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          },
+          {
+            "id": 1337353918,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          },
+          {
+            "id": 1339035467,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          },
+          {
+            "id": 1339150560,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          },
+          {
+            "id": 1341526745,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          },
+          {
+            "id": 906161758,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          },
+          {
+            "id": 1342408590,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          },
+          {
+            "id": 1342409930,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          },
+          {
+            "id": 1340739633,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          },
+          {
+            "id": 906161743,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          }
+        ],
+        "documentedExceptionWays": [],
+        "unresolvedWays": []
+      },
+      "busPsv": {
+        "busCounts": {
+          "(unset)": 38,
+          "yes": 10
+        },
+        "psvCounts": {
+          "(unset)": 48
+        },
+        "ways": [
+          {
+            "id": 1337341819,
+            "name": "やなぎ通り",
+            "highway": "secondary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 163404380,
+            "name": "やなぎ通り",
+            "highway": "secondary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1342413246,
+            "name": "やなぎ通り",
+            "highway": "secondary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1339150559,
+            "name": "やなぎ通り",
+            "highway": "secondary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 720402605,
+            "name": "やなぎ通り",
+            "highway": "secondary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1125716447,
+            "name": "やなぎ通り",
+            "highway": "secondary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1125716446,
+            "name": "やなぎ通り",
+            "highway": "secondary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 26320561,
+            "name": "シンボルロード",
+            "highway": "secondary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1125716452,
+            "name": "シンボルロード",
+            "highway": "secondary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1125716443,
+            "name": "シンボルロード",
+            "highway": "secondary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 26320821,
+            "name": "シンボルロード",
+            "highway": "secondary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1125716442,
+            "name": "シンボルロード",
+            "highway": "secondary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1125716457,
+            "name": "シンボルロード",
+            "highway": "secondary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1125716454,
+            "name": "シンボルロード",
+            "highway": "secondary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 26320819,
+            "name": "シンボルロード",
+            "highway": "secondary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 26320596,
+            "name": "シンボルロード",
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 720406630,
+            "name": "シンボルロード",
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 906161756,
+            "name": null,
+            "highway": "service",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 720406629,
+            "name": null,
+            "highway": "service",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": "yes",
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 906161755,
+            "name": null,
+            "highway": "service",
+            "oneway": "yes",
+            "bus": "yes",
+            "psv": null,
+            "access": "permit",
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1337353918,
+            "name": null,
+            "highway": "service",
+            "oneway": "yes",
+            "bus": "yes",
+            "psv": null,
+            "access": "permit",
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1339035467,
+            "name": null,
+            "highway": "service",
+            "oneway": "yes",
+            "bus": "yes",
+            "psv": null,
+            "access": "permit",
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1339150560,
+            "name": null,
+            "highway": "service",
+            "oneway": "yes",
+            "bus": "yes",
+            "psv": null,
+            "access": "permit",
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1341526745,
+            "name": null,
+            "highway": "service",
+            "oneway": "yes",
+            "bus": "yes",
+            "psv": null,
+            "access": "permit",
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 906161758,
+            "name": null,
+            "highway": "service",
+            "oneway": "yes",
+            "bus": "yes",
+            "psv": null,
+            "access": "permit",
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1342408590,
+            "name": null,
+            "highway": "service",
+            "oneway": "yes",
+            "bus": "yes",
+            "psv": null,
+            "access": "permit",
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1342409930,
+            "name": null,
+            "highway": "service",
+            "oneway": "yes",
+            "bus": "yes",
+            "psv": null,
+            "access": "permit",
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1340739633,
+            "name": null,
+            "highway": "service",
+            "oneway": "yes",
+            "bus": "yes",
+            "psv": null,
+            "access": "permit",
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 906161743,
+            "name": null,
+            "highway": "service",
+            "oneway": "yes",
+            "bus": "yes",
+            "psv": null,
+            "access": "permit",
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 369356254,
+            "name": null,
+            "highway": "service",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": "yes",
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 906161757,
+            "name": null,
+            "highway": "service",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 720406630,
+            "name": "シンボルロード",
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1338996611,
+            "name": "シンボルロード",
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 720406627,
+            "name": "シンボルロード",
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1341529159,
+            "name": "シンボルロード",
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1340739632,
+            "name": "シンボルロード",
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1241264348,
+            "name": "シンボルロード",
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 847288816,
+            "name": "シンボルロード",
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 847288815,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 847288819,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1342406125,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1341518497,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 26380598,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1239911940,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 26380597,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1339040066,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1338975833,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1342409929,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          }
+        ]
+      },
+      "note": "outbound 浦安駅入口→高洲海浜公園（のりば11・符号ゆ）。15系統（東京学館前・高洲経由）や11/3系統（ベイパーク・望海の街経由）のpathは同じ浦安駅入口のりば11に混載されていても流用禁止。"
+    },
+    "18-urayasu-eki-iriguchi": {
+      "stops": 15,
+      "pathPoints": 247,
+      "relationId": 18352907,
+      "compositionRelations": [
+        18352907
+      ],
+      "composition": null,
+      "compositionMeta": null,
+      "pathSource": "osm-relation-18352907+startHint-takasu-kaihin-koen",
+      "pathHash": "dda9ecbf8a09875cc1f015e85116824e1ce020a48b1d6d064211a69fb41bb92b",
+      "resolvedVersion": "2026-07-26-akemitakasu18-urayasu-eki-iriguchi-v1",
+      "maxGap_m": 24.9,
+      "maxJoin_m": 0,
+      "maxPlatformDist_m": 13.6,
+      "nanCount": 0,
+      "missingPlatforms": [],
+      "looseMatches": [],
+      "platformDists": [
+        {
+          "name": "高洲海浜公園",
+          "dist": 7.9,
+          "pathIndex": 0,
+          "reviewRequired": false
+        },
+        {
+          "name": "潮音の街",
+          "dist": 10.7,
+          "pathIndex": 7,
+          "reviewRequired": false
+        },
+        {
+          "name": "高洲中央公園",
+          "dist": 11.9,
+          "pathIndex": 24,
+          "reviewRequired": false
+        },
+        {
+          "name": "高洲橋",
+          "dist": 11.2,
+          "pathIndex": 34,
+          "reviewRequired": false
+        },
+        {
+          "name": "夢海の街",
+          "dist": 3.1,
+          "pathIndex": 60,
+          "reviewRequired": false
+        },
+        {
+          "name": "海風の街",
+          "dist": 7.1,
+          "pathIndex": 80,
+          "reviewRequired": false
+        },
+        {
+          "name": "明海大学前",
+          "dist": 7.7,
+          "pathIndex": 91,
+          "reviewRequired": false
+        },
+        {
+          "name": "入船中央エステート",
+          "dist": 11.1,
+          "pathIndex": 113,
+          "reviewRequired": false
+        },
+        {
+          "name": "新浦安駅",
+          "dist": 11.3,
+          "pathIndex": 128,
+          "reviewRequired": false
+        },
+        {
+          "name": "美浜東団地",
+          "dist": 7.1,
+          "pathIndex": 141,
+          "reviewRequired": false
+        },
+        {
+          "name": "海楽",
+          "dist": 8,
+          "pathIndex": 180,
+          "reviewRequired": false
+        },
+        {
+          "name": "消防本部前",
+          "dist": 13.6,
+          "pathIndex": 196,
+          "reviewRequired": false
+        },
+        {
+          "name": "猫実",
+          "dist": 8.5,
+          "pathIndex": 213,
+          "reviewRequired": false
+        },
+        {
+          "name": "神明裏",
+          "dist": 9.3,
+          "pathIndex": 229,
+          "reviewRequired": false
+        },
+        {
+          "name": "浦安駅入口",
+          "dist": 11.2,
+          "pathIndex": 246,
+          "reviewRequired": false
+        }
+      ],
+      "orderIssues": [],
+      "sliceMeta": {
+        "si": 0,
+        "ei": 246,
+        "startDist": 7.9,
+        "endDist": 11.2,
+        "fullPathPoints": 247
+      },
+      "usedWayCount": 29,
+      "usedWays": [
+        {
+          "wayId": 1342409929,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "startHint": true
+        },
+        {
+          "wayId": 1338975833,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1339040066,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        },
+        {
+          "wayId": 26380597,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1239911940,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        },
+        {
+          "wayId": 26380598,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1342406123,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 26323165,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1241264346,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1341518494,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1340739631,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 847288812,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1338996609,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 720406628,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 720406632,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 26320590,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1125716455,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1125716456,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1125716445,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 216617622,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1125716444,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1125716453,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 26349778,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1125716446,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1125716447,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        },
+        {
+          "wayId": 720402605,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1339150559,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1342413246,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        },
+        {
+          "wayId": 163404380,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        }
+      ],
+      "access": {
+        "restrictedAccessWayCount": 0,
+        "busPermittedRestrictedWayCount": 0,
+        "documentedExceptionWayCount": 0,
+        "unresolvedRestrictedWayCount": 0,
+        "restrictedWays": [],
+        "documentedExceptionWays": [],
+        "unresolvedWays": []
+      },
+      "busPsv": {
+        "busCounts": {
+          "(unset)": 29
+        },
+        "psvCounts": {
+          "(unset)": 29
+        },
+        "ways": [
+          {
+            "id": 1342409929,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1338975833,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1339040066,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 26380597,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1239911940,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 26380598,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1342406123,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 26323165,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1241264346,
+            "name": "シンボルロード",
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1341518494,
+            "name": "シンボルロード",
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1340739631,
+            "name": "シンボルロード",
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 847288812,
+            "name": "シンボルロード",
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1338996609,
+            "name": "シンボルロード",
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 720406628,
+            "name": "シンボルロード",
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 720406632,
+            "name": "シンボルロード",
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 26320590,
+            "name": "シンボルロード",
+            "highway": "secondary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1125716455,
+            "name": "シンボルロード",
+            "highway": "secondary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1125716456,
+            "name": "シンボルロード",
+            "highway": "secondary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1125716445,
+            "name": "シンボルロード",
+            "highway": "secondary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 216617622,
+            "name": "シンボルロード",
+            "highway": "secondary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1125716444,
+            "name": "シンボルロード",
+            "highway": "secondary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1125716453,
+            "name": "シンボルロード",
+            "highway": "secondary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 26349778,
+            "name": "シンボルロード",
+            "highway": "secondary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1125716446,
+            "name": "やなぎ通り",
+            "highway": "secondary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1125716447,
+            "name": "やなぎ通り",
+            "highway": "secondary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 720402605,
+            "name": "やなぎ通り",
+            "highway": "secondary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1339150559,
+            "name": "やなぎ通り",
+            "highway": "secondary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1342413246,
+            "name": "やなぎ通り",
+            "highway": "secondary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 163404380,
+            "name": "やなぎ通り",
+            "highway": "secondary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          }
+        ]
+      },
+      "note": "inbound 高洲海浜公園→浦安駅入口（のりば03・符号う）。往路18352908の反転は禁止（往復で別車線・別ノードのplatformを持つ）。"
+    },
+    "18-takasu-kita-shogakko": {
+      "stops": 16,
+      "pathPoints": 227,
+      "relationId": 18417590,
+      "compositionRelations": [
+        18417590
+      ],
+      "composition": null,
+      "compositionMeta": null,
+      "pathSource": "osm-relation-18417590+startHint-shinurayasu",
+      "pathHash": "34fde1f156be7a37feabf25c3ac47665b30a59f142bc43e899a7d3d45e148778",
+      "resolvedVersion": "2026-07-26-akemitakasu18-takasu-kita-shogakko-v1",
+      "maxGap_m": 24.9,
+      "maxJoin_m": 0,
+      "maxPlatformDist_m": 10.4,
+      "nanCount": 0,
+      "missingPlatforms": [],
+      "looseMatches": [],
+      "platformDists": [
+        {
+          "name": "新浦安駅",
+          "dist": 5.9,
+          "pathIndex": 0,
+          "reviewRequired": false
+        },
+        {
+          "name": "入船中央エステート",
+          "dist": 7.6,
+          "pathIndex": 23,
+          "reviewRequired": false
+        },
+        {
+          "name": "明海大学前",
+          "dist": 9.1,
+          "pathIndex": 49,
+          "reviewRequired": false
+        },
+        {
+          "name": "海風の街",
+          "dist": 6.7,
+          "pathIndex": 68,
+          "reviewRequired": false
+        },
+        {
+          "name": "夢海の街",
+          "dist": 4.1,
+          "pathIndex": 84,
+          "reviewRequired": false
+        },
+        {
+          "name": "高洲橋",
+          "dist": 8.5,
+          "pathIndex": 110,
+          "reviewRequired": false
+        },
+        {
+          "name": "高洲中央公園",
+          "dist": 9.3,
+          "pathIndex": 127,
+          "reviewRequired": false
+        },
+        {
+          "name": "潮音の街",
+          "dist": 7,
+          "pathIndex": 138,
+          "reviewRequired": false
+        },
+        {
+          "name": "高洲八丁目",
+          "dist": 9.7,
+          "pathIndex": 159,
+          "reviewRequired": false
+        },
+        {
+          "name": "高洲四丁目",
+          "dist": 8.8,
+          "pathIndex": 170,
+          "reviewRequired": false
+        },
+        {
+          "name": "高洲三丁目",
+          "dist": 6.1,
+          "pathIndex": 178,
+          "reviewRequired": false
+        },
+        {
+          "name": "高洲西児童公園",
+          "dist": 10.3,
+          "pathIndex": 192,
+          "reviewRequired": false
+        },
+        {
+          "name": "順天堂大学入口",
+          "dist": 7.7,
+          "pathIndex": 201,
+          "reviewRequired": false
+        },
+        {
+          "name": "高洲二丁目",
+          "dist": 10.4,
+          "pathIndex": 209,
+          "reviewRequired": false
+        },
+        {
+          "name": "東京学館前",
+          "dist": 7.7,
+          "pathIndex": 216,
+          "reviewRequired": false
+        },
+        {
+          "name": "高洲北小学校",
+          "dist": 5,
+          "pathIndex": 226,
+          "reviewRequired": false
+        }
+      ],
+      "orderIssues": [],
+      "sliceMeta": {
+        "si": 0,
+        "ei": 226,
+        "startDist": 5.9,
+        "endDist": 5,
+        "fullPathPoints": 227
+      },
+      "usedWayCount": 27,
+      "usedWays": [
+        {
+          "wayId": 1342409930,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "startHint": true
+        },
+        {
+          "wayId": 1340739633,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 906161743,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 369356254,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 906161757,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 720406630,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1338996611,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 720406627,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1341529159,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1340739632,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1241264348,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 847288816,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 847288815,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 847288819,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1342406125,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1341518497,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 26380598,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1239911940,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 26380597,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1339040066,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1338975833,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 26359698,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1342409928,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1340739629,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1338975836,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1340739630,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 26350465,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        }
+      ],
+      "access": {
+        "restrictedAccessWayCount": 3,
+        "busPermittedRestrictedWayCount": 3,
+        "documentedExceptionWayCount": 0,
+        "unresolvedRestrictedWayCount": 0,
+        "restrictedWays": [
+          {
+            "id": 1342409930,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          },
+          {
+            "id": 1340739633,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          },
+          {
+            "id": 906161743,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          }
+        ],
+        "documentedExceptionWays": [],
+        "unresolvedWays": []
+      },
+      "busPsv": {
+        "busCounts": {
+          "yes": 3,
+          "(unset)": 24
+        },
+        "psvCounts": {
+          "(unset)": 27
+        },
+        "ways": [
+          {
+            "id": 1342409930,
+            "name": null,
+            "highway": "service",
+            "oneway": "yes",
+            "bus": "yes",
+            "psv": null,
+            "access": "permit",
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1340739633,
+            "name": null,
+            "highway": "service",
+            "oneway": "yes",
+            "bus": "yes",
+            "psv": null,
+            "access": "permit",
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 906161743,
+            "name": null,
+            "highway": "service",
+            "oneway": "yes",
+            "bus": "yes",
+            "psv": null,
+            "access": "permit",
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 369356254,
+            "name": null,
+            "highway": "service",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": "yes",
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 906161757,
+            "name": null,
+            "highway": "service",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 720406630,
+            "name": "シンボルロード",
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1338996611,
+            "name": "シンボルロード",
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 720406627,
+            "name": "シンボルロード",
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1341529159,
+            "name": "シンボルロード",
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1340739632,
+            "name": "シンボルロード",
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1241264348,
+            "name": "シンボルロード",
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 847288816,
+            "name": "シンボルロード",
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 847288815,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 847288819,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1342406125,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1341518497,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 26380598,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1239911940,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 26380597,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1339040066,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1338975833,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 26359698,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1342409928,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1340739629,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": "no",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1338975836,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": "no",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1340739630,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 26350465,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          }
+        ]
+      },
+      "note": "night short-turn 新浦安駅→高洲北小学校（のりばE・符号た／★た＝深夜バス運賃倍額）。潮音の街から先は通し便と分岐する専用relationを持つため、高洲海浜公園行きpathの延長・切詰めではない。同一のりばEに混載される15系統（無印）のpathは流用禁止。"
+    },
+    "18-takasu-seaside-from-shinurayasu": {
+      "stops": 9,
+      "pathPoints": 146,
+      "relationId": null,
+      "compositionRelations": [
+        18417590,
+        18352908
+      ],
+      "composition": {
+        "kind": "verified-berth-departure + verified-join",
+        "prefixRelation": 18417590,
+        "suffixRelation": 18352908,
+        "joinNode": 288796885,
+        "sharedWayCount": 21,
+        "suffixWayStartIndexOnThrough": 26,
+        "departurePlatform": {
+          "nodeId": 8415001161,
+          "berth": "E",
+          "attestedBy": [
+            18417590,
+            18352908
+          ]
+        }
+      },
+      "compositionMeta": {
+        "sharedWayIds": [
+          1342409930,
+          1340739633,
+          906161743,
+          369356254,
+          906161757,
+          720406630,
+          1338996611,
+          720406627,
+          1341529159,
+          1340739632,
+          1241264348,
+          847288816,
+          847288815,
+          847288819,
+          1342406125,
+          1341518497,
+          26380598,
+          1239911940,
+          26380597,
+          1339040066,
+          1338975833
+        ],
+        "composedWayCount": 22,
+        "berthENodeId": 8415001161,
+        "joinNode": 288796885,
+        "equivalentTo": "18352908 from berth-E to 高洲海浜公園"
+      },
+      "pathSource": "composed-verified:18417590[0..20]+18352908[47..]=18352908-from-berth-E",
+      "pathHash": "76a7e2a442236d25ad0e5f622011f02a0b05d032b8565eb6e2bc096fdb9bc5b4",
+      "resolvedVersion": "2026-07-26-akemitakasu18-takasu-seaside-from-shinurayasu-v1",
+      "maxGap_m": 24.9,
+      "maxJoin_m": 0,
+      "maxPlatformDist_m": 12.3,
+      "nanCount": 0,
+      "missingPlatforms": [],
+      "looseMatches": [],
+      "platformDists": [
+        {
+          "name": "新浦安駅",
+          "dist": 5.9,
+          "pathIndex": 0,
+          "reviewRequired": false
+        },
+        {
+          "name": "入船中央エステート",
+          "dist": 7.6,
+          "pathIndex": 23,
+          "reviewRequired": false
+        },
+        {
+          "name": "明海大学前",
+          "dist": 9.1,
+          "pathIndex": 49,
+          "reviewRequired": false
+        },
+        {
+          "name": "海風の街",
+          "dist": 6.7,
+          "pathIndex": 68,
+          "reviewRequired": false
+        },
+        {
+          "name": "夢海の街",
+          "dist": 4.1,
+          "pathIndex": 84,
+          "reviewRequired": false
+        },
+        {
+          "name": "高洲橋",
+          "dist": 8.5,
+          "pathIndex": 110,
+          "reviewRequired": false
+        },
+        {
+          "name": "高洲中央公園",
+          "dist": 9.3,
+          "pathIndex": 127,
+          "reviewRequired": false
+        },
+        {
+          "name": "潮音の街",
+          "dist": 7,
+          "pathIndex": 138,
+          "reviewRequired": false
+        },
+        {
+          "name": "高洲海浜公園",
+          "dist": 12.3,
+          "pathIndex": 145,
+          "reviewRequired": false
+        }
+      ],
+      "orderIssues": [],
+      "sliceMeta": {
+        "si": 0,
+        "ei": 145,
+        "startDist": 5.9,
+        "endDist": 12.3,
+        "fullPathPoints": 146
+      },
+      "usedWayCount": 22,
+      "usedWays": [
+        {
+          "wayId": 1342409930,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "startHint": true
+        },
+        {
+          "wayId": 1340739633,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 906161743,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 369356254,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 906161757,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 720406630,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1338996611,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 720406627,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1341529159,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1340739632,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1241264348,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 847288816,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 847288815,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 847288819,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1342406125,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1341518497,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 26380598,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1239911940,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 26380597,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1339040066,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1338975833,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1342409929,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        }
+      ],
+      "access": {
+        "restrictedAccessWayCount": 3,
+        "busPermittedRestrictedWayCount": 3,
+        "documentedExceptionWayCount": 0,
+        "unresolvedRestrictedWayCount": 0,
+        "restrictedWays": [
+          {
+            "id": 1342409930,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          },
+          {
+            "id": 1340739633,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          },
+          {
+            "id": 906161743,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          }
+        ],
+        "documentedExceptionWays": [],
+        "unresolvedWays": []
+      },
+      "busPsv": {
+        "busCounts": {
+          "yes": 3,
+          "(unset)": 19
+        },
+        "psvCounts": {
+          "(unset)": 22
+        },
+        "ways": [
+          {
+            "id": 1342409930,
+            "name": null,
+            "highway": "service",
+            "oneway": "yes",
+            "bus": "yes",
+            "psv": null,
+            "access": "permit",
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1340739633,
+            "name": null,
+            "highway": "service",
+            "oneway": "yes",
+            "bus": "yes",
+            "psv": null,
+            "access": "permit",
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 906161743,
+            "name": null,
+            "highway": "service",
+            "oneway": "yes",
+            "bus": "yes",
+            "psv": null,
+            "access": "permit",
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 369356254,
+            "name": null,
+            "highway": "service",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": "yes",
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 906161757,
+            "name": null,
+            "highway": "service",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 720406630,
+            "name": "シンボルロード",
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1338996611,
+            "name": "シンボルロード",
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 720406627,
+            "name": "シンボルロード",
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1341529159,
+            "name": "シンボルロード",
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1340739632,
+            "name": "シンボルロード",
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1241264348,
+            "name": "シンボルロード",
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 847288816,
+            "name": "シンボルロード",
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 847288815,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 847288819,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1342406125,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1341518497,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 26380598,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1239911940,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 26380597,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1339040066,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1338975833,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1342409929,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          }
+        ]
+      },
+      "note": "outbound-shortturn 新浦安駅→高洲海浜公園（のりばE・符号ゆ・9停留所）。専用relation無し。のりばE始発は 18417590/18352908 同一 platform 8415001161 で証明済み。18417590 way[0..20] と 18352908 way[26..46] が完全一致したうえで 18352908 の残りへ接合。blind mid-station slice ではない（berth-E 検証済み）。"
+    },
+    "18-shinurayasu-from-takasu": {
+      "stops": 9,
+      "pathPoints": 131,
+      "relationId": null,
+      "compositionRelations": [
+        18352907,
+        18352908
+      ],
+      "composition": {
+        "kind": "verified-join + attested-alighting-berth",
+        "prefixRelation": 18352907,
+        "suffixRelation": 18352908,
+        "joinNode": 288384935,
+        "prefixWayEndIndexInclusive": 12,
+        "suffixWayIds": [
+          720406629,
+          906161755
+        ],
+        "arrivalPlatform": {
+          "nodeId": 8415001163,
+          "lat": 35.649411,
+          "lng": 139.9142448,
+          "berth": "X",
+          "note": "降車専用",
+          "local_ref": "X"
+        }
+      },
+      "compositionMeta": {
+        "prefixWayIds": [
+          1342409929,
+          1338975833,
+          1339040066,
+          26380597,
+          1239911940,
+          26380598,
+          1342406123,
+          26323165,
+          1241264346,
+          1341518494,
+          1340739631,
+          847288812,
+          1338996609
+        ],
+        "suffixWayIds": [
+          720406629,
+          906161755
+        ],
+        "joinNode": 288384935,
+        "arrivalBerth": "X",
+        "arrivalNodeId": 8415001163,
+        "arrivalStopToPath_m": 5.3
+      },
+      "pathSource": "composed-verified:18352907[0..12]+18352908[720406629,906161755]->berth-X",
+      "pathHash": "4c7fb0b0a7861a392217e21184b27eb93b14c27a3df2248da8efdd80a744e520",
+      "resolvedVersion": "2026-07-26-akemitakasu18-shinurayasu-from-takasu-v1",
+      "maxGap_m": 24.9,
+      "maxJoin_m": 0,
+      "maxPlatformDist_m": 11.9,
+      "nanCount": 0,
+      "missingPlatforms": [],
+      "looseMatches": [],
+      "platformDists": [
+        {
+          "name": "高洲海浜公園",
+          "dist": 7.9,
+          "pathIndex": 0,
+          "reviewRequired": false
+        },
+        {
+          "name": "潮音の街",
+          "dist": 10.7,
+          "pathIndex": 7,
+          "reviewRequired": false
+        },
+        {
+          "name": "高洲中央公園",
+          "dist": 11.9,
+          "pathIndex": 24,
+          "reviewRequired": false
+        },
+        {
+          "name": "高洲橋",
+          "dist": 11.2,
+          "pathIndex": 34,
+          "reviewRequired": false
+        },
+        {
+          "name": "夢海の街",
+          "dist": 3.1,
+          "pathIndex": 60,
+          "reviewRequired": false
+        },
+        {
+          "name": "海風の街",
+          "dist": 7.1,
+          "pathIndex": 80,
+          "reviewRequired": false
+        },
+        {
+          "name": "明海大学前",
+          "dist": 7.7,
+          "pathIndex": 91,
+          "reviewRequired": false
+        },
+        {
+          "name": "入船中央エステート",
+          "dist": 11.1,
+          "pathIndex": 113,
+          "reviewRequired": false
+        },
+        {
+          "name": "新浦安駅",
+          "dist": 5.3,
+          "pathIndex": 130,
+          "reviewRequired": false
+        }
+      ],
+      "orderIssues": [],
+      "sliceMeta": {
+        "si": 0,
+        "ei": 130,
+        "startDist": 7.9,
+        "endDist": 5.3,
+        "fullPathPoints": 131
+      },
+      "usedWayCount": 15,
+      "usedWays": [
+        {
+          "wayId": 1342409929,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "startHint": true
+        },
+        {
+          "wayId": 1338975833,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1339040066,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        },
+        {
+          "wayId": 26380597,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1239911940,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        },
+        {
+          "wayId": 26380598,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": true,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1342406123,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 26323165,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1241264346,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1341518494,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1340739631,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 847288812,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 1338996609,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 720406629,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        },
+        {
+          "wayId": 906161755,
+          "role": "",
+          "gapFromPrev_m": 0,
+          "flipped": false,
+          "sharedNode": true
+        }
+      ],
+      "access": {
+        "restrictedAccessWayCount": 1,
+        "busPermittedRestrictedWayCount": 1,
+        "documentedExceptionWayCount": 0,
+        "unresolvedRestrictedWayCount": 0,
+        "restrictedWays": [
+          {
+            "id": 906161755,
+            "name": null,
+            "access": "permit",
+            "bus": "yes",
+            "psv": null,
+            "vehicle": null,
+            "motor_vehicle": null,
+            "highway": "service",
+            "oneway": "yes"
+          }
+        ],
+        "documentedExceptionWays": [],
+        "unresolvedWays": []
+      },
+      "busPsv": {
+        "busCounts": {
+          "(unset)": 14,
+          "yes": 1
+        },
+        "psvCounts": {
+          "(unset)": 15
+        },
+        "ways": [
+          {
+            "id": 1342409929,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1338975833,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1339040066,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 26380597,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1239911940,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 26380598,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": null,
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1342406123,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 26323165,
+            "name": null,
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1241264346,
+            "name": "シンボルロード",
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1341518494,
+            "name": "シンボルロード",
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1340739631,
+            "name": "シンボルロード",
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 847288812,
+            "name": "シンボルロード",
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 1338996609,
+            "name": "シンボルロード",
+            "highway": "tertiary",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": null,
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 720406629,
+            "name": null,
+            "highway": "service",
+            "oneway": "yes",
+            "bus": null,
+            "psv": null,
+            "access": "yes",
+            "vehicle": null,
+            "motor_vehicle": null
+          },
+          {
+            "id": 906161755,
+            "name": null,
+            "highway": "service",
+            "oneway": "yes",
+            "bus": "yes",
+            "psv": null,
+            "access": "permit",
+            "vehicle": null,
+            "motor_vehicle": null
+          }
+        ]
+      },
+      "note": "inbound-shortturn 高洲海浜公園→新浦安駅（のりば03発・降車のりばX・符号ゆ・9停留所）。専用relation無し。前半は 18352907 自身。終点はのりばHではなく降車専用のりばX（node 8415001163）。ロータリー進入は 18352908 の way 720406629/906161755。通し便 18352907 の新浦安駅切り詰めではない（所要時間も通し4分 vs 短縮6分で裏付け）。"
+    }
+  },
+  "blockers": [],
+  "warnings": [],
+  "pathHashDistinct": true,
+  "reverseChecks": [
+    {
+      "a": "18-takasu-seaside",
+      "b": "18-urayasu-eki-iriguchi",
+      "isExactReverse": false
+    },
+    {
+      "a": "18-takasu-kita-shogakko",
+      "b": "18-urayasu-eki-iriguchi",
+      "isExactReverse": false
+    },
+    {
+      "a": "18-takasu-seaside-from-shinurayasu",
+      "b": "18-shinurayasu-from-takasu",
+      "isExactReverse": false
+    }
+  ],
+  "prefixChecks": [
+    {
+      "a": "18-takasu-kita-shogakko",
+      "b": "18-takasu-seaside",
+      "isExactPrefix": false
+    }
+  ],
+  "spliceChecks": [
+    {
+      "a": "18-takasu-kita-shogakko",
+      "b": "18-takasu-seaside",
+      "isContiguousSlice": false,
+      "allowed": false
+    },
+    {
+      "a": "18-takasu-kita-shogakko",
+      "b": "18-urayasu-eki-iriguchi",
+      "isContiguousSlice": false,
+      "allowed": false
+    },
+    {
+      "a": "18-shinurayasu-from-takasu",
+      "b": "18-urayasu-eki-iriguchi",
+      "isContiguousSlice": false,
+      "allowed": false
+    },
+    {
+      "a": "18-takasu-seaside-from-shinurayasu",
+      "b": "18-takasu-seaside",
+      "isContiguousSlice": true,
+      "allowed": true
+    }
+  ]
+}

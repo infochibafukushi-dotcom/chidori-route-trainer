@@ -1,0 +1,2049 @@
+{
+  "checkedAt": "2026-07-26T13:47:25.592Z",
+  "routeNumber": "18",
+  "siblingRouteNumbers": [
+    "15",
+    "19",
+    "10",
+    "25",
+    "11",
+    "23",
+    "3",
+    "16",
+    "5",
+    "14",
+    "22",
+    "24",
+    "38"
+  ],
+  "policy": "(A) 掲載時刻表の凡例 と (B) 出発のりばの時刻表の凡例 の二段で系統を判定する。新浦安駅のりばEは [15] と [18] を同一セル・完全同一文言（「高洲海浜公園(潮音の街・高洲四丁目経由)高洲北小学校行」）で混載し、のりばHは [11]/[18]/[23]/[3]、高洲海浜公園・高洲北小学校のりばは [10]/[15]/[19] を混載するため、(B) 出発のりばの凡例（符号→【Ｎ系統】）を決定打とする。",
+  "acceptedCount": 5,
+  "implementedCount": 5,
+  "deferredCount": 0,
+  "rejectedCount": 24,
+  "accepted": [
+    {
+      "systemKey": "18-takasu-seaside",
+      "verdict": "ACCEPT-route18",
+      "routeNumber": "18",
+      "course": "0008200286",
+      "allCourses": [
+        "0008200286"
+      ],
+      "fareVariants": [
+        {
+          "course": "0008200286",
+          "symbols": [
+            "ゆ"
+          ],
+          "legendLines": [
+            "ゆ…【１８系統】夢海の街、高洲橋、潮音の街経由　高洲海浜公園行き",
+            "ゆ…【１８系統】新浦安駅・高洲橋経由　高洲海浜公園行き"
+          ],
+          "departureHoursObserved": [
+            "06",
+            "08",
+            "08",
+            "08",
+            "08",
+            "09",
+            "09",
+            "09",
+            "10",
+            "10",
+            "10",
+            "12",
+            "12",
+            "13",
+            "13",
+            "13",
+            "14",
+            "15",
+            "15",
+            "16",
+            "16",
+            "16",
+            "17",
+            "17"
+          ],
+          "isDeepNightDoubleFare": false
+        }
+      ],
+      "courseSequence": "0008200286",
+      "courseText": "15 [15]高洲海浜公園(潮音の街・高洲四丁目経由)高洲北小学校行 18 [18]高洲海浜公園(潮音の街・高洲四丁目経由)高洲北小学校行 [深夜]高洲海浜公園(潮音の街・高洲四丁目経由)高洲北小学校行 時刻表",
+      "departureBerth": "11 [11]（新浦安駅・明海五丁目経由）総合公園（新浦安駅・ベイパーク経由）総",
+      "departureBerthLegendLine": "ゆ…【１８系統】新浦安駅・高洲橋経由　高洲海浜公園行き",
+      "departureBerthRouteNumber": "18",
+      "listingLegendLines": [
+        "ゆ…【１８系統】夢海の街、高洲橋、潮音の街経由　高洲海浜公園行き"
+      ],
+      "listingLegendRouteNumbers": [
+        "18"
+      ],
+      "tripPageRouteNumbers": [],
+      "timetableSymbols": [
+        "ゆ"
+      ],
+      "tripsObserved": 144,
+      "dayLabels": [
+        "weekday"
+      ],
+      "stopCount": 15,
+      "stopNames": [
+        "浦安駅入口",
+        "神明裏",
+        "猫実",
+        "消防本部前",
+        "海楽",
+        "美浜東団地",
+        "新浦安駅",
+        "入船中央エステート",
+        "明海大学前",
+        "海風の街",
+        "夢海の街",
+        "高洲橋",
+        "高洲中央公園",
+        "潮音の街",
+        "高洲海浜公園"
+      ],
+      "stopIds": [
+        "00020739",
+        "00020623",
+        "00020666",
+        "00020877",
+        "00020845",
+        "00020670",
+        "00020619",
+        "00020663",
+        "00020713",
+        "00020848",
+        "00020709",
+        "00020857",
+        "00020862",
+        "00020634",
+        "00020855"
+      ],
+      "platformIds": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "idComplete": false,
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80ec0000/stops?departure-busstop=00020619-7&course=0008200286&datetime=2026-07-27T06:52:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80ec0002/stops?departure-busstop=00020619-7&course=0008200286&datetime=2026-07-27T08:52:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80ec000b/stops?departure-busstop=00020619-7&course=0008200286&datetime=2026-08-01T08:03:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80ec000f/stops?departure-busstop=00020619-7&course=0008200286&datetime=2026-08-01T08:58:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80ec0011/stops?departure-busstop=00020619-7&course=0008200286&datetime=2026-07-26T08:15:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80ec0005/stops?departure-busstop=00020619-7&course=0008200286&datetime=2026-07-27T09:31:00%2B09:00"
+      ],
+      "route18CharacteristicStopsPresent": [
+        "夢海の街",
+        "高洲橋",
+        "海風の街",
+        "明海大学前"
+      ],
+      "siblingExclusiveStopsPresent": {}
+    },
+    {
+      "systemKey": "18-takasu-seaside-from-shinurayasu",
+      "verdict": "ACCEPT-route18",
+      "routeNumber": "18",
+      "course": "0008200288",
+      "allCourses": [
+        "0008200288"
+      ],
+      "fareVariants": [
+        {
+          "course": "0008200288",
+          "symbols": [
+            "ゆ"
+          ],
+          "legendLines": [
+            "ゆ…【１８系統】夢海の街、高洲橋、潮音の街経由　高洲海浜公園行き"
+          ],
+          "departureHoursObserved": [
+            "08",
+            "09",
+            "18",
+            "19",
+            "19",
+            "20",
+            "20",
+            "20",
+            "20",
+            "20",
+            "20",
+            "20",
+            "20",
+            "20",
+            "21",
+            "21",
+            "21",
+            "21",
+            "21",
+            "21",
+            "21",
+            "21",
+            "21",
+            "22",
+            "22",
+            "22"
+          ],
+          "isDeepNightDoubleFare": false
+        }
+      ],
+      "courseSequence": "0008200288",
+      "courseText": "15 [15]高洲海浜公園(潮音の街・高洲四丁目経由)高洲北小学校行 18 [18]高洲海浜公園(潮音の街・高洲四丁目経由)高洲北小学校行 [深夜]高洲海浜公園(潮音の街・高洲四丁目経由)高洲北小学校行 時刻表",
+      "departureBerth": "E",
+      "departureBerthLegendLine": "ゆ…【１８系統】夢海の街、高洲橋、潮音の街経由　高洲海浜公園行き",
+      "departureBerthRouteNumber": "18",
+      "listingLegendLines": [
+        "ゆ…【１８系統】夢海の街、高洲橋、潮音の街経由　高洲海浜公園行き"
+      ],
+      "listingLegendRouteNumbers": [
+        "18"
+      ],
+      "tripPageRouteNumbers": [],
+      "timetableSymbols": [
+        "ゆ"
+      ],
+      "tripsObserved": 130,
+      "dayLabels": [
+        "weekday"
+      ],
+      "stopCount": 9,
+      "stopNames": [
+        "新浦安駅",
+        "入船中央エステート",
+        "明海大学前",
+        "海風の街",
+        "夢海の街",
+        "高洲橋",
+        "高洲中央公園",
+        "潮音の街",
+        "高洲海浜公園"
+      ],
+      "stopIds": [
+        "00020619",
+        "00020663",
+        "00020713",
+        "00020848",
+        "00020709",
+        "00020857",
+        "00020862",
+        "00020634",
+        "00020855"
+      ],
+      "platformIds": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "idComplete": true,
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80ee0013/stops?departure-busstop=00020619-1&course=0008200288&datetime=2026-08-01T08:42:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80ee0015/stops?departure-busstop=00020619-1&course=0008200288&datetime=2026-08-01T09:41:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80ee0005/stops?departure-busstop=00020619-1&course=0008200288&datetime=2026-07-27T18:29:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80ee000e/stops?departure-busstop=00020619-1&course=0008200288&datetime=2026-08-01T19:19:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80ee000f/stops?departure-busstop=00020619-1&course=0008200288&datetime=2026-08-01T19:57:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80ee0006/stops?departure-busstop=00020619-1&course=0008200288&datetime=2026-07-27T20:16:00%2B09:00"
+      ],
+      "route18CharacteristicStopsPresent": [
+        "夢海の街",
+        "高洲橋",
+        "海風の街",
+        "明海大学前"
+      ],
+      "siblingExclusiveStopsPresent": {}
+    },
+    {
+      "systemKey": "18-takasu-kita-shogakko",
+      "verdict": "ACCEPT-route18",
+      "routeNumber": "18",
+      "course": "0008200289",
+      "allCourses": [
+        "0008200289",
+        "0008200290"
+      ],
+      "fareVariants": [
+        {
+          "course": "0008200289",
+          "symbols": [
+            "た"
+          ],
+          "legendLines": [
+            "た…【１８系統】夢海の街・潮音の街・高洲四丁目経由　高洲北小学校行き＜★；深夜バス 運賃倍額＞"
+          ],
+          "departureHoursObserved": [
+            "19",
+            "19",
+            "19",
+            "20",
+            "20",
+            "20",
+            "20",
+            "20",
+            "21",
+            "21",
+            "21",
+            "21",
+            "21",
+            "21",
+            "21",
+            "22",
+            "22",
+            "22",
+            "22",
+            "22",
+            "22",
+            "22",
+            "22",
+            "22",
+            "22",
+            "22",
+            "23"
+          ],
+          "isDeepNightDoubleFare": false
+        },
+        {
+          "course": "0008200290",
+          "symbols": [
+            "★た"
+          ],
+          "legendLines": [
+            "★た…【１８系統】夢海の街・潮音の街・高洲四丁目経由　高洲北小学校行き＜★；深夜バス 運賃倍額＞"
+          ],
+          "departureHoursObserved": [
+            "23",
+            "00"
+          ],
+          "isDeepNightDoubleFare": true
+        }
+      ],
+      "courseSequence": "0008200289",
+      "courseText": "15 [15]高洲海浜公園(潮音の街・高洲四丁目経由)高洲北小学校行 18 [18]高洲海浜公園(潮音の街・高洲四丁目経由)高洲北小学校行 [深夜]高洲海浜公園(潮音の街・高洲四丁目経由)高洲北小学校行 時刻表",
+      "departureBerth": "E",
+      "departureBerthLegendLine": "た…【１８系統】夢海の街・潮音の街・高洲四丁目経由　高洲北小学校行き＜★；深夜バス 運賃倍額＞",
+      "departureBerthRouteNumber": "18",
+      "listingLegendLines": [
+        "た…【１８系統】夢海の街・潮音の街・高洲四丁目経由　高洲北小学校行き＜★；深夜バス 運賃倍額＞"
+      ],
+      "listingLegendRouteNumbers": [
+        "18"
+      ],
+      "tripPageRouteNumbers": [],
+      "timetableSymbols": [
+        "た"
+      ],
+      "tripsObserved": 145,
+      "dayLabels": [
+        "weekday"
+      ],
+      "stopCount": 16,
+      "stopNames": [
+        "新浦安駅",
+        "入船中央エステート",
+        "明海大学前",
+        "海風の街",
+        "夢海の街",
+        "高洲橋",
+        "高洲中央公園",
+        "潮音の街",
+        "高洲八丁目",
+        "高洲四丁目",
+        "高洲三丁目",
+        "高洲西児童公園",
+        "順天堂大学入口",
+        "高洲二丁目",
+        "東京学館前",
+        "高洲北小学校"
+      ],
+      "stopIds": [
+        "00020619",
+        "00020663",
+        "00020713",
+        "00020848",
+        "00020709",
+        "00020857",
+        "00020862",
+        "00020634",
+        "00020864",
+        "00020859",
+        "00020858",
+        "00020861",
+        "00020865",
+        "00020863",
+        "00020641",
+        "00020720"
+      ],
+      "platformIds": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "idComplete": true,
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80ef0000/stops?departure-busstop=00020619-1&course=0008200289&datetime=2026-07-27T19:44:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80ef0004/stops?departure-busstop=00020619-1&course=0008200289&datetime=2026-07-27T19:56:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80ef0015/stops?departure-busstop=00020619-1&course=0008200289&datetime=2026-07-26T19:46:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80ef0001/stops?departure-busstop=00020619-1&course=0008200289&datetime=2026-07-27T20:51:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80ef0008/stops?departure-busstop=00020619-1&course=0008200289&datetime=2026-08-01T20:20:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80ef0007/stops?departure-busstop=00020619-1&course=0008200289&datetime=2026-08-01T20:41:00%2B09:00"
+      ],
+      "route18CharacteristicStopsPresent": [
+        "夢海の街",
+        "高洲橋",
+        "海風の街",
+        "明海大学前"
+      ],
+      "siblingExclusiveStopsPresent": {}
+    },
+    {
+      "systemKey": "18-urayasu-eki-iriguchi",
+      "verdict": "ACCEPT-route18",
+      "routeNumber": "18",
+      "course": "0008200285",
+      "allCourses": [
+        "0008200285"
+      ],
+      "fareVariants": [
+        {
+          "course": "0008200285",
+          "symbols": [
+            "う"
+          ],
+          "legendLines": [
+            "う…【１８系統】夢海の街、新浦安駅経由　浦安駅入口行き"
+          ],
+          "departureHoursObserved": [
+            "06",
+            "07",
+            "07",
+            "07",
+            "07",
+            "08",
+            "08",
+            "08",
+            "09",
+            "09",
+            "09",
+            "10",
+            "11",
+            "11",
+            "12",
+            "12",
+            "13",
+            "13",
+            "14",
+            "14",
+            "15",
+            "15",
+            "16",
+            "16",
+            "16"
+          ],
+          "isDeepNightDoubleFare": false
+        }
+      ],
+      "courseSequence": "0008200285",
+      "courseText": "11 [11]（消防本部前経由）浦安駅入口（順天堂病院前・見明川住宅経由）舞浜駅行 18 [18]（消防本部前経由）浦安駅入口（順天堂病院前・見明川住宅経由）舞浜駅行 3 [23]（消防本部前経由）浦安駅入口（順天堂病院前・見明川住宅経由）舞浜駅行 [3]（消防本部前経由）浦安駅入口（順天堂病院前・見明川住宅経由）舞浜駅行 時刻表",
+      "departureBerth": "03",
+      "departureBerthLegendLine": "う…【１８系統】夢海の街、新浦安駅経由　浦安駅入口行き",
+      "departureBerthRouteNumber": "18",
+      "listingLegendLines": [],
+      "listingLegendRouteNumbers": [],
+      "tripPageRouteNumbers": [],
+      "timetableSymbols": [
+        "(無印)"
+      ],
+      "tripsObserved": 150,
+      "dayLabels": [
+        "weekday"
+      ],
+      "stopCount": 15,
+      "stopNames": [
+        "高洲海浜公園",
+        "潮音の街",
+        "高洲中央公園",
+        "高洲橋",
+        "夢海の街",
+        "海風の街",
+        "明海大学前",
+        "入船中央エステート",
+        "新浦安駅",
+        "美浜東団地",
+        "海楽",
+        "消防本部前",
+        "猫実",
+        "神明裏",
+        "浦安駅入口"
+      ],
+      "stopIds": [
+        "00020855",
+        "00020634",
+        "00020862",
+        "00020857",
+        "00020709",
+        "00020848",
+        "00020713",
+        "00020663",
+        "00020619",
+        "00020670",
+        "00020845",
+        "00020877",
+        "00020666",
+        "00020623",
+        "00020739"
+      ],
+      "platformIds": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "idComplete": false,
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80eb0000/stops?departure-busstop=00020619-9&course=0008200285&datetime=2026-07-27T06:16:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80eb0005/stops?departure-busstop=00020619-9&course=0008200285&datetime=2026-07-27T07:29:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80eb000c/stops?departure-busstop=00020619-9&course=0008200285&datetime=2026-08-01T07:29:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80eb0012/stops?departure-busstop=00020619-9&course=0008200285&datetime=2026-07-26T07:42:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80eb0002/stops?departure-busstop=00020619-9&course=0008200285&datetime=2026-07-27T08:08:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80eb0006/stops?departure-busstop=00020619-9&course=0008200285&datetime=2026-07-27T08:51:00%2B09:00"
+      ],
+      "route18CharacteristicStopsPresent": [
+        "夢海の街",
+        "高洲橋",
+        "海風の街",
+        "明海大学前"
+      ],
+      "siblingExclusiveStopsPresent": {}
+    },
+    {
+      "systemKey": "18-shinurayasu-from-takasu",
+      "verdict": "ACCEPT-route18",
+      "routeNumber": "18",
+      "course": "0008200287",
+      "allCourses": [
+        "0008200287"
+      ],
+      "fareVariants": [
+        {
+          "course": "0008200287",
+          "symbols": [
+            "ゆ"
+          ],
+          "legendLines": [
+            "ゆ…【１８系統】夢海の街経由　新浦安駅行き"
+          ],
+          "departureHoursObserved": [
+            "08",
+            "09",
+            "12",
+            "13",
+            "18",
+            "19",
+            "19",
+            "19",
+            "19",
+            "19",
+            "19",
+            "20",
+            "20",
+            "20",
+            "20",
+            "20",
+            "20",
+            "20",
+            "20",
+            "21",
+            "21",
+            "21",
+            "21",
+            "21",
+            "21",
+            "21",
+            "22",
+            "22",
+            "22"
+          ],
+          "isDeepNightDoubleFare": false
+        }
+      ],
+      "courseSequence": "0008200287",
+      "courseText": "15 [15]（東京学館前経由）新浦安駅（夢海の街経由）新浦安駅・浦安駅入口行 18 [18]（東京学館前経由）新浦安駅（夢海の街経由）新浦安駅・浦安駅入口行 時刻表",
+      "departureBerth": "03",
+      "departureBerthLegendLine": "ゆ…【１８系統】夢海の街経由　新浦安駅行き",
+      "departureBerthRouteNumber": "18",
+      "listingLegendLines": [
+        "ゆ…【１８系統】夢海の街経由　新浦安駅行き"
+      ],
+      "listingLegendRouteNumbers": [
+        "18"
+      ],
+      "tripPageRouteNumbers": [],
+      "timetableSymbols": [
+        "ゆ"
+      ],
+      "tripsObserved": 145,
+      "dayLabels": [
+        "weekday"
+      ],
+      "stopCount": 9,
+      "stopNames": [
+        "高洲海浜公園",
+        "潮音の街",
+        "高洲中央公園",
+        "高洲橋",
+        "夢海の街",
+        "海風の街",
+        "明海大学前",
+        "入船中央エステート",
+        "新浦安駅"
+      ],
+      "stopIds": [
+        "00020855",
+        "00020634",
+        "00020862",
+        "00020857",
+        "00020709",
+        "00020848",
+        "00020713",
+        "00020663",
+        "00020619"
+      ],
+      "platformIds": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "idComplete": true,
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80ed0015/stops?departure-busstop=00020855-1&course=0008200287&datetime=2026-08-01T08:26:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80ed0017/stops?departure-busstop=00020855-1&course=0008200287&datetime=2026-08-01T09:25:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80ed000c/stops?departure-busstop=00020855-1&course=0008200287&datetime=2026-08-01T12:47:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80ed0005/stops?departure-busstop=00020855-1&course=0008200287&datetime=2026-07-27T13:10:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80ed0006/stops?departure-busstop=00020855-1&course=0008200287&datetime=2026-07-27T18:12:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80ed0000/stops?departure-busstop=00020855-1&course=0008200287&datetime=2026-07-27T19:27:00%2B09:00"
+      ],
+      "route18CharacteristicStopsPresent": [
+        "夢海の街",
+        "高洲橋",
+        "海風の街",
+        "明海大学前"
+      ],
+      "siblingExclusiveStopsPresent": {}
+    }
+  ],
+  "deferredNoOsmSource": [],
+  "rejected": [
+    {
+      "verdict": "REJECT-route-15",
+      "resolvedRouteNumber": "15",
+      "reason": "出発のりばの凡例が【15系統】に解決したため route-18 から除外",
+      "departureBerth": "E",
+      "departureBerthLegendLine": "無印…【１５系統】東京学館前経由　高洲海浜公園行き",
+      "listingLegendLines": [
+        "無印…【１５系統】東京学館前経由　高洲海浜公園行き"
+      ],
+      "course": "0008200278",
+      "courseText": "15 [15]高洲海浜公園(潮音の街・高洲四丁目経由)高洲北小学校行 18 [18]高洲海浜公園(潮音の街・高洲四丁目経由)高洲北小学校行 [深夜]高洲海浜公園(潮音の街・高洲四丁目経由)高洲北小学校行 時刻表",
+      "tripsObserved": 346,
+      "stopCount": 10,
+      "stopNames": [
+        "新浦安駅",
+        "入船中央エステート",
+        "明海交差点",
+        "入船橋",
+        "高洲北小学校",
+        "東京学館前",
+        "高洲",
+        "高洲中央公園",
+        "潮音の街",
+        "高洲海浜公園"
+      ],
+      "siblingExclusiveStopsPresent": {
+        "15": [
+          "明海交差点",
+          "入船橋"
+        ]
+      },
+      "route18CharacteristicStopsPresent": [],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e40006/stops?departure-busstop=00020619-1&course=0008200278&datetime=2026-07-27T06:31:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e40041/stops?departure-busstop=00020619-1&course=0008200278&datetime=2026-08-01T06:33:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e4004d/stops?departure-busstop=00020619-1&course=0008200278&datetime=2026-08-01T06:50:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e40079/stops?departure-busstop=00020619-1&course=0008200278&datetime=2026-07-26T06:35:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e40085/stops?departure-busstop=00020619-1&course=0008200278&datetime=2026-07-26T06:57:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e40023/stops?departure-busstop=00020619-1&course=0008200278&datetime=2026-07-27T07:04:00%2B09:00"
+      ]
+    },
+    {
+      "verdict": "REJECT-route-3",
+      "resolvedRouteNumber": "3",
+      "reason": "出発のりばの凡例が【3系統】に解決したため route-18 から除外",
+      "departureBerth": "01",
+      "departureBerthLegendLine": "う…【３系統】新浦安駅経由　浦安駅入口行き",
+      "listingLegendLines": [],
+      "course": "0008200210",
+      "courseText": "11 [11]（消防本部前経由）浦安駅入口（順天堂病院前・見明川住宅経由）舞浜駅行 18 [18]（消防本部前経由）浦安駅入口（順天堂病院前・見明川住宅経由）舞浜駅行 3 [23]（消防本部前経由）浦安駅入口（順天堂病院前・見明川住宅経由）舞浜駅行 [3]（消防本部前経由）浦安駅入口（順天堂病院前・見明川住宅経由）舞浜駅行 時刻表",
+      "tripsObserved": 111,
+      "stopCount": 19,
+      "stopNames": [
+        "総合公園",
+        "ベイサイドホテルエリア",
+        "明海五丁目",
+        "ハイアットリージェンシー",
+        "三井ガーデンホテル",
+        "明海南小学校",
+        "明海六丁目",
+        "望海の街",
+        "夢海の街",
+        "海風の街",
+        "明海大学前",
+        "入船中央エステート",
+        "新浦安駅",
+        "美浜東団地",
+        "海楽",
+        "消防本部前",
+        "猫実",
+        "神明裏",
+        "浦安駅入口"
+      ],
+      "siblingExclusiveStopsPresent": {
+        "3/23": [
+          "総合公園",
+          "ベイサイドホテルエリア"
+        ]
+      },
+      "route18CharacteristicStopsPresent": [
+        "夢海の街",
+        "海風の街",
+        "明海大学前"
+      ],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81060004/stops?departure-busstop=00020619-13&course=0008200210&datetime=2026-07-27T06:33:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8106000e/stops?departure-busstop=00020619-13&course=0008200210&datetime=2026-08-01T06:42:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8106001d/stops?departure-busstop=00020619-13&course=0008200210&datetime=2026-07-26T06:46:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8106000a/stops?departure-busstop=00020619-13&course=0008200210&datetime=2026-07-27T07:17:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81060002/stops?departure-busstop=00020619-13&course=0008200210&datetime=2026-07-27T07:59:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8106000f/stops?departure-busstop=00020619-13&course=0008200210&datetime=2026-08-01T07:55:00%2B09:00"
+      ]
+    },
+    {
+      "verdict": "REJECT-route-11",
+      "resolvedRouteNumber": "11",
+      "reason": "出発のりばの凡例が【11系統】に解決したため route-18 から除外",
+      "departureBerth": "04",
+      "departureBerthLegendLine": "う…【１１系統】日の出公民館、新浦安駅経由　浦安駅入口行き",
+      "listingLegendLines": [],
+      "course": "0008200260",
+      "courseText": "11 [11]（消防本部前経由）浦安駅入口（順天堂病院前・見明川住宅経由）舞浜駅行 18 [18]（消防本部前経由）浦安駅入口（順天堂病院前・見明川住宅経由）舞浜駅行 3 [23]（消防本部前経由）浦安駅入口（順天堂病院前・見明川住宅経由）舞浜駅行 [3]（消防本部前経由）浦安駅入口（順天堂病院前・見明川住宅経由）舞浜駅行 時刻表",
+      "tripsObserved": 40,
+      "stopCount": 16,
+      "stopNames": [
+        "総合公園",
+        "ベイサイドホテルエリア",
+        "ベイパーク",
+        "ベイモール",
+        "シンボルロードパークシティ",
+        "日の出公民館",
+        "海風の街",
+        "明海大学前",
+        "入船中央エステート",
+        "新浦安駅",
+        "美浜東団地",
+        "海楽",
+        "消防本部前",
+        "猫実",
+        "神明裏",
+        "浦安駅入口"
+      ],
+      "siblingExclusiveStopsPresent": {
+        "3/23": [
+          "ベイパーク",
+          "ベイモール",
+          "シンボルロードパークシティ",
+          "日の出公民館",
+          "総合公園",
+          "ベイサイドホテルエリア"
+        ]
+      },
+      "route18CharacteristicStopsPresent": [
+        "海風の街",
+        "明海大学前"
+      ],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d10000/stops?departure-busstop=00020619-10&course=0008200260&datetime=2026-07-27T06:53:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d10001/stops?departure-busstop=00020619-10&course=0008200260&datetime=2026-07-27T07:47:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d10010/stops?departure-busstop=00020619-10&course=0008200260&datetime=2026-07-26T07:27:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d10006/stops?departure-busstop=00020619-10&course=0008200260&datetime=2026-07-27T08:22:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d10009/stops?departure-busstop=00020619-10&course=0008200260&datetime=2026-08-01T08:14:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d10011/stops?departure-busstop=00020619-10&course=0008200260&datetime=2026-07-26T08:31:00%2B09:00"
+      ]
+    },
+    {
+      "verdict": "REJECT-route-11",
+      "resolvedRouteNumber": "11",
+      "reason": "出発のりばの凡例が【11系統】に解決したため route-18 から除外",
+      "departureBerth": "02",
+      "departureBerthLegendLine": "う…【１１系統】日の出公民館、新浦安駅経由　浦安駅入口行き",
+      "listingLegendLines": [],
+      "course": "0008200267",
+      "courseText": "11 [11]（消防本部前経由）浦安駅入口（順天堂病院前・見明川住宅経由）舞浜駅行 18 [18]（消防本部前経由）浦安駅入口（順天堂病院前・見明川住宅経由）舞浜駅行 3 [23]（消防本部前経由）浦安駅入口（順天堂病院前・見明川住宅経由）舞浜駅行 [3]（消防本部前経由）浦安駅入口（順天堂病院前・見明川住宅経由）舞浜駅行 時刻表",
+      "tripsObserved": 6,
+      "stopCount": 14,
+      "stopNames": [
+        "ベイパーク",
+        "ベイモール",
+        "シンボルロードパークシティ",
+        "日の出公民館",
+        "海風の街",
+        "明海大学前",
+        "入船中央エステート",
+        "新浦安駅",
+        "美浜東団地",
+        "海楽",
+        "消防本部前",
+        "猫実",
+        "神明裏",
+        "浦安駅入口"
+      ],
+      "siblingExclusiveStopsPresent": {
+        "3/23": [
+          "ベイパーク",
+          "ベイモール",
+          "シンボルロードパークシティ",
+          "日の出公民館"
+        ]
+      },
+      "route18CharacteristicStopsPresent": [
+        "海風の街",
+        "明海大学前"
+      ],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d80002/stops?departure-busstop=00020619-8&course=0008200267&datetime=2026-08-01T07:09:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d80001/stops?departure-busstop=00020619-8&course=0008200267&datetime=2026-07-27T11:07:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d80000/stops?departure-busstop=00020619-8&course=0008200267&datetime=2026-07-27T13:06:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d80002/stops?departure-busstop=00020713-6&course=0008200267&datetime=2026-08-01T07:06:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d80001/stops?departure-busstop=00020713-6&course=0008200267&datetime=2026-07-27T11:03:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d80000/stops?departure-busstop=00020713-6&course=0008200267&datetime=2026-07-27T13:02:00%2B09:00"
+      ]
+    },
+    {
+      "verdict": "REJECT-route-3",
+      "resolvedRouteNumber": "3",
+      "reason": "出発のりばの凡例が【3系統】に解決したため route-18 から除外",
+      "departureBerth": "02",
+      "departureBerthLegendLine": "う…【３系統】新浦安駅経由　浦安駅入口行き",
+      "listingLegendLines": [],
+      "course": "0008200217",
+      "courseText": "11 [11]（消防本部前経由）浦安駅入口（順天堂病院前・見明川住宅経由）舞浜駅行 18 [18]（消防本部前経由）浦安駅入口（順天堂病院前・見明川住宅経由）舞浜駅行 3 [23]（消防本部前経由）浦安駅入口（順天堂病院前・見明川住宅経由）舞浜駅行 [3]（消防本部前経由）浦安駅入口（順天堂病院前・見明川住宅経由）舞浜駅行 時刻表",
+      "tripsObserved": 6,
+      "stopCount": 17,
+      "stopNames": [
+        "明海五丁目",
+        "ハイアットリージェンシー",
+        "三井ガーデンホテル",
+        "明海南小学校",
+        "明海六丁目",
+        "望海の街",
+        "夢海の街",
+        "海風の街",
+        "明海大学前",
+        "入船中央エステート",
+        "新浦安駅",
+        "美浜東団地",
+        "海楽",
+        "消防本部前",
+        "猫実",
+        "神明裏",
+        "浦安駅入口"
+      ],
+      "siblingExclusiveStopsPresent": {},
+      "route18CharacteristicStopsPresent": [
+        "夢海の街",
+        "海風の街",
+        "明海大学前"
+      ],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/810d0000/stops?departure-busstop=00020619-11&course=0008200217&datetime=2026-08-01T08:55:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/810d0001/stops?departure-busstop=00020619-11&course=0008200217&datetime=2026-07-26T09:56:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/810d0000/stops?departure-busstop=00020709-7&course=0008200217&datetime=2026-08-01T08:49:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/810d0001/stops?departure-busstop=00020709-7&course=0008200217&datetime=2026-07-26T09:50:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/810d0000/stops?departure-busstop=00020713-9&course=0008200217&datetime=2026-08-01T08:51:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/810d0001/stops?departure-busstop=00020713-9&course=0008200217&datetime=2026-07-26T09:52:00%2B09:00"
+      ]
+    },
+    {
+      "verdict": "REJECT-route-23",
+      "resolvedRouteNumber": "23",
+      "reason": "出発のりばの凡例が【23系統】に解決したため route-18 から除外",
+      "departureBerth": "01",
+      "departureBerthLegendLine": "ま…【２３系統】望海の街、新浦安駅、順天堂病院前経由　舞浜駅行き",
+      "listingLegendLines": [
+        "ま…【２３系統】順天堂病院前経由　舞浜駅行き（浦安駅入口には行きません）"
+      ],
+      "course": "0008200302",
+      "courseText": "11 [11]（消防本部前経由）浦安駅入口（順天堂病院前・見明川住宅経由）舞浜駅行 18 [18]（消防本部前経由）浦安駅入口（順天堂病院前・見明川住宅経由）舞浜駅行 3 [23]（消防本部前経由）浦安駅入口（順天堂病院前・見明川住宅経由）舞浜駅行 [3]（消防本部前経由）浦安駅入口（順天堂病院前・見明川住宅経由）舞浜駅行 時刻表",
+      "tripsObserved": 3,
+      "stopCount": 25,
+      "stopNames": [
+        "総合公園",
+        "ベイサイドホテルエリア",
+        "明海五丁目",
+        "ハイアットリージェンシー",
+        "三井ガーデンホテル",
+        "明海南小学校",
+        "明海六丁目",
+        "望海の街",
+        "夢海の街",
+        "海風の街",
+        "明海大学前",
+        "入船中央エステート",
+        "新浦安駅",
+        "新浦安駅北口",
+        "若潮公園",
+        "順天堂病院前",
+        "サンコーポ東口",
+        "サンコーポ西口",
+        "弁天第二",
+        "見明川中学校前",
+        "見明川住宅",
+        "舞浜三丁目",
+        "運動公園",
+        "オリエンタルランド本社前",
+        "舞浜駅"
+      ],
+      "siblingExclusiveStopsPresent": {
+        "25": [
+          "サンコーポ東口",
+          "サンコーポ西口",
+          "若潮公園",
+          "新浦安駅北口"
+        ],
+        "3/23": [
+          "総合公園",
+          "ベイサイドホテルエリア"
+        ]
+      },
+      "route18CharacteristicStopsPresent": [
+        "夢海の街",
+        "海風の街",
+        "明海大学前"
+      ],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81110000/stops?departure-busstop=00020619-13&course=0008200302&datetime=2026-07-26T10:27:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81110000/stops?departure-busstop=00020709-9&course=0008200302&datetime=2026-07-26T10:21:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81110000/stops?departure-busstop=00020713-11&course=0008200302&datetime=2026-07-26T10:23:00%2B09:00"
+      ]
+    },
+    {
+      "verdict": "UNDECIDED-no-legend-match",
+      "resolvedRouteNumber": null,
+      "reason": "出発のりばの凡例に符号が無く【１８系統】と確定できないため route-18 から除外",
+      "departureBerth": "H",
+      "departureBerthLegendLine": null,
+      "listingLegendLines": [],
+      "course": "0008200269",
+      "courseText": "11 [11]（消防本部前経由）浦安駅入口（順天堂病院前・見明川住宅経由）舞浜駅行 18 [18]（消防本部前経由）浦安駅入口（順天堂病院前・見明川住宅経由）舞浜駅行 3 [23]（消防本部前経由）浦安駅入口（順天堂病院前・見明川住宅経由）舞浜駅行 [3]（消防本部前経由）浦安駅入口（順天堂病院前・見明川住宅経由）舞浜駅行 時刻表",
+      "tripsObserved": 4,
+      "stopCount": 7,
+      "stopNames": [
+        "新浦安駅",
+        "美浜東団地",
+        "海楽",
+        "消防本部前",
+        "猫実",
+        "神明裏",
+        "浦安駅入口"
+      ],
+      "siblingExclusiveStopsPresent": {},
+      "route18CharacteristicStopsPresent": [],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80da0002/stops?departure-busstop=00020619-1&course=0008200269&datetime=2026-07-27T11:35:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80da0003/stops?departure-busstop=00020619-1&course=0008200269&datetime=2026-07-27T12:22:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80da0000/stops?departure-busstop=00020619-1&course=0008200269&datetime=2026-07-27T20:10:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80da0001/stops?departure-busstop=00020619-1&course=0008200269&datetime=2026-07-27T20:56:00%2B09:00"
+      ]
+    },
+    {
+      "verdict": "REJECT-route-11",
+      "resolvedRouteNumber": "11",
+      "reason": "出発のりばの凡例が【11系統】に解決したため route-18 から除外",
+      "departureBerth": "01",
+      "departureBerthLegendLine": "う…【１１系統】日の出公民館、新浦安駅経由　浦安駅入口行き",
+      "listingLegendLines": [],
+      "course": "0008200256",
+      "courseText": "11 [11]（消防本部前経由）浦安駅入口（順天堂病院前・見明川住宅経由）舞浜駅行 18 [18]（消防本部前経由）浦安駅入口（順天堂病院前・見明川住宅経由）舞浜駅行 3 [23]（消防本部前経由）浦安駅入口（順天堂病院前・見明川住宅経由）舞浜駅行 [3]（消防本部前経由）浦安駅入口（順天堂病院前・見明川住宅経由）舞浜駅行 時刻表",
+      "tripsObserved": 10,
+      "stopCount": 18,
+      "stopNames": [
+        "日の出南",
+        "新浦安温泉",
+        "総合公園",
+        "ベイサイドホテルエリア",
+        "ベイパーク",
+        "ベイモール",
+        "シンボルロードパークシティ",
+        "日の出公民館",
+        "海風の街",
+        "明海大学前",
+        "入船中央エステート",
+        "新浦安駅",
+        "美浜東団地",
+        "海楽",
+        "消防本部前",
+        "猫実",
+        "神明裏",
+        "浦安駅入口"
+      ],
+      "siblingExclusiveStopsPresent": {
+        "3/23": [
+          "ベイパーク",
+          "ベイモール",
+          "シンボルロードパークシティ",
+          "日の出公民館",
+          "総合公園",
+          "ベイサイドホテルエリア"
+        ]
+      },
+      "route18CharacteristicStopsPresent": [
+        "海風の街",
+        "明海大学前"
+      ],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cd0002/stops?departure-busstop=00020619-12&course=0008200256&datetime=2026-08-01T11:13:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cd0001/stops?departure-busstop=00020619-12&course=0008200256&datetime=2026-07-27T12:06:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cd0003/stops?departure-busstop=00020619-12&course=0008200256&datetime=2026-07-26T12:31:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cd0000/stops?departure-busstop=00020619-12&course=0008200256&datetime=2026-07-27T14:12:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cd0004/stops?departure-busstop=00020619-12&course=0008200256&datetime=2026-07-26T14:19:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cd0002/stops?departure-busstop=00020713-10&course=0008200256&datetime=2026-08-01T11:10:00%2B09:00"
+      ]
+    },
+    {
+      "verdict": "REJECT-route-3",
+      "resolvedRouteNumber": "3",
+      "reason": "出発のりばの凡例が【3系統】に解決したため route-18 から除外",
+      "departureBerth": "11 [11]（新浦安駅・明海五丁目経由）総合公園（新浦安駅・ベイパーク経由）総",
+      "departureBerthLegendLine": "あ…【３系統】新浦安駅・明海五丁目経由　総合公園行き",
+      "listingLegendLines": [
+        "あ…【３系統】新浦安駅・明海五丁目経由　総合公園行き"
+      ],
+      "course": "0008200211",
+      "courseText": "11 [11]（新浦安駅・明海五丁目経由）総合公園（新浦安駅・ベイパーク経由）総合公園・日の出南（墓地公園）（新浦（安駅・高洲橋経由）高洲海浜公園経由）行 18 [18]（新浦安駅・明海五丁目経由）総合公園（新浦安駅・ベイパーク経由）総合公園・日の出南（墓地公園）（新浦（安駅・高洲橋経由）高洲海浜公園経由）行 3 [3]（新浦安駅・明海五丁目経由）総合公園（新浦安駅・ベイパーク経由）総合公園・日の出南（墓地公園）（新浦（安駅・高洲橋経由）高洲海浜公園経由）行 時刻表",
+      "tripsObserved": 35,
+      "stopCount": 19,
+      "stopNames": [
+        "浦安駅入口",
+        "神明裏",
+        "猫実",
+        "消防本部前",
+        "海楽",
+        "美浜東団地",
+        "新浦安駅",
+        "入船中央エステート",
+        "明海大学前",
+        "海風の街",
+        "夢海の街",
+        "望海の街",
+        "明海六丁目",
+        "明海南小学校",
+        "三井ガーデンホテル",
+        "ハイアットリージェンシー",
+        "明海五丁目",
+        "ベイサイドホテルエリア",
+        "総合公園"
+      ],
+      "siblingExclusiveStopsPresent": {
+        "3/23": [
+          "総合公園",
+          "ベイサイドホテルエリア"
+        ]
+      },
+      "route18CharacteristicStopsPresent": [
+        "夢海の街",
+        "海風の街",
+        "明海大学前"
+      ],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81070003/stops?departure-busstop=00020739-1&course=0008200211&datetime=2026-07-27T06:55:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81070008/stops?departure-busstop=00020739-1&course=0008200211&datetime=2026-07-27T07:48:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8107000b/stops?departure-busstop=00020739-1&course=0008200211&datetime=2026-08-01T07:04:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8107001b/stops?departure-busstop=00020739-1&course=0008200211&datetime=2026-07-26T07:12:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81070001/stops?departure-busstop=00020739-1&course=0008200211&datetime=2026-07-27T08:25:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81070004/stops?departure-busstop=00020739-1&course=0008200211&datetime=2026-07-27T08:55:00%2B09:00"
+      ]
+    },
+    {
+      "verdict": "REJECT-route-11",
+      "resolvedRouteNumber": "11",
+      "reason": "出発のりばの凡例が【11系統】に解決したため route-18 から除外",
+      "departureBerth": "11 [11]（新浦安駅・明海五丁目経由）総合公園（新浦安駅・ベイパーク経由）総",
+      "departureBerthLegendLine": "そ…【１１系統】新浦安駅・ベイパーク経由　総合公園行き",
+      "listingLegendLines": [
+        "そ…【１１系統】新浦安駅・ベイパーク経由　総合公園行き"
+      ],
+      "course": "0008200261",
+      "courseText": "11 [11]（新浦安駅・明海五丁目経由）総合公園（新浦安駅・ベイパーク経由）総合公園・日の出南（墓地公園）（新浦（安駅・高洲橋経由）高洲海浜公園経由）行 18 [18]（新浦安駅・明海五丁目経由）総合公園（新浦安駅・ベイパーク経由）総合公園・日の出南（墓地公園）（新浦（安駅・高洲橋経由）高洲海浜公園経由）行 3 [3]（新浦安駅・明海五丁目経由）総合公園（新浦安駅・ベイパーク経由）総合公園・日の出南（墓地公園）（新浦（安駅・高洲橋経由）高洲海浜公園経由）行 時刻表",
+      "tripsObserved": 19,
+      "stopCount": 16,
+      "stopNames": [
+        "浦安駅入口",
+        "神明裏",
+        "猫実",
+        "消防本部前",
+        "海楽",
+        "美浜東団地",
+        "新浦安駅",
+        "入船中央エステート",
+        "明海大学前",
+        "海風の街",
+        "日の出公民館",
+        "シンボルロードパークシティ",
+        "ベイモール",
+        "ベイパーク",
+        "ベイサイドホテルエリア",
+        "総合公園"
+      ],
+      "siblingExclusiveStopsPresent": {
+        "3/23": [
+          "ベイパーク",
+          "ベイモール",
+          "シンボルロードパークシティ",
+          "日の出公民館",
+          "総合公園",
+          "ベイサイドホテルエリア"
+        ]
+      },
+      "route18CharacteristicStopsPresent": [
+        "海風の街",
+        "明海大学前"
+      ],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d20000/stops?departure-busstop=00020739-1&course=0008200261&datetime=2026-07-27T07:20:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d20006/stops?departure-busstop=00020739-1&course=0008200261&datetime=2026-07-27T07:34:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d2000a/stops?departure-busstop=00020739-1&course=0008200261&datetime=2026-08-01T07:30:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d2000f/stops?departure-busstop=00020739-1&course=0008200261&datetime=2026-07-26T07:46:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d20001/stops?departure-busstop=00020739-1&course=0008200261&datetime=2026-07-27T08:15:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d20007/stops?departure-busstop=00020739-1&course=0008200261&datetime=2026-07-27T08:51:00%2B09:00"
+      ]
+    },
+    {
+      "verdict": "REJECT-route-11",
+      "resolvedRouteNumber": "11",
+      "reason": "出発のりばの凡例が【11系統】に解決したため route-18 から除外",
+      "departureBerth": "11 [11]（新浦安駅・明海五丁目経由）総合公園（新浦安駅・ベイパーク経由）総",
+      "departureBerthLegendLine": "新…【１１系統】新浦安駅止まり",
+      "listingLegendLines": [
+        "新…【１１系統】新浦安駅止まり"
+      ],
+      "course": "0008200270",
+      "courseText": "11 [11]（新浦安駅・明海五丁目経由）総合公園（新浦安駅・ベイパーク経由）総合公園・日の出南（墓地公園）（新浦（安駅・高洲橋経由）高洲海浜公園経由）行 18 [18]（新浦安駅・明海五丁目経由）総合公園（新浦安駅・ベイパーク経由）総合公園・日の出南（墓地公園）（新浦（安駅・高洲橋経由）高洲海浜公園経由）行 3 [3]（新浦安駅・明海五丁目経由）総合公園（新浦安駅・ベイパーク経由）総合公園・日の出南（墓地公園）（新浦（安駅・高洲橋経由）高洲海浜公園経由）行 時刻表",
+      "tripsObserved": 5,
+      "stopCount": 7,
+      "stopNames": [
+        "浦安駅入口",
+        "神明裏",
+        "猫実",
+        "消防本部前",
+        "海楽",
+        "美浜東団地",
+        "新浦安駅"
+      ],
+      "siblingExclusiveStopsPresent": {},
+      "route18CharacteristicStopsPresent": [],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80db0000/stops?departure-busstop=00020739-1&course=0008200270&datetime=2026-07-27T08:00:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80db0003/stops?departure-busstop=00020739-1&course=0008200270&datetime=2026-07-27T12:00:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80db0004/stops?departure-busstop=00020739-1&course=0008200270&datetime=2026-07-27T12:45:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80db0001/stops?departure-busstop=00020739-1&course=0008200270&datetime=2026-07-27T19:47:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80db0002/stops?departure-busstop=00020739-1&course=0008200270&datetime=2026-07-27T20:33:00%2B09:00"
+      ]
+    },
+    {
+      "verdict": "REJECT-route-11",
+      "resolvedRouteNumber": "11",
+      "reason": "出発のりばの凡例が【11系統】に解決したため route-18 から除外",
+      "departureBerth": "11 [11]（新浦安駅・明海五丁目経由）総合公園（新浦安駅・ベイパーク経由）総",
+      "departureBerthLegendLine": "ひ…【１１系統】日の出南（墓地公園）行き",
+      "listingLegendLines": [
+        "ひ…【１１系統】日の出南（墓地公園）行き"
+      ],
+      "course": "0008200257",
+      "courseText": "11 [11]（新浦安駅・明海五丁目経由）総合公園（新浦安駅・ベイパーク経由）総合公園・日の出南（墓地公園）（新浦（安駅・高洲橋経由）高洲海浜公園経由）行 18 [18]（新浦安駅・明海五丁目経由）総合公園（新浦安駅・ベイパーク経由）総合公園・日の出南（墓地公園）（新浦（安駅・高洲橋経由）高洲海浜公園経由）行 3 [3]（新浦安駅・明海五丁目経由）総合公園（新浦安駅・ベイパーク経由）総合公園・日の出南（墓地公園）（新浦（安駅・高洲橋経由）高洲海浜公園経由）行 時刻表",
+      "tripsObserved": 7,
+      "stopCount": 18,
+      "stopNames": [
+        "浦安駅入口",
+        "神明裏",
+        "猫実",
+        "消防本部前",
+        "海楽",
+        "美浜東団地",
+        "新浦安駅",
+        "入船中央エステート",
+        "明海大学前",
+        "海風の街",
+        "日の出公民館",
+        "シンボルロードパークシティ",
+        "ベイモール",
+        "ベイパーク",
+        "ベイサイドホテルエリア",
+        "総合公園",
+        "新浦安温泉",
+        "日の出南"
+      ],
+      "siblingExclusiveStopsPresent": {
+        "3/23": [
+          "ベイパーク",
+          "ベイモール",
+          "シンボルロードパークシティ",
+          "日の出公民館",
+          "総合公園",
+          "ベイサイドホテルエリア"
+        ]
+      },
+      "route18CharacteristicStopsPresent": [
+        "海風の街",
+        "明海大学前"
+      ],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80ce0003/stops?departure-busstop=00020739-1&course=0008200257&datetime=2026-08-01T10:33:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80ce0005/stops?departure-busstop=00020739-1&course=0008200257&datetime=2026-07-26T10:42:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80ce0002/stops?departure-busstop=00020739-1&course=0008200257&datetime=2026-08-01T11:33:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80ce0001/stops?departure-busstop=00020739-1&course=0008200257&datetime=2026-07-27T12:30:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80ce0006/stops?departure-busstop=00020739-1&course=0008200257&datetime=2026-07-26T12:57:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80ce0000/stops?departure-busstop=00020739-1&course=0008200257&datetime=2026-07-27T13:29:00%2B09:00"
+      ]
+    },
+    {
+      "verdict": "REJECT-route-3",
+      "resolvedRouteNumber": "3",
+      "reason": "出発のりばの凡例が【3系統】に解決したため route-18 から除外",
+      "departureBerth": "11 [11]（新浦安駅・明海五丁目経由）総合公園（新浦安駅・ベイパーク経由）総",
+      "departureBerthLegendLine": "明…【３系統】新浦安駅経由　明海五丁目止まり",
+      "listingLegendLines": [
+        "明…【３系統】新浦安駅経由　明海五丁目止まり"
+      ],
+      "course": "0008200218",
+      "courseText": "11 [11]（新浦安駅・明海五丁目経由）総合公園（新浦安駅・ベイパーク経由）総合公園・日の出南（墓地公園）（新浦（安駅・高洲橋経由）高洲海浜公園経由）行 18 [18]（新浦安駅・明海五丁目経由）総合公園（新浦安駅・ベイパーク経由）総合公園・日の出南（墓地公園）（新浦（安駅・高洲橋経由）高洲海浜公園経由）行 3 [3]（新浦安駅・明海五丁目経由）総合公園（新浦安駅・ベイパーク経由）総合公園・日の出南（墓地公園）（新浦（安駅・高洲橋経由）高洲海浜公園経由）行 時刻表",
+      "tripsObserved": 4,
+      "stopCount": 17,
+      "stopNames": [
+        "浦安駅入口",
+        "神明裏",
+        "猫実",
+        "消防本部前",
+        "海楽",
+        "美浜東団地",
+        "新浦安駅",
+        "入船中央エステート",
+        "明海大学前",
+        "海風の街",
+        "夢海の街",
+        "望海の街",
+        "明海六丁目",
+        "明海南小学校",
+        "三井ガーデンホテル",
+        "ハイアットリージェンシー",
+        "明海五丁目"
+      ],
+      "siblingExclusiveStopsPresent": {},
+      "route18CharacteristicStopsPresent": [
+        "夢海の街",
+        "海風の街",
+        "明海大学前"
+      ],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/810e0001/stops?departure-busstop=00020739-1&course=0008200218&datetime=2026-07-27T13:51:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/810e0000/stops?departure-busstop=00020739-1&course=0008200218&datetime=2026-07-27T17:01:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/810e0002/stops?departure-busstop=00020739-1&course=0008200218&datetime=2026-07-27T18:06:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/810e0003/stops?departure-busstop=00020739-1&course=0008200218&datetime=2026-07-26T18:47:00%2B09:00"
+      ]
+    },
+    {
+      "verdict": "REJECT-route-11",
+      "resolvedRouteNumber": "11",
+      "reason": "出発のりばの凡例が【11系統】に解決したため route-18 から除外",
+      "departureBerth": "11 [11]（新浦安駅・明海五丁目経由）総合公園（新浦安駅・ベイパーク経由）総",
+      "departureBerthLegendLine": "ベ…【１１系統】新浦安駅経由　ベイパーク止まり",
+      "listingLegendLines": [
+        "ベ…【１１系統】新浦安駅経由　ベイパーク止まり"
+      ],
+      "course": "0008200268",
+      "courseText": "11 [11]（新浦安駅・明海五丁目経由）総合公園（新浦安駅・ベイパーク経由）総合公園・日の出南（墓地公園）（新浦（安駅・高洲橋経由）高洲海浜公園経由）行 18 [18]（新浦安駅・明海五丁目経由）総合公園（新浦安駅・ベイパーク経由）総合公園・日の出南（墓地公園）（新浦（安駅・高洲橋経由）高洲海浜公園経由）行 3 [3]（新浦安駅・明海五丁目経由）総合公園（新浦安駅・ベイパーク経由）総合公園・日の出南（墓地公園）（新浦（安駅・高洲橋経由）高洲海浜公園経由）行 時刻表",
+      "tripsObserved": 3,
+      "stopCount": 14,
+      "stopNames": [
+        "浦安駅入口",
+        "神明裏",
+        "猫実",
+        "消防本部前",
+        "海楽",
+        "美浜東団地",
+        "新浦安駅",
+        "入船中央エステート",
+        "明海大学前",
+        "海風の街",
+        "日の出公民館",
+        "シンボルロードパークシティ",
+        "ベイモール",
+        "ベイパーク"
+      ],
+      "siblingExclusiveStopsPresent": {
+        "3/23": [
+          "ベイパーク",
+          "ベイモール",
+          "シンボルロードパークシティ",
+          "日の出公民館"
+        ]
+      },
+      "route18CharacteristicStopsPresent": [
+        "海風の街",
+        "明海大学前"
+      ],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d90001/stops?departure-busstop=00020739-1&course=0008200268&datetime=2026-08-01T17:34:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d90000/stops?departure-busstop=00020739-1&course=0008200268&datetime=2026-07-27T18:35:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d90002/stops?departure-busstop=00020739-1&course=0008200268&datetime=2026-07-26T18:27:00%2B09:00"
+      ]
+    },
+    {
+      "verdict": "REJECT-route-15",
+      "resolvedRouteNumber": "15",
+      "reason": "出発のりばの凡例が【15系統】に解決したため route-18 から除外",
+      "departureBerth": "03",
+      "departureBerthLegendLine": "無印…【１５系統】東京学館前経由　新浦安駅行き",
+      "listingLegendLines": [
+        "無印…【１５系統】東京学館前経由　新浦安駅行き"
+      ],
+      "course": "0008200277",
+      "courseText": "15 [15]（東京学館前経由）新浦安駅（夢海の街経由）新浦安駅・浦安駅入口行 18 [18]（東京学館前経由）新浦安駅（夢海の街経由）新浦安駅・浦安駅入口行 時刻表",
+      "tripsObserved": 332,
+      "stopCount": 10,
+      "stopNames": [
+        "高洲海浜公園",
+        "潮音の街",
+        "高洲中央公園",
+        "高洲",
+        "東京学館前",
+        "高洲北小学校",
+        "入船橋",
+        "明海交差点",
+        "入船中央エステート",
+        "新浦安駅"
+      ],
+      "siblingExclusiveStopsPresent": {
+        "15": [
+          "明海交差点",
+          "入船橋"
+        ]
+      },
+      "route18CharacteristicStopsPresent": [],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e30005/stops?departure-busstop=00020855-1&course=0008200277&datetime=2026-07-27T06:15:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e30013/stops?departure-busstop=00020855-1&course=0008200277&datetime=2026-07-27T06:25:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e3001e/stops?departure-busstop=00020855-1&course=0008200277&datetime=2026-07-27T06:35:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e30023/stops?departure-busstop=00020855-1&course=0008200277&datetime=2026-07-27T06:45:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e30009/stops?departure-busstop=00020855-1&course=0008200277&datetime=2026-07-27T06:54:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e30040/stops?departure-busstop=00020855-1&course=0008200277&datetime=2026-08-01T06:18:00%2B09:00"
+      ]
+    },
+    {
+      "verdict": "UNDECIDED-no-legend-match",
+      "resolvedRouteNumber": null,
+      "reason": "出発のりばの凡例に符号が無く【１８系統】と確定できないため route-18 から除外",
+      "departureBerth": null,
+      "departureBerthLegendLine": null,
+      "listingLegendLines": [],
+      "course": "0008200306",
+      "courseText": "15 [15]高洲海浜公園（高洲四丁目・東京学館前経由）高洲北小学校行 18 [18]高洲海浜公園（高洲四丁目・東京学館前経由）高洲北小学校行 [深夜]高洲海浜公園（高洲四丁目・東京学館前経由）高洲北小学校行 25 [25]高洲海浜公園（高洲四丁目・東京学館前経由）高洲北小学校行 時刻表",
+      "tripsObserved": 11,
+      "stopCount": 15,
+      "stopNames": [
+        "舞浜駅",
+        "オリエンタルランド本社前",
+        "運動公園",
+        "舞浜三丁目",
+        "見明川住宅",
+        "見明川中学校前",
+        "弁天第二",
+        "今川消防署",
+        "順天堂大学浦安キャンパス",
+        "高洲西児童公園",
+        "高洲三丁目",
+        "高洲四丁目",
+        "高洲七丁目",
+        "潮音の街",
+        "高洲海浜公園"
+      ],
+      "siblingExclusiveStopsPresent": {},
+      "route18CharacteristicStopsPresent": [],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81030005/stops?departure-busstop=00020634-14&course=0008200306&datetime=2026-08-01T10:28:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81030001/stops?departure-busstop=00020634-14&course=0008200306&datetime=2026-07-27T11:28:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81030002/stops?departure-busstop=00020634-14&course=0008200306&datetime=2026-08-01T11:35:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81030006/stops?departure-busstop=00020634-14&course=0008200306&datetime=2026-07-26T11:03:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81030000/stops?departure-busstop=00020634-14&course=0008200306&datetime=2026-07-27T12:10:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81030004/stops?departure-busstop=00020634-14&course=0008200306&datetime=2026-08-01T12:28:00%2B09:00"
+      ]
+    },
+    {
+      "verdict": "REJECT-route-3",
+      "resolvedRouteNumber": "3",
+      "reason": "出発のりばの凡例が【3系統】に解決したため route-18 から除外",
+      "departureBerth": "01",
+      "departureBerthLegendLine": "無印…【３系統】望海の街経由　新浦安駅行き",
+      "listingLegendLines": [],
+      "course": "0008200212",
+      "courseText": "18 [18]新浦安駅行 3 [3]新浦安駅行 時刻表",
+      "tripsObserved": 326,
+      "stopCount": 13,
+      "stopNames": [
+        "総合公園",
+        "ベイサイドホテルエリア",
+        "明海五丁目",
+        "ハイアットリージェンシー",
+        "三井ガーデンホテル",
+        "明海南小学校",
+        "明海六丁目",
+        "望海の街",
+        "夢海の街",
+        "海風の街",
+        "明海大学前",
+        "入船中央エステート",
+        "新浦安駅"
+      ],
+      "siblingExclusiveStopsPresent": {
+        "3/23": [
+          "総合公園",
+          "ベイサイドホテルエリア"
+        ]
+      },
+      "route18CharacteristicStopsPresent": [
+        "夢海の街",
+        "海風の街",
+        "明海大学前"
+      ],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81080001/stops?departure-busstop=00020709-9&course=0008200212&datetime=2026-07-27T06:06:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8108000a/stops?departure-busstop=00020709-9&course=0008200212&datetime=2026-07-27T06:16:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8108001a/stops?departure-busstop=00020709-9&course=0008200212&datetime=2026-07-27T06:36:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81080002/stops?departure-busstop=00020709-9&course=0008200212&datetime=2026-07-27T06:47:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8108000b/stops?departure-busstop=00020709-9&course=0008200212&datetime=2026-07-27T06:57:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8108003f/stops?departure-busstop=00020709-9&course=0008200212&datetime=2026-08-01T06:16:00%2B09:00"
+      ]
+    },
+    {
+      "verdict": "REJECT-route-3",
+      "resolvedRouteNumber": "3",
+      "reason": "出発のりばの凡例が【3系統】に解決したため route-18 から除外",
+      "departureBerth": "02",
+      "departureBerthLegendLine": "無印…【３系統】望海の街経由　新浦安駅行き",
+      "listingLegendLines": [],
+      "course": "0008200214",
+      "courseText": "18 [18]新浦安駅行 3 [3]新浦安駅行 時刻表",
+      "tripsObserved": 44,
+      "stopCount": 11,
+      "stopNames": [
+        "明海五丁目",
+        "ハイアットリージェンシー",
+        "三井ガーデンホテル",
+        "明海南小学校",
+        "明海六丁目",
+        "望海の街",
+        "夢海の街",
+        "海風の街",
+        "明海大学前",
+        "入船中央エステート",
+        "新浦安駅"
+      ],
+      "siblingExclusiveStopsPresent": {},
+      "route18CharacteristicStopsPresent": [
+        "夢海の街",
+        "海風の街",
+        "明海大学前"
+      ],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/810a0007/stops?departure-busstop=00020709-7&course=0008200214&datetime=2026-08-01T06:56:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/810a000b/stops?departure-busstop=00020709-7&course=0008200214&datetime=2026-08-01T07:12:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/810a000e/stops?departure-busstop=00020709-7&course=0008200214&datetime=2026-08-01T07:26:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/810a0010/stops?departure-busstop=00020709-7&course=0008200214&datetime=2026-07-26T07:56:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/810a0005/stops?departure-busstop=00020709-7&course=0008200214&datetime=2026-07-27T08:06:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/810a0006/stops?departure-busstop=00020709-7&course=0008200214&datetime=2026-07-27T08:56:00%2B09:00"
+      ]
+    },
+    {
+      "verdict": "REJECT-route-3",
+      "resolvedRouteNumber": "3",
+      "reason": "出発のりばの凡例が【3系統】に解決したため route-18 から除外",
+      "departureBerth": "03",
+      "departureBerthLegendLine": "始発…【３系統】当バス停始発、新浦安駅行き",
+      "listingLegendLines": [],
+      "course": "0008200216",
+      "courseText": "18 [18]新浦安駅行 3 [3]新浦安駅行 時刻表",
+      "tripsObserved": 8,
+      "stopCount": 6,
+      "stopNames": [
+        "望海の街",
+        "夢海の街",
+        "海風の街",
+        "明海大学前",
+        "入船中央エステート",
+        "新浦安駅"
+      ],
+      "siblingExclusiveStopsPresent": {},
+      "route18CharacteristicStopsPresent": [
+        "夢海の街",
+        "海風の街",
+        "明海大学前"
+      ],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/810c0000/stops?departure-busstop=00020709-2&course=0008200216&datetime=2026-07-27T07:21:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/810c0001/stops?departure-busstop=00020709-2&course=0008200216&datetime=2026-07-27T07:28:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/810c0002/stops?departure-busstop=00020709-2&course=0008200216&datetime=2026-07-27T07:55:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/810c0003/stops?departure-busstop=00020709-2&course=0008200216&datetime=2026-07-27T08:22:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/810c0000/stops?departure-busstop=00020713-4&course=0008200216&datetime=2026-07-27T07:23:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/810c0001/stops?departure-busstop=00020713-4&course=0008200216&datetime=2026-07-27T07:30:00%2B09:00"
+      ]
+    },
+    {
+      "verdict": "REJECT-route-11",
+      "resolvedRouteNumber": "11",
+      "reason": "出発のりばの凡例が【11系統】に解決したため route-18 から除外",
+      "departureBerth": "01",
+      "departureBerthLegendLine": "新…【１１系統】ベイパーク、明海大学前経由　新浦安駅行き",
+      "listingLegendLines": [],
+      "course": "0008202661",
+      "courseText": "11 [11]新浦安駅行 16 [16]新浦安駅行 18 [18]新浦安駅行 3 [3]新浦安駅行 時刻表",
+      "tripsObserved": 17,
+      "stopCount": 11,
+      "stopNames": [
+        "高洲海浜公園",
+        "ハイアットリージェンシー",
+        "明海五丁目",
+        "ベイパーク",
+        "ベイモール",
+        "シンボルロードパークシティ",
+        "日の出公民館",
+        "海風の街",
+        "明海大学前",
+        "入船中央エステート",
+        "新浦安駅"
+      ],
+      "siblingExclusiveStopsPresent": {
+        "3/23": [
+          "ベイパーク",
+          "ベイモール",
+          "シンボルロードパークシティ",
+          "日の出公民館"
+        ]
+      },
+      "route18CharacteristicStopsPresent": [
+        "海風の街",
+        "明海大学前"
+      ],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80dc0000/stops?departure-busstop=00020713-9&course=0008202661&datetime=2026-07-27T06:14:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d50003/stops?departure-busstop=00020713-9&course=0008200264&datetime=2026-07-27T06:34:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d50000/stops?departure-busstop=00020713-9&course=0008200264&datetime=2026-07-27T06:54:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d50007/stops?departure-busstop=00020713-9&course=0008200264&datetime=2026-08-01T06:42:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d5000c/stops?departure-busstop=00020713-9&course=0008200264&datetime=2026-07-26T06:50:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d50004/stops?departure-busstop=00020713-9&course=0008200264&datetime=2026-07-27T07:15:00%2B09:00"
+      ]
+    },
+    {
+      "verdict": "UNDECIDED-no-legend-match",
+      "resolvedRouteNumber": null,
+      "reason": "出発のりばの凡例に符号が無く【１８系統】と確定できないため route-18 から除外",
+      "departureBerth": null,
+      "departureBerthLegendLine": null,
+      "listingLegendLines": [],
+      "course": "0008200279",
+      "courseText": "11 [11]新浦安駅行 16 [16]新浦安駅行 18 [18]新浦安駅行 3 [3]新浦安駅行 時刻表",
+      "tripsObserved": 128,
+      "stopCount": 10,
+      "stopNames": [
+        "日の出七丁目",
+        "日の出西",
+        "順天堂大学・日の出 正門",
+        "プラウド新浦安パークマリーナ",
+        "日の出中学校",
+        "ベイシティ浦安",
+        "海風の街",
+        "明海大学前",
+        "入船中央エステート",
+        "新浦安駅"
+      ],
+      "siblingExclusiveStopsPresent": {},
+      "route18CharacteristicStopsPresent": [
+        "海風の街",
+        "明海大学前"
+      ],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e50000/stops?departure-busstop=00020713-8&course=0008200279&datetime=2026-07-27T06:15:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e5000c/stops?departure-busstop=00020713-8&course=0008200279&datetime=2026-07-27T06:30:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e50001/stops?departure-busstop=00020713-8&course=0008200279&datetime=2026-07-27T06:44:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e5001a/stops?departure-busstop=00020713-8&course=0008200279&datetime=2026-07-27T06:58:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e50038/stops?departure-busstop=00020713-8&course=0008200279&datetime=2026-08-01T06:27:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80e50065/stops?departure-busstop=00020713-8&course=0008200279&datetime=2026-07-26T06:38:00%2B09:00"
+      ]
+    },
+    {
+      "verdict": "REJECT-route-11",
+      "resolvedRouteNumber": "11",
+      "reason": "出発のりばの凡例が【11系統】に解決したため route-18 から除外",
+      "departureBerth": "04",
+      "departureBerthLegendLine": "無印…【１１系統】日の出公民館経由　新浦安駅行き",
+      "listingLegendLines": [],
+      "course": "0008200262",
+      "courseText": "11 [11]新浦安駅行 16 [16]新浦安駅行 18 [18]新浦安駅行 3 [3]新浦安駅行 時刻表",
+      "tripsObserved": 108,
+      "stopCount": 10,
+      "stopNames": [
+        "総合公園",
+        "ベイサイドホテルエリア",
+        "ベイパーク",
+        "ベイモール",
+        "シンボルロードパークシティ",
+        "日の出公民館",
+        "海風の街",
+        "明海大学前",
+        "入船中央エステート",
+        "新浦安駅"
+      ],
+      "siblingExclusiveStopsPresent": {
+        "3/23": [
+          "ベイパーク",
+          "ベイモール",
+          "シンボルロードパークシティ",
+          "日の出公民館",
+          "総合公園",
+          "ベイサイドホテルエリア"
+        ]
+      },
+      "route18CharacteristicStopsPresent": [
+        "海風の街",
+        "明海大学前"
+      ],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30000/stops?departure-busstop=00020713-8&course=0008200262&datetime=2026-07-27T06:25:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d3003e/stops?departure-busstop=00020713-8&course=0008200262&datetime=2026-08-01T06:25:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d3003f/stops?departure-busstop=00020713-8&course=0008200262&datetime=2026-08-01T06:57:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d3004e/stops?departure-busstop=00020713-8&course=0008200262&datetime=2026-07-26T06:35:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d3000b/stops?departure-busstop=00020713-8&course=0008200262&datetime=2026-07-27T07:05:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d3002a/stops?departure-busstop=00020713-8&course=0008200262&datetime=2026-07-27T07:50:00%2B09:00"
+      ]
+    },
+    {
+      "verdict": "REJECT-route-11",
+      "resolvedRouteNumber": "11",
+      "reason": "出発のりばの凡例が【11系統】に解決したため route-18 から除外",
+      "departureBerth": "02",
+      "departureBerthLegendLine": "無印…【１１系統】日の出公民館経由　新浦安駅行き",
+      "listingLegendLines": [],
+      "course": "0008200265",
+      "courseText": "11 [11]新浦安駅行 16 [16]新浦安駅行 18 [18]新浦安駅行 3 [3]新浦安駅行 時刻表",
+      "tripsObserved": 15,
+      "stopCount": 8,
+      "stopNames": [
+        "ベイパーク",
+        "ベイモール",
+        "シンボルロードパークシティ",
+        "日の出公民館",
+        "海風の街",
+        "明海大学前",
+        "入船中央エステート",
+        "新浦安駅"
+      ],
+      "siblingExclusiveStopsPresent": {
+        "3/23": [
+          "ベイパーク",
+          "ベイモール",
+          "シンボルロードパークシティ",
+          "日の出公民館"
+        ]
+      },
+      "route18CharacteristicStopsPresent": [
+        "海風の街",
+        "明海大学前"
+      ],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d60001/stops?departure-busstop=00020713-6&course=0008200265&datetime=2026-07-27T06:44:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d60005/stops?departure-busstop=00020713-6&course=0008200265&datetime=2026-07-27T07:24:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d60000/stops?departure-busstop=00020713-6&course=0008200265&datetime=2026-07-27T08:04:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d60004/stops?departure-busstop=00020713-6&course=0008200265&datetime=2026-07-27T08:50:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d60006/stops?departure-busstop=00020713-6&course=0008200265&datetime=2026-07-27T09:33:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d60007/stops?departure-busstop=00020713-6&course=0008200265&datetime=2026-07-27T10:51:00%2B09:00"
+      ]
+    },
+    {
+      "verdict": "REJECT-route-11",
+      "resolvedRouteNumber": "11",
+      "reason": "出発のりばの凡例が【11系統】に解決したため route-18 から除外",
+      "departureBerth": "01",
+      "departureBerthLegendLine": "無印…【１１系統】日の出公民館経由　新浦安駅行き",
+      "listingLegendLines": [],
+      "course": "0008200258",
+      "courseText": "11 [11]新浦安駅行 16 [16]新浦安駅行 18 [18]新浦安駅行 3 [3]新浦安駅行 時刻表",
+      "tripsObserved": 33,
+      "stopCount": 12,
+      "stopNames": [
+        "日の出南",
+        "新浦安温泉",
+        "総合公園",
+        "ベイサイドホテルエリア",
+        "ベイパーク",
+        "ベイモール",
+        "シンボルロードパークシティ",
+        "日の出公民館",
+        "海風の街",
+        "明海大学前",
+        "入船中央エステート",
+        "新浦安駅"
+      ],
+      "siblingExclusiveStopsPresent": {
+        "3/23": [
+          "ベイパーク",
+          "ベイモール",
+          "シンボルロードパークシティ",
+          "日の出公民館",
+          "総合公園",
+          "ベイサイドホテルエリア"
+        ]
+      },
+      "route18CharacteristicStopsPresent": [
+        "海風の街",
+        "明海大学前"
+      ],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cf0013/stops?departure-busstop=00020713-10&course=0008200258&datetime=2026-08-01T10:38:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cf0016/stops?departure-busstop=00020713-10&course=0008200258&datetime=2026-08-01T10:58:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cf001e/stops?departure-busstop=00020713-10&course=0008200258&datetime=2026-07-26T10:52:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cf000d/stops?departure-busstop=00020713-10&course=0008200258&datetime=2026-07-27T11:21:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cf000a/stops?departure-busstop=00020713-10&course=0008200258&datetime=2026-07-27T11:34:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cf0009/stops?departure-busstop=00020713-10&course=0008200258&datetime=2026-07-27T11:49:00%2B09:00"
+      ]
+    }
+  ],
+  "timetableLegends": {
+    "0008200278": {
+      "terminal": "新浦安駅",
+      "berth": "E",
+      "courseText": "15 [15]高洲海浜公園(潮音の街・高洲四丁目経由)高洲北小学校行 18 [18]高洲海浜公園(潮音の街・高洲四丁目経由)高洲北小学校行 [深夜]高洲海浜公園(潮音の街・高洲四丁目経由)高洲北小学校行 時刻表",
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200278-1&datetime=2026-07-27T05%3A00",
+      "legendRaw": [
+        "15\t[15]高洲海浜公園(潮音の街・高洲四丁目経由)高洲北小学校行",
+        "18\t[18]高洲海浜公園(潮音の街・高洲四丁目経由)高洲北小学校行",
+        "無印…【１５系統】東京学館前経由　高洲海浜公園行き",
+        "ゆ…【１８系統】夢海の街、高洲橋、潮音の街経由　高洲海浜公園行き",
+        "た…【１８系統】夢海の街・潮音の街・高洲四丁目経由　高洲北小学校行き＜★；深夜バス 運賃倍額＞",
+        "★た…【１８系統】夢海の街・潮音の街・高洲四丁目経由　高洲北小学校行き＜★；深夜バス 運賃倍額＞"
+      ],
+      "legendParsed": [
+        {
+          "symbolRaw": "無印",
+          "symbol": "",
+          "routeNumber": "15",
+          "description": "東京学館前経由　高洲海浜公園行き",
+          "line": "無印…【１５系統】東京学館前経由　高洲海浜公園行き"
+        },
+        {
+          "symbolRaw": "ゆ",
+          "symbol": "ゆ",
+          "routeNumber": "18",
+          "description": "夢海の街、高洲橋、潮音の街経由　高洲海浜公園行き",
+          "line": "ゆ…【１８系統】夢海の街、高洲橋、潮音の街経由　高洲海浜公園行き"
+        },
+        {
+          "symbolRaw": "た",
+          "symbol": "た",
+          "routeNumber": "18",
+          "description": "夢海の街・潮音の街・高洲四丁目経由　高洲北小学校行き＜★；深夜バス 運賃倍額＞",
+          "line": "た…【１８系統】夢海の街・潮音の街・高洲四丁目経由　高洲北小学校行き＜★；深夜バス 運賃倍額＞"
+        },
+        {
+          "symbolRaw": "★た",
+          "symbol": "★た",
+          "routeNumber": "18",
+          "description": "夢海の街・潮音の街・高洲四丁目経由　高洲北小学校行き＜★；深夜バス 運賃倍額＞",
+          "line": "★た…【１８系統】夢海の街・潮音の街・高洲四丁目経由　高洲北小学校行き＜★；深夜バス 運賃倍額＞"
+        }
+      ],
+      "routeNumbersPresent": [
+        "15",
+        "18"
+      ]
+    },
+    "0008200210": {
+      "terminal": "新浦安駅",
+      "berth": "H",
+      "courseText": "11 [11]（消防本部前経由）浦安駅入口（順天堂病院前・見明川住宅経由）舞浜駅行 18 [18]（消防本部前経由）浦安駅入口（順天堂病院前・見明川住宅経由）舞浜駅行 3 [23]（消防本部前経由）浦安駅入口（順天堂病院前・見明川住宅経由）舞浜駅行 [3]（消防本部前経由）浦安駅入口（順天堂病院前・見明川住宅経由）舞浜駅行 時刻表",
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200210-13&datetime=2026-07-27T05%3A00",
+      "legendRaw": [
+        "11\t[11]（消防本部前経由）浦安駅入口（順天堂病院前・見明川住宅経由）舞浜駅行",
+        "18\t[18]（消防本部前経由）浦安駅入口（順天堂病院前・見明川住宅経由）舞浜駅行",
+        "3\t[23]（消防本部前経由）浦安駅入口（順天堂病院前・見明川住宅経由）舞浜駅行",
+        "3\t[3]（消防本部前経由）浦安駅入口（順天堂病院前・見明川住宅経由）舞浜駅行",
+        "無印…【３・１１・１８系統】浦安駅入口行き",
+        "ま…【２３系統】順天堂病院前経由　舞浜駅行き（浦安駅入口には行きません）"
+      ],
+      "legendParsed": [
+        {
+          "symbolRaw": "ま",
+          "symbol": "ま",
+          "routeNumber": "23",
+          "description": "順天堂病院前経由　舞浜駅行き（浦安駅入口には行きません）",
+          "line": "ま…【２３系統】順天堂病院前経由　舞浜駅行き（浦安駅入口には行きません）"
+        }
+      ],
+      "routeNumbersPresent": [
+        "23"
+      ]
+    },
+    "0008200211": {
+      "terminal": "浦安駅入口",
+      "berth": "11",
+      "courseText": "11 [11]（新浦安駅・明海五丁目経由）総合公園（新浦安駅・ベイパーク経由）総合公園・日の出南（墓地公園）（新浦（安駅・高洲橋経由）高洲海浜公園経由）行 18 [18]（新浦安駅・明海五丁目経由）総合公園（新浦安駅・ベイパーク経由）総合公園・日の出南（墓地公園）（新浦（安駅・高洲橋経由）高洲海浜公園経由）行 3 [3]（新浦安駅・明海五丁目経由）総合公園（新浦安駅・ベイパーク経由）総合公園・日の出南（墓地公園）（新浦（安駅・高洲橋経由）高洲海浜公園経由）行 時刻表",
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020739&course-sequence=0008200211-1&datetime=2026-07-27T05%3A00",
+      "legendRaw": [
+        "11\t[11]（新浦安駅・明海五丁目経由）総合公園（新浦安駅・ベイパーク経由）総合公園・日の出南（墓地公園）（新浦（安駅・高洲橋経由）高洲海浜公園経由）行",
+        "18\t[18]（新浦安駅・明海五丁目経由）総合公園（新浦安駅・ベイパーク経由）総合公園・日の出南（墓地公園）（新浦（安駅・高洲橋経由）高洲海浜公園経由）行",
+        "3\t[3]（新浦安駅・明海五丁目経由）総合公園（新浦安駅・ベイパーク経由）総合公園・日の出南（墓地公園）（新浦（安駅・高洲橋経由）高洲海浜公園経由）行",
+        "あ…【３系統】新浦安駅・明海五丁目経由　総合公園行き",
+        "明…【３系統】新浦安駅経由　明海五丁目止まり",
+        "ひ…【１１系統】日の出南（墓地公園）行き",
+        "そ…【１１系統】新浦安駅・ベイパーク経由　総合公園行き",
+        "ベ…【１１系統】新浦安駅経由　ベイパーク止まり",
+        "新…【１１系統】新浦安駅止まり",
+        "ゆ…【１８系統】新浦安駅・高洲橋経由　高洲海浜公園行き"
+      ],
+      "legendParsed": [
+        {
+          "symbolRaw": "あ",
+          "symbol": "あ",
+          "routeNumber": "3",
+          "description": "新浦安駅・明海五丁目経由　総合公園行き",
+          "line": "あ…【３系統】新浦安駅・明海五丁目経由　総合公園行き"
+        },
+        {
+          "symbolRaw": "明",
+          "symbol": "明",
+          "routeNumber": "3",
+          "description": "新浦安駅経由　明海五丁目止まり",
+          "line": "明…【３系統】新浦安駅経由　明海五丁目止まり"
+        },
+        {
+          "symbolRaw": "ひ",
+          "symbol": "ひ",
+          "routeNumber": "11",
+          "description": "日の出南（墓地公園）行き",
+          "line": "ひ…【１１系統】日の出南（墓地公園）行き"
+        },
+        {
+          "symbolRaw": "そ",
+          "symbol": "そ",
+          "routeNumber": "11",
+          "description": "新浦安駅・ベイパーク経由　総合公園行き",
+          "line": "そ…【１１系統】新浦安駅・ベイパーク経由　総合公園行き"
+        },
+        {
+          "symbolRaw": "ベ",
+          "symbol": "ベ",
+          "routeNumber": "11",
+          "description": "新浦安駅経由　ベイパーク止まり",
+          "line": "ベ…【１１系統】新浦安駅経由　ベイパーク止まり"
+        },
+        {
+          "symbolRaw": "新",
+          "symbol": "新",
+          "routeNumber": "11",
+          "description": "新浦安駅止まり",
+          "line": "新…【１１系統】新浦安駅止まり"
+        },
+        {
+          "symbolRaw": "ゆ",
+          "symbol": "ゆ",
+          "routeNumber": "18",
+          "description": "新浦安駅・高洲橋経由　高洲海浜公園行き",
+          "line": "ゆ…【１８系統】新浦安駅・高洲橋経由　高洲海浜公園行き"
+        }
+      ],
+      "routeNumbersPresent": [
+        "3",
+        "11",
+        "18"
+      ]
+    },
+    "0008200277": {
+      "terminal": "高洲海浜公園",
+      "berth": "03",
+      "courseText": "15 [15]（東京学館前経由）新浦安駅（夢海の街経由）新浦安駅・浦安駅入口行 18 [18]（東京学館前経由）新浦安駅（夢海の街経由）新浦安駅・浦安駅入口行 時刻表",
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020855&course-sequence=0008200277-1&datetime=2026-07-27T05%3A00",
+      "legendRaw": [
+        "15\t[15]（東京学館前経由）新浦安駅（夢海の街経由）新浦安駅・浦安駅入口行",
+        "18\t[18]（東京学館前経由）新浦安駅（夢海の街経由）新浦安駅・浦安駅入口行",
+        "無印…【１５系統】東京学館前経由　新浦安駅行き",
+        "う…【１８系統】夢海の街、新浦安駅経由　浦安駅入口行き",
+        "ゆ…【１８系統】夢海の街経由　新浦安駅行き"
+      ],
+      "legendParsed": [
+        {
+          "symbolRaw": "無印",
+          "symbol": "",
+          "routeNumber": "15",
+          "description": "東京学館前経由　新浦安駅行き",
+          "line": "無印…【１５系統】東京学館前経由　新浦安駅行き"
+        },
+        {
+          "symbolRaw": "う",
+          "symbol": "う",
+          "routeNumber": "18",
+          "description": "夢海の街、新浦安駅経由　浦安駅入口行き",
+          "line": "う…【１８系統】夢海の街、新浦安駅経由　浦安駅入口行き"
+        },
+        {
+          "symbolRaw": "ゆ",
+          "symbol": "ゆ",
+          "routeNumber": "18",
+          "description": "夢海の街経由　新浦安駅行き",
+          "line": "ゆ…【１８系統】夢海の街経由　新浦安駅行き"
+        }
+      ],
+      "routeNumbersPresent": [
+        "15",
+        "18"
+      ]
+    },
+    "0008200286": {
+      "terminal": "夢海の街",
+      "berth": "02",
+      "courseText": "18 [18]（潮音の街経由）高洲海浜公園（潮音の街・高洲四丁目経由）高洲北小学校行 [深夜]（潮音の街経由）高洲海浜公園（潮音の街・高洲四丁目経由）高洲北小学校行 時刻表",
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020709&course-sequence=0008200286-11&datetime=2026-07-27T05%3A00",
+      "legendRaw": [
+        "18\t[18]（潮音の街経由）高洲海浜公園（潮音の街・高洲四丁目経由）高洲北小学校行",
+        "無印…【１８系統】高洲橋、潮音の街経由　高洲海浜公園行き",
+        "た…【１８系統】高洲橋・潮音の街・高洲四丁目経由　高洲北小学校行き＜★；深夜バス（運賃倍額）＞",
+        "★た…【１８系統】高洲橋・潮音の街・高洲四丁目経由　高洲北小学校行き＜★；深夜バス（運賃倍額）＞"
+      ],
+      "legendParsed": [
+        {
+          "symbolRaw": "無印",
+          "symbol": "",
+          "routeNumber": "18",
+          "description": "高洲橋、潮音の街経由　高洲海浜公園行き",
+          "line": "無印…【１８系統】高洲橋、潮音の街経由　高洲海浜公園行き"
+        },
+        {
+          "symbolRaw": "た",
+          "symbol": "た",
+          "routeNumber": "18",
+          "description": "高洲橋・潮音の街・高洲四丁目経由　高洲北小学校行き＜★；深夜バス（運賃倍額）＞",
+          "line": "た…【１８系統】高洲橋・潮音の街・高洲四丁目経由　高洲北小学校行き＜★；深夜バス（運賃倍額）＞"
+        },
+        {
+          "symbolRaw": "★た",
+          "symbol": "★た",
+          "routeNumber": "18",
+          "description": "高洲橋・潮音の街・高洲四丁目経由　高洲北小学校行き＜★；深夜バス（運賃倍額）＞",
+          "line": "★た…【１８系統】高洲橋・潮音の街・高洲四丁目経由　高洲北小学校行き＜★；深夜バス（運賃倍額）＞"
+        }
+      ],
+      "routeNumbersPresent": [
+        "18"
+      ]
+    },
+    "0008200212": {
+      "terminal": "夢海の街",
+      "berth": "03",
+      "courseText": "18 [18]新浦安駅行 3 [3]新浦安駅行 時刻表",
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020709&course-sequence=0008200212-9&datetime=2026-07-27T05%3A00",
+      "legendRaw": [
+        "18\t[18]新浦安駅行",
+        "3\t[3]新浦安駅行",
+        "無印…新浦安駅行き"
+      ],
+      "legendParsed": [],
+      "routeNumbersPresent": []
+    },
+    "0008200285": {
+      "terminal": "高洲橋",
+      "berth": "02",
+      "courseText": "18 [18]新浦安駅・浦安駅入口行 時刻表",
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020857&course-sequence=0008200285-4&datetime=2026-07-27T05%3A00",
+      "legendRaw": [
+        "18\t[18]新浦安駅・浦安駅入口行",
+        "う…【１８系統】夢海の街、新浦安駅経由　浦安駅入口行き",
+        "ゆ…【１８系統】夢海の街経由　新浦安駅行き"
+      ],
+      "legendParsed": [
+        {
+          "symbolRaw": "う",
+          "symbol": "う",
+          "routeNumber": "18",
+          "description": "夢海の街、新浦安駅経由　浦安駅入口行き",
+          "line": "う…【１８系統】夢海の街、新浦安駅経由　浦安駅入口行き"
+        },
+        {
+          "symbolRaw": "ゆ",
+          "symbol": "ゆ",
+          "routeNumber": "18",
+          "description": "夢海の街経由　新浦安駅行き",
+          "line": "ゆ…【１８系統】夢海の街経由　新浦安駅行き"
+        }
+      ],
+      "routeNumbersPresent": [
+        "18"
+      ]
+    }
+  }
+}

@@ -1,0 +1,489 @@
+// Auto-generated OSM platforms for 明海・高洲線 系統18 (route-18).
+// Official stop order: Keisei Bus Navi 個別便通過時刻表 2026-07-26（2段凡例ゲートで【１８系統】に確定）。
+// 浦安駅入口のりば11の符号ゆ、高洲海浜公園のりば03の符号う／ゆ、新浦安駅のりばEの符号ゆ／た／★た を採用。
+// 15系統（無印・東京学館前・高洲経由）は同じのりばE／のりば03に混載されるが別系統であり、
+// 停留所は採用していない（明海交差点・入船橋・高洲 は route-18 に存在しない）。
+// 短縮便の終点 新浦安駅 は降車専用のりばX（node 8415001163）。通し便ののりばHではない。
+// Each dedicated system uses the platforms of its own OSM relation; outbound/inbound platforms differ.
+// Generated: 2026-07-26-akemi-takasu-line-v1
+(() => {
+  window.AKEMI_TAKASU_LINE_PLATFORMS_V1 = {
+  "18-takasu-seaside": {
+    "浦安駅入口": {
+      "lat": 35.6647047,
+      "lng": 139.8949743,
+      "platformId": 6764110352,
+      "role": "platform_entry_only",
+      "osmName": "浦安駅入口"
+    },
+    "神明裏": {
+      "lat": 35.6623799,
+      "lng": 139.8989516,
+      "platformId": 6764110349,
+      "role": "platform",
+      "osmName": "神明裏"
+    },
+    "猫実": {
+      "lat": 35.6608375,
+      "lng": 139.9012946,
+      "platformId": 1330897048,
+      "role": "platform",
+      "osmName": "猫実"
+    },
+    "消防本部前": {
+      "lat": 35.6594904,
+      "lng": 139.9034126,
+      "platformId": 1330401194,
+      "role": "platform",
+      "osmName": "消防本部前"
+    },
+    "海楽": {
+      "lat": 35.6576449,
+      "lng": 139.9059641,
+      "platformId": 12369418230,
+      "role": "platform",
+      "osmName": "海楽"
+    },
+    "美浜東団地": {
+      "lat": 35.6522225,
+      "lng": 139.9128348,
+      "platformId": 1330406914,
+      "role": "platform",
+      "osmName": "美浜東団地"
+    },
+    "新浦安駅": {
+      "lat": 35.6499537,
+      "lng": 139.9140181,
+      "platformId": 8415001161,
+      "role": "platform",
+      "osmName": "新浦安駅"
+    },
+    "入船中央エステート": {
+      "lat": 35.6489816,
+      "lng": 139.9168586,
+      "platformId": 11425579726,
+      "role": "platform",
+      "osmName": "入船中央エステート"
+    },
+    "明海大学前": {
+      "lat": 35.6460348,
+      "lng": 139.9205782,
+      "platformId": 6813952156,
+      "role": "platform",
+      "osmName": "明海大学前"
+    },
+    "海風の街": {
+      "lat": 35.6435042,
+      "lng": 139.9224383,
+      "platformId": 12409259393,
+      "role": "platform",
+      "osmName": "海風の街"
+    },
+    "夢海の街": {
+      "lat": 35.6415042,
+      "lng": 139.9200062,
+      "platformId": 6813929332,
+      "role": "platform",
+      "osmName": "夢海の街"
+    },
+    "高洲橋": {
+      "lat": 35.6381407,
+      "lng": 139.9159621,
+      "platformId": 11578685157,
+      "role": "platform",
+      "osmName": "高洲橋"
+    },
+    "高洲中央公園": {
+      "lat": 35.636194,
+      "lng": 139.9173305,
+      "platformId": 6852993563,
+      "role": "platform",
+      "osmName": "高洲中央公園"
+    },
+    "潮音の街": {
+      "lat": 35.6347646,
+      "lng": 139.9191318,
+      "platformId": 11549952448,
+      "role": "platform",
+      "osmName": "潮音の街"
+    },
+    "高洲海浜公園": {
+      "lat": 35.6338864,
+      "lng": 139.9202403,
+      "platformId": 1312685258,
+      "role": "platform_exit_only",
+      "osmName": "高洲海浜公園"
+    }
+  },
+  "18-urayasu-eki-iriguchi": {
+    "高洲海浜公園": {
+      "lat": 35.6337264,
+      "lng": 139.9202107,
+      "platformId": 11549952451,
+      "role": "platform_entry_only",
+      "osmName": "高洲海浜公園"
+    },
+    "潮音の街": {
+      "lat": 35.6347434,
+      "lng": 139.9189434,
+      "platformId": 11549952447,
+      "role": "platform",
+      "osmName": "潮音の街"
+    },
+    "高洲中央公園": {
+      "lat": 35.636672,
+      "lng": 139.916519,
+      "platformId": 1312685254,
+      "role": "platform",
+      "osmName": "高洲中央公園"
+    },
+    "高洲橋": {
+      "lat": 35.6381462,
+      "lng": 139.9157261,
+      "platformId": 6813929330,
+      "role": "platform",
+      "osmName": "高洲橋"
+    },
+    "夢海の街": {
+      "lat": 35.6417004,
+      "lng": 139.9199572,
+      "platformId": 6813929331,
+      "role": "platform",
+      "osmName": "夢海の街"
+    },
+    "海風の街": {
+      "lat": 35.6442605,
+      "lng": 139.922292,
+      "platformId": 1312670873,
+      "role": "platform",
+      "osmName": "海風の街"
+    },
+    "明海大学前": {
+      "lat": 35.6458877,
+      "lng": 139.9202433,
+      "platformId": 1312670870,
+      "role": "platform",
+      "osmName": "明海大学前"
+    },
+    "入船中央エステート": {
+      "lat": 35.648721,
+      "lng": 139.9166753,
+      "platformId": 1312711918,
+      "role": "platform",
+      "osmName": "入船中央エステート"
+    },
+    "新浦安駅": {
+      "lat": 35.6506245,
+      "lng": 139.9142535,
+      "platformId": 8415001143,
+      "role": "platform",
+      "osmName": "新浦安駅"
+    },
+    "美浜東団地": {
+      "lat": 35.6522648,
+      "lng": 139.9122584,
+      "platformId": 1330409783,
+      "role": "platform",
+      "osmName": "美浜東団地"
+    },
+    "海楽": {
+      "lat": 35.6573684,
+      "lng": 139.9059647,
+      "platformId": 6720667167,
+      "role": "platform",
+      "osmName": "海楽"
+    },
+    "消防本部前": {
+      "lat": 35.6589613,
+      "lng": 139.9038774,
+      "platformId": 12368996379,
+      "role": "platform",
+      "osmName": "消防本部前"
+    },
+    "猫実": {
+      "lat": 35.6611395,
+      "lng": 139.9005341,
+      "platformId": 2900279301,
+      "role": "platform",
+      "osmName": "猫実"
+    },
+    "神明裏": {
+      "lat": 35.6628205,
+      "lng": 139.8979314,
+      "platformId": 6764110350,
+      "role": "platform",
+      "osmName": "神明裏"
+    },
+    "浦安駅入口": {
+      "lat": 35.6644872,
+      "lng": 139.8950364,
+      "platformId": 6764110353,
+      "role": "platform_exit_only",
+      "osmName": "浦安駅入口"
+    }
+  },
+  "18-takasu-kita-shogakko": {
+    "新浦安駅": {
+      "lat": 35.6499537,
+      "lng": 139.9140181,
+      "platformId": 8415001161,
+      "role": "platform_entry_only",
+      "osmName": "新浦安駅"
+    },
+    "入船中央エステート": {
+      "lat": 35.6489816,
+      "lng": 139.9168586,
+      "platformId": 11425579726,
+      "role": "platform",
+      "osmName": "入船中央エステート"
+    },
+    "明海大学前": {
+      "lat": 35.6460348,
+      "lng": 139.9205782,
+      "platformId": 6813952156,
+      "role": "platform",
+      "osmName": "明海大学前"
+    },
+    "海風の街": {
+      "lat": 35.6435042,
+      "lng": 139.9224383,
+      "platformId": 12409259393,
+      "role": "platform",
+      "osmName": "海風の街"
+    },
+    "夢海の街": {
+      "lat": 35.6415042,
+      "lng": 139.9200062,
+      "platformId": 6813929332,
+      "role": "platform",
+      "osmName": "夢海の街"
+    },
+    "高洲橋": {
+      "lat": 35.6381407,
+      "lng": 139.9159621,
+      "platformId": 11578685157,
+      "role": "platform",
+      "osmName": "高洲橋"
+    },
+    "高洲中央公園": {
+      "lat": 35.636194,
+      "lng": 139.9173305,
+      "platformId": 6852993563,
+      "role": "platform",
+      "osmName": "高洲中央公園"
+    },
+    "潮音の街": {
+      "lat": 35.6347646,
+      "lng": 139.9191318,
+      "platformId": 11549952448,
+      "role": "platform",
+      "osmName": "潮音の街"
+    },
+    "高洲八丁目": {
+      "lat": 35.6326904,
+      "lng": 139.9157026,
+      "platformId": 11578740581,
+      "role": "platform",
+      "osmName": "高洲八丁目"
+    },
+    "高洲四丁目": {
+      "lat": 35.6339376,
+      "lng": 139.9141288,
+      "platformId": 2810280428,
+      "role": "platform",
+      "osmName": "高洲四丁目"
+    },
+    "高洲三丁目": {
+      "lat": 35.6348023,
+      "lng": 139.9130599,
+      "platformId": 11553825394,
+      "role": "platform",
+      "osmName": "高洲三丁目"
+    },
+    "高洲西児童公園": {
+      "lat": 35.6361075,
+      "lng": 139.9114258,
+      "platformId": 6899769126,
+      "role": "platform",
+      "osmName": "高洲西児童公園"
+    },
+    "順天堂大学入口": {
+      "lat": 35.6371996,
+      "lng": 139.9107606,
+      "platformId": 11557035679,
+      "role": "platform",
+      "osmName": "順天堂大学入口"
+    },
+    "高洲二丁目": {
+      "lat": 35.6382639,
+      "lng": 139.9120289,
+      "platformId": 11557035683,
+      "role": "platform",
+      "osmName": "高洲二丁目"
+    },
+    "東京学館前": {
+      "lat": 35.6388966,
+      "lng": 139.9118939,
+      "platformId": 11557035685,
+      "role": "platform",
+      "osmName": "東京学館前"
+    },
+    "高洲北小学校": {
+      "lat": 35.6399969,
+      "lng": 139.9105145,
+      "platformId": 1312670866,
+      "role": "platform_exit_only",
+      "osmName": "高洲北小学校"
+    }
+  },
+  "18-takasu-seaside-from-shinurayasu": {
+    "新浦安駅": {
+      "lat": 35.6499537,
+      "lng": 139.9140181,
+      "platformId": 8415001161,
+      "role": "platform",
+      "osmName": "新浦安駅",
+      "local_ref": "E"
+    },
+    "入船中央エステート": {
+      "lat": 35.6489816,
+      "lng": 139.9168586,
+      "platformId": 11425579726,
+      "role": "platform",
+      "osmName": "入船中央エステート"
+    },
+    "明海大学前": {
+      "lat": 35.6460348,
+      "lng": 139.9205782,
+      "platformId": 6813952156,
+      "role": "platform",
+      "osmName": "明海大学前"
+    },
+    "海風の街": {
+      "lat": 35.6435042,
+      "lng": 139.9224383,
+      "platformId": 12409259393,
+      "role": "platform",
+      "osmName": "海風の街"
+    },
+    "夢海の街": {
+      "lat": 35.6415042,
+      "lng": 139.9200062,
+      "platformId": 6813929332,
+      "role": "platform",
+      "osmName": "夢海の街"
+    },
+    "高洲橋": {
+      "lat": 35.6381407,
+      "lng": 139.9159621,
+      "platformId": 11578685157,
+      "role": "platform",
+      "osmName": "高洲橋"
+    },
+    "高洲中央公園": {
+      "lat": 35.636194,
+      "lng": 139.9173305,
+      "platformId": 6852993563,
+      "role": "platform",
+      "osmName": "高洲中央公園"
+    },
+    "潮音の街": {
+      "lat": 35.6347646,
+      "lng": 139.9191318,
+      "platformId": 11549952448,
+      "role": "platform",
+      "osmName": "潮音の街"
+    },
+    "高洲海浜公園": {
+      "lat": 35.6338864,
+      "lng": 139.9202403,
+      "platformId": 1312685258,
+      "role": "platform_exit_only",
+      "osmName": "高洲海浜公園"
+    }
+  },
+  "18-shinurayasu-from-takasu": {
+    "高洲海浜公園": {
+      "lat": 35.6337264,
+      "lng": 139.9202107,
+      "platformId": 11549952451,
+      "role": "platform_entry_only",
+      "osmName": "高洲海浜公園",
+      "local_ref": null,
+      "note": null
+    },
+    "潮音の街": {
+      "lat": 35.6347434,
+      "lng": 139.9189434,
+      "platformId": 11549952447,
+      "role": "platform",
+      "osmName": "潮音の街",
+      "local_ref": null,
+      "note": null
+    },
+    "高洲中央公園": {
+      "lat": 35.636672,
+      "lng": 139.916519,
+      "platformId": 1312685254,
+      "role": "platform",
+      "osmName": "高洲中央公園",
+      "local_ref": null,
+      "note": null
+    },
+    "高洲橋": {
+      "lat": 35.6381462,
+      "lng": 139.9157261,
+      "platformId": 6813929330,
+      "role": "platform",
+      "osmName": "高洲橋",
+      "local_ref": null,
+      "note": null
+    },
+    "夢海の街": {
+      "lat": 35.6417004,
+      "lng": 139.9199572,
+      "platformId": 6813929331,
+      "role": "platform",
+      "osmName": "夢海の街",
+      "local_ref": null,
+      "note": null
+    },
+    "海風の街": {
+      "lat": 35.6442605,
+      "lng": 139.922292,
+      "platformId": 1312670873,
+      "role": "platform",
+      "osmName": "海風の街",
+      "local_ref": null,
+      "note": null
+    },
+    "明海大学前": {
+      "lat": 35.6458877,
+      "lng": 139.9202433,
+      "platformId": 1312670870,
+      "role": "platform",
+      "osmName": "明海大学前",
+      "local_ref": null,
+      "note": null
+    },
+    "入船中央エステート": {
+      "lat": 35.648721,
+      "lng": 139.9166753,
+      "platformId": 1312711918,
+      "role": "platform",
+      "osmName": "入船中央エステート",
+      "local_ref": null,
+      "note": null
+    },
+    "新浦安駅": {
+      "lat": 35.649411,
+      "lng": 139.9142448,
+      "platformId": 8415001163,
+      "role": "platform_exit_only",
+      "osmName": "新浦安駅",
+      "local_ref": "X",
+      "note": "降車専用"
+    }
+  }
+};
+})();

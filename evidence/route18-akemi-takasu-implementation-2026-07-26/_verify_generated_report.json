@@ -1,0 +1,556 @@
+{
+  "checkedAt": "2026-07-26T15:04:04.738Z",
+  "files": [
+    {
+      "file": "akemi-takasu-line-platforms-v1.js",
+      "bytes": 12864,
+      "replacementChars": 0,
+      "crlf": false
+    },
+    {
+      "file": "akemi-takasu-line-path-v1.js",
+      "bytes": 82318,
+      "replacementChars": 0,
+      "crlf": false
+    },
+    {
+      "file": "akemi-takasu-line-path-policy-v1.js",
+      "bytes": 4465,
+      "replacementChars": 0,
+      "crlf": true
+    },
+    {
+      "file": "akemi-takasu-line-stop-images-v1.js",
+      "bytes": 592,
+      "replacementChars": 0,
+      "crlf": true
+    },
+    {
+      "file": "akemi-takasu-line-stop-images-v1.css",
+      "bytes": 701,
+      "replacementChars": 0,
+      "crlf": true
+    },
+    {
+      "file": "akemi-takasu-line-route-v1.js",
+      "bytes": 80346,
+      "replacementChars": 0,
+      "crlf": true
+    }
+  ],
+  "checks": [
+    {
+      "name": "akemi-takasu-line-platforms-v1.js is valid UTF-8 (no U+FFFD)",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "akemi-takasu-line-path-v1.js is valid UTF-8 (no U+FFFD)",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "akemi-takasu-line-path-policy-v1.js is valid UTF-8 (no U+FFFD)",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "akemi-takasu-line-stop-images-v1.js is valid UTF-8 (no U+FFFD)",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "akemi-takasu-line-stop-images-v1.css is valid UTF-8 (no U+FFFD)",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "akemi-takasu-line-route-v1.js is valid UTF-8 (no U+FFFD)",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "akemi-takasu-line-platforms-v1.js parses",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "akemi-takasu-line-path-v1.js parses",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "akemi-takasu-line-path-policy-v1.js parses",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "akemi-takasu-line-stop-images-v1.js parses",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "akemi-takasu-line-route-v1.js parses",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "akemi-takasu-line-platforms-v1.js body has no sibling identifier/relation leak",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "akemi-takasu-line-path-v1.js body has no sibling identifier/relation leak",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "akemi-takasu-line-path-policy-v1.js body has no sibling identifier/relation leak",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "akemi-takasu-line-stop-images-v1.js body has no sibling identifier/relation leak",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "akemi-takasu-line-stop-images-v1.css body has no sibling identifier/relation leak",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "akemi-takasu-line-route-v1.js body has no sibling identifier/relation leak",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "akemi-takasu-line-path-v1.js header names sibling relations only as a prohibition",
+      "pass": true,
+      "detail": "18419865, 18419864"
+    },
+    {
+      "name": "AKEMI_TAKASU_LINE_PLATFORMS_V1 defined",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "AKEMI_TAKASU_LINE_PATH_V1 defined",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "AKEMI_TAKASU_LINE_PATH_POLICY_V1 defined",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "AKEMI_TAKASU_LINE_STOP_IMAGES_V1 defined",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "stop image bank starts empty (no fabricated images)",
+      "pass": true,
+      "detail": "0 entries"
+    },
+    {
+      "name": "platforms bank has exactly the five systems",
+      "pass": true,
+      "detail": "18-takasu-seaside,18-urayasu-eki-iriguchi,18-takasu-kita-shogakko,18-takasu-seaside-from-shinurayasu,18-shinurayasu-from-takasu"
+    },
+    {
+      "name": "path bank has exactly the five systems",
+      "pass": true,
+      "detail": "18-takasu-seaside,18-urayasu-eki-iriguchi,18-takasu-kita-shogakko,18-takasu-seaside-from-shinurayasu,18-shinurayasu-from-takasu"
+    },
+    {
+      "name": "18-takasu-seaside: every official stop has a platform",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "18-takasu-seaside: no extra platforms",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "18-takasu-seaside: platform coords are finite",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "18-takasu-seaside: no sibling-exclusive stop in platforms",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "18-takasu-seaside: path relationId matches official",
+      "pass": true,
+      "detail": "18352908 vs 18352908"
+    },
+    {
+      "name": "18-takasu-seaside: pathHash matches build summary",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "18-takasu-seaside: pathPoints count matches build summary",
+      "pass": true,
+      "detail": "292 vs 292"
+    },
+    {
+      "name": "18-takasu-seaside: path points all finite",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "18-takasu-seaside: policy minPathPoints satisfied",
+      "pass": true,
+      "detail": "292 >= 277"
+    },
+    {
+      "name": "18-urayasu-eki-iriguchi: every official stop has a platform",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "18-urayasu-eki-iriguchi: no extra platforms",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "18-urayasu-eki-iriguchi: platform coords are finite",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "18-urayasu-eki-iriguchi: no sibling-exclusive stop in platforms",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "18-urayasu-eki-iriguchi: path relationId matches official",
+      "pass": true,
+      "detail": "18352907 vs 18352907"
+    },
+    {
+      "name": "18-urayasu-eki-iriguchi: pathHash matches build summary",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "18-urayasu-eki-iriguchi: pathPoints count matches build summary",
+      "pass": true,
+      "detail": "247 vs 247"
+    },
+    {
+      "name": "18-urayasu-eki-iriguchi: path points all finite",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "18-urayasu-eki-iriguchi: policy minPathPoints satisfied",
+      "pass": true,
+      "detail": "247 >= 234"
+    },
+    {
+      "name": "18-takasu-kita-shogakko: every official stop has a platform",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "18-takasu-kita-shogakko: no extra platforms",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "18-takasu-kita-shogakko: platform coords are finite",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "18-takasu-kita-shogakko: no sibling-exclusive stop in platforms",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "18-takasu-kita-shogakko: path relationId matches official",
+      "pass": true,
+      "detail": "18417590 vs 18417590"
+    },
+    {
+      "name": "18-takasu-kita-shogakko: pathHash matches build summary",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "18-takasu-kita-shogakko: pathPoints count matches build summary",
+      "pass": true,
+      "detail": "227 vs 227"
+    },
+    {
+      "name": "18-takasu-kita-shogakko: path points all finite",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "18-takasu-kita-shogakko: policy minPathPoints satisfied",
+      "pass": true,
+      "detail": "227 >= 215"
+    },
+    {
+      "name": "18-takasu-seaside-from-shinurayasu: every official stop has a platform",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "18-takasu-seaside-from-shinurayasu: no extra platforms",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "18-takasu-seaside-from-shinurayasu: platform coords are finite",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "18-takasu-seaside-from-shinurayasu: no sibling-exclusive stop in platforms",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "18-takasu-seaside-from-shinurayasu: path relationId matches official",
+      "pass": true,
+      "detail": "null vs null"
+    },
+    {
+      "name": "18-takasu-seaside-from-shinurayasu: composed system has compositionRelations",
+      "pass": true,
+      "detail": "[18417590,18352908]"
+    },
+    {
+      "name": "18-takasu-seaside-from-shinurayasu: official order documents osmPathComposition",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "18-takasu-seaside-from-shinurayasu: pathHash matches build summary",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "18-takasu-seaside-from-shinurayasu: pathPoints count matches build summary",
+      "pass": true,
+      "detail": "146 vs 146"
+    },
+    {
+      "name": "18-takasu-seaside-from-shinurayasu: path points all finite",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "18-takasu-seaside-from-shinurayasu: policy minPathPoints satisfied",
+      "pass": true,
+      "detail": "146 >= 138"
+    },
+    {
+      "name": "18-shinurayasu-from-takasu: every official stop has a platform",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "18-shinurayasu-from-takasu: no extra platforms",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "18-shinurayasu-from-takasu: platform coords are finite",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "18-shinurayasu-from-takasu: no sibling-exclusive stop in platforms",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "18-shinurayasu-from-takasu: path relationId matches official",
+      "pass": true,
+      "detail": "null vs null"
+    },
+    {
+      "name": "18-shinurayasu-from-takasu: composed system has compositionRelations",
+      "pass": true,
+      "detail": "[18352907,18352908]"
+    },
+    {
+      "name": "18-shinurayasu-from-takasu: official order documents osmPathComposition",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "18-shinurayasu-from-takasu: pathHash matches build summary",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "18-shinurayasu-from-takasu: pathPoints count matches build summary",
+      "pass": true,
+      "detail": "131 vs 131"
+    },
+    {
+      "name": "18-shinurayasu-from-takasu: path points all finite",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "18-shinurayasu-from-takasu: policy minPathPoints satisfied",
+      "pass": true,
+      "detail": "131 >= 124"
+    },
+    {
+      "name": "path hashes are distinct",
+      "pass": true,
+      "detail": "4b04f78629731300a84cf4e23918efd749edf9f9693ad5fb63317790d403b5f3,dda9ecbf8a09875cc1f015e85116824e1ce020a48b1d6d064211a69fb41bb92b,34fde1f156be7a37feabf25c3ac47665b30a59f142bc43e899a7d3d45e148778,76a7e2a442236d25ad0e5f622011f02a0b05d032b8565eb6e2bc096fdb9bc5b4,4c7fb0b0a7861a392217e21184b27eb93b14c27a3df2248da8efdd80a744e520"
+    },
+    {
+      "name": "18-takasu-seaside: route module contains the official stop array verbatim",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "18-takasu-seaside: route module declares the system",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "18-takasu-seaside: route module carries relationId 18352908",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "18-urayasu-eki-iriguchi: route module contains the official stop array verbatim",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "18-urayasu-eki-iriguchi: route module declares the system",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "18-urayasu-eki-iriguchi: route module carries relationId 18352907",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "18-takasu-kita-shogakko: route module contains the official stop array verbatim",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "18-takasu-kita-shogakko: route module declares the system",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "18-takasu-kita-shogakko: route module carries relationId 18417590",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "18-takasu-seaside-from-shinurayasu: route module contains the official stop array verbatim",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "18-takasu-seaside-from-shinurayasu: route module declares the system",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "18-takasu-seaside-from-shinurayasu: composed system has relationId null in route module",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "18-shinurayasu-from-takasu: route module contains the official stop array verbatim",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "18-shinurayasu-from-takasu: route module declares the system",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "18-shinurayasu-from-takasu: composed system has relationId null in route module",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "route module ROUTE_ID is route-18",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "route module DISPLAY_CODE is 18",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "route module exposes AKEMI_TAKASU_LINE_ROUTE_V1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "route module documents verified short-turn composition",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "deferredNoOsmSource is empty",
+      "pass": true,
+      "detail": "0"
+    },
+    {
+      "name": "route module documents the ★た deep-night variant",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "css uses akemiTakasuLine-stop-image",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "css does not reuse route-15/17 classes",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "akemi-takasu-line-route-v1.js: ©山本信勝 preserved from shione-no-machi-line-route-v1.js",
+      "pass": true,
+      "detail": "template=false generated=false"
+    },
+    {
+      "name": "akemi-takasu-line-path-policy-v1.js: ©山本信勝 preserved from shione-no-machi-line-path-policy-v1.js",
+      "pass": true,
+      "detail": "template=false generated=false"
+    },
+    {
+      "name": "akemi-takasu-line-stop-images-v1.css: ©山本信勝 preserved from shione-no-machi-line-stop-images-v1.css",
+      "pass": true,
+      "detail": "template=false generated=false"
+    }
+  ],
+  "blockers": [],
+  "warnings": [],
+  "copyrightFiles": [
+    "app.js",
+    "_verify_home_v104.js",
+    "_verify_prod_home_v104.js",
+    "_wait_v104_prod.js"
+  ]
+}

@@ -1,0 +1,88 @@
+{
+ "probedAt": "2026-07-26T14:52:59.741Z",
+ "steps": [
+  {
+   "label": "turnRestrictions",
+   "host": "https://overpass-api.de/api/interpreter",
+   "ok": true,
+   "elements": 0
+  },
+  {
+   "label": "wayTags",
+   "host": "https://overpass-api.de/api/interpreter",
+   "ok": true,
+   "elements": 7
+  }
+ ],
+ "restrictions": [],
+ "wayTags": [
+  {
+   "id": 720406628,
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "50",
+    "name": "シンボルロード",
+    "name:en": "Symbol Road",
+    "name:es": "Ruta Symbol",
+    "name:ja": "シンボルロード",
+    "name:ko": "심볼로",
+    "oneway": "yes"
+   }
+  },
+  {
+   "id": 720406629,
+   "tags": {
+    "access": "yes",
+    "highway": "service",
+    "oneway": "yes"
+   }
+  },
+  {
+   "id": 906161755,
+   "tags": {
+    "access": "permit",
+    "bus": "yes",
+    "highway": "service",
+    "oneway": "yes"
+   }
+  },
+  {
+   "id": 906161756,
+   "tags": {
+    "highway": "service",
+    "oneway": "yes"
+   }
+  },
+  {
+   "id": 1338975833,
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "source": "GSImaps/ort"
+   }
+  },
+  {
+   "id": 1338996609,
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "50",
+    "name": "シンボルロード",
+    "name:en": "Symbol Road",
+    "name:es": "Ruta Symbol",
+    "name:ja": "シンボルロード",
+    "name:ko": "심볼로",
+    "oneway": "yes",
+    "source": "GSImaps/ort"
+   }
+  },
+  {
+   "id": 1342409929,
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "source": "GSImaps/ort"
+   }
+  }
+ ],
+ "errors": []
+}

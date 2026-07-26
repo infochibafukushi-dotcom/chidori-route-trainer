@@ -1,0 +1,300 @@
+﻿COURSE JOBS 2
+TT 譁ｰ豬ｦ螳蛾ｧ・weekday berth E links 252 legend ["15\t[15]鬮俶ｴｲ豬ｷ豬懷・蝨・貎ｮ髻ｳ縺ｮ陦励・鬮俶ｴｲ蝗帑ｸ∫岼邨檎罰)鬮俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦・,"18\t[18]鬮俶ｴｲ豬ｷ豬懷・蝨・貎ｮ髻ｳ縺ｮ陦励・鬮俶ｴｲ蝗帑ｸ∫岼邨檎罰)鬮俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦・,"辟｡蜊ｰ窶ｦ縲撰ｼ托ｼ慕ｳｻ邨ｱ縲第擲莠ｬ蟄ｦ鬢ｨ蜑咲ｵ檎罰縲鬮俶ｴｲ豬ｷ豬懷・蝨定｡後″","繧・ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲大､｢豬ｷ縺ｮ陦励・ｫ俶ｴｲ讖九∵ｽｮ髻ｳ縺ｮ陦礼ｵ檎罰縲鬮俶ｴｲ豬ｷ豬懷・蝨定｡後″","縺溪ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲大､｢豬ｷ縺ｮ陦励・貎ｮ髻ｳ縺ｮ陦励・鬮俶ｴｲ蝗帑ｸ∫岼邨檎罰縲鬮俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦後″・懌・・帶ｷｱ螟懊ヰ繧ｹ 驕玖ｳ・埼｡搾ｼ・,"笘・◆窶ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲大､｢豬ｷ縺ｮ陦励・貎ｮ髻ｳ縺ｮ陦励・鬮俶ｴｲ蝗帑ｸ∫岼邨檎罰縲鬮俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦後″・懌・・帶ｷｱ螟懊ヰ繧ｹ 驕玖ｳ・埼｡搾ｼ・]
+NEW SIG 10 譁ｰ豬ｦ螳蛾ｧ・-> 鬮俶ｴｲ豬ｷ豬懷・蝨・course 0008200278
+CHECKPOINT new-signature {"uniqueSignatures":1,"tripsOpened":1,"rejected":0,"errors":0,"elapsedSec":4}
+NEW SIG 15 豬ｦ螳蛾ｧ・・蜿｣ -> 鬮俶ｴｲ豬ｷ豬懷・蝨・course 0008200286
+CHECKPOINT new-signature {"uniqueSignatures":2,"tripsOpened":2,"rejected":0,"errors":0,"elapsedSec":5}
+CHECKPOINT progress-weekday-20 {"uniqueSignatures":2,"tripsOpened":2,"rejected":0,"errors":0,"elapsedSec":22}
+NEW SIG 9 譁ｰ豬ｦ螳蛾ｧ・-> 鬮俶ｴｲ豬ｷ豬懷・蝨・course 0008200288
+CHECKPOINT new-signature {"uniqueSignatures":3,"tripsOpened":3,"rejected":0,"errors":0,"elapsedSec":36}
+CHECKPOINT progress-weekday-40 {"uniqueSignatures":3,"tripsOpened":3,"rejected":0,"errors":0,"elapsedSec":40}
+CHECKPOINT progress-weekday-60 {"uniqueSignatures":3,"tripsOpened":3,"rejected":0,"errors":0,"elapsedSec":59}
+CHECKPOINT progress-weekday-80 {"uniqueSignatures":3,"tripsOpened":3,"rejected":0,"errors":0,"elapsedSec":78}
+CHECKPOINT progress-weekday-100 {"uniqueSignatures":3,"tripsOpened":3,"rejected":0,"errors":0,"elapsedSec":97}
+CHECKPOINT progress-weekday-120 {"uniqueSignatures":3,"tripsOpened":3,"rejected":0,"errors":0,"elapsedSec":116}
+CHECKPOINT progress-weekday-140 {"uniqueSignatures":3,"tripsOpened":3,"rejected":0,"errors":0,"elapsedSec":134}
+CHECKPOINT progress-weekday-160 {"uniqueSignatures":3,"tripsOpened":3,"rejected":0,"errors":0,"elapsedSec":153}
+CHECKPOINT progress-weekday-180 {"uniqueSignatures":3,"tripsOpened":3,"rejected":0,"errors":0,"elapsedSec":172}
+NEW SIG 16 譁ｰ豬ｦ螳蛾ｧ・-> 鬮俶ｴｲ蛹怜ｰ丞ｭｦ譬｡ course 0008200289
+CHECKPOINT new-signature {"uniqueSignatures":4,"tripsOpened":4,"rejected":0,"errors":0,"elapsedSec":186}
+CHECKPOINT progress-weekday-200 {"uniqueSignatures":4,"tripsOpened":4,"rejected":0,"errors":0,"elapsedSec":192}
+CHECKPOINT progress-weekday-220 {"uniqueSignatures":4,"tripsOpened":4,"rejected":0,"errors":0,"elapsedSec":210}
+CHECKPOINT progress-weekday-240 {"uniqueSignatures":4,"tripsOpened":4,"rejected":0,"errors":0,"elapsedSec":230}
+CHECKPOINT after-譁ｰ豬ｦ螳蛾ｧ・E-weekday {"uniqueSignatures":4,"tripsOpened":4,"rejected":0,"errors":0,"elapsedSec":241}
+TT 譁ｰ豬ｦ螳蛾ｧ・saturday berth E links 252 legend ["15\t[15]鬮俶ｴｲ豬ｷ豬懷・蝨・貎ｮ髻ｳ縺ｮ陦励・鬮俶ｴｲ蝗帑ｸ∫岼邨檎罰)鬮俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦・,"18\t[18]鬮俶ｴｲ豬ｷ豬懷・蝨・貎ｮ髻ｳ縺ｮ陦励・鬮俶ｴｲ蝗帑ｸ∫岼邨檎罰)鬮俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦・,"辟｡蜊ｰ窶ｦ縲撰ｼ托ｼ慕ｳｻ邨ｱ縲第擲莠ｬ蟄ｦ鬢ｨ蜑咲ｵ檎罰縲鬮俶ｴｲ豬ｷ豬懷・蝨定｡後″","繧・ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲大､｢豬ｷ縺ｮ陦励・ｫ俶ｴｲ讖九∵ｽｮ髻ｳ縺ｮ陦礼ｵ檎罰縲鬮俶ｴｲ豬ｷ豬懷・蝨定｡後″","縺溪ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲大､｢豬ｷ縺ｮ陦励・貎ｮ髻ｳ縺ｮ陦励・鬮俶ｴｲ蝗帑ｸ∫岼邨檎罰縲鬮俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦後″・懌・・帶ｷｱ螟懊ヰ繧ｹ 驕玖ｳ・埼｡搾ｼ・,"笘・◆窶ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲大､｢豬ｷ縺ｮ陦励・貎ｮ髻ｳ縺ｮ陦励・鬮俶ｴｲ蝗帑ｸ∫岼邨檎罰縲鬮俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦後″・懌・・帶ｷｱ螟懊ヰ繧ｹ 驕玖ｳ・埼｡搾ｼ・]
+CHECKPOINT after-譁ｰ豬ｦ螳蛾ｧ・E-saturday {"uniqueSignatures":4,"tripsOpened":4,"rejected":0,"errors":0,"elapsedSec":244}
+TT 譁ｰ豬ｦ螳蛾ｧ・sunday-holiday berth E links 252 legend ["15\t[15]鬮俶ｴｲ豬ｷ豬懷・蝨・貎ｮ髻ｳ縺ｮ陦励・鬮俶ｴｲ蝗帑ｸ∫岼邨檎罰)鬮俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦・,"18\t[18]鬮俶ｴｲ豬ｷ豬懷・蝨・貎ｮ髻ｳ縺ｮ陦励・鬮俶ｴｲ蝗帑ｸ∫岼邨檎罰)鬮俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦・,"辟｡蜊ｰ窶ｦ縲撰ｼ托ｼ慕ｳｻ邨ｱ縲第擲莠ｬ蟄ｦ鬢ｨ蜑咲ｵ檎罰縲鬮俶ｴｲ豬ｷ豬懷・蝨定｡後″","繧・ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲大､｢豬ｷ縺ｮ陦励・ｫ俶ｴｲ讖九∵ｽｮ髻ｳ縺ｮ陦礼ｵ檎罰縲鬮俶ｴｲ豬ｷ豬懷・蝨定｡後″","縺溪ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲大､｢豬ｷ縺ｮ陦励・貎ｮ髻ｳ縺ｮ陦励・鬮俶ｴｲ蝗帑ｸ∫岼邨檎罰縲鬮俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦後″・懌・・帶ｷｱ螟懊ヰ繧ｹ 驕玖ｳ・埼｡搾ｼ・,"笘・◆窶ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲大､｢豬ｷ縺ｮ陦励・貎ｮ髻ｳ縺ｮ陦励・鬮俶ｴｲ蝗帑ｸ∫岼邨檎罰縲鬮俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦後″・懌・・帶ｷｱ螟懊ヰ繧ｹ 驕玖ｳ・埼｡搾ｼ・]
+CHECKPOINT after-譁ｰ豬ｦ螳蛾ｧ・E-sunday-holiday {"uniqueSignatures":4,"tripsOpened":4,"rejected":0,"errors":0,"elapsedSec":246}
+TT 譁ｰ豬ｦ螳蛾ｧ・weekday berth H links 97 legend ["11\t[11]・域ｶ磯亟譛ｬ驛ｨ蜑咲ｵ檎罰・画ｵｦ螳蛾ｧ・・蜿｣・磯・､ｩ蝣ら羅髯｢蜑阪・隕区・蟾昜ｽ丞ｮ・ｵ檎罰・芽・豬憺ｧ・｡・,"18\t[18]・域ｶ磯亟譛ｬ驛ｨ蜑咲ｵ檎罰・画ｵｦ螳蛾ｧ・・蜿｣・磯・､ｩ蝣ら羅髯｢蜑阪・隕区・蟾昜ｽ丞ｮ・ｵ檎罰・芽・豬憺ｧ・｡・,"3\t[23]・域ｶ磯亟譛ｬ驛ｨ蜑咲ｵ檎罰・画ｵｦ螳蛾ｧ・・蜿｣・磯・､ｩ蝣ら羅髯｢蜑阪・隕区・蟾昜ｽ丞ｮ・ｵ檎罰・芽・豬憺ｧ・｡・,"3\t[3]・域ｶ磯亟譛ｬ驛ｨ蜑咲ｵ檎罰・画ｵｦ螳蛾ｧ・・蜿｣・磯・､ｩ蝣ら羅髯｢蜑阪・隕区・蟾昜ｽ丞ｮ・ｵ檎罰・芽・豬憺ｧ・｡・,"辟｡蜊ｰ窶ｦ縲撰ｼ薙・・托ｼ代・・托ｼ倡ｳｻ邨ｱ縲第ｵｦ螳蛾ｧ・・蜿｣陦後″","縺ｾ窶ｦ縲撰ｼ抵ｼ鍋ｳｻ邨ｱ縲鷹・､ｩ蝣ら羅髯｢蜑咲ｵ檎罰縲闊樊ｵ憺ｧ・｡後″・域ｵｦ螳蛾ｧ・・蜿｣縺ｫ縺ｯ陦後″縺ｾ縺帙ｓ・・]
+NEW SIG 15 鬮俶ｴｲ豬ｷ豬懷・蝨・-> 豬ｦ螳蛾ｧ・・蜿｣ course 0008200285
+CHECKPOINT new-signature {"uniqueSignatures":5,"tripsOpened":5,"rejected":0,"errors":0,"elapsedSec":249}
+NEW SIG 19 邱丞粋蜈ｬ蝨・-> 豬ｦ螳蛾ｧ・・蜿｣ course 0008200210
+CHECKPOINT new-signature {"uniqueSignatures":6,"tripsOpened":6,"rejected":0,"errors":0,"elapsedSec":250}
+NEW SIG 16 邱丞粋蜈ｬ蝨・-> 豬ｦ螳蛾ｧ・・蜿｣ course 0008200260
+CHECKPOINT new-signature {"uniqueSignatures":7,"tripsOpened":7,"rejected":0,"errors":0,"elapsedSec":251}
+NEW SIG 14 繝吶う繝代・繧ｯ -> 豬ｦ螳蛾ｧ・・蜿｣ course 0008200267
+CHECKPOINT new-signature {"uniqueSignatures":8,"tripsOpened":8,"rejected":0,"errors":0,"elapsedSec":257}
+CHECKPOINT progress-weekday-20 {"uniqueSignatures":8,"tripsOpened":8,"rejected":0,"errors":0,"elapsedSec":268}
+NEW SIG 17 譏取ｵｷ莠比ｸ∫岼 -> 豬ｦ螳蛾ｧ・・蜿｣ course 0008200217
+CHECKPOINT new-signature {"uniqueSignatures":9,"tripsOpened":9,"rejected":0,"errors":0,"elapsedSec":270}
+NEW SIG 25 邱丞粋蜈ｬ蝨・-> 闊樊ｵ憺ｧ・course 0008200302
+CHECKPOINT new-signature {"uniqueSignatures":10,"tripsOpened":10,"rejected":0,"errors":0,"elapsedSec":284}
+CHECKPOINT progress-weekday-40 {"uniqueSignatures":10,"tripsOpened":10,"rejected":0,"errors":0,"elapsedSec":286}
+NEW SIG 7 譁ｰ豬ｦ螳蛾ｧ・-> 豬ｦ螳蛾ｧ・・蜿｣ course 0008200269
+CHECKPOINT new-signature {"uniqueSignatures":11,"tripsOpened":11,"rejected":0,"errors":0,"elapsedSec":288}
+NEW SIG 18 譌･縺ｮ蜃ｺ蜊・-> 豬ｦ螳蛾ｧ・・蜿｣ course 0008200256
+CHECKPOINT new-signature {"uniqueSignatures":12,"tripsOpened":12,"rejected":0,"errors":0,"elapsedSec":290}
+CHECKPOINT progress-weekday-60 {"uniqueSignatures":12,"tripsOpened":12,"rejected":0,"errors":0,"elapsedSec":305}
+CHECKPOINT progress-weekday-80 {"uniqueSignatures":12,"tripsOpened":12,"rejected":0,"errors":0,"elapsedSec":329}
+CHECKPOINT after-譁ｰ豬ｦ螳蛾ｧ・H-weekday {"uniqueSignatures":12,"tripsOpened":12,"rejected":0,"errors":0,"elapsedSec":344}
+TT 譁ｰ豬ｦ螳蛾ｧ・saturday berth H links 97 legend ["11\t[11]・域ｶ磯亟譛ｬ驛ｨ蜑咲ｵ檎罰・画ｵｦ螳蛾ｧ・・蜿｣・磯・､ｩ蝣ら羅髯｢蜑阪・隕区・蟾昜ｽ丞ｮ・ｵ檎罰・芽・豬憺ｧ・｡・,"18\t[18]・域ｶ磯亟譛ｬ驛ｨ蜑咲ｵ檎罰・画ｵｦ螳蛾ｧ・・蜿｣・磯・､ｩ蝣ら羅髯｢蜑阪・隕区・蟾昜ｽ丞ｮ・ｵ檎罰・芽・豬憺ｧ・｡・,"3\t[23]・域ｶ磯亟譛ｬ驛ｨ蜑咲ｵ檎罰・画ｵｦ螳蛾ｧ・・蜿｣・磯・､ｩ蝣ら羅髯｢蜑阪・隕区・蟾昜ｽ丞ｮ・ｵ檎罰・芽・豬憺ｧ・｡・,"3\t[3]・域ｶ磯亟譛ｬ驛ｨ蜑咲ｵ檎罰・画ｵｦ螳蛾ｧ・・蜿｣・磯・､ｩ蝣ら羅髯｢蜑阪・隕区・蟾昜ｽ丞ｮ・ｵ檎罰・芽・豬憺ｧ・｡・,"辟｡蜊ｰ窶ｦ縲撰ｼ薙・・托ｼ代・・托ｼ倡ｳｻ邨ｱ縲第ｵｦ螳蛾ｧ・・蜿｣陦後″","縺ｾ窶ｦ縲撰ｼ抵ｼ鍋ｳｻ邨ｱ縲鷹・､ｩ蝣ら羅髯｢蜑咲ｵ檎罰縲闊樊ｵ憺ｧ・｡後″・域ｵｦ螳蛾ｧ・・蜿｣縺ｫ縺ｯ陦後″縺ｾ縺帙ｓ・・]
+CHECKPOINT after-譁ｰ豬ｦ螳蛾ｧ・H-saturday {"uniqueSignatures":12,"tripsOpened":12,"rejected":0,"errors":0,"elapsedSec":347}
+TT 譁ｰ豬ｦ螳蛾ｧ・sunday-holiday berth H links 97 legend ["11\t[11]・域ｶ磯亟譛ｬ驛ｨ蜑咲ｵ檎罰・画ｵｦ螳蛾ｧ・・蜿｣・磯・､ｩ蝣ら羅髯｢蜑阪・隕区・蟾昜ｽ丞ｮ・ｵ檎罰・芽・豬憺ｧ・｡・,"18\t[18]・域ｶ磯亟譛ｬ驛ｨ蜑咲ｵ檎罰・画ｵｦ螳蛾ｧ・・蜿｣・磯・､ｩ蝣ら羅髯｢蜑阪・隕区・蟾昜ｽ丞ｮ・ｵ檎罰・芽・豬憺ｧ・｡・,"3\t[23]・域ｶ磯亟譛ｬ驛ｨ蜑咲ｵ檎罰・画ｵｦ螳蛾ｧ・・蜿｣・磯・､ｩ蝣ら羅髯｢蜑阪・隕区・蟾昜ｽ丞ｮ・ｵ檎罰・芽・豬憺ｧ・｡・,"3\t[3]・域ｶ磯亟譛ｬ驛ｨ蜑咲ｵ檎罰・画ｵｦ螳蛾ｧ・・蜿｣・磯・､ｩ蝣ら羅髯｢蜑阪・隕区・蟾昜ｽ丞ｮ・ｵ檎罰・芽・豬憺ｧ・｡・,"辟｡蜊ｰ窶ｦ縲撰ｼ薙・・托ｼ代・・托ｼ倡ｳｻ邨ｱ縲第ｵｦ螳蛾ｧ・・蜿｣陦後″","縺ｾ窶ｦ縲撰ｼ抵ｼ鍋ｳｻ邨ｱ縲鷹・､ｩ蝣ら羅髯｢蜑咲ｵ檎罰縲闊樊ｵ憺ｧ・｡後″・域ｵｦ螳蛾ｧ・・蜿｣縺ｫ縺ｯ陦後″縺ｾ縺帙ｓ・・]
+CHECKPOINT after-譁ｰ豬ｦ螳蛾ｧ・H-sunday-holiday {"uniqueSignatures":12,"tripsOpened":12,"rejected":0,"errors":0,"elapsedSec":349}
+FOLLOW-UP 豬ｦ螳蛾ｧ・・蜿｣ 00020739
+TT 豬ｦ螳蛾ｧ・・蜿｣ weekday berth 11 links 97 legend ["11\t[11]・域眠豬ｦ螳蛾ｧ・・譏取ｵｷ莠比ｸ∫岼邨檎罰・臥ｷ丞粋蜈ｬ蝨抵ｼ域眠豬ｦ螳蛾ｧ・・繝吶う繝代・繧ｯ邨檎罰・臥ｷ丞粋蜈ｬ蝨偵・譌･縺ｮ蜃ｺ蜊暦ｼ亥｢灘慍蜈ｬ蝨抵ｼ会ｼ域眠豬ｦ・亥ｮ蛾ｧ・・鬮俶ｴｲ讖狗ｵ檎罰・蛾ｫ俶ｴｲ豬ｷ豬懷・蝨堤ｵ檎罰・芽｡・,"18\t[18]・域眠豬ｦ螳蛾ｧ・・譏取ｵｷ莠比ｸ∫岼邨檎罰・臥ｷ丞粋蜈ｬ蝨抵ｼ域眠豬ｦ螳蛾ｧ・・繝吶う繝代・繧ｯ邨檎罰・臥ｷ丞粋蜈ｬ蝨偵・譌･縺ｮ蜃ｺ蜊暦ｼ亥｢灘慍蜈ｬ蝨抵ｼ会ｼ域眠豬ｦ・亥ｮ蛾ｧ・・鬮俶ｴｲ讖狗ｵ檎罰・蛾ｫ俶ｴｲ豬ｷ豬懷・蝨堤ｵ檎罰・芽｡・,"3\t[3]・域眠豬ｦ螳蛾ｧ・・譏取ｵｷ莠比ｸ∫岼邨檎罰・臥ｷ丞粋蜈ｬ蝨抵ｼ域眠豬ｦ螳蛾ｧ・・繝吶う繝代・繧ｯ邨檎罰・臥ｷ丞粋蜈ｬ蝨偵・譌･縺ｮ蜃ｺ蜊暦ｼ亥｢灘慍蜈ｬ蝨抵ｼ会ｼ域眠豬ｦ・亥ｮ蛾ｧ・・鬮俶ｴｲ讖狗ｵ檎罰・蛾ｫ俶ｴｲ豬ｷ豬懷・蝨堤ｵ檎罰・芽｡・,"縺やｦ縲撰ｼ鍋ｳｻ邨ｱ縲第眠豬ｦ螳蛾ｧ・・譏取ｵｷ莠比ｸ∫岼邨檎罰縲邱丞粋蜈ｬ蝨定｡後″","譏寂ｦ縲撰ｼ鍋ｳｻ邨ｱ縲第眠豬ｦ螳蛾ｧ・ｵ檎罰縲譏取ｵｷ莠比ｸ∫岼豁｢縺ｾ繧・,"縺ｲ窶ｦ縲撰ｼ托ｼ醍ｳｻ邨ｱ縲第律縺ｮ蜃ｺ蜊暦ｼ亥｢灘慍蜈ｬ蝨抵ｼ芽｡後″","縺昶ｦ縲撰ｼ托ｼ醍ｳｻ邨ｱ縲第眠豬ｦ螳蛾ｧ・・繝吶う繝代・繧ｯ邨檎罰縲邱丞粋蜈ｬ蝨定｡後″","繝吮ｦ縲撰ｼ托ｼ醍ｳｻ邨ｱ縲第眠豬ｦ螳蛾ｧ・ｵ檎罰縲繝吶う繝代・繧ｯ豁｢縺ｾ繧・,"譁ｰ窶ｦ縲撰ｼ托ｼ醍ｳｻ邨ｱ縲第眠豬ｦ螳蛾ｧ・ｭ｢縺ｾ繧・,"繧・ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲第眠豬ｦ螳蛾ｧ・・鬮俶ｴｲ讖狗ｵ檎罰縲鬮俶ｴｲ豬ｷ豬懷・蝨定｡後″"]
+NEW SIG 19 豬ｦ螳蛾ｧ・・蜿｣ -> 邱丞粋蜈ｬ蝨・course 0008200211
+CHECKPOINT new-signature {"uniqueSignatures":13,"tripsOpened":13,"rejected":0,"errors":0,"elapsedSec":354}
+NEW SIG 16 豬ｦ螳蛾ｧ・・蜿｣ -> 邱丞粋蜈ｬ蝨・course 0008200261
+CHECKPOINT new-signature {"uniqueSignatures":14,"tripsOpened":14,"rejected":0,"errors":0,"elapsedSec":355}
+NEW SIG 7 豬ｦ螳蛾ｧ・・蜿｣ -> 譁ｰ豬ｦ螳蛾ｧ・course 0008200270
+CHECKPOINT new-signature {"uniqueSignatures":15,"tripsOpened":15,"rejected":0,"errors":0,"elapsedSec":362}
+CHECKPOINT progress-weekday-20 {"uniqueSignatures":15,"tripsOpened":15,"rejected":0,"errors":0,"elapsedSec":370}
+NEW SIG 18 豬ｦ螳蛾ｧ・・蜿｣ -> 譌･縺ｮ蜃ｺ蜊・course 0008200257
+CHECKPOINT new-signature {"uniqueSignatures":16,"tripsOpened":16,"rejected":0,"errors":0,"elapsedSec":381}
+CHECKPOINT progress-weekday-40 {"uniqueSignatures":16,"tripsOpened":16,"rejected":0,"errors":0,"elapsedSec":388}
+NEW SIG 17 豬ｦ螳蛾ｧ・・蜿｣ -> 譏取ｵｷ莠比ｸ∫岼 course 0008200218
+CHECKPOINT new-signature {"uniqueSignatures":17,"tripsOpened":17,"rejected":0,"errors":0,"elapsedSec":401}
+CHECKPOINT progress-weekday-60 {"uniqueSignatures":17,"tripsOpened":17,"rejected":0,"errors":0,"elapsedSec":407}
+CHECKPOINT progress-weekday-80 {"uniqueSignatures":17,"tripsOpened":17,"rejected":0,"errors":0,"elapsedSec":424}
+NEW SIG 14 豬ｦ螳蛾ｧ・・蜿｣ -> 繝吶う繝代・繧ｯ course 0008200268
+CHECKPOINT new-signature {"uniqueSignatures":18,"tripsOpened":18,"rejected":0,"errors":0,"elapsedSec":429}
+CHECKPOINT after-豬ｦ螳蛾ｧ・・蜿｣-weekday {"uniqueSignatures":18,"tripsOpened":18,"rejected":0,"errors":0,"elapsedSec":439}
+TT 豬ｦ螳蛾ｧ・・蜿｣ saturday berth 11 links 97 legend ["11\t[11]・域眠豬ｦ螳蛾ｧ・・譏取ｵｷ莠比ｸ∫岼邨檎罰・臥ｷ丞粋蜈ｬ蝨抵ｼ域眠豬ｦ螳蛾ｧ・・繝吶う繝代・繧ｯ邨檎罰・臥ｷ丞粋蜈ｬ蝨偵・譌･縺ｮ蜃ｺ蜊暦ｼ亥｢灘慍蜈ｬ蝨抵ｼ会ｼ域眠豬ｦ・亥ｮ蛾ｧ・・鬮俶ｴｲ讖狗ｵ檎罰・蛾ｫ俶ｴｲ豬ｷ豬懷・蝨堤ｵ檎罰・芽｡・,"18\t[18]・域眠豬ｦ螳蛾ｧ・・譏取ｵｷ莠比ｸ∫岼邨檎罰・臥ｷ丞粋蜈ｬ蝨抵ｼ域眠豬ｦ螳蛾ｧ・・繝吶う繝代・繧ｯ邨檎罰・臥ｷ丞粋蜈ｬ蝨偵・譌･縺ｮ蜃ｺ蜊暦ｼ亥｢灘慍蜈ｬ蝨抵ｼ会ｼ域眠豬ｦ・亥ｮ蛾ｧ・・鬮俶ｴｲ讖狗ｵ檎罰・蛾ｫ俶ｴｲ豬ｷ豬懷・蝨堤ｵ檎罰・芽｡・,"3\t[3]・域眠豬ｦ螳蛾ｧ・・譏取ｵｷ莠比ｸ∫岼邨檎罰・臥ｷ丞粋蜈ｬ蝨抵ｼ域眠豬ｦ螳蛾ｧ・・繝吶う繝代・繧ｯ邨檎罰・臥ｷ丞粋蜈ｬ蝨偵・譌･縺ｮ蜃ｺ蜊暦ｼ亥｢灘慍蜈ｬ蝨抵ｼ会ｼ域眠豬ｦ・亥ｮ蛾ｧ・・鬮俶ｴｲ讖狗ｵ檎罰・蛾ｫ俶ｴｲ豬ｷ豬懷・蝨堤ｵ檎罰・芽｡・,"縺やｦ縲撰ｼ鍋ｳｻ邨ｱ縲第眠豬ｦ螳蛾ｧ・・譏取ｵｷ莠比ｸ∫岼邨檎罰縲邱丞粋蜈ｬ蝨定｡後″","譏寂ｦ縲撰ｼ鍋ｳｻ邨ｱ縲第眠豬ｦ螳蛾ｧ・ｵ檎罰縲譏取ｵｷ莠比ｸ∫岼豁｢縺ｾ繧・,"縺ｲ窶ｦ縲撰ｼ托ｼ醍ｳｻ邨ｱ縲第律縺ｮ蜃ｺ蜊暦ｼ亥｢灘慍蜈ｬ蝨抵ｼ芽｡後″","縺昶ｦ縲撰ｼ托ｼ醍ｳｻ邨ｱ縲第眠豬ｦ螳蛾ｧ・・繝吶う繝代・繧ｯ邨檎罰縲邱丞粋蜈ｬ蝨定｡後″","繝吮ｦ縲撰ｼ托ｼ醍ｳｻ邨ｱ縲第眠豬ｦ螳蛾ｧ・ｵ檎罰縲繝吶う繝代・繧ｯ豁｢縺ｾ繧・,"譁ｰ窶ｦ縲撰ｼ托ｼ醍ｳｻ邨ｱ縲第眠豬ｦ螳蛾ｧ・ｭ｢縺ｾ繧・,"繧・ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲第眠豬ｦ螳蛾ｧ・・鬮俶ｴｲ讖狗ｵ檎罰縲鬮俶ｴｲ豬ｷ豬懷・蝨定｡後″"]
+CHECKPOINT after-豬ｦ螳蛾ｧ・・蜿｣-saturday {"uniqueSignatures":18,"tripsOpened":18,"rejected":0,"errors":0,"elapsedSec":440}
+TT 豬ｦ螳蛾ｧ・・蜿｣ sunday-holiday berth 11 links 97 legend ["11\t[11]・域眠豬ｦ螳蛾ｧ・・譏取ｵｷ莠比ｸ∫岼邨檎罰・臥ｷ丞粋蜈ｬ蝨抵ｼ域眠豬ｦ螳蛾ｧ・・繝吶う繝代・繧ｯ邨檎罰・臥ｷ丞粋蜈ｬ蝨偵・譌･縺ｮ蜃ｺ蜊暦ｼ亥｢灘慍蜈ｬ蝨抵ｼ会ｼ域眠豬ｦ・亥ｮ蛾ｧ・・鬮俶ｴｲ讖狗ｵ檎罰・蛾ｫ俶ｴｲ豬ｷ豬懷・蝨堤ｵ檎罰・芽｡・,"18\t[18]・域眠豬ｦ螳蛾ｧ・・譏取ｵｷ莠比ｸ∫岼邨檎罰・臥ｷ丞粋蜈ｬ蝨抵ｼ域眠豬ｦ螳蛾ｧ・・繝吶う繝代・繧ｯ邨檎罰・臥ｷ丞粋蜈ｬ蝨偵・譌･縺ｮ蜃ｺ蜊暦ｼ亥｢灘慍蜈ｬ蝨抵ｼ会ｼ域眠豬ｦ・亥ｮ蛾ｧ・・鬮俶ｴｲ讖狗ｵ檎罰・蛾ｫ俶ｴｲ豬ｷ豬懷・蝨堤ｵ檎罰・芽｡・,"3\t[3]・域眠豬ｦ螳蛾ｧ・・譏取ｵｷ莠比ｸ∫岼邨檎罰・臥ｷ丞粋蜈ｬ蝨抵ｼ域眠豬ｦ螳蛾ｧ・・繝吶う繝代・繧ｯ邨檎罰・臥ｷ丞粋蜈ｬ蝨偵・譌･縺ｮ蜃ｺ蜊暦ｼ亥｢灘慍蜈ｬ蝨抵ｼ会ｼ域眠豬ｦ・亥ｮ蛾ｧ・・鬮俶ｴｲ讖狗ｵ檎罰・蛾ｫ俶ｴｲ豬ｷ豬懷・蝨堤ｵ檎罰・芽｡・,"縺やｦ縲撰ｼ鍋ｳｻ邨ｱ縲第眠豬ｦ螳蛾ｧ・・譏取ｵｷ莠比ｸ∫岼邨檎罰縲邱丞粋蜈ｬ蝨定｡後″","譏寂ｦ縲撰ｼ鍋ｳｻ邨ｱ縲第眠豬ｦ螳蛾ｧ・ｵ檎罰縲譏取ｵｷ莠比ｸ∫岼豁｢縺ｾ繧・,"縺ｲ窶ｦ縲撰ｼ托ｼ醍ｳｻ邨ｱ縲第律縺ｮ蜃ｺ蜊暦ｼ亥｢灘慍蜈ｬ蝨抵ｼ芽｡後″","縺昶ｦ縲撰ｼ托ｼ醍ｳｻ邨ｱ縲第眠豬ｦ螳蛾ｧ・・繝吶う繝代・繧ｯ邨檎罰縲邱丞粋蜈ｬ蝨定｡後″","繝吮ｦ縲撰ｼ托ｼ醍ｳｻ邨ｱ縲第眠豬ｦ螳蛾ｧ・ｵ檎罰縲繝吶う繝代・繧ｯ豁｢縺ｾ繧・,"譁ｰ窶ｦ縲撰ｼ托ｼ醍ｳｻ邨ｱ縲第眠豬ｦ螳蛾ｧ・ｭ｢縺ｾ繧・,"繧・ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲第眠豬ｦ螳蛾ｧ・・鬮俶ｴｲ讖狗ｵ檎罰縲鬮俶ｴｲ豬ｷ豬懷・蝨定｡後″"]
+CHECKPOINT after-豬ｦ螳蛾ｧ・・蜿｣-sunday-holiday {"uniqueSignatures":18,"tripsOpened":18,"rejected":0,"errors":0,"elapsedSec":442}
+FOLLOW-UP 鬮俶ｴｲ豬ｷ豬懷・蝨・00020855
+TT 鬮俶ｴｲ豬ｷ豬懷・蝨・weekday berth 03 links 220 legend ["15\t[15]・域擲莠ｬ蟄ｦ鬢ｨ蜑咲ｵ檎罰・画眠豬ｦ螳蛾ｧ・ｼ亥､｢豬ｷ縺ｮ陦礼ｵ檎罰・画眠豬ｦ螳蛾ｧ・・豬ｦ螳蛾ｧ・・蜿｣陦・,"18\t[18]・域擲莠ｬ蟄ｦ鬢ｨ蜑咲ｵ檎罰・画眠豬ｦ螳蛾ｧ・ｼ亥､｢豬ｷ縺ｮ陦礼ｵ檎罰・画眠豬ｦ螳蛾ｧ・・豬ｦ螳蛾ｧ・・蜿｣陦・,"辟｡蜊ｰ窶ｦ縲撰ｼ托ｼ慕ｳｻ邨ｱ縲第擲莠ｬ蟄ｦ鬢ｨ蜑咲ｵ檎罰縲譁ｰ豬ｦ螳蛾ｧ・｡後″","縺・ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲大､｢豬ｷ縺ｮ陦励∵眠豬ｦ螳蛾ｧ・ｵ檎罰縲豬ｦ螳蛾ｧ・・蜿｣陦後″","繧・ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲大､｢豬ｷ縺ｮ陦礼ｵ檎罰縲譁ｰ豬ｦ螳蛾ｧ・｡後″"]
+NEW SIG 10 鬮俶ｴｲ豬ｷ豬懷・蝨・-> 譁ｰ豬ｦ螳蛾ｧ・course 0008200277
+CHECKPOINT new-signature {"uniqueSignatures":19,"tripsOpened":19,"rejected":0,"errors":0,"elapsedSec":448}
+CHECKPOINT progress-weekday-20 {"uniqueSignatures":19,"tripsOpened":19,"rejected":0,"errors":0,"elapsedSec":463}
+CHECKPOINT progress-weekday-40 {"uniqueSignatures":19,"tripsOpened":19,"rejected":0,"errors":0,"elapsedSec":479}
+NEW SIG 9 鬮俶ｴｲ豬ｷ豬懷・蝨・-> 譁ｰ豬ｦ螳蛾ｧ・course 0008200287
+CHECKPOINT new-signature {"uniqueSignatures":20,"tripsOpened":20,"rejected":0,"errors":0,"elapsedSec":482}
+CHECKPOINT progress-weekday-60 {"uniqueSignatures":20,"tripsOpened":20,"rejected":0,"errors":0,"elapsedSec":496}
+CHECKPOINT progress-weekday-80 {"uniqueSignatures":20,"tripsOpened":20,"rejected":0,"errors":0,"elapsedSec":513}
+CHECKPOINT progress-weekday-100 {"uniqueSignatures":20,"tripsOpened":20,"rejected":0,"errors":0,"elapsedSec":529}
+CHECKPOINT progress-weekday-120 {"uniqueSignatures":20,"tripsOpened":20,"rejected":0,"errors":0,"elapsedSec":546}
+CHECKPOINT progress-weekday-140 {"uniqueSignatures":20,"tripsOpened":20,"rejected":0,"errors":0,"elapsedSec":562}
+CHECKPOINT progress-weekday-160 {"uniqueSignatures":20,"tripsOpened":20,"rejected":0,"errors":0,"elapsedSec":580}
+CHECKPOINT progress-weekday-180 {"uniqueSignatures":20,"tripsOpened":20,"rejected":0,"errors":0,"elapsedSec":596}
+CHECKPOINT progress-weekday-200 {"uniqueSignatures":20,"tripsOpened":20,"rejected":0,"errors":0,"elapsedSec":612}
+CHECKPOINT progress-weekday-220 {"uniqueSignatures":20,"tripsOpened":20,"rejected":0,"errors":0,"elapsedSec":629}
+CHECKPOINT after-鬮俶ｴｲ豬ｷ豬懷・蝨・weekday {"uniqueSignatures":20,"tripsOpened":20,"rejected":0,"errors":0,"elapsedSec":629}
+TT 鬮俶ｴｲ豬ｷ豬懷・蝨・saturday berth 03 links 220 legend ["15\t[15]・域擲莠ｬ蟄ｦ鬢ｨ蜑咲ｵ檎罰・画眠豬ｦ螳蛾ｧ・ｼ亥､｢豬ｷ縺ｮ陦礼ｵ檎罰・画眠豬ｦ螳蛾ｧ・・豬ｦ螳蛾ｧ・・蜿｣陦・,"18\t[18]・域擲莠ｬ蟄ｦ鬢ｨ蜑咲ｵ檎罰・画眠豬ｦ螳蛾ｧ・ｼ亥､｢豬ｷ縺ｮ陦礼ｵ檎罰・画眠豬ｦ螳蛾ｧ・・豬ｦ螳蛾ｧ・・蜿｣陦・,"辟｡蜊ｰ窶ｦ縲撰ｼ托ｼ慕ｳｻ邨ｱ縲第擲莠ｬ蟄ｦ鬢ｨ蜑咲ｵ檎罰縲譁ｰ豬ｦ螳蛾ｧ・｡後″","縺・ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲大､｢豬ｷ縺ｮ陦励∵眠豬ｦ螳蛾ｧ・ｵ檎罰縲豬ｦ螳蛾ｧ・・蜿｣陦後″","繧・ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲大､｢豬ｷ縺ｮ陦礼ｵ檎罰縲譁ｰ豬ｦ螳蛾ｧ・｡後″"]
+CHECKPOINT after-鬮俶ｴｲ豬ｷ豬懷・蝨・saturday {"uniqueSignatures":20,"tripsOpened":20,"rejected":0,"errors":0,"elapsedSec":631}
+TT 鬮俶ｴｲ豬ｷ豬懷・蝨・sunday-holiday berth 03 links 220 legend ["15\t[15]・域擲莠ｬ蟄ｦ鬢ｨ蜑咲ｵ檎罰・画眠豬ｦ螳蛾ｧ・ｼ亥､｢豬ｷ縺ｮ陦礼ｵ檎罰・画眠豬ｦ螳蛾ｧ・・豬ｦ螳蛾ｧ・・蜿｣陦・,"18\t[18]・域擲莠ｬ蟄ｦ鬢ｨ蜑咲ｵ檎罰・画眠豬ｦ螳蛾ｧ・ｼ亥､｢豬ｷ縺ｮ陦礼ｵ檎罰・画眠豬ｦ螳蛾ｧ・・豬ｦ螳蛾ｧ・・蜿｣陦・,"辟｡蜊ｰ窶ｦ縲撰ｼ托ｼ慕ｳｻ邨ｱ縲第擲莠ｬ蟄ｦ鬢ｨ蜑咲ｵ檎罰縲譁ｰ豬ｦ螳蛾ｧ・｡後″","縺・ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲大､｢豬ｷ縺ｮ陦励∵眠豬ｦ螳蛾ｧ・ｵ檎罰縲豬ｦ螳蛾ｧ・・蜿｣陦後″","繧・ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲大､｢豬ｷ縺ｮ陦礼ｵ檎罰縲譁ｰ豬ｦ螳蛾ｧ・｡後″"]
+CHECKPOINT after-鬮俶ｴｲ豬ｷ豬懷・蝨・sunday-holiday {"uniqueSignatures":20,"tripsOpened":20,"rejected":0,"errors":0,"elapsedSec":632}
+FOLLOW-UP 鬮俶ｴｲ蛹怜ｰ丞ｭｦ譬｡ 00020720
+FOLLOW-UP 貎ｮ髻ｳ縺ｮ陦・00020634
+TT 貎ｮ髻ｳ縺ｮ陦・weekday berth 15 links 220 legend ["15\t[15]・域擲莠ｬ蟄ｦ鬢ｨ蜑咲ｵ檎罰・画眠豬ｦ螳蛾ｧ・ｼ亥､｢豬ｷ縺ｮ陦礼ｵ檎罰・画眠豬ｦ螳蛾ｧ・・豬ｦ螳蛾ｧ・・蜿｣陦・,"18\t[18]・域擲莠ｬ蟄ｦ鬢ｨ蜑咲ｵ檎罰・画眠豬ｦ螳蛾ｧ・ｼ亥､｢豬ｷ縺ｮ陦礼ｵ檎罰・画眠豬ｦ螳蛾ｧ・・豬ｦ螳蛾ｧ・・蜿｣陦・,"辟｡蜊ｰ窶ｦ縲撰ｼ托ｼ慕ｳｻ邨ｱ縲第擲莠ｬ蟄ｦ鬢ｨ蜑咲ｵ檎罰縲譁ｰ豬ｦ螳蛾ｧ・｡後″","縺・ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲大､｢豬ｷ縺ｮ陦励∵眠豬ｦ螳蛾ｧ・ｵ檎罰縲豬ｦ螳蛾ｧ・・蜿｣陦後″","繧・ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲大､｢豬ｷ縺ｮ陦礼ｵ檎罰縲譁ｰ豬ｦ螳蛾ｧ・｡後″"]
+CHECKPOINT progress-weekday-20 {"uniqueSignatures":20,"tripsOpened":20,"rejected":0,"errors":0,"elapsedSec":655}
+CHECKPOINT progress-weekday-40 {"uniqueSignatures":20,"tripsOpened":20,"rejected":0,"errors":0,"elapsedSec":676}
+CHECKPOINT progress-weekday-60 {"uniqueSignatures":20,"tripsOpened":20,"rejected":0,"errors":0,"elapsedSec":692}
+CHECKPOINT progress-weekday-80 {"uniqueSignatures":20,"tripsOpened":20,"rejected":0,"errors":0,"elapsedSec":709}
+CHECKPOINT progress-weekday-100 {"uniqueSignatures":20,"tripsOpened":20,"rejected":0,"errors":0,"elapsedSec":726}
+CHECKPOINT progress-weekday-120 {"uniqueSignatures":20,"tripsOpened":20,"rejected":0,"errors":0,"elapsedSec":742}
+CHECKPOINT progress-weekday-140 {"uniqueSignatures":20,"tripsOpened":20,"rejected":0,"errors":0,"elapsedSec":759}
+CHECKPOINT progress-weekday-160 {"uniqueSignatures":20,"tripsOpened":20,"rejected":0,"errors":0,"elapsedSec":776}
+CHECKPOINT progress-weekday-180 {"uniqueSignatures":20,"tripsOpened":20,"rejected":0,"errors":0,"elapsedSec":802}
+CHECKPOINT progress-weekday-200 {"uniqueSignatures":20,"tripsOpened":20,"rejected":0,"errors":0,"elapsedSec":818}
+CHECKPOINT progress-weekday-220 {"uniqueSignatures":20,"tripsOpened":20,"rejected":0,"errors":0,"elapsedSec":835}
+CHECKPOINT after-貎ｮ髻ｳ縺ｮ陦・weekday {"uniqueSignatures":20,"tripsOpened":20,"rejected":0,"errors":0,"elapsedSec":835}
+TT 貎ｮ髻ｳ縺ｮ陦・saturday berth 15 links 220 legend ["15\t[15]・域擲莠ｬ蟄ｦ鬢ｨ蜑咲ｵ檎罰・画眠豬ｦ螳蛾ｧ・ｼ亥､｢豬ｷ縺ｮ陦礼ｵ檎罰・画眠豬ｦ螳蛾ｧ・・豬ｦ螳蛾ｧ・・蜿｣陦・,"18\t[18]・域擲莠ｬ蟄ｦ鬢ｨ蜑咲ｵ檎罰・画眠豬ｦ螳蛾ｧ・ｼ亥､｢豬ｷ縺ｮ陦礼ｵ檎罰・画眠豬ｦ螳蛾ｧ・・豬ｦ螳蛾ｧ・・蜿｣陦・,"辟｡蜊ｰ窶ｦ縲撰ｼ托ｼ慕ｳｻ邨ｱ縲第擲莠ｬ蟄ｦ鬢ｨ蜑咲ｵ檎罰縲譁ｰ豬ｦ螳蛾ｧ・｡後″","縺・ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲大､｢豬ｷ縺ｮ陦励∵眠豬ｦ螳蛾ｧ・ｵ檎罰縲豬ｦ螳蛾ｧ・・蜿｣陦後″","繧・ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲大､｢豬ｷ縺ｮ陦礼ｵ檎罰縲譁ｰ豬ｦ螳蛾ｧ・｡後″"]
+CHECKPOINT after-貎ｮ髻ｳ縺ｮ陦・saturday {"uniqueSignatures":20,"tripsOpened":20,"rejected":0,"errors":0,"elapsedSec":837}
+TT 貎ｮ髻ｳ縺ｮ陦・sunday-holiday berth 15 links 220 legend ["15\t[15]・域擲莠ｬ蟄ｦ鬢ｨ蜑咲ｵ檎罰・画眠豬ｦ螳蛾ｧ・ｼ亥､｢豬ｷ縺ｮ陦礼ｵ檎罰・画眠豬ｦ螳蛾ｧ・・豬ｦ螳蛾ｧ・・蜿｣陦・,"18\t[18]・域擲莠ｬ蟄ｦ鬢ｨ蜑咲ｵ檎罰・画眠豬ｦ螳蛾ｧ・ｼ亥､｢豬ｷ縺ｮ陦礼ｵ檎罰・画眠豬ｦ螳蛾ｧ・・豬ｦ螳蛾ｧ・・蜿｣陦・,"辟｡蜊ｰ窶ｦ縲撰ｼ托ｼ慕ｳｻ邨ｱ縲第擲莠ｬ蟄ｦ鬢ｨ蜑咲ｵ檎罰縲譁ｰ豬ｦ螳蛾ｧ・｡後″","縺・ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲大､｢豬ｷ縺ｮ陦励∵眠豬ｦ螳蛾ｧ・ｵ檎罰縲豬ｦ螳蛾ｧ・・蜿｣陦後″","繧・ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲大､｢豬ｷ縺ｮ陦礼ｵ檎罰縲譁ｰ豬ｦ螳蛾ｧ・｡後″"]
+CHECKPOINT after-貎ｮ髻ｳ縺ｮ陦・sunday-holiday {"uniqueSignatures":20,"tripsOpened":20,"rejected":0,"errors":0,"elapsedSec":838}
+TT 貎ｮ髻ｳ縺ｮ陦・weekday berth 02 links 263 legend ["15\t[15]鬮俶ｴｲ豬ｷ豬懷・蝨抵ｼ磯ｫ俶ｴｲ蝗帑ｸ∫岼繝ｻ譚ｱ莠ｬ蟄ｦ鬢ｨ蜑咲ｵ檎罰・蛾ｫ俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦・,"18\t[18]鬮俶ｴｲ豬ｷ豬懷・蝨抵ｼ磯ｫ俶ｴｲ蝗帑ｸ∫岼繝ｻ譚ｱ莠ｬ蟄ｦ鬢ｨ蜑咲ｵ檎罰・蛾ｫ俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦・,"25\t[25]鬮俶ｴｲ豬ｷ豬懷・蝨抵ｼ磯ｫ俶ｴｲ蝗帑ｸ∫岼繝ｻ譚ｱ莠ｬ蟄ｦ鬢ｨ蜑咲ｵ檎罰・蛾ｫ俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦・,"辟｡蜊ｰ窶ｦ鬮俶ｴｲ豬ｷ豬懷・蝨定｡後″","縺溪ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲鷹ｫ俶ｴｲ蝗帑ｸ∫岼邨檎罰縲鬮俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦後″・懌・・帶ｷｱ螟懊ヰ繧ｹ・磯°雉・埼｡搾ｼ会ｼ・,"笘・◆窶ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲鷹ｫ俶ｴｲ蝗帑ｸ∫岼邨檎罰縲鬮俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦後″・懌・・帶ｷｱ螟懊ヰ繧ｹ・磯°雉・埼｡搾ｼ会ｼ・]
+CHECKPOINT progress-weekday-20 {"uniqueSignatures":20,"tripsOpened":20,"rejected":0,"errors":0,"elapsedSec":856}
+CHECKPOINT progress-weekday-40 {"uniqueSignatures":20,"tripsOpened":20,"rejected":0,"errors":0,"elapsedSec":872}
+CHECKPOINT progress-weekday-60 {"uniqueSignatures":20,"tripsOpened":20,"rejected":0,"errors":0,"elapsedSec":888}
+NEW SIG 15 闊樊ｵ憺ｧ・-> 鬮俶ｴｲ豬ｷ豬懷・蝨・course 0008200306
+CHECKPOINT new-signature {"uniqueSignatures":21,"tripsOpened":21,"rejected":0,"errors":0,"elapsedSec":895}
+CHECKPOINT progress-weekday-80 {"uniqueSignatures":21,"tripsOpened":21,"rejected":0,"errors":0,"elapsedSec":905}
+CHECKPOINT progress-weekday-100 {"uniqueSignatures":21,"tripsOpened":21,"rejected":0,"errors":0,"elapsedSec":921}
+CHECKPOINT progress-weekday-120 {"uniqueSignatures":21,"tripsOpened":21,"rejected":0,"errors":0,"elapsedSec":936}
+CHECKPOINT progress-weekday-140 {"uniqueSignatures":21,"tripsOpened":21,"rejected":0,"errors":0,"elapsedSec":953}
+CHECKPOINT progress-weekday-160 {"uniqueSignatures":21,"tripsOpened":21,"rejected":0,"errors":0,"elapsedSec":969}
+CHECKPOINT progress-weekday-180 {"uniqueSignatures":21,"tripsOpened":21,"rejected":0,"errors":0,"elapsedSec":986}
+CHECKPOINT progress-weekday-200 {"uniqueSignatures":21,"tripsOpened":21,"rejected":0,"errors":0,"elapsedSec":1002}
+CHECKPOINT progress-weekday-220 {"uniqueSignatures":21,"tripsOpened":21,"rejected":0,"errors":0,"elapsedSec":1019}
+CHECKPOINT progress-weekday-240 {"uniqueSignatures":21,"tripsOpened":21,"rejected":0,"errors":0,"elapsedSec":1039}
+CHECKPOINT progress-weekday-260 {"uniqueSignatures":21,"tripsOpened":21,"rejected":0,"errors":0,"elapsedSec":1055}
+CHECKPOINT after-貎ｮ髻ｳ縺ｮ陦・weekday {"uniqueSignatures":21,"tripsOpened":21,"rejected":0,"errors":0,"elapsedSec":1058}
+TT 貎ｮ髻ｳ縺ｮ陦・saturday berth 02 links 263 legend ["15\t[15]鬮俶ｴｲ豬ｷ豬懷・蝨抵ｼ磯ｫ俶ｴｲ蝗帑ｸ∫岼繝ｻ譚ｱ莠ｬ蟄ｦ鬢ｨ蜑咲ｵ檎罰・蛾ｫ俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦・,"18\t[18]鬮俶ｴｲ豬ｷ豬懷・蝨抵ｼ磯ｫ俶ｴｲ蝗帑ｸ∫岼繝ｻ譚ｱ莠ｬ蟄ｦ鬢ｨ蜑咲ｵ檎罰・蛾ｫ俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦・,"25\t[25]鬮俶ｴｲ豬ｷ豬懷・蝨抵ｼ磯ｫ俶ｴｲ蝗帑ｸ∫岼繝ｻ譚ｱ莠ｬ蟄ｦ鬢ｨ蜑咲ｵ檎罰・蛾ｫ俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦・,"辟｡蜊ｰ窶ｦ鬮俶ｴｲ豬ｷ豬懷・蝨定｡後″","縺溪ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲鷹ｫ俶ｴｲ蝗帑ｸ∫岼邨檎罰縲鬮俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦後″・懌・・帶ｷｱ螟懊ヰ繧ｹ・磯°雉・埼｡搾ｼ会ｼ・,"笘・◆窶ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲鷹ｫ俶ｴｲ蝗帑ｸ∫岼邨檎罰縲鬮俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦後″・懌・・帶ｷｱ螟懊ヰ繧ｹ・磯°雉・埼｡搾ｼ会ｼ・]
+CHECKPOINT after-貎ｮ髻ｳ縺ｮ陦・saturday {"uniqueSignatures":21,"tripsOpened":21,"rejected":0,"errors":0,"elapsedSec":1059}
+TT 貎ｮ髻ｳ縺ｮ陦・sunday-holiday berth 02 links 263 legend ["15\t[15]鬮俶ｴｲ豬ｷ豬懷・蝨抵ｼ磯ｫ俶ｴｲ蝗帑ｸ∫岼繝ｻ譚ｱ莠ｬ蟄ｦ鬢ｨ蜑咲ｵ檎罰・蛾ｫ俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦・,"18\t[18]鬮俶ｴｲ豬ｷ豬懷・蝨抵ｼ磯ｫ俶ｴｲ蝗帑ｸ∫岼繝ｻ譚ｱ莠ｬ蟄ｦ鬢ｨ蜑咲ｵ檎罰・蛾ｫ俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦・,"25\t[25]鬮俶ｴｲ豬ｷ豬懷・蝨抵ｼ磯ｫ俶ｴｲ蝗帑ｸ∫岼繝ｻ譚ｱ莠ｬ蟄ｦ鬢ｨ蜑咲ｵ檎罰・蛾ｫ俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦・,"辟｡蜊ｰ窶ｦ鬮俶ｴｲ豬ｷ豬懷・蝨定｡後″","縺溪ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲鷹ｫ俶ｴｲ蝗帑ｸ∫岼邨檎罰縲鬮俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦後″・懌・・帶ｷｱ螟懊ヰ繧ｹ・磯°雉・埼｡搾ｼ会ｼ・,"笘・◆窶ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲鷹ｫ俶ｴｲ蝗帑ｸ∫岼邨檎罰縲鬮俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦後″・懌・・帶ｷｱ螟懊ヰ繧ｹ・磯°雉・埼｡搾ｼ会ｼ・]
+CHECKPOINT after-貎ｮ髻ｳ縺ｮ陦・sunday-holiday {"uniqueSignatures":21,"tripsOpened":21,"rejected":0,"errors":0,"elapsedSec":1061}
+FOLLOW-UP 螟｢豬ｷ縺ｮ陦・00020709
+TT 螟｢豬ｷ縺ｮ陦・weekday berth 02 links 79 legend ["18\t[18]・域ｽｮ髻ｳ縺ｮ陦礼ｵ檎罰・蛾ｫ俶ｴｲ豬ｷ豬懷・蝨抵ｼ域ｽｮ髻ｳ縺ｮ陦励・鬮俶ｴｲ蝗帑ｸ∫岼邨檎罰・蛾ｫ俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦・,"辟｡蜊ｰ窶ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲鷹ｫ俶ｴｲ讖九∵ｽｮ髻ｳ縺ｮ陦礼ｵ檎罰縲鬮俶ｴｲ豬ｷ豬懷・蝨定｡後″","縺溪ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲鷹ｫ俶ｴｲ讖九・貎ｮ髻ｳ縺ｮ陦励・鬮俶ｴｲ蝗帑ｸ∫岼邨檎罰縲鬮俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦後″・懌・・帶ｷｱ螟懊ヰ繧ｹ・磯°雉・埼｡搾ｼ会ｼ・,"笘・◆窶ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲鷹ｫ俶ｴｲ讖九・貎ｮ髻ｳ縺ｮ陦励・鬮俶ｴｲ蝗帑ｸ∫岼邨檎罰縲鬮俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦後″・懌・・帶ｷｱ螟懊ヰ繧ｹ・磯°雉・埼｡搾ｼ会ｼ・]
+CHECKPOINT progress-weekday-20 {"uniqueSignatures":21,"tripsOpened":21,"rejected":0,"errors":0,"elapsedSec":1081}
+CHECKPOINT progress-weekday-40 {"uniqueSignatures":21,"tripsOpened":21,"rejected":0,"errors":0,"elapsedSec":1098}
+CHECKPOINT progress-weekday-60 {"uniqueSignatures":21,"tripsOpened":21,"rejected":0,"errors":0,"elapsedSec":1115}
+CHECKPOINT after-螟｢豬ｷ縺ｮ陦・weekday {"uniqueSignatures":21,"tripsOpened":21,"rejected":0,"errors":0,"elapsedSec":1132}
+TT 螟｢豬ｷ縺ｮ陦・saturday berth 02 links 79 legend ["18\t[18]・域ｽｮ髻ｳ縺ｮ陦礼ｵ檎罰・蛾ｫ俶ｴｲ豬ｷ豬懷・蝨抵ｼ域ｽｮ髻ｳ縺ｮ陦励・鬮俶ｴｲ蝗帑ｸ∫岼邨檎罰・蛾ｫ俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦・,"辟｡蜊ｰ窶ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲鷹ｫ俶ｴｲ讖九∵ｽｮ髻ｳ縺ｮ陦礼ｵ檎罰縲鬮俶ｴｲ豬ｷ豬懷・蝨定｡後″","縺溪ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲鷹ｫ俶ｴｲ讖九・貎ｮ髻ｳ縺ｮ陦励・鬮俶ｴｲ蝗帑ｸ∫岼邨檎罰縲鬮俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦後″・懌・・帶ｷｱ螟懊ヰ繧ｹ・磯°雉・埼｡搾ｼ会ｼ・,"笘・◆窶ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲鷹ｫ俶ｴｲ讖九・貎ｮ髻ｳ縺ｮ陦励・鬮俶ｴｲ蝗帑ｸ∫岼邨檎罰縲鬮俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦後″・懌・・帶ｷｱ螟懊ヰ繧ｹ・磯°雉・埼｡搾ｼ会ｼ・]
+CHECKPOINT after-螟｢豬ｷ縺ｮ陦・saturday {"uniqueSignatures":21,"tripsOpened":21,"rejected":0,"errors":0,"elapsedSec":1133}
+TT 螟｢豬ｷ縺ｮ陦・sunday-holiday berth 02 links 79 legend ["18\t[18]・域ｽｮ髻ｳ縺ｮ陦礼ｵ檎罰・蛾ｫ俶ｴｲ豬ｷ豬懷・蝨抵ｼ域ｽｮ髻ｳ縺ｮ陦励・鬮俶ｴｲ蝗帑ｸ∫岼邨檎罰・蛾ｫ俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦・,"辟｡蜊ｰ窶ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲鷹ｫ俶ｴｲ讖九∵ｽｮ髻ｳ縺ｮ陦礼ｵ檎罰縲鬮俶ｴｲ豬ｷ豬懷・蝨定｡後″","縺溪ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲鷹ｫ俶ｴｲ讖九・貎ｮ髻ｳ縺ｮ陦励・鬮俶ｴｲ蝗帑ｸ∫岼邨檎罰縲鬮俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦後″・懌・・帶ｷｱ螟懊ヰ繧ｹ・磯°雉・埼｡搾ｼ会ｼ・,"笘・◆窶ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲鷹ｫ俶ｴｲ讖九・貎ｮ髻ｳ縺ｮ陦励・鬮俶ｴｲ蝗帑ｸ∫岼邨檎罰縲鬮俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦後″・懌・・帶ｷｱ螟懊ヰ繧ｹ・磯°雉・埼｡搾ｼ会ｼ・]
+CHECKPOINT after-螟｢豬ｷ縺ｮ陦・sunday-holiday {"uniqueSignatures":21,"tripsOpened":21,"rejected":0,"errors":0,"elapsedSec":1135}
+TT 螟｢豬ｷ縺ｮ陦・weekday berth 03 links 218 legend ["18\t[18]譁ｰ豬ｦ螳蛾ｧ・｡・,"3\t[3]譁ｰ豬ｦ螳蛾ｧ・｡・,"辟｡蜊ｰ窶ｦ譁ｰ豬ｦ螳蛾ｧ・｡後″"]
+NEW SIG 13 邱丞粋蜈ｬ蝨・-> 譁ｰ豬ｦ螳蛾ｧ・course 0008200212
+CHECKPOINT new-signature {"uniqueSignatures":22,"tripsOpened":22,"rejected":0,"errors":0,"elapsedSec":1138}
+NEW SIG 11 譏取ｵｷ莠比ｸ∫岼 -> 譁ｰ豬ｦ螳蛾ｧ・course 0008200214
+CHECKPOINT new-signature {"uniqueSignatures":23,"tripsOpened":23,"rejected":0,"errors":0,"elapsedSec":1142}
+NEW SIG 6 譛帶ｵｷ縺ｮ陦・-> 譁ｰ豬ｦ螳蛾ｧ・course 0008200216
+CHECKPOINT new-signature {"uniqueSignatures":24,"tripsOpened":24,"rejected":0,"errors":0,"elapsedSec":1147}
+CHECKPOINT progress-weekday-20 {"uniqueSignatures":24,"tripsOpened":24,"rejected":0,"errors":0,"elapsedSec":1154}
+CHECKPOINT progress-weekday-40 {"uniqueSignatures":24,"tripsOpened":24,"rejected":0,"errors":0,"elapsedSec":1171}
+CHECKPOINT progress-weekday-60 {"uniqueSignatures":24,"tripsOpened":24,"rejected":0,"errors":0,"elapsedSec":1187}
+CHECKPOINT progress-weekday-80 {"uniqueSignatures":24,"tripsOpened":24,"rejected":0,"errors":0,"elapsedSec":1204}
+CHECKPOINT progress-weekday-100 {"uniqueSignatures":24,"tripsOpened":24,"rejected":0,"errors":0,"elapsedSec":1221}
+CHECKPOINT progress-weekday-120 {"uniqueSignatures":24,"tripsOpened":24,"rejected":0,"errors":0,"elapsedSec":1238}
+CHECKPOINT progress-weekday-140 {"uniqueSignatures":24,"tripsOpened":24,"rejected":0,"errors":0,"elapsedSec":1254}
+CHECKPOINT progress-weekday-160 {"uniqueSignatures":24,"tripsOpened":24,"rejected":0,"errors":0,"elapsedSec":1271}
+CHECKPOINT progress-weekday-180 {"uniqueSignatures":24,"tripsOpened":24,"rejected":0,"errors":0,"elapsedSec":1288}
+CHECKPOINT progress-weekday-200 {"uniqueSignatures":24,"tripsOpened":24,"rejected":0,"errors":0,"elapsedSec":1305}
+CHECKPOINT after-螟｢豬ｷ縺ｮ陦・weekday {"uniqueSignatures":24,"tripsOpened":24,"rejected":0,"errors":0,"elapsedSec":1321}
+TT 螟｢豬ｷ縺ｮ陦・saturday berth 03 links 218 legend ["18\t[18]譁ｰ豬ｦ螳蛾ｧ・｡・,"3\t[3]譁ｰ豬ｦ螳蛾ｧ・｡・,"辟｡蜊ｰ窶ｦ譁ｰ豬ｦ螳蛾ｧ・｡後″"]
+CHECKPOINT after-螟｢豬ｷ縺ｮ陦・saturday {"uniqueSignatures":24,"tripsOpened":24,"rejected":0,"errors":0,"elapsedSec":1323}
+TT 螟｢豬ｷ縺ｮ陦・sunday-holiday berth 03 links 218 legend ["18\t[18]譁ｰ豬ｦ螳蛾ｧ・｡・,"3\t[3]譁ｰ豬ｦ螳蛾ｧ・｡・,"辟｡蜊ｰ窶ｦ譁ｰ豬ｦ螳蛾ｧ・｡後″"]
+CHECKPOINT after-螟｢豬ｷ縺ｮ陦・sunday-holiday {"uniqueSignatures":24,"tripsOpened":24,"rejected":0,"errors":0,"elapsedSec":1325}
+TT 螟｢豬ｷ縺ｮ陦・weekday berth 04 links 65 legend ["18\t[18]・域眠豬ｦ螳蛾ｧ・ｵ檎罰・画ｵｦ螳蛾ｧ・・蜿｣・域眠豬ｦ螳蛾ｧ・・鬆・､ｩ蝣ら羅髯｢蜑咲ｵ檎罰・芽・豬憺ｧ・｡・,"3\t[23]・域眠豬ｦ螳蛾ｧ・ｵ檎罰・画ｵｦ螳蛾ｧ・・蜿｣・域眠豬ｦ螳蛾ｧ・・鬆・､ｩ蝣ら羅髯｢蜑咲ｵ檎罰・芽・豬憺ｧ・｡・,"3\t[3]・域眠豬ｦ螳蛾ｧ・ｵ檎罰・画ｵｦ螳蛾ｧ・・蜿｣・域眠豬ｦ螳蛾ｧ・・鬆・､ｩ蝣ら羅髯｢蜑咲ｵ檎罰・芽・豬憺ｧ・｡・,"辟｡蜊ｰ窶ｦ縲撰ｼ薙・・托ｼ倡ｳｻ邨ｱ縲第眠豬ｦ螳蛾ｧ・ｵ檎罰縲豬ｦ螳蛾ｧ・・蜿｣陦後″","縺ｾ窶ｦ縲撰ｼ抵ｼ鍋ｳｻ邨ｱ縲第眠豬ｦ螳蛾ｧ・・・､ｩ蝣ら羅髯｢蜑咲ｵ檎罰縲闊樊ｵ憺ｧ・｡後″"]
+CHECKPOINT progress-weekday-20 {"uniqueSignatures":24,"tripsOpened":24,"rejected":0,"errors":0,"elapsedSec":1343}
+CHECKPOINT progress-weekday-40 {"uniqueSignatures":24,"tripsOpened":24,"rejected":0,"errors":0,"elapsedSec":1360}
+CHECKPOINT progress-weekday-60 {"uniqueSignatures":24,"tripsOpened":24,"rejected":0,"errors":0,"elapsedSec":1377}
+CHECKPOINT after-螟｢豬ｷ縺ｮ陦・weekday {"uniqueSignatures":24,"tripsOpened":24,"rejected":0,"errors":0,"elapsedSec":1381}
+TT 螟｢豬ｷ縺ｮ陦・saturday berth 04 links 65 legend ["18\t[18]・域眠豬ｦ螳蛾ｧ・ｵ檎罰・画ｵｦ螳蛾ｧ・・蜿｣・域眠豬ｦ螳蛾ｧ・・鬆・､ｩ蝣ら羅髯｢蜑咲ｵ檎罰・芽・豬憺ｧ・｡・,"3\t[23]・域眠豬ｦ螳蛾ｧ・ｵ檎罰・画ｵｦ螳蛾ｧ・・蜿｣・域眠豬ｦ螳蛾ｧ・・鬆・､ｩ蝣ら羅髯｢蜑咲ｵ檎罰・芽・豬憺ｧ・｡・,"3\t[3]・域眠豬ｦ螳蛾ｧ・ｵ檎罰・画ｵｦ螳蛾ｧ・・蜿｣・域眠豬ｦ螳蛾ｧ・・鬆・､ｩ蝣ら羅髯｢蜑咲ｵ檎罰・芽・豬憺ｧ・｡・,"辟｡蜊ｰ窶ｦ縲撰ｼ薙・・托ｼ倡ｳｻ邨ｱ縲第眠豬ｦ螳蛾ｧ・ｵ檎罰縲豬ｦ螳蛾ｧ・・蜿｣陦後″","縺ｾ窶ｦ縲撰ｼ抵ｼ鍋ｳｻ邨ｱ縲第眠豬ｦ螳蛾ｧ・・・､ｩ蝣ら羅髯｢蜑咲ｵ檎罰縲闊樊ｵ憺ｧ・｡後″"]
+CHECKPOINT after-螟｢豬ｷ縺ｮ陦・saturday {"uniqueSignatures":24,"tripsOpened":24,"rejected":0,"errors":0,"elapsedSec":1383}
+TT 螟｢豬ｷ縺ｮ陦・sunday-holiday berth 04 links 65 legend ["18\t[18]・域眠豬ｦ螳蛾ｧ・ｵ檎罰・画ｵｦ螳蛾ｧ・・蜿｣・域眠豬ｦ螳蛾ｧ・・鬆・､ｩ蝣ら羅髯｢蜑咲ｵ檎罰・芽・豬憺ｧ・｡・,"3\t[23]・域眠豬ｦ螳蛾ｧ・ｵ檎罰・画ｵｦ螳蛾ｧ・・蜿｣・域眠豬ｦ螳蛾ｧ・・鬆・､ｩ蝣ら羅髯｢蜑咲ｵ檎罰・芽・豬憺ｧ・｡・,"3\t[3]・域眠豬ｦ螳蛾ｧ・ｵ檎罰・画ｵｦ螳蛾ｧ・・蜿｣・域眠豬ｦ螳蛾ｧ・・鬆・､ｩ蝣ら羅髯｢蜑咲ｵ檎罰・芽・豬憺ｧ・｡・,"辟｡蜊ｰ窶ｦ縲撰ｼ薙・・托ｼ倡ｳｻ邨ｱ縲第眠豬ｦ螳蛾ｧ・ｵ檎罰縲豬ｦ螳蛾ｧ・・蜿｣陦後″","縺ｾ窶ｦ縲撰ｼ抵ｼ鍋ｳｻ邨ｱ縲第眠豬ｦ螳蛾ｧ・・・､ｩ蝣ら羅髯｢蜑咲ｵ檎罰縲闊樊ｵ憺ｧ・｡後″"]
+CHECKPOINT after-螟｢豬ｷ縺ｮ陦・sunday-holiday {"uniqueSignatures":24,"tripsOpened":24,"rejected":0,"errors":0,"elapsedSec":1385}
+FOLLOW-UP 鬮俶ｴｲ讖・00020857
+TT 鬮俶ｴｲ讖・weekday berth 01 links 79 legend ["18\t[18]・域ｽｮ髻ｳ縺ｮ陦礼ｵ檎罰・蛾ｫ俶ｴｲ豬ｷ豬懷・蝨抵ｼ域ｽｮ髻ｳ縺ｮ陦励・鬮俶ｴｲ蝗帑ｸ∫岼邨檎罰・蛾ｫ俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦・,"辟｡蜊ｰ窶ｦ貎ｮ髻ｳ縺ｮ陦礼ｵ檎罰縲鬮俶ｴｲ豬ｷ豬懷・蝨定｡後″","縺溪ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲鷹ｫ俶ｴｲ蝗帑ｸ∫岼邨檎罰縲鬮俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦後″・懌・・帶ｷｱ螟懊ヰ繧ｹ・磯°雉・埼｡搾ｼ会ｼ・,"笘・◆窶ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲鷹ｫ俶ｴｲ蝗帑ｸ∫岼邨檎罰縲鬮俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦後″・懌・・帶ｷｱ螟懊ヰ繧ｹ・磯°雉・埼｡搾ｼ会ｼ・]
+CHECKPOINT progress-weekday-20 {"uniqueSignatures":24,"tripsOpened":24,"rejected":0,"errors":0,"elapsedSec":1408}
+CHECKPOINT progress-weekday-40 {"uniqueSignatures":24,"tripsOpened":24,"rejected":0,"errors":0,"elapsedSec":1424}
+CHECKPOINT progress-weekday-60 {"uniqueSignatures":24,"tripsOpened":24,"rejected":0,"errors":0,"elapsedSec":1440}
+CHECKPOINT after-鬮俶ｴｲ讖・weekday {"uniqueSignatures":24,"tripsOpened":24,"rejected":0,"errors":0,"elapsedSec":1456}
+TT 鬮俶ｴｲ讖・saturday berth 01 links 79 legend ["18\t[18]・域ｽｮ髻ｳ縺ｮ陦礼ｵ檎罰・蛾ｫ俶ｴｲ豬ｷ豬懷・蝨抵ｼ域ｽｮ髻ｳ縺ｮ陦励・鬮俶ｴｲ蝗帑ｸ∫岼邨檎罰・蛾ｫ俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦・,"辟｡蜊ｰ窶ｦ貎ｮ髻ｳ縺ｮ陦礼ｵ檎罰縲鬮俶ｴｲ豬ｷ豬懷・蝨定｡後″","縺溪ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲鷹ｫ俶ｴｲ蝗帑ｸ∫岼邨檎罰縲鬮俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦後″・懌・・帶ｷｱ螟懊ヰ繧ｹ・磯°雉・埼｡搾ｼ会ｼ・,"笘・◆窶ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲鷹ｫ俶ｴｲ蝗帑ｸ∫岼邨檎罰縲鬮俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦後″・懌・・帶ｷｱ螟懊ヰ繧ｹ・磯°雉・埼｡搾ｼ会ｼ・]
+CHECKPOINT after-鬮俶ｴｲ讖・saturday {"uniqueSignatures":24,"tripsOpened":24,"rejected":0,"errors":0,"elapsedSec":1458}
+TT 鬮俶ｴｲ讖・sunday-holiday berth 01 links 79 legend ["18\t[18]・域ｽｮ髻ｳ縺ｮ陦礼ｵ檎罰・蛾ｫ俶ｴｲ豬ｷ豬懷・蝨抵ｼ域ｽｮ髻ｳ縺ｮ陦励・鬮俶ｴｲ蝗帑ｸ∫岼邨檎罰・蛾ｫ俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦・,"辟｡蜊ｰ窶ｦ貎ｮ髻ｳ縺ｮ陦礼ｵ檎罰縲鬮俶ｴｲ豬ｷ豬懷・蝨定｡後″","縺溪ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲鷹ｫ俶ｴｲ蝗帑ｸ∫岼邨檎罰縲鬮俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦後″・懌・・帶ｷｱ螟懊ヰ繧ｹ・磯°雉・埼｡搾ｼ会ｼ・,"笘・◆窶ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲鷹ｫ俶ｴｲ蝗帑ｸ∫岼邨檎罰縲鬮俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦後″・懌・・帶ｷｱ螟懊ヰ繧ｹ・磯°雉・埼｡搾ｼ会ｼ・]
+CHECKPOINT after-鬮俶ｴｲ讖・sunday-holiday {"uniqueSignatures":24,"tripsOpened":24,"rejected":0,"errors":0,"elapsedSec":1459}
+TT 鬮俶ｴｲ讖・weekday berth 02 links 54 legend ["18\t[18]譁ｰ豬ｦ螳蛾ｧ・・豬ｦ螳蛾ｧ・・蜿｣陦・,"縺・ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲大､｢豬ｷ縺ｮ陦励∵眠豬ｦ螳蛾ｧ・ｵ檎罰縲豬ｦ螳蛾ｧ・・蜿｣陦後″","繧・ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲大､｢豬ｷ縺ｮ陦礼ｵ檎罰縲譁ｰ豬ｦ螳蛾ｧ・｡後″"]
+CHECKPOINT progress-weekday-20 {"uniqueSignatures":24,"tripsOpened":24,"rejected":0,"errors":0,"elapsedSec":1477}
+CHECKPOINT progress-weekday-40 {"uniqueSignatures":24,"tripsOpened":24,"rejected":0,"errors":0,"elapsedSec":1494}
+CHECKPOINT after-鬮俶ｴｲ讖・weekday {"uniqueSignatures":24,"tripsOpened":24,"rejected":0,"errors":0,"elapsedSec":1505}
+TT 鬮俶ｴｲ讖・saturday berth 02 links 54 legend ["18\t[18]譁ｰ豬ｦ螳蛾ｧ・・豬ｦ螳蛾ｧ・・蜿｣陦・,"縺・ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲大､｢豬ｷ縺ｮ陦励∵眠豬ｦ螳蛾ｧ・ｵ檎罰縲豬ｦ螳蛾ｧ・・蜿｣陦後″","繧・ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲大､｢豬ｷ縺ｮ陦礼ｵ檎罰縲譁ｰ豬ｦ螳蛾ｧ・｡後″"]
+CHECKPOINT after-鬮俶ｴｲ讖・saturday {"uniqueSignatures":24,"tripsOpened":24,"rejected":0,"errors":0,"elapsedSec":1507}
+TT 鬮俶ｴｲ讖・sunday-holiday berth 02 links 54 legend ["18\t[18]譁ｰ豬ｦ螳蛾ｧ・・豬ｦ螳蛾ｧ・・蜿｣陦・,"縺・ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲大､｢豬ｷ縺ｮ陦励∵眠豬ｦ螳蛾ｧ・ｵ檎罰縲豬ｦ螳蛾ｧ・・蜿｣陦後″","繧・ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲大､｢豬ｷ縺ｮ陦礼ｵ檎罰縲譁ｰ豬ｦ螳蛾ｧ・｡後″"]
+CHECKPOINT after-鬮俶ｴｲ讖・sunday-holiday {"uniqueSignatures":24,"tripsOpened":24,"rejected":0,"errors":0,"elapsedSec":1508}
+FOLLOW-UP 譏取ｵｷ螟ｧ蟄ｦ蜑・00020713
+TT 譏取ｵｷ螟ｧ蟄ｦ蜑・weekday berth 18 links 79 legend ["18\t[18]・亥､｢豬ｷ縺ｮ陦励・貎ｮ髻ｳ縺ｮ陦礼ｵ檎罰・蛾ｫ俶ｴｲ豬ｷ豬懷・蝨抵ｼ亥､｢豬ｷ縺ｮ陦励・貎ｮ髻ｳ縺ｮ陦礼ｵ檎罰・蛾ｫ俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦・,"繧・ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲大､｢豬ｷ縺ｮ陦励・ｫ俶ｴｲ讖九∵ｽｮ髻ｳ縺ｮ陦礼ｵ檎罰縲鬮俶ｴｲ豬ｷ豬懷・蝨定｡後″","縺溪ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲大､｢豬ｷ縺ｮ陦励・貎ｮ髻ｳ縺ｮ陦励・鬮俶ｴｲ蝗帑ｸ∫岼邨檎罰縲鬮俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦後″・懌・・帶ｷｱ螟懊ヰ繧ｹ 驕玖ｳ・埼｡搾ｼ・,"笘・◆窶ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲大､｢豬ｷ縺ｮ陦励・貎ｮ髻ｳ縺ｮ陦励・鬮俶ｴｲ蝗帑ｸ∫岼邨檎罰縲鬮俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦後″・懌・・帶ｷｱ螟懊ヰ繧ｹ 驕玖ｳ・埼｡搾ｼ・]
+CHECKPOINT progress-weekday-20 {"uniqueSignatures":24,"tripsOpened":24,"rejected":0,"errors":0,"elapsedSec":1531}
+CHECKPOINT progress-weekday-40 {"uniqueSignatures":24,"tripsOpened":24,"rejected":0,"errors":0,"elapsedSec":1550}
+CHECKPOINT progress-weekday-60 {"uniqueSignatures":24,"tripsOpened":24,"rejected":0,"errors":0,"elapsedSec":1569}
+CHECKPOINT after-譏取ｵｷ螟ｧ蟄ｦ蜑・weekday {"uniqueSignatures":24,"tripsOpened":24,"rejected":0,"errors":0,"elapsedSec":1587}
+TT 譏取ｵｷ螟ｧ蟄ｦ蜑・saturday berth 18 links 79 legend ["18\t[18]・亥､｢豬ｷ縺ｮ陦励・貎ｮ髻ｳ縺ｮ陦礼ｵ檎罰・蛾ｫ俶ｴｲ豬ｷ豬懷・蝨抵ｼ亥､｢豬ｷ縺ｮ陦励・貎ｮ髻ｳ縺ｮ陦礼ｵ檎罰・蛾ｫ俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦・,"繧・ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲大､｢豬ｷ縺ｮ陦励・ｫ俶ｴｲ讖九∵ｽｮ髻ｳ縺ｮ陦礼ｵ檎罰縲鬮俶ｴｲ豬ｷ豬懷・蝨定｡後″","縺溪ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲大､｢豬ｷ縺ｮ陦励・貎ｮ髻ｳ縺ｮ陦励・鬮俶ｴｲ蝗帑ｸ∫岼邨檎罰縲鬮俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦後″・懌・・帶ｷｱ螟懊ヰ繧ｹ 驕玖ｳ・埼｡搾ｼ・,"笘・◆窶ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲大､｢豬ｷ縺ｮ陦励・貎ｮ髻ｳ縺ｮ陦励・鬮俶ｴｲ蝗帑ｸ∫岼邨檎罰縲鬮俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦後″・懌・・帶ｷｱ螟懊ヰ繧ｹ 驕玖ｳ・埼｡搾ｼ・]
+CHECKPOINT after-譏取ｵｷ螟ｧ蟄ｦ蜑・saturday {"uniqueSignatures":24,"tripsOpened":24,"rejected":0,"errors":0,"elapsedSec":1589}
+TT 譏取ｵｷ螟ｧ蟄ｦ蜑・sunday-holiday berth 18 links 79 legend ["18\t[18]・亥､｢豬ｷ縺ｮ陦励・貎ｮ髻ｳ縺ｮ陦礼ｵ檎罰・蛾ｫ俶ｴｲ豬ｷ豬懷・蝨抵ｼ亥､｢豬ｷ縺ｮ陦励・貎ｮ髻ｳ縺ｮ陦礼ｵ檎罰・蛾ｫ俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦・,"繧・ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲大､｢豬ｷ縺ｮ陦励・ｫ俶ｴｲ讖九∵ｽｮ髻ｳ縺ｮ陦礼ｵ檎罰縲鬮俶ｴｲ豬ｷ豬懷・蝨定｡後″","縺溪ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲大､｢豬ｷ縺ｮ陦励・貎ｮ髻ｳ縺ｮ陦励・鬮俶ｴｲ蝗帑ｸ∫岼邨檎罰縲鬮俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦後″・懌・・帶ｷｱ螟懊ヰ繧ｹ 驕玖ｳ・埼｡搾ｼ・,"笘・◆窶ｦ縲撰ｼ托ｼ倡ｳｻ邨ｱ縲大､｢豬ｷ縺ｮ陦励・貎ｮ髻ｳ縺ｮ陦励・鬮俶ｴｲ蝗帑ｸ∫岼邨檎罰縲鬮俶ｴｲ蛹怜ｰ丞ｭｦ譬｡陦後″・懌・・帶ｷｱ螟懊ヰ繧ｹ 驕玖ｳ・埼｡搾ｼ・]
+CHECKPOINT after-譏取ｵｷ螟ｧ蟄ｦ蜑・sunday-holiday {"uniqueSignatures":24,"tripsOpened":24,"rejected":0,"errors":0,"elapsedSec":1590}
+TT 譏取ｵｷ螟ｧ蟄ｦ蜑・weekday berth 06 links 519 legend ["11\t[11]譁ｰ豬ｦ螳蛾ｧ・｡・,"16\t[16]譁ｰ豬ｦ螳蛾ｧ・｡・,"18\t[18]譁ｰ豬ｦ螳蛾ｧ・｡・,"3\t[3]譁ｰ豬ｦ螳蛾ｧ・｡・,"辟｡蜊ｰ窶ｦ譁ｰ豬ｦ螳蛾ｧ・｡後″"]
+NEW SIG 11 鬮俶ｴｲ豬ｷ豬懷・蝨・-> 譁ｰ豬ｦ螳蛾ｧ・course 0008202661
+CHECKPOINT new-signature {"uniqueSignatures":25,"tripsOpened":25,"rejected":0,"errors":0,"elapsedSec":1595}
+NEW SIG 10 譌･縺ｮ蜃ｺ荳・ｸ∫岼 -> 譁ｰ豬ｦ螳蛾ｧ・course 0008200279
+CHECKPOINT new-signature {"uniqueSignatures":26,"tripsOpened":26,"rejected":0,"errors":0,"elapsedSec":1596}
+NEW SIG 10 邱丞粋蜈ｬ蝨・-> 譁ｰ豬ｦ螳蛾ｧ・course 0008200262
+CHECKPOINT new-signature {"uniqueSignatures":27,"tripsOpened":27,"rejected":0,"errors":0,"elapsedSec":1598}
+NEW SIG 8 繝吶う繝代・繧ｯ -> 譁ｰ豬ｦ螳蛾ｧ・course 0008200265
+CHECKPOINT new-signature {"uniqueSignatures":28,"tripsOpened":28,"rejected":0,"errors":0,"elapsedSec":1602}
+CHECKPOINT progress-weekday-20 {"uniqueSignatures":28,"tripsOpened":28,"rejected":0,"errors":0,"elapsedSec":1612}
+CHECKPOINT progress-weekday-40 {"uniqueSignatures":28,"tripsOpened":28,"rejected":0,"errors":0,"elapsedSec":1632}
+CHECKPOINT progress-weekday-60 {"uniqueSignatures":28,"tripsOpened":28,"rejected":0,"errors":0,"elapsedSec":1651}
+CHECKPOINT progress-weekday-80 {"uniqueSignatures":28,"tripsOpened":28,"rejected":0,"errors":0,"elapsedSec":1669}
+CHECKPOINT progress-weekday-100 {"uniqueSignatures":28,"tripsOpened":28,"rejected":0,"errors":0,"elapsedSec":1688}
+CHECKPOINT progress-weekday-120 {"uniqueSignatures":28,"tripsOpened":28,"rejected":0,"errors":0,"elapsedSec":1707}
+CHECKPOINT progress-weekday-140 {"uniqueSignatures":28,"tripsOpened":28,"rejected":0,"errors":0,"elapsedSec":1726}
+NEW SIG 12 譌･縺ｮ蜃ｺ蜊・-> 譁ｰ豬ｦ螳蛾ｧ・course 0008200258
+CHECKPOINT new-signature {"uniqueSignatures":29,"tripsOpened":29,"rejected":0,"errors":0,"elapsedSec":1741}
+CHECKPOINT progress-weekday-160 {"uniqueSignatures":29,"tripsOpened":29,"rejected":0,"errors":0,"elapsedSec":1743}
+CHECKPOINT progress-weekday-180 {"uniqueSignatures":29,"tripsOpened":29,"rejected":0,"errors":0,"elapsedSec":1766}
+CHECKPOINT progress-weekday-200 {"uniqueSignatures":29,"tripsOpened":29,"rejected":0,"errors":0,"elapsedSec":1784}
+CHECKPOINT progress-weekday-220 {"uniqueSignatures":29,"tripsOpened":29,"rejected":0,"errors":0,"elapsedSec":1802}
+CHECKPOINT progress-weekday-240 {"uniqueSignatures":29,"tripsOpened":29,"rejected":0,"errors":0,"elapsedSec":1820}
+CHECKPOINT progress-weekday-260 {"uniqueSignatures":29,"tripsOpened":29,"rejected":0,"errors":0,"elapsedSec":1838}
+CHECKPOINT progress-weekday-280 {"uniqueSignatures":29,"tripsOpened":29,"rejected":0,"errors":0,"elapsedSec":1856}
+CHECKPOINT progress-weekday-300 {"uniqueSignatures":29,"tripsOpened":29,"rejected":0,"errors":0,"elapsedSec":1874}
+CHECKPOINT progress-weekday-320 {"uniqueSignatures":29,"tripsOpened":29,"rejected":0,"errors":0,"elapsedSec":1892}
+CHECKPOINT progress-weekday-340 {"uniqueSignatures":29,"tripsOpened":29,"rejected":0,"errors":0,"elapsedSec":1911}
+CHECKPOINT progress-weekday-360 {"uniqueSignatures":29,"tripsOpened":29,"rejected":0,"errors":0,"elapsedSec":1929}
+CHECKPOINT progress-weekday-380 {"uniqueSignatures":29,"tripsOpened":29,"rejected":0,"errors":0,"elapsedSec":1947}
+CHECKPOINT progress-weekday-400 {"uniqueSignatures":29,"tripsOpened":29,"rejected":0,"errors":0,"elapsedSec":1966}
+CHECKPOINT progress-weekday-420 {"uniqueSignatures":29,"tripsOpened":29,"rejected":0,"errors":0,"elapsedSec":1984}
+CHECKPOINT progress-weekday-440 {"uniqueSignatures":29,"tripsOpened":29,"rejected":0,"errors":0,"elapsedSec":2003}
+CHECKPOINT progress-weekday-460 {"uniqueSignatures":29,"tripsOpened":29,"rejected":0,"errors":0,"elapsedSec":2022}
+CHECKPOINT progress-weekday-480 {"uniqueSignatures":29,"tripsOpened":29,"rejected":0,"errors":0,"elapsedSec":2040}
+CHECKPOINT progress-weekday-500 {"uniqueSignatures":29,"tripsOpened":29,"rejected":0,"errors":0,"elapsedSec":2058}
+CHECKPOINT after-譏取ｵｷ螟ｧ蟄ｦ蜑・weekday {"uniqueSignatures":29,"tripsOpened":29,"rejected":0,"errors":0,"elapsedSec":2080}
+TT 譏取ｵｷ螟ｧ蟄ｦ蜑・saturday berth 06 links 519 legend ["11\t[11]譁ｰ豬ｦ螳蛾ｧ・｡・,"16\t[16]譁ｰ豬ｦ螳蛾ｧ・｡・,"18\t[18]譁ｰ豬ｦ螳蛾ｧ・｡・,"3\t[3]譁ｰ豬ｦ螳蛾ｧ・｡・,"辟｡蜊ｰ窶ｦ譁ｰ豬ｦ螳蛾ｧ・｡後″"]
+CHECKPOINT after-譏取ｵｷ螟ｧ蟄ｦ蜑・saturday {"uniqueSignatures":29,"tripsOpened":29,"rejected":0,"errors":0,"elapsedSec":2083}
+TT 譏取ｵｷ螟ｧ蟄ｦ蜑・sunday-holiday berth 06 links 519 legend ["11\t[11]譁ｰ豬ｦ螳蛾ｧ・｡・,"16\t[16]譁ｰ豬ｦ螳蛾ｧ・｡・,"18\t[18]譁ｰ豬ｦ螳蛾ｧ・｡・,"3\t[3]譁ｰ豬ｦ螳蛾ｧ・｡・,"辟｡蜊ｰ窶ｦ譁ｰ豬ｦ螳蛾ｧ・｡後″"]
+CHECKPOINT after-譏取ｵｷ螟ｧ蟄ｦ蜑・sunday-holiday {"uniqueSignatures":29,"tripsOpened":29,"rejected":0,"errors":0,"elapsedSec":2085}
+TT 譏取ｵｷ螟ｧ蟄ｦ蜑・weekday berth 07 links 93 legend ["11\t[11]豬ｦ螳蛾ｧ・・蜿｣・磯・､ｩ蝣ら羅髯｢蜑咲ｵ檎罰・芽・豬憺ｧ・｡・,"18\t[18]豬ｦ螳蛾ｧ・・蜿｣・磯・､ｩ蝣ら羅髯｢蜑咲ｵ檎罰・芽・豬憺ｧ・｡・,"3\t[23]豬ｦ螳蛾ｧ・・蜿｣・磯・､ｩ蝣ら羅髯｢蜑咲ｵ檎罰・芽・豬憺ｧ・｡・,"3\t[3]豬ｦ螳蛾ｧ・・蜿｣・磯・､ｩ蝣ら羅髯｢蜑咲ｵ檎罰・芽・豬憺ｧ・｡・,"辟｡蜊ｰ窶ｦ縲撰ｼ薙・・托ｼ代・・托ｼ倡ｳｻ邨ｱ縲第ｵｦ螳蛾ｧ・・蜿｣陦後″","縺ｾ窶ｦ縲撰ｼ抵ｼ鍋ｳｻ邨ｱ縲第眠豬ｦ螳蛾ｧ・・・､ｩ蝣ら羅髯｢蜑咲ｵ檎罰縲闊樊ｵ憺ｧ・｡後″"]
+CHECKPOINT progress-weekday-20 {"uniqueSignatures":29,"tripsOpened":29,"rejected":0,"errors":0,"elapsedSec":2105}
+CHECKPOINT progress-weekday-40 {"uniqueSignatures":29,"tripsOpened":29,"rejected":0,"errors":0,"elapsedSec":2128}
+CHECKPOINT progress-weekday-60 {"uniqueSignatures":29,"tripsOpened":29,"rejected":0,"errors":0,"elapsedSec":2146}
+CHECKPOINT progress-weekday-80 {"uniqueSignatures":29,"tripsOpened":29,"rejected":0,"errors":0,"elapsedSec":2165}
+CHECKPOINT after-譏取ｵｷ螟ｧ蟄ｦ蜑・weekday {"uniqueSignatures":29,"tripsOpened":29,"rejected":0,"errors":0,"elapsedSec":2177}
+TT 譏取ｵｷ螟ｧ蟄ｦ蜑・saturday berth 07 links 93 legend ["11\t[11]豬ｦ螳蛾ｧ・・蜿｣・磯・､ｩ蝣ら羅髯｢蜑咲ｵ檎罰・芽・豬憺ｧ・｡・,"18\t[18]豬ｦ螳蛾ｧ・・蜿｣・磯・､ｩ蝣ら羅髯｢蜑咲ｵ檎罰・芽・豬憺ｧ・｡・,"3\t[23]豬ｦ螳蛾ｧ・・蜿｣・磯・､ｩ蝣ら羅髯｢蜑咲ｵ檎罰・芽・豬憺ｧ・｡・,"3\t[3]豬ｦ螳蛾ｧ・・蜿｣・磯・､ｩ蝣ら羅髯｢蜑咲ｵ檎罰・芽・豬憺ｧ・｡・,"辟｡蜊ｰ窶ｦ縲撰ｼ薙・・托ｼ代・・托ｼ倡ｳｻ邨ｱ縲第ｵｦ螳蛾ｧ・・蜿｣陦後″","縺ｾ窶ｦ縲撰ｼ抵ｼ鍋ｳｻ邨ｱ縲第眠豬ｦ螳蛾ｧ・・・､ｩ蝣ら羅髯｢蜑咲ｵ檎罰縲闊樊ｵ憺ｧ・｡後″"]
+CHECKPOINT after-譏取ｵｷ螟ｧ蟄ｦ蜑・saturday {"uniqueSignatures":29,"tripsOpened":29,"rejected":0,"errors":0,"elapsedSec":2179}
+TT 譏取ｵｷ螟ｧ蟄ｦ蜑・sunday-holiday berth 07 links 93 legend ["11\t[11]豬ｦ螳蛾ｧ・・蜿｣・磯・､ｩ蝣ら羅髯｢蜑咲ｵ檎罰・芽・豬憺ｧ・｡・,"18\t[18]豬ｦ螳蛾ｧ・・蜿｣・磯・､ｩ蝣ら羅髯｢蜑咲ｵ檎罰・芽・豬憺ｧ・｡・,"3\t[23]豬ｦ螳蛾ｧ・・蜿｣・磯・､ｩ蝣ら羅髯｢蜑咲ｵ檎罰・芽・豬憺ｧ・｡・,"3\t[3]豬ｦ螳蛾ｧ・・蜿｣・磯・､ｩ蝣ら羅髯｢蜑咲ｵ檎罰・芽・豬憺ｧ・｡・,"辟｡蜊ｰ窶ｦ縲撰ｼ薙・・托ｼ代・・托ｼ倡ｳｻ邨ｱ縲第ｵｦ螳蛾ｧ・・蜿｣陦後″","縺ｾ窶ｦ縲撰ｼ抵ｼ鍋ｳｻ邨ｱ縲第眠豬ｦ螳蛾ｧ・・・､ｩ蝣ら羅髯｢蜑咲ｵ檎罰縲闊樊ｵ憺ｧ・｡後″"]
+CHECKPOINT after-譏取ｵｷ螟ｧ蟄ｦ蜑・sunday-holiday {"uniqueSignatures":29,"tripsOpened":29,"rejected":0,"errors":0,"elapsedSec":2181}
+CHECKPOINT final {"uniqueSignatures":29,"tripsOpened":29,"rejected":0,"errors":0,"elapsedSec":2181}
+=== UNIQUE SIGNATURES ===
+10 stops | count 346 | courses 0008200278 | days weekday | berths E,02
+    譁ｰ豬ｦ螳蛾ｧ・> 蜈･闊ｹ荳ｭ螟ｮ繧ｨ繧ｹ繝・・繝・> 譏取ｵｷ莠､蟾ｮ轤ｹ > 蜈･闊ｹ讖・> 鬮俶ｴｲ蛹怜ｰ丞ｭｦ譬｡ > 譚ｱ莠ｬ蟄ｦ鬢ｨ蜑・> 鬮俶ｴｲ > 鬮俶ｴｲ荳ｭ螟ｮ蜈ｬ蝨・> 貎ｮ髻ｳ縺ｮ陦・> 鬮俶ｴｲ豬ｷ豬懷・蝨・15 stops | count 144 | courses 0008200286 | days weekday | berths E,11,02,01,18
+    豬ｦ螳蛾ｧ・・蜿｣ > 逾樊・陬・> 迪ｫ螳・> 豸磯亟譛ｬ驛ｨ蜑・> 豬ｷ讌ｽ > 鄒取ｵ懈擲蝗｣蝨ｰ > 譁ｰ豬ｦ螳蛾ｧ・> 蜈･闊ｹ荳ｭ螟ｮ繧ｨ繧ｹ繝・・繝・> 譏取ｵｷ螟ｧ蟄ｦ蜑・> 豬ｷ鬚ｨ縺ｮ陦・> 螟｢豬ｷ縺ｮ陦・> 鬮俶ｴｲ讖・> 鬮俶ｴｲ荳ｭ螟ｮ蜈ｬ蝨・> 貎ｮ髻ｳ縺ｮ陦・> 鬮俶ｴｲ豬ｷ豬懷・蝨・9 stops | count 130 | courses 0008200288 | days weekday | berths E,02,01,18
+    譁ｰ豬ｦ螳蛾ｧ・> 蜈･闊ｹ荳ｭ螟ｮ繧ｨ繧ｹ繝・・繝・> 譏取ｵｷ螟ｧ蟄ｦ蜑・> 豬ｷ鬚ｨ縺ｮ陦・> 螟｢豬ｷ縺ｮ陦・> 鬮俶ｴｲ讖・> 鬮俶ｴｲ荳ｭ螟ｮ蜈ｬ蝨・> 貎ｮ髻ｳ縺ｮ陦・> 鬮俶ｴｲ豬ｷ豬懷・蝨・16 stops | count 145 | courses 0008200289,0008200290 | days weekday | berths E,02,01,18
+    譁ｰ豬ｦ螳蛾ｧ・> 蜈･闊ｹ荳ｭ螟ｮ繧ｨ繧ｹ繝・・繝・> 譏取ｵｷ螟ｧ蟄ｦ蜑・> 豬ｷ鬚ｨ縺ｮ陦・> 螟｢豬ｷ縺ｮ陦・> 鬮俶ｴｲ讖・> 鬮俶ｴｲ荳ｭ螟ｮ蜈ｬ蝨・> 貎ｮ髻ｳ縺ｮ陦・> 鬮俶ｴｲ蜈ｫ荳∫岼 > 鬮俶ｴｲ蝗帑ｸ∫岼 > 鬮俶ｴｲ荳我ｸ∫岼 > 鬮俶ｴｲ隘ｿ蜈千ｫ･蜈ｬ蝨・> 鬆・､ｩ蝣ょ､ｧ蟄ｦ蜈･蜿｣ > 鬮俶ｴｲ莠御ｸ∫岼 > 譚ｱ莠ｬ蟄ｦ鬢ｨ蜑・> 鬮俶ｴｲ蛹怜ｰ丞ｭｦ譬｡
+15 stops | count 150 | courses 0008200285 | days weekday | berths H,03,15,04,02,07
+    鬮俶ｴｲ豬ｷ豬懷・蝨・> 貎ｮ髻ｳ縺ｮ陦・> 鬮俶ｴｲ荳ｭ螟ｮ蜈ｬ蝨・> 鬮俶ｴｲ讖・> 螟｢豬ｷ縺ｮ陦・> 豬ｷ鬚ｨ縺ｮ陦・> 譏取ｵｷ螟ｧ蟄ｦ蜑・> 蜈･闊ｹ荳ｭ螟ｮ繧ｨ繧ｹ繝・・繝・> 譁ｰ豬ｦ螳蛾ｧ・> 鄒取ｵ懈擲蝗｣蝨ｰ > 豬ｷ讌ｽ > 豸磯亟譛ｬ驛ｨ蜑・> 迪ｫ螳・> 逾樊・陬・> 豬ｦ螳蛾ｧ・・蜿｣
+19 stops | count 111 | courses 0008200210 | days weekday | berths H,04,07
+    邱丞粋蜈ｬ蝨・> 繝吶う繧ｵ繧､繝峨・繝・Ν繧ｨ繝ｪ繧｢ > 譏取ｵｷ莠比ｸ∫岼 > 繝上う繧｢繝・ヨ繝ｪ繝ｼ繧ｸ繧ｧ繝ｳ繧ｷ繝ｼ > 荳我ｺ輔ぎ繝ｼ繝・Φ繝帙ユ繝ｫ > 譏取ｵｷ蜊怜ｰ丞ｭｦ譬｡ > 譏取ｵｷ蜈ｭ荳∫岼 > 譛帶ｵｷ縺ｮ陦・> 螟｢豬ｷ縺ｮ陦・> 豬ｷ鬚ｨ縺ｮ陦・> 譏取ｵｷ螟ｧ蟄ｦ蜑・> 蜈･闊ｹ荳ｭ螟ｮ繧ｨ繧ｹ繝・・繝・> 譁ｰ豬ｦ螳蛾ｧ・> 鄒取ｵ懈擲蝗｣蝨ｰ > 豬ｷ讌ｽ > 豸磯亟譛ｬ驛ｨ蜑・> 迪ｫ螳・> 逾樊・陬・> 豬ｦ螳蛾ｧ・・蜿｣
+16 stops | count 40 | courses 0008200260 | days weekday | berths H,07
+    邱丞粋蜈ｬ蝨・> 繝吶う繧ｵ繧､繝峨・繝・Ν繧ｨ繝ｪ繧｢ > 繝吶う繝代・繧ｯ > 繝吶う繝｢繝ｼ繝ｫ > 繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝峨ヱ繝ｼ繧ｯ繧ｷ繝・ぅ > 譌･縺ｮ蜃ｺ蜈ｬ豌鷹､ｨ > 豬ｷ鬚ｨ縺ｮ陦・> 譏取ｵｷ螟ｧ蟄ｦ蜑・> 蜈･闊ｹ荳ｭ螟ｮ繧ｨ繧ｹ繝・・繝・> 譁ｰ豬ｦ螳蛾ｧ・> 鄒取ｵ懈擲蝗｣蝨ｰ > 豬ｷ讌ｽ > 豸磯亟譛ｬ驛ｨ蜑・> 迪ｫ螳・> 逾樊・陬・> 豬ｦ螳蛾ｧ・・蜿｣
+14 stops | count 6 | courses 0008200267 | days weekday | berths H,07
+    繝吶う繝代・繧ｯ > 繝吶う繝｢繝ｼ繝ｫ > 繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝峨ヱ繝ｼ繧ｯ繧ｷ繝・ぅ > 譌･縺ｮ蜃ｺ蜈ｬ豌鷹､ｨ > 豬ｷ鬚ｨ縺ｮ陦・> 譏取ｵｷ螟ｧ蟄ｦ蜑・> 蜈･闊ｹ荳ｭ螟ｮ繧ｨ繧ｹ繝・・繝・> 譁ｰ豬ｦ螳蛾ｧ・> 鄒取ｵ懈擲蝗｣蝨ｰ > 豬ｷ讌ｽ > 豸磯亟譛ｬ驛ｨ蜑・> 迪ｫ螳・> 逾樊・陬・> 豬ｦ螳蛾ｧ・・蜿｣
+17 stops | count 6 | courses 0008200217 | days weekday | berths H,04,07
+    譏取ｵｷ莠比ｸ∫岼 > 繝上う繧｢繝・ヨ繝ｪ繝ｼ繧ｸ繧ｧ繝ｳ繧ｷ繝ｼ > 荳我ｺ輔ぎ繝ｼ繝・Φ繝帙ユ繝ｫ > 譏取ｵｷ蜊怜ｰ丞ｭｦ譬｡ > 譏取ｵｷ蜈ｭ荳∫岼 > 譛帶ｵｷ縺ｮ陦・> 螟｢豬ｷ縺ｮ陦・> 豬ｷ鬚ｨ縺ｮ陦・> 譏取ｵｷ螟ｧ蟄ｦ蜑・> 蜈･闊ｹ荳ｭ螟ｮ繧ｨ繧ｹ繝・・繝・> 譁ｰ豬ｦ螳蛾ｧ・> 鄒取ｵ懈擲蝗｣蝨ｰ > 豬ｷ讌ｽ > 豸磯亟譛ｬ驛ｨ蜑・> 迪ｫ螳・> 逾樊・陬・> 豬ｦ螳蛾ｧ・・蜿｣
+25 stops | count 3 | courses 0008200302 | days weekday | berths H,04,07
+    邱丞粋蜈ｬ蝨・> 繝吶う繧ｵ繧､繝峨・繝・Ν繧ｨ繝ｪ繧｢ > 譏取ｵｷ莠比ｸ∫岼 > 繝上う繧｢繝・ヨ繝ｪ繝ｼ繧ｸ繧ｧ繝ｳ繧ｷ繝ｼ > 荳我ｺ輔ぎ繝ｼ繝・Φ繝帙ユ繝ｫ > 譏取ｵｷ蜊怜ｰ丞ｭｦ譬｡ > 譏取ｵｷ蜈ｭ荳∫岼 > 譛帶ｵｷ縺ｮ陦・> 螟｢豬ｷ縺ｮ陦・> 豬ｷ鬚ｨ縺ｮ陦・> 譏取ｵｷ螟ｧ蟄ｦ蜑・> 蜈･闊ｹ荳ｭ螟ｮ繧ｨ繧ｹ繝・・繝・> 譁ｰ豬ｦ螳蛾ｧ・> 譁ｰ豬ｦ螳蛾ｧ・圏蜿｣ > 闍･貎ｮ蜈ｬ蝨・> 鬆・､ｩ蝣ら羅髯｢蜑・> 繧ｵ繝ｳ繧ｳ繝ｼ繝晄擲蜿｣ > 繧ｵ繝ｳ繧ｳ繝ｼ繝晁･ｿ蜿｣ > 蠑∝､ｩ隨ｬ莠・> 隕区・蟾昜ｸｭ蟄ｦ譬｡蜑・> 隕区・蟾昜ｽ丞ｮ・> 闊樊ｵ應ｸ我ｸ∫岼 > 驕句虚蜈ｬ蝨・> 繧ｪ繝ｪ繧ｨ繝ｳ繧ｿ繝ｫ繝ｩ繝ｳ繝画悽遉ｾ蜑・> 闊樊ｵ憺ｧ・7 stops | count 4 | courses 0008200269 | days weekday | berths H
+    譁ｰ豬ｦ螳蛾ｧ・> 鄒取ｵ懈擲蝗｣蝨ｰ > 豬ｷ讌ｽ > 豸磯亟譛ｬ驛ｨ蜑・> 迪ｫ螳・> 逾樊・陬・> 豬ｦ螳蛾ｧ・・蜿｣
+18 stops | count 10 | courses 0008200256 | days weekday | berths H,07
+    譌･縺ｮ蜃ｺ蜊・> 譁ｰ豬ｦ螳画ｸｩ豕・> 邱丞粋蜈ｬ蝨・> 繝吶う繧ｵ繧､繝峨・繝・Ν繧ｨ繝ｪ繧｢ > 繝吶う繝代・繧ｯ > 繝吶う繝｢繝ｼ繝ｫ > 繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝峨ヱ繝ｼ繧ｯ繧ｷ繝・ぅ > 譌･縺ｮ蜃ｺ蜈ｬ豌鷹､ｨ > 豬ｷ鬚ｨ縺ｮ陦・> 譏取ｵｷ螟ｧ蟄ｦ蜑・> 蜈･闊ｹ荳ｭ螟ｮ繧ｨ繧ｹ繝・・繝・> 譁ｰ豬ｦ螳蛾ｧ・> 鄒取ｵ懈擲蝗｣蝨ｰ > 豬ｷ讌ｽ > 豸磯亟譛ｬ驛ｨ蜑・> 迪ｫ螳・> 逾樊・陬・> 豬ｦ螳蛾ｧ・・蜿｣
+19 stops | count 35 | courses 0008200211 | days weekday | berths 11
+    豬ｦ螳蛾ｧ・・蜿｣ > 逾樊・陬・> 迪ｫ螳・> 豸磯亟譛ｬ驛ｨ蜑・> 豬ｷ讌ｽ > 鄒取ｵ懈擲蝗｣蝨ｰ > 譁ｰ豬ｦ螳蛾ｧ・> 蜈･闊ｹ荳ｭ螟ｮ繧ｨ繧ｹ繝・・繝・> 譏取ｵｷ螟ｧ蟄ｦ蜑・> 豬ｷ鬚ｨ縺ｮ陦・> 螟｢豬ｷ縺ｮ陦・> 譛帶ｵｷ縺ｮ陦・> 譏取ｵｷ蜈ｭ荳∫岼 > 譏取ｵｷ蜊怜ｰ丞ｭｦ譬｡ > 荳我ｺ輔ぎ繝ｼ繝・Φ繝帙ユ繝ｫ > 繝上う繧｢繝・ヨ繝ｪ繝ｼ繧ｸ繧ｧ繝ｳ繧ｷ繝ｼ > 譏取ｵｷ莠比ｸ∫岼 > 繝吶う繧ｵ繧､繝峨・繝・Ν繧ｨ繝ｪ繧｢ > 邱丞粋蜈ｬ蝨・16 stops | count 19 | courses 0008200261 | days weekday | berths 11
+    豬ｦ螳蛾ｧ・・蜿｣ > 逾樊・陬・> 迪ｫ螳・> 豸磯亟譛ｬ驛ｨ蜑・> 豬ｷ讌ｽ > 鄒取ｵ懈擲蝗｣蝨ｰ > 譁ｰ豬ｦ螳蛾ｧ・> 蜈･闊ｹ荳ｭ螟ｮ繧ｨ繧ｹ繝・・繝・> 譏取ｵｷ螟ｧ蟄ｦ蜑・> 豬ｷ鬚ｨ縺ｮ陦・> 譌･縺ｮ蜃ｺ蜈ｬ豌鷹､ｨ > 繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝峨ヱ繝ｼ繧ｯ繧ｷ繝・ぅ > 繝吶う繝｢繝ｼ繝ｫ > 繝吶う繝代・繧ｯ > 繝吶う繧ｵ繧､繝峨・繝・Ν繧ｨ繝ｪ繧｢ > 邱丞粋蜈ｬ蝨・7 stops | count 5 | courses 0008200270 | days weekday | berths 11
+    豬ｦ螳蛾ｧ・・蜿｣ > 逾樊・陬・> 迪ｫ螳・> 豸磯亟譛ｬ驛ｨ蜑・> 豬ｷ讌ｽ > 鄒取ｵ懈擲蝗｣蝨ｰ > 譁ｰ豬ｦ螳蛾ｧ・18 stops | count 7 | courses 0008200257 | days weekday | berths 11
+    豬ｦ螳蛾ｧ・・蜿｣ > 逾樊・陬・> 迪ｫ螳・> 豸磯亟譛ｬ驛ｨ蜑・> 豬ｷ讌ｽ > 鄒取ｵ懈擲蝗｣蝨ｰ > 譁ｰ豬ｦ螳蛾ｧ・> 蜈･闊ｹ荳ｭ螟ｮ繧ｨ繧ｹ繝・・繝・> 譏取ｵｷ螟ｧ蟄ｦ蜑・> 豬ｷ鬚ｨ縺ｮ陦・> 譌･縺ｮ蜃ｺ蜈ｬ豌鷹､ｨ > 繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝峨ヱ繝ｼ繧ｯ繧ｷ繝・ぅ > 繝吶う繝｢繝ｼ繝ｫ > 繝吶う繝代・繧ｯ > 繝吶う繧ｵ繧､繝峨・繝・Ν繧ｨ繝ｪ繧｢ > 邱丞粋蜈ｬ蝨・> 譁ｰ豬ｦ螳画ｸｩ豕・> 譌･縺ｮ蜃ｺ蜊・17 stops | count 4 | courses 0008200218 | days weekday | berths 11
+    豬ｦ螳蛾ｧ・・蜿｣ > 逾樊・陬・> 迪ｫ螳・> 豸磯亟譛ｬ驛ｨ蜑・> 豬ｷ讌ｽ > 鄒取ｵ懈擲蝗｣蝨ｰ > 譁ｰ豬ｦ螳蛾ｧ・> 蜈･闊ｹ荳ｭ螟ｮ繧ｨ繧ｹ繝・・繝・> 譏取ｵｷ螟ｧ蟄ｦ蜑・> 豬ｷ鬚ｨ縺ｮ陦・> 螟｢豬ｷ縺ｮ陦・> 譛帶ｵｷ縺ｮ陦・> 譏取ｵｷ蜈ｭ荳∫岼 > 譏取ｵｷ蜊怜ｰ丞ｭｦ譬｡ > 荳我ｺ輔ぎ繝ｼ繝・Φ繝帙ユ繝ｫ > 繝上う繧｢繝・ヨ繝ｪ繝ｼ繧ｸ繧ｧ繝ｳ繧ｷ繝ｼ > 譏取ｵｷ莠比ｸ∫岼
+14 stops | count 3 | courses 0008200268 | days weekday | berths 11
+    豬ｦ螳蛾ｧ・・蜿｣ > 逾樊・陬・> 迪ｫ螳・> 豸磯亟譛ｬ驛ｨ蜑・> 豬ｷ讌ｽ > 鄒取ｵ懈擲蝗｣蝨ｰ > 譁ｰ豬ｦ螳蛾ｧ・> 蜈･闊ｹ荳ｭ螟ｮ繧ｨ繧ｹ繝・・繝・> 譏取ｵｷ螟ｧ蟄ｦ蜑・> 豬ｷ鬚ｨ縺ｮ陦・> 譌･縺ｮ蜃ｺ蜈ｬ豌鷹､ｨ > 繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝峨ヱ繝ｼ繧ｯ繧ｷ繝・ぅ > 繝吶う繝｢繝ｼ繝ｫ > 繝吶う繝代・繧ｯ
+10 stops | count 332 | courses 0008200277 | days weekday | berths 03,15
+    鬮俶ｴｲ豬ｷ豬懷・蝨・> 貎ｮ髻ｳ縺ｮ陦・> 鬮俶ｴｲ荳ｭ螟ｮ蜈ｬ蝨・> 鬮俶ｴｲ > 譚ｱ莠ｬ蟄ｦ鬢ｨ蜑・> 鬮俶ｴｲ蛹怜ｰ丞ｭｦ譬｡ > 蜈･闊ｹ讖・> 譏取ｵｷ莠､蟾ｮ轤ｹ > 蜈･闊ｹ荳ｭ螟ｮ繧ｨ繧ｹ繝・・繝・> 譁ｰ豬ｦ螳蛾ｧ・9 stops | count 145 | courses 0008200287 | days weekday | berths 03,15,02,06
+    鬮俶ｴｲ豬ｷ豬懷・蝨・> 貎ｮ髻ｳ縺ｮ陦・> 鬮俶ｴｲ荳ｭ螟ｮ蜈ｬ蝨・> 鬮俶ｴｲ讖・> 螟｢豬ｷ縺ｮ陦・> 豬ｷ鬚ｨ縺ｮ陦・> 譏取ｵｷ螟ｧ蟄ｦ蜑・> 蜈･闊ｹ荳ｭ螟ｮ繧ｨ繧ｹ繝・・繝・> 譁ｰ豬ｦ螳蛾ｧ・15 stops | count 11 | courses 0008200306 | days weekday | berths 02
+    闊樊ｵ憺ｧ・> 繧ｪ繝ｪ繧ｨ繝ｳ繧ｿ繝ｫ繝ｩ繝ｳ繝画悽遉ｾ蜑・> 驕句虚蜈ｬ蝨・> 闊樊ｵ應ｸ我ｸ∫岼 > 隕区・蟾昜ｽ丞ｮ・> 隕区・蟾昜ｸｭ蟄ｦ譬｡蜑・> 蠑∝､ｩ隨ｬ莠・> 莉雁ｷ晄ｶ磯亟鄂ｲ > 鬆・､ｩ蝣ょ､ｧ蟄ｦ豬ｦ螳峨く繝｣繝ｳ繝代せ > 鬮俶ｴｲ隘ｿ蜈千ｫ･蜈ｬ蝨・> 鬮俶ｴｲ荳我ｸ∫岼 > 鬮俶ｴｲ蝗帑ｸ∫岼 > 鬮俶ｴｲ荳・ｸ∫岼 > 貎ｮ髻ｳ縺ｮ陦・> 鬮俶ｴｲ豬ｷ豬懷・蝨・13 stops | count 326 | courses 0008200212 | days weekday | berths 03,06
+    邱丞粋蜈ｬ蝨・> 繝吶う繧ｵ繧､繝峨・繝・Ν繧ｨ繝ｪ繧｢ > 譏取ｵｷ莠比ｸ∫岼 > 繝上う繧｢繝・ヨ繝ｪ繝ｼ繧ｸ繧ｧ繝ｳ繧ｷ繝ｼ > 荳我ｺ輔ぎ繝ｼ繝・Φ繝帙ユ繝ｫ > 譏取ｵｷ蜊怜ｰ丞ｭｦ譬｡ > 譏取ｵｷ蜈ｭ荳∫岼 > 譛帶ｵｷ縺ｮ陦・> 螟｢豬ｷ縺ｮ陦・> 豬ｷ鬚ｨ縺ｮ陦・> 譏取ｵｷ螟ｧ蟄ｦ蜑・> 蜈･闊ｹ荳ｭ螟ｮ繧ｨ繧ｹ繝・・繝・> 譁ｰ豬ｦ螳蛾ｧ・11 stops | count 44 | courses 0008200214 | days weekday | berths 03,06
+    譏取ｵｷ莠比ｸ∫岼 > 繝上う繧｢繝・ヨ繝ｪ繝ｼ繧ｸ繧ｧ繝ｳ繧ｷ繝ｼ > 荳我ｺ輔ぎ繝ｼ繝・Φ繝帙ユ繝ｫ > 譏取ｵｷ蜊怜ｰ丞ｭｦ譬｡ > 譏取ｵｷ蜈ｭ荳∫岼 > 譛帶ｵｷ縺ｮ陦・> 螟｢豬ｷ縺ｮ陦・> 豬ｷ鬚ｨ縺ｮ陦・> 譏取ｵｷ螟ｧ蟄ｦ蜑・> 蜈･闊ｹ荳ｭ螟ｮ繧ｨ繧ｹ繝・・繝・> 譁ｰ豬ｦ螳蛾ｧ・6 stops | count 8 | courses 0008200216 | days weekday | berths 03,06
+    譛帶ｵｷ縺ｮ陦・> 螟｢豬ｷ縺ｮ陦・> 豬ｷ鬚ｨ縺ｮ陦・> 譏取ｵｷ螟ｧ蟄ｦ蜑・> 蜈･闊ｹ荳ｭ螟ｮ繧ｨ繧ｹ繝・・繝・> 譁ｰ豬ｦ螳蛾ｧ・11 stops | count 17 | courses 0008202661,0008200264 | days weekday | berths 06
+    鬮俶ｴｲ豬ｷ豬懷・蝨・> 繝上う繧｢繝・ヨ繝ｪ繝ｼ繧ｸ繧ｧ繝ｳ繧ｷ繝ｼ > 譏取ｵｷ莠比ｸ∫岼 > 繝吶う繝代・繧ｯ > 繝吶う繝｢繝ｼ繝ｫ > 繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝峨ヱ繝ｼ繧ｯ繧ｷ繝・ぅ > 譌･縺ｮ蜃ｺ蜈ｬ豌鷹､ｨ > 豬ｷ鬚ｨ縺ｮ陦・> 譏取ｵｷ螟ｧ蟄ｦ蜑・> 蜈･闊ｹ荳ｭ螟ｮ繧ｨ繧ｹ繝・・繝・> 譁ｰ豬ｦ螳蛾ｧ・10 stops | count 128 | courses 0008200279 | days weekday | berths 06
+    譌･縺ｮ蜃ｺ荳・ｸ∫岼 > 譌･縺ｮ蜃ｺ隘ｿ > 鬆・､ｩ蝣ょ､ｧ蟄ｦ繝ｻ譌･縺ｮ蜃ｺ 豁｣髢 > 繝励Λ繧ｦ繝画眠豬ｦ螳峨ヱ繝ｼ繧ｯ繝槭Μ繝ｼ繝・> 譌･縺ｮ蜃ｺ荳ｭ蟄ｦ譬｡ > 繝吶う繧ｷ繝・ぅ豬ｦ螳・> 豬ｷ鬚ｨ縺ｮ陦・> 譏取ｵｷ螟ｧ蟄ｦ蜑・> 蜈･闊ｹ荳ｭ螟ｮ繧ｨ繧ｹ繝・・繝・> 譁ｰ豬ｦ螳蛾ｧ・10 stops | count 108 | courses 0008200262 | days weekday | berths 06
+    邱丞粋蜈ｬ蝨・> 繝吶う繧ｵ繧､繝峨・繝・Ν繧ｨ繝ｪ繧｢ > 繝吶う繝代・繧ｯ > 繝吶う繝｢繝ｼ繝ｫ > 繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝峨ヱ繝ｼ繧ｯ繧ｷ繝・ぅ > 譌･縺ｮ蜃ｺ蜈ｬ豌鷹､ｨ > 豬ｷ鬚ｨ縺ｮ陦・> 譏取ｵｷ螟ｧ蟄ｦ蜑・> 蜈･闊ｹ荳ｭ螟ｮ繧ｨ繧ｹ繝・・繝・> 譁ｰ豬ｦ螳蛾ｧ・8 stops | count 15 | courses 0008200265 | days weekday | berths 06
+    繝吶う繝代・繧ｯ > 繝吶う繝｢繝ｼ繝ｫ > 繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝峨ヱ繝ｼ繧ｯ繧ｷ繝・ぅ > 譌･縺ｮ蜃ｺ蜈ｬ豌鷹､ｨ > 豬ｷ鬚ｨ縺ｮ陦・> 譏取ｵｷ螟ｧ蟄ｦ蜑・> 蜈･闊ｹ荳ｭ螟ｮ繧ｨ繧ｹ繝・・繝・> 譁ｰ豬ｦ螳蛾ｧ・12 stops | count 33 | courses 0008200258 | days weekday | berths 06
+    譌･縺ｮ蜃ｺ蜊・> 譁ｰ豬ｦ螳画ｸｩ豕・> 邱丞粋蜈ｬ蝨・> 繝吶う繧ｵ繧､繝峨・繝・Ν繧ｨ繝ｪ繧｢ > 繝吶う繝代・繧ｯ > 繝吶う繝｢繝ｼ繝ｫ > 繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝峨ヱ繝ｼ繧ｯ繧ｷ繝・ぅ > 譌･縺ｮ蜃ｺ蜈ｬ豌鷹､ｨ > 豬ｷ鬚ｨ縺ｮ陦・> 譏取ｵｷ螟ｧ蟄ｦ蜑・> 蜈･闊ｹ荳ｭ螟ｮ繧ｨ繧ｹ繝・・繝・> 譁ｰ豬ｦ螳蛾ｧ・{"uniqueSignatures":29,"tripsOpened":29,"rejected":0,"errors":0,"elapsedSec":2181}

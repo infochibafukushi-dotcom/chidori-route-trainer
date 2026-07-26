@@ -1,0 +1,73 @@
+﻿[refProbeWide] https://overpass.kumi.systems/api/interpreter ... FAIL HTTP 504 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:
+[refProbeWide] https://overpass-api.de/api/interpreter ... ok 3 elements
+[networkProbe] https://overpass.kumi.systems/api/interpreter ... FAIL HTTP 504 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:
+[networkProbe] https://overpass-api.de/api/interpreter ... FAIL HTTP 504 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:
+[nameProbe] https://overpass.kumi.systems/api/interpreter ... ok 3 elements
+[shinurayasuBusStops] https://overpass.kumi.systems/api/interpreter ... FAIL HTTP 504 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:
+[shinurayasuBusStops] https://overpass-api.de/api/interpreter ... ok 13 elements
+  譁ｰ豬ｦ螳蛾ｧ・bus_stop nodes:
+    8415001164 local_ref= undefined 譁ｰ豬ｦ螳蛾ｧ・35.6494677 139.9139766
+    8415001165 local_ref= A 譁ｰ豬ｦ螳蛾ｧ・35.6495534 139.9138715
+    8415001166 local_ref= B 譁ｰ豬ｦ螳蛾ｧ・35.6496296 139.9137782
+    8415001167 local_ref= C 譁ｰ豬ｦ螳蛾ｧ・35.649709 139.9136809
+    8415001162 local_ref= D 譁ｰ豬ｦ螳蛾ｧ・35.6500008 139.9137632
+    8415001161 local_ref= E 譁ｰ豬ｦ螳蛾ｧ・35.6499537 139.9140181
+    8415001160 local_ref= F 譁ｰ豬ｦ螳蛾ｧ・35.6498736 139.9141187
+    8415001159 local_ref= G 譁ｰ豬ｦ螳蛾ｧ・35.6497886 139.9142267
+    8415001143 local_ref= H 譁ｰ豬ｦ螳蛾ｧ・35.6506245 139.9142535
+    6778578838 local_ref= J 譁ｰ豬ｦ螳蛾ｧ・圏蜿｣ 35.6499903 139.9126359
+    6720642144 local_ref= K 譁ｰ豬ｦ螳蛾ｧ・圏蜿｣ 35.650172 139.9125398
+    12369534179 local_ref= L 譁ｰ豬ｦ螳蛾ｧ・圏蜿｣ 35.650054 139.9124041
+    8415001163 local_ref= X 譁ｰ豬ｦ螳蛾ｧ・35.649411 139.9142448
+[relationsAtShinurayasu] https://overpass.kumi.systems/api/interpreter ... FAIL HTTP 504 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:
+[relationsAtShinurayasu] https://overpass-api.de/api/interpreter ... ok 47 elements
+
+  --- 譁ｰ豬ｦ螳蛾ｧ・ヮ繝ｼ繝峨＃縺ｨ縺ｮ蛻ｩ逕ｨ relation・・ole / 譛邨Ｑlatform縺具ｼ・   node 6720642144 (local_ref=K) 蛻ｩ逕ｨ 2 relation
+      rel 9964872 ref=2 role=platform first=false last=false :: 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ2邉ｻ邨ｱ 闊樊ｵ憺ｧ・∫譁ｰ豬ｦ螳蛾ｧ・圏蜿｣竍呈ｵｦ螳蛾ｧ・・蜿｣
+      rel 18351945 ref=2 role=platform first=false last=false :: 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ2邉ｻ邨ｱ 蜊・ｳ･霆雁ｺｫ竍呈眠豬ｦ螳蛾ｧ・圏蜿｣竍呈ｵｦ螳蛾ｧ・・蜿｣
+   node 12369534179 (local_ref=L) 蛻ｩ逕ｨ 5 relation
+      rel 9983017 ref=14 role=platform first=false last=false :: 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ14邉ｻ邨ｱ 闊樊ｵ憺ｧ・∫荳ｭ螟ｮ蜈ｬ蝨停∫譁ｰ豬ｦ螳蛾ｧ・      rel 18396546 ref=22 role=platform first=false last=false :: 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ22邉ｻ邨ｱ 蜊・ｳ･霆雁ｺｫ竍貞鴻魑･譚ｱ竍呈眠豬ｦ螳蛾ｧ・      rel 18417632 ref=5 role=platform first=false last=false :: 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ5邉ｻ邨ｱ 豬ｦ螳蛾ｧ・・蜿｣竍貞豎溘・譚ｱ豬ｷ螟ｧ豬ｦ螳峨・譚ｱ驥寂∫譁ｰ豬ｦ螳蛾ｧ・      rel 18419876 ref=14 role=platform first=false last=false :: 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ14邉ｻ邨ｱ 蜊・ｳ･霆雁ｺｫ竍剃ｸｭ螟ｮ蜈ｬ蝨停∫譁ｰ豬ｦ螳蛾ｧ・      rel 18419895 ref=23 role=platform first=false last=false :: 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ23邉ｻ邨ｱ 闊樊ｵ憺ｧ・∫譁ｰ豬ｦ螳蛾ｧ・・譛帶ｵｷ縺ｮ陦冷∫邱丞粋蜈ｬ蝨・   node 8415001163 (local_ref=X) 蛻ｩ逕ｨ 15 relation
+      rel 9983017 ref=14 role=platform_exit_only first=false last=true :: 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ14邉ｻ邨ｱ 闊樊ｵ憺ｧ・∫荳ｭ螟ｮ蜈ｬ蝨停∫譁ｰ豬ｦ螳蛾ｧ・      rel 12302543 ref=豬ｦ螳・3 role=platform_exit_only first=false last=true :: Bus 豬ｦ螳・3: 陦悟ｾｳ鬧・=> 譁ｰ豬ｦ螳蛾ｧ・      rel 12302544 ref=豬ｦ螳・3 role=platform_exit_only first=false last=true :: Bus 豬ｦ螳・3: 譛ｬ蜈ｫ蟷｡鬧・=> 陦悟ｾｳ鬧・=> 譁ｰ豬ｦ螳蛾ｧ・      rel 18354837 ref=1-3 role=platform_exit_only first=false last=true :: 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ1-3邉ｻ邨ｱ 譁ｰ豬ｦ螳蛾ｧ・∫蛹玲・ｾｪ迺ｰ・亥現逋ゅそ繝ｳ繧ｿ繝ｼ邨檎罰・・      rel 18354840 ref=1-1 role=platform_exit_only first=false last=true :: 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ1-1邉ｻ邨ｱ 譁ｰ豬ｦ螳蛾ｧ・∫蛹玲・ｾｪ迺ｰ・亥現逋ゅそ繝ｳ繧ｿ繝ｼ髱樒ｵ檎罰・・      rel 18381756 ref=10 role=platform_exit_only first=false last=true :: 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ10邉ｻ邨ｱ 縺ｿ縺ｪ縺ｨ蜊冷∫譚ｱ莠ｬ蟄ｦ鬢ｨ竍呈眠豬ｦ螳蛾ｧ・      rel 18381770 ref=19 role=platform_exit_only first=false last=true :: 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ19邉ｻ邨ｱ 鬮俶ｴｲ豬ｷ豬懷・蝨停∫鬮俶ｴｲ蝗帑ｸ∫岼繝ｻ譚ｱ莠ｬ蟄ｦ鬢ｨ竍呈眠豬ｦ螳蛾ｧ・      rel 18396354 ref=38 role=platform_exit_only first=false last=true :: 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ38邉ｻ邨ｱ 譁ｰ豬ｦ螳蛾ｧ・∫繧ｯ繧ｪ繝ｳ譁ｰ豬ｦ螳臥ｷ・      rel 18396546 ref=22 role=platform_exit_only first=false last=true :: 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ22邉ｻ邨ｱ 蜊・ｳ･霆雁ｺｫ竍貞鴻魑･譚ｱ竍呈眠豬ｦ螳蛾ｧ・      rel 18396562 ref=16 role=platform_exit_only first=false last=true :: 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ16邉ｻ邨ｱ 譌･縺ｮ蜃ｺ荳・ｸ∫岼竍偵・繝ｩ繧ｦ繝画眠豬ｦ螳峨ヱ繝ｼ繧ｯ繝槭Μ繝ｼ繝岩∫譁ｰ豬ｦ螳蛾ｧ・      rel 18396568 ref=17 role=platform_exit_only first=false last=true :: 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ17邉ｻ邨ｱ 譌･縺ｮ蜃ｺ荳・ｸ∫岼竍呈擲莠ｬ髮ｻ蜉帚∫譁ｰ豬ｦ螳蛾ｧ・      rel 18417632 ref=5 role=platform_exit_only first=false last=true :: 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ5邉ｻ邨ｱ 豬ｦ螳蛾ｧ・・蜿｣竍貞豎溘・譚ｱ豬ｷ螟ｧ豬ｦ螳峨・譚ｱ驥寂∫譁ｰ豬ｦ螳蛾ｧ・      rel 18419852 ref=11 role=platform_exit_only first=false last=true :: 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ11邉ｻ邨ｱ 鬮俶ｴｲ豬ｷ豬懷・蝨停∫繝吶う繝代・繧ｯ竍呈眠豬ｦ螳蛾ｧ・      rel 18419864 ref=15 role=platform_exit_only first=false last=true :: 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ15邉ｻ邨ｱ 鬮俶ｴｲ豬ｷ豬懷・蝨停∫譚ｱ莠ｬ蟄ｦ鬢ｨ竍呈眠豬ｦ螳蛾ｧ・      rel 18419876 ref=14 role=platform_exit_only first=false last=true :: 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ14邉ｻ邨ｱ 蜊・ｳ･霆雁ｺｫ竍剃ｸｭ螟ｮ蜈ｬ蝨停∫譁ｰ豬ｦ螳蛾ｧ・   node 8415001159 (local_ref=G) 蛻ｩ逕ｨ 3 relation
+      rel 12302545 ref=豬ｦ螳・3 role=platform_entry_only first=true last=false :: Bus 豬ｦ螳・3: 譁ｰ豬ｦ螳蛾ｧ・=> 陦悟ｾｳ鬧・=> 譛ｬ蜈ｫ蟷｡鬧・      rel 19781508 ref=迹・5 role= first=false last=false :: 迹・5
+      rel 19781509 ref=迹・5 role= first=false last=false :: 迹・5
+   node 6778578838 (local_ref=J) 蛻ｩ逕ｨ 7 relation
+      rel 18323695 ref=2 role=platform first=false last=false :: 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ2邉ｻ邨ｱ 豬ｦ螳蛾ｧ・・蜿｣竍呈眠豬ｦ螳蛾ｧ・圏蜿｣竍定・豬憺ｧ・      rel 18323926 ref=14 role=platform first=false last=false :: 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ14邉ｻ邨ｱ 譁ｰ豬ｦ螳蛾ｧ・∫荳ｭ螟ｮ蜈ｬ蝨停∫闊樊ｵ憺ｧ・      rel 18351946 ref=2 role=platform first=false last=false :: 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ2邉ｻ邨ｱ 豬ｦ螳蛾ｧ・・蜿｣竍呈眠豬ｦ螳蛾ｧ・圏蜿｣竍貞鴻魑･霆雁ｺｫ
+      rel 18396547 ref=22 role=platform first=false last=false :: 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ22邉ｻ邨ｱ 譁ｰ豬ｦ螳蛾ｧ・∫蜊・ｳ･譚ｱ竍貞鴻魑･霆雁ｺｫ
+      rel 18417631 ref=5 role=platform first=false last=false :: 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ5邉ｻ邨ｱ 譁ｰ豬ｦ螳蛾ｧ・∫譚ｱ驥弱・譚ｱ豬ｷ螟ｧ豬ｦ螳峨・蝣豎溪∫豬ｦ螳蛾ｧ・・蜿｣
+      rel 18419877 ref=14 role=platform first=false last=false :: 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ14邉ｻ邨ｱ 譁ｰ豬ｦ螳蛾ｧ・∫荳ｭ螟ｮ蜈ｬ蝨停∫蜊・ｳ･霆雁ｺｫ
+      rel 18419894 ref=23 role=platform first=false last=false :: 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ23邉ｻ邨ｱ 邱丞粋蜈ｬ蝨停∫譛帶ｵｷ縺ｮ陦励・譁ｰ豬ｦ螳蛾ｧ・∫闊樊ｵ憺ｧ・   node 8415001166 (local_ref=B) 蛻ｩ逕ｨ 4 relation
+      rel 18323926 ref=14 role=platform_entry_only first=true last=false :: 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ14邉ｻ邨ｱ 譁ｰ豬ｦ螳蛾ｧ・∫荳ｭ螟ｮ蜈ｬ蝨停∫闊樊ｵ憺ｧ・      rel 18396354 ref=38 role=platform_entry_only first=true last=false :: 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ38邉ｻ邨ｱ 譁ｰ豬ｦ螳蛾ｧ・∫繧ｯ繧ｪ繝ｳ譁ｰ豬ｦ螳臥ｷ・      rel 18396547 ref=22 role=platform_entry_only first=true last=false :: 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ22邉ｻ邨ｱ 譁ｰ豬ｦ螳蛾ｧ・∫蜊・ｳ･譚ｱ竍貞鴻魑･霆雁ｺｫ
+      rel 18419877 ref=14 role=platform_entry_only first=true last=false :: 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ14邉ｻ邨ｱ 譁ｰ豬ｦ螳蛾ｧ・∫荳ｭ螟ｮ蜈ｬ蝨停∫蜊・ｳ･霆雁ｺｫ
+   node 8415001164 (local_ref=undefined) 蛻ｩ逕ｨ 4 relation
+      rel 18352418 ref=縺倥ｅ繧薙°縺・ｷ・role=platform first=false last=false :: 豬ｦ螳牙ｸゅ♀縺輔ｓ縺ｽ繝舌せ 縺倥ｅ繧薙°縺・ｷ夲ｼ医▽縺､縺倥Ν繝ｼ繝茨ｼ・      rel 18352419 ref=縺倥ｅ繧薙°縺・ｷ・role=platform first=false last=false :: 豬ｦ螳牙ｸゅ♀縺輔ｓ縺ｽ繝舌せ 縺倥ｅ繧薙°縺・ｷ夲ｼ医＞縺｡繧・≧繝ｫ繝ｼ繝茨ｼ・      rel 18352813 ref=蛹ｻ逋ゅそ繝ｳ繧ｿ繝ｼ邱・role=platform_exit_only first=false last=true :: 豬ｦ螳牙ｸゅ♀縺輔ｓ縺ｽ繝舌せ 蛹ｻ逋ゅそ繝ｳ繧ｿ繝ｼ邱夲ｼ域擲莠ｬ繝吶う蛹ｻ逋ゅそ繝ｳ繧ｿ繝ｼ竍呈ｵｦ螳牙ｸょｽｹ謇竍呈眠豬ｦ螳蛾ｧ・ｼ・      rel 18352814 ref=蛹ｻ逋ゅそ繝ｳ繧ｿ繝ｼ邱・role=platform_entry_only first=true last=false :: 豬ｦ螳牙ｸゅ♀縺輔ｓ縺ｽ繝舌せ 蛹ｻ逋ゅそ繝ｳ繧ｿ繝ｼ邱夲ｼ域眠豬ｦ螳蛾ｧ・∫豬ｦ螳牙ｸょｽｹ謇竍呈擲莠ｬ繝吶う蛹ｻ逋ゅそ繝ｳ繧ｿ繝ｼ・・   node 8415001143 (local_ref=H) 蛻ｩ逕ｨ 4 relation
+      rel 18352883 ref=11 role=platform first=false last=false :: 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ11邉ｻ邨ｱ 譌･縺ｮ蜃ｺ蜊冷∫譁ｰ豬ｦ螳蛾ｧ・∫豬ｦ螳蛾ｧ・・蜿｣
+      rel 18352907 ref=18 role=platform first=false last=false :: 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ18邉ｻ邨ｱ 鬮俶ｴｲ豬ｷ豬懷・蝨停∫譁ｰ豬ｦ螳蛾ｧ・∫豬ｦ螳蛾ｧ・・蜿｣
+      rel 18417570 ref=3 role=platform first=false last=false :: 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ3邉ｻ邨ｱ 邱丞粋蜈ｬ蝨停∫譛帶ｵｷ縺ｮ陦励・譁ｰ豬ｦ螳蛾ｧ・∫豬ｦ螳蛾ｧ・・蜿｣
+      rel 18419894 ref=23 role=platform first=false last=false :: 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ23邉ｻ邨ｱ 邱丞粋蜈ｬ蝨停∫譛帶ｵｷ縺ｮ陦励・譁ｰ豬ｦ螳蛾ｧ・∫闊樊ｵ憺ｧ・   node 8415001162 (local_ref=D) 蛻ｩ逕ｨ 4 relation
+      rel 18352884 ref=11 role=platform first=false last=false :: 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ11邉ｻ邨ｱ 豬ｦ螳蛾ｧ・・蜿｣竍呈眠豬ｦ螳蛾ｧ・∫譌･縺ｮ蜃ｺ蜊・      rel 18417571 ref=3 role=platform first=false last=false :: 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ3邉ｻ邨ｱ 豬ｦ螳蛾ｧ・・蜿｣竍呈眠豬ｦ螳蛾ｧ・・譛帶ｵｷ縺ｮ陦冷∫邱丞粋蜈ｬ蝨・      rel 18417579 ref=3 role=platform_entry_only first=true last=false :: 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ3邉ｻ邨ｱ 譁ｰ豬ｦ螳蛾ｧ・∫譛帶ｵｷ縺ｮ陦冷∫繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝峨ヱ繝ｼ繧ｯ繧ｷ繝・ぅ
+      rel 18419895 ref=23 role=platform first=false last=false :: 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ23邉ｻ邨ｱ 闊樊ｵ憺ｧ・∫譁ｰ豬ｦ螳蛾ｧ・・譛帶ｵｷ縺ｮ陦冷∫邱丞粋蜈ｬ蝨・   node 8415001161 (local_ref=E) 蛻ｩ逕ｨ 3 relation
+      rel 18352908 ref=18 role=platform first=false last=false :: 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ18邉ｻ邨ｱ 豬ｦ螳蛾ｧ・・蜿｣竍呈眠豬ｦ螳蛾ｧ・∫鬮俶ｴｲ豬ｷ豬懷・蝨・      rel 18417590 ref=18 role=platform_entry_only first=true last=false :: 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ18邉ｻ邨ｱ 譁ｰ豬ｦ螳蛾ｧ・∫貎ｮ髻ｳ縺ｮ陦冷∫鬮俶ｴｲ蛹怜ｰ丞ｭｦ譬｡
+      rel 18419865 ref=15 role=platform_entry_only first=true last=false :: 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ15邉ｻ邨ｱ 譁ｰ豬ｦ螳蛾ｧ・∫譚ｱ莠ｬ蟄ｦ鬢ｨ竍帝ｫ俶ｴｲ豬ｷ豬懷・蝨・   node 8415001165 (local_ref=A) 蛻ｩ逕ｨ 4 relation
+      rel 18354837 ref=1-3 role=platform_entry_only first=true last=false :: 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ1-3邉ｻ邨ｱ 譁ｰ豬ｦ螳蛾ｧ・∫蛹玲・ｾｪ迺ｰ・亥現逋ゅそ繝ｳ繧ｿ繝ｼ邨檎罰・・      rel 18354840 ref=1-1 role=platform_entry_only first=true last=false :: 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ1-1邉ｻ邨ｱ 譁ｰ豬ｦ螳蛾ｧ・∫蛹玲・ｾｪ迺ｰ・亥現逋ゅそ繝ｳ繧ｿ繝ｼ髱樒ｵ檎罰・・      rel 18354842 ref=1 role=platform_entry_only first=true last=false :: 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ1邉ｻ邨ｱ 譁ｰ豬ｦ螳蛾ｧ・∫蛹玲・∫豬ｦ螳蛾ｧ・・蜿｣
+      rel 18417631 ref=5 role=platform_entry_only first=true last=false :: 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ5邉ｻ邨ｱ 譁ｰ豬ｦ螳蛾ｧ・∫譚ｱ驥弱・譚ｱ豬ｷ螟ｧ豬ｦ螳峨・蝣豎溪∫豬ｦ螳蛾ｧ・・蜿｣
+   node 8415001160 (local_ref=F) 蛻ｩ逕ｨ 2 relation
+      rel 18381757 ref=10 role=platform_entry_only first=true last=false :: 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ10邉ｻ邨ｱ 譁ｰ豬ｦ螳蛾ｧ・∫譚ｱ莠ｬ蟄ｦ鬢ｨ竍偵∩縺ｪ縺ｨ蜊・      rel 18381771 ref=19 role=platform_entry_only first=true last=false :: 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ19邉ｻ邨ｱ 譁ｰ豬ｦ螳蛾ｧ・∫譚ｱ莠ｬ蟄ｦ鬢ｨ繝ｻ鬮俶ｴｲ蝗帑ｸ∫岼竍帝ｫ俶ｴｲ豬ｷ豬懷・蝨・   node 8415001167 (local_ref=C) 蛻ｩ逕ｨ 3 relation
+      rel 18396563 ref=16 role=platform_entry_only first=true last=false :: 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ16邉ｻ邨ｱ 譁ｰ豬ｦ螳蛾ｧ・∫繝励Λ繧ｦ繝画眠豬ｦ螳峨ヱ繝ｼ繧ｯ繝槭Μ繝ｼ繝岩∫譌･縺ｮ蜃ｺ荳・ｸ∫岼
+      rel 18396569 ref=17 role=platform_entry_only first=true last=false :: 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ17邉ｻ邨ｱ 譁ｰ豬ｦ螳蛾ｧ・∫譚ｱ莠ｬ髮ｻ蜉帚∫譌･縺ｮ蜃ｺ荳・ｸ∫岼
+      rel 18396583 ref=17 role=platform_entry_only first=true last=false :: 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ17邉ｻ邨ｱ 譁ｰ豬ｦ螳蛾ｧ・∫譚ｱ莠ｬ髮ｻ蜉帙・繝励Λ繧ｦ繝画眠豬ｦ螳峨ヱ繝ｼ繧ｯ繝槭Μ繝ｼ繝岩∫繝吶う繧ｷ繝・ぅ豬ｦ螳・
+wrote C:\Users\yamam\OneDrive\繝峨く繝･繝｡繝ｳ繝・GitHub\chidori-route-trainer\evidence\route18-akemi-takasu-implementation-2026-07-26\_shinurayasu_berth_probe.json

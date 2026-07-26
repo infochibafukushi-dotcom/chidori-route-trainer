@@ -1,0 +1,2531 @@
+{
+  "version": "0.6",
+  "generator": "openstreetmap-cgimap 2.1.0 (2986831 spike-08.openstreetmap.org)",
+  "copyright": "OpenStreetMap and contributors",
+  "attribution": "http://www.openstreetmap.org/copyright",
+  "license": "http://opendatacommons.org/licenses/odbl/1-0/",
+  "elements": [
+    {
+      "type": "node",
+      "id": 288364075,
+      "lat": 35.6511022,
+      "lon": 139.9138184,
+      "timestamp": "2024-11-30T11:21:19Z",
+      "version": 13,
+      "changeset": 159770310,
+      "user": "Netzach",
+      "uid": 2352862,
+      "tags": {
+        "highway": "traffic_signals",
+        "name": "入船",
+        "name:en": "Irifune",
+        "name:ja": "入船"
+      }
+    },
+    {
+      "type": "node",
+      "id": 288364095,
+      "lat": 35.6542399,
+      "lon": 139.9099452,
+      "timestamp": "2022-12-29T21:26:56Z",
+      "version": 5,
+      "changeset": 130663825,
+      "user": "gyotoku810",
+      "uid": 2738487
+    },
+    {
+      "type": "node",
+      "id": 288364105,
+      "lat": 35.6559886,
+      "lon": 139.9077592,
+      "timestamp": "2022-12-29T21:26:56Z",
+      "version": 8,
+      "changeset": 130663825,
+      "user": "gyotoku810",
+      "uid": 2738487
+    },
+    {
+      "type": "node",
+      "id": 288384935,
+      "lat": 35.650126,
+      "lon": 139.9150322,
+      "timestamp": "2024-01-20T05:57:41Z",
+      "version": 4,
+      "changeset": 146466364,
+      "user": "penguin_the_dawn",
+      "uid": 2929244,
+      "tags": {
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 288704759,
+      "lat": 35.6355177,
+      "lon": 139.9181036,
+      "timestamp": "2024-01-25T14:37:20Z",
+      "version": 4,
+      "changeset": 146676172,
+      "user": "penguin_the_dawn",
+      "uid": 2929244,
+      "tags": {
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 288769189,
+      "lat": 35.6534878,
+      "lon": 139.910837,
+      "timestamp": "2022-12-29T21:26:56Z",
+      "version": 4,
+      "changeset": 130663825,
+      "user": "gyotoku810",
+      "uid": 2738487
+    },
+    {
+      "type": "node",
+      "id": 288796885,
+      "lat": 35.6345964,
+      "lon": 139.9192352,
+      "timestamp": "2024-01-25T14:37:20Z",
+      "version": 4,
+      "changeset": 146676172,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 289006498,
+      "lat": 35.6405987,
+      "lon": 139.9187828,
+      "timestamp": "2024-01-15T15:28:58Z",
+      "version": 6,
+      "changeset": 146287268,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 289006509,
+      "lat": 35.6377148,
+      "lon": 139.9153344,
+      "timestamp": "2024-01-25T14:37:20Z",
+      "version": 6,
+      "changeset": 146676172,
+      "user": "penguin_the_dawn",
+      "uid": 2929244,
+      "tags": {
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 289006530,
+      "lat": 35.6394132,
+      "lon": 139.9173642,
+      "timestamp": "2024-01-15T15:28:58Z",
+      "version": 4,
+      "changeset": 146287268,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 444299345,
+      "lat": 35.6567639,
+      "lon": 139.9067966,
+      "timestamp": "2022-12-29T21:26:56Z",
+      "version": 4,
+      "changeset": 130663825,
+      "user": "gyotoku810",
+      "uid": 2738487
+    },
+    {
+      "type": "node",
+      "id": 444299353,
+      "lat": 35.6575022,
+      "lon": 139.9058865,
+      "timestamp": "2022-12-29T21:26:56Z",
+      "version": 5,
+      "changeset": 130663825,
+      "user": "gyotoku810",
+      "uid": 2738487
+    },
+    {
+      "type": "node",
+      "id": 444299355,
+      "lat": 35.6572223,
+      "lon": 139.9062185,
+      "timestamp": "2009-07-20T08:35:47Z",
+      "version": 1,
+      "changeset": 1881738,
+      "user": "yasu747",
+      "uid": 105009
+    },
+    {
+      "type": "node",
+      "id": 598550697,
+      "lat": 35.6553531,
+      "lon": 139.9085529,
+      "timestamp": "2022-12-29T21:26:56Z",
+      "version": 2,
+      "changeset": 130663825,
+      "user": "gyotoku810",
+      "uid": 2738487
+    },
+    {
+      "type": "node",
+      "id": 598552298,
+      "lat": 35.654877,
+      "lon": 139.9091506,
+      "timestamp": "2022-12-29T21:26:56Z",
+      "version": 3,
+      "changeset": 130663825,
+      "user": "gyotoku810",
+      "uid": 2738487
+    },
+    {
+      "type": "node",
+      "id": 1312670870,
+      "lat": 35.6458877,
+      "lon": 139.9202433,
+      "timestamp": "2024-11-30T12:12:08Z",
+      "version": 7,
+      "changeset": 159771575,
+      "user": "Netzach",
+      "uid": 2352862,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "明海大学前",
+        "operator": "東京ベイシティ交通",
+        "passenger_information_display": "yes",
+        "public_transport": "platform",
+        "shelter": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1312670873,
+      "lat": 35.6442605,
+      "lon": 139.922292,
+      "timestamp": "2024-11-30T12:12:08Z",
+      "version": 6,
+      "changeset": 159771575,
+      "user": "Netzach",
+      "uid": 2352862,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "海風の街",
+        "operator": "東京ベイシティ交通",
+        "passenger_information_display": "yes",
+        "public_transport": "platform",
+        "shelter": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1312685254,
+      "lat": 35.636672,
+      "lon": 139.916519,
+      "timestamp": "2024-02-05T12:14:05Z",
+      "version": 5,
+      "changeset": 147091403,
+      "user": "penguin_the_dawn",
+      "uid": 2929244,
+      "tags": {
+        "bus": "yes",
+        "covered": "yes",
+        "highway": "bus_stop",
+        "name": "高洲中央公園",
+        "operator": "東京ベイシティ交通",
+        "passenger_information_display": "yes",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1312711918,
+      "lat": 35.648721,
+      "lon": 139.9166753,
+      "timestamp": "2024-11-30T11:21:19Z",
+      "version": 5,
+      "changeset": 159770310,
+      "user": "Netzach",
+      "uid": 2352862,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "入船中央エステート",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1330409783,
+      "lat": 35.6522648,
+      "lon": 139.9122584,
+      "timestamp": "2024-11-24T10:36:21Z",
+      "version": 5,
+      "changeset": 159528117,
+      "user": "Netzach",
+      "uid": 2352862,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "美浜東団地",
+        "name:ja": "美浜東団地",
+        "name:ja-Latn": "Mihama Higashi Danchi",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1334441872,
+      "lat": 35.6430463,
+      "lon": 139.9216356,
+      "timestamp": "2013-05-14T12:37:25Z",
+      "version": 3,
+      "changeset": 16124921,
+      "user": "Gravel Crew",
+      "uid": 563961
+    },
+    {
+      "type": "node",
+      "id": 1336182831,
+      "lat": 35.6475124,
+      "lon": 139.9183306,
+      "timestamp": "2023-12-17T04:06:07Z",
+      "version": 5,
+      "changeset": 145203596,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 1751045520,
+      "lat": 35.6619876,
+      "lon": 139.8993699,
+      "timestamp": "2024-11-30T12:12:08Z",
+      "version": 4,
+      "changeset": 159771575,
+      "user": "Netzach",
+      "uid": 2352862,
+      "tags": {
+        "highway": "traffic_signals",
+        "name": "猫実三丁目",
+        "name:en": "Nekozane 3",
+        "name:ja": "猫実三丁目"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1751045522,
+      "lat": 35.6643603,
+      "lon": 139.89564,
+      "timestamp": "2021-02-23T09:46:21Z",
+      "version": 2,
+      "changeset": 99812213,
+      "user": "yossaito",
+      "uid": 10598740
+    },
+    {
+      "type": "node",
+      "id": 1751045523,
+      "lat": 35.6588079,
+      "lon": 139.9042926,
+      "timestamp": "2022-12-29T21:26:56Z",
+      "version": 3,
+      "changeset": 130663825,
+      "user": "gyotoku810",
+      "uid": 2738487
+    },
+    {
+      "type": "node",
+      "id": 1751045525,
+      "lat": 35.6583481,
+      "lon": 139.9049047,
+      "timestamp": "2022-12-29T21:26:56Z",
+      "version": 2,
+      "changeset": 130663825,
+      "user": "gyotoku810",
+      "uid": 2738487
+    },
+    {
+      "type": "node",
+      "id": 1751045527,
+      "lat": 35.664193,
+      "lon": 139.895947,
+      "timestamp": "2021-02-23T09:46:21Z",
+      "version": 2,
+      "changeset": 99812213,
+      "user": "yossaito",
+      "uid": 10598740
+    },
+    {
+      "type": "node",
+      "id": 1751045528,
+      "lat": 35.6576078,
+      "lon": 139.9058302,
+      "timestamp": "2022-12-29T21:26:56Z",
+      "version": 3,
+      "changeset": 130663825,
+      "user": "gyotoku810",
+      "uid": 2738487
+    },
+    {
+      "type": "node",
+      "id": 1751045529,
+      "lat": 35.6642842,
+      "lon": 139.8957882,
+      "timestamp": "2021-02-23T09:46:21Z",
+      "version": 2,
+      "changeset": 99812213,
+      "user": "yossaito",
+      "uid": 10598740
+    },
+    {
+      "type": "node",
+      "id": 1751045535,
+      "lat": 35.6645632,
+      "lon": 139.8951176,
+      "timestamp": "2024-12-13T12:23:56Z",
+      "version": 3,
+      "changeset": 160244015,
+      "user": "Netzach",
+      "uid": 2352862
+    },
+    {
+      "type": "node",
+      "id": 1751045536,
+      "lat": 35.6644984,
+      "lon": 139.8953088,
+      "timestamp": "2024-12-13T12:23:56Z",
+      "version": 3,
+      "changeset": 160244015,
+      "user": "Netzach",
+      "uid": 2352862
+    },
+    {
+      "type": "node",
+      "id": 1751045537,
+      "lat": 35.6631323,
+      "lon": 139.8976068,
+      "timestamp": "2019-09-28T09:33:37Z",
+      "version": 2,
+      "changeset": 75035507,
+      "user": "KAORIN2001",
+      "uid": 8112988,
+      "tags": {
+        "highway": "traffic_signals",
+        "traffic_signals": "signal"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1751045540,
+      "lat": 35.6613424,
+      "lon": 139.9003668,
+      "timestamp": "2023-02-24T04:37:44Z",
+      "version": 4,
+      "changeset": 132951150,
+      "user": "gyotoku810",
+      "uid": 2738487,
+      "tags": {
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1751045541,
+      "lat": 35.6626533,
+      "lon": 139.8983362,
+      "timestamp": "2019-09-28T09:19:47Z",
+      "version": 3,
+      "changeset": 75035282,
+      "user": "KAORIN2001",
+      "uid": 8112988,
+      "tags": {
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1751045543,
+      "lat": 35.6644288,
+      "lon": 139.8954883,
+      "timestamp": "2021-02-23T09:46:21Z",
+      "version": 2,
+      "changeset": 99812213,
+      "user": "yossaito",
+      "uid": 10598740
+    },
+    {
+      "type": "node",
+      "id": 1751045547,
+      "lat": 35.6585175,
+      "lon": 139.9046872,
+      "timestamp": "2022-12-29T21:26:56Z",
+      "version": 5,
+      "changeset": 130663825,
+      "user": "gyotoku810",
+      "uid": 2738487,
+      "tags": {
+        "highway": "traffic_signals",
+        "name": "消防本部前"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1751045549,
+      "lat": 35.6628591,
+      "lon": 139.8980224,
+      "timestamp": "2019-09-28T09:19:47Z",
+      "version": 2,
+      "changeset": 75035282,
+      "user": "KAORIN2001",
+      "uid": 8112988
+    },
+    {
+      "type": "node",
+      "id": 1751045550,
+      "lat": 35.6579755,
+      "lon": 139.9053705,
+      "timestamp": "2022-12-29T21:26:56Z",
+      "version": 2,
+      "changeset": 130663825,
+      "user": "gyotoku810",
+      "uid": 2738487
+    },
+    {
+      "type": "node",
+      "id": 1751045552,
+      "lat": 35.6580378,
+      "lon": 139.9052927,
+      "timestamp": "2022-12-29T21:26:56Z",
+      "version": 2,
+      "changeset": 130663825,
+      "user": "gyotoku810",
+      "uid": 2738487
+    },
+    {
+      "type": "node",
+      "id": 1751045555,
+      "lat": 35.6598222,
+      "lon": 139.9027111,
+      "timestamp": "2023-02-24T04:37:44Z",
+      "version": 3,
+      "changeset": 132951150,
+      "user": "gyotoku810",
+      "uid": 2738487,
+      "tags": {
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2285374727,
+      "lat": 35.6631708,
+      "lon": 139.8975436,
+      "timestamp": "2019-09-28T09:33:37Z",
+      "version": 3,
+      "changeset": 75035507,
+      "user": "KAORIN2001",
+      "uid": 8112988,
+      "tags": {
+        "highway": "crossing",
+        "source": "Bing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2285374733,
+      "lat": 35.663932,
+      "lon": 139.8963611,
+      "timestamp": "2015-09-24T09:39:08Z",
+      "version": 2,
+      "changeset": 34221999,
+      "user": "GerdP",
+      "uid": 533465,
+      "tags": {
+        "crossing": "uncontrolled",
+        "crossing_ref": "zebra",
+        "highway": "crossing",
+        "source": "Bing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2303738203,
+      "lat": 35.6364334,
+      "lon": 139.9169331,
+      "timestamp": "2024-01-25T14:37:20Z",
+      "version": 3,
+      "changeset": 146676172,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 2303738261,
+      "lat": 35.6407188,
+      "lon": 139.9188678,
+      "timestamp": "2023-12-17T04:06:07Z",
+      "version": 3,
+      "changeset": 145203596,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 2517033905,
+      "lat": 35.6640051,
+      "lon": 139.8962488,
+      "timestamp": "2021-02-23T09:46:21Z",
+      "version": 3,
+      "changeset": 99812213,
+      "user": "yossaito",
+      "uid": 10598740,
+      "tags": {
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2534592558,
+      "lat": 35.6531434,
+      "lon": 139.9112574,
+      "timestamp": "2024-11-30T12:12:08Z",
+      "version": 4,
+      "changeset": 159771575,
+      "user": "Netzach",
+      "uid": 2352862,
+      "tags": {
+        "highway": "traffic_signals",
+        "name": "美浜",
+        "name:en": "Mihama",
+        "name:ja": "美浜"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2534592854,
+      "lat": 35.6540217,
+      "lon": 139.9102094,
+      "timestamp": "2022-12-29T21:26:56Z",
+      "version": 2,
+      "changeset": 130663825,
+      "user": "gyotoku810",
+      "uid": 2738487
+    },
+    {
+      "type": "node",
+      "id": 2534592987,
+      "lat": 35.654547,
+      "lon": 139.9095576,
+      "timestamp": "2022-12-29T21:26:56Z",
+      "version": 2,
+      "changeset": 130663825,
+      "user": "gyotoku810",
+      "uid": 2738487
+    },
+    {
+      "type": "node",
+      "id": 2534593187,
+      "lat": 35.6556792,
+      "lon": 139.9081421,
+      "timestamp": "2022-12-29T21:26:56Z",
+      "version": 2,
+      "changeset": 130663825,
+      "user": "gyotoku810",
+      "uid": 2738487
+    },
+    {
+      "type": "node",
+      "id": 2534635816,
+      "lat": 35.6491874,
+      "lon": 139.9162222,
+      "timestamp": "2024-11-30T11:21:19Z",
+      "version": 7,
+      "changeset": 159770310,
+      "user": "Netzach",
+      "uid": 2352862,
+      "tags": {
+        "highway": "traffic_signals",
+        "name": "入船中央",
+        "name:en": "Irifune chuo",
+        "name:ja": "入船中央"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2535001974,
+      "lat": 35.6576678,
+      "lon": 139.9057551,
+      "timestamp": "2022-12-29T21:26:56Z",
+      "version": 2,
+      "changeset": 130663825,
+      "user": "gyotoku810",
+      "uid": 2738487
+    },
+    {
+      "type": "node",
+      "id": 2535001977,
+      "lat": 35.6577269,
+      "lon": 139.9056813,
+      "timestamp": "2022-12-29T21:26:56Z",
+      "version": 2,
+      "changeset": 130663825,
+      "user": "gyotoku810",
+      "uid": 2738487
+    },
+    {
+      "type": "node",
+      "id": 2593542684,
+      "lat": 35.6473414,
+      "lon": 139.9185538,
+      "timestamp": "2024-01-20T05:57:41Z",
+      "version": 3,
+      "changeset": 146466364,
+      "user": "penguin_the_dawn",
+      "uid": 2929244,
+      "tags": {
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2900279301,
+      "lat": 35.6611395,
+      "lon": 139.9005341,
+      "timestamp": "2024-11-24T10:36:21Z",
+      "version": 4,
+      "changeset": 159528117,
+      "user": "Netzach",
+      "uid": 2352862,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "猫実",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3722883602,
+      "lat": 35.6412538,
+      "lon": 139.9194893,
+      "timestamp": "2015-08-31T12:07:26Z",
+      "version": 1,
+      "changeset": 33701952,
+      "user": "Gravel Crew",
+      "uid": 563961,
+      "tags": {
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3722883605,
+      "lat": 35.6413148,
+      "lon": 139.9195606,
+      "timestamp": "2024-01-13T00:05:33Z",
+      "version": 2,
+      "changeset": 146199626,
+      "user": "penguin_the_dawn",
+      "uid": 2929244,
+      "tags": {
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3731186121,
+      "lat": 35.6384478,
+      "lon": 139.9162161,
+      "timestamp": "2024-01-25T14:37:20Z",
+      "version": 3,
+      "changeset": 146676172,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 3731206076,
+      "lat": 35.6424012,
+      "lon": 139.9208678,
+      "timestamp": "2023-12-17T04:06:07Z",
+      "version": 3,
+      "changeset": 145203596,
+      "user": "penguin_the_dawn",
+      "uid": 2929244,
+      "tags": {
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3731514468,
+      "lat": 35.6439785,
+      "lon": 139.9227496,
+      "timestamp": "2016-04-29T10:38:56Z",
+      "version": 2,
+      "changeset": 38978039,
+      "user": "dqn",
+      "uid": 3150532,
+      "tags": {
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3731514476,
+      "lat": 35.6462798,
+      "lon": 139.9198675,
+      "timestamp": "2024-02-06T10:42:20Z",
+      "version": 3,
+      "changeset": 147129319,
+      "user": "penguin_the_dawn",
+      "uid": 2929244,
+      "tags": {
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3731514483,
+      "lat": 35.6501814,
+      "lon": 139.9149492,
+      "timestamp": "2021-02-11T12:53:47Z",
+      "version": 2,
+      "changeset": 99108776,
+      "user": "gyotoku810",
+      "uid": 2738487,
+      "tags": {
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3757005931,
+      "lat": 35.6640743,
+      "lon": 139.8961435,
+      "timestamp": "2021-02-23T09:46:21Z",
+      "version": 2,
+      "changeset": 99812213,
+      "user": "yossaito",
+      "uid": 10598740,
+      "tags": {
+        "crossing": "uncontrolled",
+        "crossing_ref": "zebra",
+        "highway": "crossing",
+        "source": "Bing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4136836483,
+      "lat": 35.6520369,
+      "lon": 139.9126501,
+      "timestamp": "2016-04-20T20:05:25Z",
+      "version": 1,
+      "changeset": 38738252,
+      "user": "Geo-Tobi",
+      "uid": 224490
+    },
+    {
+      "type": "node",
+      "id": 6720667167,
+      "lat": 35.6573684,
+      "lon": 139.9059647,
+      "timestamp": "2024-11-24T10:36:21Z",
+      "version": 3,
+      "changeset": 159528117,
+      "user": "Netzach",
+      "uid": 2352862,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "海楽",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6764110350,
+      "lat": 35.6628205,
+      "lon": 139.8979314,
+      "timestamp": "2025-05-12T11:38:42Z",
+      "version": 3,
+      "changeset": 166147972,
+      "user": "wheelmap_visitor",
+      "uid": 290680,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "神明裏",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6764110353,
+      "lat": 35.6644872,
+      "lon": 139.8950364,
+      "timestamp": "2025-05-12T11:38:17Z",
+      "version": 3,
+      "changeset": 166147945,
+      "user": "wheelmap_visitor",
+      "uid": 290680,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "local_ref": "X",
+        "name": "浦安駅入口",
+        "note": "降車専用",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6778578830,
+      "lat": 35.6506453,
+      "lon": 139.9143763,
+      "timestamp": "2021-02-11T12:53:47Z",
+      "version": 2,
+      "changeset": 99108776,
+      "user": "gyotoku810",
+      "uid": 2738487
+    },
+    {
+      "type": "node",
+      "id": 6813929330,
+      "lat": 35.6381462,
+      "lon": 139.9157261,
+      "timestamp": "2024-11-30T12:20:55Z",
+      "version": 5,
+      "changeset": 159771797,
+      "user": "Netzach",
+      "uid": 2352862,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "高洲橋",
+        "operator": "東京ベイシティ交通",
+        "passenger_information_display": "yes",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6813929331,
+      "lat": 35.6417004,
+      "lon": 139.9199572,
+      "timestamp": "2024-11-30T12:20:55Z",
+      "version": 4,
+      "changeset": 159771797,
+      "user": "Netzach",
+      "uid": 2352862,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "夢海の街",
+        "operator": "東京ベイシティ交通",
+        "passenger_information_display": "yes",
+        "public_transport": "platform",
+        "shelter": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6832289638,
+      "lat": 35.6626266,
+      "lon": 139.8983777,
+      "timestamp": "2023-02-24T04:37:44Z",
+      "version": 2,
+      "changeset": 132951150,
+      "user": "gyotoku810",
+      "uid": 2738487,
+      "tags": {
+        "highway": "traffic_signals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8415001143,
+      "lat": 35.6506245,
+      "lon": 139.9142535,
+      "timestamp": "2021-02-11T12:53:47Z",
+      "version": 1,
+      "changeset": 99108776,
+      "user": "gyotoku810",
+      "uid": 2738487,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "local_ref": "H",
+        "name": "新浦安駅",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9956759388,
+      "lat": 35.6502806,
+      "lon": 139.9148267,
+      "timestamp": "2025-02-02T13:58:58Z",
+      "version": 2,
+      "changeset": 162047462,
+      "user": "wvdp",
+      "uid": 436419,
+      "tags": {
+        "crossing": "marked",
+        "crossing:markings": "zebra",
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9956759392,
+      "lat": 35.6500449,
+      "lon": 139.9151399,
+      "timestamp": "2025-02-02T13:58:58Z",
+      "version": 3,
+      "changeset": 162047462,
+      "user": "wvdp",
+      "uid": 436419,
+      "tags": {
+        "crossing": "marked",
+        "crossing:markings": "zebra",
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9956759412,
+      "lat": 35.6492843,
+      "lon": 139.9160839,
+      "timestamp": "2025-02-02T13:58:58Z",
+      "version": 3,
+      "changeset": 162047462,
+      "user": "wvdp",
+      "uid": 436419,
+      "tags": {
+        "crossing": "marked",
+        "crossing:markings": "zebra",
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9971729685,
+      "lat": 35.6512245,
+      "lon": 139.9136655,
+      "timestamp": "2022-08-23T08:43:49Z",
+      "version": 1,
+      "changeset": 125259607,
+      "user": "Bramson",
+      "uid": 12283190,
+      "tags": {
+        "crossing": "marked",
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9971729690,
+      "lat": 35.65099,
+      "lon": 139.9139554,
+      "timestamp": "2022-08-23T08:43:49Z",
+      "version": 1,
+      "changeset": 125259607,
+      "user": "Bramson",
+      "uid": 12283190,
+      "tags": {
+        "crossing": "marked",
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10294079750,
+      "lat": 35.6584173,
+      "lon": 139.9048158,
+      "timestamp": "2022-12-29T21:26:56Z",
+      "version": 1,
+      "changeset": 130663825,
+      "user": "gyotoku810",
+      "uid": 2738487,
+      "tags": {
+        "crossing": "traffic_signals",
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10294079816,
+      "lat": 35.6532487,
+      "lon": 139.9111289,
+      "timestamp": "2022-12-29T21:26:56Z",
+      "version": 1,
+      "changeset": 130663825,
+      "user": "gyotoku810",
+      "uid": 2738487,
+      "tags": {
+        "crossing": "traffic_signals",
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10294079831,
+      "lat": 35.6586382,
+      "lon": 139.9045359,
+      "timestamp": "2022-12-29T21:26:56Z",
+      "version": 1,
+      "changeset": 130663825,
+      "user": "gyotoku810",
+      "uid": 2738487
+    },
+    {
+      "type": "node",
+      "id": 10294079842,
+      "lat": 35.6563905,
+      "lon": 139.9072489,
+      "timestamp": "2022-12-29T21:26:56Z",
+      "version": 1,
+      "changeset": 130663825,
+      "user": "gyotoku810",
+      "uid": 2738487
+    },
+    {
+      "type": "node",
+      "id": 10737206571,
+      "lat": 35.6354493,
+      "lon": 139.9181906,
+      "timestamp": "2023-03-15T14:19:37Z",
+      "version": 1,
+      "changeset": 133712251,
+      "user": "Ikuta",
+      "uid": 2217888,
+      "tags": {
+        "crossing": "uncontrolled",
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11513466331,
+      "lat": 35.6416869,
+      "lon": 139.919987,
+      "timestamp": "2024-01-13T08:04:04Z",
+      "version": 1,
+      "changeset": 146205483,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 11513466342,
+      "lat": 35.6443194,
+      "lon": 139.9223229,
+      "timestamp": "2024-01-13T08:04:04Z",
+      "version": 1,
+      "changeset": 146205483,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 11513466344,
+      "lat": 35.6459473,
+      "lon": 139.9202869,
+      "timestamp": "2024-02-06T10:42:20Z",
+      "version": 2,
+      "changeset": 147129319,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 11519206416,
+      "lat": 35.6398149,
+      "lon": 139.9178396,
+      "timestamp": "2024-01-15T15:28:58Z",
+      "version": 1,
+      "changeset": 146287268,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 11533169244,
+      "lat": 35.6465405,
+      "lon": 139.9195334,
+      "timestamp": "2024-01-20T05:57:41Z",
+      "version": 1,
+      "changeset": 146466364,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 11549952447,
+      "lat": 35.6347434,
+      "lon": 139.9189434,
+      "timestamp": "2024-11-30T01:45:32Z",
+      "version": 4,
+      "changeset": 159761157,
+      "user": "Netzach",
+      "uid": 2352862,
+      "tags": {
+        "bus": "yes",
+        "covered": "yes",
+        "highway": "bus_stop",
+        "name": "潮音の街",
+        "operator": "東京ベイシティ交通",
+        "passenger_information_display": "yes",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11549952451,
+      "lat": 35.6337264,
+      "lon": 139.9202107,
+      "timestamp": "2024-11-30T01:45:32Z",
+      "version": 3,
+      "changeset": 159761157,
+      "user": "Netzach",
+      "uid": 2352862,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "高洲海浜公園",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11578685158,
+      "lat": 35.638162,
+      "lon": 139.9158713,
+      "timestamp": "2024-02-02T11:40:37Z",
+      "version": 1,
+      "changeset": 146981655,
+      "user": "penguin_the_dawn",
+      "uid": 2929244
+    },
+    {
+      "type": "node",
+      "id": 11591351728,
+      "lat": 35.6461848,
+      "lon": 139.9199882,
+      "timestamp": "2025-07-26T07:56:58Z",
+      "version": 2,
+      "changeset": 169491196,
+      "user": "user_14955076",
+      "uid": 14955076,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12052363093,
+      "lat": 35.6364793,
+      "lon": 139.9168759,
+      "timestamp": "2024-07-14T03:16:33Z",
+      "version": 1,
+      "changeset": 153915184,
+      "user": "user_14955076",
+      "uid": 14955076
+    },
+    {
+      "type": "node",
+      "id": 12368996379,
+      "lat": 35.6589613,
+      "lon": 139.9038774,
+      "timestamp": "2024-11-24T03:46:02Z",
+      "version": 1,
+      "changeset": 159520305,
+      "user": "Netzach",
+      "uid": 2352862,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "消防本部前",
+        "name:en": "Shoubou Honbu Mae",
+        "name:ja": "消防本部前",
+        "operator": "東京ベイシティ交通",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12385552209,
+      "lat": 35.6337787,
+      "lon": 139.9202697,
+      "timestamp": "2024-11-30T01:45:32Z",
+      "version": 1,
+      "changeset": 159761157,
+      "user": "Netzach",
+      "uid": 2352862
+    },
+    {
+      "type": "node",
+      "id": 12963360806,
+      "lat": 35.6423578,
+      "lon": 139.9208143,
+      "timestamp": "2025-06-30T01:36:54Z",
+      "version": 1,
+      "changeset": 168288233,
+      "user": "user_14955076",
+      "uid": 14955076
+    },
+    {
+      "type": "node",
+      "id": 12972303487,
+      "lat": 35.6530422,
+      "lon": 139.9113848,
+      "timestamp": "2025-07-03T02:27:38Z",
+      "version": 1,
+      "changeset": 168422609,
+      "user": "user_14955076",
+      "uid": 14955076,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12982654447,
+      "lat": 35.6440422,
+      "lon": 139.9226699,
+      "timestamp": "2025-07-06T13:26:23Z",
+      "version": 1,
+      "changeset": 168561826,
+      "user": "user_14955076",
+      "uid": 14955076,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13001075946,
+      "lat": 35.6620664,
+      "lon": 139.8992475,
+      "timestamp": "2025-07-15T06:48:28Z",
+      "version": 1,
+      "changeset": 168947589,
+      "user": "user_14955076",
+      "uid": 14955076,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13001075947,
+      "lat": 35.6619032,
+      "lon": 139.8995004,
+      "timestamp": "2025-07-15T06:48:28Z",
+      "version": 1,
+      "changeset": 168947589,
+      "user": "user_14955076",
+      "uid": 14955076,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13002106770,
+      "lat": 35.6343942,
+      "lon": 139.9194907,
+      "timestamp": "2025-07-16T03:49:21Z",
+      "version": 2,
+      "changeset": 168992408,
+      "user": "ratrun",
+      "uid": 474183
+    },
+    {
+      "type": "node",
+      "id": 13002108206,
+      "lat": 35.6355811,
+      "lon": 139.9180225,
+      "timestamp": "2025-07-15T15:48:23Z",
+      "version": 1,
+      "changeset": 168972475,
+      "user": "user_14955076",
+      "uid": 14955076,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13002108249,
+      "lat": 35.6378118,
+      "lon": 139.9154508,
+      "timestamp": "2025-07-15T15:48:23Z",
+      "version": 1,
+      "changeset": 168972475,
+      "user": "user_14955076",
+      "uid": 14955076,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13002108256,
+      "lat": 35.6376163,
+      "lon": 139.9154573,
+      "timestamp": "2025-07-15T15:48:23Z",
+      "version": 1,
+      "changeset": 168972475,
+      "user": "user_14955076",
+      "uid": 14955076,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13002108369,
+      "lat": 35.6363576,
+      "lon": 139.91703,
+      "timestamp": "2025-07-15T15:48:23Z",
+      "version": 1,
+      "changeset": 168972475,
+      "user": "user_14955076",
+      "uid": 14955076,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13002108371,
+      "lat": 35.6364985,
+      "lon": 139.916852,
+      "timestamp": "2025-07-15T15:48:23Z",
+      "version": 1,
+      "changeset": 168972475,
+      "user": "user_14955076",
+      "uid": 14955076,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13004036001,
+      "lat": 35.643901,
+      "lon": 139.9226569,
+      "timestamp": "2025-07-16T10:29:50Z",
+      "version": 1,
+      "changeset": 169005927,
+      "user": "user_14955076",
+      "uid": 14955076,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13004036217,
+      "lat": 35.6411826,
+      "lon": 139.9194066,
+      "timestamp": "2025-07-16T10:29:50Z",
+      "version": 1,
+      "changeset": 169005927,
+      "user": "user_14955076",
+      "uid": 14955076,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13004036223,
+      "lat": 35.6413815,
+      "lon": 139.9196371,
+      "timestamp": "2025-07-16T10:29:50Z",
+      "version": 1,
+      "changeset": 169005927,
+      "user": "user_14955076",
+      "uid": 14955076,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13011131659,
+      "lat": 35.662731,
+      "lon": 139.8982177,
+      "timestamp": "2025-07-19T04:19:13Z",
+      "version": 1,
+      "changeset": 169135976,
+      "user": "user_14955076",
+      "uid": 14955076,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13011131664,
+      "lat": 35.662575,
+      "lon": 139.8984579,
+      "timestamp": "2025-07-19T04:19:13Z",
+      "version": 1,
+      "changeset": 169135976,
+      "user": "user_14955076",
+      "uid": 14955076,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13011131671,
+      "lat": 35.6598702,
+      "lon": 139.902637,
+      "timestamp": "2025-07-19T04:19:13Z",
+      "version": 1,
+      "changeset": 169135976,
+      "user": "user_14955076",
+      "uid": 14955076,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13011131677,
+      "lat": 35.6597701,
+      "lon": 139.9027924,
+      "timestamp": "2025-07-19T04:19:13Z",
+      "version": 1,
+      "changeset": 169135976,
+      "user": "user_14955076",
+      "uid": 14955076,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13026138624,
+      "lat": 35.6463689,
+      "lon": 139.9197533,
+      "timestamp": "2025-07-26T07:56:58Z",
+      "version": 1,
+      "changeset": 169491196,
+      "user": "user_14955076",
+      "uid": 14955076,
+      "tags": {
+        "highway": "crossing"
+      }
+    },
+    {
+      "type": "way",
+      "id": 26320590,
+      "timestamp": "2025-07-03T02:27:38Z",
+      "version": 24,
+      "changeset": 168422609,
+      "user": "user_14955076",
+      "uid": 14955076,
+      "nodes": [
+        288364075,
+        9971729685,
+        4136836483,
+        12972303487,
+        2534592558
+      ],
+      "tags": {
+        "highway": "secondary",
+        "lanes": "3",
+        "maxspeed": "50",
+        "name": "シンボルロード",
+        "name:en": "Symbol Road",
+        "name:es": "Carretera Symbol",
+        "name:ja": "シンボルロード",
+        "name:ko": "심볼로",
+        "oneway": "yes",
+        "ref": "276",
+        "source": "knowledge"
+      }
+    },
+    {
+      "type": "way",
+      "id": 26323165,
+      "timestamp": "2025-07-16T10:29:50Z",
+      "version": 27,
+      "changeset": 169005927,
+      "user": "user_14955076",
+      "uid": 14955076,
+      "nodes": [
+        3722883602,
+        3722883605,
+        13004036223,
+        11513466331,
+        12963360806,
+        3731206076,
+        1334441872,
+        13004036001,
+        3731514468
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "oneway": "yes",
+        "source": "GSImaps/ort",
+        "surface": "paved"
+      }
+    },
+    {
+      "type": "way",
+      "id": 26349778,
+      "timestamp": "2025-01-13T06:53:24Z",
+      "version": 8,
+      "changeset": 161297277,
+      "user": "setomaps",
+      "uid": 21931672,
+      "nodes": [
+        444299345,
+        444299355,
+        444299353,
+        1751045528
+      ],
+      "tags": {
+        "highway": "secondary",
+        "lanes": "2",
+        "maxspeed": "50",
+        "name": "シンボルロード",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード",
+        "official_name": "一般県道浦安停車場線",
+        "oneway": "yes",
+        "ref": "242",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 26380597,
+      "timestamp": "2025-07-15T15:48:23Z",
+      "version": 12,
+      "changeset": 168972475,
+      "user": "user_14955076",
+      "uid": 14955076,
+      "nodes": [
+        289006530,
+        3731186121,
+        11578685158,
+        13002108249,
+        289006509
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "source": "GSImaps/ort"
+      }
+    },
+    {
+      "type": "way",
+      "id": 26380598,
+      "timestamp": "2024-01-15T15:28:58Z",
+      "version": 6,
+      "changeset": 146287268,
+      "user": "penguin_the_dawn",
+      "uid": 2929244,
+      "nodes": [
+        289006498,
+        11519206416
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "4",
+        "source": "GSImaps/ort"
+      }
+    },
+    {
+      "type": "way",
+      "id": 163404380,
+      "timestamp": "2025-07-19T04:19:13Z",
+      "version": 29,
+      "changeset": 169135976,
+      "user": "user_14955076",
+      "uid": 14955076,
+      "nodes": [
+        1751045535,
+        1751045536,
+        1751045543,
+        1751045522,
+        1751045529,
+        1751045527,
+        3757005931,
+        2517033905,
+        2285374733,
+        2285374727,
+        1751045537,
+        1751045549,
+        13011131659,
+        1751045541,
+        6832289638,
+        13011131664,
+        13001075946,
+        1751045520
+      ],
+      "tags": {
+        "highway": "secondary",
+        "lanes": "4",
+        "maxspeed": "50",
+        "name": "やなぎ通り",
+        "name:en": "Yanagi-dori",
+        "name:es": "Calle Yanagi",
+        "ref": "242",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 216617622,
+      "timestamp": "2025-01-13T06:53:24Z",
+      "version": 9,
+      "changeset": 161297277,
+      "user": "setomaps",
+      "uid": 21931672,
+      "nodes": [
+        598552298,
+        598550697
+      ],
+      "tags": {
+        "bicycle": "no",
+        "bridge": "yes",
+        "foot": "no",
+        "highway": "secondary",
+        "lanes": "3",
+        "layer": "1",
+        "maxspeed": "50",
+        "name": "シンボルロード",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード",
+        "official_name": "一般県道浦安停車場線",
+        "oneway": "yes",
+        "ref": "242",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 720402605,
+      "timestamp": "2025-01-13T06:53:24Z",
+      "version": 4,
+      "changeset": 161297277,
+      "user": "setomaps",
+      "uid": 21931672,
+      "nodes": [
+        1751045547,
+        10294079750,
+        1751045525,
+        1751045552
+      ],
+      "tags": {
+        "highway": "secondary",
+        "lanes": "4",
+        "maxspeed": "50",
+        "name": "やなぎ通り",
+        "name:en": "Yanagi-dori",
+        "name:es": "Calle Yanagi",
+        "ref": "242",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 720406628,
+      "timestamp": "2023-08-11T11:06:30Z",
+      "version": 2,
+      "changeset": 139745644,
+      "user": "user_14366776",
+      "uid": 14366776,
+      "nodes": [
+        288384935,
+        3731514483
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "maxspeed": "50",
+        "name": "シンボルロード",
+        "name:en": "Symbol Road",
+        "name:es": "Ruta Symbol",
+        "name:ja": "シンボルロード",
+        "name:ko": "심볼로",
+        "oneway": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 720406632,
+      "timestamp": "2023-08-11T11:06:30Z",
+      "version": 6,
+      "changeset": 139745644,
+      "user": "user_14366776",
+      "uid": 14366776,
+      "nodes": [
+        3731514483,
+        9956759388,
+        6778578830,
+        9971729690,
+        288364075
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "maxspeed": "50",
+        "name": "シンボルロード",
+        "name:en": "Symbol Road",
+        "name:es": "Ruta Symbol",
+        "name:ja": "シンボルロード",
+        "name:ko": "심볼로",
+        "oneway": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 847288812,
+      "timestamp": "2026-02-24T19:38:05Z",
+      "version": 8,
+      "changeset": 179005266,
+      "user": "kevko22",
+      "uid": 21322525,
+      "nodes": [
+        2593542684,
+        1336182831,
+        2534635816
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "maxspeed": "50",
+        "name": "シンボルロード",
+        "name:en": "Symbol Road",
+        "name:es": "Ruta Symbol",
+        "name:ja": "シンボルロード",
+        "name:ko": "심볼로",
+        "oneway": "yes",
+        "source": "GSImaps/ort",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1125716444,
+      "timestamp": "2025-01-13T06:53:24Z",
+      "version": 4,
+      "changeset": 161297277,
+      "user": "setomaps",
+      "uid": 21931672,
+      "nodes": [
+        598550697,
+        2534593187,
+        288364105
+      ],
+      "tags": {
+        "bicycle": "no",
+        "bridge": "yes",
+        "foot": "no",
+        "highway": "secondary",
+        "incline": "down",
+        "lanes": "2",
+        "layer": "1",
+        "maxspeed": "50",
+        "name": "シンボルロード",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード",
+        "official_name": "一般県道浦安停車場線",
+        "oneway": "yes",
+        "ref": "242",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1125716445,
+      "timestamp": "2025-01-13T06:53:24Z",
+      "version": 4,
+      "changeset": 161297277,
+      "user": "setomaps",
+      "uid": 21931672,
+      "nodes": [
+        288364095,
+        2534592987,
+        598552298
+      ],
+      "tags": {
+        "bicycle": "no",
+        "bridge": "yes",
+        "foot": "no",
+        "highway": "secondary",
+        "incline": "up",
+        "lanes": "2",
+        "layer": "1",
+        "maxspeed": "50",
+        "name": "シンボルロード",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード",
+        "official_name": "一般県道浦安停車場線",
+        "oneway": "yes",
+        "ref": "242",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1125716446,
+      "timestamp": "2025-01-13T06:53:24Z",
+      "version": 3,
+      "changeset": 161297277,
+      "user": "setomaps",
+      "uid": 21931672,
+      "nodes": [
+        1751045550,
+        2535001977,
+        2535001974,
+        1751045528
+      ],
+      "tags": {
+        "highway": "secondary",
+        "lanes": "4",
+        "maxspeed": "50",
+        "name": "やなぎ通り",
+        "name:en": "Yanagi-dori",
+        "name:es": "Calle Yanagi",
+        "name:ja": "やなぎ通り",
+        "ref": "242",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1125716447,
+      "timestamp": "2025-01-13T06:53:24Z",
+      "version": 2,
+      "changeset": 161297277,
+      "user": "setomaps",
+      "uid": 21931672,
+      "nodes": [
+        1751045552,
+        1751045550
+      ],
+      "tags": {
+        "highway": "secondary",
+        "lanes": "4",
+        "maxspeed": "50",
+        "name": "やなぎ通り",
+        "name:en": "Yanagi-dori",
+        "name:es": "Calle Yanagi",
+        "ref": "242",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1125716453,
+      "timestamp": "2025-01-13T06:53:24Z",
+      "version": 3,
+      "changeset": 161297277,
+      "user": "setomaps",
+      "uid": 21931672,
+      "nodes": [
+        288364105,
+        10294079842,
+        444299345
+      ],
+      "tags": {
+        "bicycle": "no",
+        "foot": "no",
+        "highway": "secondary",
+        "incline": "down",
+        "lanes": "2",
+        "maxspeed": "50",
+        "name": "シンボルロード",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード",
+        "official_name": "一般県道浦安停車場線",
+        "oneway": "yes",
+        "ref": "242",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1125716455,
+      "timestamp": "2025-01-13T06:53:24Z",
+      "version": 3,
+      "changeset": 161297277,
+      "user": "setomaps",
+      "uid": 21931672,
+      "nodes": [
+        2534592558,
+        10294079816,
+        288769189
+      ],
+      "tags": {
+        "highway": "secondary",
+        "lanes": "3",
+        "maxspeed": "50",
+        "name": "シンボルロード",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード",
+        "official_name": "一般県道浦安停車場線",
+        "oneway": "yes",
+        "ref": "242",
+        "surface": "asphalt",
+        "turn:lanes": "slight_left|through|through"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1125716456,
+      "timestamp": "2025-01-13T06:53:24Z",
+      "version": 3,
+      "changeset": 161297277,
+      "user": "setomaps",
+      "uid": 21931672,
+      "nodes": [
+        288769189,
+        2534592854,
+        288364095
+      ],
+      "tags": {
+        "bicycle": "no",
+        "foot": "no",
+        "highway": "secondary",
+        "incline": "up",
+        "lanes": "2",
+        "maxspeed": "50",
+        "name": "シンボルロード",
+        "name:en": "Symbol Road",
+        "name:ja": "シンボルロード",
+        "official_name": "一般県道浦安停車場線",
+        "oneway": "yes",
+        "ref": "242",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1239911940,
+      "timestamp": "2024-11-30T12:20:55Z",
+      "version": 3,
+      "changeset": 159771797,
+      "user": "Netzach",
+      "uid": 2352862,
+      "nodes": [
+        11519206416,
+        289006530
+      ],
+      "tags": {
+        "bridge": "yes",
+        "highway": "tertiary",
+        "lanes": "4",
+        "layer": "1",
+        "source": "GSImaps/ort"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1241264346,
+      "timestamp": "2025-07-06T13:26:23Z",
+      "version": 5,
+      "changeset": 168561826,
+      "user": "user_14955076",
+      "uid": 14955076,
+      "nodes": [
+        3731514468,
+        12982654447,
+        11513466342,
+        11513466344,
+        11591351728,
+        3731514476
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "maxspeed": "50",
+        "name": "シンボルロード",
+        "name:en": "Symbol Road",
+        "name:es": "Ruta Symbol",
+        "name:ja": "シンボルロード",
+        "name:ko": "심볼로",
+        "oneway": "yes",
+        "source": "GSImaps/ort",
+        "surface": "paved"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1338975833,
+      "timestamp": "2024-12-13T12:03:06Z",
+      "version": 2,
+      "changeset": 160243266,
+      "user": "Netzach",
+      "uid": 2352862,
+      "nodes": [
+        288704759,
+        10737206571,
+        288796885
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "2",
+        "source": "GSImaps/ort"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1338996609,
+      "timestamp": "2024-11-30T07:18:04Z",
+      "version": 1,
+      "changeset": 159764544,
+      "user": "Netzach",
+      "uid": 2352862,
+      "nodes": [
+        2534635816,
+        9956759412,
+        9956759392,
+        288384935
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "maxspeed": "50",
+        "name": "シンボルロード",
+        "name:en": "Symbol Road",
+        "name:es": "Ruta Symbol",
+        "name:ja": "シンボルロード",
+        "name:ko": "심볼로",
+        "oneway": "yes",
+        "source": "GSImaps/ort"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1339040066,
+      "timestamp": "2025-07-15T15:48:23Z",
+      "version": 2,
+      "changeset": 168972475,
+      "user": "user_14955076",
+      "uid": 14955076,
+      "nodes": [
+        289006509,
+        13002108256,
+        13002108371,
+        12052363093,
+        2303738203,
+        13002108369,
+        13002108206,
+        288704759
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "2",
+        "source": "GSImaps/ort"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1339150559,
+      "timestamp": "2025-07-19T04:19:13Z",
+      "version": 3,
+      "changeset": 169135976,
+      "user": "user_14955076",
+      "uid": 14955076,
+      "nodes": [
+        1751045555,
+        13011131677,
+        1751045523,
+        10294079831,
+        1751045547
+      ],
+      "tags": {
+        "highway": "secondary",
+        "lanes": "4",
+        "maxspeed": "50",
+        "name": "やなぎ通り",
+        "name:en": "Yanagi-dori",
+        "name:es": "Calle Yanagi",
+        "ref": "242",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1340739631,
+      "timestamp": "2024-12-07T12:44:05Z",
+      "version": 1,
+      "changeset": 160025812,
+      "user": "Netzach",
+      "uid": 2352862,
+      "nodes": [
+        11533169244,
+        2593542684
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "maxspeed": "50",
+        "name": "シンボルロード",
+        "name:en": "Symbol Road",
+        "name:es": "Ruta Symbol",
+        "name:ja": "シンボルロード",
+        "name:ko": "심볼로",
+        "oneway": "yes",
+        "source": "GSImaps/ort"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1341518494,
+      "timestamp": "2025-07-26T07:56:58Z",
+      "version": 2,
+      "changeset": 169491196,
+      "user": "user_14955076",
+      "uid": 14955076,
+      "nodes": [
+        3731514476,
+        13026138624,
+        11533169244
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "maxspeed": "50",
+        "name": "シンボルロード",
+        "name:en": "Symbol Road",
+        "name:es": "Ruta Symbol",
+        "name:ja": "シンボルロード",
+        "name:ko": "심볼로",
+        "oneway": "yes",
+        "source": "GSImaps/ort",
+        "surface": "paved"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1342406123,
+      "timestamp": "2025-07-16T10:29:50Z",
+      "version": 2,
+      "changeset": 169005927,
+      "user": "user_14955076",
+      "uid": 14955076,
+      "nodes": [
+        289006498,
+        2303738261,
+        13004036217,
+        3722883602
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "oneway": "yes",
+        "source": "GSImaps/ort",
+        "surface": "paved"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1342409929,
+      "timestamp": "2025-07-16T03:49:21Z",
+      "version": 2,
+      "changeset": 168992408,
+      "user": "ratrun",
+      "uid": 474183,
+      "nodes": [
+        288796885,
+        13002106770,
+        12385552209
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "2",
+        "source": "GSImaps/ort"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1342413246,
+      "timestamp": "2025-07-19T04:19:13Z",
+      "version": 4,
+      "changeset": 169135976,
+      "user": "user_14955076",
+      "uid": 14955076,
+      "nodes": [
+        1751045520,
+        13001075947,
+        1751045540,
+        13011131671,
+        1751045555
+      ],
+      "tags": {
+        "highway": "secondary",
+        "lanes": "4",
+        "maxspeed": "50",
+        "name": "やなぎ通り",
+        "name:en": "Yanagi-dori",
+        "name:es": "Calle Yanagi",
+        "ref": "242",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 18352907,
+      "timestamp": "2024-12-13T12:23:56Z",
+      "version": 7,
+      "changeset": 160244015,
+      "user": "Netzach",
+      "uid": 2352862,
+      "members": [
+        {
+          "type": "node",
+          "ref": 11549952451,
+          "role": "platform_entry_only"
+        },
+        {
+          "type": "node",
+          "ref": 11549952447,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 1312685254,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 6813929330,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 6813929331,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 1312670873,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 1312670870,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 1312711918,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 8415001143,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 1330409783,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 6720667167,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 12368996379,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 2900279301,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 6764110350,
+          "role": "platform"
+        },
+        {
+          "type": "node",
+          "ref": 6764110353,
+          "role": "platform_exit_only"
+        },
+        {
+          "type": "way",
+          "ref": 1342409929,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 1338975833,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 1339040066,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 26380597,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 1239911940,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 26380598,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 1342406123,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 26323165,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 1241264346,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 1341518494,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 1340739631,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 847288812,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 1338996609,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 720406628,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 720406632,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 26320590,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 1125716455,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 1125716456,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 1125716445,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 216617622,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 1125716444,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 1125716453,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 26349778,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 1125716446,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 1125716447,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 720402605,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 1339150559,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 1342413246,
+          "role": ""
+        },
+        {
+          "type": "way",
+          "ref": 163404380,
+          "role": ""
+        }
+      ],
+      "tags": {
+        "name": "東京ベイシティバス18系統 高洲海浜公園⇒新浦安駅⇒浦安駅入口",
+        "network": "明海・高洲線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "18",
+        "route": "bus",
+        "type": "route"
+      }
+    }
+  ]
+}

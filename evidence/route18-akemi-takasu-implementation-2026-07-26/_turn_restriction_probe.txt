@@ -1,0 +1,14 @@
+﻿[turnRestrictions] https://overpass-api.de/api/interpreter ... ok 0
+  restrictions found: 0
+[wayTags] https://overpass-api.de/api/interpreter ... ok 7
+
+  way tags:
+    720406628 {"highway":"tertiary","maxspeed":"50","name":"繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝・,"name:en":"Symbol Road","name:es":"Ruta Symbol","name:ja":"繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝・,"name:ko":"・ｬ・ｼ・・,"oneway":"yes"}
+    720406629 {"access":"yes","highway":"service","oneway":"yes"}
+    906161755 {"access":"permit","bus":"yes","highway":"service","oneway":"yes"}
+    906161756 {"highway":"service","oneway":"yes"}
+    1338975833 {"highway":"tertiary","lanes":"2","source":"GSImaps/ort"}
+    1338996609 {"highway":"tertiary","maxspeed":"50","name":"繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝・,"name:en":"Symbol Road","name:es":"Ruta Symbol","name:ja":"繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝・,"name:ko":"・ｬ・ｼ・・,"oneway":"yes","source":"GSImaps/ort"}
+    1342409929 {"highway":"tertiary","lanes":"2","source":"GSImaps/ort"}
+
+wrote C:\Users\yamam\OneDrive\繝峨く繝･繝｡繝ｳ繝・GitHub\chidori-route-trainer\evidence\route18-akemi-takasu-implementation-2026-07-26\_turn_restriction_probe.json

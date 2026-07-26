@@ -164,6 +164,18 @@
         './hinode-line-17-stop-images-v1.js?v=109',
         './hinode-line-17-route-v1.js?v=109'
       ]
+    },
+    // route-18 明海・高洲線。新浦安駅のりばEと高洲海浜公園のりば03を route-15 と共有するが別系統。
+    // 資産名・グローバル名とも AKEMI_TAKASU_LINE_* で分離する。
+    'route-18': {
+      css: ['./akemi-takasu-line-stop-images-v1.css?v=110'],
+      js: [
+        './akemi-takasu-line-platforms-v1.js?v=110',
+        './akemi-takasu-line-path-v1.js?v=110',
+        './akemi-takasu-line-path-policy-v1.js?v=110',
+        './akemi-takasu-line-stop-images-v1.js?v=110',
+        './akemi-takasu-line-route-v1.js?v=110'
+      ]
     }
   };
 

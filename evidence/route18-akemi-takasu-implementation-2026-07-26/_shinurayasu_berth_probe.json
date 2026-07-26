@@ -1,0 +1,1749 @@
+{
+ "probedAt": "2026-07-26T14:36:49.266Z",
+ "steps": [
+  {
+   "label": "refProbeWide",
+   "host": "https://overpass.kumi.systems/api/interpreter",
+   "ok": false,
+   "error": "HTTP 504 <?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"\n    \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:"
+  },
+  {
+   "label": "refProbeWide",
+   "host": "https://overpass-api.de/api/interpreter",
+   "ok": true,
+   "elements": 3
+  },
+  {
+   "label": "networkProbe",
+   "host": "https://overpass.kumi.systems/api/interpreter",
+   "ok": false,
+   "error": "HTTP 504 <?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"\n    \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:"
+  },
+  {
+   "label": "networkProbe",
+   "host": "https://overpass-api.de/api/interpreter",
+   "ok": false,
+   "error": "HTTP 504 <?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"\n    \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:"
+  },
+  {
+   "label": "nameProbe",
+   "host": "https://overpass.kumi.systems/api/interpreter",
+   "ok": true,
+   "elements": 3
+  },
+  {
+   "label": "shinurayasuBusStops",
+   "host": "https://overpass.kumi.systems/api/interpreter",
+   "ok": false,
+   "error": "HTTP 504 <?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"\n    \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:"
+  },
+  {
+   "label": "shinurayasuBusStops",
+   "host": "https://overpass-api.de/api/interpreter",
+   "ok": true,
+   "elements": 13
+  },
+  {
+   "label": "relationsAtShinurayasu",
+   "host": "https://overpass.kumi.systems/api/interpreter",
+   "ok": false,
+   "error": "HTTP 504 <?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"\n    \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:"
+  },
+  {
+   "label": "relationsAtShinurayasu",
+   "host": "https://overpass-api.de/api/interpreter",
+   "ok": true,
+   "elements": 47
+  }
+ ],
+ "refProbeWide": [
+  {
+   "id": 18352907,
+   "tags": {
+    "name": "東京ベイシティバス18系統 高洲海浜公園⇒新浦安駅⇒浦安駅入口",
+    "network": "明海・高洲線",
+    "operator": "東京ベイシティ交通",
+    "public_transport:version": "2",
+    "ref": "18",
+    "route": "bus",
+    "type": "route"
+   }
+  },
+  {
+   "id": 18352908,
+   "tags": {
+    "name": "東京ベイシティバス18系統 浦安駅入口⇒新浦安駅⇒高洲海浜公園",
+    "network": "明海・高洲線",
+    "operator": "東京ベイシティ交通",
+    "public_transport:version": "2",
+    "ref": "18",
+    "route": "bus",
+    "type": "route"
+   }
+  },
+  {
+   "id": 18417590,
+   "tags": {
+    "name": "東京ベイシティバス18系統 新浦安駅⇒潮音の街⇒高洲北小学校",
+    "network": "明海・高洲線",
+    "operator": "東京ベイシティ交通",
+    "public_transport:version": "2",
+    "ref": "18",
+    "route": "bus",
+    "type": "route"
+   }
+  }
+ ],
+ "networkProbe": null,
+ "nameProbe": [
+  {
+   "id": 18352907,
+   "tags": {
+    "name": "東京ベイシティバス18系統 高洲海浜公園⇒新浦安駅⇒浦安駅入口",
+    "network": "明海・高洲線",
+    "operator": "東京ベイシティ交通",
+    "public_transport:version": "2",
+    "ref": "18",
+    "route": "bus",
+    "type": "route"
+   }
+  },
+  {
+   "id": 18352908,
+   "tags": {
+    "name": "東京ベイシティバス18系統 浦安駅入口⇒新浦安駅⇒高洲海浜公園",
+    "network": "明海・高洲線",
+    "operator": "東京ベイシティ交通",
+    "public_transport:version": "2",
+    "ref": "18",
+    "route": "bus",
+    "type": "route"
+   }
+  },
+  {
+   "id": 18417590,
+   "tags": {
+    "name": "東京ベイシティバス18系統 新浦安駅⇒潮音の街⇒高洲北小学校",
+    "network": "明海・高洲線",
+    "operator": "東京ベイシティ交通",
+    "public_transport:version": "2",
+    "ref": "18",
+    "route": "bus",
+    "type": "route"
+   }
+  }
+ ],
+ "shinurayasuBusStops": [
+  {
+   "id": 8415001164,
+   "lat": 35.6494677,
+   "lon": 139.9139766,
+   "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "新浦安駅",
+    "operator": "浦安市コミュニティバス",
+    "public_transport": "platform"
+   }
+  },
+  {
+   "id": 8415001165,
+   "lat": 35.6495534,
+   "lon": 139.9138715,
+   "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "A",
+    "name": "新浦安駅",
+    "operator": "東京ベイシティ交通",
+    "public_transport": "platform"
+   }
+  },
+  {
+   "id": 8415001166,
+   "lat": 35.6496296,
+   "lon": 139.9137782,
+   "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "B",
+    "name": "新浦安駅",
+    "operator": "東京ベイシティ交通",
+    "public_transport": "platform"
+   }
+  },
+  {
+   "id": 8415001167,
+   "lat": 35.649709,
+   "lon": 139.9136809,
+   "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "C",
+    "name": "新浦安駅",
+    "operator": "東京ベイシティ交通",
+    "public_transport": "platform"
+   }
+  },
+  {
+   "id": 8415001162,
+   "lat": 35.6500008,
+   "lon": 139.9137632,
+   "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "D",
+    "name": "新浦安駅",
+    "public_transport": "platform"
+   }
+  },
+  {
+   "id": 8415001161,
+   "lat": 35.6499537,
+   "lon": 139.9140181,
+   "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "E",
+    "name": "新浦安駅",
+    "operator": "東京ベイシティ交通",
+    "public_transport": "platform"
+   }
+  },
+  {
+   "id": 8415001160,
+   "lat": 35.6498736,
+   "lon": 139.9141187,
+   "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "F",
+    "name": "新浦安駅",
+    "operator": "東京ベイシティ交通",
+    "public_transport": "platform"
+   }
+  },
+  {
+   "id": 8415001159,
+   "lat": 35.6497886,
+   "lon": 139.9142267,
+   "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "G",
+    "name": "新浦安駅",
+    "operator": "京成バス;京成トランジットバス",
+    "public_transport": "platform"
+   }
+  },
+  {
+   "id": 8415001143,
+   "lat": 35.6506245,
+   "lon": 139.9142535,
+   "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "H",
+    "name": "新浦安駅",
+    "public_transport": "platform"
+   }
+  },
+  {
+   "id": 6778578838,
+   "lat": 35.6499903,
+   "lon": 139.9126359,
+   "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "J",
+    "name": "新浦安駅北口",
+    "name:en": "Shin-Urayasu eki north exit",
+    "name:ja": "新浦安駅北口",
+    "operator": "東京ベイシティ交通",
+    "public_transport": "platform"
+   }
+  },
+  {
+   "id": 6720642144,
+   "lat": 35.650172,
+   "lon": 139.9125398,
+   "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "K",
+    "name": "新浦安駅北口",
+    "name:en": "Shin-Urayasu north exit",
+    "name:ja": "新浦安駅北口",
+    "note": "浦安駅入口方面",
+    "operator": "東京ベイシティ交通",
+    "public_transport": "platform"
+   }
+  },
+  {
+   "id": 12369534179,
+   "lat": 35.650054,
+   "lon": 139.9124041,
+   "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "L",
+    "name": "新浦安駅北口",
+    "name:en": "Shin-Urayasu north exit",
+    "name:ja": "新浦安駅北口",
+    "note": "新浦安駅方面",
+    "operator": "東京ベイシティ交通",
+    "public_transport": "platform"
+   }
+  },
+  {
+   "id": 8415001163,
+   "lat": 35.649411,
+   "lon": 139.9142448,
+   "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "local_ref": "X",
+    "name": "新浦安駅",
+    "note": "降車専用",
+    "operator": "京成トランジットバス;東京ベイシティ交通",
+    "public_transport": "platform"
+   }
+  }
+ ],
+ "relationsAtShinurayasu": [
+  {
+   "id": 9964872,
+   "ref": "2",
+   "name": "東京ベイシティバス2系統 舞浜駅⇒新浦安駅北口⇒浦安駅入口",
+   "network": "今川線",
+   "operator": "東京ベイシティ交通",
+   "shinurayasuHits": [
+    {
+     "nodeId": 6720642144,
+     "role": "platform"
+    }
+   ],
+   "firstPlatform": 2661127170,
+   "lastPlatform": 6764110353,
+   "platformCount": 18
+  },
+  {
+   "id": 9983017,
+   "ref": "14",
+   "name": "東京ベイシティバス14系統 舞浜駅⇒中央公園⇒新浦安駅",
+   "network": "弁天・富岡線",
+   "operator": "東京ベイシティ交通",
+   "shinurayasuHits": [
+    {
+     "nodeId": 12369534179,
+     "role": "platform"
+    },
+    {
+     "nodeId": 8415001163,
+     "role": "platform_exit_only"
+    }
+   ],
+   "firstPlatform": 2661127170,
+   "lastPlatform": 8415001163,
+   "platformCount": 19
+  },
+  {
+   "id": 12302543,
+   "ref": "浦安03",
+   "name": "Bus 浦安03: 行徳駅 => 新浦安駅",
+   "network": "京成トランジットバス",
+   "operator": "京成トランジットバス",
+   "shinurayasuHits": [
+    {
+     "nodeId": 8415001163,
+     "role": "platform_exit_only"
+    }
+   ],
+   "firstPlatform": 8397896482,
+   "lastPlatform": 8415001163,
+   "platformCount": 14
+  },
+  {
+   "id": 12302544,
+   "ref": "浦安03",
+   "name": "Bus 浦安03: 本八幡駅 => 行徳駅 => 新浦安駅",
+   "network": "京成トランジットバス",
+   "operator": "京成トランジットバス",
+   "shinurayasuHits": [
+    {
+     "nodeId": 8415001163,
+     "role": "platform_exit_only"
+    }
+   ],
+   "firstPlatform": 1548289588,
+   "lastPlatform": 8415001163,
+   "platformCount": 29
+  },
+  {
+   "id": 12302545,
+   "ref": "浦安03",
+   "name": "Bus 浦安03: 新浦安駅 => 行徳駅 => 本八幡駅",
+   "network": "京成トランジットバス",
+   "operator": "京成トランジットバス",
+   "shinurayasuHits": [
+    {
+     "nodeId": 8415001159,
+     "role": "platform_entry_only"
+    }
+   ],
+   "firstPlatform": 8415001159,
+   "lastPlatform": 8415001145,
+   "platformCount": 28
+  },
+  {
+   "id": 18323695,
+   "ref": "2",
+   "name": "東京ベイシティバス2系統 浦安駅入口⇒新浦安駅北口⇒舞浜駅",
+   "network": "今川線",
+   "operator": "東京ベイシティ交通",
+   "shinurayasuHits": [
+    {
+     "nodeId": 6778578838,
+     "role": "platform"
+    }
+   ],
+   "firstPlatform": 6764110352,
+   "lastPlatform": 9482601633,
+   "platformCount": 18
+  },
+  {
+   "id": 18323926,
+   "ref": "14",
+   "name": "東京ベイシティバス14系統 新浦安駅⇒中央公園⇒舞浜駅",
+   "network": "弁天・富岡線",
+   "operator": "東京ベイシティ交通",
+   "shinurayasuHits": [
+    {
+     "nodeId": 8415001166,
+     "role": "platform_entry_only"
+    },
+    {
+     "nodeId": 6778578838,
+     "role": "platform"
+    }
+   ],
+   "firstPlatform": 8415001166,
+   "lastPlatform": 9482601633,
+   "platformCount": 19
+  },
+  {
+   "id": 18351945,
+   "ref": "2",
+   "name": "東京ベイシティバス2系統 千鳥車庫⇒新浦安駅北口⇒浦安駅入口",
+   "network": "今川線",
+   "operator": "東京ベイシティ交通",
+   "shinurayasuHits": [
+    {
+     "nodeId": 6720642144,
+     "role": "platform"
+    }
+   ],
+   "firstPlatform": 6796350266,
+   "lastPlatform": 6764110353,
+   "platformCount": 17
+  },
+  {
+   "id": 18351946,
+   "ref": "2",
+   "name": "東京ベイシティバス2系統 浦安駅入口⇒新浦安駅北口⇒千鳥車庫",
+   "network": "今川線",
+   "operator": "東京ベイシティ交通",
+   "shinurayasuHits": [
+    {
+     "nodeId": 6778578838,
+     "role": "platform"
+    }
+   ],
+   "firstPlatform": 6764110352,
+   "lastPlatform": 12385535203,
+   "platformCount": 17
+  },
+  {
+   "id": 18352418,
+   "ref": "じゅんかい線",
+   "name": "浦安市おさんぽバス じゅんかい線（つつじルート）",
+   "operator": "浦安市コミュニティバス",
+   "shinurayasuHits": [
+    {
+     "nodeId": 8415001164,
+     "role": "platform"
+    }
+   ],
+   "firstPlatform": 12385819195,
+   "lastPlatform": 12385819195,
+   "platformCount": 44
+  },
+  {
+   "id": 18352419,
+   "ref": "じゅんかい線",
+   "name": "浦安市おさんぽバス じゅんかい線（いちょうルート）",
+   "operator": "浦安市コミュニティバス",
+   "shinurayasuHits": [
+    {
+     "nodeId": 8415001164,
+     "role": "platform"
+    }
+   ],
+   "firstPlatform": 12385819195,
+   "lastPlatform": 12385819195,
+   "platformCount": 44
+  },
+  {
+   "id": 18352813,
+   "ref": "医療センター線",
+   "name": "浦安市おさんぽバス 医療センター線（東京ベイ医療センター⇒浦安市役所⇒新浦安駅）",
+   "operator": "浦安市コミュニティバス",
+   "shinurayasuHits": [
+    {
+     "nodeId": 8415001164,
+     "role": "platform_exit_only"
+    }
+   ],
+   "firstPlatform": 6938860197,
+   "lastPlatform": 8415001164,
+   "platformCount": 28
+  },
+  {
+   "id": 18352814,
+   "ref": "医療センター線",
+   "name": "浦安市おさんぽバス 医療センター線（新浦安駅⇒浦安市役所⇒東京ベイ医療センター）",
+   "operator": "浦安市コミュニティバス",
+   "shinurayasuHits": [
+    {
+     "nodeId": 8415001164,
+     "role": "platform_entry_only"
+    }
+   ],
+   "firstPlatform": 8415001164,
+   "lastPlatform": 6938860197,
+   "platformCount": 30
+  },
+  {
+   "id": 18352883,
+   "ref": "11",
+   "name": "東京ベイシティバス11系統 日の出南⇒新浦安駅⇒浦安駅入口",
+   "network": "シンボルロード線",
+   "operator": "東京ベイシティ交通",
+   "shinurayasuHits": [
+    {
+     "nodeId": 8415001143,
+     "role": "platform"
+    }
+   ],
+   "firstPlatform": 6899769112,
+   "lastPlatform": 6764110353,
+   "platformCount": 18
+  },
+  {
+   "id": 18352884,
+   "ref": "11",
+   "name": "東京ベイシティバス11系統 浦安駅入口⇒新浦安駅⇒日の出南",
+   "network": "シンボルロード線",
+   "operator": "東京ベイシティ交通",
+   "shinurayasuHits": [
+    {
+     "nodeId": 8415001162,
+     "role": "platform"
+    }
+   ],
+   "firstPlatform": 6764110352,
+   "lastPlatform": 6899769112,
+   "platformCount": 18
+  },
+  {
+   "id": 18352907,
+   "ref": "18",
+   "name": "東京ベイシティバス18系統 高洲海浜公園⇒新浦安駅⇒浦安駅入口",
+   "network": "明海・高洲線",
+   "operator": "東京ベイシティ交通",
+   "shinurayasuHits": [
+    {
+     "nodeId": 8415001143,
+     "role": "platform"
+    }
+   ],
+   "firstPlatform": 11549952451,
+   "lastPlatform": 6764110353,
+   "platformCount": 15
+  },
+  {
+   "id": 18352908,
+   "ref": "18",
+   "name": "東京ベイシティバス18系統 浦安駅入口⇒新浦安駅⇒高洲海浜公園",
+   "network": "明海・高洲線",
+   "operator": "東京ベイシティ交通",
+   "shinurayasuHits": [
+    {
+     "nodeId": 8415001161,
+     "role": "platform"
+    }
+   ],
+   "firstPlatform": 6764110352,
+   "lastPlatform": 1312685258,
+   "platformCount": 15
+  },
+  {
+   "id": 18354837,
+   "ref": "1-3",
+   "name": "東京ベイシティバス1-3系統 新浦安駅⇒北栄循環（医療センター経由）",
+   "network": "北栄線",
+   "operator": "東京ベイシティ交通",
+   "shinurayasuHits": [
+    {
+     "nodeId": 8415001165,
+     "role": "platform_entry_only"
+    },
+    {
+     "nodeId": 8415001163,
+     "role": "platform_exit_only"
+    }
+   ],
+   "firstPlatform": 8415001165,
+   "lastPlatform": 8415001163,
+   "platformCount": 40
+  },
+  {
+   "id": 18354840,
+   "ref": "1-1",
+   "name": "東京ベイシティバス1-1系統 新浦安駅⇒北栄循環（医療センター非経由）",
+   "network": "北栄線",
+   "operator": "東京ベイシティ交通",
+   "shinurayasuHits": [
+    {
+     "nodeId": 8415001165,
+     "role": "platform_entry_only"
+    },
+    {
+     "nodeId": 8415001163,
+     "role": "platform_exit_only"
+    }
+   ],
+   "firstPlatform": 8415001165,
+   "lastPlatform": 8415001163,
+   "platformCount": 38
+  },
+  {
+   "id": 18354842,
+   "ref": "1",
+   "name": "東京ベイシティバス1系統 新浦安駅⇒北栄⇒浦安駅入口",
+   "network": "北栄線",
+   "operator": "東京ベイシティ交通",
+   "shinurayasuHits": [
+    {
+     "nodeId": 8415001165,
+     "role": "platform_entry_only"
+    }
+   ],
+   "firstPlatform": 8415001165,
+   "lastPlatform": 12367548448,
+   "platformCount": 19
+  },
+  {
+   "id": 18381756,
+   "ref": "10",
+   "name": "東京ベイシティバス10系統 みなと南⇒東京学館⇒新浦安駅",
+   "network": "高洲線",
+   "operator": "東京ベイシティ交通",
+   "shinurayasuHits": [
+    {
+     "nodeId": 8415001163,
+     "role": "platform_exit_only"
+    }
+   ],
+   "firstPlatform": 6899769132,
+   "lastPlatform": 8415001163,
+   "platformCount": 15
+  },
+  {
+   "id": 18381757,
+   "ref": "10",
+   "name": "東京ベイシティバス10系統 新浦安駅⇒東京学館⇒みなと南",
+   "network": "高洲線",
+   "operator": "東京ベイシティ交通",
+   "shinurayasuHits": [
+    {
+     "nodeId": 8415001160,
+     "role": "platform_entry_only"
+    }
+   ],
+   "firstPlatform": 8415001160,
+   "lastPlatform": 6899769132,
+   "platformCount": 15
+  },
+  {
+   "id": 18381770,
+   "ref": "19",
+   "name": "東京ベイシティバス19系統 高洲海浜公園⇒高洲四丁目・東京学館⇒新浦安駅",
+   "network": "高洲南線",
+   "operator": "東京ベイシティ交通",
+   "shinurayasuHits": [
+    {
+     "nodeId": 8415001163,
+     "role": "platform_exit_only"
+    }
+   ],
+   "firstPlatform": 11549952452,
+   "lastPlatform": 8415001163,
+   "platformCount": 14
+  },
+  {
+   "id": 18381771,
+   "ref": "19",
+   "name": "東京ベイシティバス19系統 新浦安駅⇒東京学館・高洲四丁目⇒高洲海浜公園",
+   "network": "高洲南線",
+   "operator": "東京ベイシティ交通",
+   "shinurayasuHits": [
+    {
+     "nodeId": 8415001160,
+     "role": "platform_entry_only"
+    }
+   ],
+   "firstPlatform": 8415001160,
+   "lastPlatform": 11549952449,
+   "platformCount": 14
+  },
+  {
+   "id": 18396354,
+   "ref": "38",
+   "name": "東京ベイシティバス38系統 新浦安駅⇒クオン新浦安線",
+   "network": "クオン新浦安線",
+   "operator": "東京ベイシティ交通",
+   "shinurayasuHits": [
+    {
+     "nodeId": 8415001166,
+     "role": "platform_entry_only"
+    },
+    {
+     "nodeId": 8415001163,
+     "role": "platform_exit_only"
+    }
+   ],
+   "firstPlatform": 8415001166,
+   "lastPlatform": 8415001163,
+   "platformCount": 5
+  },
+  {
+   "id": 18396546,
+   "ref": "22",
+   "name": "東京ベイシティバス22系統 千鳥車庫⇒千鳥東⇒新浦安駅",
+   "network": "若潮通り線",
+   "operator": "東京ベイシティ交通",
+   "shinurayasuHits": [
+    {
+     "nodeId": 12369534179,
+     "role": "platform"
+    },
+    {
+     "nodeId": 8415001163,
+     "role": "platform_exit_only"
+    }
+   ],
+   "firstPlatform": 6796350267,
+   "lastPlatform": 8415001163,
+   "platformCount": 16
+  },
+  {
+   "id": 18396547,
+   "ref": "22",
+   "name": "東京ベイシティバス22系統 新浦安駅⇒千鳥東⇒千鳥車庫",
+   "network": "若潮通り線",
+   "operator": "東京ベイシティ交通",
+   "shinurayasuHits": [
+    {
+     "nodeId": 8415001166,
+     "role": "platform_entry_only"
+    },
+    {
+     "nodeId": 6778578838,
+     "role": "platform"
+    }
+   ],
+   "firstPlatform": 8415001166,
+   "lastPlatform": 9482700319,
+   "platformCount": 16
+  },
+  {
+   "id": 18396562,
+   "ref": "16",
+   "name": "東京ベイシティバス16系統 日の出七丁目⇒プラウド新浦安パークマリーナ⇒新浦安駅",
+   "network": "日の出線",
+   "operator": "東京ベイシティ交通",
+   "shinurayasuHits": [
+    {
+     "nodeId": 8415001163,
+     "role": "platform_exit_only"
+    }
+   ],
+   "firstPlatform": 1312616409,
+   "lastPlatform": 8415001163,
+   "platformCount": 10
+  },
+  {
+   "id": 18396563,
+   "ref": "16",
+   "name": "東京ベイシティバス16系統 新浦安駅⇒プラウド新浦安パークマリーナ⇒日の出七丁目",
+   "network": "日の出線",
+   "operator": "東京ベイシティ交通",
+   "shinurayasuHits": [
+    {
+     "nodeId": 8415001167,
+     "role": "platform_entry_only"
+    }
+   ],
+   "firstPlatform": 8415001167,
+   "lastPlatform": 11425363970,
+   "platformCount": 10
+  },
+  {
+   "id": 18396568,
+   "ref": "17",
+   "name": "東京ベイシティバス17系統 日の出七丁目⇒東京電力⇒新浦安駅",
+   "network": "日の出線",
+   "operator": "東京ベイシティ交通",
+   "shinurayasuHits": [
+    {
+     "nodeId": 8415001163,
+     "role": "platform_exit_only"
+    }
+   ],
+   "firstPlatform": 1312616409,
+   "lastPlatform": 8415001163,
+   "platformCount": 10
+  },
+  {
+   "id": 18396569,
+   "ref": "17",
+   "name": "東京ベイシティバス17系統 新浦安駅⇒東京電力⇒日の出七丁目",
+   "network": "日の出線",
+   "operator": "東京ベイシティ交通",
+   "shinurayasuHits": [
+    {
+     "nodeId": 8415001167,
+     "role": "platform_entry_only"
+    }
+   ],
+   "firstPlatform": 8415001167,
+   "lastPlatform": 11425363970,
+   "platformCount": 10
+  },
+  {
+   "id": 18396583,
+   "ref": "17",
+   "name": "東京ベイシティバス17系統 新浦安駅⇒東京電力・プラウド新浦安パークマリーナ⇒ベイシティ浦安",
+   "network": "日の出線",
+   "operator": "東京ベイシティ交通",
+   "shinurayasuHits": [
+    {
+     "nodeId": 8415001167,
+     "role": "platform_entry_only"
+    }
+   ],
+   "firstPlatform": 8415001167,
+   "lastPlatform": 1312616418,
+   "platformCount": 14
+  },
+  {
+   "id": 18417570,
+   "ref": "3",
+   "name": "東京ベイシティバス3系統 総合公園⇒望海の街・新浦安駅⇒浦安駅入口",
+   "network": "浦安東団地線",
+   "operator": "東京ベイシティ交通",
+   "shinurayasuHits": [
+    {
+     "nodeId": 8415001143,
+     "role": "platform"
+    }
+   ],
+   "firstPlatform": 6720667160,
+   "lastPlatform": 6764110353,
+   "platformCount": 19
+  },
+  {
+   "id": 18417571,
+   "ref": "3",
+   "name": "東京ベイシティバス3系統 浦安駅入口⇒新浦安駅・望海の街⇒総合公園",
+   "network": "浦安東団地線",
+   "operator": "東京ベイシティ交通",
+   "shinurayasuHits": [
+    {
+     "nodeId": 8415001162,
+     "role": "platform"
+    }
+   ],
+   "firstPlatform": 6764110352,
+   "lastPlatform": 6720667160,
+   "platformCount": 19
+  },
+  {
+   "id": 18417579,
+   "ref": "3",
+   "name": "東京ベイシティバス3系統 新浦安駅⇒望海の街⇒シンボルロードパークシティ",
+   "network": "浦安東団地線",
+   "operator": "東京ベイシティ交通",
+   "shinurayasuHits": [
+    {
+     "nodeId": 8415001162,
+     "role": "platform_entry_only"
+    }
+   ],
+   "firstPlatform": 8415001162,
+   "lastPlatform": 1312639507,
+   "platformCount": 14
+  },
+  {
+   "id": 18417590,
+   "ref": "18",
+   "name": "東京ベイシティバス18系統 新浦安駅⇒潮音の街⇒高洲北小学校",
+   "network": "明海・高洲線",
+   "operator": "東京ベイシティ交通",
+   "shinurayasuHits": [
+    {
+     "nodeId": 8415001161,
+     "role": "platform_entry_only"
+    }
+   ],
+   "firstPlatform": 8415001161,
+   "lastPlatform": 1312670866,
+   "platformCount": 16
+  },
+  {
+   "id": 18417631,
+   "ref": "5",
+   "name": "東京ベイシティバス5系統 新浦安駅⇒東野・東海大浦安・堀江⇒浦安駅入口",
+   "network": "堀江線",
+   "operator": "東京ベイシティ交通",
+   "shinurayasuHits": [
+    {
+     "nodeId": 8415001165,
+     "role": "platform_entry_only"
+    },
+    {
+     "nodeId": 6778578838,
+     "role": "platform"
+    }
+   ],
+   "firstPlatform": 8415001165,
+   "lastPlatform": 6764110353,
+   "platformCount": 17
+  },
+  {
+   "id": 18417632,
+   "ref": "5",
+   "name": "東京ベイシティバス5系統 浦安駅入口⇒堀江・東海大浦安・東野⇒新浦安駅",
+   "network": "堀江線",
+   "operator": "東京ベイシティ交通",
+   "shinurayasuHits": [
+    {
+     "nodeId": 12369534179,
+     "role": "platform"
+    },
+    {
+     "nodeId": 8415001163,
+     "role": "platform_exit_only"
+    }
+   ],
+   "firstPlatform": 2288028442,
+   "lastPlatform": 8415001163,
+   "platformCount": 17
+  },
+  {
+   "id": 18419852,
+   "ref": "11",
+   "name": "東京ベイシティバス11系統 高洲海浜公園⇒ベイパーク⇒新浦安駅",
+   "network": "シンボルロード線",
+   "operator": "東京ベイシティ交通",
+   "shinurayasuHits": [
+    {
+     "nodeId": 8415001163,
+     "role": "platform_exit_only"
+    }
+   ],
+   "firstPlatform": 11549952452,
+   "lastPlatform": 8415001163,
+   "platformCount": 11
+  },
+  {
+   "id": 18419864,
+   "ref": "15",
+   "name": "東京ベイシティバス15系統 高洲海浜公園⇒東京学館⇒新浦安駅",
+   "network": "潮音の街線",
+   "operator": "東京ベイシティ交通",
+   "shinurayasuHits": [
+    {
+     "nodeId": 8415001163,
+     "role": "platform_exit_only"
+    }
+   ],
+   "firstPlatform": 11549952451,
+   "lastPlatform": 8415001163,
+   "platformCount": 10
+  },
+  {
+   "id": 18419865,
+   "ref": "15",
+   "name": "東京ベイシティバス15系統 新浦安駅⇒東京学館⇒高洲海浜公園",
+   "network": "潮音の街線",
+   "operator": "東京ベイシティ交通",
+   "shinurayasuHits": [
+    {
+     "nodeId": 8415001161,
+     "role": "platform_entry_only"
+    }
+   ],
+   "firstPlatform": 8415001161,
+   "lastPlatform": 1312685258,
+   "platformCount": 10
+  },
+  {
+   "id": 18419876,
+   "ref": "14",
+   "name": "東京ベイシティバス14系統 千鳥車庫⇒中央公園⇒新浦安駅",
+   "network": "弁天・富岡線",
+   "operator": "東京ベイシティ交通",
+   "shinurayasuHits": [
+    {
+     "nodeId": 12369534179,
+     "role": "platform"
+    },
+    {
+     "nodeId": 8415001163,
+     "role": "platform_exit_only"
+    }
+   ],
+   "firstPlatform": 6796350266,
+   "lastPlatform": 8415001163,
+   "platformCount": 18
+  },
+  {
+   "id": 18419877,
+   "ref": "14",
+   "name": "東京ベイシティバス14系統 新浦安駅⇒中央公園⇒千鳥車庫",
+   "network": "弁天・富岡線",
+   "operator": "東京ベイシティ交通",
+   "shinurayasuHits": [
+    {
+     "nodeId": 8415001166,
+     "role": "platform_entry_only"
+    },
+    {
+     "nodeId": 6778578838,
+     "role": "platform"
+    }
+   ],
+   "firstPlatform": 8415001166,
+   "lastPlatform": 12385535203,
+   "platformCount": 18
+  },
+  {
+   "id": 18419894,
+   "ref": "23",
+   "name": "東京ベイシティバス23系統 総合公園⇒望海の街・新浦安駅⇒舞浜駅",
+   "network": "浦安東団地線",
+   "operator": "東京ベイシティ交通",
+   "shinurayasuHits": [
+    {
+     "nodeId": 8415001143,
+     "role": "platform"
+    },
+    {
+     "nodeId": 6778578838,
+     "role": "platform"
+    }
+   ],
+   "firstPlatform": 6720667160,
+   "lastPlatform": 9482601633,
+   "platformCount": 25
+  },
+  {
+   "id": 18419895,
+   "ref": "23",
+   "name": "東京ベイシティバス23系統 舞浜駅⇒新浦安駅・望海の街⇒総合公園",
+   "network": "浦安東団地線",
+   "operator": "東京ベイシティ交通",
+   "shinurayasuHits": [
+    {
+     "nodeId": 12369534179,
+     "role": "platform"
+    },
+    {
+     "nodeId": 8415001162,
+     "role": "platform"
+    }
+   ],
+   "firstPlatform": 2661127170,
+   "lastPlatform": 6720667160,
+   "platformCount": 25
+  },
+  {
+   "id": 19781508,
+   "ref": "瑞75",
+   "name": "瑞75",
+   "network": "京成バス",
+   "shinurayasuHits": [
+    {
+     "nodeId": 8415001159,
+     "role": ""
+    }
+   ],
+   "firstPlatform": null,
+   "lastPlatform": null,
+   "platformCount": 0
+  },
+  {
+   "id": 19781509,
+   "ref": "瑞75",
+   "name": "瑞75",
+   "network": "京成バス",
+   "operator": "京成バス",
+   "shinurayasuHits": [
+    {
+     "nodeId": 8415001159,
+     "role": ""
+    }
+   ],
+   "firstPlatform": null,
+   "lastPlatform": null,
+   "platformCount": 0
+  }
+ ],
+ "exitOnlyUsage": {
+  "6720642144": [
+   {
+    "relation": 9964872,
+    "ref": "2",
+    "name": "東京ベイシティバス2系統 舞浜駅⇒新浦安駅北口⇒浦安駅入口",
+    "role": "platform",
+    "platformIndex": 11,
+    "platformCount": 18,
+    "isFirstPlatform": false,
+    "isLastPlatform": false
+   },
+   {
+    "relation": 18351945,
+    "ref": "2",
+    "name": "東京ベイシティバス2系統 千鳥車庫⇒新浦安駅北口⇒浦安駅入口",
+    "role": "platform",
+    "platformIndex": 10,
+    "platformCount": 17,
+    "isFirstPlatform": false,
+    "isLastPlatform": false
+   }
+  ],
+  "12369534179": [
+   {
+    "relation": 9983017,
+    "ref": "14",
+    "name": "東京ベイシティバス14系統 舞浜駅⇒中央公園⇒新浦安駅",
+    "role": "platform",
+    "platformIndex": 17,
+    "platformCount": 19,
+    "isFirstPlatform": false,
+    "isLastPlatform": false
+   },
+   {
+    "relation": 18396546,
+    "ref": "22",
+    "name": "東京ベイシティバス22系統 千鳥車庫⇒千鳥東⇒新浦安駅",
+    "role": "platform",
+    "platformIndex": 14,
+    "platformCount": 16,
+    "isFirstPlatform": false,
+    "isLastPlatform": false
+   },
+   {
+    "relation": 18417632,
+    "ref": "5",
+    "name": "東京ベイシティバス5系統 浦安駅入口⇒堀江・東海大浦安・東野⇒新浦安駅",
+    "role": "platform",
+    "platformIndex": 15,
+    "platformCount": 17,
+    "isFirstPlatform": false,
+    "isLastPlatform": false
+   },
+   {
+    "relation": 18419876,
+    "ref": "14",
+    "name": "東京ベイシティバス14系統 千鳥車庫⇒中央公園⇒新浦安駅",
+    "role": "platform",
+    "platformIndex": 16,
+    "platformCount": 18,
+    "isFirstPlatform": false,
+    "isLastPlatform": false
+   },
+   {
+    "relation": 18419895,
+    "ref": "23",
+    "name": "東京ベイシティバス23系統 舞浜駅⇒新浦安駅・望海の街⇒総合公園",
+    "role": "platform",
+    "platformIndex": 11,
+    "platformCount": 25,
+    "isFirstPlatform": false,
+    "isLastPlatform": false
+   }
+  ],
+  "8415001163": [
+   {
+    "relation": 9983017,
+    "ref": "14",
+    "name": "東京ベイシティバス14系統 舞浜駅⇒中央公園⇒新浦安駅",
+    "role": "platform_exit_only",
+    "platformIndex": 18,
+    "platformCount": 19,
+    "isFirstPlatform": false,
+    "isLastPlatform": true
+   },
+   {
+    "relation": 12302543,
+    "ref": "浦安03",
+    "name": "Bus 浦安03: 行徳駅 => 新浦安駅",
+    "role": "platform_exit_only",
+    "platformIndex": 13,
+    "platformCount": 14,
+    "isFirstPlatform": false,
+    "isLastPlatform": true
+   },
+   {
+    "relation": 12302544,
+    "ref": "浦安03",
+    "name": "Bus 浦安03: 本八幡駅 => 行徳駅 => 新浦安駅",
+    "role": "platform_exit_only",
+    "platformIndex": 28,
+    "platformCount": 29,
+    "isFirstPlatform": false,
+    "isLastPlatform": true
+   },
+   {
+    "relation": 18354837,
+    "ref": "1-3",
+    "name": "東京ベイシティバス1-3系統 新浦安駅⇒北栄循環（医療センター経由）",
+    "role": "platform_exit_only",
+    "platformIndex": 39,
+    "platformCount": 40,
+    "isFirstPlatform": false,
+    "isLastPlatform": true
+   },
+   {
+    "relation": 18354840,
+    "ref": "1-1",
+    "name": "東京ベイシティバス1-1系統 新浦安駅⇒北栄循環（医療センター非経由）",
+    "role": "platform_exit_only",
+    "platformIndex": 37,
+    "platformCount": 38,
+    "isFirstPlatform": false,
+    "isLastPlatform": true
+   },
+   {
+    "relation": 18381756,
+    "ref": "10",
+    "name": "東京ベイシティバス10系統 みなと南⇒東京学館⇒新浦安駅",
+    "role": "platform_exit_only",
+    "platformIndex": 14,
+    "platformCount": 15,
+    "isFirstPlatform": false,
+    "isLastPlatform": true
+   },
+   {
+    "relation": 18381770,
+    "ref": "19",
+    "name": "東京ベイシティバス19系統 高洲海浜公園⇒高洲四丁目・東京学館⇒新浦安駅",
+    "role": "platform_exit_only",
+    "platformIndex": 13,
+    "platformCount": 14,
+    "isFirstPlatform": false,
+    "isLastPlatform": true
+   },
+   {
+    "relation": 18396354,
+    "ref": "38",
+    "name": "東京ベイシティバス38系統 新浦安駅⇒クオン新浦安線",
+    "role": "platform_exit_only",
+    "platformIndex": 4,
+    "platformCount": 5,
+    "isFirstPlatform": false,
+    "isLastPlatform": true
+   },
+   {
+    "relation": 18396546,
+    "ref": "22",
+    "name": "東京ベイシティバス22系統 千鳥車庫⇒千鳥東⇒新浦安駅",
+    "role": "platform_exit_only",
+    "platformIndex": 15,
+    "platformCount": 16,
+    "isFirstPlatform": false,
+    "isLastPlatform": true
+   },
+   {
+    "relation": 18396562,
+    "ref": "16",
+    "name": "東京ベイシティバス16系統 日の出七丁目⇒プラウド新浦安パークマリーナ⇒新浦安駅",
+    "role": "platform_exit_only",
+    "platformIndex": 9,
+    "platformCount": 10,
+    "isFirstPlatform": false,
+    "isLastPlatform": true
+   },
+   {
+    "relation": 18396568,
+    "ref": "17",
+    "name": "東京ベイシティバス17系統 日の出七丁目⇒東京電力⇒新浦安駅",
+    "role": "platform_exit_only",
+    "platformIndex": 9,
+    "platformCount": 10,
+    "isFirstPlatform": false,
+    "isLastPlatform": true
+   },
+   {
+    "relation": 18417632,
+    "ref": "5",
+    "name": "東京ベイシティバス5系統 浦安駅入口⇒堀江・東海大浦安・東野⇒新浦安駅",
+    "role": "platform_exit_only",
+    "platformIndex": 16,
+    "platformCount": 17,
+    "isFirstPlatform": false,
+    "isLastPlatform": true
+   },
+   {
+    "relation": 18419852,
+    "ref": "11",
+    "name": "東京ベイシティバス11系統 高洲海浜公園⇒ベイパーク⇒新浦安駅",
+    "role": "platform_exit_only",
+    "platformIndex": 10,
+    "platformCount": 11,
+    "isFirstPlatform": false,
+    "isLastPlatform": true
+   },
+   {
+    "relation": 18419864,
+    "ref": "15",
+    "name": "東京ベイシティバス15系統 高洲海浜公園⇒東京学館⇒新浦安駅",
+    "role": "platform_exit_only",
+    "platformIndex": 9,
+    "platformCount": 10,
+    "isFirstPlatform": false,
+    "isLastPlatform": true
+   },
+   {
+    "relation": 18419876,
+    "ref": "14",
+    "name": "東京ベイシティバス14系統 千鳥車庫⇒中央公園⇒新浦安駅",
+    "role": "platform_exit_only",
+    "platformIndex": 17,
+    "platformCount": 18,
+    "isFirstPlatform": false,
+    "isLastPlatform": true
+   }
+  ],
+  "8415001159": [
+   {
+    "relation": 12302545,
+    "ref": "浦安03",
+    "name": "Bus 浦安03: 新浦安駅 => 行徳駅 => 本八幡駅",
+    "role": "platform_entry_only",
+    "platformIndex": 0,
+    "platformCount": 28,
+    "isFirstPlatform": true,
+    "isLastPlatform": false
+   },
+   {
+    "relation": 19781508,
+    "ref": "瑞75",
+    "name": "瑞75",
+    "role": "",
+    "platformIndex": -1,
+    "platformCount": 0,
+    "isFirstPlatform": false,
+    "isLastPlatform": false
+   },
+   {
+    "relation": 19781509,
+    "ref": "瑞75",
+    "name": "瑞75",
+    "role": "",
+    "platformIndex": -1,
+    "platformCount": 0,
+    "isFirstPlatform": false,
+    "isLastPlatform": false
+   }
+  ],
+  "6778578838": [
+   {
+    "relation": 18323695,
+    "ref": "2",
+    "name": "東京ベイシティバス2系統 浦安駅入口⇒新浦安駅北口⇒舞浜駅",
+    "role": "platform",
+    "platformIndex": 6,
+    "platformCount": 18,
+    "isFirstPlatform": false,
+    "isLastPlatform": false
+   },
+   {
+    "relation": 18323926,
+    "ref": "14",
+    "name": "東京ベイシティバス14系統 新浦安駅⇒中央公園⇒舞浜駅",
+    "role": "platform",
+    "platformIndex": 1,
+    "platformCount": 19,
+    "isFirstPlatform": false,
+    "isLastPlatform": false
+   },
+   {
+    "relation": 18351946,
+    "ref": "2",
+    "name": "東京ベイシティバス2系統 浦安駅入口⇒新浦安駅北口⇒千鳥車庫",
+    "role": "platform",
+    "platformIndex": 6,
+    "platformCount": 17,
+    "isFirstPlatform": false,
+    "isLastPlatform": false
+   },
+   {
+    "relation": 18396547,
+    "ref": "22",
+    "name": "東京ベイシティバス22系統 新浦安駅⇒千鳥東⇒千鳥車庫",
+    "role": "platform",
+    "platformIndex": 1,
+    "platformCount": 16,
+    "isFirstPlatform": false,
+    "isLastPlatform": false
+   },
+   {
+    "relation": 18417631,
+    "ref": "5",
+    "name": "東京ベイシティバス5系統 新浦安駅⇒東野・東海大浦安・堀江⇒浦安駅入口",
+    "role": "platform",
+    "platformIndex": 1,
+    "platformCount": 17,
+    "isFirstPlatform": false,
+    "isLastPlatform": false
+   },
+   {
+    "relation": 18419877,
+    "ref": "14",
+    "name": "東京ベイシティバス14系統 新浦安駅⇒中央公園⇒千鳥車庫",
+    "role": "platform",
+    "platformIndex": 1,
+    "platformCount": 18,
+    "isFirstPlatform": false,
+    "isLastPlatform": false
+   },
+   {
+    "relation": 18419894,
+    "ref": "23",
+    "name": "東京ベイシティバス23系統 総合公園⇒望海の街・新浦安駅⇒舞浜駅",
+    "role": "platform",
+    "platformIndex": 13,
+    "platformCount": 25,
+    "isFirstPlatform": false,
+    "isLastPlatform": false
+   }
+  ],
+  "8415001166": [
+   {
+    "relation": 18323926,
+    "ref": "14",
+    "name": "東京ベイシティバス14系統 新浦安駅⇒中央公園⇒舞浜駅",
+    "role": "platform_entry_only",
+    "platformIndex": 0,
+    "platformCount": 19,
+    "isFirstPlatform": true,
+    "isLastPlatform": false
+   },
+   {
+    "relation": 18396354,
+    "ref": "38",
+    "name": "東京ベイシティバス38系統 新浦安駅⇒クオン新浦安線",
+    "role": "platform_entry_only",
+    "platformIndex": 0,
+    "platformCount": 5,
+    "isFirstPlatform": true,
+    "isLastPlatform": false
+   },
+   {
+    "relation": 18396547,
+    "ref": "22",
+    "name": "東京ベイシティバス22系統 新浦安駅⇒千鳥東⇒千鳥車庫",
+    "role": "platform_entry_only",
+    "platformIndex": 0,
+    "platformCount": 16,
+    "isFirstPlatform": true,
+    "isLastPlatform": false
+   },
+   {
+    "relation": 18419877,
+    "ref": "14",
+    "name": "東京ベイシティバス14系統 新浦安駅⇒中央公園⇒千鳥車庫",
+    "role": "platform_entry_only",
+    "platformIndex": 0,
+    "platformCount": 18,
+    "isFirstPlatform": true,
+    "isLastPlatform": false
+   }
+  ],
+  "8415001164": [
+   {
+    "relation": 18352418,
+    "ref": "じゅんかい線",
+    "name": "浦安市おさんぽバス じゅんかい線（つつじルート）",
+    "role": "platform",
+    "platformIndex": 17,
+    "platformCount": 44,
+    "isFirstPlatform": false,
+    "isLastPlatform": false
+   },
+   {
+    "relation": 18352419,
+    "ref": "じゅんかい線",
+    "name": "浦安市おさんぽバス じゅんかい線（いちょうルート）",
+    "role": "platform",
+    "platformIndex": 24,
+    "platformCount": 44,
+    "isFirstPlatform": false,
+    "isLastPlatform": false
+   },
+   {
+    "relation": 18352813,
+    "ref": "医療センター線",
+    "name": "浦安市おさんぽバス 医療センター線（東京ベイ医療センター⇒浦安市役所⇒新浦安駅）",
+    "role": "platform_exit_only",
+    "platformIndex": 27,
+    "platformCount": 28,
+    "isFirstPlatform": false,
+    "isLastPlatform": true
+   },
+   {
+    "relation": 18352814,
+    "ref": "医療センター線",
+    "name": "浦安市おさんぽバス 医療センター線（新浦安駅⇒浦安市役所⇒東京ベイ医療センター）",
+    "role": "platform_entry_only",
+    "platformIndex": 0,
+    "platformCount": 30,
+    "isFirstPlatform": true,
+    "isLastPlatform": false
+   }
+  ],
+  "8415001143": [
+   {
+    "relation": 18352883,
+    "ref": "11",
+    "name": "東京ベイシティバス11系統 日の出南⇒新浦安駅⇒浦安駅入口",
+    "role": "platform",
+    "platformIndex": 11,
+    "platformCount": 18,
+    "isFirstPlatform": false,
+    "isLastPlatform": false
+   },
+   {
+    "relation": 18352907,
+    "ref": "18",
+    "name": "東京ベイシティバス18系統 高洲海浜公園⇒新浦安駅⇒浦安駅入口",
+    "role": "platform",
+    "platformIndex": 8,
+    "platformCount": 15,
+    "isFirstPlatform": false,
+    "isLastPlatform": false
+   },
+   {
+    "relation": 18417570,
+    "ref": "3",
+    "name": "東京ベイシティバス3系統 総合公園⇒望海の街・新浦安駅⇒浦安駅入口",
+    "role": "platform",
+    "platformIndex": 12,
+    "platformCount": 19,
+    "isFirstPlatform": false,
+    "isLastPlatform": false
+   },
+   {
+    "relation": 18419894,
+    "ref": "23",
+    "name": "東京ベイシティバス23系統 総合公園⇒望海の街・新浦安駅⇒舞浜駅",
+    "role": "platform",
+    "platformIndex": 12,
+    "platformCount": 25,
+    "isFirstPlatform": false,
+    "isLastPlatform": false
+   }
+  ],
+  "8415001162": [
+   {
+    "relation": 18352884,
+    "ref": "11",
+    "name": "東京ベイシティバス11系統 浦安駅入口⇒新浦安駅⇒日の出南",
+    "role": "platform",
+    "platformIndex": 6,
+    "platformCount": 18,
+    "isFirstPlatform": false,
+    "isLastPlatform": false
+   },
+   {
+    "relation": 18417571,
+    "ref": "3",
+    "name": "東京ベイシティバス3系統 浦安駅入口⇒新浦安駅・望海の街⇒総合公園",
+    "role": "platform",
+    "platformIndex": 6,
+    "platformCount": 19,
+    "isFirstPlatform": false,
+    "isLastPlatform": false
+   },
+   {
+    "relation": 18417579,
+    "ref": "3",
+    "name": "東京ベイシティバス3系統 新浦安駅⇒望海の街⇒シンボルロードパークシティ",
+    "role": "platform_entry_only",
+    "platformIndex": 0,
+    "platformCount": 14,
+    "isFirstPlatform": true,
+    "isLastPlatform": false
+   },
+   {
+    "relation": 18419895,
+    "ref": "23",
+    "name": "東京ベイシティバス23系統 舞浜駅⇒新浦安駅・望海の街⇒総合公園",
+    "role": "platform",
+    "platformIndex": 12,
+    "platformCount": 25,
+    "isFirstPlatform": false,
+    "isLastPlatform": false
+   }
+  ],
+  "8415001161": [
+   {
+    "relation": 18352908,
+    "ref": "18",
+    "name": "東京ベイシティバス18系統 浦安駅入口⇒新浦安駅⇒高洲海浜公園",
+    "role": "platform",
+    "platformIndex": 6,
+    "platformCount": 15,
+    "isFirstPlatform": false,
+    "isLastPlatform": false
+   },
+   {
+    "relation": 18417590,
+    "ref": "18",
+    "name": "東京ベイシティバス18系統 新浦安駅⇒潮音の街⇒高洲北小学校",
+    "role": "platform_entry_only",
+    "platformIndex": 0,
+    "platformCount": 16,
+    "isFirstPlatform": true,
+    "isLastPlatform": false
+   },
+   {
+    "relation": 18419865,
+    "ref": "15",
+    "name": "東京ベイシティバス15系統 新浦安駅⇒東京学館⇒高洲海浜公園",
+    "role": "platform_entry_only",
+    "platformIndex": 0,
+    "platformCount": 10,
+    "isFirstPlatform": true,
+    "isLastPlatform": false
+   }
+  ],
+  "8415001165": [
+   {
+    "relation": 18354837,
+    "ref": "1-3",
+    "name": "東京ベイシティバス1-3系統 新浦安駅⇒北栄循環（医療センター経由）",
+    "role": "platform_entry_only",
+    "platformIndex": 0,
+    "platformCount": 40,
+    "isFirstPlatform": true,
+    "isLastPlatform": false
+   },
+   {
+    "relation": 18354840,
+    "ref": "1-1",
+    "name": "東京ベイシティバス1-1系統 新浦安駅⇒北栄循環（医療センター非経由）",
+    "role": "platform_entry_only",
+    "platformIndex": 0,
+    "platformCount": 38,
+    "isFirstPlatform": true,
+    "isLastPlatform": false
+   },
+   {
+    "relation": 18354842,
+    "ref": "1",
+    "name": "東京ベイシティバス1系統 新浦安駅⇒北栄⇒浦安駅入口",
+    "role": "platform_entry_only",
+    "platformIndex": 0,
+    "platformCount": 19,
+    "isFirstPlatform": true,
+    "isLastPlatform": false
+   },
+   {
+    "relation": 18417631,
+    "ref": "5",
+    "name": "東京ベイシティバス5系統 新浦安駅⇒東野・東海大浦安・堀江⇒浦安駅入口",
+    "role": "platform_entry_only",
+    "platformIndex": 0,
+    "platformCount": 17,
+    "isFirstPlatform": true,
+    "isLastPlatform": false
+   }
+  ],
+  "8415001160": [
+   {
+    "relation": 18381757,
+    "ref": "10",
+    "name": "東京ベイシティバス10系統 新浦安駅⇒東京学館⇒みなと南",
+    "role": "platform_entry_only",
+    "platformIndex": 0,
+    "platformCount": 15,
+    "isFirstPlatform": true,
+    "isLastPlatform": false
+   },
+   {
+    "relation": 18381771,
+    "ref": "19",
+    "name": "東京ベイシティバス19系統 新浦安駅⇒東京学館・高洲四丁目⇒高洲海浜公園",
+    "role": "platform_entry_only",
+    "platformIndex": 0,
+    "platformCount": 14,
+    "isFirstPlatform": true,
+    "isLastPlatform": false
+   }
+  ],
+  "8415001167": [
+   {
+    "relation": 18396563,
+    "ref": "16",
+    "name": "東京ベイシティバス16系統 新浦安駅⇒プラウド新浦安パークマリーナ⇒日の出七丁目",
+    "role": "platform_entry_only",
+    "platformIndex": 0,
+    "platformCount": 10,
+    "isFirstPlatform": true,
+    "isLastPlatform": false
+   },
+   {
+    "relation": 18396569,
+    "ref": "17",
+    "name": "東京ベイシティバス17系統 新浦安駅⇒東京電力⇒日の出七丁目",
+    "role": "platform_entry_only",
+    "platformIndex": 0,
+    "platformCount": 10,
+    "isFirstPlatform": true,
+    "isLastPlatform": false
+   },
+   {
+    "relation": 18396583,
+    "ref": "17",
+    "name": "東京ベイシティバス17系統 新浦安駅⇒東京電力・プラウド新浦安パークマリーナ⇒ベイシティ浦安",
+    "role": "platform_entry_only",
+    "platformIndex": 0,
+    "platformCount": 14,
+    "isFirstPlatform": true,
+    "isLastPlatform": false
+   }
+  ]
+ },
+ "errors": [
+  "refProbeWide@https://overpass.kumi.systems/api/interpreter: HTTP 504 <?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"\n    \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:",
+  "networkProbe@https://overpass.kumi.systems/api/interpreter: HTTP 504 <?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"\n    \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:",
+  "networkProbe@https://overpass-api.de/api/interpreter: HTTP 504 <?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"\n    \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:",
+  "shinurayasuBusStops@https://overpass.kumi.systems/api/interpreter: HTTP 504 <?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"\n    \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:",
+  "relationsAtShinurayasu@https://overpass.kumi.systems/api/interpreter: HTTP 504 <?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"\n    \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:"
+ ]
+}

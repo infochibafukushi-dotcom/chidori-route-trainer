@@ -1,0 +1,113 @@
+﻿probe ref=18 relations in bbox
+  overpass via overpass.kumi.systems
+node :   fail overpass.kumi.systems HTTP 504 https://overpass.kumi.systems/api/interpreter?data=%5Bout%3Ajson%5D%5Btime
+out%3A120%5D%3B%0Arelation%5B%22route%22%3D%22bus%22%5D%5B%22ref%22%3D%2218%22%5D(35.60%2C139.85%2C35.70%2C139.96)%3B%0
+Aout%20tags%3B%0Arelation%5B%22type%22%3D%22route_master%22%5D%5B%22ref%22%3D%2218%22%5D(35.60%2C139.85%2C35.70%2C139.9
+6)%3B%0Aout%20tags%3B
+発生場所 C:\Users\yamam\AppData\Local\Temp\ps-script-d37dcd10-b4fb-4ac8-86e7-00544a032bd5.ps1:107 文字:1
++ node "evidence/route18-akemi-takasu-implementation-2026-07-26/_fetch_ ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (  fail overpass...0Aout%20tags%3B:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  overpass via overpass-api.de
+CHECKPOINT refProbe18
+IDS TO FETCH [18417590,18352907,18352908]
+fetch 18417590 route18 譁ｰ豬ｦ螳蛾ｧ・∫貎ｮ髻ｳ縺ｮ陦冷∫鬮俶ｴｲ蛹怜ｰ丞ｭｦ譬｡ (seed)
+  overpass via overpass.kumi.systems
+  fail overpass.kumi.systems HTTP 504 https://overpass.kumi.systems/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A1
+80%5D%3Brelation(18417590)%3B(._%3B%3E%3B)%3Bout%20body%3B
+  overpass via overpass-api.de
+  fail overpass-api.de HTTP 504 https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A180%5D%3Brela
+tion(18417590)%3B(._%3B%3E%3B)%3Bout%20body%3B
+  overpass via overpass.osm.jp
+  fail overpass.osm.jp certificate has expired
+  fallback osm-api-0.6 18417590
+18417590 route18 譁ｰ豬ｦ螳蛾ｧ・∫貎ｮ髻ｳ縺ｮ陦冷∫鬮俶ｴｲ蛹怜ｰ丞ｭｦ譬｡ (seed) | ways 27 | wayElems 27 | platforms 16 | via api.openstreetmap.org/0.6
+CHECKPOINT relation-18417590
+fetch 18352907 
+  overpass via overpass.kumi.systems
+  fail overpass.kumi.systems request timeout after 150000ms https://overpass.kumi.systems/api/interpreter?data=%5Bout%3
+Ajson%5D%5Btimeout%3A180%5D%3Brelation(18352907)%3B(._%3B%3E%3B)%3Bout%20body%3B
+  overpass via overpass-api.de
+  fail overpass-api.de HTTP 504 https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A180%5D%3Brela
+tion(18352907)%3B(._%3B%3E%3B)%3Bout%20body%3B
+  overpass via overpass.osm.jp
+  fail overpass.osm.jp certificate has expired
+  fallback osm-api-0.6 18352907
+18352907  | ways 29 | wayElems 29 | platforms 15 | via api.openstreetmap.org/0.6
+CHECKPOINT relation-18352907
+fetch 18352908 
+  overpass via overpass.kumi.systems
+  fail overpass.kumi.systems HTTP 504 https://overpass.kumi.systems/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A1
+80%5D%3Brelation(18352908)%3B(._%3B%3E%3B)%3Bout%20body%3B
+  overpass via overpass-api.de
+18352908  | ways 48 | wayElems 47 | platforms 15 | via overpass
+CHECKPOINT relation-18352908
+probe by route-18 characteristic platform names
+  overpass via overpass.kumi.systems
+CHECKPOINT platformProbe
+probe ref=15 relations in bbox (separation guard)
+  overpass via overpass.kumi.systems
+CHECKPOINT refProbe15
+probe ref=19 relations in bbox (separation guard)
+  overpass via overpass.kumi.systems
+  fail overpass.kumi.systems HTTP 504 https://overpass.kumi.systems/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A1
+20%5D%3B%0Arelation%5B%22route%22%3D%22bus%22%5D%5B%22ref%22%3D%2219%22%5D(35.60%2C139.85%2C35.70%2C139.96)%3B%0Aout%20
+tags%3B%0Arelation%5B%22type%22%3D%22route_master%22%5D%5B%22ref%22%3D%2219%22%5D(35.60%2C139.85%2C35.70%2C139.96)%3B%0
+Aout%20tags%3B
+  overpass via overpass-api.de
+CHECKPOINT refProbe19
+probe ref=10 relations in bbox (separation guard)
+  overpass via overpass.kumi.systems
+  fail overpass.kumi.systems request timeout after 150000ms https://overpass.kumi.systems/api/interpreter?data=%5Bout%3
+Ajson%5D%5Btimeout%3A120%5D%3B%0Arelation%5B%22route%22%3D%22bus%22%5D%5B%22ref%22%3D%2210%22%5D(35.60%2C139.85%2C35.70
+%2C139.96)%3B%0Aout%20tags%3B%0Arelation%5B%22type%22%3D%22route_master%22%5D%5B%22ref%22%3D%2210%22%5D(35.60%2C139.85%
+2C35.70%2C139.96)%3B%0Aout%20tags%3B
+  overpass via overpass-api.de
+CHECKPOINT refProbe10
+probe ref=25 relations in bbox (separation guard)
+  overpass via overpass.kumi.systems
+CHECKPOINT refProbe25
+done
+--- 18417590 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ18邉ｻ邨ｱ 譁ｰ豬ｦ螳蛾ｧ・∫貎ｮ髻ｳ縺ｮ陦冷∫鬮俶ｴｲ蛹怜ｰ丞ｭｦ譬｡ | ways 27 | platforms 16
+譁ｰ豬ｦ螳蛾ｧ・> 蜈･闊ｹ荳ｭ螟ｮ繧ｨ繧ｹ繝・・繝・> 譏取ｵｷ螟ｧ蟄ｦ蜑・> 豬ｷ鬚ｨ縺ｮ陦・> 螟｢豬ｷ縺ｮ陦・> 鬮俶ｴｲ讖・> 鬮俶ｴｲ荳ｭ螟ｮ蜈ｬ蝨・> 貎ｮ髻ｳ縺ｮ陦・> 鬮俶ｴｲ蜈ｫ荳∫岼 > 鬮俶ｴｲ蝗帑ｸ∫岼 > 鬮俶ｴｲ荳我ｸ∫岼 > 鬮俶ｴｲ隘ｿ蜈千ｫ･蜈ｬ蝨・> 鬆・､ｩ蝣ょ､ｧ蟄ｦ蜈･蜿｣ > 鬮俶ｴｲ莠御ｸ∫岼 > 譚ｱ莠ｬ蟄ｦ鬢ｨ蜑・> 鬮俶ｴｲ蛹怜ｰ丞ｭｦ譬｡
+--- 18352907 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ18邉ｻ邨ｱ 鬮俶ｴｲ豬ｷ豬懷・蝨停∫譁ｰ豬ｦ螳蛾ｧ・∫豬ｦ螳蛾ｧ・・蜿｣ | ways 29 | platforms 15
+鬮俶ｴｲ豬ｷ豬懷・蝨・> 貎ｮ髻ｳ縺ｮ陦・> 鬮俶ｴｲ荳ｭ螟ｮ蜈ｬ蝨・> 鬮俶ｴｲ讖・> 螟｢豬ｷ縺ｮ陦・> 豬ｷ鬚ｨ縺ｮ陦・> 譏取ｵｷ螟ｧ蟄ｦ蜑・> 蜈･闊ｹ荳ｭ螟ｮ繧ｨ繧ｹ繝・・繝・> 譁ｰ豬ｦ螳蛾ｧ・> 鄒取ｵ懈擲蝗｣蝨ｰ > 豬ｷ讌ｽ > 豸磯亟譛ｬ驛ｨ蜑・> 迪ｫ螳・> 逾樊・陬・> 豬ｦ螳蛾ｧ・・蜿｣
+--- 18352908 譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ18邉ｻ邨ｱ 豬ｦ螳蛾ｧ・・蜿｣竍呈眠豬ｦ螳蛾ｧ・∫鬮俶ｴｲ豬ｷ豬懷・蝨・| ways 48 | platforms 15
+豬ｦ螳蛾ｧ・・蜿｣ > 逾樊・陬・> 迪ｫ螳・> 豸磯亟譛ｬ驛ｨ蜑・> 豬ｷ讌ｽ > 鄒取ｵ懈擲蝗｣蝨ｰ > 譁ｰ豬ｦ螳蛾ｧ・> 蜈･闊ｹ荳ｭ螟ｮ繧ｨ繧ｹ繝・・繝・> 譏取ｵｷ螟ｧ蟄ｦ蜑・> 豬ｷ鬚ｨ縺ｮ陦・> 螟｢豬ｷ縺ｮ陦・> 鬮俶ｴｲ讖・> 鬮俶ｴｲ荳ｭ螟ｮ蜈ｬ蝨・> 貎ｮ髻ｳ縺ｮ陦・> 鬮俶ｴｲ豬ｷ豬懷・蝨・=== ref=18 probe ===
+relation 18352907 {"name":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ18邉ｻ邨ｱ 鬮俶ｴｲ豬ｷ豬懷・蝨停∫譁ｰ豬ｦ螳蛾ｧ・∫豬ｦ螳蛾ｧ・・蜿｣","network":"譏取ｵｷ繝ｻ鬮俶ｴｲ邱・,"operator":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ莠､騾・,"public_transport:version":"2","ref":"18","route":"bus","type":"route"}
+relation 18352908 {"name":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ18邉ｻ邨ｱ 豬ｦ螳蛾ｧ・・蜿｣竍呈眠豬ｦ螳蛾ｧ・∫鬮俶ｴｲ豬ｷ豬懷・蝨・,"network":"譏取ｵｷ繝ｻ鬮俶ｴｲ邱・,"operator":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ莠､騾・,"public_transport:version":"2","ref":"18","route":"bus","type":"route"}
+relation 18417590 {"name":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ18邉ｻ邨ｱ 譁ｰ豬ｦ螳蛾ｧ・∫貎ｮ髻ｳ縺ｮ陦冷∫鬮俶ｴｲ蛹怜ｰ丞ｭｦ譬｡","network":"譏取ｵｷ繝ｻ鬮俶ｴｲ邱・,"operator":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ莠､騾・,"public_transport:version":"2","ref":"18","route":"bus","type":"route"}
+=== ref=15 probe (SEPARATION GUARD, NOT USED) ===
+relation 18419864 {"name":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ15邉ｻ邨ｱ 鬮俶ｴｲ豬ｷ豬懷・蝨停∫譚ｱ莠ｬ蟄ｦ鬢ｨ竍呈眠豬ｦ螳蛾ｧ・,"network":"貎ｮ髻ｳ縺ｮ陦礼ｷ・,"operator":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ莠､騾・,"public_transport:version":"2","ref":"15","route":"bus","type":"route"}
+relation 18419865 {"name":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ15邉ｻ邨ｱ 譁ｰ豬ｦ螳蛾ｧ・∫譚ｱ莠ｬ蟄ｦ鬢ｨ竍帝ｫ俶ｴｲ豬ｷ豬懷・蝨・,"network":"貎ｮ髻ｳ縺ｮ陦礼ｷ・,"operator":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ莠､騾・,"public_transport:version":"2","ref":"15","route":"bus","type":"route"}
+=== ref=19 probe (SEPARATION GUARD, NOT USED) ===
+relation 18381770 {"name":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ19邉ｻ邨ｱ 鬮俶ｴｲ豬ｷ豬懷・蝨停∫鬮俶ｴｲ蝗帑ｸ∫岼繝ｻ譚ｱ莠ｬ蟄ｦ鬢ｨ竍呈眠豬ｦ螳蛾ｧ・,"network":"鬮俶ｴｲ蜊礼ｷ・,"operator":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ莠､騾・,"public_transport:version":"2","ref":"19","route":"bus","type":"route"}
+relation 18381771 {"name":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ19邉ｻ邨ｱ 譁ｰ豬ｦ螳蛾ｧ・∫譚ｱ莠ｬ蟄ｦ鬢ｨ繝ｻ鬮俶ｴｲ蝗帑ｸ∫岼竍帝ｫ俶ｴｲ豬ｷ豬懷・蝨・,"network":"鬮俶ｴｲ蜊礼ｷ・,"operator":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ莠､騾・,"public_transport:version":"2","ref":"19","route":"bus","type":"route"}
+=== ref=10 probe (SEPARATION GUARD, NOT USED) ===
+relation 18381756 {"name":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ10邉ｻ邨ｱ 縺ｿ縺ｪ縺ｨ蜊冷∫譚ｱ莠ｬ蟄ｦ鬢ｨ竍呈眠豬ｦ螳蛾ｧ・,"network":"鬮俶ｴｲ邱・,"operator":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ莠､騾・,"public_transport:version":"2","ref":"10","route":"bus","type":"route"}
+relation 18381757 {"name":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ10邉ｻ邨ｱ 譁ｰ豬ｦ螳蛾ｧ・∫譚ｱ莠ｬ蟄ｦ鬢ｨ竍偵∩縺ｪ縺ｨ蜊・,"network":"鬮俶ｴｲ邱・,"operator":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ莠､騾・,"public_transport:version":"2","ref":"10","route":"bus","type":"route"}
+=== ref=25 probe (SEPARATION GUARD, NOT USED) ===
+relation 18352022 {"name":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ25邉ｻ邨ｱ 鬮俶ｴｲ豬ｷ豬懷・蝨停∫鬮俶ｴｲ隘ｿ蜈千ｫ･蜈ｬ蝨停∫闊樊ｵ憺ｧ・,"network":"闊樊ｵ懊・鬮俶ｴｲ邱・,"operator":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ莠､騾・,"public_transport:version":"2","ref":"25","route":"bus","type":"route"}
+relation 18352023 {"name":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ25邉ｻ邨ｱ 闊樊ｵ憺ｧ・∫鬮俶ｴｲ隘ｿ蜈千ｫ･蜈ｬ蝨停∫鬮俶ｴｲ豬ｷ豬懷・蝨・,"network":"闊樊ｵ懊・鬮俶ｴｲ邱・,"operator":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ莠､騾・,"public_transport:version":"2","ref":"25","route":"bus","type":"route"}
+relation 18352044 {"name":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ25邉ｻ邨ｱ 邱丞粋蜈ｬ蝨停∫鬮俶ｴｲ隘ｿ蜈千ｫ･蜈ｬ蝨停∫闊樊ｵ憺ｧ・,"network":"闊樊ｵ懊・鬮俶ｴｲ邱・,"operator":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ莠､騾・,"public_transport:version":"2","ref":"25","route":"bus","type":"route"}
+relation 18352045 {"name":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ25邉ｻ邨ｱ 闊樊ｵ憺ｧ・∫鬮俶ｴｲ隘ｿ蜈千ｫ･蜈ｬ蝨停∫邱丞粋蜈ｬ蝨・,"network":"闊樊ｵ懊・鬮俶ｴｲ邱・,"operator":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ莠､騾・,"public_transport:version":"2","ref":"25","route":"bus","type":"route"}
+=== platform-name probe ===
+relation 18352883 {"name":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ11邉ｻ邨ｱ 譌･縺ｮ蜃ｺ蜊冷∫譁ｰ豬ｦ螳蛾ｧ・∫豬ｦ螳蛾ｧ・・蜿｣","network":"繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝臥ｷ・,"operator":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ莠､騾・,"public_transport:version":"2","ref":"11","route":"bus","type":"route"}
+relation 18352884 {"name":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ11邉ｻ邨ｱ 豬ｦ螳蛾ｧ・・蜿｣竍呈眠豬ｦ螳蛾ｧ・∫譌･縺ｮ蜃ｺ蜊・,"network":"繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝臥ｷ・,"operator":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ莠､騾・,"public_transport:version":"2","ref":"11","route":"bus","type":"route"}
+relation 18352907 {"name":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ18邉ｻ邨ｱ 鬮俶ｴｲ豬ｷ豬懷・蝨停∫譁ｰ豬ｦ螳蛾ｧ・∫豬ｦ螳蛾ｧ・・蜿｣","network":"譏取ｵｷ繝ｻ鬮俶ｴｲ邱・,"operator":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ莠､騾・,"public_transport:version":"2","ref":"18","route":"bus","type":"route"}
+relation 18352908 {"name":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ18邉ｻ邨ｱ 豬ｦ螳蛾ｧ・・蜿｣竍呈眠豬ｦ螳蛾ｧ・∫鬮俶ｴｲ豬ｷ豬懷・蝨・,"network":"譏取ｵｷ繝ｻ鬮俶ｴｲ邱・,"operator":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ莠､騾・,"public_transport:version":"2","ref":"18","route":"bus","type":"route"}
+relation 18396354 {"name":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ38邉ｻ邨ｱ 譁ｰ豬ｦ螳蛾ｧ・∫繧ｯ繧ｪ繝ｳ譁ｰ豬ｦ螳臥ｷ・,"network":"繧ｯ繧ｪ繝ｳ譁ｰ豬ｦ螳臥ｷ・,"operator":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ莠､騾・,"public_transport:version":"2","ref":"38","route":"bus","type":"route"}
+relation 18396562 {"name":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ16邉ｻ邨ｱ 譌･縺ｮ蜃ｺ荳・ｸ∫岼竍偵・繝ｩ繧ｦ繝画眠豬ｦ螳峨ヱ繝ｼ繧ｯ繝槭Μ繝ｼ繝岩∫譁ｰ豬ｦ螳蛾ｧ・,"network":"譌･縺ｮ蜃ｺ邱・,"operator":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ莠､騾・,"public_transport:version":"2","ref":"16","route":"bus","type":"route"}
+relation 18396563 {"name":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ16邉ｻ邨ｱ 譁ｰ豬ｦ螳蛾ｧ・∫繝励Λ繧ｦ繝画眠豬ｦ螳峨ヱ繝ｼ繧ｯ繝槭Μ繝ｼ繝岩∫譌･縺ｮ蜃ｺ荳・ｸ∫岼","network":"譌･縺ｮ蜃ｺ邱・,"operator":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ莠､騾・,"public_transport:version":"2","ref":"16","route":"bus","type":"route"}
+relation 18396568 {"name":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ17邉ｻ邨ｱ 譌･縺ｮ蜃ｺ荳・ｸ∫岼竍呈擲莠ｬ髮ｻ蜉帚∫譁ｰ豬ｦ螳蛾ｧ・,"network":"譌･縺ｮ蜃ｺ邱・,"operator":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ莠､騾・,"public_transport:version":"2","ref":"17","route":"bus","type":"route"}
+relation 18396569 {"name":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ17邉ｻ邨ｱ 譁ｰ豬ｦ螳蛾ｧ・∫譚ｱ莠ｬ髮ｻ蜉帚∫譌･縺ｮ蜃ｺ荳・ｸ∫岼","network":"譌･縺ｮ蜃ｺ邱・,"operator":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ莠､騾・,"public_transport:version":"2","ref":"17","route":"bus","type":"route"}
+relation 18396583 {"name":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ17邉ｻ邨ｱ 譁ｰ豬ｦ螳蛾ｧ・∫譚ｱ莠ｬ髮ｻ蜉帙・繝励Λ繧ｦ繝画眠豬ｦ螳峨ヱ繝ｼ繧ｯ繝槭Μ繝ｼ繝岩∫繝吶う繧ｷ繝・ぅ豬ｦ螳・,"network":"譌･縺ｮ蜃ｺ邱・,"operator":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ莠､騾・,"public_transport:version":"2","ref":"17","route":"bus","type":"route"}
+relation 18417570 {"name":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ3邉ｻ邨ｱ 邱丞粋蜈ｬ蝨停∫譛帶ｵｷ縺ｮ陦励・譁ｰ豬ｦ螳蛾ｧ・∫豬ｦ螳蛾ｧ・・蜿｣","network":"豬ｦ螳画擲蝗｣蝨ｰ邱・,"operator":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ莠､騾・,"public_transport:version":"2","ref":"3","route":"bus","type":"route"}
+relation 18417571 {"name":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ3邉ｻ邨ｱ 豬ｦ螳蛾ｧ・・蜿｣竍呈眠豬ｦ螳蛾ｧ・・譛帶ｵｷ縺ｮ陦冷∫邱丞粋蜈ｬ蝨・,"network":"豬ｦ螳画擲蝗｣蝨ｰ邱・,"operator":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ莠､騾・,"public_transport:version":"2","ref":"3","route":"bus","type":"route"}
+relation 18417579 {"name":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ3邉ｻ邨ｱ 譁ｰ豬ｦ螳蛾ｧ・∫譛帶ｵｷ縺ｮ陦冷∫繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝峨ヱ繝ｼ繧ｯ繧ｷ繝・ぅ","network":"豬ｦ螳画擲蝗｣蝨ｰ邱・,"operator":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ莠､騾・,"public_transport:version":"2","ref":"3","route":"bus","type":"route"}
+relation 18417590 {"name":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ18邉ｻ邨ｱ 譁ｰ豬ｦ螳蛾ｧ・∫貎ｮ髻ｳ縺ｮ陦冷∫鬮俶ｴｲ蛹怜ｰ丞ｭｦ譬｡","network":"譏取ｵｷ繝ｻ鬮俶ｴｲ邱・,"operator":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ莠､騾・,"public_transport:version":"2","ref":"18","route":"bus","type":"route"}
+relation 18419852 {"name":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ11邉ｻ邨ｱ 鬮俶ｴｲ豬ｷ豬懷・蝨停∫繝吶う繝代・繧ｯ竍呈眠豬ｦ螳蛾ｧ・,"network":"繧ｷ繝ｳ繝懊Ν繝ｭ繝ｼ繝臥ｷ・,"operator":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ莠､騾・,"public_transport:version":"2","ref":"11","route":"bus","type":"route"}
+relation 18419894 {"name":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ23邉ｻ邨ｱ 邱丞粋蜈ｬ蝨停∫譛帶ｵｷ縺ｮ陦励・譁ｰ豬ｦ螳蛾ｧ・∫闊樊ｵ憺ｧ・,"network":"豬ｦ螳画擲蝗｣蝨ｰ邱・,"operator":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ莠､騾・,"public_transport:version":"2","ref":"23","route":"bus","type":"route"}
+relation 18419895 {"name":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ繝舌せ23邉ｻ邨ｱ 闊樊ｵ憺ｧ・∫譁ｰ豬ｦ螳蛾ｧ・・譛帶ｵｷ縺ｮ陦冷∫邱丞粋蜈ｬ蝨・,"network":"豬ｦ螳画擲蝗｣蝨ｰ邱・,"operator":"譚ｱ莠ｬ繝吶う繧ｷ繝・ぅ莠､騾・,"public_transport:version":"2","ref":"23","route":"bus","type":"route"}

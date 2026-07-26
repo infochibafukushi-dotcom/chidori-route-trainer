@@ -1,0 +1,229 @@
+{
+  "startedAt": "2026-07-26T14:21:15.790Z",
+  "expectedCacheName": "chidori-route-map-v110",
+  "swFileCacheName": "chidori-route-map-v110",
+  "swLoaderTag": "110",
+  "indexLoaderTag": "110",
+  "failures": [],
+  "pass": true,
+  "swRegistration": {
+    "supported": true,
+    "scope": "http://127.0.0.1:8853/",
+    "scriptURL": "http://127.0.0.1:8853/service-worker.js?v=105",
+    "controlled": true
+  },
+  "online": {
+    "18-takasu-seaside": {
+      "stops": 15,
+      "stopNames": [
+        "浦安駅入口",
+        "神明裏",
+        "猫実",
+        "消防本部前",
+        "海楽",
+        "美浜東団地",
+        "新浦安駅",
+        "入船中央エステート",
+        "明海大学前",
+        "海風の街",
+        "夢海の街",
+        "高洲橋",
+        "高洲中央公園",
+        "潮音の街",
+        "高洲海浜公園"
+      ],
+      "pathPoints": 292,
+      "pathHash": "4b04f78629731300a84cf4e23918efd749edf9f9693ad5fb63317790d403b5f3",
+      "pathSource": "osm-relation-18352908+startHint-urayasu-eki-iriguchi",
+      "pathInvalid": false
+    },
+    "18-urayasu-eki-iriguchi": {
+      "stops": 15,
+      "stopNames": [
+        "高洲海浜公園",
+        "潮音の街",
+        "高洲中央公園",
+        "高洲橋",
+        "夢海の街",
+        "海風の街",
+        "明海大学前",
+        "入船中央エステート",
+        "新浦安駅",
+        "美浜東団地",
+        "海楽",
+        "消防本部前",
+        "猫実",
+        "神明裏",
+        "浦安駅入口"
+      ],
+      "pathPoints": 247,
+      "pathHash": "dda9ecbf8a09875cc1f015e85116824e1ce020a48b1d6d064211a69fb41bb92b",
+      "pathSource": "osm-relation-18352907+startHint-takasu-kaihin-koen",
+      "pathInvalid": false
+    },
+    "18-takasu-kita-shogakko": {
+      "stops": 16,
+      "stopNames": [
+        "新浦安駅",
+        "入船中央エステート",
+        "明海大学前",
+        "海風の街",
+        "夢海の街",
+        "高洲橋",
+        "高洲中央公園",
+        "潮音の街",
+        "高洲八丁目",
+        "高洲四丁目",
+        "高洲三丁目",
+        "高洲西児童公園",
+        "順天堂大学入口",
+        "高洲二丁目",
+        "東京学館前",
+        "高洲北小学校"
+      ],
+      "pathPoints": 227,
+      "pathHash": "34fde1f156be7a37feabf25c3ac47665b30a59f142bc43e899a7d3d45e148778",
+      "pathSource": "osm-relation-18417590+startHint-shinurayasu",
+      "pathInvalid": false
+    }
+  },
+  "caches": {
+    "cacheKeys": [
+      "chidori-route-map-v110"
+    ],
+    "staleAppCaches": [],
+    "entryCount": 82,
+    "route18Present": [
+      "./akemi-takasu-line-stop-images-v1.css?v=110",
+      "./akemi-takasu-line-platforms-v1.js?v=110",
+      "./akemi-takasu-line-path-v1.js?v=110",
+      "./akemi-takasu-line-path-policy-v1.js?v=110",
+      "./akemi-takasu-line-stop-images-v1.js?v=110",
+      "./akemi-takasu-line-route-v1.js?v=110"
+    ],
+    "route18Missing": [],
+    "route15Present": [
+      "./shione-no-machi-line-platforms-v1.js?v=107",
+      "./shione-no-machi-line-path-v1.js?v=107",
+      "./shione-no-machi-line-route-v1.js?v=107"
+    ],
+    "route17Present": [
+      "./hinode-line-17-platforms-v1.js?v=109",
+      "./hinode-line-17-path-v1.js?v=109",
+      "./hinode-line-17-route-v1.js?v=109"
+    ],
+    "route18WrongVersion": [],
+    "route15WrongVersion": [],
+    "route17WrongVersion": [],
+    "loaderWrongVersion": []
+  },
+  "offlineBooted": true,
+  "offline": {
+    "18-takasu-seaside": {
+      "stops": 15,
+      "stopNames": [
+        "浦安駅入口",
+        "神明裏",
+        "猫実",
+        "消防本部前",
+        "海楽",
+        "美浜東団地",
+        "新浦安駅",
+        "入船中央エステート",
+        "明海大学前",
+        "海風の街",
+        "夢海の街",
+        "高洲橋",
+        "高洲中央公園",
+        "潮音の街",
+        "高洲海浜公園"
+      ],
+      "pathPoints": 292,
+      "pathHash": "4b04f78629731300a84cf4e23918efd749edf9f9693ad5fb63317790d403b5f3",
+      "pathSource": "osm-relation-18352908+startHint-urayasu-eki-iriguchi",
+      "pathInvalid": false
+    },
+    "18-urayasu-eki-iriguchi": {
+      "stops": 15,
+      "stopNames": [
+        "高洲海浜公園",
+        "潮音の街",
+        "高洲中央公園",
+        "高洲橋",
+        "夢海の街",
+        "海風の街",
+        "明海大学前",
+        "入船中央エステート",
+        "新浦安駅",
+        "美浜東団地",
+        "海楽",
+        "消防本部前",
+        "猫実",
+        "神明裏",
+        "浦安駅入口"
+      ],
+      "pathPoints": 247,
+      "pathHash": "dda9ecbf8a09875cc1f015e85116824e1ce020a48b1d6d064211a69fb41bb92b",
+      "pathSource": "osm-relation-18352907+startHint-takasu-kaihin-koen",
+      "pathInvalid": false
+    },
+    "18-takasu-kita-shogakko": {
+      "stops": 16,
+      "stopNames": [
+        "新浦安駅",
+        "入船中央エステート",
+        "明海大学前",
+        "海風の街",
+        "夢海の街",
+        "高洲橋",
+        "高洲中央公園",
+        "潮音の街",
+        "高洲八丁目",
+        "高洲四丁目",
+        "高洲三丁目",
+        "高洲西児童公園",
+        "順天堂大学入口",
+        "高洲二丁目",
+        "東京学館前",
+        "高洲北小学校"
+      ],
+      "pathPoints": 227,
+      "pathHash": "34fde1f156be7a37feabf25c3ac47665b30a59f142bc43e899a7d3d45e148778",
+      "pathSource": "osm-relation-18417590+startHint-shinurayasu",
+      "pathInvalid": false
+    }
+  },
+  "hashComparison": {
+    "18-takasu-seaside": {
+      "expectedPathHash": "4b04f78629731300a84cf4e23918efd749edf9f9693ad5fb63317790d403b5f3",
+      "onlinePathHash": "4b04f78629731300a84cf4e23918efd749edf9f9693ad5fb63317790d403b5f3",
+      "offlinePathHash": "4b04f78629731300a84cf4e23918efd749edf9f9693ad5fb63317790d403b5f3",
+      "onlineMatches": true,
+      "offlineMatches": true,
+      "stopsOnline": 15,
+      "stopsOffline": 15,
+      "stopOrderIdentical": true
+    },
+    "18-urayasu-eki-iriguchi": {
+      "expectedPathHash": "dda9ecbf8a09875cc1f015e85116824e1ce020a48b1d6d064211a69fb41bb92b",
+      "onlinePathHash": "dda9ecbf8a09875cc1f015e85116824e1ce020a48b1d6d064211a69fb41bb92b",
+      "offlinePathHash": "dda9ecbf8a09875cc1f015e85116824e1ce020a48b1d6d064211a69fb41bb92b",
+      "onlineMatches": true,
+      "offlineMatches": true,
+      "stopsOnline": 15,
+      "stopsOffline": 15,
+      "stopOrderIdentical": true
+    },
+    "18-takasu-kita-shogakko": {
+      "expectedPathHash": "34fde1f156be7a37feabf25c3ac47665b30a59f142bc43e899a7d3d45e148778",
+      "onlinePathHash": "34fde1f156be7a37feabf25c3ac47665b30a59f142bc43e899a7d3d45e148778",
+      "offlinePathHash": "34fde1f156be7a37feabf25c3ac47665b30a59f142bc43e899a7d3d45e148778",
+      "onlineMatches": true,
+      "offlineMatches": true,
+      "stopsOnline": 16,
+      "stopsOffline": 16,
+      "stopOrderIdentical": true
+    }
+  },
+  "finishedAt": "2026-07-26T14:21:27.826Z"
+}

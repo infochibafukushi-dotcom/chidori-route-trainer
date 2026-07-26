@@ -1,0 +1,483 @@
+{
+  "checkedAt": "2026-07-26T13:47:25.592Z",
+  "routeId": "route-18",
+  "systemNumber": "18",
+  "systems": {
+    "18-takasu-seaside": {
+      "directionGroup": "outbound",
+      "title": "高洲海浜公園行き（浦安駅入口発）",
+      "departure": "浦安駅入口",
+      "destination": "高洲海浜公園",
+      "berth": "11",
+      "timetableSymbol": "ゆ",
+      "departureBerthSymbol": "ゆ",
+      "listingSymbols": [
+        "ゆ"
+      ],
+      "departureBerthLegend": "ゆ…【１８系統】新浦安駅・高洲橋経由　高洲海浜公園行き",
+      "course": "0008200286",
+      "allCourses": [
+        "0008200286"
+      ],
+      "fareVariants": [
+        {
+          "course": "0008200286",
+          "symbols": [
+            "ゆ"
+          ],
+          "legendLines": [
+            "ゆ…【１８系統】夢海の街、高洲橋、潮音の街経由　高洲海浜公園行き",
+            "ゆ…【１８系統】新浦安駅・高洲橋経由　高洲海浜公園行き"
+          ],
+          "departureHoursObserved": [
+            "06",
+            "08",
+            "08",
+            "08",
+            "08",
+            "09",
+            "09",
+            "09",
+            "10",
+            "10",
+            "10",
+            "12",
+            "12",
+            "13",
+            "13",
+            "13",
+            "14",
+            "15",
+            "15",
+            "16",
+            "16",
+            "16",
+            "17",
+            "17"
+          ],
+          "isDeepNightDoubleFare": false
+        }
+      ],
+      "tripsObserved": 144,
+      "stopCount": 15,
+      "stopNames": [
+        "浦安駅入口",
+        "神明裏",
+        "猫実",
+        "消防本部前",
+        "海楽",
+        "美浜東団地",
+        "新浦安駅",
+        "入船中央エステート",
+        "明海大学前",
+        "海風の街",
+        "夢海の街",
+        "高洲橋",
+        "高洲中央公園",
+        "潮音の街",
+        "高洲海浜公園"
+      ],
+      "stopIds": [
+        "00020739",
+        "00020623",
+        "00020666",
+        "00020877",
+        "00020845",
+        "00020670",
+        "00020619",
+        "00020663",
+        "00020713",
+        "00020848",
+        "00020709",
+        "00020857",
+        "00020862",
+        "00020634",
+        "00020855"
+      ],
+      "osmRelationId": 18352908,
+      "osmRelationName": "東京ベイシティバス18系統 浦安駅入口⇒新浦安駅⇒高洲海浜公園",
+      "osmPlatformOrderMatchesOfficial": true
+    },
+    "18-urayasu-eki-iriguchi": {
+      "directionGroup": "inbound",
+      "title": "浦安駅入口行き（高洲海浜公園発）",
+      "departure": "高洲海浜公園",
+      "destination": "浦安駅入口",
+      "berth": "03",
+      "timetableSymbol": "う",
+      "departureBerthSymbol": "う",
+      "listingSymbols": [
+        "(無印)"
+      ],
+      "departureBerthLegend": "う…【１８系統】夢海の街、新浦安駅経由　浦安駅入口行き",
+      "course": "0008200285",
+      "allCourses": [
+        "0008200285"
+      ],
+      "fareVariants": [
+        {
+          "course": "0008200285",
+          "symbols": [
+            "う"
+          ],
+          "legendLines": [
+            "う…【１８系統】夢海の街、新浦安駅経由　浦安駅入口行き"
+          ],
+          "departureHoursObserved": [
+            "06",
+            "07",
+            "07",
+            "07",
+            "07",
+            "08",
+            "08",
+            "08",
+            "09",
+            "09",
+            "09",
+            "10",
+            "11",
+            "11",
+            "12",
+            "12",
+            "13",
+            "13",
+            "14",
+            "14",
+            "15",
+            "15",
+            "16",
+            "16",
+            "16"
+          ],
+          "isDeepNightDoubleFare": false
+        }
+      ],
+      "tripsObserved": 150,
+      "stopCount": 15,
+      "stopNames": [
+        "高洲海浜公園",
+        "潮音の街",
+        "高洲中央公園",
+        "高洲橋",
+        "夢海の街",
+        "海風の街",
+        "明海大学前",
+        "入船中央エステート",
+        "新浦安駅",
+        "美浜東団地",
+        "海楽",
+        "消防本部前",
+        "猫実",
+        "神明裏",
+        "浦安駅入口"
+      ],
+      "stopIds": [
+        "00020855",
+        "00020634",
+        "00020862",
+        "00020857",
+        "00020709",
+        "00020848",
+        "00020713",
+        "00020663",
+        "00020619",
+        "00020670",
+        "00020845",
+        "00020877",
+        "00020666",
+        "00020623",
+        "00020739"
+      ],
+      "osmRelationId": 18352907,
+      "osmRelationName": "東京ベイシティバス18系統 高洲海浜公園⇒新浦安駅⇒浦安駅入口",
+      "osmPlatformOrderMatchesOfficial": true
+    },
+    "18-takasu-kita-shogakko": {
+      "directionGroup": "night-shortturn",
+      "title": "高洲北小学校行き（新浦安駅発・夜間／深夜）",
+      "departure": "新浦安駅",
+      "destination": "高洲北小学校",
+      "berth": "E",
+      "timetableSymbol": "た",
+      "departureBerthSymbol": "た",
+      "listingSymbols": [
+        "た"
+      ],
+      "departureBerthLegend": "た…【１８系統】夢海の街・潮音の街・高洲四丁目経由　高洲北小学校行き＜★；深夜バス 運賃倍額＞",
+      "course": "0008200289",
+      "allCourses": [
+        "0008200289",
+        "0008200290"
+      ],
+      "fareVariants": [
+        {
+          "course": "0008200289",
+          "symbols": [
+            "た"
+          ],
+          "legendLines": [
+            "た…【１８系統】夢海の街・潮音の街・高洲四丁目経由　高洲北小学校行き＜★；深夜バス 運賃倍額＞"
+          ],
+          "departureHoursObserved": [
+            "19",
+            "19",
+            "19",
+            "20",
+            "20",
+            "20",
+            "20",
+            "20",
+            "21",
+            "21",
+            "21",
+            "21",
+            "21",
+            "21",
+            "21",
+            "22",
+            "22",
+            "22",
+            "22",
+            "22",
+            "22",
+            "22",
+            "22",
+            "22",
+            "22",
+            "22",
+            "23"
+          ],
+          "isDeepNightDoubleFare": false
+        },
+        {
+          "course": "0008200290",
+          "symbols": [
+            "★た"
+          ],
+          "legendLines": [
+            "★た…【１８系統】夢海の街・潮音の街・高洲四丁目経由　高洲北小学校行き＜★；深夜バス 運賃倍額＞"
+          ],
+          "departureHoursObserved": [
+            "23",
+            "00"
+          ],
+          "isDeepNightDoubleFare": true
+        }
+      ],
+      "tripsObserved": 145,
+      "stopCount": 16,
+      "stopNames": [
+        "新浦安駅",
+        "入船中央エステート",
+        "明海大学前",
+        "海風の街",
+        "夢海の街",
+        "高洲橋",
+        "高洲中央公園",
+        "潮音の街",
+        "高洲八丁目",
+        "高洲四丁目",
+        "高洲三丁目",
+        "高洲西児童公園",
+        "順天堂大学入口",
+        "高洲二丁目",
+        "東京学館前",
+        "高洲北小学校"
+      ],
+      "stopIds": [
+        "00020619",
+        "00020663",
+        "00020713",
+        "00020848",
+        "00020709",
+        "00020857",
+        "00020862",
+        "00020634",
+        "00020864",
+        "00020859",
+        "00020858",
+        "00020861",
+        "00020865",
+        "00020863",
+        "00020641",
+        "00020720"
+      ],
+      "osmRelationId": 18417590,
+      "osmRelationName": "東京ベイシティバス18系統 新浦安駅⇒潮音の街⇒高洲北小学校",
+      "osmPlatformOrderMatchesOfficial": true
+    },
+    "18-takasu-seaside-from-shinurayasu": {
+      "directionGroup": "outbound-shortturn",
+      "title": "高洲海浜公園行き（新浦安駅発）",
+      "departure": "新浦安駅",
+      "destination": "高洲海浜公園",
+      "berth": "E",
+      "timetableSymbol": "ゆ",
+      "departureBerthSymbol": "ゆ",
+      "listingSymbols": [
+        "ゆ"
+      ],
+      "departureBerthLegend": "ゆ…【１８系統】夢海の街、高洲橋、潮音の街経由　高洲海浜公園行き",
+      "course": "0008200288",
+      "allCourses": [
+        "0008200288"
+      ],
+      "fareVariants": [
+        {
+          "course": "0008200288",
+          "symbols": [
+            "ゆ"
+          ],
+          "legendLines": [
+            "ゆ…【１８系統】夢海の街、高洲橋、潮音の街経由　高洲海浜公園行き"
+          ],
+          "departureHoursObserved": [
+            "08",
+            "09",
+            "18",
+            "19",
+            "19",
+            "20",
+            "20",
+            "20",
+            "20",
+            "20",
+            "20",
+            "20",
+            "20",
+            "20",
+            "21",
+            "21",
+            "21",
+            "21",
+            "21",
+            "21",
+            "21",
+            "21",
+            "21",
+            "22",
+            "22",
+            "22"
+          ],
+          "isDeepNightDoubleFare": false
+        }
+      ],
+      "tripsObserved": 130,
+      "stopCount": 9,
+      "stopNames": [
+        "新浦安駅",
+        "入船中央エステート",
+        "明海大学前",
+        "海風の街",
+        "夢海の街",
+        "高洲橋",
+        "高洲中央公園",
+        "潮音の街",
+        "高洲海浜公園"
+      ],
+      "stopIds": [
+        "00020619",
+        "00020663",
+        "00020713",
+        "00020848",
+        "00020709",
+        "00020857",
+        "00020862",
+        "00020634",
+        "00020855"
+      ],
+      "osmRelationId": null,
+      "osmRelationName": null,
+      "osmPlatformOrderMatchesOfficial": true
+    },
+    "18-shinurayasu-from-takasu": {
+      "directionGroup": "inbound-shortturn",
+      "title": "新浦安駅行き（高洲海浜公園発）",
+      "departure": "高洲海浜公園",
+      "destination": "新浦安駅",
+      "berth": "03",
+      "timetableSymbol": "ゆ",
+      "departureBerthSymbol": "ゆ",
+      "listingSymbols": [
+        "ゆ"
+      ],
+      "departureBerthLegend": "ゆ…【１８系統】夢海の街経由　新浦安駅行き",
+      "course": "0008200287",
+      "allCourses": [
+        "0008200287"
+      ],
+      "fareVariants": [
+        {
+          "course": "0008200287",
+          "symbols": [
+            "ゆ"
+          ],
+          "legendLines": [
+            "ゆ…【１８系統】夢海の街経由　新浦安駅行き"
+          ],
+          "departureHoursObserved": [
+            "08",
+            "09",
+            "12",
+            "13",
+            "18",
+            "19",
+            "19",
+            "19",
+            "19",
+            "19",
+            "19",
+            "20",
+            "20",
+            "20",
+            "20",
+            "20",
+            "20",
+            "20",
+            "20",
+            "21",
+            "21",
+            "21",
+            "21",
+            "21",
+            "21",
+            "21",
+            "22",
+            "22",
+            "22"
+          ],
+          "isDeepNightDoubleFare": false
+        }
+      ],
+      "tripsObserved": 145,
+      "stopCount": 9,
+      "stopNames": [
+        "高洲海浜公園",
+        "潮音の街",
+        "高洲中央公園",
+        "高洲橋",
+        "夢海の街",
+        "海風の街",
+        "明海大学前",
+        "入船中央エステート",
+        "新浦安駅"
+      ],
+      "stopIds": [
+        "00020855",
+        "00020634",
+        "00020862",
+        "00020857",
+        "00020709",
+        "00020848",
+        "00020713",
+        "00020663",
+        "00020619"
+      ],
+      "osmRelationId": null,
+      "osmRelationName": null,
+      "osmPlatformOrderMatchesOfficial": true
+    }
+  },
+  "deferredNoOsmSource": []
+}

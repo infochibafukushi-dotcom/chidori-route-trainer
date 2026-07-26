@@ -1,0 +1,130 @@
+REJECT-route-15 | stops 10 | trips 346 | terminal 新浦安駅 | berth E,02 | course 0008200278 | symbols (無印) | listingLegend 15 | departureBerth 15
+    新浦安駅 > 入船中央エステート > 明海交差点 > 入船橋 > 高洲北小学校 > 東京学館前 > 高洲 > 高洲中央公園 > 潮音の街 > 高洲海浜公園
+    sibling-exclusive stops: {"15":["明海交差点","入船橋"]} | route18-characteristic: (none)
+    listing legend: 無印…【１５系統】東京学館前経由　高洲海浜公園行き
+    departure berth: E 符号(無印) -> 系統15 : 無印…【１５系統】東京学館前経由　高洲海浜公園行き
+ACCEPT-route18 | stops 15 | trips 144 | terminal 新浦安駅 | berth E,11,02,01,18 | course 0008200286 | symbols ゆ | listingLegend 18 | departureBerth 18
+    浦安駅入口 > 神明裏 > 猫実 > 消防本部前 > 海楽 > 美浜東団地 > 新浦安駅 > 入船中央エステート > 明海大学前 > 海風の街 > 夢海の街 > 高洲橋 > 高洲中央公園 > 潮音の街 > 高洲海浜公園
+    sibling-exclusive stops: {} | route18-characteristic: 夢海の街,高洲橋,海風の街,明海大学前
+    listing legend: ゆ…【１８系統】夢海の街、高洲橋、潮音の街経由　高洲海浜公園行き
+    departure berth: 11 [11]（新浦安駅・明海五丁目経由）総合公園（新浦安駅・ベイパーク経由）総 符号ゆ -> 系統18 : ゆ…【１８系統】新浦安駅・高洲橋経由　高洲海浜公園行き
+ACCEPT-route18 | stops 9 | trips 130 | terminal 新浦安駅 | berth E,02,01,18 | course 0008200288 | symbols ゆ | listingLegend 18 | departureBerth 18
+    新浦安駅 > 入船中央エステート > 明海大学前 > 海風の街 > 夢海の街 > 高洲橋 > 高洲中央公園 > 潮音の街 > 高洲海浜公園
+    sibling-exclusive stops: {} | route18-characteristic: 夢海の街,高洲橋,海風の街,明海大学前
+    listing legend: ゆ…【１８系統】夢海の街、高洲橋、潮音の街経由　高洲海浜公園行き
+    departure berth: E 符号ゆ -> 系統18 : ゆ…【１８系統】夢海の街、高洲橋、潮音の街経由　高洲海浜公園行き
+ACCEPT-route18 | stops 16 | trips 145 | terminal 新浦安駅 | berth E,02,01,18 | course 0008200289 | symbols た | listingLegend 18 | departureBerth 18
+    新浦安駅 > 入船中央エステート > 明海大学前 > 海風の街 > 夢海の街 > 高洲橋 > 高洲中央公園 > 潮音の街 > 高洲八丁目 > 高洲四丁目 > 高洲三丁目 > 高洲西児童公園 > 順天堂大学入口 > 高洲二丁目 > 東京学館前 > 高洲北小学校
+    sibling-exclusive stops: {} | route18-characteristic: 夢海の街,高洲橋,海風の街,明海大学前
+    listing legend: た…【１８系統】夢海の街・潮音の街・高洲四丁目経由　高洲北小学校行き＜★；深夜バス 運賃倍額＞
+    departure berth: E 符号た -> 系統18 : た…【１８系統】夢海の街・潮音の街・高洲四丁目経由　高洲北小学校行き＜★；深夜バス 運賃倍額＞
+ACCEPT-route18 | stops 15 | trips 150 | terminal 新浦安駅 | berth H,03,15,04,02,07 | course 0008200285 | symbols (無印) | listingLegend - | departureBerth 18
+    高洲海浜公園 > 潮音の街 > 高洲中央公園 > 高洲橋 > 夢海の街 > 海風の街 > 明海大学前 > 入船中央エステート > 新浦安駅 > 美浜東団地 > 海楽 > 消防本部前 > 猫実 > 神明裏 > 浦安駅入口
+    sibling-exclusive stops: {} | route18-characteristic: 夢海の街,高洲橋,海風の街,明海大学前
+    departure berth: 03 符号う -> 系統18 : う…【１８系統】夢海の街、新浦安駅経由　浦安駅入口行き
+REJECT-route-3 | stops 19 | trips 111 | terminal 新浦安駅 | berth H,04,07 | course 0008200210 | symbols (無印) | listingLegend - | departureBerth 3
+    総合公園 > ベイサイドホテルエリア > 明海五丁目 > ハイアットリージェンシー > 三井ガーデンホテル > 明海南小学校 > 明海六丁目 > 望海の街 > 夢海の街 > 海風の街 > 明海大学前 > 入船中央エステート > 新浦安駅 > 美浜東団地 > 海楽 > 消防本部前 > 猫実 > 神明裏 > 浦安駅入口
+    sibling-exclusive stops: {"3/23":["総合公園","ベイサイドホテルエリア"]} | route18-characteristic: 夢海の街,海風の街,明海大学前
+    departure berth: 01 符号う -> 系統3 : う…【３系統】新浦安駅経由　浦安駅入口行き
+REJECT-route-11 | stops 16 | trips 40 | terminal 新浦安駅 | berth H,07 | course 0008200260 | symbols (無印) | listingLegend - | departureBerth 11
+    総合公園 > ベイサイドホテルエリア > ベイパーク > ベイモール > シンボルロードパークシティ > 日の出公民館 > 海風の街 > 明海大学前 > 入船中央エステート > 新浦安駅 > 美浜東団地 > 海楽 > 消防本部前 > 猫実 > 神明裏 > 浦安駅入口
+    sibling-exclusive stops: {"3/23":["ベイパーク","ベイモール","シンボルロードパークシティ","日の出公民館","総合公園","ベイサイドホテルエリア"]} | route18-characteristic: 海風の街,明海大学前
+    departure berth: 04 符号う -> 系統11 : う…【１１系統】日の出公民館、新浦安駅経由　浦安駅入口行き
+REJECT-route-11 | stops 14 | trips 6 | terminal 新浦安駅 | berth H,07 | course 0008200267 | symbols (無印) | listingLegend - | departureBerth 11
+    ベイパーク > ベイモール > シンボルロードパークシティ > 日の出公民館 > 海風の街 > 明海大学前 > 入船中央エステート > 新浦安駅 > 美浜東団地 > 海楽 > 消防本部前 > 猫実 > 神明裏 > 浦安駅入口
+    sibling-exclusive stops: {"3/23":["ベイパーク","ベイモール","シンボルロードパークシティ","日の出公民館"]} | route18-characteristic: 海風の街,明海大学前
+    departure berth: 02 符号う -> 系統11 : う…【１１系統】日の出公民館、新浦安駅経由　浦安駅入口行き
+REJECT-route-3 | stops 17 | trips 6 | terminal 新浦安駅 | berth H,04,07 | course 0008200217 | symbols (無印) | listingLegend - | departureBerth 3
+    明海五丁目 > ハイアットリージェンシー > 三井ガーデンホテル > 明海南小学校 > 明海六丁目 > 望海の街 > 夢海の街 > 海風の街 > 明海大学前 > 入船中央エステート > 新浦安駅 > 美浜東団地 > 海楽 > 消防本部前 > 猫実 > 神明裏 > 浦安駅入口
+    sibling-exclusive stops: {} | route18-characteristic: 夢海の街,海風の街,明海大学前
+    departure berth: 02 符号う -> 系統3 : う…【３系統】新浦安駅経由　浦安駅入口行き
+REJECT-route-23 | stops 25 | trips 3 | terminal 新浦安駅 | berth H,04,07 | course 0008200302 | symbols ま | listingLegend 23 | departureBerth 23
+    総合公園 > ベイサイドホテルエリア > 明海五丁目 > ハイアットリージェンシー > 三井ガーデンホテル > 明海南小学校 > 明海六丁目 > 望海の街 > 夢海の街 > 海風の街 > 明海大学前 > 入船中央エステート > 新浦安駅 > 新浦安駅北口 > 若潮公園 > 順天堂病院前 > サンコーポ東口 > サンコーポ西口 > 弁天第二 > 見明川中学校前 > 見明川住宅 > 舞浜三丁目 > 運動公園 > オリエンタルランド本社前 > 舞浜駅
+    sibling-exclusive stops: {"25":["サンコーポ東口","サンコーポ西口","若潮公園","新浦安駅北口"],"3/23":["総合公園","ベイサイドホテルエリア"]} | route18-characteristic: 夢海の街,海風の街,明海大学前
+    listing legend: ま…【２３系統】順天堂病院前経由　舞浜駅行き（浦安駅入口には行きません）
+    departure berth: 01 符号ま -> 系統23 : ま…【２３系統】望海の街、新浦安駅、順天堂病院前経由　舞浜駅行き
+UNDECIDED-no-legend-match | stops 7 | trips 4 | terminal 新浦安駅 | berth H | course 0008200269 | symbols (無印) | listingLegend - | departureBerth -
+    新浦安駅 > 美浜東団地 > 海楽 > 消防本部前 > 猫実 > 神明裏 > 浦安駅入口
+    sibling-exclusive stops: {} | route18-characteristic: (none)
+    departure berth: H 符号(無印) -> 系統(凡例なし) : -
+    departure berth: UNRESOLVED (-)
+REJECT-route-11 | stops 18 | trips 10 | terminal 新浦安駅 | berth H,07 | course 0008200256 | symbols (無印) | listingLegend - | departureBerth 11
+    日の出南 > 新浦安温泉 > 総合公園 > ベイサイドホテルエリア > ベイパーク > ベイモール > シンボルロードパークシティ > 日の出公民館 > 海風の街 > 明海大学前 > 入船中央エステート > 新浦安駅 > 美浜東団地 > 海楽 > 消防本部前 > 猫実 > 神明裏 > 浦安駅入口
+    sibling-exclusive stops: {"3/23":["ベイパーク","ベイモール","シンボルロードパークシティ","日の出公民館","総合公園","ベイサイドホテルエリア"]} | route18-characteristic: 海風の街,明海大学前
+    departure berth: 01 符号う -> 系統11 : う…【１１系統】日の出公民館、新浦安駅経由　浦安駅入口行き
+REJECT-route-3 | stops 19 | trips 35 | terminal 浦安駅入口 | berth 11 | course 0008200211 | symbols あ | listingLegend 3 | departureBerth 3
+    浦安駅入口 > 神明裏 > 猫実 > 消防本部前 > 海楽 > 美浜東団地 > 新浦安駅 > 入船中央エステート > 明海大学前 > 海風の街 > 夢海の街 > 望海の街 > 明海六丁目 > 明海南小学校 > 三井ガーデンホテル > ハイアットリージェンシー > 明海五丁目 > ベイサイドホテルエリア > 総合公園
+    sibling-exclusive stops: {"3/23":["総合公園","ベイサイドホテルエリア"]} | route18-characteristic: 夢海の街,海風の街,明海大学前
+    listing legend: あ…【３系統】新浦安駅・明海五丁目経由　総合公園行き
+    departure berth: 11 [11]（新浦安駅・明海五丁目経由）総合公園（新浦安駅・ベイパーク経由）総 符号あ -> 系統3 : あ…【３系統】新浦安駅・明海五丁目経由　総合公園行き
+REJECT-route-11 | stops 16 | trips 19 | terminal 浦安駅入口 | berth 11 | course 0008200261 | symbols そ | listingLegend 11 | departureBerth 11
+    浦安駅入口 > 神明裏 > 猫実 > 消防本部前 > 海楽 > 美浜東団地 > 新浦安駅 > 入船中央エステート > 明海大学前 > 海風の街 > 日の出公民館 > シンボルロードパークシティ > ベイモール > ベイパーク > ベイサイドホテルエリア > 総合公園
+    sibling-exclusive stops: {"3/23":["ベイパーク","ベイモール","シンボルロードパークシティ","日の出公民館","総合公園","ベイサイドホテルエリア"]} | route18-characteristic: 海風の街,明海大学前
+    listing legend: そ…【１１系統】新浦安駅・ベイパーク経由　総合公園行き
+    departure berth: 11 [11]（新浦安駅・明海五丁目経由）総合公園（新浦安駅・ベイパーク経由）総 符号そ -> 系統11 : そ…【１１系統】新浦安駅・ベイパーク経由　総合公園行き
+REJECT-route-11 | stops 7 | trips 5 | terminal 浦安駅入口 | berth 11 | course 0008200270 | symbols 新 | listingLegend 11 | departureBerth 11
+    浦安駅入口 > 神明裏 > 猫実 > 消防本部前 > 海楽 > 美浜東団地 > 新浦安駅
+    sibling-exclusive stops: {} | route18-characteristic: (none)
+    listing legend: 新…【１１系統】新浦安駅止まり
+    departure berth: 11 [11]（新浦安駅・明海五丁目経由）総合公園（新浦安駅・ベイパーク経由）総 符号新 -> 系統11 : 新…【１１系統】新浦安駅止まり
+REJECT-route-11 | stops 18 | trips 7 | terminal 浦安駅入口 | berth 11 | course 0008200257 | symbols ひ | listingLegend 11 | departureBerth 11
+    浦安駅入口 > 神明裏 > 猫実 > 消防本部前 > 海楽 > 美浜東団地 > 新浦安駅 > 入船中央エステート > 明海大学前 > 海風の街 > 日の出公民館 > シンボルロードパークシティ > ベイモール > ベイパーク > ベイサイドホテルエリア > 総合公園 > 新浦安温泉 > 日の出南
+    sibling-exclusive stops: {"3/23":["ベイパーク","ベイモール","シンボルロードパークシティ","日の出公民館","総合公園","ベイサイドホテルエリア"]} | route18-characteristic: 海風の街,明海大学前
+    listing legend: ひ…【１１系統】日の出南（墓地公園）行き
+    departure berth: 11 [11]（新浦安駅・明海五丁目経由）総合公園（新浦安駅・ベイパーク経由）総 符号ひ -> 系統11 : ひ…【１１系統】日の出南（墓地公園）行き
+REJECT-route-3 | stops 17 | trips 4 | terminal 浦安駅入口 | berth 11 | course 0008200218 | symbols 明 | listingLegend 3 | departureBerth 3
+    浦安駅入口 > 神明裏 > 猫実 > 消防本部前 > 海楽 > 美浜東団地 > 新浦安駅 > 入船中央エステート > 明海大学前 > 海風の街 > 夢海の街 > 望海の街 > 明海六丁目 > 明海南小学校 > 三井ガーデンホテル > ハイアットリージェンシー > 明海五丁目
+    sibling-exclusive stops: {} | route18-characteristic: 夢海の街,海風の街,明海大学前
+    listing legend: 明…【３系統】新浦安駅経由　明海五丁目止まり
+    departure berth: 11 [11]（新浦安駅・明海五丁目経由）総合公園（新浦安駅・ベイパーク経由）総 符号明 -> 系統3 : 明…【３系統】新浦安駅経由　明海五丁目止まり
+REJECT-route-11 | stops 14 | trips 3 | terminal 浦安駅入口 | berth 11 | course 0008200268 | symbols ベ | listingLegend 11 | departureBerth 11
+    浦安駅入口 > 神明裏 > 猫実 > 消防本部前 > 海楽 > 美浜東団地 > 新浦安駅 > 入船中央エステート > 明海大学前 > 海風の街 > 日の出公民館 > シンボルロードパークシティ > ベイモール > ベイパーク
+    sibling-exclusive stops: {"3/23":["ベイパーク","ベイモール","シンボルロードパークシティ","日の出公民館"]} | route18-characteristic: 海風の街,明海大学前
+    listing legend: ベ…【１１系統】新浦安駅経由　ベイパーク止まり
+    departure berth: 11 [11]（新浦安駅・明海五丁目経由）総合公園（新浦安駅・ベイパーク経由）総 符号ベ -> 系統11 : ベ…【１１系統】新浦安駅経由　ベイパーク止まり
+REJECT-route-15 | stops 10 | trips 332 | terminal 高洲海浜公園 | berth 03,15 | course 0008200277 | symbols (無印) | listingLegend 15 | departureBerth 15
+    高洲海浜公園 > 潮音の街 > 高洲中央公園 > 高洲 > 東京学館前 > 高洲北小学校 > 入船橋 > 明海交差点 > 入船中央エステート > 新浦安駅
+    sibling-exclusive stops: {"15":["明海交差点","入船橋"]} | route18-characteristic: (none)
+    listing legend: 無印…【１５系統】東京学館前経由　新浦安駅行き
+    departure berth: 03 符号(無印) -> 系統15 : 無印…【１５系統】東京学館前経由　新浦安駅行き
+ACCEPT-route18 | stops 9 | trips 145 | terminal 高洲海浜公園 | berth 03,15,02,06 | course 0008200287 | symbols ゆ | listingLegend 18 | departureBerth 18
+    高洲海浜公園 > 潮音の街 > 高洲中央公園 > 高洲橋 > 夢海の街 > 海風の街 > 明海大学前 > 入船中央エステート > 新浦安駅
+    sibling-exclusive stops: {} | route18-characteristic: 夢海の街,高洲橋,海風の街,明海大学前
+    listing legend: ゆ…【１８系統】夢海の街経由　新浦安駅行き
+    departure berth: 03 符号ゆ -> 系統18 : ゆ…【１８系統】夢海の街経由　新浦安駅行き
+UNDECIDED-no-legend-match | stops 15 | trips 11 | terminal 潮音の街 | berth 02 | course 0008200306 | symbols (無印) | listingLegend - | departureBerth -
+    舞浜駅 > オリエンタルランド本社前 > 運動公園 > 舞浜三丁目 > 見明川住宅 > 見明川中学校前 > 弁天第二 > 今川消防署 > 順天堂大学浦安キャンパス > 高洲西児童公園 > 高洲三丁目 > 高洲四丁目 > 高洲七丁目 > 潮音の街 > 高洲海浜公園
+    sibling-exclusive stops: {} | route18-characteristic: (none)
+    departure berth: UNRESOLVED (departure busstop or course unknown)
+REJECT-route-3 | stops 13 | trips 326 | terminal 夢海の街 | berth 03,06 | course 0008200212 | symbols (無印) | listingLegend - | departureBerth 3
+    総合公園 > ベイサイドホテルエリア > 明海五丁目 > ハイアットリージェンシー > 三井ガーデンホテル > 明海南小学校 > 明海六丁目 > 望海の街 > 夢海の街 > 海風の街 > 明海大学前 > 入船中央エステート > 新浦安駅
+    sibling-exclusive stops: {"3/23":["総合公園","ベイサイドホテルエリア"]} | route18-characteristic: 夢海の街,海風の街,明海大学前
+    departure berth: 01 符号(無印) -> 系統3 : 無印…【３系統】望海の街経由　新浦安駅行き
+REJECT-route-3 | stops 11 | trips 44 | terminal 夢海の街 | berth 03,06 | course 0008200214 | symbols (無印) | listingLegend - | departureBerth 3
+    明海五丁目 > ハイアットリージェンシー > 三井ガーデンホテル > 明海南小学校 > 明海六丁目 > 望海の街 > 夢海の街 > 海風の街 > 明海大学前 > 入船中央エステート > 新浦安駅
+    sibling-exclusive stops: {} | route18-characteristic: 夢海の街,海風の街,明海大学前
+    departure berth: 02 符号(無印) -> 系統3 : 無印…【３系統】望海の街経由　新浦安駅行き
+REJECT-route-3 | stops 6 | trips 8 | terminal 夢海の街 | berth 03,06 | course 0008200216 | symbols (無印) | listingLegend - | departureBerth 3
+    望海の街 > 夢海の街 > 海風の街 > 明海大学前 > 入船中央エステート > 新浦安駅
+    sibling-exclusive stops: {} | route18-characteristic: 夢海の街,海風の街,明海大学前
+    departure berth: 03 符号始発 -> 系統3 : 始発…【３系統】当バス停始発、新浦安駅行き
+REJECT-route-11 | stops 11 | trips 17 | terminal 明海大学前 | berth 06 | course 0008202661 | symbols (無印) | listingLegend - | departureBerth 11
+    高洲海浜公園 > ハイアットリージェンシー > 明海五丁目 > ベイパーク > ベイモール > シンボルロードパークシティ > 日の出公民館 > 海風の街 > 明海大学前 > 入船中央エステート > 新浦安駅
+    sibling-exclusive stops: {"3/23":["ベイパーク","ベイモール","シンボルロードパークシティ","日の出公民館"]} | route18-characteristic: 海風の街,明海大学前
+    departure berth: 01 符号新 -> 系統11 : 新…【１１系統】ベイパーク、明海大学前経由　新浦安駅行き
+UNDECIDED-no-legend-match | stops 10 | trips 128 | terminal 明海大学前 | berth 06 | course 0008200279 | symbols (無印) | listingLegend - | departureBerth -
+    日の出七丁目 > 日の出西 > 順天堂大学・日の出 正門 > プラウド新浦安パークマリーナ > 日の出中学校 > ベイシティ浦安 > 海風の街 > 明海大学前 > 入船中央エステート > 新浦安駅
+    sibling-exclusive stops: {} | route18-characteristic: 海風の街,明海大学前
+    departure berth: UNRESOLVED (departure busstop or course unknown)
+REJECT-route-11 | stops 10 | trips 108 | terminal 明海大学前 | berth 06 | course 0008200262 | symbols (無印) | listingLegend - | departureBerth 11
+    総合公園 > ベイサイドホテルエリア > ベイパーク > ベイモール > シンボルロードパークシティ > 日の出公民館 > 海風の街 > 明海大学前 > 入船中央エステート > 新浦安駅
+    sibling-exclusive stops: {"3/23":["ベイパーク","ベイモール","シンボルロードパークシティ","日の出公民館","総合公園","ベイサイドホテルエリア"]} | route18-characteristic: 海風の街,明海大学前
+    departure berth: 04 符号(無印) -> 系統11 : 無印…【１１系統】日の出公民館経由　新浦安駅行き
+REJECT-route-11 | stops 8 | trips 15 | terminal 明海大学前 | berth 06 | course 0008200265 | symbols (無印) | listingLegend - | departureBerth 11
+    ベイパーク > ベイモール > シンボルロードパークシティ > 日の出公民館 > 海風の街 > 明海大学前 > 入船中央エステート > 新浦安駅
+    sibling-exclusive stops: {"3/23":["ベイパーク","ベイモール","シンボルロードパークシティ","日の出公民館"]} | route18-characteristic: 海風の街,明海大学前
+    departure berth: 02 符号(無印) -> 系統11 : 無印…【１１系統】日の出公民館経由　新浦安駅行き
+REJECT-route-11 | stops 12 | trips 33 | terminal 明海大学前 | berth 06 | course 0008200258 | symbols (無印) | listingLegend - | departureBerth 11
+    日の出南 > 新浦安温泉 > 総合公園 > ベイサイドホテルエリア > ベイパーク > ベイモール > シンボルロードパークシティ > 日の出公民館 > 海風の街 > 明海大学前 > 入船中央エステート > 新浦安駅
+    sibling-exclusive stops: {"3/23":["ベイパーク","ベイモール","シンボルロードパークシティ","日の出公民館","総合公園","ベイサイドホテルエリア"]} | route18-characteristic: 海風の街,明海大学前
+    departure berth: 01 符号(無印) -> 系統11 : 無印…【１１系統】日の出公民館経由　新浦安駅行き

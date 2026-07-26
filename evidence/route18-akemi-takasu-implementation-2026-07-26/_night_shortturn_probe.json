@@ -1,0 +1,5895 @@
+{
+  "checkedAt": "2026-07-26T13:53:04.496Z",
+  "purpose": "深夜バス（★）と短縮便（新浦安駅発着／高洲北小学校止まり）の系統・符号・コースを出発のりばの時刻表から直読みする。",
+  "route18Courses": [
+    "0008200285",
+    "0008200286",
+    "0008200287",
+    "0008200288",
+    "0008200289",
+    "0008200290"
+  ],
+  "route15CoursesSharingBerth": [
+    "0008200277",
+    "0008200278"
+  ],
+  "berths": [
+    {
+      "label": "新浦安駅 のりばE",
+      "busstop": "00020619",
+      "courseSequence": "0008200278-1",
+      "dayLabel": "weekday",
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200278-1&datetime=2026-07-27T05:00",
+      "legendRaw": [
+        "無印…【１５系統】東京学館前経由　高洲海浜公園行き",
+        "ゆ…【１８系統】夢海の街、高洲橋、潮音の街経由　高洲海浜公園行き",
+        "た…【１８系統】夢海の街・潮音の街・高洲四丁目経由　高洲北小学校行き＜★；深夜バス 運賃倍額＞",
+        "★た…【１８系統】夢海の街・潮音の街・高洲四丁目経由　高洲北小学校行き＜★；深夜バス 運賃倍額＞"
+      ],
+      "legendParsed": [
+        {
+          "symbol": "",
+          "symbolRaw": "無印",
+          "routeNumber": "15",
+          "description": "東京学館前経由　高洲海浜公園行き",
+          "line": "無印…【１５系統】東京学館前経由　高洲海浜公園行き"
+        },
+        {
+          "symbol": "ゆ",
+          "symbolRaw": "ゆ",
+          "routeNumber": "18",
+          "description": "夢海の街、高洲橋、潮音の街経由　高洲海浜公園行き",
+          "line": "ゆ…【１８系統】夢海の街、高洲橋、潮音の街経由　高洲海浜公園行き"
+        },
+        {
+          "symbol": "た",
+          "symbolRaw": "た",
+          "routeNumber": "18",
+          "description": "夢海の街・潮音の街・高洲四丁目経由　高洲北小学校行き＜★；深夜バス 運賃倍額＞",
+          "line": "た…【１８系統】夢海の街・潮音の街・高洲四丁目経由　高洲北小学校行き＜★；深夜バス 運賃倍額＞"
+        },
+        {
+          "symbol": "★た",
+          "symbolRaw": "★た",
+          "routeNumber": "18",
+          "description": "夢海の街・潮音の街・高洲四丁目経由　高洲北小学校行き＜★；深夜バス 運賃倍額＞",
+          "line": "★た…【１８系統】夢海の街・潮音の街・高洲四丁目経由　高洲北小学校行き＜★；深夜バス 運賃倍額＞"
+        }
+      ],
+      "tripTotal": 252,
+      "courses": [
+        {
+          "course": "0008200278",
+          "symbols": {
+            "(無印)": 173
+          },
+          "tripCount": 173,
+          "samples": [
+            {
+              "hour": "06",
+              "cellText": "31",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "06",
+              "cellText": "33",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "06",
+              "cellText": "50",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "06",
+              "cellText": "35",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "06",
+              "cellText": "57",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "04",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "13",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "20",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "27",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "34",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "42",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "49",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "55",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "05",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "16",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "30",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "43",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "56",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "17",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "32",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "47",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "02",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "09",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "18",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "23",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "30",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "37",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "44",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "57",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "09",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "22",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "35",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "48",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "02",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "20",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "32",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "47",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "09",
+              "cellText": "06",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "09",
+              "cellText": "13",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "09",
+              "cellText": "22",
+              "symbol": "(無印)"
+            }
+          ],
+          "legendBySymbol": [
+            {
+              "symbol": "(無印)",
+              "routeNumber": "15",
+              "legendLine": "無印…【１５系統】東京学館前経由　高洲海浜公園行き"
+            }
+          ],
+          "isRoute18Course": false
+        },
+        {
+          "course": "0008200286",
+          "symbols": {
+            "ゆ": 24
+          },
+          "tripCount": 24,
+          "samples": [
+            {
+              "hour": "06",
+              "cellText": "52ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "08",
+              "cellText": "52ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "08",
+              "cellText": "03ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "08",
+              "cellText": "58ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "08",
+              "cellText": "15ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "09",
+              "cellText": "31ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "09",
+              "cellText": "59ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "09",
+              "cellText": "29ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "10",
+              "cellText": "29ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "10",
+              "cellText": "58ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "10",
+              "cellText": "41ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "12",
+              "cellText": "32ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "12",
+              "cellText": "43ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "13",
+              "cellText": "32ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "13",
+              "cellText": "58ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "13",
+              "cellText": "15ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "14",
+              "cellText": "29ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "15",
+              "cellText": "32ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "15",
+              "cellText": "29ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "16",
+              "cellText": "47ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "16",
+              "cellText": "00ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "16",
+              "cellText": "44ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "17",
+              "cellText": "47ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "17",
+              "cellText": "12ゆ",
+              "symbol": "ゆ"
+            }
+          ],
+          "legendBySymbol": [
+            {
+              "symbol": "ゆ",
+              "routeNumber": "18",
+              "legendLine": "ゆ…【１８系統】夢海の街、高洲橋、潮音の街経由　高洲海浜公園行き"
+            }
+          ],
+          "isRoute18Course": true
+        },
+        {
+          "course": "0008200288",
+          "symbols": {
+            "ゆ": 26
+          },
+          "tripCount": 26,
+          "samples": [
+            {
+              "hour": "08",
+              "cellText": "42ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "09",
+              "cellText": "41ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "18",
+              "cellText": "29ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "19",
+              "cellText": "19ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "19",
+              "cellText": "57ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "20",
+              "cellText": "16ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "20",
+              "cellText": "28ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "20",
+              "cellText": "40ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "20",
+              "cellText": "10ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "20",
+              "cellText": "30ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "20",
+              "cellText": "51ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "20",
+              "cellText": "01ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "20",
+              "cellText": "16ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "20",
+              "cellText": "58ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "21",
+              "cellText": "02ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "21",
+              "cellText": "13ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "21",
+              "cellText": "24ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "21",
+              "cellText": "35ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "21",
+              "cellText": "46ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "21",
+              "cellText": "11ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "21",
+              "cellText": "32ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "21",
+              "cellText": "52ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "21",
+              "cellText": "37ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "22",
+              "cellText": "08ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "22",
+              "cellText": "30ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "22",
+              "cellText": "52ゆ",
+              "symbol": "ゆ"
+            }
+          ],
+          "legendBySymbol": [
+            {
+              "symbol": "ゆ",
+              "routeNumber": "18",
+              "legendLine": "ゆ…【１８系統】夢海の街、高洲橋、潮音の街経由　高洲海浜公園行き"
+            }
+          ],
+          "isRoute18Course": true
+        },
+        {
+          "course": "0008200289",
+          "symbols": {
+            "た": 27
+          },
+          "tripCount": 27,
+          "samples": [
+            {
+              "hour": "19",
+              "cellText": "44た",
+              "symbol": "た"
+            },
+            {
+              "hour": "19",
+              "cellText": "56た",
+              "symbol": "た"
+            },
+            {
+              "hour": "19",
+              "cellText": "46た",
+              "symbol": "た"
+            },
+            {
+              "hour": "20",
+              "cellText": "51た",
+              "symbol": "た"
+            },
+            {
+              "hour": "20",
+              "cellText": "20た",
+              "symbol": "た"
+            },
+            {
+              "hour": "20",
+              "cellText": "41た",
+              "symbol": "た"
+            },
+            {
+              "hour": "20",
+              "cellText": "31た",
+              "symbol": "た"
+            },
+            {
+              "hour": "20",
+              "cellText": "45た",
+              "symbol": "た"
+            },
+            {
+              "hour": "21",
+              "cellText": "57た",
+              "symbol": "た"
+            },
+            {
+              "hour": "21",
+              "cellText": "01た",
+              "symbol": "た"
+            },
+            {
+              "hour": "21",
+              "cellText": "21た",
+              "symbol": "た"
+            },
+            {
+              "hour": "21",
+              "cellText": "42た",
+              "symbol": "た"
+            },
+            {
+              "hour": "21",
+              "cellText": "10た",
+              "symbol": "た"
+            },
+            {
+              "hour": "21",
+              "cellText": "24た",
+              "symbol": "た"
+            },
+            {
+              "hour": "21",
+              "cellText": "50た",
+              "symbol": "た"
+            },
+            {
+              "hour": "22",
+              "cellText": "19た",
+              "symbol": "た"
+            },
+            {
+              "hour": "22",
+              "cellText": "41た",
+              "symbol": "た"
+            },
+            {
+              "hour": "22",
+              "cellText": "02た",
+              "symbol": "た"
+            },
+            {
+              "hour": "22",
+              "cellText": "15た",
+              "symbol": "た"
+            },
+            {
+              "hour": "22",
+              "cellText": "28た",
+              "symbol": "た"
+            },
+            {
+              "hour": "22",
+              "cellText": "38た",
+              "symbol": "た"
+            },
+            {
+              "hour": "22",
+              "cellText": "50た",
+              "symbol": "た"
+            },
+            {
+              "hour": "22",
+              "cellText": "03た",
+              "symbol": "た"
+            },
+            {
+              "hour": "22",
+              "cellText": "16た",
+              "symbol": "た"
+            },
+            {
+              "hour": "22",
+              "cellText": "29た",
+              "symbol": "た"
+            },
+            {
+              "hour": "22",
+              "cellText": "40た",
+              "symbol": "た"
+            },
+            {
+              "hour": "23",
+              "cellText": "01た",
+              "symbol": "た"
+            }
+          ],
+          "legendBySymbol": [
+            {
+              "symbol": "た",
+              "routeNumber": "18",
+              "legendLine": "た…【１８系統】夢海の街・潮音の街・高洲四丁目経由　高洲北小学校行き＜★；深夜バス 運賃倍額＞"
+            }
+          ],
+          "isRoute18Course": true
+        },
+        {
+          "course": "0008200290",
+          "symbols": {
+            "★た": 2
+          },
+          "tripCount": 2,
+          "samples": [
+            {
+              "hour": "23",
+              "cellText": "30★た",
+              "symbol": "★た"
+            },
+            {
+              "hour": "00",
+              "cellText": "02★た",
+              "symbol": "★た"
+            }
+          ],
+          "legendBySymbol": [
+            {
+              "symbol": "★た",
+              "routeNumber": "18",
+              "legendLine": "★た…【１８系統】夢海の街・潮音の街・高洲四丁目経由　高洲北小学校行き＜★；深夜バス 運賃倍額＞"
+            }
+          ],
+          "isRoute18Course": true
+        }
+      ]
+    },
+    {
+      "label": "新浦安駅 のりばE",
+      "busstop": "00020619",
+      "courseSequence": "0008200278-1",
+      "dayLabel": "saturday",
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200278-1&datetime=2026-08-01T05:00",
+      "legendRaw": [
+        "無印…【１５系統】東京学館前経由　高洲海浜公園行き",
+        "ゆ…【１８系統】夢海の街、高洲橋、潮音の街経由　高洲海浜公園行き",
+        "た…【１８系統】夢海の街・潮音の街・高洲四丁目経由　高洲北小学校行き＜★；深夜バス 運賃倍額＞",
+        "★た…【１８系統】夢海の街・潮音の街・高洲四丁目経由　高洲北小学校行き＜★；深夜バス 運賃倍額＞"
+      ],
+      "legendParsed": [
+        {
+          "symbol": "",
+          "symbolRaw": "無印",
+          "routeNumber": "15",
+          "description": "東京学館前経由　高洲海浜公園行き",
+          "line": "無印…【１５系統】東京学館前経由　高洲海浜公園行き"
+        },
+        {
+          "symbol": "ゆ",
+          "symbolRaw": "ゆ",
+          "routeNumber": "18",
+          "description": "夢海の街、高洲橋、潮音の街経由　高洲海浜公園行き",
+          "line": "ゆ…【１８系統】夢海の街、高洲橋、潮音の街経由　高洲海浜公園行き"
+        },
+        {
+          "symbol": "た",
+          "symbolRaw": "た",
+          "routeNumber": "18",
+          "description": "夢海の街・潮音の街・高洲四丁目経由　高洲北小学校行き＜★；深夜バス 運賃倍額＞",
+          "line": "た…【１８系統】夢海の街・潮音の街・高洲四丁目経由　高洲北小学校行き＜★；深夜バス 運賃倍額＞"
+        },
+        {
+          "symbol": "★た",
+          "symbolRaw": "★た",
+          "routeNumber": "18",
+          "description": "夢海の街・潮音の街・高洲四丁目経由　高洲北小学校行き＜★；深夜バス 運賃倍額＞",
+          "line": "★た…【１８系統】夢海の街・潮音の街・高洲四丁目経由　高洲北小学校行き＜★；深夜バス 運賃倍額＞"
+        }
+      ],
+      "tripTotal": 252,
+      "courses": [
+        {
+          "course": "0008200278",
+          "symbols": {
+            "(無印)": 173
+          },
+          "tripCount": 173,
+          "samples": [
+            {
+              "hour": "06",
+              "cellText": "31",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "06",
+              "cellText": "33",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "06",
+              "cellText": "50",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "06",
+              "cellText": "35",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "06",
+              "cellText": "57",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "04",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "13",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "20",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "27",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "34",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "42",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "49",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "55",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "05",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "16",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "30",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "43",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "56",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "17",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "32",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "47",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "02",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "09",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "18",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "23",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "30",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "37",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "44",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "57",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "09",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "22",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "35",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "48",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "02",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "20",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "32",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "47",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "09",
+              "cellText": "06",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "09",
+              "cellText": "13",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "09",
+              "cellText": "22",
+              "symbol": "(無印)"
+            }
+          ],
+          "legendBySymbol": [
+            {
+              "symbol": "(無印)",
+              "routeNumber": "15",
+              "legendLine": "無印…【１５系統】東京学館前経由　高洲海浜公園行き"
+            }
+          ],
+          "isRoute18Course": false
+        },
+        {
+          "course": "0008200286",
+          "symbols": {
+            "ゆ": 24
+          },
+          "tripCount": 24,
+          "samples": [
+            {
+              "hour": "06",
+              "cellText": "52ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "08",
+              "cellText": "52ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "08",
+              "cellText": "03ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "08",
+              "cellText": "58ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "08",
+              "cellText": "15ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "09",
+              "cellText": "31ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "09",
+              "cellText": "59ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "09",
+              "cellText": "29ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "10",
+              "cellText": "29ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "10",
+              "cellText": "58ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "10",
+              "cellText": "41ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "12",
+              "cellText": "32ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "12",
+              "cellText": "43ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "13",
+              "cellText": "32ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "13",
+              "cellText": "58ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "13",
+              "cellText": "15ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "14",
+              "cellText": "29ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "15",
+              "cellText": "32ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "15",
+              "cellText": "29ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "16",
+              "cellText": "47ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "16",
+              "cellText": "00ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "16",
+              "cellText": "44ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "17",
+              "cellText": "47ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "17",
+              "cellText": "12ゆ",
+              "symbol": "ゆ"
+            }
+          ],
+          "legendBySymbol": [
+            {
+              "symbol": "ゆ",
+              "routeNumber": "18",
+              "legendLine": "ゆ…【１８系統】夢海の街、高洲橋、潮音の街経由　高洲海浜公園行き"
+            }
+          ],
+          "isRoute18Course": true
+        },
+        {
+          "course": "0008200288",
+          "symbols": {
+            "ゆ": 26
+          },
+          "tripCount": 26,
+          "samples": [
+            {
+              "hour": "08",
+              "cellText": "42ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "09",
+              "cellText": "41ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "18",
+              "cellText": "29ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "19",
+              "cellText": "19ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "19",
+              "cellText": "57ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "20",
+              "cellText": "16ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "20",
+              "cellText": "28ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "20",
+              "cellText": "40ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "20",
+              "cellText": "10ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "20",
+              "cellText": "30ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "20",
+              "cellText": "51ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "20",
+              "cellText": "01ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "20",
+              "cellText": "16ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "20",
+              "cellText": "58ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "21",
+              "cellText": "02ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "21",
+              "cellText": "13ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "21",
+              "cellText": "24ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "21",
+              "cellText": "35ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "21",
+              "cellText": "46ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "21",
+              "cellText": "11ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "21",
+              "cellText": "32ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "21",
+              "cellText": "52ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "21",
+              "cellText": "37ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "22",
+              "cellText": "08ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "22",
+              "cellText": "30ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "22",
+              "cellText": "52ゆ",
+              "symbol": "ゆ"
+            }
+          ],
+          "legendBySymbol": [
+            {
+              "symbol": "ゆ",
+              "routeNumber": "18",
+              "legendLine": "ゆ…【１８系統】夢海の街、高洲橋、潮音の街経由　高洲海浜公園行き"
+            }
+          ],
+          "isRoute18Course": true
+        },
+        {
+          "course": "0008200289",
+          "symbols": {
+            "た": 27
+          },
+          "tripCount": 27,
+          "samples": [
+            {
+              "hour": "19",
+              "cellText": "44た",
+              "symbol": "た"
+            },
+            {
+              "hour": "19",
+              "cellText": "56た",
+              "symbol": "た"
+            },
+            {
+              "hour": "19",
+              "cellText": "46た",
+              "symbol": "た"
+            },
+            {
+              "hour": "20",
+              "cellText": "51た",
+              "symbol": "た"
+            },
+            {
+              "hour": "20",
+              "cellText": "20た",
+              "symbol": "た"
+            },
+            {
+              "hour": "20",
+              "cellText": "41た",
+              "symbol": "た"
+            },
+            {
+              "hour": "20",
+              "cellText": "31た",
+              "symbol": "た"
+            },
+            {
+              "hour": "20",
+              "cellText": "45た",
+              "symbol": "た"
+            },
+            {
+              "hour": "21",
+              "cellText": "57た",
+              "symbol": "た"
+            },
+            {
+              "hour": "21",
+              "cellText": "01た",
+              "symbol": "た"
+            },
+            {
+              "hour": "21",
+              "cellText": "21た",
+              "symbol": "た"
+            },
+            {
+              "hour": "21",
+              "cellText": "42た",
+              "symbol": "た"
+            },
+            {
+              "hour": "21",
+              "cellText": "10た",
+              "symbol": "た"
+            },
+            {
+              "hour": "21",
+              "cellText": "24た",
+              "symbol": "た"
+            },
+            {
+              "hour": "21",
+              "cellText": "50た",
+              "symbol": "た"
+            },
+            {
+              "hour": "22",
+              "cellText": "19た",
+              "symbol": "た"
+            },
+            {
+              "hour": "22",
+              "cellText": "41た",
+              "symbol": "た"
+            },
+            {
+              "hour": "22",
+              "cellText": "02た",
+              "symbol": "た"
+            },
+            {
+              "hour": "22",
+              "cellText": "15た",
+              "symbol": "た"
+            },
+            {
+              "hour": "22",
+              "cellText": "28た",
+              "symbol": "た"
+            },
+            {
+              "hour": "22",
+              "cellText": "38た",
+              "symbol": "た"
+            },
+            {
+              "hour": "22",
+              "cellText": "50た",
+              "symbol": "た"
+            },
+            {
+              "hour": "22",
+              "cellText": "03た",
+              "symbol": "た"
+            },
+            {
+              "hour": "22",
+              "cellText": "16た",
+              "symbol": "た"
+            },
+            {
+              "hour": "22",
+              "cellText": "29た",
+              "symbol": "た"
+            },
+            {
+              "hour": "22",
+              "cellText": "40た",
+              "symbol": "た"
+            },
+            {
+              "hour": "23",
+              "cellText": "01た",
+              "symbol": "た"
+            }
+          ],
+          "legendBySymbol": [
+            {
+              "symbol": "た",
+              "routeNumber": "18",
+              "legendLine": "た…【１８系統】夢海の街・潮音の街・高洲四丁目経由　高洲北小学校行き＜★；深夜バス 運賃倍額＞"
+            }
+          ],
+          "isRoute18Course": true
+        },
+        {
+          "course": "0008200290",
+          "symbols": {
+            "★た": 2
+          },
+          "tripCount": 2,
+          "samples": [
+            {
+              "hour": "23",
+              "cellText": "30★た",
+              "symbol": "★た"
+            },
+            {
+              "hour": "00",
+              "cellText": "02★た",
+              "symbol": "★た"
+            }
+          ],
+          "legendBySymbol": [
+            {
+              "symbol": "★た",
+              "routeNumber": "18",
+              "legendLine": "★た…【１８系統】夢海の街・潮音の街・高洲四丁目経由　高洲北小学校行き＜★；深夜バス 運賃倍額＞"
+            }
+          ],
+          "isRoute18Course": true
+        }
+      ]
+    },
+    {
+      "label": "新浦安駅 のりばE",
+      "busstop": "00020619",
+      "courseSequence": "0008200278-1",
+      "dayLabel": "sunday-holiday",
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200278-1&datetime=2026-08-02T05:00",
+      "legendRaw": [
+        "無印…【１５系統】東京学館前経由　高洲海浜公園行き",
+        "ゆ…【１８系統】夢海の街、高洲橋、潮音の街経由　高洲海浜公園行き",
+        "た…【１８系統】夢海の街・潮音の街・高洲四丁目経由　高洲北小学校行き＜★；深夜バス 運賃倍額＞",
+        "★た…【１８系統】夢海の街・潮音の街・高洲四丁目経由　高洲北小学校行き＜★；深夜バス 運賃倍額＞"
+      ],
+      "legendParsed": [
+        {
+          "symbol": "",
+          "symbolRaw": "無印",
+          "routeNumber": "15",
+          "description": "東京学館前経由　高洲海浜公園行き",
+          "line": "無印…【１５系統】東京学館前経由　高洲海浜公園行き"
+        },
+        {
+          "symbol": "ゆ",
+          "symbolRaw": "ゆ",
+          "routeNumber": "18",
+          "description": "夢海の街、高洲橋、潮音の街経由　高洲海浜公園行き",
+          "line": "ゆ…【１８系統】夢海の街、高洲橋、潮音の街経由　高洲海浜公園行き"
+        },
+        {
+          "symbol": "た",
+          "symbolRaw": "た",
+          "routeNumber": "18",
+          "description": "夢海の街・潮音の街・高洲四丁目経由　高洲北小学校行き＜★；深夜バス 運賃倍額＞",
+          "line": "た…【１８系統】夢海の街・潮音の街・高洲四丁目経由　高洲北小学校行き＜★；深夜バス 運賃倍額＞"
+        },
+        {
+          "symbol": "★た",
+          "symbolRaw": "★た",
+          "routeNumber": "18",
+          "description": "夢海の街・潮音の街・高洲四丁目経由　高洲北小学校行き＜★；深夜バス 運賃倍額＞",
+          "line": "★た…【１８系統】夢海の街・潮音の街・高洲四丁目経由　高洲北小学校行き＜★；深夜バス 運賃倍額＞"
+        }
+      ],
+      "tripTotal": 252,
+      "courses": [
+        {
+          "course": "0008200278",
+          "symbols": {
+            "(無印)": 173
+          },
+          "tripCount": 173,
+          "samples": [
+            {
+              "hour": "06",
+              "cellText": "31",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "06",
+              "cellText": "33",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "06",
+              "cellText": "50",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "06",
+              "cellText": "35",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "06",
+              "cellText": "57",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "04",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "13",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "20",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "27",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "34",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "42",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "49",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "55",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "05",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "16",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "30",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "43",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "56",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "17",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "32",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "47",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "02",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "09",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "18",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "23",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "30",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "37",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "44",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "57",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "09",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "22",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "35",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "48",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "02",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "20",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "32",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "47",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "09",
+              "cellText": "06",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "09",
+              "cellText": "13",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "09",
+              "cellText": "22",
+              "symbol": "(無印)"
+            }
+          ],
+          "legendBySymbol": [
+            {
+              "symbol": "(無印)",
+              "routeNumber": "15",
+              "legendLine": "無印…【１５系統】東京学館前経由　高洲海浜公園行き"
+            }
+          ],
+          "isRoute18Course": false
+        },
+        {
+          "course": "0008200286",
+          "symbols": {
+            "ゆ": 24
+          },
+          "tripCount": 24,
+          "samples": [
+            {
+              "hour": "06",
+              "cellText": "52ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "08",
+              "cellText": "52ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "08",
+              "cellText": "03ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "08",
+              "cellText": "58ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "08",
+              "cellText": "15ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "09",
+              "cellText": "31ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "09",
+              "cellText": "59ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "09",
+              "cellText": "29ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "10",
+              "cellText": "29ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "10",
+              "cellText": "58ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "10",
+              "cellText": "41ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "12",
+              "cellText": "32ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "12",
+              "cellText": "43ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "13",
+              "cellText": "32ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "13",
+              "cellText": "58ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "13",
+              "cellText": "15ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "14",
+              "cellText": "29ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "15",
+              "cellText": "32ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "15",
+              "cellText": "29ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "16",
+              "cellText": "47ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "16",
+              "cellText": "00ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "16",
+              "cellText": "44ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "17",
+              "cellText": "47ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "17",
+              "cellText": "12ゆ",
+              "symbol": "ゆ"
+            }
+          ],
+          "legendBySymbol": [
+            {
+              "symbol": "ゆ",
+              "routeNumber": "18",
+              "legendLine": "ゆ…【１８系統】夢海の街、高洲橋、潮音の街経由　高洲海浜公園行き"
+            }
+          ],
+          "isRoute18Course": true
+        },
+        {
+          "course": "0008200288",
+          "symbols": {
+            "ゆ": 26
+          },
+          "tripCount": 26,
+          "samples": [
+            {
+              "hour": "08",
+              "cellText": "42ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "09",
+              "cellText": "41ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "18",
+              "cellText": "29ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "19",
+              "cellText": "19ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "19",
+              "cellText": "57ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "20",
+              "cellText": "16ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "20",
+              "cellText": "28ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "20",
+              "cellText": "40ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "20",
+              "cellText": "10ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "20",
+              "cellText": "30ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "20",
+              "cellText": "51ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "20",
+              "cellText": "01ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "20",
+              "cellText": "16ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "20",
+              "cellText": "58ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "21",
+              "cellText": "02ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "21",
+              "cellText": "13ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "21",
+              "cellText": "24ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "21",
+              "cellText": "35ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "21",
+              "cellText": "46ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "21",
+              "cellText": "11ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "21",
+              "cellText": "32ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "21",
+              "cellText": "52ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "21",
+              "cellText": "37ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "22",
+              "cellText": "08ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "22",
+              "cellText": "30ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "22",
+              "cellText": "52ゆ",
+              "symbol": "ゆ"
+            }
+          ],
+          "legendBySymbol": [
+            {
+              "symbol": "ゆ",
+              "routeNumber": "18",
+              "legendLine": "ゆ…【１８系統】夢海の街、高洲橋、潮音の街経由　高洲海浜公園行き"
+            }
+          ],
+          "isRoute18Course": true
+        },
+        {
+          "course": "0008200289",
+          "symbols": {
+            "た": 27
+          },
+          "tripCount": 27,
+          "samples": [
+            {
+              "hour": "19",
+              "cellText": "44た",
+              "symbol": "た"
+            },
+            {
+              "hour": "19",
+              "cellText": "56た",
+              "symbol": "た"
+            },
+            {
+              "hour": "19",
+              "cellText": "46た",
+              "symbol": "た"
+            },
+            {
+              "hour": "20",
+              "cellText": "51た",
+              "symbol": "た"
+            },
+            {
+              "hour": "20",
+              "cellText": "20た",
+              "symbol": "た"
+            },
+            {
+              "hour": "20",
+              "cellText": "41た",
+              "symbol": "た"
+            },
+            {
+              "hour": "20",
+              "cellText": "31た",
+              "symbol": "た"
+            },
+            {
+              "hour": "20",
+              "cellText": "45た",
+              "symbol": "た"
+            },
+            {
+              "hour": "21",
+              "cellText": "57た",
+              "symbol": "た"
+            },
+            {
+              "hour": "21",
+              "cellText": "01た",
+              "symbol": "た"
+            },
+            {
+              "hour": "21",
+              "cellText": "21た",
+              "symbol": "た"
+            },
+            {
+              "hour": "21",
+              "cellText": "42た",
+              "symbol": "た"
+            },
+            {
+              "hour": "21",
+              "cellText": "10た",
+              "symbol": "た"
+            },
+            {
+              "hour": "21",
+              "cellText": "24た",
+              "symbol": "た"
+            },
+            {
+              "hour": "21",
+              "cellText": "50た",
+              "symbol": "た"
+            },
+            {
+              "hour": "22",
+              "cellText": "19た",
+              "symbol": "た"
+            },
+            {
+              "hour": "22",
+              "cellText": "41た",
+              "symbol": "た"
+            },
+            {
+              "hour": "22",
+              "cellText": "02た",
+              "symbol": "た"
+            },
+            {
+              "hour": "22",
+              "cellText": "15た",
+              "symbol": "た"
+            },
+            {
+              "hour": "22",
+              "cellText": "28た",
+              "symbol": "た"
+            },
+            {
+              "hour": "22",
+              "cellText": "38た",
+              "symbol": "た"
+            },
+            {
+              "hour": "22",
+              "cellText": "50た",
+              "symbol": "た"
+            },
+            {
+              "hour": "22",
+              "cellText": "03た",
+              "symbol": "た"
+            },
+            {
+              "hour": "22",
+              "cellText": "16た",
+              "symbol": "た"
+            },
+            {
+              "hour": "22",
+              "cellText": "29た",
+              "symbol": "た"
+            },
+            {
+              "hour": "22",
+              "cellText": "40た",
+              "symbol": "た"
+            },
+            {
+              "hour": "23",
+              "cellText": "01た",
+              "symbol": "た"
+            }
+          ],
+          "legendBySymbol": [
+            {
+              "symbol": "た",
+              "routeNumber": "18",
+              "legendLine": "た…【１８系統】夢海の街・潮音の街・高洲四丁目経由　高洲北小学校行き＜★；深夜バス 運賃倍額＞"
+            }
+          ],
+          "isRoute18Course": true
+        },
+        {
+          "course": "0008200290",
+          "symbols": {
+            "★た": 2
+          },
+          "tripCount": 2,
+          "samples": [
+            {
+              "hour": "23",
+              "cellText": "30★た",
+              "symbol": "★た"
+            },
+            {
+              "hour": "00",
+              "cellText": "02★た",
+              "symbol": "★た"
+            }
+          ],
+          "legendBySymbol": [
+            {
+              "symbol": "★た",
+              "routeNumber": "18",
+              "legendLine": "★た…【１８系統】夢海の街・潮音の街・高洲四丁目経由　高洲北小学校行き＜★；深夜バス 運賃倍額＞"
+            }
+          ],
+          "isRoute18Course": true
+        }
+      ]
+    },
+    {
+      "label": "高洲海浜公園 のりば03",
+      "busstop": "00020855",
+      "courseSequence": "0008200277-1",
+      "dayLabel": "weekday",
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020855&course-sequence=0008200277-1&datetime=2026-07-27T05:00",
+      "legendRaw": [
+        "無印…【１５系統】東京学館前経由　新浦安駅行き",
+        "う…【１８系統】夢海の街、新浦安駅経由　浦安駅入口行き",
+        "ゆ…【１８系統】夢海の街経由　新浦安駅行き"
+      ],
+      "legendParsed": [
+        {
+          "symbol": "",
+          "symbolRaw": "無印",
+          "routeNumber": "15",
+          "description": "東京学館前経由　新浦安駅行き",
+          "line": "無印…【１５系統】東京学館前経由　新浦安駅行き"
+        },
+        {
+          "symbol": "う",
+          "symbolRaw": "う",
+          "routeNumber": "18",
+          "description": "夢海の街、新浦安駅経由　浦安駅入口行き",
+          "line": "う…【１８系統】夢海の街、新浦安駅経由　浦安駅入口行き"
+        },
+        {
+          "symbol": "ゆ",
+          "symbolRaw": "ゆ",
+          "routeNumber": "18",
+          "description": "夢海の街経由　新浦安駅行き",
+          "line": "ゆ…【１８系統】夢海の街経由　新浦安駅行き"
+        }
+      ],
+      "tripTotal": 220,
+      "courses": [
+        {
+          "course": "0008200277",
+          "symbols": {
+            "(無印)": 166
+          },
+          "tripCount": 166,
+          "samples": [
+            {
+              "hour": "06",
+              "cellText": "15",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "06",
+              "cellText": "25",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "06",
+              "cellText": "35",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "06",
+              "cellText": "45",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "06",
+              "cellText": "54",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "06",
+              "cellText": "18",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "06",
+              "cellText": "33",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "06",
+              "cellText": "48",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "06",
+              "cellText": "59",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "06",
+              "cellText": "20",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "06",
+              "cellText": "40",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "01",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "08",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "15",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "22",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "30",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "36",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "43",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "50",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "13",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "26",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "39",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "52",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "00",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "15",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "45",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "04",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "11",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "18",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "25",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "32",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "46",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "54",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "05",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "18",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "31",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "44",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "57",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "00",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "15",
+              "symbol": "(無印)"
+            }
+          ],
+          "legendBySymbol": [
+            {
+              "symbol": "(無印)",
+              "routeNumber": "15",
+              "legendLine": "無印…【１５系統】東京学館前経由　新浦安駅行き"
+            }
+          ],
+          "isRoute18Course": false
+        },
+        {
+          "course": "0008200285",
+          "symbols": {
+            "う": 25
+          },
+          "tripCount": 25,
+          "samples": [
+            {
+              "hour": "06",
+              "cellText": "05う",
+              "symbol": "う"
+            },
+            {
+              "hour": "07",
+              "cellText": "18う",
+              "symbol": "う"
+            },
+            {
+              "hour": "07",
+              "cellText": "57う",
+              "symbol": "う"
+            },
+            {
+              "hour": "07",
+              "cellText": "18う",
+              "symbol": "う"
+            },
+            {
+              "hour": "07",
+              "cellText": "31う",
+              "symbol": "う"
+            },
+            {
+              "hour": "08",
+              "cellText": "40う",
+              "symbol": "う"
+            },
+            {
+              "hour": "08",
+              "cellText": "12う",
+              "symbol": "う"
+            },
+            {
+              "hour": "08",
+              "cellText": "39う",
+              "symbol": "う"
+            },
+            {
+              "hour": "09",
+              "cellText": "41う",
+              "symbol": "う"
+            },
+            {
+              "hour": "09",
+              "cellText": "06う",
+              "symbol": "う"
+            },
+            {
+              "hour": "09",
+              "cellText": "53う",
+              "symbol": "う"
+            },
+            {
+              "hour": "10",
+              "cellText": "07う",
+              "symbol": "う"
+            },
+            {
+              "hour": "11",
+              "cellText": "46う",
+              "symbol": "う"
+            },
+            {
+              "hour": "11",
+              "cellText": "56う",
+              "symbol": "う"
+            },
+            {
+              "hour": "12",
+              "cellText": "46う",
+              "symbol": "う"
+            },
+            {
+              "hour": "12",
+              "cellText": "31う",
+              "symbol": "う"
+            },
+            {
+              "hour": "13",
+              "cellText": "09う",
+              "symbol": "う"
+            },
+            {
+              "hour": "13",
+              "cellText": "45う",
+              "symbol": "う"
+            },
+            {
+              "hour": "14",
+              "cellText": "45う",
+              "symbol": "う"
+            },
+            {
+              "hour": "14",
+              "cellText": "45う",
+              "symbol": "う"
+            },
+            {
+              "hour": "15",
+              "cellText": "55う",
+              "symbol": "う"
+            },
+            {
+              "hour": "15",
+              "cellText": "08う",
+              "symbol": "う"
+            },
+            {
+              "hour": "16",
+              "cellText": "53う",
+              "symbol": "う"
+            },
+            {
+              "hour": "16",
+              "cellText": "27う",
+              "symbol": "う"
+            },
+            {
+              "hour": "16",
+              "cellText": "00う",
+              "symbol": "う"
+            }
+          ],
+          "legendBySymbol": [
+            {
+              "symbol": "う",
+              "routeNumber": "18",
+              "legendLine": "う…【１８系統】夢海の街、新浦安駅経由　浦安駅入口行き"
+            }
+          ],
+          "isRoute18Course": true
+        },
+        {
+          "course": "0008200287",
+          "symbols": {
+            "ゆ": 29
+          },
+          "tripCount": 29,
+          "samples": [
+            {
+              "hour": "08",
+              "cellText": "26ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "09",
+              "cellText": "25ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "12",
+              "cellText": "47ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "13",
+              "cellText": "10ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "18",
+              "cellText": "12ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "19",
+              "cellText": "27ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "19",
+              "cellText": "40ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "19",
+              "cellText": "15ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "19",
+              "cellText": "41ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "19",
+              "cellText": "54ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "19",
+              "cellText": "45ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "20",
+              "cellText": "00ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "20",
+              "cellText": "24ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "20",
+              "cellText": "46ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "20",
+              "cellText": "14ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "20",
+              "cellText": "35ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "20",
+              "cellText": "55ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "20",
+              "cellText": "00ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "20",
+              "cellText": "41ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "21",
+              "cellText": "08ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "21",
+              "cellText": "30ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "21",
+              "cellText": "52ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "21",
+              "cellText": "16ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "21",
+              "cellText": "36ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "21",
+              "cellText": "20ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "21",
+              "cellText": "59ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "22",
+              "cellText": "14ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "22",
+              "cellText": "33ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "22",
+              "cellText": "12ゆ",
+              "symbol": "ゆ"
+            }
+          ],
+          "legendBySymbol": [
+            {
+              "symbol": "ゆ",
+              "routeNumber": "18",
+              "legendLine": "ゆ…【１８系統】夢海の街経由　新浦安駅行き"
+            }
+          ],
+          "isRoute18Course": true
+        }
+      ]
+    },
+    {
+      "label": "高洲海浜公園 のりば03",
+      "busstop": "00020855",
+      "courseSequence": "0008200277-1",
+      "dayLabel": "saturday",
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020855&course-sequence=0008200277-1&datetime=2026-08-01T05:00",
+      "legendRaw": [
+        "無印…【１５系統】東京学館前経由　新浦安駅行き",
+        "う…【１８系統】夢海の街、新浦安駅経由　浦安駅入口行き",
+        "ゆ…【１８系統】夢海の街経由　新浦安駅行き"
+      ],
+      "legendParsed": [
+        {
+          "symbol": "",
+          "symbolRaw": "無印",
+          "routeNumber": "15",
+          "description": "東京学館前経由　新浦安駅行き",
+          "line": "無印…【１５系統】東京学館前経由　新浦安駅行き"
+        },
+        {
+          "symbol": "う",
+          "symbolRaw": "う",
+          "routeNumber": "18",
+          "description": "夢海の街、新浦安駅経由　浦安駅入口行き",
+          "line": "う…【１８系統】夢海の街、新浦安駅経由　浦安駅入口行き"
+        },
+        {
+          "symbol": "ゆ",
+          "symbolRaw": "ゆ",
+          "routeNumber": "18",
+          "description": "夢海の街経由　新浦安駅行き",
+          "line": "ゆ…【１８系統】夢海の街経由　新浦安駅行き"
+        }
+      ],
+      "tripTotal": 220,
+      "courses": [
+        {
+          "course": "0008200277",
+          "symbols": {
+            "(無印)": 166
+          },
+          "tripCount": 166,
+          "samples": [
+            {
+              "hour": "06",
+              "cellText": "15",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "06",
+              "cellText": "25",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "06",
+              "cellText": "35",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "06",
+              "cellText": "45",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "06",
+              "cellText": "54",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "06",
+              "cellText": "18",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "06",
+              "cellText": "33",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "06",
+              "cellText": "48",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "06",
+              "cellText": "59",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "06",
+              "cellText": "20",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "06",
+              "cellText": "40",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "01",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "08",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "15",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "22",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "30",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "36",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "43",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "50",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "13",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "26",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "39",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "52",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "00",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "15",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "45",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "04",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "11",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "18",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "25",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "32",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "46",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "54",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "05",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "18",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "31",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "44",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "57",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "00",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "15",
+              "symbol": "(無印)"
+            }
+          ],
+          "legendBySymbol": [
+            {
+              "symbol": "(無印)",
+              "routeNumber": "15",
+              "legendLine": "無印…【１５系統】東京学館前経由　新浦安駅行き"
+            }
+          ],
+          "isRoute18Course": false
+        },
+        {
+          "course": "0008200285",
+          "symbols": {
+            "う": 25
+          },
+          "tripCount": 25,
+          "samples": [
+            {
+              "hour": "06",
+              "cellText": "05う",
+              "symbol": "う"
+            },
+            {
+              "hour": "07",
+              "cellText": "18う",
+              "symbol": "う"
+            },
+            {
+              "hour": "07",
+              "cellText": "57う",
+              "symbol": "う"
+            },
+            {
+              "hour": "07",
+              "cellText": "18う",
+              "symbol": "う"
+            },
+            {
+              "hour": "07",
+              "cellText": "31う",
+              "symbol": "う"
+            },
+            {
+              "hour": "08",
+              "cellText": "40う",
+              "symbol": "う"
+            },
+            {
+              "hour": "08",
+              "cellText": "12う",
+              "symbol": "う"
+            },
+            {
+              "hour": "08",
+              "cellText": "39う",
+              "symbol": "う"
+            },
+            {
+              "hour": "09",
+              "cellText": "41う",
+              "symbol": "う"
+            },
+            {
+              "hour": "09",
+              "cellText": "06う",
+              "symbol": "う"
+            },
+            {
+              "hour": "09",
+              "cellText": "53う",
+              "symbol": "う"
+            },
+            {
+              "hour": "10",
+              "cellText": "07う",
+              "symbol": "う"
+            },
+            {
+              "hour": "11",
+              "cellText": "46う",
+              "symbol": "う"
+            },
+            {
+              "hour": "11",
+              "cellText": "56う",
+              "symbol": "う"
+            },
+            {
+              "hour": "12",
+              "cellText": "46う",
+              "symbol": "う"
+            },
+            {
+              "hour": "12",
+              "cellText": "31う",
+              "symbol": "う"
+            },
+            {
+              "hour": "13",
+              "cellText": "09う",
+              "symbol": "う"
+            },
+            {
+              "hour": "13",
+              "cellText": "45う",
+              "symbol": "う"
+            },
+            {
+              "hour": "14",
+              "cellText": "45う",
+              "symbol": "う"
+            },
+            {
+              "hour": "14",
+              "cellText": "45う",
+              "symbol": "う"
+            },
+            {
+              "hour": "15",
+              "cellText": "55う",
+              "symbol": "う"
+            },
+            {
+              "hour": "15",
+              "cellText": "08う",
+              "symbol": "う"
+            },
+            {
+              "hour": "16",
+              "cellText": "53う",
+              "symbol": "う"
+            },
+            {
+              "hour": "16",
+              "cellText": "27う",
+              "symbol": "う"
+            },
+            {
+              "hour": "16",
+              "cellText": "00う",
+              "symbol": "う"
+            }
+          ],
+          "legendBySymbol": [
+            {
+              "symbol": "う",
+              "routeNumber": "18",
+              "legendLine": "う…【１８系統】夢海の街、新浦安駅経由　浦安駅入口行き"
+            }
+          ],
+          "isRoute18Course": true
+        },
+        {
+          "course": "0008200287",
+          "symbols": {
+            "ゆ": 29
+          },
+          "tripCount": 29,
+          "samples": [
+            {
+              "hour": "08",
+              "cellText": "26ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "09",
+              "cellText": "25ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "12",
+              "cellText": "47ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "13",
+              "cellText": "10ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "18",
+              "cellText": "12ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "19",
+              "cellText": "27ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "19",
+              "cellText": "40ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "19",
+              "cellText": "15ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "19",
+              "cellText": "41ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "19",
+              "cellText": "54ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "19",
+              "cellText": "45ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "20",
+              "cellText": "00ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "20",
+              "cellText": "24ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "20",
+              "cellText": "46ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "20",
+              "cellText": "14ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "20",
+              "cellText": "35ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "20",
+              "cellText": "55ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "20",
+              "cellText": "00ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "20",
+              "cellText": "41ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "21",
+              "cellText": "08ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "21",
+              "cellText": "30ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "21",
+              "cellText": "52ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "21",
+              "cellText": "16ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "21",
+              "cellText": "36ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "21",
+              "cellText": "20ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "21",
+              "cellText": "59ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "22",
+              "cellText": "14ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "22",
+              "cellText": "33ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "22",
+              "cellText": "12ゆ",
+              "symbol": "ゆ"
+            }
+          ],
+          "legendBySymbol": [
+            {
+              "symbol": "ゆ",
+              "routeNumber": "18",
+              "legendLine": "ゆ…【１８系統】夢海の街経由　新浦安駅行き"
+            }
+          ],
+          "isRoute18Course": true
+        }
+      ]
+    },
+    {
+      "label": "高洲海浜公園 のりば03",
+      "busstop": "00020855",
+      "courseSequence": "0008200277-1",
+      "dayLabel": "sunday-holiday",
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020855&course-sequence=0008200277-1&datetime=2026-08-02T05:00",
+      "legendRaw": [
+        "無印…【１５系統】東京学館前経由　新浦安駅行き",
+        "う…【１８系統】夢海の街、新浦安駅経由　浦安駅入口行き",
+        "ゆ…【１８系統】夢海の街経由　新浦安駅行き"
+      ],
+      "legendParsed": [
+        {
+          "symbol": "",
+          "symbolRaw": "無印",
+          "routeNumber": "15",
+          "description": "東京学館前経由　新浦安駅行き",
+          "line": "無印…【１５系統】東京学館前経由　新浦安駅行き"
+        },
+        {
+          "symbol": "う",
+          "symbolRaw": "う",
+          "routeNumber": "18",
+          "description": "夢海の街、新浦安駅経由　浦安駅入口行き",
+          "line": "う…【１８系統】夢海の街、新浦安駅経由　浦安駅入口行き"
+        },
+        {
+          "symbol": "ゆ",
+          "symbolRaw": "ゆ",
+          "routeNumber": "18",
+          "description": "夢海の街経由　新浦安駅行き",
+          "line": "ゆ…【１８系統】夢海の街経由　新浦安駅行き"
+        }
+      ],
+      "tripTotal": 220,
+      "courses": [
+        {
+          "course": "0008200277",
+          "symbols": {
+            "(無印)": 166
+          },
+          "tripCount": 166,
+          "samples": [
+            {
+              "hour": "06",
+              "cellText": "15",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "06",
+              "cellText": "25",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "06",
+              "cellText": "35",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "06",
+              "cellText": "45",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "06",
+              "cellText": "54",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "06",
+              "cellText": "18",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "06",
+              "cellText": "33",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "06",
+              "cellText": "48",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "06",
+              "cellText": "59",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "06",
+              "cellText": "20",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "06",
+              "cellText": "40",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "01",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "08",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "15",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "22",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "30",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "36",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "43",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "50",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "13",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "26",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "39",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "52",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "00",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "15",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "07",
+              "cellText": "45",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "04",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "11",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "18",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "25",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "32",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "46",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "54",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "05",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "18",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "31",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "44",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "57",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "00",
+              "symbol": "(無印)"
+            },
+            {
+              "hour": "08",
+              "cellText": "15",
+              "symbol": "(無印)"
+            }
+          ],
+          "legendBySymbol": [
+            {
+              "symbol": "(無印)",
+              "routeNumber": "15",
+              "legendLine": "無印…【１５系統】東京学館前経由　新浦安駅行き"
+            }
+          ],
+          "isRoute18Course": false
+        },
+        {
+          "course": "0008200285",
+          "symbols": {
+            "う": 25
+          },
+          "tripCount": 25,
+          "samples": [
+            {
+              "hour": "06",
+              "cellText": "05う",
+              "symbol": "う"
+            },
+            {
+              "hour": "07",
+              "cellText": "18う",
+              "symbol": "う"
+            },
+            {
+              "hour": "07",
+              "cellText": "57う",
+              "symbol": "う"
+            },
+            {
+              "hour": "07",
+              "cellText": "18う",
+              "symbol": "う"
+            },
+            {
+              "hour": "07",
+              "cellText": "31う",
+              "symbol": "う"
+            },
+            {
+              "hour": "08",
+              "cellText": "40う",
+              "symbol": "う"
+            },
+            {
+              "hour": "08",
+              "cellText": "12う",
+              "symbol": "う"
+            },
+            {
+              "hour": "08",
+              "cellText": "39う",
+              "symbol": "う"
+            },
+            {
+              "hour": "09",
+              "cellText": "41う",
+              "symbol": "う"
+            },
+            {
+              "hour": "09",
+              "cellText": "06う",
+              "symbol": "う"
+            },
+            {
+              "hour": "09",
+              "cellText": "53う",
+              "symbol": "う"
+            },
+            {
+              "hour": "10",
+              "cellText": "07う",
+              "symbol": "う"
+            },
+            {
+              "hour": "11",
+              "cellText": "46う",
+              "symbol": "う"
+            },
+            {
+              "hour": "11",
+              "cellText": "56う",
+              "symbol": "う"
+            },
+            {
+              "hour": "12",
+              "cellText": "46う",
+              "symbol": "う"
+            },
+            {
+              "hour": "12",
+              "cellText": "31う",
+              "symbol": "う"
+            },
+            {
+              "hour": "13",
+              "cellText": "09う",
+              "symbol": "う"
+            },
+            {
+              "hour": "13",
+              "cellText": "45う",
+              "symbol": "う"
+            },
+            {
+              "hour": "14",
+              "cellText": "45う",
+              "symbol": "う"
+            },
+            {
+              "hour": "14",
+              "cellText": "45う",
+              "symbol": "う"
+            },
+            {
+              "hour": "15",
+              "cellText": "55う",
+              "symbol": "う"
+            },
+            {
+              "hour": "15",
+              "cellText": "08う",
+              "symbol": "う"
+            },
+            {
+              "hour": "16",
+              "cellText": "53う",
+              "symbol": "う"
+            },
+            {
+              "hour": "16",
+              "cellText": "27う",
+              "symbol": "う"
+            },
+            {
+              "hour": "16",
+              "cellText": "00う",
+              "symbol": "う"
+            }
+          ],
+          "legendBySymbol": [
+            {
+              "symbol": "う",
+              "routeNumber": "18",
+              "legendLine": "う…【１８系統】夢海の街、新浦安駅経由　浦安駅入口行き"
+            }
+          ],
+          "isRoute18Course": true
+        },
+        {
+          "course": "0008200287",
+          "symbols": {
+            "ゆ": 29
+          },
+          "tripCount": 29,
+          "samples": [
+            {
+              "hour": "08",
+              "cellText": "26ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "09",
+              "cellText": "25ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "12",
+              "cellText": "47ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "13",
+              "cellText": "10ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "18",
+              "cellText": "12ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "19",
+              "cellText": "27ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "19",
+              "cellText": "40ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "19",
+              "cellText": "15ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "19",
+              "cellText": "41ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "19",
+              "cellText": "54ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "19",
+              "cellText": "45ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "20",
+              "cellText": "00ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "20",
+              "cellText": "24ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "20",
+              "cellText": "46ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "20",
+              "cellText": "14ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "20",
+              "cellText": "35ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "20",
+              "cellText": "55ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "20",
+              "cellText": "00ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "20",
+              "cellText": "41ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "21",
+              "cellText": "08ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "21",
+              "cellText": "30ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "21",
+              "cellText": "52ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "21",
+              "cellText": "16ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "21",
+              "cellText": "36ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "21",
+              "cellText": "20ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "21",
+              "cellText": "59ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "22",
+              "cellText": "14ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "22",
+              "cellText": "33ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "22",
+              "cellText": "12ゆ",
+              "symbol": "ゆ"
+            }
+          ],
+          "legendBySymbol": [
+            {
+              "symbol": "ゆ",
+              "routeNumber": "18",
+              "legendLine": "ゆ…【１８系統】夢海の街経由　新浦安駅行き"
+            }
+          ],
+          "isRoute18Course": true
+        }
+      ]
+    },
+    {
+      "label": "浦安駅入口 のりば11",
+      "busstop": "00020739",
+      "courseSequence": "0008200211-1",
+      "dayLabel": "weekday",
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020739&course-sequence=0008200211-1&datetime=2026-07-27T05:00",
+      "legendRaw": [
+        "あ…【３系統】新浦安駅・明海五丁目経由　総合公園行き",
+        "明…【３系統】新浦安駅経由　明海五丁目止まり",
+        "ひ…【１１系統】日の出南（墓地公園）行き",
+        "そ…【１１系統】新浦安駅・ベイパーク経由　総合公園行き",
+        "ベ…【１１系統】新浦安駅経由　ベイパーク止まり",
+        "新…【１１系統】新浦安駅止まり",
+        "ゆ…【１８系統】新浦安駅・高洲橋経由　高洲海浜公園行き"
+      ],
+      "legendParsed": [
+        {
+          "symbol": "あ",
+          "symbolRaw": "あ",
+          "routeNumber": "3",
+          "description": "新浦安駅・明海五丁目経由　総合公園行き",
+          "line": "あ…【３系統】新浦安駅・明海五丁目経由　総合公園行き"
+        },
+        {
+          "symbol": "明",
+          "symbolRaw": "明",
+          "routeNumber": "3",
+          "description": "新浦安駅経由　明海五丁目止まり",
+          "line": "明…【３系統】新浦安駅経由　明海五丁目止まり"
+        },
+        {
+          "symbol": "ひ",
+          "symbolRaw": "ひ",
+          "routeNumber": "11",
+          "description": "日の出南（墓地公園）行き",
+          "line": "ひ…【１１系統】日の出南（墓地公園）行き"
+        },
+        {
+          "symbol": "そ",
+          "symbolRaw": "そ",
+          "routeNumber": "11",
+          "description": "新浦安駅・ベイパーク経由　総合公園行き",
+          "line": "そ…【１１系統】新浦安駅・ベイパーク経由　総合公園行き"
+        },
+        {
+          "symbol": "ベ",
+          "symbolRaw": "ベ",
+          "routeNumber": "11",
+          "description": "新浦安駅経由　ベイパーク止まり",
+          "line": "ベ…【１１系統】新浦安駅経由　ベイパーク止まり"
+        },
+        {
+          "symbol": "新",
+          "symbolRaw": "新",
+          "routeNumber": "11",
+          "description": "新浦安駅止まり",
+          "line": "新…【１１系統】新浦安駅止まり"
+        },
+        {
+          "symbol": "ゆ",
+          "symbolRaw": "ゆ",
+          "routeNumber": "18",
+          "description": "新浦安駅・高洲橋経由　高洲海浜公園行き",
+          "line": "ゆ…【１８系統】新浦安駅・高洲橋経由　高洲海浜公園行き"
+        }
+      ],
+      "tripTotal": 97,
+      "courses": [
+        {
+          "course": "0008200211",
+          "symbols": {
+            "あ": 35
+          },
+          "tripCount": 35,
+          "samples": [
+            {
+              "hour": "06",
+              "cellText": "55あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "07",
+              "cellText": "48あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "07",
+              "cellText": "04あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "07",
+              "cellText": "12あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "08",
+              "cellText": "25あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "08",
+              "cellText": "55あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "08",
+              "cellText": "17あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "08",
+              "cellText": "17あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "09",
+              "cellText": "17あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "09",
+              "cellText": "30あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "10",
+              "cellText": "00あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "10",
+              "cellText": "17あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "10",
+              "cellText": "17あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "11",
+              "cellText": "49あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "11",
+              "cellText": "18あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "11",
+              "cellText": "17あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "12",
+              "cellText": "51あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "12",
+              "cellText": "17あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "12",
+              "cellText": "29あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "13",
+              "cellText": "18あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "13",
+              "cellText": "33あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "14",
+              "cellText": "59あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "14",
+              "cellText": "17あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "14",
+              "cellText": "36あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "15",
+              "cellText": "31あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "15",
+              "cellText": "33あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "16",
+              "cellText": "05あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "16",
+              "cellText": "17あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "16",
+              "cellText": "45あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "17",
+              "cellText": "17あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "17",
+              "cellText": "34あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "18",
+              "cellText": "17あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "19",
+              "cellText": "17あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "19",
+              "cellText": "17あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "19",
+              "cellText": "17あ",
+              "symbol": "あ"
+            }
+          ],
+          "legendBySymbol": [
+            {
+              "symbol": "あ",
+              "routeNumber": "3",
+              "legendLine": "あ…【３系統】新浦安駅・明海五丁目経由　総合公園行き"
+            }
+          ],
+          "isRoute18Course": false
+        },
+        {
+          "course": "0008200218",
+          "symbols": {
+            "明": 4
+          },
+          "tripCount": 4,
+          "samples": [
+            {
+              "hour": "13",
+              "cellText": "51明",
+              "symbol": "明"
+            },
+            {
+              "hour": "17",
+              "cellText": "01明",
+              "symbol": "明"
+            },
+            {
+              "hour": "18",
+              "cellText": "06明",
+              "symbol": "明"
+            },
+            {
+              "hour": "18",
+              "cellText": "47明",
+              "symbol": "明"
+            }
+          ],
+          "legendBySymbol": [
+            {
+              "symbol": "明",
+              "routeNumber": "3",
+              "legendLine": "明…【３系統】新浦安駅経由　明海五丁目止まり"
+            }
+          ],
+          "isRoute18Course": false
+        },
+        {
+          "course": "0008200257",
+          "symbols": {
+            "ひ": 7
+          },
+          "tripCount": 7,
+          "samples": [
+            {
+              "hour": "10",
+              "cellText": "33ひ",
+              "symbol": "ひ"
+            },
+            {
+              "hour": "10",
+              "cellText": "42ひ",
+              "symbol": "ひ"
+            },
+            {
+              "hour": "11",
+              "cellText": "33ひ",
+              "symbol": "ひ"
+            },
+            {
+              "hour": "12",
+              "cellText": "30ひ",
+              "symbol": "ひ"
+            },
+            {
+              "hour": "12",
+              "cellText": "57ひ",
+              "symbol": "ひ"
+            },
+            {
+              "hour": "13",
+              "cellText": "29ひ",
+              "symbol": "ひ"
+            },
+            {
+              "hour": "14",
+              "cellText": "30ひ",
+              "symbol": "ひ"
+            }
+          ],
+          "legendBySymbol": [
+            {
+              "symbol": "ひ",
+              "routeNumber": "11",
+              "legendLine": "ひ…【１１系統】日の出南（墓地公園）行き"
+            }
+          ],
+          "isRoute18Course": false
+        },
+        {
+          "course": "0008200261",
+          "symbols": {
+            "そ": 19
+          },
+          "tripCount": 19,
+          "samples": [
+            {
+              "hour": "07",
+              "cellText": "20そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "07",
+              "cellText": "34そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "07",
+              "cellText": "30そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "07",
+              "cellText": "46そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "08",
+              "cellText": "15そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "08",
+              "cellText": "51そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "08",
+              "cellText": "35そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "08",
+              "cellText": "57そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "09",
+              "cellText": "36そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "09",
+              "cellText": "31そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "11",
+              "cellText": "29そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "13",
+              "cellText": "30そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "14",
+              "cellText": "37そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "14",
+              "cellText": "43そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "15",
+              "cellText": "37そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "15",
+              "cellText": "49そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "16",
+              "cellText": "30そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "16",
+              "cellText": "18そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "17",
+              "cellText": "17そ",
+              "symbol": "そ"
+            }
+          ],
+          "legendBySymbol": [
+            {
+              "symbol": "そ",
+              "routeNumber": "11",
+              "legendLine": "そ…【１１系統】新浦安駅・ベイパーク経由　総合公園行き"
+            }
+          ],
+          "isRoute18Course": false
+        },
+        {
+          "course": "0008200268",
+          "symbols": {
+            "ベ": 3
+          },
+          "tripCount": 3,
+          "samples": [
+            {
+              "hour": "17",
+              "cellText": "34ベ",
+              "symbol": "ベ"
+            },
+            {
+              "hour": "18",
+              "cellText": "35ベ",
+              "symbol": "ベ"
+            },
+            {
+              "hour": "18",
+              "cellText": "27ベ",
+              "symbol": "ベ"
+            }
+          ],
+          "legendBySymbol": [
+            {
+              "symbol": "ベ",
+              "routeNumber": "11",
+              "legendLine": "ベ…【１１系統】新浦安駅経由　ベイパーク止まり"
+            }
+          ],
+          "isRoute18Course": false
+        },
+        {
+          "course": "0008200270",
+          "symbols": {
+            "新": 5
+          },
+          "tripCount": 5,
+          "samples": [
+            {
+              "hour": "08",
+              "cellText": "00新",
+              "symbol": "新"
+            },
+            {
+              "hour": "12",
+              "cellText": "00新",
+              "symbol": "新"
+            },
+            {
+              "hour": "12",
+              "cellText": "45新",
+              "symbol": "新"
+            },
+            {
+              "hour": "19",
+              "cellText": "47新",
+              "symbol": "新"
+            },
+            {
+              "hour": "20",
+              "cellText": "33新",
+              "symbol": "新"
+            }
+          ],
+          "legendBySymbol": [
+            {
+              "symbol": "新",
+              "routeNumber": "11",
+              "legendLine": "新…【１１系統】新浦安駅止まり"
+            }
+          ],
+          "isRoute18Course": false
+        },
+        {
+          "course": "0008200286",
+          "symbols": {
+            "ゆ": 24
+          },
+          "tripCount": 24,
+          "samples": [
+            {
+              "hour": "06",
+              "cellText": "38ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "07",
+              "cellText": "50ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "08",
+              "cellText": "38ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "08",
+              "cellText": "45ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "08",
+              "cellText": "02ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "09",
+              "cellText": "18ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "09",
+              "cellText": "46ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "09",
+              "cellText": "16ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "10",
+              "cellText": "16ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "10",
+              "cellText": "45ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "10",
+              "cellText": "28ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "12",
+              "cellText": "19ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "12",
+              "cellText": "30ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "13",
+              "cellText": "19ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "13",
+              "cellText": "45ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "13",
+              "cellText": "02ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "14",
+              "cellText": "16ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "15",
+              "cellText": "19ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "15",
+              "cellText": "47ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "15",
+              "cellText": "16ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "16",
+              "cellText": "34ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "16",
+              "cellText": "59ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "16",
+              "cellText": "31ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "17",
+              "cellText": "34ゆ",
+              "symbol": "ゆ"
+            }
+          ],
+          "legendBySymbol": [
+            {
+              "symbol": "ゆ",
+              "routeNumber": "18",
+              "legendLine": "ゆ…【１８系統】新浦安駅・高洲橋経由　高洲海浜公園行き"
+            }
+          ],
+          "isRoute18Course": true
+        }
+      ]
+    },
+    {
+      "label": "浦安駅入口 のりば11",
+      "busstop": "00020739",
+      "courseSequence": "0008200211-1",
+      "dayLabel": "saturday",
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020739&course-sequence=0008200211-1&datetime=2026-08-01T05:00",
+      "legendRaw": [
+        "あ…【３系統】新浦安駅・明海五丁目経由　総合公園行き",
+        "明…【３系統】新浦安駅経由　明海五丁目止まり",
+        "ひ…【１１系統】日の出南（墓地公園）行き",
+        "そ…【１１系統】新浦安駅・ベイパーク経由　総合公園行き",
+        "ベ…【１１系統】新浦安駅経由　ベイパーク止まり",
+        "新…【１１系統】新浦安駅止まり",
+        "ゆ…【１８系統】新浦安駅・高洲橋経由　高洲海浜公園行き"
+      ],
+      "legendParsed": [
+        {
+          "symbol": "あ",
+          "symbolRaw": "あ",
+          "routeNumber": "3",
+          "description": "新浦安駅・明海五丁目経由　総合公園行き",
+          "line": "あ…【３系統】新浦安駅・明海五丁目経由　総合公園行き"
+        },
+        {
+          "symbol": "明",
+          "symbolRaw": "明",
+          "routeNumber": "3",
+          "description": "新浦安駅経由　明海五丁目止まり",
+          "line": "明…【３系統】新浦安駅経由　明海五丁目止まり"
+        },
+        {
+          "symbol": "ひ",
+          "symbolRaw": "ひ",
+          "routeNumber": "11",
+          "description": "日の出南（墓地公園）行き",
+          "line": "ひ…【１１系統】日の出南（墓地公園）行き"
+        },
+        {
+          "symbol": "そ",
+          "symbolRaw": "そ",
+          "routeNumber": "11",
+          "description": "新浦安駅・ベイパーク経由　総合公園行き",
+          "line": "そ…【１１系統】新浦安駅・ベイパーク経由　総合公園行き"
+        },
+        {
+          "symbol": "ベ",
+          "symbolRaw": "ベ",
+          "routeNumber": "11",
+          "description": "新浦安駅経由　ベイパーク止まり",
+          "line": "ベ…【１１系統】新浦安駅経由　ベイパーク止まり"
+        },
+        {
+          "symbol": "新",
+          "symbolRaw": "新",
+          "routeNumber": "11",
+          "description": "新浦安駅止まり",
+          "line": "新…【１１系統】新浦安駅止まり"
+        },
+        {
+          "symbol": "ゆ",
+          "symbolRaw": "ゆ",
+          "routeNumber": "18",
+          "description": "新浦安駅・高洲橋経由　高洲海浜公園行き",
+          "line": "ゆ…【１８系統】新浦安駅・高洲橋経由　高洲海浜公園行き"
+        }
+      ],
+      "tripTotal": 97,
+      "courses": [
+        {
+          "course": "0008200211",
+          "symbols": {
+            "あ": 35
+          },
+          "tripCount": 35,
+          "samples": [
+            {
+              "hour": "06",
+              "cellText": "55あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "07",
+              "cellText": "48あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "07",
+              "cellText": "04あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "07",
+              "cellText": "12あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "08",
+              "cellText": "25あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "08",
+              "cellText": "55あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "08",
+              "cellText": "17あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "08",
+              "cellText": "17あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "09",
+              "cellText": "17あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "09",
+              "cellText": "30あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "10",
+              "cellText": "00あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "10",
+              "cellText": "17あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "10",
+              "cellText": "17あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "11",
+              "cellText": "49あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "11",
+              "cellText": "18あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "11",
+              "cellText": "17あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "12",
+              "cellText": "51あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "12",
+              "cellText": "17あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "12",
+              "cellText": "29あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "13",
+              "cellText": "18あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "13",
+              "cellText": "33あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "14",
+              "cellText": "59あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "14",
+              "cellText": "17あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "14",
+              "cellText": "36あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "15",
+              "cellText": "31あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "15",
+              "cellText": "33あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "16",
+              "cellText": "05あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "16",
+              "cellText": "17あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "16",
+              "cellText": "45あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "17",
+              "cellText": "17あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "17",
+              "cellText": "34あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "18",
+              "cellText": "17あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "19",
+              "cellText": "17あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "19",
+              "cellText": "17あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "19",
+              "cellText": "17あ",
+              "symbol": "あ"
+            }
+          ],
+          "legendBySymbol": [
+            {
+              "symbol": "あ",
+              "routeNumber": "3",
+              "legendLine": "あ…【３系統】新浦安駅・明海五丁目経由　総合公園行き"
+            }
+          ],
+          "isRoute18Course": false
+        },
+        {
+          "course": "0008200218",
+          "symbols": {
+            "明": 4
+          },
+          "tripCount": 4,
+          "samples": [
+            {
+              "hour": "13",
+              "cellText": "51明",
+              "symbol": "明"
+            },
+            {
+              "hour": "17",
+              "cellText": "01明",
+              "symbol": "明"
+            },
+            {
+              "hour": "18",
+              "cellText": "06明",
+              "symbol": "明"
+            },
+            {
+              "hour": "18",
+              "cellText": "47明",
+              "symbol": "明"
+            }
+          ],
+          "legendBySymbol": [
+            {
+              "symbol": "明",
+              "routeNumber": "3",
+              "legendLine": "明…【３系統】新浦安駅経由　明海五丁目止まり"
+            }
+          ],
+          "isRoute18Course": false
+        },
+        {
+          "course": "0008200257",
+          "symbols": {
+            "ひ": 7
+          },
+          "tripCount": 7,
+          "samples": [
+            {
+              "hour": "10",
+              "cellText": "33ひ",
+              "symbol": "ひ"
+            },
+            {
+              "hour": "10",
+              "cellText": "42ひ",
+              "symbol": "ひ"
+            },
+            {
+              "hour": "11",
+              "cellText": "33ひ",
+              "symbol": "ひ"
+            },
+            {
+              "hour": "12",
+              "cellText": "30ひ",
+              "symbol": "ひ"
+            },
+            {
+              "hour": "12",
+              "cellText": "57ひ",
+              "symbol": "ひ"
+            },
+            {
+              "hour": "13",
+              "cellText": "29ひ",
+              "symbol": "ひ"
+            },
+            {
+              "hour": "14",
+              "cellText": "30ひ",
+              "symbol": "ひ"
+            }
+          ],
+          "legendBySymbol": [
+            {
+              "symbol": "ひ",
+              "routeNumber": "11",
+              "legendLine": "ひ…【１１系統】日の出南（墓地公園）行き"
+            }
+          ],
+          "isRoute18Course": false
+        },
+        {
+          "course": "0008200261",
+          "symbols": {
+            "そ": 19
+          },
+          "tripCount": 19,
+          "samples": [
+            {
+              "hour": "07",
+              "cellText": "20そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "07",
+              "cellText": "34そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "07",
+              "cellText": "30そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "07",
+              "cellText": "46そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "08",
+              "cellText": "15そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "08",
+              "cellText": "51そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "08",
+              "cellText": "35そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "08",
+              "cellText": "57そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "09",
+              "cellText": "36そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "09",
+              "cellText": "31そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "11",
+              "cellText": "29そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "13",
+              "cellText": "30そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "14",
+              "cellText": "37そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "14",
+              "cellText": "43そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "15",
+              "cellText": "37そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "15",
+              "cellText": "49そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "16",
+              "cellText": "30そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "16",
+              "cellText": "18そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "17",
+              "cellText": "17そ",
+              "symbol": "そ"
+            }
+          ],
+          "legendBySymbol": [
+            {
+              "symbol": "そ",
+              "routeNumber": "11",
+              "legendLine": "そ…【１１系統】新浦安駅・ベイパーク経由　総合公園行き"
+            }
+          ],
+          "isRoute18Course": false
+        },
+        {
+          "course": "0008200268",
+          "symbols": {
+            "ベ": 3
+          },
+          "tripCount": 3,
+          "samples": [
+            {
+              "hour": "17",
+              "cellText": "34ベ",
+              "symbol": "ベ"
+            },
+            {
+              "hour": "18",
+              "cellText": "35ベ",
+              "symbol": "ベ"
+            },
+            {
+              "hour": "18",
+              "cellText": "27ベ",
+              "symbol": "ベ"
+            }
+          ],
+          "legendBySymbol": [
+            {
+              "symbol": "ベ",
+              "routeNumber": "11",
+              "legendLine": "ベ…【１１系統】新浦安駅経由　ベイパーク止まり"
+            }
+          ],
+          "isRoute18Course": false
+        },
+        {
+          "course": "0008200270",
+          "symbols": {
+            "新": 5
+          },
+          "tripCount": 5,
+          "samples": [
+            {
+              "hour": "08",
+              "cellText": "00新",
+              "symbol": "新"
+            },
+            {
+              "hour": "12",
+              "cellText": "00新",
+              "symbol": "新"
+            },
+            {
+              "hour": "12",
+              "cellText": "45新",
+              "symbol": "新"
+            },
+            {
+              "hour": "19",
+              "cellText": "47新",
+              "symbol": "新"
+            },
+            {
+              "hour": "20",
+              "cellText": "33新",
+              "symbol": "新"
+            }
+          ],
+          "legendBySymbol": [
+            {
+              "symbol": "新",
+              "routeNumber": "11",
+              "legendLine": "新…【１１系統】新浦安駅止まり"
+            }
+          ],
+          "isRoute18Course": false
+        },
+        {
+          "course": "0008200286",
+          "symbols": {
+            "ゆ": 24
+          },
+          "tripCount": 24,
+          "samples": [
+            {
+              "hour": "06",
+              "cellText": "38ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "07",
+              "cellText": "50ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "08",
+              "cellText": "38ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "08",
+              "cellText": "45ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "08",
+              "cellText": "02ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "09",
+              "cellText": "18ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "09",
+              "cellText": "46ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "09",
+              "cellText": "16ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "10",
+              "cellText": "16ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "10",
+              "cellText": "45ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "10",
+              "cellText": "28ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "12",
+              "cellText": "19ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "12",
+              "cellText": "30ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "13",
+              "cellText": "19ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "13",
+              "cellText": "45ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "13",
+              "cellText": "02ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "14",
+              "cellText": "16ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "15",
+              "cellText": "19ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "15",
+              "cellText": "47ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "15",
+              "cellText": "16ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "16",
+              "cellText": "34ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "16",
+              "cellText": "59ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "16",
+              "cellText": "31ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "17",
+              "cellText": "34ゆ",
+              "symbol": "ゆ"
+            }
+          ],
+          "legendBySymbol": [
+            {
+              "symbol": "ゆ",
+              "routeNumber": "18",
+              "legendLine": "ゆ…【１８系統】新浦安駅・高洲橋経由　高洲海浜公園行き"
+            }
+          ],
+          "isRoute18Course": true
+        }
+      ]
+    },
+    {
+      "label": "浦安駅入口 のりば11",
+      "busstop": "00020739",
+      "courseSequence": "0008200211-1",
+      "dayLabel": "sunday-holiday",
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020739&course-sequence=0008200211-1&datetime=2026-08-02T05:00",
+      "legendRaw": [
+        "あ…【３系統】新浦安駅・明海五丁目経由　総合公園行き",
+        "明…【３系統】新浦安駅経由　明海五丁目止まり",
+        "ひ…【１１系統】日の出南（墓地公園）行き",
+        "そ…【１１系統】新浦安駅・ベイパーク経由　総合公園行き",
+        "ベ…【１１系統】新浦安駅経由　ベイパーク止まり",
+        "新…【１１系統】新浦安駅止まり",
+        "ゆ…【１８系統】新浦安駅・高洲橋経由　高洲海浜公園行き"
+      ],
+      "legendParsed": [
+        {
+          "symbol": "あ",
+          "symbolRaw": "あ",
+          "routeNumber": "3",
+          "description": "新浦安駅・明海五丁目経由　総合公園行き",
+          "line": "あ…【３系統】新浦安駅・明海五丁目経由　総合公園行き"
+        },
+        {
+          "symbol": "明",
+          "symbolRaw": "明",
+          "routeNumber": "3",
+          "description": "新浦安駅経由　明海五丁目止まり",
+          "line": "明…【３系統】新浦安駅経由　明海五丁目止まり"
+        },
+        {
+          "symbol": "ひ",
+          "symbolRaw": "ひ",
+          "routeNumber": "11",
+          "description": "日の出南（墓地公園）行き",
+          "line": "ひ…【１１系統】日の出南（墓地公園）行き"
+        },
+        {
+          "symbol": "そ",
+          "symbolRaw": "そ",
+          "routeNumber": "11",
+          "description": "新浦安駅・ベイパーク経由　総合公園行き",
+          "line": "そ…【１１系統】新浦安駅・ベイパーク経由　総合公園行き"
+        },
+        {
+          "symbol": "ベ",
+          "symbolRaw": "ベ",
+          "routeNumber": "11",
+          "description": "新浦安駅経由　ベイパーク止まり",
+          "line": "ベ…【１１系統】新浦安駅経由　ベイパーク止まり"
+        },
+        {
+          "symbol": "新",
+          "symbolRaw": "新",
+          "routeNumber": "11",
+          "description": "新浦安駅止まり",
+          "line": "新…【１１系統】新浦安駅止まり"
+        },
+        {
+          "symbol": "ゆ",
+          "symbolRaw": "ゆ",
+          "routeNumber": "18",
+          "description": "新浦安駅・高洲橋経由　高洲海浜公園行き",
+          "line": "ゆ…【１８系統】新浦安駅・高洲橋経由　高洲海浜公園行き"
+        }
+      ],
+      "tripTotal": 97,
+      "courses": [
+        {
+          "course": "0008200211",
+          "symbols": {
+            "あ": 35
+          },
+          "tripCount": 35,
+          "samples": [
+            {
+              "hour": "06",
+              "cellText": "55あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "07",
+              "cellText": "48あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "07",
+              "cellText": "04あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "07",
+              "cellText": "12あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "08",
+              "cellText": "25あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "08",
+              "cellText": "55あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "08",
+              "cellText": "17あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "08",
+              "cellText": "17あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "09",
+              "cellText": "17あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "09",
+              "cellText": "30あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "10",
+              "cellText": "00あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "10",
+              "cellText": "17あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "10",
+              "cellText": "17あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "11",
+              "cellText": "49あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "11",
+              "cellText": "18あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "11",
+              "cellText": "17あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "12",
+              "cellText": "51あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "12",
+              "cellText": "17あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "12",
+              "cellText": "29あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "13",
+              "cellText": "18あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "13",
+              "cellText": "33あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "14",
+              "cellText": "59あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "14",
+              "cellText": "17あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "14",
+              "cellText": "36あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "15",
+              "cellText": "31あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "15",
+              "cellText": "33あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "16",
+              "cellText": "05あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "16",
+              "cellText": "17あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "16",
+              "cellText": "45あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "17",
+              "cellText": "17あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "17",
+              "cellText": "34あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "18",
+              "cellText": "17あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "19",
+              "cellText": "17あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "19",
+              "cellText": "17あ",
+              "symbol": "あ"
+            },
+            {
+              "hour": "19",
+              "cellText": "17あ",
+              "symbol": "あ"
+            }
+          ],
+          "legendBySymbol": [
+            {
+              "symbol": "あ",
+              "routeNumber": "3",
+              "legendLine": "あ…【３系統】新浦安駅・明海五丁目経由　総合公園行き"
+            }
+          ],
+          "isRoute18Course": false
+        },
+        {
+          "course": "0008200218",
+          "symbols": {
+            "明": 4
+          },
+          "tripCount": 4,
+          "samples": [
+            {
+              "hour": "13",
+              "cellText": "51明",
+              "symbol": "明"
+            },
+            {
+              "hour": "17",
+              "cellText": "01明",
+              "symbol": "明"
+            },
+            {
+              "hour": "18",
+              "cellText": "06明",
+              "symbol": "明"
+            },
+            {
+              "hour": "18",
+              "cellText": "47明",
+              "symbol": "明"
+            }
+          ],
+          "legendBySymbol": [
+            {
+              "symbol": "明",
+              "routeNumber": "3",
+              "legendLine": "明…【３系統】新浦安駅経由　明海五丁目止まり"
+            }
+          ],
+          "isRoute18Course": false
+        },
+        {
+          "course": "0008200257",
+          "symbols": {
+            "ひ": 7
+          },
+          "tripCount": 7,
+          "samples": [
+            {
+              "hour": "10",
+              "cellText": "33ひ",
+              "symbol": "ひ"
+            },
+            {
+              "hour": "10",
+              "cellText": "42ひ",
+              "symbol": "ひ"
+            },
+            {
+              "hour": "11",
+              "cellText": "33ひ",
+              "symbol": "ひ"
+            },
+            {
+              "hour": "12",
+              "cellText": "30ひ",
+              "symbol": "ひ"
+            },
+            {
+              "hour": "12",
+              "cellText": "57ひ",
+              "symbol": "ひ"
+            },
+            {
+              "hour": "13",
+              "cellText": "29ひ",
+              "symbol": "ひ"
+            },
+            {
+              "hour": "14",
+              "cellText": "30ひ",
+              "symbol": "ひ"
+            }
+          ],
+          "legendBySymbol": [
+            {
+              "symbol": "ひ",
+              "routeNumber": "11",
+              "legendLine": "ひ…【１１系統】日の出南（墓地公園）行き"
+            }
+          ],
+          "isRoute18Course": false
+        },
+        {
+          "course": "0008200261",
+          "symbols": {
+            "そ": 19
+          },
+          "tripCount": 19,
+          "samples": [
+            {
+              "hour": "07",
+              "cellText": "20そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "07",
+              "cellText": "34そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "07",
+              "cellText": "30そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "07",
+              "cellText": "46そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "08",
+              "cellText": "15そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "08",
+              "cellText": "51そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "08",
+              "cellText": "35そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "08",
+              "cellText": "57そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "09",
+              "cellText": "36そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "09",
+              "cellText": "31そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "11",
+              "cellText": "29そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "13",
+              "cellText": "30そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "14",
+              "cellText": "37そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "14",
+              "cellText": "43そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "15",
+              "cellText": "37そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "15",
+              "cellText": "49そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "16",
+              "cellText": "30そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "16",
+              "cellText": "18そ",
+              "symbol": "そ"
+            },
+            {
+              "hour": "17",
+              "cellText": "17そ",
+              "symbol": "そ"
+            }
+          ],
+          "legendBySymbol": [
+            {
+              "symbol": "そ",
+              "routeNumber": "11",
+              "legendLine": "そ…【１１系統】新浦安駅・ベイパーク経由　総合公園行き"
+            }
+          ],
+          "isRoute18Course": false
+        },
+        {
+          "course": "0008200268",
+          "symbols": {
+            "ベ": 3
+          },
+          "tripCount": 3,
+          "samples": [
+            {
+              "hour": "17",
+              "cellText": "34ベ",
+              "symbol": "ベ"
+            },
+            {
+              "hour": "18",
+              "cellText": "35ベ",
+              "symbol": "ベ"
+            },
+            {
+              "hour": "18",
+              "cellText": "27ベ",
+              "symbol": "ベ"
+            }
+          ],
+          "legendBySymbol": [
+            {
+              "symbol": "ベ",
+              "routeNumber": "11",
+              "legendLine": "ベ…【１１系統】新浦安駅経由　ベイパーク止まり"
+            }
+          ],
+          "isRoute18Course": false
+        },
+        {
+          "course": "0008200270",
+          "symbols": {
+            "新": 5
+          },
+          "tripCount": 5,
+          "samples": [
+            {
+              "hour": "08",
+              "cellText": "00新",
+              "symbol": "新"
+            },
+            {
+              "hour": "12",
+              "cellText": "00新",
+              "symbol": "新"
+            },
+            {
+              "hour": "12",
+              "cellText": "45新",
+              "symbol": "新"
+            },
+            {
+              "hour": "19",
+              "cellText": "47新",
+              "symbol": "新"
+            },
+            {
+              "hour": "20",
+              "cellText": "33新",
+              "symbol": "新"
+            }
+          ],
+          "legendBySymbol": [
+            {
+              "symbol": "新",
+              "routeNumber": "11",
+              "legendLine": "新…【１１系統】新浦安駅止まり"
+            }
+          ],
+          "isRoute18Course": false
+        },
+        {
+          "course": "0008200286",
+          "symbols": {
+            "ゆ": 24
+          },
+          "tripCount": 24,
+          "samples": [
+            {
+              "hour": "06",
+              "cellText": "38ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "07",
+              "cellText": "50ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "08",
+              "cellText": "38ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "08",
+              "cellText": "45ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "08",
+              "cellText": "02ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "09",
+              "cellText": "18ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "09",
+              "cellText": "46ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "09",
+              "cellText": "16ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "10",
+              "cellText": "16ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "10",
+              "cellText": "45ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "10",
+              "cellText": "28ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "12",
+              "cellText": "19ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "12",
+              "cellText": "30ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "13",
+              "cellText": "19ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "13",
+              "cellText": "45ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "13",
+              "cellText": "02ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "14",
+              "cellText": "16ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "15",
+              "cellText": "19ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "15",
+              "cellText": "47ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "15",
+              "cellText": "16ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "16",
+              "cellText": "34ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "16",
+              "cellText": "59ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "16",
+              "cellText": "31ゆ",
+              "symbol": "ゆ"
+            },
+            {
+              "hour": "17",
+              "cellText": "34ゆ",
+              "symbol": "ゆ"
+            }
+          ],
+          "legendBySymbol": [
+            {
+              "symbol": "ゆ",
+              "routeNumber": "18",
+              "legendLine": "ゆ…【１８系統】新浦安駅・高洲橋経由　高洲海浜公園行き"
+            }
+          ],
+          "isRoute18Course": true
+        }
+      ]
+    }
+  ]
+}
