@@ -1,0 +1,408 @@
+{
+  "validatedAt": "2026-07-27T04:06:08.256Z",
+  "baseline": "f4c6d5a",
+  "checks": [
+    {
+      "name": "CACHE v119",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "index loader v119",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sw loader v119",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "PACKS route-20",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "PACKS route-22",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "PACKS route-23",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "PACKS route-24",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "PACKS route-25",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "PACKS route-37",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "PACKS route-38",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "copyright",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "bank route-20",
+      "pass": true,
+      "detail": "7 systems"
+    },
+    {
+      "name": "20 20-maihama-clean-center hash",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "20 20-maihama-clean-center pts",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "20 20-maihama-chidori-nishi hash",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "20 20-maihama-chidori-nishi pts",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "20 20-chidori-loop hash",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "20 20-chidori-loop pts",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "20 20-maihama-chidori-garage hash",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "20 20-maihama-chidori-garage pts",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "20 20-chidori-garage-maihama hash",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "20 20-chidori-garage-maihama pts",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "20 20-clean-center-maihama hash",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "20 20-clean-center-maihama pts",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "20 20-clean-center-maihama-via-saijo hash",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "20 20-clean-center-maihama-via-saijo pts",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "bank route-22",
+      "pass": true,
+      "detail": "2 systems"
+    },
+    {
+      "name": "22 22-shinurayasu-chidori-garage hash",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "22 22-shinurayasu-chidori-garage pts",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "22 22-chidori-garage-shinurayasu hash",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "22 22-chidori-garage-shinurayasu pts",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "bank route-23",
+      "pass": true,
+      "detail": "2 systems"
+    },
+    {
+      "name": "23 23-maihama-sogo hash",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "23 23-maihama-sogo pts",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "23 23-sogo-maihama hash",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "23 23-sogo-maihama pts",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "bank route-24",
+      "pass": true,
+      "detail": "1 systems"
+    },
+    {
+      "name": "24 24-fujimi-loop hash",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "24 24-fujimi-loop pts",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "bank route-25",
+      "pass": true,
+      "detail": "4 systems"
+    },
+    {
+      "name": "25 25-maihama-takasu-seaside hash",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "25 25-maihama-takasu-seaside pts",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "25 25-takasu-seaside-maihama hash",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "25 25-takasu-seaside-maihama pts",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "25 25-maihama-sogo hash",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "25 25-maihama-sogo pts",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "25 25-sogo-maihama hash",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "25 25-sogo-maihama pts",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "bank route-37",
+      "pass": true,
+      "detail": "7 systems"
+    },
+    {
+      "name": "37 37-minamigyotoku-tds hash",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "37 37-minamigyotoku-tds pts",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "37 37-minamigyotoku-maihama hash",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "37 37-minamigyotoku-maihama pts",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "37 37-tds-minamigyotoku hash",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "37 37-tds-minamigyotoku pts",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "37 37-maihama-minamigyotoku hash",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "37 37-maihama-minamigyotoku pts",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "37 37-tds-horie6 hash",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "37 37-tds-horie6 pts",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "37 37-fujimi3-tds hash",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "37 37-fujimi3-tds pts",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "37 37-horie6-tds hash",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "37 37-horie6-tds pts",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "bank route-38",
+      "pass": true,
+      "detail": "1 systems"
+    },
+    {
+      "name": "38 38-shinurayasu-quon-express hash",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "38 38-shinurayasu-quon-express pts",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "route-3 hash unchanged 3-sogo",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "route-3 hash unchanged 3-urayasu",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "route-3 hash unchanged 3-symbol",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "route-3 hash unchanged 3-akeumi",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "route-17 hash unchanged 17-hinode-nanachome",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "route-17 hash unchanged 17-baycity-urayasu",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "route-17 hash unchanged 17-shinurayasu",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "route-18 hash unchanged 18-takasu-seaside",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "route-18 hash unchanged 18-urayasu-eki-iriguchi",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "route-18 hash unchanged 18-takasu-kita-shogakko",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "route-18 hash unchanged 18-takasu-seaside-from-shinurayasu",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "route-18 hash unchanged 18-shinurayasu-from-takasu",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "route-19 hash unchanged 19-takasu-seaside",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "route-19 hash unchanged 19-shinurayasu",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "pass": true,
+  "fail": []
+}
