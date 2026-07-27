@@ -1,0 +1,42 @@
+{
+  "queriedAt": "2026-07-26T22:40:44.861Z",
+  "bbox": "35.61,139.85,35.68,139.96",
+  "ref": "37",
+  "query": {
+    "route": "relation[type=route][route=bus][ref=37]",
+    "route_master": "relation[type=route_master][route_master=bus][ref=37]"
+  },
+  "counts": {
+    "route": 2,
+    "route_master": 0
+  },
+  "relations": [
+    {
+      "id": 18323271,
+      "osmType": "relation",
+      "ref": "37",
+      "name": "東京ベイシティバス37系統 南行徳駅⇒豊受神社⇒舞浜駅・東京ディズニーシー",
+      "network": "舞浜線",
+      "from": null,
+      "to": null,
+      "operator": "東京ベイシティ交通",
+      "routeTag": "bus",
+      "colour": null,
+      "direction": null
+    },
+    {
+      "id": 18323272,
+      "osmType": "relation",
+      "ref": "37",
+      "name": "東京ベイシティバス37系統 東京ディズニーシー・舞浜駅⇒豊受神社⇒南行徳駅",
+      "network": "大三角線",
+      "from": null,
+      "to": null,
+      "operator": "東京ベイシティ交通",
+      "routeTag": "bus",
+      "colour": null,
+      "direction": null
+    }
+  ],
+  "route_masters": []
+}

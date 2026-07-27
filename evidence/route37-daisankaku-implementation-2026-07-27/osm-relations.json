@@ -1,0 +1,528 @@
+{
+  "fetchedAt": "2026-07-27T03:46:36.546Z",
+  "route": "daisankaku-route37",
+  "lineName": "大三角線",
+  "knownPathSourceIds": [
+    18323271,
+    18323272
+  ],
+  "separationGuard": "ref=9 relations are listed but NEVER used for route-37 geometry.",
+  "relations": [
+    {
+      "id": 18323271,
+      "label": "route37 南行徳駅⇒豊受神社⇒舞浜駅・TDS (network=舞浜線 tag — verify ref=37)",
+      "ok": true,
+      "source": "overpass",
+      "name": "東京ベイシティバス37系統 南行徳駅⇒豊受神社⇒舞浜駅・東京ディズニーシー",
+      "tags": {
+        "name": "東京ベイシティバス37系統 南行徳駅⇒豊受神社⇒舞浜駅・東京ディズニーシー",
+        "network": "舞浜線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "37",
+        "route": "bus",
+        "type": "route"
+      },
+      "memberCount": 53,
+      "wayMemberCount": 37,
+      "platformMemberCount": 16,
+      "memberRoles": {
+        "platform_entry_only": 1,
+        "platform": 14,
+        "platform_exit_only": 1,
+        "": 37
+      },
+      "platformNames": [
+        "南行徳駅",
+        "南行徳三丁目",
+        "やなぎ公園",
+        "北部小入口",
+        "猫実川",
+        "豊受神社",
+        "堀江一丁目",
+        "堀江六丁目",
+        "清滝弁財天",
+        "堀江中学校前",
+        "富士見三丁目",
+        "富士見五丁目",
+        "京成ローズタウン",
+        "舞浜駅",
+        "オリエンタルランド本社前",
+        "東京ディズニーシー®"
+      ],
+      "platformsDetail": [
+        {
+          "role": "platform_entry_only",
+          "type": "node",
+          "ref": 9810082418,
+          "name": "南行徳駅",
+          "lat": 35.6724167,
+          "lon": 139.9011972,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 9810016016,
+          "name": "南行徳三丁目",
+          "lat": 35.6682679,
+          "lon": 139.9050739,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 12369158175,
+          "name": "やなぎ公園",
+          "lat": 35.6669055,
+          "lon": 139.9049771,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6778581432,
+          "name": "北部小入口",
+          "lat": 35.6651284,
+          "lon": 139.9031583,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6778581429,
+          "name": "猫実川",
+          "lat": 35.6635352,
+          "lon": 139.9012625,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 12369158180,
+          "name": "豊受神社",
+          "lat": 35.660016,
+          "lon": 139.8977056,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 12369158181,
+          "name": "堀江一丁目",
+          "lat": 35.6565727,
+          "lon": 139.8949403,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6778604852,
+          "name": "堀江六丁目",
+          "lat": 35.654958,
+          "lon": 139.8936037,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6778604853,
+          "name": "清滝弁財天",
+          "lat": 35.652906,
+          "lon": 139.8921342,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6778604857,
+          "name": "堀江中学校前",
+          "lat": 35.6502601,
+          "lon": 139.8906515,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6778604859,
+          "name": "富士見三丁目",
+          "lat": 35.6479226,
+          "lon": 139.8892899,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 598536218,
+          "name": "富士見五丁目",
+          "lat": 35.6454904,
+          "lon": 139.8878484,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6778604861,
+          "name": "京成ローズタウン",
+          "lat": 35.6414511,
+          "lon": 139.8812333,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 9482601636,
+          "name": "舞浜駅",
+          "lat": 35.6359331,
+          "lon": 139.8835561,
+          "local_ref": "4"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 2301981524,
+          "name": "オリエンタルランド本社前",
+          "lat": 35.6312873,
+          "lon": 139.8885643,
+          "local_ref": null
+        },
+        {
+          "role": "platform_exit_only",
+          "type": "node",
+          "ref": 2768542070,
+          "name": "東京ディズニーシー®",
+          "lat": 35.6290596,
+          "lon": 139.8881506,
+          "local_ref": "9"
+        }
+      ],
+      "wayMemberIds": [
+        587674525,
+        165838256,
+        1068683932,
+        1026426229,
+        1026426233,
+        1446719661,
+        1026426235,
+        906161748,
+        778411630,
+        1138180974,
+        1138180973,
+        1223476820,
+        1223476821,
+        1342413245,
+        221920768,
+        60194392,
+        260586196,
+        60238527,
+        60238533,
+        1342413248,
+        60241533,
+        60241543,
+        169959971,
+        271934581,
+        260586195,
+        1291325002,
+        258419781,
+        1338975831,
+        1337138021,
+        1337341818,
+        1337358421,
+        1337138028,
+        258419782,
+        30177020,
+        258226622,
+        271934572,
+        1337319406
+      ],
+      "file": "osm-relation-18323271.json"
+    },
+    {
+      "id": 18323272,
+      "label": "route37 TDS・舞浜駅⇒豊受神社⇒南行徳駅 (network=大三角線)",
+      "ok": true,
+      "source": "overpass",
+      "name": "東京ベイシティバス37系統 東京ディズニーシー・舞浜駅⇒豊受神社⇒南行徳駅",
+      "tags": {
+        "name": "東京ベイシティバス37系統 東京ディズニーシー・舞浜駅⇒豊受神社⇒南行徳駅",
+        "network": "大三角線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "37",
+        "route": "bus",
+        "type": "route"
+      },
+      "memberCount": 57,
+      "wayMemberCount": 41,
+      "platformMemberCount": 16,
+      "memberRoles": {
+        "platform_entry_only": 1,
+        "platform": 14,
+        "platform_exit_only": 1,
+        "": 41
+      },
+      "platformNames": [
+        "東京ディズニーシー®",
+        "オリエンタルランド本社前",
+        "舞浜駅",
+        "京成ローズタウン",
+        "富士見五丁目",
+        "富士見三丁目",
+        "堀江中学校前",
+        "清滝弁財天",
+        "堀江六丁目",
+        "堀江一丁目",
+        "豊受神社",
+        "猫実川",
+        "北部小入口",
+        "やなぎ公園",
+        "南行徳三丁目",
+        "南行徳駅"
+      ],
+      "platformsDetail": [
+        {
+          "role": "platform_entry_only",
+          "type": "node",
+          "ref": 2768542070,
+          "name": "東京ディズニーシー®",
+          "lat": 35.6290596,
+          "lon": 139.8881506,
+          "local_ref": "9"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 2301991499,
+          "name": "オリエンタルランド本社前",
+          "lat": 35.6320206,
+          "lon": 139.887359,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 9482601637,
+          "name": "舞浜駅",
+          "lat": 35.6357267,
+          "lon": 139.8838714,
+          "local_ref": "2"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6778604860,
+          "name": "京成ローズタウン",
+          "lat": 35.6420322,
+          "lon": 139.8819328,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 12367548464,
+          "name": "富士見五丁目",
+          "lat": 35.6455749,
+          "lon": 139.8876956,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6778604858,
+          "name": "富士見三丁目",
+          "lat": 35.6482656,
+          "lon": 139.8892742,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6778604856,
+          "name": "堀江中学校前",
+          "lat": 35.6507102,
+          "lon": 139.8906984,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 12367548465,
+          "name": "清滝弁財天",
+          "lat": 35.6530268,
+          "lon": 139.8920006,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 12367548459,
+          "name": "堀江六丁目",
+          "lat": 35.6550668,
+          "lon": 139.893457,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6778604851,
+          "name": "堀江一丁目",
+          "lat": 35.6570876,
+          "lon": 139.8951144,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6778604850,
+          "name": "豊受神社",
+          "lat": 35.6603057,
+          "lon": 139.8977148,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6778581428,
+          "name": "猫実川",
+          "lat": 35.663045,
+          "lon": 139.9004338,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6778581431,
+          "name": "北部小入口",
+          "lat": 35.664731,
+          "lon": 139.9025569,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6778581433,
+          "name": "やなぎ公園",
+          "lat": 35.6671924,
+          "lon": 139.9051221,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 9810016015,
+          "name": "南行徳三丁目",
+          "lat": 35.6689023,
+          "lon": 139.9037399,
+          "local_ref": null
+        },
+        {
+          "role": "platform_exit_only",
+          "type": "node",
+          "ref": 9810082418,
+          "name": "南行徳駅",
+          "lat": 35.6724167,
+          "lon": 139.9011972,
+          "local_ref": null
+        }
+      ],
+      "wayMemberIds": [
+        271934564,
+        271934565,
+        1307684851,
+        1307684852,
+        271934583,
+        30177020,
+        203564427,
+        258419781,
+        1338975831,
+        1337138021,
+        1337341818,
+        1337358421,
+        1337138028,
+        1291325002,
+        260586195,
+        30177041,
+        260586191,
+        169959971,
+        60241543,
+        60241533,
+        1342413248,
+        60238533,
+        60238527,
+        260586196,
+        60194392,
+        221920768,
+        1342413245,
+        1223476821,
+        1223476820,
+        1138180973,
+        1138180974,
+        778411630,
+        1026426236,
+        1446719663,
+        1026426234,
+        1026426230,
+        1026426231,
+        1068683931,
+        165838256,
+        1068683929,
+        245324768
+      ],
+      "file": "osm-relation-18323272.json"
+    }
+  ],
+  "refProbe9": [
+    {
+      "id": 3498220,
+      "type": "relation",
+      "tags": {
+        "name": "東京ベイシティバス9系統 舞浜駅⇒堀江中学校⇒浦安駅入口",
+        "network": "舞浜線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "9",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "id": 18320323,
+      "type": "relation",
+      "tags": {
+        "name": "東京ベイシティバス9系統 浦安駅入口⇒堀江中学校⇒舞浜駅",
+        "network": "舞浜線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "9",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "id": 18419884,
+      "type": "relation",
+      "tags": {
+        "name": "東京ベイシティバス9系統 舞浜駅⇒堀江中学校・東野⇒東海大浦安高校入口",
+        "network": "舞浜線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "9",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "id": 18419885,
+      "type": "relation",
+      "tags": {
+        "name": "東京ベイシティバス9系統 東海大浦安高校入口⇒東野・堀江中学校⇒舞浜駅",
+        "network": "舞浜線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "9",
+        "route": "bus",
+        "type": "route"
+      }
+    }
+  ]
+}

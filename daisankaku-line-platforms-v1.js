@@ -1,0 +1,1296 @@
+// Auto-generated OSM platforms for 大三角線 系統37 (route-37).
+// Official stop order: Keisei Bus Navi 2026-07-27（【３７系統】凡例ゲート）。route-9系統は除外。
+// NEVER use route-9 (舞浜線) relations or their path assets.
+// Generated: 2026-07-27-daisankaku-line-v1
+(() => {
+  window.DAISANKAKU_LINE_PLATFORMS_V1 = {
+  "37-minamigyotoku-tds": {
+    "byIndex": [
+      {
+        "lat": 35.6724167,
+        "lng": 139.9011972,
+        "platformId": 9810082418,
+        "role": "platform_entry_only",
+        "osmName": "南行徳駅",
+        "name": "南行徳駅"
+      },
+      {
+        "lat": 35.6682679,
+        "lng": 139.9050739,
+        "platformId": 9810016016,
+        "role": "platform",
+        "osmName": "南行徳三丁目",
+        "name": "南行徳三丁目"
+      },
+      {
+        "lat": 35.6669055,
+        "lng": 139.9049771,
+        "platformId": 12369158175,
+        "role": "platform",
+        "osmName": "やなぎ公園",
+        "name": "やなぎ公園"
+      },
+      {
+        "lat": 35.6651284,
+        "lng": 139.9031583,
+        "platformId": 6778581432,
+        "role": "platform",
+        "osmName": "北部小入口",
+        "name": "北部小入口"
+      },
+      {
+        "lat": 35.6635352,
+        "lng": 139.9012625,
+        "platformId": 6778581429,
+        "role": "platform",
+        "osmName": "猫実川",
+        "name": "猫実川"
+      },
+      {
+        "lat": 35.660016,
+        "lng": 139.8977056,
+        "platformId": 12369158180,
+        "role": "platform",
+        "osmName": "豊受神社",
+        "name": "豊受神社"
+      },
+      {
+        "lat": 35.6565727,
+        "lng": 139.8949403,
+        "platformId": 12369158181,
+        "role": "platform",
+        "osmName": "堀江一丁目",
+        "name": "堀江一丁目"
+      },
+      {
+        "lat": 35.654958,
+        "lng": 139.8936037,
+        "platformId": 6778604852,
+        "role": "platform",
+        "osmName": "堀江六丁目",
+        "name": "堀江六丁目"
+      },
+      {
+        "lat": 35.652906,
+        "lng": 139.8921342,
+        "platformId": 6778604853,
+        "role": "platform",
+        "osmName": "清滝弁財天",
+        "name": "清滝弁財天"
+      },
+      {
+        "lat": 35.6502601,
+        "lng": 139.8906515,
+        "platformId": 6778604857,
+        "role": "platform",
+        "osmName": "堀江中学校前",
+        "name": "堀江中学校前"
+      },
+      {
+        "lat": 35.6479226,
+        "lng": 139.8892899,
+        "platformId": 6778604859,
+        "role": "platform",
+        "osmName": "富士見三丁目",
+        "name": "富士見三丁目"
+      },
+      {
+        "lat": 35.6454904,
+        "lng": 139.8878484,
+        "platformId": 598536218,
+        "role": "platform",
+        "osmName": "富士見五丁目",
+        "name": "富士見五丁目"
+      },
+      {
+        "lat": 35.6414511,
+        "lng": 139.8812333,
+        "platformId": 6778604861,
+        "role": "platform",
+        "osmName": "京成ローズタウン",
+        "name": "京成ローズタウン"
+      },
+      {
+        "lat": 35.6359331,
+        "lng": 139.8835561,
+        "platformId": 9482601636,
+        "role": "platform",
+        "osmName": "舞浜駅",
+        "name": "舞浜駅"
+      },
+      {
+        "lat": 35.6312873,
+        "lng": 139.8885643,
+        "platformId": 2301981524,
+        "role": "platform",
+        "osmName": "オリエンタルランド本社前",
+        "name": "オリエンタルランド本社前"
+      },
+      {
+        "lat": 35.6290596,
+        "lng": 139.8881506,
+        "platformId": 2768542070,
+        "role": "platform_exit_only",
+        "osmName": "東京ディズニーシー®",
+        "name": "「東京ディズニーシー（Ｒ）」"
+      }
+    ],
+    "南行徳駅": {
+      "lat": 35.6724167,
+      "lng": 139.9011972,
+      "platformId": 9810082418,
+      "role": "platform_entry_only",
+      "osmName": "南行徳駅"
+    },
+    "南行徳三丁目": {
+      "lat": 35.6682679,
+      "lng": 139.9050739,
+      "platformId": 9810016016,
+      "role": "platform",
+      "osmName": "南行徳三丁目"
+    },
+    "やなぎ公園": {
+      "lat": 35.6669055,
+      "lng": 139.9049771,
+      "platformId": 12369158175,
+      "role": "platform",
+      "osmName": "やなぎ公園"
+    },
+    "北部小入口": {
+      "lat": 35.6651284,
+      "lng": 139.9031583,
+      "platformId": 6778581432,
+      "role": "platform",
+      "osmName": "北部小入口"
+    },
+    "猫実川": {
+      "lat": 35.6635352,
+      "lng": 139.9012625,
+      "platformId": 6778581429,
+      "role": "platform",
+      "osmName": "猫実川"
+    },
+    "豊受神社": {
+      "lat": 35.660016,
+      "lng": 139.8977056,
+      "platformId": 12369158180,
+      "role": "platform",
+      "osmName": "豊受神社"
+    },
+    "堀江一丁目": {
+      "lat": 35.6565727,
+      "lng": 139.8949403,
+      "platformId": 12369158181,
+      "role": "platform",
+      "osmName": "堀江一丁目"
+    },
+    "堀江六丁目": {
+      "lat": 35.654958,
+      "lng": 139.8936037,
+      "platformId": 6778604852,
+      "role": "platform",
+      "osmName": "堀江六丁目"
+    },
+    "清滝弁財天": {
+      "lat": 35.652906,
+      "lng": 139.8921342,
+      "platformId": 6778604853,
+      "role": "platform",
+      "osmName": "清滝弁財天"
+    },
+    "堀江中学校前": {
+      "lat": 35.6502601,
+      "lng": 139.8906515,
+      "platformId": 6778604857,
+      "role": "platform",
+      "osmName": "堀江中学校前"
+    },
+    "富士見三丁目": {
+      "lat": 35.6479226,
+      "lng": 139.8892899,
+      "platformId": 6778604859,
+      "role": "platform",
+      "osmName": "富士見三丁目"
+    },
+    "富士見五丁目": {
+      "lat": 35.6454904,
+      "lng": 139.8878484,
+      "platformId": 598536218,
+      "role": "platform",
+      "osmName": "富士見五丁目"
+    },
+    "京成ローズタウン": {
+      "lat": 35.6414511,
+      "lng": 139.8812333,
+      "platformId": 6778604861,
+      "role": "platform",
+      "osmName": "京成ローズタウン"
+    },
+    "舞浜駅": {
+      "lat": 35.6359331,
+      "lng": 139.8835561,
+      "platformId": 9482601636,
+      "role": "platform",
+      "osmName": "舞浜駅"
+    },
+    "オリエンタルランド本社前": {
+      "lat": 35.6312873,
+      "lng": 139.8885643,
+      "platformId": 2301981524,
+      "role": "platform",
+      "osmName": "オリエンタルランド本社前"
+    },
+    "「東京ディズニーシー（Ｒ）」": {
+      "lat": 35.6290596,
+      "lng": 139.8881506,
+      "platformId": 2768542070,
+      "role": "platform_exit_only",
+      "osmName": "東京ディズニーシー®"
+    }
+  },
+  "37-minamigyotoku-maihama": {
+    "byIndex": [
+      {
+        "lat": 35.6724167,
+        "lng": 139.9011972,
+        "platformId": 9810082418,
+        "role": "platform_entry_only",
+        "osmName": "南行徳駅",
+        "name": "南行徳駅"
+      },
+      {
+        "lat": 35.6682679,
+        "lng": 139.9050739,
+        "platformId": 9810016016,
+        "role": "platform",
+        "osmName": "南行徳三丁目",
+        "name": "南行徳三丁目"
+      },
+      {
+        "lat": 35.6669055,
+        "lng": 139.9049771,
+        "platformId": 12369158175,
+        "role": "platform",
+        "osmName": "やなぎ公園",
+        "name": "やなぎ公園"
+      },
+      {
+        "lat": 35.6651284,
+        "lng": 139.9031583,
+        "platformId": 6778581432,
+        "role": "platform",
+        "osmName": "北部小入口",
+        "name": "北部小入口"
+      },
+      {
+        "lat": 35.6635352,
+        "lng": 139.9012625,
+        "platformId": 6778581429,
+        "role": "platform",
+        "osmName": "猫実川",
+        "name": "猫実川"
+      },
+      {
+        "lat": 35.660016,
+        "lng": 139.8977056,
+        "platformId": 12369158180,
+        "role": "platform",
+        "osmName": "豊受神社",
+        "name": "豊受神社"
+      },
+      {
+        "lat": 35.6565727,
+        "lng": 139.8949403,
+        "platformId": 12369158181,
+        "role": "platform",
+        "osmName": "堀江一丁目",
+        "name": "堀江一丁目"
+      },
+      {
+        "lat": 35.654958,
+        "lng": 139.8936037,
+        "platformId": 6778604852,
+        "role": "platform",
+        "osmName": "堀江六丁目",
+        "name": "堀江六丁目"
+      },
+      {
+        "lat": 35.652906,
+        "lng": 139.8921342,
+        "platformId": 6778604853,
+        "role": "platform",
+        "osmName": "清滝弁財天",
+        "name": "清滝弁財天"
+      },
+      {
+        "lat": 35.6502601,
+        "lng": 139.8906515,
+        "platformId": 6778604857,
+        "role": "platform",
+        "osmName": "堀江中学校前",
+        "name": "堀江中学校前"
+      },
+      {
+        "lat": 35.6479226,
+        "lng": 139.8892899,
+        "platformId": 6778604859,
+        "role": "platform",
+        "osmName": "富士見三丁目",
+        "name": "富士見三丁目"
+      },
+      {
+        "lat": 35.6454904,
+        "lng": 139.8878484,
+        "platformId": 598536218,
+        "role": "platform",
+        "osmName": "富士見五丁目",
+        "name": "富士見五丁目"
+      },
+      {
+        "lat": 35.6414511,
+        "lng": 139.8812333,
+        "platformId": 6778604861,
+        "role": "platform",
+        "osmName": "京成ローズタウン",
+        "name": "京成ローズタウン"
+      },
+      {
+        "lat": 35.6359331,
+        "lng": 139.8835561,
+        "platformId": 9482601636,
+        "role": "platform",
+        "osmName": "舞浜駅",
+        "name": "舞浜駅"
+      }
+    ],
+    "南行徳駅": {
+      "lat": 35.6724167,
+      "lng": 139.9011972,
+      "platformId": 9810082418,
+      "role": "platform_entry_only",
+      "osmName": "南行徳駅"
+    },
+    "南行徳三丁目": {
+      "lat": 35.6682679,
+      "lng": 139.9050739,
+      "platformId": 9810016016,
+      "role": "platform",
+      "osmName": "南行徳三丁目"
+    },
+    "やなぎ公園": {
+      "lat": 35.6669055,
+      "lng": 139.9049771,
+      "platformId": 12369158175,
+      "role": "platform",
+      "osmName": "やなぎ公園"
+    },
+    "北部小入口": {
+      "lat": 35.6651284,
+      "lng": 139.9031583,
+      "platformId": 6778581432,
+      "role": "platform",
+      "osmName": "北部小入口"
+    },
+    "猫実川": {
+      "lat": 35.6635352,
+      "lng": 139.9012625,
+      "platformId": 6778581429,
+      "role": "platform",
+      "osmName": "猫実川"
+    },
+    "豊受神社": {
+      "lat": 35.660016,
+      "lng": 139.8977056,
+      "platformId": 12369158180,
+      "role": "platform",
+      "osmName": "豊受神社"
+    },
+    "堀江一丁目": {
+      "lat": 35.6565727,
+      "lng": 139.8949403,
+      "platformId": 12369158181,
+      "role": "platform",
+      "osmName": "堀江一丁目"
+    },
+    "堀江六丁目": {
+      "lat": 35.654958,
+      "lng": 139.8936037,
+      "platformId": 6778604852,
+      "role": "platform",
+      "osmName": "堀江六丁目"
+    },
+    "清滝弁財天": {
+      "lat": 35.652906,
+      "lng": 139.8921342,
+      "platformId": 6778604853,
+      "role": "platform",
+      "osmName": "清滝弁財天"
+    },
+    "堀江中学校前": {
+      "lat": 35.6502601,
+      "lng": 139.8906515,
+      "platformId": 6778604857,
+      "role": "platform",
+      "osmName": "堀江中学校前"
+    },
+    "富士見三丁目": {
+      "lat": 35.6479226,
+      "lng": 139.8892899,
+      "platformId": 6778604859,
+      "role": "platform",
+      "osmName": "富士見三丁目"
+    },
+    "富士見五丁目": {
+      "lat": 35.6454904,
+      "lng": 139.8878484,
+      "platformId": 598536218,
+      "role": "platform",
+      "osmName": "富士見五丁目"
+    },
+    "京成ローズタウン": {
+      "lat": 35.6414511,
+      "lng": 139.8812333,
+      "platformId": 6778604861,
+      "role": "platform",
+      "osmName": "京成ローズタウン"
+    },
+    "舞浜駅": {
+      "lat": 35.6359331,
+      "lng": 139.8835561,
+      "platformId": 9482601636,
+      "role": "platform",
+      "osmName": "舞浜駅"
+    }
+  },
+  "37-tds-minamigyotoku": {
+    "byIndex": [
+      {
+        "lat": 35.6290596,
+        "lng": 139.8881506,
+        "platformId": 2768542070,
+        "role": "platform_entry_only",
+        "osmName": "東京ディズニーシー®",
+        "name": "「東京ディズニーシー（Ｒ）」"
+      },
+      {
+        "lat": 35.6320206,
+        "lng": 139.887359,
+        "platformId": 2301991499,
+        "role": "platform",
+        "osmName": "オリエンタルランド本社前",
+        "name": "オリエンタルランド本社前"
+      },
+      {
+        "lat": 35.6357267,
+        "lng": 139.8838714,
+        "platformId": 9482601637,
+        "role": "platform",
+        "osmName": "舞浜駅",
+        "name": "舞浜駅"
+      },
+      {
+        "lat": 35.6420322,
+        "lng": 139.8819328,
+        "platformId": 6778604860,
+        "role": "platform",
+        "osmName": "京成ローズタウン",
+        "name": "京成ローズタウン"
+      },
+      {
+        "lat": 35.6455749,
+        "lng": 139.8876956,
+        "platformId": 12367548464,
+        "role": "platform",
+        "osmName": "富士見五丁目",
+        "name": "富士見五丁目"
+      },
+      {
+        "lat": 35.6482656,
+        "lng": 139.8892742,
+        "platformId": 6778604858,
+        "role": "platform",
+        "osmName": "富士見三丁目",
+        "name": "富士見三丁目"
+      },
+      {
+        "lat": 35.6507102,
+        "lng": 139.8906984,
+        "platformId": 6778604856,
+        "role": "platform",
+        "osmName": "堀江中学校前",
+        "name": "堀江中学校前"
+      },
+      {
+        "lat": 35.6530268,
+        "lng": 139.8920006,
+        "platformId": 12367548465,
+        "role": "platform",
+        "osmName": "清滝弁財天",
+        "name": "清滝弁財天"
+      },
+      {
+        "lat": 35.6550668,
+        "lng": 139.893457,
+        "platformId": 12367548459,
+        "role": "platform",
+        "osmName": "堀江六丁目",
+        "name": "堀江六丁目"
+      },
+      {
+        "lat": 35.6570876,
+        "lng": 139.8951144,
+        "platformId": 6778604851,
+        "role": "platform",
+        "osmName": "堀江一丁目",
+        "name": "堀江一丁目"
+      },
+      {
+        "lat": 35.6603057,
+        "lng": 139.8977148,
+        "platformId": 6778604850,
+        "role": "platform",
+        "osmName": "豊受神社",
+        "name": "豊受神社"
+      },
+      {
+        "lat": 35.663045,
+        "lng": 139.9004338,
+        "platformId": 6778581428,
+        "role": "platform",
+        "osmName": "猫実川",
+        "name": "猫実川"
+      },
+      {
+        "lat": 35.664731,
+        "lng": 139.9025569,
+        "platformId": 6778581431,
+        "role": "platform",
+        "osmName": "北部小入口",
+        "name": "北部小入口"
+      },
+      {
+        "lat": 35.6671924,
+        "lng": 139.9051221,
+        "platformId": 6778581433,
+        "role": "platform",
+        "osmName": "やなぎ公園",
+        "name": "やなぎ公園"
+      },
+      {
+        "lat": 35.6689023,
+        "lng": 139.9037399,
+        "platformId": 9810016015,
+        "role": "platform",
+        "osmName": "南行徳三丁目",
+        "name": "南行徳三丁目"
+      },
+      {
+        "lat": 35.6724167,
+        "lng": 139.9011972,
+        "platformId": 9810082418,
+        "role": "platform_exit_only",
+        "osmName": "南行徳駅",
+        "name": "南行徳駅"
+      }
+    ],
+    "「東京ディズニーシー（Ｒ）」": {
+      "lat": 35.6290596,
+      "lng": 139.8881506,
+      "platformId": 2768542070,
+      "role": "platform_entry_only",
+      "osmName": "東京ディズニーシー®"
+    },
+    "オリエンタルランド本社前": {
+      "lat": 35.6320206,
+      "lng": 139.887359,
+      "platformId": 2301991499,
+      "role": "platform",
+      "osmName": "オリエンタルランド本社前"
+    },
+    "舞浜駅": {
+      "lat": 35.6357267,
+      "lng": 139.8838714,
+      "platformId": 9482601637,
+      "role": "platform",
+      "osmName": "舞浜駅"
+    },
+    "京成ローズタウン": {
+      "lat": 35.6420322,
+      "lng": 139.8819328,
+      "platformId": 6778604860,
+      "role": "platform",
+      "osmName": "京成ローズタウン"
+    },
+    "富士見五丁目": {
+      "lat": 35.6455749,
+      "lng": 139.8876956,
+      "platformId": 12367548464,
+      "role": "platform",
+      "osmName": "富士見五丁目"
+    },
+    "富士見三丁目": {
+      "lat": 35.6482656,
+      "lng": 139.8892742,
+      "platformId": 6778604858,
+      "role": "platform",
+      "osmName": "富士見三丁目"
+    },
+    "堀江中学校前": {
+      "lat": 35.6507102,
+      "lng": 139.8906984,
+      "platformId": 6778604856,
+      "role": "platform",
+      "osmName": "堀江中学校前"
+    },
+    "清滝弁財天": {
+      "lat": 35.6530268,
+      "lng": 139.8920006,
+      "platformId": 12367548465,
+      "role": "platform",
+      "osmName": "清滝弁財天"
+    },
+    "堀江六丁目": {
+      "lat": 35.6550668,
+      "lng": 139.893457,
+      "platformId": 12367548459,
+      "role": "platform",
+      "osmName": "堀江六丁目"
+    },
+    "堀江一丁目": {
+      "lat": 35.6570876,
+      "lng": 139.8951144,
+      "platformId": 6778604851,
+      "role": "platform",
+      "osmName": "堀江一丁目"
+    },
+    "豊受神社": {
+      "lat": 35.6603057,
+      "lng": 139.8977148,
+      "platformId": 6778604850,
+      "role": "platform",
+      "osmName": "豊受神社"
+    },
+    "猫実川": {
+      "lat": 35.663045,
+      "lng": 139.9004338,
+      "platformId": 6778581428,
+      "role": "platform",
+      "osmName": "猫実川"
+    },
+    "北部小入口": {
+      "lat": 35.664731,
+      "lng": 139.9025569,
+      "platformId": 6778581431,
+      "role": "platform",
+      "osmName": "北部小入口"
+    },
+    "やなぎ公園": {
+      "lat": 35.6671924,
+      "lng": 139.9051221,
+      "platformId": 6778581433,
+      "role": "platform",
+      "osmName": "やなぎ公園"
+    },
+    "南行徳三丁目": {
+      "lat": 35.6689023,
+      "lng": 139.9037399,
+      "platformId": 9810016015,
+      "role": "platform",
+      "osmName": "南行徳三丁目"
+    },
+    "南行徳駅": {
+      "lat": 35.6724167,
+      "lng": 139.9011972,
+      "platformId": 9810082418,
+      "role": "platform_exit_only",
+      "osmName": "南行徳駅"
+    }
+  },
+  "37-maihama-minamigyotoku": {
+    "byIndex": [
+      {
+        "lat": 35.6357267,
+        "lng": 139.8838714,
+        "platformId": 9482601637,
+        "role": "platform",
+        "osmName": "舞浜駅",
+        "name": "舞浜駅"
+      },
+      {
+        "lat": 35.6420322,
+        "lng": 139.8819328,
+        "platformId": 6778604860,
+        "role": "platform",
+        "osmName": "京成ローズタウン",
+        "name": "京成ローズタウン"
+      },
+      {
+        "lat": 35.6455749,
+        "lng": 139.8876956,
+        "platformId": 12367548464,
+        "role": "platform",
+        "osmName": "富士見五丁目",
+        "name": "富士見五丁目"
+      },
+      {
+        "lat": 35.6482656,
+        "lng": 139.8892742,
+        "platformId": 6778604858,
+        "role": "platform",
+        "osmName": "富士見三丁目",
+        "name": "富士見三丁目"
+      },
+      {
+        "lat": 35.6507102,
+        "lng": 139.8906984,
+        "platformId": 6778604856,
+        "role": "platform",
+        "osmName": "堀江中学校前",
+        "name": "堀江中学校前"
+      },
+      {
+        "lat": 35.6530268,
+        "lng": 139.8920006,
+        "platformId": 12367548465,
+        "role": "platform",
+        "osmName": "清滝弁財天",
+        "name": "清滝弁財天"
+      },
+      {
+        "lat": 35.6550668,
+        "lng": 139.893457,
+        "platformId": 12367548459,
+        "role": "platform",
+        "osmName": "堀江六丁目",
+        "name": "堀江六丁目"
+      },
+      {
+        "lat": 35.6570876,
+        "lng": 139.8951144,
+        "platformId": 6778604851,
+        "role": "platform",
+        "osmName": "堀江一丁目",
+        "name": "堀江一丁目"
+      },
+      {
+        "lat": 35.6603057,
+        "lng": 139.8977148,
+        "platformId": 6778604850,
+        "role": "platform",
+        "osmName": "豊受神社",
+        "name": "豊受神社"
+      },
+      {
+        "lat": 35.663045,
+        "lng": 139.9004338,
+        "platformId": 6778581428,
+        "role": "platform",
+        "osmName": "猫実川",
+        "name": "猫実川"
+      },
+      {
+        "lat": 35.664731,
+        "lng": 139.9025569,
+        "platformId": 6778581431,
+        "role": "platform",
+        "osmName": "北部小入口",
+        "name": "北部小入口"
+      },
+      {
+        "lat": 35.6671924,
+        "lng": 139.9051221,
+        "platformId": 6778581433,
+        "role": "platform",
+        "osmName": "やなぎ公園",
+        "name": "やなぎ公園"
+      },
+      {
+        "lat": 35.6689023,
+        "lng": 139.9037399,
+        "platformId": 9810016015,
+        "role": "platform",
+        "osmName": "南行徳三丁目",
+        "name": "南行徳三丁目"
+      },
+      {
+        "lat": 35.6724167,
+        "lng": 139.9011972,
+        "platformId": 9810082418,
+        "role": "platform_exit_only",
+        "osmName": "南行徳駅",
+        "name": "南行徳駅"
+      }
+    ],
+    "舞浜駅": {
+      "lat": 35.6357267,
+      "lng": 139.8838714,
+      "platformId": 9482601637,
+      "role": "platform",
+      "osmName": "舞浜駅"
+    },
+    "京成ローズタウン": {
+      "lat": 35.6420322,
+      "lng": 139.8819328,
+      "platformId": 6778604860,
+      "role": "platform",
+      "osmName": "京成ローズタウン"
+    },
+    "富士見五丁目": {
+      "lat": 35.6455749,
+      "lng": 139.8876956,
+      "platformId": 12367548464,
+      "role": "platform",
+      "osmName": "富士見五丁目"
+    },
+    "富士見三丁目": {
+      "lat": 35.6482656,
+      "lng": 139.8892742,
+      "platformId": 6778604858,
+      "role": "platform",
+      "osmName": "富士見三丁目"
+    },
+    "堀江中学校前": {
+      "lat": 35.6507102,
+      "lng": 139.8906984,
+      "platformId": 6778604856,
+      "role": "platform",
+      "osmName": "堀江中学校前"
+    },
+    "清滝弁財天": {
+      "lat": 35.6530268,
+      "lng": 139.8920006,
+      "platformId": 12367548465,
+      "role": "platform",
+      "osmName": "清滝弁財天"
+    },
+    "堀江六丁目": {
+      "lat": 35.6550668,
+      "lng": 139.893457,
+      "platformId": 12367548459,
+      "role": "platform",
+      "osmName": "堀江六丁目"
+    },
+    "堀江一丁目": {
+      "lat": 35.6570876,
+      "lng": 139.8951144,
+      "platformId": 6778604851,
+      "role": "platform",
+      "osmName": "堀江一丁目"
+    },
+    "豊受神社": {
+      "lat": 35.6603057,
+      "lng": 139.8977148,
+      "platformId": 6778604850,
+      "role": "platform",
+      "osmName": "豊受神社"
+    },
+    "猫実川": {
+      "lat": 35.663045,
+      "lng": 139.9004338,
+      "platformId": 6778581428,
+      "role": "platform",
+      "osmName": "猫実川"
+    },
+    "北部小入口": {
+      "lat": 35.664731,
+      "lng": 139.9025569,
+      "platformId": 6778581431,
+      "role": "platform",
+      "osmName": "北部小入口"
+    },
+    "やなぎ公園": {
+      "lat": 35.6671924,
+      "lng": 139.9051221,
+      "platformId": 6778581433,
+      "role": "platform",
+      "osmName": "やなぎ公園"
+    },
+    "南行徳三丁目": {
+      "lat": 35.6689023,
+      "lng": 139.9037399,
+      "platformId": 9810016015,
+      "role": "platform",
+      "osmName": "南行徳三丁目"
+    },
+    "南行徳駅": {
+      "lat": 35.6724167,
+      "lng": 139.9011972,
+      "platformId": 9810082418,
+      "role": "platform_exit_only",
+      "osmName": "南行徳駅"
+    }
+  },
+  "37-tds-horie6": {
+    "byIndex": [
+      {
+        "lat": 35.6290596,
+        "lng": 139.8881506,
+        "platformId": 2768542070,
+        "role": "platform_entry_only",
+        "osmName": "東京ディズニーシー®",
+        "name": "「東京ディズニーシー（Ｒ）」"
+      },
+      {
+        "lat": 35.6320206,
+        "lng": 139.887359,
+        "platformId": 2301991499,
+        "role": "platform",
+        "osmName": "オリエンタルランド本社前",
+        "name": "オリエンタルランド本社前"
+      },
+      {
+        "lat": 35.6357267,
+        "lng": 139.8838714,
+        "platformId": 9482601637,
+        "role": "platform",
+        "osmName": "舞浜駅",
+        "name": "舞浜駅"
+      },
+      {
+        "lat": 35.6420322,
+        "lng": 139.8819328,
+        "platformId": 6778604860,
+        "role": "platform",
+        "osmName": "京成ローズタウン",
+        "name": "京成ローズタウン"
+      },
+      {
+        "lat": 35.6455749,
+        "lng": 139.8876956,
+        "platformId": 12367548464,
+        "role": "platform",
+        "osmName": "富士見五丁目",
+        "name": "富士見五丁目"
+      },
+      {
+        "lat": 35.6482656,
+        "lng": 139.8892742,
+        "platformId": 6778604858,
+        "role": "platform",
+        "osmName": "富士見三丁目",
+        "name": "富士見三丁目"
+      },
+      {
+        "lat": 35.6507102,
+        "lng": 139.8906984,
+        "platformId": 6778604856,
+        "role": "platform",
+        "osmName": "堀江中学校前",
+        "name": "堀江中学校前"
+      },
+      {
+        "lat": 35.6530268,
+        "lng": 139.8920006,
+        "platformId": 12367548465,
+        "role": "platform",
+        "osmName": "清滝弁財天",
+        "name": "清滝弁財天"
+      },
+      {
+        "lat": 35.6550668,
+        "lng": 139.893457,
+        "platformId": 12367548459,
+        "role": "platform",
+        "osmName": "堀江六丁目",
+        "name": "堀江六丁目"
+      }
+    ],
+    "「東京ディズニーシー（Ｒ）」": {
+      "lat": 35.6290596,
+      "lng": 139.8881506,
+      "platformId": 2768542070,
+      "role": "platform_entry_only",
+      "osmName": "東京ディズニーシー®"
+    },
+    "オリエンタルランド本社前": {
+      "lat": 35.6320206,
+      "lng": 139.887359,
+      "platformId": 2301991499,
+      "role": "platform",
+      "osmName": "オリエンタルランド本社前"
+    },
+    "舞浜駅": {
+      "lat": 35.6357267,
+      "lng": 139.8838714,
+      "platformId": 9482601637,
+      "role": "platform",
+      "osmName": "舞浜駅"
+    },
+    "京成ローズタウン": {
+      "lat": 35.6420322,
+      "lng": 139.8819328,
+      "platformId": 6778604860,
+      "role": "platform",
+      "osmName": "京成ローズタウン"
+    },
+    "富士見五丁目": {
+      "lat": 35.6455749,
+      "lng": 139.8876956,
+      "platformId": 12367548464,
+      "role": "platform",
+      "osmName": "富士見五丁目"
+    },
+    "富士見三丁目": {
+      "lat": 35.6482656,
+      "lng": 139.8892742,
+      "platformId": 6778604858,
+      "role": "platform",
+      "osmName": "富士見三丁目"
+    },
+    "堀江中学校前": {
+      "lat": 35.6507102,
+      "lng": 139.8906984,
+      "platformId": 6778604856,
+      "role": "platform",
+      "osmName": "堀江中学校前"
+    },
+    "清滝弁財天": {
+      "lat": 35.6530268,
+      "lng": 139.8920006,
+      "platformId": 12367548465,
+      "role": "platform",
+      "osmName": "清滝弁財天"
+    },
+    "堀江六丁目": {
+      "lat": 35.6550668,
+      "lng": 139.893457,
+      "platformId": 12367548459,
+      "role": "platform",
+      "osmName": "堀江六丁目"
+    }
+  },
+  "37-fujimi3-tds": {
+    "byIndex": [
+      {
+        "lat": 35.6479226,
+        "lng": 139.8892899,
+        "platformId": 6778604859,
+        "role": "platform",
+        "osmName": "富士見三丁目",
+        "name": "富士見三丁目"
+      },
+      {
+        "lat": 35.6454904,
+        "lng": 139.8878484,
+        "platformId": 598536218,
+        "role": "platform",
+        "osmName": "富士見五丁目",
+        "name": "富士見五丁目"
+      },
+      {
+        "lat": 35.6414511,
+        "lng": 139.8812333,
+        "platformId": 6778604861,
+        "role": "platform",
+        "osmName": "京成ローズタウン",
+        "name": "京成ローズタウン"
+      },
+      {
+        "lat": 35.6359331,
+        "lng": 139.8835561,
+        "platformId": 9482601636,
+        "role": "platform",
+        "osmName": "舞浜駅",
+        "name": "舞浜駅"
+      },
+      {
+        "lat": 35.6312873,
+        "lng": 139.8885643,
+        "platformId": 2301981524,
+        "role": "platform",
+        "osmName": "オリエンタルランド本社前",
+        "name": "オリエンタルランド本社前"
+      },
+      {
+        "lat": 35.6290596,
+        "lng": 139.8881506,
+        "platformId": 2768542070,
+        "role": "platform_exit_only",
+        "osmName": "東京ディズニーシー®",
+        "name": "「東京ディズニーシー（Ｒ）」"
+      }
+    ],
+    "富士見三丁目": {
+      "lat": 35.6479226,
+      "lng": 139.8892899,
+      "platformId": 6778604859,
+      "role": "platform",
+      "osmName": "富士見三丁目"
+    },
+    "富士見五丁目": {
+      "lat": 35.6454904,
+      "lng": 139.8878484,
+      "platformId": 598536218,
+      "role": "platform",
+      "osmName": "富士見五丁目"
+    },
+    "京成ローズタウン": {
+      "lat": 35.6414511,
+      "lng": 139.8812333,
+      "platformId": 6778604861,
+      "role": "platform",
+      "osmName": "京成ローズタウン"
+    },
+    "舞浜駅": {
+      "lat": 35.6359331,
+      "lng": 139.8835561,
+      "platformId": 9482601636,
+      "role": "platform",
+      "osmName": "舞浜駅"
+    },
+    "オリエンタルランド本社前": {
+      "lat": 35.6312873,
+      "lng": 139.8885643,
+      "platformId": 2301981524,
+      "role": "platform",
+      "osmName": "オリエンタルランド本社前"
+    },
+    "「東京ディズニーシー（Ｒ）」": {
+      "lat": 35.6290596,
+      "lng": 139.8881506,
+      "platformId": 2768542070,
+      "role": "platform_exit_only",
+      "osmName": "東京ディズニーシー®"
+    }
+  },
+  "37-horie6-tds": {
+    "byIndex": [
+      {
+        "lat": 35.654958,
+        "lng": 139.8936037,
+        "platformId": 6778604852,
+        "role": "platform",
+        "osmName": "堀江六丁目",
+        "name": "堀江六丁目"
+      },
+      {
+        "lat": 35.652906,
+        "lng": 139.8921342,
+        "platformId": 6778604853,
+        "role": "platform",
+        "osmName": "清滝弁財天",
+        "name": "清滝弁財天"
+      },
+      {
+        "lat": 35.6502601,
+        "lng": 139.8906515,
+        "platformId": 6778604857,
+        "role": "platform",
+        "osmName": "堀江中学校前",
+        "name": "堀江中学校前"
+      },
+      {
+        "lat": 35.6479226,
+        "lng": 139.8892899,
+        "platformId": 6778604859,
+        "role": "platform",
+        "osmName": "富士見三丁目",
+        "name": "富士見三丁目"
+      },
+      {
+        "lat": 35.6454904,
+        "lng": 139.8878484,
+        "platformId": 598536218,
+        "role": "platform",
+        "osmName": "富士見五丁目",
+        "name": "富士見五丁目"
+      },
+      {
+        "lat": 35.6414511,
+        "lng": 139.8812333,
+        "platformId": 6778604861,
+        "role": "platform",
+        "osmName": "京成ローズタウン",
+        "name": "京成ローズタウン"
+      },
+      {
+        "lat": 35.6359331,
+        "lng": 139.8835561,
+        "platformId": 9482601636,
+        "role": "platform",
+        "osmName": "舞浜駅",
+        "name": "舞浜駅"
+      },
+      {
+        "lat": 35.6312873,
+        "lng": 139.8885643,
+        "platformId": 2301981524,
+        "role": "platform",
+        "osmName": "オリエンタルランド本社前",
+        "name": "オリエンタルランド本社前"
+      },
+      {
+        "lat": 35.6290596,
+        "lng": 139.8881506,
+        "platformId": 2768542070,
+        "role": "platform_exit_only",
+        "osmName": "東京ディズニーシー®",
+        "name": "「東京ディズニーシー（Ｒ）」"
+      }
+    ],
+    "堀江六丁目": {
+      "lat": 35.654958,
+      "lng": 139.8936037,
+      "platformId": 6778604852,
+      "role": "platform",
+      "osmName": "堀江六丁目"
+    },
+    "清滝弁財天": {
+      "lat": 35.652906,
+      "lng": 139.8921342,
+      "platformId": 6778604853,
+      "role": "platform",
+      "osmName": "清滝弁財天"
+    },
+    "堀江中学校前": {
+      "lat": 35.6502601,
+      "lng": 139.8906515,
+      "platformId": 6778604857,
+      "role": "platform",
+      "osmName": "堀江中学校前"
+    },
+    "富士見三丁目": {
+      "lat": 35.6479226,
+      "lng": 139.8892899,
+      "platformId": 6778604859,
+      "role": "platform",
+      "osmName": "富士見三丁目"
+    },
+    "富士見五丁目": {
+      "lat": 35.6454904,
+      "lng": 139.8878484,
+      "platformId": 598536218,
+      "role": "platform",
+      "osmName": "富士見五丁目"
+    },
+    "京成ローズタウン": {
+      "lat": 35.6414511,
+      "lng": 139.8812333,
+      "platformId": 6778604861,
+      "role": "platform",
+      "osmName": "京成ローズタウン"
+    },
+    "舞浜駅": {
+      "lat": 35.6359331,
+      "lng": 139.8835561,
+      "platformId": 9482601636,
+      "role": "platform",
+      "osmName": "舞浜駅"
+    },
+    "オリエンタルランド本社前": {
+      "lat": 35.6312873,
+      "lng": 139.8885643,
+      "platformId": 2301981524,
+      "role": "platform",
+      "osmName": "オリエンタルランド本社前"
+    },
+    "「東京ディズニーシー（Ｒ）」": {
+      "lat": 35.6290596,
+      "lng": 139.8881506,
+      "platformId": 2768542070,
+      "role": "platform_exit_only",
+      "osmName": "東京ディズニーシー®"
+    }
+  }
+};
+})();

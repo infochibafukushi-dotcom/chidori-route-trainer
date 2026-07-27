@@ -1,0 +1,153 @@
+{
+  "validatedAt": "2026-07-27T04:03:27.951Z",
+  "routeId": "route-37",
+  "versionChoice": "v117 PACKS for route-37; SW/loader v119 (route-38 already at v118 in e6c78d5)",
+  "checks": [
+    {
+      "name": "PACKS route-37",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CACHE v119",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "loader v119",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "globals platforms",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "globals path",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "globals policy",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "7 systems path",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "7 systems platforms",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "build no blockers",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "name": "pathHash distinct",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "37-minamigyotoku-tds stop count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "37-minamigyotoku-tds policy",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "37-minamigyotoku-maihama stop count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "37-minamigyotoku-maihama policy",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "37-tds-minamigyotoku stop count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "37-tds-minamigyotoku policy",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "37-maihama-minamigyotoku stop count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "37-maihama-minamigyotoku policy",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "37-tds-horie6 stop count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "37-tds-horie6 policy",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "37-fujimi3-tds stop count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "37-fujimi3-tds policy",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "37-horie6-tds stop count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "37-horie6-tds policy",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "maihama vs tds split",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "9-vs-37 pathHash separation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "9-vs-37 stop separation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "9-vs-37 OSM relation separation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "route module API",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "pass": true
+}

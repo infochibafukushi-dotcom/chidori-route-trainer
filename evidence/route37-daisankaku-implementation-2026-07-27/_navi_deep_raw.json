@@ -1,0 +1,3281 @@
+{
+  "scrapedAt": "2026-07-27T03:56:47.877Z",
+  "routeNumber": "37",
+  "lineName": "大三角線",
+  "signatures": {
+    "南行徳駅>南行徳三丁目>やなぎ公園>北部小入口>猫実川>豊受神社>堀江一丁目>堀江六丁目>清滝弁財天>堀江中学校前>富士見三丁目>富士見五丁目>京成ローズタウン>舞浜駅>オリエンタルランド本社前>「東京ディズニーシー」": {
+      "stopNames": [
+        "南行徳駅",
+        "南行徳三丁目",
+        "やなぎ公園",
+        "北部小入口",
+        "猫実川",
+        "豊受神社",
+        "堀江一丁目",
+        "堀江六丁目",
+        "清滝弁財天",
+        "堀江中学校前",
+        "富士見三丁目",
+        "富士見五丁目",
+        "京成ローズタウン",
+        "舞浜駅",
+        "オリエンタルランド本社前",
+        "「東京ディズニーシー（Ｒ）」"
+      ],
+      "normalizedKey": "南行徳駅>南行徳三丁目>やなぎ公園>北部小入口>猫実川>豊受神社>堀江一丁目>堀江六丁目>清滝弁財天>堀江中学校前>富士見三丁目>富士見五丁目>京成ローズタウン>舞浜駅>オリエンタルランド本社前>「東京ディズニーシー」",
+      "stopCount": 16,
+      "count": 44,
+      "courses": [
+        "0008200310"
+      ],
+      "terminals": [
+        "南行徳駅",
+        "舞浜駅"
+      ],
+      "berths": [
+        "01",
+        "37"
+      ],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81140000/stops?departure-busstop=00020650-1&course=0008200310&datetime=2026-07-27T06:57:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81140003/stops?departure-busstop=00020650-1&course=0008200310&datetime=2026-07-27T07:20:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81140007/stops?departure-busstop=00020650-1&course=0008200310&datetime=2026-08-01T07:07:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8114000e/stops?departure-busstop=00020650-1&course=0008200310&datetime=2026-08-02T07:07:00%2B09:00"
+      ]
+    },
+    "南行徳駅>南行徳三丁目>やなぎ公園>北部小入口>猫実川>豊受神社>堀江一丁目>堀江六丁目>清滝弁財天>堀江中学校前>富士見三丁目>富士見五丁目>京成ローズタウン>舞浜駅": {
+      "stopNames": [
+        "南行徳駅",
+        "南行徳三丁目",
+        "やなぎ公園",
+        "北部小入口",
+        "猫実川",
+        "豊受神社",
+        "堀江一丁目",
+        "堀江六丁目",
+        "清滝弁財天",
+        "堀江中学校前",
+        "富士見三丁目",
+        "富士見五丁目",
+        "京成ローズタウン",
+        "舞浜駅"
+      ],
+      "normalizedKey": "南行徳駅>南行徳三丁目>やなぎ公園>北部小入口>猫実川>豊受神社>堀江一丁目>堀江六丁目>清滝弁財天>堀江中学校前>富士見三丁目>富士見五丁目>京成ローズタウン>舞浜駅",
+      "stopCount": 14,
+      "count": 4,
+      "courses": [
+        "0008200312"
+      ],
+      "terminals": [
+        "南行徳駅"
+      ],
+      "berths": [
+        "01"
+      ],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81160001/stops?departure-busstop=00020650-1&course=0008200312&datetime=2026-07-27T09:21:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81160003/stops?departure-busstop=00020650-1&course=0008200312&datetime=2026-08-02T16:54:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81160000/stops?departure-busstop=00020650-1&course=0008200312&datetime=2026-07-27T18:43:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81160002/stops?departure-busstop=00020650-1&course=0008200312&datetime=2026-08-01T18:22:00%2B09:00"
+      ]
+    },
+    "「東京ディズニーシー」>オリエンタルランド本社前>舞浜駅>京成ローズタウン>富士見五丁目>富士見三丁目>堀江中学校前>清滝弁財天>堀江六丁目>堀江一丁目>豊受神社>猫実川>北部小入口>やなぎ公園>南行徳三丁目>南行徳駅": {
+      "stopNames": [
+        "「東京ディズニーシー（Ｒ）」",
+        "オリエンタルランド本社前",
+        "舞浜駅",
+        "京成ローズタウン",
+        "富士見五丁目",
+        "富士見三丁目",
+        "堀江中学校前",
+        "清滝弁財天",
+        "堀江六丁目",
+        "堀江一丁目",
+        "豊受神社",
+        "猫実川",
+        "北部小入口",
+        "やなぎ公園",
+        "南行徳三丁目",
+        "南行徳駅"
+      ],
+      "normalizedKey": "「東京ディズニーシー」>オリエンタルランド本社前>舞浜駅>京成ローズタウン>富士見五丁目>富士見三丁目>堀江中学校前>清滝弁財天>堀江六丁目>堀江一丁目>豊受神社>猫実川>北部小入口>やなぎ公園>南行徳三丁目>南行徳駅",
+      "stopCount": 16,
+      "count": 30,
+      "courses": [
+        "0008200309"
+      ],
+      "terminals": [
+        "舞浜駅",
+        "東京ディズニーシー"
+      ],
+      "berths": [
+        "37"
+      ],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81130005/stops?departure-busstop=00020617-3&course=0008200309&datetime=2026-08-01T08:36:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8113000a/stops?departure-busstop=00020617-3&course=0008200309&datetime=2026-08-02T08:36:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81130008/stops?departure-busstop=00020617-3&course=0008200309&datetime=2026-08-01T11:25:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8113000c/stops?departure-busstop=00020617-3&course=0008200309&datetime=2026-08-02T11:25:00%2B09:00"
+      ]
+    },
+    "舞浜駅>京成ローズタウン>富士見五丁目>富士見三丁目>堀江中学校前>清滝弁財天>堀江六丁目>堀江一丁目>豊受神社>猫実川>北部小入口>やなぎ公園>南行徳三丁目>南行徳駅": {
+      "stopNames": [
+        "舞浜駅",
+        "京成ローズタウン",
+        "富士見五丁目",
+        "富士見三丁目",
+        "堀江中学校前",
+        "清滝弁財天",
+        "堀江六丁目",
+        "堀江一丁目",
+        "豊受神社",
+        "猫実川",
+        "北部小入口",
+        "やなぎ公園",
+        "南行徳三丁目",
+        "南行徳駅"
+      ],
+      "normalizedKey": "舞浜駅>京成ローズタウン>富士見五丁目>富士見三丁目>堀江中学校前>清滝弁財天>堀江六丁目>堀江一丁目>豊受神社>猫実川>北部小入口>やなぎ公園>南行徳三丁目>南行徳駅",
+      "stopCount": 14,
+      "count": 2,
+      "courses": [
+        "0008200311"
+      ],
+      "terminals": [
+        "舞浜駅"
+      ],
+      "berths": [
+        "37"
+      ],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81150000/stops?departure-busstop=00020617-1&course=0008200311&datetime=2026-07-27T11:40:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81150001/stops?departure-busstop=00020617-1&course=0008200311&datetime=2026-08-01T16:22:00%2B09:00"
+      ]
+    },
+    "「東京ディズニーシー」>オリエンタルランド本社前>舞浜駅>京成ローズタウン>富士見五丁目>富士見三丁目>堀江中学校前>清滝弁財天>堀江六丁目": {
+      "stopNames": [
+        "「東京ディズニーシー（Ｒ）」",
+        "オリエンタルランド本社前",
+        "舞浜駅",
+        "京成ローズタウン",
+        "富士見五丁目",
+        "富士見三丁目",
+        "堀江中学校前",
+        "清滝弁財天",
+        "堀江六丁目"
+      ],
+      "normalizedKey": "「東京ディズニーシー」>オリエンタルランド本社前>舞浜駅>京成ローズタウン>富士見五丁目>富士見三丁目>堀江中学校前>清滝弁財天>堀江六丁目",
+      "stopCount": 9,
+      "count": 2,
+      "courses": [
+        "0008200313"
+      ],
+      "terminals": [
+        "舞浜駅",
+        "東京ディズニーシー"
+      ],
+      "berths": [
+        "37"
+      ],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81170000/stops?departure-busstop=00020617-3&course=0008200313&datetime=2026-07-27T18:37:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81170000/stops?departure-busstop=00020627-1&course=0008200313&datetime=2026-07-27T18:28:00%2B09:00"
+      ]
+    },
+    "富士見三丁目>富士見五丁目>京成ローズタウン>舞浜駅>オリエンタルランド本社前>「東京ディズニーシー」": {
+      "stopNames": [
+        "富士見三丁目",
+        "富士見五丁目",
+        "京成ローズタウン",
+        "舞浜駅",
+        "オリエンタルランド本社前",
+        "「東京ディズニーシー（Ｒ）」"
+      ],
+      "normalizedKey": "富士見三丁目>富士見五丁目>京成ローズタウン>舞浜駅>オリエンタルランド本社前>「東京ディズニーシー」",
+      "stopCount": 6,
+      "count": 4,
+      "courses": [
+        "0008200315"
+      ],
+      "terminals": [
+        "舞浜駅"
+      ],
+      "berths": [
+        "37"
+      ],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81190001/stops?departure-busstop=00020617-4&course=0008200315&datetime=2026-07-27T07:17:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81190002/stops?departure-busstop=00020617-4&course=0008200315&datetime=2026-07-27T07:32:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81190000/stops?departure-busstop=00020617-4&course=0008200315&datetime=2026-07-27T08:23:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81190003/stops?departure-busstop=00020617-4&course=0008200315&datetime=2026-07-27T08:39:00%2B09:00"
+      ]
+    },
+    "堀江六丁目>清滝弁財天>堀江中学校前>富士見三丁目>富士見五丁目>京成ローズタウン>舞浜駅>オリエンタルランド本社前>「東京ディズニーシー」": {
+      "stopNames": [
+        "堀江六丁目",
+        "清滝弁財天",
+        "堀江中学校前",
+        "富士見三丁目",
+        "富士見五丁目",
+        "京成ローズタウン",
+        "舞浜駅",
+        "オリエンタルランド本社前",
+        "「東京ディズニーシー（Ｒ）」"
+      ],
+      "normalizedKey": "堀江六丁目>清滝弁財天>堀江中学校前>富士見三丁目>富士見五丁目>京成ローズタウン>舞浜駅>オリエンタルランド本社前>「東京ディズニーシー」",
+      "stopCount": 9,
+      "count": 22,
+      "courses": [
+        "0008200314"
+      ],
+      "terminals": [
+        "舞浜駅"
+      ],
+      "berths": [
+        "37"
+      ],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81180006/stops?departure-busstop=00020617-7&course=0008200314&datetime=2026-08-01T07:44:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8118000e/stops?departure-busstop=00020617-7&course=0008200314&datetime=2026-08-02T07:44:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81180005/stops?departure-busstop=00020617-7&course=0008200314&datetime=2026-07-27T08:06:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81180000/stops?departure-busstop=00020617-7&course=0008200314&datetime=2026-07-27T08:55:00%2B09:00"
+      ]
+    }
+  },
+  "trips": [
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81140000/stops?departure-busstop=00020650-1&course=0008200310&datetime=2026-07-27T06:57:00%2B09:00",
+      "stopNames": [
+        "南行徳駅",
+        "南行徳三丁目",
+        "やなぎ公園",
+        "北部小入口",
+        "猫実川",
+        "豊受神社",
+        "堀江一丁目",
+        "堀江六丁目",
+        "清滝弁財天",
+        "堀江中学校前",
+        "富士見三丁目",
+        "富士見五丁目",
+        "京成ローズタウン",
+        "舞浜駅",
+        "オリエンタルランド本社前",
+        "「東京ディズニーシー（Ｒ）」"
+      ],
+      "course": "0008200310",
+      "legend37": true,
+      "bodySnippet": "京成電鉄バスグループ\n>\nバス停時刻表検索\n>\n南行徳駅 系統・時刻表・のりば一覧\n>\n南行徳駅 時刻表\n>\n37 [37]（堀江六丁目経由）舞浜駅・「東京ディズニーシー(R)」行 通過時刻表\n京成電鉄バスグループ\n検索トップページ\nLanguage\n日本語\nEnglish\n简体中文\n繁體中文\n한국어\nไทย\n通過時刻表\n37 [37]（堀江六丁目経由）舞浜駅・「東京ディズニーシー(R)」行\n2026年7月27日時点\n06:57\n発\n南行徳駅\n系統・時刻表一覧\n06:59\n着\n南行徳三丁目\n170円\n系統・時刻表一覧\n07:00\n着\nやなぎ公園\n170円\n系統・時刻表一覧\n07:01\n着\n北部小入口\n170円\n系統・時刻表一覧\n07:02\n着\n猫実川\n170円\n系統・時刻表一覧\n07:04\n着\n豊受神社\n170円\n系統・時刻表一覧\n07:05\n着\n堀江一丁目\n170円\n系統・時刻表一覧\n07:07\n着\n堀江六丁目\n170円\n系統・時刻表一覧\n07:08\n着\n清滝弁財天\n170円\n系統・時刻表一覧\n07:09\n着\n堀江中学校前\n170円\n系統・時刻表一覧\n07:11\n着\n富士見三丁目\n170円\n系統・時刻表一覧\n07:12\n着\n富士見五丁目\n200円\n系統・時刻表一覧\n07:13\n着\n京成ローズタウン\n200円\n系統・時刻表一覧\n07:21\n着\n舞浜駅\n240円\n系統・時刻表一覧\n07:22\n着\nオリエンタルランド本社前\n280円\n系統・時刻表一覧\n07:28\n着\n「東京ディズニーシー（Ｒ）」\n280円\n系統・時刻表一覧\nページの先頭へ戻る\nご利用にあたって（免責について等）\nCopyright ©Keisei Bus Co., Ltd. All rights reserved.\nPowered by",
+      "terminal": "南行徳駅",
+      "terminalKey": "minamigyotoku",
+      "berth": "01",
+      "courseText": "37 [37]（堀江六丁目経由）舞浜駅・「東京ディズニーシー(R)」行 時刻表",
+      "cellText": "57シー",
+      "legend": [
+        "無印…【３７系統】豊受神社・堀江六丁目・舞浜駅行き",
+        "シー…【３７系統】豊受神社・堀江六丁目・舞浜駅経由　「東京ディズニーシー(R)」行き"
+      ],
+      "mixedCell": false
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81160001/stops?departure-busstop=00020650-1&course=0008200312&datetime=2026-07-27T09:21:00%2B09:00",
+      "stopNames": [
+        "南行徳駅",
+        "南行徳三丁目",
+        "やなぎ公園",
+        "北部小入口",
+        "猫実川",
+        "豊受神社",
+        "堀江一丁目",
+        "堀江六丁目",
+        "清滝弁財天",
+        "堀江中学校前",
+        "富士見三丁目",
+        "富士見五丁目",
+        "京成ローズタウン",
+        "舞浜駅"
+      ],
+      "course": "0008200312",
+      "legend37": true,
+      "bodySnippet": "京成電鉄バスグループ\n>\nバス停時刻表検索\n>\n南行徳駅 系統・時刻表・のりば一覧\n>\n南行徳駅 時刻表\n>\n37 [37]（堀江六丁目経由）舞浜駅・「東京ディズニーシー(R)」行 通過時刻表\n京成電鉄バスグループ\n検索トップページ\nLanguage\n日本語\nEnglish\n简体中文\n繁體中文\n한국어\nไทย\n通過時刻表\n37 [37]（堀江六丁目経由）舞浜駅・「東京ディズニーシー(R)」行\n2026年7月27日時点\n09:21\n発\n南行徳駅\n系統・時刻表一覧\n09:23\n着\n南行徳三丁目\n170円\n系統・時刻表一覧\n09:24\n着\nやなぎ公園\n170円\n系統・時刻表一覧\n09:25\n着\n北部小入口\n170円\n系統・時刻表一覧\n09:26\n着\n猫実川\n170円\n系統・時刻表一覧\n09:28\n着\n豊受神社\n170円\n系統・時刻表一覧\n09:29\n着\n堀江一丁目\n170円\n系統・時刻表一覧\n09:31\n着\n堀江六丁目\n170円\n系統・時刻表一覧\n09:32\n着\n清滝弁財天\n170円\n系統・時刻表一覧\n09:33\n着\n堀江中学校前\n170円\n系統・時刻表一覧\n09:35\n着\n富士見三丁目\n170円\n系統・時刻表一覧\n09:36\n着\n富士見五丁目\n200円\n系統・時刻表一覧\n09:37\n着\n京成ローズタウン\n200円\n系統・時刻表一覧\n09:46\n着\n舞浜駅\n240円\n系統・時刻表一覧\nページの先頭へ戻る\nご利用にあたって（免責について等）\nCopyright ©Keisei Bus Co., Ltd. All rights reserved.\nPowered by",
+      "terminal": "南行徳駅",
+      "terminalKey": "minamigyotoku",
+      "berth": "01",
+      "courseText": "37 [37]（堀江六丁目経由）舞浜駅・「東京ディズニーシー(R)」行 時刻表",
+      "cellText": "21",
+      "legend": [
+        "無印…【３７系統】豊受神社・堀江六丁目・舞浜駅行き",
+        "シー…【３７系統】豊受神社・堀江六丁目・舞浜駅経由　「東京ディズニーシー(R)」行き"
+      ],
+      "mixedCell": false
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81130005/stops?departure-busstop=00020617-3&course=0008200309&datetime=2026-08-01T08:36:00%2B09:00",
+      "stopNames": [
+        "「東京ディズニーシー（Ｒ）」",
+        "オリエンタルランド本社前",
+        "舞浜駅",
+        "京成ローズタウン",
+        "富士見五丁目",
+        "富士見三丁目",
+        "堀江中学校前",
+        "清滝弁財天",
+        "堀江六丁目",
+        "堀江一丁目",
+        "豊受神社",
+        "猫実川",
+        "北部小入口",
+        "やなぎ公園",
+        "南行徳三丁目",
+        "南行徳駅"
+      ],
+      "course": "0008200309",
+      "legend37": true,
+      "bodySnippet": "京成電鉄バスグループ\n>\nバス停時刻表検索\n>\n舞浜駅 系統・時刻表・のりば一覧\n>\n舞浜駅 時刻表\n>\n37 [37]（堀江六丁目・豊受神社経由）南行徳駅行 通過時刻表\n京成電鉄バスグループ\n検索トップページ\nLanguage\n日本語\nEnglish\n简体中文\n繁體中文\n한국어\nไทย\n通過時刻表\n37 [37]（堀江六丁目・豊受神社経由）南行徳駅行\n2026年8月1日時点\n08:29\n発\n「東京ディズニーシー（Ｒ）」\n系統・時刻表一覧\n08:31\n発\nオリエンタルランド本社前\n系統・時刻表一覧\n08:36\n発\n舞浜駅\n系統・時刻表一覧\n08:39\n着\n京成ローズタウン\n170円\n系統・時刻表一覧\n08:41\n着\n富士見五丁目\n170円\n系統・時刻表一覧\n08:42\n着\n富士見三丁目\n170円\n系統・時刻表一覧\n08:44\n着\n堀江中学校前\n170円\n系統・時刻表一覧\n08:45\n着\n清滝弁財天\n170円\n系統・時刻表一覧\n08:46\n着\n堀江六丁目\n170円\n系統・時刻表一覧\n08:47\n着\n堀江一丁目\n170円\n系統・時刻表一覧\n08:48\n着\n豊受神社\n200円\n系統・時刻表一覧\n08:50\n着\n猫実川\n200円\n系統・時刻表一覧\n08:51\n着\n北部小入口\n200円\n系統・時刻表一覧\n08:52\n着\nやなぎ公園\n240円\n系統・時刻表一覧\n08:53\n着\n南行徳三丁目\n240円\n系統・時刻表一覧\n08:58\n着\n南行徳駅\n240円\n系統・時刻表一覧\nページの先頭へ戻る\nご利用にあたって（免責について等）\nCopyright ©Keisei Bus Co., Ltd. All rights reserved.\nPowered by",
+      "terminal": "舞浜駅",
+      "terminalKey": "maihama",
+      "berth": "37",
+      "courseText": "37 [37]（堀江六丁目・豊受神社経由）南行徳駅行 時刻表",
+      "cellText": "36南",
+      "legend": [
+        "南…【３７系統】堀江六丁目、豊受神社経由　南行徳駅行き",
+        "ほ…堀江六丁目止まり"
+      ],
+      "mixedCell": false
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81150000/stops?departure-busstop=00020617-1&course=0008200311&datetime=2026-07-27T11:40:00%2B09:00",
+      "stopNames": [
+        "舞浜駅",
+        "京成ローズタウン",
+        "富士見五丁目",
+        "富士見三丁目",
+        "堀江中学校前",
+        "清滝弁財天",
+        "堀江六丁目",
+        "堀江一丁目",
+        "豊受神社",
+        "猫実川",
+        "北部小入口",
+        "やなぎ公園",
+        "南行徳三丁目",
+        "南行徳駅"
+      ],
+      "course": "0008200311",
+      "legend37": true,
+      "bodySnippet": "京成電鉄バスグループ\n>\nバス停時刻表検索\n>\n舞浜駅 系統・時刻表・のりば一覧\n>\n舞浜駅 時刻表\n>\n37 [37]（堀江六丁目・豊受神社経由）南行徳駅行 通過時刻表\n京成電鉄バスグループ\n検索トップページ\nLanguage\n日本語\nEnglish\n简体中文\n繁體中文\n한국어\nไทย\n通過時刻表\n37 [37]（堀江六丁目・豊受神社経由）南行徳駅行\n2026年7月27日時点\n11:40\n発\n舞浜駅\n系統・時刻表一覧\n11:43\n着\n京成ローズタウン\n170円\n系統・時刻表一覧\n11:45\n着\n富士見五丁目\n170円\n系統・時刻表一覧\n11:46\n着\n富士見三丁目\n170円\n系統・時刻表一覧\n11:48\n着\n堀江中学校前\n170円\n系統・時刻表一覧\n11:49\n着\n清滝弁財天\n170円\n系統・時刻表一覧\n11:50\n着\n堀江六丁目\n170円\n系統・時刻表一覧\n11:51\n着\n堀江一丁目\n170円\n系統・時刻表一覧\n11:52\n着\n豊受神社\n200円\n系統・時刻表一覧\n11:54\n着\n猫実川\n200円\n系統・時刻表一覧\n11:55\n着\n北部小入口\n200円\n系統・時刻表一覧\n11:56\n着\nやなぎ公園\n240円\n系統・時刻表一覧\n11:57\n着\n南行徳三丁目\n240円\n系統・時刻表一覧\n12:05\n着\n南行徳駅\n240円\n系統・時刻表一覧\nページの先頭へ戻る\nご利用にあたって（免責について等）\nCopyright ©Keisei Bus Co., Ltd. All rights reserved.\nPowered by",
+      "terminal": "舞浜駅",
+      "terminalKey": "maihama",
+      "berth": "37",
+      "courseText": "37 [37]（堀江六丁目・豊受神社経由）南行徳駅行 時刻表",
+      "cellText": "40南",
+      "legend": [
+        "南…【３７系統】堀江六丁目、豊受神社経由　南行徳駅行き",
+        "ほ…堀江六丁目止まり"
+      ],
+      "mixedCell": false
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81170000/stops?departure-busstop=00020617-3&course=0008200313&datetime=2026-07-27T18:37:00%2B09:00",
+      "stopNames": [
+        "「東京ディズニーシー（Ｒ）」",
+        "オリエンタルランド本社前",
+        "舞浜駅",
+        "京成ローズタウン",
+        "富士見五丁目",
+        "富士見三丁目",
+        "堀江中学校前",
+        "清滝弁財天",
+        "堀江六丁目"
+      ],
+      "course": "0008200313",
+      "legend37": true,
+      "bodySnippet": "京成電鉄バスグループ\n>\nバス停時刻表検索\n>\n舞浜駅 系統・時刻表・のりば一覧\n>\n舞浜駅 時刻表\n>\n37 [37]（堀江六丁目・豊受神社経由）南行徳駅行 通過時刻表\n京成電鉄バスグループ\n検索トップページ\nLanguage\n日本語\nEnglish\n简体中文\n繁體中文\n한국어\nไทย\n通過時刻表\n37 [37]（堀江六丁目・豊受神社経由）南行徳駅行\n2026年7月27日時点\n18:28\n発\n「東京ディズニーシー（Ｒ）」\n系統・時刻表一覧\n18:31\n発\nオリエンタルランド本社前\n系統・時刻表一覧\n18:37\n発\n舞浜駅\n系統・時刻表一覧\n18:40\n着\n京成ローズタウン\n170円\n系統・時刻表一覧\n18:41\n着\n富士見五丁目\n170円\n系統・時刻表一覧\n18:42\n着\n富士見三丁目\n170円\n系統・時刻表一覧\n18:44\n着\n堀江中学校前\n170円\n系統・時刻表一覧\n18:45\n着\n清滝弁財天\n170円\n系統・時刻表一覧\n18:47\n着\n堀江六丁目\n170円\n系統・時刻表一覧\nページの先頭へ戻る\nご利用にあたって（免責について等）\nCopyright ©Keisei Bus Co., Ltd. All rights reserved.\nPowered by",
+      "terminal": "舞浜駅",
+      "terminalKey": "maihama",
+      "berth": "37",
+      "courseText": "37 [37]（堀江六丁目・豊受神社経由）南行徳駅行 時刻表",
+      "cellText": "37ほ",
+      "legend": [
+        "南…【３７系統】堀江六丁目、豊受神社経由　南行徳駅行き",
+        "ほ…堀江六丁目止まり"
+      ],
+      "mixedCell": false
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81190001/stops?departure-busstop=00020617-4&course=0008200315&datetime=2026-07-27T07:17:00%2B09:00",
+      "stopNames": [
+        "富士見三丁目",
+        "富士見五丁目",
+        "京成ローズタウン",
+        "舞浜駅",
+        "オリエンタルランド本社前",
+        "「東京ディズニーシー（Ｒ）」"
+      ],
+      "course": "0008200315",
+      "legend37": true,
+      "bodySnippet": "京成電鉄バスグループ\n>\nバス停時刻表検索\n>\n舞浜駅 系統・時刻表・のりば一覧\n>\n舞浜駅 時刻表\n>\n37 [37]「東京ディズニーシー(R)」行 通過時刻表\n京成電鉄バスグループ\n検索トップページ\nLanguage\n日本語\nEnglish\n简体中文\n繁體中文\n한국어\nไทย\n通過時刻表\n37 [37]「東京ディズニーシー(R)」行\n2026年7月27日時点\n07:07\n発\n富士見三丁目\n系統・時刻表一覧\n07:08\n発\n富士見五丁目\n系統・時刻表一覧\n07:09\n発\n京成ローズタウン\n系統・時刻表一覧\n07:17\n発\n舞浜駅\n系統・時刻表一覧\n07:18\n着\nオリエンタルランド本社前\n170円\n系統・時刻表一覧\n07:24\n着\n「東京ディズニーシー（Ｒ）」\n170円\n系統・時刻表一覧\nページの先頭へ戻る\nご利用にあたって（免責について等）\nCopyright ©Keisei Bus Co., Ltd. All rights reserved.\nPowered by",
+      "terminal": "舞浜駅",
+      "terminalKey": "maihama",
+      "berth": "37",
+      "courseText": "37 [37]「東京ディズニーシー(R)」行 時刻表",
+      "cellText": "17Ｓふ",
+      "legend": [
+        "シー…「東京ディズニーシー(R)」行き",
+        "Ｓほ…「東京ディズニーシー(R)」行き",
+        "Ｓふ…「東京ディズニーシー(R)」行き"
+      ],
+      "mixedCell": false
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81180006/stops?departure-busstop=00020617-7&course=0008200314&datetime=2026-08-01T07:44:00%2B09:00",
+      "stopNames": [
+        "堀江六丁目",
+        "清滝弁財天",
+        "堀江中学校前",
+        "富士見三丁目",
+        "富士見五丁目",
+        "京成ローズタウン",
+        "舞浜駅",
+        "オリエンタルランド本社前",
+        "「東京ディズニーシー（Ｒ）」"
+      ],
+      "course": "0008200314",
+      "legend37": true,
+      "bodySnippet": "京成電鉄バスグループ\n>\nバス停時刻表検索\n>\n舞浜駅 系統・時刻表・のりば一覧\n>\n舞浜駅 時刻表\n>\n37 [37]「東京ディズニーシー(R)」行 通過時刻表\n京成電鉄バスグループ\n検索トップページ\nLanguage\n日本語\nEnglish\n简体中文\n繁體中文\n한국어\nไทย\n通過時刻表\n37 [37]「東京ディズニーシー(R)」行\n2026年8月1日時点\n07:30\n発\n堀江六丁目\n系統・時刻表一覧\n07:31\n発\n清滝弁財天\n系統・時刻表一覧\n07:32\n発\n堀江中学校前\n系統・時刻表一覧\n07:34\n発\n富士見三丁目\n系統・時刻表一覧\n07:35\n発\n富士見五丁目\n系統・時刻表一覧\n07:36\n発\n京成ローズタウン\n系統・時刻表一覧\n07:44\n発\n舞浜駅\n系統・時刻表一覧\n07:45\n着\nオリエンタルランド本社前\n170円\n系統・時刻表一覧\n07:51\n着\n「東京ディズニーシー（Ｒ）」\n170円\n系統・時刻表一覧\nページの先頭へ戻る\nご利用にあたって（免責について等）\nCopyright ©Keisei Bus Co., Ltd. All rights reserved.\nPowered by",
+      "terminal": "舞浜駅",
+      "terminalKey": "maihama",
+      "berth": "37",
+      "courseText": "37 [37]「東京ディズニーシー(R)」行 時刻表",
+      "cellText": "44Ｓほ",
+      "legend": [
+        "シー…「東京ディズニーシー(R)」行き",
+        "Ｓほ…「東京ディズニーシー(R)」行き",
+        "Ｓふ…「東京ディズニーシー(R)」行き"
+      ],
+      "mixedCell": false
+    }
+  ],
+  "rejected": [
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81330001/stops?departure-busstop=00020678-1&course=0008200245&datetime=2026-07-27T05:58:00%2B09:00",
+      "cellText": "58",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81330002/stops?departure-busstop=00020678-1&course=0008200245&datetime=2026-07-27T06:13:00%2B09:00",
+      "cellText": "13",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81330003/stops?departure-busstop=00020678-1&course=0008200245&datetime=2026-07-27T06:27:00%2B09:00",
+      "cellText": "27",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131002b/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T06:42:00%2B09:00",
+      "cellText": "42",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310010/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T06:56:00%2B09:00",
+      "cellText": "56",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81330005/stops?departure-busstop=00020678-1&course=0008200245&datetime=2026-08-01T06:03:00%2B09:00",
+      "cellText": "03",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81330006/stops?departure-busstop=00020678-1&course=0008200245&datetime=2026-08-01T06:19:00%2B09:00",
+      "cellText": "19",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81330007/stops?departure-busstop=00020678-1&course=0008200245&datetime=2026-08-01T06:35:00%2B09:00",
+      "cellText": "35",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131006f/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T06:48:00%2B09:00",
+      "cellText": "48",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81330008/stops?departure-busstop=00020678-1&course=0008200245&datetime=2026-08-02T06:03:00%2B09:00",
+      "cellText": "03",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81330009/stops?departure-busstop=00020678-1&course=0008200245&datetime=2026-08-02T06:19:00%2B09:00",
+      "cellText": "19",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8133000a/stops?departure-busstop=00020678-1&course=0008200245&datetime=2026-08-02T06:34:00%2B09:00",
+      "cellText": "34",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8133000b/stops?departure-busstop=00020678-1&course=0008200245&datetime=2026-08-02T06:48:00%2B09:00",
+      "cellText": "48",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81330004/stops?departure-busstop=00020678-1&course=0008200245&datetime=2026-07-27T07:07:00%2B09:00",
+      "cellText": "07",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81330000/stops?departure-busstop=00020678-1&course=0008200245&datetime=2026-07-27T07:12:00%2B09:00",
+      "cellText": "12",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131001e/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T07:18:00%2B09:00",
+      "cellText": "18",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310028/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T07:33:00%2B09:00",
+      "cellText": "33",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131002c/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T07:45:00%2B09:00",
+      "cellText": "45",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310011/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T07:58:00%2B09:00",
+      "cellText": "58",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310046/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T07:03:00%2B09:00",
+      "cellText": "03",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131004c/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T07:18:00%2B09:00",
+      "cellText": "18",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310057/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T07:33:00%2B09:00",
+      "cellText": "33",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310075/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T07:48:00%2B09:00",
+      "cellText": "48",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310082/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T07:02:00%2B09:00",
+      "cellText": "02",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310089/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T07:18:00%2B09:00",
+      "cellText": "18",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131008e/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T07:33:00%2B09:00",
+      "cellText": "33",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813100a0/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T07:47:00%2B09:00",
+      "cellText": "47",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310032/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T08:11:00%2B09:00",
+      "cellText": "11",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131001f/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T08:24:00%2B09:00",
+      "cellText": "24",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310029/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T08:37:00%2B09:00",
+      "cellText": "37",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131002d/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T08:49:00%2B09:00",
+      "cellText": "49",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310047/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T08:03:00%2B09:00",
+      "cellText": "03",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131004d/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T08:18:00%2B09:00",
+      "cellText": "18",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310058/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T08:33:00%2B09:00",
+      "cellText": "33",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81130005/stops?departure-busstop=00020678-4&course=0008200309&datetime=2026-08-01T08:39:00%2B09:00",
+      "cellText": "39南",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310076/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T08:48:00%2B09:00",
+      "cellText": "48",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310083/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T08:03:00%2B09:00",
+      "cellText": "03",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131008a/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T08:18:00%2B09:00",
+      "cellText": "18",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131008f/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T08:32:00%2B09:00",
+      "cellText": "32",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8113000a/stops?departure-busstop=00020678-4&course=0008200309&datetime=2026-08-02T08:39:00%2B09:00",
+      "cellText": "39南",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813100a1/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T08:46:00%2B09:00",
+      "cellText": "46",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310027/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T09:03:00%2B09:00",
+      "cellText": "03",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310035/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T09:17:00%2B09:00",
+      "cellText": "17",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131002a/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T09:32:00%2B09:00",
+      "cellText": "32",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310000/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T09:46:00%2B09:00",
+      "cellText": "46",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131007b/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T09:03:00%2B09:00",
+      "cellText": "03",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310061/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T09:18:00%2B09:00",
+      "cellText": "18",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310059/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T09:32:00%2B09:00",
+      "cellText": "32",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131007a/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T09:48:00%2B09:00",
+      "cellText": "48",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813100a5/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T09:03:00%2B09:00",
+      "cellText": "03",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813100ab/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T09:18:00%2B09:00",
+      "cellText": "18",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310093/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T09:31:00%2B09:00",
+      "cellText": "31",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813100a2/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T09:45:00%2B09:00",
+      "cellText": "45",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310001/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T10:01:00%2B09:00",
+      "cellText": "01",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310004/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T10:15:00%2B09:00",
+      "cellText": "15",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310012/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T10:30:00%2B09:00",
+      "cellText": "30",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310020/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T10:46:00%2B09:00",
+      "cellText": "46",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131007c/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T10:03:00%2B09:00",
+      "cellText": "03",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310062/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T10:18:00%2B09:00",
+      "cellText": "18",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310048/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T10:33:00%2B09:00",
+      "cellText": "33",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131004e/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T10:48:00%2B09:00",
+      "cellText": "48",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813100a6/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T10:03:00%2B09:00",
+      "cellText": "03",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813100ac/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T10:18:00%2B09:00",
+      "cellText": "18",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310084/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T10:33:00%2B09:00",
+      "cellText": "33",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131008b/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T10:48:00%2B09:00",
+      "cellText": "48",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310002/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T11:01:00%2B09:00",
+      "cellText": "01",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310005/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T11:15:00%2B09:00",
+      "cellText": "15",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310013/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T11:32:00%2B09:00",
+      "cellText": "32",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81150000/stops?departure-busstop=00020678-2&course=0008200311&datetime=2026-07-27T11:43:00%2B09:00",
+      "cellText": "43南",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310021/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T11:47:00%2B09:00",
+      "cellText": "47",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131007d/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T11:03:00%2B09:00",
+      "cellText": "03",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310063/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T11:18:00%2B09:00",
+      "cellText": "18",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81130008/stops?departure-busstop=00020678-4&course=0008200309&datetime=2026-08-01T11:28:00%2B09:00",
+      "cellText": "28南",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310049/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T11:33:00%2B09:00",
+      "cellText": "33",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131004f/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T11:48:00%2B09:00",
+      "cellText": "48",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813100a7/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T11:03:00%2B09:00",
+      "cellText": "03",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813100ad/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T11:18:00%2B09:00",
+      "cellText": "18",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8113000c/stops?departure-busstop=00020678-4&course=0008200309&datetime=2026-08-02T11:28:00%2B09:00",
+      "cellText": "28南",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310085/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T11:33:00%2B09:00",
+      "cellText": "33",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131008c/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T11:48:00%2B09:00",
+      "cellText": "48",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310003/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T12:02:00%2B09:00",
+      "cellText": "02",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310036/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T12:13:00%2B09:00",
+      "cellText": "13",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310006/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T12:26:00%2B09:00",
+      "cellText": "26",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310014/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T12:39:00%2B09:00",
+      "cellText": "39",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310022/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T12:52:00%2B09:00",
+      "cellText": "52",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131005a/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T12:03:00%2B09:00",
+      "cellText": "03",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310077/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T12:18:00%2B09:00",
+      "cellText": "18",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81130006/stops?departure-busstop=00020678-4&course=0008200309&datetime=2026-08-01T12:28:00%2B09:00",
+      "cellText": "28南",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131004a/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T12:33:00%2B09:00",
+      "cellText": "33",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310050/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T12:48:00%2B09:00",
+      "cellText": "48",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310094/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T12:03:00%2B09:00",
+      "cellText": "03",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813100a3/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T12:18:00%2B09:00",
+      "cellText": "18",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8113000b/stops?departure-busstop=00020678-4&course=0008200309&datetime=2026-08-02T12:28:00%2B09:00",
+      "cellText": "28南",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310086/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T12:33:00%2B09:00",
+      "cellText": "33",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131008d/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T12:48:00%2B09:00",
+      "cellText": "48",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131002e/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T13:03:00%2B09:00",
+      "cellText": "03",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81130002/stops?departure-busstop=00020678-4&course=0008200309&datetime=2026-07-27T13:13:00%2B09:00",
+      "cellText": "13南",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310031/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T13:18:00%2B09:00",
+      "cellText": "18",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310037/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T13:33:00%2B09:00",
+      "cellText": "33",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131003a/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T13:48:00%2B09:00",
+      "cellText": "48",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131005b/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T13:03:00%2B09:00",
+      "cellText": "03",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310078/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T13:18:00%2B09:00",
+      "cellText": "18",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310066/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T13:33:00%2B09:00",
+      "cellText": "33",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310064/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T13:48:00%2B09:00",
+      "cellText": "48",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310095/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T13:03:00%2B09:00",
+      "cellText": "03",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813100a4/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T13:18:00%2B09:00",
+      "cellText": "18",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813100a8/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T13:33:00%2B09:00",
+      "cellText": "33",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813100ae/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T13:48:00%2B09:00",
+      "cellText": "48",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131002f/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T14:04:00%2B09:00",
+      "cellText": "04",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310033/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T14:19:00%2B09:00",
+      "cellText": "19",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310038/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T14:34:00%2B09:00",
+      "cellText": "34",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131003b/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T14:49:00%2B09:00",
+      "cellText": "49",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131006a/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T14:03:00%2B09:00",
+      "cellText": "03",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310079/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T14:18:00%2B09:00",
+      "cellText": "18",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310067/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T14:33:00%2B09:00",
+      "cellText": "33",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310065/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T14:48:00%2B09:00",
+      "cellText": "48",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813100b1/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T14:03:00%2B09:00",
+      "cellText": "03",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813100b6/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T14:18:00%2B09:00",
+      "cellText": "18",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813100a9/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T14:33:00%2B09:00",
+      "cellText": "33",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813100af/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T14:48:00%2B09:00",
+      "cellText": "48",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310030/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T15:05:00%2B09:00",
+      "cellText": "05",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310034/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T15:20:00%2B09:00",
+      "cellText": "20",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310039/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T15:35:00%2B09:00",
+      "cellText": "35",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131003c/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T15:51:00%2B09:00",
+      "cellText": "51",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131006b/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T15:03:00%2B09:00",
+      "cellText": "03",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310070/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T15:18:00%2B09:00",
+      "cellText": "18",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310068/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T15:33:00%2B09:00",
+      "cellText": "33",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310043/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T15:48:00%2B09:00",
+      "cellText": "48",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813100b2/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T15:03:00%2B09:00",
+      "cellText": "03",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813100b7/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T15:18:00%2B09:00",
+      "cellText": "18",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813100aa/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T15:33:00%2B09:00",
+      "cellText": "33",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813100b0/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T15:48:00%2B09:00",
+      "cellText": "48",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310007/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T16:05:00%2B09:00",
+      "cellText": "05",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310015/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T16:20:00%2B09:00",
+      "cellText": "20",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131000d/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T16:35:00%2B09:00",
+      "cellText": "35",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81130000/stops?departure-busstop=00020678-4&course=0008200309&datetime=2026-07-27T16:48:00%2B09:00",
+      "cellText": "48南",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131001b/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T16:51:00%2B09:00",
+      "cellText": "51",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131006c/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T16:03:00%2B09:00",
+      "cellText": "03",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310071/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T16:18:00%2B09:00",
+      "cellText": "18",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81150001/stops?departure-busstop=00020678-2&course=0008200311&datetime=2026-08-01T16:25:00%2B09:00",
+      "cellText": "25南",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310051/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T16:33:00%2B09:00",
+      "cellText": "33",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310053/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T16:48:00%2B09:00",
+      "cellText": "48",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813100b3/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T16:03:00%2B09:00",
+      "cellText": "03",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81360032/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-08-02T16:13:00%2B09:00",
+      "cellText": "13と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813100b8/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T16:18:00%2B09:00",
+      "cellText": "18",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81130009/stops?departure-busstop=00020678-4&course=0008200309&datetime=2026-08-02T16:25:00%2B09:00",
+      "cellText": "25南",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310081/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T16:33:00%2B09:00",
+      "cellText": "33",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310096/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T16:48:00%2B09:00",
+      "cellText": "48",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81360033/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-08-02T16:56:00%2B09:00",
+      "cellText": "56と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310008/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T17:05:00%2B09:00",
+      "cellText": "05",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310016/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T17:20:00%2B09:00",
+      "cellText": "20",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81360010/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-07-27T17:31:00%2B09:00",
+      "cellText": "31と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131000e/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T17:35:00%2B09:00",
+      "cellText": "35",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81360013/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-07-27T17:43:00%2B09:00",
+      "cellText": "43と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131001c/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T17:50:00%2B09:00",
+      "cellText": "50",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81360017/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-07-27T17:58:00%2B09:00",
+      "cellText": "58と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131005d/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T17:03:00%2B09:00",
+      "cellText": "03",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131005c/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T17:18:00%2B09:00",
+      "cellText": "18",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310052/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T17:33:00%2B09:00",
+      "cellText": "33",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81360028/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-08-01T17:42:00%2B09:00",
+      "cellText": "42と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310054/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T17:48:00%2B09:00",
+      "cellText": "48",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81130004/stops?departure-busstop=00020678-4&course=0008200309&datetime=2026-08-01T17:53:00%2B09:00",
+      "cellText": "53南",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131007e/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T17:03:00%2B09:00",
+      "cellText": "03",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131009b/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T17:18:00%2B09:00",
+      "cellText": "18",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310087/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T17:33:00%2B09:00",
+      "cellText": "33",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81360034/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-08-02T17:42:00%2B09:00",
+      "cellText": "42と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310097/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T17:48:00%2B09:00",
+      "cellText": "48",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8113000d/stops?departure-busstop=00020678-4&course=0008200309&datetime=2026-08-02T17:53:00%2B09:00",
+      "cellText": "53南",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131003d/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T18:05:00%2B09:00",
+      "cellText": "05",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81130001/stops?departure-busstop=00020678-4&course=0008200309&datetime=2026-07-27T18:11:00%2B09:00",
+      "cellText": "11南",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81360011/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-07-27T18:17:00%2B09:00",
+      "cellText": "17と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131003f/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T18:20:00%2B09:00",
+      "cellText": "20",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81360014/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-07-27T18:31:00%2B09:00",
+      "cellText": "31と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131000f/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T18:35:00%2B09:00",
+      "cellText": "35",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81170000/stops?departure-busstop=00020678-4&course=0008200313&datetime=2026-07-27T18:40:00%2B09:00",
+      "cellText": "40ほ",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131001d/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T18:50:00%2B09:00",
+      "cellText": "50",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81360012/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-07-27T18:58:00%2B09:00",
+      "cellText": "58と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131005e/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T18:03:00%2B09:00",
+      "cellText": "03",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81360023/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-08-01T18:11:00%2B09:00",
+      "cellText": "11と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131006d/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T18:18:00%2B09:00",
+      "cellText": "18",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81360029/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-08-01T18:25:00%2B09:00",
+      "cellText": "25と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310072/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T18:33:00%2B09:00",
+      "cellText": "33",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310040/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T18:48:00%2B09:00",
+      "cellText": "48",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131007f/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T18:03:00%2B09:00",
+      "cellText": "03",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8136002a/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-08-02T18:13:00%2B09:00",
+      "cellText": "13と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813100b4/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T18:18:00%2B09:00",
+      "cellText": "18",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81360035/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-08-02T18:25:00%2B09:00",
+      "cellText": "25と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131009c/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T18:33:00%2B09:00",
+      "cellText": "33",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813100b9/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T18:48:00%2B09:00",
+      "cellText": "48",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8136002b/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-08-02T18:56:00%2B09:00",
+      "cellText": "56と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131003e/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T19:05:00%2B09:00",
+      "cellText": "05",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81360015/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-07-27T19:11:00%2B09:00",
+      "cellText": "11と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310009/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T19:15:00%2B09:00",
+      "cellText": "15",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8136000f/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-07-27T19:22:00%2B09:00",
+      "cellText": "22と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81130003/stops?departure-busstop=00020678-4&course=0008200309&datetime=2026-07-27T19:29:00%2B09:00",
+      "cellText": "29南",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310017/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T19:35:00%2B09:00",
+      "cellText": "35",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81360018/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-07-27T19:43:00%2B09:00",
+      "cellText": "43と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81360016/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-07-27T19:50:00%2B09:00",
+      "cellText": "50と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310023/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T19:55:00%2B09:00",
+      "cellText": "55",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310069/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T19:03:00%2B09:00",
+      "cellText": "03",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131006e/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T19:18:00%2B09:00",
+      "cellText": "18",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81130007/stops?departure-busstop=00020678-4&course=0008200309&datetime=2026-08-01T19:27:00%2B09:00",
+      "cellText": "27南",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310073/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T19:33:00%2B09:00",
+      "cellText": "33",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8136001b/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-08-01T19:43:00%2B09:00",
+      "cellText": "43と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310041/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T19:53:00%2B09:00",
+      "cellText": "53",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310080/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T19:03:00%2B09:00",
+      "cellText": "03",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813100b5/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T19:18:00%2B09:00",
+      "cellText": "18",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8113000e/stops?departure-busstop=00020678-4&course=0008200309&datetime=2026-08-02T19:27:00%2B09:00",
+      "cellText": "27南",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310088/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T19:33:00%2B09:00",
+      "cellText": "33",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8136002c/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-08-02T19:41:00%2B09:00",
+      "cellText": "41と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813100ba/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T19:48:00%2B09:00",
+      "cellText": "48",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8136000b/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-07-27T20:02:00%2B09:00",
+      "cellText": "02と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81360019/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-07-27T20:09:00%2B09:00",
+      "cellText": "09と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131000a/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T20:15:00%2B09:00",
+      "cellText": "15",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8136001a/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-07-27T20:23:00%2B09:00",
+      "cellText": "23と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310018/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T20:35:00%2B09:00",
+      "cellText": "35",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81360000/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-07-27T20:45:00%2B09:00",
+      "cellText": "45と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310024/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T20:55:00%2B09:00",
+      "cellText": "55",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8136001d/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-08-01T20:03:00%2B09:00",
+      "cellText": "03と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310044/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T20:13:00%2B09:00",
+      "cellText": "13",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8136001f/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-08-01T20:23:00%2B09:00",
+      "cellText": "23と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310074/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T20:33:00%2B09:00",
+      "cellText": "33",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8136001e/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-08-01T20:43:00%2B09:00",
+      "cellText": "43と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310042/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T20:53:00%2B09:00",
+      "cellText": "53",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310098/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T20:03:00%2B09:00",
+      "cellText": "03",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81360036/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-08-02T20:13:00%2B09:00",
+      "cellText": "13と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310090/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T20:23:00%2B09:00",
+      "cellText": "23",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8136002d/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-08-02T20:33:00%2B09:00",
+      "cellText": "33と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131009d/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T20:43:00%2B09:00",
+      "cellText": "43",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81360037/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-08-02T20:53:00%2B09:00",
+      "cellText": "53と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81360004/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-07-27T21:05:00%2B09:00",
+      "cellText": "05と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131000b/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T21:15:00%2B09:00",
+      "cellText": "15",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81360001/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-07-27T21:22:00%2B09:00",
+      "cellText": "22と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81360008/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-07-27T21:29:00%2B09:00",
+      "cellText": "29と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310019/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T21:35:00%2B09:00",
+      "cellText": "35",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81360005/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-07-27T21:42:00%2B09:00",
+      "cellText": "42と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8136000c/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-07-27T21:50:00%2B09:00",
+      "cellText": "50と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310025/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T21:56:00%2B09:00",
+      "cellText": "56",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81360020/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-08-01T21:03:00%2B09:00",
+      "cellText": "03と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310045/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T21:13:00%2B09:00",
+      "cellText": "13",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81360024/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-08-01T21:23:00%2B09:00",
+      "cellText": "23と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310055/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T21:33:00%2B09:00",
+      "cellText": "33",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81360021/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-08-01T21:43:00%2B09:00",
+      "cellText": "43と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131005f/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T21:53:00%2B09:00",
+      "cellText": "53",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310099/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T21:03:00%2B09:00",
+      "cellText": "03",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8136002e/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-08-02T21:13:00%2B09:00",
+      "cellText": "13と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310091/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T21:23:00%2B09:00",
+      "cellText": "23",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81360038/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-08-02T21:33:00%2B09:00",
+      "cellText": "33と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131009e/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T21:43:00%2B09:00",
+      "cellText": "43",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8136002f/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-08-02T21:53:00%2B09:00",
+      "cellText": "53と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81360002/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-07-27T22:02:00%2B09:00",
+      "cellText": "02と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81360009/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-07-27T22:10:00%2B09:00",
+      "cellText": "10と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131000c/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T22:15:00%2B09:00",
+      "cellText": "15",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81360006/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-07-27T22:22:00%2B09:00",
+      "cellText": "22と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8136000d/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-07-27T22:29:00%2B09:00",
+      "cellText": "29と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131001a/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T22:35:00%2B09:00",
+      "cellText": "35",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81360003/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-07-27T22:42:00%2B09:00",
+      "cellText": "42と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8136000a/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-07-27T22:50:00%2B09:00",
+      "cellText": "50と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310026/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-07-27T22:55:00%2B09:00",
+      "cellText": "55",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81360025/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-08-01T22:03:00%2B09:00",
+      "cellText": "03と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131004b/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T22:13:00%2B09:00",
+      "cellText": "13",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81360022/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-08-01T22:23:00%2B09:00",
+      "cellText": "23と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310056/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T22:33:00%2B09:00",
+      "cellText": "33",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81360026/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-08-01T22:43:00%2B09:00",
+      "cellText": "43と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310060/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-01T22:53:00%2B09:00",
+      "cellText": "53",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131009a/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T22:03:00%2B09:00",
+      "cellText": "03",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81360039/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-08-02T22:13:00%2B09:00",
+      "cellText": "13と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81310092/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T22:23:00%2B09:00",
+      "cellText": "23",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81360030/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-08-02T22:33:00%2B09:00",
+      "cellText": "33と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8131009f/stops?departure-busstop=00020678-2&course=0008200243&datetime=2026-08-02T22:43:00%2B09:00",
+      "cellText": "43",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81360007/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-07-27T23:03:00%2B09:00",
+      "cellText": "03と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8136000e/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-07-27T23:13:00%2B09:00",
+      "cellText": "13と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81380000/stops?departure-busstop=00020678-2&course=0008200250&datetime=2026-07-27T23:25:00%2B09:00",
+      "cellText": "25★と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81380001/stops?departure-busstop=00020678-2&course=0008200250&datetime=2026-07-27T23:44:00%2B09:00",
+      "cellText": "44★と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81380002/stops?departure-busstop=00020678-2&course=0008200250&datetime=2026-07-27T23:58:00%2B09:00",
+      "cellText": "58★と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8136001c/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-08-01T23:03:00%2B09:00",
+      "cellText": "03と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81360027/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-08-01T23:23:00%2B09:00",
+      "cellText": "23と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8136003a/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-08-02T23:03:00%2B09:00",
+      "cellText": "03と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81360031/stops?departure-busstop=00020678-2&course=0008200248&datetime=2026-08-02T23:23:00%2B09:00",
+      "cellText": "23と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81380003/stops?departure-busstop=00020678-2&course=0008200250&datetime=2026-07-28T00:17:00%2B09:00",
+      "cellText": "17★と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81380004/stops?departure-busstop=00020678-2&course=0008200250&datetime=2026-07-28T00:33:00%2B09:00",
+      "cellText": "33★と",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81370000/stops?departure-busstop=00020678-10&course=0008200249&datetime=2026-07-27T06:11:00%2B09:00",
+      "cellText": "11",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320006/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T06:21:00%2B09:00",
+      "cellText": "21",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81370006/stops?departure-busstop=00020678-10&course=0008200249&datetime=2026-07-27T06:27:00%2B09:00",
+      "cellText": "27",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132000b/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T06:36:00%2B09:00",
+      "cellText": "36",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81370001/stops?departure-busstop=00020678-10&course=0008200249&datetime=2026-07-27T06:44:00%2B09:00",
+      "cellText": "44",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320017/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T06:51:00%2B09:00",
+      "cellText": "51",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81390000/stops?departure-busstop=00020678-3&course=0008200251&datetime=2026-07-27T06:55:00%2B09:00",
+      "cellText": "55",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81370009/stops?departure-busstop=00020678-10&course=0008200249&datetime=2026-07-27T06:58:00%2B09:00",
+      "cellText": "58",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81350006/stops?departure-busstop=00020678-6&course=0008200247&datetime=2026-08-01T06:15:00%2B09:00",
+      "cellText": "15",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132004b/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T06:30:00%2B09:00",
+      "cellText": "30",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132005a/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T06:45:00%2B09:00",
+      "cellText": "45",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8137000c/stops?departure-busstop=00020678-10&course=0008200249&datetime=2026-08-01T06:53:00%2B09:00",
+      "cellText": "53",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81350007/stops?departure-busstop=00020678-6&course=0008200247&datetime=2026-08-02T06:15:00%2B09:00",
+      "cellText": "15",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132008c/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T06:30:00%2B09:00",
+      "cellText": "30",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320097/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T06:45:00%2B09:00",
+      "cellText": "45",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8137000f/stops?departure-busstop=00020678-10&course=0008200249&datetime=2026-08-02T06:53:00%2B09:00",
+      "cellText": "53",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320025/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T07:06:00%2B09:00",
+      "cellText": "06",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81190001/stops?departure-busstop=00020678-3&course=0008200315&datetime=2026-07-27T07:09:00%2B09:00",
+      "cellText": "09Ｓふ",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81140000/stops?departure-busstop=00020678-13&course=0008200310&datetime=2026-07-27T07:13:00%2B09:00",
+      "cellText": "13シー",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320007/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T07:20:00%2B09:00",
+      "cellText": "20",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81190002/stops?departure-busstop=00020678-3&course=0008200315&datetime=2026-07-27T07:24:00%2B09:00",
+      "cellText": "24Ｓふ",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81370002/stops?departure-busstop=00020678-10&course=0008200249&datetime=2026-07-27T07:25:00%2B09:00",
+      "cellText": "25",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132002d/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T07:30:00%2B09:00",
+      "cellText": "30",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81390001/stops?departure-busstop=00020678-3&course=0008200251&datetime=2026-07-27T07:33:00%2B09:00",
+      "cellText": "33",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81140003/stops?departure-busstop=00020678-13&course=0008200310&datetime=2026-07-27T07:36:00%2B09:00",
+      "cellText": "36シー",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132000c/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T07:40:00%2B09:00",
+      "cellText": "40",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81350003/stops?departure-busstop=00020678-6&course=0008200247&datetime=2026-07-27T07:45:00%2B09:00",
+      "cellText": "45",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81390002/stops?departure-busstop=00020678-3&course=0008200251&datetime=2026-07-27T07:48:00%2B09:00",
+      "cellText": "48",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320018/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T07:52:00%2B09:00",
+      "cellText": "52",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81180005/stops?departure-busstop=00020678-6&course=0008200314&datetime=2026-07-27T07:58:00%2B09:00",
+      "cellText": "58Ｓほ",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320063/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T07:00:00%2B09:00",
+      "cellText": "00",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132006b/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T07:15:00%2B09:00",
+      "cellText": "15",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81140007/stops?departure-busstop=00020678-13&course=0008200310&datetime=2026-08-01T07:23:00%2B09:00",
+      "cellText": "23シー",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132004c/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T07:30:00%2B09:00",
+      "cellText": "30",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81180006/stops?departure-busstop=00020678-6&course=0008200314&datetime=2026-08-01T07:36:00%2B09:00",
+      "cellText": "36Ｓほ",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132005b/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T07:45:00%2B09:00",
+      "cellText": "45",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8137000b/stops?departure-busstop=00020678-10&course=0008200249&datetime=2026-08-01T07:53:00%2B09:00",
+      "cellText": "53",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813200a2/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T07:00:00%2B09:00",
+      "cellText": "00",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813200ac/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T07:15:00%2B09:00",
+      "cellText": "15",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8114000e/stops?departure-busstop=00020678-13&course=0008200310&datetime=2026-08-02T07:23:00%2B09:00",
+      "cellText": "23シー",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132008d/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T07:30:00%2B09:00",
+      "cellText": "30",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8118000e/stops?departure-busstop=00020678-6&course=0008200314&datetime=2026-08-02T07:36:00%2B09:00",
+      "cellText": "36Ｓほ",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320098/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T07:45:00%2B09:00",
+      "cellText": "45",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81140012/stops?departure-busstop=00020678-13&course=0008200310&datetime=2026-08-02T07:53:00%2B09:00",
+      "cellText": "53シー",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81390005/stops?departure-busstop=00020678-3&course=0008200251&datetime=2026-07-27T08:01:00%2B09:00",
+      "cellText": "01",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320044/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T08:02:00%2B09:00",
+      "cellText": "02",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81350000/stops?departure-busstop=00020678-6&course=0008200247&datetime=2026-07-27T08:08:00%2B09:00",
+      "cellText": "08",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320029/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T08:12:00%2B09:00",
+      "cellText": "12",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81190000/stops?departure-busstop=00020678-3&course=0008200315&datetime=2026-07-27T08:15:00%2B09:00",
+      "cellText": "15Ｓふ",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81370007/stops?departure-busstop=00020678-10&course=0008200249&datetime=2026-07-27T08:17:00%2B09:00",
+      "cellText": "17",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320008/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T08:22:00%2B09:00",
+      "cellText": "22",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81390003/stops?departure-busstop=00020678-3&course=0008200251&datetime=2026-07-27T08:25:00%2B09:00",
+      "cellText": "25",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81140001/stops?departure-busstop=00020678-13&course=0008200310&datetime=2026-07-27T08:27:00%2B09:00",
+      "cellText": "27シー",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81190003/stops?departure-busstop=00020678-3&course=0008200315&datetime=2026-07-27T08:31:00%2B09:00",
+      "cellText": "31Ｓふ",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132002e/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T08:33:00%2B09:00",
+      "cellText": "33",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81390004/stops?departure-busstop=00020678-3&course=0008200251&datetime=2026-07-27T08:36:00%2B09:00",
+      "cellText": "36",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8137000a/stops?departure-busstop=00020678-10&course=0008200249&datetime=2026-07-27T08:38:00%2B09:00",
+      "cellText": "38",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132000d/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T08:43:00%2B09:00",
+      "cellText": "43",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81180000/stops?departure-busstop=00020678-6&course=0008200314&datetime=2026-07-27T08:47:00%2B09:00",
+      "cellText": "47Ｓほ",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320019/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T08:53:00%2B09:00",
+      "cellText": "53",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81370008/stops?departure-busstop=00020678-10&course=0008200249&datetime=2026-07-27T08:58:00%2B09:00",
+      "cellText": "58",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320064/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T08:00:00%2B09:00",
+      "cellText": "00",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8118000b/stops?departure-busstop=00020678-6&course=0008200314&datetime=2026-08-01T08:06:00%2B09:00",
+      "cellText": "06Ｓほ",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132006c/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T08:15:00%2B09:00",
+      "cellText": "15",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81180007/stops?departure-busstop=00020678-6&course=0008200314&datetime=2026-08-01T08:25:00%2B09:00",
+      "cellText": "25Ｓほ",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81390006/stops?departure-busstop=00020678-3&course=0008200251&datetime=2026-08-01T08:27:00%2B09:00",
+      "cellText": "27",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132004d/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T08:30:00%2B09:00",
+      "cellText": "30",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8114000b/stops?departure-busstop=00020678-13&course=0008200310&datetime=2026-08-01T08:38:00%2B09:00",
+      "cellText": "38シー",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132005c/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T08:45:00%2B09:00",
+      "cellText": "45",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813200a3/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T08:00:00%2B09:00",
+      "cellText": "00",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81180013/stops?departure-busstop=00020678-6&course=0008200314&datetime=2026-08-02T08:06:00%2B09:00",
+      "cellText": "06Ｓほ",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813200ad/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T08:15:00%2B09:00",
+      "cellText": "15",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8118000f/stops?departure-busstop=00020678-6&course=0008200314&datetime=2026-08-02T08:26:00%2B09:00",
+      "cellText": "26Ｓほ",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132008e/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T08:30:00%2B09:00",
+      "cellText": "30",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81180014/stops?departure-busstop=00020678-6&course=0008200314&datetime=2026-08-02T08:39:00%2B09:00",
+      "cellText": "39Ｓほ",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320099/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T08:45:00%2B09:00",
+      "cellText": "45",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81180004/stops?departure-busstop=00020678-6&course=0008200314&datetime=2026-07-27T09:03:00%2B09:00",
+      "cellText": "03Ｓほ",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320045/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T09:05:00%2B09:00",
+      "cellText": "05",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132002a/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T09:14:00%2B09:00",
+      "cellText": "14",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81350004/stops?departure-busstop=00020678-6&course=0008200247&datetime=2026-07-27T09:19:00%2B09:00",
+      "cellText": "19",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320009/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T09:24:00%2B09:00",
+      "cellText": "24",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81350001/stops?departure-busstop=00020678-6&course=0008200247&datetime=2026-07-27T09:29:00%2B09:00",
+      "cellText": "29",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132002f/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T09:34:00%2B09:00",
+      "cellText": "34",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81160001/stops?departure-busstop=00020678-13&course=0008200312&datetime=2026-07-27T09:37:00%2B09:00",
+      "cellText": "37",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320048/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T09:43:00%2B09:00",
+      "cellText": "43",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81350005/stops?departure-busstop=00020678-6&course=0008200247&datetime=2026-07-27T09:52:00%2B09:00",
+      "cellText": "52",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132001b/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T09:56:00%2B09:00",
+      "cellText": "56",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320065/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T09:00:00%2B09:00",
+      "cellText": "00",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81180008/stops?departure-busstop=00020678-6&course=0008200314&datetime=2026-08-01T09:08:00%2B09:00",
+      "cellText": "08Ｓほ",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132006d/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T09:15:00%2B09:00",
+      "cellText": "15",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8118000c/stops?departure-busstop=00020678-6&course=0008200314&datetime=2026-08-01T09:23:00%2B09:00",
+      "cellText": "23Ｓほ",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320086/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T09:30:00%2B09:00",
+      "cellText": "30",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81140008/stops?departure-busstop=00020678-13&course=0008200310&datetime=2026-08-01T09:38:00%2B09:00",
+      "cellText": "38シー",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320073/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T09:45:00%2B09:00",
+      "cellText": "45",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813200a6/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T09:00:00%2B09:00",
+      "cellText": "00",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81180010/stops?departure-busstop=00020678-6&course=0008200314&datetime=2026-08-02T09:11:00%2B09:00",
+      "cellText": "11Ｓほ",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813200ae/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T09:15:00%2B09:00",
+      "cellText": "15",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813200b2/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T09:29:00%2B09:00",
+      "cellText": "29",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8114000f/stops?departure-busstop=00020678-13&course=0008200310&datetime=2026-08-02T09:38:00%2B09:00",
+      "cellText": "38シー",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813200b7/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T09:45:00%2B09:00",
+      "cellText": "45",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320033/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T10:09:00%2B09:00",
+      "cellText": "09",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320046/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T10:23:00%2B09:00",
+      "cellText": "23",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320037/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T10:38:00%2B09:00",
+      "cellText": "38",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132000e/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T10:53:00%2B09:00",
+      "cellText": "53",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320066/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T10:00:00%2B09:00",
+      "cellText": "00",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132006e/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T10:15:00%2B09:00",
+      "cellText": "15",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320087/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T10:30:00%2B09:00",
+      "cellText": "30",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320074/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T10:45:00%2B09:00",
+      "cellText": "45",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8114000c/stops?departure-busstop=00020678-13&course=0008200310&datetime=2026-08-01T10:54:00%2B09:00",
+      "cellText": "54シー",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8137000d/stops?departure-busstop=00020678-10&course=0008200249&datetime=2026-08-01T10:56:00%2B09:00",
+      "cellText": "56",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813200a7/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T10:00:00%2B09:00",
+      "cellText": "00",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813200af/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T10:15:00%2B09:00",
+      "cellText": "15",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813200b3/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T10:30:00%2B09:00",
+      "cellText": "30",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813200b8/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T10:45:00%2B09:00",
+      "cellText": "45",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81140013/stops?departure-busstop=00020678-13&course=0008200310&datetime=2026-08-02T10:53:00%2B09:00",
+      "cellText": "53シー",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320049/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T11:05:00%2B09:00",
+      "cellText": "05",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320002/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T11:14:00%2B09:00",
+      "cellText": "14",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81370003/stops?departure-busstop=00020678-10&course=0008200249&datetime=2026-07-27T11:20:00%2B09:00",
+      "cellText": "20",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320000/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T11:27:00%2B09:00",
+      "cellText": "27",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132002b/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T11:41:00%2B09:00",
+      "cellText": "41",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81350002/stops?departure-busstop=00020678-6&course=0008200247&datetime=2026-07-27T11:48:00%2B09:00",
+      "cellText": "48",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132000f/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T11:56:00%2B09:00",
+      "cellText": "56",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132004e/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T11:00:00%2B09:00",
+      "cellText": "00",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132005d/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T11:15:00%2B09:00",
+      "cellText": "15",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320088/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T11:30:00%2B09:00",
+      "cellText": "30",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8137000e/stops?departure-busstop=00020678-10&course=0008200249&datetime=2026-08-01T11:38:00%2B09:00",
+      "cellText": "38",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320075/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T11:45:00%2B09:00",
+      "cellText": "45",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81140009/stops?departure-busstop=00020678-13&course=0008200310&datetime=2026-08-01T11:53:00%2B09:00",
+      "cellText": "53シー",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132004f/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T11:59:00%2B09:00",
+      "cellText": "59",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132008f/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T11:00:00%2B09:00",
+      "cellText": "00",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81370010/stops?departure-busstop=00020678-10&course=0008200249&datetime=2026-08-02T11:07:00%2B09:00",
+      "cellText": "07",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132009a/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T11:15:00%2B09:00",
+      "cellText": "15",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813200b4/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T11:30:00%2B09:00",
+      "cellText": "30",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81370011/stops?departure-busstop=00020678-10&course=0008200249&datetime=2026-08-02T11:40:00%2B09:00",
+      "cellText": "40",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813200b9/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T11:45:00%2B09:00",
+      "cellText": "45",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81140010/stops?departure-busstop=00020678-13&course=0008200310&datetime=2026-08-02T11:53:00%2B09:00",
+      "cellText": "53シー",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81180001/stops?departure-busstop=00020678-6&course=0008200314&datetime=2026-07-27T12:01:00%2B09:00",
+      "cellText": "01Ｓほ",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132004a/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T12:11:00%2B09:00",
+      "cellText": "11",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81180002/stops?departure-busstop=00020678-6&course=0008200314&datetime=2026-07-27T12:23:00%2B09:00",
+      "cellText": "23Ｓほ",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320003/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T12:26:00%2B09:00",
+      "cellText": "26",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81140004/stops?departure-busstop=00020678-13&course=0008200310&datetime=2026-07-27T12:34:00%2B09:00",
+      "cellText": "34シー",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320001/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T12:39:00%2B09:00",
+      "cellText": "39",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81370004/stops?departure-busstop=00020678-10&course=0008200249&datetime=2026-07-27T12:43:00%2B09:00",
+      "cellText": "43",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132002c/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T12:51:00%2B09:00",
+      "cellText": "51",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132005e/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T12:15:00%2B09:00",
+      "cellText": "15",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81180009/stops?departure-busstop=00020678-6&course=0008200314&datetime=2026-08-01T12:19:00%2B09:00",
+      "cellText": "19Ｓほ",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8114000d/stops?departure-busstop=00020678-13&course=0008200310&datetime=2026-08-01T12:25:00%2B09:00",
+      "cellText": "25シー",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320067/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T12:30:00%2B09:00",
+      "cellText": "30",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8118000d/stops?departure-busstop=00020678-6&course=0008200314&datetime=2026-08-01T12:36:00%2B09:00",
+      "cellText": "36Ｓほ",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132006f/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T12:45:00%2B09:00",
+      "cellText": "45",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320090/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T12:00:00%2B09:00",
+      "cellText": "00",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132009b/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T12:14:00%2B09:00",
+      "cellText": "14",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81180011/stops?departure-busstop=00020678-6&course=0008200314&datetime=2026-08-02T12:20:00%2B09:00",
+      "cellText": "20Ｓほ",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81140014/stops?departure-busstop=00020678-13&course=0008200310&datetime=2026-08-02T12:26:00%2B09:00",
+      "cellText": "26シー",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813200a8/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T12:30:00%2B09:00",
+      "cellText": "30",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81180015/stops?departure-busstop=00020678-6&course=0008200314&datetime=2026-08-02T12:36:00%2B09:00",
+      "cellText": "36Ｓほ",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813200b0/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T12:45:00%2B09:00",
+      "cellText": "45",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320005/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T13:03:00%2B09:00",
+      "cellText": "03",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132000a/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T13:15:00%2B09:00",
+      "cellText": "15",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81180003/stops?departure-busstop=00020678-6&course=0008200314&datetime=2026-07-27T13:20:00%2B09:00",
+      "cellText": "20Ｓほ",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320004/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T13:27:00%2B09:00",
+      "cellText": "27",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81370005/stops?departure-busstop=00020678-10&course=0008200249&datetime=2026-07-27T13:35:00%2B09:00",
+      "cellText": "35",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132001f/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T13:42:00%2B09:00",
+      "cellText": "42",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320030/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T13:58:00%2B09:00",
+      "cellText": "58",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320050/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T13:00:00%2B09:00",
+      "cellText": "00",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8118000a/stops?departure-busstop=00020678-6&course=0008200314&datetime=2026-08-01T13:08:00%2B09:00",
+      "cellText": "08Ｓほ",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132005f/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T13:15:00%2B09:00",
+      "cellText": "15",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8114000a/stops?departure-busstop=00020678-13&course=0008200310&datetime=2026-08-01T13:24:00%2B09:00",
+      "cellText": "24シー",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132006a/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T13:30:00%2B09:00",
+      "cellText": "30",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320070/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T13:45:00%2B09:00",
+      "cellText": "45",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320091/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T13:00:00%2B09:00",
+      "cellText": "00",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81180012/stops?departure-busstop=00020678-6&course=0008200314&datetime=2026-08-02T13:05:00%2B09:00",
+      "cellText": "05Ｓほ",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132009c/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T13:15:00%2B09:00",
+      "cellText": "15",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81140011/stops?departure-busstop=00020678-13&course=0008200310&datetime=2026-08-02T13:25:00%2B09:00",
+      "cellText": "25シー",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813200a9/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T13:30:00%2B09:00",
+      "cellText": "30",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813200b1/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T13:45:00%2B09:00",
+      "cellText": "45",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81140005/stops?departure-busstop=00020678-13&course=0008200310&datetime=2026-07-27T14:01:00%2B09:00",
+      "cellText": "01シー",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320034/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T14:12:00%2B09:00",
+      "cellText": "12",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320038/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T14:27:00%2B09:00",
+      "cellText": "27",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132003c/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T14:42:00%2B09:00",
+      "cellText": "42",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132003f/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T14:57:00%2B09:00",
+      "cellText": "57",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320078/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T14:01:00%2B09:00",
+      "cellText": "01",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320076/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T14:16:00%2B09:00",
+      "cellText": "16",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132007d/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T14:31:00%2B09:00",
+      "cellText": "31",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320081/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T14:46:00%2B09:00",
+      "cellText": "46",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813200b5/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T14:00:00%2B09:00",
+      "cellText": "00",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813200ba/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T14:15:00%2B09:00",
+      "cellText": "15",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813200bd/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T14:30:00%2B09:00",
+      "cellText": "30",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813200c2/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T14:45:00%2B09:00",
+      "cellText": "45",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320035/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T15:12:00%2B09:00",
+      "cellText": "12",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320039/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T15:27:00%2B09:00",
+      "cellText": "27",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132003d/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T15:42:00%2B09:00",
+      "cellText": "42",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320040/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T15:57:00%2B09:00",
+      "cellText": "57",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320079/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T15:01:00%2B09:00",
+      "cellText": "01",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320077/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T15:16:00%2B09:00",
+      "cellText": "16",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132007e/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T15:31:00%2B09:00",
+      "cellText": "31",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320082/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T15:46:00%2B09:00",
+      "cellText": "46",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813200b6/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T15:00:00%2B09:00",
+      "cellText": "00",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813200bb/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T15:15:00%2B09:00",
+      "cellText": "15",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813200be/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T15:30:00%2B09:00",
+      "cellText": "30",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813200c3/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T15:45:00%2B09:00",
+      "cellText": "45",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320036/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T16:12:00%2B09:00",
+      "cellText": "12",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132003a/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T16:27:00%2B09:00",
+      "cellText": "27",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132003e/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T16:42:00%2B09:00",
+      "cellText": "42",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320041/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T16:59:00%2B09:00",
+      "cellText": "59",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132007a/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T16:01:00%2B09:00",
+      "cellText": "01",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320051/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T16:16:00%2B09:00",
+      "cellText": "16",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132007f/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T16:31:00%2B09:00",
+      "cellText": "31",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320083/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T16:46:00%2B09:00",
+      "cellText": "46",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320092/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T16:00:00%2B09:00",
+      "cellText": "00",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813200bc/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T16:16:00%2B09:00",
+      "cellText": "16",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813200bf/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T16:30:00%2B09:00",
+      "cellText": "30",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813200c4/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T16:45:00%2B09:00",
+      "cellText": "45",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320013/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T17:12:00%2B09:00",
+      "cellText": "12",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320020/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T17:24:00%2B09:00",
+      "cellText": "24",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81140002/stops?departure-busstop=00020678-13&course=0008200310&datetime=2026-07-27T17:34:00%2B09:00",
+      "cellText": "34シー",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320026/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T17:36:00%2B09:00",
+      "cellText": "36",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320015/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T17:48:00%2B09:00",
+      "cellText": "48",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320055/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T17:01:00%2B09:00",
+      "cellText": "01",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320052/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T17:16:00%2B09:00",
+      "cellText": "16",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81140006/stops?departure-busstop=00020678-13&course=0008200310&datetime=2026-08-01T17:18:00%2B09:00",
+      "cellText": "18シー",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320053/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T17:31:00%2B09:00",
+      "cellText": "31",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320071/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T17:46:00%2B09:00",
+      "cellText": "46",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132009d/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T17:00:00%2B09:00",
+      "cellText": "00",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81160003/stops?departure-busstop=00020678-13&course=0008200312&datetime=2026-08-02T17:10:00%2B09:00",
+      "cellText": "10",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813200aa/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T17:15:00%2B09:00",
+      "cellText": "15",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320089/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T17:30:00%2B09:00",
+      "cellText": "30",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813200a1/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T17:45:00%2B09:00",
+      "cellText": "45",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320031/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T18:01:00%2B09:00",
+      "cellText": "01",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320014/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T18:13:00%2B09:00",
+      "cellText": "13",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320021/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T18:25:00%2B09:00",
+      "cellText": "25",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320027/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T18:38:00%2B09:00",
+      "cellText": "38",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320016/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T18:49:00%2B09:00",
+      "cellText": "49",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81160000/stops?departure-busstop=00020678-13&course=0008200312&datetime=2026-07-27T18:59:00%2B09:00",
+      "cellText": "59",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320056/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T18:01:00%2B09:00",
+      "cellText": "01",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132007b/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T18:16:00%2B09:00",
+      "cellText": "16",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320054/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T18:31:00%2B09:00",
+      "cellText": "31",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81160002/stops?departure-busstop=00020678-13&course=0008200312&datetime=2026-08-01T18:38:00%2B09:00",
+      "cellText": "38",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320080/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T18:46:00%2B09:00",
+      "cellText": "46",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132009e/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T18:00:00%2B09:00",
+      "cellText": "00",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813200ab/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T18:15:00%2B09:00",
+      "cellText": "15",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132008a/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T18:30:00%2B09:00",
+      "cellText": "30",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81140015/stops?departure-busstop=00020678-13&course=0008200310&datetime=2026-08-02T18:40:00%2B09:00",
+      "cellText": "40シー",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813200a4/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T18:45:00%2B09:00",
+      "cellText": "45",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320032/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T19:01:00%2B09:00",
+      "cellText": "01",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320042/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T19:13:00%2B09:00",
+      "cellText": "13",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132003b/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T19:25:00%2B09:00",
+      "cellText": "25",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320028/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T19:38:00%2B09:00",
+      "cellText": "38",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132001a/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T19:49:00%2B09:00",
+      "cellText": "49",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320084/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T19:01:00%2B09:00",
+      "cellText": "01",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132007c/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T19:16:00%2B09:00",
+      "cellText": "16",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320072/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T19:31:00%2B09:00",
+      "cellText": "31",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813200c0/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T19:00:00%2B09:00",
+      "cellText": "00",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813200c5/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T19:15:00%2B09:00",
+      "cellText": "15",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132008b/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T19:30:00%2B09:00",
+      "cellText": "30",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813200a5/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T19:45:00%2B09:00",
+      "cellText": "45",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320043/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T20:01:00%2B09:00",
+      "cellText": "01",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320047/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T20:13:00%2B09:00",
+      "cellText": "13",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320010/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T20:33:00%2B09:00",
+      "cellText": "33",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320022/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T20:53:00%2B09:00",
+      "cellText": "53",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320085/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T20:01:00%2B09:00",
+      "cellText": "01",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320057/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T20:16:00%2B09:00",
+      "cellText": "16",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320062/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T20:36:00%2B09:00",
+      "cellText": "36",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320060/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T20:56:00%2B09:00",
+      "cellText": "56",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813200c1/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T20:00:00%2B09:00",
+      "cellText": "00",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320093/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T20:30:00%2B09:00",
+      "cellText": "30",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320095/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T20:50:00%2B09:00",
+      "cellText": "50",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132001c/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T21:13:00%2B09:00",
+      "cellText": "13",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320011/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T21:33:00%2B09:00",
+      "cellText": "33",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320023/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T21:53:00%2B09:00",
+      "cellText": "53",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320058/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T21:16:00%2B09:00",
+      "cellText": "16",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320068/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T21:36:00%2B09:00",
+      "cellText": "36",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320061/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T21:59:00%2B09:00",
+      "cellText": "59",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132009f/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T21:11:00%2B09:00",
+      "cellText": "11",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320094/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T21:31:00%2B09:00",
+      "cellText": "31",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320096/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T21:50:00%2B09:00",
+      "cellText": "50",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132001d/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T22:13:00%2B09:00",
+      "cellText": "13",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320012/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T22:33:00%2B09:00",
+      "cellText": "33",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320024/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T22:53:00%2B09:00",
+      "cellText": "53",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320059/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T22:18:00%2B09:00",
+      "cellText": "18",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81320069/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-01T22:39:00%2B09:00",
+      "cellText": "39",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/813200a0/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-08-02T22:11:00%2B09:00",
+      "cellText": "11",
+      "reason": "mixed-not-37-symbol"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/8132001e/stops?departure-busstop=00020678-10&course=0008200244&datetime=2026-07-27T23:13:00%2B09:00",
+      "cellText": "13",
+      "reason": "mixed-not-37-symbol"
+    }
+  ]
+}

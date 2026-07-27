@@ -233,6 +233,17 @@
         './maihama-takasu-line-route-v1.js?v=116'
       ]
     },
+    // route-37 大三角線（南行徳↔舞浜/TDS）。DAISANKAKU_LINE_* で route-9 pathは流用しない。舞浜止まり vs TDS行きは別系統。
+    'route-37': {
+      css: ['./daisankaku-line-stop-images-v1.css?v=117'],
+      js: [
+        './daisankaku-line-platforms-v1.js?v=117',
+        './daisankaku-line-path-v1.js?v=117',
+        './daisankaku-line-path-policy-v1.js?v=117',
+        './daisankaku-line-stop-images-v1.js?v=117',
+        './daisankaku-line-route-v1.js?v=117'
+      ]
+    },
     // route-24 富士見循環線（24系統・新浦安駅発着1周）。FUJIMI_LOOP_LINE_* で他系統と分離。
     'route-24': {
       css: ['./fujimi-loop-line-stop-images-v1.css?v=115'],
