@@ -1,0 +1,70 @@
+{
+  "scrapedAt": "2026-07-27T03:46:38.733Z",
+  "source": "https://transfer-cloud.navitime.biz/keiseibus-group",
+  "routeNumber": "38",
+  "siblingRouteNumbers": [
+    "18",
+    "15",
+    "19",
+    "10",
+    "22",
+    "24"
+  ],
+  "lineName": "明海クオン線",
+  "note": "Route 38 express discovery. Gate 【３８系統】 symbol ク. Boarding stops only in systems.",
+  "knownIds": {
+    "shinurayasu": "00020619",
+    "quon": null,
+    "akemi_shogakko": null
+  },
+  "searches": {
+    "新浦安駅": {
+      "searchUrl": null,
+      "word": "新浦安駅",
+      "hits": []
+    },
+    "クオン新浦安": {
+      "searchUrl": null,
+      "word": "クオン新浦安",
+      "hits": []
+    },
+    "明海小学校": {
+      "searchUrl": null,
+      "word": "明海小学校",
+      "hits": []
+    },
+    "明海大学前": {
+      "searchUrl": null,
+      "word": "明海大学前",
+      "hits": []
+    },
+    "入船中央エステート": {
+      "searchUrl": null,
+      "word": "入船中央エステート",
+      "hits": []
+    },
+    "美浜東団地": {
+      "searchUrl": null,
+      "word": "美浜東団地",
+      "hits": []
+    },
+    "海楽": {
+      "searchUrl": null,
+      "word": "海楽",
+      "hits": []
+    },
+    "消防本部前": {
+      "searchUrl": null,
+      "word": "消防本部前",
+      "hits": []
+    }
+  },
+  "terminals": {},
+  "terminalPlan": [],
+  "berthsSeen": [],
+  "rejectedSiblingCells": [],
+  "errors": [],
+  "stats": {},
+  "partialFlushAt": "2026-07-27T03:46:55.649Z",
+  "partialFlushReason": "searches"
+}

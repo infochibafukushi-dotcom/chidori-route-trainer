@@ -243,6 +243,17 @@
         './fujimi-loop-line-stop-images-v1.js?v=115',
         './fujimi-loop-line-route-v1.js?v=115'
       ]
+    },
+    // route-38 明海クオン線（38系統・急行）。AKEMI_QUON_LINE_* で18/15/19 pathは流用しない。
+    'route-38': {
+      css: ['./akemi-quon-line-stop-images-v1.css?v=118'],
+      js: [
+        './akemi-quon-line-platforms-v1.js?v=118',
+        './akemi-quon-line-path-v1.js?v=118',
+        './akemi-quon-line-path-policy-v1.js?v=118',
+        './akemi-quon-line-stop-images-v1.js?v=118',
+        './akemi-quon-line-route-v1.js?v=118'
+      ]
     }
   };
 

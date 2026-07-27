@@ -1,0 +1,151 @@
+{
+  "fetchedAt": "2026-07-27T03:46:36.688Z",
+  "route": "akemi-quon-route38",
+  "lineName": "明海クオン線",
+  "knownPathSourceIds": [
+    18396354
+  ],
+  "separationGuard": "ref=18/15/19/10 relations listed but NEVER used for route-38 geometry.",
+  "relations": [
+    {
+      "id": 18396354,
+      "label": "route38 新浦安駅⇒クオン新浦安線",
+      "ok": true,
+      "source": "overpass",
+      "name": "東京ベイシティバス38系統 新浦安駅⇒クオン新浦安線",
+      "tags": {
+        "name": "東京ベイシティバス38系統 新浦安駅⇒クオン新浦安線",
+        "network": "クオン新浦安線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "38",
+        "route": "bus",
+        "type": "route"
+      },
+      "memberCount": 33,
+      "wayMemberCount": 28,
+      "platformMemberCount": 5,
+      "memberRoles": {
+        "platform_entry_only": 1,
+        "platform": 3,
+        "platform_exit_only": 1,
+        "": 28
+      },
+      "platformNames": [
+        "新浦安駅",
+        "海風の街",
+        "明海小学校",
+        "クオン新浦安",
+        "新浦安駅"
+      ],
+      "platformsDetail": [
+        {
+          "role": "platform_entry_only",
+          "type": "node",
+          "ref": 8415001166,
+          "name": "新浦安駅",
+          "lat": 35.6496296,
+          "lon": 139.9137782,
+          "local_ref": "B"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 12409259393,
+          "name": "海風の街",
+          "lat": 35.6435042,
+          "lon": 139.9224383,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6899769134,
+          "name": "明海小学校",
+          "lat": 35.6423565,
+          "lon": 139.9180964,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6852993565,
+          "name": "クオン新浦安",
+          "lat": 35.6431009,
+          "lon": 139.9171476,
+          "local_ref": null
+        },
+        {
+          "role": "platform_exit_only",
+          "type": "node",
+          "ref": 8415001163,
+          "name": "新浦安駅",
+          "lat": 35.649411,
+          "lon": 139.9142448,
+          "local_ref": "X"
+        }
+      ],
+      "wayMemberIds": [
+        1341526745,
+        906161758,
+        1342408590,
+        1342409930,
+        1340739633,
+        906161743,
+        369356254,
+        906161757,
+        720406630,
+        1338996611,
+        720406627,
+        1341529159,
+        1340739632,
+        1241264348,
+        847288816,
+        847288815,
+        847288819,
+        1342406125,
+        1342406124,
+        1341518496,
+        221344567,
+        1338996605,
+        1341518494,
+        1340739631,
+        847288812,
+        1338996609,
+        720406629,
+        906161755
+      ],
+      "file": "osm-relation-18396354.json"
+    }
+  ],
+  "refProbe38": [
+    {
+      "id": 18396354,
+      "type": "relation",
+      "tags": {
+        "name": "東京ベイシティバス38系統 新浦安駅⇒クオン新浦安線",
+        "network": "クオン新浦安線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "38",
+        "route": "bus",
+        "type": "route"
+      }
+    }
+  ],
+  "quonNetworkProbe": [
+    {
+      "id": 18396354,
+      "type": "relation",
+      "tags": {
+        "name": "東京ベイシティバス38系統 新浦安駅⇒クオン新浦安線",
+        "network": "クオン新浦安線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "38",
+        "route": "bus",
+        "type": "route"
+      }
+    }
+  ]
+}

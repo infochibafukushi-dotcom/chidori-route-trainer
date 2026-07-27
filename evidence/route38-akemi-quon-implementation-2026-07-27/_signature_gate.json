@@ -1,0 +1,31 @@
+{
+  "verifiedAt": "2026-07-27T03:49:41.977Z",
+  "signatureCount": 1,
+  "signatures": [
+    {
+      "sigKey": "新浦安駅>海風の街>明海小学校>クオン新浦安>新浦安駅",
+      "naviStopNames": [
+        "新浦安駅",
+        "海風の街",
+        "明海小学校",
+        "クオン新浦安",
+        "新浦安駅"
+      ],
+      "boardingStopNames": [
+        "新浦安駅",
+        "明海小学校",
+        "クオン新浦安",
+        "新浦安駅"
+      ],
+      "course": "0008200316",
+      "dayKinds": [
+        "weekday",
+        "sat",
+        "sun"
+      ],
+      "has38Legend": true
+    }
+  ],
+  "pass": true,
+  "failures": []
+}

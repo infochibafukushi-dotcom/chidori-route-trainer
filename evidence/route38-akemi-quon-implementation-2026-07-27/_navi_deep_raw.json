@@ -1,0 +1,1322 @@
+{
+  "scrapedAt": "2026-07-27T03:47:36.598Z",
+  "routeNumber": "38",
+  "lineName": "明海クオン線",
+  "note": "Deep scrape berth 38 express. Gate 【３８系統】 symbol ク. Boarding stops only.",
+  "courses": [
+    {
+      "terminal": "新浦安駅",
+      "terminalId": "00020619",
+      "berth": "38",
+      "courseText": "38 [38]＜急行＞明海小学校・クオン新浦安方面行 時刻表",
+      "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200316-1"
+    }
+  ],
+  "timetables": [
+    {
+      "terminal": "新浦安駅",
+      "terminalId": "00020619",
+      "berth": "38",
+      "courseText": "38 [38]＜急行＞明海小学校・クオン新浦安方面行 時刻表",
+      "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200316-1",
+      "dayKind": "weekday",
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200316-1&datetime=2026-07-27T05%3A00",
+      "legend": [
+        "38\t[38]＜急行＞明海小学校・クオン新浦安方面行",
+        "ク…【３８系統】明海小学校・クオン新浦安方面"
+      ],
+      "tripLinkCount": 20
+    },
+    {
+      "terminal": "新浦安駅",
+      "terminalId": "00020619",
+      "berth": "38",
+      "courseText": "38 [38]＜急行＞明海小学校・クオン新浦安方面行 時刻表",
+      "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200316-1",
+      "dayKind": "sat",
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200316-1&datetime=2026-08-01T05%3A00",
+      "legend": [
+        "38\t[38]＜急行＞明海小学校・クオン新浦安方面行",
+        "ク…【３８系統】明海小学校・クオン新浦安方面"
+      ],
+      "tripLinkCount": 20
+    },
+    {
+      "terminal": "新浦安駅",
+      "terminalId": "00020619",
+      "berth": "38",
+      "courseText": "38 [38]＜急行＞明海小学校・クオン新浦安方面行 時刻表",
+      "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200316-1",
+      "dayKind": "sun",
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020619&course-sequence=0008200316-1&datetime=2026-08-02T05%3A00",
+      "legend": [
+        "38\t[38]＜急行＞明海小学校・クオン新浦安方面行",
+        "ク…【３８系統】明海小学校・クオン新浦安方面"
+      ],
+      "tripLinkCount": 20
+    }
+  ],
+  "signatures": {
+    "新浦安駅>海風の街>明海小学校>クオン新浦安>新浦安駅": {
+      "stopNames": [
+        "新浦安駅",
+        "海風の街",
+        "明海小学校",
+        "クオン新浦安",
+        "新浦安駅"
+      ],
+      "stopCount": 5,
+      "course": "0008200316",
+      "sampleUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811a0000/stops?departure-busstop=00020619-1&course=0008200316&datetime=2026-07-27T06:27:00%2B09:00",
+      "dayKinds": [
+        "weekday",
+        "sat",
+        "sun"
+      ]
+    }
+  },
+  "trips": [
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811a0000/stops?departure-busstop=00020619-1&course=0008200316&datetime=2026-07-27T06:27:00%2B09:00",
+      "title": "38 [38]＜急行＞明海小学校・クオン新浦安方面行の通過時刻表 | 京成バスナビ | 京成電鉄バスグループ",
+      "heading": "通過時刻表",
+      "stops": [
+        {
+          "time": "06:27",
+          "kind": "発",
+          "name": "新浦安駅"
+        },
+        {
+          "time": "06:30",
+          "kind": "着",
+          "name": "海風の街"
+        },
+        {
+          "time": "06:33",
+          "kind": "着",
+          "name": "明海小学校"
+        },
+        {
+          "time": "06:34",
+          "kind": "着",
+          "name": "クオン新浦安"
+        },
+        {
+          "time": "06:42",
+          "kind": "着",
+          "name": "新浦安駅"
+        }
+      ],
+      "stopNames": [
+        "新浦安駅",
+        "海風の街",
+        "明海小学校",
+        "クオン新浦安",
+        "新浦安駅"
+      ],
+      "course": "0008200316",
+      "departureBusstopId": "00020619-1",
+      "dayKind": "weekday",
+      "bodySnippet": "京成電鉄バスグループ\n>\nバス停時刻表検索\n>\n新浦安駅 系統・時刻表・のりば一覧\n>\n新浦安駅 時刻表\n>\n38 [38]＜急行＞明海小学校・クオン新浦安方面行 通過時刻表\n京成電鉄バスグループ\n検索トップページ\nLanguage\n日本語\nEnglish\n简体中文\n繁體中文\n한국어\nไทย\n通過時刻表\n38 [38]＜急行＞明海小学校・クオン新浦安方面行\n2026年7月27日時点\n06:27\n発\n新浦安駅\n系統・時刻表一覧\n06:30\n着\n海風の街\n170円\n系統・時刻表一覧\n06:33\n着\n明海小学校\n170円\n系統・時刻表一覧\n06:34\n着\nクオン新浦安\n170円\n系統・時刻表一覧\n06:42\n着\n新浦安駅\n170円\n系統・時刻表一覧\nページの先頭へ戻る\nご利用にあたって（免責について等）\nCopyright ©Keisei Bus Co., Ltd. All rights reserved.\nPowered by",
+      "terminal": "新浦安駅",
+      "berth": "38",
+      "cellText": "27ク"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811a0002/stops?departure-busstop=00020619-1&course=0008200316&datetime=2026-07-27T06:51:00%2B09:00",
+      "title": "38 [38]＜急行＞明海小学校・クオン新浦安方面行の通過時刻表 | 京成バスナビ | 京成電鉄バスグループ",
+      "heading": "通過時刻表",
+      "stops": [
+        {
+          "time": "06:51",
+          "kind": "発",
+          "name": "新浦安駅"
+        },
+        {
+          "time": "06:54",
+          "kind": "着",
+          "name": "海風の街"
+        },
+        {
+          "time": "06:57",
+          "kind": "着",
+          "name": "明海小学校"
+        },
+        {
+          "time": "06:58",
+          "kind": "着",
+          "name": "クオン新浦安"
+        },
+        {
+          "time": "07:06",
+          "kind": "着",
+          "name": "新浦安駅"
+        }
+      ],
+      "stopNames": [
+        "新浦安駅",
+        "海風の街",
+        "明海小学校",
+        "クオン新浦安",
+        "新浦安駅"
+      ],
+      "course": "0008200316",
+      "departureBusstopId": "00020619-1",
+      "dayKind": "weekday",
+      "bodySnippet": "京成電鉄バスグループ\n>\nバス停時刻表検索\n>\n新浦安駅 系統・時刻表・のりば一覧\n>\n新浦安駅 時刻表\n>\n38 [38]＜急行＞明海小学校・クオン新浦安方面行 通過時刻表\n京成電鉄バスグループ\n検索トップページ\nLanguage\n日本語\nEnglish\n简体中文\n繁體中文\n한국어\nไทย\n通過時刻表\n38 [38]＜急行＞明海小学校・クオン新浦安方面行\n2026年7月27日時点\n06:51\n発\n新浦安駅\n系統・時刻表一覧\n06:54\n着\n海風の街\n170円\n系統・時刻表一覧\n06:57\n着\n明海小学校\n170円\n系統・時刻表一覧\n06:58\n着\nクオン新浦安\n170円\n系統・時刻表一覧\n07:06\n着\n新浦安駅\n170円\n系統・時刻表一覧\nページの先頭へ戻る\nご利用にあたって（免責について等）\nCopyright ©Keisei Bus Co., Ltd. All rights reserved.\nPowered by",
+      "terminal": "新浦安駅",
+      "berth": "38",
+      "cellText": "51ク"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811a0012/stops?departure-busstop=00020619-1&course=0008200316&datetime=2026-08-01T06:51:00%2B09:00",
+      "title": "38 [38]＜急行＞明海小学校・クオン新浦安方面行の通過時刻表 | 京成バスナビ | 京成電鉄バスグループ",
+      "heading": "通過時刻表",
+      "stops": [
+        {
+          "time": "06:51",
+          "kind": "発",
+          "name": "新浦安駅"
+        },
+        {
+          "time": "06:54",
+          "kind": "着",
+          "name": "海風の街"
+        },
+        {
+          "time": "06:57",
+          "kind": "着",
+          "name": "明海小学校"
+        },
+        {
+          "time": "06:58",
+          "kind": "着",
+          "name": "クオン新浦安"
+        },
+        {
+          "time": "07:06",
+          "kind": "着",
+          "name": "新浦安駅"
+        }
+      ],
+      "stopNames": [
+        "新浦安駅",
+        "海風の街",
+        "明海小学校",
+        "クオン新浦安",
+        "新浦安駅"
+      ],
+      "course": "0008200316",
+      "departureBusstopId": "00020619-1",
+      "dayKind": "weekday",
+      "bodySnippet": "京成電鉄バスグループ\n>\nバス停時刻表検索\n>\n新浦安駅 系統・時刻表・のりば一覧\n>\n新浦安駅 時刻表\n>\n38 [38]＜急行＞明海小学校・クオン新浦安方面行 通過時刻表\n京成電鉄バスグループ\n検索トップページ\nLanguage\n日本語\nEnglish\n简体中文\n繁體中文\n한국어\nไทย\n通過時刻表\n38 [38]＜急行＞明海小学校・クオン新浦安方面行\n2026年8月1日時点\n06:51\n発\n新浦安駅\n系統・時刻表一覧\n06:54\n着\n海風の街\n170円\n系統・時刻表一覧\n06:57\n着\n明海小学校\n170円\n系統・時刻表一覧\n06:58\n着\nクオン新浦安\n170円\n系統・時刻表一覧\n07:06\n着\n新浦安駅\n170円\n系統・時刻表一覧\nページの先頭へ戻る\nご利用にあたって（免責について等）\nCopyright ©Keisei Bus Co., Ltd. All rights reserved.\nPowered by",
+      "terminal": "新浦安駅",
+      "berth": "38",
+      "cellText": "51ク"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811a0004/stops?departure-busstop=00020619-1&course=0008200316&datetime=2026-07-27T07:19:00%2B09:00",
+      "title": "38 [38]＜急行＞明海小学校・クオン新浦安方面行の通過時刻表 | 京成バスナビ | 京成電鉄バスグループ",
+      "heading": "通過時刻表",
+      "stops": [
+        {
+          "time": "07:19",
+          "kind": "発",
+          "name": "新浦安駅"
+        },
+        {
+          "time": "07:22",
+          "kind": "着",
+          "name": "海風の街"
+        },
+        {
+          "time": "07:25",
+          "kind": "着",
+          "name": "明海小学校"
+        },
+        {
+          "time": "07:26",
+          "kind": "着",
+          "name": "クオン新浦安"
+        },
+        {
+          "time": "07:34",
+          "kind": "着",
+          "name": "新浦安駅"
+        }
+      ],
+      "stopNames": [
+        "新浦安駅",
+        "海風の街",
+        "明海小学校",
+        "クオン新浦安",
+        "新浦安駅"
+      ],
+      "course": "0008200316",
+      "departureBusstopId": "00020619-1",
+      "dayKind": "weekday",
+      "bodySnippet": "京成電鉄バスグループ\n>\nバス停時刻表検索\n>\n新浦安駅 系統・時刻表・のりば一覧\n>\n新浦安駅 時刻表\n>\n38 [38]＜急行＞明海小学校・クオン新浦安方面行 通過時刻表\n京成電鉄バスグループ\n検索トップページ\nLanguage\n日本語\nEnglish\n简体中文\n繁體中文\n한국어\nไทย\n通過時刻表\n38 [38]＜急行＞明海小学校・クオン新浦安方面行\n2026年7月27日時点\n07:19\n発\n新浦安駅\n系統・時刻表一覧\n07:22\n着\n海風の街\n170円\n系統・時刻表一覧\n07:25\n着\n明海小学校\n170円\n系統・時刻表一覧\n07:26\n着\nクオン新浦安\n170円\n系統・時刻表一覧\n07:34\n着\n新浦安駅\n170円\n系統・時刻表一覧\nページの先頭へ戻る\nご利用にあたって（免責について等）\nCopyright ©Keisei Bus Co., Ltd. All rights reserved.\nPowered by",
+      "terminal": "新浦安駅",
+      "berth": "38",
+      "cellText": "19ク"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811a000c/stops?departure-busstop=00020619-1&course=0008200316&datetime=2026-07-27T07:43:00%2B09:00",
+      "title": "38 [38]＜急行＞明海小学校・クオン新浦安方面行の通過時刻表 | 京成バスナビ | 京成電鉄バスグループ",
+      "heading": "通過時刻表",
+      "stops": [
+        {
+          "time": "07:43",
+          "kind": "発",
+          "name": "新浦安駅"
+        },
+        {
+          "time": "07:46",
+          "kind": "着",
+          "name": "海風の街"
+        },
+        {
+          "time": "07:49",
+          "kind": "着",
+          "name": "明海小学校"
+        },
+        {
+          "time": "07:50",
+          "kind": "着",
+          "name": "クオン新浦安"
+        },
+        {
+          "time": "07:58",
+          "kind": "着",
+          "name": "新浦安駅"
+        }
+      ],
+      "stopNames": [
+        "新浦安駅",
+        "海風の街",
+        "明海小学校",
+        "クオン新浦安",
+        "新浦安駅"
+      ],
+      "course": "0008200316",
+      "departureBusstopId": "00020619-1",
+      "dayKind": "weekday",
+      "bodySnippet": "京成電鉄バスグループ\n>\nバス停時刻表検索\n>\n新浦安駅 系統・時刻表・のりば一覧\n>\n新浦安駅 時刻表\n>\n38 [38]＜急行＞明海小学校・クオン新浦安方面行 通過時刻表\n京成電鉄バスグループ\n検索トップページ\nLanguage\n日本語\nEnglish\n简体中文\n繁體中文\n한국어\nไทย\n通過時刻表\n38 [38]＜急行＞明海小学校・クオン新浦安方面行\n2026年7月27日時点\n07:43\n発\n新浦安駅\n系統・時刻表一覧\n07:46\n着\n海風の街\n170円\n系統・時刻表一覧\n07:49\n着\n明海小学校\n170円\n系統・時刻表一覧\n07:50\n着\nクオン新浦安\n170円\n系統・時刻表一覧\n07:58\n着\n新浦安駅\n170円\n系統・時刻表一覧\nページの先頭へ戻る\nご利用にあたって（免責について等）\nCopyright ©Keisei Bus Co., Ltd. All rights reserved.\nPowered by",
+      "terminal": "新浦安駅",
+      "berth": "38",
+      "cellText": "43ク"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811a0014/stops?departure-busstop=00020619-1&course=0008200316&datetime=2026-08-01T07:19:00%2B09:00",
+      "title": "38 [38]＜急行＞明海小学校・クオン新浦安方面行の通過時刻表 | 京成バスナビ | 京成電鉄バスグループ",
+      "heading": "通過時刻表",
+      "stops": [
+        {
+          "time": "07:19",
+          "kind": "発",
+          "name": "新浦安駅"
+        },
+        {
+          "time": "07:22",
+          "kind": "着",
+          "name": "海風の街"
+        },
+        {
+          "time": "07:25",
+          "kind": "着",
+          "name": "明海小学校"
+        },
+        {
+          "time": "07:26",
+          "kind": "着",
+          "name": "クオン新浦安"
+        },
+        {
+          "time": "07:34",
+          "kind": "着",
+          "name": "新浦安駅"
+        }
+      ],
+      "stopNames": [
+        "新浦安駅",
+        "海風の街",
+        "明海小学校",
+        "クオン新浦安",
+        "新浦安駅"
+      ],
+      "course": "0008200316",
+      "departureBusstopId": "00020619-1",
+      "dayKind": "weekday",
+      "bodySnippet": "京成電鉄バスグループ\n>\nバス停時刻表検索\n>\n新浦安駅 系統・時刻表・のりば一覧\n>\n新浦安駅 時刻表\n>\n38 [38]＜急行＞明海小学校・クオン新浦安方面行 通過時刻表\n京成電鉄バスグループ\n検索トップページ\nLanguage\n日本語\nEnglish\n简体中文\n繁體中文\n한국어\nไทย\n通過時刻表\n38 [38]＜急行＞明海小学校・クオン新浦安方面行\n2026年8月1日時点\n07:19\n発\n新浦安駅\n系統・時刻表一覧\n07:22\n着\n海風の街\n170円\n系統・時刻表一覧\n07:25\n着\n明海小学校\n170円\n系統・時刻表一覧\n07:26\n着\nクオン新浦安\n170円\n系統・時刻表一覧\n07:34\n着\n新浦安駅\n170円\n系統・時刻表一覧\nページの先頭へ戻る\nご利用にあたって（免責について等）\nCopyright ©Keisei Bus Co., Ltd. All rights reserved.\nPowered by",
+      "terminal": "新浦安駅",
+      "berth": "38",
+      "cellText": "19ク"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811a0016/stops?departure-busstop=00020619-1&course=0008200316&datetime=2026-08-01T07:49:00%2B09:00",
+      "title": "38 [38]＜急行＞明海小学校・クオン新浦安方面行の通過時刻表 | 京成バスナビ | 京成電鉄バスグループ",
+      "heading": "通過時刻表",
+      "stops": [
+        {
+          "time": "07:49",
+          "kind": "発",
+          "name": "新浦安駅"
+        },
+        {
+          "time": "07:52",
+          "kind": "着",
+          "name": "海風の街"
+        },
+        {
+          "time": "07:55",
+          "kind": "着",
+          "name": "明海小学校"
+        },
+        {
+          "time": "07:56",
+          "kind": "着",
+          "name": "クオン新浦安"
+        },
+        {
+          "time": "08:04",
+          "kind": "着",
+          "name": "新浦安駅"
+        }
+      ],
+      "stopNames": [
+        "新浦安駅",
+        "海風の街",
+        "明海小学校",
+        "クオン新浦安",
+        "新浦安駅"
+      ],
+      "course": "0008200316",
+      "departureBusstopId": "00020619-1",
+      "dayKind": "weekday",
+      "bodySnippet": "京成電鉄バスグループ\n>\nバス停時刻表検索\n>\n新浦安駅 系統・時刻表・のりば一覧\n>\n新浦安駅 時刻表\n>\n38 [38]＜急行＞明海小学校・クオン新浦安方面行 通過時刻表\n京成電鉄バスグループ\n検索トップページ\nLanguage\n日本語\nEnglish\n简体中文\n繁體中文\n한국어\nไทย\n通過時刻表\n38 [38]＜急行＞明海小学校・クオン新浦安方面行\n2026年8月1日時点\n07:49\n発\n新浦安駅\n系統・時刻表一覧\n07:52\n着\n海風の街\n170円\n系統・時刻表一覧\n07:55\n着\n明海小学校\n170円\n系統・時刻表一覧\n07:56\n着\nクオン新浦安\n170円\n系統・時刻表一覧\n08:04\n着\n新浦安駅\n170円\n系統・時刻表一覧\nページの先頭へ戻る\nご利用にあたって（免責について等）\nCopyright ©Keisei Bus Co., Ltd. All rights reserved.\nPowered by",
+      "terminal": "新浦安駅",
+      "berth": "38",
+      "cellText": "49ク"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811a0022/stops?departure-busstop=00020619-1&course=0008200316&datetime=2026-08-02T07:08:00%2B09:00",
+      "title": "38 [38]＜急行＞明海小学校・クオン新浦安方面行の通過時刻表 | 京成バスナビ | 京成電鉄バスグループ",
+      "heading": "通過時刻表",
+      "stops": [
+        {
+          "time": "07:08",
+          "kind": "発",
+          "name": "新浦安駅"
+        },
+        {
+          "time": "07:11",
+          "kind": "着",
+          "name": "海風の街"
+        },
+        {
+          "time": "07:14",
+          "kind": "着",
+          "name": "明海小学校"
+        },
+        {
+          "time": "07:15",
+          "kind": "着",
+          "name": "クオン新浦安"
+        },
+        {
+          "time": "07:23",
+          "kind": "着",
+          "name": "新浦安駅"
+        }
+      ],
+      "stopNames": [
+        "新浦安駅",
+        "海風の街",
+        "明海小学校",
+        "クオン新浦安",
+        "新浦安駅"
+      ],
+      "course": "0008200316",
+      "departureBusstopId": "00020619-1",
+      "dayKind": "weekday",
+      "bodySnippet": "京成電鉄バスグループ\n>\nバス停時刻表検索\n>\n新浦安駅 系統・時刻表・のりば一覧\n>\n新浦安駅 時刻表\n>\n38 [38]＜急行＞明海小学校・クオン新浦安方面行 通過時刻表\n京成電鉄バスグループ\n検索トップページ\nLanguage\n日本語\nEnglish\n简体中文\n繁體中文\n한국어\nไทย\n通過時刻表\n38 [38]＜急行＞明海小学校・クオン新浦安方面行\n2026年8月2日時点\n07:08\n発\n新浦安駅\n系統・時刻表一覧\n07:11\n着\n海風の街\n170円\n系統・時刻表一覧\n07:14\n着\n明海小学校\n170円\n系統・時刻表一覧\n07:15\n着\nクオン新浦安\n170円\n系統・時刻表一覧\n07:23\n着\n新浦安駅\n170円\n系統・時刻表一覧\nページの先頭へ戻る\nご利用にあたって（免責について等）\nCopyright ©Keisei Bus Co., Ltd. All rights reserved.\nPowered by",
+      "terminal": "新浦安駅",
+      "berth": "38",
+      "cellText": "08ク"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811a0000/stops?departure-busstop=00020619-1&course=0008200316&datetime=2026-07-27T06:27:00%2B09:00",
+      "title": "38 [38]＜急行＞明海小学校・クオン新浦安方面行の通過時刻表 | 京成バスナビ | 京成電鉄バスグループ",
+      "heading": "通過時刻表",
+      "stops": [
+        {
+          "time": "06:27",
+          "kind": "発",
+          "name": "新浦安駅"
+        },
+        {
+          "time": "06:30",
+          "kind": "着",
+          "name": "海風の街"
+        },
+        {
+          "time": "06:33",
+          "kind": "着",
+          "name": "明海小学校"
+        },
+        {
+          "time": "06:34",
+          "kind": "着",
+          "name": "クオン新浦安"
+        },
+        {
+          "time": "06:42",
+          "kind": "着",
+          "name": "新浦安駅"
+        }
+      ],
+      "stopNames": [
+        "新浦安駅",
+        "海風の街",
+        "明海小学校",
+        "クオン新浦安",
+        "新浦安駅"
+      ],
+      "course": "0008200316",
+      "departureBusstopId": "00020619-1",
+      "dayKind": "sat",
+      "bodySnippet": "京成電鉄バスグループ\n>\nバス停時刻表検索\n>\n新浦安駅 系統・時刻表・のりば一覧\n>\n新浦安駅 時刻表\n>\n38 [38]＜急行＞明海小学校・クオン新浦安方面行 通過時刻表\n京成電鉄バスグループ\n検索トップページ\nLanguage\n日本語\nEnglish\n简体中文\n繁體中文\n한국어\nไทย\n通過時刻表\n38 [38]＜急行＞明海小学校・クオン新浦安方面行\n2026年7月27日時点\n06:27\n発\n新浦安駅\n系統・時刻表一覧\n06:30\n着\n海風の街\n170円\n系統・時刻表一覧\n06:33\n着\n明海小学校\n170円\n系統・時刻表一覧\n06:34\n着\nクオン新浦安\n170円\n系統・時刻表一覧\n06:42\n着\n新浦安駅\n170円\n系統・時刻表一覧\nページの先頭へ戻る\nご利用にあたって（免責について等）\nCopyright ©Keisei Bus Co., Ltd. All rights reserved.\nPowered by",
+      "terminal": "新浦安駅",
+      "berth": "38",
+      "cellText": "27ク"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811a0002/stops?departure-busstop=00020619-1&course=0008200316&datetime=2026-07-27T06:51:00%2B09:00",
+      "title": "38 [38]＜急行＞明海小学校・クオン新浦安方面行の通過時刻表 | 京成バスナビ | 京成電鉄バスグループ",
+      "heading": "通過時刻表",
+      "stops": [
+        {
+          "time": "06:51",
+          "kind": "発",
+          "name": "新浦安駅"
+        },
+        {
+          "time": "06:54",
+          "kind": "着",
+          "name": "海風の街"
+        },
+        {
+          "time": "06:57",
+          "kind": "着",
+          "name": "明海小学校"
+        },
+        {
+          "time": "06:58",
+          "kind": "着",
+          "name": "クオン新浦安"
+        },
+        {
+          "time": "07:06",
+          "kind": "着",
+          "name": "新浦安駅"
+        }
+      ],
+      "stopNames": [
+        "新浦安駅",
+        "海風の街",
+        "明海小学校",
+        "クオン新浦安",
+        "新浦安駅"
+      ],
+      "course": "0008200316",
+      "departureBusstopId": "00020619-1",
+      "dayKind": "sat",
+      "bodySnippet": "京成電鉄バスグループ\n>\nバス停時刻表検索\n>\n新浦安駅 系統・時刻表・のりば一覧\n>\n新浦安駅 時刻表\n>\n38 [38]＜急行＞明海小学校・クオン新浦安方面行 通過時刻表\n京成電鉄バスグループ\n検索トップページ\nLanguage\n日本語\nEnglish\n简体中文\n繁體中文\n한국어\nไทย\n通過時刻表\n38 [38]＜急行＞明海小学校・クオン新浦安方面行\n2026年7月27日時点\n06:51\n発\n新浦安駅\n系統・時刻表一覧\n06:54\n着\n海風の街\n170円\n系統・時刻表一覧\n06:57\n着\n明海小学校\n170円\n系統・時刻表一覧\n06:58\n着\nクオン新浦安\n170円\n系統・時刻表一覧\n07:06\n着\n新浦安駅\n170円\n系統・時刻表一覧\nページの先頭へ戻る\nご利用にあたって（免責について等）\nCopyright ©Keisei Bus Co., Ltd. All rights reserved.\nPowered by",
+      "terminal": "新浦安駅",
+      "berth": "38",
+      "cellText": "51ク"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811a0012/stops?departure-busstop=00020619-1&course=0008200316&datetime=2026-08-01T06:51:00%2B09:00",
+      "title": "38 [38]＜急行＞明海小学校・クオン新浦安方面行の通過時刻表 | 京成バスナビ | 京成電鉄バスグループ",
+      "heading": "通過時刻表",
+      "stops": [
+        {
+          "time": "06:51",
+          "kind": "発",
+          "name": "新浦安駅"
+        },
+        {
+          "time": "06:54",
+          "kind": "着",
+          "name": "海風の街"
+        },
+        {
+          "time": "06:57",
+          "kind": "着",
+          "name": "明海小学校"
+        },
+        {
+          "time": "06:58",
+          "kind": "着",
+          "name": "クオン新浦安"
+        },
+        {
+          "time": "07:06",
+          "kind": "着",
+          "name": "新浦安駅"
+        }
+      ],
+      "stopNames": [
+        "新浦安駅",
+        "海風の街",
+        "明海小学校",
+        "クオン新浦安",
+        "新浦安駅"
+      ],
+      "course": "0008200316",
+      "departureBusstopId": "00020619-1",
+      "dayKind": "sat",
+      "bodySnippet": "京成電鉄バスグループ\n>\nバス停時刻表検索\n>\n新浦安駅 系統・時刻表・のりば一覧\n>\n新浦安駅 時刻表\n>\n38 [38]＜急行＞明海小学校・クオン新浦安方面行 通過時刻表\n京成電鉄バスグループ\n検索トップページ\nLanguage\n日本語\nEnglish\n简体中文\n繁體中文\n한국어\nไทย\n通過時刻表\n38 [38]＜急行＞明海小学校・クオン新浦安方面行\n2026年8月1日時点\n06:51\n発\n新浦安駅\n系統・時刻表一覧\n06:54\n着\n海風の街\n170円\n系統・時刻表一覧\n06:57\n着\n明海小学校\n170円\n系統・時刻表一覧\n06:58\n着\nクオン新浦安\n170円\n系統・時刻表一覧\n07:06\n着\n新浦安駅\n170円\n系統・時刻表一覧\nページの先頭へ戻る\nご利用にあたって（免責について等）\nCopyright ©Keisei Bus Co., Ltd. All rights reserved.\nPowered by",
+      "terminal": "新浦安駅",
+      "berth": "38",
+      "cellText": "51ク"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811a0004/stops?departure-busstop=00020619-1&course=0008200316&datetime=2026-07-27T07:19:00%2B09:00",
+      "title": "38 [38]＜急行＞明海小学校・クオン新浦安方面行の通過時刻表 | 京成バスナビ | 京成電鉄バスグループ",
+      "heading": "通過時刻表",
+      "stops": [
+        {
+          "time": "07:19",
+          "kind": "発",
+          "name": "新浦安駅"
+        },
+        {
+          "time": "07:22",
+          "kind": "着",
+          "name": "海風の街"
+        },
+        {
+          "time": "07:25",
+          "kind": "着",
+          "name": "明海小学校"
+        },
+        {
+          "time": "07:26",
+          "kind": "着",
+          "name": "クオン新浦安"
+        },
+        {
+          "time": "07:34",
+          "kind": "着",
+          "name": "新浦安駅"
+        }
+      ],
+      "stopNames": [
+        "新浦安駅",
+        "海風の街",
+        "明海小学校",
+        "クオン新浦安",
+        "新浦安駅"
+      ],
+      "course": "0008200316",
+      "departureBusstopId": "00020619-1",
+      "dayKind": "sat",
+      "bodySnippet": "京成電鉄バスグループ\n>\nバス停時刻表検索\n>\n新浦安駅 系統・時刻表・のりば一覧\n>\n新浦安駅 時刻表\n>\n38 [38]＜急行＞明海小学校・クオン新浦安方面行 通過時刻表\n京成電鉄バスグループ\n検索トップページ\nLanguage\n日本語\nEnglish\n简体中文\n繁體中文\n한국어\nไทย\n通過時刻表\n38 [38]＜急行＞明海小学校・クオン新浦安方面行\n2026年7月27日時点\n07:19\n発\n新浦安駅\n系統・時刻表一覧\n07:22\n着\n海風の街\n170円\n系統・時刻表一覧\n07:25\n着\n明海小学校\n170円\n系統・時刻表一覧\n07:26\n着\nクオン新浦安\n170円\n系統・時刻表一覧\n07:34\n着\n新浦安駅\n170円\n系統・時刻表一覧\nページの先頭へ戻る\nご利用にあたって（免責について等）\nCopyright ©Keisei Bus Co., Ltd. All rights reserved.\nPowered by",
+      "terminal": "新浦安駅",
+      "berth": "38",
+      "cellText": "19ク"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811a000c/stops?departure-busstop=00020619-1&course=0008200316&datetime=2026-07-27T07:43:00%2B09:00",
+      "title": "38 [38]＜急行＞明海小学校・クオン新浦安方面行の通過時刻表 | 京成バスナビ | 京成電鉄バスグループ",
+      "heading": "通過時刻表",
+      "stops": [
+        {
+          "time": "07:43",
+          "kind": "発",
+          "name": "新浦安駅"
+        },
+        {
+          "time": "07:46",
+          "kind": "着",
+          "name": "海風の街"
+        },
+        {
+          "time": "07:49",
+          "kind": "着",
+          "name": "明海小学校"
+        },
+        {
+          "time": "07:50",
+          "kind": "着",
+          "name": "クオン新浦安"
+        },
+        {
+          "time": "07:58",
+          "kind": "着",
+          "name": "新浦安駅"
+        }
+      ],
+      "stopNames": [
+        "新浦安駅",
+        "海風の街",
+        "明海小学校",
+        "クオン新浦安",
+        "新浦安駅"
+      ],
+      "course": "0008200316",
+      "departureBusstopId": "00020619-1",
+      "dayKind": "sat",
+      "bodySnippet": "京成電鉄バスグループ\n>\nバス停時刻表検索\n>\n新浦安駅 系統・時刻表・のりば一覧\n>\n新浦安駅 時刻表\n>\n38 [38]＜急行＞明海小学校・クオン新浦安方面行 通過時刻表\n京成電鉄バスグループ\n検索トップページ\nLanguage\n日本語\nEnglish\n简体中文\n繁體中文\n한국어\nไทย\n通過時刻表\n38 [38]＜急行＞明海小学校・クオン新浦安方面行\n2026年7月27日時点\n07:43\n発\n新浦安駅\n系統・時刻表一覧\n07:46\n着\n海風の街\n170円\n系統・時刻表一覧\n07:49\n着\n明海小学校\n170円\n系統・時刻表一覧\n07:50\n着\nクオン新浦安\n170円\n系統・時刻表一覧\n07:58\n着\n新浦安駅\n170円\n系統・時刻表一覧\nページの先頭へ戻る\nご利用にあたって（免責について等）\nCopyright ©Keisei Bus Co., Ltd. All rights reserved.\nPowered by",
+      "terminal": "新浦安駅",
+      "berth": "38",
+      "cellText": "43ク"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811a0014/stops?departure-busstop=00020619-1&course=0008200316&datetime=2026-08-01T07:19:00%2B09:00",
+      "title": "38 [38]＜急行＞明海小学校・クオン新浦安方面行の通過時刻表 | 京成バスナビ | 京成電鉄バスグループ",
+      "heading": "通過時刻表",
+      "stops": [
+        {
+          "time": "07:19",
+          "kind": "発",
+          "name": "新浦安駅"
+        },
+        {
+          "time": "07:22",
+          "kind": "着",
+          "name": "海風の街"
+        },
+        {
+          "time": "07:25",
+          "kind": "着",
+          "name": "明海小学校"
+        },
+        {
+          "time": "07:26",
+          "kind": "着",
+          "name": "クオン新浦安"
+        },
+        {
+          "time": "07:34",
+          "kind": "着",
+          "name": "新浦安駅"
+        }
+      ],
+      "stopNames": [
+        "新浦安駅",
+        "海風の街",
+        "明海小学校",
+        "クオン新浦安",
+        "新浦安駅"
+      ],
+      "course": "0008200316",
+      "departureBusstopId": "00020619-1",
+      "dayKind": "sat",
+      "bodySnippet": "京成電鉄バスグループ\n>\nバス停時刻表検索\n>\n新浦安駅 系統・時刻表・のりば一覧\n>\n新浦安駅 時刻表\n>\n38 [38]＜急行＞明海小学校・クオン新浦安方面行 通過時刻表\n京成電鉄バスグループ\n検索トップページ\nLanguage\n日本語\nEnglish\n简体中文\n繁體中文\n한국어\nไทย\n通過時刻表\n38 [38]＜急行＞明海小学校・クオン新浦安方面行\n2026年8月1日時点\n07:19\n発\n新浦安駅\n系統・時刻表一覧\n07:22\n着\n海風の街\n170円\n系統・時刻表一覧\n07:25\n着\n明海小学校\n170円\n系統・時刻表一覧\n07:26\n着\nクオン新浦安\n170円\n系統・時刻表一覧\n07:34\n着\n新浦安駅\n170円\n系統・時刻表一覧\nページの先頭へ戻る\nご利用にあたって（免責について等）\nCopyright ©Keisei Bus Co., Ltd. All rights reserved.\nPowered by",
+      "terminal": "新浦安駅",
+      "berth": "38",
+      "cellText": "19ク"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811a0016/stops?departure-busstop=00020619-1&course=0008200316&datetime=2026-08-01T07:49:00%2B09:00",
+      "title": "38 [38]＜急行＞明海小学校・クオン新浦安方面行の通過時刻表 | 京成バスナビ | 京成電鉄バスグループ",
+      "heading": "通過時刻表",
+      "stops": [
+        {
+          "time": "07:49",
+          "kind": "発",
+          "name": "新浦安駅"
+        },
+        {
+          "time": "07:52",
+          "kind": "着",
+          "name": "海風の街"
+        },
+        {
+          "time": "07:55",
+          "kind": "着",
+          "name": "明海小学校"
+        },
+        {
+          "time": "07:56",
+          "kind": "着",
+          "name": "クオン新浦安"
+        },
+        {
+          "time": "08:04",
+          "kind": "着",
+          "name": "新浦安駅"
+        }
+      ],
+      "stopNames": [
+        "新浦安駅",
+        "海風の街",
+        "明海小学校",
+        "クオン新浦安",
+        "新浦安駅"
+      ],
+      "course": "0008200316",
+      "departureBusstopId": "00020619-1",
+      "dayKind": "sat",
+      "bodySnippet": "京成電鉄バスグループ\n>\nバス停時刻表検索\n>\n新浦安駅 系統・時刻表・のりば一覧\n>\n新浦安駅 時刻表\n>\n38 [38]＜急行＞明海小学校・クオン新浦安方面行 通過時刻表\n京成電鉄バスグループ\n検索トップページ\nLanguage\n日本語\nEnglish\n简体中文\n繁體中文\n한국어\nไทย\n通過時刻表\n38 [38]＜急行＞明海小学校・クオン新浦安方面行\n2026年8月1日時点\n07:49\n発\n新浦安駅\n系統・時刻表一覧\n07:52\n着\n海風の街\n170円\n系統・時刻表一覧\n07:55\n着\n明海小学校\n170円\n系統・時刻表一覧\n07:56\n着\nクオン新浦安\n170円\n系統・時刻表一覧\n08:04\n着\n新浦安駅\n170円\n系統・時刻表一覧\nページの先頭へ戻る\nご利用にあたって（免責について等）\nCopyright ©Keisei Bus Co., Ltd. All rights reserved.\nPowered by",
+      "terminal": "新浦安駅",
+      "berth": "38",
+      "cellText": "49ク"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811a0022/stops?departure-busstop=00020619-1&course=0008200316&datetime=2026-08-02T07:08:00%2B09:00",
+      "title": "38 [38]＜急行＞明海小学校・クオン新浦安方面行の通過時刻表 | 京成バスナビ | 京成電鉄バスグループ",
+      "heading": "通過時刻表",
+      "stops": [
+        {
+          "time": "07:08",
+          "kind": "発",
+          "name": "新浦安駅"
+        },
+        {
+          "time": "07:11",
+          "kind": "着",
+          "name": "海風の街"
+        },
+        {
+          "time": "07:14",
+          "kind": "着",
+          "name": "明海小学校"
+        },
+        {
+          "time": "07:15",
+          "kind": "着",
+          "name": "クオン新浦安"
+        },
+        {
+          "time": "07:23",
+          "kind": "着",
+          "name": "新浦安駅"
+        }
+      ],
+      "stopNames": [
+        "新浦安駅",
+        "海風の街",
+        "明海小学校",
+        "クオン新浦安",
+        "新浦安駅"
+      ],
+      "course": "0008200316",
+      "departureBusstopId": "00020619-1",
+      "dayKind": "sat",
+      "bodySnippet": "京成電鉄バスグループ\n>\nバス停時刻表検索\n>\n新浦安駅 系統・時刻表・のりば一覧\n>\n新浦安駅 時刻表\n>\n38 [38]＜急行＞明海小学校・クオン新浦安方面行 通過時刻表\n京成電鉄バスグループ\n検索トップページ\nLanguage\n日本語\nEnglish\n简体中文\n繁體中文\n한국어\nไทย\n通過時刻表\n38 [38]＜急行＞明海小学校・クオン新浦安方面行\n2026年8月2日時点\n07:08\n発\n新浦安駅\n系統・時刻表一覧\n07:11\n着\n海風の街\n170円\n系統・時刻表一覧\n07:14\n着\n明海小学校\n170円\n系統・時刻表一覧\n07:15\n着\nクオン新浦安\n170円\n系統・時刻表一覧\n07:23\n着\n新浦安駅\n170円\n系統・時刻表一覧\nページの先頭へ戻る\nご利用にあたって（免責について等）\nCopyright ©Keisei Bus Co., Ltd. All rights reserved.\nPowered by",
+      "terminal": "新浦安駅",
+      "berth": "38",
+      "cellText": "08ク"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811a0000/stops?departure-busstop=00020619-1&course=0008200316&datetime=2026-07-27T06:27:00%2B09:00",
+      "title": "38 [38]＜急行＞明海小学校・クオン新浦安方面行の通過時刻表 | 京成バスナビ | 京成電鉄バスグループ",
+      "heading": "通過時刻表",
+      "stops": [
+        {
+          "time": "06:27",
+          "kind": "発",
+          "name": "新浦安駅"
+        },
+        {
+          "time": "06:30",
+          "kind": "着",
+          "name": "海風の街"
+        },
+        {
+          "time": "06:33",
+          "kind": "着",
+          "name": "明海小学校"
+        },
+        {
+          "time": "06:34",
+          "kind": "着",
+          "name": "クオン新浦安"
+        },
+        {
+          "time": "06:42",
+          "kind": "着",
+          "name": "新浦安駅"
+        }
+      ],
+      "stopNames": [
+        "新浦安駅",
+        "海風の街",
+        "明海小学校",
+        "クオン新浦安",
+        "新浦安駅"
+      ],
+      "course": "0008200316",
+      "departureBusstopId": "00020619-1",
+      "dayKind": "sun",
+      "bodySnippet": "京成電鉄バスグループ\n>\nバス停時刻表検索\n>\n新浦安駅 系統・時刻表・のりば一覧\n>\n新浦安駅 時刻表\n>\n38 [38]＜急行＞明海小学校・クオン新浦安方面行 通過時刻表\n京成電鉄バスグループ\n検索トップページ\nLanguage\n日本語\nEnglish\n简体中文\n繁體中文\n한국어\nไทย\n通過時刻表\n38 [38]＜急行＞明海小学校・クオン新浦安方面行\n2026年7月27日時点\n06:27\n発\n新浦安駅\n系統・時刻表一覧\n06:30\n着\n海風の街\n170円\n系統・時刻表一覧\n06:33\n着\n明海小学校\n170円\n系統・時刻表一覧\n06:34\n着\nクオン新浦安\n170円\n系統・時刻表一覧\n06:42\n着\n新浦安駅\n170円\n系統・時刻表一覧\nページの先頭へ戻る\nご利用にあたって（免責について等）\nCopyright ©Keisei Bus Co., Ltd. All rights reserved.\nPowered by",
+      "terminal": "新浦安駅",
+      "berth": "38",
+      "cellText": "27ク"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811a0002/stops?departure-busstop=00020619-1&course=0008200316&datetime=2026-07-27T06:51:00%2B09:00",
+      "title": "38 [38]＜急行＞明海小学校・クオン新浦安方面行の通過時刻表 | 京成バスナビ | 京成電鉄バスグループ",
+      "heading": "通過時刻表",
+      "stops": [
+        {
+          "time": "06:51",
+          "kind": "発",
+          "name": "新浦安駅"
+        },
+        {
+          "time": "06:54",
+          "kind": "着",
+          "name": "海風の街"
+        },
+        {
+          "time": "06:57",
+          "kind": "着",
+          "name": "明海小学校"
+        },
+        {
+          "time": "06:58",
+          "kind": "着",
+          "name": "クオン新浦安"
+        },
+        {
+          "time": "07:06",
+          "kind": "着",
+          "name": "新浦安駅"
+        }
+      ],
+      "stopNames": [
+        "新浦安駅",
+        "海風の街",
+        "明海小学校",
+        "クオン新浦安",
+        "新浦安駅"
+      ],
+      "course": "0008200316",
+      "departureBusstopId": "00020619-1",
+      "dayKind": "sun",
+      "bodySnippet": "京成電鉄バスグループ\n>\nバス停時刻表検索\n>\n新浦安駅 系統・時刻表・のりば一覧\n>\n新浦安駅 時刻表\n>\n38 [38]＜急行＞明海小学校・クオン新浦安方面行 通過時刻表\n京成電鉄バスグループ\n検索トップページ\nLanguage\n日本語\nEnglish\n简体中文\n繁體中文\n한국어\nไทย\n通過時刻表\n38 [38]＜急行＞明海小学校・クオン新浦安方面行\n2026年7月27日時点\n06:51\n発\n新浦安駅\n系統・時刻表一覧\n06:54\n着\n海風の街\n170円\n系統・時刻表一覧\n06:57\n着\n明海小学校\n170円\n系統・時刻表一覧\n06:58\n着\nクオン新浦安\n170円\n系統・時刻表一覧\n07:06\n着\n新浦安駅\n170円\n系統・時刻表一覧\nページの先頭へ戻る\nご利用にあたって（免責について等）\nCopyright ©Keisei Bus Co., Ltd. All rights reserved.\nPowered by",
+      "terminal": "新浦安駅",
+      "berth": "38",
+      "cellText": "51ク"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811a0012/stops?departure-busstop=00020619-1&course=0008200316&datetime=2026-08-01T06:51:00%2B09:00",
+      "title": "38 [38]＜急行＞明海小学校・クオン新浦安方面行の通過時刻表 | 京成バスナビ | 京成電鉄バスグループ",
+      "heading": "通過時刻表",
+      "stops": [
+        {
+          "time": "06:51",
+          "kind": "発",
+          "name": "新浦安駅"
+        },
+        {
+          "time": "06:54",
+          "kind": "着",
+          "name": "海風の街"
+        },
+        {
+          "time": "06:57",
+          "kind": "着",
+          "name": "明海小学校"
+        },
+        {
+          "time": "06:58",
+          "kind": "着",
+          "name": "クオン新浦安"
+        },
+        {
+          "time": "07:06",
+          "kind": "着",
+          "name": "新浦安駅"
+        }
+      ],
+      "stopNames": [
+        "新浦安駅",
+        "海風の街",
+        "明海小学校",
+        "クオン新浦安",
+        "新浦安駅"
+      ],
+      "course": "0008200316",
+      "departureBusstopId": "00020619-1",
+      "dayKind": "sun",
+      "bodySnippet": "京成電鉄バスグループ\n>\nバス停時刻表検索\n>\n新浦安駅 系統・時刻表・のりば一覧\n>\n新浦安駅 時刻表\n>\n38 [38]＜急行＞明海小学校・クオン新浦安方面行 通過時刻表\n京成電鉄バスグループ\n検索トップページ\nLanguage\n日本語\nEnglish\n简体中文\n繁體中文\n한국어\nไทย\n通過時刻表\n38 [38]＜急行＞明海小学校・クオン新浦安方面行\n2026年8月1日時点\n06:51\n発\n新浦安駅\n系統・時刻表一覧\n06:54\n着\n海風の街\n170円\n系統・時刻表一覧\n06:57\n着\n明海小学校\n170円\n系統・時刻表一覧\n06:58\n着\nクオン新浦安\n170円\n系統・時刻表一覧\n07:06\n着\n新浦安駅\n170円\n系統・時刻表一覧\nページの先頭へ戻る\nご利用にあたって（免責について等）\nCopyright ©Keisei Bus Co., Ltd. All rights reserved.\nPowered by",
+      "terminal": "新浦安駅",
+      "berth": "38",
+      "cellText": "51ク"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811a0004/stops?departure-busstop=00020619-1&course=0008200316&datetime=2026-07-27T07:19:00%2B09:00",
+      "title": "38 [38]＜急行＞明海小学校・クオン新浦安方面行の通過時刻表 | 京成バスナビ | 京成電鉄バスグループ",
+      "heading": "通過時刻表",
+      "stops": [
+        {
+          "time": "07:19",
+          "kind": "発",
+          "name": "新浦安駅"
+        },
+        {
+          "time": "07:22",
+          "kind": "着",
+          "name": "海風の街"
+        },
+        {
+          "time": "07:25",
+          "kind": "着",
+          "name": "明海小学校"
+        },
+        {
+          "time": "07:26",
+          "kind": "着",
+          "name": "クオン新浦安"
+        },
+        {
+          "time": "07:34",
+          "kind": "着",
+          "name": "新浦安駅"
+        }
+      ],
+      "stopNames": [
+        "新浦安駅",
+        "海風の街",
+        "明海小学校",
+        "クオン新浦安",
+        "新浦安駅"
+      ],
+      "course": "0008200316",
+      "departureBusstopId": "00020619-1",
+      "dayKind": "sun",
+      "bodySnippet": "京成電鉄バスグループ\n>\nバス停時刻表検索\n>\n新浦安駅 系統・時刻表・のりば一覧\n>\n新浦安駅 時刻表\n>\n38 [38]＜急行＞明海小学校・クオン新浦安方面行 通過時刻表\n京成電鉄バスグループ\n検索トップページ\nLanguage\n日本語\nEnglish\n简体中文\n繁體中文\n한국어\nไทย\n通過時刻表\n38 [38]＜急行＞明海小学校・クオン新浦安方面行\n2026年7月27日時点\n07:19\n発\n新浦安駅\n系統・時刻表一覧\n07:22\n着\n海風の街\n170円\n系統・時刻表一覧\n07:25\n着\n明海小学校\n170円\n系統・時刻表一覧\n07:26\n着\nクオン新浦安\n170円\n系統・時刻表一覧\n07:34\n着\n新浦安駅\n170円\n系統・時刻表一覧\nページの先頭へ戻る\nご利用にあたって（免責について等）\nCopyright ©Keisei Bus Co., Ltd. All rights reserved.\nPowered by",
+      "terminal": "新浦安駅",
+      "berth": "38",
+      "cellText": "19ク"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811a000c/stops?departure-busstop=00020619-1&course=0008200316&datetime=2026-07-27T07:43:00%2B09:00",
+      "title": "38 [38]＜急行＞明海小学校・クオン新浦安方面行の通過時刻表 | 京成バスナビ | 京成電鉄バスグループ",
+      "heading": "通過時刻表",
+      "stops": [
+        {
+          "time": "07:43",
+          "kind": "発",
+          "name": "新浦安駅"
+        },
+        {
+          "time": "07:46",
+          "kind": "着",
+          "name": "海風の街"
+        },
+        {
+          "time": "07:49",
+          "kind": "着",
+          "name": "明海小学校"
+        },
+        {
+          "time": "07:50",
+          "kind": "着",
+          "name": "クオン新浦安"
+        },
+        {
+          "time": "07:58",
+          "kind": "着",
+          "name": "新浦安駅"
+        }
+      ],
+      "stopNames": [
+        "新浦安駅",
+        "海風の街",
+        "明海小学校",
+        "クオン新浦安",
+        "新浦安駅"
+      ],
+      "course": "0008200316",
+      "departureBusstopId": "00020619-1",
+      "dayKind": "sun",
+      "bodySnippet": "京成電鉄バスグループ\n>\nバス停時刻表検索\n>\n新浦安駅 系統・時刻表・のりば一覧\n>\n新浦安駅 時刻表\n>\n38 [38]＜急行＞明海小学校・クオン新浦安方面行 通過時刻表\n京成電鉄バスグループ\n検索トップページ\nLanguage\n日本語\nEnglish\n简体中文\n繁體中文\n한국어\nไทย\n通過時刻表\n38 [38]＜急行＞明海小学校・クオン新浦安方面行\n2026年7月27日時点\n07:43\n発\n新浦安駅\n系統・時刻表一覧\n07:46\n着\n海風の街\n170円\n系統・時刻表一覧\n07:49\n着\n明海小学校\n170円\n系統・時刻表一覧\n07:50\n着\nクオン新浦安\n170円\n系統・時刻表一覧\n07:58\n着\n新浦安駅\n170円\n系統・時刻表一覧\nページの先頭へ戻る\nご利用にあたって（免責について等）\nCopyright ©Keisei Bus Co., Ltd. All rights reserved.\nPowered by",
+      "terminal": "新浦安駅",
+      "berth": "38",
+      "cellText": "43ク"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811a0014/stops?departure-busstop=00020619-1&course=0008200316&datetime=2026-08-01T07:19:00%2B09:00",
+      "title": "38 [38]＜急行＞明海小学校・クオン新浦安方面行の通過時刻表 | 京成バスナビ | 京成電鉄バスグループ",
+      "heading": "通過時刻表",
+      "stops": [
+        {
+          "time": "07:19",
+          "kind": "発",
+          "name": "新浦安駅"
+        },
+        {
+          "time": "07:22",
+          "kind": "着",
+          "name": "海風の街"
+        },
+        {
+          "time": "07:25",
+          "kind": "着",
+          "name": "明海小学校"
+        },
+        {
+          "time": "07:26",
+          "kind": "着",
+          "name": "クオン新浦安"
+        },
+        {
+          "time": "07:34",
+          "kind": "着",
+          "name": "新浦安駅"
+        }
+      ],
+      "stopNames": [
+        "新浦安駅",
+        "海風の街",
+        "明海小学校",
+        "クオン新浦安",
+        "新浦安駅"
+      ],
+      "course": "0008200316",
+      "departureBusstopId": "00020619-1",
+      "dayKind": "sun",
+      "bodySnippet": "京成電鉄バスグループ\n>\nバス停時刻表検索\n>\n新浦安駅 系統・時刻表・のりば一覧\n>\n新浦安駅 時刻表\n>\n38 [38]＜急行＞明海小学校・クオン新浦安方面行 通過時刻表\n京成電鉄バスグループ\n検索トップページ\nLanguage\n日本語\nEnglish\n简体中文\n繁體中文\n한국어\nไทย\n通過時刻表\n38 [38]＜急行＞明海小学校・クオン新浦安方面行\n2026年8月1日時点\n07:19\n発\n新浦安駅\n系統・時刻表一覧\n07:22\n着\n海風の街\n170円\n系統・時刻表一覧\n07:25\n着\n明海小学校\n170円\n系統・時刻表一覧\n07:26\n着\nクオン新浦安\n170円\n系統・時刻表一覧\n07:34\n着\n新浦安駅\n170円\n系統・時刻表一覧\nページの先頭へ戻る\nご利用にあたって（免責について等）\nCopyright ©Keisei Bus Co., Ltd. All rights reserved.\nPowered by",
+      "terminal": "新浦安駅",
+      "berth": "38",
+      "cellText": "19ク"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811a0016/stops?departure-busstop=00020619-1&course=0008200316&datetime=2026-08-01T07:49:00%2B09:00",
+      "title": "38 [38]＜急行＞明海小学校・クオン新浦安方面行の通過時刻表 | 京成バスナビ | 京成電鉄バスグループ",
+      "heading": "通過時刻表",
+      "stops": [
+        {
+          "time": "07:49",
+          "kind": "発",
+          "name": "新浦安駅"
+        },
+        {
+          "time": "07:52",
+          "kind": "着",
+          "name": "海風の街"
+        },
+        {
+          "time": "07:55",
+          "kind": "着",
+          "name": "明海小学校"
+        },
+        {
+          "time": "07:56",
+          "kind": "着",
+          "name": "クオン新浦安"
+        },
+        {
+          "time": "08:04",
+          "kind": "着",
+          "name": "新浦安駅"
+        }
+      ],
+      "stopNames": [
+        "新浦安駅",
+        "海風の街",
+        "明海小学校",
+        "クオン新浦安",
+        "新浦安駅"
+      ],
+      "course": "0008200316",
+      "departureBusstopId": "00020619-1",
+      "dayKind": "sun",
+      "bodySnippet": "京成電鉄バスグループ\n>\nバス停時刻表検索\n>\n新浦安駅 系統・時刻表・のりば一覧\n>\n新浦安駅 時刻表\n>\n38 [38]＜急行＞明海小学校・クオン新浦安方面行 通過時刻表\n京成電鉄バスグループ\n検索トップページ\nLanguage\n日本語\nEnglish\n简体中文\n繁體中文\n한국어\nไทย\n通過時刻表\n38 [38]＜急行＞明海小学校・クオン新浦安方面行\n2026年8月1日時点\n07:49\n発\n新浦安駅\n系統・時刻表一覧\n07:52\n着\n海風の街\n170円\n系統・時刻表一覧\n07:55\n着\n明海小学校\n170円\n系統・時刻表一覧\n07:56\n着\nクオン新浦安\n170円\n系統・時刻表一覧\n08:04\n着\n新浦安駅\n170円\n系統・時刻表一覧\nページの先頭へ戻る\nご利用にあたって（免責について等）\nCopyright ©Keisei Bus Co., Ltd. All rights reserved.\nPowered by",
+      "terminal": "新浦安駅",
+      "berth": "38",
+      "cellText": "49ク"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811a0022/stops?departure-busstop=00020619-1&course=0008200316&datetime=2026-08-02T07:08:00%2B09:00",
+      "title": "38 [38]＜急行＞明海小学校・クオン新浦安方面行の通過時刻表 | 京成バスナビ | 京成電鉄バスグループ",
+      "heading": "通過時刻表",
+      "stops": [
+        {
+          "time": "07:08",
+          "kind": "発",
+          "name": "新浦安駅"
+        },
+        {
+          "time": "07:11",
+          "kind": "着",
+          "name": "海風の街"
+        },
+        {
+          "time": "07:14",
+          "kind": "着",
+          "name": "明海小学校"
+        },
+        {
+          "time": "07:15",
+          "kind": "着",
+          "name": "クオン新浦安"
+        },
+        {
+          "time": "07:23",
+          "kind": "着",
+          "name": "新浦安駅"
+        }
+      ],
+      "stopNames": [
+        "新浦安駅",
+        "海風の街",
+        "明海小学校",
+        "クオン新浦安",
+        "新浦安駅"
+      ],
+      "course": "0008200316",
+      "departureBusstopId": "00020619-1",
+      "dayKind": "sun",
+      "bodySnippet": "京成電鉄バスグループ\n>\nバス停時刻表検索\n>\n新浦安駅 系統・時刻表・のりば一覧\n>\n新浦安駅 時刻表\n>\n38 [38]＜急行＞明海小学校・クオン新浦安方面行 通過時刻表\n京成電鉄バスグループ\n検索トップページ\nLanguage\n日本語\nEnglish\n简体中文\n繁體中文\n한국어\nไทย\n通過時刻表\n38 [38]＜急行＞明海小学校・クオン新浦安方面行\n2026年8月2日時点\n07:08\n発\n新浦安駅\n系統・時刻表一覧\n07:11\n着\n海風の街\n170円\n系統・時刻表一覧\n07:14\n着\n明海小学校\n170円\n系統・時刻表一覧\n07:15\n着\nクオン新浦安\n170円\n系統・時刻表一覧\n07:23\n着\n新浦安駅\n170円\n系統・時刻表一覧\nページの先頭へ戻る\nご利用にあたって（免責について等）\nCopyright ©Keisei Bus Co., Ltd. All rights reserved.\nPowered by",
+      "terminal": "新浦安駅",
+      "berth": "38",
+      "cellText": "08ク"
+    }
+  ],
+  "rejected": [],
+  "discoveredBusstopIds": {
+    "shinurayasu": "00020619",
+    "quon": null,
+    "akemi_shogakko": null
+  },
+  "daySamples": {
+    "weekday": {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811a0000/stops?departure-busstop=00020619-1&course=0008200316&datetime=2026-07-27T06:27:00%2B09:00",
+      "title": "38 [38]＜急行＞明海小学校・クオン新浦安方面行の通過時刻表 | 京成バスナビ | 京成電鉄バスグループ",
+      "heading": "通過時刻表",
+      "stops": [
+        {
+          "time": "06:27",
+          "kind": "発",
+          "name": "新浦安駅"
+        },
+        {
+          "time": "06:30",
+          "kind": "着",
+          "name": "海風の街"
+        },
+        {
+          "time": "06:33",
+          "kind": "着",
+          "name": "明海小学校"
+        },
+        {
+          "time": "06:34",
+          "kind": "着",
+          "name": "クオン新浦安"
+        },
+        {
+          "time": "06:42",
+          "kind": "着",
+          "name": "新浦安駅"
+        }
+      ],
+      "stopNames": [
+        "新浦安駅",
+        "海風の街",
+        "明海小学校",
+        "クオン新浦安",
+        "新浦安駅"
+      ],
+      "course": "0008200316",
+      "departureBusstopId": "00020619-1",
+      "dayKind": "weekday",
+      "bodySnippet": "京成電鉄バスグループ\n>\nバス停時刻表検索\n>\n新浦安駅 系統・時刻表・のりば一覧\n>\n新浦安駅 時刻表\n>\n38 [38]＜急行＞明海小学校・クオン新浦安方面行 通過時刻表\n京成電鉄バスグループ\n検索トップページ\nLanguage\n日本語\nEnglish\n简体中文\n繁體中文\n한국어\nไทย\n通過時刻表\n38 [38]＜急行＞明海小学校・クオン新浦安方面行\n2026年7月27日時点\n06:27\n発\n新浦安駅\n系統・時刻表一覧\n06:30\n着\n海風の街\n170円\n系統・時刻表一覧\n06:33\n着\n明海小学校\n170円\n系統・時刻表一覧\n06:34\n着\nクオン新浦安\n170円\n系統・時刻表一覧\n06:42\n着\n新浦安駅\n170円\n系統・時刻表一覧\nページの先頭へ戻る\nご利用にあたって（免責について等）\nCopyright ©Keisei Bus Co., Ltd. All rights reserved.\nPowered by"
+    },
+    "sat": {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811a0000/stops?departure-busstop=00020619-1&course=0008200316&datetime=2026-07-27T06:27:00%2B09:00",
+      "title": "38 [38]＜急行＞明海小学校・クオン新浦安方面行の通過時刻表 | 京成バスナビ | 京成電鉄バスグループ",
+      "heading": "通過時刻表",
+      "stops": [
+        {
+          "time": "06:27",
+          "kind": "発",
+          "name": "新浦安駅"
+        },
+        {
+          "time": "06:30",
+          "kind": "着",
+          "name": "海風の街"
+        },
+        {
+          "time": "06:33",
+          "kind": "着",
+          "name": "明海小学校"
+        },
+        {
+          "time": "06:34",
+          "kind": "着",
+          "name": "クオン新浦安"
+        },
+        {
+          "time": "06:42",
+          "kind": "着",
+          "name": "新浦安駅"
+        }
+      ],
+      "stopNames": [
+        "新浦安駅",
+        "海風の街",
+        "明海小学校",
+        "クオン新浦安",
+        "新浦安駅"
+      ],
+      "course": "0008200316",
+      "departureBusstopId": "00020619-1",
+      "dayKind": "weekday",
+      "bodySnippet": "京成電鉄バスグループ\n>\nバス停時刻表検索\n>\n新浦安駅 系統・時刻表・のりば一覧\n>\n新浦安駅 時刻表\n>\n38 [38]＜急行＞明海小学校・クオン新浦安方面行 通過時刻表\n京成電鉄バスグループ\n検索トップページ\nLanguage\n日本語\nEnglish\n简体中文\n繁體中文\n한국어\nไทย\n通過時刻表\n38 [38]＜急行＞明海小学校・クオン新浦安方面行\n2026年7月27日時点\n06:27\n発\n新浦安駅\n系統・時刻表一覧\n06:30\n着\n海風の街\n170円\n系統・時刻表一覧\n06:33\n着\n明海小学校\n170円\n系統・時刻表一覧\n06:34\n着\nクオン新浦安\n170円\n系統・時刻表一覧\n06:42\n着\n新浦安駅\n170円\n系統・時刻表一覧\nページの先頭へ戻る\nご利用にあたって（免責について等）\nCopyright ©Keisei Bus Co., Ltd. All rights reserved.\nPowered by"
+    },
+    "sun": {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811a0000/stops?departure-busstop=00020619-1&course=0008200316&datetime=2026-07-27T06:27:00%2B09:00",
+      "title": "38 [38]＜急行＞明海小学校・クオン新浦安方面行の通過時刻表 | 京成バスナビ | 京成電鉄バスグループ",
+      "heading": "通過時刻表",
+      "stops": [
+        {
+          "time": "06:27",
+          "kind": "発",
+          "name": "新浦安駅"
+        },
+        {
+          "time": "06:30",
+          "kind": "着",
+          "name": "海風の街"
+        },
+        {
+          "time": "06:33",
+          "kind": "着",
+          "name": "明海小学校"
+        },
+        {
+          "time": "06:34",
+          "kind": "着",
+          "name": "クオン新浦安"
+        },
+        {
+          "time": "06:42",
+          "kind": "着",
+          "name": "新浦安駅"
+        }
+      ],
+      "stopNames": [
+        "新浦安駅",
+        "海風の街",
+        "明海小学校",
+        "クオン新浦安",
+        "新浦安駅"
+      ],
+      "course": "0008200316",
+      "departureBusstopId": "00020619-1",
+      "dayKind": "weekday",
+      "bodySnippet": "京成電鉄バスグループ\n>\nバス停時刻表検索\n>\n新浦安駅 系統・時刻表・のりば一覧\n>\n新浦安駅 時刻表\n>\n38 [38]＜急行＞明海小学校・クオン新浦安方面行 通過時刻表\n京成電鉄バスグループ\n検索トップページ\nLanguage\n日本語\nEnglish\n简体中文\n繁體中文\n한국어\nไทย\n通過時刻表\n38 [38]＜急行＞明海小学校・クオン新浦安方面行\n2026年7月27日時点\n06:27\n発\n新浦安駅\n系統・時刻表一覧\n06:30\n着\n海風の街\n170円\n系統・時刻表一覧\n06:33\n着\n明海小学校\n170円\n系統・時刻表一覧\n06:34\n着\nクオン新浦安\n170円\n系統・時刻表一覧\n06:42\n着\n新浦安駅\n170円\n系統・時刻表一覧\nページの先頭へ戻る\nご利用にあたって（免責について等）\nCopyright ©Keisei Bus Co., Ltd. All rights reserved.\nPowered by"
+    }
+  },
+  "signatureCount": 1
+}

@@ -1,0 +1,87 @@
+{
+  "validatedAt": "2026-07-27T03:50:46.296Z",
+  "routeId": "route-38",
+  "versionChoice": "v118 (v117 reserved for route-37 concurrent; current CACHE v116)",
+  "expressPassLocations": [
+    "海風の街"
+  ],
+  "boardingStops": [
+    "新浦安駅",
+    "明海小学校",
+    "クオン新浦安",
+    "新浦安駅"
+  ],
+  "checks": [
+    {
+      "name": "PACKS route-38",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CACHE v118",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "loader v118",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "globals platforms",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "globals path",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "globals policy",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "1 system path",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "build no blockers",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "name": "38-shinurayasu-quon-express boarding stop count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "express pass excluded from stops",
+      "pass": true,
+      "detail": "pass=海風の街 stops=新浦安駅>明海小学校>クオン新浦安>新浦安駅"
+    },
+    {
+      "name": "validateExpressStops",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "38-shinurayasu-quon-express policy",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "route module API",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "route module express const",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "pass": true
+}

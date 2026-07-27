@@ -1,0 +1,64 @@
+{
+  "checkedAt": "2026-07-27T03:48:00.000Z",
+  "sourcePriority": [
+    "京成バスナビ 個別便通過時刻表（/courses/timetables/**/stops?）",
+    "京成バスナビ 時刻表凡例（符号→【Ｎ系統】）",
+    "OSM route relation 18396354（道路形状・停留所座標）"
+  ],
+  "lineName": "明海クオン線",
+  "systemNumber": "38",
+  "routeId": "route-38",
+  "operator": "東京ベイシティ交通（京成グループ・京成バスナビ掲載）",
+  "busstopIds": {
+    "新浦安駅": "00020619"
+  },
+  "gatingRule": "新浦安駅のりば38 + 凡例「ク…【３８系統】明海小学校・クオン新浦安方面」。course 0008200316 berth 38。",
+  "expressRule": "＜急行＞便。system.stops は乗車停留所のみ。 roadside 通過（海風の街）は expressPassLocations に記録し stops[] には含めない。path は OSM relation 全 way で海風の街を通過する道路形状を含む。",
+  "reverseSignatureConfirmed": false,
+  "reverseNote": "OSM ref=38 / network=クオン は 18396354 の1方向のみ（新浦安駅⇒クオン新浦安⇒新浦安駅）。復路専用 relation なし。Navi も course 0008200316 の1 signature（weekday/sat/sun 同一）。",
+  "expressPassLocations": [
+    {
+      "name": "海風の街",
+      "reason": "【３８系統】凡例は「明海小学校・クオン新浦安方面」のみ。18系統通常停の roadside 通過。Navi 通過時刻表に時刻ありだが express 乗降不可。OSM platform role=platform（entry/exit なし）。"
+    }
+  ],
+  "systems": {
+    "38-shinurayasu-quon-express": {
+      "title": "明海小学校・クオン新浦安方面（新浦安駅発着・急行）",
+      "summary": "新浦安駅 → 明海小学校 → クオン新浦安 → 新浦安駅（海風の街通過）",
+      "directionGroup": "loop-express",
+      "departure": "新浦安駅",
+      "destination": "新浦安駅",
+      "berth": "38",
+      "observedBerths": "38",
+      "routeNumber": "38",
+      "course": "0008200316",
+      "courseText": "38 [38]＜急行＞明海小学校・クオン新浦安方面行",
+      "timetableSymbol": "ク",
+      "legendLine": "ク…【３８系統】明海小学校・クオン新浦安方面",
+      "naviTerminal": "新浦安駅",
+      "sourceUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/811a0000/stops?departure-busstop=00020619-1&course=0008200316&datetime=2026-07-27T06:27:00%2B09:00",
+      "confirmedDate": "2026-07-27",
+      "tripsObserved": 24,
+      "dayKinds": ["weekday", "sat", "sun"],
+      "stopCount": 4,
+      "naviPassThroughCount": 5,
+      "stopNames": [
+        "新浦安駅",
+        "明海小学校",
+        "クオン新浦安",
+        "新浦安駅"
+      ],
+      "stopIds": [
+        "00020619",
+        null,
+        null,
+        "00020619"
+      ],
+      "osmRelationId": 18396354,
+      "osmRelationName": "東京ベイシティバス38系統 新浦安駅⇒クオン新浦安線",
+      "osmPlatformOrderMatchesOfficial": true,
+      "osmPlatformNamesExactMatch": true
+    }
+  }
+}

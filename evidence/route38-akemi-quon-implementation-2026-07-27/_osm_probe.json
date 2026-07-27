@@ -1,0 +1,29 @@
+{
+  "queriedAt": "2026-07-26T22:40:44.861Z",
+  "bbox": "35.61,139.85,35.68,139.96",
+  "ref": "38",
+  "query": {
+    "route": "relation[type=route][route=bus][ref=38]",
+    "route_master": "relation[type=route_master][route_master=bus][ref=38]"
+  },
+  "counts": {
+    "route": 1,
+    "route_master": 0
+  },
+  "relations": [
+    {
+      "id": 18396354,
+      "osmType": "relation",
+      "ref": "38",
+      "name": "東京ベイシティバス38系統 新浦安駅⇒クオン新浦安線",
+      "network": "クオン新浦安線",
+      "from": null,
+      "to": null,
+      "operator": "東京ベイシティ交通",
+      "routeTag": "bus",
+      "colour": null,
+      "direction": null
+    }
+  ],
+  "route_masters": []
+}
