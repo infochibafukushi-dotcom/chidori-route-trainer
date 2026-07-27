@@ -1,0 +1,183 @@
+{
+  "system": "24-fujimi-loop",
+  "pathHash": "21a4cd16daf0c9b5a4452b15709199b7b34f413ec3d577abb30132a96a9ea4f4",
+  "recomputed": "21a4cd16daf0c9b5a4452b15709199b7b34f413ec3d577abb30132a96a9ea4f4",
+  "match": true,
+  "pathPoints": 699,
+  "maxGap_m": 24.8,
+  "buildSummaryHash": "21a4cd16daf0c9b5a4452b15709199b7b34f413ec3d577abb30132a96a9ea4f4",
+  "buildSummaryMatch": true,
+  "platformDists": [
+    {
+      "name": "新浦安駅",
+      "index": 0,
+      "dist": 7.9,
+      "pathIndex": 0,
+      "platformId": 8415001166
+    },
+    {
+      "name": "新浦安駅北口",
+      "index": 1,
+      "dist": 8.4,
+      "pathIndex": 38,
+      "platformId": 6778578838
+    },
+    {
+      "name": "若潮公園",
+      "index": 2,
+      "dist": 8.6,
+      "pathIndex": 62,
+      "platformId": 11581097364
+    },
+    {
+      "name": "順天堂病院前",
+      "index": 3,
+      "dist": 11.9,
+      "pathIndex": 79,
+      "platformId": 6720667162
+    },
+    {
+      "name": "サンコーポ東口",
+      "index": 4,
+      "dist": 5.7,
+      "pathIndex": 97,
+      "platformId": 6842638649
+    },
+    {
+      "name": "富岡第三児童公園",
+      "index": 5,
+      "dist": 11.5,
+      "pathIndex": 108,
+      "platformId": 1750823559
+    },
+    {
+      "name": "富岡第一児童公園",
+      "index": 6,
+      "dist": 9.1,
+      "pathIndex": 120,
+      "platformId": 11610526577
+    },
+    {
+      "name": "中央公園",
+      "index": 7,
+      "dist": 7.2,
+      "pathIndex": 130,
+      "platformId": 11610526580
+    },
+    {
+      "name": "東海大浦安高校前",
+      "index": 8,
+      "dist": 0,
+      "pathIndex": 211,
+      "platformId": 6778610692
+    },
+    {
+      "name": "富士見三丁目",
+      "index": 9,
+      "dist": 0,
+      "pathIndex": 243,
+      "platformId": 6778604859
+    },
+    {
+      "name": "富士見五丁目",
+      "index": 10,
+      "dist": 0,
+      "pathIndex": 287,
+      "platformId": 12367548464
+    },
+    {
+      "name": "堀江橋",
+      "index": 11,
+      "dist": 0,
+      "pathIndex": 310,
+      "platformId": 6938760254
+    },
+    {
+      "name": "見明川歩道橋",
+      "index": 12,
+      "dist": 0,
+      "pathIndex": 329,
+      "platformId": 6918654783
+    },
+    {
+      "name": "弁天橋",
+      "index": 13,
+      "dist": 0,
+      "pathIndex": 350,
+      "platformId": 6796278431
+    },
+    {
+      "name": "東野三丁目",
+      "index": 14,
+      "dist": 0,
+      "pathIndex": 439,
+      "platformId": 6796278430
+    },
+    {
+      "name": "東海大浦安高校前",
+      "index": 15,
+      "dist": 0,
+      "pathIndex": 506,
+      "platformId": 6796278429
+    },
+    {
+      "name": "中央公園",
+      "index": 16,
+      "dist": 7.2,
+      "pathIndex": 568,
+      "platformId": 11610526580
+    },
+    {
+      "name": "富岡第一児童公園",
+      "index": 17,
+      "dist": 9.1,
+      "pathIndex": 578,
+      "platformId": 11610526577
+    },
+    {
+      "name": "富岡第三児童公園",
+      "index": 18,
+      "dist": 11.5,
+      "pathIndex": 590,
+      "platformId": 1750823559
+    },
+    {
+      "name": "サンコーポ東口",
+      "index": 19,
+      "dist": 5.7,
+      "pathIndex": 601,
+      "platformId": 6842638649
+    },
+    {
+      "name": "順天堂病院前",
+      "index": 20,
+      "dist": 11.9,
+      "pathIndex": 619,
+      "platformId": 6720667162
+    },
+    {
+      "name": "若潮公園",
+      "index": 21,
+      "dist": 8.6,
+      "pathIndex": 636,
+      "platformId": 11581097364
+    },
+    {
+      "name": "新浦安駅北口",
+      "index": 22,
+      "dist": 8.4,
+      "pathIndex": 660,
+      "platformId": 6778578838
+    },
+    {
+      "name": "新浦安駅",
+      "index": 23,
+      "dist": 7.9,
+      "pathIndex": 698,
+      "platformId": 8415001166
+    }
+  ],
+  "maxPlatformDist_m": 11.9,
+  "ok": true,
+  "failures": []
+}

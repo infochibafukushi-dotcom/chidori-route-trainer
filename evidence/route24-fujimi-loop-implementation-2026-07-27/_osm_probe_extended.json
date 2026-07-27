@@ -1,0 +1,35 @@
+{
+  "queriedAt": "2026-07-27T01:18:39.853Z",
+  "bboxes": {
+    "original": "35.61,139.85,35.68,139.96",
+    "wider": "35.60,139.84,35.69,139.97",
+    "fujimiFocus": "35.635,139.875,35.655,139.920"
+  },
+  "ref24": {
+    "original": {
+      "bbox": "35.61,139.85,35.68,139.96",
+      "route": [],
+      "route_master": []
+    },
+    "wider": {
+      "bbox": "35.60,139.84,35.69,139.97",
+      "route": [],
+      "route_master": []
+    },
+    "fujimiFocus": {
+      "bbox": "35.635,139.875,35.655,139.920",
+      "route": [],
+      "route_master": []
+    }
+  },
+  "nameNetwork": {
+    "wider": [],
+    "fujimiFocus": []
+  },
+  "counts": {
+    "ref24_wider": 0,
+    "ref24_fujimiFocus": 0,
+    "nameNetwork_wider": 0,
+    "nameNetwork_fujimiFocus": 0
+  }
+}

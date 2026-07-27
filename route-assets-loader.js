@@ -221,6 +221,17 @@
         './urayasu-higashi-danchi-line-23-stop-images-v1.js?v=114',
         './urayasu-higashi-danchi-line-23-route-v1.js?v=114'
       ]
+    },
+    // route-24 富士見循環線（24系統・新浦安駅発着1周）。FUJIMI_LOOP_LINE_* で他系統と分離。
+    'route-24': {
+      css: ['./fujimi-loop-line-stop-images-v1.css?v=115'],
+      js: [
+        './fujimi-loop-line-platforms-v1.js?v=115',
+        './fujimi-loop-line-path-v1.js?v=115',
+        './fujimi-loop-line-path-policy-v1.js?v=115',
+        './fujimi-loop-line-stop-images-v1.js?v=115',
+        './fujimi-loop-line-route-v1.js?v=115'
+      ]
     }
   };
 

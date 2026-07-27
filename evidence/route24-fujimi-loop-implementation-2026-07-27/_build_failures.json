@@ -1,0 +1,132 @@
+{
+  "lastFail": "東海大浦安高校前 idx8 best 769.7m after pathIdx 466",
+  "triedCount": 64,
+  "bestPartial": {
+    "ok": false,
+    "fail": "東海大浦安高校前 idx8 best 802.3m after pathIdx 568",
+    "platformDists": [
+      {
+        "name": "新浦安駅",
+        "index": 0,
+        "dist": 7.9,
+        "pathIndex": 0,
+        "platformId": 8415001166
+      },
+      {
+        "name": "新浦安駅北口",
+        "index": 1,
+        "dist": 8.4,
+        "pathIndex": 38,
+        "platformId": 6778578838
+      },
+      {
+        "name": "若潮公園",
+        "index": 2,
+        "dist": 8.6,
+        "pathIndex": 62,
+        "platformId": 11581097364
+      },
+      {
+        "name": "順天堂病院前",
+        "index": 3,
+        "dist": 11.9,
+        "pathIndex": 79,
+        "platformId": 6720667162
+      },
+      {
+        "name": "サンコーポ東口",
+        "index": 4,
+        "dist": 5.7,
+        "pathIndex": 97,
+        "platformId": 6842638649
+      },
+      {
+        "name": "富岡第三児童公園",
+        "index": 5,
+        "dist": 11.5,
+        "pathIndex": 108,
+        "platformId": 1750823559
+      },
+      {
+        "name": "富岡第一児童公園",
+        "index": 6,
+        "dist": 9.1,
+        "pathIndex": 120,
+        "platformId": 11610526577
+      },
+      {
+        "name": "中央公園",
+        "index": 7,
+        "dist": 0,
+        "pathIndex": 567,
+        "platformId": 11610526580
+      }
+    ]
+  },
+  "platformDists": [
+    {
+      "name": "新浦安駅",
+      "index": 0,
+      "dist": 7.9,
+      "pathIndex": 0,
+      "platformId": 8415001166
+    },
+    {
+      "name": "新浦安駅北口",
+      "index": 1,
+      "dist": 8.4,
+      "pathIndex": 38,
+      "platformId": 6778578838
+    },
+    {
+      "name": "若潮公園",
+      "index": 2,
+      "dist": 8.6,
+      "pathIndex": 62,
+      "platformId": 11581097364
+    },
+    {
+      "name": "順天堂病院前",
+      "index": 3,
+      "dist": 11.9,
+      "pathIndex": 79,
+      "platformId": 6720667162
+    },
+    {
+      "name": "サンコーポ東口",
+      "index": 4,
+      "dist": 5.7,
+      "pathIndex": 97,
+      "platformId": 6842638649
+    },
+    {
+      "name": "富岡第三児童公園",
+      "index": 5,
+      "dist": 11.5,
+      "pathIndex": 108,
+      "platformId": 1750823559
+    },
+    {
+      "name": "富岡第一児童公園",
+      "index": 6,
+      "dist": 9.1,
+      "pathIndex": 120,
+      "platformId": 11610526577
+    },
+    {
+      "name": "中央公園",
+      "index": 7,
+      "dist": 0,
+      "pathIndex": 567,
+      "platformId": 11610526580
+    }
+  ],
+  "picks": {
+    "8": 0,
+    "9": 0,
+    "10": 0,
+    "13": 0,
+    "14": 0,
+    "15": 0
+  }
+}

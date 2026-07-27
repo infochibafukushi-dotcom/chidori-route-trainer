@@ -1,0 +1,17 @@
+{
+  "queriedAt": "2026-07-27T01:18:39.853Z",
+  "bbox": "35.60,139.84,35.69,139.97",
+  "ref": "24",
+  "query": {
+    "route": "relation[type=route][route=bus][ref=24]",
+    "route_master": "relation[type=route_master][route_master=bus][ref=24]"
+  },
+  "counts": {
+    "route": 0,
+    "route_master": 0
+  },
+  "relations": [],
+  "route_masters": [],
+  "nameNetworkMatches": [],
+  "note": "Zero ref=24 bus relations confirmed. Path must be built from highway ways."
+}

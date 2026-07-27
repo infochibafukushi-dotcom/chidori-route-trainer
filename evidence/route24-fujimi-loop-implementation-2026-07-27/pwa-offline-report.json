@@ -1,0 +1,13 @@
+{
+  "routeId": "route-24",
+  "expectedCache": "chidori-route-map-v115",
+  "pack": [
+    "./fujimi-loop-line-platforms-v1.js?v=115",
+    "./fujimi-loop-line-path-v1.js?v=115",
+    "./fujimi-loop-line-path-policy-v1.js?v=115",
+    "./fujimi-loop-line-stop-images-v1.js?v=115",
+    "./fujimi-loop-line-route-v1.js?v=115"
+  ],
+  "failures": [],
+  "pass": true
+}
