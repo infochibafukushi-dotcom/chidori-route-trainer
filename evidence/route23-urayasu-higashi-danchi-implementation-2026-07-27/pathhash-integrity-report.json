@@ -1,0 +1,20 @@
+{
+  "systems": {
+    "23-maihama-sogo": {
+      "pathHash": "555e322bb00adc9efbabc31f8017fe0ea54fe968bfd9a846f367d2ed66d9e425",
+      "recomputed": "555e322bb00adc9efbabc31f8017fe0ea54fe968bfd9a846f367d2ed66d9e425",
+      "match": true,
+      "pathPoints": 422,
+      "resolvedVersion": "2026-07-27-urayasu23-maihama-sogo-v1"
+    },
+    "23-sogo-maihama": {
+      "pathHash": "f73e2dfe39aa27ee1c35b4818733b8f8649aba3ca77d360786be85ce132a7ea8",
+      "recomputed": "f73e2dfe39aa27ee1c35b4818733b8f8649aba3ca77d360786be85ce132a7ea8",
+      "match": true,
+      "pathPoints": 384,
+      "resolvedVersion": "2026-07-27-urayasu23-sogo-maihama-v1"
+    }
+  },
+  "failures": [],
+  "ok": true
+}

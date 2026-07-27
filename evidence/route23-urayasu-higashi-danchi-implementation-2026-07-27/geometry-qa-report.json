@@ -1,0 +1,16 @@
+{
+  "systems": {
+    "23-maihama-sogo": {
+      "pathPoints": 422,
+      "maxGap_m": 24.7,
+      "pathHash": "555e322bb00adc9efbabc31f8017fe0ea54fe968bfd9a846f367d2ed66d9e425"
+    },
+    "23-sogo-maihama": {
+      "pathPoints": 384,
+      "maxGap_m": 25,
+      "pathHash": "f73e2dfe39aa27ee1c35b4818733b8f8649aba3ca77d360786be85ce132a7ea8"
+    }
+  },
+  "failures": [],
+  "ok": true
+}

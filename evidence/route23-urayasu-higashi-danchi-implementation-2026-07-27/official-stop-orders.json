@@ -1,0 +1,180 @@
+{
+  "checkedAt": "2026-07-27T00:12:07.457Z",
+  "sourcePriority": [
+    "京成バスナビ 個別便通過時刻表（/courses/timetables/**/stops?）",
+    "京成バスナビ 時刻表凡例（符号→【Ｎ系統】）",
+    "OSM route relation（道路形状・停留所座標）"
+  ],
+  "lineName": "浦安東団地線",
+  "systemNumber": "23",
+  "routeId": "route-23",
+  "operator": "東京ベイシティ交通（京成グループ・京成バスナビ掲載）",
+  "busstopIds": {
+    "舞浜駅": "00020617",
+    "総合公園": "00020745",
+    "新浦安駅": "00020619",
+    "maihama": "00020617",
+    "sogo": "00020745",
+    "shinurayasu": "00020619"
+  },
+  "gatingRule": "(A) 便が載っていた時刻表の凡例 と (B) 便の出発停留所ののりばの時刻表の凡例 の二段で系統を判定。新浦安駅のりばH等では [3]/[23]/[11]/[18] が混載（Navi表示「3 [23]」）。(B) 出発のりば凡例が【２３系統】に解決した便のみ採用。3系統（浦安駅入口 terminal）は REJECT。",
+  "siblingRouteSeparation": {
+    "siblingSystemNumber": "3",
+    "siblingDescription": "3系統はroute-3（浦安駅入口⇔総合公園・シンボルロード分支）。新浦安 berth H/D で23と混載するが別系統。",
+    "siblingOsmRelations": [
+      18417570,
+      18417571,
+      18417579
+    ],
+    "rule": "route-23 では3系統の便・停留所順・OSM relation 18417570/18417571/18417579 を一切使用しない。"
+  },
+  "route3Vs23Proof": {
+    "sharedNetworkName": "浦安東団地線",
+    "route3Terminals": "浦安駅入口 ⇔ 総合公園（+ シンボルロード・明海五丁目区間便）",
+    "route23Terminals": "舞浜駅 ⇔ 総合公園",
+    "osmRef3Relations": [
+      18417570,
+      18417571,
+      18417579
+    ],
+    "osmRef23Relations": [
+      18419894,
+      18419895
+    ],
+    "sharedRelationIds": [],
+    "naviCoListing": "新浦安駅 berth H: 「3 [23]」と「[3]」が同一セルに併記（舞浜駅行き）。凡例ゲートで切り分け。",
+    "distinctPathEvidence": "舞浜発着は 新浦安駅北口・若潮公園・順天堂病院前・OL本社前 を経由。route-3 浦安駅入口発着とは OSM relation が完全非共有。"
+  },
+  "systems": {
+    "23-maihama-sogo": {
+      "title": "総合公園行き（舞浜駅発）",
+      "summary": "舞浜駅 → 新浦安駅 → 明海 → 総合公園",
+      "directionGroup": "outbound",
+      "departure": "舞浜駅",
+      "destination": "総合公園",
+      "berth": "3",
+      "observedBerths": "3",
+      "routeNumber": "23",
+      "course": "0008200303",
+      "courseText": "3 [23]（新浦安駅北口経由）総合公園行",
+      "naviTerminal": "舞浜駅",
+      "sourceUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81120000/stops?departure-busstop=00020619-13&course=0008200303&datetime=2026-08-02T10:58:00%2B09:00",
+      "allSampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81120000/stops?departure-busstop=00020619-13&course=0008200303&datetime=2026-08-02T10:58:00%2B09:00"
+      ],
+      "confirmedDate": "2026-07-27",
+      "tripsObserved": 1,
+      "stopCount": 25,
+      "stopNames": [
+        "舞浜駅",
+        "オリエンタルランド本社前",
+        "運動公園",
+        "舞浜三丁目",
+        "見明川住宅",
+        "見明川中学校前",
+        "弁天第二",
+        "サンコーポ西口",
+        "サンコーポ東口",
+        "順天堂病院前",
+        "若潮公園",
+        "新浦安駅北口",
+        "新浦安駅",
+        "入船中央エステート",
+        "明海大学前",
+        "海風の街",
+        "夢海の街",
+        "望海の街",
+        "明海六丁目",
+        "明海南小学校",
+        "三井ガーデンホテル",
+        "ハイアットリージェンシー",
+        "明海五丁目",
+        "ベイサイドホテルエリア",
+        "総合公園"
+      ],
+      "osmRelationId": 18419895,
+      "osmRelationName": "東京ベイシティバス23系統 舞浜駅⇒新浦安駅・望海の街⇒総合公園",
+      "osmPlatformOrderMatchesOfficial": true,
+      "osmPlatformNamesExactMatch": true,
+      "naviStopOrderMatchesOsm": true
+    },
+    "23-sogo-maihama": {
+      "title": "舞浜駅行き（総合公園発）",
+      "summary": "総合公園 → 明海 → 新浦安駅 → 舞浜駅",
+      "directionGroup": "inbound",
+      "departure": "総合公園",
+      "destination": "舞浜駅",
+      "berth": "01",
+      "observedBerths": "01",
+      "routeNumber": "23",
+      "course": "0008200302",
+      "courseText": "3 [23]（望海の街経由）新浦安・浦安駅入口・望海の街・新浦安経由 舞浜駅行",
+      "naviTerminal": "総合公園",
+      "sourceUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81110000/stops?departure-busstop=00020745-1&course=0008200302&datetime=2026-07-27T06:15:00%2B09:00",
+      "allSampleUrls": [],
+      "confirmedDate": "2026-07-27",
+      "tripsObserved": 1,
+      "stopCount": 25,
+      "stopNames": [
+        "総合公園",
+        "ベイサイドホテルエリア",
+        "明海五丁目",
+        "ハイアットリージェンシー",
+        "三井ガーデンホテル",
+        "明海南小学校",
+        "明海六丁目",
+        "望海の街",
+        "夢海の街",
+        "海風の街",
+        "明海大学前",
+        "入船中央エステート",
+        "新浦安駅",
+        "新浦安駅北口",
+        "若潮公園",
+        "順天堂病院前",
+        "サンコーポ東口",
+        "サンコーポ西口",
+        "弁天第二",
+        "見明川中学校前",
+        "見明川住宅",
+        "舞浜三丁目",
+        "運動公園",
+        "オリエンタルランド本社前",
+        "舞浜駅"
+      ],
+      "osmRelationId": 18419894,
+      "osmRelationName": "東京ベイシティバス23系統 総合公園⇒望海の街・新浦安駅⇒舞浜駅",
+      "osmPlatformOrderMatchesOfficial": true,
+      "osmPlatformNamesExactMatch": true,
+      "naviStopOrderMatchesOsm": true,
+      "note": "Inbound stop order from OSM 18419894; Navi focused scrape confirmed course 0008200302 (25 stops) before resource limit."
+    }
+  },
+  "rejectedOtherRoutes": [
+    {
+      "course": "0008200213",
+      "routeNumber": "3",
+      "departure": "新浦安駅",
+      "destination": "総合公園",
+      "stopCount": 13,
+      "reason": "REJECT-route-3",
+      "note": "13-stop 新浦安→総合公園（symbol/akeumi branch）。終点は同じだが【３系統】凡例。"
+    },
+    {
+      "course": "0008200211",
+      "routeNumber": "3",
+      "departure": "浦安駅入口",
+      "destination": "総合公園",
+      "stopCount": 19,
+      "reason": "REJECT-route-3"
+    },
+    {
+      "course": "0008200210",
+      "routeNumber": "3",
+      "departure": "総合公園",
+      "destination": "浦安駅入口",
+      "stopCount": 19,
+      "reason": "REJECT-route-3"
+    }
+  ]
+}

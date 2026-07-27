@@ -1,0 +1,99 @@
+{
+  "checkedAt": "2026-07-27T00:12:07.457Z",
+  "routeId": "route-23",
+  "systemNumber": "23",
+  "note": "2 accepted systems; OSM+navi stop order aligned for outbound; inbound OSM-backed.",
+  "systems": {
+    "23-maihama-sogo": {
+      "stopNames": [
+        "舞浜駅",
+        "オリエンタルランド本社前",
+        "運動公園",
+        "舞浜三丁目",
+        "見明川住宅",
+        "見明川中学校前",
+        "弁天第二",
+        "サンコーポ西口",
+        "サンコーポ東口",
+        "順天堂病院前",
+        "若潮公園",
+        "新浦安駅北口",
+        "新浦安駅",
+        "入船中央エステート",
+        "明海大学前",
+        "海風の街",
+        "夢海の街",
+        "望海の街",
+        "明海六丁目",
+        "明海南小学校",
+        "三井ガーデンホテル",
+        "ハイアットリージェンシー",
+        "明海五丁目",
+        "ベイサイドホテルエリア",
+        "総合公園"
+      ],
+      "stopCount": 25,
+      "course": "0008200303",
+      "osmRelationId": 18419895
+    },
+    "23-sogo-maihama": {
+      "stopNames": [
+        "総合公園",
+        "ベイサイドホテルエリア",
+        "明海五丁目",
+        "ハイアットリージェンシー",
+        "三井ガーデンホテル",
+        "明海南小学校",
+        "明海六丁目",
+        "望海の街",
+        "夢海の街",
+        "海風の街",
+        "明海大学前",
+        "入船中央エステート",
+        "新浦安駅",
+        "新浦安駅北口",
+        "若潮公園",
+        "順天堂病院前",
+        "サンコーポ東口",
+        "サンコーポ西口",
+        "弁天第二",
+        "見明川中学校前",
+        "見明川住宅",
+        "舞浜三丁目",
+        "運動公園",
+        "オリエンタルランド本社前",
+        "舞浜駅"
+      ],
+      "stopCount": 25,
+      "course": "0008200302",
+      "osmRelationId": 18419894
+    }
+  },
+  "rejectedRoute3": [
+    {
+      "course": "0008200213",
+      "routeNumber": "3",
+      "departure": "新浦安駅",
+      "destination": "総合公園",
+      "stopCount": 13,
+      "reason": "REJECT-route-3",
+      "note": "13-stop 新浦安→総合公園（symbol/akeumi branch）。終点は同じだが【３系統】凡例。"
+    },
+    {
+      "course": "0008200211",
+      "routeNumber": "3",
+      "departure": "浦安駅入口",
+      "destination": "総合公園",
+      "stopCount": 19,
+      "reason": "REJECT-route-3"
+    },
+    {
+      "course": "0008200210",
+      "routeNumber": "3",
+      "departure": "総合公園",
+      "destination": "浦安駅入口",
+      "stopCount": 19,
+      "reason": "REJECT-route-3"
+    }
+  ]
+}

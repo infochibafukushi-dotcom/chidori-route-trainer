@@ -210,6 +210,17 @@
         './wakashio-dori-line-22-stop-images-v1.js?v=113',
         './wakashio-dori-line-22-route-v1.js?v=113'
       ]
+    },
+    // route-23 浦安東団地線（23系統・舞浜⇔総合公園）。URAYASU_HIGASHI_DANCHI_LINE_23_* で route-3 と完全分離。
+    'route-23': {
+      css: ['./urayasu-higashi-danchi-line-23-stop-images-v1.css?v=114'],
+      js: [
+        './urayasu-higashi-danchi-line-23-platforms-v1.js?v=114',
+        './urayasu-higashi-danchi-line-23-path-v1.js?v=114',
+        './urayasu-higashi-danchi-line-23-path-policy-v1.js?v=114',
+        './urayasu-higashi-danchi-line-23-stop-images-v1.js?v=114',
+        './urayasu-higashi-danchi-line-23-route-v1.js?v=114'
+      ]
     }
   };
 

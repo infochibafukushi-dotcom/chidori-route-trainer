@@ -1,0 +1,153 @@
+{
+  "scrapedAt": "2026-07-27T00:11:28.021Z",
+  "routeNumber": "23",
+  "lineName": "浦安東団地線",
+  "note": "Minimal 2-trip scrape for route-23 maihama↔sogo.",
+  "timetables": [
+    {
+      "terminal": "舞浜駅",
+      "berth": "3",
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020617&course-sequence=0008200303-1&datetime=2026-07-27T05:00",
+      "legend": [
+        "3\t[23]（新浦安駅北口経由）総合公園行",
+        "▽あ…【２３系統】新浦安駅・望海の街経由　総合公園行き"
+      ],
+      "courseText": "23-maihama-sogo"
+    },
+    {
+      "terminal": "総合公園",
+      "berth": "01",
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020745&course-sequence=0008200302-1&datetime=2026-07-27T05:00",
+      "legend": [
+        "3\t[23]（望海の街経由）新浦安駅・浦安駅入口（望海の街・新浦安駅経由）舞浜駅行",
+        "3\t[3]（望海の街経由）新浦安駅・浦安駅入口（望海の街・新浦安駅経由）舞浜駅行",
+        "無印…【３系統】望海の街経由　新浦安駅行き",
+        "う…【３系統】新浦安駅経由　浦安駅入口行き",
+        "ま…【２３系統】望海の街、新浦安駅、順天堂病院前経由　舞浜駅行き"
+      ],
+      "courseText": "23-sogo-maihama"
+    }
+  ],
+  "signatures": {
+    "舞浜駅>オリエンタルランド本社前>運動公園>舞浜三丁目>見明川住宅>見明川中学校前>弁天第二>サンコーポ西口>サンコーポ東口>順天堂病院前>若潮公園>新浦安駅北口>新浦安駅>入船中央エステート>明海大学前>海風の街>夢海の街>望海の街>明海六丁目>明海南小学校>三井ガーデンホテル>ハイアットリージェンシー>明海五丁目>ベイサイドホテルエリア": {
+      "stopNames": [
+        "舞浜駅",
+        "オリエンタルランド本社前",
+        "運動公園",
+        "舞浜三丁目",
+        "見明川住宅",
+        "見明川中学校前",
+        "弁天第二",
+        "サンコーポ西口",
+        "サンコーポ東口",
+        "順天堂病院前",
+        "若潮公園",
+        "新浦安駅北口",
+        "新浦安駅",
+        "入船中央エステート",
+        "明海大学前",
+        "海風の街",
+        "夢海の街",
+        "望海の街",
+        "明海六丁目",
+        "明海南小学校",
+        "三井ガーデンホテル",
+        "ハイアットリージェンシー",
+        "明海五丁目",
+        "ベイサイドホテルエリア"
+      ],
+      "stopCount": 24,
+      "count": 1,
+      "courses": [
+        "0008200303"
+      ],
+      "berths": [
+        "3"
+      ],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81120000/stops?departure-busstop=00020617-3&course=0008200303&datetime=2026-08-02T10:38:00%2B09:00"
+      ],
+      "terminal": "舞浜駅",
+      "cellTexts": [
+        "sample"
+      ]
+    },
+    "": {
+      "stopNames": [],
+      "stopCount": 0,
+      "count": 1,
+      "courses": [
+        "0008200302"
+      ],
+      "berths": [
+        "01"
+      ],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81110000/stops?departure-busstop=00020745-1&course=0008200302&datetime=2026-07-27T06:15:00%2B09:00"
+      ],
+      "terminal": "総合公園",
+      "cellTexts": [
+        "sample"
+      ]
+    }
+  },
+  "trips": [
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81120000/stops?departure-busstop=00020617-3&course=0008200303&datetime=2026-08-02T10:38:00%2B09:00",
+      "stopNames": [
+        "舞浜駅",
+        "オリエンタルランド本社前",
+        "運動公園",
+        "舞浜三丁目",
+        "見明川住宅",
+        "見明川中学校前",
+        "弁天第二",
+        "サンコーポ西口",
+        "サンコーポ東口",
+        "順天堂病院前",
+        "若潮公園",
+        "新浦安駅北口",
+        "新浦安駅",
+        "入船中央エステート",
+        "明海大学前",
+        "海風の街",
+        "夢海の街",
+        "望海の街",
+        "明海六丁目",
+        "明海南小学校",
+        "三井ガーデンホテル",
+        "ハイアットリージェンシー",
+        "明海五丁目",
+        "ベイサイドホテルエリア"
+      ],
+      "course": "0008200303",
+      "legend": [
+        "3\t[23]（新浦安駅北口経由）総合公園行",
+        "▽あ…【２３系統】新浦安駅・望海の街経由　総合公園行き"
+      ],
+      "terminal": "舞浜駅",
+      "berth": "3",
+      "courseText": "23-maihama-sogo"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81110000/stops?departure-busstop=00020745-1&course=0008200302&datetime=2026-07-27T06:15:00%2B09:00",
+      "stopNames": [],
+      "course": "0008200302",
+      "legend": [
+        "3\t[23]（望海の街経由）新浦安駅・浦安駅入口（望海の街・新浦安駅経由）舞浜駅行",
+        "3\t[3]（望海の街経由）新浦安駅・浦安駅入口（望海の街・新浦安駅経由）舞浜駅行",
+        "無印…【３系統】望海の街経由　新浦安駅行き",
+        "う…【３系統】新浦安駅経由　浦安駅入口行き",
+        "ま…【２３系統】望海の街、新浦安駅、順天堂病院前経由　舞浜駅行き"
+      ],
+      "terminal": "総合公園",
+      "berth": "01",
+      "courseText": "23-sogo-maihama"
+    }
+  ],
+  "discoveredBusstopIds": {
+    "maihama": "00020617",
+    "sogo": "00020745",
+    "shinurayasu": "00020619"
+  }
+}

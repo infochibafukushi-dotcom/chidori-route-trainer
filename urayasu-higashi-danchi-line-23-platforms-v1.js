@@ -1,0 +1,766 @@
+// Auto-generated OSM platforms for 浦安東団地線 系統23 (route-23 / 舞浜⇔総合公園).
+// Official stop order: Keisei Bus Navi 2026-07-27（【２３系統】凡例ゲート）。3系統は除外。
+// NEVER use route-3 relations 18417570/18417571/18417579 or urayasu-higashi-danchi-* (route-3) assets.
+// Generated: 2026-07-27-urayasu-higashi-danchi-line-23-v1
+(() => {
+  window.URAYASU_HIGASHI_DANCHI_LINE_23_PLATFORMS_V1 = {
+  "23-maihama-sogo": {
+    "byIndex": [
+      {
+        "lat": 35.6358527,
+        "lng": 139.8837581,
+        "platformId": 2661127170,
+        "role": "platform_entry_only",
+        "osmName": "舞浜駅",
+        "name": "舞浜駅"
+      },
+      {
+        "lat": 35.6312873,
+        "lng": 139.8885643,
+        "platformId": 2301981524,
+        "role": "platform",
+        "osmName": "オリエンタルランド本社前",
+        "name": "オリエンタルランド本社前"
+      },
+      {
+        "lat": 35.6325209,
+        "lng": 139.8914704,
+        "platformId": 6720667166,
+        "role": "platform",
+        "osmName": "運動公園",
+        "name": "運動公園"
+      },
+      {
+        "lat": 35.6339331,
+        "lng": 139.8931509,
+        "platformId": 1652826334,
+        "role": "platform",
+        "osmName": "舞浜三丁目",
+        "name": "舞浜三丁目"
+      },
+      {
+        "lat": 35.6366143,
+        "lng": 139.8963732,
+        "platformId": 1652792629,
+        "role": "platform",
+        "osmName": "見明川住宅",
+        "name": "見明川住宅"
+      },
+      {
+        "lat": 35.6385937,
+        "lng": 139.8987376,
+        "platformId": 11581103370,
+        "role": "platform",
+        "osmName": "見明川中学校前",
+        "name": "見明川中学校前"
+      },
+      {
+        "lat": 35.6400525,
+        "lng": 139.900479,
+        "platformId": 11581103369,
+        "role": "platform",
+        "osmName": "弁天第二",
+        "name": "弁天第二"
+      },
+      {
+        "lat": 35.6423093,
+        "lng": 139.9031895,
+        "platformId": 11581097368,
+        "role": "platform",
+        "osmName": "サンコーポ西口",
+        "name": "サンコーポ西口"
+      },
+      {
+        "lat": 35.6440928,
+        "lng": 139.9053323,
+        "platformId": 6720667163,
+        "role": "platform",
+        "osmName": "サンコーポ東口",
+        "name": "サンコーポ東口"
+      },
+      {
+        "lat": 35.645692,
+        "lng": 139.907214,
+        "platformId": 11581097365,
+        "role": "platform",
+        "osmName": "順天堂病院前",
+        "name": "順天堂病院前"
+      },
+      {
+        "lat": 35.6475041,
+        "lng": 139.9093912,
+        "platformId": 6720667161,
+        "role": "platform",
+        "osmName": "若潮公園",
+        "name": "若潮公園"
+      },
+      {
+        "lat": 35.650054,
+        "lng": 139.9124041,
+        "platformId": 12369534179,
+        "role": "platform",
+        "osmName": "新浦安駅北口",
+        "name": "新浦安駅北口"
+      },
+      {
+        "lat": 35.6500008,
+        "lng": 139.9137632,
+        "platformId": 8415001162,
+        "role": "platform",
+        "osmName": "新浦安駅",
+        "name": "新浦安駅"
+      },
+      {
+        "lat": 35.6489816,
+        "lng": 139.9168586,
+        "platformId": 11425579726,
+        "role": "platform",
+        "osmName": "入船中央エステート",
+        "name": "入船中央エステート"
+      },
+      {
+        "lat": 35.6460348,
+        "lng": 139.9205782,
+        "platformId": 6813952156,
+        "role": "platform",
+        "osmName": "明海大学前",
+        "name": "明海大学前"
+      },
+      {
+        "lat": 35.6435042,
+        "lng": 139.9224383,
+        "platformId": 12409259393,
+        "role": "platform",
+        "osmName": "海風の街",
+        "name": "海風の街"
+      },
+      {
+        "lat": 35.6415042,
+        "lng": 139.9200062,
+        "platformId": 6813929332,
+        "role": "platform",
+        "osmName": "夢海の街",
+        "name": "夢海の街"
+      },
+      {
+        "lat": 35.6394542,
+        "lng": 139.921993,
+        "platformId": 12419724094,
+        "role": "platform",
+        "osmName": "望海の街",
+        "name": "望海の街"
+      },
+      {
+        "lat": 35.6388831,
+        "lng": 139.9226926,
+        "platformId": 1651533312,
+        "role": "platform",
+        "osmName": "明海六丁目",
+        "name": "明海六丁目"
+      },
+      {
+        "lat": 35.6378767,
+        "lng": 139.9239444,
+        "platformId": 1651533327,
+        "role": "platform",
+        "osmName": "明海南小学校",
+        "name": "明海南小学校"
+      },
+      {
+        "lat": 35.6366481,
+        "lng": 139.9254765,
+        "platformId": 6779094645,
+        "role": "platform",
+        "osmName": "三井ガーデンホテル",
+        "name": "三井ガーデンホテル"
+      },
+      {
+        "lat": 35.6372263,
+        "lng": 139.9267982,
+        "platformId": 6899769121,
+        "role": "platform",
+        "osmName": "ハイアットリージェンシー",
+        "name": "ハイアットリージェンシー"
+      },
+      {
+        "lat": 35.6385953,
+        "lng": 139.9284438,
+        "platformId": 6899769123,
+        "role": "platform",
+        "osmName": "明海五丁目",
+        "name": "明海五丁目"
+      },
+      {
+        "lat": 35.6382279,
+        "lng": 139.9302502,
+        "platformId": 11513466416,
+        "role": "platform",
+        "osmName": "ベイサイドホテルエリア",
+        "name": "ベイサイドホテルエリア"
+      },
+      {
+        "lat": 35.6373096,
+        "lng": 139.9309872,
+        "platformId": 6720667160,
+        "role": "platform_exit_only",
+        "osmName": "総合公園",
+        "name": "総合公園"
+      }
+    ],
+    "舞浜駅": {
+      "lat": 35.6358527,
+      "lng": 139.8837581,
+      "platformId": 2661127170,
+      "role": "platform_entry_only",
+      "osmName": "舞浜駅"
+    },
+    "オリエンタルランド本社前": {
+      "lat": 35.6312873,
+      "lng": 139.8885643,
+      "platformId": 2301981524,
+      "role": "platform",
+      "osmName": "オリエンタルランド本社前"
+    },
+    "運動公園": {
+      "lat": 35.6325209,
+      "lng": 139.8914704,
+      "platformId": 6720667166,
+      "role": "platform",
+      "osmName": "運動公園"
+    },
+    "舞浜三丁目": {
+      "lat": 35.6339331,
+      "lng": 139.8931509,
+      "platformId": 1652826334,
+      "role": "platform",
+      "osmName": "舞浜三丁目"
+    },
+    "見明川住宅": {
+      "lat": 35.6366143,
+      "lng": 139.8963732,
+      "platformId": 1652792629,
+      "role": "platform",
+      "osmName": "見明川住宅"
+    },
+    "見明川中学校前": {
+      "lat": 35.6385937,
+      "lng": 139.8987376,
+      "platformId": 11581103370,
+      "role": "platform",
+      "osmName": "見明川中学校前"
+    },
+    "弁天第二": {
+      "lat": 35.6400525,
+      "lng": 139.900479,
+      "platformId": 11581103369,
+      "role": "platform",
+      "osmName": "弁天第二"
+    },
+    "サンコーポ西口": {
+      "lat": 35.6423093,
+      "lng": 139.9031895,
+      "platformId": 11581097368,
+      "role": "platform",
+      "osmName": "サンコーポ西口"
+    },
+    "サンコーポ東口": {
+      "lat": 35.6440928,
+      "lng": 139.9053323,
+      "platformId": 6720667163,
+      "role": "platform",
+      "osmName": "サンコーポ東口"
+    },
+    "順天堂病院前": {
+      "lat": 35.645692,
+      "lng": 139.907214,
+      "platformId": 11581097365,
+      "role": "platform",
+      "osmName": "順天堂病院前"
+    },
+    "若潮公園": {
+      "lat": 35.6475041,
+      "lng": 139.9093912,
+      "platformId": 6720667161,
+      "role": "platform",
+      "osmName": "若潮公園"
+    },
+    "新浦安駅北口": {
+      "lat": 35.650054,
+      "lng": 139.9124041,
+      "platformId": 12369534179,
+      "role": "platform",
+      "osmName": "新浦安駅北口"
+    },
+    "新浦安駅": {
+      "lat": 35.6500008,
+      "lng": 139.9137632,
+      "platformId": 8415001162,
+      "role": "platform",
+      "osmName": "新浦安駅"
+    },
+    "入船中央エステート": {
+      "lat": 35.6489816,
+      "lng": 139.9168586,
+      "platformId": 11425579726,
+      "role": "platform",
+      "osmName": "入船中央エステート"
+    },
+    "明海大学前": {
+      "lat": 35.6460348,
+      "lng": 139.9205782,
+      "platformId": 6813952156,
+      "role": "platform",
+      "osmName": "明海大学前"
+    },
+    "海風の街": {
+      "lat": 35.6435042,
+      "lng": 139.9224383,
+      "platformId": 12409259393,
+      "role": "platform",
+      "osmName": "海風の街"
+    },
+    "夢海の街": {
+      "lat": 35.6415042,
+      "lng": 139.9200062,
+      "platformId": 6813929332,
+      "role": "platform",
+      "osmName": "夢海の街"
+    },
+    "望海の街": {
+      "lat": 35.6394542,
+      "lng": 139.921993,
+      "platformId": 12419724094,
+      "role": "platform",
+      "osmName": "望海の街"
+    },
+    "明海六丁目": {
+      "lat": 35.6388831,
+      "lng": 139.9226926,
+      "platformId": 1651533312,
+      "role": "platform",
+      "osmName": "明海六丁目"
+    },
+    "明海南小学校": {
+      "lat": 35.6378767,
+      "lng": 139.9239444,
+      "platformId": 1651533327,
+      "role": "platform",
+      "osmName": "明海南小学校"
+    },
+    "三井ガーデンホテル": {
+      "lat": 35.6366481,
+      "lng": 139.9254765,
+      "platformId": 6779094645,
+      "role": "platform",
+      "osmName": "三井ガーデンホテル"
+    },
+    "ハイアットリージェンシー": {
+      "lat": 35.6372263,
+      "lng": 139.9267982,
+      "platformId": 6899769121,
+      "role": "platform",
+      "osmName": "ハイアットリージェンシー"
+    },
+    "明海五丁目": {
+      "lat": 35.6385953,
+      "lng": 139.9284438,
+      "platformId": 6899769123,
+      "role": "platform",
+      "osmName": "明海五丁目"
+    },
+    "ベイサイドホテルエリア": {
+      "lat": 35.6382279,
+      "lng": 139.9302502,
+      "platformId": 11513466416,
+      "role": "platform",
+      "osmName": "ベイサイドホテルエリア"
+    },
+    "総合公園": {
+      "lat": 35.6373096,
+      "lng": 139.9309872,
+      "platformId": 6720667160,
+      "role": "platform_exit_only",
+      "osmName": "総合公園"
+    }
+  },
+  "23-sogo-maihama": {
+    "byIndex": [
+      {
+        "lat": 35.6373096,
+        "lng": 139.9309872,
+        "platformId": 6720667160,
+        "role": "platform_entry_only",
+        "osmName": "総合公園",
+        "name": "総合公園"
+      },
+      {
+        "lat": 35.638018,
+        "lng": 139.9301879,
+        "platformId": 6720667159,
+        "role": "platform",
+        "osmName": "ベイサイドホテルエリア",
+        "name": "ベイサイドホテルエリア"
+      },
+      {
+        "lat": 35.6385277,
+        "lng": 139.928657,
+        "platformId": 6899769124,
+        "role": "platform",
+        "osmName": "明海五丁目",
+        "name": "明海五丁目"
+      },
+      {
+        "lat": 35.6368197,
+        "lng": 139.9266212,
+        "platformId": 6899769122,
+        "role": "platform",
+        "osmName": "ハイアットリージェンシー",
+        "name": "ハイアットリージェンシー"
+      },
+      {
+        "lat": 35.6367489,
+        "lng": 139.9250601,
+        "platformId": 6779094646,
+        "role": "platform",
+        "osmName": "三井ガーデンホテル",
+        "name": "三井ガーデンホテル"
+      },
+      {
+        "lat": 35.6378388,
+        "lng": 139.9236902,
+        "platformId": 11513466377,
+        "role": "platform",
+        "osmName": "明海南小学校",
+        "name": "明海南小学校"
+      },
+      {
+        "lat": 35.6387337,
+        "lng": 139.922575,
+        "platformId": 11513433668,
+        "role": "platform",
+        "osmName": "明海六丁目",
+        "name": "明海六丁目"
+      },
+      {
+        "lat": 35.6393539,
+        "lng": 139.9217999,
+        "platformId": 12419724093,
+        "role": "platform",
+        "osmName": "望海の街",
+        "name": "望海の街"
+      },
+      {
+        "lat": 35.6417004,
+        "lng": 139.9199572,
+        "platformId": 6813929331,
+        "role": "platform",
+        "osmName": "夢海の街",
+        "name": "夢海の街"
+      },
+      {
+        "lat": 35.6442605,
+        "lng": 139.922292,
+        "platformId": 1312670873,
+        "role": "platform",
+        "osmName": "海風の街",
+        "name": "海風の街"
+      },
+      {
+        "lat": 35.6458877,
+        "lng": 139.9202433,
+        "platformId": 1312670870,
+        "role": "platform",
+        "osmName": "明海大学前",
+        "name": "明海大学前"
+      },
+      {
+        "lat": 35.648721,
+        "lng": 139.9166753,
+        "platformId": 1312711918,
+        "role": "platform",
+        "osmName": "入船中央エステート",
+        "name": "入船中央エステート"
+      },
+      {
+        "lat": 35.6506245,
+        "lng": 139.9142535,
+        "platformId": 8415001143,
+        "role": "platform",
+        "osmName": "新浦安駅",
+        "name": "新浦安駅"
+      },
+      {
+        "lat": 35.6499903,
+        "lng": 139.9126359,
+        "platformId": 6778578838,
+        "role": "platform",
+        "osmName": "新浦安駅北口",
+        "name": "新浦安駅北口"
+      },
+      {
+        "lat": 35.6473943,
+        "lng": 139.9095296,
+        "platformId": 11581097364,
+        "role": "platform",
+        "osmName": "若潮公園",
+        "name": "若潮公園"
+      },
+      {
+        "lat": 35.6453182,
+        "lng": 139.9070393,
+        "platformId": 6720667162,
+        "role": "platform",
+        "osmName": "順天堂病院前",
+        "name": "順天堂病院前"
+      },
+      {
+        "lat": 35.6439144,
+        "lng": 139.905342,
+        "platformId": 11581097367,
+        "role": "platform",
+        "osmName": "サンコーポ東口",
+        "name": "サンコーポ東口"
+      },
+      {
+        "lat": 35.6420634,
+        "lng": 139.9031259,
+        "platformId": 6720667164,
+        "role": "platform",
+        "osmName": "サンコーポ西口",
+        "name": "サンコーポ西口"
+      },
+      {
+        "lat": 35.6398165,
+        "lng": 139.9004629,
+        "platformId": 1652792931,
+        "role": "platform",
+        "osmName": "弁天第二",
+        "name": "弁天第二"
+      },
+      {
+        "lat": 35.6384265,
+        "lng": 139.8987768,
+        "platformId": 1652792821,
+        "role": "platform",
+        "osmName": "見明川中学校前",
+        "name": "見明川中学校前"
+      },
+      {
+        "lat": 35.6364748,
+        "lng": 139.8964564,
+        "platformId": 11581103371,
+        "role": "platform",
+        "osmName": "見明川住宅",
+        "name": "見明川住宅"
+      },
+      {
+        "lat": 35.6337929,
+        "lng": 139.8932505,
+        "platformId": 12368996366,
+        "role": "platform",
+        "osmName": "舞浜三丁目",
+        "name": "舞浜三丁目"
+      },
+      {
+        "lat": 35.6310025,
+        "lng": 139.8899547,
+        "platformId": 6720667165,
+        "role": "platform",
+        "osmName": "運動公園",
+        "name": "運動公園"
+      },
+      {
+        "lat": 35.6320206,
+        "lng": 139.887359,
+        "platformId": 2301991499,
+        "role": "platform",
+        "osmName": "オリエンタルランド本社前",
+        "name": "オリエンタルランド本社前"
+      },
+      {
+        "lat": 35.6360225,
+        "lng": 139.8833113,
+        "platformId": 9482601633,
+        "role": "platform_exit_only",
+        "osmName": "舞浜駅",
+        "name": "舞浜駅"
+      }
+    ],
+    "総合公園": {
+      "lat": 35.6373096,
+      "lng": 139.9309872,
+      "platformId": 6720667160,
+      "role": "platform_entry_only",
+      "osmName": "総合公園"
+    },
+    "ベイサイドホテルエリア": {
+      "lat": 35.638018,
+      "lng": 139.9301879,
+      "platformId": 6720667159,
+      "role": "platform",
+      "osmName": "ベイサイドホテルエリア"
+    },
+    "明海五丁目": {
+      "lat": 35.6385277,
+      "lng": 139.928657,
+      "platformId": 6899769124,
+      "role": "platform",
+      "osmName": "明海五丁目"
+    },
+    "ハイアットリージェンシー": {
+      "lat": 35.6368197,
+      "lng": 139.9266212,
+      "platformId": 6899769122,
+      "role": "platform",
+      "osmName": "ハイアットリージェンシー"
+    },
+    "三井ガーデンホテル": {
+      "lat": 35.6367489,
+      "lng": 139.9250601,
+      "platformId": 6779094646,
+      "role": "platform",
+      "osmName": "三井ガーデンホテル"
+    },
+    "明海南小学校": {
+      "lat": 35.6378388,
+      "lng": 139.9236902,
+      "platformId": 11513466377,
+      "role": "platform",
+      "osmName": "明海南小学校"
+    },
+    "明海六丁目": {
+      "lat": 35.6387337,
+      "lng": 139.922575,
+      "platformId": 11513433668,
+      "role": "platform",
+      "osmName": "明海六丁目"
+    },
+    "望海の街": {
+      "lat": 35.6393539,
+      "lng": 139.9217999,
+      "platformId": 12419724093,
+      "role": "platform",
+      "osmName": "望海の街"
+    },
+    "夢海の街": {
+      "lat": 35.6417004,
+      "lng": 139.9199572,
+      "platformId": 6813929331,
+      "role": "platform",
+      "osmName": "夢海の街"
+    },
+    "海風の街": {
+      "lat": 35.6442605,
+      "lng": 139.922292,
+      "platformId": 1312670873,
+      "role": "platform",
+      "osmName": "海風の街"
+    },
+    "明海大学前": {
+      "lat": 35.6458877,
+      "lng": 139.9202433,
+      "platformId": 1312670870,
+      "role": "platform",
+      "osmName": "明海大学前"
+    },
+    "入船中央エステート": {
+      "lat": 35.648721,
+      "lng": 139.9166753,
+      "platformId": 1312711918,
+      "role": "platform",
+      "osmName": "入船中央エステート"
+    },
+    "新浦安駅": {
+      "lat": 35.6506245,
+      "lng": 139.9142535,
+      "platformId": 8415001143,
+      "role": "platform",
+      "osmName": "新浦安駅"
+    },
+    "新浦安駅北口": {
+      "lat": 35.6499903,
+      "lng": 139.9126359,
+      "platformId": 6778578838,
+      "role": "platform",
+      "osmName": "新浦安駅北口"
+    },
+    "若潮公園": {
+      "lat": 35.6473943,
+      "lng": 139.9095296,
+      "platformId": 11581097364,
+      "role": "platform",
+      "osmName": "若潮公園"
+    },
+    "順天堂病院前": {
+      "lat": 35.6453182,
+      "lng": 139.9070393,
+      "platformId": 6720667162,
+      "role": "platform",
+      "osmName": "順天堂病院前"
+    },
+    "サンコーポ東口": {
+      "lat": 35.6439144,
+      "lng": 139.905342,
+      "platformId": 11581097367,
+      "role": "platform",
+      "osmName": "サンコーポ東口"
+    },
+    "サンコーポ西口": {
+      "lat": 35.6420634,
+      "lng": 139.9031259,
+      "platformId": 6720667164,
+      "role": "platform",
+      "osmName": "サンコーポ西口"
+    },
+    "弁天第二": {
+      "lat": 35.6398165,
+      "lng": 139.9004629,
+      "platformId": 1652792931,
+      "role": "platform",
+      "osmName": "弁天第二"
+    },
+    "見明川中学校前": {
+      "lat": 35.6384265,
+      "lng": 139.8987768,
+      "platformId": 1652792821,
+      "role": "platform",
+      "osmName": "見明川中学校前"
+    },
+    "見明川住宅": {
+      "lat": 35.6364748,
+      "lng": 139.8964564,
+      "platformId": 11581103371,
+      "role": "platform",
+      "osmName": "見明川住宅"
+    },
+    "舞浜三丁目": {
+      "lat": 35.6337929,
+      "lng": 139.8932505,
+      "platformId": 12368996366,
+      "role": "platform",
+      "osmName": "舞浜三丁目"
+    },
+    "運動公園": {
+      "lat": 35.6310025,
+      "lng": 139.8899547,
+      "platformId": 6720667165,
+      "role": "platform",
+      "osmName": "運動公園"
+    },
+    "オリエンタルランド本社前": {
+      "lat": 35.6320206,
+      "lng": 139.887359,
+      "platformId": 2301991499,
+      "role": "platform",
+      "osmName": "オリエンタルランド本社前"
+    },
+    "舞浜駅": {
+      "lat": 35.6360225,
+      "lng": 139.8833113,
+      "platformId": 9482601633,
+      "role": "platform_exit_only",
+      "osmName": "舞浜駅"
+    }
+  }
+};
+})();

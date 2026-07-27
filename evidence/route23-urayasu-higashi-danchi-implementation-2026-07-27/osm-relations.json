@@ -1,0 +1,684 @@
+{
+  "fetchedAt": "2026-07-26T23:36:28.902Z",
+  "route": "urayasu-higashi-danchi-route23",
+  "lineName": "浦安東団地線",
+  "knownPathSourceIds": [
+    18419894,
+    18419895
+  ],
+  "separationGuard": "ref=3 (route-3) relations 18417570/18417571/18417579 are listed but NEVER used for route-23 geometry.",
+  "relations": [
+    {
+      "id": 18419894,
+      "label": "route23 総合公園⇒望海の街・新浦安駅⇒舞浜駅",
+      "ok": true,
+      "source": "api.openstreetmap.org/0.6",
+      "name": "東京ベイシティバス23系統 総合公園⇒望海の街・新浦安駅⇒舞浜駅",
+      "tags": {
+        "name": "東京ベイシティバス23系統 総合公園⇒望海の街・新浦安駅⇒舞浜駅",
+        "network": "浦安東団地線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "23",
+        "route": "bus",
+        "type": "route"
+      },
+      "memberCount": 55,
+      "wayMemberCount": 30,
+      "platformMemberCount": 25,
+      "memberRoles": {
+        "platform_entry_only": 1,
+        "platform": 23,
+        "platform_exit_only": 1,
+        "": 30
+      },
+      "platformNames": [
+        "総合公園",
+        "ベイサイドホテルエリア",
+        "明海五丁目",
+        "ハイアットリージェンシー",
+        "三井ガーデンホテル",
+        "明海南小学校",
+        "明海六丁目",
+        "望海の街",
+        "夢海の街",
+        "海風の街",
+        "明海大学前",
+        "入船中央エステート",
+        "新浦安駅",
+        "新浦安駅北口",
+        "若潮公園",
+        "順天堂病院前",
+        "サンコーポ東口",
+        "サンコーポ西口",
+        "弁天第二",
+        "見明川中学校前",
+        "見明川住宅",
+        "舞浜三丁目",
+        "運動公園",
+        "オリエンタルランド本社前",
+        "舞浜駅"
+      ],
+      "platformsDetail": [
+        {
+          "role": "platform_entry_only",
+          "type": "node",
+          "ref": 6720667160,
+          "name": "総合公園",
+          "lat": 35.6373096,
+          "lon": 139.9309872,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6720667159,
+          "name": "ベイサイドホテルエリア",
+          "lat": 35.638018,
+          "lon": 139.9301879,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6899769124,
+          "name": "明海五丁目",
+          "lat": 35.6385277,
+          "lon": 139.928657,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6899769122,
+          "name": "ハイアットリージェンシー",
+          "lat": 35.6368197,
+          "lon": 139.9266212,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6779094646,
+          "name": "三井ガーデンホテル",
+          "lat": 35.6367489,
+          "lon": 139.9250601,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11513466377,
+          "name": "明海南小学校",
+          "lat": 35.6378388,
+          "lon": 139.9236902,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11513433668,
+          "name": "明海六丁目",
+          "lat": 35.6387337,
+          "lon": 139.922575,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 12419724093,
+          "name": "望海の街",
+          "lat": 35.6393539,
+          "lon": 139.9217999,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6813929331,
+          "name": "夢海の街",
+          "lat": 35.6417004,
+          "lon": 139.9199572,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1312670873,
+          "name": "海風の街",
+          "lat": 35.6442605,
+          "lon": 139.922292,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1312670870,
+          "name": "明海大学前",
+          "lat": 35.6458877,
+          "lon": 139.9202433,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1312711918,
+          "name": "入船中央エステート",
+          "lat": 35.648721,
+          "lon": 139.9166753,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 8415001143,
+          "name": "新浦安駅",
+          "lat": 35.6506245,
+          "lon": 139.9142535,
+          "local_ref": "H"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6778578838,
+          "name": "新浦安駅北口",
+          "lat": 35.6499903,
+          "lon": 139.9126359,
+          "local_ref": "J"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11581097364,
+          "name": "若潮公園",
+          "lat": 35.6473943,
+          "lon": 139.9095296,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6720667162,
+          "name": "順天堂病院前",
+          "lat": 35.6453182,
+          "lon": 139.9070393,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11581097367,
+          "name": "サンコーポ東口",
+          "lat": 35.6439144,
+          "lon": 139.905342,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6720667164,
+          "name": "サンコーポ西口",
+          "lat": 35.6420634,
+          "lon": 139.9031259,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1652792931,
+          "name": "弁天第二",
+          "lat": 35.6398165,
+          "lon": 139.9004629,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1652792821,
+          "name": "見明川中学校前",
+          "lat": 35.6384265,
+          "lon": 139.8987768,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11581103371,
+          "name": "見明川住宅",
+          "lat": 35.6364748,
+          "lon": 139.8964564,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 12368996366,
+          "name": "舞浜三丁目",
+          "lat": 35.6337929,
+          "lon": 139.8932505,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6720667165,
+          "name": "運動公園",
+          "lat": 35.6310025,
+          "lon": 139.8899547,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 2301991499,
+          "name": "オリエンタルランド本社前",
+          "lat": 35.6320206,
+          "lon": 139.887359,
+          "local_ref": null
+        },
+        {
+          "role": "platform_exit_only",
+          "type": "node",
+          "ref": 9482601633,
+          "name": "舞浜駅",
+          "lat": 35.6360225,
+          "lon": 139.8833113,
+          "local_ref": "5"
+        }
+      ],
+      "wayMemberIds": [
+        1338976295,
+        369356241,
+        847288114,
+        368452492,
+        1342406124,
+        26323165,
+        1241264346,
+        1341518494,
+        1340739631,
+        847288812,
+        1338996609,
+        720406628,
+        720406632,
+        26382176,
+        369356242,
+        369356244,
+        1249418062,
+        26382284,
+        26382285,
+        720402603,
+        883069538,
+        883069232,
+        846881938,
+        30176170,
+        30176171,
+        286387769,
+        796894963,
+        1240445586,
+        203564427,
+        258419781
+      ],
+      "file": "osm-relation-18419894.json"
+    },
+    {
+      "id": 18419895,
+      "label": "route23 舞浜駅⇒新浦安駅・望海の街⇒総合公園",
+      "ok": true,
+      "source": "overpass",
+      "name": "東京ベイシティバス23系統 舞浜駅⇒新浦安駅・望海の街⇒総合公園",
+      "tags": {
+        "name": "東京ベイシティバス23系統 舞浜駅⇒新浦安駅・望海の街⇒総合公園",
+        "network": "浦安東団地線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "23",
+        "route": "bus",
+        "type": "route"
+      },
+      "memberCount": 75,
+      "wayMemberCount": 50,
+      "platformMemberCount": 25,
+      "memberRoles": {
+        "platform_entry_only": 1,
+        "platform": 23,
+        "platform_exit_only": 1,
+        "": 50
+      },
+      "platformNames": [
+        "舞浜駅",
+        "オリエンタルランド本社前",
+        "運動公園",
+        "舞浜三丁目",
+        "見明川住宅",
+        "見明川中学校前",
+        "弁天第二",
+        "サンコーポ西口",
+        "サンコーポ東口",
+        "順天堂病院前",
+        "若潮公園",
+        "新浦安駅北口",
+        "新浦安駅",
+        "入船中央エステート",
+        "明海大学前",
+        "海風の街",
+        "夢海の街",
+        "望海の街",
+        "明海六丁目",
+        "明海南小学校",
+        "三井ガーデンホテル",
+        "ハイアットリージェンシー",
+        "明海五丁目",
+        "ベイサイドホテルエリア",
+        "総合公園"
+      ],
+      "platformsDetail": [
+        {
+          "role": "platform_entry_only",
+          "type": "node",
+          "ref": 2661127170,
+          "name": "舞浜駅",
+          "lat": 35.6358527,
+          "lon": 139.8837581,
+          "local_ref": "3"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 2301981524,
+          "name": "オリエンタルランド本社前",
+          "lat": 35.6312873,
+          "lon": 139.8885643,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6720667166,
+          "name": "運動公園",
+          "lat": 35.6325209,
+          "lon": 139.8914704,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1652826334,
+          "name": "舞浜三丁目",
+          "lat": 35.6339331,
+          "lon": 139.8931509,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1652792629,
+          "name": "見明川住宅",
+          "lat": 35.6366143,
+          "lon": 139.8963732,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11581103370,
+          "name": "見明川中学校前",
+          "lat": 35.6385937,
+          "lon": 139.8987376,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11581103369,
+          "name": "弁天第二",
+          "lat": 35.6400525,
+          "lon": 139.900479,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11581097368,
+          "name": "サンコーポ西口",
+          "lat": 35.6423093,
+          "lon": 139.9031895,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6720667163,
+          "name": "サンコーポ東口",
+          "lat": 35.6440928,
+          "lon": 139.9053323,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11581097365,
+          "name": "順天堂病院前",
+          "lat": 35.645692,
+          "lon": 139.907214,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6720667161,
+          "name": "若潮公園",
+          "lat": 35.6475041,
+          "lon": 139.9093912,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 12369534179,
+          "name": "新浦安駅北口",
+          "lat": 35.650054,
+          "lon": 139.9124041,
+          "local_ref": "L"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 8415001162,
+          "name": "新浦安駅",
+          "lat": 35.6500008,
+          "lon": 139.9137632,
+          "local_ref": "D"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11425579726,
+          "name": "入船中央エステート",
+          "lat": 35.6489816,
+          "lon": 139.9168586,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6813952156,
+          "name": "明海大学前",
+          "lat": 35.6460348,
+          "lon": 139.9205782,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 12409259393,
+          "name": "海風の街",
+          "lat": 35.6435042,
+          "lon": 139.9224383,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6813929332,
+          "name": "夢海の街",
+          "lat": 35.6415042,
+          "lon": 139.9200062,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 12419724094,
+          "name": "望海の街",
+          "lat": 35.6394542,
+          "lon": 139.921993,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1651533312,
+          "name": "明海六丁目",
+          "lat": 35.6388831,
+          "lon": 139.9226926,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1651533327,
+          "name": "明海南小学校",
+          "lat": 35.6378767,
+          "lon": 139.9239444,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6779094645,
+          "name": "三井ガーデンホテル",
+          "lat": 35.6366481,
+          "lon": 139.9254765,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6899769121,
+          "name": "ハイアットリージェンシー",
+          "lat": 35.6372263,
+          "lon": 139.9267982,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6899769123,
+          "name": "明海五丁目",
+          "lat": 35.6385953,
+          "lon": 139.9284438,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11513466416,
+          "name": "ベイサイドホテルエリア",
+          "lat": 35.6382279,
+          "lon": 139.9302502,
+          "local_ref": null
+        },
+        {
+          "role": "platform_exit_only",
+          "type": "node",
+          "ref": 6720667160,
+          "name": "総合公園",
+          "lat": 35.6373096,
+          "lon": 139.9309872,
+          "local_ref": null
+        }
+      ],
+      "wayMemberIds": [
+        1337341818,
+        1337358421,
+        1337138028,
+        258419782,
+        1240445586,
+        796894963,
+        286387769,
+        30176171,
+        30176170,
+        846881938,
+        883069232,
+        883069538,
+        720402603,
+        26382285,
+        26382284,
+        1249418062,
+        378366425,
+        369356243,
+        26382176,
+        906161754,
+        26320596,
+        720406630,
+        906161756,
+        720406629,
+        906161755,
+        1337353918,
+        1339035467,
+        1339150560,
+        1341526745,
+        906161758,
+        1342408590,
+        1342409930,
+        1340739633,
+        906161743,
+        369356254,
+        906161757,
+        720406630,
+        1338996611,
+        720406627,
+        1341529159,
+        1340739632,
+        1241264348,
+        847288816,
+        847288815,
+        847288819,
+        221344563,
+        238904764,
+        1342408152,
+        847288113,
+        369356240
+      ],
+      "file": "osm-relation-18419895.json"
+    }
+  ],
+  "refProbe3": [
+    {
+      "id": 18396546,
+      "type": "relation",
+      "tags": {
+        "name": "東京ベイシティバス22系統 千鳥車庫⇒千鳥東⇒新浦安駅",
+        "network": "若潮通り線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "22",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "id": 18396547,
+      "type": "relation",
+      "tags": {
+        "name": "東京ベイシティバス22系統 新浦安駅⇒千鳥東⇒千鳥車庫",
+        "network": "若潮通り線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "22",
+        "route": "bus",
+        "type": "route"
+      }
+    }
+  ]
+}

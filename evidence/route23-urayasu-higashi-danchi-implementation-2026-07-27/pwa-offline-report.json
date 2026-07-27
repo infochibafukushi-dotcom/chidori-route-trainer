@@ -1,0 +1,18 @@
+{
+  "routeId": "route-23",
+  "expectedCache": "chidori-route-map-v114",
+  "failures": [],
+  "pass": true,
+  "d1PutCount": 0,
+  "cacheInfo": {
+    "cacheNames": [
+      "chidori-route-map-v114"
+    ],
+    "packPresent": true
+  },
+  "loaderTag": "http://127.0.0.1:8881/route-assets-loader.js?v=114",
+  "offlineHashes": {
+    "23-maihama-sogo": "555e322bb00adc9efbabc31f8017fe0ea54fe968bfd9a846f367d2ed66d9e425",
+    "23-sogo-maihama": "f73e2dfe39aa27ee1c35b4818733b8f8649aba3ca77d360786be85ce132a7ea8"
+  }
+}

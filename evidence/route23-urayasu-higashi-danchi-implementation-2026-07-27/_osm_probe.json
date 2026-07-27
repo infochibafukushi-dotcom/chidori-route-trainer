@@ -1,0 +1,115 @@
+{
+  "queriedAt": "2026-07-26T22:40:44.860Z",
+  "bbox": "35.61,139.85,35.68,139.96",
+  "ref": "23",
+  "query": {
+    "route": "relation[type=route][route=bus][ref=23]",
+    "route_master": "relation[type=route_master][route_master=bus][ref=23]"
+  },
+  "counts": {
+    "route": 2,
+    "route_master": 0
+  },
+  "relations": [
+    {
+      "id": 18419894,
+      "osmType": "relation",
+      "ref": "23",
+      "name": "東京ベイシティバス23系統 総合公園⇒望海の街・新浦安駅⇒舞浜駅",
+      "network": "浦安東団地��",
+      "from": null,
+      "to": null,
+      "operator": "東京ベイシティ交通",
+      "routeTag": "bus",
+      "colour": null,
+      "direction": null
+    },
+    {
+      "id": 18419895,
+      "osmType": "relation",
+      "ref": "23",
+      "name": "東京ベイシティバス23系統 舞浜駅⇒新浦安駅・望海の街⇒総合公園",
+      "network": "浦安東団地線",
+      "from": null,
+      "to": null,
+      "operator": "東京ベイシティ交通",
+      "routeTag": "bus",
+      "colour": null,
+      "direction": null
+    }
+  ],
+  "route_masters": [],
+  "ref3Comparison": {
+    "sharedRelationIds": [],
+    "ref3OnlyIds": [
+      18417570,
+      18417571,
+      18417579
+    ],
+    "ref23OnlyIds": [
+      18419894,
+      18419895
+    ],
+    "knownRoute3IdsInRef3": [
+      18417570,
+      18417571
+    ],
+    "knownRoute3IdsInRef23": [],
+    "verdict": "ref=23 has distinct relations from ref=3"
+  },
+  "ref3RelationsInBbox": [
+    {
+      "id": 18417570,
+      "osmType": "relation",
+      "ref": "3",
+      "name": "東京ベイシティバス3系統 総合公園⇒望海の街・新浦安駅⇒浦安駅入口",
+      "network": "浦安東団地線",
+      "from": null,
+      "to": null,
+      "operator": "東京ベイシティ交通",
+      "routeTag": "bus",
+      "colour": null,
+      "direction": null
+    },
+    {
+      "id": 18417571,
+      "osmType": "relation",
+      "ref": "3",
+      "name": "東京ベイシティバス3系統 浦安駅入口⇒新浦安駅・望海の街⇒総合公園",
+      "network": "浦安東団地線",
+      "from": null,
+      "to": null,
+      "operator": "東京ベイシティ交通",
+      "routeTag": "bus",
+      "colour": null,
+      "direction": null
+    },
+    {
+      "id": 18417579,
+      "osmType": "relation",
+      "ref": "3",
+      "name": "東京ベイシティバス3系統 新浦安駅⇒望海の街⇒シンボルロードパークシティ",
+      "network": "浦安東団地線",
+      "from": null,
+      "to": null,
+      "operator": "東京ベイシティ交通",
+      "routeTag": "bus",
+      "colour": null,
+      "direction": null
+    }
+  ],
+  "codebaseKnownRoute3": {
+    "routeId": "route-3",
+    "name": "浦安東団地線",
+    "osmRelationIds": [
+      18417570,
+      18417571
+    ],
+    "notes": [
+      "data.js lists route-3 and route-23 both as 浦安東団地線 (duplicate numbering)",
+      "route-assets-loader implements route-3 only via urayasu-higashi-danchi-* modules",
+      "18417571 = outbound 浦安駅入口→総合公園 (3-sogo)",
+      "18417570 = inbound 総合公園→浦安駅入口 (3-urayasu)"
+    ]
+  }
+}

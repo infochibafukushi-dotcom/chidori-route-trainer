@@ -1,0 +1,9 @@
+{
+  "regressions": {
+    "route-3-pathHashes": true,
+    "route-20": true,
+    "route-19": true
+  },
+  "pass": true,
+  "failures": []
+}
