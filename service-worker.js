@@ -1,4 +1,4 @@
-const CACHE_NAME = 'chidori-route-map-v115';
+const CACHE_NAME = 'chidori-route-map-v116';
 const APP_INDEX_URL = new URL('./index.html', self.location).href;
 const FETCH_TIMEOUT_MS = 7000;
 const NAV_TIMEOUT_MS = 2500;
@@ -20,7 +20,7 @@ const CORE_SHELL = [
   './study-materials.js?v=99',
   './home-navigation-v25.js?v=32',
   './route-map-link.js?v=71',
-  './route-assets-loader.js?v=115',
+  './route-assets-loader.js?v=116',
   './d1-sync.js?v=64',
   './pwa-install.js?v=105',
   './assets/study-materials/stroller/stroller-01-arrival.png',

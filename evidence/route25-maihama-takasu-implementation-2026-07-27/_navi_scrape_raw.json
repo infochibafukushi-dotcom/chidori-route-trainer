@@ -1,0 +1,513 @@
+{
+  "scrapedAt": "2026-07-27T03:37:47.469Z",
+  "source": "https://transfer-cloud.navitime.biz/keiseibus-group",
+  "routeNumber": "25",
+  "siblingRouteNumbers": [
+    "10",
+    "15",
+    "18",
+    "19",
+    "3",
+    "23",
+    "9",
+    "11",
+    "22"
+  ],
+  "lineName": "舞浜・高洲線",
+  "note": "Route 25 discovery. Gate 【２５系統】. Separate from 10/15/18/19 at shared berths.",
+  "knownIds": {
+    "maihama": "00020617",
+    "sogo": "00020745",
+    "takasu_seaside": "00020855"
+  },
+  "searches": {
+    "舞浜駅": {
+      "searchUrl": null,
+      "word": "舞浜駅",
+      "hits": []
+    },
+    "総合公園": {
+      "searchUrl": null,
+      "word": "総合公園",
+      "hits": []
+    },
+    "高洲海浜公園": {
+      "searchUrl": null,
+      "word": "高洲海浜公園",
+      "hits": []
+    },
+    "高洲西児童公園": {
+      "searchUrl": null,
+      "word": "高洲西児童公園",
+      "hits": []
+    },
+    "潮音の街": {
+      "searchUrl": null,
+      "word": "潮音の街",
+      "hits": []
+    },
+    "今川消防署": {
+      "searchUrl": null,
+      "word": "今川消防署",
+      "hits": []
+    },
+    "順天堂大学浦安キャンパス": {
+      "searchUrl": null,
+      "word": "順天堂大学浦安キャンパス",
+      "hits": []
+    },
+    "海園の街": {
+      "searchUrl": null,
+      "word": "海園の街",
+      "hits": []
+    }
+  },
+  "terminals": {
+    "maihama": {
+      "label": "舞浜駅",
+      "busstopId": "00020617",
+      "coursesUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses?busstop=00020617",
+      "title": "舞浜駅の系統・時刻表・のりば一覧 | 京成バスナビ | 京成電鉄バスグループ",
+      "heading": "舞浜駅 まいはまえき 系統・時刻表・のりば一覧",
+      "all": [
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020617&course-sequence=0008200294-1",
+          "text": "20 [20]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行 [循環]千鳥車庫・クリーンセンター（浦安斎場方面）千鳥循環・千鳥西行 時刻表",
+          "berth": "01 地図",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020617&course-sequence=0008200294-1",
+          "berthLetter": "01",
+          "siblingsInCell": [],
+          "has25": false
+        },
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020617&course-sequence=0008200524-1",
+          "text": "市舞０１ [市舞０１]市川駅南口行 時刻表",
+          "berth": "01 地図",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020617&course-sequence=0008200524-1",
+          "berthLetter": "01",
+          "siblingsInCell": [],
+          "has25": false
+        },
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020617&course-sequence=0008200237-1",
+          "text": "6 [6]（市役所前経由）浦安駅入口行 時刻表",
+          "berth": "02 地図",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020617&course-sequence=0008200237-1",
+          "berthLetter": "02",
+          "siblingsInCell": [],
+          "has25": false
+        },
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020617&course-sequence=0008200309-3",
+          "text": "37 [37]（堀江六丁目・豊受神社経由）南行徳駅行 時刻表",
+          "berth": "37 [37]（堀江六丁目・豊受神社経由）南行徳駅行 時刻表",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020617&course-sequence=0008200309-3",
+          "berthLetter": "37",
+          "siblingsInCell": [],
+          "has25": false
+        },
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020617&course-sequence=0008200243-1",
+          "text": "9 [9]（堀江六丁目経由）浦安駅入口（堀江六丁目・堀江東経由）東海大学浦安高校入口行 [深夜]（堀江六丁目経由）浦安駅入口（堀江六丁目・堀江東経由）東海大学浦安高校入口行 時刻表",
+          "berth": "9 [9]（堀江六丁目経由）浦安駅入口（堀江六丁目・堀江東経由）東海大学浦安高校入口行 [深夜]（堀江六丁目経由）浦安駅入口（堀江六丁目・堀江東経由）東海大学浦安高校入口行 時刻表",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020617&course-sequence=0008200243-1",
+          "berthLetter": "9",
+          "siblingsInCell": [
+            "9"
+          ],
+          "has25": false
+        },
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020617&course-sequence=0008200205-1",
+          "text": "2 [2]（新浦安駅北口経由）浦安駅入口行 時刻表",
+          "berth": "03 地図",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020617&course-sequence=0008200205-1",
+          "berthLetter": "03",
+          "siblingsInCell": [],
+          "has25": false
+        },
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020617&course-sequence=0008200221-2",
+          "text": "4 [4]（市役所入口・郵便局前経由）浦安駅入口行 時刻表",
+          "berth": "4 [4]（市役所入口・郵便局前経由）浦安駅入口行 時刻表",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020617&course-sequence=0008200221-2",
+          "berthLetter": "4",
+          "siblingsInCell": [],
+          "has25": false
+        },
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020617&course-sequence=0008200273-1",
+          "text": "14 [14]（弁天中央経由）新浦安駅行 時刻表",
+          "berth": "14 [14]（弁天中央経由）新浦安駅行 時刻表",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020617&course-sequence=0008200273-1",
+          "berthLetter": "14",
+          "siblingsInCell": [],
+          "has25": false
+        },
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020617&course-sequence=0008200303-1",
+          "text": "3 [23]（新浦安駅北口経由）総合公園行 時刻表",
+          "berth": "3 [23]（新浦安駅北口経由）総合公園行 時刻表",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020617&course-sequence=0008200303-1",
+          "berthLetter": "3",
+          "siblingsInCell": [
+            "3",
+            "23"
+          ],
+          "has25": false
+        },
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020617&course-sequence=0008200271-1",
+          "text": "12 [12]（リゾートホテル、市役所入口・郵便局前経由）浦安駅入口行 時刻表",
+          "berth": "04 地図",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020617&course-sequence=0008200271-1",
+          "berthLetter": "04",
+          "siblingsInCell": [],
+          "has25": false
+        },
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020617&course-sequence=0008200306-1",
+          "text": "25 [25]（今川消防署・高洲四丁目経由）総合公園・高洲海浜公園行 時刻表",
+          "berth": "25 [25]（今川消防署・高洲四丁目経由）総合公園・高洲海浜公園行 時刻表",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020617&course-sequence=0008200306-1",
+          "berthLetter": "25",
+          "siblingsInCell": [],
+          "has25": true
+        },
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020617&course-sequence=0008200310-14",
+          "text": "37 [37]「東京ディズニーシー(R)」行 時刻表",
+          "berth": "37 [37]「東京ディズニーシー(R)」行 時刻表",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020617&course-sequence=0008200310-14",
+          "berthLetter": "37",
+          "siblingsInCell": [],
+          "has25": false
+        },
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020617&course-sequence=0008200222-18",
+          "text": "4 [4]「東京ディズニーランド(R)」行 時刻表",
+          "berth": "4 [4]「東京ディズニーランド(R)」行 時刻表",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020617&course-sequence=0008200222-18",
+          "berthLetter": "4",
+          "siblingsInCell": [],
+          "has25": false
+        }
+      ],
+      "route25": [
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020617&course-sequence=0008200306-1",
+          "text": "25 [25]（今川消防署・高洲四丁目経由）総合公園・高洲海浜公園行 時刻表",
+          "berth": "25 [25]（今川消防署・高洲四丁目経由）総合公園・高洲海浜公園行 時刻表",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020617&course-sequence=0008200306-1",
+          "berthLetter": "25",
+          "siblingsInCell": [],
+          "has25": true
+        }
+      ],
+      "siblingOnly": [
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020617&course-sequence=0008200243-1",
+          "text": "9 [9]（堀江六丁目経由）浦安駅入口（堀江六丁目・堀江東経由）東海大学浦安高校入口行 [深夜]（堀江六丁目経由）浦安駅入口（堀江六丁目・堀江東経由）東海大学浦安高校入口行 時刻表",
+          "berth": "9 [9]（堀江六丁目経由）浦安駅入口（堀江六丁目・堀江東経由）東海大学浦安高校入口行 [深夜]（堀江六丁目経由）浦安駅入口（堀江六丁目・堀江東経由）東海大学浦安高校入口行 時刻表",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020617&course-sequence=0008200243-1",
+          "berthLetter": "9",
+          "siblingsInCell": [
+            "9"
+          ],
+          "has25": false
+        },
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020617&course-sequence=0008200303-1",
+          "text": "3 [23]（新浦安駅北口経由）総合公園行 時刻表",
+          "berth": "3 [23]（新浦安駅北口経由）総合公園行 時刻表",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020617&course-sequence=0008200303-1",
+          "berthLetter": "3",
+          "siblingsInCell": [
+            "3",
+            "23"
+          ],
+          "has25": false
+        }
+      ],
+      "mixedWithSiblings": []
+    },
+    "sogo": {
+      "label": "総合公園",
+      "busstopId": "00020745",
+      "coursesUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses?busstop=00020745",
+      "title": "総合公園〈京成バス千葉ウエスト〉の系統・時刻表・のりば一覧 | 京成バスナビ | 京成電鉄バスグループ",
+      "heading": "総合公園〈京成バス千葉ウエスト〉 そうごうこうえん 系統・時刻表・のりば一覧",
+      "all": [
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020745&course-sequence=0008200210-1",
+          "text": "3 [23]（望海の街経由）新浦安駅・浦安駅入口（望海の街・新浦安駅経由）舞浜駅行 [3]（望海の街経由）新浦安駅・浦安駅入口（望海の街・新浦安駅経由）舞浜駅行 時刻表",
+          "berth": "01 地図",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020745&course-sequence=0008200210-1",
+          "berthLetter": "01",
+          "siblingsInCell": [
+            "3",
+            "23"
+          ],
+          "has25": false
+        },
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020745&course-sequence=0008200257-16",
+          "text": "11 [11]日の出南行 時刻表",
+          "berth": "02 地図",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020745&course-sequence=0008200257-16",
+          "berthLetter": "02",
+          "siblingsInCell": [
+            "11"
+          ],
+          "has25": false
+        },
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020745&course-sequence=0008200256-3",
+          "text": "11 [11]（日の出公民館経由）新浦安駅・浦安駅入口（高洲四丁目経由）舞浜駅行 25 [25]（日の出公民館経由）新浦安駅・浦安駅入口（高洲四丁目経由）舞浜駅行 時刻表",
+          "berth": "04 地図",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020745&course-sequence=0008200256-3",
+          "berthLetter": "04",
+          "siblingsInCell": [
+            "11"
+          ],
+          "has25": true
+        }
+      ],
+      "route25": [
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020745&course-sequence=0008200256-3",
+          "text": "11 [11]（日の出公民館経由）新浦安駅・浦安駅入口（高洲四丁目経由）舞浜駅行 25 [25]（日の出公民館経由）新浦安駅・浦安駅入口（高洲四丁目経由）舞浜駅行 時刻表",
+          "berth": "04 地図",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020745&course-sequence=0008200256-3",
+          "berthLetter": "04",
+          "siblingsInCell": [
+            "11"
+          ],
+          "has25": true
+        }
+      ],
+      "siblingOnly": [
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020745&course-sequence=0008200210-1",
+          "text": "3 [23]（望海の街経由）新浦安駅・浦安駅入口（望海の街・新浦安駅経由）舞浜駅行 [3]（望海の街経由）新浦安駅・浦安駅入口（望海の街・新浦安駅経由）舞浜駅行 時刻表",
+          "berth": "01 地図",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020745&course-sequence=0008200210-1",
+          "berthLetter": "01",
+          "siblingsInCell": [
+            "3",
+            "23"
+          ],
+          "has25": false
+        },
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020745&course-sequence=0008200257-16",
+          "text": "11 [11]日の出南行 時刻表",
+          "berth": "02 地図",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020745&course-sequence=0008200257-16",
+          "berthLetter": "02",
+          "siblingsInCell": [
+            "11"
+          ],
+          "has25": false
+        }
+      ],
+      "mixedWithSiblings": [
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020745&course-sequence=0008200256-3",
+          "text": "11 [11]（日の出公民館経由）新浦安駅・浦安駅入口（高洲四丁目経由）舞浜駅行 25 [25]（日の出公民館経由）新浦安駅・浦安駅入口（高洲四丁目経由）舞浜駅行 時刻表",
+          "berth": "04 地図",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020745&course-sequence=0008200256-3",
+          "berthLetter": "04",
+          "siblingsInCell": [
+            "11"
+          ],
+          "has25": true
+        }
+      ]
+    },
+    "takasu_seaside": {
+      "label": "高洲海浜公園",
+      "busstopId": "00020855",
+      "coursesUrl": "https://transfer-cloud.navitime.biz/keiseibus-group/courses?busstop=00020855",
+      "title": "高洲海浜公園の系統・時刻表・のりば一覧 | 京成バスナビ | 京成電鉄バスグループ",
+      "heading": "高洲海浜公園 たかすかいひんこうえん 系統・時刻表・のりば一覧",
+      "all": [
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020855&course-sequence=0008200264-1",
+          "text": "11 [11]（ベイパーク・明海大学前経由） 新浦安駅行 時刻表",
+          "berth": "01 地図",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020855&course-sequence=0008200264-1",
+          "berthLetter": "01",
+          "siblingsInCell": [
+            "11"
+          ],
+          "has25": false
+        },
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020855&course-sequence=0008200291-1",
+          "text": "19 [19]（高洲四丁目・東京学館前経由） 新浦安駅行 時刻表",
+          "berth": "19 [19]（高洲四丁目・東京学館前経由） 新浦安駅行 時刻表",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020855&course-sequence=0008200291-1",
+          "berthLetter": "19",
+          "siblingsInCell": [
+            "19"
+          ],
+          "has25": false
+        },
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020855&course-sequence=0008200305-1",
+          "text": "25 [25]（高洲四丁目経由）舞浜駅行 時刻表",
+          "berth": "02 地図",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020855&course-sequence=0008200305-1",
+          "berthLetter": "02",
+          "siblingsInCell": [],
+          "has25": true
+        },
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020855&course-sequence=0008200277-1",
+          "text": "15 [15]（東京学館前経由）新浦安駅（夢海の街経由）新浦安駅・浦安駅入口行 18 [18]（東京学館前経由）新浦安駅（夢海の街経由）新浦安駅・浦安駅入口行 時刻表",
+          "berth": "03 地図",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020855&course-sequence=0008200277-1",
+          "berthLetter": "03",
+          "siblingsInCell": [
+            "15",
+            "18"
+          ],
+          "has25": false
+        }
+      ],
+      "route25": [
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020855&course-sequence=0008200305-1",
+          "text": "25 [25]（高洲四丁目経由）舞浜駅行 時刻表",
+          "berth": "02 地図",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020855&course-sequence=0008200305-1",
+          "berthLetter": "02",
+          "siblingsInCell": [],
+          "has25": true
+        }
+      ],
+      "siblingOnly": [
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020855&course-sequence=0008200264-1",
+          "text": "11 [11]（ベイパーク・明海大学前経由） 新浦安駅行 時刻表",
+          "berth": "01 地図",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020855&course-sequence=0008200264-1",
+          "berthLetter": "01",
+          "siblingsInCell": [
+            "11"
+          ],
+          "has25": false
+        },
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020855&course-sequence=0008200291-1",
+          "text": "19 [19]（高洲四丁目・東京学館前経由） 新浦安駅行 時刻表",
+          "berth": "19 [19]（高洲四丁目・東京学館前経由） 新浦安駅行 時刻表",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020855&course-sequence=0008200291-1",
+          "berthLetter": "19",
+          "siblingsInCell": [
+            "19"
+          ],
+          "has25": false
+        },
+        {
+          "href": "/keiseibus-group/courses/timetables?busstop=00020855&course-sequence=0008200277-1",
+          "text": "15 [15]（東京学館前経由）新浦安駅（夢海の街経由）新浦安駅・浦安駅入口行 18 [18]（東京学館前経由）新浦安駅（夢海の街経由）新浦安駅・浦安駅入口行 時刻表",
+          "berth": "03 地図",
+          "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020855&course-sequence=0008200277-1",
+          "berthLetter": "03",
+          "siblingsInCell": [
+            "15",
+            "18"
+          ],
+          "has25": false
+        }
+      ],
+      "mixedWithSiblings": []
+    }
+  },
+  "terminalPlan": [
+    {
+      "key": "maihama",
+      "label": "舞浜駅",
+      "id": "00020617"
+    },
+    {
+      "key": "sogo",
+      "label": "総合公園",
+      "id": "00020745"
+    },
+    {
+      "key": "takasu_seaside",
+      "label": "高洲海浜公園",
+      "id": "00020855"
+    }
+  ],
+  "berthsSeen": [
+    {
+      "terminal": "舞浜駅",
+      "busstopId": "00020617",
+      "berth": "25",
+      "courseText": "25 [25]（今川消防署・高洲四丁目経由）総合公園・高洲海浜公園行 時刻表",
+      "href": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020617&course-sequence=0008200306-1",
+      "siblingsInCell": [],
+      "mixedCell": false
+    },
+    {
+      "terminal": "総合公園",
+      "busstopId": "00020745",
+      "berth": "04",
+      "courseText": "11 [11]（日の出公民館経由）新浦安駅・浦安駅入口（高洲四丁目経由）舞浜駅行 25 [25]（日の出公民館経由）新浦安駅・浦安駅入口（高洲四丁目経由）舞浜駅行 時刻表",
+      "href": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020745&course-sequence=0008200256-3",
+      "siblingsInCell": [
+        "11"
+      ],
+      "mixedCell": true
+    },
+    {
+      "terminal": "高洲海浜公園",
+      "busstopId": "00020855",
+      "berth": "02",
+      "courseText": "25 [25]（高洲四丁目経由）舞浜駅行 時刻表",
+      "href": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020855&course-sequence=0008200305-1",
+      "siblingsInCell": [],
+      "mixedCell": false
+    }
+  ],
+  "rejectedSiblingCells": [
+    {
+      "terminal": "高洲海浜公園",
+      "busstopId": "00020855",
+      "berth": "19",
+      "courseText": "19 [19]（高洲四丁目・東京学館前経由） 新浦安駅行 時刻表",
+      "href": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020855&course-sequence=0008200291-1",
+      "gatedRoute": "19"
+    },
+    {
+      "terminal": "高洲海浜公園",
+      "busstopId": "00020855",
+      "berth": "03",
+      "courseText": "15 [15]（東京学館前経由）新浦安駅（夢海の街経由）新浦安駅・浦安駅入口行 18 [18]（東京学館前経由）新浦安駅（夢海の街経由）新浦安駅・浦安駅入口行 時刻表",
+      "href": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020855&course-sequence=0008200277-1",
+      "gatedRoute": "15"
+    },
+    {
+      "terminal": "高洲海浜公園",
+      "busstopId": "00020855",
+      "berth": "03",
+      "courseText": "15 [15]（東京学館前経由）新浦安駅（夢海の街経由）新浦安駅・浦安駅入口行 18 [18]（東京学館前経由）新浦安駅（夢海の街経由）新浦安駅・浦安駅入口行 時刻表",
+      "href": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020855&course-sequence=0008200277-1",
+      "gatedRoute": "18"
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "terminals": 3,
+    "route25Courses": 3,
+    "mixedCells": 1,
+    "siblingCells": 3,
+    "elapsedSec": 26
+  },
+  "partialFlushAt": "2026-07-27T03:38:13.801Z",
+  "partialFlushReason": "courses-takasu_seaside"
+}

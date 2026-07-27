@@ -1,0 +1,108 @@
+{
+  "validatedAt": "2026-07-27T03:42:53.885Z",
+  "routeId": "route-25",
+  "versionChoice": "v116 (route-24 already committed at v115 in 1c090d8)",
+  "checks": [
+    {
+      "name": "PACKS route-25",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CACHE v116",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "loader v116",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "globals platforms",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "globals path",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "globals policy",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "4 systems path",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "4 systems platforms",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "build no blockers",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "name": "pathHash distinct",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "25-maihama-takasu-seaside stop count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "25-maihama-takasu-seaside policy",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "25-takasu-seaside-maihama stop count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "25-takasu-seaside-maihama policy",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "25-maihama-sogo stop count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "25-maihama-sogo policy",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "25-sogo-maihama stop count",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "25-sogo-maihama policy",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "seaside vs sogo split",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "route module API",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "pass": true
+}

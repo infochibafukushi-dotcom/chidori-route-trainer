@@ -1,0 +1,1098 @@
+{
+  "25-maihama-takasu-seaside": {
+    "byIndex": [
+      {
+        "lat": 35.6359331,
+        "lng": 139.8835561,
+        "platformId": 9482601636,
+        "role": "platform_entry_only",
+        "osmName": "舞浜駅",
+        "name": "舞浜駅"
+      },
+      {
+        "lat": 35.6312873,
+        "lng": 139.8885643,
+        "platformId": 2301981524,
+        "role": "platform",
+        "osmName": "オリエンタルランド本社前",
+        "name": "オリエンタルランド本社前"
+      },
+      {
+        "lat": 35.6325209,
+        "lng": 139.8914704,
+        "platformId": 6720667166,
+        "role": "platform",
+        "osmName": "運動公園",
+        "name": "運動公園"
+      },
+      {
+        "lat": 35.6339331,
+        "lng": 139.8931509,
+        "platformId": 1652826334,
+        "role": "platform",
+        "osmName": "舞浜三丁目",
+        "name": "舞浜三丁目"
+      },
+      {
+        "lat": 35.6366143,
+        "lng": 139.8963732,
+        "platformId": 1652792629,
+        "role": "platform",
+        "osmName": "見明川住宅",
+        "name": "見明川住宅"
+      },
+      {
+        "lat": 35.6385937,
+        "lng": 139.8987376,
+        "platformId": 11581103370,
+        "role": "platform",
+        "osmName": "見明川中学校前",
+        "name": "見明川中学校前"
+      },
+      {
+        "lat": 35.6400525,
+        "lng": 139.900479,
+        "platformId": 11581103369,
+        "role": "platform",
+        "osmName": "弁天第二",
+        "name": "弁天第二"
+      },
+      {
+        "lat": 35.6398127,
+        "lng": 139.9031545,
+        "platformId": 11586798107,
+        "role": "platform",
+        "osmName": "今川消防署",
+        "name": "今川消防署"
+      },
+      {
+        "lat": 35.6362214,
+        "lng": 139.909581,
+        "platformId": 11553788852,
+        "role": "platform",
+        "osmName": "順天堂大学浦安キャンパス",
+        "name": "順天堂大学浦安キャンパス"
+      },
+      {
+        "lat": 35.6360987,
+        "lng": 139.911584,
+        "platformId": 11553788849,
+        "role": "platform",
+        "osmName": "高洲西児童公園",
+        "name": "高洲西児童公園"
+      },
+      {
+        "lat": 35.6347924,
+        "lng": 139.9132249,
+        "platformId": 6899769127,
+        "role": "platform",
+        "osmName": "高洲三丁目",
+        "name": "高洲三丁目"
+      },
+      {
+        "lat": 35.6339484,
+        "lng": 139.9142763,
+        "platformId": 11602310172,
+        "role": "platform",
+        "osmName": "高洲四丁目",
+        "name": "高洲四丁目"
+      },
+      {
+        "lat": 35.6339253,
+        "lng": 139.916129,
+        "platformId": 11578740584,
+        "role": "platform",
+        "osmName": "高洲七丁目",
+        "name": "高洲七丁目"
+      },
+      {
+        "lat": 35.6347646,
+        "lng": 139.9191318,
+        "platformId": 11549952448,
+        "role": "platform",
+        "osmName": "潮音の街",
+        "name": "潮音の街"
+      },
+      {
+        "lat": 35.6338864,
+        "lng": 139.9202403,
+        "platformId": 1312685258,
+        "role": "platform_exit_only",
+        "osmName": "高洲海浜公園",
+        "name": "高洲海浜公園"
+      }
+    ],
+    "舞浜駅": {
+      "lat": 35.6359331,
+      "lng": 139.8835561,
+      "platformId": 9482601636,
+      "role": "platform_entry_only",
+      "osmName": "舞浜駅"
+    },
+    "オリエンタルランド本社前": {
+      "lat": 35.6312873,
+      "lng": 139.8885643,
+      "platformId": 2301981524,
+      "role": "platform",
+      "osmName": "オリエンタルランド本社前"
+    },
+    "運動公園": {
+      "lat": 35.6325209,
+      "lng": 139.8914704,
+      "platformId": 6720667166,
+      "role": "platform",
+      "osmName": "運動公園"
+    },
+    "舞浜三丁目": {
+      "lat": 35.6339331,
+      "lng": 139.8931509,
+      "platformId": 1652826334,
+      "role": "platform",
+      "osmName": "舞浜三丁目"
+    },
+    "見明川住宅": {
+      "lat": 35.6366143,
+      "lng": 139.8963732,
+      "platformId": 1652792629,
+      "role": "platform",
+      "osmName": "見明川住宅"
+    },
+    "見明川中学校前": {
+      "lat": 35.6385937,
+      "lng": 139.8987376,
+      "platformId": 11581103370,
+      "role": "platform",
+      "osmName": "見明川中学校前"
+    },
+    "弁天第二": {
+      "lat": 35.6400525,
+      "lng": 139.900479,
+      "platformId": 11581103369,
+      "role": "platform",
+      "osmName": "弁天第二"
+    },
+    "今川消防署": {
+      "lat": 35.6398127,
+      "lng": 139.9031545,
+      "platformId": 11586798107,
+      "role": "platform",
+      "osmName": "今川消防署"
+    },
+    "順天堂大学浦安キャンパス": {
+      "lat": 35.6362214,
+      "lng": 139.909581,
+      "platformId": 11553788852,
+      "role": "platform",
+      "osmName": "順天堂大学浦安キャンパス"
+    },
+    "高洲西児童公園": {
+      "lat": 35.6360987,
+      "lng": 139.911584,
+      "platformId": 11553788849,
+      "role": "platform",
+      "osmName": "高洲西児童公園"
+    },
+    "高洲三丁目": {
+      "lat": 35.6347924,
+      "lng": 139.9132249,
+      "platformId": 6899769127,
+      "role": "platform",
+      "osmName": "高洲三丁目"
+    },
+    "高洲四丁目": {
+      "lat": 35.6339484,
+      "lng": 139.9142763,
+      "platformId": 11602310172,
+      "role": "platform",
+      "osmName": "高洲四丁目"
+    },
+    "高洲七丁目": {
+      "lat": 35.6339253,
+      "lng": 139.916129,
+      "platformId": 11578740584,
+      "role": "platform",
+      "osmName": "高洲七丁目"
+    },
+    "潮音の街": {
+      "lat": 35.6347646,
+      "lng": 139.9191318,
+      "platformId": 11549952448,
+      "role": "platform",
+      "osmName": "潮音の街"
+    },
+    "高洲海浜公園": {
+      "lat": 35.6338864,
+      "lng": 139.9202403,
+      "platformId": 1312685258,
+      "role": "platform_exit_only",
+      "osmName": "高洲海浜公園"
+    }
+  },
+  "25-takasu-seaside-maihama": {
+    "byIndex": [
+      {
+        "lat": 35.6337264,
+        "lng": 139.9202107,
+        "platformId": 11549952451,
+        "role": "platform_entry_only",
+        "osmName": "高洲海浜公園",
+        "name": "高洲海浜公園"
+      },
+      {
+        "lat": 35.6347434,
+        "lng": 139.9189434,
+        "platformId": 11549952447,
+        "role": "platform",
+        "osmName": "潮音の街",
+        "name": "潮音の街"
+      },
+      {
+        "lat": 35.6338245,
+        "lng": 139.9161581,
+        "platformId": 2810280426,
+        "role": "platform",
+        "osmName": "高洲七丁目",
+        "name": "高洲七丁目"
+      },
+      {
+        "lat": 35.6339376,
+        "lng": 139.9141288,
+        "platformId": 2810280428,
+        "role": "platform",
+        "osmName": "高洲四丁目",
+        "name": "高洲四丁目"
+      },
+      {
+        "lat": 35.6348023,
+        "lng": 139.9130599,
+        "platformId": 11553825394,
+        "role": "platform",
+        "osmName": "高洲三丁目",
+        "name": "高洲三丁目"
+      },
+      {
+        "lat": 35.6361075,
+        "lng": 139.9114258,
+        "platformId": 6899769126,
+        "role": "platform",
+        "osmName": "高洲西児童公園",
+        "name": "高洲西児童公園"
+      },
+      {
+        "lat": 35.6359489,
+        "lng": 139.9094711,
+        "platformId": 6813929328,
+        "role": "platform",
+        "osmName": "順天堂大学浦安キャンパス",
+        "name": "順天堂大学浦安キャンパス"
+      },
+      {
+        "lat": 35.6395392,
+        "lng": 139.9032444,
+        "platformId": 1652792913,
+        "role": "platform",
+        "osmName": "今川消防署",
+        "name": "今川消防署"
+      },
+      {
+        "lat": 35.6398165,
+        "lng": 139.9004629,
+        "platformId": 1652792931,
+        "role": "platform",
+        "osmName": "弁天第二",
+        "name": "弁天第二"
+      },
+      {
+        "lat": 35.6384265,
+        "lng": 139.8987768,
+        "platformId": 1652792821,
+        "role": "platform",
+        "osmName": "見明川中学校前",
+        "name": "見明川中学校前"
+      },
+      {
+        "lat": 35.6364748,
+        "lng": 139.8964564,
+        "platformId": 11581103371,
+        "role": "platform",
+        "osmName": "見明川住宅",
+        "name": "見明川住宅"
+      },
+      {
+        "lat": 35.6337929,
+        "lng": 139.8932505,
+        "platformId": 12368996366,
+        "role": "platform",
+        "osmName": "舞浜三丁目",
+        "name": "舞浜三丁目"
+      },
+      {
+        "lat": 35.6310025,
+        "lng": 139.8899547,
+        "platformId": 6720667165,
+        "role": "platform",
+        "osmName": "運動公園",
+        "name": "運動公園"
+      },
+      {
+        "lat": 35.6320206,
+        "lng": 139.887359,
+        "platformId": 2301991499,
+        "role": "platform",
+        "osmName": "オリエンタルランド本社前",
+        "name": "オリエンタルランド本社前"
+      },
+      {
+        "lat": 35.6360225,
+        "lng": 139.8833113,
+        "platformId": 9482601633,
+        "role": "platform_exit_only",
+        "osmName": "舞浜駅",
+        "name": "舞浜駅"
+      }
+    ],
+    "高洲海浜公園": {
+      "lat": 35.6337264,
+      "lng": 139.9202107,
+      "platformId": 11549952451,
+      "role": "platform_entry_only",
+      "osmName": "高洲海浜公園"
+    },
+    "潮音の街": {
+      "lat": 35.6347434,
+      "lng": 139.9189434,
+      "platformId": 11549952447,
+      "role": "platform",
+      "osmName": "潮音の街"
+    },
+    "高洲七丁目": {
+      "lat": 35.6338245,
+      "lng": 139.9161581,
+      "platformId": 2810280426,
+      "role": "platform",
+      "osmName": "高洲七丁目"
+    },
+    "高洲四丁目": {
+      "lat": 35.6339376,
+      "lng": 139.9141288,
+      "platformId": 2810280428,
+      "role": "platform",
+      "osmName": "高洲四丁目"
+    },
+    "高洲三丁目": {
+      "lat": 35.6348023,
+      "lng": 139.9130599,
+      "platformId": 11553825394,
+      "role": "platform",
+      "osmName": "高洲三丁目"
+    },
+    "高洲西児童公園": {
+      "lat": 35.6361075,
+      "lng": 139.9114258,
+      "platformId": 6899769126,
+      "role": "platform",
+      "osmName": "高洲西児童公園"
+    },
+    "順天堂大学浦安キャンパス": {
+      "lat": 35.6359489,
+      "lng": 139.9094711,
+      "platformId": 6813929328,
+      "role": "platform",
+      "osmName": "順天堂大学浦安キャンパス"
+    },
+    "今川消防署": {
+      "lat": 35.6395392,
+      "lng": 139.9032444,
+      "platformId": 1652792913,
+      "role": "platform",
+      "osmName": "今川消防署"
+    },
+    "弁天第二": {
+      "lat": 35.6398165,
+      "lng": 139.9004629,
+      "platformId": 1652792931,
+      "role": "platform",
+      "osmName": "弁天第二"
+    },
+    "見明川中学校前": {
+      "lat": 35.6384265,
+      "lng": 139.8987768,
+      "platformId": 1652792821,
+      "role": "platform",
+      "osmName": "見明川中学校前"
+    },
+    "見明川住宅": {
+      "lat": 35.6364748,
+      "lng": 139.8964564,
+      "platformId": 11581103371,
+      "role": "platform",
+      "osmName": "見明川住宅"
+    },
+    "舞浜三丁目": {
+      "lat": 35.6337929,
+      "lng": 139.8932505,
+      "platformId": 12368996366,
+      "role": "platform",
+      "osmName": "舞浜三丁目"
+    },
+    "運動公園": {
+      "lat": 35.6310025,
+      "lng": 139.8899547,
+      "platformId": 6720667165,
+      "role": "platform",
+      "osmName": "運動公園"
+    },
+    "オリエンタルランド本社前": {
+      "lat": 35.6320206,
+      "lng": 139.887359,
+      "platformId": 2301991499,
+      "role": "platform",
+      "osmName": "オリエンタルランド本社前"
+    },
+    "舞浜駅": {
+      "lat": 35.6360225,
+      "lng": 139.8833113,
+      "platformId": 9482601633,
+      "role": "platform_exit_only",
+      "osmName": "舞浜駅"
+    }
+  },
+  "25-maihama-sogo": {
+    "byIndex": [
+      {
+        "lat": 35.6359331,
+        "lng": 139.8835561,
+        "platformId": 9482601636,
+        "role": "platform_entry_only",
+        "osmName": "舞浜駅",
+        "name": "舞浜駅"
+      },
+      {
+        "lat": 35.6312873,
+        "lng": 139.8885643,
+        "platformId": 2301981524,
+        "role": "platform",
+        "osmName": "オリエンタルランド本社前",
+        "name": "オリエンタルランド本社前"
+      },
+      {
+        "lat": 35.6325209,
+        "lng": 139.8914704,
+        "platformId": 6720667166,
+        "role": "platform",
+        "osmName": "運動公園",
+        "name": "運動公園"
+      },
+      {
+        "lat": 35.6339331,
+        "lng": 139.8931509,
+        "platformId": 1652826334,
+        "role": "platform",
+        "osmName": "舞浜三丁目",
+        "name": "舞浜三丁目"
+      },
+      {
+        "lat": 35.6366143,
+        "lng": 139.8963732,
+        "platformId": 1652792629,
+        "role": "platform",
+        "osmName": "見明川住宅",
+        "name": "見明川住宅"
+      },
+      {
+        "lat": 35.6385937,
+        "lng": 139.8987376,
+        "platformId": 11581103370,
+        "role": "platform",
+        "osmName": "見明川中学校前",
+        "name": "見明川中学校前"
+      },
+      {
+        "lat": 35.6400525,
+        "lng": 139.900479,
+        "platformId": 11581103369,
+        "role": "platform",
+        "osmName": "弁天第二",
+        "name": "弁天第二"
+      },
+      {
+        "lat": 35.6398127,
+        "lng": 139.9031545,
+        "platformId": 11586798107,
+        "role": "platform",
+        "osmName": "今川消防署",
+        "name": "今川消防署"
+      },
+      {
+        "lat": 35.6362214,
+        "lng": 139.909581,
+        "platformId": 11553788852,
+        "role": "platform",
+        "osmName": "順天堂大学浦安キャンパス",
+        "name": "順天堂大学浦安キャンパス"
+      },
+      {
+        "lat": 35.6360987,
+        "lng": 139.911584,
+        "platformId": 11553788849,
+        "role": "platform",
+        "osmName": "高洲西児童公園",
+        "name": "高洲西児童公園"
+      },
+      {
+        "lat": 35.6347924,
+        "lng": 139.9132249,
+        "platformId": 6899769127,
+        "role": "platform",
+        "osmName": "高洲三丁目",
+        "name": "高洲三丁目"
+      },
+      {
+        "lat": 35.6339484,
+        "lng": 139.9142763,
+        "platformId": 11602310172,
+        "role": "platform",
+        "osmName": "高洲四丁目",
+        "name": "高洲四丁目"
+      },
+      {
+        "lat": 35.6339253,
+        "lng": 139.916129,
+        "platformId": 11578740584,
+        "role": "platform",
+        "osmName": "高洲七丁目",
+        "name": "高洲七丁目"
+      },
+      {
+        "lat": 35.6358442,
+        "lng": 139.9184055,
+        "platformId": 11578740585,
+        "role": "platform",
+        "osmName": "潮音の街北",
+        "name": "潮音の街北"
+      },
+      {
+        "lat": 35.6387903,
+        "lng": 139.921934,
+        "platformId": 1312711925,
+        "role": "platform",
+        "osmName": "海園の街",
+        "name": "海園の街"
+      },
+      {
+        "lat": 35.6405846,
+        "lng": 139.9231493,
+        "platformId": 11578740589,
+        "role": "platform",
+        "osmName": "明海四丁目",
+        "name": "明海四丁目"
+      },
+      {
+        "lat": 35.6425816,
+        "lng": 139.9248919,
+        "platformId": 11513466336,
+        "role": "platform",
+        "osmName": "シンボルロード・パークシティ",
+        "name": "シンボルロード・パークシティ"
+      },
+      {
+        "lat": 35.6412862,
+        "lng": 139.9265112,
+        "platformId": 11513466333,
+        "role": "platform",
+        "osmName": "ベイモール",
+        "name": "ベイモール"
+      },
+      {
+        "lat": 35.6399947,
+        "lng": 139.9281165,
+        "platformId": 11578740590,
+        "role": "platform",
+        "osmName": "ベイパーク",
+        "name": "ベイパーク"
+      },
+      {
+        "lat": 35.6382279,
+        "lng": 139.9302502,
+        "platformId": 11513466416,
+        "role": "platform",
+        "osmName": "ベイサイドホテルエリア",
+        "name": "ベイサイドホテルエリア"
+      },
+      {
+        "lat": 35.6373096,
+        "lng": 139.9309872,
+        "platformId": 6720667160,
+        "role": "platform_exit_only",
+        "osmName": "総合公園",
+        "name": "総合公園"
+      }
+    ],
+    "舞浜駅": {
+      "lat": 35.6359331,
+      "lng": 139.8835561,
+      "platformId": 9482601636,
+      "role": "platform_entry_only",
+      "osmName": "舞浜駅"
+    },
+    "オリエンタルランド本社前": {
+      "lat": 35.6312873,
+      "lng": 139.8885643,
+      "platformId": 2301981524,
+      "role": "platform",
+      "osmName": "オリエンタルランド本社前"
+    },
+    "運動公園": {
+      "lat": 35.6325209,
+      "lng": 139.8914704,
+      "platformId": 6720667166,
+      "role": "platform",
+      "osmName": "運動公園"
+    },
+    "舞浜三丁目": {
+      "lat": 35.6339331,
+      "lng": 139.8931509,
+      "platformId": 1652826334,
+      "role": "platform",
+      "osmName": "舞浜三丁目"
+    },
+    "見明川住宅": {
+      "lat": 35.6366143,
+      "lng": 139.8963732,
+      "platformId": 1652792629,
+      "role": "platform",
+      "osmName": "見明川住宅"
+    },
+    "見明川中学校前": {
+      "lat": 35.6385937,
+      "lng": 139.8987376,
+      "platformId": 11581103370,
+      "role": "platform",
+      "osmName": "見明川中学校前"
+    },
+    "弁天第二": {
+      "lat": 35.6400525,
+      "lng": 139.900479,
+      "platformId": 11581103369,
+      "role": "platform",
+      "osmName": "弁天第二"
+    },
+    "今川消防署": {
+      "lat": 35.6398127,
+      "lng": 139.9031545,
+      "platformId": 11586798107,
+      "role": "platform",
+      "osmName": "今川消防署"
+    },
+    "順天堂大学浦安キャンパス": {
+      "lat": 35.6362214,
+      "lng": 139.909581,
+      "platformId": 11553788852,
+      "role": "platform",
+      "osmName": "順天堂大学浦安キャンパス"
+    },
+    "高洲西児童公園": {
+      "lat": 35.6360987,
+      "lng": 139.911584,
+      "platformId": 11553788849,
+      "role": "platform",
+      "osmName": "高洲西児童公園"
+    },
+    "高洲三丁目": {
+      "lat": 35.6347924,
+      "lng": 139.9132249,
+      "platformId": 6899769127,
+      "role": "platform",
+      "osmName": "高洲三丁目"
+    },
+    "高洲四丁目": {
+      "lat": 35.6339484,
+      "lng": 139.9142763,
+      "platformId": 11602310172,
+      "role": "platform",
+      "osmName": "高洲四丁目"
+    },
+    "高洲七丁目": {
+      "lat": 35.6339253,
+      "lng": 139.916129,
+      "platformId": 11578740584,
+      "role": "platform",
+      "osmName": "高洲七丁目"
+    },
+    "潮音の街北": {
+      "lat": 35.6358442,
+      "lng": 139.9184055,
+      "platformId": 11578740585,
+      "role": "platform",
+      "osmName": "潮音の街北"
+    },
+    "海園の街": {
+      "lat": 35.6387903,
+      "lng": 139.921934,
+      "platformId": 1312711925,
+      "role": "platform",
+      "osmName": "海園の街"
+    },
+    "明海四丁目": {
+      "lat": 35.6405846,
+      "lng": 139.9231493,
+      "platformId": 11578740589,
+      "role": "platform",
+      "osmName": "明海四丁目"
+    },
+    "シンボルロード・パークシティ": {
+      "lat": 35.6425816,
+      "lng": 139.9248919,
+      "platformId": 11513466336,
+      "role": "platform",
+      "osmName": "シンボルロード・パークシティ"
+    },
+    "ベイモール": {
+      "lat": 35.6412862,
+      "lng": 139.9265112,
+      "platformId": 11513466333,
+      "role": "platform",
+      "osmName": "ベイモール"
+    },
+    "ベイパーク": {
+      "lat": 35.6399947,
+      "lng": 139.9281165,
+      "platformId": 11578740590,
+      "role": "platform",
+      "osmName": "ベイパーク"
+    },
+    "ベイサイドホテルエリア": {
+      "lat": 35.6382279,
+      "lng": 139.9302502,
+      "platformId": 11513466416,
+      "role": "platform",
+      "osmName": "ベイサイドホテルエリア"
+    },
+    "総合公園": {
+      "lat": 35.6373096,
+      "lng": 139.9309872,
+      "platformId": 6720667160,
+      "role": "platform_exit_only",
+      "osmName": "総合公園"
+    }
+  },
+  "25-sogo-maihama": {
+    "byIndex": [
+      {
+        "lat": 35.6373096,
+        "lng": 139.9309872,
+        "platformId": 6720667160,
+        "role": "platform_entry_only",
+        "osmName": "総合公園",
+        "name": "総合公園"
+      },
+      {
+        "lat": 35.638018,
+        "lng": 139.9301879,
+        "platformId": 6720667159,
+        "role": "platform",
+        "osmName": "ベイサイドホテルエリア",
+        "name": "ベイサイドホテルエリア"
+      },
+      {
+        "lat": 35.6397865,
+        "lng": 139.9279072,
+        "platformId": 1312639490,
+        "role": "platform",
+        "osmName": "ベイパーク",
+        "name": "ベイパーク"
+      },
+      {
+        "lat": 35.6406782,
+        "lng": 139.9267945,
+        "platformId": 6720667158,
+        "role": "platform",
+        "osmName": "ベイモール",
+        "name": "ベイモール"
+      },
+      {
+        "lat": 35.641903,
+        "lng": 139.9252613,
+        "platformId": 1312639507,
+        "role": "platform",
+        "osmName": "シンボルロード・パークシティ",
+        "name": "シンボルロード・パークシティ"
+      },
+      {
+        "lat": 35.6404756,
+        "lng": 139.9232603,
+        "platformId": 1312711928,
+        "role": "platform",
+        "osmName": "明海四丁目",
+        "name": "明海四丁目"
+      },
+      {
+        "lat": 35.6385026,
+        "lng": 139.9217623,
+        "platformId": 11513433665,
+        "role": "platform",
+        "osmName": "海園の街",
+        "name": "海園の街"
+      },
+      {
+        "lat": 35.6357767,
+        "lng": 139.9184954,
+        "platformId": 6852993564,
+        "role": "platform",
+        "osmName": "潮音の街北",
+        "name": "潮音の街北"
+      },
+      {
+        "lat": 35.6338245,
+        "lng": 139.9161581,
+        "platformId": 2810280426,
+        "role": "platform",
+        "osmName": "高洲七丁目",
+        "name": "高洲七丁目"
+      },
+      {
+        "lat": 35.6339376,
+        "lng": 139.9141288,
+        "platformId": 2810280428,
+        "role": "platform",
+        "osmName": "高洲四丁目",
+        "name": "高洲四丁目"
+      },
+      {
+        "lat": 35.6348023,
+        "lng": 139.9130599,
+        "platformId": 11553825394,
+        "role": "platform",
+        "osmName": "高洲三丁目",
+        "name": "高洲三丁目"
+      },
+      {
+        "lat": 35.6361075,
+        "lng": 139.9114258,
+        "platformId": 6899769126,
+        "role": "platform",
+        "osmName": "高洲西児童公園",
+        "name": "高洲西児童公園"
+      },
+      {
+        "lat": 35.6359489,
+        "lng": 139.9094711,
+        "platformId": 6813929328,
+        "role": "platform",
+        "osmName": "順天堂大学浦安キャンパス",
+        "name": "順天堂大学浦安キャンパス"
+      },
+      {
+        "lat": 35.6395392,
+        "lng": 139.9032444,
+        "platformId": 1652792913,
+        "role": "platform",
+        "osmName": "今川消防署",
+        "name": "今川消防署"
+      },
+      {
+        "lat": 35.6398165,
+        "lng": 139.9004629,
+        "platformId": 1652792931,
+        "role": "platform",
+        "osmName": "弁天第二",
+        "name": "弁天第二"
+      },
+      {
+        "lat": 35.6384265,
+        "lng": 139.8987768,
+        "platformId": 1652792821,
+        "role": "platform",
+        "osmName": "見明川中学校前",
+        "name": "見明川中学校前"
+      },
+      {
+        "lat": 35.6364748,
+        "lng": 139.8964564,
+        "platformId": 11581103371,
+        "role": "platform",
+        "osmName": "見明川住宅",
+        "name": "見明川住宅"
+      },
+      {
+        "lat": 35.6337929,
+        "lng": 139.8932505,
+        "platformId": 12368996366,
+        "role": "platform",
+        "osmName": "舞浜三丁目",
+        "name": "舞浜三丁目"
+      },
+      {
+        "lat": 35.6310025,
+        "lng": 139.8899547,
+        "platformId": 6720667165,
+        "role": "platform",
+        "osmName": "運動公園",
+        "name": "運動公園"
+      },
+      {
+        "lat": 35.6320206,
+        "lng": 139.887359,
+        "platformId": 2301991499,
+        "role": "platform",
+        "osmName": "オリエンタルランド本社前",
+        "name": "オリエンタルランド本社前"
+      },
+      {
+        "lat": 35.6360225,
+        "lng": 139.8833113,
+        "platformId": 9482601633,
+        "role": "platform_exit_only",
+        "osmName": "舞浜駅",
+        "name": "舞浜駅"
+      }
+    ],
+    "総合公園": {
+      "lat": 35.6373096,
+      "lng": 139.9309872,
+      "platformId": 6720667160,
+      "role": "platform_entry_only",
+      "osmName": "総合公園"
+    },
+    "ベイサイドホテルエリア": {
+      "lat": 35.638018,
+      "lng": 139.9301879,
+      "platformId": 6720667159,
+      "role": "platform",
+      "osmName": "ベイサイドホテルエリア"
+    },
+    "ベイパーク": {
+      "lat": 35.6397865,
+      "lng": 139.9279072,
+      "platformId": 1312639490,
+      "role": "platform",
+      "osmName": "ベイパーク"
+    },
+    "ベイモール": {
+      "lat": 35.6406782,
+      "lng": 139.9267945,
+      "platformId": 6720667158,
+      "role": "platform",
+      "osmName": "ベイモール"
+    },
+    "シンボルロード・パークシティ": {
+      "lat": 35.641903,
+      "lng": 139.9252613,
+      "platformId": 1312639507,
+      "role": "platform",
+      "osmName": "シンボルロード・パークシティ"
+    },
+    "明海四丁目": {
+      "lat": 35.6404756,
+      "lng": 139.9232603,
+      "platformId": 1312711928,
+      "role": "platform",
+      "osmName": "明海四丁目"
+    },
+    "海園の街": {
+      "lat": 35.6385026,
+      "lng": 139.9217623,
+      "platformId": 11513433665,
+      "role": "platform",
+      "osmName": "海園の街"
+    },
+    "潮音の街北": {
+      "lat": 35.6357767,
+      "lng": 139.9184954,
+      "platformId": 6852993564,
+      "role": "platform",
+      "osmName": "潮音の街北"
+    },
+    "高洲七丁目": {
+      "lat": 35.6338245,
+      "lng": 139.9161581,
+      "platformId": 2810280426,
+      "role": "platform",
+      "osmName": "高洲七丁目"
+    },
+    "高洲四丁目": {
+      "lat": 35.6339376,
+      "lng": 139.9141288,
+      "platformId": 2810280428,
+      "role": "platform",
+      "osmName": "高洲四丁目"
+    },
+    "高洲三丁目": {
+      "lat": 35.6348023,
+      "lng": 139.9130599,
+      "platformId": 11553825394,
+      "role": "platform",
+      "osmName": "高洲三丁目"
+    },
+    "高洲西児童公園": {
+      "lat": 35.6361075,
+      "lng": 139.9114258,
+      "platformId": 6899769126,
+      "role": "platform",
+      "osmName": "高洲西児童公園"
+    },
+    "順天堂大学浦安キャンパス": {
+      "lat": 35.6359489,
+      "lng": 139.9094711,
+      "platformId": 6813929328,
+      "role": "platform",
+      "osmName": "順天堂大学浦安キャンパス"
+    },
+    "今川消防署": {
+      "lat": 35.6395392,
+      "lng": 139.9032444,
+      "platformId": 1652792913,
+      "role": "platform",
+      "osmName": "今川消防署"
+    },
+    "弁天第二": {
+      "lat": 35.6398165,
+      "lng": 139.9004629,
+      "platformId": 1652792931,
+      "role": "platform",
+      "osmName": "弁天第二"
+    },
+    "見明川中学校前": {
+      "lat": 35.6384265,
+      "lng": 139.8987768,
+      "platformId": 1652792821,
+      "role": "platform",
+      "osmName": "見明川中学校前"
+    },
+    "見明川住宅": {
+      "lat": 35.6364748,
+      "lng": 139.8964564,
+      "platformId": 11581103371,
+      "role": "platform",
+      "osmName": "見明川住宅"
+    },
+    "舞浜三丁目": {
+      "lat": 35.6337929,
+      "lng": 139.8932505,
+      "platformId": 12368996366,
+      "role": "platform",
+      "osmName": "舞浜三丁目"
+    },
+    "運動公園": {
+      "lat": 35.6310025,
+      "lng": 139.8899547,
+      "platformId": 6720667165,
+      "role": "platform",
+      "osmName": "運動公園"
+    },
+    "オリエンタルランド本社前": {
+      "lat": 35.6320206,
+      "lng": 139.887359,
+      "platformId": 2301991499,
+      "role": "platform",
+      "osmName": "オリエンタルランド本社前"
+    },
+    "舞浜駅": {
+      "lat": 35.6360225,
+      "lng": 139.8833113,
+      "platformId": 9482601633,
+      "role": "platform_exit_only",
+      "osmName": "舞浜駅"
+    }
+  }
+}

@@ -1,0 +1,1059 @@
+{
+  "fetchedAt": "2026-07-27T03:32:39.504Z",
+  "route": "maihama-takasu-route25",
+  "lineName": "舞浜・高洲線",
+  "knownPathSourceIds": [
+    18352023,
+    18352022,
+    18352045,
+    18352044
+  ],
+  "separationGuard": "ref=10/15/18/19 relations are listed but NEVER used for route-25 geometry.",
+  "relations": [
+    {
+      "id": 18352023,
+      "label": "route25 舞浜駅⇒高洲西児童公園⇒高洲海浜公園",
+      "ok": true,
+      "source": "overpass",
+      "name": "東京ベイシティバス25系統 舞浜駅⇒高洲西児童公園⇒高洲海浜公園",
+      "tags": {
+        "name": "東京ベイシティバス25系統 舞浜駅⇒高洲西児童公園⇒高洲海浜公園",
+        "network": "舞浜・高洲線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "25",
+        "route": "bus",
+        "type": "route"
+      },
+      "memberCount": 36,
+      "wayMemberCount": 21,
+      "platformMemberCount": 15,
+      "memberRoles": {
+        "platform_entry_only": 1,
+        "platform": 13,
+        "platform_exit_only": 1,
+        "": 21
+      },
+      "platformNames": [
+        "舞浜駅",
+        "オリエンタルランド本社前",
+        "運動公園",
+        "舞浜三丁目",
+        "見明川住宅",
+        "見明川中学校前",
+        "弁天第二",
+        "今川消防署",
+        "順天堂大学浦安キャンパス",
+        "高洲西児童公園",
+        "高洲三丁目",
+        "高洲四丁目",
+        "高洲七丁目",
+        "潮音の街",
+        "高洲海浜公園"
+      ],
+      "platformsDetail": [
+        {
+          "role": "platform_entry_only",
+          "type": "node",
+          "ref": 9482601636,
+          "name": "舞浜駅",
+          "lat": 35.6359331,
+          "lon": 139.8835561,
+          "local_ref": "4"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 2301981524,
+          "name": "オリエンタルランド本社前",
+          "lat": 35.6312873,
+          "lon": 139.8885643,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6720667166,
+          "name": "運動公園",
+          "lat": 35.6325209,
+          "lon": 139.8914704,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1652826334,
+          "name": "舞浜三丁目",
+          "lat": 35.6339331,
+          "lon": 139.8931509,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1652792629,
+          "name": "見明川住宅",
+          "lat": 35.6366143,
+          "lon": 139.8963732,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11581103370,
+          "name": "見明川中学校前",
+          "lat": 35.6385937,
+          "lon": 139.8987376,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11581103369,
+          "name": "弁天第二",
+          "lat": 35.6400525,
+          "lon": 139.900479,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11586798107,
+          "name": "今川消防署",
+          "lat": 35.6398127,
+          "lon": 139.9031545,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11553788852,
+          "name": "順天堂大学浦安キャンパス",
+          "lat": 35.6362214,
+          "lon": 139.909581,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11553788849,
+          "name": "高洲西児童公園",
+          "lat": 35.6360987,
+          "lon": 139.911584,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6899769127,
+          "name": "高洲三丁目",
+          "lat": 35.6347924,
+          "lon": 139.9132249,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11602310172,
+          "name": "高洲四丁目",
+          "lat": 35.6339484,
+          "lon": 139.9142763,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11578740584,
+          "name": "高洲七丁目",
+          "lat": 35.6339253,
+          "lon": 139.916129,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11549952448,
+          "name": "潮音の街",
+          "lat": 35.6347646,
+          "lon": 139.9191318,
+          "local_ref": null
+        },
+        {
+          "role": "platform_exit_only",
+          "type": "node",
+          "ref": 1312685258,
+          "name": "高洲海浜公園",
+          "lat": 35.6338864,
+          "lon": 139.9202403,
+          "local_ref": null
+        }
+      ],
+      "wayMemberIds": [
+        1337138021,
+        1337341818,
+        1337358421,
+        1337138028,
+        258419782,
+        1240445586,
+        796894963,
+        286387769,
+        30176171,
+        30176170,
+        846881938,
+        883069232,
+        847288109,
+        1338996629,
+        1338975840,
+        1338975837,
+        1338975836,
+        1340739629,
+        1338975832,
+        1338975833,
+        1342409929
+      ],
+      "file": "osm-relation-18352023.json"
+    },
+    {
+      "id": 18352022,
+      "label": "route25 高洲海浜公園⇒高洲西児童公園⇒舞浜駅",
+      "ok": true,
+      "source": "overpass",
+      "name": "東京ベイシティバス25系統 高洲海浜公園⇒高洲西児童公園⇒舞浜駅",
+      "tags": {
+        "name": "東京ベイシティバス25系統 高洲海浜公園⇒高洲西児童公園⇒舞浜駅",
+        "network": "舞浜・高洲線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "25",
+        "route": "bus",
+        "type": "route"
+      },
+      "memberCount": 34,
+      "wayMemberCount": 19,
+      "platformMemberCount": 15,
+      "memberRoles": {
+        "platform_entry_only": 1,
+        "platform": 13,
+        "platform_exit_only": 1,
+        "": 19
+      },
+      "platformNames": [
+        "高洲海浜公園",
+        "潮音の街",
+        "高洲七丁目",
+        "高洲四丁目",
+        "高洲三丁目",
+        "高洲西児童公園",
+        "順天堂大学浦安キャンパス",
+        "今川消防署",
+        "弁天第二",
+        "見明川中学校前",
+        "見明川住宅",
+        "舞浜三丁目",
+        "運動公園",
+        "オリエンタルランド本社前",
+        "舞浜駅"
+      ],
+      "platformsDetail": [
+        {
+          "role": "platform_entry_only",
+          "type": "node",
+          "ref": 11549952451,
+          "name": "高洲海浜公園",
+          "lat": 35.6337264,
+          "lon": 139.9202107,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11549952447,
+          "name": "潮音の街",
+          "lat": 35.6347434,
+          "lon": 139.9189434,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 2810280426,
+          "name": "高洲七丁目",
+          "lat": 35.6338245,
+          "lon": 139.9161581,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 2810280428,
+          "name": "高洲四丁目",
+          "lat": 35.6339376,
+          "lon": 139.9141288,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11553825394,
+          "name": "高洲三丁目",
+          "lat": 35.6348023,
+          "lon": 139.9130599,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6899769126,
+          "name": "高洲西児童公園",
+          "lat": 35.6361075,
+          "lon": 139.9114258,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6813929328,
+          "name": "順天堂大学浦安キャンパス",
+          "lat": 35.6359489,
+          "lon": 139.9094711,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1652792913,
+          "name": "今川消防署",
+          "lat": 35.6395392,
+          "lon": 139.9032444,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1652792931,
+          "name": "弁天第二",
+          "lat": 35.6398165,
+          "lon": 139.9004629,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1652792821,
+          "name": "見明川中学校前",
+          "lat": 35.6384265,
+          "lon": 139.8987768,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11581103371,
+          "name": "見明川住宅",
+          "lat": 35.6364748,
+          "lon": 139.8964564,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 12368996366,
+          "name": "舞浜三丁目",
+          "lat": 35.6337929,
+          "lon": 139.8932505,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6720667165,
+          "name": "運動公園",
+          "lat": 35.6310025,
+          "lon": 139.8899547,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 2301991499,
+          "name": "オリエンタルランド本社前",
+          "lat": 35.6320206,
+          "lon": 139.887359,
+          "local_ref": null
+        },
+        {
+          "role": "platform_exit_only",
+          "type": "node",
+          "ref": 9482601633,
+          "name": "舞浜駅",
+          "lat": 35.6360225,
+          "lon": 139.8833113,
+          "local_ref": "5"
+        }
+      ],
+      "wayMemberIds": [
+        1342409929,
+        1338975833,
+        1338975832,
+        1340739629,
+        1338975836,
+        1338975837,
+        1338975838,
+        1338975839,
+        1338996629,
+        847288109,
+        883069232,
+        846881938,
+        30176170,
+        30176171,
+        286387769,
+        796894963,
+        1240445586,
+        203564427,
+        258419781
+      ],
+      "file": "osm-relation-18352022.json"
+    },
+    {
+      "id": 18352045,
+      "label": "route25 舞浜駅⇒高洲西児童公園⇒総合公園",
+      "ok": true,
+      "source": "api.openstreetmap.org/0.6",
+      "name": "東京ベイシティバス25系統 舞浜駅⇒高洲西児童公園⇒総合公園",
+      "tags": {
+        "name": "東京ベイシティバス25系統 舞浜駅⇒高洲西児童公園⇒総合公園",
+        "network": "舞浜・高洲線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "25",
+        "route": "bus",
+        "type": "route"
+      },
+      "memberCount": 49,
+      "wayMemberCount": 28,
+      "platformMemberCount": 21,
+      "memberRoles": {
+        "platform_entry_only": 1,
+        "platform": 19,
+        "platform_exit_only": 1,
+        "": 28
+      },
+      "platformNames": [
+        "舞浜駅",
+        "オリエンタルランド本社前",
+        "運動公園",
+        "舞浜三丁目",
+        "見明川住宅",
+        "見明川中学校前",
+        "弁天第二",
+        "今川消防署",
+        "順天堂大学浦安キャンパス",
+        "高洲西児童公園",
+        "高洲三丁目",
+        "高洲四丁目",
+        "高洲七丁目",
+        "潮音の街北",
+        "海園の街",
+        "明海四丁目",
+        "シンボルロード・パークシティ",
+        "ベイモール",
+        "ベイパーク",
+        "ベイサイドホテルエリア",
+        "総合公園"
+      ],
+      "platformsDetail": [
+        {
+          "role": "platform_entry_only",
+          "type": "node",
+          "ref": 9482601636,
+          "name": "舞浜駅",
+          "lat": 35.6359331,
+          "lon": 139.8835561,
+          "local_ref": "4"
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 2301981524,
+          "name": "オリエンタルランド本社前",
+          "lat": 35.6312873,
+          "lon": 139.8885643,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6720667166,
+          "name": "運動公園",
+          "lat": 35.6325209,
+          "lon": 139.8914704,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1652826334,
+          "name": "舞浜三丁目",
+          "lat": 35.6339331,
+          "lon": 139.8931509,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1652792629,
+          "name": "見明川住宅",
+          "lat": 35.6366143,
+          "lon": 139.8963732,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11581103370,
+          "name": "見明川中学校前",
+          "lat": 35.6385937,
+          "lon": 139.8987376,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11581103369,
+          "name": "弁天第二",
+          "lat": 35.6400525,
+          "lon": 139.900479,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11586798107,
+          "name": "今川消防署",
+          "lat": 35.6398127,
+          "lon": 139.9031545,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11553788852,
+          "name": "順天堂大学浦安キャンパス",
+          "lat": 35.6362214,
+          "lon": 139.909581,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11553788849,
+          "name": "高洲西児童公園",
+          "lat": 35.6360987,
+          "lon": 139.911584,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6899769127,
+          "name": "高洲三丁目",
+          "lat": 35.6347924,
+          "lon": 139.9132249,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11602310172,
+          "name": "高洲四丁目",
+          "lat": 35.6339484,
+          "lon": 139.9142763,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11578740584,
+          "name": "高洲七丁目",
+          "lat": 35.6339253,
+          "lon": 139.916129,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11578740585,
+          "name": "潮音の街北",
+          "lat": 35.6358442,
+          "lon": 139.9184055,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1312711925,
+          "name": "海園の街",
+          "lat": 35.6387903,
+          "lon": 139.921934,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11578740589,
+          "name": "明海四丁目",
+          "lat": 35.6405846,
+          "lon": 139.9231493,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11513466336,
+          "name": "シンボルロード・パークシティ",
+          "lat": 35.6425816,
+          "lon": 139.9248919,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11513466333,
+          "name": "ベイモール",
+          "lat": 35.6412862,
+          "lon": 139.9265112,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11578740590,
+          "name": "ベイパーク",
+          "lat": 35.6399947,
+          "lon": 139.9281165,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11513466416,
+          "name": "ベイサイドホテルエリア",
+          "lat": 35.6382279,
+          "lon": 139.9302502,
+          "local_ref": null
+        },
+        {
+          "role": "platform_exit_only",
+          "type": "node",
+          "ref": 6720667160,
+          "name": "総合公園",
+          "lat": 35.6373096,
+          "lon": 139.9309872,
+          "local_ref": null
+        }
+      ],
+      "wayMemberIds": [
+        1337138021,
+        1337341818,
+        1337358421,
+        1337138028,
+        258419782,
+        1240445586,
+        796894963,
+        286387769,
+        30176171,
+        30176170,
+        846881938,
+        883069232,
+        847288109,
+        1338996629,
+        1338975840,
+        1338975837,
+        1338975836,
+        1340739629,
+        1338975832,
+        1242842895,
+        221344559,
+        908102076,
+        26320624,
+        1338976293,
+        847288814,
+        1338996592,
+        847288113,
+        369356240
+      ],
+      "file": "osm-relation-18352045.json"
+    },
+    {
+      "id": 18352044,
+      "label": "route25 総合公園⇒高洲西児童公園⇒舞浜駅",
+      "ok": true,
+      "source": "api.openstreetmap.org/0.6",
+      "name": "東京ベイシティバス25系統 総合公園⇒高洲西児童公園⇒舞浜駅",
+      "tags": {
+        "name": "東京ベイシティバス25系統 総合公園⇒高洲西児童公園⇒舞浜駅",
+        "network": "舞浜・高洲線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "25",
+        "route": "bus",
+        "type": "route"
+      },
+      "memberCount": 48,
+      "wayMemberCount": 27,
+      "platformMemberCount": 21,
+      "memberRoles": {
+        "platform_entry_only": 1,
+        "platform": 19,
+        "platform_exit_only": 1,
+        "": 27
+      },
+      "platformNames": [
+        "総合公園",
+        "ベイサイドホテルエリア",
+        "ベイパーク",
+        "ベイモール",
+        "シンボルロード・パークシティ",
+        "明海四丁目",
+        "海園の街",
+        "潮音の街北",
+        "高洲七丁目",
+        "高洲四丁目",
+        "高洲三丁目",
+        "高洲西児童公園",
+        "順天堂大学浦安キャンパス",
+        "今川消防署",
+        "弁天第二",
+        "見明川中学校前",
+        "見明川住宅",
+        "舞浜三丁目",
+        "運動公園",
+        "オリエンタルランド本社前",
+        "舞浜駅"
+      ],
+      "platformsDetail": [
+        {
+          "role": "platform_entry_only",
+          "type": "node",
+          "ref": 6720667160,
+          "name": "総合公園",
+          "lat": 35.6373096,
+          "lon": 139.9309872,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6720667159,
+          "name": "ベイサイドホテルエリア",
+          "lat": 35.638018,
+          "lon": 139.9301879,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1312639490,
+          "name": "ベイパーク",
+          "lat": 35.6397865,
+          "lon": 139.9279072,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6720667158,
+          "name": "ベイモール",
+          "lat": 35.6406782,
+          "lon": 139.9267945,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1312639507,
+          "name": "シンボルロード・パークシティ",
+          "lat": 35.641903,
+          "lon": 139.9252613,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1312711928,
+          "name": "明海四丁目",
+          "lat": 35.6404756,
+          "lon": 139.9232603,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11513433665,
+          "name": "海園の街",
+          "lat": 35.6385026,
+          "lon": 139.9217623,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6852993564,
+          "name": "潮音の街北",
+          "lat": 35.6357767,
+          "lon": 139.9184954,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 2810280426,
+          "name": "高洲七丁目",
+          "lat": 35.6338245,
+          "lon": 139.9161581,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 2810280428,
+          "name": "高洲四丁目",
+          "lat": 35.6339376,
+          "lon": 139.9141288,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11553825394,
+          "name": "高洲三丁目",
+          "lat": 35.6348023,
+          "lon": 139.9130599,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6899769126,
+          "name": "高洲西児童公園",
+          "lat": 35.6361075,
+          "lon": 139.9114258,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6813929328,
+          "name": "順天堂大学浦安キャンパス",
+          "lat": 35.6359489,
+          "lon": 139.9094711,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1652792913,
+          "name": "今川消防署",
+          "lat": 35.6395392,
+          "lon": 139.9032444,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1652792931,
+          "name": "弁天第二",
+          "lat": 35.6398165,
+          "lon": 139.9004629,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 1652792821,
+          "name": "見明川中学校前",
+          "lat": 35.6384265,
+          "lon": 139.8987768,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 11581103371,
+          "name": "見明川住宅",
+          "lat": 35.6364748,
+          "lon": 139.8964564,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 12368996366,
+          "name": "舞浜三丁目",
+          "lat": 35.6337929,
+          "lon": 139.8932505,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 6720667165,
+          "name": "運動公園",
+          "lat": 35.6310025,
+          "lon": 139.8899547,
+          "local_ref": null
+        },
+        {
+          "role": "platform",
+          "type": "node",
+          "ref": 2301991499,
+          "name": "オリエンタルランド本社前",
+          "lat": 35.6320206,
+          "lon": 139.887359,
+          "local_ref": null
+        },
+        {
+          "role": "platform_exit_only",
+          "type": "node",
+          "ref": 9482601633,
+          "name": "舞浜駅",
+          "lat": 35.6360225,
+          "lon": 139.8833113,
+          "local_ref": "5"
+        }
+      ],
+      "wayMemberIds": [
+        1338976295,
+        369356241,
+        1342408150,
+        1338996593,
+        847288115,
+        1342408151,
+        26320624,
+        908102076,
+        221344559,
+        1242842895,
+        1338975832,
+        1340739629,
+        1338975836,
+        1338975837,
+        1338975838,
+        1338975839,
+        1338996629,
+        847288109,
+        883069232,
+        846881938,
+        30176170,
+        30176171,
+        286387769,
+        796894963,
+        1240445586,
+        203564427,
+        258419781
+      ],
+      "file": "osm-relation-18352044.json"
+    }
+  ],
+  "refProbe10": [
+    {
+      "id": 18381756,
+      "type": "relation",
+      "tags": {
+        "name": "東京ベイシティバス10系統 みなと南⇒東京学館⇒新浦安駅",
+        "network": "高洲線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "10",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "id": 18381757,
+      "type": "relation",
+      "tags": {
+        "name": "東京ベイシティバス10系統 新浦安駅⇒東京学館⇒みなと南",
+        "network": "高洲線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "10",
+        "route": "bus",
+        "type": "route"
+      }
+    }
+  ],
+  "refProbe15": [
+    {
+      "id": 18419864,
+      "type": "relation",
+      "tags": {
+        "name": "東京ベイシティバス15系統 高洲海浜公園⇒東京学館⇒新浦安駅",
+        "network": "潮音の街線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "15",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "id": 18419865,
+      "type": "relation",
+      "tags": {
+        "name": "東京ベイシティバス15系統 新浦安駅⇒東京学館⇒高洲海浜公園",
+        "network": "潮音の街線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "15",
+        "route": "bus",
+        "type": "route"
+      }
+    }
+  ],
+  "refProbe18": [
+    {
+      "id": 18352907,
+      "type": "relation",
+      "tags": {
+        "name": "東京ベイシティバス18系統 高洲海浜公園⇒新浦安駅⇒浦安駅入口",
+        "network": "明海・高洲線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "18",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "id": 18352908,
+      "type": "relation",
+      "tags": {
+        "name": "東京ベイシティバス18系統 浦安駅入口⇒新浦安駅⇒高洲海浜公園",
+        "network": "明海・高洲線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "18",
+        "route": "bus",
+        "type": "route"
+      }
+    },
+    {
+      "id": 18417590,
+      "type": "relation",
+      "tags": {
+        "name": "東京ベイシティバス18系統 新浦安駅⇒潮音の街⇒高洲北小学校",
+        "network": "明海・高洲線",
+        "operator": "東京ベイシティ交通",
+        "public_transport:version": "2",
+        "ref": "18",
+        "route": "bus",
+        "type": "route"
+      }
+    }
+  ],
+  "refProbe19": [
+    {
+      "error": "certificate has expired"
+    }
+  ]
+}

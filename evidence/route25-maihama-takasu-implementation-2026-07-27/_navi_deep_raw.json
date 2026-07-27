@@ -1,0 +1,1907 @@
+{
+  "scrapedAt": "2026-07-27T03:38:39.725Z",
+  "routeNumber": "25",
+  "lineName": "舞浜・高洲線",
+  "note": "Focused scrape of route-25 course timetables. Gate 【２５系統】 vs 10/15/18/19.",
+  "courses": [
+    {
+      "terminal": "舞浜駅",
+      "terminalId": "00020617",
+      "berth": "25",
+      "courseText": "25 [25]（今川消防署・高洲四丁目経由）総合公園・高洲海浜公園行 時刻表",
+      "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020617&course-sequence=0008200306-1"
+    },
+    {
+      "terminal": "総合公園",
+      "terminalId": "00020745",
+      "berth": "04",
+      "courseText": "11 [11]（日の出公民館経由）新浦安駅・浦安駅入口（高洲四丁目経由）舞浜駅行 25 [25]（日の出公民館経由）新浦安駅・浦安駅入口（高洲四丁目経由）舞浜駅行 時刻表",
+      "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020745&course-sequence=0008200256-3"
+    },
+    {
+      "terminal": "高洲海浜公園",
+      "terminalId": "00020855",
+      "berth": "02",
+      "courseText": "25 [25]（高洲四丁目経由）舞浜駅行 時刻表",
+      "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020855&course-sequence=0008200305-1"
+    }
+  ],
+  "timetables": [
+    {
+      "terminal": "舞浜駅",
+      "terminalId": "00020617",
+      "berth": "25",
+      "courseText": "25 [25]（今川消防署・高洲四丁目経由）総合公園・高洲海浜公園行 時刻表",
+      "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020617&course-sequence=0008200306-1",
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020617&course-sequence=0008200306-1&datetime=2026-07-27T05:00",
+      "legend": [
+        "25\t[25]（今川消防署・高洲四丁目経由）総合公園・高洲海浜公園行",
+        "◇た…【２５系統】今川消防署、高洲四丁目経由　高洲海浜公園行き",
+        "◇…【２５系統】今川消防署、高洲四丁目、潮音の街北経由　総合公園行き"
+      ],
+      "tripLinkCount": 20
+    },
+    {
+      "terminal": "総合公園",
+      "terminalId": "00020745",
+      "berth": "04",
+      "courseText": "11 [11]（日の出公民館経由）新浦安駅・浦安駅入口（高洲四丁目経由）舞浜駅行 25 [25]（日の出公民館経由）新浦安駅・浦安駅入口（高洲四丁目経由）舞浜駅行 時刻表",
+      "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020745&course-sequence=0008200256-3",
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020745&course-sequence=0008200256-3&datetime=2026-07-27T05:00",
+      "legend": [
+        "11\t[11]（日の出公民館経由）新浦安駅・浦安駅入口（高洲四丁目経由）舞浜駅行",
+        "25\t[25]（日の出公民館経由）新浦安駅・浦安駅入口（高洲四丁目経由）舞浜駅行",
+        "無印…【１１系統】日の出公民館経由　新浦安駅行き",
+        "う…【１１系統】日の出公民館、新浦安駅経由　浦安駅入口行き",
+        "◇ま…【２５系統】高洲四丁目経由　舞浜駅行き"
+      ],
+      "tripLinkCount": 169
+    },
+    {
+      "terminal": "高洲海浜公園",
+      "terminalId": "00020855",
+      "berth": "02",
+      "courseText": "25 [25]（高洲四丁目経由）舞浜駅行 時刻表",
+      "absHref": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020855&course-sequence=0008200305-1",
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables?busstop=00020855&course-sequence=0008200305-1&datetime=2026-07-27T05:00",
+      "legend": [
+        "25\t[25]（高洲四丁目経由）舞浜駅行",
+        "◇ま…【２５系統】高洲四丁目、今川消防署経由　舞浜駅行き"
+      ],
+      "tripLinkCount": 7
+    }
+  ],
+  "signatures": {
+    "舞浜駅>オリエンタルランド本社前>運動公園>舞浜三丁目>見明川住宅>見明川中学校前>弁天第二>今川消防署>順天堂大学浦安キャンパス>高洲西児童公園>高洲三丁目>高洲四丁目>高洲七丁目>潮音の街北>海園の街>明海四丁目>シンボルロードパークシティ>ベイモール>ベイパーク>ベイサイドホテルエリア>総合公園": {
+      "stopNames": [
+        "舞浜駅",
+        "オリエンタルランド本社前",
+        "運動公園",
+        "舞浜三丁目",
+        "見明川住宅",
+        "見明川中学校前",
+        "弁天第二",
+        "今川消防署",
+        "順天堂大学浦安キャンパス",
+        "高洲西児童公園",
+        "高洲三丁目",
+        "高洲四丁目",
+        "高洲七丁目",
+        "潮音の街北",
+        "海園の街",
+        "明海四丁目",
+        "シンボルロードパークシティ",
+        "ベイモール",
+        "ベイパーク",
+        "ベイサイドホテルエリア",
+        "総合公園"
+      ],
+      "stopCount": 21,
+      "count": 9,
+      "courses": [
+        "0008200308"
+      ],
+      "berths": [
+        "25"
+      ],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81050004/stops?departure-busstop=00020617-1&course=0008200308&datetime=2026-08-01T08:43:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81050006/stops?departure-busstop=00020617-1&course=0008200308&datetime=2026-08-01T11:52:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81050000/stops?departure-busstop=00020617-1&course=0008200308&datetime=2026-07-27T17:22:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81050001/stops?departure-busstop=00020617-1&course=0008200308&datetime=2026-07-27T17:53:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81050005/stops?departure-busstop=00020617-1&course=0008200308&datetime=2026-08-01T17:44:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81050008/stops?departure-busstop=00020617-1&course=0008200308&datetime=2026-08-02T18:27:00%2B09:00"
+      ],
+      "cellTexts": [
+        "43◇",
+        "52◇",
+        "22◇",
+        "53◇",
+        "44◇",
+        "27◇"
+      ],
+      "terminal": "舞浜駅"
+    },
+    "舞浜駅>オリエンタルランド本社前>運動公園>舞浜三丁目>見明川住宅>見明川中学校前>弁天第二>今川消防署>順天堂大学浦安キャンパス>高洲西児童公園>高洲三丁目>高洲四丁目>高洲七丁目>潮音の街>高洲海浜公園": {
+      "stopNames": [
+        "舞浜駅",
+        "オリエンタルランド本社前",
+        "運動公園",
+        "舞浜三丁目",
+        "見明川住宅",
+        "見明川中学校前",
+        "弁天第二",
+        "今川消防署",
+        "順天堂大学浦安キャンパス",
+        "高洲西児童公園",
+        "高洲三丁目",
+        "高洲四丁目",
+        "高洲七丁目",
+        "潮音の街",
+        "高洲海浜公園"
+      ],
+      "stopCount": 15,
+      "count": 11,
+      "courses": [
+        "0008200306"
+      ],
+      "berths": [
+        "25"
+      ],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81030005/stops?departure-busstop=00020617-1&course=0008200306&datetime=2026-08-01T10:13:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81030006/stops?departure-busstop=00020617-1&course=0008200306&datetime=2026-08-02T10:48:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81030001/stops?departure-busstop=00020617-1&course=0008200306&datetime=2026-07-27T11:13:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81030000/stops?departure-busstop=00020617-1&course=0008200306&datetime=2026-07-27T11:55:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81030002/stops?departure-busstop=00020617-1&course=0008200306&datetime=2026-08-01T11:20:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81030008/stops?departure-busstop=00020617-1&course=0008200306&datetime=2026-08-02T11:46:00%2B09:00"
+      ],
+      "cellTexts": [
+        "13◇た",
+        "48◇た",
+        "13◇た",
+        "55◇た",
+        "20◇た",
+        "46◇た"
+      ],
+      "terminal": "舞浜駅"
+    },
+    "高洲海浜公園>潮音の街>高洲七丁目>高洲四丁目>高洲三丁目>高洲西児童公園>順天堂大学浦安キャンパス>今川消防署>弁天第二>見明川中学校前>見明川住宅>舞浜三丁目>運動公園>オリエンタルランド本社前>舞浜駅": {
+      "stopNames": [
+        "高洲海浜公園",
+        "潮音の街",
+        "高洲七丁目",
+        "高洲四丁目",
+        "高洲三丁目",
+        "高洲西児童公園",
+        "順天堂大学浦安キャンパス",
+        "今川消防署",
+        "弁天第二",
+        "見明川中学校前",
+        "見明川住宅",
+        "舞浜三丁目",
+        "運動公園",
+        "オリエンタルランド本社前",
+        "舞浜駅"
+      ],
+      "stopCount": 15,
+      "count": 7,
+      "courses": [
+        "0008200305"
+      ],
+      "berths": [
+        "02"
+      ],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81020006/stops?departure-busstop=00020855-1&course=0008200305&datetime=2026-08-02T08:36:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81020001/stops?departure-busstop=00020855-1&course=0008200305&datetime=2026-08-01T09:22:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81020004/stops?departure-busstop=00020855-1&course=0008200305&datetime=2026-08-02T09:10:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81020000/stops?departure-busstop=00020855-1&course=0008200305&datetime=2026-07-27T10:31:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81020002/stops?departure-busstop=00020855-1&course=0008200305&datetime=2026-08-01T11:47:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81020003/stops?departure-busstop=00020855-1&course=0008200305&datetime=2026-08-02T11:25:00%2B09:00"
+      ],
+      "cellTexts": [
+        "36◇ま",
+        "22◇ま",
+        "10◇ま",
+        "31◇ま",
+        "47◇ま",
+        "25◇ま"
+      ],
+      "terminal": "高洲海浜公園"
+    },
+    "総合公園>ベイサイドホテルエリア>ベイパーク>ベイモール>シンボルロードパークシティ>明海四丁目>海園の街>潮音の街北>高洲七丁目>高洲四丁目>高洲三丁目>高洲西児童公園>順天堂大学浦安キャンパス>今川消防署>弁天第二>見明川中学校前>見明川住宅>舞浜三丁目>運動公園>オリエンタルランド本社前>舞浜駅": {
+      "stopNames": [
+        "総合公園",
+        "ベイサイドホテルエリア",
+        "ベイパーク",
+        "ベイモール",
+        "シンボルロードパークシティ",
+        "明海四丁目",
+        "海園の街",
+        "潮音の街北",
+        "高洲七丁目",
+        "高洲四丁目",
+        "高洲三丁目",
+        "高洲西児童公園",
+        "順天堂大学浦安キャンパス",
+        "今川消防署",
+        "弁天第二",
+        "見明川中学校前",
+        "見明川住宅",
+        "舞浜三丁目",
+        "運動公園",
+        "オリエンタルランド本社前",
+        "舞浜駅"
+      ],
+      "stopCount": 21,
+      "count": 3,
+      "courses": [
+        "0008200307"
+      ],
+      "berths": [
+        "04"
+      ],
+      "sampleUrls": [
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81040000/stops?departure-busstop=00020745-1&course=0008200307&datetime=2026-07-27T07:25:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81040001/stops?departure-busstop=00020745-1&course=0008200307&datetime=2026-07-27T16:15:00%2B09:00",
+        "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81040002/stops?departure-busstop=00020745-1&course=0008200307&datetime=2026-07-27T12:04:00%2B09:00"
+      ],
+      "cellTexts": [
+        "25◇ま"
+      ],
+      "terminal": "総合公園"
+    }
+  },
+  "trips": [
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81050004/stops?departure-busstop=00020617-1&course=0008200308&datetime=2026-08-01T08:43:00%2B09:00",
+      "title": "25 [25]（今川消防署・高洲四丁目経由）総合公園・高洲海浜公園行の通過時刻表 | 京成バスナビ | 京成電鉄バスグループ",
+      "heading": "通過時刻表",
+      "stops": [
+        {
+          "time": "08:43",
+          "kind": "発",
+          "name": "舞浜駅"
+        },
+        {
+          "time": "08:44",
+          "kind": "着",
+          "name": "オリエンタルランド本社前"
+        },
+        {
+          "time": "08:46",
+          "kind": "着",
+          "name": "運動公園"
+        },
+        {
+          "time": "08:46",
+          "kind": "着",
+          "name": "舞浜三丁目"
+        },
+        {
+          "time": "08:48",
+          "kind": "着",
+          "name": "見明川住宅"
+        },
+        {
+          "time": "08:49",
+          "kind": "着",
+          "name": "見明川中学校前"
+        },
+        {
+          "time": "08:50",
+          "kind": "着",
+          "name": "弁天第二"
+        },
+        {
+          "time": "08:52",
+          "kind": "着",
+          "name": "今川消防署"
+        },
+        {
+          "time": "08:54",
+          "kind": "着",
+          "name": "順天堂大学浦安キャンパス"
+        },
+        {
+          "time": "08:55",
+          "kind": "着",
+          "name": "高洲西児童公園"
+        },
+        {
+          "time": "08:55",
+          "kind": "着",
+          "name": "高洲三丁目"
+        },
+        {
+          "time": "08:56",
+          "kind": "着",
+          "name": "高洲四丁目"
+        },
+        {
+          "time": "08:57",
+          "kind": "着",
+          "name": "高洲七丁目"
+        },
+        {
+          "time": "08:58",
+          "kind": "着",
+          "name": "潮音の街北"
+        },
+        {
+          "time": "08:59",
+          "kind": "着",
+          "name": "海園の街"
+        },
+        {
+          "time": "09:00",
+          "kind": "着",
+          "name": "明海四丁目"
+        },
+        {
+          "time": "09:01",
+          "kind": "着",
+          "name": "シンボルロードパークシティ"
+        },
+        {
+          "time": "09:02",
+          "kind": "着",
+          "name": "ベイモール"
+        },
+        {
+          "time": "09:03",
+          "kind": "着",
+          "name": "ベイパーク"
+        },
+        {
+          "time": "09:04",
+          "kind": "着",
+          "name": "ベイサイドホテルエリア"
+        },
+        {
+          "time": "09:06",
+          "kind": "着",
+          "name": "総合公園"
+        }
+      ],
+      "stopNames": [
+        "舞浜駅",
+        "オリエンタルランド本社前",
+        "運動公園",
+        "舞浜三丁目",
+        "見明川住宅",
+        "見明川中学校前",
+        "弁天第二",
+        "今川消防署",
+        "順天堂大学浦安キャンパス",
+        "高洲西児童公園",
+        "高洲三丁目",
+        "高洲四丁目",
+        "高洲七丁目",
+        "潮音の街北",
+        "海園の街",
+        "明海四丁目",
+        "シンボルロードパークシティ",
+        "ベイモール",
+        "ベイパーク",
+        "ベイサイドホテルエリア",
+        "総合公園"
+      ],
+      "course": "0008200308",
+      "departureBusstopId": "00020617-1",
+      "bodySnippet": "京成電鉄バスグループ\n>\nバス停時刻表検索\n>\n舞浜駅 系統・時刻表・のりば一覧\n>\n舞浜駅 時刻表\n>\n25 [25]（今川消防署・高洲四丁目経由）総合公園・高洲海浜公園行 通過時刻表\n京成電鉄バスグループ\n検索トップページ\nLanguage\n日本語\nEnglish\n简体中文\n繁體中文\n한국어\nไทย\n通過時刻表\n25 [25]（今川消防署・高洲四丁目経由）総合公園・高洲海浜公園行\n2026年8月1日時点\n08:43\n発\n舞浜駅\n系統・時刻表一覧\n08:44\n着\nオリエンタルランド本社前\n170円\n系統・時刻表一覧\n08:46\n着\n運動公園\n170円\n系統・時刻表一覧\n08:46\n着\n舞浜三丁目\n170円\n系統・時刻表一覧\n08:48\n着\n見明川住宅\n170円\n系統・時刻表一覧\n08:49\n着\n見明川中学校前\n170円\n系統・時刻表一覧\n08:50\n着\n弁天第二\n170円\n系統・時刻表一覧\n08:52\n着\n今川消防署\n170円\n系統・時刻表一覧\n08:54\n着\n順天堂大学浦安キャンパス\n180円\n系統・時刻表一覧\n08:55\n着\n高洲西児童公園\n180円\n系統・時刻表一覧\n08:55\n着\n高洲三丁目\n210円\n系統・時刻表一覧\n08:56\n着\n高洲四丁目\n210円\n系統・時刻表一覧\n08:57\n着\n高洲七丁目\n210円\n系統・時刻表一覧\n08:58\n着\n潮音の街北\n210円\n系統・時刻表一覧\n08:59\n着\n海園の街\n210円\n系統・時刻表一覧\n09:00\n着\n明海四丁目\n240円\n系統・時刻表一覧\n09:01\n着\nシンボルロードパークシティ\n240円\n系統・時刻表一覧\n09:02\n着\nベイモール\n250円\n系統・時刻表一覧\n09:03\n着\nベイパーク\n250円\n系統・時刻表一覧\n09:04\n着\nベイサイドホテルエリア\n280円\n系統・時刻表一覧\n09:06\n着\n総合公園\n280円\n系統・時刻表一覧\nページの先頭へ戻る\nご利用にあたって（免責について等）\nCopyright ©Keisei Bus Co., Ltd. All rights reserved.\nPowered by",
+      "terminal": "舞浜駅",
+      "berth": "25",
+      "legend": [
+        "25\t[25]（今川消防署・高洲四丁目経由）総合公園・高洲海浜公園行",
+        "◇た…【２５系統】今川消防署、高洲四丁目経由　高洲海浜公園行き",
+        "◇…【２５系統】今川消防署、高洲四丁目、潮音の街北経由　総合公園行き"
+      ],
+      "cellText": "43◇",
+      "courseText": "25 [25]（今川消防署・高洲四丁目経由）総合公園・高洲海浜公園行 時刻表"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81030005/stops?departure-busstop=00020617-1&course=0008200306&datetime=2026-08-01T10:13:00%2B09:00",
+      "title": "25 [25]（今川消防署・高洲四丁目経由）総合公園・高洲海浜公園行の通過時刻表 | 京成バスナビ | 京成電鉄バスグループ",
+      "heading": "通過時刻表",
+      "stops": [
+        {
+          "time": "10:13",
+          "kind": "発",
+          "name": "舞浜駅"
+        },
+        {
+          "time": "10:14",
+          "kind": "着",
+          "name": "オリエンタルランド本社前"
+        },
+        {
+          "time": "10:16",
+          "kind": "着",
+          "name": "運動公園"
+        },
+        {
+          "time": "10:16",
+          "kind": "着",
+          "name": "舞浜三丁目"
+        },
+        {
+          "time": "10:18",
+          "kind": "着",
+          "name": "見明川住宅"
+        },
+        {
+          "time": "10:19",
+          "kind": "着",
+          "name": "見明川中学校前"
+        },
+        {
+          "time": "10:20",
+          "kind": "着",
+          "name": "弁天第二"
+        },
+        {
+          "time": "10:22",
+          "kind": "着",
+          "name": "今川消防署"
+        },
+        {
+          "time": "10:24",
+          "kind": "着",
+          "name": "順天堂大学浦安キャンパス"
+        },
+        {
+          "time": "10:25",
+          "kind": "着",
+          "name": "高洲西児童公園"
+        },
+        {
+          "time": "10:25",
+          "kind": "着",
+          "name": "高洲三丁目"
+        },
+        {
+          "time": "10:26",
+          "kind": "着",
+          "name": "高洲四丁目"
+        },
+        {
+          "time": "10:27",
+          "kind": "着",
+          "name": "高洲七丁目"
+        },
+        {
+          "time": "10:28",
+          "kind": "着",
+          "name": "潮音の街"
+        },
+        {
+          "time": "10:30",
+          "kind": "着",
+          "name": "高洲海浜公園"
+        }
+      ],
+      "stopNames": [
+        "舞浜駅",
+        "オリエンタルランド本社前",
+        "運動公園",
+        "舞浜三丁目",
+        "見明川住宅",
+        "見明川中学校前",
+        "弁天第二",
+        "今川消防署",
+        "順天堂大学浦安キャンパス",
+        "高洲西児童公園",
+        "高洲三丁目",
+        "高洲四丁目",
+        "高洲七丁目",
+        "潮音の街",
+        "高洲海浜公園"
+      ],
+      "course": "0008200306",
+      "departureBusstopId": "00020617-1",
+      "bodySnippet": "京成電鉄バスグループ\n>\nバス停時刻表検索\n>\n舞浜駅 系統・時刻表・のりば一覧\n>\n舞浜駅 時刻表\n>\n25 [25]（今川消防署・高洲四丁目経由）総合公園・高洲海浜公園行 通過時刻表\n京成電鉄バスグループ\n検索トップページ\nLanguage\n日本語\nEnglish\n简体中文\n繁體中文\n한국어\nไทย\n通過時刻表\n25 [25]（今川消防署・高洲四丁目経由）総合公園・高洲海浜公園行\n2026年8月1日時点\n10:13\n発\n舞浜駅\n系統・時刻表一覧\n10:14\n着\nオリエンタルランド本社前\n170円\n系統・時刻表一覧\n10:16\n着\n運動公園\n170円\n系統・時刻表一覧\n10:16\n着\n舞浜三丁目\n170円\n系統・時刻表一覧\n10:18\n着\n見明川住宅\n170円\n系統・時刻表一覧\n10:19\n着\n見明川中学校前\n170円\n系統・時刻表一覧\n10:20\n着\n弁天第二\n170円\n系統・時刻表一覧\n10:22\n着\n今川消防署\n170円\n系統・時刻表一覧\n10:24\n着\n順天堂大学浦安キャンパス\n180円\n系統・時刻表一覧\n10:25\n着\n高洲西児童公園\n180円\n系統・時刻表一覧\n10:25\n着\n高洲三丁目\n210円\n系統・時刻表一覧\n10:26\n着\n高洲四丁目\n210円\n系統・時刻表一覧\n10:27\n着\n高洲七丁目\n210円\n系統・時刻表一覧\n10:28\n着\n潮音の街\n210円\n系統・時刻表一覧\n10:30\n着\n高洲海浜公園\n230円\n系統・時刻表一覧\nページの先頭へ戻る\nご利用にあたって（免責について等）\nCopyright ©Keisei Bus Co., Ltd. All rights reserved.\nPowered by",
+      "terminal": "舞浜駅",
+      "berth": "25",
+      "legend": [
+        "25\t[25]（今川消防署・高洲四丁目経由）総合公園・高洲海浜公園行",
+        "◇た…【２５系統】今川消防署、高洲四丁目経由　高洲海浜公園行き",
+        "◇…【２５系統】今川消防署、高洲四丁目、潮音の街北経由　総合公園行き"
+      ],
+      "cellText": "13◇た",
+      "courseText": "25 [25]（今川消防署・高洲四丁目経由）総合公園・高洲海浜公園行 時刻表"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81020006/stops?departure-busstop=00020855-1&course=0008200305&datetime=2026-08-02T08:36:00%2B09:00",
+      "title": "25 [25]（高洲四丁目経由）舞浜駅行の通過時刻表 | 京成バスナビ | 京成電鉄バスグループ",
+      "heading": "通過時刻表",
+      "stops": [
+        {
+          "time": "08:36",
+          "kind": "発",
+          "name": "高洲海浜公園"
+        },
+        {
+          "time": "08:37",
+          "kind": "着",
+          "name": "潮音の街"
+        },
+        {
+          "time": "08:38",
+          "kind": "着",
+          "name": "高洲七丁目"
+        },
+        {
+          "time": "08:40",
+          "kind": "着",
+          "name": "高洲四丁目"
+        },
+        {
+          "time": "08:41",
+          "kind": "着",
+          "name": "高洲三丁目"
+        },
+        {
+          "time": "08:41",
+          "kind": "着",
+          "name": "高洲西児童公園"
+        },
+        {
+          "time": "08:42",
+          "kind": "着",
+          "name": "順天堂大学浦安キャンパス"
+        },
+        {
+          "time": "08:44",
+          "kind": "着",
+          "name": "今川消防署"
+        },
+        {
+          "time": "08:46",
+          "kind": "着",
+          "name": "弁天第二"
+        },
+        {
+          "time": "08:47",
+          "kind": "着",
+          "name": "見明川中学校前"
+        },
+        {
+          "time": "08:48",
+          "kind": "着",
+          "name": "見明川住宅"
+        },
+        {
+          "time": "08:49",
+          "kind": "着",
+          "name": "舞浜三丁目"
+        },
+        {
+          "time": "08:50",
+          "kind": "着",
+          "name": "運動公園"
+        },
+        {
+          "time": "08:51",
+          "kind": "着",
+          "name": "オリエンタルランド本社前"
+        },
+        {
+          "time": "08:54",
+          "kind": "着",
+          "name": "舞浜駅"
+        }
+      ],
+      "stopNames": [
+        "高洲海浜公園",
+        "潮音の街",
+        "高洲七丁目",
+        "高洲四丁目",
+        "高洲三丁目",
+        "高洲西児童公園",
+        "順天堂大学浦安キャンパス",
+        "今川消防署",
+        "弁天第二",
+        "見明川中学校前",
+        "見明川住宅",
+        "舞浜三丁目",
+        "運動公園",
+        "オリエンタルランド本社前",
+        "舞浜駅"
+      ],
+      "course": "0008200305",
+      "departureBusstopId": "00020855-1",
+      "bodySnippet": "京成電鉄バスグループ\n>\nバス停時刻表検索\n>\n高洲海浜公園 系統・時刻表・のりば一覧\n>\n高洲海浜公園 時刻表\n>\n25 [25]（高洲四丁目経由）舞浜駅行 通過時刻表\n京成電鉄バスグループ\n検索トップページ\nLanguage\n日本語\nEnglish\n简体中文\n繁體中文\n한국어\nไทย\n通過時刻表\n25 [25]（高洲四丁目経由）舞浜駅行\n2026年8月2日時点\n08:36\n発\n高洲海浜公園\n系統・時刻表一覧\n08:37\n着\n潮音の街\n170円\n系統・時刻表一覧\n08:38\n着\n高洲七丁目\n170円\n系統・時刻表一覧\n08:40\n着\n高洲四丁目\n170円\n系統・時刻表一覧\n08:41\n着\n高洲三丁目\n170円\n系統・時刻表一覧\n08:41\n着\n高洲西児童公園\n170円\n系統・時刻表一覧\n08:42\n着\n順天堂大学浦安キャンパス\n170円\n系統・時刻表一覧\n08:44\n着\n今川消防署\n170円\n系統・時刻表一覧\n08:46\n着\n弁天第二\n170円\n系統・時刻表一覧\n08:47\n着\n見明川中学校前\n170円\n系統・時刻表一覧\n08:48\n着\n見明川住宅\n170円\n系統・時刻表一覧\n08:49\n着\n舞浜三丁目\n180円\n系統・時刻表一覧\n08:50\n着\n運動公園\n230円\n系統・時刻表一覧\n08:51\n着\nオリエンタルランド本社前\n230円\n系統・時刻表一覧\n08:54\n着\n舞浜駅\n230円\n系統・時刻表一覧\nページの先頭へ戻る\nご利用にあたって（免責について等）\nCopyright ©Keisei Bus Co., Ltd. All rights reserved.\nPowered by",
+      "terminal": "高洲海浜公園",
+      "berth": "02",
+      "legend": [
+        "25\t[25]（高洲四丁目経由）舞浜駅行",
+        "◇ま…【２５系統】高洲四丁目、今川消防署経由　舞浜駅行き"
+      ],
+      "cellText": "36◇ま",
+      "courseText": "25 [25]（高洲四丁目経由）舞浜駅行 時刻表"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81040000/stops?departure-busstop=00020745-1&course=0008200307&datetime=2026-07-27T07:25:00%2B09:00",
+      "title": "25 [25]（日の出公民館経由）新浦安駅・浦安駅入口（高洲四丁目経由）舞浜駅行の通過時刻表 | 京成バスナビ | 京成電鉄バスグループ",
+      "stopNames": [
+        "総合公園",
+        "ベイサイドホテルエリア",
+        "ベイパーク",
+        "ベイモール",
+        "シンボルロードパークシティ",
+        "明海四丁目",
+        "海園の街",
+        "潮音の街北",
+        "高洲七丁目",
+        "高洲四丁目",
+        "高洲三丁目",
+        "高洲西児童公園",
+        "順天堂大学浦安キャンパス",
+        "今川消防署",
+        "弁天第二",
+        "見明川中学校前",
+        "見明川住宅",
+        "舞浜三丁目",
+        "運動公園",
+        "オリエンタルランド本社前",
+        "舞浜駅"
+      ],
+      "stops": [
+        {
+          "time": "07:25",
+          "kind": "発",
+          "name": "総合公園"
+        },
+        {
+          "time": "07:25",
+          "kind": "着",
+          "name": "ベイサイドホテルエリア"
+        },
+        {
+          "time": "07:27",
+          "kind": "着",
+          "name": "ベイパーク"
+        },
+        {
+          "time": "07:28",
+          "kind": "着",
+          "name": "ベイモール"
+        },
+        {
+          "time": "07:29",
+          "kind": "着",
+          "name": "シンボルロードパークシティ"
+        },
+        {
+          "time": "07:31",
+          "kind": "着",
+          "name": "明海四丁目"
+        },
+        {
+          "time": "07:32",
+          "kind": "着",
+          "name": "海園の街"
+        },
+        {
+          "time": "07:33",
+          "kind": "着",
+          "name": "潮音の街北"
+        },
+        {
+          "time": "07:34",
+          "kind": "着",
+          "name": "高洲七丁目"
+        },
+        {
+          "time": "07:36",
+          "kind": "着",
+          "name": "高洲四丁目"
+        },
+        {
+          "time": "07:37",
+          "kind": "着",
+          "name": "高洲三丁目"
+        },
+        {
+          "time": "07:37",
+          "kind": "着",
+          "name": "高洲西児童公園"
+        },
+        {
+          "time": "07:38",
+          "kind": "着",
+          "name": "順天堂大学浦安キャンパス"
+        },
+        {
+          "time": "07:40",
+          "kind": "着",
+          "name": "今川消防署"
+        },
+        {
+          "time": "07:42",
+          "kind": "着",
+          "name": "弁天第二"
+        },
+        {
+          "time": "07:43",
+          "kind": "着",
+          "name": "見明川中学校前"
+        },
+        {
+          "time": "07:44",
+          "kind": "着",
+          "name": "見明川住宅"
+        },
+        {
+          "time": "07:45",
+          "kind": "着",
+          "name": "舞浜三丁目"
+        },
+        {
+          "time": "07:46",
+          "kind": "着",
+          "name": "運動公園"
+        },
+        {
+          "time": "07:47",
+          "kind": "着",
+          "name": "オリエンタルランド本社前"
+        },
+        {
+          "time": "07:53",
+          "kind": "着",
+          "name": "舞浜駅"
+        }
+      ],
+      "course": "0008200307",
+      "departureBusstopId": "00020745-1",
+      "terminal": "総合公園",
+      "berth": "04",
+      "cellText": "25◇ま",
+      "courseText": "25 [25] 総合公園発 舞浜駅行",
+      "legend": [
+        "◇ま…【２５系統】高洲四丁目経由　舞浜駅行き"
+      ]
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81040001/stops?departure-busstop=00020745-1&course=0008200307&datetime=2026-07-27T16:15:00%2B09:00",
+      "title": "25 [25]（日の出公民館経由）新浦安駅・浦安駅入口（高洲四丁目経由）舞浜駅行の通過時刻表 | 京成バスナビ | 京成電鉄バスグループ",
+      "stopNames": [
+        "総合公園",
+        "ベイサイドホテルエリア",
+        "ベイパーク",
+        "ベイモール",
+        "シンボルロードパークシティ",
+        "明海四丁目",
+        "海園の街",
+        "潮音の街北",
+        "高洲七丁目",
+        "高洲四丁目",
+        "高洲三丁目",
+        "高洲西児童公園",
+        "順天堂大学浦安キャンパス",
+        "今川消防署",
+        "弁天第二",
+        "見明川中学校前",
+        "見明川住宅",
+        "舞浜三丁目",
+        "運動公園",
+        "オリエンタルランド本社前",
+        "舞浜駅"
+      ],
+      "stops": [
+        {
+          "time": "16:15",
+          "kind": "発",
+          "name": "総合公園"
+        },
+        {
+          "time": "16:15",
+          "kind": "着",
+          "name": "ベイサイドホテルエリア"
+        },
+        {
+          "time": "16:17",
+          "kind": "着",
+          "name": "ベイパーク"
+        },
+        {
+          "time": "16:18",
+          "kind": "着",
+          "name": "ベイモール"
+        },
+        {
+          "time": "16:19",
+          "kind": "着",
+          "name": "シンボルロードパークシティ"
+        },
+        {
+          "time": "16:21",
+          "kind": "着",
+          "name": "明海四丁目"
+        },
+        {
+          "time": "16:22",
+          "kind": "着",
+          "name": "海園の街"
+        },
+        {
+          "time": "16:23",
+          "kind": "着",
+          "name": "潮音の街北"
+        },
+        {
+          "time": "16:24",
+          "kind": "着",
+          "name": "高洲七丁目"
+        },
+        {
+          "time": "16:26",
+          "kind": "着",
+          "name": "高洲四丁目"
+        },
+        {
+          "time": "16:27",
+          "kind": "着",
+          "name": "高洲三丁目"
+        },
+        {
+          "time": "16:27",
+          "kind": "着",
+          "name": "高洲西児童公園"
+        },
+        {
+          "time": "16:28",
+          "kind": "着",
+          "name": "順天堂大学浦安キャンパス"
+        },
+        {
+          "time": "16:30",
+          "kind": "着",
+          "name": "今川消防署"
+        },
+        {
+          "time": "16:32",
+          "kind": "着",
+          "name": "弁天第二"
+        },
+        {
+          "time": "16:33",
+          "kind": "着",
+          "name": "見明川中学校前"
+        },
+        {
+          "time": "16:34",
+          "kind": "着",
+          "name": "見明川住宅"
+        },
+        {
+          "time": "16:35",
+          "kind": "着",
+          "name": "舞浜三丁目"
+        },
+        {
+          "time": "16:36",
+          "kind": "着",
+          "name": "運動公園"
+        },
+        {
+          "time": "16:37",
+          "kind": "着",
+          "name": "オリエンタルランド本社前"
+        },
+        {
+          "time": "16:44",
+          "kind": "着",
+          "name": "舞浜駅"
+        }
+      ],
+      "course": "0008200307",
+      "departureBusstopId": "00020745-1",
+      "terminal": "総合公園",
+      "berth": "04",
+      "cellText": "25◇ま",
+      "courseText": "25 [25] 総合公園発 舞浜駅行",
+      "legend": [
+        "◇ま…【２５系統】高洲四丁目経由　舞浜駅行き"
+      ]
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81040002/stops?departure-busstop=00020745-1&course=0008200307&datetime=2026-07-27T12:04:00%2B09:00",
+      "title": "25 [25]（日の出公民館経由）新浦安駅・浦安駅入口（高洲四丁目経由）舞浜駅行の通過時刻表 | 京成バスナビ | 京成電鉄バスグループ",
+      "stopNames": [
+        "総合公園",
+        "ベイサイドホテルエリア",
+        "ベイパーク",
+        "ベイモール",
+        "シンボルロードパークシティ",
+        "明海四丁目",
+        "海園の街",
+        "潮音の街北",
+        "高洲七丁目",
+        "高洲四丁目",
+        "高洲三丁目",
+        "高洲西児童公園",
+        "順天堂大学浦安キャンパス",
+        "今川消防署",
+        "弁天第二",
+        "見明川中学校前",
+        "見明川住宅",
+        "舞浜三丁目",
+        "運動公園",
+        "オリエンタルランド本社前",
+        "舞浜駅"
+      ],
+      "stops": [
+        {
+          "time": "12:04",
+          "kind": "発",
+          "name": "総合公園"
+        },
+        {
+          "time": "12:04",
+          "kind": "着",
+          "name": "ベイサイドホテルエリア"
+        },
+        {
+          "time": "12:06",
+          "kind": "着",
+          "name": "ベイパーク"
+        },
+        {
+          "time": "12:07",
+          "kind": "着",
+          "name": "ベイモール"
+        },
+        {
+          "time": "12:08",
+          "kind": "着",
+          "name": "シンボルロードパークシティ"
+        },
+        {
+          "time": "12:10",
+          "kind": "着",
+          "name": "明海四丁目"
+        },
+        {
+          "time": "12:11",
+          "kind": "着",
+          "name": "海園の街"
+        },
+        {
+          "time": "12:12",
+          "kind": "着",
+          "name": "潮音の街北"
+        },
+        {
+          "time": "12:13",
+          "kind": "着",
+          "name": "高洲七丁目"
+        },
+        {
+          "time": "12:15",
+          "kind": "着",
+          "name": "高洲四丁目"
+        },
+        {
+          "time": "12:16",
+          "kind": "着",
+          "name": "高洲三丁目"
+        },
+        {
+          "time": "12:16",
+          "kind": "着",
+          "name": "高洲西児童公園"
+        },
+        {
+          "time": "12:17",
+          "kind": "着",
+          "name": "順天堂大学浦安キャンパス"
+        },
+        {
+          "time": "12:19",
+          "kind": "着",
+          "name": "今川消防署"
+        },
+        {
+          "time": "12:21",
+          "kind": "着",
+          "name": "弁天第二"
+        },
+        {
+          "time": "12:22",
+          "kind": "着",
+          "name": "見明川中学校前"
+        },
+        {
+          "time": "12:23",
+          "kind": "着",
+          "name": "見明川住宅"
+        },
+        {
+          "time": "12:24",
+          "kind": "着",
+          "name": "舞浜三丁目"
+        },
+        {
+          "time": "12:25",
+          "kind": "着",
+          "name": "運動公園"
+        },
+        {
+          "time": "12:26",
+          "kind": "着",
+          "name": "オリエンタルランド本社前"
+        },
+        {
+          "time": "12:32",
+          "kind": "着",
+          "name": "舞浜駅"
+        }
+      ],
+      "course": "0008200307",
+      "departureBusstopId": "00020745-1",
+      "terminal": "総合公園",
+      "berth": "04",
+      "cellText": "25◇ま",
+      "courseText": "25 [25] 総合公園発 舞浜駅行",
+      "legend": [
+        "◇ま…【２５系統】高洲四丁目経由　舞浜駅行き"
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30000/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-07-27T06:18:00%2B09:00",
+      "cellText": "18",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d10000/stops?departure-busstop=00020745-1&course=0008200260&datetime=2026-07-27T06:42:00%2B09:00",
+      "cellText": "42う",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d3000b/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-07-27T06:58:00%2B09:00",
+      "cellText": "58",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d3003e/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-01T06:18:00%2B09:00",
+      "cellText": "18",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d3003f/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-01T06:50:00%2B09:00",
+      "cellText": "50",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d3004e/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-02T06:28:00%2B09:00",
+      "cellText": "28",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81040000/stops?departure-busstop=00020745-1&course=0008200307&datetime=2026-07-27T07:25:00%2B09:00",
+      "cellText": "25◇ま",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d10001/stops?departure-busstop=00020745-1&course=0008200260&datetime=2026-07-27T07:36:00%2B09:00",
+      "cellText": "36う",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d3002a/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-07-27T07:43:00%2B09:00",
+      "cellText": "43",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30012/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-07-27T07:50:00%2B09:00",
+      "cellText": "50",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d3002e/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-01T07:07:00%2B09:00",
+      "cellText": "07",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30040/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-01T07:21:00%2B09:00",
+      "cellText": "21",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d3002f/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-01T07:38:00%2B09:00",
+      "cellText": "38",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30041/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-01T07:55:00%2B09:00",
+      "cellText": "55",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d3004f/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-02T07:00:00%2B09:00",
+      "cellText": "00",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d10010/stops?departure-busstop=00020745-1&course=0008200260&datetime=2026-08-02T07:17:00%2B09:00",
+      "cellText": "17う",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30050/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-02T07:33:00%2B09:00",
+      "cellText": "33",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d3005b/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-02T07:50:00%2B09:00",
+      "cellText": "50",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30025/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-07-27T08:06:00%2B09:00",
+      "cellText": "06",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d10006/stops?departure-busstop=00020745-1&course=0008200260&datetime=2026-07-27T08:11:00%2B09:00",
+      "cellText": "11う",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d3002b/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-07-27T08:20:00%2B09:00",
+      "cellText": "20",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30013/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-07-27T08:28:00%2B09:00",
+      "cellText": "28",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30008/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-07-27T08:35:00%2B09:00",
+      "cellText": "35",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30011/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-07-27T08:56:00%2B09:00",
+      "cellText": "56",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d10009/stops?departure-busstop=00020745-1&course=0008200260&datetime=2026-08-01T08:04:00%2B09:00",
+      "cellText": "04う",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30030/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-01T08:12:00%2B09:00",
+      "cellText": "12",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30031/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-01T08:43:00%2B09:00",
+      "cellText": "43",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30051/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-02T08:08:00%2B09:00",
+      "cellText": "08",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d10011/stops?departure-busstop=00020745-1&course=0008200260&datetime=2026-08-02T08:21:00%2B09:00",
+      "cellText": "21う",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d3005c/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-02T08:26:00%2B09:00",
+      "cellText": "26",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d10005/stops?departure-busstop=00020745-1&course=0008200260&datetime=2026-07-27T09:00:00%2B09:00",
+      "cellText": "00う",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30014/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-07-27T09:06:00%2B09:00",
+      "cellText": "06",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30026/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-07-27T09:18:00%2B09:00",
+      "cellText": "18",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30015/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-07-27T09:40:00%2B09:00",
+      "cellText": "40",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30027/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-07-27T09:51:00%2B09:00",
+      "cellText": "51",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d1000a/stops?departure-busstop=00020745-1&course=0008200260&datetime=2026-08-01T09:01:00%2B09:00",
+      "cellText": "01う",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d3003c/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-01T09:19:00%2B09:00",
+      "cellText": "19",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30038/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-01T09:37:00%2B09:00",
+      "cellText": "37",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d3003d/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-01T09:53:00%2B09:00",
+      "cellText": "53",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d3005d/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-02T09:03:00%2B09:00",
+      "cellText": "03",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d3005f/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-02T09:24:00%2B09:00",
+      "cellText": "24",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d3005e/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-02T09:44:00%2B09:00",
+      "cellText": "44",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d3002d/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-07-27T10:04:00%2B09:00",
+      "cellText": "04",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d3002c/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-07-27T10:17:00%2B09:00",
+      "cellText": "17",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30028/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-07-27T10:27:00%2B09:00",
+      "cellText": "27",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d1000b/stops?departure-busstop=00020745-1&course=0008200260&datetime=2026-08-01T10:04:00%2B09:00",
+      "cellText": "04う",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cf0013/stops?departure-busstop=00020745-3&course=0008200258&datetime=2026-08-01T10:31:00%2B09:00",
+      "cellText": "31",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cf0016/stops?departure-busstop=00020745-3&course=0008200258&datetime=2026-08-01T10:51:00%2B09:00",
+      "cellText": "51",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d1000e/stops?departure-busstop=00020745-1&course=0008200260&datetime=2026-08-02T10:13:00%2B09:00",
+      "cellText": "13う",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30060/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-02T10:23:00%2B09:00",
+      "cellText": "23",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cf001e/stops?departure-busstop=00020745-3&course=0008200258&datetime=2026-08-02T10:45:00%2B09:00",
+      "cellText": "45",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cf000d/stops?departure-busstop=00020745-3&course=0008200258&datetime=2026-07-27T11:14:00%2B09:00",
+      "cellText": "14",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cf000a/stops?departure-busstop=00020745-3&course=0008200258&datetime=2026-07-27T11:27:00%2B09:00",
+      "cellText": "27",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cf0009/stops?departure-busstop=00020745-3&course=0008200258&datetime=2026-07-27T11:42:00%2B09:00",
+      "cellText": "42",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cd0001/stops?departure-busstop=00020745-3&course=0008200256&datetime=2026-07-27T11:55:00%2B09:00",
+      "cellText": "55う",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cd0002/stops?departure-busstop=00020745-3&course=0008200256&datetime=2026-08-01T11:03:00%2B09:00",
+      "cellText": "03う",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cf0014/stops?departure-busstop=00020745-3&course=0008200258&datetime=2026-08-01T11:12:00%2B09:00",
+      "cellText": "12",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cf0017/stops?departure-busstop=00020745-3&course=0008200258&datetime=2026-08-01T11:31:00%2B09:00",
+      "cellText": "31",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cf0019/stops?departure-busstop=00020745-3&course=0008200258&datetime=2026-08-02T11:21:00%2B09:00",
+      "cellText": "21",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cf001c/stops?departure-busstop=00020745-3&course=0008200258&datetime=2026-08-02T11:41:00%2B09:00",
+      "cellText": "41",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81040002/stops?departure-busstop=00020745-1&course=0008200307&datetime=2026-07-27T12:04:00%2B09:00",
+      "cellText": "04◇ま",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cf000b/stops?departure-busstop=00020745-3&course=0008200258&datetime=2026-07-27T12:07:00%2B09:00",
+      "cellText": "07",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cf0007/stops?departure-busstop=00020745-3&course=0008200258&datetime=2026-07-27T12:21:00%2B09:00",
+      "cellText": "21",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cf0000/stops?departure-busstop=00020745-3&course=0008200258&datetime=2026-07-27T12:34:00%2B09:00",
+      "cellText": "34",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cf000c/stops?departure-busstop=00020745-3&course=0008200258&datetime=2026-07-27T12:45:00%2B09:00",
+      "cellText": "45",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cf000e/stops?departure-busstop=00020745-3&course=0008200258&datetime=2026-08-01T12:09:00%2B09:00",
+      "cellText": "09",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cf0010/stops?departure-busstop=00020745-3&course=0008200258&datetime=2026-08-01T12:31:00%2B09:00",
+      "cellText": "31",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cf000f/stops?departure-busstop=00020745-3&course=0008200258&datetime=2026-08-01T12:51:00%2B09:00",
+      "cellText": "51",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cf001a/stops?departure-busstop=00020745-3&course=0008200258&datetime=2026-08-02T12:01:00%2B09:00",
+      "cellText": "01",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cd0003/stops?departure-busstop=00020745-3&course=0008200256&datetime=2026-08-02T12:21:00%2B09:00",
+      "cellText": "21う",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cf001b/stops?departure-busstop=00020745-3&course=0008200258&datetime=2026-08-02T12:38:00%2B09:00",
+      "cellText": "38",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cf001d/stops?departure-busstop=00020745-3&course=0008200258&datetime=2026-08-02T12:56:00%2B09:00",
+      "cellText": "56",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cf0008/stops?departure-busstop=00020745-3&course=0008200258&datetime=2026-07-27T13:01:00%2B09:00",
+      "cellText": "01",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cf0001/stops?departure-busstop=00020745-3&course=0008200258&datetime=2026-07-27T13:14:00%2B09:00",
+      "cellText": "14",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30029/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-07-27T13:54:00%2B09:00",
+      "cellText": "54",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d1000d/stops?departure-busstop=00020745-1&course=0008200260&datetime=2026-08-01T13:01:00%2B09:00",
+      "cellText": "01う",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cf0011/stops?departure-busstop=00020745-3&course=0008200258&datetime=2026-08-01T13:12:00%2B09:00",
+      "cellText": "12",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cf0015/stops?departure-busstop=00020745-3&course=0008200258&datetime=2026-08-01T13:31:00%2B09:00",
+      "cellText": "31",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cf0012/stops?departure-busstop=00020745-3&course=0008200258&datetime=2026-08-01T13:48:00%2B09:00",
+      "cellText": "48",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30062/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-02T13:14:00%2B09:00",
+      "cellText": "14",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30061/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-02T13:33:00%2B09:00",
+      "cellText": "33",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cf001f/stops?departure-busstop=00020745-3&course=0008200258&datetime=2026-08-02T13:54:00%2B09:00",
+      "cellText": "54",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cd0000/stops?departure-busstop=00020745-3&course=0008200256&datetime=2026-07-27T14:01:00%2B09:00",
+      "cellText": "01う",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cf0002/stops?departure-busstop=00020745-3&course=0008200258&datetime=2026-07-27T14:08:00%2B09:00",
+      "cellText": "08",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cf0005/stops?departure-busstop=00020745-3&course=0008200258&datetime=2026-07-27T14:22:00%2B09:00",
+      "cellText": "22",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cf0006/stops?departure-busstop=00020745-3&course=0008200258&datetime=2026-07-27T14:36:00%2B09:00",
+      "cellText": "36",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cf0003/stops?departure-busstop=00020745-3&course=0008200258&datetime=2026-07-27T14:50:00%2B09:00",
+      "cellText": "50",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d1000c/stops?departure-busstop=00020745-1&course=0008200260&datetime=2026-08-01T14:01:00%2B09:00",
+      "cellText": "01う",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30042/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-01T14:09:00%2B09:00",
+      "cellText": "09",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cf0018/stops?departure-busstop=00020745-3&course=0008200258&datetime=2026-08-01T14:49:00%2B09:00",
+      "cellText": "49",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cd0004/stops?departure-busstop=00020745-3&course=0008200256&datetime=2026-08-02T14:09:00%2B09:00",
+      "cellText": "09う",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cf0020/stops?departure-busstop=00020745-3&course=0008200258&datetime=2026-08-02T14:32:00%2B09:00",
+      "cellText": "32",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30066/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-02T14:52:00%2B09:00",
+      "cellText": "52",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d10004/stops?departure-busstop=00020745-1&course=0008200260&datetime=2026-07-27T15:03:00%2B09:00",
+      "cellText": "03う",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30019/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-07-27T15:16:00%2B09:00",
+      "cellText": "16",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80cf0004/stops?departure-busstop=00020745-3&course=0008200258&datetime=2026-07-27T15:28:00%2B09:00",
+      "cellText": "28",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30021/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-07-27T15:42:00%2B09:00",
+      "cellText": "42",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d3001a/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-07-27T15:55:00%2B09:00",
+      "cellText": "55",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30044/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-01T15:09:00%2B09:00",
+      "cellText": "09",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30043/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-01T15:27:00%2B09:00",
+      "cellText": "27",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30045/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-01T15:47:00%2B09:00",
+      "cellText": "47",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30063/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-02T15:10:00%2B09:00",
+      "cellText": "10",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d10013/stops?departure-busstop=00020745-1&course=0008200260&datetime=2026-08-02T15:17:00%2B09:00",
+      "cellText": "17う",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30067/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-02T15:27:00%2B09:00",
+      "cellText": "27",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d1000f/stops?departure-busstop=00020745-1&course=0008200260&datetime=2026-08-02T15:47:00%2B09:00",
+      "cellText": "47う",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/81040001/stops?departure-busstop=00020745-1&course=0008200307&datetime=2026-07-27T16:15:00%2B09:00",
+      "cellText": "15◇ま",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30022/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-07-27T16:21:00%2B09:00",
+      "cellText": "21",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d10002/stops?departure-busstop=00020745-1&course=0008200260&datetime=2026-07-27T16:40:00%2B09:00",
+      "cellText": "40う",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30001/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-07-27T16:46:00%2B09:00",
+      "cellText": "46",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30023/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-07-27T16:55:00%2B09:00",
+      "cellText": "55",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d10007/stops?departure-busstop=00020745-1&course=0008200260&datetime=2026-08-01T16:01:00%2B09:00",
+      "cellText": "01う",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30046/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-01T16:22:00%2B09:00",
+      "cellText": "22",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30039/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-01T16:43:00%2B09:00",
+      "cellText": "43",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30068/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-02T16:05:00%2B09:00",
+      "cellText": "05",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30059/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-02T16:23:00%2B09:00",
+      "cellText": "23",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30069/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-02T16:41:00%2B09:00",
+      "cellText": "41",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30009/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-07-27T17:09:00%2B09:00",
+      "cellText": "09",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30002/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-07-27T17:21:00%2B09:00",
+      "cellText": "21",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30024/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-07-27T17:34:00%2B09:00",
+      "cellText": "34",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d3000a/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-07-27T17:47:00%2B09:00",
+      "cellText": "47",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d10003/stops?departure-busstop=00020745-1&course=0008200260&datetime=2026-07-27T17:51:00%2B09:00",
+      "cellText": "51う",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d10008/stops?departure-busstop=00020745-1&course=0008200260&datetime=2026-08-01T17:05:00%2B09:00",
+      "cellText": "05う",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d3003a/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-01T17:19:00%2B09:00",
+      "cellText": "19",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30049/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-01T17:39:00%2B09:00",
+      "cellText": "39",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d3003b/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-01T17:56:00%2B09:00",
+      "cellText": "56",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30052/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-02T17:01:00%2B09:00",
+      "cellText": "01",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d3005a/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-02T17:18:00%2B09:00",
+      "cellText": "18",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30053/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-02T17:36:00%2B09:00",
+      "cellText": "36",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d10012/stops?departure-busstop=00020745-1&course=0008200260&datetime=2026-08-02T17:54:00%2B09:00",
+      "cellText": "54う",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30016/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-07-27T18:01:00%2B09:00",
+      "cellText": "01",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d3001d/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-07-27T18:13:00%2B09:00",
+      "cellText": "13",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d3001b/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-07-27T18:26:00%2B09:00",
+      "cellText": "26",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30017/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-07-27T18:39:00%2B09:00",
+      "cellText": "39",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d3001e/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-07-27T18:52:00%2B09:00",
+      "cellText": "52",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d3004a/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-01T18:12:00%2B09:00",
+      "cellText": "12",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30047/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-01T18:24:00%2B09:00",
+      "cellText": "24",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d3004b/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-01T18:50:00%2B09:00",
+      "cellText": "50",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30064/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-02T18:33:00%2B09:00",
+      "cellText": "33",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d3006a/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-02T18:53:00%2B09:00",
+      "cellText": "53",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d3001c/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-07-27T19:05:00%2B09:00",
+      "cellText": "05",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30018/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-07-27T19:18:00%2B09:00",
+      "cellText": "18",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d3001f/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-07-27T19:31:00%2B09:00",
+      "cellText": "31",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30020/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-07-27T19:44:00%2B09:00",
+      "cellText": "44",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30003/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-07-27T19:55:00%2B09:00",
+      "cellText": "55",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30048/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-01T19:04:00%2B09:00",
+      "cellText": "04",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d3004c/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-01T19:19:00%2B09:00",
+      "cellText": "19",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d3004d/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-01T19:50:00%2B09:00",
+      "cellText": "50",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30065/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-02T19:11:00%2B09:00",
+      "cellText": "11",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d3006b/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-02T19:31:00%2B09:00",
+      "cellText": "31",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d3000c/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-07-27T20:17:00%2B09:00",
+      "cellText": "17",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30004/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-07-27T20:37:00%2B09:00",
+      "cellText": "37",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d3000d/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-07-27T20:57:00%2B09:00",
+      "cellText": "57",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30032/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-01T20:16:00%2B09:00",
+      "cellText": "16",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30033/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-01T20:47:00%2B09:00",
+      "cellText": "47",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30054/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-02T20:26:00%2B09:00",
+      "cellText": "26",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30005/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-07-27T21:19:00%2B09:00",
+      "cellText": "19",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d3000e/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-07-27T21:39:00%2B09:00",
+      "cellText": "39",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30034/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-01T21:25:00%2B09:00",
+      "cellText": "25",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30035/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-01T21:59:00%2B09:00",
+      "cellText": "59",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30055/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-02T21:03:00%2B09:00",
+      "cellText": "03",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30056/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-02T21:38:00%2B09:00",
+      "cellText": "38",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30006/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-07-27T22:00:00%2B09:00",
+      "cellText": "00",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d3000f/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-07-27T22:20:00%2B09:00",
+      "cellText": "20",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30007/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-07-27T22:40:00%2B09:00",
+      "cellText": "40",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30036/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-01T22:30:00%2B09:00",
+      "cellText": "30",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30057/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-02T22:11:00%2B09:00",
+      "cellText": "11",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30058/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-02T22:50:00%2B09:00",
+      "cellText": "50",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30010/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-07-27T23:00:00%2B09:00",
+      "cellText": "00",
+      "reason": "mixed-cell-not-25"
+    },
+    {
+      "url": "https://transfer-cloud.navitime.biz/keiseibus-group/courses/timetables/80d30037/stops?departure-busstop=00020745-1&course=0008200262&datetime=2026-08-01T23:00:00%2B09:00",
+      "cellText": "00",
+      "reason": "mixed-cell-not-25"
+    }
+  ],
+  "discoveredBusstopIds": {
+    "maihama": "00020617",
+    "sogo": "00020745",
+    "takasu_seaside": "00020855"
+  }
+}
